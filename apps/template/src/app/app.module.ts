@@ -7,7 +7,6 @@ import { FontAwesomeModule } from "@fortawesome/angular-fontawesome";
 import { MatButtonModule } from "@angular/material/button";
 
 import { HomePageModule } from "./home-page/home-page.module";
-import { PsalmPageModule } from "./psalm-page/psalm-page.module";
 import { SharedModule } from "./shared/shared.module";
 import { StateModule } from "./state/state.module";
 
@@ -15,7 +14,6 @@ import { StateModule } from "./state/state.module";
   declarations: [AppComponent],
   imports: [
     HomePageModule,
-    PsalmPageModule,
     SharedModule,
     BrowserModule,
     MatButtonModule,
