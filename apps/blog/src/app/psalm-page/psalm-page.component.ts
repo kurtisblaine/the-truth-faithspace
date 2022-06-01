@@ -1,4 +1,6 @@
 import { Component, OnInit, ChangeDetectionStrategy } from "@angular/core";
+import { Store } from "@ngrx/store";
+import { loadPsalms } from "../state/psalm/psalm.actions";
 
 @Component({
   selector: "blog-psalm-page",
@@ -7,7 +9,9 @@ import { Component, OnInit, ChangeDetectionStrategy } from "@angular/core";
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class PsalmPageComponent implements OnInit {
-  constructor() {}
+  constructor(private store: Store) {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    this.store.dispatch(loadPsalms());
+  }
 }

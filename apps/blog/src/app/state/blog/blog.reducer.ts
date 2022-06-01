@@ -7,13 +7,9 @@ import { BlogEntity } from "./blog.models";
 export const BLOG_FEATURE_KEY = "blog";
 
 export interface State extends EntityState<BlogEntity> {
-  selectedId?: string | number; // which Blog record has been selected
-  loaded: boolean; // has the Blog list been loaded
-  error?: string | null; // last known error (if any)
-}
-
-export interface BlogPartialState {
-  readonly [BLOG_FEATURE_KEY]: State;
+  id?: string;
+  loaded: boolean;
+  error?: string | null;
 }
 
 export const blogAdapter: EntityAdapter<BlogEntity> =

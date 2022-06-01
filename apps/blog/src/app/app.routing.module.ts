@@ -2,20 +2,27 @@ import { NgModule } from "@angular/core";
 import { RouterModule, Routes } from "@angular/router";
 import { HomePageComponent } from "./home-page/home-page.component";
 import { PsalmPageComponent } from "./psalm-page/psalm-page.component";
+import { TextEditorComponent } from "./shared/components/text-editor/text-editor.component";
 
 const routes: Routes = [
   {
-    path: "/home",
+    path: "home",
     component: HomePageComponent,
     children: [],
   },
   {
-    path: "/psalms",
+    path: "psalms",
     component: PsalmPageComponent,
-    children: [],
+    children: [
+      {
+        path: "create/f3bc7c75-cdf7-4c51-beab-3ef81d6a5e5c",
+        component: TextEditorComponent,
+      },
+    ],
   },
-  { path: "", pathMatch: "full", redirectTo: "/home" },
-  { path: "**", redirectTo: "/error" },
+
+  { path: "", pathMatch: "full", redirectTo: "home" },
+  { path: "**", redirectTo: "error" },
 ];
 
 @NgModule({
