@@ -13,11 +13,14 @@ export const loadPsalmsFailure = createAction(
   props<{ error: any }>()
 );
 
-export const createPsalm = createAction("[Psalm/API] Create Psalm");
+export const createPsalm = createAction(
+  "[Psalm/API] Create Psalm",
+  props<{ psalm: PsalmEntity }>()
+);
 
 export const createPsalmSuccess = createAction(
   "[Psalm/API] Create Psalm Success",
-  props<{ psalm: PsalmEntity[] }>()
+  props<{ psalm: PsalmEntity }>()
 );
 
 export const createPsalmFailure = createAction(

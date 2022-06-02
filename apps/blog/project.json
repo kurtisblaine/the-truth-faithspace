@@ -6,9 +6,7 @@
   "targets": {
     "build": {
       "executor": "@angular-devkit/build-angular:browser",
-      "outputs": [
-        "{options.outputPath}"
-      ],
+      "outputs": ["{options.outputPath}"],
       "options": {
         "outputPath": "dist/apps/blog",
         "index": "apps/blog/src/index.html",
@@ -16,15 +14,13 @@
         "polyfills": "apps/blog/src/polyfills.ts",
         "tsConfig": "apps/blog/tsconfig.app.json",
         "inlineStyleLanguage": "scss",
-        "assets": [
-          "apps/blog/src/favicon.ico",
-          "apps/blog/src/assets"
-        ],
+        "assets": ["apps/blog/src/favicon.ico", "apps/blog/src/assets"],
         "styles": [
           "./node_modules/@angular/material/prebuilt-themes/indigo-pink.css",
           "apps/blog/src/styles.scss"
         ],
-        "scripts": []
+        "scripts": [],
+        "sourceMap": true
       },
       "configurations": {
         "production": {
@@ -80,17 +76,12 @@
     "lint": {
       "executor": "@nrwl/linter:eslint",
       "options": {
-        "lintFilePatterns": [
-          "apps/blog/**/*.ts",
-          "apps/blog/**/*.html"
-        ]
+        "lintFilePatterns": ["apps/blog/**/*.ts", "apps/blog/**/*.html"]
       }
     },
     "test": {
       "executor": "@nrwl/jest:jest",
-      "outputs": [
-        "coverage/apps/blog"
-      ],
+      "outputs": ["coverage/apps/blog"],
       "options": {
         "jestConfig": "apps/blog/jest.config.ts",
         "passWithNoTests": true

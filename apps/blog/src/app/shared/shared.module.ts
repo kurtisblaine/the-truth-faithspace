@@ -7,7 +7,7 @@ import { MatButtonModule } from "@angular/material/button";
 import { TextEditorComponent } from "./components/text-editor/text-editor.component";
 import { NgxEditorModule } from "ngx-editor";
 import { BrowserModule } from "@angular/platform-browser";
-import { FormsModule } from "@angular/forms";
+import { FormsModule, ReactiveFormsModule } from "@angular/forms";
 
 @NgModule({
   declarations: [ToolbarComponent, TextEditorComponent],
@@ -19,6 +19,7 @@ import { FormsModule } from "@angular/forms";
     MatToolbarModule,
     MatButtonModule,
     NgxEditorModule,
+    ReactiveFormsModule,
   ],
   exports: [ToolbarComponent, TextEditorComponent],
 })

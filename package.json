@@ -34,6 +34,7 @@
     "@ngrx/router-store": "~13.0.0",
     "@ngrx/store": "^13.0.0",
     "firebase": "^9.8.2",
+    "guid-typescript": "^1.0.9",
     "i": "^0.3.7",
     "ngx-editor": "^13.0.0",
     "npm": "^8.10.0",
