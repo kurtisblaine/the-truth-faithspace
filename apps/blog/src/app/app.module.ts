@@ -17,16 +17,7 @@ import {
   FirestoreModule,
 } from "@angular/fire/firestore";
 import { provideFirebaseApp, initializeApp } from "@angular/fire/app";
-
-// const firebaseConfig = {
-//   apiKey: "AIzaSyCjUFfiNlVcXR03aW28ZdhCdg8_lmzk15k",
-//   authDomain: "https://blog-46974-default-rtdb.firebaseio.com/", //"blog-46974.firebaseapp.com",
-//   projectId: "blog-46974",
-//   storageBucket: "blog-46974.appspot.com",
-//   messagingSenderId: "836636966533",
-//   appId: "1:836636966533:web:62c7e8bd6e9b6ac998f3ec",
-//   measurementId: "G-MPQSH2L8FZ",
-// };
+import { ServerPageModule } from "./server-page/server-page/server-page.module";
 
 const firebaseConfig = {
   apiKey: "AIzaSyCjUFfiNlVcXR03aW28ZdhCdg8_lmzk15k",
@@ -47,6 +38,7 @@ const firebaseConfig = {
     FirestoreModule,
     HomePageModule,
     PsalmPageModule,
+    ServerPageModule,
     SharedModule,
     BrowserModule,
     MatButtonModule,

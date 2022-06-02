@@ -1,6 +1,6 @@
 import { EntityState, EntityAdapter, createEntityAdapter } from "@ngrx/entity";
 import { createReducer, on, Action } from "@ngrx/store";
-
+import { Guid } from "guid-typescript";
 import * as PsalmActions from "./psalm.actions";
 import { PsalmEntity } from "./psalm.models";
 
@@ -33,7 +33,10 @@ const psalmReducer = createReducer(
   on(PsalmActions.loadPsalmsFailure, (state, { error }) => ({
     ...state,
     error,
-  }))
+  })),
+  on(PsalmActions.createPsalmSuccess, (state, { psalm }) =>
+    psalmAdapter.addOne({ id: Guid.create().toString(), json: psalm }, state)
+  )
 );
 
 export function reducer(state: State | undefined, action: Action) {

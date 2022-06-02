@@ -7,10 +7,8 @@ import {
   Output,
 } from "@angular/core";
 import { AbstractControl, FormControl, FormGroup } from "@angular/forms";
-import { Store } from "@ngrx/store";
 import { Editor, Toolbar, Validators } from "ngx-editor";
-import { take, tap } from "rxjs";
-import { createPsalm } from "../../../state/psalm/psalm.actions";
+import { PsalmEntity } from "../../../state/psalm/psalm.models";
 @Component({
   selector: "blog-text-editor",
   templateUrl: "./text-editor.component.html",
@@ -18,10 +16,11 @@ import { createPsalm } from "../../../state/psalm/psalm.actions";
 })
 export class TextEditorComponent implements OnInit, OnDestroy {
   public editor!: Editor;
-  private _document: any;
 
-  @Input() public document = {};
-  @Output() public saveEmitter = new EventEmitter();
+  @Input() public document: PsalmEntity = { id: 0, json: null };
+  @Input() public readonly = false;
+
+  @Output() public editorChanged = new EventEmitter();
 
   public toolbar: Toolbar = [
     ["bold", "italic"],
@@ -34,32 +33,30 @@ export class TextEditorComponent implements OnInit, OnDestroy {
     ["align_left", "align_center", "align_right", "align_justify"],
   ];
 
-  public form = new FormGroup({
-    editorContent: new FormControl(
-      { value: null, disabled: false }
-      // Validators.required()
-    ),
-  });
+  public form!: FormGroup;
 
   public get doc(): AbstractControl | null {
     return this.form.get("editorContent");
   }
 
-  constructor(private store: Store) {}
+  constructor() {}
 
   ngOnInit(): void {
     this.editor = new Editor();
 
-    this.editor.valueChanges
-      .pipe(tap((value) => (this._document = value)))
-      .subscribe();
+    this.editor.valueChanges.subscribe((value) =>
+      this.editorChanged.emit(value)
+    );
+
+    this.form = new FormGroup({
+      editorContent: new FormControl(
+        { value: this.document.json, disabled: this.readonly }
+        // Validators.required()
+      ),
+    });
   }
 
   ngOnDestroy(): void {
     this.editor.destroy();
-  }
-
-  public save() {
-    this.store.dispatch(createPsalm({ psalm: this._document }));
   }
 }

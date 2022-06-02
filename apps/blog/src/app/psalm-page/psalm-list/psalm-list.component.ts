@@ -1,4 +1,11 @@
 import { Component, OnInit, ChangeDetectionStrategy } from "@angular/core";
+import { Store } from "@ngrx/store";
+import { Observable } from "rxjs";
+import { PsalmEntity } from "../../state/psalm/psalm.models";
+import {
+  getAllPsalm,
+  getPsalmEntities,
+} from "../../state/psalm/psalm.selectors";
 
 @Component({
   selector: "blog-psalm-list",
@@ -7,7 +14,11 @@ import { Component, OnInit, ChangeDetectionStrategy } from "@angular/core";
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class PsalmListComponent implements OnInit {
-  constructor() {}
+  public psalms$!: Observable<PsalmEntity[]>;
 
-  ngOnInit(): void {}
+  constructor(private store: Store) {}
+
+  ngOnInit(): void {
+    this.psalms$ = this.store.select(getAllPsalm);
+  }
 }

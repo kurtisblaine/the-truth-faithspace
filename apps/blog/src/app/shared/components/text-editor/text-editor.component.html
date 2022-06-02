@@ -1,11 +1,10 @@
-<button mat-flat-button (click)="save()">Post</button>
 <form [formGroup]="form">
   <div class="editor">
-    <ngx-editor-menu [editor]="editor" [toolbar]="toolbar"> </ngx-editor-menu>
+    <ngx-editor-menu *ngIf="!readonly" [editor]="editor" [toolbar]="toolbar">
+    </ngx-editor-menu>
     <ngx-editor
       [editor]="editor"
       formControlName="editorContent"
-      [disabled]="false"
       [placeholder]="'Type here...'"
     >
     </ngx-editor>

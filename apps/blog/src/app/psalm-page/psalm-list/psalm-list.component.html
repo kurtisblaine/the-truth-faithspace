@@ -1,1 +1,3 @@
-<p>psalm-list works!</p>
+<ng-container *ngFor="let psalm of psalms$ | async">
+  <blog-text-editor [readonly]="true" [document]="psalm"></blog-text-editor>
+</ng-container>

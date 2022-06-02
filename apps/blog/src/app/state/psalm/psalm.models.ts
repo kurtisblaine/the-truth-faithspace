@@ -1,4 +1,4 @@
 export interface PsalmEntity {
   id: string | number; // Primary ID
-  json: object;
+  json: object | null;
 }
