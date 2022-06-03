@@ -1,3 +1,6 @@
-<button mat-flat-button (click)="save()">Post</button>
+<button mat-flat-button (click)="save()">Post Psalm</button>
+
+<div>Title</div>
+<input matInput type="text" [(ngModel)]="title" required />
 
 <blog-text-editor (editorChanged)="onChange($event)"></blog-text-editor>

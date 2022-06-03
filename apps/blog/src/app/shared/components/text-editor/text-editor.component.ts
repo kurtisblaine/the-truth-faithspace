@@ -16,10 +16,10 @@ import { PsalmEntity } from "../../../state/psalm/psalm.models";
 })
 export class TextEditorComponent implements OnInit, OnDestroy {
   public editor!: Editor;
+  public isReadMore = false;
 
-  @Input() public document: PsalmEntity = { id: 0, json: null };
+  @Input() public document = {};
   @Input() public readonly = false;
-
   @Output() public editorChanged = new EventEmitter();
 
   public toolbar: Toolbar = [
@@ -49,14 +49,18 @@ export class TextEditorComponent implements OnInit, OnDestroy {
     );
 
     this.form = new FormGroup({
-      editorContent: new FormControl(
-        { value: this.document.json, disabled: this.readonly }
-        // Validators.required()
-      ),
+      editorContent: new FormControl({
+        value: this.document,
+        disabled: this.readonly,
+      }),
     });
   }
 
   ngOnDestroy(): void {
     this.editor.destroy();
+  }
+
+  showText() {
+    this.isReadMore = !this.isReadMore;
   }
 }

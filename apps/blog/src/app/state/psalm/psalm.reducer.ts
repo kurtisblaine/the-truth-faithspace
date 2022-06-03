@@ -13,7 +13,10 @@ export interface State extends EntityState<PsalmEntity> {
 }
 
 export const psalmAdapter: EntityAdapter<PsalmEntity> =
-  createEntityAdapter<PsalmEntity>();
+  createEntityAdapter<PsalmEntity>({
+    sortComparer: (a: PsalmEntity, b: PsalmEntity) =>
+      Number.parseInt(b.date) - Number.parseInt(a.date),
+  });
 
 export const initialState: State = psalmAdapter.getInitialState({
   // set initial required properties
@@ -35,7 +38,7 @@ const psalmReducer = createReducer(
     error,
   })),
   on(PsalmActions.createPsalmSuccess, (state, { psalm }) =>
-    psalmAdapter.addOne({ id: Guid.create().toString(), json: psalm }, state)
+    psalmAdapter.addOne(psalm, state)
   )
 );
 

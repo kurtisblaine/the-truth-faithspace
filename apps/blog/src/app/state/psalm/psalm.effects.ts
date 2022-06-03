@@ -24,10 +24,7 @@ export class PsalmEffects {
       mergeMap((data) => collectionData(data)),
       map((data) =>
         PsalmActions.loadPsalmsSuccess({
-          psalm: data.map((d) => ({
-            id: Guid.create().toString(),
-            json: d,
-          })) as PsalmEntity[],
+          psalm: data as PsalmEntity[],
         })
       )
     )

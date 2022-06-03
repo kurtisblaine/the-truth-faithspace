@@ -1,3 +1,10 @@
-<ng-container *ngFor="let psalm of psalms$ | async">
-  <blog-text-editor [readonly]="true" [document]="psalm"></blog-text-editor>
-</ng-container>
+<div class="psalm-item" *ngFor="let psalm of psalms$ | async">
+  <div class="psalm-title">{{ psalm.title }}</div>
+  <div>{{ psalm.date | date: "short" }}</div>
+  <blog-text-editor
+    [readonly]="true"
+    [document]="psalm.json"
+  ></blog-text-editor>
+
+  <mat-divider></mat-divider>
+</div>
