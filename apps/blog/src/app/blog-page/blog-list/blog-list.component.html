@@ -1,0 +1,7 @@
+<div class="blog-item" *ngFor="let blog of blogs$ | async">
+  <div class="blog-title">{{ blog.title }}</div>
+  <div>{{ blog.date | date: "short" }}</div>
+  <blog-text-editor [readonly]="true" [document]="blog.json"></blog-text-editor>
+
+  <mat-divider></mat-divider>
+</div>

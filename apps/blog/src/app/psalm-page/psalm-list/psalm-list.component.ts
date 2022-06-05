@@ -2,10 +2,7 @@ import { Component, OnInit, ChangeDetectionStrategy } from "@angular/core";
 import { Store } from "@ngrx/store";
 import { Observable } from "rxjs";
 import { PsalmEntity } from "../../state/psalm/psalm.models";
-import {
-  getAllPsalm,
-  getPsalmEntities,
-} from "../../state/psalm/psalm.selectors";
+import { getAllPsalm } from "../../state/psalm/psalm.selectors";
 
 @Component({
   selector: "blog-psalm-list",

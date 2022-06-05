@@ -18,6 +18,7 @@ import {
 } from "@angular/fire/firestore";
 import { provideFirebaseApp, initializeApp } from "@angular/fire/app";
 import { ServerPageModule } from "./server-page/server-page/server-page.module";
+import { BlogPageModule } from "./blog-page/blog-page.module";
 
 const firebaseConfig = {
   apiKey: "AIzaSyCjUFfiNlVcXR03aW28ZdhCdg8_lmzk15k",
@@ -39,6 +40,7 @@ const firebaseConfig = {
     HomePageModule,
     PsalmPageModule,
     ServerPageModule,
+    BlogPageModule,
     SharedModule,
     BrowserModule,
     MatButtonModule,

@@ -22,11 +22,18 @@ export const initialState: State = blogAdapter.getInitialState({
 
 const blogReducer = createReducer(
   initialState,
-  on(BlogActions.init, (state) => ({ ...state, loaded: false, error: null })),
-  on(BlogActions.loadBlogSuccess, (state, { blog }) =>
+  on(BlogActions.loadBlogs, (state) => ({
+    ...state,
+    loaded: false,
+    error: null,
+  })),
+  on(BlogActions.loadBlogsSuccess, (state, { blog }) =>
     blogAdapter.setAll(blog, { ...state, loaded: true })
   ),
-  on(BlogActions.loadBlogFailure, (state, { error }) => ({ ...state, error }))
+  on(BlogActions.loadBlogsFailure, (state, { error }) => ({ ...state, error })),
+  on(BlogActions.createBlogSuccess, (state, { blog }) =>
+    blogAdapter.addOne(blog, state)
+  )
 );
 
 export function reducer(state: State | undefined, action: Action) {

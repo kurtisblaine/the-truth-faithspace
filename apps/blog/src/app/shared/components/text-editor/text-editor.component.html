@@ -11,7 +11,7 @@
     </ngx-editor>
   </div>
 
-  <button *ngIf="!readonly" mat-flat-button type="button" (click)="showText()">
+  <button *ngIf="readonly" mat-flat-button type="button" (click)="showText()">
     {{ !isReadMore ? "Read More" : "Read Less" }}
   </button>
 </form>

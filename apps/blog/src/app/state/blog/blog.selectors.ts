@@ -26,7 +26,7 @@ export const getBlogEntities = createSelector(getBlogState, (state: State) =>
 
 export const getSelectedId = createSelector(
   getBlogState,
-  (state: State) => state.selectedId
+  (state: State) => state.id
 );
 
 export const getSelected = createSelector(

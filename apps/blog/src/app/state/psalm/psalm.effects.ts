@@ -8,8 +8,7 @@ import {
   getDoc,
 } from "@angular/fire/firestore";
 import { createEffect, Actions, ofType } from "@ngrx/effects";
-import { from, map, mapTo, mergeMap, mergeMapTo, tap } from "rxjs";
-import { Guid } from "guid-typescript";
+import { from, map, mapTo, mergeMap } from "rxjs";
 
 import * as PsalmActions from "./psalm.actions";
 import { PsalmEntity } from "./psalm.models";
