@@ -1,6 +1,5 @@
 import { NgModule } from "@angular/core";
 import { CommonModule } from "@angular/common";
-import { ToolbarComponent } from "./components/toolbar/toolbar.component";
 import { FontAwesomeModule } from "@fortawesome/angular-fontawesome";
 import { MatToolbarModule } from "@angular/material/toolbar";
 import { MatButtonModule } from "@angular/material/button";
@@ -8,12 +7,14 @@ import { TextEditorComponent } from "./components/text-editor/text-editor.compon
 import { NgxEditorModule } from "ngx-editor";
 import { BrowserModule } from "@angular/platform-browser";
 import { FormsModule, ReactiveFormsModule } from "@angular/forms";
+import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 
 @NgModule({
-  declarations: [ToolbarComponent, TextEditorComponent],
+  declarations: [TextEditorComponent],
   imports: [
     CommonModule,
     BrowserModule,
+    BrowserAnimationsModule,
     FormsModule,
     FontAwesomeModule,
     MatToolbarModule,
@@ -21,6 +22,6 @@ import { FormsModule, ReactiveFormsModule } from "@angular/forms";
     NgxEditorModule,
     ReactiveFormsModule,
   ],
-  exports: [ToolbarComponent, TextEditorComponent],
+  exports: [TextEditorComponent],
 })
 export class SharedModule {}

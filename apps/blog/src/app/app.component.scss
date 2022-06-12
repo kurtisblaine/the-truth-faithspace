@@ -1,0 +1,16 @@
+.navigate-button {
+  width: 100%;
+}
+
+.button-items {
+  display: flex;
+  width: 100%;
+
+  & > span {
+    flex: 1 1 100%;
+  }
+
+  & > fa-icon {
+    flex: 1 1 10%;
+  }
+}

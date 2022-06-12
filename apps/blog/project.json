@@ -20,7 +20,8 @@
           "apps/blog/src/styles.scss"
         ],
         "scripts": [],
-        "sourceMap": true
+        "sourceMap": true,
+        "namedChunks": true
       },
       "configurations": {
         "production": {

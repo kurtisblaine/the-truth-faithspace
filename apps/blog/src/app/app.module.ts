@@ -19,6 +19,8 @@ import {
 import { provideFirebaseApp, initializeApp } from "@angular/fire/app";
 import { ServerPageModule } from "./server-page/server-page/server-page.module";
 import { BlogPageModule } from "./blog-page/blog-page.module";
+import { MatSidenavModule } from "@angular/material/sidenav";
+import { MatListModule } from "@angular/material/list";
 
 const firebaseConfig = {
   apiKey: "AIzaSyCjUFfiNlVcXR03aW28ZdhCdg8_lmzk15k",
@@ -36,6 +38,7 @@ const firebaseConfig = {
   imports: [
     provideFirebaseApp(() => initializeApp(firebaseConfig)),
     provideFirestore(() => getFirestore()),
+    MatSidenavModule,
     FirestoreModule,
     HomePageModule,
     PsalmPageModule,
@@ -48,6 +51,7 @@ const firebaseConfig = {
     FontAwesomeModule,
     StateModule,
     AppRoutingModule,
+    MatListModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

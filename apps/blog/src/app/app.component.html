@@ -1,3 +1,40 @@
-<blog-toolbar></blog-toolbar>
+<mat-drawer-container style="width: 100%; height: 100%" [hasBackdrop]="true">
+  <mat-drawer style="width: 200px" #drawer [mode]="'push'">
+    <mat-list>
+      <mat-list-item>
+        <button class="navigate-button" mat-flat-button (click)="goHome()">
+          <div class="button-items">
+            <fa-icon [icon]="homeIcon" [size]="'lg'"></fa-icon>
+            <span>Home</span>
+          </div>
+        </button>
+      </mat-list-item>
+      <mat-list-item>
+        <button class="navigate-button" mat-flat-button (click)="goBlog()">
+          <div class="button-items">
+            <fa-icon [icon]="blogIcon" [size]="'lg'"></fa-icon>
+            <span>Blogs</span>
+          </div>
+        </button>
+      </mat-list-item>
+      <mat-list-item>
+        <button class="navigate-button" mat-flat-button (click)="goPsalm()">
+          <div class="button-items">
+            <fa-icon [icon]="psalmIcon" [size]="'lg'"></fa-icon>
+            <span>Psalms</span>
+          </div>
+        </button>
+      </mat-list-item>
+    </mat-list>
+  </mat-drawer>
+  <mat-drawer-content>
+    <mat-toolbar color="primary">
+      <button mat-icon-button class="example-icon" (click)="drawer.toggle()">
+        <fa-icon [icon]="icon" [size]="'lg'"></fa-icon>
+      </button>
+      <span>Application</span>
+    </mat-toolbar>
 
-<router-outlet></router-outlet>
+    <router-outlet></router-outlet>
+  </mat-drawer-content>
+</mat-drawer-container>
