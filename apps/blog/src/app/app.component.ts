@@ -1,8 +1,6 @@
 import { Component, OnInit } from "@angular/core";
-import { initializeApp } from "firebase/app";
-import { getAnalytics } from "firebase/analytics";
 import {
-  faBlog,
+  faEye,
   faGrip,
   faHouse,
   faMusic,
@@ -15,10 +13,10 @@ import { Router } from "@angular/router";
   styleUrls: ["./app.component.scss"],
 })
 export class AppComponent implements OnInit {
-  public title = "blog";
+  public title = "The Good News of The Kingdom of God";
   public icon = faGrip;
   public homeIcon = faHouse;
-  public blogIcon = faBlog;
+  public blogIcon = faEye;
   public psalmIcon = faMusic;
 
   constructor(private router: Router) {}

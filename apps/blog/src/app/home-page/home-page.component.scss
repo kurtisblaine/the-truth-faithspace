@@ -1,0 +1,35 @@
+.home-page_container {
+  display: grid;
+}
+
+.header_container {
+  display: flex;
+  justify-content: center;
+}
+
+$color-green: #00ffaa;
+$color-background: #111;
+$color-text: #555;
+
+img {
+  display: block;
+  width: 100%;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 600px;
+  padding: 10px;
+  position: relative;
+}
+
+.scene {
+  margin: 0;
+  padding: 0;
+}
+
+@for $i from 1 through 6 {
+  .scene > *:nth-child(#{$i}) {
+    opacity: #{0.15 * $i};
+  }
+}
