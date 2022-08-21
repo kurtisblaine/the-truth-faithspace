@@ -28,8 +28,148 @@ img {
   padding: 0;
 }
 
-@for $i from 1 through 6 {
+@for $i from 2 through 6 {
   .scene > *:nth-child(#{$i}) {
     opacity: #{0.15 * $i};
+  }
+}
+
+// other
+
+.pimg1,
+.pimg2,
+.pimg3,
+.pimg4,
+.pimg5,
+.pimg6,
+.pimg7,
+.pimg8,
+.pimg9,
+.pimg10,
+.pimg11,
+.pimg12 {
+  position: relative;
+  opacity: 0.7;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  /*
+    fixed = parallax
+    scroll = normal
+  */
+  background-attachment: fixed;
+}
+
+.pimg1 {
+  background-image: url("/assets/img/How-to-know-that-Christ-is-the-truth-the-way-and-the-life-ZB20210719.jpg");
+  min-height: 100%;
+}
+
+.pimg2 {
+  background-image: url("/assets/img/Jesus-Walks-on-Water-Aivazovsky-1849.jpg");
+  min-height: 400px;
+}
+
+.pimg3 {
+  background-image: url("/assets/img/Rotator-3f.jpg");
+  min-height: 400px;
+}
+
+.pimg4 {
+  background-image: url("/assets/img/when-jesus-comes-to-dinner.jpg");
+  min-height: 400px;
+}
+
+.pimg5 {
+  background-image: url("/assets/img/jesus-peace-is-coming-for-people-and-god-soldiers-web-header.jpg");
+  min-height: 400px;
+}
+
+.pimg6 {
+  background-image: url("/assets/img/Rotator-5f.jpg");
+  min-height: 400px;
+}
+
+.pimg7 {
+  background-image: url("/assets/img/Rotator-9f.jpg");
+  min-height: 400px;
+}
+
+.pimg8 {
+  background-image: url("/assets/img/Rotator-10f.jpg");
+  min-height: 400px;
+}
+
+.pimg9 {
+  background-image: url("/assets/img/Rotator-4f.jpg");
+  min-height: 400px;
+}
+
+.pimg10 {
+  background-image: url("/assets/img/Rotator-8f.jpg");
+  min-height: 400px;
+}
+
+.pimg11 {
+  background-image: url("/assets/img/Rotator-14f.jpg");
+  min-height: 400px;
+}
+
+.pimg12 {
+  background-image: url("/assets/img/13-Seven-Angels-Seven-Trumpets.jpg");
+  min-height: 400px;
+}
+
+.section {
+  text-align: center;
+  padding: 50px 80px;
+}
+
+.section-light {
+  background-color: #f4f4f4;
+  color: #777;
+}
+
+.section-dark {
+  background-color: #282e34;
+  color: #ddd;
+}
+
+.ptext {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+  font-size: 27px;
+  letter-spacing: 8px;
+  text-transform: uppercase;
+}
+
+.ptext .border {
+  background-color: #111;
+  color: #fff;
+  padding: 20px;
+}
+
+.ptext .border.trans {
+  background-color: transparent;
+}
+
+@media (max-width: 568px) {
+  .pimg1,
+  .pimg2,
+  .pimg3,
+  .pimg4,
+  .pimg5,
+  .pimg6,
+  .pimg7,
+  .pimg8,
+  .pimg9,
+  .pimg10,
+  .pimg11,
+  .pimg12 {
+    background-attachment: scroll;
   }
 }
