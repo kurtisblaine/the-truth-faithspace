@@ -8,9 +8,11 @@ import { NgxEditorModule } from "ngx-editor";
 import { BrowserModule } from "@angular/platform-browser";
 import { FormsModule, ReactiveFormsModule } from "@angular/forms";
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
+import { ReferenceTooltipComponent } from "./components/reference-tooltip/reference-tooltip.component";
+import { MatTooltipModule } from "@angular/material/tooltip";
 
 @NgModule({
-  declarations: [TextEditorComponent],
+  declarations: [TextEditorComponent, ReferenceTooltipComponent],
   imports: [
     CommonModule,
     BrowserModule,
@@ -21,7 +23,8 @@ import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
     MatButtonModule,
     NgxEditorModule,
     ReactiveFormsModule,
+    MatTooltipModule,
   ],
-  exports: [TextEditorComponent],
+  exports: [TextEditorComponent, ReferenceTooltipComponent],
 })
 export class SharedModule {}
