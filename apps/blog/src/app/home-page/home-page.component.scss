@@ -36,32 +36,7 @@ img {
 
 // other
 
-.pimg1,
-.pimg2,
-.pimg3,
-.pimg4,
-.pimg5,
-.pimg6,
-.pimg7,
-.pimg8,
-.pimg9,
-.pimg10,
-.pimg11,
-.pimg12 {
-  position: relative;
-  opacity: 0.7;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-
-  /*
-    fixed = parallax
-    scroll = normal
-  */
-  background-attachment: fixed;
-}
-
-.pimg1 {
+.pimg5 {
   background-image: url("/assets/img/How-to-know-that-Christ-is-the-truth-the-way-and-the-life-ZB20210719.jpg");
   min-height: 100%;
 }
@@ -86,7 +61,7 @@ img {
   min-height: 400px;
 }
 
-.pimg6 {
+.pimg1 {
   background-image: url("/assets/img/Rotator-5f.jpg");
   min-height: 400px;
 }
@@ -121,9 +96,24 @@ img {
   min-height: 400px;
 }
 
+.pimg13 {
+  background-image: url("/assets/img/Mat25L.jpg");
+  min-height: 400px;
+}
+
+.pimg14 {
+  background-image: url("/assets/img/211 Ezekiel's Vision.jpg");
+  min-height: 400px;
+}
+
+.pimg15 {
+  background-image: url("/assets/img/Rotator-7f.jpg");
+  min-height: 400px;
+}
+
 .section {
   text-align: center;
-  padding: 50px 20px;
+  padding: 25px 20px;
 }
 
 .section-light {
@@ -169,7 +159,33 @@ img {
   .pimg9,
   .pimg10,
   .pimg11,
-  .pimg12 {
+  .pimg12,
+  .pimg13,
+  .pimg14,
+  .pimg15 {
     background-attachment: scroll;
   }
+}
+
+.pimg1,
+.pimg2,
+.pimg3,
+.pimg4,
+.pimg5,
+.pimg6,
+.pimg7,
+.pimg8,
+.pimg9,
+.pimg10,
+.pimg11,
+.pimg12,
+.pimg13,
+.pimg14,
+.pimg15 {
+  position: relative;
+  // opacity: 0.7;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
