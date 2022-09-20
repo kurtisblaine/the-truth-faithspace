@@ -121,6 +121,11 @@ img {
   min-height: 400px;
 }
 
+.pimg18 {
+  background-image: url("/assets/img/hell.jpg");
+  min-height: 400px;
+}
+
 .section {
   text-align: center;
   padding: 25px 20px;
@@ -174,7 +179,8 @@ img {
   .pimg14,
   .pimg15,
   .pimg16,
-  .pimg17 {
+  .pimg17,
+  .pimg18 {
     background-attachment: scroll;
   }
 }
@@ -195,7 +201,8 @@ img {
 .pimg14,
 .pimg15,
 .pimg16,
-.pimg17 {
+.pimg17,
+.pimg18 {
   position: relative;
   // opacity: 0.7;
   background-position: center;
