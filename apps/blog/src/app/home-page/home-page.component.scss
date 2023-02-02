@@ -56,10 +56,10 @@ img {
   min-height: 400px;
 }
 
-// .pimg5 {
-//   background-image: url("../../assets/img/jesus-peace-is-coming-for-people-and-god-soldiers-web-header.jpg");
-//   min-height: 400px;
-// }
+.pimg6 {
+  background-image: url("../../assets/img/301 Communion.jpg");
+  min-height: 400px;
+}
 
 .pimg1 {
   background-image: url("../../assets/img/Rotator-5f.jpg");
@@ -111,10 +111,10 @@ img {
   min-height: 400px;
 }
 
-// .pimg16 {
-//   background-image: url("../../assets/img/bookoflife.jpg");
-//   min-height: 400px;
-// }
+.pimg16 {
+  background-image: url("../../assets/img/304 Coronation.jpg");
+  min-height: 400px;
+}
 
 // .pimg17 {
 //   background-image: url("../../assets/img/bookoflife.jpg");
@@ -146,6 +146,17 @@ img {
   top: 50%;
   width: 100%;
   text-align: center;
+  color: #fff;
+  font-size: 27px;
+  letter-spacing: 8px;
+  text-transform: uppercase;
+}
+
+.lighttext {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  text-align: center;
   color: #000;
   font-size: 27px;
   letter-spacing: 8px;
@@ -159,6 +170,16 @@ img {
 }
 
 .ptext .border.trans {
+  background-color: transparent;
+}
+
+.lighttext .border {
+  background-color: #fff;
+  color: #111;
+  padding: 20px;
+}
+
+.lighttext .border.trans {
   background-color: transparent;
 }
 
