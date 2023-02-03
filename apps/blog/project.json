@@ -43,7 +43,8 @@
               "with": "apps/blog/src/environments/environment.prod.ts"
             }
           ],
-          "outputHashing": "all"
+          "outputHashing": "all",
+          "baseHref": "/jesusthelight/"
         },
         "development": {
           "buildOptimizer": false,
@@ -87,6 +88,9 @@
         "jestConfig": "apps/blog/jest.config.ts",
         "passWithNoTests": true
       }
+    },
+    "deploy": {
+      "executor": "angular-cli-ghpages:deploy"
     }
   },
   "tags": []
