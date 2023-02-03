@@ -34,6 +34,7 @@
     "@ngrx/entity": "~13.0.0",
     "@ngrx/router-store": "~13.0.0",
     "@ngrx/store": "^13.0.0",
+    "angular-responsive-carousel": "^2.1.2",
     "firebase": "^9.8.2",
     "guid-typescript": "^1.0.9",
     "i": "^0.3.7",
