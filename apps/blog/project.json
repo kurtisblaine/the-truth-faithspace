@@ -43,8 +43,7 @@
               "with": "apps/blog/src/environments/environment.prod.ts"
             }
           ],
-          "outputHashing": "all",
-          "baseHref": "/jesusthelight/"
+          "outputHashing": "all"
         },
         "development": {
           "buildOptimizer": false,
