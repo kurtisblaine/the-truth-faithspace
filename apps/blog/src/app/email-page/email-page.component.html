@@ -1,5 +1,5 @@
 <div class="container">
-  <h2 class="text-center mb-5">Contact me</h2>
+  <h2 class="text-center mb-5">If you would like to contact me</h2>
   <div class="row">
     <div class="col-md-6 offset-md-3">
       <form [formGroup]="FormData" (ngSubmit)="onSubmit(FormData.value)">
@@ -38,6 +38,7 @@
         <button
           type="submit"
           class="btn btn-primary"
+          style="margin-top: 12px"
           [disabled]="!FormData.valid"
         >
           Submit
