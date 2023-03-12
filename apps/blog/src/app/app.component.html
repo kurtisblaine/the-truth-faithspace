@@ -2,7 +2,11 @@
   <mat-drawer style="width: 200px" #drawer [mode]="'push'">
     <mat-list>
       <mat-list-item>
-        <button class="navigate-button" mat-flat-button (click)="goHome()">
+        <button
+          class="navigate-button"
+          mat-flat-button
+          (click)="goHome(); drawer.close()"
+        >
           <div class="button-items">
             <fa-icon [icon]="homeIcon" [size]="'lg'"></fa-icon>
             <span>Home</span>
@@ -10,7 +14,11 @@
         </button>
       </mat-list-item>
       <mat-list-item>
-        <button class="navigate-button" mat-flat-button (click)="goBlog()">
+        <button
+          class="navigate-button"
+          mat-flat-button
+          (click)="goBlog(); drawer.close()"
+        >
           <div class="button-items">
             <fa-icon [icon]="blogIcon" [size]="'lg'"></fa-icon>
             <span>Revelations</span>
@@ -18,7 +26,11 @@
         </button>
       </mat-list-item>
       <mat-list-item>
-        <button class="navigate-button" mat-flat-button (click)="goPsalm()">
+        <button
+          class="navigate-button"
+          mat-flat-button
+          (click)="goPsalm(); drawer.close()"
+        >
           <div class="button-items">
             <fa-icon [icon]="psalmIcon" [size]="'lg'"></fa-icon>
             <span>Psalms</span>
@@ -26,7 +38,11 @@
         </button>
       </mat-list-item>
       <mat-list-item>
-        <button class="navigate-button" mat-flat-button (click)="goEmail()">
+        <button
+          class="navigate-button"
+          mat-flat-button
+          (click)="goEmail(); drawer.close()"
+        >
           <div class="button-items">
             <fa-icon [icon]="mailIcon" [size]="'lg'"></fa-icon>
             <span>Email</span>
