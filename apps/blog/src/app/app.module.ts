@@ -1,26 +1,27 @@
 import { NgModule } from "@angular/core";
 import { BrowserModule } from "@angular/platform-browser";
 
-import { AppComponent } from "./app.component";
+import { MatButtonModule } from "@angular/material/button";
 import { MatToolbarModule } from "@angular/material/toolbar";
 import { FontAwesomeModule } from "@fortawesome/angular-fontawesome";
-import { MatButtonModule } from "@angular/material/button";
+import { AppComponent } from "./app.component";
 
-import { HomePageModule } from "./home-page/home-page.module";
-import { PsalmPageModule } from "./psalm-page/psalm-page.module";
-import { SharedModule } from "./shared/shared.module";
-import { StateModule } from "./state/state.module";
-import { AppRoutingModule } from "./app.routing.module";
+import { initializeApp, provideFirebaseApp } from "@angular/fire/app";
 import {
+  FirestoreModule,
   getFirestore,
   provideFirestore,
-  FirestoreModule,
 } from "@angular/fire/firestore";
-import { provideFirebaseApp, initializeApp } from "@angular/fire/app";
-import { ServerPageModule } from "./server-page/server-page/server-page.module";
-import { BlogPageModule } from "./blog-page/blog-page.module";
-import { MatSidenavModule } from "@angular/material/sidenav";
 import { MatListModule } from "@angular/material/list";
+import { MatSidenavModule } from "@angular/material/sidenav";
+import { AppRoutingModule } from "./app.routing.module";
+import { BlogPageModule } from "./blog-page/blog-page.module";
+import { EmailPageModule } from "./email-page/email-page.module";
+import { HomePageModule } from "./home-page/home-page.module";
+import { PsalmPageModule } from "./psalm-page/psalm-page.module";
+import { ServerPageModule } from "./server-page/server-page/server-page.module";
+import { SharedModule } from "./shared/shared.module";
+import { StateModule } from "./state/state.module";
 
 const firebaseConfig = {
   apiKey: "AIzaSyCjUFfiNlVcXR03aW28ZdhCdg8_lmzk15k",
@@ -52,6 +53,7 @@ const firebaseConfig = {
     StateModule,
     AppRoutingModule,
     MatListModule,
+    EmailPageModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

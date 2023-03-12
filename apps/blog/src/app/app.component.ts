@@ -1,11 +1,12 @@
 import { Component, OnInit } from "@angular/core";
+import { Router } from "@angular/router";
 import {
+  faEnvelope,
   faEye,
   faGrip,
   faHouse,
   faMusic,
 } from "@fortawesome/free-solid-svg-icons";
-import { Router } from "@angular/router";
 
 @Component({
   selector: "blog-root",
@@ -18,6 +19,7 @@ export class AppComponent implements OnInit {
   public homeIcon = faHouse;
   public blogIcon = faEye;
   public psalmIcon = faMusic;
+  public mailIcon = faEnvelope;
 
   constructor(private router: Router) {}
 
@@ -33,5 +35,9 @@ export class AppComponent implements OnInit {
 
   public goPsalm() {
     this.router.navigateByUrl("psalms");
+  }
+
+  public goEmail() {
+    this.router.navigateByUrl("email");
   }
 }
