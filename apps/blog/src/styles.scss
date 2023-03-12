@@ -37,3 +37,9 @@ body {
 .mat-typography p {
   margin: unset;
 }
+
+*,
+::after,
+::before {
+  box-sizing: unset !important;
+}
