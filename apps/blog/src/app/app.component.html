@@ -25,6 +25,14 @@
           </div>
         </button>
       </mat-list-item>
+      <mat-list-item>
+        <button class="navigate-button" mat-flat-button (click)="goEmail()">
+          <div class="button-items">
+            <fa-icon [icon]="mailIcon" [size]="'lg'"></fa-icon>
+            <span>Email</span>
+          </div>
+        </button>
+      </mat-list-item>
     </mat-list>
   </mat-drawer>
   <mat-drawer-content>

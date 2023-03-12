@@ -36,6 +36,7 @@
     "@ngrx/router-store": "~13.0.0",
     "@ngrx/store": "^13.0.0",
     "angular-responsive-carousel": "^2.1.2",
+    "bootstrap": "^5.2.3",
     "firebase": "^9.8.2",
     "guid-typescript": "^1.0.9",
     "i": "^0.3.7",
@@ -49,7 +50,6 @@
     "zone.js": "~0.11.4"
   },
   "devDependencies": {
-    "angular-cli-ghpages": "^1.0.5",
     "@angular-devkit/build-angular": "~13.3.0",
     "@angular-eslint/eslint-plugin": "~13.1.0",
     "@angular-eslint/eslint-plugin-template": "~13.1.0",
@@ -72,6 +72,7 @@
     "@types/node": "^16.11.7",
     "@typescript-eslint/eslint-plugin": "~5.18.0",
     "@typescript-eslint/parser": "~5.18.0",
+    "angular-cli-ghpages": "^1.0.5",
     "cypress": "^9.1.0",
     "eslint": "~8.12.0",
     "eslint-config-prettier": "8.1.0",
