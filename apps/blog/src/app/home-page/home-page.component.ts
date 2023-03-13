@@ -11,6 +11,7 @@ export class HomePageComponent implements OnInit {
   constructor() {}
 
   ngOnInit(): void {
+    //KEEP THIS JUST IN CASE IT's NEEDED
     // const Parallax = require("parallax-js");
     // const scene = $(".scene").get(0);
     // const parallaxInstance = new Parallax(scene, {});

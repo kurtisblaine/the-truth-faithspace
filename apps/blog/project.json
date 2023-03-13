@@ -43,7 +43,8 @@
               "with": "apps/blog/src/environments/environment.prod.ts"
             }
           ],
-          "outputHashing": "all"
+          "outputHashing": "all",
+          "outputPath": "/Users/Kurtis/Desktop/Bible/jesusthelight"
         },
         "development": {
           "buildOptimizer": false,

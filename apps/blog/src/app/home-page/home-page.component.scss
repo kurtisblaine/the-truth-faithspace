@@ -116,10 +116,11 @@ img {
   min-height: 400px;
 }
 
-// .pimg17 {
-//   background-image: url("../../assets/img/bookoflife.jpg");
-//   min-height: 400px;
-// }
+.pimg17 {
+  background-image: url("../../assets/img/201 Let Him In.jpg");
+  min-height: 400px;
+  background-size: auto !important;
+}
 
 .pimg18 {
   background-image: url("../../assets/img/hell.jpg");
@@ -225,7 +226,7 @@ img {
 .pimg17,
 .pimg18 {
   position: relative;
-  // opacity: 0.7;
+  opacity: 0.8;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;

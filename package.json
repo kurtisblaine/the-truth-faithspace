@@ -6,9 +6,8 @@
     "ng": "npx nx",
     "start": "npx nx serve",
     "build": "npx nx build",
-    "production": "npx nx build --prod --base-href /jesusthelight/",
+    "production": "npx nx build --prod --output-path /Users/Kurtis/Desktop/Bible/jesusthelight",
     "test": "npx nx test",
-    "deploy": "npx nx deploy --base-href=https://github.com/JesusTheLight/JesustheLight.github.io",
     "generate": "npx nx generate",
     "add": "npx nx add",
     "config": "npx nx config"
