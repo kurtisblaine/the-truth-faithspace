@@ -1,18 +1,20 @@
 import { Injectable } from "@angular/core";
 import {
+  addDoc,
   collection,
   collectionData,
-  Firestore,
-  addDoc,
   CollectionReference,
+  doc,
+  DocumentReference,
+  Firestore,
   getDoc,
+  updateDoc,
 } from "@angular/fire/firestore";
-import { createEffect, Actions, ofType } from "@ngrx/effects";
+import { Actions, createEffect, ofType } from "@ngrx/effects";
 import { from, map, mapTo, mergeMap } from "rxjs";
 
 import * as PsalmActions from "./psalm.actions";
 import { PsalmEntity } from "./psalm.models";
-import * as PsalmFeature from "./psalm.reducer";
 
 @Injectable()
 export class PsalmEffects {
@@ -46,6 +48,33 @@ export class PsalmEffects {
       map((document) =>
         PsalmActions.createPsalmSuccess({
           psalm: document.data() as PsalmEntity,
+        })
+      )
+    )
+  );
+
+  public updatePsalm$ = createEffect(() =>
+    this.actions$.pipe(
+      ofType(PsalmActions.updatePsalms),
+      map(({ psalm }) => {
+        const document = doc(
+          this.database,
+          `psalm`,
+          psalm.id.toString()
+        ) as DocumentReference<PsalmEntity>;
+
+        return {
+          doc: document,
+          psalm,
+        };
+      }),
+      mergeMap(({ doc, psalm }) => {
+        const promise = from(updateDoc<PsalmEntity>(doc, psalm));
+        return promise.pipe(mapTo(psalm));
+      }),
+      map((psalm) =>
+        PsalmActions.updatePsalmSuccess({
+          psalm,
         })
       )
     )

@@ -2,7 +2,7 @@
   <div class="proverb-title">{{ proverb.title }}</div>
   <div>{{ proverb.date | date: "short" }}</div>
   <blog-text-editor
-    [readonly]="true"
+    [readonly]="!update"
     [document]="proverb.json"
   ></blog-text-editor>
 

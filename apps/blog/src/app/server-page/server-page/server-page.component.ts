@@ -2,9 +2,12 @@ import { Component, OnInit } from "@angular/core";
 import { Router } from "@angular/router";
 import { Store } from "@ngrx/store";
 import { Guid } from "guid-typescript";
-import { createBlog } from "../../state/blog/blog.actions";
-import { createProverb } from "../../state/proverb/proverbs.actions";
-import { createPsalm } from "../../state/psalm/psalm.actions";
+import { createBlog, loadBlogs } from "../../state/blog/blog.actions";
+import {
+  createProverb,
+  loadProverbs,
+} from "../../state/proverb/proverbs.actions";
+import { createPsalm, loadPsalms } from "../../state/psalm/psalm.actions";
 import { PsalmEntity } from "../../state/psalm/psalm.models";
 @Component({
   selector: "blog-server-page",
@@ -17,7 +20,11 @@ export class ServerPageComponent implements OnInit {
 
   constructor(private store: Store, private router: Router) {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    this.store.dispatch(loadPsalms());
+    this.store.dispatch(loadProverbs());
+    this.store.dispatch(loadBlogs());
+  }
 
   public savePsalm() {
     this.store.dispatch(

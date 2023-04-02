@@ -7,8 +7,7 @@ import {
   Output,
 } from "@angular/core";
 import { AbstractControl, FormControl, FormGroup } from "@angular/forms";
-import { Editor, Toolbar, Validators } from "ngx-editor";
-import { PsalmEntity } from "../../../state/psalm/psalm.models";
+import { Editor, Toolbar } from "ngx-editor";
 @Component({
   selector: "blog-text-editor",
   templateUrl: "./text-editor.component.html",

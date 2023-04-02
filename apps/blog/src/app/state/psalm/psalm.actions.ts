@@ -13,6 +13,21 @@ export const loadPsalmsFailure = createAction(
   props<{ error: any }>()
 );
 
+export const updatePsalms = createAction(
+  "[Psalm/API] Update Psalms",
+  props<{ psalm: PsalmEntity }>()
+);
+
+export const updatePsalmsSuccess = createAction(
+  "[Psalm/API] Update Psalms Success",
+  props<{ psalm: PsalmEntity }>()
+);
+
+export const updatePsalmsFailure = createAction(
+  "[Psalm/API] Update Psalms Failure",
+  props<{ error: any }>()
+);
+
 export const createPsalm = createAction(
   "[Psalm/API] Create Psalm",
   props<{ psalm: PsalmEntity }>()
@@ -20,6 +35,11 @@ export const createPsalm = createAction(
 
 export const createPsalmSuccess = createAction(
   "[Psalm/API] Create Psalm Success",
+  props<{ psalm: PsalmEntity }>()
+);
+
+export const updatePsalmSuccess = createAction(
+  "[Psalm/API] Update Psalm Success",
   props<{ psalm: PsalmEntity }>()
 );
 

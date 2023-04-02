@@ -1,9 +1,15 @@
 <div class="psalm-item" *ngFor="let psalm of psalms$ | async">
   <div class="psalm-title">{{ psalm.title }}</div>
   <div>{{ psalm.date | date: "short" }}</div>
+
+  <button *ngIf="update" mat-button color="primary" (click)="updated(psalm)">
+    Update
+  </button>
+
   <blog-text-editor
-    [readonly]="true"
+    [readonly]="!update"
     [document]="psalm.json"
+    (editorChanged)="onChange($event)"
   ></blog-text-editor>
 
   <mat-divider></mat-divider>

@@ -1,4 +1,4 @@
-import { Component, OnInit } from "@angular/core";
+import { Component, Input, OnInit } from "@angular/core";
 import { Store } from "@ngrx/store";
 import { Observable } from "rxjs";
 import { getAllBlog } from "../../state/blog/blog.selectors";
@@ -10,6 +10,8 @@ import { PsalmEntity } from "../../state/psalm/psalm.models";
   styleUrls: ["./blog-list.component.scss"],
 })
 export class BlogListComponent implements OnInit {
+  @Input() public update = false;
+
   public blogs$!: Observable<PsalmEntity[]>;
 
   constructor(private store: Store) {}

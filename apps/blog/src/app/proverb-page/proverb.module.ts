@@ -9,5 +9,6 @@ import { ProverbPageComponent } from "./proverb-page.component";
 @NgModule({
   declarations: [ProverbPageComponent, ProverbListComponent],
   imports: [CommonModule, SharedModule, RouterModule, MatDividerModule],
+  exports: [ProverbListComponent],
 })
 export class ProverbModule {}
