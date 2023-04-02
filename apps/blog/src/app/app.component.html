@@ -41,6 +41,18 @@
         <button
           class="navigate-button"
           mat-flat-button
+          (click)="goProverb(); drawer.close()"
+        >
+          <div class="button-items">
+            <fa-icon [icon]="proverbIcon" [size]="'lg'"></fa-icon>
+            <span>Proverbs</span>
+          </div>
+        </button>
+      </mat-list-item>
+      <mat-list-item>
+        <button
+          class="navigate-button"
+          mat-flat-button
           (click)="goEmail(); drawer.close()"
         >
           <div class="button-items">

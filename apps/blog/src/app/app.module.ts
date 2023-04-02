@@ -18,6 +18,7 @@ import { AppRoutingModule } from "./app.routing.module";
 import { BlogPageModule } from "./blog-page/blog-page.module";
 import { EmailPageModule } from "./email-page/email-page.module";
 import { HomePageModule } from "./home-page/home-page.module";
+import { ProverbModule } from "./proverb-page/proverb.module";
 import { PsalmPageModule } from "./psalm-page/psalm-page.module";
 import { ServerPageModule } from "./server-page/server-page/server-page.module";
 import { SharedModule } from "./shared/shared.module";
@@ -54,6 +55,7 @@ const firebaseConfig = {
     AppRoutingModule,
     MatListModule,
     EmailPageModule,
+    ProverbModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

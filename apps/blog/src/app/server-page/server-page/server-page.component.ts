@@ -1,10 +1,11 @@
 import { Component, OnInit } from "@angular/core";
+import { Router } from "@angular/router";
 import { Store } from "@ngrx/store";
+import { Guid } from "guid-typescript";
+import { createBlog } from "../../state/blog/blog.actions";
+import { createProverb } from "../../state/proverb/proverbs.actions";
 import { createPsalm } from "../../state/psalm/psalm.actions";
 import { PsalmEntity } from "../../state/psalm/psalm.models";
-import { Guid } from "guid-typescript";
-import { Router } from "@angular/router";
-import { createBlog } from "../../state/blog/blog.actions";
 @Component({
   selector: "blog-server-page",
   templateUrl: "./server-page.component.html",
@@ -46,6 +47,21 @@ export class ServerPageComponent implements OnInit {
     );
 
     this.router.navigateByUrl("blogs");
+  }
+
+  public saveProverb() {
+    this.store.dispatch(
+      createProverb({
+        proverb: {
+          title: this.title,
+          json: this._document,
+          date: Date.now().toString(),
+          id: Guid.create().toString(),
+        },
+      })
+    );
+
+    this.router.navigateByUrl("proverbs");
   }
 
   public onChange(change: PsalmEntity) {
