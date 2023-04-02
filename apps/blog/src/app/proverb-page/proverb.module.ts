@@ -3,11 +3,11 @@ import { NgModule } from "@angular/core";
 import { MatDividerModule } from "@angular/material/divider";
 import { RouterModule } from "@angular/router";
 import { SharedModule } from "../shared/shared.module";
-import { PsalmListComponent } from "./psalm-list/psalm-list.component";
-import { PsalmPageComponent } from "./psalm-page.component";
+import { ProverbListComponent } from "./proverb-list/proverb-list.component";
+import { ProverbPageComponent } from "./proverb-page.component";
 
 @NgModule({
-  declarations: [PsalmPageComponent, PsalmListComponent],
+  declarations: [ProverbPageComponent, ProverbListComponent],
   imports: [CommonModule, SharedModule, RouterModule, MatDividerModule],
 })
-export class PsalmPageModule {}
+export class ProverbModule {}

@@ -3,6 +3,7 @@ import { RouterModule, Routes } from "@angular/router";
 import { BlogPageComponent } from "./blog-page/blog-page.component";
 import { EmailPageComponent } from "./email-page/email-page.component";
 import { HomePageComponent } from "./home-page/home-page.component";
+import { ProverbPageComponent } from "./proverb-page/proverb-page.component";
 import { PsalmPageComponent } from "./psalm-page/psalm-page.component";
 import { ServerPageComponent } from "./server-page/server-page/server-page.component";
 
@@ -20,6 +21,11 @@ const routes: Routes = [
   {
     path: "blogs",
     component: BlogPageComponent,
+    children: [],
+  },
+  {
+    path: "proverbs",
+    component: ProverbPageComponent,
     children: [],
   },
   {

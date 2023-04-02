@@ -1,6 +1,7 @@
 import { Component, OnInit } from "@angular/core";
 import { Router } from "@angular/router";
 import {
+  faBrain,
   faEnvelope,
   faEye,
   faGrip,
@@ -19,6 +20,7 @@ export class AppComponent implements OnInit {
   public homeIcon = faHouse;
   public blogIcon = faEye;
   public psalmIcon = faMusic;
+  public proverbIcon = faBrain;
   public mailIcon = faEnvelope;
 
   constructor(private router: Router) {}
@@ -27,6 +29,10 @@ export class AppComponent implements OnInit {
 
   public goHome() {
     this.router.navigateByUrl("home");
+  }
+
+  public goProverb() {
+    this.router.navigateByUrl("proverbs");
   }
 
   public goBlog() {

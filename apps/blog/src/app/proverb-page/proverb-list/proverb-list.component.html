@@ -1,0 +1,10 @@
+<div class="proverb-item" *ngFor="let proverb of proverbs$ | async">
+  <div class="proverb-title">{{ proverb.title }}</div>
+  <div>{{ proverb.date | date: "short" }}</div>
+  <blog-text-editor
+    [readonly]="true"
+    [document]="proverb.json"
+  ></blog-text-editor>
+
+  <mat-divider></mat-divider>
+</div>
