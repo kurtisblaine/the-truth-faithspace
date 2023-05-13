@@ -1,4 +1,9 @@
-import { createEntityAdapter, EntityAdapter, EntityState } from "@ngrx/entity";
+import {
+  createEntityAdapter,
+  EntityAdapter,
+  EntityState,
+  Update,
+} from "@ngrx/entity";
 import { Action, createReducer, on } from "@ngrx/store";
 import { ProverbEntity } from "./proverb.models";
 import * as ProverbActions from "./proverbs.actions";
@@ -36,9 +41,19 @@ export const proverbReducer = createReducer(
     ...state,
     error,
   })),
-  on(ProverbActions.createProverbSuccess, (state, { proverb }) =>
-    proverbAdapter.addOne(proverb, state)
-  )
+  on(ProverbActions.createProverbSuccess, (state, { proverb }) => {
+    if (state.ids.some((id) => id == proverb.id)) {
+      return proverbAdapter.updateOne(
+        {
+          id: proverb.id,
+          changes: { json: proverb.json },
+        } as Update<ProverbEntity>,
+        state
+      );
+    } else {
+      return proverbAdapter.addOne(proverb, state);
+    }
+  })
 );
 
 export function reducer(state: State | undefined, action: Action) {

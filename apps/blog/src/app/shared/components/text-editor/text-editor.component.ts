@@ -7,8 +7,7 @@ import {
   Output,
 } from "@angular/core";
 import { AbstractControl, FormControl, FormGroup } from "@angular/forms";
-import { Editor, Toolbar, Validators } from "ngx-editor";
-import { PsalmEntity } from "../../../state/psalm/psalm.models";
+import { Editor, Toolbar } from "ngx-editor";
 @Component({
   selector: "blog-text-editor",
   templateUrl: "./text-editor.component.html",
@@ -17,6 +16,7 @@ import { PsalmEntity } from "../../../state/psalm/psalm.models";
 export class TextEditorComponent implements OnInit, OnDestroy {
   public editor!: Editor;
   public isReadMore = false;
+  public isEmpty = false;
 
   @Input() public document = {};
   @Input() public readonly = false;
@@ -42,6 +42,8 @@ export class TextEditorComponent implements OnInit, OnDestroy {
   constructor() {}
 
   ngOnInit(): void {
+    this.isEmpty = !!Object.entries(this.document).length;
+
     this.editor = new Editor();
 
     this.editor.valueChanges.subscribe((value) =>

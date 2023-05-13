@@ -6,3 +6,7 @@
 <input matInput type="text" [(ngModel)]="title" required />
 
 <blog-text-editor (editorChanged)="onChange($event)"></blog-text-editor>
+
+<blog-psalm-list [update]="true"></blog-psalm-list>
+<blog-proverb-list [update]="true"></blog-proverb-list>
+<blog-blog-list [update]="true"></blog-blog-list>

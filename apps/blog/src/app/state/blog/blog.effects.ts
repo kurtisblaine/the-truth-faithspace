@@ -1,18 +1,17 @@
 import { Injectable } from "@angular/core";
 import {
-  addDoc,
   collection,
   collectionData,
-  CollectionReference,
+  doc,
+  DocumentReference,
   Firestore,
-  getDoc,
+  setDoc,
 } from "@angular/fire/firestore";
-import { createEffect, Actions, ofType } from "@ngrx/effects";
+import { Actions, createEffect, ofType } from "@ngrx/effects";
 import { from, map, mapTo, mergeMap } from "rxjs";
 
 import * as BlogActions from "./blog.actions";
 import { BlogEntity } from "./blog.models";
-import * as BlogFeature from "./blog.reducer";
 
 @Injectable()
 export class BlogEffects {
@@ -20,7 +19,7 @@ export class BlogEffects {
     this.actions$.pipe(
       ofType(BlogActions.loadBlogs),
       mapTo(collection(this.database, "blog")),
-      mergeMap((data) => collectionData(data)),
+      mergeMap((data) => collectionData(data, { idField: "collectionId" })),
       map((data) =>
         BlogActions.loadBlogsSuccess({
           blog: data as BlogEntity[],
@@ -33,19 +32,20 @@ export class BlogEffects {
     this.actions$.pipe(
       ofType(BlogActions.createBlog),
       map(({ blog }) => ({
-        collection: collection(
+        collection: doc(
           this.database,
-          "blog"
-        ) as CollectionReference<BlogEntity>,
+          `blog/${blog.collectionId ? blog.collectionId : blog.id}`
+        ) as DocumentReference<BlogEntity>,
         blog,
       })),
-      mergeMap(({ collection, blog }) =>
-        from(addDoc<BlogEntity>(collection, blog))
-      ),
-      mergeMap((created) => from(getDoc(created))),
+      mergeMap(({ collection, blog }) => {
+        const doc = from(setDoc<BlogEntity>(collection, blog));
+        return doc.pipe(mapTo(blog));
+      }),
+      // mergeMap((created) => from(getDoc(created))),
       map((document) =>
         BlogActions.createBlogSuccess({
-          blog: document.data() as BlogEntity,
+          blog: document,
         })
       )
     )

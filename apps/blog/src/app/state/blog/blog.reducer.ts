@@ -1,5 +1,10 @@
-import { EntityState, EntityAdapter, createEntityAdapter } from "@ngrx/entity";
-import { createReducer, on, Action } from "@ngrx/store";
+import {
+  EntityAdapter,
+  EntityState,
+  Update,
+  createEntityAdapter,
+} from "@ngrx/entity";
+import { Action, createReducer, on } from "@ngrx/store";
 
 import * as BlogActions from "./blog.actions";
 import { BlogEntity } from "./blog.models";
@@ -34,9 +39,19 @@ const blogReducer = createReducer(
     blogAdapter.setAll(blog, { ...state, loaded: true })
   ),
   on(BlogActions.loadBlogsFailure, (state, { error }) => ({ ...state, error })),
-  on(BlogActions.createBlogSuccess, (state, { blog }) =>
-    blogAdapter.addOne(blog, state)
-  )
+  on(BlogActions.createBlogSuccess, (state, { blog }) => {
+    if (state.ids.some((id) => id == blog.id)) {
+      return blogAdapter.updateOne(
+        {
+          id: blog.id,
+          changes: { json: blog.json },
+        } as Update<BlogEntity>,
+        state
+      );
+    } else {
+      return blogAdapter.addOne(blog, state);
+    }
+  })
 );
 
 export function reducer(state: State | undefined, action: Action) {

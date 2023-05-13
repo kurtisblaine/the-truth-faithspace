@@ -1,5 +1,6 @@
 <form [formGroup]="form">
-  <div class="editor" [ngClass]="{ limitTextHeight: readonly && !isReadMore }">
+  <!-- readonly && -->
+  <div class="editor" [ngClass]="{ limitTextHeight: isEmpty && !isReadMore }">
     <ngx-editor-menu *ngIf="!readonly" [editor]="editor" [toolbar]="toolbar">
     </ngx-editor-menu>
     <ngx-editor
@@ -11,7 +12,8 @@
     </ngx-editor>
   </div>
 
-  <button *ngIf="readonly" mat-flat-button type="button" (click)="showText()">
+  <!-- *ngIf="readonly" -->
+  <button *ngIf="isEmpty" mat-flat-button type="button" (click)="showText()">
     {{ !isReadMore ? "Read More" : "Read Less" }}
   </button>
 </form>

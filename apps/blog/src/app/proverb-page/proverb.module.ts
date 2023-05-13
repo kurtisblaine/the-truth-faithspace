@@ -1,5 +1,6 @@
 import { CommonModule } from "@angular/common";
 import { NgModule } from "@angular/core";
+import { MatButtonModule } from "@angular/material/button";
 import { MatDividerModule } from "@angular/material/divider";
 import { RouterModule } from "@angular/router";
 import { SharedModule } from "../shared/shared.module";
@@ -8,6 +9,13 @@ import { ProverbPageComponent } from "./proverb-page.component";
 
 @NgModule({
   declarations: [ProverbPageComponent, ProverbListComponent],
-  imports: [CommonModule, SharedModule, RouterModule, MatDividerModule],
+  imports: [
+    CommonModule,
+    SharedModule,
+    RouterModule,
+    MatDividerModule,
+    MatButtonModule,
+  ],
+  exports: [ProverbListComponent],
 })
 export class ProverbModule {}
