@@ -1,8 +1,11 @@
-import { Component, OnInit } from "@angular/core";
+import { Component, Input, OnInit } from "@angular/core";
+import { Router } from "@angular/router";
 import { Store } from "@ngrx/store";
-import { Observable } from "rxjs";
+import { cloneDeep } from "lodash";
+import { Observable, map } from "rxjs";
+import { createBlog } from "../../state/blog/blog.actions";
+import { BlogEntity } from "../../state/blog/blog.models";
 import { getAllBlog } from "../../state/blog/blog.selectors";
-import { PsalmEntity } from "../../state/psalm/psalm.models";
 
 @Component({
   selector: "blog-blog-list",
@@ -10,11 +13,25 @@ import { PsalmEntity } from "../../state/psalm/psalm.models";
   styleUrls: ["./blog-list.component.scss"],
 })
 export class BlogListComponent implements OnInit {
-  public blogs$!: Observable<PsalmEntity[]>;
+  @Input() public update = false;
 
-  constructor(private store: Store) {}
+  public blogs$!: Observable<BlogEntity[]>;
+
+  constructor(private store: Store, private router: Router) {}
 
   ngOnInit(): void {
-    this.blogs$ = this.store.select(getAllBlog);
+    this.blogs$ = this.store
+      .select(getAllBlog)
+      .pipe(map((blog) => cloneDeep(blog)));
+  }
+
+  public doUpdate(blog: BlogEntity) {
+    this.store.dispatch(
+      createBlog({
+        blog,
+      })
+    );
+
+    // this.router.navigateByUrl("blogs");
   }
 }

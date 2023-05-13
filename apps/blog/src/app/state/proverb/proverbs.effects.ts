@@ -1,11 +1,11 @@
 import { Injectable } from "@angular/core";
 import {
-  addDoc,
   collection,
   collectionData,
-  CollectionReference,
+  doc,
+  DocumentReference,
   Firestore,
-  getDoc,
+  setDoc,
 } from "@angular/fire/firestore";
 import { Actions, createEffect, ofType } from "@ngrx/effects";
 import { from, map, mapTo, mergeMap } from "rxjs";
@@ -18,7 +18,7 @@ export class ProverbsEffects {
     this.actions$.pipe(
       ofType(ProverbActions.loadProverbs),
       mapTo(collection(this.database, "proverb")),
-      mergeMap((data) => collectionData(data)),
+      mergeMap((data) => collectionData(data, { idField: "collectionId" })),
       map((data) =>
         ProverbActions.loadProverbsSuccess({
           proverb: data as ProverbEntity[],
@@ -31,19 +31,20 @@ export class ProverbsEffects {
     this.actions$.pipe(
       ofType(ProverbActions.createProverb),
       map(({ proverb }) => ({
-        collection: collection(
+        collection: doc(
           this.database,
-          "proverb"
-        ) as CollectionReference<ProverbEntity>,
+          `proverb/${proverb.collectionId ? proverb.collectionId : proverb.id}`
+        ) as DocumentReference<ProverbEntity>,
         proverb,
       })),
-      mergeMap(({ collection, proverb }) =>
-        from(addDoc<ProverbEntity>(collection, proverb))
-      ),
-      mergeMap((created) => from(getDoc(created))),
+      mergeMap(({ collection, proverb }) => {
+        const doc = from(setDoc<ProverbEntity>(collection, proverb));
+        return doc.pipe(mapTo(proverb));
+      }),
+      // mergeMap((created) => from(getDoc(created))),
       map((document) =>
         ProverbActions.createProverbSuccess({
-          proverb: document.data() as ProverbEntity,
+          proverb: document,
         })
       )
     )
