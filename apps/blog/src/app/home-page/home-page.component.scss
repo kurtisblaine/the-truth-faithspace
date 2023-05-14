@@ -130,6 +130,10 @@ img {
 .section {
   text-align: center;
   padding: 25px 20px;
+  margin: auto;
+  width: 1222px;
+  // padding-left: 555px;
+  // padding-right: 555px;
 }
 
 .section-light {
@@ -224,11 +228,21 @@ img {
 .pimg15,
 .pimg16,
 .pimg17,
-.pimg18 {
+.pimg18,
+.filler,
+.filler-light {
   position: relative;
   opacity: 0.8;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
+}
+
+.filler {
+  background-color: #282e34;
+}
+
+.filler-light {
+  background-color: #f4f4f4;
 }

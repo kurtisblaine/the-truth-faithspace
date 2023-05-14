@@ -2,6 +2,15 @@
   matTooltip="{{ reference }}"
   class="reference"
   [ngClass]="isJesusWord ? 'JesusWord' : ''"
+  style="
+    display: flex;
+    align-items: center;
+    width: 92%;
+    height: 75%;
+    justify-content: center;
+  "
 >
-  " <ng-content></ng-content> "
+  "
+  <ng-content></ng-content>
+  "
 </p>
