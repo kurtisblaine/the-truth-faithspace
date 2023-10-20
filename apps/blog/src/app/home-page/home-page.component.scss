@@ -42,8 +42,6 @@ img {
   }
 }
 
-// other
-
 .pimg5 {
   background-image: url("../../assets/img/How-to-know-that-Christ-is-the-truth-the-way-and-the-life-ZB20210719.jpg");
   min-height: 100%;
@@ -137,11 +135,8 @@ img {
 
 .section {
   text-align: center;
-  // padding: 25px 20px;
   margin: auto;
   width: 100%;
-  // padding-left: 555px;
-  // padding-right: 555px;
 }
 
 .section-light {
@@ -180,6 +175,11 @@ img {
   font-size: 27px;
   letter-spacing: 8px;
   text-transform: uppercase;
+}
+
+.border {
+  border: unset !important;
+  border-radius: 12px;
 }
 
 .ptext .border {
