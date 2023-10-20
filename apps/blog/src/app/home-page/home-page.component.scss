@@ -1,3 +1,11 @@
+.headers {
+  padding: 20px 20px 0px 20px;
+}
+
+.paragraphs {
+  padding: 0px 40px 40px 40px;
+}
+
 .home-page_container {
   display: grid;
 }
@@ -129,9 +137,9 @@ img {
 
 .section {
   text-align: center;
-  padding: 25px 20px;
+  // padding: 25px 20px;
   margin: auto;
-  width: 1222px;
+  width: 100%;
   // padding-left: 555px;
   // padding-right: 555px;
 }
@@ -152,9 +160,10 @@ img {
   width: 100%;
   text-align: center;
   color: #fff;
-  font-size: 27px;
-  letter-spacing: 8px;
+  font-size: 22px;
+  letter-spacing: 4px;
   text-transform: uppercase;
+  line-height: normal;
 }
 
 .lighttext {
