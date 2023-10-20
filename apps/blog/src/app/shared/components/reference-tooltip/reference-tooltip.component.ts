@@ -1,8 +1,8 @@
 import {
-  Component,
-  OnInit,
   ChangeDetectionStrategy,
+  Component,
   Input,
+  OnInit,
 } from "@angular/core";
 
 @Component({
@@ -14,6 +14,7 @@ import {
 export class ReferenceTooltipComponent implements OnInit {
   @Input() public reference!: string;
   @Input() public isJesusWord = false;
+  @Input() public padding = "0px";
 
   constructor() {}
 

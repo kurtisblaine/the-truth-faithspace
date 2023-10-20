@@ -1,12 +1,13 @@
-<div class="container">
-  <h2 class="text-center mb-5">I need encouraging!</h2>
-  <div class="row">
-    <div class="col-md-6 offset-md-3">
+<div class="container-form" style="margin: 0px 17px">
+  <h1 style="padding: 15px 0px 0px" class="primary-color">Contact me</h1>
+  <div>
+    <div>
       <form [formGroup]="FormData" (ngSubmit)="onSubmit(FormData.value)">
         <div class="form-group">
           <label for="Email">Email</label>
           <input
             type="email"
+            style="box-sizing: border-box !important"
             class="form-control"
             name="Email"
             aria-describedby="emailHelp"
@@ -20,6 +21,7 @@
         <div class="form-group">
           <label for="fullname">Full Name</label>
           <input
+            style="box-sizing: border-box !important"
             type="text"
             class="form-control"
             name="Fullname"
@@ -30,6 +32,7 @@
         <div class="form-group">
           <label for="comment">Comment</label>
           <textarea
+            style="box-sizing: border-box !important"
             class="form-control"
             formControlName="Comment"
             name="Comment"
