@@ -1,4 +1,11 @@
-import { Component, OnInit } from "@angular/core";
+import { Component, Input, OnInit } from "@angular/core";
+import { Router } from "@angular/router";
+import { Store } from "@ngrx/store";
+import { cloneDeep } from "lodash";
+import { Observable, map } from "rxjs";
+import { createDiscern } from "../../state/discern/discern.actions";
+import { DiscernEntity } from "../../state/discern/discern.models";
+import { getAllDiscern } from "../../state/discern/discern.selectors";
 
 @Component({
   selector: "blog-discern-list",
@@ -6,7 +13,25 @@ import { Component, OnInit } from "@angular/core";
   styleUrls: ["./discern-list.component.scss"],
 })
 export class DiscernListComponent implements OnInit {
-  constructor() {}
+  @Input() public update = false;
 
-  ngOnInit(): void {}
+  public discerns$!: Observable<DiscernEntity[]>;
+
+  constructor(private store: Store, private router: Router) {}
+
+  ngOnInit(): void {
+    this.discerns$ = this.store
+      .select(getAllDiscern)
+      .pipe(map((discern) => cloneDeep(discern)));
+  }
+
+  public doUpdate(discern: DiscernEntity) {
+    this.store.dispatch(
+      createDiscern({
+        discern,
+      })
+    );
+
+    // this.router.navigateByUrl("discerns");
+  }
 }

@@ -53,6 +53,18 @@
         <button
           class="navigate-button"
           mat-flat-button
+          (click)="goDiscern(); drawer.close()"
+        >
+          <div class="button-items">
+            <fa-icon [icon]="mailIcon" [size]="'lg'"></fa-icon>
+            <span>Discernments</span>
+          </div>
+        </button>
+      </mat-list-item>
+      <mat-list-item>
+        <button
+          class="navigate-button"
+          mat-flat-button
           (click)="goEmail(); drawer.close()"
         >
           <div class="button-items">

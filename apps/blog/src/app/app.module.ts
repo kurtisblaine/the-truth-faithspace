@@ -16,6 +16,7 @@ import { MatListModule } from "@angular/material/list";
 import { MatSidenavModule } from "@angular/material/sidenav";
 import { AppRoutingModule } from "./app.routing.module";
 import { BlogPageModule } from "./blog-page/blog-page.module";
+import { DiscernPageModule } from "./discern-page/discern-page.module";
 import { EmailPageModule } from "./email-page/email-page.module";
 import { HomePageModule } from "./home-page/home-page.module";
 import { ProverbModule } from "./proverb-page/proverb.module";
@@ -55,7 +56,8 @@ const firebaseConfig = {
     AppRoutingModule,
     MatListModule,
     EmailPageModule,
-    ProverbModule
+    ProverbModule,
+    DiscernPageModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

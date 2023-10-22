@@ -1,1 +1,16 @@
-<p>discern-list works!</p>
+<div class="discern-item" *ngFor="let discern of discerns$ | async">
+  <div class="discern-title">{{ discern.title }}</div>
+  <div>{{ discern.date | date: "short" }}</div>
+
+  <button mat-flat-button *ngIf="update" (click)="doUpdate(discern)">
+    Update
+  </button>
+
+  <blog-text-editor
+    [readonly]="!update"
+    [document]="discern.json"
+    (editorChanged)="discern.json = $event"
+  ></blog-text-editor>
+
+  <mat-divider></mat-divider>
+</div>

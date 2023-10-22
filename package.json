@@ -13,7 +13,7 @@
     "config": "npx nx config",
     "example:generate:component": "npm run generate component discern-page/discern-list -- --skip-import",
     "example:generate:module": "npm run generate module discern-page",
-    "example:generate:feature": "npm run generate  @ngrx/schematics:feature"
+    "example:generate:feature": "npx nx generate @ngrx/schematics:feature --name=discern --module=state.module.ts --flat=false --path=/apps/blog/src/app/state"
   },
   "private": true,
   "dependencies": {
