@@ -13,14 +13,14 @@ import { from, map, mapTo, mergeMap } from "rxjs";
 import * as DiscernActions from "./discern.actions";
 import { DiscernEntity } from "./discern.models";
 @Injectable()
-export class DiscernsEffects {
+export class DiscernmentsEffects {
   public getDiscern$ = createEffect(() =>
     this.actions$.pipe(
-      ofType(DiscernActions.loadDiscerns),
+      ofType(DiscernActions.loadDiscernments),
       mapTo(collection(this.database, "discern")),
       mergeMap((data) => collectionData(data, { idField: "collectionId" })),
       map((data) =>
-        DiscernActions.loadDiscernsSuccess({
+        DiscernActions.loadDiscernmentsSuccess({
           discern: data as DiscernEntity[],
         })
       )
@@ -43,7 +43,7 @@ export class DiscernsEffects {
       }),
       // mergeMap((created) => from(getDoc(created))),
       map((document) =>
-        DiscernActions.createDiscernSuccess({
+        DiscernActions.createDiscernmentsuccess({
           discern: document,
         })
       )

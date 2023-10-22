@@ -9,19 +9,21 @@
         >
           <div class="button-items">
             <fa-icon [icon]="homeIcon" [size]="'lg'"></fa-icon>
-            <span>Home</span>
+            <span>Back to Basics</span>
           </div>
         </button>
       </mat-list-item>
+      <mat-divider></mat-divider>
+      <div mat-subheader>Teachings</div>
       <mat-list-item>
         <button
           class="navigate-button"
           mat-flat-button
-          (click)="goBlog(); drawer.close()"
+          (click)="goDiscern(); drawer.close()"
         >
           <div class="button-items">
-            <fa-icon [icon]="blogIcon" [size]="'lg'"></fa-icon>
-            <span>Revelations</span>
+            <fa-icon [icon]="discernIcon" [size]="'lg'"></fa-icon>
+            <span>Judgement</span>
           </div>
         </button>
       </mat-list-item>
@@ -33,7 +35,7 @@
         >
           <div class="button-items">
             <fa-icon [icon]="psalmIcon" [size]="'lg'"></fa-icon>
-            <span>Psalms</span>
+            <span>Psalm</span>
           </div>
         </button>
       </mat-list-item>
@@ -45,7 +47,7 @@
         >
           <div class="button-items">
             <fa-icon [icon]="proverbIcon" [size]="'lg'"></fa-icon>
-            <span>Proverbs</span>
+            <span>Wisdom</span>
           </div>
         </button>
       </mat-list-item>
@@ -53,14 +55,16 @@
         <button
           class="navigate-button"
           mat-flat-button
-          (click)="goDiscern(); drawer.close()"
+          (click)="goBlog(); drawer.close()"
         >
           <div class="button-items">
-            <fa-icon [icon]="mailIcon" [size]="'lg'"></fa-icon>
-            <span>Discernments</span>
+            <fa-icon [icon]="blogIcon" [size]="'lg'"></fa-icon>
+            <span>Revelation</span>
           </div>
         </button>
       </mat-list-item>
+      <mat-divider></mat-divider>
+      <div mat-subheader>Contact</div>
       <mat-list-item>
         <button
           class="navigate-button"

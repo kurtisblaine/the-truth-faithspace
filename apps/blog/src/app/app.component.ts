@@ -4,6 +4,7 @@ import {
   faBrain,
   faEnvelope,
   faEye,
+  faGavel,
   faGrip,
   faHouse,
   faMusic,
@@ -22,6 +23,7 @@ export class AppComponent implements OnInit {
   public psalmIcon = faMusic;
   public proverbIcon = faBrain;
   public mailIcon = faEnvelope;
+  public discernIcon = faGavel;
 
   constructor(private router: Router) {}
 
