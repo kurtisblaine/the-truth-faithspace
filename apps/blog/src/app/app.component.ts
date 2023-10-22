@@ -35,6 +35,10 @@ export class AppComponent implements OnInit {
     this.router.navigateByUrl("proverbs");
   }
 
+  public goDiscern() {
+    this.router.navigateByUrl("discernments");
+  }
+
   public goBlog() {
     this.router.navigateByUrl("blogs");
   }

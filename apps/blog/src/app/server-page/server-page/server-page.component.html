@@ -1,12 +1,51 @@
 <button mat-flat-button (click)="savePsalm()">Post Psalm</button>
 <button mat-flat-button (click)="saveBlog()">Post Blog</button>
 <button mat-flat-button (click)="saveProverb()">Post Proverb</button>
+<button mat-flat-button (click)="saveDiscernment()">Post Discernment</button>
 
 <div>Title</div>
 <input matInput type="text" [(ngModel)]="title" required />
 
 <blog-text-editor (editorChanged)="onChange($event)"></blog-text-editor>
 
-<blog-psalm-list [update]="true"></blog-psalm-list>
-<blog-proverb-list [update]="true"></blog-proverb-list>
-<blog-blog-list [update]="true"></blog-blog-list>
+<mat-accordion class="example-headers-align" multi>
+  <mat-expansion-panel>
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        <h1 style="padding: 15px 15px 0px" class="primary-color">Psalms</h1>
+      </mat-panel-title>
+    </mat-expansion-panel-header>
+    <blog-psalm-list [update]="true"></blog-psalm-list>
+  </mat-expansion-panel>
+
+  <mat-expansion-panel>
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        <h1 style="padding: 15px 15px 0px" class="primary-color">Wisdom</h1>
+      </mat-panel-title>
+    </mat-expansion-panel-header>
+    <blog-proverb-list [update]="true"></blog-proverb-list>
+  </mat-expansion-panel>
+
+  <mat-expansion-panel>
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        <h1 style="padding: 15px 15px 0px" class="primary-color">
+          Revelations
+        </h1>
+      </mat-panel-title>
+    </mat-expansion-panel-header>
+    <blog-blog-list [update]="true"></blog-blog-list>
+  </mat-expansion-panel>
+
+  <mat-expansion-panel>
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        <h1 style="padding: 15px 15px 0px" class="primary-color">
+          Discernment
+        </h1>
+      </mat-panel-title>
+    </mat-expansion-panel-header>
+    <blog-discern-list [update]="true"></blog-discern-list>
+  </mat-expansion-panel>
+</mat-accordion>

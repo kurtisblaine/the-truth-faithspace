@@ -1,6 +1,7 @@
 import { NgModule } from "@angular/core";
 import { RouterModule, Routes } from "@angular/router";
 import { BlogPageComponent } from "./blog-page/blog-page.component";
+import { DiscernPageComponent } from "./discern-page/discern-page.component";
 import { EmailPageComponent } from "./email-page/email-page.component";
 import { HomePageComponent } from "./home-page/home-page.component";
 import { ProverbPageComponent } from "./proverb-page/proverb-page.component";
@@ -31,6 +32,11 @@ const routes: Routes = [
   {
     path: "email",
     component: EmailPageComponent,
+    children: [],
+  },
+  {
+    path: "discernments",
+    component: DiscernPageComponent,
     children: [],
   },
   {

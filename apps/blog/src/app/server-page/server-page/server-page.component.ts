@@ -4,6 +4,10 @@ import { Store } from "@ngrx/store";
 import { Guid } from "guid-typescript";
 import { createBlog, loadBlogs } from "../../state/blog/blog.actions";
 import {
+  createDiscern,
+  loadDiscerns,
+} from "../../state/discern/discern.actions";
+import {
   createProverb,
   loadProverbs,
 } from "../../state/proverb/proverbs.actions";
@@ -24,6 +28,22 @@ export class ServerPageComponent implements OnInit {
     this.store.dispatch(loadPsalms());
     this.store.dispatch(loadProverbs());
     this.store.dispatch(loadBlogs());
+    this.store.dispatch(loadDiscerns());
+  }
+
+  public saveDiscernment() {
+    this.store.dispatch(
+      createDiscern({
+        discern: {
+          title: this.title,
+          json: this._document,
+          date: Date.now().toString(),
+          id: Guid.create().toString(),
+        },
+      })
+    );
+
+    this.router.navigateByUrl("discernments");
   }
 
   public savePsalm() {
