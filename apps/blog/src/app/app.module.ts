@@ -55,7 +55,7 @@ const firebaseConfig = {
     AppRoutingModule,
     MatListModule,
     EmailPageModule,
-    ProverbModule,
+    ProverbModule
   ],
   providers: [],
   bootstrap: [AppComponent],

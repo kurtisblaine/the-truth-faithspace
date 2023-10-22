@@ -10,7 +10,10 @@
     "test": "npx nx test",
     "generate": "npx nx generate",
     "add": "npx nx add",
-    "config": "npx nx config"
+    "config": "npx nx config",
+    "example:generate:component": "npm run generate component discern-page/discern-list -- --skip-import",
+    "example:generate:module": "npm run generate module discern-page",
+    "example:generate:feature": "npm run generate  @ngrx/schematics:feature"
   },
   "private": true,
   "dependencies": {
