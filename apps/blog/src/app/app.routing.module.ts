@@ -42,6 +42,7 @@ const routes: Routes = [
   {
     path: "server/f3bc7c75-cdf7-4c51-beab-3ef81d6a5e5c",
     component: ServerPageComponent,
+    children: [],
   },
   { path: "", pathMatch: "full", redirectTo: "home" },
   { path: "**", redirectTo: "error" },
