@@ -15,14 +15,14 @@ export interface AppState {
   [fromBlog.BLOG_FEATURE_KEY]: fromBlog.State;
   [fromPsalm.PSALM_FEATURE_KEY]: fromPsalm.State;
   [fromProverbs.proverbsFeatureKey]: fromProverbs.State;
-  [fromDiscern.discernsFeatureKey]: fromDiscern.State;
+  [fromDiscern.DiscernmentsFeatureKey]: fromDiscern.State;
 }
 
 export const reducers: ActionReducerMap<AppState> = {
   blog: fromBlog.reducer,
   psalm: fromPsalm.reducer,
   proverbs: fromProverbs.reducer,
-  discerns: fromDiscern.reducer,
+  discernments: fromDiscern.reducer,
 };
 
 export const metaReducers: MetaReducer<AppState>[] = !environment.production

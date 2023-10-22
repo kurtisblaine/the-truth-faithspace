@@ -1,14 +1,14 @@
 import { createAction, props } from "@ngrx/store";
 import { DiscernEntity } from "./discern.models";
 
-export const loadDiscerns = createAction("[Discern/API] Load Discern");
+export const loadDiscernments = createAction("[Discern/API] Load Discern");
 
-export const loadDiscernsSuccess = createAction(
+export const loadDiscernmentsSuccess = createAction(
   "[Discern/API] Load Discern Success",
   props<{ discern: DiscernEntity[] }>()
 );
 
-export const loadDiscernsFailure = createAction(
+export const loadDiscernmentsFailure = createAction(
   "[Discern/API] Load Discern Failure",
   props<{ error: any }>()
 );
@@ -18,7 +18,7 @@ export const createDiscern = createAction(
   props<{ discern: DiscernEntity }>()
 );
 
-export const createDiscernSuccess = createAction(
+export const createDiscernmentsuccess = createAction(
   "[Discern/API] Create Discern Success",
   props<{ discern: DiscernEntity }>()
 );

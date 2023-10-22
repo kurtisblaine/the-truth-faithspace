@@ -8,7 +8,7 @@ import { Action, createReducer, on } from "@ngrx/store";
 import * as DiscernActions from "./discern.actions";
 import { DiscernEntity } from "./discern.models";
 
-export const discernsFeatureKey = "discerns";
+export const DiscernmentsFeatureKey = "discernments";
 
 export interface State extends EntityState<DiscernEntity> {
   id?: string;
@@ -29,19 +29,19 @@ export const initialState: State = discernAdapter.getInitialState({
 
 export const discernReducer = createReducer(
   initialState,
-  on(DiscernActions.loadDiscerns, (state) => ({
+  on(DiscernActions.loadDiscernments, (state) => ({
     ...state,
     loaded: false,
     error: null,
   })),
-  on(DiscernActions.loadDiscernsSuccess, (state, { discern }) =>
+  on(DiscernActions.loadDiscernmentsSuccess, (state, { discern }) =>
     discernAdapter.setAll(discern, { ...state, loaded: true })
   ),
-  on(DiscernActions.loadDiscernsFailure, (state, { error }) => ({
+  on(DiscernActions.loadDiscernmentsFailure, (state, { error }) => ({
     ...state,
     error,
   })),
-  on(DiscernActions.createDiscernSuccess, (state, { discern }) => {
+  on(DiscernActions.createDiscernmentsuccess, (state, { discern }) => {
     if (state.ids.some((id) => id == discern.id)) {
       return discernAdapter.updateOne(
         {

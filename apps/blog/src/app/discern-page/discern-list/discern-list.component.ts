@@ -15,12 +15,12 @@ import { getAllDiscern } from "../../state/discern/discern.selectors";
 export class DiscernListComponent implements OnInit {
   @Input() public update = false;
 
-  public discerns$!: Observable<DiscernEntity[]>;
+  public discernments$!: Observable<DiscernEntity[]>;
 
   constructor(private store: Store, private router: Router) {}
 
   ngOnInit(): void {
-    this.discerns$ = this.store
+    this.discernments$ = this.store
       .select(getAllDiscern)
       .pipe(map((discern) => cloneDeep(discern)));
   }
@@ -32,6 +32,6 @@ export class DiscernListComponent implements OnInit {
       })
     );
 
-    // this.router.navigateByUrl("discerns");
+    // this.router.navigateByUrl("discernments");
   }
 }

@@ -5,7 +5,7 @@ import { Guid } from "guid-typescript";
 import { createBlog, loadBlogs } from "../../state/blog/blog.actions";
 import {
   createDiscern,
-  loadDiscerns,
+  loadDiscernments,
 } from "../../state/discern/discern.actions";
 import {
   createProverb,
@@ -28,7 +28,7 @@ export class ServerPageComponent implements OnInit {
     this.store.dispatch(loadPsalms());
     this.store.dispatch(loadProverbs());
     this.store.dispatch(loadBlogs());
-    this.store.dispatch(loadDiscerns());
+    this.store.dispatch(loadDiscernments());
   }
 
   public saveDiscernment() {

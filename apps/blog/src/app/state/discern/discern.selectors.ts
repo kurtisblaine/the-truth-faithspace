@@ -1,32 +1,38 @@
 import { createFeatureSelector, createSelector } from "@ngrx/store";
-import { State, discernAdapter, discernsFeatureKey } from "./discern.reducer";
+import {
+  DiscernmentsFeatureKey,
+  State,
+  discernAdapter,
+} from "./discern.reducer";
 
-export const getDiscernsState =
-  createFeatureSelector<State>(discernsFeatureKey);
+export const getDiscernmentsState = createFeatureSelector<State>(
+  DiscernmentsFeatureKey
+);
 
 const { selectAll, selectEntities } = discernAdapter.getSelectors();
 
 export const getDiscernLoaded = createSelector(
-  getDiscernsState,
+  getDiscernmentsState,
   (state: State) => state.loaded
 );
 
 export const getDiscernError = createSelector(
-  getDiscernsState,
+  getDiscernmentsState,
   (state: State) => state.error
 );
 
-export const getAllDiscern = createSelector(getDiscernsState, (state: State) =>
-  selectAll(state)
+export const getAllDiscern = createSelector(
+  getDiscernmentsState,
+  (state: State) => selectAll(state)
 );
 
 export const getDiscernEntities = createSelector(
-  getDiscernsState,
+  getDiscernmentsState,
   (state: State) => selectEntities(state)
 );
 
 export const getSelectedId = createSelector(
-  getDiscernsState,
+  getDiscernmentsState,
   (state: State) => state.id
 );
 
