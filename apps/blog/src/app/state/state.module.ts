@@ -5,6 +5,7 @@ import { StoreDevtoolsModule } from "@ngrx/store-devtools";
 import { environment } from "../../environments/environment";
 import { BlogEffects } from "./blog/blog.effects";
 import * as fromBlog from "./blog/blog.reducer";
+import { DiscernmentsEffects } from "./discern/discern.effects";
 import * as fromDiscern from "./discern/discern.reducer";
 import { ProverbsEffects } from "./proverb/proverbs.effects";
 import * as fromProverbs from "./proverb/proverbs.reducer";
@@ -33,6 +34,7 @@ export const effects: Type<any>[] = [
   PsalmEffects,
   BlogEffects,
   ProverbsEffects,
+  DiscernmentsEffects,
 ];
 
 @NgModule({
