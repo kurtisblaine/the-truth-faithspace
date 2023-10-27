@@ -13,7 +13,9 @@ import {
   provideFirestore,
 } from "@angular/fire/firestore";
 import { MatListModule } from "@angular/material/list";
+import { MatProgressBarModule } from "@angular/material/progress-bar";
 import { MatSidenavModule } from "@angular/material/sidenav";
+import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 import { AppRoutingModule } from "./app.routing.module";
 import { BlogPageModule } from "./blog-page/blog-page.module";
 import { DiscernPageModule } from "./discern-page/discern-page.module";
@@ -43,7 +45,9 @@ const firebaseConfig = {
     provideFirestore(() => getFirestore()),
     MatSidenavModule,
     FirestoreModule,
+    MatProgressBarModule,
     HomePageModule,
+    BrowserAnimationsModule,
     PsalmPageModule,
     ServerPageModule,
     BlogPageModule,

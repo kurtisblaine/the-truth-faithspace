@@ -2,6 +2,7 @@ import { CommonModule } from "@angular/common";
 import { NgModule } from "@angular/core";
 import { FormsModule, ReactiveFormsModule } from "@angular/forms";
 import { MatButtonModule } from "@angular/material/button";
+import { MatProgressBarModule } from "@angular/material/progress-bar";
 import { MatToolbarModule } from "@angular/material/toolbar";
 import { MatTooltipModule } from "@angular/material/tooltip";
 import { BrowserModule } from "@angular/platform-browser";
@@ -16,6 +17,7 @@ import { TextEditorComponent } from "./components/text-editor/text-editor.compon
   imports: [
     CommonModule,
     BrowserModule,
+    MatProgressBarModule,
     BrowserAnimationsModule,
     FormsModule,
     FontAwesomeModule,
