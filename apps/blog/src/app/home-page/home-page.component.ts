@@ -1,4 +1,10 @@
-import { ChangeDetectionStrategy, Component, OnInit } from "@angular/core";
+import {
+  ChangeDetectionStrategy,
+  Component,
+  HostBinding,
+  OnInit,
+} from "@angular/core";
+import { fadeInOut } from "../shared/animations/animation";
 // import * as Parallax from "parallax-js";
 
 @Component({
@@ -6,8 +12,11 @@ import { ChangeDetectionStrategy, Component, OnInit } from "@angular/core";
   templateUrl: "./home-page.component.html",
   styleUrls: ["./home-page.component.scss"],
   changeDetection: ChangeDetectionStrategy.OnPush,
+  animations: [fadeInOut],
 })
 export class HomePageComponent implements OnInit {
+  @HostBinding("id.scrollProgress") someField = true;
+
   constructor() {}
 
   ngOnInit(): void {

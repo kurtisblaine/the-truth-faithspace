@@ -80,12 +80,20 @@
     </mat-list>
   </mat-drawer>
   <mat-drawer-content>
-    <mat-toolbar color="primary">
-      <button mat-icon-button class="example-icon" (click)="drawer.toggle()">
-        <fa-icon [icon]="icon" [size]="'lg'"></fa-icon>
-      </button>
-      <!-- <span>The Good News of The Kingdom of God</span> -->
-    </mat-toolbar>
+    <div class="header">
+      <mat-toolbar color="primary">
+        <button mat-icon-button class="example-icon" (click)="drawer.toggle()">
+          <fa-icon [icon]="icon" [size]="'lg'"></fa-icon>
+        </button>
+
+        <!-- <span>The Good News of The Kingdom of God</span> -->
+      </mat-toolbar>
+      <mat-progress-bar
+        id="bar"
+        mode="determinate"
+        [value]="progressValue$ | async"
+      ></mat-progress-bar>
+    </div>
 
     <router-outlet></router-outlet>
   </mat-drawer-content>

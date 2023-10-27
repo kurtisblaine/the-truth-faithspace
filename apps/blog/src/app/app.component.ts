@@ -9,6 +9,7 @@ import {
   faHouse,
   faMusic,
 } from "@fortawesome/free-solid-svg-icons";
+import { fromEvent, map, of } from "rxjs";
 
 @Component({
   selector: "blog-root",
@@ -24,10 +25,22 @@ export class AppComponent implements OnInit {
   public proverbIcon = faBrain;
   public mailIcon = faEnvelope;
   public discernIcon = faGavel;
+  public progressValue$ = of(0);
 
   constructor(private router: Router) {}
 
-  public ngOnInit() {}
+  public ngOnInit() {
+    this.progressValue$ = fromEvent(window, "wheel").pipe(
+      map(() => {
+        const scrollTop = window.scrollY;
+        const docHeight = document.body.offsetHeight;
+        const winHeight = window.innerHeight;
+        const scrollPercent = scrollTop / (docHeight - winHeight);
+        const scrollPercentRounded = Math.round(scrollPercent * 100);
+        return scrollPercentRounded;
+      })
+    );
+  }
 
   public goHome() {
     this.router.navigateByUrl("home");
