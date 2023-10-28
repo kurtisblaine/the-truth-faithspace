@@ -68,13 +68,15 @@ img {
 }
 
 .pimg6 {
-  background-image: url("../../assets/img/301 Communion.jpg");
+  background-image: url("../../assets/img/crossing.webp");
   min-height: 400px;
 }
 
+// God on His throne
 .pimg1 {
   background-image: url("../../assets/img/Rotator-5f.jpg");
   min-height: 400px;
+  background-position: top;
 }
 
 .pimg7 {
@@ -115,6 +117,8 @@ img {
 .pimg14 {
   background-image: url("../../assets/img/211 Ezekiel's Vision.jpg");
   min-height: 400px;
+  background-repeat: round;
+  background-size: contain;
 }
 
 .pimg15 {
@@ -123,6 +127,7 @@ img {
 }
 
 .pimg16 {
+  // Jesus being crowned
   background-image: url("../../assets/img/304 Coronation.jpg");
   min-height: 400px;
 }
@@ -135,6 +140,36 @@ img {
 
 .pimg18 {
   background-image: url("../../assets/img/hell.jpg");
+  min-height: 400px;
+}
+
+.pimg19 {
+  background-image: url("../../assets/img/Rotator-6f.jpg");
+  min-height: 400px;
+}
+
+.pimg20 {
+  background-image: url("../../assets/img/samson.jpg");
+  min-height: 400px;
+}
+
+.pimg21 {
+  background-image: url("../../assets/img/cross.jpg");
+  min-height: 400px;
+}
+
+.pimg22 {
+  background-image: url("../../assets/img/bush.jpg");
+  min-height: 400px;
+}
+
+.pimg23 {
+  background-image: url("../../assets/img/baptism.webp");
+  min-height: 400px;
+}
+
+.pimg24 {
+  background-image: url("../../assets/img/divide.jpg");
   min-height: 400px;
 }
 
@@ -225,7 +260,13 @@ img {
   .pimg15,
   .pimg16,
   .pimg17,
-  .pimg18 {
+  .pimg18,
+  .pimg19,
+  .pimg20,
+  .pimg21,
+  .pimg22,
+  .pimg23,
+  .pimg24 {
     background-attachment: scroll;
   }
 }
@@ -248,6 +289,12 @@ img {
 .pimg16,
 .pimg17,
 .pimg18,
+.pimg19,
+.pimg20,
+.pimg21,
+.pimg22,
+.pimg23,
+.pimg24,
 .filler,
 .filler-light {
   position: relative;
