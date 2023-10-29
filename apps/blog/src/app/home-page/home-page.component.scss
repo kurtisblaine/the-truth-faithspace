@@ -217,6 +217,8 @@ img {
 .border {
   border: unset !important;
   border-radius: 12px;
+  display: inline-flex;
+  line-height: normal;
 }
 
 .ptext .border {
