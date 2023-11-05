@@ -1,14 +1,11 @@
-<!-- <div class="products" [photoGalleryGroup]="{ arrowEl: true, indexIndicatorSep: ' - ' }">
-  <div class="products-item">
-    <div class="products-item-name">{{ product1.name }}</div>
-    <div class="products-item-image" [photoGallery]="product1.image.originUrl">
-      <img [src]="product1.image.thumbnailUrl" />
+<div
+  class="products"
+  [photoGalleryGroup]="{ arrowEl: true, indexIndicatorSep: ' - ' }"
+>
+  <div class="products-item" *ngFor="let image of images">
+    <div class="products-item-name">{{ image.name }}</div>
+    <div class="products-item-image" [photoGallery]="image.originUrl">
+      <img [src]="image.thumbnailUrl" />
     </div>
   </div>
-  <div class="products-item">
-    <div class="products-item-name">{{ product2.name }}</div>
-    <div class="products-item-image" [photoGallery]="product2.image.originUrl">
-      <img [src]="product2.image.thumbnailUrl" />
-    </div>
-  </div>
-</div> -->
+</div>
