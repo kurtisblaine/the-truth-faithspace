@@ -19,7 +19,9 @@
     "noImplicitOverride": true,
     "noPropertyAccessFromIndexSignature": true,
     "noImplicitReturns": true,
-    "noFallthroughCasesInSwitch": true
+    "noFallthroughCasesInSwitch": true,
+    "target": "ES2022",
+    "noImplicitAny": false
   },
   "angularCompilerOptions": {
     "strictInjectionParameters": true,

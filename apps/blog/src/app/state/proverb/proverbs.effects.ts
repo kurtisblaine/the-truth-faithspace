@@ -3,6 +3,7 @@ import {
   collection,
   collectionData,
   doc,
+  DocumentData,
   DocumentReference,
   Firestore,
   setDoc,
@@ -38,7 +39,9 @@ export class ProverbsEffects {
         proverb,
       })),
       mergeMap(({ collection, proverb }) => {
-        const doc = from(setDoc<ProverbEntity>(collection, proverb));
+        const doc = from(
+          setDoc<ProverbEntity, DocumentData>(collection, proverb)
+        );
         return doc.pipe(mapTo(proverb));
       }),
       // mergeMap((created) => from(getDoc(created))),

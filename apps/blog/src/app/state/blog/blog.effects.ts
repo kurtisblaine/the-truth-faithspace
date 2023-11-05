@@ -3,6 +3,7 @@ import {
   collection,
   collectionData,
   doc,
+  DocumentData,
   DocumentReference,
   Firestore,
   setDoc,
@@ -39,7 +40,7 @@ export class BlogEffects {
         blog,
       })),
       mergeMap(({ collection, blog }) => {
-        const doc = from(setDoc<BlogEntity>(collection, blog));
+        const doc = from(setDoc<BlogEntity, DocumentData>(collection, blog));
         return doc.pipe(mapTo(blog));
       }),
       // mergeMap((created) => from(getDoc(created))),
