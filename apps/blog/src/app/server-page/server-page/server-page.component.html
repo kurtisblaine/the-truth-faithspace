@@ -15,7 +15,9 @@
         <h1 style="padding: 15px 15px 0px" class="primary-color">Psalms</h1>
       </mat-panel-title>
     </mat-expansion-panel-header>
-    <blog-psalm-list [update]="true"></blog-psalm-list>
+    <ng-template matExpansionPanelContent>
+      <blog-psalm-list [update]="true"></blog-psalm-list>
+    </ng-template>
   </mat-expansion-panel>
 
   <mat-expansion-panel>
@@ -24,7 +26,9 @@
         <h1 style="padding: 15px 15px 0px" class="primary-color">Wisdom</h1>
       </mat-panel-title>
     </mat-expansion-panel-header>
-    <blog-proverb-list [update]="true"></blog-proverb-list>
+    <ng-template matExpansionPanelContent>
+      <blog-proverb-list [update]="true"></blog-proverb-list>
+    </ng-template>
   </mat-expansion-panel>
 
   <mat-expansion-panel>
@@ -35,7 +39,9 @@
         </h1>
       </mat-panel-title>
     </mat-expansion-panel-header>
-    <blog-blog-list [update]="true"></blog-blog-list>
+    <ng-template matExpansionPanelContent>
+      <blog-blog-list [update]="true"></blog-blog-list>
+    </ng-template>
   </mat-expansion-panel>
 
   <mat-expansion-panel>
@@ -46,6 +52,8 @@
         </h1>
       </mat-panel-title>
     </mat-expansion-panel-header>
-    <blog-discern-list [update]="true"></blog-discern-list>
+    <ng-template matExpansionPanelContent>
+      <blog-discern-list [update]="true"></blog-discern-list>
+    </ng-template>
   </mat-expansion-panel>
 </mat-accordion>

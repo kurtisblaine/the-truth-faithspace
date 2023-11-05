@@ -19,6 +19,7 @@ import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 import { AppRoutingModule } from "./app.routing.module";
 import { BlogPageModule } from "./blog-page/blog-page.module";
 import { DiscernPageModule } from "./discern-page/discern-page.module";
+import { DrawPageModule } from "./draw-page/draw-page.module";
 import { EmailPageModule } from "./email-page/email-page.module";
 import { HomePageModule } from "./home-page/home-page.module";
 import { ProverbModule } from "./proverb-page/proverb.module";
@@ -62,6 +63,7 @@ const firebaseConfig = {
     EmailPageModule,
     ProverbModule,
     DiscernPageModule,
+    DrawPageModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
