@@ -71,6 +71,7 @@
     "@nrwl/linter": "17.0.3",
     "@nrwl/nx-cloud": "16.5.2",
     "@nrwl/workspace": "17.0.3",
+    "@nx/workspace": "^17.0.3",
     "@types/jest": "29.4.4",
     "@types/jquery": "^3.5.14",
     "@types/lodash": "^4.14.194",
