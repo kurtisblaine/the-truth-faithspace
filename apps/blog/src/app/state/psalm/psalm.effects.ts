@@ -3,13 +3,13 @@ import {
   collection,
   collectionData,
   doc,
+  DocumentData,
   DocumentReference,
   Firestore,
   setDoc,
 } from "@angular/fire/firestore";
 import { Actions, createEffect, ofType } from "@ngrx/effects";
-import { from, map, mapTo, mergeMap } from "rxjs";
-
+import { from, map, mergeMap } from "rxjs";
 import * as PsalmActions from "./psalm.actions";
 import { PsalmEntity } from "./psalm.models";
 
@@ -18,8 +18,10 @@ export class PsalmEffects {
   public getPsalm$ = createEffect(() =>
     this.actions$.pipe(
       ofType(PsalmActions.loadPsalms),
-      mapTo(collection(this.database, "psalm")),
-      mergeMap((data) => collectionData(data, { idField: "collectionId" })),
+      map(() => collection(this.database, "psalm")),
+      mergeMap((data) =>
+        collectionData(data as any, { idField: "collectionId" })
+      ),
       map((data) => {
         return PsalmActions.loadPsalmsSuccess({
           psalm: data as PsalmEntity[],
@@ -41,11 +43,11 @@ export class PsalmEffects {
         };
       }),
       mergeMap(({ collection, psalm }) => {
-        const doc = from(setDoc<PsalmEntity>(collection, psalm));
-        return doc.pipe(mapTo(psalm));
+        const doc = from(setDoc<PsalmEntity, DocumentData>(collection, psalm));
+        return doc.pipe(map(() => psalm));
       }),
       // mergeMap((created) => from(getDoc(created))),
-      map((document) =>
+      map((document: PsalmEntity) =>
         PsalmActions.createPsalmSuccess({
           psalm: document,
         })

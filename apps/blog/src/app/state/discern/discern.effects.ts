@@ -3,6 +3,7 @@ import {
   collection,
   collectionData,
   doc,
+  DocumentData,
   DocumentReference,
   Firestore,
   setDoc,
@@ -38,7 +39,9 @@ export class DiscernmentsEffects {
         discern,
       })),
       mergeMap(({ collection, discern }) => {
-        const doc = from(setDoc<DiscernEntity>(collection, discern));
+        const doc = from(
+          setDoc<DiscernEntity, DocumentData>(collection, discern)
+        );
         return doc.pipe(mapTo(discern));
       }),
       // mergeMap((created) => from(getDoc(created))),
