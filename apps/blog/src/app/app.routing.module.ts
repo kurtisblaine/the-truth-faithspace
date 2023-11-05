@@ -2,6 +2,7 @@ import { NgModule } from "@angular/core";
 import { RouterModule, Routes } from "@angular/router";
 import { BlogPageComponent } from "./blog-page/blog-page.component";
 import { DiscernPageComponent } from "./discern-page/discern-page.component";
+import { DrawPageComponent } from "./draw-page/draw-page.component";
 import { EmailPageComponent } from "./email-page/email-page.component";
 import { HomePageComponent } from "./home-page/home-page.component";
 import { ProverbPageComponent } from "./proverb-page/proverb-page.component";
@@ -39,6 +40,7 @@ const routes: Routes = [
     component: DiscernPageComponent,
     children: [],
   },
+  { path: "drawing", component: DrawPageComponent, children: [] },
   {
     path: "server/f3bc7c75-cdf7-4c51-beab-3ef81d6a5e5c",
     component: ServerPageComponent,
