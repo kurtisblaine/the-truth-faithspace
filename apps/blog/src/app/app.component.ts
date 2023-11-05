@@ -8,6 +8,7 @@ import {
   faGrip,
   faHouse,
   faMusic,
+  faPenToSquare,
 } from "@fortawesome/free-solid-svg-icons";
 import { fromEvent, map, of } from "rxjs";
 
@@ -25,6 +26,7 @@ export class AppComponent implements OnInit {
   public proverbIcon = faBrain;
   public mailIcon = faEnvelope;
   public discernIcon = faGavel;
+  public drawingIcon = faPenToSquare;
   public progressValue$ = of(0);
 
   constructor(private router: Router) {}
@@ -48,6 +50,10 @@ export class AppComponent implements OnInit {
 
   public goProverb() {
     this.router.navigateByUrl("proverbs");
+  }
+
+  public goDrawings() {
+    this.router.navigateByUrl("drawing");
   }
 
   public goDiscern() {

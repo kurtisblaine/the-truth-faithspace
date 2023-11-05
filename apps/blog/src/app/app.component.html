@@ -33,6 +33,15 @@
         <span>a set of revealings of the hidden oracles of God.</span>
       </mat-list-item>
       <mat-divider></mat-divider>
+
+      <div mat-subheader>Pictures</div>
+      <mat-list-item lines="3" (click)="goDrawings(); drawer.close()">
+        <fa-icon matListItemIcon [icon]="drawingIcon" [size]="'lg'"></fa-icon>
+        <span matListItemTitle>Drawings</span>
+        <span>making simple the complex things of the Word.</span>
+      </mat-list-item>
+
+      <mat-divider></mat-divider>
       <div mat-subheader>Contact</div>
       <mat-list-item lines="2" (click)="goEmail(); drawer.close()">
         <fa-icon matListItemIcon [icon]="mailIcon" [size]="'lg'"></fa-icon>
