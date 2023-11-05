@@ -8,10 +8,10 @@ import { DrawPageComponent } from "./draw-page.component";
   imports: [
     CommonModule,
     PhotoGalleryModule.forRoot({
-      defaultOptions: {
-        arrowEl: true,
-        indexIndicatorSep: "-",
-      },
+      // defaultOptions: {
+      //   arrowEl: true,
+      //   indexIndicatorSep: "-",
+      // },
     }),
   ],
 })
