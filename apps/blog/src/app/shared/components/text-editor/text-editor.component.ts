@@ -7,6 +7,7 @@ import {
   Output,
 } from "@angular/core";
 import { AbstractControl, FormControl, FormGroup } from "@angular/forms";
+import * as $ from "jquery";
 import { Editor, Toolbar } from "ngx-editor";
 @Component({
   selector: "blog-text-editor",
@@ -43,8 +44,18 @@ export class TextEditorComponent implements OnInit, OnDestroy {
 
   ngOnInit(): void {
     this.isEmpty = !!Object.entries(this.document).length;
+    const className = `text-editor`;
 
-    this.editor = new Editor({ attributes: { spellcheck: "true" } });
+    this.editor = new Editor({
+      attributes: {
+        spellcheck: "true",
+        class: className,
+      },
+    });
+
+    if (this.readonly) {
+      $(`.${className}`).attr("contenteditable", "false");
+    }
 
     this.editor.valueChanges.subscribe((value) =>
       this.editorChanged.emit(value)
@@ -53,7 +64,7 @@ export class TextEditorComponent implements OnInit, OnDestroy {
     this.form = new FormGroup({
       editorContent: new FormControl({
         value: this.document,
-        disabled: this.readonly,
+        disabled: false,
       }),
     });
   }
