@@ -1,11 +1,12 @@
-<div
-  class="products"
-  [photoGalleryGroup]="{ arrowEl: true, indexIndicatorSep: ' - ' }"
->
-  <div class="products-item" *ngFor="let image of images">
-    <div class="products-item-name">{{ image.name }}</div>
-    <div class="products-item-image" [photoGallery]="image.originUrl">
-      <img [src]="image.thumbnailUrl" />
+<mat-grid-list cols="2" rowHeight="2:1" [photoGalleryGroup]="{}">
+  <mat-grid-tile *ngFor="let image of this.images" style="cursor: pointer">
+    <mat-grid-tile-header>{{ image.name }}</mat-grid-tile-header>
+    <mat-grid-tile-footer>{{ image.footer }}</mat-grid-tile-footer>
+    <div
+      [photoGallery]="image.originUrl"
+      [photoGalleryCaption]="image.description"
+    >
+      <img style="max-width: 100%; max-height: 100%" [src]="image.originUrl" />
     </div>
-  </div>
-</div>
+  </mat-grid-tile>
+</mat-grid-list>

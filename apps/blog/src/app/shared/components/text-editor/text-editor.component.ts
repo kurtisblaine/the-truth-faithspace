@@ -44,7 +44,7 @@ export class TextEditorComponent implements OnInit, OnDestroy {
   ngOnInit(): void {
     this.isEmpty = !!Object.entries(this.document).length;
 
-    this.editor = new Editor();
+    this.editor = new Editor({ attributes: { spellcheck: "true" } });
 
     this.editor.valueChanges.subscribe((value) =>
       this.editorChanged.emit(value)
