@@ -23,7 +23,7 @@ import { TextEditorComponent } from "./components/text-editor/text-editor.compon
     FontAwesomeModule,
     MatToolbarModule,
     MatButtonModule,
-    NgxEditorModule,
+    NgxEditorModule.forRoot(),
     ReactiveFormsModule,
     MatTooltipModule,
   ],
