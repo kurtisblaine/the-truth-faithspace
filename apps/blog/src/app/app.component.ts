@@ -10,7 +10,7 @@ import {
   faMusic,
   faPenToSquare,
 } from "@fortawesome/free-solid-svg-icons";
-import { fromEvent, map, of } from "rxjs";
+import { BehaviorSubject, Observable, fromEvent, map } from "rxjs";
 
 @Component({
   selector: "blog-root",
@@ -27,13 +27,21 @@ export class AppComponent implements OnInit {
   public mailIcon = faEnvelope;
   public discernIcon = faGavel;
   public drawingIcon = faPenToSquare;
-  public progressValue$ = of(0);
+  public progressValue = new BehaviorSubject(0);
+  public progressValue$!: Observable<number>;
+  public scrollTimeout: number | undefined;
 
   constructor(private router: Router) {}
 
   public ngOnInit() {
-    this.progressValue$ = fromEvent(window, "wheel").pipe(
+    this.progressValue$ = fromEvent(window, "scroll").pipe(
       map(() => {
+        clearTimeout(this.scrollTimeout);
+
+        this.scrollTimeout = setTimeout(function () {
+          console.log("Scroll ended");
+        }, 100);
+
         const scrollTop = window.scrollY;
         const docHeight = document.body.offsetHeight;
         const winHeight = window.innerHeight;
@@ -44,31 +52,57 @@ export class AppComponent implements OnInit {
     );
   }
 
+  emitScrollEvent() {
+    window.dispatchEvent(new CustomEvent("scroll", { detail: { scrollY: 0 } }));
+  }
+
+  scrollToTop(element) {
+    element.scrollIntoView({
+      behavior: "smooth",
+      block: "start",
+      inline: "nearest",
+    });
+  }
+
   public goHome() {
-    this.router.navigateByUrl("home");
+    this.router.navigateByUrl("home").then(() => {
+      this.emitScrollEvent();
+    });
   }
 
   public goProverb() {
-    this.router.navigateByUrl("proverbs");
+    this.router.navigateByUrl("proverbs").then(() => {
+      this.emitScrollEvent();
+    });
   }
 
   public goDrawings() {
-    this.router.navigateByUrl("drawing");
+    this.router.navigateByUrl("drawing").then(() => {
+      this.emitScrollEvent();
+    });
   }
 
   public goDiscern() {
-    this.router.navigateByUrl("discernments");
+    this.router.navigateByUrl("discernments").then(() => {
+      this.emitScrollEvent();
+    });
   }
 
   public goBlog() {
-    this.router.navigateByUrl("blogs");
+    this.router.navigateByUrl("blogs").then(() => {
+      this.emitScrollEvent();
+    });
   }
 
   public goPsalm() {
-    this.router.navigateByUrl("psalms");
+    this.router.navigateByUrl("psalms").then(() => {
+      this.emitScrollEvent();
+    });
   }
 
   public goEmail() {
-    this.router.navigateByUrl("email");
+    this.router.navigateByUrl("email").then(() => {
+      this.emitScrollEvent();
+    });
   }
 }

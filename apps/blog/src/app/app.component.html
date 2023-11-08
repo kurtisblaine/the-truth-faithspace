@@ -3,7 +3,7 @@
   [hasBackdrop]="true"
   autosize
 >
-  <mat-drawer style="width: 280px" #drawer [mode]="'side'">
+  <mat-drawer style="width: 280px; position: fixed" #drawer [mode]="'side'">
     <mat-list>
       <mat-list-item lines="2" (click)="goHome(); drawer.close()">
         <fa-icon matListItemIcon [icon]="homeIcon" [size]="'lg'"></fa-icon>
@@ -13,11 +13,7 @@
       <mat-divider></mat-divider>
 
       <div mat-subheader>Teachings</div>
-      <mat-list-item lines="3" (click)="goDiscern(); drawer.close()">
-        <fa-icon matListItemIcon [icon]="discernIcon" [size]="'lg'"></fa-icon>
-        <span matListItemTitle>Judgement</span>
-        <span>discernments of different kinds of spirits.</span>
-      </mat-list-item>
+
       <mat-list-item lines="3" (click)="goPsalm(); drawer.close()">
         <fa-icon matListItemIcon [icon]="psalmIcon" [size]="'lg'"></fa-icon>
         <span matListItemTitle>Psalm</span>
@@ -32,6 +28,11 @@
         <fa-icon matListItemIcon [icon]="blogIcon" [size]="'lg'"></fa-icon>
         <span matListItemTitle>Revelation</span>
         <span>a set of revealings of the hidden oracles of God.</span>
+      </mat-list-item>
+      <mat-list-item lines="3" (click)="goDiscern(); drawer.close()">
+        <fa-icon matListItemIcon [icon]="discernIcon" [size]="'lg'"></fa-icon>
+        <span matListItemTitle>Judgement</span>
+        <span>discernments of different kinds of spirits.</span>
       </mat-list-item>
       <mat-divider></mat-divider>
 
@@ -60,6 +61,7 @@
 
         <!-- <span>The Good News of The Kingdom of God</span> -->
       </mat-toolbar>
+
       <mat-progress-bar
         id="bar"
         mode="determinate"
@@ -67,6 +69,15 @@
       ></mat-progress-bar>
     </div>
 
-    <router-outlet></router-outlet>
+    <router-outlet #toTop></router-outlet>
+
+    <button
+      class="scoll-to-top"
+      mat-fab
+      color="primary"
+      (click)="scrollToTop(toTop)"
+    >
+      Top
+    </button>
   </mat-drawer-content>
 </mat-drawer-container>
