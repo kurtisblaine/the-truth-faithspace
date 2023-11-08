@@ -29,10 +29,10 @@ $my-theme: mat.define-light-theme(
 $color-config: mat.get-color-config($my-theme);
 $primary-palette: map.get($color-config, "primary");
 
-html,
-body {
+html {
   height: 100%;
 }
+
 body {
   margin: 0;
   font-family: Roboto, "Helvetica Neue", sans-serif;
