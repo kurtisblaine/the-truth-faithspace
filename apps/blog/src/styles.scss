@@ -76,3 +76,20 @@ mat-list-item {
 .primary-color {
   color: mat.get-color-from-palette($primary-palette);
 }
+
+// upright text example
+.side-header {
+  flex: 1 1 20%;
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+  padding: 80px 100px;
+}
+
+.main-content {
+  flex: 1 1 80%;
+}
+
+.page {
+  display: flex;
+  flex-direction: row;
+}
