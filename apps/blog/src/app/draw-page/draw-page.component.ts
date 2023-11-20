@@ -78,21 +78,6 @@ export class DrawPageComponent implements OnInit {
     });
 
     this.images.push({
-      name: "Born again of Water and Fire",
-      description: `The baptism of water is that of repentance. John the Baptist was the first apostle sent by God to proclaim water baptism, confession of sin and
-      repentance thereof. He preached that we should believe in the One to come after him. The 12 were sent by God baptizing and making disciples after witnessing Him.
-      There is another baptism of fire which is of the Spirit and includes tribulation and refining from impurities. Jesus is the One Who baptized in the Spirit.
-      We are saved (1 Peter 3:21) through water as Noah and his family were saved through the deluge. In the future when the world is judged by fire,
-      we will be caught up in the heavens and will not perish along with the rest of the world. The main point of baptism in water is an appeal to God for a good coinscience.
-      Our coinscience has been defiled and corrupted from this world and it's neccessary to appeal to God for a cleansed one through Christ's sacrifice.
-      Baptism is burial; burial with Christ. No-one qualifies for burial unless they are first dead; likewise, we must first be dead to sin, confessing and repenting of sin
-      to qualify for baptism. The Holy Spirit is given to those who have believed in God's Son and obey Him -- remove yourself from this world and it's impurities
-      and be filled with the Holy Spirit.`,
-      footer: "You must be born again of Water and Spirit (John 3)...",
-      originUrl: "../../assets/teach/baptismwaterandfire.png",
-    });
-
-    this.images.push({
       name: "You must be Born again of Water and Fire",
       description: `The baptism of water is that of repentance. John the Baptist was the first apostle sent by God to proclaim water baptism, confession of sin and
       repentance thereof. He preached that we should believe in the One to come after him. The 12 were sent by God baptizing and making disciples after witnessing Him.
@@ -101,8 +86,7 @@ export class DrawPageComponent implements OnInit {
       we will be caught up in the heavens and will not perish along with the rest of the world. The main point of baptism in water is an appeal to God for a good coinscience.
       Our coinscience has been defiled and corrupted from this world and it's neccessary to appeal to God for a cleansed one through Christ's sacrifice.
       Baptism is burial; burial with Christ. No-one qualifies for burial unless they are first dead; likewise, we must first be dead to sin, confessing and repenting of sin
-      to qualify for baptism. The Holy Spirit is given to those who have believed in God's Son and obey Him -- remove yourself from this world and it's impurities
-      and be filled with the Holy Spirit. The cloud by day and fire by night that lead the Israelites out of Egypt is the Holy Spirit -- again, Spirit (wind) and Fire.
+      to qualify for baptism. The Holy Spirit is given to those who have believed in God's Son and obey Him. The cloud by day and fire by night that lead the Israelites out of Egypt is the Holy Spirit -- again, Spirit (wind) and Fire.
       They followed the pillar, as we follow the Spirit. They were baptized as followers of Moses through the red sea, as we are of Christ.
       They ate the same spiritual manna, just as we eat of the same sacrifice that those who worked at the Tabernacle had no right to eat -- Christ's flesh.
       And we drink of the same Spirit (1 Cor 12:13) as they did in the wilderness which was the Rock, or Christ, Who traveled with them.
