@@ -1,4 +1,10 @@
-import { Component, OnInit } from "@angular/core";
+import {
+  AfterViewInit,
+  Component,
+  ElementRef,
+  OnInit,
+  ViewChild,
+} from "@angular/core";
 import { Router } from "@angular/router";
 import {
   faBrain,
@@ -17,7 +23,9 @@ import { BehaviorSubject, Observable, fromEvent, map } from "rxjs";
   templateUrl: "./app.component.html",
   styleUrls: ["./app.component.scss"],
 })
-export class AppComponent implements OnInit {
+export class AppComponent implements OnInit, AfterViewInit {
+  @ViewChild("toTop") public toTopElement: ElementRef;
+
   public title = "The Good News of The Kingdom of God";
   public icon = faGrip;
   public homeIcon = faHouse;
@@ -52,8 +60,13 @@ export class AppComponent implements OnInit {
     );
   }
 
+  public ngAfterViewInit(): void {
+    const keep = 1;
+  }
+
   emitScrollEvent() {
-    window.dispatchEvent(new CustomEvent("scroll", { detail: { scrollY: 0 } }));
+    // window.dispatchEvent(new CustomEvent("scroll", { detail: { scrollY: 0 } }));
+    this.scrollToTop(this.toTopElement.nativeElement);
   }
 
   scrollToTop(element) {
