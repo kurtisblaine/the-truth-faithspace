@@ -5,10 +5,15 @@ a {
 
 .headers {
   padding: 20px 20px 0px 20px;
+  margin-bottom: 30px;
 }
 
 .paragraphs {
   padding: 0px 40px 40px 40px;
+}
+
+.section:not(.floater) > .paragraphs {
+  padding: 0px 80px 40px 80px;
 }
 
 .home-page_container {
