@@ -41,6 +41,7 @@
     "@ngrx/router-store": "16.0.1",
     "@ngrx/store": "16.0.1",
     "@twogate/ngx-photo-gallery": "^1.6.0",
+    "angular-responsive-carousel2": "^0.0.7",
     "bootstrap": "^5.2.3",
     "guid-typescript": "^1.0.9",
     "i": "^0.3.7",
