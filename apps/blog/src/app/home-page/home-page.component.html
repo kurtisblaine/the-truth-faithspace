@@ -11,18 +11,35 @@
   </div>
 </div>
 
-<div class="pimg13" style="background-position: top">
-  <section class="section section-light floater">
-    <!-- <carousel
-      [autoplayInterval]="7770"
-      [autoplay]="true"
-      [pauseOnHover]="true"
+<div
+  class="pimg13"
+  style="
+    background-position: top;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+  "
+>
+  <section class="section-dark floater" style="text-align: center">
+    <carousel
       [dots]="true"
-      [loop]="true"
       [cellWidth]="'100%'"
       [height]="333"
-      [arrowsTheme]="'dark'"
+      [arrowsTheme]="'light'"
+      [counter]="true"
+      [counterSeparator]="' of '"
     >
+      <div class="carousel-cell">
+        <blog-reference-tooltip [reference]="'Romans 3'" [padding]="'0px 77px'">
+          None is righteous, no, not one; no one understands; no one seeks for
+          God. All have turned aside; together they have become worthless; no
+          one does good, not even one. Their throat is an open grave; they use
+          their tongues to deceive. Their feet are swift to shed blood; in their
+          paths are ruin and misery, and the way of peace they have not known.
+          There is no fear of God before their eyes.
+        </blog-reference-tooltip>
+      </div>
+
       <div class="carousel-cell">
         <blog-reference-tooltip
           [reference]="'Hebrews 4'"
@@ -33,17 +50,6 @@
           of marrow, and discerning the thoughts and intentions of the heart.
           And no creature is hidden from his sight, but all are naked and
           exposed to the eyes of him to whom we must give account.
-        </blog-reference-tooltip>
-      </div>
-
-      <div class="carousel-cell">
-        <blog-reference-tooltip [reference]="'Romans 3'" [padding]="'0px 77px'">
-          None is righteous, no, not one; no one understands; no one seeks for
-          God. All have turned aside; together they have become worthless; no
-          one does good, not even one. Their throat is an open grave; they use
-          their tongues to deceive. Their feet are swift to shed blood; in their
-          paths are ruin and misery, and the way of peace they have not known.
-          There is no fear of God before their eyes.
         </blog-reference-tooltip>
       </div>
 
@@ -190,7 +196,7 @@
           ever.
         </blog-reference-tooltip>
       </div>
-    </carousel> -->
+    </carousel>
   </section>
 </div>
 
