@@ -1,6 +1,10 @@
 <div class="container-form" style="margin: 0px 17px">
   <h1 style="padding: 15px 0px 0px" class="primary-color">Hidden</h1>
   <h1 style="padding: 15px 0px 0px" class="primary-color">Contact me</h1>
+  <h6 class="mat-caption">
+    If the contact form is not working, please email me at
+    kurtisblainewaldner@gmail.com
+  </h6>
   <div>
     <div>
       <form [formGroup]="FormData" (ngSubmit)="onSubmit(FormData.value)">
@@ -39,6 +43,7 @@
             name="Comment"
           ></textarea>
         </div>
+
         <button
           type="submit"
           class="btn btn-primary"
