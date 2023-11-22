@@ -1,6 +1,7 @@
 {
+  "name": "blog",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
   "projectType": "application",
-  "root": "apps/blog",
   "sourceRoot": "apps/blog/src",
   "prefix": "blog",
   "targets": {
@@ -83,7 +84,7 @@
     },
     "test": {
       "executor": "@nrwl/jest:jest",
-      "outputs": ["coverage/apps/blog"],
+      "outputs": ["{workspaceRoot}/coverage/apps/blog"],
       "options": {
         "jestConfig": "apps/blog/jest.config.ts",
         "passWithNoTests": true

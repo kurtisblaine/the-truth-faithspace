@@ -1,27 +1,9 @@
 {
-  "npmScope": "workspace-name",
   "affected": {
     "defaultBase": "main"
   },
   "cli": {
-    "defaultCollection": "@nrwl/angular",
     "packageManager": "npm"
-  },
-  "implicitDependencies": {
-    "package.json": {
-      "dependencies": "*",
-      "devDependencies": "*"
-    },
-    ".eslintrc.json": "*"
-  },
-  "tasksRunnerOptions": {
-    "default": {
-      "runner": "@nrwl/nx-cloud",
-      "options": {
-        "cacheableOperations": ["build", "lint", "test", "e2e"],
-        "accessToken": "NjAzYjlkMzgtN2Q3MS00ZDViLTk5MjQtM2EzOTJkMjExZDFifHJlYWQtd3JpdGU="
-      }
-    }
   },
   "targetDependencies": {
     "build": [
@@ -46,5 +28,26 @@
       "style": "scss"
     }
   },
-  "defaultProject": "blog"
+  "defaultProject": "blog",
+  "namedInputs": {
+    "default": ["{projectRoot}/**/*", "sharedGlobals"],
+    "sharedGlobals": [],
+    "production": ["default"]
+  },
+  "targetDefaults": {
+    "build": {
+      "inputs": ["production", "^production"],
+      "cache": true
+    },
+    "lint": {
+      "cache": true
+    },
+    "test": {
+      "cache": true
+    },
+    "e2e": {
+      "cache": true
+    }
+  },
+  "nxCloudAccessToken": "NjAzYjlkMzgtN2Q3MS00ZDViLTk5MjQtM2EzOTJkMjExZDFifHJlYWQtd3JpdGU="
 }
