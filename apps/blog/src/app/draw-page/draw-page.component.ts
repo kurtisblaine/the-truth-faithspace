@@ -31,20 +31,20 @@ export class DrawPageComponent implements OnInit {
       name: "Sin, Righteousness, Judgement",
       description: `When we believe in Christ, our sins are forgiven by grace;
         however, it's not a means to continue on sinning deliberately and continuously while claiming grace.
-        That would get us into the realm of unforgiveable sins which are not covered by the Blood of Christ.
+        That would get us into the realm of unforgivable sins which are not covered by the Blood of Christ.
         We are made right or justified by God because of our faith in Jesus. God was not unjust when He justified us through Christ;
-        When He punished His Son, we were likewise condemned on the cross, He was subsituted for us and as us;
+        When He punished His Son, we were likewise condemned on the cross, He was substituted  for us and as us;
         When we know that, we will walk in Truth through the knowledge of Christ, who is Knowledge Himself and Wisdom.
         His sacrifice is sufficient for us in order to draw us near to God.`,
-      footer: "Elaberating John 16: 8-11...",
+      footer: "Elaborating John 16: 8-11...",
       originUrl: "../../assets/teach/john16.png",
     });
 
     this.images.push({
       name: "Earthly man and Heavenly Man",
-      description: `This is the most beautiful and unique archetype of Christ; it is unique because Adam is a contrapositive of Christ!
+      description: `This is the most beautiful and unique archetype of Christ; it is unique because Adam is an antitype of Christ!
       Through adam's one act of disobedience all have been made sinners and death reigned throughout all mankind. Through another Man
-      and His one act of obedience and righteousness, has made right many who are chosen according to their conduct even in the midst of firey tribulation.
+      and His one act of obedience and righteousness, has made right many who are chosen according to their conduct even in the midst of fiery tribulation.
       There is something not outlined on this drawing: through Christ, all will be made alive, the living and the dead, at the resurrection of the dead in the last day.
       There is a resurrection of the living, those who have fallen asleep in Christ; those will rise to everlasting life.`,
       footer:
@@ -57,7 +57,7 @@ export class DrawPageComponent implements OnInit {
       description: `We were crucified with Christ and made right with God through Him when He died on the cross on our behalf, believing in the message of grace;
       therefore, by sanctification we pick up our altar or cross and follow Him, just as Isaac did when he subjected himself to his father;
       he was spared of his life and is today an example of a living sacrifice as Christ is the Lamb who was slain found standing and living (Rev 5:6).
-      Here refers to the body and mind of the flesh which we have deliverence from in Christ through His death and working on the cross.`,
+      Here refers to the body and mind of the flesh which we have deliverance from in Christ through His death and working on the cross.`,
       footer:
         "Death must be worked out in the body and soul of the flesh. Many know about the body of the flesh. What about the mind of flesh? ...",
       originUrl: "../../assets/teach/alterofGod.png",
@@ -67,9 +67,9 @@ export class DrawPageComponent implements OnInit {
       name: "The Armor of God",
       description: `When David went to go fight Goliath, he was given armor by Saul which did not fit him, Saul was too big and David was smaller than Saul.
       Anyway, David had armor on which was from God, an armor that is fitting for a man of God. The armor is for protection. What good are we if we are hurt in battle?
-      Can we fight from the hospital bed? The war has been won by Christ on the cross and we join into his victory through faith. This is all seen in the book of Colossians.
+      Can we fight from the hospital bed? The war has been won by Christ on the cross, and we join into his victory through faith. This is all seen in the book of Colossians.
       Christ's victory is absolute, but we may be defeated. Why? Because we have not been perfected by our faith in the grace of God. We STAND on victory ground;
-      we firstmost need to fight to conquer the land that God has promised us -- the battle of faith, the good fight (1 Tim 6:12).
+      we first most need to fight to conquer the land that God has promised us -- the battle of faith, the good fight (1 Tim 6:12).
       In the book of Joshua, the Israelites had to go into the land and defeat the enemy. God promised them, He would fight for them.
       They needed to put their faith to action and go. God will not let anyone of us down who put their trust in Him.`,
       footer:
@@ -83,8 +83,8 @@ export class DrawPageComponent implements OnInit {
       repentance thereof. He preached that we should believe in the One to come after him. The 12 were sent by God baptizing and making disciples after witnessing Him.
       There is another baptism of fire which is of the Spirit and includes tribulation and refining from impurities. Jesus is the One Who baptized in the Spirit.
       We are saved (1 Peter 3:21) through water as Noah and his family were saved through the deluge. In the future when the world is judged by fire,
-      we will be caught up in the heavens and will not perish along with the rest of the world. The main point of baptism in water is an appeal to God for a good coinscience.
-      Our coinscience has been defiled and corrupted from this world and it's neccessary to appeal to God for a cleansed one through Christ's sacrifice.
+      we will be caught up in the heavens and will not perish along with the rest of the world. The main point of baptism in water is an appeal to God for a good conscience.
+      Our conscience has been defiled and corrupted from this world and it's necessary to appeal to God for a cleansed one through Christ's sacrifice.
       Baptism is burial; burial with Christ. No-one qualifies for burial unless they are first dead; likewise, we must first be dead to sin, confessing and repenting of sin
       to qualify for baptism. The Holy Spirit is given to those who have believed in God's Son and obey Him. The cloud by day and fire by night that lead the Israelites out of Egypt is the Holy Spirit -- again, Spirit (wind) and Fire.
       They followed the pillar, as we follow the Spirit. They were baptized as followers of Moses through the red sea, as we are of Christ.
@@ -97,23 +97,35 @@ export class DrawPageComponent implements OnInit {
 
     this.images.push({
       name: "Building on the Rock",
-      description: ``,
+      description: `In the end, we will not be judged based on our faith, but by our actions. Our faith and actions work together.
+      What good is it, to say we have faith but have no works. Can that faith help another or even save ourselves?
+      No! Such a faith has no merit in reality and it is a delusion, but a faith that lives and moves and has it's being in reality is good and can save if we hold fast.
+      We build our house upon the rock, if when things are good, we obey the Gospel of God: how can we stand when calamity comes if we don't even obey when things are good?
+      Jesus Christ is the Rock. We believe in Him and also follow after Him: following Him is doing the things He did when He was on earth - He is the Example, He is the Way.`,
       footer:
         "How do you know if you're well built, only by the testing of calamity...",
       originUrl: "../../assets/teach/buildingontheRock.png",
     });
 
     this.images.push({
-      name: "",
-      description: ``,
-      footer: "...",
+      name: "Tabernacle Courtyard",
+      description: `Everything in the tabernacle has a covering: the altar has the meat, the wash basin has water,
+      the gold altar has incense, the table has bread, the lampstand has lamps with oil, the Ark of Testimony has it's covering of atonement.
+      The item is static and it's covering is dynamic; even yet, the item is dynamic in a sense it has poles inserted.
+      Even the Tent of Meeting itself has a covering: the only exception would be the courtyard, it has no covering.
+      We also have a covering: Christ. He is the atonement, bread, water, light, sacrifice, and incense. We follow Him, doing everything He did.`,
+      footer: "All items in the Tabernacle have a covering...",
       originUrl: "../../assets/teach/courtyard.png",
     });
 
     this.images.push({
-      name: "",
-      description: ``,
-      footer: "...",
+      name: "The Day of the Lord",
+      description: `Of the day, we are sober, in our right mind and attentive, watchful in prayer. Those of the night are drunk, out of their right mind, unaware and foolish.
+      The day of the Lord will come as a thief in the night: to those in the Day, who are watchful waiting for Him, it will be day; otherwise, it will be night to the others.
+      Wouldn't it be better, you may ask, if the Lord told us when He was coming so we would be ready? No. We are to be alert at all times, expecting His coming every day.
+      Otherwise, we may think to ourselves, my Master is a long time in coming, I will take an easy and be merry. Then He will come unexpectedly, catching that one off guard, assigning him to a place with the hypocrites.
+      His so called wisdom is folly.`,
+      footer: "The day of the Lord vs the night of the thief...",
       originUrl: "../../assets/teach/dayoftheLord.png",
     });
 
