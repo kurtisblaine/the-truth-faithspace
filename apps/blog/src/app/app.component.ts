@@ -10,6 +10,7 @@ import {
   faBrain,
   faEnvelope,
   faEye,
+  faFile,
   faGavel,
   faGrip,
   faHouse,
@@ -35,6 +36,7 @@ export class AppComponent implements OnInit, AfterViewInit {
   public mailIcon = faEnvelope;
   public discernIcon = faGavel;
   public drawingIcon = faPenToSquare;
+  public tractIcon = faFile;
   public progressValue = new BehaviorSubject(0);
   public progressValue$!: Observable<number>;
   public scrollTimeout: number | undefined;
@@ -115,6 +117,12 @@ export class AppComponent implements OnInit, AfterViewInit {
 
   public goEmail() {
     this.router.navigateByUrl("email").then(() => {
+      this.emitScrollEvent();
+    });
+  }
+
+  public goTracts() {
+    this.router.navigateByUrl("tract").then(() => {
       this.emitScrollEvent();
     });
   }

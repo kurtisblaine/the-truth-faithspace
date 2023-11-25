@@ -8,6 +8,7 @@ import { HomePageComponent } from "./home-page/home-page.component";
 import { ProverbPageComponent } from "./proverb-page/proverb-page.component";
 import { PsalmPageComponent } from "./psalm-page/psalm-page.component";
 import { ServerPageComponent } from "./server-page/server-page/server-page.component";
+import { TractPageComponent } from "./tract-page/tract-page.component";
 
 const routes: Routes = [
   {
@@ -38,6 +39,11 @@ const routes: Routes = [
   {
     path: "discernments",
     component: DiscernPageComponent,
+    children: [],
+  },
+  {
+    path: "tract",
+    component: TractPageComponent,
     children: [],
   },
   { path: "drawing", component: DrawPageComponent, children: [] },
