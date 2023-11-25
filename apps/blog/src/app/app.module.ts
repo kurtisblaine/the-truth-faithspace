@@ -27,6 +27,7 @@ import { PsalmPageModule } from "./psalm-page/psalm-page.module";
 import { ServerPageModule } from "./server-page/server-page/server-page.module";
 import { SharedModule } from "./shared/shared.module";
 import { StateModule } from "./state/state.module";
+import { TractPageModule } from "./tract-page/tract-page.module";
 
 const firebaseConfig = {
   apiKey: "AIzaSyCjUFfiNlVcXR03aW28ZdhCdg8_lmzk15k",
@@ -64,6 +65,7 @@ const firebaseConfig = {
     ProverbModule,
     DiscernPageModule,
     DrawPageModule,
+    TractPageModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
