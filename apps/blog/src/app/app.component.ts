@@ -14,6 +14,7 @@ import {
   faGavel,
   faGrip,
   faHouse,
+  faLink,
   faMusic,
   faPenToSquare,
 } from "@fortawesome/free-solid-svg-icons";
@@ -37,6 +38,7 @@ export class AppComponent implements OnInit, AfterViewInit {
   public discernIcon = faGavel;
   public drawingIcon = faPenToSquare;
   public tractIcon = faFile;
+  public resourceIcon = faLink;
   public progressValue = new BehaviorSubject(0);
   public progressValue$!: Observable<number>;
   public scrollTimeout: number | undefined;
@@ -123,6 +125,12 @@ export class AppComponent implements OnInit, AfterViewInit {
 
   public goTracts() {
     this.router.navigateByUrl("tract").then(() => {
+      this.emitScrollEvent();
+    });
+  }
+
+  public goResources() {
+    this.router.navigateByUrl("resource").then(() => {
       this.emitScrollEvent();
     });
   }

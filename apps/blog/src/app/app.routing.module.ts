@@ -5,6 +5,7 @@ import { DiscernPageComponent } from "./discern-page/discern-page.component";
 import { DrawPageComponent } from "./draw-page/draw-page.component";
 import { EmailPageComponent } from "./email-page/email-page.component";
 import { HomePageComponent } from "./home-page/home-page.component";
+import { LinkPageComponent } from "./link-page/link-page.component";
 import { ProverbPageComponent } from "./proverb-page/proverb-page.component";
 import { PsalmPageComponent } from "./psalm-page/psalm-page.component";
 import { ServerPageComponent } from "./server-page/server-page/server-page.component";
@@ -47,6 +48,7 @@ const routes: Routes = [
     children: [],
   },
   { path: "drawing", component: DrawPageComponent, children: [] },
+  { path: "resource", component: LinkPageComponent, children: [] },
   {
     path: "server/f3bc7c75-cdf7-4c51-beab-3ef81d6a5e5c",
     component: ServerPageComponent,
