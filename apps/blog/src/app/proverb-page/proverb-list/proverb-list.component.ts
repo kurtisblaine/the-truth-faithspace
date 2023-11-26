@@ -1,7 +1,7 @@
 import { Component, Input, OnInit } from "@angular/core";
 import { Router } from "@angular/router";
 import { Store } from "@ngrx/store";
-import { cloneDeep } from "lodash";
+import { cloneDeep } from "lodash-es";
 import { Observable, map } from "rxjs";
 import { ProverbEntity } from "../../state/proverb/proverb.models";
 import { createProverb } from "../../state/proverb/proverbs.actions";

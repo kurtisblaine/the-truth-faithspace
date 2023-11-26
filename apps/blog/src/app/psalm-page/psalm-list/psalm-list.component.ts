@@ -6,7 +6,7 @@ import {
 } from "@angular/core";
 import { Router } from "@angular/router";
 import { Store } from "@ngrx/store";
-import * as lodash from "lodash";
+import * as lodash from "lodash-es";
 import { Observable, map } from "rxjs";
 import { createPsalm } from "../../state/psalm/psalm.actions";
 import { PsalmEntity } from "../../state/psalm/psalm.models";
