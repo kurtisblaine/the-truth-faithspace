@@ -1,7 +1,7 @@
 import { Component, Input, OnInit } from "@angular/core";
 import { Router } from "@angular/router";
 import { Store } from "@ngrx/store";
-import { cloneDeep } from "lodash";
+import { cloneDeep } from "lodash-es";
 import { Observable, map } from "rxjs";
 import { createDiscern } from "../../state/discern/discern.actions";
 import { DiscernEntity } from "../../state/discern/discern.models";
