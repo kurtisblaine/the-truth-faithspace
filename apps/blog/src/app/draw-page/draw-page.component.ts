@@ -40,17 +40,17 @@ export class DrawPageComponent implements OnInit {
       originUrl: "../../assets/teach/john16.png",
     });
 
-    this.images.push({
-      name: "Earthly man and Heavenly Man",
-      description: `This is the most beautiful and unique archetype of Christ; it is unique because Adam is an antitype of Christ!
-      Through adam's one act of disobedience all have been made sinners and death reigned throughout all mankind. Through another Man
-      and His one act of obedience and righteousness, has made right many who are chosen according to their conduct even in the midst of fiery tribulation.
-      There is something not outlined on this drawing: through Christ, all will be made alive, the living and the dead, at the resurrection of the dead in the last day.
-      There is a resurrection of the living, those who have fallen asleep in Christ; those will rise to everlasting life.`,
-      footer:
-        "The Scriptures referenced here are Romans 5: 12-21; 1 Corinthians 15:20-22; 1 Corinthians 15:45-49...",
-      originUrl: "../../assets/teach/adamvsJesus.png",
-    });
+    // this.images.push({
+    //   name: "Earthly man and Heavenly Man",
+    //   description: `This is the most beautiful and unique archetype of Christ; it is unique because Adam is an antitype of Christ!
+    //   Through adam's one act of disobedience all have been made sinners and death reigned throughout all mankind. Through another Man
+    //   and His one act of obedience and righteousness, has made right many who are chosen according to their conduct even in the midst of fiery tribulation.
+    //   There is something not outlined on this drawing: through Christ, all will be made alive, the living and the dead, at the resurrection of the dead in the last day.
+    //   There is a resurrection of the living, those who have fallen asleep in Christ; those will rise to everlasting life.`,
+    //   footer:
+    //     "The Scriptures referenced here are Romans 5: 12-21; 1 Corinthians 15:20-22; 1 Corinthians 15:45-49...",
+    //   originUrl: "../../assets/teach/adamvsJesus.png",
+    // });
 
     this.images.push({
       name: "The Altar of Christ",
@@ -63,19 +63,19 @@ export class DrawPageComponent implements OnInit {
       originUrl: "../../assets/teach/alterofGod.png",
     });
 
-    this.images.push({
-      name: "The Armor of God",
-      description: `When David went to go fight Goliath, he was given armor by Saul which did not fit him, Saul was too big and David was smaller than Saul.
-      Anyway, David had armor on which was from God, an armor that is fitting for a man of God. The armor is for protection. What good are we if we are hurt in battle?
-      Can we fight from the hospital bed? The war has been won by Christ on the cross, and we join into his victory through faith. This is all seen in the book of Colossians.
-      Christ's victory is absolute, but we may be defeated. Why? Because we have not been perfected by our faith in the grace of God. We STAND on victory ground;
-      we first most need to fight to conquer the land that God has promised us -- the battle of faith, the good fight (1 Tim 6:12).
-      In the book of Joshua, the Israelites had to go into the land and defeat the enemy. God promised them, He would fight for them.
-      They needed to put their faith to action and go. God will not let anyone of us down who put their trust in Him.`,
-      footer:
-        "The Armor given to us by God, which is fitting for a Christian, unlike the armor Saul gave to David...",
-      originUrl: "../../assets/teach/armorofGod.png",
-    });
+    // this.images.push({
+    //   name: "The Armor of God",
+    //   description: `When David went to go fight Goliath, he was given armor by Saul which did not fit him, Saul was too big and David was smaller than Saul.
+    //   Anyway, David had armor on which was from God, an armor that is fitting for a man of God. The armor is for protection. What good are we if we are hurt in battle?
+    //   Can we fight from the hospital bed? The war has been won by Christ on the cross, and we join into his victory through faith. This is all seen in the book of Colossians.
+    //   Christ's victory is absolute, but we may be defeated. Why? Because we have not been perfected by our faith in the grace of God. We STAND on victory ground;
+    //   we first most need to fight to conquer the land that God has promised us -- the battle of faith, the good fight (1 Tim 6:12).
+    //   In the book of Joshua, the Israelites had to go into the land and defeat the enemy. God promised them, He would fight for them.
+    //   They needed to put their faith to action and go. God will not let anyone of us down who put their trust in Him.`,
+    //   footer:
+    //     "The Armor given to us by God, which is fitting for a Christian, unlike the armor Saul gave to David...",
+    //   originUrl: "../../assets/teach/armorofGod.png",
+    // });
 
     this.images.push({
       name: "You must be Born again of Water and Fire",
@@ -107,16 +107,16 @@ export class DrawPageComponent implements OnInit {
       originUrl: "../../assets/teach/buildingontheRock.png",
     });
 
-    this.images.push({
-      name: "Tabernacle Courtyard",
-      description: `Everything in the tabernacle has a covering: the altar has the meat, the wash basin has water,
-      the gold altar has incense, the table has bread, the lampstand has lamps with oil, the Ark of Testimony has it's covering of atonement.
-      The item is static and it's covering is dynamic; even yet, the item is dynamic in a sense it has poles inserted.
-      Even the Tent of Meeting itself has a covering: the only exception would be the courtyard, it has no covering.
-      We also have a covering: Christ. He is the atonement, bread, water, light, sacrifice, and incense. We follow Him, doing everything He did.`,
-      footer: "All items in the Tabernacle have a covering...",
-      originUrl: "../../assets/teach/courtyard.png",
-    });
+    // this.images.push({
+    //   name: "Tabernacle Courtyard",
+    //   description: `Everything in the tabernacle has a covering: the altar has the meat, the wash basin has water,
+    //   the gold altar has incense, the table has bread, the lampstand has lamps with oil, the Ark of Testimony has it's covering of atonement.
+    //   The item is static and it's covering is dynamic; even yet, the item is dynamic in a sense it has poles inserted.
+    //   Even the Tent of Meeting itself has a covering: the only exception would be the courtyard, it has no covering.
+    //   We also have a covering: Christ. He is the atonement, bread, water, light, sacrifice, and incense. We follow Him, doing everything He did.`,
+    //   footer: "All items in the Tabernacle have a covering...",
+    //   originUrl: "../../assets/teach/courtyard.png",
+    // });
 
     this.images.push({
       name: "The Day of the Lord",

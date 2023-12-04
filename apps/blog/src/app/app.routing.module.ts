@@ -1,58 +1,60 @@
 import { NgModule } from "@angular/core";
-import { RouterModule, Routes } from "@angular/router";
-import { BlogPageComponent } from "./blog-page/blog-page.component";
-import { DiscernPageComponent } from "./discern-page/discern-page.component";
-import { DrawPageComponent } from "./draw-page/draw-page.component";
-import { EmailPageComponent } from "./email-page/email-page.component";
-import { HomePageComponent } from "./home-page/home-page.component";
-import { LinkPageComponent } from "./link-page/link-page.component";
-import { ProverbPageComponent } from "./proverb-page/proverb-page.component";
-import { PsalmPageComponent } from "./psalm-page/psalm-page.component";
-import { ServerPageComponent } from "./server-page/server-page/server-page.component";
-import { TractPageComponent } from "./tract-page/tract-page.component";
+import { PreloadAllModules, RouterModule, Routes } from "@angular/router";
 
 const routes: Routes = [
   {
-    path: "home",
-    component: HomePageComponent,
-    children: [],
+    path: "",
+    loadChildren: () =>
+      import("./home-page/home-page.module").then((m) => m.HomePageModule),
   },
   {
-    path: "psalms",
-    component: PsalmPageComponent,
-    children: [],
+    path: "",
+    loadChildren: () =>
+      import("./psalm-page/psalm-page.module").then((m) => m.PsalmPageModule),
   },
   {
-    path: "blogs",
-    component: BlogPageComponent,
-    children: [],
+    path: "",
+    loadChildren: () =>
+      import("./blog-page/blog-page.module").then((m) => m.BlogPageModule),
   },
   {
-    path: "proverbs",
-    component: ProverbPageComponent,
-    children: [],
+    path: "",
+    loadChildren: () =>
+      import("./proverb-page/proverb.module").then((m) => m.ProverbModule),
   },
   {
-    path: "email",
-    component: EmailPageComponent,
-    children: [],
+    path: "",
+    loadChildren: () =>
+      import("./email-page/email-page.module").then((m) => m.EmailPageModule),
   },
   {
-    path: "discernments",
-    component: DiscernPageComponent,
-    children: [],
+    path: "",
+    loadChildren: () =>
+      import("./discern-page/discern-page.module").then(
+        (m) => m.DiscernPageModule
+      ),
   },
   {
-    path: "tract",
-    component: TractPageComponent,
-    children: [],
+    path: "",
+    loadChildren: () =>
+      import("./tract-page/tract-page.module").then((m) => m.TractPageModule),
   },
-  { path: "drawing", component: DrawPageComponent, children: [] },
-  { path: "resource", component: LinkPageComponent, children: [] },
   {
-    path: "server/f3bc7c75-cdf7-4c51-beab-3ef81d6a5e5c",
-    component: ServerPageComponent,
-    children: [],
+    path: "",
+    loadChildren: () =>
+      import("./draw-page/draw-page.module").then((m) => m.DrawPageModule),
+  },
+  {
+    path: "",
+    loadChildren: () =>
+      import("./link-page/link-page.module").then((m) => m.LinkPageModule),
+  },
+  {
+    path: "",
+    loadChildren: () =>
+      import("./server-page/server-page.module").then(
+        (m) => m.ServerPageModule
+      ),
   },
   { path: "", pathMatch: "full", redirectTo: "home" },
   { path: "**", redirectTo: "error" },
@@ -64,6 +66,7 @@ const routes: Routes = [
     RouterModule.forRoot(routes, {
       onSameUrlNavigation: "reload",
       anchorScrolling: "enabled",
+      preloadingStrategy: PreloadAllModules,
     }),
   ],
   exports: [RouterModule],

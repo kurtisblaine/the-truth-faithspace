@@ -2,17 +2,14 @@ import { Component, OnInit } from "@angular/core";
 import { Router } from "@angular/router";
 import { Store } from "@ngrx/store";
 import { Guid } from "guid-typescript";
-import { createBlog, loadBlogs } from "../../state/blog/blog.actions";
+import { createBlog, loadBlogs } from "../state/blog/blog.actions";
 import {
   createDiscern,
   loadDiscernments,
-} from "../../state/discern/discern.actions";
-import {
-  createProverb,
-  loadProverbs,
-} from "../../state/proverb/proverbs.actions";
-import { createPsalm, loadPsalms } from "../../state/psalm/psalm.actions";
-import { PsalmEntity } from "../../state/psalm/psalm.models";
+} from "../state/discern/discern.actions";
+import { createProverb, loadProverbs } from "../state/proverb/proverbs.actions";
+import { createPsalm, loadPsalms } from "../state/psalm/psalm.actions";
+import { PsalmEntity } from "../state/psalm/psalm.models";
 @Component({
   selector: "blog-server-page",
   templateUrl: "./server-page.component.html",

@@ -1,6 +1,7 @@
 import { NgModule } from "@angular/core";
 import { BrowserModule } from "@angular/platform-browser";
 
+import { HttpClientModule } from "@angular/common/http";
 import { MatButtonModule } from "@angular/material/button";
 import { MatToolbarModule } from "@angular/material/toolbar";
 import { FontAwesomeModule } from "@fortawesome/angular-fontawesome";
@@ -17,17 +18,8 @@ import { MatProgressBarModule } from "@angular/material/progress-bar";
 import { MatSidenavModule } from "@angular/material/sidenav";
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 import { AppRoutingModule } from "./app.routing.module";
-import { BlogPageModule } from "./blog-page/blog-page.module";
-import { DiscernPageModule } from "./discern-page/discern-page.module";
-import { DrawPageModule } from "./draw-page/draw-page.module";
-import { EmailPageModule } from "./email-page/email-page.module";
-import { HomePageModule } from "./home-page/home-page.module";
-import { ProverbModule } from "./proverb-page/proverb.module";
-import { PsalmPageModule } from "./psalm-page/psalm-page.module";
-import { ServerPageModule } from "./server-page/server-page/server-page.module";
 import { SharedModule } from "./shared/shared.module";
 import { StateModule } from "./state/state.module";
-import { TractPageModule } from "./tract-page/tract-page.module";
 
 const firebaseConfig = {
   apiKey: "AIzaSyCjUFfiNlVcXR03aW28ZdhCdg8_lmzk15k",
@@ -46,13 +38,10 @@ const firebaseConfig = {
     provideFirebaseApp(() => initializeApp(firebaseConfig)),
     provideFirestore(() => getFirestore()),
     MatSidenavModule,
+    HttpClientModule,
     FirestoreModule,
     MatProgressBarModule,
-    HomePageModule,
     BrowserAnimationsModule,
-    PsalmPageModule,
-    ServerPageModule,
-    BlogPageModule,
     SharedModule,
     BrowserModule,
     MatButtonModule,
@@ -61,11 +50,6 @@ const firebaseConfig = {
     StateModule,
     AppRoutingModule,
     MatListModule,
-    EmailPageModule,
-    ProverbModule,
-    DiscernPageModule,
-    DrawPageModule,
-    TractPageModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
