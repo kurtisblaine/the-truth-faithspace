@@ -25,7 +25,5 @@ const routes: Routes = [
     MatInputModule,
   ],
   providers: [ContactService],
-  // exports: [EmailPageComponent],
-  // exports: [CommonModule, FormsModule, ReactiveFormsModule],
 })
 export class EmailPageModule {}
