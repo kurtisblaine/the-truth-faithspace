@@ -15,6 +15,7 @@ export class ReferenceTooltipComponent implements OnInit {
   @Input() public reference!: string;
   @Input() public isJesusWord = false;
   @Input() public padding = "0px";
+  @Input() public flex = false;
 
   constructor() {}
 
