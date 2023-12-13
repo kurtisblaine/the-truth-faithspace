@@ -201,13 +201,13 @@ export class DrawPageComponent implements OnInit {
       originUrl: "../../assets/teach/firstandlast.png",
     });
 
-    this.images.push({
-      name: "The Flesh: lust & pride",
-      description: ``,
-      footer:
-        "There is sin of the flesh & also of the soul, which contains the mind...",
-      originUrl: "../../assets/teach/flesh.png",
-    });
+    // this.images.push({
+    //   name: "The Flesh: lust & pride",
+    //   description: ``,
+    //   footer:
+    //     "There is sin of the flesh & also of the soul, which contains the mind...",
+    //   originUrl: "../../assets/teach/flesh.png",
+    // });
 
     this.images.push({
       name: "The Harvest",
