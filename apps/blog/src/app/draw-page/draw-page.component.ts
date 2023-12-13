@@ -28,6 +28,44 @@ export class DrawPageComponent implements OnInit {
     });
 
     this.images.push({
+      name: "Being a child of the Day",
+      description: ``,
+      footer: "Be of the Day, a child of the Light, servants of the Lord...",
+      originUrl: "../../assets/teach/daynight.png",
+    });
+
+    this.images.push({
+      name: "Fear of the Lord",
+      description: ``,
+      footer:
+        "The fear of the Lord produces humility and a righteous hatred...",
+      originUrl: "../../assets/teach/fearLord.png",
+    });
+
+    this.images.push({
+      name: "The Gospel",
+      description: ``,
+      footer:
+        "Jesus has done everything for us, and we are His work, we enter into His rest...",
+      originUrl: "../../assets/teach/gospel.png",
+    });
+
+    this.images.push({
+      name: "Reproach, Reprove, Rebuke, Reprimand",
+      description: ``,
+      footer:
+        "Differences between all the 're' words and understanding the prefix...",
+      originUrl: "../../assets/teach/re.png",
+    });
+
+    this.images.push({
+      name: "Sanctification Explained",
+      description: ``,
+      footer: "Moving away from earthly things to heavenly things...",
+      originUrl: "../../assets/teach/sanctification.png",
+    });
+
+    this.images.push({
       name: "Sin, Righteousness, Judgement",
       description: `When we believe in Christ, our sins are forgiven by grace;
         however, it's not a means to continue on sinning deliberately and continuously while claiming grace.
