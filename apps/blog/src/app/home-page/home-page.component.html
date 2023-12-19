@@ -2,12 +2,12 @@
 <div class="pimg13" style="background-position: top" #toGospel>
   <div class="ptext" [@simpleFadeAnimation]>
     <span class="trans"> The Good News of The Kingdom of God </span><br /><br />
-    <a href="home#danger-futility">Danger - Futility</a><br />
-    <a href="home#danger-sin">Danger - Sin </a><br />
-    <a href="home#call-grace">Call - Grace</a><br />
-    <a href="home#call-faith">Call - Faith</a><br />
-    <a href="home#our-response">Our Response</a><br />
-    <a href="home#hope-the-day">Hope - The Day of the Lord</a>
+    <a href="#danger-futility">Danger - Futility</a><br />
+    <a href="#danger-sin">Danger - Sin </a><br />
+    <a href="#call-grace">Call - Grace</a><br />
+    <a href="#call-faith">Call - Faith</a><br />
+    <a href="#our-response">Our Response</a><br />
+    <a href="#hope-the-day">Hope - The Day of the Lord</a>
   </div>
 </div>
 
@@ -31,7 +31,11 @@
       [counterSeparator]="' of '"
     >
       <div class="carousel-cell">
-        <blog-reference-tooltip [reference]="'Romans 3'" [padding]="'0px 77px'">
+        <blog-reference-tooltip
+          [reference]="'Romans 3'"
+          [padding]="'0px 77px'"
+          [flex]="true"
+        >
           None is righteous, no, not one; no one understands; no one seeks for
           God. All have turned aside; together they have become worthless; no
           one does good, not even one. Their throat is an open grave; they use
@@ -45,6 +49,7 @@
         <blog-reference-tooltip
           [reference]="'Hebrews 4'"
           [padding]="'0px 77px'"
+          [flex]="true"
         >
           For the Word of God is living and active, sharper than any two-edged
           sword, piercing to the division of soul and of spirit, of joints and
@@ -58,6 +63,7 @@
         <blog-reference-tooltip
           [reference]="'Isaiah 53'"
           [padding]="'0px 77px'"
+          [flex]="true"
         >
           He had no form or majesty that we should look at Him, and no beauty
           that we should desire Him. He was despised and rejected by men, a man
@@ -72,6 +78,7 @@
         <blog-reference-tooltip
           [reference]="'Isaiah 53'"
           [padding]="'0px 77px'"
+          [flex]="true"
         >
           But He was pierced for our transgressions; He was crushed for our
           iniquities; upon Him was the chastisement that brought us peace, and
@@ -88,6 +95,7 @@
         <blog-reference-tooltip
           [reference]="'Isaiah 53'"
           [padding]="'0px 77px'"
+          [flex]="true"
         >
           By oppression and judgment He was taken away; and as for His
           generation, who considered that He was cut off out of the land of the
@@ -104,6 +112,7 @@
         <blog-reference-tooltip
           [reference]="'Isaiah 53'"
           [padding]="'0px 77px'"
+          [flex]="true"
         >
           Out of the anguish of His soul he shall see and be satisfied; by His
           knowledge shall the righteous One, My Servant, make many to be
@@ -119,6 +128,7 @@
         <blog-reference-tooltip
           [reference]="'Romans 10'"
           [padding]="'0px 77px'"
+          [flex]="true"
         >
           Moses writes this about the righteousness that is by the law: “The
           person who does these things will live by them.” But the righteousness
@@ -134,6 +144,7 @@
         <blog-reference-tooltip
           [reference]="'Romans 10'"
           [padding]="'0px 77px'"
+          [flex]="true"
         >
           If you declare with your mouth, “Jesus is Lord,” and believe in your
           heart that God raised him from the dead, you will be saved. For it is
@@ -147,7 +158,11 @@
       </div>
 
       <div class="carousel-cell">
-        <blog-reference-tooltip [reference]="'James 2'" [padding]="'0px 77px'">
+        <blog-reference-tooltip
+          [reference]="'James 2'"
+          [padding]="'0px 77px'"
+          [flex]="true"
+        >
           Thus also faith by itself, if it does not have works, is dead. But
           someone will say, “You have faith, and I have works.” Show me your
           faith without your works, and I will show you my faith by my works.
@@ -160,6 +175,7 @@
         <blog-reference-tooltip
           [reference]="'Romans 12'"
           [padding]="'0px 77px'"
+          [flex]="true"
         >
           I appeal to you therefore, brothers, by the mercies of God, to present
           your bodies as a living sacrifice, holy and acceptable to God, which
@@ -174,6 +190,7 @@
         <blog-reference-tooltip
           [reference]="'Matthew 22'"
           [padding]="'0px 77px'"
+          [flex]="true"
         >
           ‘Love the Lord your God with all your heart and with all your soul and
           with all your mind.’ This is the first and greatest commandment. And
@@ -187,6 +204,7 @@
           [reference]="'Matthew 22'"
           [isJesusWord]="true"
           [padding]="'0px 77px'"
+          [flex]="true"
         >
           But when the king came in to look at the guests, he saw there a man
           who had no wedding garment. And he said to him, Friend, how did you
@@ -201,6 +219,7 @@
         <blog-reference-tooltip
           [reference]="'Daniel 12'"
           [padding]="'0px 77px'"
+          [flex]="true"
         >
           Those who are wise will shine like the brightness of the heavens, and
           those who lead many to righteousness, like the stars for ever and
@@ -2352,9 +2371,8 @@
       <blog-reference-tooltip [reference]="'Philippians 2'">
         Therefore, my beloved, as you have always obeyed, so now, not only as in
         my presence but much more in my absence, work
-        <b>&nbsp;out&nbsp;</b> your own salvation with fear and trembling, for
-        it is God who works <b>&nbsp;in&nbsp;</b> you, both to will and to work
-        for his good pleasure.
+        <b>out</b> your own salvation with fear and trembling, for it is God who
+        works <b>in</b> you, both to will and to work for his good pleasure.
       </blog-reference-tooltip>
       <blog-reference-tooltip [reference]="'Ephesians 4'">
         As a prisoner for the Lord, then, I urge you to live a life worthy of
@@ -2465,8 +2483,8 @@
         being ineffective and unproductive in your knowledge of our Lord Jesus
         Christ. But whoever does not have them is
         <b
-          >&nbsp;nearsighted and blind, forgetting that they have been cleansed
-          from their past sins.</b
+          >nearsighted and blind, forgetting that they have been cleansed from
+          their past sins.</b
         > </blog-reference-tooltip
       ><br />
 
@@ -2539,17 +2557,73 @@
         God, who gives us the victory through our Lord Jesus Christ! </blog-reference-tooltip
       ><br />
 
+      If you want to see what sin is, look at death: it's disgusting, repugnant,
+      dysfunctional, horrifying and stinky; yet that's what presently lives in
+      us as our bodies are actively decaying and becoming weaker & weaker,
+      gravitating towards a point of utter weakness which is death. Since Jesus
+      was raised from the dead by the power of the Spirit, so will God raise our
+      mortal bodies from the grave by the power of the Spirit. Although,
+      presently, we may have sin, we constantly strive to be blameless in all
+      matters to be perfect as our Father is perfect, so we can be made
+      complete, in all fullness of Spirit and maturity of Christ. The old nature
+      we had has been crucified on the cross and done away with, but we fight
+      temptation and sin actively every day, putting on the full armor of God
+      (Ephesians 6), standing firm against the evil one, fleeing from
+      immorality, idolatry, and youthful lusts, so that, when we die, we don't
+      remain as one who is dead, but sleep because we are alive to God as one
+      from the dead. As it is written,
+      <blog-reference-tooltip [reference]="'Romans 6'">
+        Now if we have died with Christ, we believe that we will also live with
+        him. We know that Christ, being raised from the dead, will never die
+        again; death no longer has dominion over him.
+      </blog-reference-tooltip>
+      What then happens to those who sleep in death? They wake up and continue
+      to live. So it is with us who live as alive to God in Christ Jesus. As it
+      is written,
+      <blog-reference-tooltip [reference]="'Matthew 22'" [isJesusWord]="true">
+        You are mistaken, not knowing the Scriptures nor the power of God. For
+        in the resurrection they neither marry nor are given in marriage, but
+        are like angels of God in heaven. But concerning the resurrection of the
+        dead, have you not read what was spoken to you by God, saying, 'I am the
+        God of Abraham, the God of Isaac, and the God of Jacob'? God is not the
+        God of the dead, but of the living. </blog-reference-tooltip
+      ><br />
+
+      This is the great hope we hold onto: "For in this hope we were saved. But
+      hope that is seen is no hope at all. Who hopes for what they already have?
+      But if we hope for what we do not see, we wait for it with patience"
+      (Romans 8) & "Now faith is confidence in what we hope for and assurance
+      about what we do not see" (Hebrews 11). And that confidence and assurance
+      comes by the Word of God, of the prophesies of the prophets, by
+      foretelling the Psalms, through the blessings of the Law, all testifying
+      to Jesus Christ and what He has done to be received by faith by us who are
+      at the culmination of the age, awaiting His return. We do not slack or be
+      sluggish, having thought in our minds that we have already obtained
+      salvation, but eagerly awaiting salvation working out what God has worked
+      in us with fear and trembling. For God is severe and kind: kind to us who
+      remain by faith in His kindness and severe to those who shrink back in
+      fear or disbelief (Romans 11). Indeed, we must remain in the faith until
+      the end, otherwise we have believed in vain. As for the Day of the Lord,
+      it will be day to us who live according to the day time and night to those
+      who walk not according to the Light, but according to the evil deeds of
+      darkness:
       <blog-reference-tooltip [reference]="'1 Thessalonians 5'">
-        But ye, brethren, are not in darkness, that that day should overtake you
-        as a thief. Ye are all the children of light, and the children of the
-        day: we are not of the night, nor of darkness. Therefore let us not
-        sleep, as do others; but let us watch and be sober. For they that sleep
-        sleep in the night; and they that be drunken are drunken in the night.
-        But let us, who are of the day, be sober, putting on the breastplate of
-        faith and love; and for an helmet, the hope of salvation. For God hath
-        not appointed us to wrath, but to obtain salvation by our Lord Jesus
-        Christ, Who died for us, that, whether we wake or sleep, we should live
-        together with him.
+        Now as to the times and the epochs, brethren, you have no need of
+        anything to be written to you. For you yourselves know full well that
+        the day of the Lord will come just like a thief in the night. While they
+        are saying, “Peace and safety!” then destruction will come upon them
+        suddenly like labor pains upon a woman with child, and they will not
+        escape. But you, brethren, are not in darkness, that the day would
+        overtake you like a thief; for you are all sons of light and sons of
+        day. We are not of night nor of darkness; so then let us not sleep as
+        others do, but let us be alert and sober. For those who sleep do their
+        sleeping at night, and those who get drunk at night. But since we are of
+        the day, let us be sober, having put on the breastplate of faith and
+        love, and as a helmet, the hope of salvation. For God has not destined
+        us for wrath, but for obtaining salvation through our Lord Jesus Christ,
+        who died for us, so that whether we are awake or asleep, we will live
+        together with Him. Therefore encourage one another and build up one
+        another, just as you also are doing.
       </blog-reference-tooltip>
     </p>
   </section>
@@ -2565,9 +2639,71 @@
   <section class="section section-light">
     <h2 class="headers">Spiritual Bodies</h2>
     <p class="paragraphs">
+      <blog-reference-tooltip [reference]="'Romans 8'">
+        For all who are led by the Spirit of God are sons of God. For you did
+        not receive the spirit of slavery to fall back into fear, but you have
+        received the Spirit of adoption as sons, by whom we cry, “Abba! Father!”
+        The Spirit himself bears witness with our spirit that we are children of
+        God, and if children, then heirs—heirs of God and fellow heirs with
+        Christ, provided <b>we suffer with Him</b> in order that we may also be
+        glorified with Him. For I consider that the sufferings of this present
+        time are not worth comparing with the glory that is to be revealed to
+        us. For the creation waits with eager longing for the revealing of the
+        sons of God. For the creation was subjected to futility, not willingly,
+        but because of him who subjected it, in hope that the creation itself
+        will be set free from its bondage to corruption and obtain the freedom
+        of the glory of the children of God. For we know that the whole creation
+        has been groaning together in the pains of childbirth until now. And not
+        only the creation, but we ourselves, who have the firstfruits of the
+        Spirit, groan inwardly as we wait eagerly for adoption as sons, the
+        redemption of our bodies. For in this hope we were saved. Now hope that
+        is seen is not hope. For who hopes for what he sees? But if we hope for
+        what we do not see, we wait for it with patience. </blog-reference-tooltip
+      ><br />
+
+      <blog-reference-tooltip [reference]="'Philippians 3'">
+        But whatever gain I had, I counted as loss for the sake of Christ.
+        Indeed, I count everything as loss because of the surpassing worth of
+        knowing Christ Jesus my Lord. For his sake I have suffered the loss of
+        all things and count them as rubbish, in order that I may gain Christ
+        and be found in him, not having a righteousness of my own that comes
+        from the law, but that which comes through faith in Christ, the
+        righteousness from God that depends on faith— that I may know him and
+        the power of his resurrection, and may share his sufferings, becoming
+        like him in his death, that by any means possible I may attain the
+        resurrection from the dead. </blog-reference-tooltip
+      ><br />
+
+      The promise of the inheritance is contingent on our present sufferings
+      with Christ (see also 1 Thessalonians 3 + 2 Thessalonians 2) the
+      fellowship of His sufferings, sharing in His afflictions through our faith
+      in Him: since Christ suffered and gave Himself up for us, not living for
+      Himself, but for God, following His will even to death even that on a
+      cross, we also pick up our cross and suffer for the sake of Christ,
+      bearing His reproach and living not for our own wills, but for God's will
+      because of His great love revealed to us in Christ Jesus our Lord. We obey
+      Christ in this way, following His example for He is the Way and His
+      directives do direct us to eternal life so they are not burdensome.
+      Everything He commands us to do, He, our Commander, has done for us, and
+      we are His soldiers of His heavenly legion with weapons of war of good in
+      the right hand and the left, fighting the good fight of the faith, tearing
+      down the strongholds of the enemy which are his lies. We constantly hand
+      ourselves over to death so that the life of Jesus may be expressed in our
+      mortal body. So we see then, the newness of flesh is not just something to
+      be partaken in the future, but is also partaken in the present: the more
+      we die, the more Christ fills us. "For we who are alive are always being
+      given over to death for Jesus' sake, so that his life may be revealed in
+      our mortal body." (2 Corinthians 4) and "Therefore bear fruit in keeping
+      with repentance" (Matthew 3).For this is the goal: to be filled with the
+      fullness of the Spirit & to be grown into the maturity of the Christ & to
+      be in resemblance of the perfection and holiness of the Father & to be in
+      unity in the body of Christ with one mind and purpose, loving one another.
+      We see then, our bodies are growing to be like Christ and will be in the
+      future like Christ's spiritual body. <br /><br />
+
       <blog-reference-tooltip [reference]="'1 Corinthians 15'">
         But someone will ask, “How are the dead raised? With what kind of body
-        do they come?” You foolish person! eWhat you sow does not come to life
+        do they come?” You foolish person! What you sow does not come to life
         unless it dies. And what you sow is not the body that is to be, but a
         bare kernel, perhaps of wheat or of some other grain. But God gives it a
         body as he has chosen, and to each kind of seed its own body. For not
@@ -2602,30 +2738,123 @@
 
 <div class="pimg1">
   <section class="section section-light floater">
-    <h2 class="headers">Rewards for Overcoming</h2>
+    <h2 class="headers">Eternal Judgement</h2>
     <p class="paragraphs">
       <blog-reference-tooltip
-        [reference]="'Revelation 2, 3'"
+        [reference]="'Revelation 2, 3, 21'"
         [isJesusWord]="true"
       >
-        To him who overcomes I will give to eat from the tree of life, which is
-        in the midst of the Paradise of God. (...) He who overcomes shall not be
-        hurt by the second death. (...) To him who overcomes I will give some of
-        the hidden manna to eat. And I will give him a white stone, and on the
-        stone a new name written which no one knows except him who receives it.
-        (...) And he who overcomes, and keeps My works until the end, to him I
-        will give power over the nations— ‘He shall rule them with a rod of
-        iron; They shall be dashed to pieces like the potter’s vessels’— as I
-        also have received from My Father; and I will give him the morning star.
-        (...) He who overcomes shall be clothed in white garments, and I will
-        not blot out his name from the Book of Life; but I will confess his name
-        before My Father and before His angels. (...) He who overcomes, I will
-        make him a pillar in the temple of My God, and he shall go out no more.
-        I will write on him the name of My God and the name of the city of My
-        God, the New Jerusalem, which comes down out of heaven from My God. And
-        I will write on him My new name. (...) To him that overcometh will I
-        grant to sit with me in my throne, even as I also overcame, and am set
-        down with my Father in his throne
+        To him who <b>overcomes</b> I will give to eat from the tree of life,
+        which is in the midst of the Paradise of God. (...) He who
+        <b>overcomes</b> shall not be hurt by the second death. (...) To him who
+        <b>overcomes</b> I will give some of the hidden manna to eat. And I will
+        give him a white stone, and on the stone a new name written which no one
+        knows except him who receives it. (...) And he who <b>overcomes</b>, and
+        keeps My works until the end, to him I will give power over the nations—
+        ‘He shall rule them with a rod of iron; They shall be dashed to pieces
+        like the potter’s vessels’— as I also have received from My Father; and
+        I will give him the morning star. (...) He who <b>overcomes</b> shall be
+        clothed in white garments, and I will not blot out his name from the
+        Book of Life; but I will confess his name before My Father and before
+        His angels. (...) He who <b>overcomes</b>, I will make him a pillar in
+        the temple of My God, and he shall go out no more. I will write on him
+        the name of My God and the name of the city of My God, the New
+        Jerusalem, which comes down out of heaven from My God. And I will write
+        on him My new name. (...) To him that <b>overcomes</b> will I grant to
+        sit with me in my throne, even as I also <b>overcame</b> and am set down
+        with my Father in his throne. (...) He who overcomes will inherit these
+        things (new heavens and new earth), and I will be his God and he will be
+        My son. </blog-reference-tooltip
+      ><br />
+
+      <blog-reference-tooltip [reference]="'Revelation 12'">
+        Then I heard a loud voice in heaven, saying, “Now the salvation, and the
+        power, and the kingdom of our God and the authority of His Christ have
+        come, for the accuser of our brethren has been thrown down, he who
+        accuses them before our God day and night. And they
+        <b>overcame</b> him because of the blood of the Lamb and because of the
+        word of their testimony, and they did not love their life even when
+        faced with death. For this reason, rejoice, O heavens and you who dwell
+        in them. Woe to the earth and the sea, because the devil has come down
+        to you, having great wrath, knowing that he has only a short time.” </blog-reference-tooltip
+      ><br />
+
+      We have great hope from above if we overcome holding fast our confession
+      until the end. All of us in Christ Jesus, have been forgiven of our sins,
+      the debt that was in our account that testified against us, stored up
+      under the former covenant when we walked according to the flesh and were
+      by nature children of wrath, now, after our accounts have been cleared,
+      God has credited into our account gifts from the Spirit so that we would
+      gain more with what He has entrusted to us. The stewardship that we have
+      is to build up and edify the church and also, bartering and trading our
+      talents and winning more. Paul never built on another man's foundation
+      (Romans 15), but laid his own, so he would know what type it is. Let us
+      beware that we not build on any foundation other than the one that has
+      been laid: Jesus Christ, the Rock of foundation and the Chief cornerstone.
+      As it is written,
+      <blog-reference-tooltip [reference]="'Romans 6'">
+        If anyone builds on this foundation using gold, silver, costly stones,
+        wood, hay or straw, their work will be shown for what it is, because the
+        Day will bring it to light. It will be revealed with fire, and the fire
+        will test the quality of each personʼs work. If what has been built
+        survives, the builder will receive a reward. If it is burned up, the
+        builder will suffer loss but yet will be saved — even though only as one
+        escaping through the flames. </blog-reference-tooltip
+      ><br />
+
+      If we are faithful with little, we will be faithful with much and Christ
+      will put us in charge of many things (Matthew 25). Winning more is like
+      gambling. We play the slot machines spending some of our money in order to
+      hit a jackpot and win more. Do all slot machines hit the jackpot? Is all
+      soil good and fertile? If the soil is bad, the seed that was cast on the
+      soil is wasted; there is nothing wrong with the seed, but the soil is the
+      problem. The money going in the slot machine is wasted, unless it produces
+      a yield. Does one know beforehand whether the soil is going to be bad or
+      not? What about if a machine will win? Not so, otherwise there would be no
+      room for chance and everything would yield - everyone would profit. God is
+      sovereign in all areas even in chance; He provides the growth of the seed,
+      and He makes the lot fall and He puts things in our way at just the right
+      time. We trust Him as we operate this dark world as He is our Light; trust
+      in the Light. This all assumes the seed is good and the money is good;
+      there is a bad seed which is called a lie. Does someone attempt to sell a
+      car speak dishonestly in his ad? No, otherwise when the person comes to
+      see the car in reality, they will see you have lied; he will be angry with
+      you because you wasted his time, and he will have a distrust for all car
+      salesmen because of that one experience; he will say, "Those car salesmen
+      are all no good". So we see how terrible a lie is! Also, how terrible
+      stereotyping is. Make sure your seed is good; that you are taught by the
+      Son of God and that you practice first before casting, lest yourself be
+      disqualified for the prize in the end. What the heart is full of, the
+      mouth speaks and whoever loves and practices a lie will not inherit the
+      Kingdom of God (Revelation 22). <br /><br />
+
+      <blog-reference-tooltip [reference]="'Matthew 25'" [isJesusWord]="true">
+        When the Son of Man comes in his glory, and all the angels with him,
+        then he will sit on his glorious throne. Before him will be gathered all
+        the nations, and he will separate people one from another as a shepherd
+        separates the sheep from the goats. And he will place the sheep on his
+        right, but the goats on the left. Then the King will say to those on his
+        right, ‘Come, you who are blessed by my Father, inherit the kingdom
+        prepared for you from the foundation of the world. For I was hungry and
+        you gave me food, I was thirsty and you gave me drink, I was a stranger
+        and you welcomed me, I was naked and you clothed me, I was sick and you
+        visited me, I was in prison and you came to me.’ Then the righteous will
+        answer him, saying, ‘Lord, when did we see you hungry and feed you, or
+        thirsty and give you drink? And when did we see you a stranger and
+        welcome you, or naked and clothe you? And when did we see you sick or in
+        prison and visit you?’ And the King will answer them, ‘Truly, I say to
+        you, as you did it to one of the least of these my brothers, you did it
+        to me.’ “Then he will say to those on his left, ‘Depart from me, you
+        cursed, into the eternal fire prepared for the devil and his angels. For
+        I was hungry and you gave me no food, I was thirsty and you gave me no
+        drink, I was a stranger and you did not welcome me, naked and you did
+        not clothe me, sick and in prison and you did not visit me.’ Then they
+        also will answer, saying, ‘Lord, when did we see you hungry or thirsty
+        or a stranger or naked or sick or in prison, and did not minister to
+        you?’ Then he will answer them, saying, ‘Truly, I say to you, as you did
+        not do it to one of the least of these, you did not do it to me.’ And
+        these will go away into eternal punishment, but the righteous into
+        eternal life.
       </blog-reference-tooltip>
     </p>
   </section>
@@ -2673,8 +2902,17 @@
   <section class="section section-light floater">
     <h2 class="headers">New Heavens and New Earth</h2>
     <p class="paragraphs">
+      <blog-reference-tooltip [reference]="'Isaiah 65'">
+        For behold, I will create new heavens and a new earth. The former things
+        will not be remembered, nor will they come to mind. But be glad and
+        rejoice forever in what I create; for I will create Jerusalem to be a
+        joy and its people to be a delight. I will rejoice in Jerusalem and take
+        delight in My people. The sounds of weeping and crying will no longer be
+        heard in her. </blog-reference-tooltip
+      ><br />
+
       <blog-reference-tooltip [reference]="'Revelation 21'">
-        Then I saw a new heaven and a new earth,a for the first heaven and earth
+        Then I saw a new heaven and a new earth, for the first heaven and earth
         had passed away, and the sea was no more. saw the holy city, the new
         Jerusalem, coming down out of heaven from God, prepared as a bride
         adorned for her husband. And I heard a loud voice from the throne
@@ -2687,24 +2925,55 @@
         these words are faithful and true.” </blog-reference-tooltip
       ><br />
 
-      <blog-reference-tooltip [reference]="'Isaiah 65'">
-        For behold, I will create new heavens and a new earth. The former things
-        will not be remembered, nor will they come to mind. But be glad and
-        rejoice forever in what I create; for I will create Jerusalem to be a
-        joy and its people to be a delight. I will rejoice in Jerusalem and take
-        delight in My people. The sounds of weeping and crying will no longer be
-        heard in her. </blog-reference-tooltip
+      We have been created new in Christ Jesus if He indeed has given us His
+      Spirit & cut away our old nature with a circumcision not done by human
+      hands. Only the new creation will inherit the kingdom of God; flesh and
+      blood cannot enter the kingdom of God. In Genesis, God created the present
+      world and humanity and all other flesh in 6 days; He will also create the
+      new heavens and new earth which He promised, making all things new, as a
+      place where righteousness dwells; for this present heavens and earth are
+      corrupt and everything rots and decays with use over time because of the
+      dysfunction of the fallen human nature and the death & destruction that
+      comes from it; but the new heavens and new earth will be a place that does
+      not decay nor wear out like a garment, a place where righteousness dwells.
+      For just as God did away with the ancient world with a flood and afterward
+      only Noah and his family (who were righteous) survived on the earth, so
+      will it be when God floods the world again with fire, preserving the
+      righteous who will inherit the new earth: God is preparing a place for us.
+      The first of the new creation is Jesus Christ, Who is the firstfruits of
+      the resurrection, and firstfruits of the new creation; this new creation
+      is not born from will of man, but born of the Spirit. For everything of
+      the old is passing away and only the work of the new will remain; we who
+      are created anew in Christ Jesus will inherit all these things if we
+      persevere until the end. In the beginning, God created everything that we
+      can see; and His work that we do not see is being reenacted in us as it
+      was in the beginning. As it is written,
+      <blog-reference-tooltip [reference]="'2 Corinthians 4'">
+        For God, who said, “Light shall shine out of darkness,” is the One who
+        has shone in our hearts to give the Light of the knowledge of the glory
+        of God in the face of Christ. </blog-reference-tooltip
       ><br />
 
-      <blog-reference-tooltip [reference]="'1 Corinthians 3'">
-        If anyone builds on this foundation using gold, silver, costly stones,
-        wood, hay or straw, their work will be shown for what it is, because the
-        Day will bring it to light. It will be revealed with fire, and the fire
-        will test the quality of each personʼs work. If what has been built
-        survives, the builder will receive a reward. If it is burned up, the
-        builder will suffer loss but yet will be saved — even though only as one
-        escaping through the flames. </blog-reference-tooltip
-      ><br />
+      We are being built up and edified as living stones into a spiritual house,
+      the new Jerusalem that will come out of heaven in which we will dwell as a
+      holy priesthood, a chosen race, a peculiar people for God's own
+      possession. As the Truth living in Peter says,
+      <blog-reference-tooltip [reference]="'1 Peter 2'">
+        And coming to Him as to a living stone which has been rejected by men,
+        but is choice and precious in the sight of God, you also, as living
+        stones, are being built up as a spiritual house for a holy priesthood,
+        to offer up spiritual sacrifices acceptable to God through Jesus Christ.
+      </blog-reference-tooltip>
+      In the Revelation of Jesus Christ, we see there are 144,000 that are
+      preserved from the earth, sealed with a mark on their foreheads from the
+      plagues that came upon the earth. Likewise, the city is 12,000 cubits in
+      length, breadth, and height. The measure of the wall of the city is 144
+      cubits and the foundation of the wall has twelve gates each with pearl and
+      inscribed a name of one of the twelve tribes of Israel. The wall also
+      having twelve foundations with precious stones written the names of the
+      twelve apostles of the Lamb. Also promised to us is a white stone written
+      on it a new name that no one knows except the one who receives it. Glory
+      be to God the Father and our Lord Jesus Christ.
     </p>
   </section>
 </div>
