@@ -1,5 +1,7 @@
 <div class="psalm-item" *ngFor="let psalm of psalms$ | async">
-  <div class="psalm-title">{{ psalm.title }}</div>
+  <div class="psalm-title primary-color" (click)="navigate(psalm)">
+    {{ psalm.title }}
+  </div>
   <div>{{ psalm.date | date: "short" }}</div>
 
   <button mat-flat-button *ngIf="update" (click)="doUpdate(psalm)">

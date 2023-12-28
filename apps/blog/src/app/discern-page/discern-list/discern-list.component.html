@@ -1,5 +1,7 @@
 <div class="discern-item" *ngFor="let discern of discernments$ | async">
-  <div class="discern-title">{{ discern.title }}</div>
+  <div class="discern-title primary-color" (click)="navigate(discern)">
+    {{ discern.title }}
+  </div>
   <div>{{ discern.date | date: "short" }}</div>
 
   <button mat-flat-button *ngIf="update" (click)="doUpdate(discern)">

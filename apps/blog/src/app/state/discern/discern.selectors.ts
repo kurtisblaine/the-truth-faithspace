@@ -16,6 +16,9 @@ export const getDiscernLoaded = createSelector(
   (state: State) => state.loaded
 );
 
+export const getById = (id: string) =>
+  createSelector(getDiscernmentsState, (state: State) => state.entities[id]);
+
 export const getDiscernError = createSelector(
   getDiscernmentsState,
   (state: State) => state.error
