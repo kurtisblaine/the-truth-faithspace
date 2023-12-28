@@ -3,12 +3,14 @@ import { NgModule } from "@angular/core";
 import { MatGridListModule } from "@angular/material/grid-list";
 import { RouterModule, Routes } from "@angular/router";
 import { PhotoGalleryModule } from "@twogate/ngx-photo-gallery";
+import { DrawItemComponent } from "./draw-item/draw-item.component";
 import { DrawPageComponent } from "./draw-page.component";
 const routes: Routes = [
   {
     path: "drawing",
     component: DrawPageComponent,
   },
+  { path: "draw/:id", component: DrawItemComponent },
 ];
 @NgModule({
   declarations: [DrawPageComponent],
