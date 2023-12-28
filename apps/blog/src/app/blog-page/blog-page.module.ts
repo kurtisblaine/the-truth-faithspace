@@ -4,6 +4,7 @@ import { MatButtonModule } from "@angular/material/button";
 import { MatDividerModule } from "@angular/material/divider";
 import { RouterModule, Routes } from "@angular/router";
 import { SharedModule } from "../shared/shared.module";
+import { BlogDetailComponent } from "./blog-detail/blog-detail.component";
 import { BlogListComponent } from "./blog-list/blog-list.component";
 import { BlogPageComponent } from "./blog-page.component";
 const routes: Routes = [
@@ -11,9 +12,10 @@ const routes: Routes = [
     path: "blogs",
     component: BlogPageComponent,
   },
+  { path: "blog-detail/:id", component: BlogDetailComponent },
 ];
 @NgModule({
-  declarations: [BlogPageComponent, BlogListComponent],
+  declarations: [BlogPageComponent, BlogListComponent, BlogDetailComponent],
   imports: [
     CommonModule,
     MatDividerModule,

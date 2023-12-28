@@ -1,5 +1,7 @@
 <div class="blog-item" *ngFor="let blog of blogs$ | async">
-  <div class="blog-title">{{ blog.title }}</div>
+  <div class="blog-title primary-color" (click)="navigate(blog)">
+    {{ blog.title }}
+  </div>
   <div>{{ blog.date | date: "short" }}</div>
 
   <button mat-flat-button *ngIf="update" (click)="doUpdate(blog)">
