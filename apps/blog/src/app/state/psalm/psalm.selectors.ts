@@ -19,6 +19,9 @@ export const getAllPsalm = createSelector(getPsalmState, (state: State) =>
   selectAll(state)
 );
 
+export const getById = (id: string) =>
+  createSelector(getPsalmState, (state: State) => state.entities[id]);
+
 export const getPsalmEntities = createSelector(getPsalmState, (state: State) =>
   selectEntities(state)
 );

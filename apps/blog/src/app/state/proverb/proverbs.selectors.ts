@@ -1,5 +1,5 @@
 import { createFeatureSelector, createSelector } from "@ngrx/store";
-import { proverbAdapter, proverbsFeatureKey, State } from "./proverbs.reducer";
+import { State, proverbAdapter, proverbsFeatureKey } from "./proverbs.reducer";
 
 export const getProverbsState =
   createFeatureSelector<State>(proverbsFeatureKey);
@@ -15,6 +15,9 @@ export const getProverbError = createSelector(
   getProverbsState,
   (state: State) => state.error
 );
+
+export const getById = (id: string) =>
+  createSelector(getProverbsState, (state: State) => state.entities[id]);
 
 export const getAllProverb = createSelector(getProverbsState, (state: State) =>
   selectAll(state)

@@ -34,4 +34,8 @@ export class BlogListComponent implements OnInit {
 
     // this.router.navigateByUrl("blogs");
   }
+
+  public navigate(blog) {
+    this.router.navigateByUrl("blog-detail/" + blog.id, { state: { blog } });
+  }
 }

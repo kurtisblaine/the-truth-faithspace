@@ -1,5 +1,7 @@
 <div class="proverb-item" *ngFor="let proverb of proverbs$ | async">
-  <div class="proverb-title">{{ proverb.title }}</div>
+  <div class="proverb-title primary-color" (click)="navigate(proverb)">
+    {{ proverb.title }}
+  </div>
   <div>{{ proverb.date | date: "short" }}</div>
 
   <button mat-flat-button *ngIf="update" (click)="doUpdate(proverb)">
