@@ -34,4 +34,10 @@ export class ProverbListComponent implements OnInit {
 
     // this.router.navigateByUrl("proverbs");
   }
+
+  public navigate(blog) {
+    this.router.navigateByUrl("proverb-detail/" + blog.id, {
+      state: { blog },
+    });
+  }
 }

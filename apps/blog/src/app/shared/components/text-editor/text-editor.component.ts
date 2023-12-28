@@ -21,6 +21,7 @@ export class TextEditorComponent implements OnInit, OnDestroy {
 
   @Input() public document = {};
   @Input() public readonly = false;
+  @Input() public showReadMore = true;
   @Output() public editorChanged = new EventEmitter();
 
   public toolbar: Toolbar = [
@@ -43,6 +44,7 @@ export class TextEditorComponent implements OnInit, OnDestroy {
   constructor() {}
 
   ngOnInit(): void {
+    // this.isReadMore = !this.showReadMore;
     this.isEmpty = !!Object.entries(this.document).length;
     const className = `text-editor`;
 
