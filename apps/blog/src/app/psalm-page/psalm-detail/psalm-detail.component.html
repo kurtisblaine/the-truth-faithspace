@@ -1,12 +1,11 @@
 <h1 style="padding: 15px 0px 0px" class="primary-color">God bless you</h1>
 <h2 class="blog-title primary-color">
-  {{ blog.title.toUpperCase() }}
+  {{ blog?.title?.toUpperCase() }}
 </h2>
-<div>{{ blog.date | date: "short" }}</div>
+<div>{{ blog?.date | date: "short" }}</div>
 
 <blog-text-editor
   [readonly]="true"
   [document]="blog.json"
   [showReadMore]="false"
-  (editorChanged)="blog.json = $event"
 ></blog-text-editor>

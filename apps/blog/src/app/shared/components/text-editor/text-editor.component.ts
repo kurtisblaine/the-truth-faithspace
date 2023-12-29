@@ -2,6 +2,7 @@ import {
   Component,
   EventEmitter,
   Input,
+  OnChanges,
   OnDestroy,
   OnInit,
   Output,
@@ -14,10 +15,11 @@ import { Editor, Toolbar } from "ngx-editor";
   templateUrl: "./text-editor.component.html",
   styleUrls: ["./text-editor.component.scss"],
 })
-export class TextEditorComponent implements OnInit, OnDestroy {
+export class TextEditorComponent implements OnInit, OnDestroy, OnChanges {
   public editor!: Editor;
   public isReadMore = false;
   public isEmpty = false;
+  public className = `text-editor`;
 
   @Input() public document = {};
   @Input() public readonly = false;
@@ -45,17 +47,16 @@ export class TextEditorComponent implements OnInit, OnDestroy {
 
   ngOnInit(): void {
     this.isEmpty = !!Object.entries(this.document).length;
-    const className = `text-editor`;
 
     this.editor = new Editor({
       attributes: {
         spellcheck: "true",
-        class: className,
+        class: this.className,
       },
     });
 
     if (this.readonly) {
-      $(`.${className}`).attr("contenteditable", "false");
+      $(`.${this.className}`).attr("contenteditable", "false");
     }
 
     this.editor.valueChanges.subscribe((value) =>
@@ -68,6 +69,12 @@ export class TextEditorComponent implements OnInit, OnDestroy {
         disabled: false,
       }),
     });
+  }
+
+  ngOnChanges() {
+    if (this.readonly) {
+      $(`.${this.className}`).attr("contenteditable", "false");
+    }
   }
 
   ngOnDestroy(): void {
