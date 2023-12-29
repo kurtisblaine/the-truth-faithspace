@@ -44,7 +44,6 @@ export class TextEditorComponent implements OnInit, OnDestroy {
   constructor() {}
 
   ngOnInit(): void {
-    // this.isReadMore = !this.showReadMore;
     this.isEmpty = !!Object.entries(this.document).length;
     const className = `text-editor`;
 

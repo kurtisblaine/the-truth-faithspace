@@ -1,6 +1,6 @@
 <div class="proverb-item" *ngFor="let proverb of proverbs$ | async">
   <div class="proverb-title primary-color" (click)="navigate(proverb)">
-    {{ proverb.title }}
+    {{ proverb.title.toUpperCase() }}
   </div>
   <div>{{ proverb.date | date: "short" }}</div>
 

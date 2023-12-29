@@ -2,6 +2,7 @@ import { Component, OnInit } from "@angular/core";
 import { ActivatedRoute } from "@angular/router";
 import { Store } from "@ngrx/store";
 import { switchMap } from "rxjs";
+import { loadPsalms } from "../../state/psalm/psalm.actions";
 import { PsalmEntity } from "../../state/psalm/psalm.models";
 import { getById } from "../../state/psalm/psalm.selectors";
 
@@ -16,6 +17,8 @@ export class PsalmDetailComponent implements OnInit {
   constructor(private store: Store, private route: ActivatedRoute) {}
 
   ngOnInit(): void {
+    this.store.dispatch(loadPsalms());
+
     this.route.params
       .pipe(
         switchMap((p) => {

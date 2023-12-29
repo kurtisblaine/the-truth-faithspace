@@ -1,6 +1,6 @@
 <div class="blog-item" *ngFor="let blog of blogs$ | async">
   <div class="blog-title primary-color" (click)="navigate(blog)">
-    {{ blog.title }}
+    {{ blog.title.toUpperCase() }}
   </div>
   <div>{{ blog.date | date: "short" }}</div>
 

@@ -3,6 +3,7 @@ import { ActivatedRoute } from "@angular/router";
 import { Store } from "@ngrx/store";
 import { switchMap } from "rxjs";
 import { ProverbEntity } from "../../state/proverb/proverb.models";
+import { loadProverbs } from "../../state/proverb/proverbs.actions";
 import { getById } from "../../state/proverb/proverbs.selectors";
 
 @Component({
@@ -16,6 +17,8 @@ export class ProverbDetailComponent implements OnInit {
   constructor(private store: Store, private route: ActivatedRoute) {}
 
   ngOnInit(): void {
+    this.store.dispatch(loadProverbs());
+
     this.route.params
       .pipe(
         switchMap((p) => {
