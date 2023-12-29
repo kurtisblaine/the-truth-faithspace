@@ -2,3 +2,7 @@
   max-width: 1211px;
   display: block;
 }
+
+.blog-title {
+  font-weight: 700;
+}

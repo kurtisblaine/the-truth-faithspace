@@ -1,6 +1,6 @@
 <div class="discern-item" *ngFor="let discern of discernments$ | async">
   <div class="discern-title primary-color" (click)="navigate(discern)">
-    {{ discern.title }}
+    {{ discern.title.toUpperCase() }}
   </div>
   <div>{{ discern.date | date: "short" }}</div>
 
