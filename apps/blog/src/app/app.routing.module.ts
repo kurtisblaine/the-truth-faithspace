@@ -1,5 +1,11 @@
 import { NgModule } from "@angular/core";
-import { PreloadAllModules, RouterModule, Routes } from "@angular/router";
+import {
+  PreloadAllModules,
+  RouterModule,
+  Routes,
+  provideRouter,
+  withHashLocation,
+} from "@angular/router";
 
 const routes: Routes = [
   {
@@ -70,6 +76,6 @@ const routes: Routes = [
     }),
   ],
   exports: [RouterModule],
-  providers: [],
+  providers: [provideRouter(routes, withHashLocation())],
 })
 export class AppRoutingModule {}
