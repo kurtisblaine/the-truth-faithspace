@@ -67,14 +67,20 @@
   <mat-drawer-content>
     <div class="header">
       <mat-toolbar color="primary">
-        <button mat-icon-button class="example-icon" (click)="drawer.toggle()">
+        <button
+          mat-icon-button
+          class="example-icon"
+          (click)="drawer.toggle()"
+          title="menu-button"
+        >
           <fa-icon [icon]="icon" [size]="'lg'"></fa-icon>
         </button>
 
-        <!-- <span>The Good News of The Kingdom of God</span> -->
+        <!-- <span>The Light of Life</span> -->
       </mat-toolbar>
 
       <mat-progress-bar
+        [color]="'accent'"
         id="bar"
         mode="determinate"
         [value]="progressValue$ | async"
