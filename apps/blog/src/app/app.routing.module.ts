@@ -73,6 +73,7 @@ const routes: Routes = [
       onSameUrlNavigation: "reload",
       anchorScrolling: "enabled",
       preloadingStrategy: PreloadAllModules,
+      scrollPositionRestoration: "enabled",
     }),
   ],
   exports: [RouterModule],
