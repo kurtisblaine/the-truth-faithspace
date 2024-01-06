@@ -1,6 +1,7 @@
 import { CommonModule } from "@angular/common";
 import { NgModule } from "@angular/core";
 import { MatGridListModule } from "@angular/material/grid-list";
+import { MatProgressSpinnerModule } from "@angular/material/progress-spinner";
 import { RouterModule, Routes } from "@angular/router";
 import { PhotoGalleryModule } from "@twogate/ngx-photo-gallery";
 import { DrawItemComponent } from "./draw-item/draw-item.component";
@@ -16,6 +17,7 @@ const routes: Routes = [
   declarations: [DrawPageComponent],
   imports: [
     CommonModule,
+    MatProgressSpinnerModule,
     RouterModule.forChild(routes),
     MatGridListModule,
     PhotoGalleryModule.forRoot({

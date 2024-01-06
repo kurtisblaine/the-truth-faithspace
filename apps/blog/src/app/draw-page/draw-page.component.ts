@@ -1,11 +1,13 @@
 import { Component, OnInit } from "@angular/core";
 import { Router } from "@angular/router";
+import { faImage } from "@fortawesome/free-solid-svg-icons";
 export interface Image {
   id: number;
   name?: string;
   description: string;
   footer: string;
   originUrl: string;
+  isFinishedLoading?: boolean;
 }
 @Component({
   selector: "blog-draw-page",
@@ -13,11 +15,17 @@ export interface Image {
   styleUrls: ["./draw-page.component.scss"],
 })
 export class DrawPageComponent implements OnInit {
+  public imageIcon = faImage;
   public images: Image[] = [];
   constructor(private router: Router) {}
 
   navigate(image: Image) {
     this.router.navigateByUrl("draw/" + image.originUrl);
+  }
+
+  hideLoader(id: number) {
+    const i = this.images.find((image) => image.id === id);
+    i.isFinishedLoading = true;
   }
 
   ngOnInit(): void {
