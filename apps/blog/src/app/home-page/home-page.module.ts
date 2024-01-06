@@ -1,6 +1,7 @@
 import { CommonModule } from "@angular/common";
 import { NgModule } from "@angular/core";
 import { RouterModule, Routes } from "@angular/router";
+import { AngularFullpageModule } from "@fullpage/angular-fullpage";
 
 import { MatButtonModule } from "@angular/material/button";
 import { IvyCarouselModule } from "angular-responsive-carousel2";
@@ -19,6 +20,7 @@ const routes: Routes = [
     CommonModule,
     SharedModule,
     MatButtonModule,
+    AngularFullpageModule,
     IvyCarouselModule,
     RouterModule.forChild(routes),
   ],
