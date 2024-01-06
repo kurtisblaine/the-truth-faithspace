@@ -80,7 +80,6 @@
       </mat-toolbar>
 
       <mat-progress-bar
-        [color]="'accent'"
         id="bar"
         mode="determinate"
         [value]="progressValue$ | async"
@@ -93,9 +92,18 @@
       class="scoll-to-top"
       mat-fab
       color="primary"
+      style="z-index: 7777777"
       (click)="scrollToTop(toTop)"
     >
       Top
     </button>
+
+    <mat-progress-bar
+      id="bar"
+      style="margin: 0"
+      class="scoll-to-top"
+      mode="determinate"
+      [value]="progressValue$ | async"
+    ></mat-progress-bar>
   </mat-drawer-content>
 </mat-drawer-container>
