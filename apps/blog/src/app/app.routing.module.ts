@@ -1,5 +1,11 @@
 import { NgModule } from "@angular/core";
-import { PreloadAllModules, RouterModule, Routes } from "@angular/router";
+import {
+  PreloadAllModules,
+  RouterModule,
+  Routes,
+  provideRouter,
+  withHashLocation,
+} from "@angular/router";
 
 const routes: Routes = [
   {
@@ -67,9 +73,10 @@ const routes: Routes = [
       onSameUrlNavigation: "reload",
       anchorScrolling: "enabled",
       preloadingStrategy: PreloadAllModules,
+      scrollPositionRestoration: "enabled",
     }),
   ],
   exports: [RouterModule],
-  providers: [],
+  providers: [provideRouter(routes, withHashLocation())],
 })
 export class AppRoutingModule {}

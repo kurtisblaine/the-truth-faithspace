@@ -41,11 +41,11 @@
         <span matListItemTitle>Drawing</span>
         <span>make simple the complex things of the Word.</span>
       </mat-list-item>
-      <mat-list-item lines="3" (click)="goTracts(); drawer.close()">
+      <!-- <mat-list-item lines="3" (click)="goTracts(); drawer.close()">
         <fa-icon matListItemIcon [icon]="tractIcon" [size]="'lg'"></fa-icon>
         <span matListItemTitle>Tract</span>
         <span>communicate Truth in a quick and effective way.</span>
-      </mat-list-item>
+      </mat-list-item> -->
 
       <!-- <mat-divider></mat-divider>
       <div mat-subheader>Resources</div>
@@ -67,14 +67,20 @@
   <mat-drawer-content>
     <div class="header">
       <mat-toolbar color="primary">
-        <button mat-icon-button class="example-icon" (click)="drawer.toggle()">
+        <button
+          mat-icon-button
+          class="example-icon"
+          (click)="drawer.toggle()"
+          title="menu-button"
+        >
           <fa-icon [icon]="icon" [size]="'lg'"></fa-icon>
         </button>
 
-        <!-- <span>The Good News of The Kingdom of God</span> -->
+        <span></span>
       </mat-toolbar>
 
       <mat-progress-bar
+        [color]="'accent'"
         id="bar"
         mode="determinate"
         [value]="progressValue$ | async"
