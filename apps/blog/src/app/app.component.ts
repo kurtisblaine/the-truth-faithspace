@@ -7,12 +7,12 @@ import {
 } from "@angular/core";
 import { Router } from "@angular/router";
 import {
+  faBars,
   faBrain,
   faEnvelope,
   faEye,
   faFile,
   faGavel,
-  faGrip,
   faHouse,
   faLink,
   faMusic,
@@ -29,7 +29,7 @@ export class AppComponent implements OnInit, AfterViewInit {
   @ViewChild("toTop") public toTopElement: ElementRef;
 
   public title = "The Good News of The Kingdom of God";
-  public icon = faGrip;
+  public icon = faBars;
   public homeIcon = faHouse;
   public blogIcon = faEye;
   public psalmIcon = faMusic;

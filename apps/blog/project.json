@@ -20,7 +20,7 @@
           "./node_modules/@angular/material/prebuilt-themes/indigo-pink.css",
           "apps/blog/src/styles.scss"
         ],
-        "scripts": ["node_modules/parallax-js/dist/parallax.min.js"],
+        "scripts": [],
         "sourceMap": true,
         "namedChunks": true
       },
@@ -30,7 +30,7 @@
             {
               "type": "initial",
               "maximumWarning": "500kb",
-              "maximumError": "3mb"
+              "maximumError": "10mb"
             },
             {
               "type": "anyComponentStyle",
