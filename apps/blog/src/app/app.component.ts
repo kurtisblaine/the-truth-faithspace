@@ -46,7 +46,7 @@ export class AppComponent implements OnInit, AfterViewInit {
   constructor(private router: Router) {}
 
   public ngOnInit() {
-    this.progressValue$ = fromEvent(window, "scroll").pipe(
+    this.progressValue$ = fromEvent(window, "scroll", { passive: true }).pipe(
       map(() => {
         clearTimeout(this.scrollTimeout);
 

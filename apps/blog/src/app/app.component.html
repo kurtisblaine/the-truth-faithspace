@@ -78,12 +78,6 @@
 
         <span></span>
       </mat-toolbar>
-
-      <mat-progress-bar
-        id="bar"
-        mode="determinate"
-        [value]="progressValue$ | async"
-      ></mat-progress-bar>
     </div>
 
     <router-outlet #toTop></router-outlet>
@@ -99,7 +93,9 @@
     </button>
 
     <mat-progress-bar
-      id="bar"
+      id="progress-bar"
+      role="progressbar"
+      title="Reading Progress"
       style="margin: 0"
       class="scoll-to-top"
       mode="determinate"
