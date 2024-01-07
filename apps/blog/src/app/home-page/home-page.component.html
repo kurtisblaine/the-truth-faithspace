@@ -1,19 +1,28 @@
 <!-- INTRODUCTION -->
-<div class="pimg13" style="background-position: top" #toGospel>
+<!-- <div class="pimg13" style="background-position: top" #toGospel>
   <div class="ptext" [@simpleFadeAnimation] style="font-size: 22px">
     <span class="trans" style="letter-spacing: 6px">
       The Good News of The Kingdom of God </span
     ><br /><br />
-    <a href="#danger-futility">Danger - Futility</a><br />
-    <a href="#danger-sin">Danger - Sin </a><br />
-    <a href="#call-grace">Call - Grace</a><br />
-    <a href="#call-faith">Call - Faith</a><br />
-    <a href="#our-response">Our Response</a><br />
-    <a href="#hope-the-day">Hope - The Day of the Lord</a>
+    <li data-menuanchor="danger-futility">
+      <a href="#danger-futility">Danger - Futility</a>
+    </li>
+    <li data-menuanchor="danger-sin">
+      <a href="#danger-sin">Danger - Sin</a>
+    </li>
+    <li data-menuanchor="call-faith">
+      <a href="#call-faith">Call - Faith</a>
+    </li>
+    <li data-menuanchor="our-response">
+      <a href="#our-response">Our Response</a>
+    </li>
+    <li data-menuanchor="hope-the-day">
+      <a href="#hope-the-day">Hope - The Day of the Lord</a>
+    </li>
   </div>
-</div>
+</div> -->
 
-<div
+<!-- <div
   class="pimg13"
   style="
     background-position: top;
@@ -230,6 +239,33 @@
       </div>
     </carousel>
   </section>
+</div> -->
+<!--
+<ul id="menu">
+  <li data-menuanchor="firstPage"><a href="#firstPage">First section</a></li>
+  <li data-menuanchor="secondPage"><a href="#secondPage">Second section</a></li>
+  <li data-menuanchor="thirdPage"><a href="#thirdPage">Third section</a></li>
+  <li data-menuanchor="fourthPage"><a href="#fourthPage">Fourth section</a></li>
+</ul> -->
+
+<div fullpage id="fullpage" [options]="config">
+  <div class="section">
+    <h1>Section 1</h1>
+  </div>
+  <div class="section">
+    <h1>Section 2</h1>
+  </div>
+  <div class="section">
+    <div class="slide"><h1>Slide 3.1</h1></div>
+    <div class="slide"><h1>Slide 3.2</h1></div>
+    <div class="slide">
+      <h1>Slide 3.3</h1>
+      <a routerLink="secondTest">name</a>
+    </div>
+  </div>
+  <div class="section">
+    <h1>Section 4</h1>
+  </div>
 </div>
 
 <div class="pimg13" style="background-position: top">
