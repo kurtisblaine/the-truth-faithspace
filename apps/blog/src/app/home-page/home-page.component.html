@@ -25,19 +25,16 @@
   <section class="section-dark floater" style="text-align: center">
     <carousel
       [dots]="true"
-      [cellWidth]="555"
-      [height]="333"
+      [cellWidth]="333"
+      [height]="444"
       [arrowsTheme]="'light'"
       [overflowCellsLimit]="0"
       [counter]="true"
       [counterSeparator]="' of '"
+      [arrowsOutside]="true"
     >
       <div class="carousel-cell">
-        <blog-reference-tooltip
-          [reference]="'Romans 3'"
-          [padding]="'0px 77px'"
-          [flex]="true"
-        >
+        <blog-reference-tooltip [reference]="'Romans 3'" [flex]="true">
           None is righteous, no, not one; no one understands; no one seeks for
           God. All have turned aside; together they have become worthless; no
           one does good, not even one. Their throat is an open grave; they use
@@ -48,11 +45,7 @@
       </div>
 
       <div class="carousel-cell">
-        <blog-reference-tooltip
-          [reference]="'Hebrews 4'"
-          [padding]="'0px 77px'"
-          [flex]="true"
-        >
+        <blog-reference-tooltip [reference]="'Hebrews 4'" [flex]="true">
           For the Word of God is living and active, sharper than any two-edged
           sword, piercing to the division of soul and of spirit, of joints and
           of marrow, and discerning the thoughts and intentions of the heart.
@@ -62,11 +55,17 @@
       </div>
 
       <div class="carousel-cell">
-        <blog-reference-tooltip
-          [reference]="'Isaiah 53'"
-          [padding]="'0px 77px'"
-          [flex]="true"
-        >
+        <blog-reference-tooltip [reference]="'Acts 4'" [flex]="true">
+          Let it be known to all of you and to all the people of Israel, that by
+          the name of Jesus Christ the Nazarene, whom you crucified, whom God
+          raised from the dead — by this name this man stands here before you in
+          good health. (...) There is salvation in no one else, for there is no
+          other name under heaven given among men by which we must be saved.
+        </blog-reference-tooltip>
+      </div>
+
+      <div class="carousel-cell">
+        <blog-reference-tooltip [reference]="'Isaiah 53'" [flex]="true">
           He had no form or majesty that we should look at Him, and no beauty
           that we should desire Him. He was despised and rejected by men, a man
           of sorrows, and acquainted with grief; and as one from whom men hide
@@ -77,11 +76,7 @@
       </div>
 
       <div class="carousel-cell">
-        <blog-reference-tooltip
-          [reference]="'Isaiah 53'"
-          [padding]="'0px 77px'"
-          [flex]="true"
-        >
+        <blog-reference-tooltip [reference]="'Isaiah 53'" [flex]="true">
           But He was pierced for our transgressions; He was crushed for our
           iniquities; upon Him was the chastisement that brought us peace, and
           with His wounds we are healed. All we like sheep have gone astray; we
@@ -94,11 +89,7 @@
       </div>
 
       <div class="carousel-cell">
-        <blog-reference-tooltip
-          [reference]="'Isaiah 53'"
-          [padding]="'0px 77px'"
-          [flex]="true"
-        >
+        <blog-reference-tooltip [reference]="'Isaiah 53'" [flex]="true">
           By oppression and judgment He was taken away; and as for His
           generation, who considered that He was cut off out of the land of the
           living, stricken for the transgression of My people? And they made His
@@ -111,11 +102,7 @@
       </div>
 
       <div class="carousel-cell">
-        <blog-reference-tooltip
-          [reference]="'Isaiah 53'"
-          [padding]="'0px 77px'"
-          [flex]="true"
-        >
+        <blog-reference-tooltip [reference]="'Isaiah 53'" [flex]="true">
           Out of the anguish of His soul he shall see and be satisfied; by His
           knowledge shall the righteous One, My Servant, make many to be
           accounted righteous, and He shall bear their iniquities. Therefore I
@@ -127,11 +114,7 @@
       </div>
 
       <div class="carousel-cell">
-        <blog-reference-tooltip
-          [reference]="'Romans 10'"
-          [padding]="'0px 77px'"
-          [flex]="true"
-        >
+        <blog-reference-tooltip [reference]="'Romans 10'" [flex]="true">
           Moses writes this about the righteousness that is by the law: “The
           person who does these things will live by them.” But the righteousness
           that is by faith says: “Do not say in your heart, ‘Who will ascend
@@ -143,11 +126,7 @@
       </div>
 
       <div class="carousel-cell">
-        <blog-reference-tooltip
-          [reference]="'Romans 10'"
-          [padding]="'0px 77px'"
-          [flex]="true"
-        >
+        <blog-reference-tooltip [reference]="'Romans 10'" [flex]="true">
           If you declare with your mouth, “Jesus is Lord,” and believe in your
           heart that God raised him from the dead, you will be saved. For it is
           with your heart that you believe and are justified, and it is with
@@ -160,11 +139,7 @@
       </div>
 
       <div class="carousel-cell">
-        <blog-reference-tooltip
-          [reference]="'James 2'"
-          [padding]="'0px 77px'"
-          [flex]="true"
-        >
+        <blog-reference-tooltip [reference]="'James 2'" [flex]="true">
           Thus also faith by itself, if it does not have works, is dead. But
           someone will say, “You have faith, and I have works.” Show me your
           faith without your works, and I will show you my faith by my works.
@@ -174,11 +149,7 @@
       </div>
 
       <div class="carousel-cell">
-        <blog-reference-tooltip
-          [reference]="'Romans 12'"
-          [padding]="'0px 77px'"
-          [flex]="true"
-        >
+        <blog-reference-tooltip [reference]="'Romans 12'" [flex]="true">
           I appeal to you therefore, brothers, by the mercies of God, to present
           your bodies as a living sacrifice, holy and acceptable to God, which
           is your spiritual worship. Do not be conformed to this world, but be
@@ -189,11 +160,7 @@
       </div>
 
       <div class="carousel-cell">
-        <blog-reference-tooltip
-          [reference]="'Matthew 22'"
-          [padding]="'0px 77px'"
-          [flex]="true"
-        >
+        <blog-reference-tooltip [reference]="'Matthew 22'" [flex]="true">
           ‘Love the Lord your God with all your heart and with all your soul and
           with all your mind.’ This is the first and greatest commandment. And
           the second is like it: ‘Love your neighbor as yourself.’ All the Law
@@ -205,7 +172,6 @@
         <blog-reference-tooltip
           [reference]="'Matthew 22'"
           [isJesusWord]="true"
-          [padding]="'0px 77px'"
           [flex]="true"
         >
           But when the king came in to look at the guests, he saw there a man
@@ -218,11 +184,7 @@
       </div>
 
       <div class="carousel-cell">
-        <blog-reference-tooltip
-          [reference]="'Daniel 12'"
-          [padding]="'0px 77px'"
-          [flex]="true"
-        >
+        <blog-reference-tooltip [reference]="'Daniel 12'" [flex]="true">
           Those who are wise will shine like the brightness of the heavens, and
           those who lead many to righteousness, like the stars for ever and
           ever.

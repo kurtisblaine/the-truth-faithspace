@@ -51,7 +51,7 @@ export class AppComponent implements OnInit, AfterViewInit {
         clearTimeout(this.scrollTimeout);
 
         this.scrollTimeout = setTimeout(function () {
-          console.log("Scroll ended");
+          // console.log("Scroll ended");
         }, 100);
 
         const scrollTop = window.scrollY;
