@@ -43,8 +43,6 @@ export class TextEditorComponent implements OnInit, OnDestroy, OnChanges {
     return this.form.get("editorContent");
   }
 
-  constructor() {}
-
   ngOnInit(): void {
     this.isEmpty = !!Object.entries(this.document).length;
 

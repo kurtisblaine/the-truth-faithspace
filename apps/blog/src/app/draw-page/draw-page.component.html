@@ -9,12 +9,18 @@
   [photoGalleryGroup]="{}"
 >
   <mat-grid-tile *ngFor="let image of this.images" style="cursor: pointer">
+    <!-- [matTooltip]="'Click to listen to a video.'" -->
     <mat-grid-tile-header
       (click)="navigate(image)"
       class="primary-color"
       style="text-decoration: underline; cursor: pointer"
-      >{{ image.name }}</mat-grid-tile-header
-    >
+      >{{ image.name }}
+      <fa-icon
+        [icon]="faLink"
+        [size]="'lg'"
+        style="padding-left: 2px"
+      ></fa-icon>
+    </mat-grid-tile-header>
     <mat-grid-tile-footer>{{ image.footer }}</mat-grid-tile-footer>
     <div
       [photoGallery]="'../../assets/teach/' + image.originUrl"

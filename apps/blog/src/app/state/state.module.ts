@@ -30,6 +30,7 @@ export const metaReducers: MetaReducer<AppState>[] = !environment.production
   ? []
   : [];
 
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 export const effects: Type<any>[] = [
   PsalmEffects,
   BlogEffects,
