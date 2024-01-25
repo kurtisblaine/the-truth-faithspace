@@ -9,6 +9,7 @@
   [photoGalleryGroup]="{}"
 >
   <mat-grid-tile *ngFor="let image of this.images" style="cursor: pointer">
+    <!-- [matTooltip]="'Click to listen to a video.'" -->
     <mat-grid-tile-header
       (click)="navigate(image)"
       class="primary-color"

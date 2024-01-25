@@ -2,6 +2,7 @@ import { CommonModule } from "@angular/common";
 import { NgModule } from "@angular/core";
 import { MatGridListModule } from "@angular/material/grid-list";
 import { MatProgressSpinnerModule } from "@angular/material/progress-spinner";
+import { MatTooltipModule } from "@angular/material/tooltip";
 import { RouterModule, Routes } from "@angular/router";
 import { YOUTUBE_PLAYER_CONFIG, YouTubePlayer } from "@angular/youtube-player";
 import { FontAwesomeModule } from "@fortawesome/angular-fontawesome";
@@ -33,6 +34,7 @@ const routes: Routes = [
     MatGridListModule,
     YouTubePlayer,
     FontAwesomeModule,
+    MatTooltipModule,
     PhotoGalleryModule.forRoot({
       defaultOptions: {
         arrowEl: false,
