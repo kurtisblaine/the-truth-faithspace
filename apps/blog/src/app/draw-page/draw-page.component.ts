@@ -1,6 +1,9 @@
 import { Component, OnInit } from "@angular/core";
 import { Router } from "@angular/router";
-import { faImage } from "@fortawesome/free-solid-svg-icons";
+import {
+  faArrowUpRightFromSquare,
+  faImage,
+} from "@fortawesome/free-solid-svg-icons";
 export interface Image {
   id: number;
   name?: string;
@@ -16,6 +19,8 @@ export interface Image {
 })
 export class DrawPageComponent implements OnInit {
   public imageIcon = faImage;
+  public faLink = faArrowUpRightFromSquare;
+
   public images: Image[] = [];
   constructor(private router: Router) {}
 

@@ -7,11 +7,16 @@ import { MatToolbarModule } from "@angular/material/toolbar";
 import { MatTooltipModule } from "@angular/material/tooltip";
 import { FontAwesomeModule } from "@fortawesome/angular-fontawesome";
 import { NgxEditorModule } from "ngx-editor";
+import { AudioPlayComponent } from "./components/audio-play/audio-play.component";
 import { ReferenceTooltipComponent } from "./components/reference-tooltip/reference-tooltip.component";
 import { TextEditorComponent } from "./components/text-editor/text-editor.component";
 
 @NgModule({
-  declarations: [TextEditorComponent, ReferenceTooltipComponent],
+  declarations: [
+    TextEditorComponent,
+    ReferenceTooltipComponent,
+    AudioPlayComponent,
+  ],
   imports: [
     CommonModule,
     MatProgressBarModule,
@@ -23,6 +28,6 @@ import { TextEditorComponent } from "./components/text-editor/text-editor.compon
     ReactiveFormsModule,
     MatTooltipModule,
   ],
-  exports: [TextEditorComponent, ReferenceTooltipComponent],
+  exports: [TextEditorComponent, ReferenceTooltipComponent, AudioPlayComponent],
 })
 export class SharedModule {}
