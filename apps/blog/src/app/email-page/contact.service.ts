@@ -6,7 +6,7 @@ import { map } from "rxjs";
   providedIn: "root",
 })
 export class ContactService {
-  public api = "https://mailthis.to/kurtisblainewaldner@gmail.com";
+  public api = "https://formspree.io/f/mzbnezkd";
 
   constructor(private http: HttpClient) {}
 
