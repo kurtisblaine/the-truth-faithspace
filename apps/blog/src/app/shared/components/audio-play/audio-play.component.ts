@@ -9,9 +9,13 @@ import { faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
 export class AudioPlayComponent {
   public faLink = faArrowUpRightFromSquare;
 
-  @Input() public filePath: string;
+  @Input() public file: string;
+  @Input() public name: string;
 
   openIframe() {
-    window.open(this.filePath, "_blank");
+    window.open(
+      "https://drive.google.com/file/d/" + this.file + "/view",
+      "_blank"
+    );
   }
 }
