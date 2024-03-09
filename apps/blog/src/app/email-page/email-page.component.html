@@ -7,54 +7,56 @@
       >thelightof.life&#64;outlook.com</span
     >.
   </h6>
-  <div>
-    <div>
-      <form [formGroup]="FormData" (ngSubmit)="onSubmit(FormData.value)">
-        <div class="form-group">
-          <label for="Email">Email</label>
-          <input
-            type="email"
-            style="box-sizing: border-box !important"
-            class="form-control"
-            name="Email"
-            aria-describedby="emailHelp"
-            placeholder="Enter email"
-            formControlName="Email"
-          />
-          <small id="emailHelp" class="form-text text-muted"
-            >We'll never share your email with anyone else.</small
-          >
-        </div>
-        <div class="form-group">
-          <label for="fullname">Full Name</label>
-          <input
-            style="box-sizing: border-box !important"
-            type="text"
-            class="form-control"
-            name="Fullname"
-            placeholder="Full Name"
-            formControlName="Fullname"
-          />
-        </div>
-        <div class="form-group">
-          <label for="comment">Comment</label>
-          <textarea
-            style="box-sizing: border-box !important"
-            class="form-control"
-            formControlName="Comment"
-            name="Comment"
-          ></textarea>
-        </div>
+  <form
+    [formGroup]="FormData"
+    (ngSubmit)="onSubmit(FormData.value)"
+    style="display: flex; flex-direction: column; max-width: 80%"
+  >
+    <mat-form-field>
+      <mat-label for="Email">Email</mat-label>
+      <input
+        matInput
+        type="email"
+        class="form-control"
+        name="Email"
+        aria-describedby="emailHelp"
+        placeholder="Enter email"
+        formControlName="Email"
+      />
+      <mat-hint id="emailHelp" class="form-text text-muted"
+        >We'll never share your email with anyone else.</mat-hint
+      >
+    </mat-form-field>
+    <mat-form-field>
+      <mat-label for="fullname">Full Name</mat-label>
+      <input
+        matInput
+        type="text"
+        class="form-control"
+        name="Fullname"
+        placeholder="Full Name"
+        formControlName="Fullname"
+      />
+    </mat-form-field>
+    <mat-form-field>
+      <mat-label for="comment">Comment</mat-label>
+      <textarea
+        matInput
+        class="form-control"
+        formControlName="Comment"
+        name="Comment"
+      ></textarea>
+    </mat-form-field>
 
-        <button
-          type="submit"
-          class="btn btn-primary"
-          style="margin-top: 12px"
-          [disabled]="!FormData.valid"
-        >
-          Submit
-        </button>
-      </form>
-    </div>
-  </div>
+    <button
+      mat-raised-button
+      color="primary"
+      type="submit"
+      class="btn btn-primary"
+      style="margin-top: 12px"
+      [disabled]="!FormData.valid"
+    >
+      Submit
+    </button>
+  </form>
 </div>

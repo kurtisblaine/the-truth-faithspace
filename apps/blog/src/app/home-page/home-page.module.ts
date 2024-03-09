@@ -3,7 +3,7 @@ import { NgModule } from "@angular/core";
 import { RouterModule, Routes } from "@angular/router";
 
 import { MatButtonModule } from "@angular/material/button";
-import { IvyCarouselModule } from "angular-responsive-carousel2";
+// import { IvyCarouselModule } from "angular-responsive-carousel2";
 import { SharedModule } from "../shared/shared.module";
 import { HomePageComponent } from "./home-page.component";
 const routes: Routes = [
@@ -19,7 +19,7 @@ const routes: Routes = [
     CommonModule,
     SharedModule,
     MatButtonModule,
-    IvyCarouselModule,
+    // IvyCarouselModule,
     RouterModule.forChild(routes),
   ],
 })
