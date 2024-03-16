@@ -6,6 +6,7 @@ import { MatButtonModule } from "@angular/material/button";
 // import { IvyCarouselModule } from "angular-responsive-carousel2";
 import { SharedModule } from "../shared/shared.module";
 import { HomePageComponent } from "./home-page.component";
+
 const routes: Routes = [
   {
     path: "",
