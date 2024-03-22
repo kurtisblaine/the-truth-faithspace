@@ -2,10 +2,18 @@ a[mat-button] {
   padding: 5px;
   color: white !important;
   width: 100%;
-  font-size: 17px;
+  font-size: 16px;
   text-decoration: underline;
   font-family: inherit;
   z-index: 777;
+}
+
+.navigation {
+  padding: 0px 10px;
+  width: unset;
+  position: relative;
+  z-index: 777;
+  top: 111px;
 }
 
 .headers {
@@ -120,6 +128,7 @@ img {
 .pimg13 {
   background-image: url("../../assets/img/Mat25L.webp");
   min-height: 400px;
+  box-shadow: inset 0 0 0 100vmax rgba(0, 0, 0, 0.2);
 }
 
 .pimg14 {
