@@ -167,6 +167,7 @@ export class DrawPageComponent implements OnInit {
 `,
       footer: "You must be born again of Water and Spirit (John 3)...",
       originUrl: "baptismwaterandfire.webp",
+      video: "dPiS7XPJei0",
     });
 
     this.images.push({

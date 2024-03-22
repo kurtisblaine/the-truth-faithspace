@@ -1,3 +1,4 @@
+import { ViewportScroller } from "@angular/common";
 import {
   ChangeDetectionStrategy,
   Component,
@@ -17,7 +18,7 @@ import { fadeInOut } from "../shared/animations/animation";
 export class HomePageComponent implements OnInit {
   @HostBinding("id.scrollProgress") someField = true;
 
-  constructor() {}
+  constructor(private viewportScroller: ViewportScroller) {}
 
   ngOnInit(): void {
     //KEEP THIS JUST IN CASE IT's NEEDED
@@ -25,5 +26,9 @@ export class HomePageComponent implements OnInit {
     // const scene = $(".scene").get(0);
     // const parallaxInstance = new Parallax(scene, {});
     // parallaxInstance.friction(0.2, 0.2);
+  }
+
+  public toAnchor(elementId: string): void {
+    this.viewportScroller.scrollToAnchor(elementId);
   }
 }

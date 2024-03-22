@@ -1,8 +1,11 @@
-a {
-  color: white;
-  font-size: 15px;
-  display: inline-block;
-  padding: 7px;
+a[mat-button] {
+  padding: 5px;
+  color: white !important;
+  width: 100%;
+  font-size: 17px;
+  text-decoration: underline;
+  font-family: inherit;
+  z-index: 777;
 }
 
 .headers {
@@ -177,6 +180,11 @@ img {
   min-height: 400px;
 }
 
+.pimg25 {
+  background-image: url("../../assets/img/samson.webp");
+  min-height: 400px;
+}
+
 .section {
   text-align: center;
   margin: auto;
@@ -272,7 +280,8 @@ img {
   .pimg21,
   .pimg22,
   .pimg23,
-  .pimg24 {
+  .pimg24,
+  .pimg25 {
     background-attachment: scroll;
   }
 }
@@ -301,6 +310,7 @@ img {
 .pimg22,
 .pimg23,
 .pimg24,
+.pimg25,
 .filler,
 .filler-light {
   position: relative;
