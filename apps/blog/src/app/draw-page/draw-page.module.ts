@@ -15,6 +15,7 @@ const routes: Routes = [
     path: "drawing",
     component: DrawPageComponent,
   },
+  { path: "draw/:id/:video", component: DrawItemComponent },
   { path: "draw/:id", component: DrawItemComponent },
 ];
 @NgModule({
