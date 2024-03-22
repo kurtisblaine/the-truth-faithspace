@@ -74,6 +74,7 @@ const routes: Routes = [
       anchorScrolling: "enabled",
       preloadingStrategy: PreloadAllModules,
       scrollPositionRestoration: "enabled",
+      bindToComponentInputs: true,
     }),
   ],
   exports: [RouterModule],
