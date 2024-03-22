@@ -31,6 +31,7 @@ $primary-palette: map.get($color-config, "primary");
 
 html {
   height: 100%;
+  scroll-behavior: smooth;
 }
 
 body {
