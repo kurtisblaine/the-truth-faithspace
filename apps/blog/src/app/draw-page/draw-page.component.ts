@@ -11,6 +11,7 @@ export interface Image {
   footer: string;
   originUrl: string;
   isFinishedLoading?: boolean;
+  video?: string;
 }
 @Component({
   selector: "blog-draw-page",
@@ -25,7 +26,11 @@ export class DrawPageComponent implements OnInit {
   constructor(private router: Router) {}
 
   navigate(image: Image) {
-    this.router.navigateByUrl("draw/" + image.originUrl);
+    if (image.video) {
+      this.router.navigateByUrl("draw/" + image.originUrl + "/" + image.video);
+    } else {
+      this.router.navigateByUrl("draw/" + image.originUrl);
+    }
   }
 
   hideLoader(id: number) {
@@ -45,6 +50,7 @@ export class DrawPageComponent implements OnInit {
       footer:
         "We enter into the Covenant of Promise, the New covenant, by believing in the Promise of God...",
       originUrl: "covenantpromise.webp",
+      video: "FHfh48WzFcU",
     });
 
     this.images.push({
