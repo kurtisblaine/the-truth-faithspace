@@ -98,3 +98,8 @@ mat-list-item {
   display: flex;
   flex-direction: row;
 }
+
+a {
+  text-decoration: underline;
+  color: unset;
+}

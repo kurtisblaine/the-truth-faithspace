@@ -10,6 +10,7 @@ import { NgxEditorModule } from "ngx-editor";
 import { AudioPlayComponent } from "./components/audio-play/audio-play.component";
 import { ReferenceTooltipComponent } from "./components/reference-tooltip/reference-tooltip.component";
 import { TextEditorComponent } from "./components/text-editor/text-editor.component";
+import { ScriptService } from "./service/script.service";
 
 @NgModule({
   declarations: [
@@ -28,6 +29,7 @@ import { TextEditorComponent } from "./components/text-editor/text-editor.compon
     ReactiveFormsModule,
     MatTooltipModule,
   ],
+  providers: [ScriptService],
   exports: [TextEditorComponent, ReferenceTooltipComponent, AudioPlayComponent],
 })
 export class SharedModule {}

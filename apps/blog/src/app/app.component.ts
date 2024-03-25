@@ -41,7 +41,7 @@ export class AppComponent implements OnInit, AfterViewInit {
   public resourceIcon = faLink;
   public progressValue = new BehaviorSubject(0);
   public progressValue$!: Observable<number>;
-  public scrollTimeout: number | undefined;
+  public scrollTimeout!: any;
 
   constructor(private router: Router) {}
 

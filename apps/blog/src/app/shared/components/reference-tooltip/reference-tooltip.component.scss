@@ -1,11 +1,11 @@
 .reference {
-  font-style: italic;
+  // font-style: italic;
 }
 
 .JesusWord {
   color: red;
-  font-style: unset;
-  font-weight: bold;
+  // font-style: unset;
+  // font-weight: bold;
 }
 
 .flex {
@@ -14,4 +14,8 @@
 
 .block {
   display: block;
+}
+
+a {
+  color: unset !important;
 }
