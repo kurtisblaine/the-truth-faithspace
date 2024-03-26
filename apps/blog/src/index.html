@@ -17,6 +17,8 @@
       type="text/javascript"
     ></script>
     <script type="text/javascript">
+      window.removeEventListener("load", BLB.Tagger.pageInit, false); //remove the page init since we'll do it in the component...
+
       BLB.Tagger.Translation = "NASB95";
       BLB.Tagger.HyperLinks = "all";
       BLB.Tagger.HideTanslationAbbrev = false;

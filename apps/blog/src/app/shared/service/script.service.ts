@@ -9,16 +9,6 @@ export const ScriptStore: Scripts[] = [
     name: "BLB",
     src: "https://www.blueletterbible.org/assets-v3/scripts/blbToolTip/BLB_ScriptTagger-min.js",
   },
-  {
-    name: "settings",
-    content: `BLB.Tagger.Translation = "NASB95";
-      BLB.Tagger.HyperLinks = "all";
-      BLB.Tagger.HideTanslationAbbrev = false;
-      BLB.Tagger.TargetNewWindow = true;
-      BLB.Tagger.Style = "par";
-      BLB.Tagger.NoSearchTagNames = "";
-      BLB.Tagger.NoSearchClassNames = "noTag doNotTag";`,
-  },
 ];
 
 declare let document: any;
@@ -51,7 +41,11 @@ export class ScriptService {
         //load script
         const script = document.createElement("script");
         script.type = "text/javascript";
-        script.innerHtml = this.scripts[name]?.content;
+        const inlineScript = document.createTextNode(
+          this.scripts[name]?.content
+        );
+        script.appendChild(inlineScript);
+
         if (this.scripts[name]?.src) {
           script.src = this.scripts[name]?.src;
         }
