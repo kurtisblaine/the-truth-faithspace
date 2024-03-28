@@ -73,10 +73,11 @@ export class DrawPageComponent implements OnInit {
     this.images.push({
       id: 3,
       name: "The Gospel",
-      description: ``,
+      description: `Even though a believer is saved, as he sits with Christ in heavenly places, we must walk in the Spirit and sow to the Spirit and stand against the wiles of the enemy; also endurance until the end, holding fast to the Gospel which we first came to believe. Therefore, let us remember in humility of mind that we are not better than anyone, but through our conduct in a dark world, we can save through the transformation of Christ in us. I will call to remembrance seasoned vets in the Lord the scripture of Ezekiel 16: what God has done for us isn't because we're so great but because we were so helpless; God's grace had nothing to do with us, He gave us love unmerited, so if we boast, we boast in Christ.`,
       footer:
         "Jesus has done everything for us, and we are His work, we enter into His rest...",
       originUrl: "gospel.webp",
+      video: "bZsUhZAH6Hg",
     });
 
     this.images.push({
@@ -306,10 +307,11 @@ export class DrawPageComponent implements OnInit {
     this.images.push({
       id: 24,
       name: "Repent & Believe",
-      description: ``,
+      description: `Repentance is salvation. How can one be saved unless they repent of dead works? Are they not what we need saving from? Do not be deceived. God forgives us through Christ and He died for us and nullified the power of sin, since we are made right through faith in Jesus Christ. Christ saves: Come to the knowledge of Him and be set free from sin through the Truth. Unless you believe Jesus is He, you will die in your sins. Jesus is Lord and the Powerful one. `,
       footer:
         "The response to the Gospel to all who have heard and believed unto new life...",
       originUrl: "repentandbelieve.webp",
+      video: "Jl7k4Iu9mKs",
     });
 
     this.images.push({
