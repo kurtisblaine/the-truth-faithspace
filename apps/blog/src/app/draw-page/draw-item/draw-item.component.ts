@@ -3,6 +3,7 @@ import {
   ChangeDetectorRef,
   Component,
   ElementRef,
+  Input,
   OnInit,
   ViewChild,
 } from "@angular/core";
@@ -14,9 +15,11 @@ import { ActivatedRoute } from "@angular/router";
   styleUrls: ["./draw-item.component.css"],
 })
 export class DrawItemComponent implements OnInit, AfterViewInit {
-  public fileName: string;
+  // eslint-disable-next-line @angular-eslint/no-input-rename
+  @Input("id") public fileName: string;
+  // eslint-disable-next-line @angular-eslint/no-input-rename
+  @Input("video") public youtubeVideo: string;
 
-  public youtubeVideo: string = null;
   constructor(
     private route: ActivatedRoute,
     private changeDetectorRef: ChangeDetectorRef
@@ -28,12 +31,11 @@ export class DrawItemComponent implements OnInit, AfterViewInit {
   videoWidth: number | undefined;
 
   ngOnInit(): void {
-    this.route.params.subscribe((r) => {
-      this.fileName = r["id"];
-
-      if (r["video"] && r["video"] !== "undefined")
-        this.youtubeVideo = r["video"];
-    });
+    // this.route.params.subscribe((r) => {
+    //   this.fileName = r["id"];
+    //   if (r["video"] && r["video"] !== "undefined")
+    //     this.youtubeVideo = r["video"];
+    // });
   }
 
   ngAfterViewInit(): void {
