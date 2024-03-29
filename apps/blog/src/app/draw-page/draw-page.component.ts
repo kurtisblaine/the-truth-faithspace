@@ -12,6 +12,7 @@ export interface Image {
   originUrl: string;
   isFinishedLoading?: boolean;
   video?: string;
+  fileName?: string;
 }
 @Component({
   selector: "blog-draw-page",
@@ -27,9 +28,9 @@ export class DrawPageComponent implements OnInit {
 
   navigate(image: Image) {
     if (image.video) {
-      this.router.navigateByUrl("draw/" + image.originUrl + "/" + image.video);
+      this.router.navigateByUrl("draw/" + image.video + "/" + image.fileName);
     } else {
-      this.router.navigateByUrl("draw/" + image.originUrl);
+      this.router.navigateByUrl("draw/" + image.fileName);
     }
   }
 
@@ -49,8 +50,10 @@ export class DrawPageComponent implements OnInit {
         It is BY grace we are saved, which in turn refers to an instance of grace by our Lord on the cross.`,
       footer:
         "We enter into the Covenant of Promise, the New covenant, by believing in the Promise of God...",
-      originUrl: "covenantpromise.webp",
+      originUrl:
+        "https://res.cloudinary.com/dffihsa2y/image/upload/v1711590185/teach/covenantpromise_lq6374.webp",
       video: "FHfh48WzFcU",
+      fileName: "covenantpromise.webp",
     });
 
     this.images.push({
@@ -58,7 +61,10 @@ export class DrawPageComponent implements OnInit {
       name: "Being a child of the Day",
       description: ``,
       footer: "Be of the Day, a child of the Light, servants of the Lord...",
-      originUrl: "daynight.webp",
+      fileName: "daynight.webp",
+
+      originUrl:
+        "https://res.cloudinary.com/dffihsa2y/image/upload/v1711590187/teach/daynight_yob9oh.webp",
     });
 
     this.images.push({
@@ -67,7 +73,10 @@ export class DrawPageComponent implements OnInit {
       description: ``,
       footer:
         "The fear of the Lord produces humility and a righteous hatred...",
-      originUrl: "fearLord.webp",
+      fileName: "fearLord.webp",
+
+      originUrl:
+        "https://res.cloudinary.com/dffihsa2y/image/upload/v1711590197/teach/fearLord_znqj9t.webp",
     });
 
     this.images.push({
@@ -76,8 +85,10 @@ export class DrawPageComponent implements OnInit {
       description: `Even though a believer is saved, as he sits with Christ in heavenly places, we must walk in the Spirit and sow to the Spirit and stand against the wiles of the enemy; also endurance until the end, holding fast to the Gospel which we first came to believe. Therefore, let us remember in humility of mind that we are not better than anyone, but through our conduct in a dark world, we can save through the transformation of Christ in us. I will call to remembrance seasoned vets in the Lord the scripture of Ezekiel 16: what God has done for us isn't because we're so great but because we were so helpless; God's grace had nothing to do with us, He gave us love unmerited, so if we boast, we boast in Christ.`,
       footer:
         "Jesus has done everything for us, and we are His work, we enter into His rest...",
-      originUrl: "gospel.webp",
+      originUrl:
+        "https://res.cloudinary.com/dffihsa2y/image/upload/v1711590205/teach/gospel_cxqott.webp",
       video: "bZsUhZAH6Hg",
+      fileName: "gospel.webp",
     });
 
     this.images.push({
@@ -86,7 +97,9 @@ export class DrawPageComponent implements OnInit {
       description: ``,
       footer:
         "Differences between all the 're' words and understanding the prefix...",
-      originUrl: "re.webp",
+      originUrl:
+        "https://res.cloudinary.com/dffihsa2y/image/upload/v1711590232/teach/re_g8fwmi.webp",
+      fileName: "re.webp",
     });
 
     this.images.push({
@@ -94,7 +107,10 @@ export class DrawPageComponent implements OnInit {
       name: "Sanctification Explained",
       description: ``,
       footer: "Moving away from earthly things to heavenly things...",
-      originUrl: "sanctification.webp",
+      fileName: "sanctification.webp",
+
+      originUrl:
+        "https://res.cloudinary.com/dffihsa2y/image/upload/v1711590244/teach/sanctification_jjdelm.webp",
     });
 
     this.images.push({
@@ -108,7 +124,10 @@ export class DrawPageComponent implements OnInit {
         When we know that, we will walk in Truth through the knowledge of Christ, who is Knowledge Himself and Wisdom.
         His sacrifice is sufficient for us in order to draw us near to God.`,
       footer: "Elaborating John 16: 8-11...",
-      originUrl: "john16.webp",
+      fileName: "john16.webp",
+
+      originUrl:
+        "https://res.cloudinary.com/dffihsa2y/image/upload/v1711590220/teach/john16_bgxtfk.webp",
     });
 
     // this.images.push({
@@ -121,7 +140,9 @@ export class DrawPageComponent implements OnInit {
     //   There is a resurrection of the living, those who have fallen asleep in Christ; those will rise to everlasting life.`,
     //   footer:
     //     "The Scriptures referenced here are Romans 5: 12-21; 1 Corinthians 15:20-22; 1 Corinthians 15:45-49...",
-    //   originUrl: "adamvsJesus.webp",
+    //   originUrl: "https://res.cloudinary.com/dffihsa2y/image/upload/v1711590170/teach/adamvsJesus_v7kc6a.webp",
+    //   fileName: "adamvsJesus.webp",
+
     // });
 
     this.images.push({
@@ -133,7 +154,10 @@ export class DrawPageComponent implements OnInit {
       Here refers to the body and mind of the flesh which we have deliverance from in Christ through His death and working on the cross.`,
       footer:
         "Death must be worked out in the body and soul of the flesh. Many know about the body of the flesh. What about the mind of flesh? ...",
-      originUrl: "alterofGod.webp",
+      fileName: "alterofGod.webp",
+
+      originUrl:
+        "https://res.cloudinary.com/dffihsa2y/image/upload/v1711590174/teach/armorofGod_h3blcr.webp",
     });
 
     // this.images.push({
@@ -148,7 +172,9 @@ export class DrawPageComponent implements OnInit {
     //   They needed to put their faith to action and go. God will not let anyone of us down who put their trust in Him.`,
     //   footer:
     //     "The Armor given to us by God, which is fitting for a Christian, unlike the armor Saul gave to David...",
-    //   originUrl: "armorofGod.webp",
+    //   originUrl: "https://res.cloudinary.com/dffihsa2y/image/upload/v1711590174/teach/armorofGod_h3blcr.webp",
+    //   fileName: "armorofGod.webp",
+
     // });
 
     this.images.push({
@@ -167,8 +193,10 @@ export class DrawPageComponent implements OnInit {
       And we drink of the same Spirit (1 Cor 12:13) as they did in the wilderness which was the Rock, or Christ, Who traveled with them.
 `,
       footer: "You must be born again of Water and Spirit (John 3)...",
-      originUrl: "baptismwaterandfire.webp",
+      originUrl:
+        "https://res.cloudinary.com/dffihsa2y/image/upload/v1711590176/teach/baptismwaterandfire_z41pny.webp",
       video: "dPiS7XPJei0",
+      fileName: "baptismwaterandfire.webp",
     });
 
     this.images.push({
@@ -181,7 +209,10 @@ export class DrawPageComponent implements OnInit {
       Jesus Christ is the Rock. We believe in Him and also follow after Him: following Him is doing the things He did when He was on earth - He is the Example, He is the Way.`,
       footer:
         "How do you know if you're well built, only by the testing of calamity...",
-      originUrl: "buildingontheRock.webp",
+      fileName: "buildingontheRock.webp",
+
+      originUrl:
+        "https://res.cloudinary.com/dffihsa2y/image/upload/v1711590180/teach/buildingontheRock_mxzsvs.webp",
     });
 
     // this.images.push({
@@ -192,7 +223,9 @@ export class DrawPageComponent implements OnInit {
     //   Even the Tent of Meeting itself has a covering: the only exception would be the courtyard, it has no covering.
     //   We also have a covering: Christ. He is the atonement, bread, water, light, sacrifice, and incense. We follow Him, doing everything He did.`,
     //   footer: "All items in the Tabernacle have a covering...",
-    //   originUrl: "courtyard.webp",
+    //   originUrl: "https://res.cloudinary.com/dffihsa2y/image/upload/v1711590183/teach/courtyard_atzssw.webp",
+    //   fileName: "courtyard.webp",
+
     // });
 
     this.images.push({
@@ -204,7 +237,10 @@ export class DrawPageComponent implements OnInit {
       Otherwise, we may think to ourselves, my Master is a long time in coming, I will take an easy and be merry. Then He will come unexpectedly, catching that one off guard, assigning him to a place with the hypocrites.
       This so called wisdom is folly.`,
       footer: "The day of the Lord vs the night of the thief...",
-      originUrl: "dayoftheLord.webp",
+      fileName: "dayoftheLord.webp",
+
+      originUrl:
+        "https://res.cloudinary.com/dffihsa2y/image/upload/v1711590189/teach/dayoftheLord_a7yocn.webp",
     });
 
     this.images.push({
@@ -218,7 +254,10 @@ export class DrawPageComponent implements OnInit {
       `,
       footer:
         "Death must work in us, so that His life will also be revealed in us...",
-      originUrl: "deathandlife.webp",
+      fileName: "deathandlife.webp",
+
+      originUrl:
+        "https://res.cloudinary.com/dffihsa2y/image/upload/v1711590191/teach/deathandlife_gcfidy.webp",
     });
 
     this.images.push({
@@ -232,7 +271,9 @@ export class DrawPageComponent implements OnInit {
       The world prescribes 'Do this & Don't do this' for our sin problem, but they do not help with conquering one's sinful desires; Jesus completely cuts it away and loves us.`,
       footer:
         "Healthy people do not need a doctor, the sick do; I have called not the righteous but sinners to repentance...",
-      originUrl: "doctors.webp",
+      originUrl:
+        "https://res.cloudinary.com/dffihsa2y/image/upload/v1711590194/teach/doctors_gtvq2g.webp",
+      fileName: "doctors.webp",
     });
 
     this.images.push({
@@ -241,7 +282,10 @@ export class DrawPageComponent implements OnInit {
       description: ``,
       footer:
         "Jesus was Servant of all & now, is First in heaven: Lord of Lords and King of Kings...",
-      originUrl: "firstandlast.webp",
+      fileName: "firstandlast.webp",
+
+      originUrl:
+        "https://res.cloudinary.com/dffihsa2y/image/upload/v1711590199/teach/firstandlast_qvzmdt.webp",
     });
 
     // this.images.push({
@@ -249,7 +293,9 @@ export class DrawPageComponent implements OnInit {
     //   description: ``,
     //   footer:
     //     "There is sin of the flesh & also of the soul, which contains the mind...",
-    //   originUrl: "flesh.webp",
+    //   fileName: "flesh.webp",
+
+    //   originUrl: "https://res.cloudinary.com/dffihsa2y/image/upload/v1711590202/teach/flesh_izazns.webp",
     // });
 
     this.images.push({
@@ -258,7 +304,10 @@ export class DrawPageComponent implements OnInit {
       description: ``,
       footer:
         "All things created by Him and for Him (see the First & Last teaching)...",
-      originUrl: "harvest.webp",
+      fileName: "harvest.webp",
+
+      originUrl:
+        "https://res.cloudinary.com/dffihsa2y/image/upload/v1711590208/teach/harvest_tncb4h.webp",
     });
 
     this.images.push({
@@ -267,7 +316,10 @@ export class DrawPageComponent implements OnInit {
       description: ``,
       footer:
         "We can see teachings & parables through the creation of the Tabernacle...",
-      originUrl: "israelitecamp.webp",
+      fileName: "israelitecamp.webp",
+
+      originUrl:
+        "https://res.cloudinary.com/dffihsa2y/image/upload/v1711590211/teach/israelitecamp_iuepsc.webp",
     });
 
     this.images.push({
@@ -276,7 +328,10 @@ export class DrawPageComponent implements OnInit {
       description: ``,
       footer:
         "Similarities between Isaac and Benjamin prophesying about Jesus...",
-      originUrl: "Jesuslionlamb.webp",
+      fileName: "Jesuslionlamb.webp",
+
+      originUrl:
+        "https://res.cloudinary.com/dffihsa2y/image/upload/v1711590217/teach/Jesuslionlamb_y91dzk.webp",
     });
 
     this.images.push({
@@ -285,7 +340,10 @@ export class DrawPageComponent implements OnInit {
       description: ``,
       footer:
         "Two judgements of the righteous and the wicked, two resurrections...",
-      originUrl: "judgementday.webp",
+      fileName: "judgementday.webp",
+
+      originUrl:
+        "https://res.cloudinary.com/dffihsa2y/image/upload/v1711590223/teach/judgementday_pfgryw.webp",
     });
 
     this.images.push({
@@ -293,7 +351,10 @@ export class DrawPageComponent implements OnInit {
       name: "The Land of Inhabitation",
       description: ``,
       footer: "Which land are you currently residing in (only four options)...",
-      originUrl: "land.webp",
+      fileName: "land.webp",
+
+      originUrl:
+        "https://res.cloudinary.com/dffihsa2y/image/upload/v1711590225/teach/land_wvithb.webp",
     });
 
     this.images.push({
@@ -301,7 +362,10 @@ export class DrawPageComponent implements OnInit {
       name: "One God",
       description: ``,
       footer: "One God all in all...",
-      originUrl: "oneGod.webp",
+      fileName: "oneGod.webp",
+
+      originUrl:
+        "https://res.cloudinary.com/dffihsa2y/image/upload/v1711590229/teach/oneGod_vv0hh8.webp",
     });
 
     this.images.push({
@@ -310,7 +374,10 @@ export class DrawPageComponent implements OnInit {
       description: `Repentance is salvation. How can one be saved unless they repent of dead works? Are they not what we need saving from? Do not be deceived. God forgives us through Christ and He died for us and nullified the power of sin, since we are made right through faith in Jesus Christ. Christ saves: Come to the knowledge of Him and be set free from sin through the Truth. Unless you believe Jesus is He, you will die in your sins. Jesus is Lord and the Powerful one. `,
       footer:
         "The response to the Gospel to all who have heard and believed unto new life...",
-      originUrl: "repentandbelieve.webp",
+      fileName: "repentandbelieve.webp",
+
+      originUrl:
+        "https://res.cloudinary.com/dffihsa2y/image/upload/v1711590234/teach/repentandbelieve_nq987c.webp",
       video: "Jl7k4Iu9mKs",
     });
 
@@ -320,7 +387,10 @@ export class DrawPageComponent implements OnInit {
       description: ``,
       footer:
         "To live the life of faith, is to be like an athlete, running a race...",
-      originUrl: "runtherace.webp",
+      fileName: "runtherace.webp",
+
+      originUrl:
+        "https://res.cloudinary.com/dffihsa2y/image/upload/v1711590238/teach/runtherace_pnfqmo.webp",
     });
 
     this.images.push({
@@ -329,7 +399,10 @@ export class DrawPageComponent implements OnInit {
       description: ``,
       footer:
         "The seed must first be planted on fertile soil then by a miracle of God...",
-      originUrl: "salvation.webp",
+      fileName: "salvation.webp",
+
+      originUrl:
+        "https://res.cloudinary.com/dffihsa2y/image/upload/v1711590242/teach/salvation_piunap.webp",
     });
 
     this.images.push({
@@ -338,7 +411,10 @@ export class DrawPageComponent implements OnInit {
       description: ``,
       footer:
         "In the personal letters to Titus and Timothy, Paul gives sayings and commands...",
-      originUrl: "sayingsandcommands.webp",
+      fileName: "sayingsandcommands.webp",
+
+      originUrl:
+        "https://res.cloudinary.com/dffihsa2y/image/upload/v1711590247/teach/sayingsandcommands_xuhgyh.webp",
     });
 
     this.images.push({
@@ -347,7 +423,10 @@ export class DrawPageComponent implements OnInit {
       description: ``,
       footer:
         "We are in the middle of a battle of two opposite wills, natures, and kingdoms...",
-      originUrl: "sinvswillofGod.webp",
+      fileName: "sinvswillofGod.webp",
+
+      originUrl:
+        "https://res.cloudinary.com/dffihsa2y/image/upload/v1711590252/teach/sinvswillofGod_qwzj8a.webp",
     });
 
     this.images.push({
@@ -356,7 +435,9 @@ export class DrawPageComponent implements OnInit {
       description: ``,
       footer:
         "We either get what we deserve by our works or what we don't, by God's grace, through our faith in Christ...",
-      originUrl: "slavesvssons.webp",
+      originUrl:
+        "https://res.cloudinary.com/dffihsa2y/image/upload/v1711590253/teach/slavesvssons_g5zfi7.webp",
+      fileName: "slavesvssons.webp",
     });
 
     this.images.push({
@@ -365,7 +446,9 @@ export class DrawPageComponent implements OnInit {
       description: ``,
       footer:
         "If you've always wanted to be in the military, now you can as soldiers of Christ Jesus...",
-      originUrl: "soldierathletefarmerfishermen.webp",
+      originUrl:
+        "https://res.cloudinary.com/dffihsa2y/image/upload/v1711590258/teach/soldierathletefarmerfishermen_ebpnk9.webp",
+      fileName: "soldierathletefarmerfishermen.webp",
     });
 
     this.images.push({
@@ -374,7 +457,9 @@ export class DrawPageComponent implements OnInit {
       description: ``,
       footer:
         "We have fellowship with God in the place of meeting, we abide in Him and He in us...",
-      originUrl: "Tabernacle.webp",
+      originUrl:
+        "https://res.cloudinary.com/dffihsa2y/image/upload/v1711590262/teach/Tabernacle_bdapzh.webp",
+      fileName: "Tabernacle.webp",
     });
 
     this.images.push({
@@ -383,7 +468,9 @@ export class DrawPageComponent implements OnInit {
       description: ``,
       footer:
         "There is tribulation and fire we will all be salted with just as a sacrifice is, will we overcome...",
-      originUrl: "testerofmetals.webp",
+      originUrl:
+        "https://res.cloudinary.com/dffihsa2y/image/upload/v1711590265/teach/testerofmetals_dazuwl.webp",
+      fileName: "testerofmetals.webp",
     });
 
     this.images.push({
@@ -391,7 +478,10 @@ export class DrawPageComponent implements OnInit {
       name: "The Church",
       description: ``,
       footer: "We are one with Christ as Eve was one with Adam...",
-      originUrl: "thechurch.webp",
+      fileName: "thechurch.webp",
+
+      originUrl:
+        "https://res.cloudinary.com/dffihsa2y/image/upload/v1711590268/teach/thechurch_n6uhvl.webp",
     });
 
     this.images.push({
@@ -400,7 +490,10 @@ export class DrawPageComponent implements OnInit {
       description: ``,
       footer:
         "Those who do what is right have no need to fear the authorities...",
-      originUrl: "theLaw.webp",
+      fileName: "theLaw.webp",
+
+      originUrl:
+        "https://res.cloudinary.com/dffihsa2y/image/upload/v1711590271/teach/theLaw_xtsiev.webp",
     });
 
     this.images.push({
@@ -408,7 +501,10 @@ export class DrawPageComponent implements OnInit {
       name: "The Way of the Spirit: Walk and Run",
       description: ``,
       footer: "What are we rushing for will reveal what we are eagar for...",
-      originUrl: "theway.webp",
+      fileName: "theway.webp",
+
+      originUrl:
+        "https://res.cloudinary.com/dffihsa2y/image/upload/v1711590274/teach/theway_hywb5a.webp",
     });
 
     this.images.push({
@@ -417,16 +513,10 @@ export class DrawPageComponent implements OnInit {
       description: ``,
       footer:
         "Some wear their sin on the inside and others on the outside, yet all are with sin...",
-      originUrl: "thievesbandits.webp",
-    });
+      fileName: "thievesbandits.webp",
 
-    this.images.push({
-      id: 37,
-      name: "Those who will not inherit the Kingdom",
-      description: ``,
-      footer:
-        "Nothing of flesh and blood can inherit the kingdom, but only the new creation...",
-      originUrl: "willnotinherit.webp",
+      originUrl:
+        "https://res.cloudinary.com/dffihsa2y/image/upload/v1711590277/teach/thievesbandits_ybigmc.webp",
     });
   }
 }
