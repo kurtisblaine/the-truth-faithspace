@@ -17,7 +17,6 @@ import { MatListModule } from "@angular/material/list";
 import { MatProgressBarModule } from "@angular/material/progress-bar";
 import { MatSidenavModule } from "@angular/material/sidenav";
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
-import { CloudinaryModule } from "@cloudinary/ng";
 import { AppRoutingModule } from "./app.routing.module";
 import { SharedModule } from "./shared/shared.module";
 import { StateModule } from "./state/state.module";
@@ -48,7 +47,6 @@ const firebaseConfig = {
     MatButtonModule,
     MatToolbarModule,
     FontAwesomeModule,
-    CloudinaryModule,
     StateModule,
     AppRoutingModule,
     MatListModule,
