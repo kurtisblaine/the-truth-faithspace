@@ -4,8 +4,10 @@ import {
   ChangeDetectionStrategy,
   Component,
   HostBinding,
+  OnInit,
 } from "@angular/core";
 import { fadeInOut } from "../shared/animations/animation";
+
 @Component({
   selector: "blog-home-page",
   templateUrl: "./home-page.component.html",
@@ -13,10 +15,14 @@ import { fadeInOut } from "../shared/animations/animation";
   changeDetection: ChangeDetectionStrategy.OnPush,
   animations: [fadeInOut],
 })
-export class HomePageComponent implements AfterViewInit {
+export default class HomePageComponent implements AfterViewInit, OnInit {
   @HostBinding("id.scrollProgress") someField = true;
 
   constructor(private viewportScroller: ViewportScroller) {}
+
+  ngOnInit() {
+    console.log("");
+  }
 
   ngAfterViewInit(): void {
     (window as any).BLB.Tagger.pageInit();

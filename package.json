@@ -36,6 +36,8 @@
     "@angular/platform-browser-dynamic": "17.0.4",
     "@angular/router": "17.0.4",
     "@angular/youtube-player": "^17.1.0",
+    "@cloudinary/ng": "^2.0.2",
+    "@cloudinary/url-gen": "^1.19.0",
     "@fortawesome/angular-fontawesome": "^0.10.2",
     "@fortawesome/fontawesome-svg-core": "^6.1.1",
     "@fortawesome/free-solid-svg-icons": "^6.1.1",
