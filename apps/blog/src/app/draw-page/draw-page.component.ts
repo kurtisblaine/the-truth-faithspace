@@ -34,10 +34,10 @@ export class DrawPageComponent implements OnInit {
     }
   }
 
-  hideLoader(id: number) {
-    const i = this.images.find((image) => image.id === id);
-    i.isFinishedLoading = true;
-  }
+  // hideLoader(id: number) {
+  //   const i = this.images.find((image) => image.id === id);
+  //   i.isFinishedLoading = true;
+  // }
 
   ngOnInit(): void {
     this.images.push({
@@ -70,11 +70,11 @@ export class DrawPageComponent implements OnInit {
     this.images.push({
       id: 2,
       name: "Fear of the Lord",
-      description: ``,
+      description: `This is wisdom. To perfect wisdom: continue to fear the LORD. In God's wisdom, He proclaims this is the wisest thing for us to do. Ruminate, you clean ones, on the fear of the LORD. He is, was, and is yet to come. When He comes, He will render to each one according to his works and He judges impartially. The Word of the LORD is life. He is True. All who believe in Him set their seal to this: God is true. Let every man be a liar and God be true.`,
       footer:
         "The fear of the Lord produces humility and a righteous hatred...",
       fileName: "fearLord.webp",
-
+      video: "O--SQdICRVk",
       originUrl:
         "https://res.cloudinary.com/dffihsa2y/image/upload/v1711590197/teach/fearLord_znqj9t.webp",
     });
@@ -125,7 +125,6 @@ export class DrawPageComponent implements OnInit {
         His sacrifice is sufficient for us in order to draw us near to God.`,
       footer: "Elaborating John 16: 8-11...",
       fileName: "john16.webp",
-
       originUrl:
         "https://res.cloudinary.com/dffihsa2y/image/upload/v1711590220/teach/john16_bgxtfk.webp",
     });
@@ -155,7 +154,7 @@ export class DrawPageComponent implements OnInit {
       footer:
         "Death must be worked out in the body and soul of the flesh. Many know about the body of the flesh. What about the mind of flesh? ...",
       fileName: "alterofGod.webp",
-
+      video: "iITISwdEGYM",
       originUrl:
         "https://res.cloudinary.com/dffihsa2y/image/upload/v1711590174/teach/armorofGod_h3blcr.webp",
     });
@@ -517,6 +516,94 @@ export class DrawPageComponent implements OnInit {
 
       originUrl:
         "https://res.cloudinary.com/dffihsa2y/image/upload/v1711590277/teach/thievesbandits_ybigmc.webp",
+    });
+
+    this.images.push({
+      id: 37,
+      name: "Detests vs Delights",
+      description: ``,
+      footer: "What the Most High detests and what is a delight to Him...",
+      fileName: "detestvsdelight.webp",
+
+      originUrl:
+        "https://res.cloudinary.com/dffihsa2y/image/upload/v1711735328/teach/detestvsdelight_h4xby0.webp",
+    });
+
+    this.images.push({
+      id: 38,
+      name: "Grace and Truth",
+      description: ``,
+      footer:
+        "The Law revealed the coinscience through the written code, grace & truth revealed in Christ...",
+      fileName: "grace&truth.webp",
+
+      originUrl:
+        "https://res.cloudinary.com/dffihsa2y/image/upload/v1711735327/teach/grace_truth_loj0u0.webp",
+    });
+
+    this.images.push({
+      id: 39,
+      name: "The Father and the Son and the Holy Spirit",
+      description: ``,
+      footer:
+        "Revelation about the Father, Son, and the Spirit.. how we worship one God.",
+      fileName: "theFatherSonSpirit.webp",
+
+      originUrl:
+        "https://res.cloudinary.com/dffihsa2y/image/upload/v1711735327/teach/theFatherSonSpirit_cv11oq.webp",
+    });
+
+    this.images.push({
+      id: 40,
+      name: "The Father and the Son",
+      description: ``,
+      footer: "Scripture gathering of the Father and the Son...",
+      fileName: "theFather&theSon.webp",
+
+      originUrl:
+        "https://res.cloudinary.com/dffihsa2y/image/upload/v1711735329/teach/theFather_theSon_d2ax76.webp",
+    });
+
+    this.images.push({
+      id: 41,
+      name: "Worship the Father in spirit and truth",
+      description: ``,
+      footer:
+        "How the world worships God in the ways He does not desire, but how we're called to worship...",
+      fileName: "TrueWorship.webp",
+
+      originUrl:
+        "https://res.cloudinary.com/dffihsa2y/image/upload/v1711735327/teach/TrueWorship_prs84a.webp",
+    });
+
+    this.images.push({
+      id: 42,
+      name: "Will NOT inherit the Kingdom of God (verses)",
+      description: ``,
+      footer: "It is clear, these will not inherit the Kingdom of heaven...",
+      fileName: "willnotinherit.webp",
+      originUrl:
+        "https://res.cloudinary.com/dffihsa2y/image/upload/v1711735327/teach/willnotinherit_n0mujj.webp",
+    });
+
+    this.images.push({
+      id: 43,
+      name: "Will inherit the Kingdom of God (verses)",
+      description: `Also, unless you become like a little child you will by no means enter into the kingdom of heaven.`,
+      footer: "It is clear, these WILL inherit the Kingdom of heaven...",
+      fileName: "willinheritverses.webp",
+      originUrl:
+        "https://res.cloudinary.com/dffihsa2y/image/upload/v1711735327/teach/willnotinheritverses_vzafs5.webp",
+    });
+
+    this.images.push({
+      id: 44,
+      name: "Will inherit the Kingdom of God (grouping)",
+      description: ``,
+      footer: "It is clear, these WILL inherit the Kingdom of heaven...",
+      fileName: "willinheritbucket.webp",
+      originUrl:
+        "https://res.cloudinary.com/dffihsa2y/image/upload/v1711735327/teach/willinheritbucket_fx9boh.webp",
     });
   }
 }
