@@ -24,7 +24,7 @@
     <mat-grid-tile-footer>{{ image.footer }}</mat-grid-tile-footer>
     <div
       [photoGallery]="image.originUrl"
-      [photoGalleryCaption]="image.description"
+      [photoGalleryCaption]="image.name + ' - ' + image.description"
     >
       <!-- <mat-spinner
         *ngIf="!image.isFinishedLoading"
