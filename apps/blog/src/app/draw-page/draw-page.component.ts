@@ -605,5 +605,45 @@ export class DrawPageComponent implements OnInit {
       originUrl:
         "https://res.cloudinary.com/dffihsa2y/image/upload/v1711735327/teach/willinheritbucket_fx9boh.webp",
     });
+
+    this.images.push({
+      id: 45,
+      name: "Will not inherit the Kingdom of God (grouping)",
+      description: ``,
+      footer: "It is clear, these WILL NOT inherit the Kingdom of heaven...",
+      fileName: "willnotinheritbucket.webp",
+      originUrl:
+        "https://res.cloudinary.com/dffihsa2y/image/upload/v1712630408/teach/willnotinheritbucket_l3vyi1.webp",
+    });
+
+    this.images.push({
+      id: 46,
+      name: "The Word of Life",
+      description: ``,
+      footer: "These are words of spirit & truth from the Word of Life...",
+      fileName: "theWordofLife.webp",
+      originUrl:
+        "https://res.cloudinary.com/dffihsa2y/image/upload/v1712630408/teach/theWordofLife_qtalbz.webp",
+    });
+
+    this.images.push({
+      id: 47,
+      name: "The Father & the Son, the Son & the Church",
+      description: ``,
+      footer: "As the Father is to the Son, so the Son is to the church...",
+      fileName: "Father&Son.webp",
+      originUrl:
+        "https://res.cloudinary.com/dffihsa2y/image/upload/v1712630408/teach/Father_Son_lbtri6.webp",
+    });
+
+    this.images.push({
+      id: 48,
+      name: "New Wine & Wineskins",
+      description: ``,
+      footer: "The new wine in the new wineskins...",
+      fileName: "wineskins.webp",
+      originUrl:
+        "https://res.cloudinary.com/dffihsa2y/image/upload/v1712630408/teach/wineskins_nkx8o9.webp",
+    });
   }
 }
