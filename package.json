@@ -19,8 +19,7 @@
     "example:generate:feature": "npx nx generate @ngrx/schematics:feature --name=discern --module=state.module.ts --flat=false --path=/apps/blog/src/app/state",
     "example:migrate": "npx nx migrate latest",
     "example:config:peer": "npm config set legacy-peer-deps true",
-    "example:install:optional": "npm install --include=optional",
-    "@mingleats/angular-responsive-carousel": "3.0.0"
+    "example:install:optional": "npm install --include=optional"
   },
   "private": true,
   "dependencies": {
@@ -72,7 +71,6 @@
     "@types/node": "^16.18.91",
     "@typescript-eslint/eslint-plugin": "6.9.1",
     "@typescript-eslint/parser": "6.9.1",
-    "angular-cli-ghpages": "^1.0.5",
     "cypress": "^13.6.6",
     "depcheck": "^1.4.7",
     "eslint": "8.46.0",
