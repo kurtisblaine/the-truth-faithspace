@@ -1,0 +1,300 @@
+button[mat-button] {
+  padding: 5px;
+  color: white !important;
+  width: 100%;
+  font-size: 16px;
+  text-decoration: underline;
+  font-family: inherit;
+  z-index: 777;
+}
+
+.navigation {
+  padding: 0px 10px;
+  width: unset;
+  position: relative;
+  z-index: 777;
+  top: 111px;
+}
+
+.headers {
+  padding: 20px 0px 0px 20px;
+  margin-bottom: 30px;
+}
+
+.paragraphs {
+  padding: 0px 40px 40px 40px;
+}
+
+.section:not(.floater) > .paragraphs {
+  padding: 0px 40px 40px 40px; //prev 80 40 80
+}
+
+.home-page_container {
+  display: grid;
+}
+
+.header_container {
+  display: flex;
+  justify-content: center;
+}
+
+$color-green: #00ffaa;
+$color-background: #111;
+$color-text: #555;
+
+img {
+  display: block;
+  width: 100%;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 600px;
+  padding: 10px;
+  position: relative;
+}
+
+.scene {
+  margin: 0;
+  padding: 0;
+}
+
+@for $i from 2 through 6 {
+  .scene > *:nth-child(#{$i}) {
+    opacity: #{0.15 * $i};
+  }
+}
+
+.pimg2 {
+  background-image: url("https://res.cloudinary.com/dffihsa2y/image/upload/v1711590013/img/holy_wxwyzn.webp");
+  min-height: 400px;
+}
+
+.pimg3 {
+  background-image: url("https://res.cloudinary.com/dffihsa2y/image/upload/v1711590014/img/rent_wxiwvf.webp");
+  min-height: 400px;
+}
+
+.pimg6 {
+  background-image: url("https://res.cloudinary.com/dffihsa2y/image/upload/v1711590013/img/bread_iuzxxj.webp");
+  min-height: 400px;
+}
+
+.pimg1 {
+  background-image: url("https://res.cloudinary.com/dffihsa2y/image/upload/v1711590013/img/newjer_ck9crv.webp");
+  min-height: 400px;
+}
+
+.pimg7 {
+  background-image: url("https://res.cloudinary.com/dffihsa2y/image/upload/v1711590013/img/lamb_eo0gii.webp");
+  min-height: 400px;
+}
+
+.pimg8 {
+  background-image: url("https://res.cloudinary.com/dffihsa2y/image/upload/v1711590027/img/Rotator-10f_srbkmk.webp");
+  min-height: 400px;
+}
+
+.pimg9 {
+  background-image: url("https://res.cloudinary.com/dffihsa2y/image/upload/v1711590014/img/Rotator-4f_zydoe1.webp");
+  min-height: 400px;
+}
+
+.pimg10 {
+  background-image: url("https://res.cloudinary.com/dffihsa2y/image/upload/v1711590014/img/Rotator-8f_gmpjw8.webp");
+  min-height: 400px;
+}
+
+.pimg11 {
+  background-image: url("https://res.cloudinary.com/dffihsa2y/image/upload/v1711590027/img/Rotator-14f_ksynvm.webp");
+  min-height: 400px;
+}
+
+.pimg12 {
+  background-image: url("https://res.cloudinary.com/dffihsa2y/image/upload/v1711590013/img/13-Seven-Angels-Seven-Trumpets_voye7o.webp");
+  min-height: 400px;
+}
+
+.pimg13 {
+  background-image: url("https://res.cloudinary.com/dffihsa2y/image/upload/v1711590013/img/Mat25L_dzpagk.webp");
+  min-height: 400px;
+  box-shadow: inset 0 0 0 100vmax rgba(0, 0, 0, 0.1);
+}
+
+.pimg15 {
+  background-image: url("https://res.cloudinary.com/dffihsa2y/image/upload/v1711590014/img/Rotator-7f_ydnvku.webp");
+  min-height: 400px;
+}
+
+.pimg17 {
+  background-image: url("https://res.cloudinary.com/dffihsa2y/image/upload/v1711590013/img/pillarfire_bhe97a.webp");
+  min-height: 400px;
+}
+
+.pimg19 {
+  background-image: url("https://res.cloudinary.com/dffihsa2y/image/upload/v1711590014/img/Rotator-6f_ujqyqg.webp");
+  min-height: 400px;
+}
+
+.pimg20 {
+  background-image: url("https://res.cloudinary.com/dffihsa2y/image/upload/v1711590027/img/sin_s3obrq.webp");
+  min-height: 400px;
+}
+
+.pimg21 {
+  background-image: url("https://res.cloudinary.com/dffihsa2y/image/upload/v1711590013/img/cross_z0d21o.webp");
+  min-height: 400px;
+}
+
+.pimg22 {
+  background-image: url("https://res.cloudinary.com/dffihsa2y/image/upload/v1711590013/img/lion_jw4h3p.webp");
+  min-height: 400px;
+}
+
+.pimg23 {
+  background-image: url("https://res.cloudinary.com/dffihsa2y/image/upload/v1711590013/img/bush_tudwx1.webp");
+  min-height: 400px;
+}
+
+.pimg24 {
+  background-image: url("https://res.cloudinary.com/dffihsa2y/image/upload/v1711590013/img/new_xvdoun.webp");
+  min-height: 400px;
+}
+
+.pimg25 {
+  background-image: url("https://res.cloudinary.com/dffihsa2y/image/upload/v1711590027/img/samson_q982ou.webp");
+  min-height: 400px;
+}
+
+.section {
+  text-align: center;
+  margin: auto;
+  width: 100%;
+}
+
+.section-light {
+  background-color: #f4f4f4;
+  color: #333333;
+}
+
+.floater {
+  width: 88%;
+  border-radius: 17px;
+}
+
+.section-dark {
+  background-color: #282e34;
+  color: #ddd;
+}
+
+.ptext {
+  position: absolute;
+  top: 35%;
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  font-size: 22px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  line-height: normal;
+}
+
+.lighttext {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+  font-size: 27px;
+  letter-spacing: 8px;
+  text-transform: uppercase;
+}
+
+.border {
+  border: unset !important;
+  border-radius: 12px;
+  display: inline-flex;
+  line-height: normal;
+}
+
+.ptext .border {
+  background-color: #111;
+  color: #fff;
+  padding: 20px;
+}
+
+.ptext .border.trans {
+  background-color: transparent;
+}
+
+.lighttext .border {
+  background-color: #fff;
+  color: #111;
+  padding: 20px;
+}
+
+.lighttext .border.trans {
+  background-color: transparent;
+}
+
+@media (max-width: 568px) {
+  .pimg1,
+  .pimg2,
+  .pimg3,
+  .pimg6,
+  .pimg7,
+  .pimg8,
+  .pimg9,
+  .pimg10,
+  .pimg11,
+  .pimg12,
+  .pimg13,
+  .pimg15,
+  .pimg17,
+  .pimg19,
+  .pimg20,
+  .pimg21,
+  .pimg22,
+  .pimg23,
+  .pimg24,
+  .pimg25 {
+    background-attachment: scroll;
+  }
+}
+
+.pimg1,
+.pimg2,
+.pimg3,
+.pimg6,
+.pimg7,
+.pimg8,
+.pimg9,
+.pimg10,
+.pimg11,
+.pimg12,
+.pimg13,
+.pimg15,
+.pimg17,
+.pimg19,
+.pimg20,
+.pimg21,
+.pimg22,
+.pimg23,
+.pimg24,
+.pimg25,
+.filler,
+.filler-light {
+  position: relative;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.filler {
+  background-color: #282e34;
+}
+
+.filler-light {
+  background-color: #f4f4f4;
+}

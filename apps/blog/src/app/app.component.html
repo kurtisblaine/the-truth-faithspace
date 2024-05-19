@@ -5,10 +5,18 @@
 >
   <mat-drawer style="width: 280px; position: fixed" #drawer [mode]="'side'">
     <mat-list>
-      <mat-list-item lines="2" (click)="goHome(); drawer.close()">
+      <mat-list-item lines="1" (click)="goHome(); drawer.close()">
         <fa-icon matListItemIcon [icon]="homeIcon" [size]="'lg'"></fa-icon>
-        <span matListItemTitle>Back to the Basics</span>
-        <span matListItemLine>The Good News</span>
+        <span matListItemTitle>Welcome</span>
+        <!-- <span matListItemLine>here is a welcome message</span> -->
+      </mat-list-item>
+      <mat-divider></mat-divider>
+
+      <div mat-subheader>Truth</div>
+      <mat-list-item lines="3" (click)="goGospel(); drawer.close()">
+        <fa-icon matListItemIcon [icon]="gospelIcon" [size]="'lg'"></fa-icon>
+        <span matListItemTitle>The Good News</span>
+        <span>the everlasting covenant that does not change</span>
       </mat-list-item>
       <mat-divider></mat-divider>
 

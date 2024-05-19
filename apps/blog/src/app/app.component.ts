@@ -16,6 +16,7 @@ import {
   faHouse,
   faLink,
   faMusic,
+  faNewspaper,
   faPenToSquare,
 } from "@fortawesome/free-solid-svg-icons";
 import { BehaviorSubject, Observable, fromEvent, map } from "rxjs";
@@ -39,6 +40,7 @@ export class AppComponent implements OnInit, AfterViewInit {
   public drawingIcon = faPenToSquare;
   public tractIcon = faFile;
   public resourceIcon = faLink;
+  public gospelIcon = faNewspaper;
   public progressValue = new BehaviorSubject(0);
   public progressValue$!: Observable<number>;
   public scrollTimeout!: any;
@@ -83,6 +85,12 @@ export class AppComponent implements OnInit, AfterViewInit {
 
   public goHome() {
     this.router.navigateByUrl("").then(() => {
+      this.emitScrollEvent();
+    });
+  }
+
+  public goGospel() {
+    this.router.navigateByUrl("truth").then(() => {
       this.emitScrollEvent();
     });
   }

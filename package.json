@@ -19,8 +19,7 @@
     "example:generate:feature": "npx nx generate @ngrx/schematics:feature --name=discern --module=state.module.ts --flat=false --path=/apps/blog/src/app/state",
     "example:migrate": "npx nx migrate latest",
     "example:config:peer": "npm config set legacy-peer-deps true",
-    "example:install:optional": "npm install --include=optional",
-    "angular-responsive-carousel2": "^0.0.7"
+    "example:install:optional": "npm install --include=optional"
   },
   "private": true,
   "dependencies": {
@@ -47,7 +46,8 @@
     "lodash-es": "^4.17.21",
     "ngx-editor": "^13.0.0",
     "npm": "^10.5.0",
-    "rxjs": "^7.8.1"
+    "rxjs": "^7.8.1",
+    "@mingleats/angular-responsive-carousel": "3.0.0"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "^17.2.3",
@@ -94,3 +94,4 @@
     "@nx/nx-win32-x64-msvc": "16.8.1"
   }
 }
+
