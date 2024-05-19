@@ -1,25 +1,26 @@
 import { CommonModule } from "@angular/common";
 import { NgModule } from "@angular/core";
-import { RouterModule, Routes } from "@angular/router";
-
 import { MatButtonModule } from "@angular/material/button";
+import { RouterModule, Routes } from "@angular/router";
 import { SharedModule } from "../shared/shared.module";
-import HomePageComponent from "./home-page.component";
+import { GospelComponent } from "./gospel/gospel.component";
+// import { IvyCarouselModule } from "angular-responsive-carousel2";
 
 const routes: Routes = [
   {
-    path: "",
-    component: HomePageComponent,
+    path: "truth",
+    component: GospelComponent,
   },
 ];
 
 @NgModule({
-  declarations: [HomePageComponent],
+  declarations: [GospelComponent],
   imports: [
+    // IvyCarouselModule,
     CommonModule,
     SharedModule,
     MatButtonModule,
     RouterModule.forChild(routes),
   ],
 })
-export class HomePageModule {}
+export class GospelPageModule {}

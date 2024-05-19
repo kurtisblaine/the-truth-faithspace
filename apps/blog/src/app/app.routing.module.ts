@@ -16,6 +16,13 @@ const routes: Routes = [
   {
     path: "",
     loadChildren: () =>
+      import("./gospel-page/gospel-page.module").then(
+        (m) => m.GospelPageModule
+      ),
+  },
+  {
+    path: "",
+    loadChildren: () =>
       import("./psalm-page/psalm-page.module").then((m) => m.PsalmPageModule),
   },
   {
