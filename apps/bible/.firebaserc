@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "bible-truth-the-true-one": {
+      "hosting": {
+        "bible": [
+          "truth-as-in-beginning"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "bible-truth-the-true-one"
+  }
+}
