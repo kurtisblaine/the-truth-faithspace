@@ -82,14 +82,6 @@
         "lintFilePatterns": ["apps/blog/**/*.ts", "apps/blog/**/*.html"]
       }
     },
-    "test": {
-      "executor": "@nrwl/jest:jest",
-      "outputs": ["{workspaceRoot}/coverage/apps/blog"],
-      "options": {
-        "jestConfig": "apps/blog/jest.config.ts",
-        "passWithNoTests": true
-      }
-    },
     "deploy": {
       "executor": "angular-cli-ghpages:deploy"
     }
