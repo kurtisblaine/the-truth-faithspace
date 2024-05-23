@@ -1,5 +1,6 @@
 {
   "hosting": {
+    "site": "truth-as-in-beginning",
     "public": "public/browser",
     "ignore": ["firebase.json", "**/.*", "**/node_modules/**"]
   }
