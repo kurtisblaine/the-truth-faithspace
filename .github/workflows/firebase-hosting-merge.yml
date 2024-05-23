@@ -2,16 +2,16 @@
 # https://github.com/firebase/firebase-tools
 
 name: Deploy to Firebase Hosting on merge
-"on":
+on:
   push:
     branches:
       - master
 jobs:
-  build_and_deploy:
+  build_and_deploy-blog:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - run: npm install --force && npm run production
+      - run: npm install --force && npx nx build blog --prod --output-path apps/blog/public
       - uses: FirebaseExtended/action-hosting-deploy@v0
         with:
           repoToken: "${{ secrets.GITHUB_TOKEN }}"
@@ -19,3 +19,15 @@ jobs:
           channelId: live
           projectId: blog-46974
           entryPoint: ./apps/blog
+  build_and_deploy-bible:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: npm install --force && npx nx build bible --prod --output-path apps/bible/public
+      - uses: FirebaseExtended/action-hosting-deploy@v0
+        with:
+          repoToken: ${{ secrets.GITHUB_TOKEN }}
+          firebaseServiceAccount: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_BIBLE_TRUTH_THE_TRUE_ONE }}
+          channelId: live
+          projectId: bible-truth-the-true-one
+          entryPoint: ./apps/bible
