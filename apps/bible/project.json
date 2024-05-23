@@ -8,25 +8,16 @@
   "targets": {
     "build": {
       "executor": "@angular-devkit/build-angular:application",
-      "outputs": [
-        "{options.outputPath}"
-      ],
+      "outputs": ["{options.outputPath}"],
       "options": {
         "outputPath": "dist/apps/bible",
         "index": "apps/bible/src/index.html",
         "browser": "apps/bible/src/main.ts",
-        "polyfills": [
-          "zone.js"
-        ],
+        "polyfills": ["zone.js"],
         "tsConfig": "apps/bible/tsconfig.app.json",
         "inlineStyleLanguage": "scss",
-        "assets": [
-          "apps/bible/src/favicon.ico",
-          "apps/bible/src/assets"
-        ],
-        "styles": [
-          "apps/bible/src/styles.scss"
-        ],
+        "assets": ["apps/bible/src/favicon.ico", "apps/bible/src/assets"],
+        "styles": ["apps/bible/src/styles.scss"],
         "scripts": []
       },
       "configurations": {
@@ -43,7 +34,8 @@
               "maximumError": "10kb"
             }
           ],
-          "outputHashing": "all"
+          "outputHashing": "all",
+          "outputPath": "apps/bible/public"
         },
         "development": {
           "optimization": false,
@@ -73,14 +65,9 @@
     },
     "lint": {
       "executor": "@nx/eslint:lint",
-      "outputs": [
-        "{options.outputFile}"
-      ],
+      "outputs": ["{options.outputFile}"],
       "options": {
-        "lintFilePatterns": [
-          "apps/bible/**/*.ts",
-          "apps/bible/**/*.html"
-        ]
+        "lintFilePatterns": ["apps/bible/**/*.ts", "apps/bible/**/*.html"]
       }
     },
     "deploy": {
