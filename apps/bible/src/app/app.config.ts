@@ -10,11 +10,10 @@ import { appRoutes } from "./app.routes";
 
 export const appConfig: ApplicationConfig = {
   providers: [
+    provideStore(),
     provideEffects(BooksEffects),
     provideState(fromBooks.BOOKS_FEATURE_KEY, fromBooks.booksReducer),
-    provideStoreDevtools({ logOnly: !isDevMode() }),
-    provideEffects(),
-    provideStore(),
+    provideStoreDevtools({ logOnly: !isDevMode(), maxAge: 25 }),
     provideRouter(appRoutes),
     provideHttpClient(),
   ],
