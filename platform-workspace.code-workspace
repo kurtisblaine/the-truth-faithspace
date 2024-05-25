@@ -18,7 +18,8 @@
       "**/CVS": true,
       "**/.DS_Store": true,
       "**/Thumbs.db": true
-    }
+    },
+    "angular.forceStrictTemplates": true
   },
   "extensions": {
     "recommendations": ["angular.ng-template"]

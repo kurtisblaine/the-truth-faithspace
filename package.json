@@ -61,7 +61,7 @@
     "@angular-eslint/template-parser": "17.0.1",
     "@angular/cli": "^17.2.3",
     "@angular/compiler-cli": "17.0.4",
-    "@angular/language-service": "17.0.4",
+    "@angular/language-service": "^17.0.4",
     "@ngrx/schematics": "16.0.1",
     "@ngrx/store-devtools": "17.1.0",
     "@nrwl/angular": "17.1.3",
