@@ -2,9 +2,18 @@
   <mat-expansion-panel class="book-item" *ngFor="let book of books$ | async">
     <mat-expansion-panel-header>
       <mat-panel-title>
-        {{ book.name }}
+        <span
+          [ngClass]="{
+            rightToLeft: book.language.scriptDirection === rtl,
+            leftToRight: book.language.scriptDirection !== rtl
+          }"
+        >
+          {{ book.language.nameLocal }}
+        </span>
       </mat-panel-title>
-      <mat-panel-description> {{ book.description }} </mat-panel-description>
+      <mat-panel-description>
+        {{ book.language.name }}
+      </mat-panel-description>
     </mat-expansion-panel-header>
   </mat-expansion-panel>
 </mat-accordion>
