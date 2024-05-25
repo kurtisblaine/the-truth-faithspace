@@ -1,5 +1,6 @@
 import { CommonModule } from "@angular/common";
 import { ChangeDetectionStrategy, Component, OnInit } from "@angular/core";
+import { MatExpansionModule } from "@angular/material/expansion";
 import { Router } from "@angular/router";
 import { Store } from "@ngrx/store";
 import { Observable } from "rxjs";
@@ -10,7 +11,7 @@ import { selectAllBooks } from "../+state/book/books.selectors";
 @Component({
   selector: "app-books-page",
   standalone: true,
-  imports: [CommonModule],
+  imports: [MatExpansionModule, CommonModule],
   templateUrl: "./books-page.component.html",
   styleUrl: "./books-page.component.scss",
   changeDetection: ChangeDetectionStrategy.OnPush,

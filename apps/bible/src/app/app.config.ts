@@ -1,5 +1,6 @@
 import { provideHttpClient } from "@angular/common/http";
 import { ApplicationConfig, isDevMode } from "@angular/core";
+import { provideAnimations } from "@angular/platform-browser/animations";
 import { provideRouter } from "@angular/router";
 import { provideEffects } from "@ngrx/effects";
 import { provideState, provideStore } from "@ngrx/store";
@@ -16,5 +17,6 @@ export const appConfig: ApplicationConfig = {
     provideStoreDevtools({ logOnly: !isDevMode(), maxAge: 25 }),
     provideRouter(appRoutes),
     provideHttpClient(),
+    provideAnimations(),
   ],
 };
