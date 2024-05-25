@@ -1,1 +1,3 @@
-<p>books-page works!</p>
+<div class="book-item" *ngFor="let book of books$ | async">
+  {{ book.id }}
+</div>

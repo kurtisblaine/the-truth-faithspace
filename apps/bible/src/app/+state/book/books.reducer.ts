@@ -1,5 +1,5 @@
-import { EntityState, EntityAdapter, createEntityAdapter } from "@ngrx/entity";
-import { createReducer, on, Action } from "@ngrx/store";
+import { EntityAdapter, EntityState, createEntityAdapter } from "@ngrx/entity";
+import { Action, createReducer, on } from "@ngrx/store";
 
 import * as BooksActions from "./books.actions";
 import { BooksEntity } from "./books.models";

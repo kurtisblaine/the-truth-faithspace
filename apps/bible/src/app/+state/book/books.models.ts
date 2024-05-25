@@ -1,7 +1,3 @@
-/**
- * Interface for the 'Books' data
- */
-export interface BooksEntity {
-  id: string | number; // Primary ID
-  name: string;
-}
+import { BibleBook } from "../models/bibles";
+
+export type BooksEntity = BibleBook;

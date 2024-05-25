@@ -1,8 +1,8 @@
-export type Bibles = {
-  data: Bible[];
+export type BibleBooks = {
+  data: BibleBook[];
 };
 
-export type Bible = {
+export type BibleBook = {
   id: string;
   dblId: string;
   relatedDbl: null | string;
