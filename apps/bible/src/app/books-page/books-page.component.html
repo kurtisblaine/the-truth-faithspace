@@ -1,18 +1,20 @@
-<mat-accordion class="example-headers-align" multi>
-  <mat-expansion-panel class="book-item" *ngFor="let book of books$ | async">
+<mat-spinner *ngIf="isLoading$ | async; let isLoading"></mat-spinner>
+
+<mat-accordion *ngFor="let book of books$ | async" multi>
+  <mat-expansion-panel class="book-item">
     <mat-expansion-panel-header>
       <mat-panel-title>
         <span
           [ngClass]="{
-            rightToLeft: book.language.scriptDirection === rtl,
-            leftToRight: book.language.scriptDirection !== rtl
+            rightToLeft: book.group[0].language.scriptDirection === rtl,
+            leftToRight: book.group[0].language.scriptDirection !== rtl
           }"
         >
-          {{ book.language.nameLocal }}
+          {{ book.group[0].language.nameLocal }}
         </span>
       </mat-panel-title>
       <mat-panel-description>
-        {{ book.language.name }}
+        {{ book.name }}
       </mat-panel-description>
     </mat-expansion-panel-header>
   </mat-expansion-panel>

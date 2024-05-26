@@ -1,6 +1,6 @@
 import { createFeatureSelector, createSelector } from "@ngrx/store";
 import * as _ from "lodash-es";
-import { BookNode, Script } from "../models/bibles";
+import { Script, SortedBooks } from "../models/bibles";
 import { BOOKS_FEATURE_KEY, BooksState, booksAdapter } from "./books.reducer";
 
 export const selectBooksState =
@@ -40,11 +40,11 @@ export const selectAllGroupedCountries = createSelector(
               (n) => n.name == country.name
             );
 
-            foundCountry.nodes.push({ ...book, name: "", nodes: [] });
+            foundCountry.group.push({ ...book });
           });
           return countryNodes;
         },
-        countries.map((c) => ({ name: c, nodes: [] } as BookNode))
+        countries.map((c) => ({ name: c, group: [] } as SortedBooks))
       )
       .sort((a, b) => (a.name < b.name ? -1 : 1))
 );
@@ -60,12 +60,12 @@ export const selectAllGroupedLanguages = createSelector(
   (books, languages) =>
     books
       .reduce(
-        (nodes, book) => {
-          const foundLanguage = nodes.find((n) => n.name == book.language.name);
-          foundLanguage.nodes.push({ ...book, name: "", nodes: [] });
-          return nodes;
+        (group, book) => {
+          const foundLanguage = group.find((n) => n.name == book.language.name);
+          foundLanguage.group.push({ ...book });
+          return group;
         },
-        languages.map((c) => ({ name: c, nodes: [] } as BookNode))
+        languages.map((c) => ({ name: c, group: [] } as SortedBooks))
       )
       .sort((a, b) => (a.name < b.name ? -1 : 1))
 );
@@ -81,12 +81,12 @@ export const selectAllGroupedScripts = createSelector(
   (books, scripts) =>
     books
       .reduce(
-        (nodes, book) => {
-          const foundScript = nodes.find((n) => n.name == book.language.script);
-          foundScript.nodes.push({ ...book, name: "", nodes: [] });
-          return nodes;
+        (group, book) => {
+          const foundScript = group.find((n) => n.name == book.language.script);
+          foundScript.group.push({ ...book });
+          return group;
         },
-        scripts.map((c) => ({ name: c, nodes: [] } as BookNode))
+        scripts.map((c) => ({ name: c, group: [] } as SortedBooks))
       )
       .sort((a, b) => (a.name < b.name ? -1 : 1))
 );
