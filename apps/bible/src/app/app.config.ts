@@ -4,6 +4,7 @@ import { provideAnimations } from "@angular/platform-browser/animations";
 import {
   provideRouter,
   withComponentInputBinding,
+  withInMemoryScrolling,
   withRouterConfig,
 } from "@angular/router";
 import { provideEffects } from "@ngrx/effects";
@@ -27,6 +28,7 @@ export const appConfig: ApplicationConfig = {
       withRouterConfig({
         onSameUrlNavigation: "reload",
       }),
+      withInMemoryScrolling(),
       withComponentInputBinding()
     ),
     provideHttpClient(),

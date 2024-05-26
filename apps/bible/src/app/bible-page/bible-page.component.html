@@ -1,42 +1,7 @@
-<mat-spinner *ngIf="isLoading$ | async; let isLoading"></mat-spinner>
-
-<mat-grid-list [cols]="5" rowHeight="1:2" gutterSize="7">
-  <mat-grid-tile *ngFor="let item of groups$ | async">
-    <mat-card style="width: 100%; height: 100%">
-      <mat-card-header>
-        <mat-card-title
-          ><span
-            [ngClass]="{
-              rightToLeft:
-                item.sortedBibles[0].language.scriptDirection === rtl,
-              leftToRight: item.sortedBibles[0].language.scriptDirection !== rtl
-            }"
-          >
-            {{ item.sortedBibles[0].language.nameLocal }}
-          </span></mat-card-title
-        >
-        <mat-card-subtitle
-          *ngIf="
-            item.sortedBibles[0].language.nameLocal !==
-            item.sortedBibles[0].language.name
-          "
-          >Tongue: {{ item.sortedBibles[0].language.name }}</mat-card-subtitle
-        >
-      </mat-card-header>
-      <mat-card-content>
-        <p>Mother: {{ getCountries(item.sortedBibles) }}</p>
-        <p>Script: {{ getScripts(item.sortedBibles) }}</p>
-        <mat-divider></mat-divider>
-      </mat-card-content>
-      <mat-card-actions>
-        <button
-          (click)="readBook(item.sortedBibles[0])"
-          mat-flat-button
-          style="width: 100%"
-        >
-          READ
-        </button>
-      </mat-card-actions>
-    </mat-card></mat-grid-tile
+<mat-selection-list #shoes [multiple]="false">
+  @for (bible of selectedBiblesByLanguage$ | async; track bible) {
+  <mat-list-option [value]="bible" (click)="readBook(bible)"
+    >{{ bible.name }} - {{ bible.description }}</mat-list-option
   >
-</mat-grid-list>
+  }
+</mat-selection-list>

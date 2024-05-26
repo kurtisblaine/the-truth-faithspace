@@ -91,7 +91,7 @@ export class BibleApiService {
           chapter +
           "/verses/" +
           verse +
-          "?include-chapter-numbers=false&include-verse-numbers=false",
+          "?include-chapter-numbers=false&include-verse-numbers=false&content-type=text",
         { headers: this.headers }
       )
       .pipe(

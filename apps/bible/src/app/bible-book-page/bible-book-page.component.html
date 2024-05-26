@@ -1,1 +1,9 @@
 <mat-spinner *ngIf="isLoading$ | async; let isLoading"></mat-spinner>
+
+<mat-selection-list #shoes [multiple]="false">
+  @for (book of books$ | async; track book) {
+  <mat-list-option [value]="book" (click)="getScripture()"
+    >{{ book.name }} - {{ book.nameLong }}</mat-list-option
+  >
+  }
+</mat-selection-list>

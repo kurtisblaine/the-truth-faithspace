@@ -1,13 +1,46 @@
+import { STEPPER_GLOBAL_OPTIONS } from "@angular/cdk/stepper";
 import { CommonModule } from "@angular/common";
 import { Component } from "@angular/core";
-import { RouterModule } from "@angular/router";
+import {
+  FormBuilder,
+  FormsModule,
+  ReactiveFormsModule,
+  Validators,
+} from "@angular/forms";
+import { MatButtonModule } from "@angular/material/button";
+import { MatStepperModule } from "@angular/material/stepper";
+import { Router, RouterModule } from "@angular/router";
 
 @Component({
   standalone: true,
-  imports: [RouterModule, CommonModule],
+  imports: [
+    RouterModule,
+    CommonModule,
+    MatStepperModule,
+    FormsModule,
+    ReactiveFormsModule,
+    MatButtonModule,
+  ],
   selector: "app-root",
-  template: `<h1>Welcome Bible</h1>
-    <router-outlet></router-outlet>`,
+  providers: [
+    {
+      provide: STEPPER_GLOBAL_OPTIONS,
+      useValue: { showError: true },
+    },
+  ],
+  templateUrl: "./app.component.html",
   styles: ``,
 })
-export class AppComponent {}
+export class AppComponent {
+  truth = this._formBuilder.group({
+    language: ["", Validators.required],
+    bible: ["", Validators.required],
+    book: ["", Validators.required],
+  });
+
+  constructor(private _formBuilder: FormBuilder, private router: Router) {}
+
+  goToLanguage() {
+    this.router.navigateByUrl("translations");
+  }
+}

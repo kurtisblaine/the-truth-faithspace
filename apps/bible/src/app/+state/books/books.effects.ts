@@ -22,5 +22,18 @@ export class BooksEffects {
     )
   );
 
+  scripture$ = createEffect(() =>
+    this.actions$.pipe(
+      ofType(BooksActions.loadBooks),
+      mergeMap(({ id }) => this.bibleApi.getBooks(id)),
+      switchMap((data) =>
+        of(BooksActions.loadBooksSuccess({ data: data.data }))
+      ),
+      catchError((error) => {
+        return of(BooksActions.loadBooksFailure({ error }));
+      })
+    )
+  );
+
   constructor(private bibleApi: BibleApiService) {}
 }
