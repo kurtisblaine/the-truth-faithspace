@@ -28,7 +28,7 @@ export class EmailPageComponent implements OnInit {
       Validators.required,
       Validators.email,
     ]) as ValidatorFn;
-    this.FormData = this.builder.group({
+    this.FormData = this.builder.sortedBooks({
       Fullname: new FormControl("", [Validators.required]),
       Email: new FormControl("", [emailValidators]),
       Comment: new FormControl("", [Validators.required]),

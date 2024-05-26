@@ -40,11 +40,11 @@ export const selectAllGroupedCountries = createSelector(
               (n) => n.name == country.name
             );
 
-            foundCountry.group.push({ ...book });
+            foundCountry.sortedBooks.push({ ...book });
           });
           return countryNodes;
         },
-        countries.map((c) => ({ name: c, group: [] } as SortedBooks))
+        countries.map((c) => ({ name: c, sortedBooks: [] } as SortedBooks))
       )
       .sort((a, b) => (a.name < b.name ? -1 : 1))
 );
@@ -60,12 +60,14 @@ export const selectAllGroupedLanguages = createSelector(
   (books, languages) =>
     books
       .reduce(
-        (group, book) => {
-          const foundLanguage = group.find((n) => n.name == book.language.name);
-          foundLanguage.group.push({ ...book });
-          return group;
+        (sortedBooks, book) => {
+          const foundLanguage = sortedBooks.find(
+            (n) => n.name == book.language.name
+          );
+          foundLanguage.sortedBooks.push({ ...book });
+          return sortedBooks;
         },
-        languages.map((c) => ({ name: c, group: [] } as SortedBooks))
+        languages.map((c) => ({ name: c, sortedBooks: [] } as SortedBooks))
       )
       .sort((a, b) => (a.name < b.name ? -1 : 1))
 );
@@ -81,12 +83,14 @@ export const selectAllGroupedScripts = createSelector(
   (books, scripts) =>
     books
       .reduce(
-        (group, book) => {
-          const foundScript = group.find((n) => n.name == book.language.script);
-          foundScript.group.push({ ...book });
-          return group;
+        (sortedBooks, book) => {
+          const foundScript = sortedBooks.find(
+            (n) => n.name == book.language.script
+          );
+          foundScript.sortedBooks.push({ ...book });
+          return sortedBooks;
         },
-        scripts.map((c) => ({ name: c, group: [] } as SortedBooks))
+        scripts.map((c) => ({ name: c, sortedBooks: [] } as SortedBooks))
       )
       .sort((a, b) => (a.name < b.name ? -1 : 1))
 );
