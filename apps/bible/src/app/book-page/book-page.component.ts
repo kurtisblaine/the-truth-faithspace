@@ -18,15 +18,16 @@ import {
 import { Book } from "../+state/models/books";
 
 @Component({
-  selector: "app-bible-book-page",
+  selector: "app-book-page",
   standalone: true,
   imports: [MatProgressSpinnerModule, CommonModule, MatListModule],
-  templateUrl: "./bible-book-page.component.html",
-  styleUrl: "./bible-book-page.component.scss",
+  templateUrl: "./book-page.component.html",
+  styleUrl: "./book-page.component.scss",
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class BibleBookPageComponent implements OnInit {
-  @RouteInput() public id: string;
+export class BookPageComponent implements OnInit {
+  @RouteInput() public bibleId: string;
+  @RouteInput() public languageId: string;
 
   public books$!: Observable<Book[]>;
   public isLoading$!: Observable<boolean>;
@@ -34,13 +35,15 @@ export class BibleBookPageComponent implements OnInit {
   constructor(private store: Store, private router: Router) {}
 
   ngOnInit() {
-    this.store.dispatch(BooksActions.loadBooks({ id: this.id }));
+    this.store.dispatch(BooksActions.loadBooks({ id: this.bibleId }));
 
     this.books$ = this.store.select(selectAllBooks);
     this.isLoading$ = this.store.select(selectBooksLoaded).pipe(map((r) => !r));
   }
 
-  getScripture() {
-    this.store.dispatch(BooksActions.loadBooks({ id: this.id }));
+  getChapters(book: Book) {
+    this.router.navigateByUrl(
+      `tongue/${this.languageId}/bible/${this.bibleId}/book/${book.id}/chapter`
+    );
   }
 }

@@ -14,6 +14,7 @@ import { BibleEffects } from "./+state/bibles/bibles.effects";
 import * as fromBibles from "./+state/bibles/bibles.reducer";
 import { BooksEffects } from "./+state/books/books.effects";
 import * as fromBooks from "./+state/books/books.reducer";
+import * as fromChapters from "./+state/chapters/chapters.reducer";
 import { appRoutes } from "./app.routes";
 
 export const appConfig: ApplicationConfig = {
@@ -22,6 +23,7 @@ export const appConfig: ApplicationConfig = {
     provideEffects(BibleEffects, BooksEffects),
     provideState(fromBibles.BIBLES_FEATURE_KEY, fromBibles.reducer),
     provideState(fromBooks.BOOKS_FEATURE_KEY, fromBooks.reducer),
+    provideState(fromChapters.CHAPTERS_FEATURE_KEY, fromChapters.reducer),
     provideStoreDevtools({ logOnly: !isDevMode(), maxAge: 25 }),
     provideRouter(
       appRoutes,

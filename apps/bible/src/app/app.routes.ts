@@ -1,16 +1,21 @@
 import { Route } from "@angular/router";
-import { BibleBookPageComponent } from "./bible-book-page/bible-book-page.component";
 import { BiblePageComponent } from "./bible-page/bible-page.component";
+import { BookPageComponent } from "./book-page/book-page.component";
+import { ChapterPageComponent } from "./chapter-page/chapter-page.component";
 import { LanguagePageComponent } from "./language-page/language-page.component";
 
 export const appRoutes: Route[] = [
   { path: "", component: LanguagePageComponent },
   {
-    path: "bibles/:languageName",
+    path: "tongue/:languageId",
     component: BiblePageComponent,
   },
   {
-    path: "bibles/:languageName/book/:id",
-    component: BibleBookPageComponent,
+    path: "tongue/:languageId/bible/:bibleId",
+    component: BookPageComponent,
+  },
+  {
+    path: "tongue/:languageId/bible/:bibleId/book/:bookId/chapter",
+    component: ChapterPageComponent,
   },
 ];

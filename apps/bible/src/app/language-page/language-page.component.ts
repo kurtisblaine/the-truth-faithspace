@@ -62,6 +62,6 @@ export class LanguagePageComponent {
   }
 
   public showBibles(bibles: Bible[]) {
-    this.router.navigateByUrl("bibles/" + bibles[0].language.name);
+    this.router.navigateByUrl("tongue/" + bibles[0].language.name);
   }
 }

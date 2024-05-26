@@ -60,9 +60,17 @@ export class BibleApiService {
   }
   public getScripture(bibleId: BibleID, chapter: string) {
     return this.http
-      .get(this.api + "bibles/" + bibleId + "/chapters/" + chapter, {
-        headers: this.headers,
-      })
+      .get(
+        this.api +
+          "bibles/" +
+          bibleId +
+          "/chapters/" +
+          chapter +
+          "?include-chapter-numbers=false&include-verse-numbers=false&content-type=text",
+        {
+          headers: this.headers,
+        }
+      )
       .pipe(
         map((response: Scripture) => {
           return response;
