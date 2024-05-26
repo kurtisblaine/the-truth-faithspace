@@ -7,28 +7,35 @@
         <mat-card-title
           ><span
             [ngClass]="{
-              rightToLeft: item.sortedBooks[0].language.scriptDirection === rtl,
-              leftToRight: item.sortedBooks[0].language.scriptDirection !== rtl
+              rightToLeft:
+                item.sortedBibles[0].language.scriptDirection === rtl,
+              leftToRight: item.sortedBibles[0].language.scriptDirection !== rtl
             }"
           >
-            {{ item.sortedBooks[0].language.nameLocal }}
+            {{ item.sortedBibles[0].language.nameLocal }}
           </span></mat-card-title
         >
         <mat-card-subtitle
           *ngIf="
-            item.sortedBooks[0].language.nameLocal !==
-            item.sortedBooks[0].language.name
+            item.sortedBibles[0].language.nameLocal !==
+            item.sortedBibles[0].language.name
           "
-          >Tongue: {{ item.sortedBooks[0].language.name }}</mat-card-subtitle
+          >Tongue: {{ item.sortedBibles[0].language.name }}</mat-card-subtitle
         >
       </mat-card-header>
       <mat-card-content>
-        <p>Mother: {{ getCountries(item.sortedBooks) }}</p>
-        <p>Script: {{ getScripts(item.sortedBooks) }}</p>
+        <p>Mother: {{ getCountries(item.sortedBibles) }}</p>
+        <p>Script: {{ getScripts(item.sortedBibles) }}</p>
         <mat-divider></mat-divider>
       </mat-card-content>
       <mat-card-actions>
-        <button (click)="readBook(item.sortedBooks[0])" mat-flat-button style="width: 100%">READ</button>
+        <button
+          (click)="readBook(item.sortedBibles[0])"
+          mat-flat-button
+          style="width: 100%"
+        >
+          READ
+        </button>
       </mat-card-actions>
     </mat-card></mat-grid-tile
   >

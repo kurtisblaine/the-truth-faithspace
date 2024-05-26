@@ -10,16 +10,12 @@ import { Router } from "@angular/router";
 import { Store } from "@ngrx/store";
 import * as _ from "lodash-es";
 import { Observable, map } from "rxjs";
-import { initBible } from "../+state/book/books.actions";
+import { initBible } from "../+state/bibles/bibles.actions";
 import {
   selectAllGroupedLanguages,
-  selectBooksLoaded,
-} from "../+state/book/books.selectors";
-import {
-  BibleBook,
-  ScriptDirection,
-  SortedBooks,
-} from "../+state/models/bibles";
+  selectBiblesLoaded,
+} from "../+state/bibles/bibles.selectors";
+import { Bible, ScriptDirection, SortedBibles } from "../+state/models/bibles";
 @Component({
   selector: "app-bible-page",
   standalone: true,
@@ -38,7 +34,7 @@ import {
 })
 export class BiblePageComponent implements OnInit {
   public rtl: ScriptDirection = "RTL";
-  public groups$!: Observable<SortedBooks[]>;
+  public groups$!: Observable<SortedBibles[]>;
   public isLoading$!: Observable<boolean>;
 
   constructor(private store: Store, private router: Router) {}
@@ -47,22 +43,24 @@ export class BiblePageComponent implements OnInit {
     this.store.dispatch(initBible());
 
     this.groups$ = this.store.select(selectAllGroupedLanguages);
-    this.isLoading$ = this.store.select(selectBooksLoaded).pipe(map((r) => !r));
+    this.isLoading$ = this.store
+      .select(selectBiblesLoaded)
+      .pipe(map((r) => !r));
   }
 
-  public getCountries(sortedBooks: BibleBook[]) {
-    const flattened = _.flatMap(sortedBooks, (g) => g.countries);
+  public getCountries(sortedBibles: Bible[]) {
+    const flattened = _.flatMap(sortedBibles, (g) => g.countries);
     const dedupped = [...new Set(flattened.map((f) => f.name))];
     return dedupped.join(", ");
   }
 
-  public getScripts(sortedBooks: BibleBook[]) {
-    const flattened = _.flatMap(sortedBooks, (g) => g.language);
+  public getScripts(sortedBibles: Bible[]) {
+    const flattened = _.flatMap(sortedBibles, (g) => g.language);
     const dedupped = [...new Set(flattened.map((f) => f.script))];
     return dedupped.join(", ");
   }
 
-  public readBook(book: BibleBook) {
+  public readBook(book: Bible) {
     this.router.navigateByUrl("book/" + book.id, {
       state: { book },
     });
