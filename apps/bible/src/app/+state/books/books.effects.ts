@@ -1,26 +1,26 @@
-import { Injectable } from '@angular/core';
-import { Actions, createEffect, ofType } from '@ngrx/effects';
-import { catchError, map, concatMap } from 'rxjs/operators';
-import { Observable, EMPTY, of } from 'rxjs';
-import { BooksActions } from './books.actions';
-
+import { Injectable, inject } from "@angular/core";
+import { Actions, createEffect, ofType } from "@ngrx/effects";
+import { of } from "rxjs";
+import { catchError, mergeMap, switchMap } from "rxjs/operators";
+import { BibleApiService } from "../bible-api.service";
+import { BooksActions } from "./books.actions";
 
 @Injectable()
 export class BooksEffects {
+  private actions$ = inject(Actions);
 
-  loadBookss$ = createEffect(() => {
-    return this.actions$.pipe(
+  init$ = createEffect(() =>
+    this.actions$.pipe(
+      ofType(BooksActions.loadBooks),
+      mergeMap(({ id }) => this.bibleApi.getBooks(id)),
+      switchMap((data) =>
+        of(BooksActions.loadBooksSuccess({ data: data.data }))
+      ),
+      catchError((error) => {
+        return of(BooksActions.loadBooksFailure({ error }));
+      })
+    )
+  );
 
-      ofType(BooksActions.loadBookss),
-      concatMap(() =>
-        /** An EMPTY observable only emits completion. Replace with your own observable API request */
-        EMPTY.pipe(
-          map(data => BooksActions.loadBookssSuccess({ data })),
-          catchError(error => of(BooksActions.loadBookssFailure({ error }))))
-      )
-    );
-  });
-
-
-  constructor(private actions$: Actions) {}
+  constructor(private bibleApi: BibleApiService) {}
 }

@@ -27,6 +27,22 @@ export const selectAllBibles = createSelector(
   (state: BiblesState) => selectAll(state)
 );
 
+export const selectBiblesEntities = createSelector(
+  selectBiblesState,
+  (state: BiblesState) => selectEntities(state)
+);
+
+export const selectSelectedId = createSelector(
+  selectBiblesState,
+  (state: BiblesState) => state.selectedId
+);
+
+export const selectEntity = createSelector(
+  selectBiblesEntities,
+  selectSelectedId,
+  (entities, selectedId) => (selectedId ? entities[selectedId] : undefined)
+);
+
 export const selectAllCountries = createSelector(selectAllBibles, (bibles) => {
   const allCountries = _.flatMap(bibles, (book) => book.countries);
   return [...new Set(allCountries.map((c) => c.name))];
@@ -112,20 +128,4 @@ export const selectAllScriptsWithDirection = createSelector(
       )
     ),
   ]
-);
-
-export const selectBiblesEntities = createSelector(
-  selectBiblesState,
-  (state: BiblesState) => selectEntities(state)
-);
-
-export const selectSelectedId = createSelector(
-  selectBiblesState,
-  (state: BiblesState) => state.selectedId
-);
-
-export const selectEntity = createSelector(
-  selectBiblesEntities,
-  selectSelectedId,
-  (entities, selectedId) => (selectedId ? entities[selectedId] : undefined)
 );
