@@ -92,6 +92,12 @@ export const selectAllGroupedLanguages = createSelector(
       .sort((a, b) => (a.name < b.name ? -1 : 1))
 );
 
+export const getBibleByLanguageName = (id: string) =>
+  createSelector(
+    selectAllGroupedLanguages,
+    (languages) => languages.find((l) => l.name == id)?.sortedBibles
+  );
+
 export const selectAllScripts = createSelector(selectAllBibles, (bibles) => {
   const allScripts = bibles.map((book) => book.language.script);
   return [...new Set(allScripts)];

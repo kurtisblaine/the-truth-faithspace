@@ -9,3 +9,12 @@ export const BooksActions = createActionGroup({
     "Load Books Failure": props<{ error: unknown }>(),
   },
 });
+
+export const ScriptureActions = createActionGroup({
+  source: "Scripture",
+  events: {
+    "Load Scripture": props<{ id: string }>(),
+    "Load Scripture Success": props<{ data: Book[] }>(),
+    "Load Scripture Failure": props<{ error: unknown }>(),
+  },
+});

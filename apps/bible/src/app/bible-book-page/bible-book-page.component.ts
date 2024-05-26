@@ -5,6 +5,7 @@ import {
   OnInit,
   Input as RouteInput,
 } from "@angular/core";
+import { MatListModule } from "@angular/material/list";
 import { MatProgressSpinnerModule } from "@angular/material/progress-spinner";
 import { Router } from "@angular/router";
 import { Store } from "@ngrx/store";
@@ -14,19 +15,17 @@ import {
   selectAllBooks,
   selectBooksLoaded,
 } from "../+state/books/books.selectors";
-import { Bible } from "../+state/models/bibles";
 import { Book } from "../+state/models/books";
 
 @Component({
   selector: "app-bible-book-page",
   standalone: true,
-  imports: [MatProgressSpinnerModule, CommonModule],
+  imports: [MatProgressSpinnerModule, CommonModule, MatListModule],
   templateUrl: "./bible-book-page.component.html",
   styleUrl: "./bible-book-page.component.scss",
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class BibleBookPageComponent implements OnInit {
-  @RouteInput() public bible: Bible;
   @RouteInput() public id: string;
 
   public books$!: Observable<Book[]>;
@@ -39,5 +38,9 @@ export class BibleBookPageComponent implements OnInit {
 
     this.books$ = this.store.select(selectAllBooks);
     this.isLoading$ = this.store.select(selectBooksLoaded).pipe(map((r) => !r));
+  }
+
+  getScripture() {
+    this.store.dispatch(BooksActions.loadBooks({ id: this.id }));
   }
 }
