@@ -21,20 +21,20 @@ import { Bible } from "../+state/models/bibles";
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class BiblePageComponent implements OnInit {
-  @RouteInput() public languageName: string;
+  @RouteInput() public languageId: string;
   public selectedBiblesByLanguage$!: Observable<Bible[]>;
 
   constructor(private store: Store, private router: Router) {}
 
   ngOnInit(): void {
     this.selectedBiblesByLanguage$ = this.store.select(
-      getBibleByLanguageName(this.languageName)
+      getBibleByLanguageName(this.languageId)
     );
   }
 
   public readBook(bible: Bible) {
     this.router.navigateByUrl(
-      "bibles/" + this.languageName + "/book/" + bible.id
+      "tongue/" + this.languageId + "/bible/" + bible.id
     );
   }
 }

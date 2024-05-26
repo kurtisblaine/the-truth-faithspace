@@ -3,21 +3,21 @@ import { Actions, createEffect, ofType } from "@ngrx/effects";
 import { of } from "rxjs";
 import { catchError, mergeMap, switchMap } from "rxjs/operators";
 import { BibleApiService } from "../bible-api.service";
-import { BooksActions } from "./books.actions";
+import { ChaptersActions } from "./chapters.actions";
 
 @Injectable()
-export class BooksEffects {
+export class ChaptersEffects {
   private actions$ = inject(Actions);
 
   init$ = createEffect(() =>
     this.actions$.pipe(
-      ofType(BooksActions.loadBooks),
-      mergeMap(({ id }) => this.bibleApi.getBooks(id)),
+      ofType(ChaptersActions.loadChapters),
+      mergeMap(({ id, bookId }) => this.bibleApi.getChapters(id, bookId)),
       switchMap((data) =>
-        of(BooksActions.loadBooksSuccess({ data: data.data }))
+        of(ChaptersActions.loadChaptersSuccess({ data: data.data }))
       ),
       catchError((error) => {
-        return of(BooksActions.loadBooksFailure({ error }));
+        return of(ChaptersActions.loadChaptersFailure({ error }));
       })
     )
   );
