@@ -2,9 +2,7 @@ export type BibleBooks = {
   data: BibleBook[];
 };
 
-export type SortedBooks = { name: string; books: BibleBook[] };
-
-export type BookNode = { name: string; nodes: BookNode[] } & BibleBook;
+export type SortedBooks = { name: string; group: BibleBook[] };
 
 export type BibleBook = {
   id: string;
