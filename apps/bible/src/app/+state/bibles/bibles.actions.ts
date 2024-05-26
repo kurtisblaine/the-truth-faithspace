@@ -1,14 +1,14 @@
 import { createAction, props } from "@ngrx/store";
-import { BiblesEntity } from "./books.models";
+import { BiblesEntity } from "./bibles.models";
 
-export const initBible = createAction("[Books Page] Init");
+export const initBible = createAction("[Bibles Page] Init");
 
 export const loadBiblesSuccess = createAction(
-  "[Books/API] Load Books Success",
+  "[Bibles/API] Load Bibles Success",
   props<{ bibles: BiblesEntity[] }>()
 );
 
 export const loadBiblesFailure = createAction(
-  "[Books/API] Load Books Failure",
+  "[Bibles/API] Load Bibles Failure",
   props<{ error: any }>()
 );

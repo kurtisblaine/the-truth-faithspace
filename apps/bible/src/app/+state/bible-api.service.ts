@@ -1,7 +1,7 @@
 import { HttpClient, HttpHeaders } from "@angular/common/http";
 import { Injectable } from "@angular/core";
 import { map } from "rxjs";
-import { BibleBooks } from "./models/bibles";
+import { Bibles } from "./models/bibles";
 import { BibleID, Books } from "./models/books";
 import { BookID, Chapters } from "./models/chapters";
 import { Scripture } from "./models/scripture";
@@ -22,7 +22,7 @@ export class BibleApiService {
 
   public getBibles() {
     return this.http.get(this.api + "bibles", { headers: this.headers }).pipe(
-      map((response: BibleBooks) => {
+      map((response: Bibles) => {
         return response;
       })
     );

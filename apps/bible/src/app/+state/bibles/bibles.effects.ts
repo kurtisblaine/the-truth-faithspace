@@ -2,21 +2,21 @@ import { Injectable, inject } from "@angular/core";
 import { Actions, createEffect, ofType } from "@ngrx/effects";
 import { catchError, mergeMap, of, switchMap } from "rxjs";
 import { BibleApiService } from "../bible-api.service";
-import * as BooksActions from "./books.actions";
+import * as BiblesActions from "./bibles.actions";
 
 @Injectable()
-export class BooksEffects {
+export class BibleEffects {
   private actions$ = inject(Actions);
 
   init$ = createEffect(() =>
     this.actions$.pipe(
-      ofType(BooksActions.initBible),
+      ofType(BiblesActions.initBible),
       mergeMap(() => this.bibleApi.getBibles()),
       switchMap((data) =>
-        of(BooksActions.loadBiblesSuccess({ bibles: data.data }))
+        of(BiblesActions.loadBiblesSuccess({ bibles: data.data }))
       ),
       catchError((error) => {
-        return of(BooksActions.loadBiblesFailure({ error }));
+        return of(BiblesActions.loadBiblesFailure({ error }));
       })
     )
   );

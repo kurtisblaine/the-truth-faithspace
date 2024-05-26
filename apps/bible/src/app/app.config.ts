@@ -5,15 +5,15 @@ import { provideRouter } from "@angular/router";
 import { provideEffects } from "@ngrx/effects";
 import { provideState, provideStore } from "@ngrx/store";
 import { provideStoreDevtools } from "@ngrx/store-devtools";
-import { BooksEffects } from "./+state/book/books.effects";
-import * as fromBooks from "./+state/book/books.reducer";
+import { BibleEffects } from "./+state/bibles/bibles.effects";
+import * as fromBibles from "./+state/bibles/bibles.reducer";
 import { appRoutes } from "./app.routes";
 
 export const appConfig: ApplicationConfig = {
   providers: [
     provideStore(),
-    provideEffects(BooksEffects),
-    provideState(fromBooks.BOOKS_FEATURE_KEY, fromBooks.booksReducer),
+    provideEffects(BibleEffects),
+    provideState(fromBibles.BIBLES_FEATURE_KEY, fromBibles.booksReducer),
     provideStoreDevtools({ logOnly: !isDevMode(), maxAge: 25 }),
     provideRouter(appRoutes),
     provideHttpClient(),

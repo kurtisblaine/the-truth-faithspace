@@ -4,7 +4,7 @@ import {
   Input,
   OnInit,
 } from "@angular/core";
-import { BibleBook } from "../+state/models/bibles";
+import { Bible } from "../+state/models/bibles";
 
 @Component({
   selector: "app-bible-book-page",
@@ -15,7 +15,7 @@ import { BibleBook } from "../+state/models/bibles";
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class BibleBookPageComponent implements OnInit {
-  @Input() public book: BibleBook;
+  @Input() public book: Bible;
 
   ngOnInit() {}
 }
