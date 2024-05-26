@@ -1,4 +1,8 @@
 import { Route } from "@angular/router";
-import { BooksPageComponent } from "./books-page/books-page.component";
+import { BibleBookPageComponent } from "./bible-book-page/bible-book-page.component";
+import { BiblePageComponent } from "./bible-page/bible-page.component";
 
-export const appRoutes: Route[] = [{ path: "", component: BooksPageComponent }];
+export const appRoutes: Route[] = [
+  { path: "", component: BiblePageComponent },
+  { path: "book/:id", component: BibleBookPageComponent },
+];

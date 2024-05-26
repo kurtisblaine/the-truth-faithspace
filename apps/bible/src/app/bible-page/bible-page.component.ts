@@ -10,7 +10,7 @@ import { Router } from "@angular/router";
 import { Store } from "@ngrx/store";
 import * as _ from "lodash-es";
 import { Observable, map } from "rxjs";
-import { initBooks } from "../+state/book/books.actions";
+import { initBible } from "../+state/book/books.actions";
 import {
   selectAllGroupedLanguages,
   selectBooksLoaded,
@@ -21,7 +21,7 @@ import {
   SortedBooks,
 } from "../+state/models/bibles";
 @Component({
-  selector: "app-books-page",
+  selector: "app-bible-page",
   standalone: true,
   imports: [
     MatExpansionModule,
@@ -32,11 +32,11 @@ import {
     MatCardModule,
     MatDividerModule,
   ],
-  templateUrl: "./books-page.component.html",
-  styleUrl: "./books-page.component.scss",
+  templateUrl: "./bible-page.component.html",
+  styleUrl: "./bible-page.component.scss",
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class BooksPageComponent implements OnInit {
+export class BiblePageComponent implements OnInit {
   public rtl: ScriptDirection = "RTL";
   public groups$!: Observable<SortedBooks[]>;
   public isLoading$!: Observable<boolean>;
@@ -44,7 +44,7 @@ export class BooksPageComponent implements OnInit {
   constructor(private store: Store, private router: Router) {}
 
   public ngOnInit() {
-    this.store.dispatch(initBooks());
+    this.store.dispatch(initBible());
 
     this.groups$ = this.store.select(selectAllGroupedLanguages);
     this.isLoading$ = this.store.select(selectBooksLoaded).pipe(map((r) => !r));
@@ -60,5 +60,11 @@ export class BooksPageComponent implements OnInit {
     const flattened = _.flatMap(sortedBooks, (g) => g.language);
     const dedupped = [...new Set(flattened.map((f) => f.script))];
     return dedupped.join(", ");
+  }
+
+  public readBook(book: BibleBook) {
+    this.router.navigateByUrl("book/" + book.id, {
+      state: { book },
+    });
   }
 }
