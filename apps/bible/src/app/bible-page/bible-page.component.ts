@@ -60,9 +60,9 @@ export class BiblePageComponent implements OnInit {
     return dedupped.join(", ");
   }
 
-  public readBook(book: Bible) {
-    this.router.navigateByUrl("book/" + book.id, {
-      state: { book },
+  public readBook(bible: Bible) {
+    this.router.navigateByUrl("book/" + bible.id, {
+      state: { bible },
     });
   }
 }
