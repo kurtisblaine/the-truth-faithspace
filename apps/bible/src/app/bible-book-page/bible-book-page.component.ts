@@ -1,3 +1,4 @@
+import { CommonModule } from "@angular/common";
 import {
   ChangeDetectionStrategy,
   Component,
@@ -19,7 +20,7 @@ import { Book } from "../+state/models/books";
 @Component({
   selector: "app-bible-book-page",
   standalone: true,
-  imports: [MatProgressSpinnerModule],
+  imports: [MatProgressSpinnerModule, CommonModule],
   templateUrl: "./bible-book-page.component.html",
   styleUrl: "./bible-book-page.component.scss",
   changeDetection: ChangeDetectionStrategy.OnPush,
