@@ -1,5 +1,5 @@
 import { EntityAdapter, EntityState, createEntityAdapter } from "@ngrx/entity";
-import { Action, createReducer, on } from "@ngrx/store";
+import { createReducer, on } from "@ngrx/store";
 
 import * as BiblesActions from "./bibles.actions";
 import { BiblesEntity } from "./bibles.models";
@@ -23,7 +23,7 @@ export const initialBiblesState: BiblesState = biblesAdapter.getInitialState({
   loaded: false,
 });
 
-const reducer = createReducer(
+export const reducer = createReducer(
   initialBiblesState,
   on(BiblesActions.initBible, (state) => ({
     ...state,
@@ -38,7 +38,3 @@ const reducer = createReducer(
     error,
   }))
 );
-
-export function booksReducer(state: BiblesState | undefined, action: Action) {
-  return reducer(state, action);
-}
