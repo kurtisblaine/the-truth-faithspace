@@ -10,13 +10,13 @@ export class BooksEffects {
 
   init$ = createEffect(() =>
     this.actions$.pipe(
-      ofType(BooksActions.initBooks),
+      ofType(BooksActions.initBible),
       mergeMap(() => this.bibleApi.getBibles()),
       switchMap((data) =>
-        of(BooksActions.loadBooksSuccess({ books: data.data }))
+        of(BooksActions.loadBiblesSuccess({ bibles: data.data }))
       ),
       catchError((error) => {
-        return of(BooksActions.loadBooksFailure({ error }));
+        return of(BooksActions.loadBiblesFailure({ error }));
       })
     )
   );
