@@ -2,6 +2,7 @@ import { CommonModule } from "@angular/common";
 import { ChangeDetectionStrategy, Component, OnInit } from "@angular/core";
 import { MatButtonModule } from "@angular/material/button";
 import { MatCardModule } from "@angular/material/card";
+import { MatDividerModule } from "@angular/material/divider";
 import { MatExpansionModule } from "@angular/material/expansion";
 import { MatGridListModule } from "@angular/material/grid-list";
 import { MatProgressSpinnerModule } from "@angular/material/progress-spinner";
@@ -29,6 +30,7 @@ import {
     MatProgressSpinnerModule,
     MatGridListModule,
     MatCardModule,
+    MatDividerModule,
   ],
   templateUrl: "./books-page.component.html",
   styleUrl: "./books-page.component.scss",
@@ -48,14 +50,14 @@ export class BooksPageComponent implements OnInit {
     this.isLoading$ = this.store.select(selectBooksLoaded).pipe(map((r) => !r));
   }
 
-  public getCountries(group: BibleBook[]) {
-    const flattened = _.flatMap(group, (g) => g.countries);
+  public getCountries(sortedBooks: BibleBook[]) {
+    const flattened = _.flatMap(sortedBooks, (g) => g.countries);
     const dedupped = [...new Set(flattened.map((f) => f.name))];
     return dedupped.join(", ");
   }
 
-  public getScripts(group: BibleBook[]) {
-    const flattened = _.flatMap(group, (g) => g.language);
+  public getScripts(sortedBooks: BibleBook[]) {
+    const flattened = _.flatMap(sortedBooks, (g) => g.language);
     const dedupped = [...new Set(flattened.map((f) => f.script))];
     return dedupped.join(", ");
   }
