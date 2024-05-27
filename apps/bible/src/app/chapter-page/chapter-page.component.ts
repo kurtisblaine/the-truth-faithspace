@@ -9,13 +9,12 @@ import { MatProgressSpinnerModule } from "@angular/material/progress-spinner";
 import { Router } from "@angular/router";
 import { Store } from "@ngrx/store";
 import { Observable, map } from "rxjs";
-import { ScriptureActions } from "../+state/bibles/bibles.actions";
 import { ChaptersActions } from "../+state/chapters/chapters.actions";
 import {
   selectAllChapters,
   selectChaptersLoaded,
 } from "../+state/chapters/chapters.selectors";
-import { Chapter } from "../+state/models/chapters";
+import { Chapter } from "../models/chapters";
 
 @Component({
   selector: "app-chapter-page",
@@ -47,8 +46,8 @@ export class ChapterPageComponent {
   }
 
   getScripture(chapter: Chapter) {
-    this.store.dispatch(
-      ScriptureActions.loadScripture({ id: this.bibleId, chapter: chapter.id })
+    this.router.navigateByUrl(
+      `tongue/${this.languageId}/bible/${this.bibleId}/book/${this.bookId}/chapter/${chapter.id}`
     );
   }
 }

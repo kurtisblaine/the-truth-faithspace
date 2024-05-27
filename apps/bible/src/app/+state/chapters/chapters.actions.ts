@@ -1,5 +1,5 @@
 import { createActionGroup, props } from "@ngrx/store";
-import { Chapter } from "../models/chapters";
+import { Chapter } from "../../models/chapters";
 
 export const ChaptersActions = createActionGroup({
   source: "Chapters",

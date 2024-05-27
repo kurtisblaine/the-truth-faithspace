@@ -1,6 +1,6 @@
 import { createFeatureSelector, createSelector } from "@ngrx/store";
 import * as _ from "lodash-es";
-import { Script, SortedBibles } from "../models/bibles";
+import { Script, SortedBibles } from "../../models/bibles";
 import {
   BIBLES_FEATURE_KEY,
   BiblesState,

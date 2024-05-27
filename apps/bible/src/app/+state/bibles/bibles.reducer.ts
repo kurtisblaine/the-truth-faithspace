@@ -1,7 +1,7 @@
 import { EntityAdapter, EntityState, createEntityAdapter } from "@ngrx/entity";
 import { createReducer, on } from "@ngrx/store";
 
-import { Bible } from "../models/bibles";
+import { Bible } from "../../models/bibles";
 import * as BiblesActions from "./bibles.actions";
 
 export const BIBLES_FEATURE_KEY = "bibles";

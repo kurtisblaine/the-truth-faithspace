@@ -10,7 +10,7 @@ import { Router } from "@angular/router";
 import { Store } from "@ngrx/store";
 import { Observable } from "rxjs";
 import { getBibleByLanguageName } from "../+state/bibles/bibles.selectors";
-import { Bible } from "../+state/models/bibles";
+import { Bible } from "../models/bibles";
 
 @Component({
   selector: "app-bible-page",

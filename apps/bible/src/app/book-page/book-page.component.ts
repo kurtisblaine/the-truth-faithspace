@@ -15,7 +15,7 @@ import {
   selectAllBooks,
   selectBooksLoaded,
 } from "../+state/books/books.selectors";
-import { Book } from "../+state/models/books";
+import { Book } from "../models/books";
 
 @Component({
   selector: "app-book-page",

@@ -3,7 +3,7 @@
 <mat-selection-list #shoes [multiple]="false">
   @for (chapter of chapters$ | async; track chapter) {
   <mat-list-option [value]="chapter" (click)="getScripture(chapter)"
-    >{{ chapter.name }} - {{ chapter.nameLong }}</mat-list-option
+    >{{ chapter.number }} - {{ chapter.reference }}</mat-list-option
   >
   }
 </mat-selection-list>

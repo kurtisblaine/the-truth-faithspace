@@ -15,7 +15,7 @@ import {
   selectAllGroupedLanguages,
   selectBiblesLoaded,
 } from "../+state/bibles/bibles.selectors";
-import { Bible, ScriptDirection, SortedBibles } from "../+state/models/bibles";
+import { Bible, ScriptDirection, SortedBibles } from "../models/bibles";
 
 @Component({
   selector: "app-language-page",
