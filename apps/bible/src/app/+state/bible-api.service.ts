@@ -1,13 +1,13 @@
 import { HttpClient, HttpHeaders } from "@angular/common/http";
 import { Injectable } from "@angular/core";
 import { map } from "rxjs";
-import { Bibles } from "./models/bibles";
-import { BibleID, Books } from "./models/books";
-import { BookID, Chapters } from "./models/chapters";
-import { Scripture } from "./models/scripture";
-import { Search } from "./models/search";
-import { Sections } from "./models/sections";
-import { Verses } from "./models/verses";
+import { Bibles } from "../models/bibles";
+import { BibleID, Books } from "../models/books";
+import { BookID, Chapters } from "../models/chapters";
+import { Scripture } from "../models/scripture";
+import { Search } from "../models/search";
+import { Sections } from "../models/sections";
+import { Verses } from "../models/verses";
 
 @Injectable({
   providedIn: "root",

@@ -1,6 +1,6 @@
 import { EntityAdapter, EntityState, createEntityAdapter } from "@ngrx/entity";
 import { createFeature, createReducer, on } from "@ngrx/store";
-import { Book } from "../models/books";
+import { Book } from "../../models/books";
 import { BooksActions } from "./books.actions";
 
 export const BOOKS_FEATURE_KEY = "books";
