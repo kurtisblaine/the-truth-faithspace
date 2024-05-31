@@ -5,11 +5,13 @@ import { MatCardModule } from "@angular/material/card";
 import { MatDividerModule } from "@angular/material/divider";
 import { MatExpansionModule } from "@angular/material/expansion";
 import { MatGridListModule } from "@angular/material/grid-list";
+import { MatInputModule } from "@angular/material/input";
 import { MatProgressSpinnerModule } from "@angular/material/progress-spinner";
 import { Router } from "@angular/router";
 import { Store } from "@ngrx/store";
 import * as _ from "lodash-es";
 import { Observable, map } from "rxjs";
+import { SharedModule } from "shared";
 import { initBible } from "../+state/bibles/bibles.actions";
 import {
   selectAllGroupedLanguages,
@@ -28,6 +30,8 @@ import { Bible, ScriptDirection, SortedBibles } from "../models/bibles";
     MatGridListModule,
     MatCardModule,
     MatDividerModule,
+    SharedModule,
+    MatInputModule,
   ],
   templateUrl: "./language-page.component.html",
   styleUrl: "./language-page.component.scss",
