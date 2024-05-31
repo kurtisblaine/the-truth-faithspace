@@ -5,7 +5,12 @@
 <mat-spinner *ngIf="isLoading$ | async; let isLoading"></mat-spinner>
 
 <div class="grid">
-  <mat-card *ngFor="let item of groups$ | async" style="min-height: 222px">
+  <mat-card
+    *ngFor="let item of groups$ | async"
+    style="min-height: 177px; cursor: pointer"
+    matRipple
+    (click)="showBibles(item.sortedBibles)"
+  >
     <mat-card-header>
       <mat-card-title
         ><span
@@ -33,7 +38,7 @@
         Mother: {{ getCountries(item.sortedBibles) }}
       </p>
     </mat-card-content>
-    <mat-divider></mat-divider>
+    <!-- <mat-divider></mat-divider>
     <mat-card-actions>
       <button
         (click)="showBibles(item.sortedBibles)"
@@ -42,6 +47,6 @@
       >
         READ
       </button>
-    </mat-card-actions>
+    </mat-card-actions> -->
   </mat-card>
 </div>

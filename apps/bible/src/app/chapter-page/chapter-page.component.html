@@ -1,9 +1,18 @@
+<div style="display: flex">
+  <h1>Chapters</h1>
+</div>
+
 <mat-spinner *ngIf="isLoading$ | async; let isLoading"></mat-spinner>
 
-<mat-selection-list #shoes [multiple]="false">
-  @for (chapter of chapters$ | async; track chapter) {
-  <mat-list-option [value]="chapter" (click)="getScripture(chapter)"
-    >{{ chapter.number }} - {{ chapter.reference }}</mat-list-option
+<div class="grid">
+  <mat-card
+    *ngFor="let chapter of chapters$ | async"
+    style="min-height: 150px; cursor: pointer"
+    matRipple
+    (click)="getScripture(chapter)"
   >
-  }
-</mat-selection-list>
+    <mat-card-content>
+      {{ chapter.number }}
+    </mat-card-content>
+  </mat-card>
+</div>
