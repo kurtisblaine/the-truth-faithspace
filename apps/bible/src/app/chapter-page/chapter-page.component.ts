@@ -4,7 +4,8 @@ import {
   Component,
   Input as RouteInput,
 } from "@angular/core";
-import { MatListModule } from "@angular/material/list";
+import { MatCardModule } from "@angular/material/card";
+import { MatRippleModule } from "@angular/material/core";
 import { MatProgressSpinnerModule } from "@angular/material/progress-spinner";
 import { Router } from "@angular/router";
 import { Store } from "@ngrx/store";
@@ -19,7 +20,12 @@ import { Chapter } from "../models/chapters";
 @Component({
   selector: "app-chapter-page",
   standalone: true,
-  imports: [MatProgressSpinnerModule, CommonModule, MatListModule],
+  imports: [
+    MatProgressSpinnerModule,
+    CommonModule,
+    MatCardModule,
+    MatRippleModule,
+  ],
   templateUrl: "./chapter-page.component.html",
   styleUrl: "./chapter-page.component.scss",
   changeDetection: ChangeDetectionStrategy.OnPush,

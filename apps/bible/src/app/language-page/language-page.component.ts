@@ -2,6 +2,7 @@ import { CommonModule } from "@angular/common";
 import { ChangeDetectionStrategy, Component } from "@angular/core";
 import { MatButtonModule } from "@angular/material/button";
 import { MatCardModule } from "@angular/material/card";
+import { MatRippleModule } from "@angular/material/core";
 import { MatDividerModule } from "@angular/material/divider";
 import { MatExpansionModule } from "@angular/material/expansion";
 import { MatGridListModule } from "@angular/material/grid-list";
@@ -32,6 +33,7 @@ import { Bible, ScriptDirection, SortedBibles } from "../models/bibles";
     MatDividerModule,
     SharedModule,
     MatInputModule,
+    MatRippleModule,
   ],
   templateUrl: "./language-page.component.html",
   styleUrl: "./language-page.component.scss",
