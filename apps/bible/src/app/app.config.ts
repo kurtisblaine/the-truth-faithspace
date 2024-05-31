@@ -1,5 +1,6 @@
 import { provideHttpClient } from "@angular/common/http";
 import { ApplicationConfig, isDevMode } from "@angular/core";
+import { MAT_RIPPLE_GLOBAL_OPTIONS } from "@angular/material/core";
 import { provideAnimations } from "@angular/platform-browser/animations";
 import {
   provideRouter,
@@ -36,5 +37,14 @@ export const appConfig: ApplicationConfig = {
     ),
     provideHttpClient(),
     provideAnimations(),
+    {
+      provide: MAT_RIPPLE_GLOBAL_OPTIONS,
+      useValue: {
+        animation: {
+          enterDuration: 300,
+          exitDuration: 0,
+        },
+      },
+    },
   ],
 };
