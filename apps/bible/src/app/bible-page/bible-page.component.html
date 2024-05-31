@@ -1,3 +1,7 @@
+<div style="display: flex">
+  <h1>Bible Translations</h1>
+</div>
+
 <mat-selection-list #shoes [multiple]="false">
   @for (bible of selectedBiblesByLanguage$ | async; track bible) {
   <mat-list-option [value]="bible" (click)="readBook(bible)"
