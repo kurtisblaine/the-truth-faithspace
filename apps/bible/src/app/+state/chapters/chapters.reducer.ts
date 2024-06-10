@@ -25,6 +25,10 @@ export const reducer = createReducer(
     loaded: false,
     error: null,
   })),
+  on(ChaptersActions.selectChapter, (state, { id }) => ({
+    ...state,
+    selectedId: id,
+  })),
   on(ChaptersActions.loadChaptersSuccess, (state, { data }) =>
     chaptersAdapter.setAll(data, { ...state, loaded: true })
   ),

@@ -7,8 +7,9 @@ import {
 } from "@angular/core";
 import { Router } from "@angular/router";
 import { Store } from "@ngrx/store";
-import { Observable } from "rxjs";
+import { Observable, map } from "rxjs";
 import { BibleApiService } from "../+state/bible-api.service";
+import { selectChapterEntity } from "../+state/chapters/chapters.selectors";
 import { Scripture } from "../models/scripture";
 
 @Component({
@@ -33,8 +34,12 @@ export class ScripturePageComponent implements OnInit {
 
   public scripture$!: Observable<Scripture>;
   public isLoading$!: Observable<boolean>;
+  public chapter$!: Observable<string>;
 
   ngOnInit(): void {
     this.scripture$ = this.bibleApi.getScripture(this.bibleId, this.chapterId);
+    this.chapter$ = this.store
+      .select(selectChapterEntity)
+      .pipe(map((r) => r.number));
   }
 }

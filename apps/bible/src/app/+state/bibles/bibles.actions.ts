@@ -12,3 +12,13 @@ export const loadBiblesFailure = createAction(
   "[Bibles/API] Load Bibles Failure",
   props<{ error: any }>()
 );
+
+export const selectLanguage = createAction(
+  "[Bibles Page] Select Bible",
+  props<{ bible: Bible }>()
+);
+
+export const selectTranslation = createAction(
+  "[Bibles Page] Select Translation",
+  props<{ bible: Bible }>()
+);

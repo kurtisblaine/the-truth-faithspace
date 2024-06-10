@@ -24,6 +24,10 @@ export const reducer = createReducer(
     loaded: false,
     error: null,
   })),
+  on(BooksActions.selectBook, (state, { id }) => ({
+    ...state,
+    selectedId: id,
+  })),
   on(BooksActions.loadBooksSuccess, (state, { data }) =>
     booksAdapter.setAll(data, { ...state, loaded: true })
   ),

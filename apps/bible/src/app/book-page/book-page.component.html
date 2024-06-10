@@ -1,13 +1,18 @@
 <div style="display: flex">
-  <h1>Books</h1>
+  <h1>Books from {{ this.translation$ | async }}</h1>
 </div>
 
 <mat-spinner *ngIf="isLoading$ | async; let isLoading"></mat-spinner>
 
-<mat-selection-list #shoes [multiple]="false">
+<mat-selection-list [multiple]="false" hideSingleSelectionIndicator>
   @for (book of books$ | async; track book) {
   <mat-list-option [value]="book" (click)="getChapters(book)"
-    >{{ book.name }} - {{ book.nameLong }}</mat-list-option
+    ><div style="font-size: large" *ngIf="book.nameLong">
+      {{ book.name }} - {{ book.nameLong }}
+    </div>
+    <div style="font-size: large" *ngIf="!book.nameLong">
+      {{ book.name }}
+    </div></mat-list-option
   >
   }
 </mat-selection-list>

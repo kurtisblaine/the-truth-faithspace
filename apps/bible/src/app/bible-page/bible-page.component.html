@@ -1,11 +1,16 @@
 <div style="display: flex">
-  <h1>Bible Translations</h1>
+  <h1>Bible Translations to {{ this.selectedLanguage$ | async }}</h1>
 </div>
 
-<mat-selection-list #shoes [multiple]="false">
+<mat-selection-list [multiple]="false" hideSingleSelectionIndicator>
   @for (bible of selectedBiblesByLanguage$ | async; track bible) {
   <mat-list-option [value]="bible" (click)="readBook(bible)"
-    >{{ bible.name }} - {{ bible.description }}</mat-list-option
-  >
+    ><div style="font-size: large" *ngIf="bible.description">
+      {{ bible.name }} - {{ bible.description }}
+    </div>
+    <div style="font-size: large" *ngIf="!bible.description">
+      {{ bible.name }}
+    </div>
+  </mat-list-option>
   }
 </mat-selection-list>

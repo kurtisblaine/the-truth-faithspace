@@ -37,10 +37,23 @@ export const selectSelectedId = createSelector(
   (state: BiblesState) => state.selectedId
 );
 
-export const selectEntity = createSelector(
-  selectBiblesEntities,
+export const selectTranslationId = createSelector(
+  selectBiblesState,
+  (state: BiblesState) => state.selectedTranslationId
+);
+
+export const selectLanguageEntity = createSelector(
+  selectAllBibles,
   selectSelectedId,
-  (entities, selectedId) => (selectedId ? entities[selectedId] : undefined)
+  (bibles, selectedId) =>
+    selectedId ? bibles.find((b) => b.language.id == selectedId) : undefined
+);
+
+export const selectTranslationEntity = createSelector(
+  selectAllBibles,
+  selectTranslationId,
+  (bibles, translationId) =>
+    translationId ? bibles.find((b) => b.id == translationId) : undefined
 );
 
 export const selectAllCountries = createSelector(selectAllBibles, (bibles) => {
@@ -92,10 +105,11 @@ export const selectAllGroupedLanguages = createSelector(
       .sort((a, b) => (a.name < b.name ? -1 : 1))
 );
 
-export const getBibleByLanguageName = (id: string) =>
+export const getBibleByLanguageId = (id: string) =>
   createSelector(
     selectAllGroupedLanguages,
-    (languages) => languages.find((l) => l.name == id)?.sortedBibles
+    (languages) =>
+      languages.find((l) => l.sortedBibles[0].language.id == id)?.sortedBibles
   );
 
 export const selectAllScripts = createSelector(selectAllBibles, (bibles) => {
