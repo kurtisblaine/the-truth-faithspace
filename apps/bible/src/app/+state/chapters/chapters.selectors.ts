@@ -32,8 +32,9 @@ export const selectSelectedId = createSelector(
   (state: fromChapters.State) => state.selectedId
 );
 
-export const selectEntity = createSelector(
-  selectChaptersEntities,
+export const selectChapterEntity = createSelector(
+  selectAllChapters,
   selectSelectedId,
-  (entities, selectedId) => (selectedId ? entities[selectedId] : undefined)
+  (entities, selectedId) =>
+    selectedId ? entities.find((e) => e.id == selectedId) : undefined
 );

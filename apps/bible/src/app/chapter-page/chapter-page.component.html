@@ -1,5 +1,5 @@
 <div style="display: flex">
-  <h1>Chapters</h1>
+  <h1>Chapters from {{ this.selectedBook$ | async }}</h1>
 </div>
 
 <mat-spinner *ngIf="isLoading$ | async; let isLoading"></mat-spinner>
@@ -11,7 +11,17 @@
     matRipple
     (click)="getScripture(chapter)"
   >
-    <mat-card-content>
+    <mat-card-content
+      style="
+        font-variant: small-caps;
+        font-size: large;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+      "
+    >
       {{ chapter.number }}
     </mat-card-content>
   </mat-card>

@@ -10,6 +10,7 @@ import { MatProgressSpinnerModule } from "@angular/material/progress-spinner";
 import { Router } from "@angular/router";
 import { Store } from "@ngrx/store";
 import { Observable, map } from "rxjs";
+import { selectEntity } from "../+state/books/books.selectors";
 import { ChaptersActions } from "../+state/chapters/chapters.actions";
 import {
   selectAllChapters,
@@ -37,6 +38,7 @@ export class ChapterPageComponent {
 
   public chapters$!: Observable<Chapter[]>;
   public isLoading$!: Observable<boolean>;
+  public selectedBook$!: Observable<string>;
 
   constructor(private store: Store, private router: Router) {}
 
@@ -46,12 +48,18 @@ export class ChapterPageComponent {
     );
 
     this.chapters$ = this.store.select(selectAllChapters);
+    this.selectedBook$ = this.store
+      .select(selectEntity)
+      .pipe(map((r) => r.name));
+
     this.isLoading$ = this.store
       .select(selectChaptersLoaded)
       .pipe(map((r) => !r));
   }
 
   getScripture(chapter: Chapter) {
+    this.store.dispatch(ChaptersActions.selectChapter({ id: chapter.id }));
+
     this.router.navigateByUrl(
       `tongue/${this.languageId}/bible/${this.bibleId}/book/${this.bookId}/chapter/${chapter.id}`
     );

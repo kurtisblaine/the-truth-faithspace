@@ -13,7 +13,7 @@ import { Store } from "@ngrx/store";
 import * as _ from "lodash-es";
 import { Observable, map } from "rxjs";
 import { SharedModule } from "shared";
-import { initBible } from "../+state/bibles/bibles.actions";
+import { initBible, selectLanguage } from "../+state/bibles/bibles.actions";
 import {
   selectAllGroupedLanguages,
   selectBiblesLoaded,
@@ -68,6 +68,7 @@ export class LanguagePageComponent {
   }
 
   public showBibles(bibles: Bible[]) {
-    this.router.navigateByUrl("tongue/" + bibles[0].language.name);
+    this.store.dispatch(selectLanguage({ bible: bibles[0] }));
+    this.router.navigateByUrl("tongue/" + bibles[0].language.id);
   }
 }

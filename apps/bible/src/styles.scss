@@ -31,3 +31,14 @@ $primary-palette: map.get($color-config, "primary");
   gap: 10px;
   grid-auto-rows: minmax(100px, auto);
 }
+
+h1 {
+  font-variant: small-caps;
+  font-size: xxx-large;
+  color: mat.get-color-from-palette($primary-palette);
+  margin-top: unset;
+}
+
+.primary-color {
+  color: mat.get-color-from-palette($primary-palette);
+}

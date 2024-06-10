@@ -8,8 +8,12 @@ import {
 import { MatListModule } from "@angular/material/list";
 import { Router } from "@angular/router";
 import { Store } from "@ngrx/store";
-import { Observable } from "rxjs";
-import { getBibleByLanguageName } from "../+state/bibles/bibles.selectors";
+import { Observable, map } from "rxjs";
+import { selectTranslation } from "../+state/bibles/bibles.actions";
+import {
+  getBibleByLanguageId,
+  selectLanguageEntity,
+} from "../+state/bibles/bibles.selectors";
 import { Bible } from "../models/bibles";
 
 @Component({
@@ -23,16 +27,23 @@ import { Bible } from "../models/bibles";
 export class BiblePageComponent implements OnInit {
   @RouteInput() public languageId: string;
   public selectedBiblesByLanguage$!: Observable<Bible[]>;
+  public selectedLanguage$!: Observable<string>;
 
   constructor(private store: Store, private router: Router) {}
 
   ngOnInit(): void {
     this.selectedBiblesByLanguage$ = this.store.select(
-      getBibleByLanguageName(this.languageId)
+      getBibleByLanguageId(this.languageId)
     );
+
+    this.selectedLanguage$ = this.store
+      .select(selectLanguageEntity)
+      .pipe(map((r) => r.language.name));
   }
 
   public readBook(bible: Bible) {
+    this.store.dispatch(selectTranslation({ bible: bible }));
+
     this.router.navigateByUrl(
       "tongue/" + this.languageId + "/bible/" + bible.id
     );
