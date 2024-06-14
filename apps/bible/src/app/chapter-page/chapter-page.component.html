@@ -4,7 +4,7 @@
 
 <mat-spinner *ngIf="isLoading$ | async; let isLoading"> </mat-spinner>
 
-<div style="margin-bottom: 10px">
+<div style="margin-bottom: 10px; display: grid">
   <app-chapter-item
     *ngIf="isLoaded$ | async"
     (chapterClicked)="getScripture($event)"
