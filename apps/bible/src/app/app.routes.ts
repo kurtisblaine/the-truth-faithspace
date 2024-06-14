@@ -23,4 +23,5 @@ export const appRoutes: Route[] = [
     path: "tongue/:languageId/bible/:bibleId/book/:bookId/chapter/:chapterId",
     component: ScripturePageComponent,
   },
+  { path: "**", redirectTo: "", pathMatch: "full" },
 ];
