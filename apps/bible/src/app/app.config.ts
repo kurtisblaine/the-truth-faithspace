@@ -2,12 +2,7 @@ import { provideHttpClient } from "@angular/common/http";
 import { ApplicationConfig, isDevMode } from "@angular/core";
 import { MAT_RIPPLE_GLOBAL_OPTIONS } from "@angular/material/core";
 import { provideAnimations } from "@angular/platform-browser/animations";
-import {
-  provideRouter,
-  withComponentInputBinding,
-  withInMemoryScrolling,
-  withRouterConfig,
-} from "@angular/router";
+import { provideRouter, withComponentInputBinding, withRouterConfig } from "@angular/router";
 import { provideEffects } from "@ngrx/effects";
 import { provideState, provideStore } from "@ngrx/store";
 import { provideStoreDevtools } from "@ngrx/store-devtools";
@@ -31,8 +26,9 @@ export const appConfig: ApplicationConfig = {
       appRoutes,
       withRouterConfig({
         onSameUrlNavigation: "reload",
+        paramsInheritanceStrategy: "always",
       }),
-      withInMemoryScrolling(),
+      // withInMemoryScrolling(),
       withComponentInputBinding()
     ),
     provideHttpClient(),

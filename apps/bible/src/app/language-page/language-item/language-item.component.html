@@ -1,0 +1,35 @@
+<mat-card style="min-height: 177px; cursor: pointer" matRipple (click)="showBibles(item.sortedBibles)">
+  <mat-card-header>
+    <mat-card-title
+      ><span
+        [ngClass]="{
+          rightToLeft: item.sortedBibles[0].language.scriptDirection === rtl,
+          leftToRight: item.sortedBibles[0].language.scriptDirection !== rtl
+        }"
+      >
+        {{ item.sortedBibles[0].language.nameLocal }}
+      </span></mat-card-title
+    >
+    <mat-card-subtitle *ngIf="item.sortedBibles[0].language.nameLocal !== item.sortedBibles[0].language.name"
+      >Tongue: {{ item.sortedBibles[0].language.name }}</mat-card-subtitle
+    >
+  </mat-card-header>
+  <mat-card-content>
+    <p [libTooltip]="getScripts(item.sortedBibles)" [verticalOverflow]="3">
+      Script: {{ getScripts(item.sortedBibles) }}
+    </p>
+    <p [libTooltip]="getCountries(item.sortedBibles)" [verticalOverflow]="3">
+      Mother: {{ getCountries(item.sortedBibles) }}
+    </p>
+  </mat-card-content>
+  <!-- <mat-divider></mat-divider>
+    <mat-card-actions>
+      <button
+        (click)="showBibles(item.sortedBibles)"
+        mat-flat-button
+        style="width: 100%"
+      >
+        READ
+      </button>
+    </mat-card-actions> -->
+</mat-card>
