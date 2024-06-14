@@ -27,6 +27,11 @@ export const selectChaptersEntities = createSelector(
   (state: fromChapters.State) => selectEntities(state)
 );
 
+export const selectChaptersCount = createSelector(
+  selectChaptersState,
+  (state: fromChapters.State) => selectAll(state).length
+);
+
 export const selectSelectedId = createSelector(
   selectChaptersState,
   (state: fromChapters.State) => state.selectedId

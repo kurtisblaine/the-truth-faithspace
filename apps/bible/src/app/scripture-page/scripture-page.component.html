@@ -1,17 +1,20 @@
 <div style="display: flex">
-  <h1>{{ this.selectedBook$ | async }}</h1>
-  <h1>{{ this.chapter$ | async }}</h1>
+  <h1>{{ this.bookId }}</h1>
+  <h1>{{ this.chapterId }}</h1>
 </div>
 
 <mat-card>
   <mat-card-content>
-    <!-- <cdk-virtual-scroll-viewport itemSize="50" class="example-viewport">
-      <p *cdkVirtualFor="let item of ds">
+    <cdk-virtual-scroll-viewport
+      itemSize="chapterCount$ | async"
+      class="example-viewport"
+    >
+      <div *cdkVirtualFor="let item of dataSource">
         {{ item || "Loading..." }}
+      </div>
+      <!-- <p *ngIf="scripture$ | async; let scritpure">
+        {{ scritpure.data.content }}
       </p> -->
-    <p *ngIf="scripture$ | async; let scritpure">
-      {{ scritpure.data.content }}
-    </p>
-    <!-- </cdk-virtual-scroll-viewport> -->
+    </cdk-virtual-scroll-viewport>
   </mat-card-content>
 </mat-card>
