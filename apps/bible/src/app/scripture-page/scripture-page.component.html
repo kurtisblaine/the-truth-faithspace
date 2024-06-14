@@ -4,11 +4,8 @@
 </div>
 
 <mat-card>
-  <mat-card-content>
-    <cdk-virtual-scroll-viewport
-      itemSize="chapterCount$ | async"
-      class="example-viewport"
-    >
+  <mat-card-content style="width: 100%; height: 100%">
+    <cdk-virtual-scroll-viewport itemSize="100" class="example-viewport">
       <div *cdkVirtualFor="let item of dataSource">
         {{ item || "Loading..." }}
       </div>

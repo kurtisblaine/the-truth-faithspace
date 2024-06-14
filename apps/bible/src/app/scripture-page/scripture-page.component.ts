@@ -1,22 +1,14 @@
 import { CollectionViewer, DataSource } from "@angular/cdk/collections";
-import { ScrollingModule } from "@angular/cdk/scrolling";
+import { CdkVirtualScrollViewport, ScrollingModule } from "@angular/cdk/scrolling";
 import { CommonModule } from "@angular/common";
-import {
-  ChangeDetectionStrategy,
-  Component,
-  OnInit,
-  Input as RouteInput,
-} from "@angular/core";
+import { ChangeDetectionStrategy, Component, OnInit, Input as RouteInput, ViewChild } from "@angular/core";
 import { MatCardModule } from "@angular/material/card";
 import { Router } from "@angular/router";
 import { Store } from "@ngrx/store";
 import { BehaviorSubject, Observable, Subscription, map } from "rxjs";
 import { BibleApiService } from "../+state/bible-api.service";
 import { selectEntity } from "../+state/books/books.selectors";
-import {
-  selectChapterEntity,
-  selectChaptersCount,
-} from "../+state/chapters/chapters.selectors";
+import { selectChapterEntity, selectChaptersCount } from "../+state/chapters/chapters.selectors";
 import { Scripture } from "../models/scripture";
 
 @Component({
@@ -33,13 +25,12 @@ export class ScripturePageComponent implements OnInit {
   @RouteInput() public languageId: string;
   @RouteInput() public chapterId: string;
 
+  @ViewChild(CdkVirtualScrollViewport, { static: true })
+  private cdkVirtualScrollViewport!: CdkVirtualScrollViewport;
+
   public selectedBook$!: Observable<string>;
 
-  constructor(
-    private store: Store,
-    private router: Router,
-    private bibleApi: BibleApiService
-  ) {}
+  constructor(private store: Store, private router: Router, private bibleApi: BibleApiService) {}
 
   public scripture$!: Observable<Scripture>;
   public isLoading$!: Observable<boolean>;
@@ -49,23 +40,18 @@ export class ScripturePageComponent implements OnInit {
 
   ngOnInit(): void {
     this.scripture$ = this.bibleApi.getScripture(this.bibleId, this.chapterId);
-    this.chapter$ = this.store
-      .select(selectChapterEntity)
-      .pipe(map((r) => r.number));
+    this.chapter$ = this.store.select(selectChapterEntity).pipe(map((r) => r.number));
+
+    this.selectedBook$ = this.store.select(selectEntity).pipe(map((r) => r.name));
 
     this.store.select(selectChaptersCount).subscribe((total) => {
       this.chapterCount = total;
-      this.dataSource = new MyDataSource(
-        this.bibleApi,
-        this.bibleId,
-        this.bookId,
-        total
-      );
+      this.dataSource = new MyDataSource(this.bibleApi, this.bibleId, this.bookId, total);
     });
+  }
 
-    this.selectedBook$ = this.store
-      .select(selectEntity)
-      .pipe(map((r) => r.name));
+  calculateContainerHeight() {
+    this.cdkVirtualScrollViewport.checkViewportSize();
   }
 }
 
@@ -73,9 +59,7 @@ export class MyDataSource extends DataSource<string | undefined> {
   private _pageSize = 1;
   private _cachedData = Array.from<string>({ length: this.totalChapters });
   private _fetchedPages = new Set<number>();
-  private readonly _dataStream = new BehaviorSubject<(string | undefined)[]>(
-    this._cachedData
-  );
+  private readonly _dataStream = new BehaviorSubject<(string | undefined)[]>(this._cachedData);
   private readonly _subscription = new Subscription();
 
   constructor(
@@ -87,9 +71,7 @@ export class MyDataSource extends DataSource<string | undefined> {
     super();
   }
 
-  connect(
-    collectionViewer: CollectionViewer
-  ): Observable<(string | undefined)[]> {
+  connect(collectionViewer: CollectionViewer): Observable<(string | undefined)[]> {
     this._subscription.add(
       collectionViewer.viewChange.subscribe((range) => {
         const startPage = this._getPageForIndex(range.start);
@@ -117,24 +99,21 @@ export class MyDataSource extends DataSource<string | undefined> {
     }
     this._fetchedPages.add(result.page);
 
-    this.bibleApi
-      .getScripture(this.bibleId, `${this.bookId}.${result.index}`)
-      .subscribe((r) => {
-        this._cachedData.splice(
-          result.page * this._pageSize,
-          this._pageSize,
-          ...[r.data.content]
-        );
-        this._dataStream.next(this._cachedData);
-      });
+    this.bibleApi.getScripture(this.bibleId, `${this.bookId}.${result.index}`).subscribe((r) => {
+      this._cachedData.splice(
+        result.page * this._pageSize,
+        this._pageSize,
+        r.data.content
+        // ...Array.from({ length: this._pageSize }).map(() => r.data.content)
+      );
+      this._dataStream.next(this._cachedData);
+    });
 
     // setTimeout(() => {
     //   this._cachedData.splice(
     //     page * this._pageSize,
     //     this._pageSize,
-    //     ...Array.from({ length: this._pageSize }).map(
-    //       (_, i) => `Item #${page * this._pageSize + i}`
-    //     )
+    //     ...Array.from({ length: this._pageSize }).map((_, i) => `Item #${page * this._pageSize + i}`)
     //   );
     //   this._dataStream.next(this._cachedData);
     // }, Math.random() * 1000 + 200);

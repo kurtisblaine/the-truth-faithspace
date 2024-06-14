@@ -1,9 +1,18 @@
 .example-viewport {
-  height: 200px;
-  width: 200px;
-  border: 1px solid black;
+  height: 1000px;
+  width: 1000px;
 }
 
 .example-item {
-  height: 50px;
+  height: 100px;
+}
+
+:host {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+cdk-virtual-scroll-viewport {
+  flex-grow: 1;
 }
