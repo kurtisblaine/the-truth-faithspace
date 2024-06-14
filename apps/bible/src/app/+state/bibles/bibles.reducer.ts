@@ -33,14 +33,14 @@ export const reducer = createReducer(
     ...state,
     selectedTranslationId: bible.id,
   })),
-  on(BiblesActions.initBible, (state) => ({
-    ...state,
-    loaded: false,
-    error: null,
-  })),
-  on(BiblesActions.loadBiblesSuccess, (state, { bibles }) =>
-    biblesAdapter.setAll(bibles, { ...state, loaded: true })
+  on(BiblesActions.initBible, (state) =>
+    biblesAdapter.removeAll({
+      ...state,
+      loaded: false,
+      error: null,
+    })
   ),
+  on(BiblesActions.loadBiblesSuccess, (state, { bibles }) => biblesAdapter.setAll(bibles, { ...state, loaded: true })),
   on(BiblesActions.loadBiblesFailure, (state, { error }) => ({
     ...state,
     error,
