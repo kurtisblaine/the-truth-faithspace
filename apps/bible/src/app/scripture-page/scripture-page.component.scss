@@ -1,6 +1,7 @@
 .example-viewport {
-  height: 1000px;
-  width: 1000px;
+  height: 60vh;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 .example-item {

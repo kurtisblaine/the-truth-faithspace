@@ -11,8 +11,7 @@ export interface State extends EntityState<Chapter> {
   error?: string | null;
 }
 
-export const chaptersAdapter: EntityAdapter<Chapter> =
-  createEntityAdapter<Chapter>();
+export const chaptersAdapter: EntityAdapter<Chapter> = createEntityAdapter<Chapter>();
 
 export const initialState = chaptersAdapter.getInitialState({
   loaded: false,
@@ -20,11 +19,13 @@ export const initialState = chaptersAdapter.getInitialState({
 
 export const reducer = createReducer(
   initialState,
-  on(ChaptersActions.loadChapters, (state) => ({
-    ...state,
-    loaded: false,
-    error: null,
-  })),
+  on(ChaptersActions.loadChapters, (state) =>
+    chaptersAdapter.removeAll({
+      ...state,
+      loaded: false,
+      error: null,
+    })
+  ),
   on(ChaptersActions.selectChapter, (state, { id }) => ({
     ...state,
     selectedId: id,

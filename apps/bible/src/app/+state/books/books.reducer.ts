@@ -19,18 +19,18 @@ export const initialState = booksAdapter.getInitialState({
 
 export const reducer = createReducer(
   initialState,
-  on(BooksActions.loadBooks, (state) => ({
-    ...state,
-    loaded: false,
-    error: null,
-  })),
+  on(BooksActions.loadBooks, (state) =>
+    booksAdapter.removeAll({
+      ...state,
+      loaded: false,
+      error: null,
+    })
+  ),
   on(BooksActions.selectBook, (state, { id }) => ({
     ...state,
     selectedId: id,
   })),
-  on(BooksActions.loadBooksSuccess, (state, { data }) =>
-    booksAdapter.setAll(data, { ...state, loaded: true })
-  ),
+  on(BooksActions.loadBooksSuccess, (state, { data }) => booksAdapter.setAll(data, { ...state, loaded: true })),
   on(BooksActions.loadBooksFailure, (state, { error }) => ({
     ...state,
     error,
