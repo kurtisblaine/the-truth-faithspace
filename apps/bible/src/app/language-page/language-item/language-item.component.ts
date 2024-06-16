@@ -38,6 +38,6 @@ export class LanguageItemComponent {
 
   public showBibles(bibles: Bible[]) {
     this.store.dispatch(selectLanguage({ bible: bibles[0] }));
-    this.router.navigateByUrl("tongue/" + bibles[0].language.id);
+    this.router.navigateByUrl("tongue/" + bibles[0].language.name);
   }
 }

@@ -21,7 +21,7 @@ import { ChapterItemComponent } from "./chapter-item/chapter-item.component";
 export class ChapterPageComponent {
   @RouteInput() public bibleId: string;
   @RouteInput() public bookId: string;
-  @RouteInput() public languageId: string;
+  @RouteInput() public languageName: string;
 
   public chapters$!: Observable<Chapter[]>;
   public isLoading$!: Observable<boolean>;
@@ -47,7 +47,7 @@ export class ChapterPageComponent {
     this.store.dispatch(ChaptersActions.selectChapter({ id: chapter.id }));
 
     this.router.navigateByUrl(
-      `tongue/${this.languageId}/bible/${this.bibleId}/book/${this.bookId}/chapter/${chapter.id}`
+      `tongue/${this.languageName}/bible/${this.bibleId}/book/${this.bookId}/chapter/${chapter.id}`
     );
   }
 }

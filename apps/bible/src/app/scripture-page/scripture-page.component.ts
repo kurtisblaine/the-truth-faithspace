@@ -22,7 +22,7 @@ import { MyDataSource } from "./data-source";
 export class ScripturePageComponent implements OnInit {
   @RouteInput() public bibleId: string;
   @RouteInput() public bookId: string;
-  @RouteInput() public languageId: string;
+  @RouteInput() public languageName: string;
   @RouteInput() public chapterId: string;
 
   @ViewChild(CdkVirtualScrollViewport, { static: true })

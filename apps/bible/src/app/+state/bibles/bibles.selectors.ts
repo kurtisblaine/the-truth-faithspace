@@ -73,10 +73,10 @@ export const getEnglishGroup = createSelector(selectAllGroupedLanguages, (langua
   languages.find((l) => l.sortedBibles[0].language.id == "eng")
 );
 
-export const getBibleByLanguageId = (id: string) =>
+export const getBibleByLanguageName = (name: string) =>
   createSelector(
     selectAllGroupedLanguages,
-    (languages) => languages.find((l) => l.sortedBibles[0].language.id == id)?.sortedBibles
+    (languages) => languages.find((l) => l.sortedBibles[0].language.name == name)?.sortedBibles
   );
 
 export const selectAllScripts = createSelector(selectAllBibles, (bibles) => {
