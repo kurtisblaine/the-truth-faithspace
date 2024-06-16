@@ -36,18 +36,24 @@ export class ScripturePageComponent implements OnInit {
   public isLoading$!: Observable<boolean>;
   public chapter$!: Observable<string>;
   public chapterCount!: number;
+  public isAll!: boolean;
   dataSource: MyDataSource;
 
   ngOnInit(): void {
+    this.isAll = this.chapterId == "All";
     this.scripture$ = this.bibleApi.getScripture(this.bibleId, this.chapterId);
     this.chapter$ = this.store.select(selectChapterEntity).pipe(map((r) => r.number));
 
     this.selectedBook$ = this.store.select(selectEntity).pipe(map((r) => r.name));
 
-    this.store.select(selectChaptersCount).subscribe((total) => {
-      this.chapterCount = total;
-      this.dataSource = new MyDataSource(this.bibleApi, this.bibleId, this.bookId, total);
-    });
+    if (this.isAll) {
+      this.store.select(selectChaptersCount).subscribe((total) => {
+        this.chapterCount = total;
+        this.dataSource = new MyDataSource(this.bibleApi, this.bibleId, this.bookId, total);
+      });
+    } else {
+      this.bibleApi.getScripture(this.bibleId, `${this.bookId}.${this.chapterId}`);
+    }
   }
 
   calculateContainerHeight() {
