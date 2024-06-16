@@ -1,10 +1,10 @@
 import { CdkVirtualScrollViewport, ScrollingModule } from "@angular/cdk/scrolling";
 import { CommonModule } from "@angular/common";
-import { ChangeDetectionStrategy, Component, OnInit, Input as RouteInput, ViewChild } from "@angular/core";
+import { ChangeDetectionStrategy, Component, OnDestroy, OnInit, Input as RouteInput, ViewChild } from "@angular/core";
 import { MatCardModule } from "@angular/material/card";
 import { Router } from "@angular/router";
 import { Store } from "@ngrx/store";
-import { Observable, map } from "rxjs";
+import { Observable, Subscription, map } from "rxjs";
 import { BibleApiService } from "../+state/bible-api.service";
 import { selectEntity } from "../+state/books/books.selectors";
 import { selectChapterEntity, selectChaptersCount } from "../+state/chapters/chapters.selectors";
@@ -19,7 +19,7 @@ import { MyDataSource } from "./data-source";
   styleUrl: "./scripture-page.component.scss",
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class ScripturePageComponent implements OnInit {
+export class ScripturePageComponent implements OnInit, OnDestroy {
   @RouteInput() public bibleId: string;
   @RouteInput() public bookId: string;
   @RouteInput() public languageName: string;
@@ -37,6 +37,7 @@ export class ScripturePageComponent implements OnInit {
   public chapter$!: Observable<string>;
   public chapterCount!: number;
   public isAll!: boolean;
+  public subscription!: Subscription;
   dataSource: MyDataSource;
 
   ngOnInit(): void {
@@ -47,12 +48,18 @@ export class ScripturePageComponent implements OnInit {
     this.selectedBook$ = this.store.select(selectEntity).pipe(map((r) => r.name));
 
     if (this.isAll) {
-      this.store.select(selectChaptersCount).subscribe((total) => {
+      this.subscription = this.store.select(selectChaptersCount).subscribe((total) => {
         this.chapterCount = total;
         this.dataSource = new MyDataSource(this.bibleApi, this.bibleId, this.bookId, total);
       });
     } else {
       this.bibleApi.getScripture(this.bibleId, `${this.bookId}.${this.chapterId}`);
+    }
+  }
+
+  ngOnDestroy(): void {
+    if (this.subscription) {
+      this.subscription.unsubscribe();
     }
   }
 

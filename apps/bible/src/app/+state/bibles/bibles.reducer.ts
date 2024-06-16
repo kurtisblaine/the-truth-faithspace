@@ -43,6 +43,7 @@ export const reducer = createReducer(
   on(BiblesActions.loadBiblesSuccess, (state, { bibles }) => biblesAdapter.setAll(bibles, { ...state, loaded: true })),
   on(BiblesActions.loadBiblesFailure, (state, { error }) => ({
     ...state,
+    loaded: true,
     error,
   }))
 );

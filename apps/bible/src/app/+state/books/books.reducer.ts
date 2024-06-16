@@ -34,6 +34,7 @@ export const reducer = createReducer(
   on(BooksActions.loadBooksFailure, (state, { error }) => ({
     ...state,
     error,
+    loaded: true,
   }))
 );
 

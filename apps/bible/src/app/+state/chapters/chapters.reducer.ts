@@ -36,6 +36,7 @@ export const reducer = createReducer(
   on(ChaptersActions.loadChaptersFailure, (state, { error }) => ({
     ...state,
     error,
+    loaded: true,
   }))
 );
 
