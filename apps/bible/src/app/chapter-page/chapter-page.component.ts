@@ -32,7 +32,7 @@ export class ChapterPageComponent {
   constructor(private store: Store, private router: Router) {}
 
   ngOnInit() {
-    this.allChapter = { number: "All", bibleId: this.bibleId, bookId: this.bookId, id: "777" } as Chapter;
+    this.allChapter = { number: "All", bibleId: this.bibleId, bookId: this.bookId, id: "All" } as Chapter;
 
     this.store.dispatch(ChaptersActions.loadChapters({ id: this.bibleId, bookId: this.bookId }));
 
