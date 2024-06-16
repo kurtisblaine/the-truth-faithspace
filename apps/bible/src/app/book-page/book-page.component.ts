@@ -20,7 +20,7 @@ import { Book } from "../models/books";
 })
 export class BookPageComponent implements OnInit {
   @RouteInput() public bibleId: string;
-  @RouteInput() public languageId: string;
+  @RouteInput() public languageName: string;
 
   public books$!: Observable<Book[]>;
   public isLoading$!: Observable<boolean>;
@@ -39,6 +39,6 @@ export class BookPageComponent implements OnInit {
   getChapters(book: Book) {
     this.store.dispatch(BooksActions.selectBook({ id: book.id }));
 
-    this.router.navigateByUrl(`tongue/${this.languageId}/bible/${this.bibleId}/book/${book.id}/chapter`);
+    this.router.navigateByUrl(`tongue/${this.languageName}/bible/${this.bibleId}/book/${book.id}/chapter`);
   }
 }

@@ -8,19 +8,19 @@ import { ScripturePageComponent } from "./scripture-page/scripture-page.componen
 export const appRoutes: Route[] = [
   { path: "", component: LanguagePageComponent },
   {
-    path: "tongue/:languageId",
+    path: "tongue/:languageName",
     component: BiblePageComponent,
   },
   {
-    path: "tongue/:languageId/bible/:bibleId",
+    path: "tongue/:languageName/bible/:bibleId",
     component: BookPageComponent,
   },
   {
-    path: "tongue/:languageId/bible/:bibleId/book/:bookId/chapter",
+    path: "tongue/:languageName/bible/:bibleId/book/:bookId/chapter",
     component: ChapterPageComponent,
   },
   {
-    path: "tongue/:languageId/bible/:bibleId/book/:bookId/chapter/:chapterId",
+    path: "tongue/:languageName/bible/:bibleId/book/:bookId/chapter/:chapterId",
     component: ScripturePageComponent,
   },
   { path: "**", redirectTo: "", pathMatch: "full" },
