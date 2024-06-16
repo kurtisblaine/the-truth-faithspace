@@ -42,3 +42,7 @@ h1 {
 .primary-color {
   color: mat.get-color-from-palette($primary-palette);
 }
+
+body {
+  overflow-x: hidden;
+}
