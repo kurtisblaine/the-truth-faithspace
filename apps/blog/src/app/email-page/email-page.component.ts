@@ -1,11 +1,5 @@
 import { Component, OnInit } from "@angular/core";
-import {
-  FormBuilder,
-  FormControl,
-  FormGroup,
-  ValidatorFn,
-  Validators,
-} from "@angular/forms";
+import { FormBuilder, FormControl, FormGroup, ValidatorFn, Validators } from "@angular/forms";
 import { MatSnackBar } from "@angular/material/snack-bar";
 import { ContactService } from "./contact.service";
 
@@ -17,18 +11,11 @@ import { ContactService } from "./contact.service";
 export class EmailPageComponent implements OnInit {
   public FormData!: FormGroup;
 
-  constructor(
-    private builder: FormBuilder,
-    private contact: ContactService,
-    private snackBar: MatSnackBar
-  ) {}
+  constructor(private builder: FormBuilder, private contact: ContactService, private snackBar: MatSnackBar) {}
 
   public ngOnInit(): void {
-    const emailValidators = Validators.compose([
-      Validators.required,
-      Validators.email,
-    ]) as ValidatorFn;
-    this.FormData = this.builder.sortedBooks({
+    const emailValidators = Validators.compose([Validators.required, Validators.email]) as ValidatorFn;
+    this.FormData = this.builder.group({
       Fullname: new FormControl("", [Validators.required]),
       Email: new FormControl("", [emailValidators]),
       Comment: new FormControl("", [Validators.required]),
