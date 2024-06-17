@@ -1,19 +1,20 @@
 import { CommonModule } from "@angular/common";
 import { ChangeDetectionStrategy, Component, Input as RouteInput } from "@angular/core";
 import { MatProgressSpinnerModule } from "@angular/material/progress-spinner";
+import { MatSnackBar, MatSnackBarModule } from "@angular/material/snack-bar";
 import { Router } from "@angular/router";
 import { Store } from "@ngrx/store";
 import { Observable, map } from "rxjs";
 import { selectEntity } from "../+state/books/books.selectors";
 import { ChaptersActions } from "../+state/chapters/chapters.actions";
-import { selectAllChapters, selectChaptersLoaded } from "../+state/chapters/chapters.selectors";
+import { selectAllChapters, selectChaptersError, selectChaptersLoaded } from "../+state/chapters/chapters.selectors";
 import { Chapter } from "../models/chapters";
 import { ChapterItemComponent } from "./chapter-item/chapter-item.component";
 
 @Component({
   selector: "app-chapter-page",
   standalone: true,
-  imports: [MatProgressSpinnerModule, CommonModule, ChapterItemComponent],
+  imports: [MatProgressSpinnerModule, CommonModule, ChapterItemComponent, MatSnackBarModule],
   templateUrl: "./chapter-page.component.html",
   styleUrl: "./chapter-page.component.scss",
   changeDetection: ChangeDetectionStrategy.OnPush,
@@ -29,7 +30,7 @@ export class ChapterPageComponent {
   public selectedBook$!: Observable<string>;
   public allChapter!: Chapter;
 
-  constructor(private store: Store, private router: Router) {}
+  constructor(private store: Store, private router: Router, private _snackBar: MatSnackBar) {}
 
   ngOnInit() {
     this.allChapter = { number: "all", bibleId: this.bibleId, bookId: this.bookId, id: "all" } as Chapter;
@@ -41,6 +42,14 @@ export class ChapterPageComponent {
 
     this.isLoading$ = this.store.select(selectChaptersLoaded).pipe(map((r) => !r));
     this.isLoaded$ = this.store.select(selectChaptersLoaded);
+
+    this.store.select(selectChaptersError).subscribe((error) => {
+      if (error)
+        this._snackBar.open((error as any).message, "Dismiss", {
+          horizontalPosition: "center",
+          verticalPosition: "top",
+        });
+    });
   }
 
   getScripture(chapter: Chapter) {

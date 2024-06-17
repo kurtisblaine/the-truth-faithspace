@@ -51,7 +51,10 @@ export class LanguagePageComponent {
     this.isLoading$ = this.store.select(selectBiblesLoaded).pipe(map((r) => !r));
     this.store.select(selectBiblesError).subscribe((error) => {
       if (error)
-        this._snackBar.open("Error", (error as any).message, { horizontalPosition: "center", verticalPosition: "top" });
+        this._snackBar.open((error as any).message, "Dismiss", {
+          horizontalPosition: "center",
+          verticalPosition: "top",
+        });
     });
   }
 }
