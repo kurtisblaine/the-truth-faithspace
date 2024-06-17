@@ -1,5 +1,7 @@
 <div style="display: flex">
-  <h1>{{ this.selectedBook$ | async }}</h1>
+  <h1>
+    {{ this.selectedBook$ | async }} <span *ngIf="activeChapter"> {{ activeChapter }}</span>
+  </h1>
 </div>
 
 <mat-card>
@@ -10,7 +12,7 @@
       </p>
     </ng-container>
 
-    <ng-container *ngIf="!isAll">
+    <ng-container *ngIf="isAll">
       <cdk-virtual-scroll-viewport itemSize="100" class="example-viewport">
         <ng-container *cdkVirtualFor="let item of dataSource; let first = first">
           <div *ngIf="!first" style="line-height: 27px; margin-right: 17px">
