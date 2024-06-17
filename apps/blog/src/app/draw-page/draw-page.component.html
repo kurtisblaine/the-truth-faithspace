@@ -1,13 +1,6 @@
-<h1 style="padding: 15px 0px 0px" class="primary-color">
-  His Face shine upon you
-</h1>
+<h1 style="padding: 15px 0px 0px" class="primary-color">His Face shine upon you</h1>
 
-<mat-grid-list
-  cols="4"
-  rowHeight="1.5:1"
-  gutterSize="5"
-  [photoGalleryGroup]="{}"
->
+<mat-grid-list cols="5" rowHeight="1.1:2" gutterSize="5" [photoGalleryGroup]="{}">
   <mat-grid-tile *ngFor="let image of this.images" style="cursor: pointer">
     <!-- [matTooltip]="'Click to listen to a video.'" -->
     <mat-grid-tile-header
@@ -15,28 +8,17 @@
       class="primary-color"
       style="text-decoration: underline; cursor: pointer"
       >{{ image.name }}
-      <fa-icon
-        [icon]="faLink"
-        [size]="'lg'"
-        style="padding-left: 2px"
-      ></fa-icon>
+      <fa-icon [icon]="faLink" [size]="'lg'" style="padding-left: 2px"></fa-icon>
     </mat-grid-tile-header>
     <mat-grid-tile-footer>{{ image.footer }}</mat-grid-tile-footer>
-    <div
-      [photoGallery]="image.originUrl"
-      [photoGalleryCaption]="image.name + ' - ' + image.description"
-    >
+    <div [photoGallery]="image.originUrl" [photoGalleryCaption]="image.name + ' - ' + image.description">
       <!-- <mat-spinner
         *ngIf="!image.isFinishedLoading"
         class="loading"
       ></mat-spinner> -->
 
       <!-- [ngStyle]="{ visibility: !image.isFinishedLoading ? 'hidden' : '' }" -->
-      <img
-        role="presentation"
-        style="max-width: 100%; max-height: 100%"
-        [src]="image.originUrl"
-      />
+      <img role="presentation" style="max-width: 100%; max-height: 100%" [src]="image.originUrl" />
       <!-- (load)="hideLoader(image.id)"
         (error)="hideLoader(image.id)" -->
     </div>
