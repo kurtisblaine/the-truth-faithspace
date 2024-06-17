@@ -37,11 +37,12 @@ export class ScripturePageComponent implements OnInit, OnDestroy {
   public chapter$!: Observable<string>;
   public chapterCount!: number;
   public isAll!: boolean;
+  public activeChapter!: string;
   public subscription!: Subscription;
   dataSource: MyDataSource;
 
   ngOnInit(): void {
-    this.isAll = this.chapterId == "All";
+    this.isAll = this.chapterId == "all";
     this.scripture$ = this.bibleApi.getScripture(this.bibleId, this.chapterId);
     this.chapter$ = this.store.select(selectChapterEntity).pipe(map((r) => r.number));
 
@@ -53,6 +54,7 @@ export class ScripturePageComponent implements OnInit, OnDestroy {
         this.dataSource = new MyDataSource(this.bibleApi, this.bibleId, this.bookId, total);
       });
     } else {
+      this.activeChapter = this.chapterId.split(".").pop();
       this.bibleApi.getScripture(this.bibleId, `${this.bookId}.${this.chapterId}`);
     }
   }
