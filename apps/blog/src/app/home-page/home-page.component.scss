@@ -2,3 +2,8 @@
   background-image: url("https://material.angular.io/assets/img/examples/shiba1.jpg");
   background-size: cover;
 }
+
+:host {
+  display: block;
+  max-width: 1211px;
+}
