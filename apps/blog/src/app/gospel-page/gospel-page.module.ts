@@ -15,12 +15,6 @@ const routes: Routes = [
 
 @NgModule({
   declarations: [GospelComponent],
-  imports: [
-    IvyCarouselModule,
-    CommonModule,
-    SharedModule,
-    MatButtonModule,
-    RouterModule.forChild(routes),
-  ],
+  imports: [IvyCarouselModule, CommonModule, SharedModule, MatButtonModule, RouterModule.forChild(routes)],
 })
 export class GospelPageModule {}
