@@ -6,7 +6,6 @@ import { LanguagePageComponent } from "./language-page/language-page.component";
 import { ScripturePageComponent } from "./scripture-page/scripture-page.component";
 
 export const appRoutes: Route[] = [
-  { path: "", component: LanguagePageComponent },
   {
     path: "tongue/:languageName",
     component: BiblePageComponent,
@@ -23,5 +22,6 @@ export const appRoutes: Route[] = [
     path: "tongue/:languageName/bible/:bibleId/book/:bookId/chapter/:chapterId",
     component: ScripturePageComponent,
   },
+  { path: "", component: LanguagePageComponent },
   { path: "**", redirectTo: "", pathMatch: "full" },
 ];

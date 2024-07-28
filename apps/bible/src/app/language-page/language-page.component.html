@@ -4,10 +4,10 @@
 
 <mat-spinner *ngIf="isLoading$ | async; let isLoading"></mat-spinner>
 
-<div style="margin-bottom: 10px" *ngIf="english$ | async; let english">
+<div style="margin-bottom: 10px; display: grid" *ngIf="english$ | async; let english">
   <app-language-item [item]="english"></app-language-item>
 </div>
 
-<div class="grid">
+<div class="grid" style="grid-template-columns: auto">
   <app-language-item *ngFor="let item of groups$ | async" [item]="item"></app-language-item>
 </div>
