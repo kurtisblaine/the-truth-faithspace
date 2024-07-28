@@ -5,8 +5,10 @@
 <mat-selection-list [multiple]="false" hideSingleSelectionIndicator>
   @for (bible of selectedBiblesByLanguage$ | async; track bible) {
   <mat-list-option [value]="bible" (click)="readBook(bible)"
-    ><div style="font-size: large" *ngIf="bible.description">{{ bible.name }} - {{ bible.description }}</div>
-    <div style="font-size: large" *ngIf="!bible.description">
+    ><div style="font-size: large" *ngIf="bible.description" libTooltip="{{ bible.name }} - {{ bible.description }}">
+      {{ bible.name }} - {{ bible.description }}
+    </div>
+    <div style="font-size: large" *ngIf="!bible.description" libTooltip="{{ bible.name }}">
       {{ bible.name }}
     </div>
   </mat-list-option>
