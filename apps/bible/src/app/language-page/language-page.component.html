@@ -8,6 +8,6 @@
   <app-language-item [item]="english"></app-language-item>
 </div>
 
-<div class="grid" style="grid-template-columns: auto">
+<div class="grid">
   <app-language-item *ngFor="let item of groups$ | async" [item]="item"></app-language-item>
 </div>

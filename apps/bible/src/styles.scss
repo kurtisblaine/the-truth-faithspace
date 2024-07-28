@@ -27,7 +27,7 @@ $primary-palette: map.get($color-config, "primary");
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(155px, 1fr));
   gap: 10px;
   grid-auto-rows: minmax(100px, auto);
 }
