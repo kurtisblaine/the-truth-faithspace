@@ -44,11 +44,15 @@ export class ChapterPageComponent {
     this.isLoaded$ = this.store.select(selectChaptersLoaded);
 
     this.store.select(selectChaptersError).subscribe((error) => {
-      if (error)
-        this._snackBar.open((error as any).message, "Dismiss", {
+      if (error) {
+        console.error(`${(error as any).message}`);
+        this._snackBar.open(`An error has occured. Please try again later.`, "", {
           horizontalPosition: "center",
           verticalPosition: "top",
+          duration: 7000,
+          politeness: "assertive",
         });
+      }
     });
   }
 

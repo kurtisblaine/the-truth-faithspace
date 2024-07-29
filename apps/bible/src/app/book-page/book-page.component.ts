@@ -38,11 +38,15 @@ export class BookPageComponent implements OnInit {
     this.translation$ = this.store.select(selectTranslationEntity).pipe(map((r) => r.name));
 
     this.store.select(selectBooksError).subscribe((error) => {
-      if (error)
-        this._snackBar.open((error as any).message, "Dismiss", {
+      if (error) {
+        console.error(`${(error as any).message}`);
+        this._snackBar.open(`An error has occured. Please try again later.`, "", {
           horizontalPosition: "center",
           verticalPosition: "top",
+          politeness: "assertive",
+          duration: 7000,
         });
+      }
     });
   }
 
