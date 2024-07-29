@@ -50,11 +50,15 @@ export class LanguagePageComponent {
     this.english$ = this.store.select(getEnglishGroup);
     this.isLoading$ = this.store.select(selectBiblesLoaded).pipe(map((r) => !r));
     this.store.select(selectBiblesError).subscribe((error) => {
-      if (error)
-        this._snackBar.open((error as any).message, "Dismiss", {
+      if (error) {
+        console.error(`${(error as any).message}`);
+        this._snackBar.open(`An error has occured. Please try again later.`, "", {
           horizontalPosition: "center",
           verticalPosition: "top",
+          duration: 7000,
+          politeness: "assertive",
         });
+      }
     });
   }
 }
