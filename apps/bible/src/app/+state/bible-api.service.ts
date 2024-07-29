@@ -14,10 +14,7 @@ import { Verses } from "../models/verses";
 })
 export class BibleApiService {
   private api = "https://api.scripture.api.bible/v1/";
-  private headers = new HttpHeaders().set(
-    "Api-Key",
-    "22934c40a8edbc1aab8fa5bcdc7599b0"
-  );
+  private headers = new HttpHeaders().set("Api-Key", "22934c40a8edbc1aab8fa5bcdc7599b0");
   constructor(private http: HttpClient) {}
 
   public getBibles() {
@@ -28,13 +25,11 @@ export class BibleApiService {
     );
   }
   public getBooks(bibleId: BibleID) {
-    return this.http
-      .get(this.api + "bibles/" + bibleId + "/books", { headers: this.headers })
-      .pipe(
-        map((response: Books) => {
-          return response;
-        })
-      );
+    return this.http.get(this.api + "bibles/" + bibleId + "/books", { headers: this.headers }).pipe(
+      map((response: Books) => {
+        return response;
+      })
+    );
   }
   public getChapters(bibleId: BibleID, bookId: BookID) {
     return this.http
@@ -66,7 +61,7 @@ export class BibleApiService {
           bibleId +
           "/chapters/" +
           chapter +
-          "?include-chapter-numbers=false&include-verse-numbers=false&content-type=text",
+          "?include-chapter-numbers=false&include-titles=false&include-verse-numbers=false&content-type=html",
         {
           headers: this.headers,
         }
@@ -79,10 +74,7 @@ export class BibleApiService {
   }
   public getVerses(bibleId: BibleID, chapter: string) {
     return this.http
-      .get(
-        this.api + "bibles/" + bibleId + "/chapters/" + chapter + "/verses",
-        { headers: this.headers }
-      )
+      .get(this.api + "bibles/" + bibleId + "/chapters/" + chapter + "/verses", { headers: this.headers })
       .pipe(
         map((response: Verses) => {
           return response;
@@ -99,7 +91,7 @@ export class BibleApiService {
           chapter +
           "/verses/" +
           verse +
-          "?include-chapter-numbers=false&include-verse-numbers=false&content-type=text",
+          "?include-chapter-numbers=false&include-verse-numbers=false&content-type=html",
         { headers: this.headers }
       )
       .pipe(
@@ -110,15 +102,7 @@ export class BibleApiService {
   }
   public search(bibleId: BibleID, searchText: string) {
     return this.http
-      .get(
-        this.api +
-          "bibles/" +
-          bibleId +
-          "search?query=" +
-          searchText +
-          "&offset=0",
-        { headers: this.headers }
-      )
+      .get(this.api + "bibles/" + bibleId + "search?query=" + searchText + "&offset=0", { headers: this.headers })
       .pipe(
         map((response: Search) => {
           return response;

@@ -7,16 +7,20 @@
 <mat-card>
   <mat-card-content style="width: 100%; height: 100%">
     <ng-container *ngIf="!isAll">
-      <p *ngIf="scripture$ | async; let scritpure" style="line-height: 27px; margin-right: 17px">
-        {{ scritpure.data.content }}
+      <p
+        *ngIf="scripture$ | async; let scritpure"
+        style="line-height: 27px; margin-right: 33px; margin-top: 0"
+        [innerHtml]="scritpure.data.content"
+      >
+        <!-- {{ scritpure.data.content }} -->
       </p>
     </ng-container>
 
     <ng-container *ngIf="isAll">
       <cdk-virtual-scroll-viewport itemSize="100" class="example-viewport">
         <ng-container *cdkVirtualFor="let item of dataSource; let first = first">
-          <div *ngIf="!first" style="line-height: 27px; margin-right: 17px">
-            {{ item || "Loading..." }}
+          <div *ngIf="!first" style="line-height: 27px; margin-right: 33px; margin-top: 0" [innerHtml]="item">
+            <!-- {{ item || "Loading..." }} -->
           </div>
         </ng-container>
       </cdk-virtual-scroll-viewport>
