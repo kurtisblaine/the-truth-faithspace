@@ -45,9 +45,6 @@ export class ScripturePageComponent implements OnInit, OnDestroy {
   dataSource: MyDataSource;
 
   ngOnInit(): void {
-    // this.store.dispatch(ChaptersActions.selectChapter({ id: this.chapterId }));
-    // this.store.dispatch(BooksActions.selectBook({ id: this.bookId }));
-
     this.isAll = this.chapterId == "all";
     this.scripture$ = this.bibleApi.getScripture(this.bibleId, this.chapterId);
     this.chapter$ = this.store.select(selectChapterEntity).pipe(map((r) => r.number));
