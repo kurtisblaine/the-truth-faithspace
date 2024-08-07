@@ -2,11 +2,14 @@ import { CdkVirtualScrollViewport, ScrollingModule } from "@angular/cdk/scrollin
 import { CommonModule } from "@angular/common";
 import { ChangeDetectionStrategy, Component, OnDestroy, OnInit, Input as RouteInput, ViewChild } from "@angular/core";
 import { MatCardModule } from "@angular/material/card";
+import { MatRippleModule } from "@angular/material/core";
 import { Router } from "@angular/router";
 import { Store } from "@ngrx/store";
 import { Observable, Subscription, map } from "rxjs";
 import { BibleApiService } from "../+state/bible-api.service";
+import { BooksActions } from "../+state/books/books.actions";
 import { selectEntity } from "../+state/books/books.selectors";
+import { ChaptersActions } from "../+state/chapters/chapters.actions";
 import { selectChapterEntity, selectChaptersCount } from "../+state/chapters/chapters.selectors";
 import { Scripture } from "../models/scripture";
 import { MyDataSource } from "./data-source";
@@ -14,7 +17,7 @@ import { MyDataSource } from "./data-source";
 @Component({
   selector: "app-scripture-page",
   standalone: true,
-  imports: [CommonModule, MatCardModule, ScrollingModule],
+  imports: [CommonModule, MatCardModule, ScrollingModule, MatRippleModule],
   templateUrl: "./scripture-page.component.html",
   styleUrl: "./scripture-page.component.scss",
   changeDetection: ChangeDetectionStrategy.OnPush,
@@ -42,6 +45,9 @@ export class ScripturePageComponent implements OnInit, OnDestroy {
   dataSource: MyDataSource;
 
   ngOnInit(): void {
+    // this.store.dispatch(ChaptersActions.selectChapter({ id: this.chapterId }));
+    // this.store.dispatch(BooksActions.selectBook({ id: this.bookId }));
+
     this.isAll = this.chapterId == "all";
     this.scripture$ = this.bibleApi.getScripture(this.bibleId, this.chapterId);
     this.chapter$ = this.store.select(selectChapterEntity).pipe(map((r) => r.number));
@@ -67,5 +73,25 @@ export class ScripturePageComponent implements OnInit, OnDestroy {
 
   calculateContainerHeight() {
     this.cdkVirtualScrollViewport.checkViewportSize();
+  }
+
+  public onPreviousArrowClick(scripture: Scripture) {
+    this.store.dispatch(ChaptersActions.selectChapter({ id: scripture.data.previous.id }));
+    this.store.dispatch(BooksActions.selectBook({ id: scripture.data.previous.bookId }));
+
+    this.router.navigateByUrl(
+      `tongue/${this.languageName}/bible/${this.bibleId}/book/${scripture.data.previous.bookId}/chapter/${scripture.data.previous.id}`,
+      { onSameUrlNavigation: "reload", replaceUrl: true }
+    );
+  }
+
+  public onNextArrowClick(scripture: Scripture) {
+    this.store.dispatch(ChaptersActions.selectChapter({ id: scripture.data.next.id }));
+    this.store.dispatch(BooksActions.selectBook({ id: scripture.data.previous.bookId }));
+
+    this.router.navigateByUrl(
+      `tongue/${this.languageName}/bible/${this.bibleId}/book/${scripture.data.previous.bookId}/chapter/${scripture.data.next.id}`,
+      { onSameUrlNavigation: "reload", replaceUrl: true }
+    );
   }
 }

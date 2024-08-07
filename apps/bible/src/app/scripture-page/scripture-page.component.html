@@ -4,26 +4,36 @@
   </h1>
 </div>
 
-<mat-card>
-  <mat-card-content style="width: 100%; height: 100%">
-    <ng-container *ngIf="!isAll">
-      <p
-        *ngIf="scripture$ | async; let scritpure"
-        style="line-height: 27px; margin-right: 33px; margin-top: 0"
-        [innerHtml]="scritpure.data.content"
-      >
-        <!-- {{ scritpure.data.content }} -->
-      </p>
-    </ng-container>
+<div style="display: flex; flex-direction: row" *ngIf="scripture$ | async; let scritpure">
+  <div class="arrow-button" *ngIf="scritpure.data?.previous?.id && !isAll">
+    <button matRipple class="control prev" (click)="onPreviousArrowClick(scritpure)">
+      <span class="arrow left"></span>
+    </button>
+  </div>
 
-    <ng-container *ngIf="isAll">
-      <cdk-virtual-scroll-viewport itemSize="100" class="example-viewport">
-        <ng-container *cdkVirtualFor="let item of dataSource; let first = first">
-          <div *ngIf="!first" style="line-height: 27px; margin-right: 33px; margin-top: 0" [innerHtml]="item">
-            <!-- {{ item || "Loading..." }} -->
-          </div>
-        </ng-container>
-      </cdk-virtual-scroll-viewport>
-    </ng-container>
-  </mat-card-content>
-</mat-card>
+  <mat-card style="flex: 1 1 80%">
+    <mat-card-content style="width: 100%; height: 100%">
+      <ng-container *ngIf="!isAll">
+        <p style="line-height: 27px; margin-right: 33px; margin-top: 0" [innerHtml]="scritpure.data.content">
+          <!-- {{ scritpure.data.content }} -->
+        </p>
+      </ng-container>
+
+      <ng-container *ngIf="isAll">
+        <cdk-virtual-scroll-viewport itemSize="100" class="example-viewport">
+          <ng-container *cdkVirtualFor="let item of dataSource; let first = first">
+            <div *ngIf="!first" style="line-height: 27px; margin-right: 33px; margin-top: 0" [innerHtml]="item">
+              <!-- {{ item || "Loading..." }} -->
+            </div>
+          </ng-container>
+        </cdk-virtual-scroll-viewport>
+      </ng-container>
+    </mat-card-content>
+  </mat-card>
+
+  <div class="arrow-button" *ngIf="scritpure.data?.next?.id && !isAll">
+    <button matRipple class="control next" (click)="onNextArrowClick(scritpure)">
+      <span class="arrow right"></span>
+    </button>
+  </div>
+</div>

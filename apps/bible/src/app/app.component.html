@@ -1,34 +1,3 @@
-<!-- <mat-stepper labelPosition="bottom" #stepper>
-  <mat-step
-    [stepControl]="truth"
-    errorMessage="Tongue is required."
-    (click)="goToLanguage()"
-  >
-    <form [formGroup]="truth">
-      <ng-template matStepLabel>Select a Tongue.</ng-template>
-      <app-bible-page></app-bible-page>
-    </form>
-  </mat-step>
-  <mat-step [stepControl]="truth" errorMessage="Translation is required.">
-    <form [formGroup]="truth">
-      <ng-template matStepLabel>Select a Translation.</ng-template>
-      <router-outlet></router-outlet>
-    </form>
-  </mat-step>
-  <mat-step [stepControl]="truth" errorMessage="Bible is required.">
-    <form [formGroup]="truth">
-      <ng-template matStepLabel>Select a Bible.</ng-template>
-      <router-outlet></router-outlet>
-    </form>
-  </mat-step>
-  <mat-step>
-    <ng-template matStepLabel>Read</ng-template>
-    <div>
-      <button mat-button matStepperPrevious>Back</button>
-      <button mat-button (click)="stepper.reset()">Reset</button>
-    </div>
-  </mat-step>
-</mat-stepper> -->
 <div style="padding: 15px">
   <router-outlet></router-outlet>
 </div>

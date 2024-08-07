@@ -1,8 +1,8 @@
 import { provideHttpClient } from "@angular/common/http";
 import { ApplicationConfig, isDevMode } from "@angular/core";
-import { MAT_RIPPLE_GLOBAL_OPTIONS } from "@angular/material/core";
+import { MAT_RIPPLE_GLOBAL_OPTIONS, RippleGlobalOptions } from "@angular/material/core";
 import { provideAnimations } from "@angular/platform-browser/animations";
-import { provideRouter, withComponentInputBinding, withRouterConfig } from "@angular/router";
+import { RouteReuseStrategy, provideRouter, withComponentInputBinding, withRouterConfig } from "@angular/router";
 import { provideEffects } from "@ngrx/effects";
 import { provideState, provideStore } from "@ngrx/store";
 import { provideStoreDevtools } from "@ngrx/store-devtools";
@@ -12,7 +12,7 @@ import { BooksEffects } from "./+state/books/books.effects";
 import * as fromBooks from "./+state/books/books.reducer";
 import { ChaptersEffects } from "./+state/chapters/chapters.effects";
 import * as fromChapters from "./+state/chapters/chapters.reducer";
-import { appRoutes } from "./app.routes";
+import { DefaultRouteReuseStrategy, appRoutes } from "./app.routes";
 
 export const appConfig: ApplicationConfig = {
   providers: [
@@ -40,7 +40,8 @@ export const appConfig: ApplicationConfig = {
           enterDuration: 300,
           exitDuration: 0,
         },
-      },
+      } as RippleGlobalOptions,
     },
+    { provide: RouteReuseStrategy, useClass: DefaultRouteReuseStrategy },
   ],
 };

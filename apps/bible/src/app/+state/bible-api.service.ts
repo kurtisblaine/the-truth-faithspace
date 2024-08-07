@@ -1,6 +1,6 @@
 import { HttpClient, HttpHeaders } from "@angular/common/http";
 import { Injectable } from "@angular/core";
-import { map } from "rxjs";
+import { map, of } from "rxjs";
 import { Bibles } from "../models/bibles";
 import { BibleID, Books } from "../models/books";
 import { BookID, Chapters } from "../models/chapters";
@@ -54,6 +54,7 @@ export class BibleApiService {
       );
   }
   public getScripture(bibleId: BibleID, chapter: string) {
+    if (chapter == "all") return of({} as Scripture);
     return this.http
       .get(
         this.api +
