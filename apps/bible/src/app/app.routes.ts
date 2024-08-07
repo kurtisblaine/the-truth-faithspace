@@ -1,4 +1,5 @@
-import { Route } from "@angular/router";
+/* eslint-disable @typescript-eslint/no-unused-vars */
+import { ActivatedRouteSnapshot, DetachedRouteHandle, Route, RouteReuseStrategy } from "@angular/router";
 import { BiblePageComponent } from "./bible-page/bible-page.component";
 import { BookPageComponent } from "./book-page/book-page.component";
 import { ChapterPageComponent } from "./chapter-page/chapter-page.component";
@@ -25,3 +26,19 @@ export const appRoutes: Route[] = [
   { path: "", component: LanguagePageComponent },
   { path: "**", redirectTo: "", pathMatch: "full" },
 ];
+
+export class DefaultRouteReuseStrategy implements RouteReuseStrategy {
+  shouldDetach(route: ActivatedRouteSnapshot): boolean {
+    return false;
+  }
+  store(route: ActivatedRouteSnapshot, detachedTree: DetachedRouteHandle): void {}
+  shouldAttach(route: ActivatedRouteSnapshot): boolean {
+    return false;
+  }
+  retrieve(route: ActivatedRouteSnapshot): DetachedRouteHandle | null {
+    return null;
+  }
+  shouldReuseRoute(future: ActivatedRouteSnapshot, curr: ActivatedRouteSnapshot): boolean {
+    return false; // <-- Here is the critical line of code which forces re-creation of the component
+  }
+}

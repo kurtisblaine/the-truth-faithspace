@@ -29,7 +29,7 @@ export class AppComponent implements OnInit {
   constructor(private _formBuilder: FormBuilder, private router: Router) {}
 
   ngOnInit() {
-    this.router.navigate([""]); //go to home on refresh.
+    // this.router.navigate([""]); //go to home on refresh.
   }
 
   goToLanguage() {
