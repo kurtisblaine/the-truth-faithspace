@@ -2,7 +2,13 @@ import { provideHttpClient } from "@angular/common/http";
 import { ApplicationConfig, isDevMode } from "@angular/core";
 import { MAT_RIPPLE_GLOBAL_OPTIONS, RippleGlobalOptions } from "@angular/material/core";
 import { provideAnimations } from "@angular/platform-browser/animations";
-import { RouteReuseStrategy, provideRouter, withComponentInputBinding, withRouterConfig } from "@angular/router";
+import {
+  RouteReuseStrategy,
+  provideRouter,
+  withComponentInputBinding,
+  withHashLocation,
+  withRouterConfig,
+} from "@angular/router";
 import { provideEffects } from "@ngrx/effects";
 import { provideState, provideStore } from "@ngrx/store";
 import { provideStoreDevtools } from "@ngrx/store-devtools";
@@ -29,7 +35,8 @@ export const appConfig: ApplicationConfig = {
         paramsInheritanceStrategy: "always",
       }),
       // withInMemoryScrolling(),
-      withComponentInputBinding()
+      withComponentInputBinding(),
+      withHashLocation()
     ),
     provideHttpClient(),
     provideAnimations(),
