@@ -3,61 +3,40 @@
 <h1 style="padding: 15px 0px 0px" class="primary-color">Keep the faith</h1>
 <h1 style="padding: 15px 15px 0px" class="primary-color">Tracts</h1>
 <h6 class="mat-caption" style="margin: 0px 17px">
-  Using bookmarks as tracts has a two-fold purpose: it points to the Word of God
-  for truth and gives the Gospel, offering a continual reminder of the Good
-  News. You can print these off with the double-sided setting and cut along the
-  dotted lines and then laminate them. I hope this helps even with creating your
-  own tracts. There is also free gospel tracts at Fellowship Tract League. I
-  also like using cards because people can put them in their wallet; the best
-  place for all these things is your heart, meditating and ruminating on them
-  day and night: the paper will fade as a flower passes away, but the Word of
-  God remains forever. Amen.
+  Using bookmarks as tracts has a two-fold purpose: it points to the Word of God for truth and gives the Gospel,
+  offering a continual reminder of the Good News. You can print these off with the double-sided setting and cut along
+  the dotted lines and then laminate them. I hope this helps even with creating your own tracts. There is also free
+  gospel tracts at Fellowship Tract League. I also like using cards because people can put them in their wallet; the
+  best place for all these things is your heart, meditating and ruminating on them day and night: the paper will fade as
+  a flower passes away, but the Word of God remains forever. Amen.
 </h6>
 
-<mat-list role="list">
-  <mat-list-item role="listitem"
-    ><a href="assets/tract/gospelcard.pdf" target="_blank"
-      >Gospel Card - First Version</a
-    ></mat-list-item
+<mat-selection-list role="list" [multiple]="false" hideSingleSelectionIndicator>
+  <mat-list-option role="listitem" (click)="openLink('assets/tract/gospelcard.pdf')"
+    >Gospel Card - First Version</mat-list-option
   >
-  <mat-list-item role="listitem"
-    ><a href="assets/tract/GospelCardv2.pdf" target="_blank"
-      >Gospel Card - Final Version</a
-    ></mat-list-item
+  <mat-list-option role="listitem" (click)="openLink('assets/tract/GospelCardv2.pdf')"
+    >Gospel Card - Final Version</mat-list-option
   >
-  <mat-list-item role="listitem"
-    ><a href="assets/tract/bewareofburgers.pdf" target="_blank"
-      >Beware of the Fast Food</a
-    ></mat-list-item
+  <mat-list-option role="listitem" (click)="openLink('assets/tract/bewareofburgers.pdf')"
+    >Beware of the Fast Food</mat-list-option
   >
-  <mat-list-item role="listitem"
-    ><a href="assets/tract/bewareofimages.pdf" target="_blank"
-      >Watch Yourselves, Idols</a
-    ></mat-list-item
+  <mat-list-option role="listitem" (click)="openLink('assets/tract/bewareofimages.pdf')"
+    >Watch Yourselves, Idols</mat-list-option
   >
-  <mat-list-item role="listitem"
-    ><a href="assets/tract/bookmark - unfailing love of God.pdf" target="_blank"
-      >The Unfailing Love of God</a
-    ></mat-list-item
+  <mat-list-option role="listitem" (click)="openLink('assets/tract/bookmark - unfailing love of God.pdf')">
+    The Unfailing Love of God
+  </mat-list-option>
+  <mat-list-option role="listitem" (click)="openLink('assets/tract/faithfulloveofGod.pdf')"
+    >The Faithful Love of God</mat-list-option
   >
-  <mat-list-item role="listitem"
-    ><a href="assets/tract/faithfulloveofGod.pdf" target="_blank"
-      >The Faithful Love of God</a
-    ></mat-list-item
+  <mat-list-option role="listitem" (click)="openLink('assets/tract/The promised gift of God.pdf')"
+    >The Promised Gift of God</mat-list-option
   >
-  <mat-list-item role="listitem"
-    ><a href="assets/tract/The promised gift of God.pdf" target="_blank"
-      >The Promised Gift of God</a
-    ></mat-list-item
+  <mat-list-option role="listitem" (click)="openLink('assets/tract/thegoodnewsofgraceandtruth.pdf')"
+    >The Good News of Grace & Truth</mat-list-option
   >
-  <mat-list-item role="listitem"
-    ><a href="assets/tract/thegoodnewsofgraceandtruth.pdf" target="_blank"
-      >The Good News of Grace & Truth</a
-    ></mat-list-item
+  <mat-list-option role="listitem" (click)="openLink('assets/tract/GoodNewsOfFreedom.pdf')"
+    >The Good News of Freedom</mat-list-option
   >
-  <mat-list-item role="listitem"
-    ><a href="assets/tract/GoodNewsOfFreedom.pdf" target="_blank"
-      >The Good News of Freedom</a
-    ></mat-list-item
-  >
-</mat-list>
+</mat-selection-list>
