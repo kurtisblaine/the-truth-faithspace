@@ -1,4 +1,8 @@
 {
+  "projects": {
+    "default": "the-truth-as-in-the-beginning",
+    "the-truth-as-in-the-beginning": "bible-truth-the-true-one"
+  },
   "targets": {
     "bible-truth-the-true-one": {
       "hosting": {
@@ -8,7 +12,6 @@
       }
     }
   },
-  "projects": {
-    "default": "the-truth-as-in-the-beginning"
-  }
+  "etags": {},
+  "dataconnectEmulatorConfig": {}
 }
