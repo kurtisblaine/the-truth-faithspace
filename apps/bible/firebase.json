@@ -1,7 +1,7 @@
 {
   "hosting": {
     "site": "the-truth-as-in-the-beginning",
-    "public": "public/browser",
+    "public": "public",
     "ignore": ["firebase.json", "**/.*", "**/node_modules/**"]
   }
 }
