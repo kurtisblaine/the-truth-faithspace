@@ -3,5 +3,11 @@
     "site": "the-truth-as-in-the-beginning",
     "public": "public/browser",
     "ignore": ["firebase.json", "**/.*", "**/node_modules/**"]
-  }
+  },
+  "rewrites": [
+    {
+      "source": "**",
+      "destination": "/index.html"
+    }
+  ]
 }
