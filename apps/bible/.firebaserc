@@ -3,12 +3,12 @@
     "bible-truth-the-true-one": {
       "hosting": {
         "bible": [
-          "truth-as-in-beginning"
+          "the-truth-as-in-the-beginning"
         ]
       }
     }
   },
   "projects": {
-    "default": "truth-as-in-beginning"
+    "default": "the-truth-as-in-the-beginning"
   }
 }
