@@ -1,5 +1,6 @@
 import { Injectable, inject } from "@angular/core";
 import { Actions, createEffect, ofType } from "@ngrx/effects";
+import { Store } from "@ngrx/store";
 import { of } from "rxjs";
 import { catchError, mergeMap, switchMap } from "rxjs/operators";
 import { BibleApiService } from "../bible-api.service";
@@ -13,14 +14,12 @@ export class ChaptersEffects {
     this.actions$.pipe(
       ofType(ChaptersActions.loadChapters),
       mergeMap(({ id, bookId }) => this.bibleApi.getChapters(id, bookId)),
-      switchMap((data) =>
-        of(ChaptersActions.loadChaptersSuccess({ data: data.data }))
-      ),
+      switchMap((data) => of(ChaptersActions.loadChaptersSuccess({ data: data.data }))),
       catchError((error) => {
         return of(ChaptersActions.loadChaptersFailure({ error }));
       })
     )
   );
 
-  constructor(private bibleApi: BibleApiService) {}
+  constructor(private bibleApi: BibleApiService, private store: Store) {}
 }
