@@ -4,17 +4,20 @@ import {
   Component,
   ElementRef,
   Input,
+  OnDestroy,
   OnInit,
   ViewChild,
 } from "@angular/core";
 import { ActivatedRoute } from "@angular/router";
+import { DataService } from "../data.service";
+import { Image } from "../draw-page.component";
 
 @Component({
   selector: "blog-draw-item",
   templateUrl: "./draw-item.component.html",
   styleUrls: ["./draw-item.component.css"],
 })
-export class DrawItemComponent implements OnInit, AfterViewInit {
+export class DrawItemComponent implements OnInit, AfterViewInit, OnDestroy {
   // eslint-disable-next-line @angular-eslint/no-input-rename
   @Input("id") public fileName: string;
   // eslint-disable-next-line @angular-eslint/no-input-rename
@@ -22,7 +25,8 @@ export class DrawItemComponent implements OnInit, AfterViewInit {
 
   constructor(
     private route: ActivatedRoute,
-    private changeDetectorRef: ChangeDetectorRef
+    private changeDetectorRef: ChangeDetectorRef,
+    private dataService: DataService
   ) {}
 
   @ViewChild("youTubePlayer") youTubePlayer: ElementRef<HTMLDivElement>;
@@ -30,13 +34,14 @@ export class DrawItemComponent implements OnInit, AfterViewInit {
   videoHeight: number | undefined;
   videoWidth: number | undefined;
 
+  selectedImage: Image;
+
   ngOnInit(): void {
-    // this.route.params.subscribe((r) => {
-    //   this.fileName = r["id"];
-    //   if (r["video"] && r["video"] !== "undefined")
-    //     this.youtubeVideo = r["video"];
-    // });
+    const images = this.dataService.init();
+    this.selectedImage = images.find((i) => i.fileName == this.fileName);
   }
+
+  ngOnDestroy() {}
 
   ngAfterViewInit(): void {
     this.onResize();
@@ -46,10 +51,7 @@ export class DrawItemComponent implements OnInit, AfterViewInit {
   onResize(): void {
     if (!this.youTubePlayer) return;
     // you can remove this line if you want to have wider video player than 1200px
-    this.videoWidth = Math.min(
-      this.youTubePlayer.nativeElement.clientWidth,
-      1200
-    );
+    this.videoWidth = Math.min(this.youTubePlayer.nativeElement.clientWidth, 1200);
     // so you keep the ratio
     this.videoHeight = this.videoWidth * 0.6;
     this.changeDetectorRef.detectChanges();
