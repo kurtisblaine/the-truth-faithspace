@@ -1,15 +1,9 @@
-<!-- matTooltip="{{ reference }}" JesusWord: isJesusWord -->
+<!-- matTooltip="{{ reference }}"  -->
 <p
   class="reference"
   [style.padding]="padding"
-  [ngClass]="{ flex: flex, block: !flex, }"
-  style="
-    align-items: center;
-    height: 100%;
-    justify-content: center;
-    text-transform: uppercase;
-    flex-wrap: wrap;
-  "
+  [ngClass]="{ flex: flex, block: !flex, JesusWord: isJesusWord }"
+  style="align-items: center; height: 100%; justify-content: center; text-transform: uppercase; flex-wrap: wrap"
 >
   <ng-content></ng-content> ({{ reference }})
 </p>
