@@ -6,7 +6,7 @@ import { MatExpansionModule } from "@angular/material/expansion";
 import { RouterModule, Routes } from "@angular/router";
 import { BlogPageModule } from "../blog-page/blog-page.module";
 import { DiscernPageModule } from "../discern-page/discern-page.module";
-import { ProverbModule } from "../proverb-page/proverb.module";
+import { InsightModule } from "../insight-page/insight.module";
 import { PsalmPageModule } from "../psalm-page/psalm-page.module";
 import { SharedModule } from "../shared/shared.module";
 import { ServerPageComponent } from "./server-page.component";
@@ -28,7 +28,7 @@ const routes: Routes = [
     FormsModule,
     ReactiveFormsModule,
     PsalmPageModule,
-    ProverbModule,
+    InsightModule,
     BlogPageModule,
     DiscernPageModule,
   ],
