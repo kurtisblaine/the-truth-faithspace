@@ -1,4 +1,4 @@
-export interface ProverbEntity {
+export interface InsightEntity {
   collectionId?: string;
   id: string | number; // Primary ID
   json: object;

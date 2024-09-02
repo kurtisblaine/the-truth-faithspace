@@ -1,73 +1,50 @@
 import { NgModule } from "@angular/core";
-import {
-  PreloadAllModules,
-  RouterModule,
-  Routes,
-  provideRouter,
-  withHashLocation,
-} from "@angular/router";
+import { PreloadAllModules, RouterModule, Routes, provideRouter, withHashLocation } from "@angular/router";
 
 const routes: Routes = [
   {
     path: "",
-    loadChildren: () =>
-      import("./home-page/home-page.module").then((m) => m.HomePageModule),
+    loadChildren: () => import("./home-page/home-page.module").then((m) => m.HomePageModule),
   },
   {
     path: "",
-    loadChildren: () =>
-      import("./gospel-page/gospel-page.module").then(
-        (m) => m.GospelPageModule
-      ),
+    loadChildren: () => import("./gospel-page/gospel-page.module").then((m) => m.GospelPageModule),
   },
   {
     path: "",
-    loadChildren: () =>
-      import("./psalm-page/psalm-page.module").then((m) => m.PsalmPageModule),
+    loadChildren: () => import("./psalm-page/psalm-page.module").then((m) => m.PsalmPageModule),
   },
   {
     path: "",
-    loadChildren: () =>
-      import("./blog-page/blog-page.module").then((m) => m.BlogPageModule),
+    loadChildren: () => import("./blog-page/blog-page.module").then((m) => m.BlogPageModule),
   },
   {
     path: "",
-    loadChildren: () =>
-      import("./proverb-page/proverb.module").then((m) => m.ProverbModule),
+    loadChildren: () => import("./insight-page/insight.module").then((m) => m.InsightModule),
   },
   {
     path: "",
-    loadChildren: () =>
-      import("./email-page/email-page.module").then((m) => m.EmailPageModule),
+    loadChildren: () => import("./email-page/email-page.module").then((m) => m.EmailPageModule),
   },
   {
     path: "",
-    loadChildren: () =>
-      import("./discern-page/discern-page.module").then(
-        (m) => m.DiscernPageModule
-      ),
+    loadChildren: () => import("./discern-page/discern-page.module").then((m) => m.DiscernPageModule),
   },
   {
     path: "",
-    loadChildren: () =>
-      import("./tract-page/tract-page.module").then((m) => m.TractPageModule),
+    loadChildren: () => import("./tract-page/tract-page.module").then((m) => m.TractPageModule),
   },
   {
     path: "",
-    loadChildren: () =>
-      import("./draw-page/draw-page.module").then((m) => m.DrawPageModule),
+    loadChildren: () => import("./draw-page/draw-page.module").then((m) => m.DrawPageModule),
   },
   {
     path: "",
-    loadChildren: () =>
-      import("./link-page/link-page.module").then((m) => m.LinkPageModule),
+    loadChildren: () => import("./link-page/link-page.module").then((m) => m.LinkPageModule),
   },
   {
     path: "",
-    loadChildren: () =>
-      import("./server-page/server-page.module").then(
-        (m) => m.ServerPageModule
-      ),
+    loadChildren: () => import("./server-page/server-page.module").then((m) => m.ServerPageModule),
   },
   { path: "", pathMatch: "full", redirectTo: "home" },
   { path: "**", redirectTo: "error" },

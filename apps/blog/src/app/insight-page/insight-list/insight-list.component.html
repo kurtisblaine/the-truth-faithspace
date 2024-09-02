@@ -1,0 +1,16 @@
+<div class="insight-item" *ngFor="let insight of insights$ | async">
+  <div class="insight-title primary-color" (click)="navigate(insight)">
+    {{ insight.title.toUpperCase() }}
+  </div>
+  <div>{{ insight.date | date: "short" }}</div>
+
+  <button mat-flat-button *ngIf="update" (click)="doUpdate(insight)">Update</button>
+
+  <blog-text-editor
+    [readonly]="!update"
+    [document]="insight.json"
+    (editorChanged)="insight.json = $event"
+  ></blog-text-editor>
+
+  <mat-divider></mat-divider>
+</div>

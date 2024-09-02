@@ -1,9 +1,9 @@
 <h1 style="padding: 15px 0px 0px" class="primary-color">Hidden</h1>
 
-<button mat-flat-button (click)="savePsalm()">Post Psalm</button>
-<button mat-flat-button (click)="saveProverb()">Post Wisdom</button>
-<button mat-flat-button (click)="saveBlog()">Post Revelation</button>
-<button mat-flat-button (click)="saveDiscernment()">Post Judgement</button>
+<button mat-flat-button (click)="savePsalm()">Post Poem</button>
+<button mat-flat-button (click)="saveInsight()">Post Insight</button>
+<button mat-flat-button (click)="saveBlog()">Post Edification</button>
+<button mat-flat-button (click)="saveDiscernment()">Post Discern</button>
 
 <div>Title</div>
 <input matInput type="text" [(ngModel)]="title" required />
@@ -14,7 +14,7 @@
   <mat-expansion-panel>
     <mat-expansion-panel-header>
       <mat-panel-title>
-        <h1 style="padding: 15px 15px 0px" class="primary-color">Psalm</h1>
+        <h1 style="padding: 15px 15px 0px" class="primary-color">Poems</h1>
       </mat-panel-title>
     </mat-expansion-panel-header>
     <ng-template matExpansionPanelContent>
@@ -25,18 +25,18 @@
   <mat-expansion-panel>
     <mat-expansion-panel-header>
       <mat-panel-title>
-        <h1 style="padding: 15px 15px 0px" class="primary-color">Wisdom</h1>
+        <h1 style="padding: 15px 15px 0px" class="primary-color">Insights</h1>
       </mat-panel-title>
     </mat-expansion-panel-header>
     <ng-template matExpansionPanelContent>
-      <blog-proverb-list [update]="true"></blog-proverb-list>
+      <blog-insight-list [update]="true"></blog-insight-list>
     </ng-template>
   </mat-expansion-panel>
 
   <mat-expansion-panel>
     <mat-expansion-panel-header>
       <mat-panel-title>
-        <h1 style="padding: 15px 15px 0px" class="primary-color">Revelation</h1>
+        <h1 style="padding: 15px 15px 0px" class="primary-color">Edifications</h1>
       </mat-panel-title>
     </mat-expansion-panel-header>
     <ng-template matExpansionPanelContent>
@@ -47,7 +47,7 @@
   <mat-expansion-panel>
     <mat-expansion-panel-header>
       <mat-panel-title>
-        <h1 style="padding: 15px 15px 0px" class="primary-color">Judgement</h1>
+        <h1 style="padding: 15px 15px 0px" class="primary-color">Discernments</h1>
       </mat-panel-title>
     </mat-expansion-panel-header>
     <ng-template matExpansionPanelContent>

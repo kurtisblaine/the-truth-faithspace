@@ -28,7 +28,7 @@ export class AppComponent implements OnInit, AfterViewInit {
   public homeIcon = faHouse;
   public blogIcon = faDumbbell;
   public psalmIcon = faMusic;
-  public proverbIcon = faBrain;
+  public insightIcon = faBrain;
   public mailIcon = faEnvelope;
   public discernIcon = faGavel;
   public drawingIcon = faPenToSquare;
@@ -89,8 +89,8 @@ export class AppComponent implements OnInit, AfterViewInit {
     });
   }
 
-  public goProverb() {
-    this.router.navigateByUrl("proverbs").then(() => {
+  public goInsight() {
+    this.router.navigateByUrl("insights").then(() => {
       this.emitScrollEvent();
     });
   }

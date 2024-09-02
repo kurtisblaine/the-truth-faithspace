@@ -2,22 +2,22 @@ import { Component, OnInit } from "@angular/core";
 import { ActivatedRoute } from "@angular/router";
 import { Store } from "@ngrx/store";
 import { switchMap } from "rxjs";
-import { ProverbEntity } from "../../state/proverb/proverb.models";
-import { loadProverbs } from "../../state/proverb/proverbs.actions";
-import { getById } from "../../state/proverb/proverbs.selectors";
+import { InsightEntity } from "../../state/insight/insight.models";
+import { loadInsights } from "../../state/insight/insights.actions";
+import { getById } from "../../state/insight/insights.selectors";
 
 @Component({
-  selector: "blog-proverb-detail",
-  templateUrl: "./proverb-detail.component.html",
-  styleUrls: ["./proverb-detail.component.css"],
+  selector: "blog-insight-detail",
+  templateUrl: "./insight-detail.component.html",
+  styleUrls: ["./insight-detail.component.css"],
 })
-export class ProverbDetailComponent implements OnInit {
-  public blog: ProverbEntity;
+export class InsightDetailComponent implements OnInit {
+  public blog: InsightEntity;
 
   constructor(private store: Store, private route: ActivatedRoute) {}
 
   ngOnInit(): void {
-    this.store.dispatch(loadProverbs());
+    this.store.dispatch(loadInsights());
 
     this.route.params
       .pipe(
