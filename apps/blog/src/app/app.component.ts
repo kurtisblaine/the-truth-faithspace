@@ -1,16 +1,10 @@
-import {
-  AfterViewInit,
-  Component,
-  ElementRef,
-  OnInit,
-  ViewChild,
-} from "@angular/core";
+import { AfterViewInit, Component, ElementRef, OnInit, ViewChild } from "@angular/core";
 import { Router } from "@angular/router";
 import {
   faBars,
   faBrain,
+  faDumbbell,
   faEnvelope,
-  faEye,
   faFile,
   faGavel,
   faHouse,
@@ -32,7 +26,7 @@ export class AppComponent implements OnInit, AfterViewInit {
   public title = "The Good News of The Kingdom of God";
   public icon = faBars;
   public homeIcon = faHouse;
-  public blogIcon = faEye;
+  public blogIcon = faDumbbell;
   public psalmIcon = faMusic;
   public proverbIcon = faBrain;
   public mailIcon = faEnvelope;

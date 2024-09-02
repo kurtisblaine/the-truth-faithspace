@@ -1,10 +1,5 @@
 <mat-drawer-container style="width: 100%; height: 100%" [hasBackdrop]="false">
-  <mat-drawer
-    style="width: 280px; position: fixed"
-    #drawer
-    [mode]="'side'"
-    [autoFocus]="true"
-  >
+  <mat-drawer style="width: 280px; position: fixed" #drawer [mode]="'side'" [autoFocus]="true">
     <mat-list>
       <mat-list-item lines="1" (click)="goHome(); drawer.close()">
         <fa-icon matListItemIcon [icon]="homeIcon" [size]="'lg'"></fa-icon>
@@ -17,30 +12,30 @@
       <mat-list-item lines="3" (click)="goGospel(); drawer.close()">
         <fa-icon matListItemIcon [icon]="gospelIcon" [size]="'lg'"></fa-icon>
         <span matListItemTitle>The Good News</span>
-        <span>the everlasting covenant that does not change</span>
+        <span>the everlasting covenant that does not change.</span>
       </mat-list-item>
       <mat-divider></mat-divider>
 
       <div mat-subheader>Posts</div>
       <mat-list-item lines="3" (click)="goPsalm(); drawer.close()">
         <fa-icon matListItemIcon [icon]="psalmIcon" [size]="'lg'"></fa-icon>
-        <span matListItemTitle>Psalm</span>
-        <span>make melodies to the Lord with the strings of your heart. </span>
+        <span matListItemTitle>Poem</span>
+        <span>an exalting & magnifying of the Lord with poetry. </span>
       </mat-list-item>
       <mat-list-item lines="3" (click)="goProverb(); drawer.close()">
         <fa-icon matListItemIcon [icon]="proverbIcon" [size]="'lg'"></fa-icon>
-        <span matListItemTitle>Wisdom</span>
-        <span>a collection of proverbs and general wisdom.</span>
+        <span matListItemTitle>Insight</span>
+        <span>a collection of things understood in the world.</span>
       </mat-list-item>
       <mat-list-item lines="3" (click)="goBlog(); drawer.close()">
         <fa-icon matListItemIcon [icon]="blogIcon" [size]="'lg'"></fa-icon>
-        <span matListItemTitle>Revelation</span>
-        <span>a set of revealings of the hidden oracles of God.</span>
+        <span matListItemTitle>Edification</span>
+        <span>a set of scriptures knit together for encouraging.</span>
       </mat-list-item>
       <mat-list-item lines="3" (click)="goDiscern(); drawer.close()">
         <fa-icon matListItemIcon [icon]="discernIcon" [size]="'lg'"></fa-icon>
         <span matListItemTitle>Judgement</span>
-        <span>discernment of different kinds of spirits or gospels.</span>
+        <span>discernments of different kinds of spirits & gospels.</span>
       </mat-list-item>
       <mat-divider></mat-divider>
 
@@ -48,12 +43,12 @@
       <mat-list-item lines="3" (click)="goDrawings(); drawer.close()">
         <fa-icon matListItemIcon [icon]="drawingIcon" [size]="'lg'"></fa-icon>
         <span matListItemTitle>Drawing</span>
-        <span>make simple the complex things of the Word.</span>
+        <span>making simple through contrast the truthful things.</span>
       </mat-list-item>
       <mat-list-item lines="3" (click)="goTracts(); drawer.close()">
         <fa-icon matListItemIcon [icon]="tractIcon" [size]="'lg'"></fa-icon>
         <span matListItemTitle>Tract</span>
-        <span>communicate Truth in a quick and effective way.</span>
+        <span>letters to communicate truth in a quick & effective way.</span>
       </mat-list-item>
 
       <!-- <mat-divider></mat-divider>
@@ -69,19 +64,14 @@
       <mat-list-item lines="3" (click)="goEmail(); drawer.close()">
         <fa-icon matListItemIcon [icon]="mailIcon" [size]="'lg'"></fa-icon>
         <span matListItemTitle>Email</span>
-        <span>please contact me with anything that comes to mind.</span>
+        <span>be honest & contact me with things that come to mind.</span>
       </mat-list-item>
     </mat-list>
   </mat-drawer>
   <mat-drawer-content>
     <div class="header">
       <mat-toolbar color="primary">
-        <button
-          mat-icon-button
-          class="example-icon"
-          (click)="drawer.toggle()"
-          title="menu-button"
-        >
+        <button mat-icon-button class="example-icon" (click)="drawer.toggle()" title="menu-button">
           <fa-icon [icon]="icon" [size]="'lg'"></fa-icon>
         </button>
 
@@ -91,13 +81,7 @@
 
     <router-outlet #toTop></router-outlet>
 
-    <button
-      class="scoll-to-top"
-      mat-fab
-      color="primary"
-      style="z-index: 7777777"
-      (click)="scrollToTop(toTop)"
-    >
+    <button class="scoll-to-top" mat-fab color="primary" style="z-index: 7777777" (click)="scrollToTop(toTop)">
       Top
     </button>
 
