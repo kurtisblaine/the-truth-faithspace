@@ -8,6 +8,8 @@ export class DataService {
   private images: Image[] = [];
 
   public init() {
+    if (this.images.length) return this.images;
+
     this.images.push({
       id: 0,
       name: "Covenant Promise",
