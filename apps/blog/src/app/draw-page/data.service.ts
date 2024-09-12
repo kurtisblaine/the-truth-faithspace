@@ -27,7 +27,7 @@ export class DataService {
     this.images.push({
       id: 1,
       name: "Being a child of the Day",
-      description: ``,
+      description: `The Lord will come as thief to those in the night, but Lord and Savior, bringing salvation, to those who are of the day, watching in prayer for His coming.`,
       footer: "Be of the Day, a child of the Light, servants of the Lord...",
       fileName: "daynight.webp",
 
@@ -66,7 +66,8 @@ export class DataService {
     this.images.push({
       id: 5,
       name: "Sanctification Explained",
-      description: ``,
+      description: `Going from what is earthly (south, or below) to what is heavenly (north, or above); from what is wrong (left, west) to the right (right, or east) being sanctified.
+      Going from what is made with human hands, to that which is made not with hands; Going from what pleases men, to what pleases God.`,
       footer: "Moving away from earthly things to heavenly things...",
       fileName: "sanctification.webp",
 
@@ -76,7 +77,7 @@ export class DataService {
     this.images.push({
       id: 49,
       name: "Justification and Salvation",
-      description: `Just as the body without the spirit is dead, so faith without works is dead.`,
+      description: `Just as the body without the spirit is dead, so faith without works is dead. Only living faith will save you, made possible only because of the Living Sacrifice of Christ.`,
       footer: "Justified by Christ, Faith that saves...",
       fileName: "justificationandsalvation.webp",
       originUrl:
@@ -86,7 +87,7 @@ export class DataService {
     this.images.push({
       id: 50,
       name: "Biblical Separation",
-      description: `Discerning between the clean and the unclean`,
+      description: `Discerning between the clean and the unclean, separating from men who act like unclean animals.`,
       footer: "When to separate from believers and unbelievers...",
       fileName: "biblicalseparation.webp",
       originUrl: "https://res.cloudinary.com/dffihsa2y/image/upload/v1721004824/teach/biblicalseparation_e1udhr.webp",
@@ -95,7 +96,7 @@ export class DataService {
     this.images.push({
       id: 51,
       name: "Israel Camp",
-      description: `The same it is today, we are led by the Spirit of God.`,
+      description: `The same it is today, we are led by the Spirit of God. All the tribes followed the pillar of cloud by day and the pillar of fire by night.`,
       footer: "How the hosts of the LORD were sent out...",
       fileName: "israelcamp.webp",
       originUrl: "https://res.cloudinary.com/dffihsa2y/image/upload/v1721004824/teach/israelcamp_mrnxqw.webp",
@@ -257,7 +258,8 @@ export class DataService {
     this.images.push({
       id: 16,
       name: "Jesus, the First & Last, the Beginning & End, the Alpha & Omega",
-      description: ``,
+      description: `The Lord Jesus has no beginning or end, but He is the Beginning and End. He was last on earth, and the Father exalted Him as first of all.
+      He is the eldest, yet He is the firstborn, for He existed from the beginning. He is the complete Word: the Alpha and the Omega.`,
       footer: "Jesus was Servant of all & now, is First in heaven: Lord of Lords and King of Kings...",
       fileName: "firstandlast.webp",
 
@@ -277,7 +279,7 @@ export class DataService {
     this.images.push({
       id: 18,
       name: "The Harvest",
-      description: ``,
+      description: `Jesus is the first to rise from the dead as first fruits to God. At the fullness of the feast of trumpets, all the godly saints will rise from the dead.`,
       footer: "All things created by Him and for Him (see the First & Last teaching)...",
       fileName: "harvest.webp",
 
@@ -287,7 +289,9 @@ export class DataService {
     this.images.push({
       id: 19,
       name: "Israelite Camp",
-      description: ``,
+      description: `The materials which are most rare represent holiness, just as gold is more rare than silver.
+      The Spirit of the Lord shows us that anyone who builds a house for the Lord, must do so through His wisdom.
+      Solomon, who was filled with wisdom, built the temple; and Bazadel and Oholiab were filled with the Spirit to build the Tabernacle.`,
       footer: "We can see teachings & parables through the creation of the Tabernacle...",
       fileName: "israelitecamp.webp",
 
@@ -297,7 +301,8 @@ export class DataService {
     this.images.push({
       id: 20,
       name: "The Lion & the Lamb",
-      description: ``,
+      description: `Abraham gave his one and only son, Isaac, as a sacrifice; and Jacob gave up his one and only son Benjamin as a sacrifice.
+      These represent Jesus, who God gave up for the sins of the world, because of His great love for us, giving up His beloved Son whom He loves.`,
       footer: "Similarities between Isaac and Benjamin prophesying about Jesus...",
       fileName: "Jesuslionlamb.webp",
 
@@ -307,7 +312,9 @@ export class DataService {
     this.images.push({
       id: 21,
       name: "The Day of Judgement",
-      description: ``,
+      description: `Before each judgement are a series of events: a gathering of nations, thrones setup, dead raised or the sleep raised, and finally, judgement.
+      In the study of the book of Revelation, you will see this in common between both judgements of the righteous and the wicked.
+      There are two judgements just as there are two resurrections.`,
       footer: "Two judgements of the righteous and the wicked, two resurrections...",
       fileName: "judgementday.webp",
 
@@ -317,7 +324,10 @@ export class DataService {
     this.images.push({
       id: 22,
       name: "The Land of Inhabitation",
-      description: ``,
+      description: `There are four soils the Lord spoke about; there are also four different lands Israel were in.
+      There is one soil which is good soil and fruitful: this represents the land of promise. The other three soils were unfruitful, same with the three lands Israel were in throughout history.
+      The wilderness represents the seed that was scorched and had no root. The thorns would be the land of Exile which were choked out.
+      I would consider Bondage and Slavery, the rocky soil, which the birds ate, since oppression comes from the evil one.`,
       footer: "Which land are you currently residing in (only four options)...",
       fileName: "land.webp",
 
@@ -327,7 +337,7 @@ export class DataService {
     this.images.push({
       id: 23,
       name: "One God",
-      description: ``,
+      description: `There is one God and one Mediator between God and man: Christ Jesus.`,
       footer: "One God all in all...",
       fileName: "oneGod.webp",
 
@@ -348,7 +358,7 @@ export class DataService {
     this.images.push({
       id: 25,
       name: "Run the Race of Faith",
-      description: ``,
+      description: `The race is from start to finish by faith. We race for the eternal crown of life.`,
       footer: "To live the life of faith, is to be like an athlete, running a race...",
       fileName: "runtherace.webp",
 
@@ -357,8 +367,10 @@ export class DataService {
 
     this.images.push({
       id: 26,
-      name: "Steps to Eternal Life",
-      description: ``,
+      name: "Steps to Eternal Life just like Planting",
+      description: `Cultivating the soil and planting seeds would be repentance and confession of sins and being baptized in water.
+      The miracle of God is passing through death and yet remaining alive like Israel passing through the Red Sea.
+      Jesus mentioned, "Baptized with Spirit and Fire..." This is the harvesting to eternal life and suffering.`,
       footer: "The seed must first be planted on fertile soil then by a miracle of God...",
       fileName: "salvation.webp",
 
@@ -368,7 +380,7 @@ export class DataService {
     this.images.push({
       id: 27,
       name: "Trustworthy Sayings & Solemnly Commands",
-      description: ``,
+      description: `There are trustworthy saying Paul gave Timothy and Titus; also there are commands he charged them with.`,
       footer: "In the personal letters to Titus and Timothy, Paul gives sayings and commands...",
       fileName: "sayingsandcommands.webp",
 
