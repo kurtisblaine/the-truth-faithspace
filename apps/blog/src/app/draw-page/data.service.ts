@@ -390,7 +390,10 @@ export class DataService {
     this.images.push({
       id: 28,
       name: "Natures, Kingdoms and Wills",
-      description: ``,
+      description: `We are in the middle of two conflicting wills: who's will will we conform to?
+      Satan's will is a lie, which result is in sin, to death; God's will is obedience unto righteousness, which results in holiness, to eternal life.
+      We should chose eternal life. If we hate ourselves, we will continue to please ourselves in sin.
+      We're all born into sin through Adam; but in Christ, we've been made new. Cross over into life through Jesus Christ.`,
       footer: "We are in the middle of a battle of two opposite wills, natures, and kingdoms...",
       fileName: "sinvswillofGod.webp",
 
@@ -400,7 +403,12 @@ export class DataService {
     this.images.push({
       id: 29,
       name: "Slaves to Sin or Sons to Righteousness",
-      description: ``,
+      description: `Jews are born of God by faith and Gentiles through faith. This distinction is made for a reason.
+      Sons are those who are born of the Father; a slave is one who is not born of Him, but is put to forced labor.
+      These who are slaves think they must work for God's approval; with this mindset, there is always sin.
+      We cannot always do what we're supposed to. A son is one through grace by faith.
+      Just as we have obtained our natural birth by not doing, so it is with our spiritual birth.
+      We are made sons of God by faith in the son of God: Jesus Christ.`,
       footer:
         "We either get what we deserve by our works or what we don't, by God's grace, through our faith in Christ...",
       originUrl: "https://res.cloudinary.com/dffihsa2y/image/upload/v1711590253/teach/slavesvssons_g5zfi7.webp",
@@ -410,7 +418,8 @@ export class DataService {
     this.images.push({
       id: 30,
       name: "Our Jobs: Soldier, Athlete, Farmer, & Fishermen",
-      description: ``,
+      description: `We learn things by the things we know. You know at least one of these things.
+      How blessed is this truth! May the Holy Spirit shine light into these things for you.`,
       footer: "If you've always wanted to be in the military, now you can as soldiers of Christ Jesus...",
       originUrl:
         "https://res.cloudinary.com/dffihsa2y/image/upload/v1711590258/teach/soldierathletefarmerfishermen_ebpnk9.webp",
@@ -420,7 +429,11 @@ export class DataService {
     this.images.push({
       id: 31,
       name: "The Place of Meeting: Tabernacle",
-      description: ``,
+      description: `The inner sancturary is where God abodes. This corresponds to our heart.
+      We are the temple of the living God: our body and also, all members of the Body collectively.
+      God's temple is holy. So should we be. The law is written on our hearts, just as the tablets are in the ark.
+      These bodies of ours are temporary. Our tent will be taken down. This represents all the poles that were inserted in the items.
+      See drawing for more on these things...`,
       footer: "We have fellowship with God in the place of meeting, we abide in Him and He in us...",
       originUrl: "https://res.cloudinary.com/dffihsa2y/image/upload/v1711590262/teach/Tabernacle_bdapzh.webp",
       fileName: "Tabernacle.webp",
@@ -429,7 +442,10 @@ export class DataService {
     this.images.push({
       id: 32,
       name: "Tester of Metals",
-      description: ``,
+      description: `It is a blessing to be tried by a prophet of God in this day.
+      If we cannot withstand his judgement, how can we withstand the All Mighty Judge when we stand before Him?
+      This is God's grace for us. We should repent and do as the prophet Jeremiah says and all the other prophets.
+      They come to test the quality of us: they do so, so that we wouldn't be ultimately judged in the end with everlasting fire.`,
       footer: "There is tribulation and fire we will all be salted with just as a sacrifice is, will we overcome...",
       originUrl: "https://res.cloudinary.com/dffihsa2y/image/upload/v1711590265/teach/testerofmetals_dazuwl.webp",
       fileName: "testerofmetals.webp",
@@ -438,7 +454,9 @@ export class DataService {
     this.images.push({
       id: 33,
       name: "The Church",
-      description: ``,
+      description: `A type of Jesus Christ and the Church. The woman's head is Adam, that means she is the body.
+      Christ is our head, that means we are the Body: the church.
+      We, the church, are brought forth out of Christ's broken body as His body; just as Eve was created out of Adam's body and is his body.`,
       footer: "We are one with Christ as Eve was one with Adam...",
       fileName: "thechurch.webp",
 
@@ -448,7 +466,10 @@ export class DataService {
     this.images.push({
       id: 34,
       name: "The Law of Liberty",
-      description: ``,
+      description: `The law of God is used correctly and incorrectly. For one, it is for the godless.
+      It is there to convict. It is there to show us sin. It is there as a guardian for us (until the way of Christ is revealed).
+      It is not a means to righteousness. It is not given for us to strict obedience to it, as the Parisees, while neglecting the inward heart of the matter.
+      Surely, we obey the law, but only can we through Jesus Christ and the new creation.`,
       footer: "Those who do what is right have no need to fear the authorities...",
       fileName: "theLaw.webp",
 
@@ -458,7 +479,10 @@ export class DataService {
     this.images.push({
       id: 35,
       name: "The Way of the Spirit: Walk and Run",
-      description: ``,
+      description: `Whatever we set our minds on, is that which we will walk in. First the head, then the body.
+      We must set our minds on the things above! This is the way of the Spirit.
+      Setting our minds on earthly things, we will surely follow earthly things, living according to the flesh.
+      Walking is living step by step, running is the same thing, but with eagarness.`,
       footer: "What are we rushing for will reveal what we are eagar for...",
       fileName: "theway.webp",
 
@@ -468,7 +492,10 @@ export class DataService {
     this.images.push({
       id: 36,
       name: "Thieves and Bandits",
-      description: ``,
+      description: `Ah my favorite! I love this! Thieves are the hypocrites! Bandits are they who acknowledge they're sinners.
+      The bandit sins outwardly, he is the one Christ has come for! He comes for they who know they are sinners.
+      They who think they are righteous are hypocrites: inwardly defiled and outwardly clean. He rebuked them sharply. Evil is evil, but it is better to be a bandit than a thief.
+      A thief only feels shame when he gets caught! Be a bandit, and be primed for Christ Jesus!`,
       footer: "Some wear their sin on the inside and others on the outside, yet all are with sin...",
       fileName: "thievesbandits.webp",
 
