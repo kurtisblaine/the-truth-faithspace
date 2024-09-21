@@ -13,11 +13,12 @@ export class DataService {
     this.images.push({
       id: 0,
       name: "Covenant Promise",
-      description: `The promise is available to everyone; we pray that many experience the promise which is through faith;
-        the fulfillment of promise is in Christ, He is the Yes and Amen; we work hard to convince first ourselves then our neighbor,
-        knowing this Good News is for everyone and the Word has the power to save. We obtain the promise, not by faith, which assumes
-        an instance of faith, but through faith which means a progression or working of faith.
-        It is BY grace we are saved, which in turn refers to an instance of grace by our Lord on the cross.`,
+      description: `The promise is available to everyone that is what I mean by putting 'unconditional' on the top.
+        The fulfillment of the promise is in Christ - He is the Yes and Amen to everyone of God's promises.
+        Through the oath given by God, we enter into covenant with Him as it was with Abraham.
+        The promise is the foundation of the covenant - without the proimse, there is no covenant.
+        Believe the promise and enter into covenant with God; this is the entrance into the new covenant and the terms of the covenant - our faith.
+        Christ died - and what's more? He lives on!`,
       footer: "We enter into the Covenant of Promise, the New covenant, by believing in the Promise of God...",
       originUrl: "https://res.cloudinary.com/dffihsa2y/image/upload/v1711590185/teach/covenantpromise_lq6374.webp",
       video: "FHfh48WzFcU",
