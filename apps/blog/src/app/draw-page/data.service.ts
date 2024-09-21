@@ -505,7 +505,8 @@ export class DataService {
     this.images.push({
       id: 37,
       name: "Detests vs Delights",
-      description: ``,
+      description: `All falsehood the Lord God hates. Hypocrisy: sacrifices offered with an impure heart.
+      He loves truth and mercy and humility. He looks at the heart; and He sees the heart is decietfully wicked always.`,
       footer: "What the Most High detests and what is a delight to Him...",
       fileName: "detestvsdelight.webp",
 
@@ -515,7 +516,10 @@ export class DataService {
     this.images.push({
       id: 38,
       name: "Grace and Truth",
-      description: ``,
+      description: `The Law is physical; the Gospel is spiritual. Greater is the Spirit than the flesh.
+      Through the Law comes a knowledge of sin; but through grace and truth come the knowledge of God.
+      We have a choice which tree we are to eat from. God has restored to us one command: believe.
+      Enter into covenant with God through His oath.`,
       footer: "The Law revealed the coinscience through the written code, grace & truth revealed in Christ...",
       fileName: "grace&truth.webp",
 
@@ -525,7 +529,10 @@ export class DataService {
     this.images.push({
       id: 39,
       name: "The Father and the Son and the Holy Spirit",
-      description: ``,
+      description: `The Father and the Son and the Spirit are equal. Many great men came from God: Samson, John the Baptist, Moses, David, etc.
+      They all exemplify an attribute of Christ and prophesy with their lives and word to Christ; but they all stumbled in some way.
+      How much greater is Christ Jesus, who is the accumluation of all these attributes of all these men, having given them their lives and character, who is also without sin.
+      How great is He! How much greater is He whom He testified to, "For the Father is greater than I" who no man has seen at anytime except the Son who has revealed Him to us.`,
       footer: "Revelation about the Father, Son, and the Spirit.. how we worship one God.",
       fileName: "theFatherSonSpirit.webp",
 
@@ -535,7 +542,10 @@ export class DataService {
     this.images.push({
       id: 40,
       name: "The Father and the Son",
-      description: ``,
+      description: `A contrast between the Father and the Son. "Like Father like son", is a proverb we know well of.
+      Jesus Christ is the perfect Son, doing everything the Father told Him to do and say. He is our Mediator between us and God.
+      We can only come to the Father through Him; any other way will not work. Only through Christ do we have access to the Father.
+      Our prayers are to the Father.`,
       footer: "Scripture gathering of the Father and the Son...",
       fileName: "theFather&theSon.webp",
 
@@ -545,7 +555,10 @@ export class DataService {
     this.images.push({
       id: 41,
       name: "Worship the Father in spirit and truth",
-      description: ``,
+      description: `The Law gives power to pride and sin; it empowers sin within us. Through the law comes a false sense of worship.
+      However, through the Spirit, can we ever worship the Father as He intended us to: in spirit and truth.
+      We attribute proper worth to God who makes the temple holy rather than the temple itself. The Law honors the temple more than God who sanctifies the temple.
+      Everything about the law is physical; however, the Spirit trumps over the flesh. Our bodies are the temples where the Holy Spirit resides.`,
       footer: "How the world worships God in the ways He does not desire, but how we're called to worship...",
       fileName: "TrueWorship.webp",
 
@@ -555,7 +568,8 @@ export class DataService {
     this.images.push({
       id: 42,
       name: "Will NOT inherit the Kingdom of God (verses)",
-      description: ``,
+      description: `Test yourself to see if any of these apply to you. Only the new creation can inherit the new heaven and the new earth.
+      Unless you receive the kingdom like a little child you will by no means enter into the kingdom of heaven.`,
       footer: "It is clear, these will not inherit the Kingdom of heaven...",
       fileName: "willnotinherit.webp",
       originUrl: "https://res.cloudinary.com/dffihsa2y/image/upload/v1711735327/teach/willnotinherit_n0mujj.webp",
@@ -564,7 +578,8 @@ export class DataService {
     this.images.push({
       id: 43,
       name: "Will inherit the Kingdom of God (verses)",
-      description: `Also, unless you become like a little child you will by no means enter into the kingdom of heaven.`,
+      description: `Only the new creation will inherit all these things. Those who are sons of God have been given the Spirit of the Son; and if we be sons, we also be hiers of the kingdom.
+      All things belong to us in Christ, and we belong to Christ, and Christ belongs to God.`,
       footer: "It is clear, these WILL inherit the Kingdom of heaven...",
       fileName: "willinheritverses.webp",
       originUrl: "https://res.cloudinary.com/dffihsa2y/image/upload/v1711735327/teach/willnotinheritverses_vzafs5.webp",
@@ -573,7 +588,9 @@ export class DataService {
     this.images.push({
       id: 44,
       name: "Will inherit the Kingdom of God (grouping)",
-      description: ``,
+      description: `Oh, the purity of the gospel! Being content is thankfulness, purity is speaking truth, and morality is the righteousness by faith.
+      What does God ask from us, but what He does for us? He makes us thankful for His grace, He saves us by His truth, and He makes us righteous by faith in Him!
+      Oh, how perfect and beautiful is the Lord, my God!`,
       footer: "It is clear, these WILL inherit the Kingdom of heaven...",
       fileName: "willinheritbucket.webp",
       originUrl: "https://res.cloudinary.com/dffihsa2y/image/upload/v1711735327/teach/willinheritbucket_fx9boh.webp",
@@ -582,7 +599,9 @@ export class DataService {
     this.images.push({
       id: 45,
       name: "Will not inherit the Kingdom of God (grouping)",
-      description: ``,
+      description: `Coveteousness results from being unthankful, desiring and lusting after other's possessions.
+      Impurity comes from falsehood, for from the mouth comes defilement. And, sin comes from not believing in Christ.
+      Believe in God, loved ones.`,
       footer: "It is clear, these WILL NOT inherit the Kingdom of heaven...",
       fileName: "willnotinheritbucket.webp",
       originUrl: "https://res.cloudinary.com/dffihsa2y/image/upload/v1712630408/teach/willnotinheritbucket_l3vyi1.webp",
@@ -591,7 +610,9 @@ export class DataService {
     this.images.push({
       id: 46,
       name: "The Word of Life",
-      description: ``,
+      description: `We have no life unless we abide in Christ. He is so great and merciful, making Himself available to us all by faith.
+      How we can do utterly nothing of value apart from God. If we wish to have fruit, we must be in God.
+      Even the Son said, 'Why do you call Me good? Only God is good'. Our righteousness comes from what we see our Father doing in Christ.`,
       footer: "These are words of spirit & truth from the Word of Life...",
       fileName: "theWordofLife.webp",
       originUrl: "https://res.cloudinary.com/dffihsa2y/image/upload/v1712630408/teach/theWordofLife_qtalbz.webp",
@@ -600,7 +621,11 @@ export class DataService {
     this.images.push({
       id: 47,
       name: "The Father & the Son, the Son & the Church",
-      description: ``,
+      description: `How the Father is to the Son, the Son is to His Church. The Son is the Mediater between us and God.
+      He obeyed God perfectly. What the Father commanded of the Son, so the Son commands us.
+      There is one who plans and another who executes, even as it is in football: the coaches make the game plan and the players execute.
+      Likewise, the Father's good plan was it to send the Son in the world and the Son sends His disciples out to be a light into the world.
+      He is our Mind and He gives us His mind, so that we may know the will of the Father and do.`,
       footer: "As the Father is to the Son, so the Son is to the church...",
       fileName: "Father&Son.webp",
       originUrl: "https://res.cloudinary.com/dffihsa2y/image/upload/v1712630408/teach/Father_Son_lbtri6.webp",
@@ -609,7 +634,10 @@ export class DataService {
     this.images.push({
       id: 48,
       name: "New Wine & Wineskins",
-      description: ``,
+      description: `Ah! I am like a wineskin ready to burst! The law says, "Speak not", but the Spirit says, "Speak".
+      The Holy Spirit bubbles up within us - let it come from out of us! The Father has given us the mind of Christ to speak His word.
+      Any mixture is hypocrisy! New wine in old wineskins is a mixture; and mixture is impurity. All hypocrisy is leaven; hypocrisy is sin.
+      Walk in the truth! Beware of all hypocrisy! Why do you fast? Why do you pray? Why do you read? If you're answer is not because you love for God, you may be in hypocrisy!`,
       footer: "The new wine in the new wineskins...",
       fileName: "wineskins.webp",
       originUrl: "https://res.cloudinary.com/dffihsa2y/image/upload/v1712630408/teach/wineskins_nkx8o9.webp",
