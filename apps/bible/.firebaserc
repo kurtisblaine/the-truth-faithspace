@@ -1,13 +1,13 @@
 {
   "projects": {
-    "default": "the-truth-as-in-the-beginning",
-    "the-truth-as-in-the-beginning": "bible-truth-the-true-one"
+    "default": "the-truth-from-the-beginning",
+    "the-truth-from-the-beginning": "bible-truth-the-true-one"
   },
   "targets": {
     "bible-truth-the-true-one": {
       "hosting": {
         "bible": [
-          "the-truth-as-in-the-beginning"
+          "the-truth-from-the-beginning"
         ]
       }
     }
