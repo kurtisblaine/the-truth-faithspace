@@ -19,5 +19,5 @@ jobs:
           repoToken: ${{ secrets.GITHUB_TOKEN }}
           firebaseServiceAccount: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_BIBLE_TRUTH_THE_TRUE_ONE }}
           channelId: live
-          projectId: the-truth-as-in-the-beginning
+          projectId: the-truth-from-the-beginning
           entryPoint: ./apps/bible
