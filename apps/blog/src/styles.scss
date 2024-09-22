@@ -107,3 +107,9 @@ a {
 .mat-drawer-container {
   background-color: white !important;
 }
+
+.container-form {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
