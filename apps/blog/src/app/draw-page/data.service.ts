@@ -11,6 +11,20 @@ export class DataService {
     if (this.images.length) return this.images;
 
     this.images.push({
+      id: 3,
+      name: "The Gospel",
+      description: `Even though a believer is saved, as he sits with Christ in heavenly places,
+       we must walk in the Spirit and sow to the Spirit and stand against the wiles of the enemy;
+       and endurance until the end, holding fast to the Gospel which we first came to believe.
+       I will call to remembrance seasoned vets in the Lord the scripture of Ezekiel 16: what God has done for us isn't because we're so great,
+       but because we were so helpless; God's grace had nothing to do with us, He gave us love unmerited, so if we boast, we boast in Christ.`,
+      footer: "Jesus has done everything for us, and we are His work, we enter into His rest...",
+      originUrl: "https://res.cloudinary.com/dffihsa2y/image/upload/v1711590205/teach/gospel_cxqott.webp",
+      video: "bZsUhZAH6Hg",
+      fileName: "gospel.webp",
+    });
+
+    this.images.push({
       id: 0,
       name: "Covenant Promise",
       description: `The promise is available to everyone that is what I mean by putting 'unconditional' on the top.
@@ -19,7 +33,7 @@ export class DataService {
         The promise is the foundation of the covenant - without the proimse, there is no covenant.
         Believe the promise and enter into covenant with God; this is the entrance into the new covenant and the terms of the covenant - our faith.
         Christ died - and what's more? He lives on!`,
-      footer: "We enter into the Covenant of Promise, the New covenant, by believing in the Promise of God...",
+      footer: "The promise, then the covenant founded on the promise...",
       originUrl: "https://res.cloudinary.com/dffihsa2y/image/upload/v1711590185/teach/covenantpromise_lq6374.webp",
       video: "FHfh48WzFcU",
       fileName: "covenantpromise.webp",
@@ -28,7 +42,8 @@ export class DataService {
     this.images.push({
       id: 1,
       name: "Being a child of the Day",
-      description: `The Lord will come as thief to those in the night, but Lord and Savior, bringing salvation, to those who are of the day, watching in prayer for His coming.`,
+      description: `The Lord will come as thief to those in the night, but Lord and Savior, bringing salvation, to those who are of the day,
+       watching in prayer for His coming and against the enemy of darkness.`,
       footer: "Be of the Day, a child of the Light, servants of the Lord...",
       fileName: "daynight.webp",
 
@@ -38,7 +53,10 @@ export class DataService {
     this.images.push({
       id: 2,
       name: "Fear of the Lord",
-      description: `This is wisdom. To perfect wisdom: continue to fear the LORD. In God's wisdom, He proclaims this is the wisest thing for us to do. Ruminate, you clean ones, on the fear of the LORD. He is, was, and is yet to come. When He comes, He will render to each one according to his works and He judges impartially. The Word of the LORD is life. He is True. All who believe in Him set their seal to this: God is true. Let every man be a liar and God be true.`,
+      description: `This is wisdom.
+      To perfect wisdom: continue to fear the LORD. In God's wisdom, He proclaims this is the wisest thing for us to do.
+      Ruminate, you clean ones, on the fear of the LORD. He is, was, and is yet to come. When He comes, He will render to each one according to his works and He judges impartially.
+      The Word of the LORD is life. He is True. All who believe in Him set their seal to this: God is true. Let every man be a liar and God be true.`,
       footer: "The fear of the Lord produces humility and a righteous hatred...",
       fileName: "fearLord.webp",
       video: "O--SQdICRVk",
@@ -46,19 +64,10 @@ export class DataService {
     });
 
     this.images.push({
-      id: 3,
-      name: "The Gospel",
-      description: `Even though a believer is saved, as he sits with Christ in heavenly places, we must walk in the Spirit and sow to the Spirit and stand against the wiles of the enemy; also endurance until the end, holding fast to the Gospel which we first came to believe. Therefore, let us remember in humility of mind that we are not better than anyone, but through our conduct in a dark world, we can save through the transformation of Christ in us. I will call to remembrance seasoned vets in the Lord the scripture of Ezekiel 16: what God has done for us isn't because we're so great but because we were so helpless; God's grace had nothing to do with us, He gave us love unmerited, so if we boast, we boast in Christ.`,
-      footer: "Jesus has done everything for us, and we are His work, we enter into His rest...",
-      originUrl: "https://res.cloudinary.com/dffihsa2y/image/upload/v1711590205/teach/gospel_cxqott.webp",
-      video: "bZsUhZAH6Hg",
-      fileName: "gospel.webp",
-    });
-
-    this.images.push({
       id: 4,
       name: "Reproach, Reprove, Rebuke, Reprimand",
-      description: `The prefix 'Re' means going back; this would mean going back to the truth and constantly remembering it. Discipline is the way to life; a fool doesn't listen to wise concil, but the wise take heed.`,
+      description: `The prefix 'Re' means going back; this would mean going back to the truth and constantly remembering it.
+       Discipline is the way to life; a fool doesn't listen to wise concil, but the wise take heed.`,
       footer: "Differences between all the 're' words and understanding the prefix...",
       originUrl: "https://res.cloudinary.com/dffihsa2y/image/upload/v1711590232/teach/re_g8fwmi.webp",
       fileName: "re.webp",
@@ -67,7 +76,8 @@ export class DataService {
     this.images.push({
       id: 5,
       name: "Sanctification Explained",
-      description: `Going from what is earthly (south, or below) to what is heavenly (north, or above); from what is wrong (left, west) to the right (right, or east) being sanctified.
+      description: `Going from what is earthly (south, or below) to what is heavenly (north, or above);
+      from what is wrong (left, west) to the right (right, or east) being sanctified.
       Going from what is made with human hands, to that which is made not with hands; Going from what pleases men, to what pleases God.`,
       footer: "Moving away from earthly things to heavenly things...",
       fileName: "sanctification.webp",
@@ -78,7 +88,8 @@ export class DataService {
     this.images.push({
       id: 49,
       name: "Justification and Salvation",
-      description: `Just as the body without the spirit is dead, so faith without works is dead. Only living faith will save you, made possible only because of the Living Sacrifice of Christ.`,
+      description: `Just as the body without the spirit is dead, so faith without works is dead.
+      Only living faith will save you, made possible only because of the Living Sacrifice of Christ. How beautiful this truth is!`,
       footer: "Justified by Christ, Faith that saves...",
       fileName: "justificationandsalvation.webp",
       originUrl:
@@ -88,7 +99,8 @@ export class DataService {
     this.images.push({
       id: 50,
       name: "Biblical Separation",
-      description: `Discerning between the clean and the unclean, separating from men who act like unclean animals.`,
+      description: `Discerning between the clean and the unclean, separating from men who act like unclean animals.
+      Be separate from them, lest they corrupt you.`,
       footer: "When to separate from believers and unbelievers...",
       fileName: "biblicalseparation.webp",
       originUrl: "https://res.cloudinary.com/dffihsa2y/image/upload/v1721004824/teach/biblicalseparation_e1udhr.webp",
@@ -96,8 +108,10 @@ export class DataService {
 
     this.images.push({
       id: 51,
-      name: "Israel Camp",
-      description: `The same it is today, we are led by the Spirit of God. All the tribes followed the pillar of cloud by day and the pillar of fire by night.`,
+      name: "Israel Marching Order",
+      description: `The same it is today, we are led by the Spirit of God.
+      All the tribes followed the pillar of cloud by day and the pillar of fire by night.
+      Isarel was the first church and an example to us in these latter days (1 Corinthians 10).`,
       footer: "How the hosts of the LORD were sent out...",
       fileName: "israelcamp.webp",
       originUrl: "https://res.cloudinary.com/dffihsa2y/image/upload/v1721004824/teach/israelcamp_mrnxqw.webp",
@@ -107,11 +121,9 @@ export class DataService {
       id: 6,
       name: "Sin, Righteousness, Judgement",
       description: `When we believe in Christ, our sins are forgiven by grace;
-        however, it's not a means to continue on sinning deliberately and continuously while claiming grace.
+        however, it's not a means to continue on sinning deliberately while claiming grace.
         That would get us into the realm of unforgivable sins which are not covered by the Blood of Christ.
-        We are made right or justified by God because of our faith in Jesus. God was not unjust when He justified us through Christ;
-        When He punished His Son, we were likewise condemned on the cross, He was substituted  for us and as us;
-        When we know that, we will walk in Truth through the knowledge of Christ, who is Knowledge Himself and Wisdom.
+        We are made right by God because of our faith in Jesus. God was not unjust when He justified us through Christ;
         His sacrifice is sufficient for us in order to draw us near to God.`,
       footer: "Elaborating John 16: 8-11...",
       fileName: "john16.webp",
@@ -147,6 +159,17 @@ export class DataService {
       originUrl: "https://res.cloudinary.com/dffihsa2y/image/upload/v1711590174/teach/armorofGod_h3blcr.webp",
     });
 
+    this.images.push({
+      id: 20,
+      name: "The Lion & the Lamb",
+      description: `Abraham gave his one and only son, Isaac, as a sacrifice; and Jacob gave up his one and only son Benjamin as a sacrifice.
+      These represent Jesus, who God gave up for the sins of the world, because of His great love for us, giving up His beloved Son whom He loves.`,
+      footer: "Similarities between Isaac and Benjamin prophesying about Jesus...",
+      fileName: "Jesuslionlamb.webp",
+
+      originUrl: "https://res.cloudinary.com/dffihsa2y/image/upload/v1711590217/teach/Jesuslionlamb_y91dzk.webp",
+    });
+
     // this.images.push({
     //   id: 9,
     //   name: "The Armor of God",
@@ -165,6 +188,57 @@ export class DataService {
     // });
 
     this.images.push({
+      id: 24,
+      name: "Repent & Believe",
+      description: `Repentance is salvation. How can one be saved unless they repent of dead works?
+      Are they not what we need saving from? Do not be deceived:
+      God forgives us through Christ and He died for us and nullified the power of sin, since we are made right through faith in Jesus Christ.
+      Christ saves: Come to the knowledge of Him and be set free from sin through the Truth.
+      Unless you believe Jesus is He, you will die in your sins. Jesus is Lord and the Powerful one able to save.`,
+      footer: "The response to the Gospel to all who have heard and believed unto new life...",
+      fileName: "repentandbelieve.webp",
+
+      originUrl: "https://res.cloudinary.com/dffihsa2y/image/upload/v1711590234/teach/repentandbelieve_nq987c.webp",
+      video: "Jl7k4Iu9mKs",
+    });
+
+    this.images.push({
+      id: 25,
+      name: "Run the Race of Faith",
+      description: `The race is from start to finish by faith. We race for the eternal crown of life.`,
+      footer: "To live the life of faith, is to be like an athlete, running a race...",
+      fileName: "runtherace.webp",
+
+      originUrl: "https://res.cloudinary.com/dffihsa2y/image/upload/v1711590238/teach/runtherace_pnfqmo.webp",
+    });
+
+    this.images.push({
+      id: 38,
+      name: "Grace and Truth",
+      description: `The Law is physical; the Gospel is spiritual. Greater is the Spirit than the flesh.
+      Through the Law comes a knowledge of sin; but through grace and truth come the knowledge of God.
+      We have a choice which tree we are to eat from. God has restored to us one command: believe.
+      Enter into covenant with God through His oath.`,
+      footer: "The Law revealed the coinscience through the written code, grace & truth revealed in Christ...",
+      fileName: "grace&truth.webp",
+
+      originUrl: "https://res.cloudinary.com/dffihsa2y/image/upload/v1711735327/teach/grace_truth_loj0u0.webp",
+    });
+
+    this.images.push({
+      id: 41,
+      name: "Worship the Father in spirit and truth",
+      description: `The Law gives power to pride and sin; it empowers sin within us. Through the law comes a false sense of worship.
+      However, through the Spirit, can we ever worship the Father as He intended us to: in spirit and truth.
+      We attribute proper worth to God who makes the temple holy rather than the temple itself. The Law honors the temple more than God who sanctifies the temple.
+      Everything about the law is physical; however, the Spirit trumps over the flesh. Our bodies are the temples where the Holy Spirit resides.`,
+      footer: "How the world worships God in the ways He does not desire, but how we're called to worship...",
+      fileName: "TrueWorship.webp",
+
+      originUrl: "https://res.cloudinary.com/dffihsa2y/image/upload/v1711735327/teach/TrueWorship_prs84a.webp",
+    });
+
+    this.images.push({
       id: 10,
       name: "You must be Born again of Water and Fire",
       description: `The baptism of water is that of repentance. John the Baptist was the first apostle sent by God to proclaim water baptism, confession of sin and
@@ -174,7 +248,8 @@ export class DataService {
       we will be caught up in the heavens and will not perish along with the rest of the world. The main point of baptism in water is an appeal to God for a good conscience.
       Our conscience has been defiled and corrupted from this world and it's necessary to appeal to God for a cleansed one through Christ's sacrifice.
       Baptism is burial; burial with Christ. No-one qualifies for burial unless they are first dead; likewise, we must first be dead to sin, confessing and repenting of sin
-      to qualify for baptism. The Holy Spirit is given to those who have believed in God's Son and obey Him. The cloud by day and fire by night that lead the Israelites out of Egypt is the Holy Spirit -- again, Spirit (wind) and Fire.
+      to qualify for baptism. This comes through faith in the message. The Holy Spirit is given to those who have believed in God's Son and obey Him.
+      The cloud by day and fire by night that lead the Israelites out of Egypt is the Holy Spirit -- again, Spirit (wind) and Fire.
       They followed the pillar, as we follow the Spirit. They were baptized as followers of Moses through the red sea, as we are of Christ.
       They ate the same spiritual manna, just as we eat of the same sacrifice that those who worked at the Tabernacle had no right to eat -- Christ's flesh.
       And we drink of the same Spirit (1 Cor 12:13) as they did in the wilderness which was the Rock, or Christ, Who traveled with them.
@@ -193,10 +268,46 @@ export class DataService {
       No! Such a faith has no merit in reality and it is a delusion, but a faith that lives and moves and has it's being in reality is good and can save if we hold fast.
       We build our house upon the rock, if when things are good, we obey the Gospel of God: how can we stand when calamity comes if we don't even obey when things are good?
       Jesus Christ is the Rock. We believe in Him and also follow after Him: following Him is doing the things He did when He was on earth - He is the Example, He is the Way.`,
-      footer: "How do you know if you're well built, only by the testing of calamity...",
+      footer: "How do you know if you're well built, only by testing...",
       fileName: "buildingontheRock.webp",
 
       originUrl: "https://res.cloudinary.com/dffihsa2y/image/upload/v1711590180/teach/buildingontheRock_mxzsvs.webp",
+    });
+
+    this.images.push({
+      id: 46,
+      name: "The Word of Life",
+      description: `We have no life unless we abide in Christ. He is so great and merciful, making Himself available to us all by faith.
+      How we can do utterly nothing of value apart from God. If we wish to have fruit, we must be in God.
+      Even the Son said, 'Why do you call Me good? Only God is good'. Our righteousness comes from what we see our Father doing in Christ.`,
+      footer: "These are words of spirit & truth from the Word of Life...",
+      fileName: "theWordofLife.webp",
+      originUrl: "https://res.cloudinary.com/dffihsa2y/image/upload/v1712630408/teach/theWordofLife_qtalbz.webp",
+    });
+
+    this.images.push({
+      id: 47,
+      name: "The Father & the Son, the Son & the Church",
+      description: `How the Father is to the Son, the Son is to His Church. The Son is the Mediater between us and God.
+      He obeyed God perfectly. What the Father commanded of the Son, so the Son commands us.
+      There is one who plans and another who executes, even as it is in football: the coaches make the game plan and the players execute.
+      Likewise, the Father's good plan was it to send the Son in the world and the Son sends His disciples out to be a light into the world.
+      He is our Mind and He gives us His mind, so that we may know the will of the Father and do.`,
+      footer: "As the Father is to the Son, so the Son is to the church...",
+      fileName: "Father&Son.webp",
+      originUrl: "https://res.cloudinary.com/dffihsa2y/image/upload/v1712630408/teach/Father_Son_lbtri6.webp",
+    });
+
+    this.images.push({
+      id: 48,
+      name: "New Wine & Wineskins",
+      description: `Ah! I am like a wineskin ready to burst! The law says, "Speak not", but the Spirit says, "Speak".
+      The Holy Spirit bubbles up within us - let it come from out of us! The Father has given us the mind of Christ to speak His word.
+      Any mixture is hypocrisy! New wine in old wineskins is a mixture; and mixture is impurity. All hypocrisy is leaven; hypocrisy is sin.
+      Walk in the truth! Beware of all hypocrisy! Why do you fast? Why do you pray? Why do you read? If you're answer is not because you love for God, you may be in hypocrisy!`,
+      footer: "The new wine in the new wineskins...",
+      fileName: "wineskins.webp",
+      originUrl: "https://res.cloudinary.com/dffihsa2y/image/upload/v1712630408/teach/wineskins_nkx8o9.webp",
     });
 
     // this.images.push({
@@ -209,7 +320,6 @@ export class DataService {
     //   footer: "All items in the Tabernacle have a covering...",
     //   originUrl: "https://res.cloudinary.com/dffihsa2y/image/upload/v1711590183/teach/courtyard_atzssw.webp",
     //   fileName: "courtyard.webp",
-
     // });
 
     this.images.push({
@@ -218,7 +328,8 @@ export class DataService {
       description: `Of the day, we are sober, in our right mind and attentive, watchful in prayer. Those of the night are drunk, out of their right mind, unaware and foolish.
       The day of the Lord will come as a thief in the night: to those in the Day, who are watchful waiting for Him, it will be day; otherwise, it will be night to the others.
       Wouldn't it be better, you may ask, if the Lord told us when He was coming, so we would be ready? No. We are to be alert at all times, expecting His coming every day.
-      Otherwise, we may think to ourselves, my Master is a long time in coming, I will take an easy and be merry. Then He will come unexpectedly, catching that one off guard, assigning him to a place with the hypocrites.
+      Otherwise, we may think to ourselves, my Master is a long time in coming, I will take an easy and be merry.
+      Then He will come unexpectedly, catching that one off guard, assigning him to a place with the hypocrites.
       This so called wisdom is folly.`,
       footer: "The day of the Lord vs the night of the thief...",
       fileName: "dayoftheLord.webp",
@@ -231,9 +342,12 @@ export class DataService {
       name: "Our union with Christ: past, present, and future",
       description: `We have died with Christ, crucified with Him, pinning our desires and intents of our wicked heart to the cross, putting to death our sinful nature.
       By God's gift, we have received through faith in Christ new life, having been crucified with Him and baptized in His death, buried with Him for the forgiveness of sins.
-      These things are referring to the past, if we have believed they are our past. Our present life is living in death! Picking up our cross, removing dark deeds, and nailing to the cross anything fleshly & earthly within us.
-      But by the resurrection of Christ, we put Him on as new clothes, and we are the living sacrifice unto God, putting on also the shinning armor of righteous living, the armor of God, living by His Spirit.
-      Our future is also tied up in Christ: transformation of these lowly bodies into glorious spiritual bodies and the resurrection of the dead on the last day. We see that Christ's death must work in us so that His life will also be revealed in us.
+      These things are referring to the past, if we have believed they are our past. Our present life is living in death!
+      Picking up our cross, removing dark deeds, and nailing to the cross anything fleshly & earthly within us.
+      But by the resurrection of Christ, we put Him on as new clothes;
+      and we are the living sacrifice unto God, putting on also the shinning armor of righteous living, the armor of God, living by His Spirit.
+      Our future is also tied up in Christ: transformation of these lowly bodies into glorious spiritual bodies and the resurrection of the dead on the last day.
+      We see that Christ's death must work in us so that His life will also be revealed in us.
       `,
       footer: "Death must work in us, so that His life will also be revealed in us...",
       fileName: "deathandlife.webp",
@@ -258,7 +372,7 @@ export class DataService {
 
     this.images.push({
       id: 16,
-      name: "Jesus, the First & Last, the Beginning & End, the Alpha & Omega",
+      name: "Jesus, the First & the Last",
       description: `The Lord Jesus has no beginning or end, but He is the Beginning and End. He was last on earth, and the Father exalted Him as first of all.
       He is the eldest, yet He is the firstborn, for He existed from the beginning. He is the complete Word: the Alpha and the Omega.`,
       footer: "Jesus was Servant of all & now, is First in heaven: Lord of Lords and King of Kings...",
@@ -300,17 +414,6 @@ export class DataService {
     });
 
     this.images.push({
-      id: 20,
-      name: "The Lion & the Lamb",
-      description: `Abraham gave his one and only son, Isaac, as a sacrifice; and Jacob gave up his one and only son Benjamin as a sacrifice.
-      These represent Jesus, who God gave up for the sins of the world, because of His great love for us, giving up His beloved Son whom He loves.`,
-      footer: "Similarities between Isaac and Benjamin prophesying about Jesus...",
-      fileName: "Jesuslionlamb.webp",
-
-      originUrl: "https://res.cloudinary.com/dffihsa2y/image/upload/v1711590217/teach/Jesuslionlamb_y91dzk.webp",
-    });
-
-    this.images.push({
       id: 21,
       name: "The Day of Judgement",
       description: `Before each judgement are a series of events: a gathering of nations, thrones setup, dead raised or the sleep raised, and finally, judgement.
@@ -326,7 +429,8 @@ export class DataService {
       id: 22,
       name: "The Land of Inhabitation",
       description: `There are four soils the Lord spoke about; there are also four different lands Israel were in.
-      There is one soil which is good soil and fruitful: this represents the land of promise. The other three soils were unfruitful, same with the three lands Israel were in throughout history.
+      There is one soil which is good soil and fruitful: this represents the land of promise.
+      The other three soils were unfruitful, same with the three lands Israel were in throughout history.
       The wilderness represents the seed that was scorched and had no root. The thorns would be the land of Exile which were choked out.
       I would consider Bondage and Slavery, the rocky soil, which the birds ate, since oppression comes from the evil one.`,
       footer: "Which land are you currently residing in (only four options)...",
@@ -343,27 +447,6 @@ export class DataService {
       fileName: "oneGod.webp",
 
       originUrl: "https://res.cloudinary.com/dffihsa2y/image/upload/v1711590229/teach/oneGod_vv0hh8.webp",
-    });
-
-    this.images.push({
-      id: 24,
-      name: "Repent & Believe",
-      description: `Repentance is salvation. How can one be saved unless they repent of dead works? Are they not what we need saving from? Do not be deceived. God forgives us through Christ and He died for us and nullified the power of sin, since we are made right through faith in Jesus Christ. Christ saves: Come to the knowledge of Him and be set free from sin through the Truth. Unless you believe Jesus is He, you will die in your sins. Jesus is Lord and the Powerful one. `,
-      footer: "The response to the Gospel to all who have heard and believed unto new life...",
-      fileName: "repentandbelieve.webp",
-
-      originUrl: "https://res.cloudinary.com/dffihsa2y/image/upload/v1711590234/teach/repentandbelieve_nq987c.webp",
-      video: "Jl7k4Iu9mKs",
-    });
-
-    this.images.push({
-      id: 25,
-      name: "Run the Race of Faith",
-      description: `The race is from start to finish by faith. We race for the eternal crown of life.`,
-      footer: "To live the life of faith, is to be like an athlete, running a race...",
-      fileName: "runtherace.webp",
-
-      originUrl: "https://res.cloudinary.com/dffihsa2y/image/upload/v1711590238/teach/runtherace_pnfqmo.webp",
     });
 
     this.images.push({
@@ -515,19 +598,6 @@ export class DataService {
     });
 
     this.images.push({
-      id: 38,
-      name: "Grace and Truth",
-      description: `The Law is physical; the Gospel is spiritual. Greater is the Spirit than the flesh.
-      Through the Law comes a knowledge of sin; but through grace and truth come the knowledge of God.
-      We have a choice which tree we are to eat from. God has restored to us one command: believe.
-      Enter into covenant with God through His oath.`,
-      footer: "The Law revealed the coinscience through the written code, grace & truth revealed in Christ...",
-      fileName: "grace&truth.webp",
-
-      originUrl: "https://res.cloudinary.com/dffihsa2y/image/upload/v1711735327/teach/grace_truth_loj0u0.webp",
-    });
-
-    this.images.push({
       id: 39,
       name: "The Father and the Son and the Holy Spirit",
       description: `The Father and the Son and the Spirit are equal. Many great men came from God: Samson, John the Baptist, Moses, David, etc.
@@ -554,19 +624,6 @@ export class DataService {
     });
 
     this.images.push({
-      id: 41,
-      name: "Worship the Father in spirit and truth",
-      description: `The Law gives power to pride and sin; it empowers sin within us. Through the law comes a false sense of worship.
-      However, through the Spirit, can we ever worship the Father as He intended us to: in spirit and truth.
-      We attribute proper worth to God who makes the temple holy rather than the temple itself. The Law honors the temple more than God who sanctifies the temple.
-      Everything about the law is physical; however, the Spirit trumps over the flesh. Our bodies are the temples where the Holy Spirit resides.`,
-      footer: "How the world worships God in the ways He does not desire, but how we're called to worship...",
-      fileName: "TrueWorship.webp",
-
-      originUrl: "https://res.cloudinary.com/dffihsa2y/image/upload/v1711735327/teach/TrueWorship_prs84a.webp",
-    });
-
-    this.images.push({
       id: 42,
       name: "Will NOT inherit the Kingdom of God (verses)",
       description: `Test yourself to see if any of these apply to you. Only the new creation can inherit the new heaven and the new earth.
@@ -579,7 +636,8 @@ export class DataService {
     this.images.push({
       id: 43,
       name: "Will inherit the Kingdom of God (verses)",
-      description: `Only the new creation will inherit all these things. Those who are sons of God have been given the Spirit of the Son; and if we be sons, we also be hiers of the kingdom.
+      description: `Only the new creation will inherit all these things.
+      Those who are sons of God have been given the Spirit of the Son; and if we be sons, we also be hiers of the kingdom.
       All things belong to us in Christ, and we belong to Christ, and Christ belongs to God.`,
       footer: "It is clear, these WILL inherit the Kingdom of heaven...",
       fileName: "willinheritverses.webp",
@@ -608,42 +666,10 @@ export class DataService {
       originUrl: "https://res.cloudinary.com/dffihsa2y/image/upload/v1712630408/teach/willnotinheritbucket_l3vyi1.webp",
     });
 
-    this.images.push({
-      id: 46,
-      name: "The Word of Life",
-      description: `We have no life unless we abide in Christ. He is so great and merciful, making Himself available to us all by faith.
-      How we can do utterly nothing of value apart from God. If we wish to have fruit, we must be in God.
-      Even the Son said, 'Why do you call Me good? Only God is good'. Our righteousness comes from what we see our Father doing in Christ.`,
-      footer: "These are words of spirit & truth from the Word of Life...",
-      fileName: "theWordofLife.webp",
-      originUrl: "https://res.cloudinary.com/dffihsa2y/image/upload/v1712630408/teach/theWordofLife_qtalbz.webp",
+    return this.images.sort((a, b) => {
+      if (a.name < b.name) return -1;
+      if (a.name > b.name) return 1;
+      return 0;
     });
-
-    this.images.push({
-      id: 47,
-      name: "The Father & the Son, the Son & the Church",
-      description: `How the Father is to the Son, the Son is to His Church. The Son is the Mediater between us and God.
-      He obeyed God perfectly. What the Father commanded of the Son, so the Son commands us.
-      There is one who plans and another who executes, even as it is in football: the coaches make the game plan and the players execute.
-      Likewise, the Father's good plan was it to send the Son in the world and the Son sends His disciples out to be a light into the world.
-      He is our Mind and He gives us His mind, so that we may know the will of the Father and do.`,
-      footer: "As the Father is to the Son, so the Son is to the church...",
-      fileName: "Father&Son.webp",
-      originUrl: "https://res.cloudinary.com/dffihsa2y/image/upload/v1712630408/teach/Father_Son_lbtri6.webp",
-    });
-
-    this.images.push({
-      id: 48,
-      name: "New Wine & Wineskins",
-      description: `Ah! I am like a wineskin ready to burst! The law says, "Speak not", but the Spirit says, "Speak".
-      The Holy Spirit bubbles up within us - let it come from out of us! The Father has given us the mind of Christ to speak His word.
-      Any mixture is hypocrisy! New wine in old wineskins is a mixture; and mixture is impurity. All hypocrisy is leaven; hypocrisy is sin.
-      Walk in the truth! Beware of all hypocrisy! Why do you fast? Why do you pray? Why do you read? If you're answer is not because you love for God, you may be in hypocrisy!`,
-      footer: "The new wine in the new wineskins...",
-      fileName: "wineskins.webp",
-      originUrl: "https://res.cloudinary.com/dffihsa2y/image/upload/v1712630408/teach/wineskins_nkx8o9.webp",
-    });
-
-    return this.images;
   }
 }
