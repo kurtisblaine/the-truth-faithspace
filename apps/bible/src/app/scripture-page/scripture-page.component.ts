@@ -84,10 +84,10 @@ export class ScripturePageComponent implements OnInit, OnDestroy {
 
   public onNextArrowClick(scripture: Scripture) {
     this.store.dispatch(ChaptersActions.selectChapter({ id: scripture.data.next.id }));
-    this.store.dispatch(BooksActions.selectBook({ id: scripture.data.previous.bookId }));
+    this.store.dispatch(BooksActions.selectBook({ id: scripture.data.next.bookId }));
 
     this.router.navigateByUrl(
-      `tongue/${this.languageName}/bible/${this.bibleId}/book/${scripture.data.previous.bookId}/chapter/${scripture.data.next.id}`,
+      `tongue/${this.languageName}/bible/${this.bibleId}/book/${scripture.data.next.bookId}/chapter/${scripture.data.next.id}`,
       { onSameUrlNavigation: "reload", replaceUrl: true }
     );
   }
