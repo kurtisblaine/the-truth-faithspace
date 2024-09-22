@@ -5,5 +5,9 @@
   <h6 class="mat-caption">
     "The beginning of wisdom is this: Get wisdom, and whatever you get, get insight." [Proverbs 4:7]
   </h6>
+  @if(isLoading$ | async) {
+  <mat-spinner></mat-spinner>
+  } @else {
   <blog-insight-list></blog-insight-list>
+  }
 </div>

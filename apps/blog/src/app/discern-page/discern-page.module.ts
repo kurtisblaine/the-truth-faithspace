@@ -2,6 +2,7 @@ import { CommonModule } from "@angular/common";
 import { NgModule } from "@angular/core";
 import { MatButtonModule } from "@angular/material/button";
 import { MatDividerModule } from "@angular/material/divider";
+import { MatProgressSpinnerModule } from "@angular/material/progress-spinner";
 import { RouterModule, Routes } from "@angular/router";
 import { SharedModule } from "../shared/shared.module";
 import { DiscernDetailComponent } from "./discern-detail/discern-detail.component";
@@ -15,15 +16,12 @@ const routes: Routes = [
   { path: "discernment-detail/:id", component: DiscernDetailComponent },
 ];
 @NgModule({
-  declarations: [
-    DiscernListComponent,
-    DiscernPageComponent,
-    DiscernDetailComponent,
-  ],
+  declarations: [DiscernListComponent, DiscernPageComponent, DiscernDetailComponent],
   imports: [
     CommonModule,
     RouterModule.forChild(routes),
     MatDividerModule,
+    MatProgressSpinnerModule,
     SharedModule,
     MatButtonModule,
   ],

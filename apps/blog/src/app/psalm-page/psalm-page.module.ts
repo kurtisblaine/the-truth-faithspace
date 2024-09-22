@@ -2,6 +2,7 @@ import { CommonModule } from "@angular/common";
 import { NgModule } from "@angular/core";
 import { MatButtonModule } from "@angular/material/button";
 import { MatDividerModule } from "@angular/material/divider";
+import { MatProgressSpinnerModule } from "@angular/material/progress-spinner";
 import { RouterModule, Routes } from "@angular/router";
 import { SharedModule } from "../shared/shared.module";
 import { PsalmDetailComponent } from "./psalm-detail/psalm-detail.component";
@@ -21,6 +22,7 @@ const routes: Routes = [
     SharedModule,
     RouterModule.forChild(routes),
     MatDividerModule,
+    MatProgressSpinnerModule,
     MatButtonModule,
   ],
   exports: [PsalmListComponent],
