@@ -4,11 +4,16 @@
       <mat-list-item lines="1" (click)="goHome(); drawer.close()">
         <fa-icon matListItemIcon [icon]="homeIcon" [size]="'lg'"></fa-icon>
         <span matListItemTitle>Welcome</span>
-        <!-- <span matListItemLine>here is a welcome message</span> -->
       </mat-list-item>
       <mat-divider></mat-divider>
 
       <div mat-subheader>Truth</div>
+      <mat-list-item lines="3" (click)="openBible()">
+        <fa-icon matListItemIcon [icon]="bookIcon" [size]="'lg'"></fa-icon>
+        <span matListItemTitle>The Holy Bible</span>
+        <span>let God be true and every man a liar.</span>
+      </mat-list-item>
+
       <mat-list-item lines="3" (click)="goGospel(); drawer.close()">
         <fa-icon matListItemIcon [icon]="gospelIcon" [size]="'lg'"></fa-icon>
         <span matListItemTitle>The Good News</span>
@@ -48,7 +53,7 @@
       <mat-list-item lines="3" (click)="goTracts(); drawer.close()">
         <fa-icon matListItemIcon [icon]="tractIcon" [size]="'lg'"></fa-icon>
         <span matListItemTitle>Tract</span>
-        <span>letters to communicate truth in a quick & effective way.</span>
+        <span>tracts to communicate truth in a quick & effective way.</span>
       </mat-list-item>
 
       <!-- <mat-divider></mat-divider>
