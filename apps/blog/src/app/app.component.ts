@@ -2,6 +2,7 @@ import { AfterViewInit, Component, ElementRef, OnInit, ViewChild } from "@angula
 import { Router } from "@angular/router";
 import {
   faBars,
+  faBible,
   faBrain,
   faDumbbell,
   faEnvelope,
@@ -35,6 +36,7 @@ export class AppComponent implements OnInit, AfterViewInit {
   public tractIcon = faFile;
   public resourceIcon = faLink;
   public gospelIcon = faNewspaper;
+  public bookIcon = faBible;
   public progressValue = new BehaviorSubject(0);
   public progressValue$!: Observable<number>;
   public scrollTimeout!: any;
@@ -75,6 +77,10 @@ export class AppComponent implements OnInit, AfterViewInit {
       block: "start",
       inline: "nearest",
     });
+  }
+
+  public openBible() {
+    window.open("https://the-truth-from-the-beginning.web.app/", "_blank");
   }
 
   public goHome() {
