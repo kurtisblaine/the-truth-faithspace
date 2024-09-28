@@ -6,7 +6,7 @@ const { selectAll, selectEntities } = fromBooks.booksAdapter.getSelectors();
 
 export const selectBooksLoaded = createSelector(selectBooksState, (state: fromBooks.State) => state.loaded);
 
-export const selectBooksFetched = createSelector(selectBooksState, (state: fromBooks.State) => state.fetched);
+export const selectBooksIsDirty = createSelector(selectBooksState, (state: fromBooks.State) => state.isDirty);
 
 export const selectBooksError = createSelector(selectBooksState, (state: fromBooks.State) => state.error);
 

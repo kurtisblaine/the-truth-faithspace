@@ -49,6 +49,7 @@ export class ScripturePageComponent implements OnInit, OnDestroy {
     this.store.dispatch(initBible());
     this.store.dispatch(BooksActions.loadBooks({ id: this.bibleId }));
     this.store.dispatch(ChaptersActions.loadChapters({ id: this.bibleId, bookId: this.bookId }));
+    // this.store.dispatch(BooksActions.selectBook({ id: this.bookId }));
 
     this.isAll = this.chapterId == "all";
     this.scripture$ = this.bibleApi.getScripture(this.bibleId, this.chapterId);

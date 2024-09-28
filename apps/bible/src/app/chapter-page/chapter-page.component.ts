@@ -40,6 +40,7 @@ export class ChapterPageComponent {
     this.store.dispatch(initBible());
     this.store.dispatch(BooksActions.loadBooks({ id: this.bibleId }));
     this.store.dispatch(ChaptersActions.loadChapters({ id: this.bibleId, bookId: this.bookId }));
+    // this.store.dispatch(BooksActions.selectBook({ id: this.bookId }));
 
     this.chapters$ = this.store.select(selectAllChapters);
     this.selectedBook$ = this.store.select(selectAllBooks).pipe(map((r) => r.find((b) => b.id == this.bookId)?.name));
