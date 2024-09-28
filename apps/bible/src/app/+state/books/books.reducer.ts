@@ -8,7 +8,7 @@ export const BOOKS_FEATURE_KEY = "books";
 export interface State extends EntityState<Book> {
   selectedId?: string | number;
   loaded: boolean;
-  fetched: boolean;
+  isDirty: boolean;
   error?: string | null;
 }
 
@@ -16,24 +16,25 @@ export const booksAdapter: EntityAdapter<Book> = createEntityAdapter<Book>();
 
 export const initialState = booksAdapter.getInitialState({
   loaded: false,
-  fetched: false,
+  isDirty: true,
 });
 
 export const reducer = createReducer(
   initialState,
-  // on(BooksActions.loadBooks, (state) =>
-  //   booksAdapter.removeAll({
-  //     ...state,
-  //     loaded: false,
-  //     error: null,
-  //   })
-  // ),
+  on(BooksActions.loadBooks, (state) =>
+    booksAdapter.removeAll({
+      ...state,
+      loaded: false,
+      error: null,
+    })
+  ),
   on(BooksActions.selectBook, (state, { id }) => ({
     ...state,
     selectedId: id,
+    isDirty: true,
   })),
   on(BooksActions.loadBooksSuccess, (state, { data }) =>
-    booksAdapter.setAll(data, { ...state, loaded: true, fetched: true })
+    booksAdapter.setAll(data, { ...state, loaded: true, isDirty: false })
   ),
   on(BooksActions.loadBooksFailure, (state, { error }) => ({
     ...state,

@@ -5,7 +5,7 @@ import { of } from "rxjs";
 import { catchError, filter, mergeMap, switchMap, withLatestFrom } from "rxjs/operators";
 import { BibleApiService } from "../bible-api.service";
 import { ChaptersActions } from "./chapters.actions";
-import { selectChaptersFetched } from "./chapters.selectors";
+import { selectChaptersIsDirty } from "./chapters.selectors";
 
 @Injectable()
 export class ChaptersEffects {
@@ -14,8 +14,8 @@ export class ChaptersEffects {
   init$ = createEffect(() =>
     this.actions$.pipe(
       ofType(ChaptersActions.loadChapters),
-      withLatestFrom(this.store.select(selectChaptersFetched)),
-      filter(([_, isLoaded]) => !isLoaded),
+      withLatestFrom(this.store.select(selectChaptersIsDirty)),
+      filter(([_, isDirty]) => isDirty),
       mergeMap(([{ id, bookId }]) => this.bibleApi.getChapters(id, bookId)),
       switchMap((data) => of(ChaptersActions.loadChaptersSuccess({ data: data.data }))),
       catchError((error) => {

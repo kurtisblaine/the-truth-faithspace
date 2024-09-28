@@ -27,8 +27,6 @@ export class BiblePageComponent implements OnInit {
   ngOnInit(): void {
     this.store.dispatch(initBible());
     this.selectedBiblesByLanguage$ = this.store.select(getBibleByLanguageName(this.languageName));
-
-    // this.selectedLanguage$ = this.store.select(selectLanguageEntity).pipe(map((r) => r.language.name));
   }
 
   public readBook(bible: Bible) {
