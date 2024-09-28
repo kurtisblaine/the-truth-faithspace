@@ -5,7 +5,9 @@ import { MatSnackBar, MatSnackBarModule } from "@angular/material/snack-bar";
 import { Router } from "@angular/router";
 import { Store } from "@ngrx/store";
 import { Observable, map } from "rxjs";
-import { selectEntity } from "../+state/books/books.selectors";
+import { initBible } from "../+state/bibles/bibles.actions";
+import { BooksActions } from "../+state/books/books.actions";
+import { selectAllBooks } from "../+state/books/books.selectors";
 import { ChaptersActions } from "../+state/chapters/chapters.actions";
 import { selectAllChapters, selectChaptersError, selectChaptersLoaded } from "../+state/chapters/chapters.selectors";
 import { Chapter } from "../models/chapters";
@@ -35,10 +37,12 @@ export class ChapterPageComponent {
   ngOnInit() {
     this.allChapter = { number: "all", bibleId: this.bibleId, bookId: this.bookId, id: "all" } as Chapter;
 
+    this.store.dispatch(initBible());
+    this.store.dispatch(BooksActions.loadBooks({ id: this.bibleId }));
     this.store.dispatch(ChaptersActions.loadChapters({ id: this.bibleId, bookId: this.bookId }));
 
     this.chapters$ = this.store.select(selectAllChapters);
-    this.selectedBook$ = this.store.select(selectEntity).pipe(map((r) => r.name));
+    this.selectedBook$ = this.store.select(selectAllBooks).pipe(map((r) => r.find((b) => b.id == this.bookId)?.name));
 
     this.isLoading$ = this.store.select(selectChaptersLoaded).pipe(map((r) => !r));
     this.isLoaded$ = this.store.select(selectChaptersLoaded);

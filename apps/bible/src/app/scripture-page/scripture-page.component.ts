@@ -7,8 +7,9 @@ import { Router } from "@angular/router";
 import { Store } from "@ngrx/store";
 import { Observable, Subscription, map } from "rxjs";
 import { BibleApiService } from "../+state/bible-api.service";
+import { initBible } from "../+state/bibles/bibles.actions";
 import { BooksActions } from "../+state/books/books.actions";
-import { selectEntity } from "../+state/books/books.selectors";
+import { selectAllBooks } from "../+state/books/books.selectors";
 import { ChaptersActions } from "../+state/chapters/chapters.actions";
 import { selectChapterEntity, selectChaptersCount } from "../+state/chapters/chapters.selectors";
 import { Scripture } from "../models/scripture";
@@ -45,11 +46,15 @@ export class ScripturePageComponent implements OnInit, OnDestroy {
   dataSource: MyDataSource;
 
   ngOnInit(): void {
+    this.store.dispatch(initBible());
+    this.store.dispatch(BooksActions.loadBooks({ id: this.bibleId }));
+    this.store.dispatch(ChaptersActions.loadChapters({ id: this.bibleId, bookId: this.bookId }));
+
     this.isAll = this.chapterId == "all";
     this.scripture$ = this.bibleApi.getScripture(this.bibleId, this.chapterId);
     this.chapter$ = this.store.select(selectChapterEntity).pipe(map((r) => r.number));
 
-    this.selectedBook$ = this.store.select(selectEntity).pipe(map((r) => r.name));
+    this.selectedBook$ = this.store.select(selectAllBooks).pipe(map((r) => r.find((c) => c.id == this.bookId)?.name));
 
     if (this.isAll) {
       this.subscription = this.store.select(selectChaptersCount).subscribe((total) => {
