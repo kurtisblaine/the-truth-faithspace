@@ -5,7 +5,7 @@ import { Router } from "@angular/router";
 import { Store } from "@ngrx/store";
 import { Observable } from "rxjs";
 import { SharedModule } from "shared";
-import { selectTranslation } from "../+state/bibles/bibles.actions";
+import { initBible, selectTranslation } from "../+state/bibles/bibles.actions";
 import { getBibleByLanguageName } from "../+state/bibles/bibles.selectors";
 import { Bible } from "../models/bibles";
 
@@ -25,6 +25,7 @@ export class BiblePageComponent implements OnInit {
   constructor(private store: Store, private router: Router) {}
 
   ngOnInit(): void {
+    this.store.dispatch(initBible());
     this.selectedBiblesByLanguage$ = this.store.select(getBibleByLanguageName(this.languageName));
 
     // this.selectedLanguage$ = this.store.select(selectLanguageEntity).pipe(map((r) => r.language.name));

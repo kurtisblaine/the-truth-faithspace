@@ -8,6 +8,7 @@ export const CHAPTERS_FEATURE_KEY = "chapters";
 export interface State extends EntityState<Chapter> {
   selectedId?: string | number;
   loaded: boolean;
+  fetched: boolean;
   error?: string | null;
 }
 
@@ -15,23 +16,24 @@ export const chaptersAdapter: EntityAdapter<Chapter> = createEntityAdapter<Chapt
 
 export const initialState = chaptersAdapter.getInitialState({
   loaded: false,
+  fetched: false,
 });
 
 export const reducer = createReducer(
   initialState,
-  on(ChaptersActions.loadChapters, (state) =>
-    chaptersAdapter.removeAll({
-      ...state,
-      loaded: false,
-      error: null,
-    })
-  ),
+  // on(ChaptersActions.loadChapters, (state) =>
+  //   chaptersAdapter.removeAll({
+  //     ...state,
+  //     loaded: false,
+  //     error: null,
+  //   })
+  // ),
   on(ChaptersActions.selectChapter, (state, { id }) => ({
     ...state,
     selectedId: id,
   })),
   on(ChaptersActions.loadChaptersSuccess, (state, { data }) =>
-    chaptersAdapter.setAll(data, { ...state, loaded: true })
+    chaptersAdapter.setAll(data, { ...state, loaded: true, fetched: true })
   ),
   on(ChaptersActions.loadChaptersFailure, (state, { error }) => ({
     ...state,
