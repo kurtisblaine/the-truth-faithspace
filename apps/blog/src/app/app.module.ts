@@ -8,11 +8,7 @@ import { FontAwesomeModule } from "@fortawesome/angular-fontawesome";
 import { AppComponent } from "./app.component";
 
 import { initializeApp, provideFirebaseApp } from "@angular/fire/app";
-import {
-  FirestoreModule,
-  getFirestore,
-  provideFirestore,
-} from "@angular/fire/firestore";
+import { FirestoreModule, getFirestore, provideFirestore } from "@angular/fire/firestore";
 import { MatListModule } from "@angular/material/list";
 import { MatProgressBarModule } from "@angular/material/progress-bar";
 import { MatSidenavModule } from "@angular/material/sidenav";
@@ -35,8 +31,6 @@ const firebaseConfig = {
 @NgModule({
   declarations: [AppComponent],
   imports: [
-    provideFirebaseApp(() => initializeApp(firebaseConfig)),
-    provideFirestore(() => getFirestore()),
     MatSidenavModule,
     HttpClientModule,
     FirestoreModule,
@@ -51,7 +45,7 @@ const firebaseConfig = {
     AppRoutingModule,
     MatListModule,
   ],
-  providers: [],
+  providers: [provideFirebaseApp(() => initializeApp(firebaseConfig)), provideFirestore(() => getFirestore())],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

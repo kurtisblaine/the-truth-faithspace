@@ -1,14 +1,14 @@
 @use "@angular/material" as mat;
 @use "sass:map";
 
-$my-palette: mat.$indigo-palette;
-
 @include mat.core();
 
-$my-primary: mat.define-palette(mat.$indigo-palette, 500);
-$my-accent: mat.define-palette(mat.$indigo-palette, 900);
+$my-palette: mat.$m2-indigo-palette;
 
-$my-theme: mat.define-light-theme(
+$my-primary: mat.m2-define-palette(mat.$m2-indigo-palette, 500);
+$my-accent: mat.m2-define-palette(mat.$m2-indigo-palette, 900);
+
+$my-theme: mat.m2-define-light-theme(
   (
     color: (
       primary: $my-primary,
@@ -26,7 +26,7 @@ $my-theme: mat.define-light-theme(
 @include mat.button-theme($my-theme);
 @include mat.all-component-themes($my-theme);
 
-$color-config: mat.get-color-config($my-theme);
+$color-config: mat.m2-get-color-config($my-theme);
 $primary-palette: map.get($color-config, "primary");
 
 html {
@@ -79,7 +79,7 @@ mat-list-item {
 }
 
 .primary-color {
-  color: mat.get-color-from-palette($primary-palette);
+  color: mat.m2-get-color-from-palette($primary-palette);
 }
 
 // upright text example
