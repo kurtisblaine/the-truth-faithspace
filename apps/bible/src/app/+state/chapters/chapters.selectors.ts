@@ -6,8 +6,6 @@ const { selectAll, selectEntities } = fromChapters.chaptersAdapter.getSelectors(
 
 export const selectChaptersLoaded = createSelector(selectChaptersState, (state: fromChapters.State) => state.loaded);
 
-export const selectChaptersIsDirty = createSelector(selectChaptersState, (state: fromChapters.State) => state.isDirty);
-
 export const selectChaptersError = createSelector(selectChaptersState, (state: fromChapters.State) => state.error);
 
 export const selectAllChapters = createSelector(selectChaptersState, (state: fromChapters.State) => selectAll(state));
