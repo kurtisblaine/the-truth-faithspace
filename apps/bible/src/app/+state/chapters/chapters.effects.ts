@@ -2,10 +2,9 @@ import { Injectable, inject } from "@angular/core";
 import { Actions, createEffect, ofType } from "@ngrx/effects";
 import { Store } from "@ngrx/store";
 import { of } from "rxjs";
-import { catchError, filter, mergeMap, switchMap, withLatestFrom } from "rxjs/operators";
+import { catchError, mergeMap, switchMap } from "rxjs/operators";
 import { BibleApiService } from "../bible-api.service";
 import { ChaptersActions } from "./chapters.actions";
-import { selectChaptersIsDirty } from "./chapters.selectors";
 
 @Injectable()
 export class ChaptersEffects {
@@ -14,9 +13,7 @@ export class ChaptersEffects {
   init$ = createEffect(() =>
     this.actions$.pipe(
       ofType(ChaptersActions.loadChapters),
-      withLatestFrom(this.store.select(selectChaptersIsDirty)),
-      filter(([_, isDirty]) => isDirty),
-      mergeMap(([{ id, bookId }]) => this.bibleApi.getChapters(id, bookId)),
+      mergeMap(({ id, bookId }) => this.bibleApi.getChapters(id, bookId)),
       switchMap((data) => of(ChaptersActions.loadChaptersSuccess({ data: data.data }))),
       catchError((error) => {
         return of(ChaptersActions.loadChaptersFailure({ error }));

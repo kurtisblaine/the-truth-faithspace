@@ -7,8 +7,7 @@ import { Router } from "@angular/router";
 import { Store } from "@ngrx/store";
 import { Observable, map } from "rxjs";
 import { SharedModule } from "shared";
-import { initBible } from "../+state/bibles/bibles.actions";
-import { selectAllBibles } from "../+state/bibles/bibles.selectors";
+import { selectTranslationEntity } from "../+state/bibles/bibles.selectors";
 import { BooksActions } from "../+state/books/books.actions";
 import { selectAllBooks, selectBooksError, selectBooksLoaded } from "../+state/books/books.selectors";
 import { Book } from "../models/books";
@@ -32,12 +31,11 @@ export class BookPageComponent implements OnInit {
   constructor(private store: Store, private router: Router, private _snackBar: MatSnackBar) {}
 
   ngOnInit() {
-    this.store.dispatch(initBible());
     this.store.dispatch(BooksActions.loadBooks({ id: this.bibleId }));
 
     this.books$ = this.store.select(selectAllBooks);
     this.isLoading$ = this.store.select(selectBooksLoaded).pipe(map((r) => !r));
-    this.translation$ = this.store.select(selectAllBibles).pipe(map((r) => r.find((a) => a.id == this.bibleId)?.name));
+    this.translation$ = this.store.select(selectTranslationEntity).pipe(map((r) => r.name));
 
     this.store.select(selectBooksError).subscribe((error) => {
       if (error) {

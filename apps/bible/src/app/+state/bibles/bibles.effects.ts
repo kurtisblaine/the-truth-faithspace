@@ -1,10 +1,8 @@
 import { Injectable, inject } from "@angular/core";
 import { Actions, createEffect, ofType } from "@ngrx/effects";
-import { Store } from "@ngrx/store";
-import { catchError, filter, mergeMap, of, switchMap, withLatestFrom } from "rxjs";
+import { catchError, mergeMap, of, switchMap } from "rxjs";
 import { BibleApiService } from "../bible-api.service";
 import * as BiblesActions from "./bibles.actions";
-import { selectBiblesIsDirty } from "./bibles.selectors";
 
 @Injectable()
 export class BibleEffects {
@@ -13,8 +11,6 @@ export class BibleEffects {
   init$ = createEffect(() =>
     this.actions$.pipe(
       ofType(BiblesActions.initBible),
-      withLatestFrom(this.store.select(selectBiblesIsDirty)),
-      filter(([_, isDirty]) => isDirty),
       mergeMap(() => this.bibleApi.getBibles()),
       switchMap((data) => of(BiblesActions.loadBiblesSuccess({ bibles: data.data }))),
       catchError((error) => {
@@ -23,5 +19,5 @@ export class BibleEffects {
     )
   );
 
-  constructor(private bibleApi: BibleApiService, private store: Store) {}
+  constructor(private bibleApi: BibleApiService) {}
 }

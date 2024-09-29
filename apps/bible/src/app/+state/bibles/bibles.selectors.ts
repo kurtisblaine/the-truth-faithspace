@@ -9,8 +9,6 @@ const { selectAll, selectEntities } = biblesAdapter.getSelectors();
 
 export const selectBiblesLoaded = createSelector(selectBiblesState, (state: BiblesState) => state.loaded);
 
-export const selectBiblesIsDirty = createSelector(selectBiblesState, (state: BiblesState) => state.isDirty);
-
 export const selectBiblesError = createSelector(selectBiblesState, (state: BiblesState) => state.error);
 
 export const selectAllBibles = createSelector(selectBiblesState, (state: BiblesState) => selectAll(state));

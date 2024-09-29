@@ -9,7 +9,6 @@ export const BIBLES_FEATURE_KEY = "bibles";
 export interface BiblesState extends EntityState<Bible> {
   selectedId?: string | number;
   loaded: boolean;
-  isDirty: boolean;
   error?: string | null;
   selectedTranslationId?: string | number;
 }
@@ -22,7 +21,6 @@ export const biblesAdapter: EntityAdapter<Bible> = createEntityAdapter<Bible>();
 
 export const initialBiblesState: BiblesState = biblesAdapter.getInitialState({
   loaded: false,
-  isDirty: true,
 });
 
 export const reducer = createReducer(
@@ -30,12 +28,10 @@ export const reducer = createReducer(
   on(BiblesActions.selectLanguage, (state, { bible }) => ({
     ...state,
     selectedId: bible.language.id,
-    isDirty: true,
   })),
   on(BiblesActions.selectTranslation, (state, { bible }) => ({
     ...state,
     selectedTranslationId: bible.id,
-    isDirty: true,
   })),
   on(BiblesActions.initBible, (state) =>
     biblesAdapter.removeAll({
@@ -44,9 +40,7 @@ export const reducer = createReducer(
       error: null,
     })
   ),
-  on(BiblesActions.loadBiblesSuccess, (state, { bibles }) =>
-    biblesAdapter.setAll(bibles, { ...state, loaded: true, isDirty: false })
-  ),
+  on(BiblesActions.loadBiblesSuccess, (state, { bibles }) => biblesAdapter.setAll(bibles, { ...state, loaded: true })),
   on(BiblesActions.loadBiblesFailure, (state, { error }) => ({
     ...state,
     loaded: true,
