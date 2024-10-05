@@ -22,11 +22,13 @@ export const initialState: State = insightAdapter.getInitialState({
 
 export const insightReducer = createReducer(
   initialState,
-  on(InsightActions.loadInsights, (state) => ({
-    ...state,
-    loaded: false,
-    error: null,
-  })),
+  on(InsightActions.loadInsights, (state) =>
+    insightAdapter.removeAll({
+      ...state,
+      loaded: false,
+      error: null,
+    })
+  ),
   on(InsightActions.loadInsightsSuccess, (state, { insight }) =>
     insightAdapter.setAll(insight, { ...state, loaded: true })
   ),
