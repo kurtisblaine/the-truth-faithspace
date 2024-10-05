@@ -1,9 +1,4 @@
-import {
-  EntityAdapter,
-  EntityState,
-  Update,
-  createEntityAdapter,
-} from "@ngrx/entity";
+import { EntityAdapter, EntityState, Update, createEntityAdapter } from "@ngrx/entity";
 import { Action, createReducer, on } from "@ngrx/store";
 
 import * as BlogActions from "./blog.actions";
@@ -17,11 +12,9 @@ export interface State extends EntityState<BlogEntity> {
   error?: string | null;
 }
 
-export const blogAdapter: EntityAdapter<BlogEntity> =
-  createEntityAdapter<BlogEntity>({
-    sortComparer: (a: BlogEntity, b: BlogEntity) =>
-      Number.parseInt(b.date) - Number.parseInt(a.date),
-  });
+export const blogAdapter: EntityAdapter<BlogEntity> = createEntityAdapter<BlogEntity>({
+  sortComparer: (a: BlogEntity, b: BlogEntity) => Number.parseInt(b.date) - Number.parseInt(a.date),
+});
 
 export const initialState: State = blogAdapter.getInitialState({
   // set initial required properties
@@ -30,14 +23,14 @@ export const initialState: State = blogAdapter.getInitialState({
 
 const blogReducer = createReducer(
   initialState,
-  on(BlogActions.loadBlogs, (state) => ({
-    ...state,
-    loaded: false,
-    error: null,
-  })),
-  on(BlogActions.loadBlogsSuccess, (state, { blog }) =>
-    blogAdapter.setAll(blog, { ...state, loaded: true })
+  on(BlogActions.loadBlogs, (state) =>
+    blogAdapter.removeAll({
+      ...state,
+      loaded: false,
+      error: null,
+    })
   ),
+  on(BlogActions.loadBlogsSuccess, (state, { blog }) => blogAdapter.setAll(blog, { ...state, loaded: true })),
   on(BlogActions.loadBlogsFailure, (state, { error }) => ({ ...state, error })),
   on(BlogActions.createBlogSuccess, (state, { blog }) => {
     if (state.ids.some((id) => id == blog.id)) {

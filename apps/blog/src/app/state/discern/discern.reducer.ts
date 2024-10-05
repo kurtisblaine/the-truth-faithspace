@@ -1,9 +1,4 @@
-import {
-  createEntityAdapter,
-  EntityAdapter,
-  EntityState,
-  Update,
-} from "@ngrx/entity";
+import { createEntityAdapter, EntityAdapter, EntityState, Update } from "@ngrx/entity";
 import { Action, createReducer, on } from "@ngrx/store";
 import * as DiscernActions from "./discern.actions";
 import { DiscernEntity } from "./discern.models";
@@ -16,11 +11,9 @@ export interface State extends EntityState<DiscernEntity> {
   error?: string | null;
 }
 
-export const discernAdapter: EntityAdapter<DiscernEntity> =
-  createEntityAdapter<DiscernEntity>({
-    sortComparer: (a: DiscernEntity, b: DiscernEntity) =>
-      Number.parseInt(b.date) - Number.parseInt(a.date),
-  });
+export const discernAdapter: EntityAdapter<DiscernEntity> = createEntityAdapter<DiscernEntity>({
+  sortComparer: (a: DiscernEntity, b: DiscernEntity) => Number.parseInt(b.date) - Number.parseInt(a.date),
+});
 
 export const initialState: State = discernAdapter.getInitialState({
   // set initial required properties
@@ -29,11 +22,13 @@ export const initialState: State = discernAdapter.getInitialState({
 
 export const discernReducer = createReducer(
   initialState,
-  on(DiscernActions.loadDiscernments, (state) => ({
-    ...state,
-    loaded: false,
-    error: null,
-  })),
+  on(DiscernActions.loadDiscernments, (state) =>
+    discernAdapter.removeAll({
+      ...state,
+      loaded: false,
+      error: null,
+    })
+  ),
   on(DiscernActions.loadDiscernmentsSuccess, (state, { discern }) =>
     discernAdapter.setAll(discern, { ...state, loaded: true })
   ),
