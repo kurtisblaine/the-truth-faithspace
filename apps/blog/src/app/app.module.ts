@@ -12,6 +12,7 @@ import { FirestoreModule, getFirestore, provideFirestore } from "@angular/fire/f
 import { MatListModule } from "@angular/material/list";
 import { MatProgressBarModule } from "@angular/material/progress-bar";
 import { MatSidenavModule } from "@angular/material/sidenav";
+import { MatTooltipModule } from "@angular/material/tooltip";
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 import { AppRoutingModule } from "./app.routing.module";
 import { SharedModule } from "./shared/shared.module";
@@ -44,6 +45,7 @@ const firebaseConfig = {
     StateModule,
     AppRoutingModule,
     MatListModule,
+    MatTooltipModule,
   ],
   providers: [provideFirebaseApp(() => initializeApp(firebaseConfig)), provideFirestore(() => getFirestore())],
   bootstrap: [AppComponent],
