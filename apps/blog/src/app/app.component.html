@@ -81,6 +81,14 @@
         </button>
 
         <span>The Good News</span>
+        <span style="flex: 1 1 auto"></span>
+
+        <button mat-icon-button (click)="openBible()" [matTooltip]="'Open Bible'">
+          <fa-icon [icon]="bookIcon" [size]="'lg'"></fa-icon>
+        </button>
+        <button mat-icon-button (click)="goGospel()" [matTooltip]="'Go to the Good News'">
+          <fa-icon [icon]="gospelIcon" [size]="'lg'"></fa-icon>
+        </button>
       </mat-toolbar>
     </div>
 
