@@ -1,5 +1,16 @@
 {
   "projects": {
     "default": "shining-light-on-the-dark-web"
-  }
+  },
+  "targets": {
+    "shining-light-on-the-dark-web": {
+      "hosting": {
+        "technology": [
+          "shining-light-on-the-dark-web"
+        ]
+      }
+    }
+  },
+  "etags": {},
+  "dataconnectEmulatorConfig": {}
 }
