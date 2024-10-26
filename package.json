@@ -83,6 +83,7 @@
     "@typescript-eslint/parser": "7.18.0",
     "eslint": "8.57.1",
     "eslint-config-prettier": "9.0.0",
+    "jasmine-marbles": "~0.9.1",
     "jsonc-eslint-parser": "^2.1.0",
     "nx": "19.8.2",
     "prettier": "^2.6.2",
