@@ -1,7 +1,7 @@
 {
   "hosting": {
     "site": "shining-light-on-the-dark-web",
-    "public": "public",
+    "public": "public/browser",
     "ignore": ["firebase.json", "**/.*", "**/node_modules/**"]
   },
   "rewrites": [
@@ -9,5 +9,8 @@
       "source": "**",
       "destination": "/index.html"
     }
-  ]
+  ],
+  "database": {
+    "rules": "database.rules.json"
+  }
 }
