@@ -1,1 +1,113 @@
-/* You can add global styles to this file, and also import other style files */
+@use "@angular/material" as mat;
+@use "sass:map";
+
+@include mat.core();
+
+$my-palette: mat.$m2-indigo-palette;
+
+$my-primary: mat.m2-define-palette(mat.$m2-indigo-palette, 500);
+$my-accent: mat.m2-define-palette(mat.$m2-indigo-palette, 900);
+
+$my-theme: mat.m2-define-light-theme(
+  (
+    color: (
+      primary: $my-primary,
+      accent: $my-accent,
+    ),
+  )
+);
+
+// Emit theme-dependent styles for common features used across multiple components.
+@include mat.core-theme($my-theme);
+
+// Emit styles for MatButton based on `$my-theme`. Because the configuration
+// passed to `define-light-theme` omits typography, `button-theme` will not
+// emit any typography styles.
+@include mat.button-theme($my-theme);
+@include mat.all-component-themes($my-theme);
+
+$color-config: mat.m2-get-color-config($my-theme);
+$primary-palette: map.get($color-config, "primary");
+
+html {
+  height: 100%;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+.mat-typography p {
+  margin: unset;
+}
+
+.mdc-list-item.mdc-list-item--with-three-lines .mdc-list-item__start,
+.mdc-list-item.mdc-list-item--with-two-lines .mdc-list-item__start,
+.mdc-list-item.mdc-list-item--with-one-line .mdc-list-item__start {
+  margin-top: unset !important;
+  text-align: center !important;
+  align-self: center !important;
+  color: black !important;
+  cursor: pointer !important;
+  // font-size: large;
+}
+
+mat-list-item {
+  color: black !important;
+  cursor: pointer !important;
+}
+
+.mdc-list-item:hover .mdc-list-item__primary-text {
+  color: black !important;
+  cursor: pointer !important;
+}
+
+.mat-drawer-inner-container {
+  overflow-x: hidden !important;
+}
+
+.pswp__caption__center {
+  max-width: 1111px !important;
+}
+
+*,
+::after,
+::before {
+  box-sizing: unset !important;
+}
+
+.primary-color {
+  color: mat.m2-get-color-from-palette($primary-palette);
+}
+
+// upright text example
+.side-header {
+  flex: 1 1 20%;
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+  padding: 80px 100px;
+}
+
+.main-content {
+  flex: 1 1 80%;
+}
+
+.page {
+  display: flex;
+  flex-direction: row;
+}
+
+a {
+  text-decoration: underline;
+  color: unset;
+}
+
+.mat-drawer-container {
+  background-color: white !important;
+}
+
+.mat-drawer-content {
+  overflow: hidden;
+}
