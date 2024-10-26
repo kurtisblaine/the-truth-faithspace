@@ -37,12 +37,10 @@
     "build": {
       "executor": "@angular-devkit/build-angular:application",
       "options": {
-        "outputPath": "dist/technology",
+        "outputPath": "dist/apps/technology",
         "index": "apps/technology/src/index.html",
         "browser": "apps/technology/src/main.ts",
-        "polyfills": [
-          "zone.js"
-        ],
+        "polyfills": ["zone.js"],
         "tsConfig": "apps/technology/tsconfig.app.json",
         "inlineStyleLanguage": "scss",
         "assets": [
@@ -51,9 +49,7 @@
             "input": "apps/technology/public"
           }
         ],
-        "styles": [
-          "apps/technology/src/styles.scss"
-        ],
+        "styles": ["apps/technology/src/styles.scss"],
         "scripts": []
       },
       "configurations": {

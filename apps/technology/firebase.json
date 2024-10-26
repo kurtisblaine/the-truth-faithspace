@@ -3,5 +3,11 @@
     "site": "shining-light-on-the-dark-web",
     "public": "public",
     "ignore": ["firebase.json", "**/.*", "**/node_modules/**"]
-  }
+  },
+  "rewrites": [
+    {
+      "source": "**",
+      "destination": "/index.html"
+    }
+  ]
 }
