@@ -47,7 +47,9 @@
           {
             "glob": "**/*",
             "input": "apps/technology/public"
-          }
+          },
+          "apps/technology/src/favicon.ico",
+          "apps/technology/src/assets"
         ],
         "styles": ["apps/technology/src/styles.scss"],
         "scripts": []
