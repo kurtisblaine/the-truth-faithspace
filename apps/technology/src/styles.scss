@@ -39,6 +39,10 @@ body {
   font-family: Roboto, "Helvetica Neue", sans-serif;
 }
 
+.mat-drawer-content {
+  overflow-x: hidden !important;
+}
+
 .mat-typography p {
   margin: unset;
 }
