@@ -1,1 +1,12 @@
-<p>items works!</p>
+<div class="container-form" style="margin: 0px 17px">
+  <router-outlet></router-outlet>
+
+  <h6 class="mat-caption">
+    "The beginning of wisdom is this: Get wisdom, and whatever you get, get insight." [Proverbs 4:7]
+  </h6>
+  @if(isLoading$ | async) {
+  <mat-spinner></mat-spinner>
+  } @else {
+  <app-item-list></app-item-list>
+  }
+</div>

@@ -1,6 +1,6 @@
 import { Routes } from "@angular/router";
 import { HomeComponent } from "./homePage/home.component";
-import { ItemsComponent } from "./itemsPage/items.component";
+import { ItemListComponent } from "./itemsPage/item-list/item-list.component";
 // import { ServerPageComponent } from "./serverPage/server-page.component";
 
 export const routes: Routes = [
@@ -14,6 +14,7 @@ export const routes: Routes = [
   },
   {
     path: "items",
-    component: ItemsComponent,
+    component: ItemListComponent,
   },
+  // { path: "item-detail/:id", component: ItemDetailComponent },
 ];

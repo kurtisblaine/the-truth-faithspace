@@ -1,5 +1,5 @@
-import { EntityAdapter, EntityState, createEntityAdapter } from "@ngrx/entity";
-import { createReducer, on } from "@ngrx/store";
+import { createEntityAdapter, Dictionary, EntityAdapter, EntityState } from "@ngrx/entity";
+import { createFeature, createReducer, on } from "@ngrx/store";
 import { ItemsActions } from "./items.actions";
 
 export const itemsFeatureKey = "items";
@@ -13,25 +13,33 @@ export interface ItemEntity {
 }
 
 export interface State extends EntityState<ItemEntity> {
-  id?: string;
+  id: string;
   loaded: boolean;
-  error?: string | null;
+  error: string | null;
 }
 
 export const itemAdapter: EntityAdapter<ItemEntity> = createEntityAdapter<ItemEntity>({
   sortComparer: (a: ItemEntity, b: ItemEntity) => Number.parseInt(b.date) - Number.parseInt(a.date),
 });
 
-export const initialState: State = itemAdapter.getInitialState({
+export const initialState: State = itemAdapter.getInitialState<State>({
   // set initial required properties
   loaded: false,
+  error: null,
+  id: "",
+  entities: {} as Dictionary<ItemEntity>,
+  ids: [] as string[],
 });
+
 export const reducer = createReducer(
   initialState,
-  on(ItemsActions.loadItems, (state) => itemAdapter.removeAll(state))
+  on(ItemsActions.loadItems, (state) => itemAdapter.removeAll(state)),
+  on(ItemsActions.loadItemsSuccess, (state, { item }) => itemAdapter.setAll(item, { ...state, loaded: true })),
+  on(ItemsActions.createItem, (state) => state),
+  on(ItemsActions.createItemSuccess, (state, { item }) => itemAdapter.setOne(item, state))
 );
 
-// export const itemsFeature = createFeature({
-//   name: itemsFeatureKey,
-//   reducer,
-// });
+export const itemsFeature = createFeature({
+  name: itemsFeatureKey,
+  reducer: reducer,
+});

@@ -1,1 +1,12 @@
-<p>item-list works!</p>
+<div class="item-item" *ngFor="let item of items$ | async">
+  <div class="item-title primary-color" (click)="navigate(item)">
+    {{ item.title.toUpperCase() }}
+  </div>
+  <div>{{ item.date | date: "short" }}</div>
+
+  <button mat-flat-button *ngIf="update" (click)="doUpdate(item)">Update</button>
+
+  <app-text-editor [readonly]="!update" [document]="item.json" (editorChanged)="item.json = $event"></app-text-editor>
+
+  <mat-divider></mat-divider>
+</div>
