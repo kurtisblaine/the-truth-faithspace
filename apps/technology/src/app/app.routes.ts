@@ -3,8 +3,8 @@ import { HomeComponent } from "./homePage/home.component";
 
 export const routes: Routes = [
   {
-    path: "server/777c7c75-cdf7-4c51-beab-3ef81d6a5777",
-    loadChildren: () => import("./serverPage/server-page.component").then((m) => m.ServerPageComponent),
+    path: "server",
+    loadChildren: () => import("./serverPage/server-page.module").then((m) => m.ServerModule),
   },
   {
     path: "",
