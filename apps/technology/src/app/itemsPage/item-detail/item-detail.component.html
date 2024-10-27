@@ -1,1 +1,6 @@
-<p>item-detail works!</p>
+<h2 class="item-title primary-color">
+  {{ item?.title?.toUpperCase() }}
+</h2>
+<div>{{ item?.date | date: "short" }}</div>
+
+<app-text-editor [readonly]="true" [document]="item.json" [showReadMore]="false"></app-text-editor>

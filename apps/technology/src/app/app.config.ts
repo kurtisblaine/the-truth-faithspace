@@ -1,4 +1,4 @@
-import { ApplicationConfig, isDevMode, provideZoneChangeDetection } from "@angular/core";
+import { ApplicationConfig, isDevMode } from "@angular/core";
 import { provideRouter, withComponentInputBinding, withHashLocation, withRouterConfig } from "@angular/router";
 
 import { provideHttpClient } from "@angular/common/http";
@@ -15,10 +15,10 @@ import { routes } from "./app.routes";
 
 const firebaseConfig = {
   apiKey: "AIzaSyCjUFfiNlVcXR03aW28ZdhCdg8_lmzk15k",
-  authDomain: "blog-46974.firebaseapp.com",
-  databaseURL: "https://blog-46974-default-rtdb.firebaseio.com",
-  projectId: "blog-46974",
-  storageBucket: "blog-46974.appspot.com",
+  authDomain: "shining-light-on-the-dark-web.firebaseapp.com",
+  databaseURL: "https://shining-light-on-the-dark-web-default-rtdb.firebaseio.com",
+  projectId: "shining-light-on-the-dark-web",
+  storageBucket: "shining-light-on-the-dark-web.appspot.com",
   messagingSenderId: "836636966533",
   appId: "1:836636966533:web:62c7e8bd6e9b6ac998f3ec",
   measurementId: "G-MPQSH2L8FZ",
@@ -26,11 +26,11 @@ const firebaseConfig = {
 
 export const appConfig: ApplicationConfig = {
   providers: [
-    provideStoreDevtools({ logOnly: !isDevMode(), maxAge: 25 }),
     provideStore(),
     provideEffects(ItemsEffects),
     provideState(fromItems.itemsFeatureKey, fromItems.reducer),
-    provideZoneChangeDetection({ eventCoalescing: true }),
+    // provideZoneChangeDetection({ eventCoalescing: true }),
+    provideStoreDevtools({ logOnly: !isDevMode(), maxAge: 25 }),
     provideRouter(
       routes,
       withRouterConfig({

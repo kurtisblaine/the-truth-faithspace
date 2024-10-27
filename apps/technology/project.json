@@ -36,6 +36,8 @@
   "targets": {
     "build": {
       "executor": "@angular-devkit/build-angular:application",
+      "outputs": ["{options.outputPath}"],
+
       "options": {
         "outputPath": "dist/apps/technology",
         "index": "apps/technology/src/index.html",
