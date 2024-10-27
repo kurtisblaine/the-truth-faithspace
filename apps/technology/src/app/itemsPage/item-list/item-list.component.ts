@@ -1,7 +1,4 @@
-import { CommonModule } from "@angular/common";
 import { Component, Input } from "@angular/core";
-import { MatButtonModule } from "@angular/material/button";
-import { MatDividerModule } from "@angular/material/divider";
 import { Router } from "@angular/router";
 import { Store } from "@ngrx/store";
 import { cloneDeep } from "lodash";
@@ -9,12 +6,9 @@ import { map, Observable } from "rxjs";
 import { ItemsActions } from "../../+state/items/items.actions";
 import { ItemEntity } from "../../+state/items/items.reducer";
 import { selectAllItems } from "../../+state/items/items.selectors";
-import { SharedModule } from "../../shared/shared.module";
 
 @Component({
   selector: "app-item-list",
-  standalone: true,
-  imports: [CommonModule, SharedModule, MatButtonModule, MatDividerModule],
   templateUrl: "./item-list.component.html",
   styleUrl: "./item-list.component.scss",
 })
