@@ -46,19 +46,6 @@ import { faBars, faHome, faRobot } from "@fortawesome/free-solid-svg-icons";
             </button>
 
             <span>Technology</span>
-            <span style="flex: 1 1 auto"></span>
-
-            <!-- <button mat-icon-button (click)="openBible()" [matTooltip]="'Open the Bible'">
-              <fa-icon [icon]="bookIcon" [size]="'lg'"></fa-icon>
-            </button>
-            <button
-              mat-icon-button
-              (click)="goGospel()"
-              [matTooltip]="'Go to the Good News'"
-              style="margin-right: 12px"
-            >
-              <fa-icon [icon]="gospelIcon" [size]="'lg'"></fa-icon>
-            </button> -->
           </mat-toolbar>
         </div>
 

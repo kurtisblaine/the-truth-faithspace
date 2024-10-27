@@ -3,27 +3,26 @@ import { NgModule } from "@angular/core";
 import { FormsModule, ReactiveFormsModule } from "@angular/forms";
 import { MatButtonModule } from "@angular/material/button";
 import { MatDividerModule } from "@angular/material/divider";
+import { MatExpansionModule } from "@angular/material/expansion";
 import { MatTooltipModule } from "@angular/material/tooltip";
 import { RouterModule, Routes } from "@angular/router";
 import { FontAwesomeModule } from "@fortawesome/angular-fontawesome";
 import { SharedModule } from "../shared/shared.module";
-import { ItemDetailComponent } from "./item-detail/item-detail.component";
-import { ItemListComponent } from "./item-list/item-list.component";
-import { ItemsComponent } from "./items.component";
+import { ServerPageComponent } from "./server-page.component";
 
 const routes: Routes = [
   {
-    path: "items",
-    component: ItemsComponent,
+    path: "",
+    component: ServerPageComponent,
   },
-  { path: "item-detail/:id", component: ItemDetailComponent },
 ];
 
 @NgModule({
-  declarations: [ItemListComponent, ItemDetailComponent, ItemsComponent],
+  declarations: [ServerPageComponent],
   imports: [
     CommonModule,
     SharedModule,
+    MatExpansionModule,
     MatButtonModule,
     MatDividerModule,
     FormsModule,
@@ -33,4 +32,4 @@ const routes: Routes = [
     RouterModule.forChild(routes),
   ],
 })
-export class ItemsModule {}
+export class ServerModule {}

@@ -1,4 +1,4 @@
-import { ApplicationConfig, isDevMode } from "@angular/core";
+import { ApplicationConfig, isDevMode, provideZoneChangeDetection } from "@angular/core";
 import { provideRouter, withComponentInputBinding, withHashLocation, withRouterConfig } from "@angular/router";
 
 import { provideHttpClient } from "@angular/common/http";
@@ -29,7 +29,7 @@ export const appConfig: ApplicationConfig = {
     provideStore(),
     provideEffects(ItemsEffects),
     provideState(fromItems.itemsFeatureKey, fromItems.reducer),
-    // provideZoneChangeDetection({ eventCoalescing: true }),
+    provideZoneChangeDetection({ eventCoalescing: true }),
     provideStoreDevtools({ logOnly: !isDevMode(), maxAge: 25 }),
     provideRouter(
       routes,
@@ -54,6 +54,5 @@ export const appConfig: ApplicationConfig = {
         },
       } as RippleGlobalOptions,
     },
-    // { provide: RouteReuseStrategy, useClass: DefaultRouteReuseStrategy },
   ],
 };
