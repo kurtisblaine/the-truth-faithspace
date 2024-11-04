@@ -1,5 +1,12 @@
 import { ApplicationConfig, isDevMode, provideZoneChangeDetection } from "@angular/core";
-import { provideRouter, withComponentInputBinding, withHashLocation, withRouterConfig } from "@angular/router";
+import {
+  PreloadAllModules,
+  provideRouter,
+  withComponentInputBinding,
+  withHashLocation,
+  withPreloading,
+  withRouterConfig,
+} from "@angular/router";
 
 import { provideHttpClient } from "@angular/common/http";
 import { initializeApp, provideFirebaseApp } from "@angular/fire/app";
@@ -20,7 +27,7 @@ const firebaseConfig = {
   projectId: "shining-light-on-the-dark-web",
   storageBucket: "shining-light-on-the-dark-web.appspot.com",
   messagingSenderId: "230757662727",
-  appId: "1:230757662727:web:78560ac1fbebad1cd76aa2"
+  appId: "1:230757662727:web:78560ac1fbebad1cd76aa2",
 };
 
 export const appConfig: ApplicationConfig = {
@@ -36,6 +43,7 @@ export const appConfig: ApplicationConfig = {
         onSameUrlNavigation: "reload",
         paramsInheritanceStrategy: "always",
       }),
+      withPreloading(PreloadAllModules),
       // withInMemoryScrolling(),
       withComponentInputBinding(),
       withHashLocation()
