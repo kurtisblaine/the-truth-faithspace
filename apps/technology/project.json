@@ -37,7 +37,7 @@
     "build": {
       "executor": "@angular-devkit/build-angular:application",
       "outputs": ["{options.outputPath}"],
-
+      "commonChunk": false,
       "options": {
         "outputPath": "dist/apps/technology",
         "index": "apps/technology/src/index.html",
@@ -70,12 +70,14 @@
               "maximumError": "8kB"
             }
           ],
-          "outputHashing": "all"
+          "outputHashing": "all",
+          "namedChunks": true
         },
         "development": {
           "optimization": false,
           "extractLicenses": false,
-          "sourceMap": true
+          "sourceMap": true,
+          "namedChunks": true
         }
       },
       "defaultConfiguration": "production"
