@@ -35,13 +35,13 @@
   "prefix": "app",
   "targets": {
     "build": {
-      "executor": "@angular-devkit/build-angular:application",
+      "executor": "@angular-devkit/build-angular:browser",
       "outputs": ["{options.outputPath}"],
       "commonChunk": false,
       "options": {
         "outputPath": "dist/apps/technology",
         "index": "apps/technology/src/index.html",
-        "browser": "apps/technology/src/main.ts",
+        "main": "apps/technology/src/main.ts",
         "polyfills": ["zone.js"],
         "tsConfig": "apps/technology/tsconfig.app.json",
         "inlineStyleLanguage": "scss",
