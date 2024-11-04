@@ -1,4 +1,4 @@
-import { Component, Input } from "@angular/core";
+import { Component, Input, ChangeDetectionStrategy } from "@angular/core";
 import { Router } from "@angular/router";
 import { Store } from "@ngrx/store";
 import { cloneDeep } from "lodash";
@@ -11,6 +11,8 @@ import { selectAllItems } from "../../+state/items/items.selectors";
   selector: "app-item-list",
   templateUrl: "./item-list.component.html",
   styleUrl: "./item-list.component.scss",
+    changeDetection: ChangeDetectionStrategy.OnPush,
+
 })
 export class ItemListComponent {
   @Input() public update = false;
