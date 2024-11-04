@@ -19,7 +19,7 @@ export class ItemsEffects {
   public getItem$ = createEffect(() =>
     this.actions$.pipe(
       ofType(ItemsActions.loadItems),
-      mapTo(collection(this.database, "item")),
+      map(() => collection(this.database, "item")),
       mergeMap((data) => collectionData(data, { idField: "collectionId" })),
       map((data) =>
         ItemsActions.loadItemsSuccess({
