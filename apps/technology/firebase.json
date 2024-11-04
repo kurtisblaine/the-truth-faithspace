@@ -1,7 +1,7 @@
 {
   "hosting": {
     "site": "shining-light-on-the-dark-web",
-    "public": "public/browser",
+    "public": "public",
     "ignore": [
       "firebase.json",
       "**/.*",
