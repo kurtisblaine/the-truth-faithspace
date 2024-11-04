@@ -1,4 +1,4 @@
-import { Component } from "@angular/core";
+import { Component, ChangeDetectionStrategy } from "@angular/core";
 import { Router } from "@angular/router";
 import { Store } from "@ngrx/store";
 import { map, Observable } from "rxjs";
@@ -9,6 +9,8 @@ import { selectAllItems, selectItemsLoaded } from "../+state/items/items.selecto
   selector: "app-items",
   templateUrl: "./items.component.html",
   styleUrl: "./items.component.scss",
+    changeDetection: ChangeDetectionStrategy.OnPush,
+
 })
 export class ItemsComponent {
   public items$!: Observable<ItemEntity[]>;
