@@ -9,7 +9,7 @@ import {
   setDoc,
 } from "@angular/fire/firestore";
 import { Actions, createEffect, ofType } from "@ngrx/effects";
-import { from, map, mapTo, mergeMap } from "rxjs";
+import { from, map, mergeMap } from "rxjs";
 
 import { ItemsActions } from "./items.actions";
 import { ItemEntity } from "./items.reducer";
@@ -20,7 +20,7 @@ export class ItemsEffects {
     this.actions$.pipe(
       ofType(ItemsActions.loadItems),
       map(() => collection(this.database, "item")),
-      mergeMap((data) => collectionData(data, { idField: "collectionId" })),
+      mergeMap((data) => collectionData(data, { idField: "id" })),
       map((data) =>
         ItemsActions.loadItemsSuccess({
           item: data as ItemEntity[],
@@ -41,7 +41,7 @@ export class ItemsEffects {
       })),
       mergeMap(({ collection, item }) => {
         const doc = from(setDoc<ItemEntity, DocumentData>(collection, item));
-        return doc.pipe(mapTo(item));
+        return doc.pipe(map(() => item));
       }),
       // mergeMap((created) => from(getDoc(created))),
       map((document) =>
