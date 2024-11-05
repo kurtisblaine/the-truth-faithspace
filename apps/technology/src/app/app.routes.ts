@@ -3,7 +3,7 @@ import { HomeComponent } from "./homePage/home.component";
 
 export const routes: Routes = [
   {
-    path: "server",
+    path: "",
     loadChildren: () => import("./serverPage/server-page.module").then((m) => m.ServerModule),
   },
   {
@@ -11,7 +11,7 @@ export const routes: Routes = [
     component: HomeComponent,
   },
   {
-    path: "items",
+    path: "",
     loadChildren: () => import("./itemsPage/items-page.module").then((m) => m.ItemsModule),
   },
 ];

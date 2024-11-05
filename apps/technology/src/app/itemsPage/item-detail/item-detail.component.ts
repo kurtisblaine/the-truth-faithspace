@@ -1,4 +1,4 @@
-import { Component, ChangeDetectionStrategy } from "@angular/core";
+import { ChangeDetectionStrategy, Component } from "@angular/core";
 import { ActivatedRoute } from "@angular/router";
 import { Store } from "@ngrx/store";
 import { switchMap } from "rxjs";
@@ -10,8 +10,7 @@ import { getById } from "../../+state/items/items.selectors";
   selector: "app-item-detail",
   templateUrl: "./item-detail.component.html",
   styleUrl: "./item-detail.component.scss",
-    changeDetection: ChangeDetectionStrategy.OnPush,
-
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class ItemDetailComponent {
   public item: ItemEntity;

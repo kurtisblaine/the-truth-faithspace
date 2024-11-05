@@ -1,5 +1,5 @@
 import { CommonModule } from "@angular/common";
-import { Component, ChangeDetectionStrategy } from "@angular/core";
+import { ChangeDetectionStrategy, Component } from "@angular/core";
 import { MatButtonModule } from "@angular/material/button";
 import { MatCardModule } from "@angular/material/card";
 import { MatDividerModule } from "@angular/material/divider";
@@ -11,6 +11,6 @@ import { fadeInOut } from "../shared/animations/animation";
   templateUrl: "./home.component.html",
   styleUrl: "./home.component.scss",
   animations: [fadeInOut],
-    changeDetection: ChangeDetectionStrategy.OnPush
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class HomeComponent {}
