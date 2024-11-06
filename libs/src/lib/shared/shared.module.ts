@@ -1,15 +1,18 @@
 import { CommonModule } from "@angular/common";
 import { NgModule } from "@angular/core";
 import { ReactiveFormsModule } from "@angular/forms";
+import { MatButtonModule } from "@angular/material/button";
 import { MatFormFieldModule } from "@angular/material/form-field";
 import { MatIconModule } from "@angular/material/icon";
 import { MatInputModule } from "@angular/material/input";
 import { MatTooltipModule } from "@angular/material/tooltip";
 import { FontAwesomeModule } from "@fortawesome/angular-fontawesome";
+import { NgxEditorModule } from "ngx-editor";
+import { TextEditorComponent } from "./components/text-editor/text-editor.component";
 import { TooltipDirective } from "./directives/tooltip.directive";
 
 @NgModule({
-  declarations: [TooltipDirective],
+  declarations: [TooltipDirective, TextEditorComponent],
   imports: [
     CommonModule,
     MatTooltipModule,
@@ -18,7 +21,9 @@ import { TooltipDirective } from "./directives/tooltip.directive";
     MatInputModule,
     ReactiveFormsModule,
     FontAwesomeModule,
+    NgxEditorModule.forRoot(),
+    MatButtonModule,
   ],
-  exports: [TooltipDirective],
+  exports: [TooltipDirective, TextEditorComponent],
 })
-export class SharedModule {}
+export class SharedLibraryModule {}

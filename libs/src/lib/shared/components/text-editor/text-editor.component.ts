@@ -2,7 +2,7 @@ import { AfterViewInit, Component, EventEmitter, Input, OnDestroy, OnInit, Outpu
 import { AbstractControl, FormControl, FormGroup } from "@angular/forms";
 import { Editor, NgxEditorComponent, Toolbar } from "ngx-editor";
 @Component({
-  selector: "blog-text-editor",
+  selector: "lib-text-editor",
   templateUrl: "./text-editor.component.html",
   styleUrls: ["./text-editor.component.scss"],
 })
@@ -17,7 +17,7 @@ export class TextEditorComponent implements OnInit, OnDestroy, AfterViewInit {
   @Input() public showReadMore = true;
   @Output() public editorChanged = new EventEmitter();
 
-  @ViewChild("ngxeditor") public editorComponent: NgxEditorComponent;
+  @ViewChild("ngxeditor") public editorComponent!: NgxEditorComponent;
 
   public toolbar: Toolbar = [
     ["bold", "italic"],

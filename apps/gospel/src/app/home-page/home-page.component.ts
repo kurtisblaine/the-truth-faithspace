@@ -1,5 +1,5 @@
 import { ChangeDetectionStrategy, Component, OnInit } from "@angular/core";
-import { fadeInOut } from "../shared/animations/animation";
+import { fadeInOut } from "shared";
 
 @Component({
   selector: "blog-home-page",
