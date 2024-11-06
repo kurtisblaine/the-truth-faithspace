@@ -1,21 +1,12 @@
-import {
-  Component,
-  EventEmitter,
-  Input,
-  OnChanges,
-  OnDestroy,
-  OnInit,
-  Output,
-} from "@angular/core";
+import { AfterViewInit, Component, EventEmitter, Input, OnDestroy, OnInit, Output, ViewChild } from "@angular/core";
 import { AbstractControl, FormControl, FormGroup } from "@angular/forms";
-import * as $ from "jquery";
-import { Editor, Toolbar } from "ngx-editor";
+import { Editor, NgxEditorComponent, Toolbar } from "ngx-editor";
 @Component({
   selector: "blog-text-editor",
   templateUrl: "./text-editor.component.html",
   styleUrls: ["./text-editor.component.scss"],
 })
-export class TextEditorComponent implements OnInit, OnDestroy, OnChanges {
+export class TextEditorComponent implements OnInit, OnDestroy, AfterViewInit {
   public editor!: Editor;
   public isReadMore = false;
   public isEmpty = false;
@@ -25,6 +16,8 @@ export class TextEditorComponent implements OnInit, OnDestroy, OnChanges {
   @Input() public readonly = false;
   @Input() public showReadMore = true;
   @Output() public editorChanged = new EventEmitter();
+
+  @ViewChild("ngxeditor") public editorComponent: NgxEditorComponent;
 
   public toolbar: Toolbar = [
     ["bold", "italic"],
@@ -50,16 +43,11 @@ export class TextEditorComponent implements OnInit, OnDestroy, OnChanges {
       attributes: {
         spellcheck: "true",
         class: this.className,
+        contenteditable: `${!this.readonly}`,
       },
     });
 
-    if (this.readonly) {
-      $(`.${this.className}`).attr("contenteditable", "false");
-    }
-
-    this.editor.valueChanges.subscribe((value) =>
-      this.editorChanged.emit(value)
-    );
+    this.editor.valueChanges.subscribe((value) => this.editorChanged.emit(value));
 
     this.form = new FormGroup({
       editorContent: new FormControl({
@@ -69,10 +57,8 @@ export class TextEditorComponent implements OnInit, OnDestroy, OnChanges {
     });
   }
 
-  ngOnChanges() {
-    if (this.readonly) {
-      $(`.${this.className}`).attr("contenteditable", "false");
-    }
+  ngAfterViewInit() {
+    this.editorComponent.setDisabledState(this.readonly);
   }
 
   ngOnDestroy(): void {
