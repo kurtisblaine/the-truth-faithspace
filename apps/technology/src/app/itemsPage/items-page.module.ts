@@ -7,7 +7,7 @@ import { MatProgressBarModule } from "@angular/material/progress-bar";
 import { MatTooltipModule } from "@angular/material/tooltip";
 import { RouterModule, Routes } from "@angular/router";
 import { FontAwesomeModule } from "@fortawesome/angular-fontawesome";
-import { SharedModule } from "../shared/shared.module";
+import { SharedLibraryModule } from "../../../../../libs/src";
 import { ItemDetailComponent } from "./item-detail/item-detail.component";
 import { ItemListComponent } from "./item-list/item-list.component";
 import { ItemsComponent } from "./items.component";
@@ -24,7 +24,7 @@ const routes: Routes = [
   declarations: [ItemListComponent, ItemDetailComponent, ItemsComponent],
   imports: [
     CommonModule,
-    SharedModule,
+    SharedLibraryModule,
     MatButtonModule,
     MatDividerModule,
     FormsModule,

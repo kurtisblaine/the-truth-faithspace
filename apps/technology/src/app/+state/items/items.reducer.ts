@@ -33,7 +33,7 @@ export const initialState: State = itemAdapter.getInitialState<State>({
 
 export const reducer = createReducer(
   initialState,
-  on(ItemsActions.loadItems, (state) => itemAdapter.removeAll(state)),
+  on(ItemsActions.loadItems, (state) => itemAdapter.removeAll({ ...state, loaded: false })),
   on(ItemsActions.loadItemsSuccess, (state, { item }) => itemAdapter.setAll(item, { ...state, loaded: true })),
   on(ItemsActions.createItem, (state) => state),
   on(ItemsActions.createItemSuccess, (state, { item }) => itemAdapter.setOne(item, state))
