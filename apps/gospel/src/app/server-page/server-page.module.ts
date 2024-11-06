@@ -4,6 +4,7 @@ import { FormsModule, ReactiveFormsModule } from "@angular/forms";
 import { MatButtonModule } from "@angular/material/button";
 import { MatExpansionModule } from "@angular/material/expansion";
 import { RouterModule, Routes } from "@angular/router";
+import { SharedLibraryModule } from "shared";
 import { BlogPageModule } from "../blog-page/blog-page.module";
 import { DiscernPageModule } from "../discern-page/discern-page.module";
 import { InsightModule } from "../insight-page/insight.module";
@@ -31,6 +32,7 @@ const routes: Routes = [
     InsightModule,
     BlogPageModule,
     DiscernPageModule,
+    SharedLibraryModule,
   ],
 })
 export class ServerPageModule {}

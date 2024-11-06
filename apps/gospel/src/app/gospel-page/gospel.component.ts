@@ -1,6 +1,6 @@
 import { ViewportScroller } from "@angular/common";
 import { AfterViewInit, Component, HostBinding, OnInit } from "@angular/core";
-import { fadeInOut } from "../shared/animations/animation";
+import { fadeInOut } from "shared";
 
 @Component({
   selector: "blog-gospel",

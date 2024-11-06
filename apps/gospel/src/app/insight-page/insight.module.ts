@@ -4,6 +4,7 @@ import { MatButtonModule } from "@angular/material/button";
 import { MatDividerModule } from "@angular/material/divider";
 import { MatProgressSpinnerModule } from "@angular/material/progress-spinner";
 import { RouterModule, Routes } from "@angular/router";
+import { SharedLibraryModule } from "shared";
 import { SharedModule } from "../shared/shared.module";
 import { InsightDetailComponent } from "./insight-detail/insight-detail.component";
 import { InsightListComponent } from "./insight-list/insight-list.component";
@@ -24,6 +25,7 @@ const routes: Routes = [
     MatDividerModule,
     MatButtonModule,
     MatProgressSpinnerModule,
+    SharedLibraryModule,
   ],
   exports: [InsightListComponent],
 })
