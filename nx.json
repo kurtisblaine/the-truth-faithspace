@@ -39,7 +39,7 @@
       "style": "scss"
     }
   },
-  "defaultProject": "blog",
+  "defaultProject": "gospel",
   "namedInputs": {
     "default": ["{projectRoot}/**/*", "sharedGlobals"],
     "sharedGlobals": [],
