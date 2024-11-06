@@ -1,4 +1,4 @@
-import { Component, ChangeDetectionStrategy } from "@angular/core";
+import { ChangeDetectionStrategy, Component } from "@angular/core";
 import { Router } from "@angular/router";
 import { Store } from "@ngrx/store";
 import { Guid } from "guid-typescript";
@@ -6,13 +6,13 @@ import { ItemsActions } from "../+state/items/items.actions";
 import { ItemEntity } from "../+state/items/items.reducer";
 @Component({
   selector: "app-server-page",
-    changeDetection: ChangeDetectionStrategy.OnPush,
+  changeDetection: ChangeDetectionStrategy.OnPush,
   template: `<button mat-flat-button (click)="saveItems()">Post Item</button>
 
     <div>Title</div>
     <input matInput type="text" [(ngModel)]="title" required />
 
-    <app-text-editor (editorChanged)="onChange($event)"></app-text-editor>
+    <lib-text-editor (editorChanged)="onChange($event)"></lib-text-editor>
 
     <mat-accordion class="example-headers-align" multi>
       <mat-expansion-panel>

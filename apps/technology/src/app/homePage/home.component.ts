@@ -1,5 +1,5 @@
 import { ChangeDetectionStrategy, Component } from "@angular/core";
-import { fadeInOut } from "../shared/animations/animation";
+import { fadeInOut } from "../../../../../libs/src";
 @Component({
   selector: "app-home",
   templateUrl: "./home.component.html",
