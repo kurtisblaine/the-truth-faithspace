@@ -6,14 +6,14 @@ import { MatGridListModule } from "@angular/material/grid-list";
 import { Router } from "@angular/router";
 import { Store } from "@ngrx/store";
 import * as _ from "lodash-es";
-import { SharedModule } from "shared";
+import { SharedLibraryModule } from "shared";
 import { selectLanguage } from "../../+state/bibles/bibles.actions";
 import { Bible, ScriptDirection, SortedBibles } from "../../models/bibles";
 
 @Component({
   selector: "app-language-item",
   standalone: true,
-  imports: [CommonModule, MatGridListModule, MatCardModule, SharedModule, MatRippleModule],
+  imports: [CommonModule, MatGridListModule, MatCardModule, SharedLibraryModule, MatRippleModule],
   templateUrl: "./language-item.component.html",
   styleUrl: "./language-item.component.scss",
   changeDetection: ChangeDetectionStrategy.OnPush,

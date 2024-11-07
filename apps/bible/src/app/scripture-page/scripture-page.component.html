@@ -4,9 +4,16 @@
   </h1>
 </div>
 
-<div style="display: flex; flex-direction: row" *ngIf="scripture$ | async; let scritpure">
-  <div class="arrow-button" *ngIf="scritpure.data?.previous?.id && !isAll">
-    <button matRipple class="control prev" (click)="onPreviousArrowClick(scritpure)">
+<div
+  style="display: flex; flex-direction: row; width: 95%; align-self: center"
+  *ngIf="scripture$ | async; let scritpure"
+>
+  <div
+    class="arrow-button"
+    style="position: fixed; top: 50%; right: 96.5%; z-index: 7777777"
+    *ngIf="scritpure.data?.previous?.id && !isAll"
+  >
+    <button matRipple class="control prev" style="height: 77px" (click)="onPreviousArrowClick(scritpure)">
       <span class="arrow left"></span>
     </button>
   </div>
@@ -31,8 +38,12 @@
     </mat-card-content>
   </mat-card>
 
-  <div class="arrow-button" *ngIf="scritpure.data?.next?.id && !isAll">
-    <button matRipple class="control next" (click)="onNextArrowClick(scritpure)">
+  <div
+    class="arrow-button"
+    style="position: fixed; top: 50%; left: 96.5%; z-index: 7777777"
+    *ngIf="scritpure.data?.next?.id && !isAll"
+  >
+    <button matRipple class="control next" style="height: 77px" (click)="onNextArrowClick(scritpure)">
       <span class="arrow right"></span>
     </button>
   </div>
