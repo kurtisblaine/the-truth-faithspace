@@ -1,5 +1,5 @@
 <div style="display: flex">
-  <h1>Books from {{ this.translation$ | async }}</h1>
+  <h3>Books from {{ this.translation$ | async }}</h3>
 </div>
 
 <mat-spinner *ngIf="isLoading$ | async; let isLoading"></mat-spinner>

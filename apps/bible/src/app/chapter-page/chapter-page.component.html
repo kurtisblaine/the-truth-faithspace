@@ -1,5 +1,5 @@
 <div style="display: flex">
-  <h1>Chapters from {{ this.selectedBook$ | async }}</h1>
+  <h3>Chapters from {{ this.selectedBook$ | async }}</h3>
 </div>
 
 <mat-spinner *ngIf="isLoading$ | async; let isLoading"> </mat-spinner>
