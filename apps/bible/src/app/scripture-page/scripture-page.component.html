@@ -10,7 +10,7 @@
 >
   <div
     class="arrow-button"
-    style="position: fixed; top: 50%; right: 96.5%; z-index: 7777777"
+    style="position: fixed; top: 50%; left: 0.5%; z-index: 7777777"
     *ngIf="scritpure.data?.previous?.id && !isAll"
   >
     <button matRipple class="control prev" style="height: 77px" (click)="onPreviousArrowClick(scritpure)">
@@ -40,7 +40,7 @@
 
   <div
     class="arrow-button"
-    style="position: fixed; top: 50%; left: 96.5%; z-index: 7777777"
+    style="position: fixed; top: 50%; right: 0.5%; z-index: 7777777"
     *ngIf="scritpure.data?.next?.id && !isAll"
   >
     <button matRipple class="control next" style="height: 77px" (click)="onNextArrowClick(scritpure)">
