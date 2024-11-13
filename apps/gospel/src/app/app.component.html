@@ -22,25 +22,30 @@
       <mat-divider></mat-divider>
 
       <div mat-subheader>Posts</div>
-      <mat-list-item lines="3" (click)="goPsalm(); drawer.close()">
-        <fa-icon matListItemIcon [icon]="psalmIcon" [size]="'lg'"></fa-icon>
-        <span matListItemTitle>Poem</span>
-        <span>an exalting & magnifying of the Lord with poetry. </span>
-      </mat-list-item>
-      <mat-list-item lines="3" (click)="goInsight(); drawer.close()">
-        <fa-icon matListItemIcon [icon]="insightIcon" [size]="'lg'"></fa-icon>
-        <span matListItemTitle>Insight</span>
-        <span>a collection of things understood in the world.</span>
+      <mat-list-item lines="3" (click)="goDiscern(); drawer.close()">
+        <fa-icon matListItemIcon [icon]="discernIcon" [size]="'lg'"></fa-icon>
+        <span matListItemTitle>Discern</span>
+        <span>a set of judgements of different spirits & gospels.</span>
       </mat-list-item>
       <mat-list-item lines="3" (click)="goBlog(); drawer.close()">
         <fa-icon matListItemIcon [icon]="blogIcon" [size]="'lg'"></fa-icon>
         <span matListItemTitle>Edification</span>
         <span>a set of scriptures knit together for encouraging.</span>
       </mat-list-item>
-      <mat-list-item lines="3" (click)="goDiscern(); drawer.close()">
-        <fa-icon matListItemIcon [icon]="discernIcon" [size]="'lg'"></fa-icon>
-        <span matListItemTitle>Discern</span>
-        <span>a set of judgements of different spirits & gospels.</span>
+      <mat-list-item lines="3" (click)="goInsight(); drawer.close()">
+        <fa-icon matListItemIcon [icon]="insightIcon" [size]="'lg'"></fa-icon>
+        <span matListItemTitle>Insight</span>
+        <span>a collection of things understood in the world.</span>
+      </mat-list-item>
+      <mat-list-item lines="3" (click)="goPsalm(); drawer.close()">
+        <fa-icon matListItemIcon [icon]="psalmIcon" [size]="'lg'"></fa-icon>
+        <span matListItemTitle>Poem</span>
+        <span>an exalting & magnifying of the Lord with poetry. </span>
+      </mat-list-item>
+      <mat-list-item lines="3" (click)="goStudies(); drawer.close()">
+        <fa-icon matListItemIcon [icon]="studyIcon" [size]="'lg'"></fa-icon>
+        <span matListItemTitle>Study</span>
+        <span>a set of like-minded scripture for a complete understanding. </span>
       </mat-list-item>
       <mat-divider></mat-divider>
 
@@ -48,7 +53,7 @@
       <mat-list-item lines="3" (click)="goDrawings(); drawer.close()">
         <fa-icon matListItemIcon [icon]="drawingIcon" [size]="'lg'"></fa-icon>
         <span matListItemTitle>Drawing</span>
-        <span>making simple through contrast the truthful things.</span>
+        <span>making simple through contrast all truthful things.</span>
       </mat-list-item>
       <mat-list-item lines="3" (click)="goTracts(); drawer.close()">
         <fa-icon matListItemIcon [icon]="tractIcon" [size]="'lg'"></fa-icon>

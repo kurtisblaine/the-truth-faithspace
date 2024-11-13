@@ -3,6 +3,7 @@ import { Router } from "@angular/router";
 import {
   faBars,
   faBible,
+  faBook,
   faBrain,
   faDumbbell,
   faEnvelope,
@@ -37,6 +38,7 @@ export class AppComponent implements OnInit, AfterViewInit {
   public resourceIcon = faLink;
   public gospelIcon = faNewspaper;
   public bookIcon = faBible;
+  public studyIcon = faBook;
   public progressValue = new BehaviorSubject(0);
   public progressValue$!: Observable<number>;
   public scrollTimeout!: any;
@@ -91,6 +93,12 @@ export class AppComponent implements OnInit, AfterViewInit {
 
   public goGospel() {
     this.router.navigateByUrl("truth").then(() => {
+      this.emitScrollEvent();
+    });
+  }
+
+  public goStudies() {
+    this.router.navigateByUrl("studies").then(() => {
       this.emitScrollEvent();
     });
   }

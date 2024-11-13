@@ -10,6 +10,7 @@ import { DiscernPageModule } from "../discern-page/discern-page.module";
 import { InsightModule } from "../insight-page/insight.module";
 import { PsalmPageModule } from "../psalm-page/psalm-page.module";
 import { SharedModule } from "../shared/shared.module";
+import { StudyPageModule } from "../study-page/study-page.module";
 import { ServerPageComponent } from "./server-page.component";
 
 const routes: Routes = [
@@ -33,6 +34,7 @@ const routes: Routes = [
     BlogPageModule,
     DiscernPageModule,
     SharedLibraryModule,
+    StudyPageModule,
   ],
 })
 export class ServerPageModule {}

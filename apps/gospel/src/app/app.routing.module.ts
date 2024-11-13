@@ -44,6 +44,10 @@ const routes: Routes = [
   },
   {
     path: "",
+    loadChildren: () => import("./study-page/study-page.module").then((m) => m.StudyPageModule),
+  },
+  {
+    path: "",
     loadChildren: () => import("./server-page/server-page.module").then((m) => m.ServerPageModule),
   },
   { path: "", pathMatch: "full", redirectTo: "home" },

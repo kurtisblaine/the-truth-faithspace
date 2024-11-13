@@ -4,6 +4,7 @@
 <button mat-flat-button (click)="saveInsight()">Post Insight</button>
 <button mat-flat-button (click)="saveBlog()">Post Edification</button>
 <button mat-flat-button (click)="saveDiscernment()">Post Discern</button>
+<button mat-flat-button (click)="saveStudy()">Post Study</button>
 
 <div>Title</div>
 <input matInput type="text" [(ngModel)]="title" required />
@@ -11,28 +12,6 @@
 <lib-text-editor (editorChanged)="onChange($event)"></lib-text-editor>
 
 <mat-accordion class="example-headers-align" multi>
-  <mat-expansion-panel>
-    <mat-expansion-panel-header>
-      <mat-panel-title>
-        <h1 style="padding: 15px 15px 0px" class="primary-color">Poems</h1>
-      </mat-panel-title>
-    </mat-expansion-panel-header>
-    <ng-template matExpansionPanelContent>
-      <blog-psalm-list [update]="true"></blog-psalm-list>
-    </ng-template>
-  </mat-expansion-panel>
-
-  <mat-expansion-panel>
-    <mat-expansion-panel-header>
-      <mat-panel-title>
-        <h1 style="padding: 15px 15px 0px" class="primary-color">Insights</h1>
-      </mat-panel-title>
-    </mat-expansion-panel-header>
-    <ng-template matExpansionPanelContent>
-      <blog-insight-list [update]="true"></blog-insight-list>
-    </ng-template>
-  </mat-expansion-panel>
-
   <mat-expansion-panel>
     <mat-expansion-panel-header>
       <mat-panel-title>
@@ -52,6 +31,39 @@
     </mat-expansion-panel-header>
     <ng-template matExpansionPanelContent>
       <blog-discern-list [update]="true"></blog-discern-list>
+    </ng-template>
+  </mat-expansion-panel>
+
+  <mat-expansion-panel>
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        <h1 style="padding: 15px 15px 0px" class="primary-color">Insights</h1>
+      </mat-panel-title>
+    </mat-expansion-panel-header>
+    <ng-template matExpansionPanelContent>
+      <blog-insight-list [update]="true"></blog-insight-list>
+    </ng-template>
+  </mat-expansion-panel>
+
+  <mat-expansion-panel>
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        <h1 style="padding: 15px 15px 0px" class="primary-color">Poems</h1>
+      </mat-panel-title>
+    </mat-expansion-panel-header>
+    <ng-template matExpansionPanelContent>
+      <blog-psalm-list [update]="true"></blog-psalm-list>
+    </ng-template>
+  </mat-expansion-panel>
+
+  <mat-expansion-panel>
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        <h1 style="padding: 15px 15px 0px" class="primary-color">Studies</h1>
+      </mat-panel-title>
+    </mat-expansion-panel-header>
+    <ng-template matExpansionPanelContent>
+      <blog-study-list [update]="true"></blog-study-list>
     </ng-template>
   </mat-expansion-panel>
 </mat-accordion>

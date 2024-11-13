@@ -1,0 +1,12 @@
+<div class="study-item" *ngFor="let study of studies$ | async">
+  <div class="study-title primary-color" (click)="navigate(study)">
+    {{ study.title.toUpperCase() }}
+  </div>
+  <div>{{ study.date | date: "short" }}</div>
+
+  <button mat-flat-button *ngIf="update" (click)="doUpdate(study)">Update</button>
+
+  <lib-text-editor [readonly]="!update" [document]="study.json" (editorChanged)="study.json = $event"></lib-text-editor>
+
+  <mat-divider></mat-divider>
+</div>
