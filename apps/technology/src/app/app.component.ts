@@ -1,4 +1,4 @@
-import { Component, ChangeDetectionStrategy } from "@angular/core";
+import { ChangeDetectionStrategy, Component } from "@angular/core";
 import { MatButtonModule } from "@angular/material/button";
 import { MatListModule } from "@angular/material/list";
 import { MatSidenavModule } from "@angular/material/sidenav";
@@ -46,7 +46,7 @@ import { faBars, faHome, faRobot } from "@fortawesome/free-solid-svg-icons";
               <fa-icon [icon]="icon" [size]="'lg'"></fa-icon>
             </button>
 
-            <span>Technology</span>
+            <span>Beware of Idols</span>
           </mat-toolbar>
         </div>
 
@@ -57,7 +57,7 @@ import { faBars, faHome, faRobot } from "@fortawesome/free-solid-svg-icons";
   styleUrl: "./app.component.scss",
 })
 export class AppComponent {
-  public title = "Technology";
+  public title = "Beware of Idols";
   public icon = faBars;
   public homeIcon = faHome;
   public itemIcon = faRobot;
