@@ -17,7 +17,7 @@
         "tsConfig": "apps/gospel/tsconfig.app.json",
         "inlineStyleLanguage": "scss",
         "assets": ["apps/gospel/src/favicon.ico", "apps/gospel/src/assets"],
-        "styles": ["./node_modules/@angular/material/prebuilt-themes/indigo-pink.css", "apps/gospel/src/styles.scss"],
+        "styles": ["./node_modules/@angular/material/prebuilt-themes/rose-red.css", "apps/gospel/src/styles.scss"],
         "scripts": [],
         "sourceMap": true,
         "namedChunks": true

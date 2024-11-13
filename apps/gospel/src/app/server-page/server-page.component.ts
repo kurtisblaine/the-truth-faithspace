@@ -84,7 +84,7 @@ export class ServerPageComponent implements OnInit {
       })
     );
 
-    this.router.navigateByUrl("blogs");
+    this.router.navigateByUrl("edifications");
   }
 
   public saveInsight() {

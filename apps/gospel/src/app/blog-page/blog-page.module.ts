@@ -11,10 +11,10 @@ import { BlogListComponent } from "./blog-list/blog-list.component";
 import { BlogPageComponent } from "./blog-page.component";
 const routes: Routes = [
   {
-    path: "blogs",
+    path: "edifications",
     component: BlogPageComponent,
   },
-  { path: "blog-detail/:id", component: BlogDetailComponent },
+  { path: "edify-detail/:id", component: BlogDetailComponent },
 ];
 @NgModule({
   declarations: [BlogPageComponent, BlogListComponent, BlogDetailComponent],

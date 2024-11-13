@@ -1,7 +1,7 @@
-<h1 style="padding: 15px 0px 0px" class="primary-color">God bless you</h1>
-<h2 class="study-title primary-color">
+<h3 class="primary-color">God bless you</h3>
+<h3 class="study-title primary-color">
   {{ study?.title?.toUpperCase() }}
-</h2>
+</h3>
 <div>{{ study?.date | date: "short" }}</div>
 
 <lib-text-editor [readonly]="true" [document]="study.json" [showReadMore]="false"></lib-text-editor>
