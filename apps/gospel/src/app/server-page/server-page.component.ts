@@ -7,6 +7,7 @@ import { createDiscern, loadDiscernments } from "../state/discern/discern.action
 import { createInsight, loadInsights } from "../state/insight/insights.actions";
 import { createPsalm, loadPsalms } from "../state/psalm/psalm.actions";
 import { PsalmEntity } from "../state/psalm/psalm.models";
+import { StudyActions } from "../state/study/study.actions";
 @Component({
   selector: "blog-server-page",
   templateUrl: "./server-page.component.html",
@@ -23,6 +24,22 @@ export class ServerPageComponent implements OnInit {
     this.store.dispatch(loadInsights());
     this.store.dispatch(loadBlogs());
     this.store.dispatch(loadDiscernments());
+    this.store.dispatch(StudyActions.loadStudies());
+  }
+
+  public saveStudy() {
+    this.store.dispatch(
+      StudyActions.createStudy({
+        study: {
+          title: this.title,
+          json: this._document,
+          date: Date.now().toString(),
+          id: Guid.create().toString(),
+        },
+      })
+    );
+
+    this.router.navigateByUrl("studies");
   }
 
   public saveDiscernment() {

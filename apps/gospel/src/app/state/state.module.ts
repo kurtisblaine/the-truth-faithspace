@@ -11,6 +11,8 @@ import { InsightsEffects } from "./insight/insights.effects";
 import * as fromInsights from "./insight/insights.reducer";
 import { PsalmEffects } from "./psalm/psalm.effects";
 import * as fromPsalm from "./psalm/psalm.reducer";
+import * as fromStudy from './study/study.reducer';
+import { StudyEffects } from './study/study.effects';
 
 export interface AppState {
   [fromBlog.BLOG_FEATURE_KEY]: fromBlog.State;
@@ -37,6 +39,8 @@ export const effects: Type<any>[] = [PsalmEffects, BlogEffects, InsightsEffects,
     StoreModule.forRoot(reducers, { metaReducers }),
     EffectsModule.forRoot(effects),
     StoreDevtoolsModule.instrument(),
+    StoreModule.forFeature(fromStudy.studyFeatureKey, fromStudy.reducer),
+    EffectsModule.forFeature([StudyEffects]),
   ],
 })
 export class StateModule {}
