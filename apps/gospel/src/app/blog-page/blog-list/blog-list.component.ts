@@ -30,10 +30,10 @@ export class BlogListComponent implements OnInit {
       })
     );
 
-    // this.router.navigateByUrl("blogs");
+    // this.router.navigateByUrl("edifications");
   }
 
   public navigate(blog) {
-    this.router.navigateByUrl("blog-detail/" + blog.id, { state: { blog } });
+    this.router.navigateByUrl("edify-detail/" + blog.id, { state: { blog } });
   }
 }

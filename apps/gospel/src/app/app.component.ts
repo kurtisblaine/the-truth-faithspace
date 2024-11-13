@@ -122,7 +122,7 @@ export class AppComponent implements OnInit, AfterViewInit {
   }
 
   public goBlog() {
-    this.router.navigateByUrl("blogs").then(() => {
+    this.router.navigateByUrl("edifications").then(() => {
       this.emitScrollEvent();
     });
   }
