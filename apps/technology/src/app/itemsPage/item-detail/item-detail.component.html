@@ -1,6 +1,6 @@
-<h2 class="item-title primary-color">
+<h3 class="item-title primary-color">
   {{ item?.title?.toUpperCase() }}
-</h2>
+</h3>
 <div>{{ item?.date | date: "short" }}</div>
 
 <lib-text-editor [readonly]="true" [document]="item.json" [showReadMore]="false"></lib-text-editor>
