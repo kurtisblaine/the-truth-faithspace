@@ -4,6 +4,7 @@ import { FormsModule, ReactiveFormsModule } from "@angular/forms";
 import { MatButtonModule } from "@angular/material/button";
 import { MatDividerModule } from "@angular/material/divider";
 import { MatExpansionModule } from "@angular/material/expansion";
+import { MatInputModule } from "@angular/material/input";
 import { MatTooltipModule } from "@angular/material/tooltip";
 import { RouterModule, Routes } from "@angular/router";
 import { FontAwesomeModule } from "@fortawesome/angular-fontawesome";
@@ -13,7 +14,7 @@ import { SharedModule } from "../shared/shared.module";
 import { ServerPageComponent } from "./server-page.component";
 const routes: Routes = [
   {
-    path: "server",
+    path: "server/777c7c75-cdf7-4c51-beab-3ef81d6a5777",
     component: ServerPageComponent,
   },
 ];
@@ -29,6 +30,7 @@ const routes: Routes = [
     FormsModule,
     FontAwesomeModule,
     ReactiveFormsModule,
+    MatInputModule,
     MatTooltipModule,
     ItemsModule,
     SharedLibraryModule,

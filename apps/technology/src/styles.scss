@@ -39,10 +39,6 @@ body {
   font-family: Roboto, "Helvetica Neue", sans-serif;
 }
 
-.mat-drawer-content {
-  overflow-x: hidden !important;
-}
-
 .mat-typography p {
   margin: unset;
 }
@@ -112,6 +108,13 @@ a {
   background-color: white !important;
 }
 
-.mat-drawer-content {
-  overflow: hidden;
+.container-form {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.mat-caption {
+  font-size: 14px;
+  padding: 7px;
 }

@@ -18,7 +18,7 @@ import { ItemEntity } from "../+state/items/items.reducer";
       <mat-expansion-panel>
         <mat-expansion-panel-header>
           <mat-panel-title>
-            <h1 style="padding: 15px 15px 0px" class="primary-color">Items</h1>
+            <h3 style="padding: 15px 15px 0px" class="primary-color">Items</h3>
           </mat-panel-title>
         </mat-expansion-panel-header>
         <ng-template matExpansionPanelContent>
