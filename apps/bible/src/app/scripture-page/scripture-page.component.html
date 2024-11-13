@@ -1,7 +1,7 @@
 <div style="display: flex">
-  <h1>
+  <h3>
     {{ this.selectedBook$ | async }} <span *ngIf="activeChapter"> {{ activeChapter }}</span>
-  </h1>
+  </h3>
 </div>
 
 <div
@@ -27,7 +27,7 @@
       </ng-container>
 
       <ng-container *ngIf="isAll">
-        <cdk-virtual-scroll-viewport itemSize="100" class="example-viewport">
+        <cdk-virtual-scroll-viewport itemSize="{{ chapterCount }}" class="example-viewport">
           <ng-container *cdkVirtualFor="let item of dataSource; let first = first">
             <div *ngIf="!first" style="line-height: 27px; margin-right: 33px; margin-top: 0" [innerHtml]="item">
               <!-- {{ item || "Loading..." }} -->

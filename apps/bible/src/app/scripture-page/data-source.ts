@@ -21,6 +21,7 @@ export class MyDataSource extends DataSource<string | undefined> {
   connect(collectionViewer: CollectionViewer): Observable<(string | undefined)[]> {
     this._subscription.add(
       collectionViewer.viewChange.subscribe((range) => {
+        console.log(range.start, range.end, range);
         const startPage = this._getPageForIndex(range.start);
         const endPage = this._getPageForIndex(range.end - 1);
         for (let i = startPage; i <= endPage; i++) {
@@ -55,14 +56,5 @@ export class MyDataSource extends DataSource<string | undefined> {
       );
       this._dataStream.next(this._cachedData);
     });
-
-    // setTimeout(() => {
-    //   this._cachedData.splice(
-    //     page * this._pageSize,
-    //     this._pageSize,
-    //     ...Array.from({ length: this._pageSize }).map((_, i) => `Item #${page * this._pageSize + i}`)
-    //   );
-    //   this._dataStream.next(this._cachedData);
-    // }, Math.random() * 1000 + 200);
   }
 }

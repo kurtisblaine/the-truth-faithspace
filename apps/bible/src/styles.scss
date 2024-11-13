@@ -32,9 +32,9 @@ $primary-palette: map.get($color-config, "primary");
   grid-auto-rows: minmax(100px, auto);
 }
 
-h1 {
+h3 {
   font-variant: small-caps;
-  font-size: xxx-large;
+  font-size: x-large;
   color: mat.m2-get-color-from-palette($primary-palette);
   margin-top: unset;
 }
