@@ -49,6 +49,8 @@ export const appConfig: ApplicationConfig = {
         },
       } as RippleGlobalOptions,
     },
+    // { provide: VIRTUAL_SCROLL_STRATEGY, useClass: CustomVirtualScrollStrategy },
     { provide: RouteReuseStrategy, useClass: DefaultRouteReuseStrategy },
+    // CustomVirtualScrollStrategy,
   ],
 };

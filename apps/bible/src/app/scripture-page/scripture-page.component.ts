@@ -1,11 +1,13 @@
 import { CdkVirtualScrollViewport, ScrollingModule } from "@angular/cdk/scrolling";
 import { CommonModule } from "@angular/common";
-import { ChangeDetectionStrategy, Component, OnDestroy, OnInit, Input as RouteInput, ViewChild } from "@angular/core";
+import { Component, OnDestroy, OnInit, Input as RouteInput, ViewChild } from "@angular/core";
 import { MatCardModule } from "@angular/material/card";
 import { MatRippleModule } from "@angular/material/core";
+import { MatDividerModule } from "@angular/material/divider";
+import { MatProgressSpinnerModule } from "@angular/material/progress-spinner";
 import { Router } from "@angular/router";
 import { Store } from "@ngrx/store";
-import { Observable, Subscription, map } from "rxjs";
+import { Observable, Subject, Subscription, bufferCount, filter, from, map, mergeMap } from "rxjs";
 import { BibleApiService } from "../+state/bible-api.service";
 import { BooksActions } from "../+state/books/books.actions";
 import { selectEntity } from "../+state/books/books.selectors";
@@ -17,10 +19,10 @@ import { MyDataSource } from "./data-source";
 @Component({
   selector: "app-scripture-page",
   standalone: true,
-  imports: [CommonModule, MatCardModule, ScrollingModule, MatRippleModule],
+  imports: [CommonModule, MatCardModule, ScrollingModule, MatRippleModule, MatDividerModule, MatProgressSpinnerModule],
   templateUrl: "./scripture-page.component.html",
   styleUrl: "./scripture-page.component.scss",
-  changeDetection: ChangeDetectionStrategy.OnPush,
+  providers: [],
 })
 export class ScripturePageComponent implements OnInit, OnDestroy {
   @RouteInput() public bibleId: string;
@@ -42,7 +44,10 @@ export class ScripturePageComponent implements OnInit, OnDestroy {
   public isAll!: boolean;
   public activeChapter!: string;
   public subscription!: Subscription;
-  dataSource: MyDataSource;
+  public dataSubsciption!: Subscription;
+  public dataSource: MyDataSource;
+  private requestQueue = new Subject<number>();
+  public items: { chapter: number; content: any; verseCount: number }[] = [];
 
   ngOnInit(): void {
     this.isAll = this.chapterId == "all";
@@ -54,7 +59,27 @@ export class ScripturePageComponent implements OnInit, OnDestroy {
     if (this.isAll) {
       this.subscription = this.store.select(selectChaptersCount).subscribe((total) => {
         this.chapterCount = total;
+
         this.dataSource = new MyDataSource(this.bibleApi, this.bibleId, this.bookId, total);
+
+        this.dataSubsciption = this.requestQueue
+          .pipe(
+            filter((r) => {
+              return r < total;
+            }),
+            bufferCount(1),
+            mergeMap((requests) =>
+              from(requests).pipe(mergeMap((startIndex) => this.dataSource.fetchData(startIndex, 5)))
+            )
+          )
+          .subscribe((data: { chapter: number; content: any; refresh: boolean; verseCount: number }[]) => {
+            if (data.some((r) => r.refresh)) {
+              const dataToRefresh = data.filter((r) => r.refresh);
+              this.items.splice(dataToRefresh[0].chapter, dataToRefresh.length, ...dataToRefresh);
+
+              this.items = [...this.items];
+            }
+          });
       });
     } else {
       this.activeChapter = this.chapterId.split(".").pop();
@@ -62,9 +87,21 @@ export class ScripturePageComponent implements OnInit, OnDestroy {
     }
   }
 
+  trackBy(index: number, item: { chapter: number; content: any }) {
+    return item.chapter;
+  }
+
+  onScrollIndexChange(index: number) {
+    this.requestQueue.next(index);
+  }
+
   ngOnDestroy(): void {
     if (this.subscription) {
       this.subscription.unsubscribe();
+    }
+
+    if (this.dataSubsciption) {
+      this.dataSubsciption.unsubscribe();
     }
   }
 
