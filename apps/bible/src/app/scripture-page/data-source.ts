@@ -1,12 +1,13 @@
 import { CollectionViewer, DataSource } from "@angular/cdk/collections";
-import { BehaviorSubject, Observable, Subscription } from "rxjs";
+import { BehaviorSubject, forkJoin, map, Observable, of, Subscription } from "rxjs";
 import { BibleApiService } from "../+state/bible-api.service";
+import { Data } from "../models/scripture";
 
 export class MyDataSource extends DataSource<string | undefined> {
   private _pageSize = 1;
-  private _cachedData = Array.from<string>({ length: this.totalChapters });
+  private _cachedData: Map<number, Data> = new Map<number, Data>();
   private _fetchedPages = new Set<number>();
-  private readonly _dataStream = new BehaviorSubject<(string | undefined)[]>(this._cachedData);
+  private readonly _dataStream = new BehaviorSubject<(string | undefined)[]>([]);
   private readonly _subscription = new Subscription();
 
   constructor(
@@ -16,6 +17,39 @@ export class MyDataSource extends DataSource<string | undefined> {
     private totalChapters: number
   ) {
     super();
+    this._cachedData.clear();
+  }
+
+  createRange(number, times) {
+    return Array.from({ length: times }, (_, i) => number + i);
+  }
+
+  fetchData(
+    startIndex: number,
+    count: number
+  ): Observable<{ chapter: number; content: any; refresh: boolean; verseCount: number }[]> {
+    const sources = this.createRange(startIndex, count)
+      .filter((r) => r < this.totalChapters)
+      .map((position) => {
+        const index = position === 0 ? "intro" : position.toString();
+        if (this._cachedData.has(index)) {
+          const existing = this._cachedData.get(index);
+          return of({ chapter: index, content: existing.content, refresh: false, verseCount: existing.verseCount });
+        }
+        return this.bibleApi.getScripture(this.bibleId, `${this.bookId}.${index}`).pipe(
+          map((r) => {
+            this._cachedData.set(index, r.data);
+            return {
+              chapter: index.toUpperCase(),
+              content: r.data.content,
+              refresh: true,
+              verseCount: r.data.verseCount,
+            };
+          })
+        );
+      });
+
+    return forkJoin(sources).pipe(map((resArray) => resArray));
   }
 
   connect(collectionViewer: CollectionViewer): Observable<(string | undefined)[]> {
@@ -26,7 +60,6 @@ export class MyDataSource extends DataSource<string | undefined> {
         const endPage = this._getPageForIndex(range.end - 1);
         for (let i = startPage; i <= endPage; i++) {
           const index = i === 0 ? "intro" : i.toString();
-          this._fetchPage({ index, page: i });
         }
       })
     );
@@ -39,22 +72,5 @@ export class MyDataSource extends DataSource<string | undefined> {
 
   private _getPageForIndex(index: number): number {
     return Math.floor(index / this._pageSize);
-  }
-
-  private _fetchPage(result: { index: string; page: number }) {
-    if (this._fetchedPages.has(result.page)) {
-      return;
-    }
-    this._fetchedPages.add(result.page);
-
-    this.bibleApi.getScripture(this.bibleId, `${this.bookId}.${result.index}`).subscribe((r) => {
-      this._cachedData.splice(
-        result.page * this._pageSize,
-        this._pageSize,
-        r.data.content
-        // ...Array.from({ length: this._pageSize }).map(() => r.data.content)
-      );
-      this._dataStream.next(this._cachedData);
-    });
   }
 }
