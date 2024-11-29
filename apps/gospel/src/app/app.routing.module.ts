@@ -2,6 +2,7 @@ import { NgModule } from "@angular/core";
 import { PreloadAllModules, RouterModule, Routes, provideRouter, withHashLocation } from "@angular/router";
 
 const routes: Routes = [
+  { path: "", pathMatch: "full", redirectTo: "truth" },
   {
     path: "",
     loadChildren: () => import("./home-page/home-page.module").then((m) => m.HomePageModule),
@@ -50,7 +51,6 @@ const routes: Routes = [
     path: "",
     loadChildren: () => import("./server-page/server-page.module").then((m) => m.ServerPageModule),
   },
-  { path: "", pathMatch: "full", redirectTo: "home" },
   { path: "**", redirectTo: "error" },
 ];
 

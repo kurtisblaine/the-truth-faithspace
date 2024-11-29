@@ -86,7 +86,7 @@ export class AppComponent implements OnInit, AfterViewInit {
   }
 
   public goHome() {
-    this.router.navigateByUrl("").then(() => {
+    this.router.navigateByUrl("home").then(() => {
       this.emitScrollEvent();
     });
   }
