@@ -11,5 +11,7 @@ import { fadeInOut } from "shared";
 export default class HomePageComponent implements OnInit {
   constructor() {}
 
-  ngOnInit() {}
+  ngOnInit() {
+    (window as any).BLB.Tagger.pageInit();
+  }
 }
