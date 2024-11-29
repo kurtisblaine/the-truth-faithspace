@@ -1,4 +1,4 @@
-import { ChangeDetectionStrategy, Component, OnInit } from "@angular/core";
+import { AfterViewInit, ChangeDetectionStrategy, Component, OnInit } from "@angular/core";
 import { fadeInOut } from "shared";
 
 @Component({
@@ -8,10 +8,12 @@ import { fadeInOut } from "shared";
   changeDetection: ChangeDetectionStrategy.OnPush,
   animations: [fadeInOut],
 })
-export default class HomePageComponent implements OnInit {
+export default class HomePageComponent implements OnInit, AfterViewInit {
   constructor() {}
 
-  ngOnInit() {
+  ngOnInit() {}
+
+  ngAfterViewInit(): void {
     (window as any).BLB.Tagger.pageInit();
   }
 }
