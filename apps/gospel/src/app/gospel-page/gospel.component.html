@@ -187,86 +187,85 @@
 
 <div class="pimg12" style="background-position: top">
   <section class="section section-dark floater">
-    <!-- <blog-audio-play [file]="'1qRXKegKw1R_W5puNRIWZ3ROLQWoVqipJ'" [name]="'Futility of Pleasure'"> </blog-audio-play> -->
-    <h3 class="headers">Futility of Pleasure</h3>
-    <!-- <blog-nagivation-header>
-
-    </blog-nagivation-header> -->
+    <h3 class="headers" (click)="navigateToGospelItem(futilityOfPleasure)">Futility of Pleasure</h3>
     <p class="paragraphs">
-      Alcohol and food in excess, which are perverted by the flesh into drunkenness and gluttony, and drugs used for
-      pleasure as an escape from reality, and entertainment which is vain, and any other pleasure which come from our
-      lust, do not sustain us - they only mask the deeply rooted issue we have and make life bearable for us only for a
-      short time. It is like hitting the snooze button on an alarm clock: you feel better now, but you will have to deal
-      with the same problem later, but it has gotten worse. Even if we are 'satisified' or 'fulfilled' with these
-      things, it would never be enough: it is like we are feeding a beast within us, the more we feed it, the stronger
-      and bigger it gets. <br />
-      <a href="https://thelightof.life/#/insight-detail/cd57c552-146a-8c5a-7bd2-d1314e9a4793" target="_blank"
-        >See more about the nature of sin here.</a
-      ><br />
-      We eat food, but we are not content; we drink, but we are not sustained; we eat, but we are hungry again later; we
-      drink and become thirsty again. No matter how much the eye sees, it is not enough; no matter how much the ear
-      hears, it is not content. If these pleasures truly make us happy, why wouldn't we express it outwardly? If we were
-      truly happy, shouldn't our happiness resemble a child's happiness? Children are overcome with laughter and express
-      joyfulness and run around expressing their happiness, jumping with joy. If these things truly make us happy, we
-      surely would show it. Most often we are chained by such things: we look miserable outwardly, but inwardly, we
-      become less miserable. These only mask our pain for a short while. In the beginning, we used to be happy when sin
-      wasn't alive, in the innocence of our childhood, but later, sin came alive and we died. All of us have become
-      enslaved to our own desires which corrupt; for all lust corrupts. This leads to a cycle of dependence; and we
-      think we need these things to keep us in check: "I don't feel normal without them", we think. I've been chained by
-      many things for years of my life and looking back at my experience, surely that was not life. Whatever a person is
-      overcome by, that he is also enslaved. I was enslaved to everything a man could be ensalved by: food, alcohol,
-      drugs, & many others. I couldn't get out. It was dark and cold: loveless. I wanted to get out, but I couldn't: it
-      was surely a jail cell. I wanted to stop my sinning, but couldn't; I wanted out, but couldn't redeem myself. Hope,
-      I had none. "Where is real pleasure and satisfaction?", I pondered. And worse yet, what I experienced I didn't
-      know how to utter it; for perhaps if I could tell someone, they could help? But instead, guilt and shame keep me
-      from sharing, as if I were the only one on the planet dealing with such things. Just as Solomon, who had great
-      wisdom from God, wrote,
-      <blog-reference-tooltip [reference]="'Ecclesiastes 1'">
-        All things are full of weariness;<b>a man cannot utter it</b>; the eye is not satisfied with seeing, nor the ear
-        filled with hearing.
-      </blog-reference-tooltip>
-      <br />
+      <ng-container *ngTemplateOutlet="futilityOfPleasure"></ng-container>
+      <ng-template #futilityOfPleasure>
+        Alcohol and food in excess, which are perverted by the flesh into drunkenness and gluttony, and drugs used for
+        pleasure as an escape from reality, and entertainment which is vain, and any other pleasure which come from our
+        lust, do not sustain us - they only mask the deeply rooted issue we have and make life bearable for us only for
+        a short time. It is like hitting the snooze button on an alarm clock: you feel better now, but you will have to
+        deal with the same problem later, but it has gotten worse. Even if we are 'satisified' or 'fulfilled' with these
+        things, it would never be enough: it is like we are feeding a beast within us, the more we feed it, the stronger
+        and bigger it gets. <br />
+        <a href="https://thelightof.life/#/insight-detail/cd57c552-146a-8c5a-7bd2-d1314e9a4793" target="_blank"
+          >See more about the nature of sin here.</a
+        ><br />
+        We eat food, but we are not content; we drink, but we are not sustained; we eat, but we are hungry again later;
+        we drink and become thirsty again. No matter how much the eye sees, it is not enough; no matter how much the ear
+        hears, it is not content. If these pleasures truly make us happy, why wouldn't we express it outwardly? If we
+        were truly happy, shouldn't our happiness resemble a child's happiness? Children are overcome with laughter and
+        express joyfulness and run around expressing their happiness, jumping with joy. If these things truly make us
+        happy, we surely would show it. Most often we are chained by such things: we look miserable outwardly, but
+        inwardly, we become less miserable. These only mask our pain for a short while. In the beginning, we used to be
+        happy when sin wasn't alive, in the innocence of our childhood, but later, sin came alive and we died. All of us
+        have become enslaved to our own desires which corrupt; for all lust corrupts. This leads to a cycle of
+        dependence; and we think we need these things to keep us in check: "I don't feel normal without them", we think.
+        I've been chained by many things for years of my life and looking back at my experience, surely that was not
+        life. Whatever a person is overcome by, that he is also enslaved. I was enslaved to everything a man could be
+        ensalved by: food, alcohol, drugs, & many others. I couldn't get out. It was dark and cold: loveless. I wanted
+        to get out, but I couldn't: it was surely a jail cell. I wanted to stop my sinning, but couldn't; I wanted out,
+        but couldn't redeem myself. Hope, I had none. "Where is real pleasure and satisfaction?", I pondered. And worse
+        yet, what I experienced I didn't know how to utter it; for perhaps if I could tell someone, they could help? But
+        instead, guilt and shame keep me from sharing, as if I were the only one on the planet dealing with such things.
+        Just as Solomon, who had great wisdom from God, wrote,
+        <blog-reference-tooltip [reference]="'Ecclesiastes 1'">
+          All things are full of weariness;<b>a man cannot utter it</b>; the eye is not satisfied with seeing, nor the
+          ear filled with hearing.
+        </blog-reference-tooltip>
+        <br />
 
-      Solomon in his wisdom wrote,
-      <blog-reference-tooltip [reference]="'Ecclesiastes 2'">
-        I said in my heart, “Come now, I will test you with pleasure; enjoy yourself.” But behold, this also was vanity.
-        I said of laughter, “It is mad,” and of pleasure, “What use is it?” I searched with my heart how to cheer my
-        body with wine—my heart still guiding me with wisdom—and how to lay hold on folly, till I might see what was
-        good for the children of man to do under heaven during the few days of their life. (...) And whatever my eyes
-        desired I did not keep from them. I kept my heart from no pleasure, for my heart found pleasure in all my toil,
-        and this was my reward for all my toil. Then I considered all that my hands had done and the toil I had expended
-        in doing it, and behold, all was vanity and a striving after wind, and there was nothing to be gained under the
-        sun.
-      </blog-reference-tooltip>
-      Wisdom is insight, speaking of the things which are from within with the correct words. Everything begins with
-      lust; and how computer technology entices the eyes! It is satisfying while on it, but afterwards, it's like waking
-      from a sleep. We live in an age where media and screens are everywhere: it started with televisions in the living
-      room then escalated to monitors in our pockets. These surely feed our eyes. A computer can create entire
-      simulations of this world for people to live a new life inside. Can the copy ever be as good as the real? Which do
-      you like better: name brand goods or knock offs? Yes, knock offs are cheaper and require less of us, but they are
-      not better, even in the slightest. In the same way, these simulations are cheaper: you can sit on the couch and be
-      at a sports game! <br />
+        Solomon in his wisdom wrote,
+        <blog-reference-tooltip [reference]="'Ecclesiastes 2'">
+          I said in my heart, “Come now, I will test you with pleasure; enjoy yourself.” But behold, this also was
+          vanity. I said of laughter, “It is mad,” and of pleasure, “What use is it?” I searched with my heart how to
+          cheer my body with wine—my heart still guiding me with wisdom—and how to lay hold on folly, till I might see
+          what was good for the children of man to do under heaven during the few days of their life. (...) And whatever
+          my eyes desired I did not keep from them. I kept my heart from no pleasure, for my heart found pleasure in all
+          my toil, and this was my reward for all my toil. Then I considered all that my hands had done and the toil I
+          had expended in doing it, and behold, all was vanity and a striving after wind, and there was nothing to be
+          gained under the sun.
+        </blog-reference-tooltip>
+        Wisdom is insight, speaking of the things which are from within with the correct words. Everything begins with
+        lust; and how computer technology entices the eyes! It is satisfying while on it, but afterwards, it's like
+        waking from a sleep. We live in an age where media and screens are everywhere: it started with televisions in
+        the living room then escalated to monitors in our pockets. These surely feed our eyes. A computer can create
+        entire simulations of this world for people to live a new life inside. Can the copy ever be as good as the real?
+        Which do you like better: name brand goods or knock offs? Yes, knock offs are cheaper and require less of us,
+        but they are not better, even in the slightest. In the same way, these simulations are cheaper: you can sit on
+        the couch and be at a sports game! <br />
 
-      <a href="https://thelightof.life/#/insight-detail/c97a5cf5-6c93-20cf-65d6-f2fad777a8cc" target="_blank"
-        >See more about technology.</a
-      ><br />
+        <a href="https://thelightof.life/#/insight-detail/c97a5cf5-6c93-20cf-65d6-f2fad777a8cc" target="_blank"
+          >See more about technology.</a
+        ><br />
 
-      The natural use is better than the unnatural; the real is better than the copy; good is better than evil, even in
-      the meanwhile if you think, "Ah! It feels so good", in the end you will not be thinking that! Everything in which
-      we sow, we will also reap. A person does not sow an apple and get an orange tree; neither does a person breed pigs
-      and get cows; so why do we think, "I will sow corruption and get life"? Everything corrupts because of sin; and
-      all sin is dysfunctional; and a dysfunction is useless: a new sofa will become fettered, a new car will be a tin
-      of rust, even our bodies are becoming old and gray and worn out and will soon be in the grave. Evil will inherit
-      evil in the end and goodness will inherit goodness. This is true, even if, in the meanwhile, we see the wicked
-      prospering and the righteous suffering; everyone will get what their deeds deserve in the end because God will
-      cause His righteous judgement to be upheld. Take heed!
-      <blog-reference-tooltip [reference]="'1 Timothy 5:6'">
-        But she who lives in pleasure is dead while she lives. </blog-reference-tooltip
-      ><br />
+        The natural use is better than the unnatural; the real is better than the copy; good is better than evil, even
+        in the meanwhile if you think, "Ah! It feels so good", in the end you will not be thinking that! Everything in
+        which we sow, we will also reap. A person does not sow an apple and get an orange tree; neither does a person
+        breed pigs and get cows; so why do we think, "I will sow corruption and get life"? Everything corrupts because
+        of sin; and all sin is dysfunctional; and a dysfunction is useless: a new sofa will become fettered, a new car
+        will be a tin of rust, even our bodies are becoming old and gray and worn out and will soon be in the grave.
+        Evil will inherit evil in the end and goodness will inherit goodness. This is true, even if, in the meanwhile,
+        we see the wicked prospering and the righteous suffering; everyone will get what their deeds deserve in the end
+        because God will cause His righteous judgement to be upheld. Take heed!
+        <blog-reference-tooltip [reference]="'1 Timothy 5:6'">
+          But she who lives in pleasure is dead while she lives. </blog-reference-tooltip
+        ><br />
 
-      If these things are a review to you because you're a believer, feel free to go to
-      <a style="cursor: pointer" (click)="toAnchor('call-grace')">THE CALL - GRACE</a>
-      portion of the Gospel. There are many edifying things there that will help encourage you in the faith.
+        If these things are a review to you because you're a believer, feel free to go to
+        <a style="cursor: pointer" (click)="toAnchor('call-grace')">THE CALL - GRACE</a>
+        portion of the Gospel. There are many edifying things there that will help encourage you in the faith.
+      </ng-template>
     </p>
   </section>
 </div>
@@ -279,7 +278,7 @@
 
 <div class="filler">
   <section class="section section-dark">
-    <blog-audio-play [file]="'1CLcmJpxDNcToVHWkkiG-8cMNqPL9UhiI'" [name]="'Futility in Toil'"> </blog-audio-play>
+    <h3 class="headers">Futility in Toil</h3>
     <p class="paragraphs">
       Our lives are filled with work and toil. We work and then sleep to do it again the next day. Our days are short,
       yet we spend them in much pain and agony. We work for things that will not matter in the future; we work for
@@ -360,7 +359,7 @@
 
 <div class="pimg19">
   <section class="section section-dark floater">
-    <blog-audio-play [file]="'1FT2zEGYjrefYIx5GgKNs1WN3G5gBCfHh'" [name]="'Futility of Wealth'"> </blog-audio-play>
+    <h3 class="headers">Futility of Wealth</h3>
     <p class="paragraphs">
       Here is a parable, a dark secret which light reveals: A man goes into a pub with everything he owns. He sits down
       at a gambling table to gamble what he owns. At first, he bets only a little of what he has. He rolls the dice and
@@ -446,7 +445,8 @@
 
 <div class="filler">
   <section class="section section-dark">
-    <blog-audio-play [file]="'1jbo3qMBslPzApA6miK1bhM4_-iNdfPtf'" [name]="'Futility in Death'"> </blog-audio-play>
+    <h3 class="headers">Futility in Death</h3>
+
     <p class="paragraphs">
       There once was a man who lived in a tent. He was in anguish in his tent because it was not comfortable. The man
       hoped forward to his permanent home which was far away in a distant land. Night and day he longed for it and
@@ -523,7 +523,8 @@
 
 <div class="pimg15">
   <section class="section section-dark floater">
-    <blog-audio-play [file]="'1wyLib0w8YtBa6O5hXowFcFl4xHgcGcAt'" [name]="'God is a Consuming Fire'"> </blog-audio-play>
+    <h3 class="headers">God, a Consuming Fire</h3>
+
     <p class="paragraphs">
       We want to do good in our minds, but in our bodies, we don't do the good we intend to do. We see it every year: we
       make a new year's resolution and say, "This year will be nothing like the last, I am going to do this and that!"
@@ -627,7 +628,7 @@
 
 <div class="filler">
   <section class="section section-dark">
-    <blog-audio-play [file]="'1MLRAUU08qpFBm6J0m94DpGyC5eHwO-vY'" [name]="'He Sees and Hears'"> </blog-audio-play>
+    <h3 class="headers">He Sees and Hears</h3>
     <p class="paragraphs">
       God is living; He is the creator of all living things. He sees the thoughts and intentions of the human heart;
       when we ourselves do not know our own motives and intentions, He knows them. We may think in our hearts, "My
@@ -707,7 +708,8 @@
 
 <div class="pimg20" style="background-position: top">
   <section class="section section-dark floater">
-    <blog-audio-play [file]="'1OYlN0cO7tamSbDYyEwqntuBxfCH165d8'" [name]="'Our Sin Nature'"> </blog-audio-play>
+    <h3 class="headers">Our Sin Nature</h3>
+
     <p class="paragraphs">
       Everyone of us is fallen. All of us are alike: we do evil. None of us continually do what we are supposed to do;
       and no one never sins. We all have fallen short of the glory of God; we have all missed the mark. As it is
@@ -787,7 +789,8 @@
 
 <div class="filler">
   <section class="section section-dark">
-    <blog-audio-play [file]="'14V2TVVGhA8a9ZcG7X5RYRfKuFUT4EldZ'" [name]="'The Day of Judgement'"> </blog-audio-play>
+    <h3 class="headers">The Day of Judgement</h3>
+
     <p class="paragraphs">
       <blog-reference-tooltip [reference]="'2 Peter 3'">
         For they (scoffers) deliberately overlook this fact, that the heavens existed long ago, and the earth was formed
