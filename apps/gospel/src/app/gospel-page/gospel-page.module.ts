@@ -6,6 +6,7 @@ import { IvyCarouselModule } from "@degloman/angular-responsive-carousel";
 import { SharedModule } from "../shared/shared.module";
 import { GospelItemComponent } from "./gospel-item/gospel-item.component";
 import { GospelComponent } from "./gospel.component";
+import { TemplateService } from "./template.service";
 
 const routes: Routes = [
   {
@@ -13,20 +14,14 @@ const routes: Routes = [
     component: GospelComponent,
   },
   {
-    path: "truth/:id",
+    path: "truthful-item",
     component: GospelItemComponent,
   },
 ];
 
 @NgModule({
-  declarations: [GospelComponent],
-  imports: [
-    IvyCarouselModule,
-    CommonModule,
-    SharedModule,
-    MatButtonModule,
-    RouterModule.forChild(routes),
-    GospelItemComponent,
-  ],
+  declarations: [GospelComponent, GospelItemComponent],
+  imports: [IvyCarouselModule, CommonModule, SharedModule, MatButtonModule, RouterModule.forChild(routes)],
+  providers: [TemplateService],
 })
 export class GospelPageModule {}
