@@ -15,7 +15,7 @@ const routes: Routes = [
     component: GospelComponent,
   },
   {
-    path: "truthful-item",
+    path: "truthful-item/:title",
     component: GospelItemComponent,
   },
 ];

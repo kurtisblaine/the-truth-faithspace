@@ -4,8 +4,15 @@ import { Injectable, TemplateRef } from "@angular/core";
   providedIn: "root",
 })
 export class TemplateService {
-  public templateRef: TemplateRef<any>;
-  public title: string;
+  private map = new Map<string, TemplateRef<any>>();
 
   constructor() {}
+
+  add(title: string, template: TemplateRef<any>) {
+    this.map.set(title, template);
+  }
+
+  get(title: string) {
+    return this.map.get(title);
+  }
 }

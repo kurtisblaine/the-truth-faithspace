@@ -1,4 +1,4 @@
-import { AfterViewInit, Component, OnInit, ViewChild, ViewContainerRef } from "@angular/core";
+import { AfterViewInit, Component, Input, OnInit, TemplateRef, ViewChild, ViewContainerRef } from "@angular/core";
 import { TemplateService } from "../template.service";
 @Component({
   selector: "blog-gospel-item",
@@ -6,17 +6,18 @@ import { TemplateService } from "../template.service";
   styleUrl: "./gospel-item.component.css",
 })
 export class GospelItemComponent implements OnInit, AfterViewInit {
-  public title: string;
+  @Input() public title: string;
+  private templateRef: TemplateRef<any>;
 
   @ViewChild("container", { read: ViewContainerRef }) private container: ViewContainerRef;
 
   constructor(private templateService: TemplateService) {}
 
   ngOnInit() {
-    this.title = this.templateService.title;
+    this.templateRef = this.templateService.get(this.title);
   }
 
   ngAfterViewInit() {
-    this.container.createEmbeddedView(this.templateService.templateRef);
+    this.container.createEmbeddedView(this.templateRef);
   }
 }

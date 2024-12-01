@@ -15,7 +15,7 @@ export class GospelComponent implements AfterViewInit, OnInit {
   constructor(
     private viewportScroller: ViewportScroller,
     private router: Router,
-    private templateService: TemplateService
+    public templateService: TemplateService
   ) {}
 
   ngOnInit() {}
@@ -29,8 +29,7 @@ export class GospelComponent implements AfterViewInit, OnInit {
   }
 
   public navigateToGospelItem(title: string, element: TemplateRef<any>) {
-    this.templateService.templateRef = element;
-    this.templateService.title = title;
-    this.router.navigateByUrl("truthful-item");
+    this.templateService.add(title, element);
+    this.router.navigateByUrl(`truthful-item/${title}`);
   }
 }
