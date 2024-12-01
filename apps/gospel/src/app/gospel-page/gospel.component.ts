@@ -28,8 +28,9 @@ export class GospelComponent implements AfterViewInit, OnInit {
     this.viewportScroller.scrollToAnchor(elementId);
   }
 
-  public navigateToGospelItem(element: TemplateRef<any>) {
+  public navigateToGospelItem(title: string, element: TemplateRef<any>) {
     this.templateService.templateRef = element;
+    this.templateService.title = title;
     this.router.navigateByUrl("truthful-item");
   }
 }

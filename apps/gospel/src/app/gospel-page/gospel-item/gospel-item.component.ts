@@ -6,13 +6,15 @@ import { TemplateService } from "../template.service";
   styleUrl: "./gospel-item.component.css",
 })
 export class GospelItemComponent implements OnInit, AfterViewInit {
-  public element: HTMLElement;
+  public title: string;
 
   @ViewChild("container", { read: ViewContainerRef }) private container: ViewContainerRef;
 
   constructor(private templateService: TemplateService) {}
 
-  ngOnInit() {}
+  ngOnInit() {
+    this.title = this.templateService.title;
+  }
 
   ngAfterViewInit() {
     this.container.createEmbeddedView(this.templateService.templateRef);

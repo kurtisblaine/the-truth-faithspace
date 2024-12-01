@@ -5,6 +5,7 @@ import { Injectable, TemplateRef } from "@angular/core";
 })
 export class TemplateService {
   public templateRef: TemplateRef<any>;
+  public title: string;
 
   constructor() {}
 }
