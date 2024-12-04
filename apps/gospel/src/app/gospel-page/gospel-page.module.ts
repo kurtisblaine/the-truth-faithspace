@@ -7,6 +7,7 @@ import { IvyCarouselModule } from "@degloman/angular-responsive-carousel";
 import { SharedModule } from "../shared/shared.module";
 import { GospelItemComponent } from "./gospel-item/gospel-item.component";
 import { GospelComponent } from "./gospel.component";
+import { RouterService } from "./router.service";
 import { TemplateService } from "./template.service";
 
 const routes: Routes = [
@@ -30,6 +31,6 @@ const routes: Routes = [
     RouterModule.forChild(routes),
     MatCardModule,
   ],
-  providers: [TemplateService],
+  providers: [TemplateService, RouterService],
 })
 export class GospelPageModule {}

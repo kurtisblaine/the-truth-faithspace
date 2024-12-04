@@ -11,14 +11,12 @@
     </blog-reference-tooltip>
     <br />
 
-    <button style="font-size: 18px" mat-button (click)="toAnchor('danger-futility')">THE DANGER - FUTILITY</button>
-    <button style="font-size: 18px" mat-button (click)="toAnchor('danger-sin')">THE DANGER - SIN</button>
-    <button style="font-size: 18px" mat-button (click)="toAnchor('call-grace')">THE CALL - GRACE</button>
-    <button style="font-size: 18px" mat-button (click)="toAnchor('call-faith')">THE CALL - FAITH</button>
-    <button style="font-size: 18px" mat-button (click)="toAnchor('our-response')">OUR RESPONSE</button>
-    <button style="font-size: 18px" mat-button (click)="toAnchor('hope-the-day')">
-      THE HOPE - THE DAY OF THE LORD
-    </button>
+    <button style="font-size: 18px" mat-button (click)="toAnchor('dangerFutility')">THE DANGER - FUTILITY</button>
+    <button style="font-size: 18px" mat-button (click)="toAnchor('dangerSin')">THE DANGER - SIN</button>
+    <button style="font-size: 18px" mat-button (click)="toAnchor('callGrace')">THE CALL - GRACE</button>
+    <button style="font-size: 18px" mat-button (click)="toAnchor('callFaith')">THE CALL - FAITH</button>
+    <button style="font-size: 18px" mat-button (click)="toAnchor('ourResponse')">OUR RESPONSE</button>
+    <button style="font-size: 18px" mat-button (click)="toAnchor('theHope')">THE HOPE - THE DAY OF THE LORD</button>
   </div>
 </div>
 
@@ -179,7 +177,7 @@
 </section>
 
 <!-- THE DANGER - FUTILITY -->
-<div class="pimg12" style="background-position: top" id="danger-futility">
+<div class="pimg12" style="background-position: top" id="dangerFutility" #dangerFutility>
   <div class="ptext" [@simpleFadeAnimation]>
     <h3 class="border" style="letter-spacing: 5px">The Danger - Futility</h3>
   </div>
@@ -528,7 +526,7 @@
 </div>
 
 <!-- THE DANGER - SIN -->
-<div class="pimg15" id="danger-sin">
+<div class="pimg15" id="dangerSin" #dangerSin>
   <div class="ptext" [@simpleFadeAnimation]>
     <h3 class="border" style="letter-spacing: 5px">The Danger - Sin</h3>
   </div>
@@ -920,7 +918,7 @@
 </div>
 
 <!-- THE CALL - GRACE -->
-<div class="pimg21" id="call-grace">
+<div class="pimg21" id="callGrace" #callGrace>
   <div class="lighttext" [@simpleFadeAnimation]>
     <h3 class="border" style="letter-spacing: 5px">The Call - Grace</h3>
   </div>
@@ -2195,7 +2193,7 @@
   </section>
 </div>
 
-<div class="pimg8" id="call-faith">
+<div class="pimg8" id="callFaith" #callFaith>
   <div class="lighttext" [@simpleFadeAnimation]>
     <h3 class="border" style="letter-spacing: 5px">The Call - Faith</h3>
   </div>
@@ -2772,7 +2770,7 @@
   </section>
 </div>
 
-<div class="pimg23" id="our-response">
+<div class="pimg23" id="ourResponse" #ourResponse>
   <div class="lighttext" [@simpleFadeAnimation]>
     <h3 class="border" style="letter-spacing: 5px">Our Response</h3>
   </div>
@@ -3606,7 +3604,7 @@
   </section>
 </div>
 
-<div class="pimg11" id="hope-the-day">
+<div class="pimg11" id="theHope" #theHope>
   <div class="lighttext" [@simpleFadeAnimation]>
     <h3 class="border" style="letter-spacing: 5px">Hope - The Day of the Lord</h3>
   </div>
