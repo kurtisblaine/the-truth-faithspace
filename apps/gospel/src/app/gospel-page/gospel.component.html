@@ -1,4 +1,7 @@
-<!-- INTRODUCTION -->
+<!-- Jesus, the Humble Servant (Saul, Tabernacles) Jesus, the Appointed Time (Sabbath, Feasts)-->
+<!-- Also where Jesus has undone the work of the first two sections put a link -->
+
+<!-- #region INTRODUCTION -->
 <div class="pimg13" style="background-position: top" #toGospel>
   <div class="ptext navigation" [@simpleFadeAnimation]>
     <h3 class="trans" style="letter-spacing: 5px">The Good News of The Kingdom of God</h3>
@@ -11,17 +14,142 @@
     </blog-reference-tooltip>
     <br />
 
-    <button style="font-size: 18px" mat-button (click)="toAnchor('dangerFutility')">THE DANGER - FUTILITY</button>
-    <button style="font-size: 18px" mat-button (click)="toAnchor('dangerSin')">THE DANGER - SIN</button>
-    <button style="font-size: 18px" mat-button (click)="toAnchor('callGrace')">THE CALL - GRACE</button>
-    <button style="font-size: 18px" mat-button (click)="toAnchor('callFaith')">THE CALL - FAITH</button>
-    <button style="font-size: 18px" mat-button (click)="toAnchor('ourResponse')">OUR RESPONSE</button>
-    <button style="font-size: 18px" mat-button (click)="toAnchor('theHope')">THE HOPE - THE DAY OF THE LORD</button>
+    <mat-accordion style="text-transform: unset">
+      <mat-expansion-panel style="background: transparent; box-shadow: none; margin: 0" hideToggle>
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            <button style="font-size: 18px" mat-button>THE DANGER - FUTILITY</button>
+          </mat-panel-title>
+        </mat-expansion-panel-header>
+        <ng-template matExpansionPanelContent>
+          <button style="font-size: 18px" mat-button (click)="toAnchor('futilityOfPleasure')">
+            Futility of Pleasure
+          </button>
+          <button style="font-size: 18px" mat-button (click)="toAnchor('futilityInToil')">Futility in Toil</button>
+          <button style="font-size: 18px" mat-button (click)="toAnchor('futilityOfWealth')">Futility of Wealth</button>
+          <button style="font-size: 18px" mat-button (click)="toAnchor('futilityInDeath')">Futility in Death</button>
+        </ng-template>
+      </mat-expansion-panel>
+
+      <mat-expansion-panel style="background: transparent; box-shadow: none; margin: 0" hideToggle>
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            <button style="font-size: 18px" mat-button>THE DANGER - SIN</button>
+          </mat-panel-title>
+        </mat-expansion-panel-header>
+        <ng-template matExpansionPanelContent>
+          <button style="font-size: 18px" mat-button (click)="toAnchor('aConsumingFire')">God, a Consuming Fire</button>
+          <button style="font-size: 18px" mat-button (click)="toAnchor('heSeesAndHears')">He Sees & Hears</button>
+          <button style="font-size: 18px" mat-button (click)="toAnchor('ourSinNature')">Our Sin Nature</button>
+          <button style="font-size: 18px" mat-button (click)="toAnchor('dayOfJudgement')">The Day of Judgement</button>
+        </ng-template>
+      </mat-expansion-panel>
+
+      <mat-expansion-panel style="background: transparent; box-shadow: none; margin: 0" hideToggle>
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            <button style="font-size: 18px" mat-button>THE CALL - GRACE</button>
+          </mat-panel-title>
+        </mat-expansion-panel-header>
+        <ng-template matExpansionPanelContent>
+          <button style="font-size: 18px" mat-button (click)="toAnchor('sufferingServant')">
+            Jesus, the Suffering Servant
+          </button>
+          <button style="font-size: 18px" mat-button (click)="toAnchor('theRockOfSalvation')">
+            Jesus, the Rock of Salvation
+          </button>
+          <button style="font-size: 18px" mat-button (click)="toAnchor('theLambOfGod')">Jesus, the Lamb of God</button>
+          <button style="font-size: 18px" mat-button (click)="toAnchor('eternalSalvation')">
+            Jesus, the Door of Eternal Salvation
+          </button>
+          <button style="font-size: 18px" mat-button (click)="toAnchor('theLion')">
+            Jesus, the Lion of the Tribe of Judah
+          </button>
+          <button style="font-size: 18px" mat-button (click)="toAnchor('theScapegoat')">Jesus, the Scapegoat</button>
+          <button style="font-size: 18px" mat-button (click)="toAnchor('trueFoodAndTrueDrink')">
+            Jesus, the True Food & the True Drink
+          </button>
+          <button style="font-size: 18px" mat-button (click)="toAnchor('theBronzeSerpent')">
+            Jesus, the Bronze Serpent
+          </button>
+          <button style="font-size: 18px" mat-button (click)="toAnchor('theVictor')">Jesus, the Victor</button>
+          <button style="font-size: 18px" mat-button (click)="toAnchor('theSonOfGod')">Jesus, the Son of God</button>
+        </ng-template>
+      </mat-expansion-panel>
+
+      <mat-expansion-panel style="background: transparent; box-shadow: none; margin: 0" hideToggle>
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            <button style="font-size: 18px" mat-button>THE CALL - FAITH</button>
+          </mat-panel-title>
+        </mat-expansion-panel-header>
+        <ng-template matExpansionPanelContent>
+          <button style="font-size: 18px" mat-button (click)="toAnchor('theRaceOfFaith')">
+            Running the Race of Faith
+          </button>
+          <button style="font-size: 18px" mat-button (click)="toAnchor('clearConscience')">
+            Maintaining a Clear Conscience
+          </button>
+          <button style="font-size: 18px" mat-button (click)="toAnchor('abideInHim')">Abide in Christ</button>
+          <button style="font-size: 18px" mat-button (click)="toAnchor('aNewHeart')">
+            The Sign of Circumcision, a New Heart
+          </button>
+          <button style="font-size: 18px" mat-button (click)="toAnchor('bornAgain')">
+            Born Again by the Holy Spirit
+          </button>
+        </ng-template>
+      </mat-expansion-panel>
+
+      <mat-expansion-panel style="background: transparent; box-shadow: none; margin: 0" hideToggle>
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            <button style="font-size: 18px" mat-button>THE RESPONSE</button>
+          </mat-panel-title>
+        </mat-expansion-panel-header>
+        <ng-template matExpansionPanelContent>
+          <button style="font-size: 18px" mat-button (click)="toAnchor('repentance')">
+            Repentance from Dead Things
+          </button>
+          <button style="font-size: 18px" mat-button (click)="toAnchor('baptismInWater')">Baptism in Water</button>
+          <button style="font-size: 18px" mat-button (click)="toAnchor('believeInGod')">
+            Believe in the Living God
+          </button>
+          <button style="font-size: 18px" mat-button (click)="toAnchor('obedienceUntoHoliness')">
+            Obedience unto Holiness
+          </button>
+          <button style="font-size: 18px" mat-button (click)="toAnchor('callUponTheLord')">
+            Call upon the Name of the Lord
+          </button>
+          <button style="font-size: 18px" mat-button (click)="toAnchor('liveWorthy')">Live Worthy of God's Call</button>
+          <button style="font-size: 18px" mat-button (click)="toAnchor('perseveranceToTheEnd')">
+            Perseverance through Remembrance to the End
+          </button>
+        </ng-template>
+      </mat-expansion-panel>
+
+      <mat-expansion-panel style="background: transparent; box-shadow: none; margin: 0" hideToggle>
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            <button style="font-size: 18px" mat-button>THE HOPE - THE DAY OF THE LORD</button>
+          </mat-panel-title>
+        </mat-expansion-panel-header>
+        <ng-template matExpansionPanelContent>
+          <button style="font-size: 18px" mat-button (click)="toAnchor('resurrectionFromTheDead')">
+            Persecution, the Resurrection from the Dead
+          </button>
+          <button style="font-size: 18px" mat-button (click)="toAnchor('newSpiritualBodies')">
+            New Spiritual Bodies
+          </button>
+          <button style="font-size: 18px" mat-button (click)="toAnchor('eternalJudgement')">Eternal Judgement</button>
+          <button style="font-size: 18px" mat-button (click)="toAnchor('everlastingLife')">Everlasting Life</button>
+          <button style="font-size: 18px" mat-button (click)="toAnchor('newHeavenAndNewEarth')">
+            A New Heaven & A New Earth
+          </button>
+        </ng-template>
+      </mat-expansion-panel>
+    </mat-accordion>
   </div>
 </div>
-
-<!-- Jesus, the Humble Servant (Saul, Tabernacles) Jesus, the Appointed Time (Sabbath, Feasts)-->
-<!-- Also where Jesus has undone the work of the first two sections put a link -->
 
 <div class="pimg13" style="background-position: top; display: flex; align-items: flex-end; justify-content: center">
   <section class="section-dark floater" style="text-align: center"></section>
@@ -175,9 +303,10 @@
     *The Gospel using key Scripture verses.
   </div>
 </section>
+<!-- #endregion INTRODUCTION -->
 
-<!-- THE DANGER - FUTILITY -->
-<div class="pimg12" style="background-position: top" id="dangerFutility" #dangerFutility>
+<!-- #region THE DANGER - FUTILITY -->
+<div class="pimg12" style="background-position: top" id="futilityOfPleasure dangerFutility" #dangerFutility>
   <div class="ptext" [@simpleFadeAnimation]>
     <h3 class="border" style="letter-spacing: 5px">The Danger - Futility</h3>
   </div>
@@ -270,7 +399,7 @@
   </section>
 </div>
 
-<div class="pimg12" style="background-position: top">
+<div class="pimg12" style="background-position: top" id="futilityInToil">
   <div class="">
     <span class="trans"> </span>
   </div>
@@ -355,7 +484,7 @@
   </section>
 </div>
 
-<div class="pimg19">
+<div class="pimg19" id="futilityOfWealth">
   <div class="">
     <span class="trans"> </span>
   </div>
@@ -444,7 +573,7 @@
   </section>
 </div>
 
-<div class="pimg19">
+<div class="pimg19" id="futilityInDeath">
   <div class="">
     <span class="trans"> </span>
   </div>
@@ -524,9 +653,10 @@
     </p>
   </section>
 </div>
+<!-- #endregion THE DANGER - FUTILITY -->
 
-<!-- THE DANGER - SIN -->
-<div class="pimg15" id="dangerSin" #dangerSin>
+<!-- #region THE DANGER - SIN -->
+<div class="pimg15" id="aConsumingFire dangerSin" #dangerSin>
   <div class="ptext" [@simpleFadeAnimation]>
     <h3 class="border" style="letter-spacing: 5px">The Danger - Sin</h3>
   </div>
@@ -636,7 +766,7 @@
   </section>
 </div>
 
-<div class="pimg15">
+<div class="pimg15" id="heSeesAndHears">
   <div class="">
     <span class="trans"> </span>
   </div>
@@ -644,7 +774,7 @@
 
 <div class="filler">
   <section class="section section-dark">
-    <h3 class="headers" (click)="navigateToGospelItem('He Sees and Hears', heSeesAndHears)">He Sees and Hears</h3>
+    <h3 class="headers" (click)="navigateToGospelItem('He Sees & Hears', heSeesAndHears)">He Sees & Hears</h3>
     <p class="paragraphs">
       <ng-container *ngTemplateOutlet="heSeesAndHears"></ng-container>
       <ng-template #heSeesAndHears>
@@ -721,7 +851,7 @@
   </section>
 </div>
 
-<div class="pimg20" style="background-position: top">
+<div class="pimg20" style="background-position: top" id="ourSinNature">
   <div class="">
     <span class="trans"> </span>
   </div>
@@ -805,7 +935,7 @@
   </section>
 </div>
 
-<div class="pimg20" style="background-position: top">
+<div class="pimg20" style="background-position: top" id="dayOfJudgement">
   <div class="">
     <span class="trans"> </span>
   </div>
@@ -916,9 +1046,10 @@
     </p>
   </section>
 </div>
+<!-- #endregion THE DANGER - SIN -->
 
-<!-- THE CALL - GRACE -->
-<div class="pimg21" id="callGrace" #callGrace>
+<!-- #region THE CALL - GRACE -->
+<div class="pimg21" id="sufferingServant callGrace" #callGrace>
   <div class="lighttext" [@simpleFadeAnimation]>
     <h3 class="border" style="letter-spacing: 5px">The Call - Grace</h3>
   </div>
@@ -926,8 +1057,8 @@
 
 <div class="pimg21">
   <section class="section section-light floater">
-    <h3 class="headers" (click)="navigateToGospelItem('Jesus Christ, the Suffering Servant', sufferingServant)">
-      Jesus Christ, the Suffering Servant
+    <h3 class="headers" (click)="navigateToGospelItem('Jesus, the Suffering Servant', sufferingServant)">
+      Jesus, the Suffering Servant
     </h3>
     <p class="paragraphs">
       <ng-container *ngTemplateOutlet="sufferingServant"></ng-container>
@@ -1116,7 +1247,7 @@
   </section>
 </div>
 
-<div class="pimg21">
+<div class="pimg21" id="theRockOfSalvation">
   <div class="">
     <span class="trans"> </span>
   </div>
@@ -1124,8 +1255,8 @@
 
 <div class="filler-light">
   <section class="section section-light">
-    <h3 class="headers" (click)="navigateToGospelItem('Jesus Christ, the Rock of our Salvation', theRockOfSalvation)">
-      Jesus Christ, the Rock of our Salvation
+    <h3 class="headers" (click)="navigateToGospelItem('Jesus, the Rock of our Salvation', theRockOfSalvation)">
+      Jesus, the Rock of our Salvation
     </h3>
     <p class="paragraphs">
       <ng-container *ngTemplateOutlet="theRockOfSalvation"></ng-container>
@@ -1197,7 +1328,7 @@
   </section>
 </div>
 
-<div class="pimg7">
+<div class="pimg7" id="theLambOfGod">
   <div class="">
     <span class="trans"> </span>
   </div>
@@ -1205,8 +1336,8 @@
 
 <div class="pimg7">
   <section class="section section-light floater">
-    <h3 class="headers" (click)="navigateToGospelItem('Jesus Christ, the Lamb of God', theLambOfGod)">
-      Jesus Christ, the Lamb of God
+    <h3 class="headers" (click)="navigateToGospelItem('Jesus, the Lamb of God', theLambOfGod)">
+      Jesus, the Lamb of God
     </h3>
     <p class="paragraphs">
       <ng-container *ngTemplateOutlet="theLambOfGod"></ng-container>
@@ -1314,7 +1445,7 @@
   </section>
 </div>
 
-<div class="pimg7">
+<div class="pimg7" id="eternalSalvation">
   <div class="">
     <span class="trans"> </span>
   </div>
@@ -1322,8 +1453,8 @@
 
 <div class="filler-light">
   <section class="section section-light">
-    <h3 class="headers" (click)="navigateToGospelItem('Jesus Christ, the Door of Eternal Salvation', eternalSalvation)">
-      Jesus Christ, the Door of Eternal Salvation
+    <h3 class="headers" (click)="navigateToGospelItem('Jesus, the Door of Eternal Salvation', eternalSalvation)">
+      Jesus, the Door of Eternal Salvation
     </h3>
     <p class="paragraphs">
       <ng-container *ngTemplateOutlet="eternalSalvation"></ng-container>
@@ -1419,7 +1550,7 @@
   </section>
 </div>
 
-<div class="pimg22">
+<div class="pimg22" id="theLion">
   <div class="">
     <span class="trans"> </span>
   </div>
@@ -1427,8 +1558,8 @@
 
 <div class="pimg22">
   <section class="section section-light floater">
-    <h3 class="headers" (click)="navigateToGospelItem('Jesus Christ, the Lion from the Tribe of Judah', theLion)">
-      Jesus Christ, the Lion from the Tribe of Judah
+    <h3 class="headers" (click)="navigateToGospelItem('Jesus, the Lion from the Tribe of Judah', theLion)">
+      Jesus, the Lion from the Tribe of Judah
     </h3>
     <p class="paragraphs">
       <ng-container *ngTemplateOutlet="theLion"></ng-container>
@@ -1523,7 +1654,7 @@
   </section>
 </div>
 
-<div class="pimg22">
+<div class="pimg22" id="theScapegoat">
   <div class="">
     <span class="trans"> </span>
   </div>
@@ -1531,9 +1662,7 @@
 
 <div class="filler-light">
   <section class="section section-light">
-    <h3 class="headers" (click)="navigateToGospelItem('Jesus Christ, the Scapegoat', theScapegoat)">
-      Jesus Christ, the Scapegoat
-    </h3>
+    <h3 class="headers" (click)="navigateToGospelItem('Jesus, the Scapegoat', theScapegoat)">Jesus, the Scapegoat</h3>
     <p class="paragraphs">
       <ng-container *ngTemplateOutlet="theScapegoat"></ng-container>
       <ng-template #theScapegoat>
@@ -1674,7 +1803,7 @@
   </section>
 </div>
 
-<div class="pimg6">
+<div class="pimg6" id="trueFoodAndTrueDrink">
   <div class="">
     <span class="trans"> </span>
   </div>
@@ -1682,11 +1811,8 @@
 
 <div class="pimg6">
   <section class="section section-light floater">
-    <h3
-      class="headers"
-      (click)="navigateToGospelItem('Jesus Christ, the True Food and the True Drink', trueFoodAndTrueDrink)"
-    >
-      Jesus Christ, the True Food and the True Drink
+    <h3 class="headers" (click)="navigateToGospelItem('Jesus, the True Food & the True Drink', trueFoodAndTrueDrink)">
+      Jesus, the True Food & the True Drink
     </h3>
     <p class="paragraphs">
       <ng-container *ngTemplateOutlet="trueFoodAndTrueDrink"></ng-container>
@@ -1793,7 +1919,7 @@
   </section>
 </div>
 
-<div class="pimg6">
+<div class="pimg6" id="theBronzeSerpent">
   <div class="">
     <span class="trans"> </span>
   </div>
@@ -1801,8 +1927,8 @@
 
 <div class="filler-light">
   <section class="section section-light">
-    <h3 class="headers" (click)="navigateToGospelItem('Jesus Christ, the Bronze Serpent', theBronzeSerpent)">
-      Jesus Christ, the Bronze Serpent
+    <h3 class="headers" (click)="navigateToGospelItem('Jesus, the Bronze Serpent', theBronzeSerpent)">
+      Jesus, the Bronze Serpent
     </h3>
     <p class="paragraphs">
       <ng-container *ngTemplateOutlet="theBronzeSerpent"></ng-container>
@@ -1906,7 +2032,7 @@
   </section>
 </div>
 
-<div class="pimg25">
+<div class="pimg25" id="theVictor">
   <div class="">
     <span class="trans"> </span>
   </div>
@@ -1914,9 +2040,7 @@
 
 <div class="filler-light">
   <section class="section section-light">
-    <h3 class="headers" (click)="navigateToGospelItem('Jesus Christ, the Victor', theVictor)">
-      Jesus Christ, the Victor
-    </h3>
+    <h3 class="headers" (click)="navigateToGospelItem('Jesus, the Victor', theVictor)">Jesus, the Victor</h3>
     <p class="paragraphs">
       <ng-container *ngTemplateOutlet="theVictor"></ng-container>
       <ng-template #theVictor>
@@ -2050,7 +2174,7 @@
   </section>
 </div>
 
-<div class="pimg25">
+<div class="pimg25" id="theSonOfGod">
   <div class="">
     <span class="trans"> </span>
   </div>
@@ -2058,9 +2182,7 @@
 
 <div class="filler-light">
   <section class="section section-light">
-    <h3 class="headers" (click)="navigateToGospelItem('Jesus Christ, the Son of God', theSonOfGod)">
-      Jesus Christ, the Son of God
-    </h3>
+    <h3 class="headers" (click)="navigateToGospelItem('Jesus, the Son of God', theSonOfGod)">Jesus, the Son of God</h3>
     <p class="paragraphs">
       <ng-container *ngTemplateOutlet="theSonOfGod"></ng-container>
       <ng-template #theSonOfGod>
@@ -2192,8 +2314,10 @@
     </p>
   </section>
 </div>
+<!-- #endregion THE CALL - GRACE -->
 
-<div class="pimg8" id="callFaith" #callFaith>
+<!-- #region THE CALL - FAITH -->
+<div class="pimg8" id="theRaceOfFaith callFaith" #callFaith>
   <div class="lighttext" [@simpleFadeAnimation]>
     <h3 class="border" style="letter-spacing: 5px">The Call - Faith</h3>
   </div>
@@ -2293,7 +2417,7 @@
   </section>
 </div>
 
-<div class="pimg8">
+<div class="pimg8" id="clearConscience">
   <div class="">
     <span class="trans"> </span>
   </div>
@@ -2422,7 +2546,7 @@
   </section>
 </div>
 
-<div class="pimg9">
+<div class="pimg9" id="abideInHim">
   <div class="">
     <span class="trans"> </span>
   </div>
@@ -2517,7 +2641,7 @@
   </section>
 </div>
 
-<div class="pimg9">
+<div class="pimg9" id="aNewHeart">
   <div class="">
     <span class="trans"> </span>
   </div>
@@ -2614,7 +2738,7 @@
   </section>
 </div>
 
-<div class="pimg23">
+<div class="pimg23" id="bornAgain">
   <div class="">
     <span class="trans"> </span>
   </div>
@@ -2622,8 +2746,8 @@
 
 <div class="pimg23">
   <section class="section section-light floater">
-    <h3 class="headers" (click)="navigateToGospelItem('Born Again by the Holy Spirit of God', bornAgain)">
-      Born again by the Holy Spirit of God
+    <h3 class="headers" (click)="navigateToGospelItem('Born Again by the Holy Spirit', bornAgain)">
+      Born again by the Holy Spirit
     </h3>
     <p class="paragraphs">
       <ng-container *ngTemplateOutlet="bornAgain"></ng-container>
@@ -2769,10 +2893,12 @@
     </p>
   </section>
 </div>
+<!-- #endregion THE CALL - FAITH -->
 
-<div class="pimg23" id="ourResponse" #ourResponse>
+<!-- #region THE RESPONSE -->
+<div class="pimg23" id="ourResponse repentance" #ourResponse>
   <div class="lighttext" [@simpleFadeAnimation]>
-    <h3 class="border" style="letter-spacing: 5px">Our Response</h3>
+    <h3 class="border" style="letter-spacing: 5px">The Response</h3>
   </div>
 </div>
 
@@ -2898,7 +3024,7 @@
   </section>
 </div>
 
-<div class="pimg17">
+<div class="pimg17" id="baptismInWater">
   <div class="">
     <span class="trans"> </span>
   </div>
@@ -3017,7 +3143,7 @@
   </section>
 </div>
 
-<div class="pimg17">
+<div class="pimg17" id="believeInGod">
   <div class="">
     <span class="trans"> </span>
   </div>
@@ -3193,7 +3319,7 @@
   </section>
 </div>
 
-<div class="pimg2">
+<div class="pimg2" id="obedienceUntoHoliness">
   <div class="">
     <span class="trans"> </span>
   </div>
@@ -3301,7 +3427,7 @@
   </section>
 </div>
 
-<div class="pimg2">
+<div class="pimg2" id="callUponTheLord">
   <div class="">
     <span class="trans"> </span>
   </div>
@@ -3309,7 +3435,9 @@
 
 <div class="filler-light">
   <section class="section section-light">
-    <h3 class="headers" (click)="navigateToGospelItem('Call upon the Lord', callUponTheLord)">Call upon the Lord</h3>
+    <h3 class="headers" (click)="navigateToGospelItem('Call upon the Name of the Lord', callUponTheLord)">
+      Call upon the Name of the Lord
+    </h3>
     <p class="paragraphs">
       <ng-container *ngTemplateOutlet="callUponTheLord"></ng-container>
       <ng-template #callUponTheLord>
@@ -3388,7 +3516,7 @@
   </section>
 </div>
 
-<div class="pimg3">
+<div class="pimg3" id="liveWorthy">
   <div class="">
     <span class="trans"> </span>
   </div>
@@ -3491,7 +3619,7 @@
   </section>
 </div>
 
-<div class="pimg3">
+<div class="pimg3" id="perseveranceToTheEnd">
   <div class="">
     <span class="trans"> </span>
   </div>
@@ -3603,8 +3731,10 @@
     </p>
   </section>
 </div>
+<!-- #endregion THE RESPONSE -->
 
-<div class="pimg11" id="theHope" #theHope>
+<!-- #region THE DAY OF THE LORD -->
+<div class="pimg11" id="theHope resurrectionFromTheDead" #theHope>
   <div class="lighttext" [@simpleFadeAnimation]>
     <h3 class="border" style="letter-spacing: 5px">Hope - The Day of the Lord</h3>
   </div>
@@ -3614,11 +3744,9 @@
   <section class="section section-light floater">
     <h3
       class="headers"
-      (click)="
-        navigateToGospelItem('Persecution of the Saints & the Resurrection from the Dead', resurrectionFromTheDead)
-      "
+      (click)="navigateToGospelItem('Persecution, the Resurrection from the Dead', resurrectionFromTheDead)"
     >
-      Persecution of the Saints & the Resurrection from the Dead
+      Persecution, the Resurrection from the Dead
     </h3>
     <p class="paragraphs">
       <ng-container *ngTemplateOutlet="resurrectionFromTheDead"></ng-container>
@@ -3733,7 +3861,7 @@
   </section>
 </div>
 
-<div class="pimg11">
+<div class="pimg11" id="newSpiritualBodies">
   <div class="">
     <span class="trans"> </span>
   </div>
@@ -3852,7 +3980,7 @@
   </section>
 </div>
 
-<div class="pimg1">
+<div class="pimg1" id="eternalJudgement">
   <div class="">
     <span class="trans"> </span>
   </div>
@@ -3999,7 +4127,7 @@
   </section>
 </div>
 
-<div class="pimg1">
+<div class="pimg1" id="everlastingLife">
   <div class="">
     <span class="trans"> </span>
   </div>
@@ -4127,7 +4255,7 @@
   </section>
 </div>
 
-<div class="pimg24">
+<div class="pimg24" id="newHeavenAndNewEarth">
   <div class="">
     <span class="trans"> </span>
   </div>
@@ -4135,8 +4263,8 @@
 
 <div class="pimg24">
   <section class="section section-light floater">
-    <h3 class="headers" (click)="navigateToGospelItem('New Heaven & New Earth', newHeavenAndNewEarth)">
-      New Heaven & New Earth
+    <h3 class="headers" (click)="navigateToGospelItem('A New Heaven & A New Earth', newHeavenAndNewEarth)">
+      A New Heaven & A New Earth
     </h3>
     <p class="paragraphs">
       <ng-container *ngTemplateOutlet="newHeavenAndNewEarth"></ng-container>
@@ -4244,3 +4372,4 @@
     </div>
   </div>
 </div>
+<!-- #endregion THE DAY OF THE LORD -->

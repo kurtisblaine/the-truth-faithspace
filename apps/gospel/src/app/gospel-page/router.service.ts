@@ -6,6 +6,7 @@ import { Injectable } from "@angular/core";
 export class RouterService {
   public isElementInViewport(el: HTMLElement): boolean {
     const rect = el.getBoundingClientRect();
+
     return (
       rect.top >= 0 &&
       rect.left >= 0 &&
