@@ -135,12 +135,12 @@
         </mat-expansion-panel-header>
         <ng-template matExpansionPanelContent>
           <button style="font-size: 18px" mat-button (click)="toAnchor('resurrectionFromTheDead')">
-            Persecution, the Resurrection from the Dead
+            Persecution & the Resurrection from the Dead
           </button>
           <button style="font-size: 18px" mat-button (click)="toAnchor('newSpiritualBodies')">
             New Spiritual Bodies
           </button>
-          <button style="font-size: 18px" mat-button (click)="toAnchor('eternalJudgement')">Eternal Judgement</button>
+          <button style="font-size: 18px" mat-button (click)="toAnchor('eternalReward')">Eternal Reward</button>
           <button style="font-size: 18px" mat-button (click)="toAnchor('everlastingLife')">Everlasting Life</button>
           <button style="font-size: 18px" mat-button (click)="toAnchor('newHeavenAndNewEarth')">
             A New Heaven & A New Earth
@@ -306,7 +306,7 @@
 <!-- #endregion INTRODUCTION -->
 
 <!-- #region THE DANGER - FUTILITY -->
-<div class="pimg12" style="background-position: top" id="futilityOfPleasure dangerFutility" #dangerFutility>
+<div class="pimg12" style="background-position: top" id="futilityOfPleasure" #dangerFutility>
   <div class="ptext" [@simpleFadeAnimation]>
     <h3 class="border" style="letter-spacing: 5px">The Danger - Futility</h3>
   </div>
@@ -656,7 +656,7 @@
 <!-- #endregion THE DANGER - FUTILITY -->
 
 <!-- #region THE DANGER - SIN -->
-<div class="pimg15" id="aConsumingFire dangerSin" #dangerSin>
+<div class="pimg15" id="aConsumingFire" #dangerSin>
   <div class="ptext" [@simpleFadeAnimation]>
     <h3 class="border" style="letter-spacing: 5px">The Danger - Sin</h3>
   </div>
@@ -1049,7 +1049,7 @@
 <!-- #endregion THE DANGER - SIN -->
 
 <!-- #region THE CALL - GRACE -->
-<div class="pimg21" id="sufferingServant callGrace" #callGrace>
+<div class="pimg21" id="sufferingServant" #callGrace>
   <div class="lighttext" [@simpleFadeAnimation]>
     <h3 class="border" style="letter-spacing: 5px">The Call - Grace</h3>
   </div>
@@ -2317,7 +2317,7 @@
 <!-- #endregion THE CALL - GRACE -->
 
 <!-- #region THE CALL - FAITH -->
-<div class="pimg8" id="theRaceOfFaith callFaith" #callFaith>
+<div class="pimg8" id="theRaceOfFaith" #callFaith>
   <div class="lighttext" [@simpleFadeAnimation]>
     <h3 class="border" style="letter-spacing: 5px">The Call - Faith</h3>
   </div>
@@ -2896,7 +2896,7 @@
 <!-- #endregion THE CALL - FAITH -->
 
 <!-- #region THE RESPONSE -->
-<div class="pimg23" id="ourResponse repentance" #ourResponse>
+<div class="pimg23" id="repentance" #ourResponse>
   <div class="lighttext" [@simpleFadeAnimation]>
     <h3 class="border" style="letter-spacing: 5px">The Response</h3>
   </div>
@@ -3734,9 +3734,9 @@
 <!-- #endregion THE RESPONSE -->
 
 <!-- #region THE DAY OF THE LORD -->
-<div class="pimg11" id="theHope resurrectionFromTheDead" #theHope>
+<div class="pimg11" id="resurrectionFromTheDead" #theHope>
   <div class="lighttext" [@simpleFadeAnimation]>
-    <h3 class="border" style="letter-spacing: 5px">Hope - The Day of the Lord</h3>
+    <h3 class="border" style="letter-spacing: 5px">The Hope - The Day of the Lord</h3>
   </div>
 </div>
 
@@ -3744,9 +3744,9 @@
   <section class="section section-light floater">
     <h3
       class="headers"
-      (click)="navigateToGospelItem('Persecution, the Resurrection from the Dead', resurrectionFromTheDead)"
+      (click)="navigateToGospelItem('Persecution & the Resurrection from the Dead', resurrectionFromTheDead)"
     >
-      Persecution, the Resurrection from the Dead
+      Persecution & the Resurrection from the Dead
     </h3>
     <p class="paragraphs">
       <ng-container *ngTemplateOutlet="resurrectionFromTheDead"></ng-container>
@@ -3980,7 +3980,7 @@
   </section>
 </div>
 
-<div class="pimg1" id="eternalJudgement">
+<div class="pimg1" id="eternalReward">
   <div class="">
     <span class="trans"> </span>
   </div>
@@ -3988,10 +3988,10 @@
 
 <div class="pimg1">
   <section class="section section-light floater">
-    <h3 class="headers" (click)="navigateToGospelItem('Eternal Judgement', eternalJudgement)">Eternal Judgement</h3>
+    <h3 class="headers" (click)="navigateToGospelItem('Eternal Reward', eternalReward)">Eternal Reward</h3>
     <p class="paragraphs">
-      <ng-container *ngTemplateOutlet="eternalJudgement"></ng-container>
-      <ng-template #eternalJudgement>
+      <ng-container *ngTemplateOutlet="eternalReward"></ng-container>
+      <ng-template #eternalReward>
         <blog-reference-tooltip [reference]="'Revelation 2, 3, 21'" [isJesusWord]="true">
           To him who <b>overcomes</b> I will give to eat from the tree of life, which is in the midst of the Paradise of
           God. (...) He who <b>overcomes</b> shall not be hurt by the second death. (...) To him who <b>overcomes</b> I
