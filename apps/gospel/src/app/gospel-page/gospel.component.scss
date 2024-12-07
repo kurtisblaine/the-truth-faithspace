@@ -8,6 +8,13 @@ button[mat-button] {
   z-index: 777;
 }
 
+.custom-panel {
+  background: transparent;
+  box-shadow: none !important;
+  margin: 0;
+  text-transform: none;
+}
+
 .navigation {
   padding: 0px 10px;
   width: unset;
