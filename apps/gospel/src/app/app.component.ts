@@ -9,7 +9,7 @@ import {
   faEnvelope,
   faFile,
   faGavel,
-  faHouse,
+  faInfoCircle,
   faLink,
   faMusic,
   faNewspaper,
@@ -27,7 +27,7 @@ export class AppComponent implements OnInit, AfterViewInit {
 
   public title = "The Good News of The Kingdom of God";
   public icon = faBars;
-  public homeIcon = faHouse;
+  public homeIcon = faInfoCircle;
   public blogIcon = faDumbbell;
   public psalmIcon = faMusic;
   public insightIcon = faBrain;
