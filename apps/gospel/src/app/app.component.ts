@@ -25,7 +25,7 @@ import { BehaviorSubject, Observable, fromEvent, map } from "rxjs";
 export class AppComponent implements OnInit, AfterViewInit {
   @ViewChild("toTop") public toTopElement: ElementRef;
 
-  public title = "The Good News of The Kingdom of God";
+  public title = "The Good News of the Kingdom of God";
   public icon = faBars;
   public homeIcon = faInfoCircle;
   public blogIcon = faDumbbell;
