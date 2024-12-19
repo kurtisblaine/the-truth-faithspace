@@ -1,7 +1,7 @@
 <mat-drawer-container style="width: 100%; height: 100%" [hasBackdrop]="false">
   <mat-drawer style="width: 280px; position: fixed" #drawer [mode]="'side'" [autoFocus]="true">
     <mat-list>
-      <!-- <div mat-subheader>Truth</div> -->
+      <div mat-subheader>Truth</div>
       <mat-list-item lines="3" (click)="goGospel(); drawer.close()">
         <fa-icon matListItemIcon [icon]="gospelIcon" [size]="'lg'"></fa-icon>
         <span matListItemTitle>The Good News</span>
@@ -86,11 +86,11 @@
         <span>The Good News</span>
         <span style="flex: 1 1 auto"></span>
 
-        <button mat-icon-button (click)="openBible()" [matTooltip]="'Open the Bible'">
-          <fa-icon [icon]="bookIcon" [size]="'lg'"></fa-icon>
-        </button>
-        <button mat-icon-button (click)="goGospel()" [matTooltip]="'Go to the Good News'" style="margin-right: 12px">
+        <button mat-icon-button (click)="goGospel()" [matTooltip]="'Go to the Good News'">
           <fa-icon [icon]="gospelIcon" [size]="'lg'"></fa-icon>
+        </button>
+        <button mat-icon-button (click)="openBible()" [matTooltip]="'Open the Bible'" style="margin-right: 12px">
+          <fa-icon [icon]="bookIcon" [size]="'lg'"></fa-icon>
         </button>
       </mat-toolbar>
     </div>
