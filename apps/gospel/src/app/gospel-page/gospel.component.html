@@ -1,5 +1,5 @@
-<!-- Jesus, the Humble Servant (Saul, Tabernacles) Jesus, the Appointed Time (Sabbath, Feasts)-->
-<!-- Also where Jesus has undone the work of the first two sections put a link -->
+<!-- TODO Jesus, the Humble Servant (Saul, Tabernacles) Jesus, the Appointed Time (Sabbath, Feasts)-->
+<!-- TODO Also where Jesus has undone the work of the first two sections put a link -->
 
 <!-- #region INTRODUCTION -->
 <div class="pimg13" style="background-position: top" #toGospel>
@@ -14,7 +14,7 @@
     </blog-reference-tooltip>
     <br />
 
-    <mat-accordion style="text-transform: unset">
+    <mat-accordion style="text-transform: unset" *ngIf="showAccordion">
       <mat-expansion-panel class="custom-panel" hideToggle>
         <mat-expansion-panel-header>
           <mat-panel-title>
@@ -322,45 +322,48 @@
     <p class="paragraphs">
       <ng-container *ngTemplateOutlet="futilityOfPleasure"></ng-container>
       <ng-template #futilityOfPleasure>
-        Alcohol and food, which are wholesome in themselves, which are given to us by God for our enjoyment, but are
-        often perverted by us into drunkenness and gluttony; and drugs, which are often used for pleasure, which are for
-        an escape from reality; and entertainment, which is vain, which wastes the time of our youth; and any other
-        pleasure which come from our lusts, can never sustains us - they only mask the deeply rooted issues we have, and
-        make life bearable for a short while. It is like hitting the snooze button on the alarm clock: you feel better
-        now, but you will have to deal with the same problem later - but it has gotten worse. Even if we are 'satisfied'
-        or 'fulfilled' with these things, it is never enough: it is like we are feeding a beast within us, the more we
-        feed it, the stronger and bigger it gets; it requires more and more of us & it is never satisfied. <br />
+        Alcohol and food, which are wholesome, which are given to us by God for our enjoyment, but are often perverted
+        into drunkenness and gluttony; and drugs, which are often used for pleasure, which are often for an escape from
+        reality; and entertainment, which is vain, which wastes the time of our youth; and many other pleasures which
+        come from our lusts, that wages war against our soul, never sustains us - they only mask the deeply rooted
+        problems we have for a little while, and make life bearable to us. Is life so bad that we need these? We have
+        all had our share in these during some time - but where is the light of life? Masking our issues is like hitting
+        the snooze button on the alarm clock: you feel better now, but you will have to deal with the same problem later
+        - but it has gotten worse. Even if we are 'satisfied' or 'fulfilled' with these, it is never enough: it is like
+        we are feeding a beast within us, the more we feed it, the stronger and bigger it gets - it requires more of us
+        & it is never satisfied. <br />
         <a href="https://thelightof.life/#/insight-detail/cd57c552-146a-8c5a-7bd2-d1314e9a4793" target="_blank"
           >See more about the nature of sin here.</a
         ><br />
         We eat food, but we are not content; we drink, but we are not sustained; we eat, and we are hungry again later;
         we drink, and become thirsty again. And these, being for our enjoyment and nourishment, we corrupt into
-        something it was never intended for. Food for the body, but God forbid, it's for gluttony; drink to make the
-        heart merry, but God forbid, it's for drunkenness; sex for reproduction, but God forbid, it's for immorality.
-        Lust corrupts God given necessities into dissipation and waste: for over-eating is not for hunger, and
-        drunkenness is not for thirst, and immorality is not for reproduction; all of these are for pleasure, and
+        something it was never intended for. Food for the body, but God forbid, for gluttony; drink to make the heart
+        merry, but God forbid, for drunkenness; sex for reproduction, but God forbid, for immorality. Lust corrupts God
+        given necessities into dissipation and waste: for over-eating is not for hunger, and drunkenness is not for
+        thirst, and immorality is not for reproduction; all of these are for pleasure, and
         <blog-reference-tooltip [reference]="'Ecclesiastes 7:4'">
           The mind of the wise is in the house of mourning, while the mind of fools is in the house of pleasure.
         </blog-reference-tooltip>
-        And pleasure is fleeting - it only lasts for a short while. No matter how much the eye sees, it is not enough;
-        no matter how much the ear hears, it is not content. If these truly make us happy, why wouldn't we express it
-        outwardly? If we are truly happy, shouldn't our happiness resemble a child's happiness? Children are overcome
-        with laughter and express joyfulness and run around expressing their happiness, jumping with joy. If these
-        things truly make us happy, we surely would show it. Most often we are chained by such things: we look miserable
-        outwardly, but inwardly, we become less miserable - these only mask our pain for a short while. In the
-        beginning, we used to be happy when sin wasn't alive, in the innocence of our childhood, but later, sin came
-        alive and we died. All of us have become enslaved to our own desires which corrupt - for all lust corrupts. We
-        are lead into a cycle of dependence: we think we need these things to keep us in check; "I don't feel normal
-        without them", we say to ourselves. I've been chained by many things for years of my life, and looking back at
-        my experience, surely that was not life. Whatever a person is overcome by, that he is also enslaved. How weak
-        are we when something inaminate chains us! "I serve this, and that, and I can't stop!"; whatever we offer
-        ourselves as obedient servants, by that, we are enslaved. I was enslaved to everything a man could be ensalved
-        by: food, alcohol, drugs, & many others. I couldn't get out. It was dark and cold: loveless. I wanted to get
-        out, but I couldn't: it was surely a jail cell. I wanted to stop sinning, but couldn't; I wanted out, but
-        couldn't redeem myself. Hope, I had none. "Where is real pleasure and satisfaction?", I pondered. And worse yet,
-        what I experienced I didn't know how to utter it; for perhaps if I could tell someone, they could help? But
-        instead, guilt and shame keep me from sharing, as if I were the only one on the planet dealing with such things;
-        just as Solomon, who had great wisdom from God, wrote,
+        So pleasure is not of wisdom; and pleasure is fleeting - only lasting for a short while. No matter how much the
+        eye sees, it is not enough; no matter how much the ear hears, it is not content. If these truly make us happy,
+        why wouldn't we express it outwardly? If we are truly happy, shouldn't our happiness resemble a child's
+        happiness? Children are overcome with laughter and express joyfulness and run around expressing their happiness,
+        jumping with joy. If these things truly make us happy, we surely would show it, but we don't. Most often we are
+        chained by such things: we look miserable outwardly, but inwardly, we become less miserable - these only mask
+        our pain for a short while. In the beginning, we used to be happy when sin wasn't alive, in the innocence of our
+        childhood, but later, sin came alive and we died. All of us have become enslaved to our own desires which
+        corrupt - for all lust corrupts. We are lead into a cycle of dependence: we think we need these things to keep
+        us in check; "I don't feel normal without them", we say to ourselves. I've been chained by many things for years
+        of my life, and looking back at my experience, surely that was not life. Whatever a person is overcome by, that
+        he is also enslaved. How weak are we when something inaminate chains us! "I serve this, and that, and I can't
+        stop!"; whatever we offer ourselves as obedient servants to, by that, we are enslaved. I was enslaved to
+        everything a man could be ensalved by: food, alcohol, drugs, & many others. I wouldn't call myself a man; and I
+        couldn't get out. It was dark and cold: loveless. I wanted to get out, but I couldn't: it was surely a jail
+        cell. I wanted to stop sinning, but couldn't; I wanted out, but couldn't redeem myself. Hope, I had none. "Where
+        is real pleasure and satisfaction?", I pondered. And worse yet, what I experienced I didn't know how to utter
+        it; for perhaps if I could tell someone, they could help? But instead, guilt and shame keep me from sharing, as
+        if I were the only one on the planet dealing with such things; just as Solomon, who had great wisdom from God,
+        wrote,
         <blog-reference-tooltip [reference]="'Ecclesiastes 1'">
           All things are full of weariness;<b>a man cannot utter it</b>; the eye is not satisfied with seeing, nor the
           ear filled with hearing.
@@ -378,28 +381,26 @@
           had expended in doing it, and behold, all was vanity and a striving after wind, and there was nothing to be
           gained under the sun.
         </blog-reference-tooltip>
-        Wisdom is insight: speaking of the things which are from within with the correct words. Every sinful habit
-        begins with lust; and lust entices the eyes. And how computer technology stimulates all sorts of lust through
-        images! It is satisfying while on it, but afterwards, it's like waking from a deep sleep. We live in an age
-        where media and screens are everywhere: it started with televisions in the living room, then escalated to
-        monitors in our pockets. Surely these feed our eyes. A computer can create entire simulations of this world for
-        people to live a new life inside. Can the copy ever be as good as the real? Which do you like better: name brand
-        goods or knock offs? Yes, knock offs are cheaper and require less of us, but they are not better, even in the
-        slightest. In the same way, these simulations are cheaper: you can sit on the couch and be at a sports game! So
-        we see how lust shows itself as greater, but is lesser; it makes great boasts, but fulfills none of them. It
-        tricks you into wanting something you did not desire; and it fulfills that desire with a fake, not with what the
-        image portrays. For, does an image every portray reality perfectly? <br />
-        <a href="https://thelightof.life/#/insight-detail/c97a5cf5-6c93-20cf-65d6-f2fad777a8cc" target="_blank"
-          >See more about technology.</a
-        ><br />
+        Wisdom is insight: speaking of the things which are from within with the correct words; and Solomon's words are
+        insightful. Every sinful habit begins with lust; and lust entices the eyes. And how computer technology
+        stimulates all sorts of lust through images! It is satisfying while on it, but afterwards, it's like waking from
+        a deep sleep. We live in an age where media and screens are everywhere: it started with televisions in the
+        living room, then escalated to monitors in our pockets. Surely these feed our eyes. A computer can create entire
+        simulations of this world for people to live a new life inside. Can the copy ever be as good as the real? Which
+        do you like better: name brand goods or knock offs? Yes, knock offs are cheaper and require less of us, but they
+        are not better, even in the slightest. In the same way, these simulations are cheaper: you can sit on the couch
+        and be at a sports game! So we see how lust shows itself as greater, but is lesser; it makes great boasts, but
+        fulfills none of them. It tricks you into wanting something you did not desire; and it fulfills that desire with
+        a fake, not with what the image portrays. For: does an image every portray reality perfectly? <br /><br />
+
         The natural use is better than the unnatural; the real is better than the copy; good is better than evil, even
         in the meanwhile if you think, "Ah! It feels so good", in the end you will not be thinking that! Everything we
         sow, we will reap. A person does not sow an apple and get an orange tree; neither does a person breed pigs and
         get cows; so why do we think, "I will sow corruption and get life"? Everything corrupts through lust; and lust
-        conceived gives birth to sin; and all sin is a dysfunction; and a dysfunction is useless. A new sofa will become
-        fettered, a new car will be a tin of rust, even our bodies are becoming old and gray and worn out and will soon
-        be in the grave. Evil will inherit evil in the end and goodness will inherit goodness. This is true, even if in
-        the meanwhile, we see the wicked prospering and the righteous suffering; as it says,
+        conceived gives birth to sin; and all sin is a dysfunction; and dysfunction is uselessness. A new sofa will
+        become fettered, a new car will be a tin of rust, even our bodies are becoming old and gray and worn out and
+        will soon be in the grave. Evil will inherit evil in the end and goodness will inherit goodness. This is true,
+        even if in the meanwhile, we see the wicked prospering and the righteous suffering; as it says,
         <blog-reference-tooltip [reference]="'Ecclesiastes 7:15'">
           I have seen everything during my lifetime of futility; there is a righteous man who perishes in his
           righteousness and there is a wicked man who prolongs his life in his wickedness.
@@ -844,7 +845,6 @@
         devour widows' houses, and for appearance's sake offer long prayers; these will receive greater condemnation."
         [Matthew 23:14, Mark 12:40, Luke 20:47] For they sought to deceive man, appearing righteous before them, but God
         knows their hearts. Therefore, no-one is just in the sight of God, and we certainly cannot justify ourselves.<br /><br />
-        <!-- TODO - covering link -->
 
         We are in a great debt and God's anger is against sin, for it corrupts what He created:
         <blog-reference-tooltip [reference]="'Psalm 7:11'">
@@ -902,8 +902,10 @@
         daytime; a man that walks in darkness, does not know where he is going.<br />
         <a href="https://thelightof.life/#/draw/O--SQdICRVk/fearLord.webp" target="_blank"
           >There is a healthy fear of the Lord, and an unhealthy fear.</a
+        ><br />
+        <a href="https://thelightof.life/#/study-detail/2989017f-1078-1b40-a639-7ecdb98078af" target="_blank"
+          >How to understanding the fear of the LORD.</a
         >
-        <!-- TODO - fear of the Lord link -->
         <br /><br />
 
         God is the First and the Last; He has no beginning nor end; He is the Beginning and the End; He lives from
@@ -1301,15 +1303,15 @@
         The world thinks that the truth is hidden: in the depths of the ocean, in outer space, in the center of the
         earth. They spend countless thousands of dollars to explore where no man has gone before, searching for the
         truth. Yet, God is widely known and everyone knows Him and His Son, Jesus: for He has made Himself renown to all
-         His creation. For whose name is constantly blasphemed? Whose symbol, the cross, is put on buildings, hung
-        around necks, pierced on the skin? Did we forget that it was a device of death? No! It's because Jesus was put
-        on that cross, turning what the enemy meant for evil into good; and for you! Isn't it His coming which split our
+        His creation. For whose name is constantly blasphemed? Whose symbol, the cross, is put on buildings, hung around
+        necks, pierced on the skin? Did we forget that it was a device of death? No! It's because Jesus was put on that
+        cross, turning what the enemy meant for evil into good; and for you! Isn't it His coming which split our
         calender in half? The same writings that declare a seven day week and a restful day on the seventh, tells of
         Him; the same writings that quote wisdom that we have all come into agree upon, quoting without knowing its
         original source: the Bible. And yet, the people shoot rockets into the heavens to reach God, just as they tried
-        in times past at the Tower of Babel, by their own might to obtain, but they will fail; for God sees to it that no-one can
-        come near to Him by their own self-will or effort, so no-one will be able to boast in His Presence; but rather,
-        through the word of faith, the word of truth, which says:
+        in times past at the Tower of Babel, by their own might to obtain, but they will fail; for God sees to it that
+        no-one can come near to Him by their own self-will or effort, so no-one will be able to boast in His Presence;
+        but rather, through the word of faith, the word of truth, which says:
         <blog-reference-tooltip [reference]="'Romans 10'"
           >"The word is near you, in your mouth and in your heart” (that is, the word of faith that we proclaim);
           because, if you confess with your mouth that Jesus is Lord and believe in your heart that God raised him from
@@ -1318,8 +1320,8 @@
           shame.” For there is no distinction between Jew and Greek; for the same Lord is Lord of all, bestowing his
           riches on all who call on him. For “everyone who calls on the name of the Lord will be saved."
         </blog-reference-tooltip>
-        For the way to life is through the fear of the LORD unto wisdom unto humility unto great grace.
-        And the living Grace, the living Truth has come; the Truth has left; the Truth sent His Spirit of Truth; the Truth will come
+        For the way to life is through the fear of the LORD unto wisdom unto humility unto great grace. And the living
+        Grace, the living Truth has come; the Truth has left; the Truth sent His Spirit of Truth; the Truth will come
         again with the clouds in heaven; the Truth is here too; as Paul says in his letter to the Romans:
         <blog-reference-tooltip [reference]="'Romans 7:25'"
           >THANK GOD! THE ANSWER IS IN JESUS CHRIST OUR LORD.</blog-reference-tooltip

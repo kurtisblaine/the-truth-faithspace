@@ -10,6 +10,7 @@ import { TemplateService } from "./template.service";
   animations: [fadeInOut],
 })
 export class GospelComponent implements AfterViewInit, OnInit {
+  public showAccordion = false;
   @HostBinding("id.scrollProgress") someField = true;
 
   constructor(
@@ -19,7 +20,11 @@ export class GospelComponent implements AfterViewInit, OnInit {
     public activeRoute: ActivatedRoute
   ) {}
 
-  ngOnInit() {}
+  ngOnInit() {
+    setTimeout(() => {
+      this.showAccordion = true;
+    }, 0);
+  }
 
   ngAfterViewInit(): void {
     (window as any).BLB.Tagger.pageInit();
