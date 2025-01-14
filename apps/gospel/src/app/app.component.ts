@@ -1,4 +1,4 @@
-import { AfterViewInit, Component, ElementRef, OnInit, ViewChild } from "@angular/core";
+import { Component, ElementRef, OnInit, ViewChild } from "@angular/core";
 import { Router } from "@angular/router";
 import {
   faBars,
@@ -16,13 +16,14 @@ import {
   faPenToSquare,
 } from "@fortawesome/free-solid-svg-icons";
 import { BehaviorSubject, Observable, fromEvent, map } from "rxjs";
+import { WindowService } from "./gospel-page/window.service";
 
 @Component({
   selector: "blog-root",
   templateUrl: "./app.component.html",
   styleUrls: ["./app.component.scss"],
 })
-export class AppComponent implements OnInit, AfterViewInit {
+export class AppComponent implements OnInit {
   @ViewChild("toTop") public toTopElement: ElementRef;
 
   public title = "The Good News of the Kingdom of God";
@@ -43,33 +44,30 @@ export class AppComponent implements OnInit, AfterViewInit {
   public progressValue$!: Observable<number>;
   public scrollTimeout!: any;
 
-  constructor(private router: Router) {}
+  constructor(private router: Router, private windowService: WindowService) {}
 
   public ngOnInit() {
-    this.progressValue$ = fromEvent(window, "scroll", { passive: true }).pipe(
-      map(() => {
-        clearTimeout(this.scrollTimeout);
+    if (this.windowService.nativeWindow) {
+      this.progressValue$ = fromEvent(this.windowService.nativeWindow, "scroll", { passive: true }).pipe(
+        map(() => {
+          clearTimeout(this.scrollTimeout);
 
-        this.scrollTimeout = setTimeout(function () {
-          // console.log("Scroll ended");
-        }, 100);
+          this.scrollTimeout = setTimeout(function () {
+            // console.log("Scroll ended");
+          }, 100);
 
-        const scrollTop = window.scrollY;
-        const docHeight = document.body.offsetHeight;
-        const winHeight = window.innerHeight;
-        const scrollPercent = scrollTop / (docHeight - winHeight);
-        const scrollPercentRounded = Math.round(scrollPercent * 100);
-        return scrollPercentRounded;
-      })
-    );
-  }
-
-  public ngAfterViewInit(): void {
-    const keep = 1;
+          const scrollTop = this.windowService.nativeWindow.scrollY;
+          const docHeight = document.body.offsetHeight;
+          const winHeight = this.windowService.nativeWindow.innerHeight;
+          const scrollPercent = scrollTop / (docHeight - winHeight);
+          const scrollPercentRounded = Math.round(scrollPercent * 100);
+          return scrollPercentRounded;
+        })
+      );
+    }
   }
 
   emitScrollEvent() {
-    // window.dispatchEvent(new CustomEvent("scroll", { detail: { scrollY: 0 } }));
     this.scrollToTop(this.toTopElement.nativeElement);
   }
 
