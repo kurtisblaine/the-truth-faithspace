@@ -1,5 +1,6 @@
 import { AfterViewInit, ChangeDetectionStrategy, Component, OnInit } from "@angular/core";
 import { fadeInOut } from "shared";
+import { WindowService } from "../gospel-page/window.service";
 
 @Component({
   selector: "blog-home-page",
@@ -9,11 +10,13 @@ import { fadeInOut } from "shared";
   animations: [fadeInOut],
 })
 export default class HomePageComponent implements OnInit, AfterViewInit {
-  constructor() {}
+  constructor(private windowService: WindowService) {}
 
   ngOnInit() {}
 
   ngAfterViewInit(): void {
-    (window as any).BLB.Tagger.pageInit();
+    if (this.windowService.nativeWindow) {
+      (this.windowService.nativeWindow as any).BLB.Tagger.pageInit();
+    }
   }
 }

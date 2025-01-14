@@ -3,6 +3,7 @@ import { ActivatedRoute, Router } from "@angular/router";
 import { fadeInOut } from "shared";
 import { RouterService } from "./router.service";
 import { TemplateService } from "./template.service";
+import { WindowService } from "./window.service";
 @Component({
   selector: "blog-gospel",
   templateUrl: "./gospel.component.html",
@@ -17,7 +18,8 @@ export class GospelComponent implements AfterViewInit, OnInit {
     private router: Router,
     public templateService: TemplateService,
     public routerService: RouterService,
-    public activeRoute: ActivatedRoute
+    public activeRoute: ActivatedRoute,
+    private windowService: WindowService
   ) {}
 
   ngOnInit() {
@@ -27,7 +29,9 @@ export class GospelComponent implements AfterViewInit, OnInit {
   }
 
   ngAfterViewInit(): void {
-    (window as any).BLB.Tagger.pageInit();
+    if (this.windowService.nativeWindow) {
+      (this.windowService.nativeWindow as any).BLB.Tagger.pageInit();
+    }
   }
 
   public toAnchor(elementId: string): void {
