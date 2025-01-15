@@ -4,7 +4,6 @@ import { MatButtonModule } from "@angular/material/button";
 import { MatCardModule } from "@angular/material/card";
 import { MatExpansionModule } from "@angular/material/expansion";
 import { RouterModule, Routes } from "@angular/router";
-import { IvyCarouselModule } from "@degloman/angular-responsive-carousel";
 import { SharedModule } from "../shared/shared.module";
 import { GospelItemComponent } from "./gospel-item/gospel-item.component";
 import { GospelComponent } from "./gospel.component";
@@ -25,7 +24,6 @@ const routes: Routes = [
 @NgModule({
   declarations: [GospelComponent, GospelItemComponent],
   imports: [
-    IvyCarouselModule,
     CommonModule,
     SharedModule,
     MatButtonModule,
