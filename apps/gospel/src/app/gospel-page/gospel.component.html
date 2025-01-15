@@ -163,6 +163,7 @@
 </div>
 
 <section class="section-dark" style="text-align: center">
+  <!-- #region CAROUSEL -->
   <!-- <carousel
     [dots]="false"
     [cellWidth]="333"
@@ -300,8 +301,13 @@
       </blog-reference-tooltip>
     </div>
   </carousel> -->
-  <div class="headers mat-caption" style="margin-bottom: 0px; text-align: right">
+  <!-- <div class="headers mat-caption" style="margin-bottom: 0px; text-align: right">
     *The Gospel using key Scripture verses.
+  </div> -->
+  <!-- #endregion CAROUSEL -->
+
+  <div>
+    Below is the Gospel.
   </div>
 </section>
 <!-- #endregion INTRODUCTION -->
@@ -318,7 +324,7 @@
     <h3 class="headers" (click)="navigateToGospelItem('Futility of Pleasure', futilityOfPleasure)">
       Futility of Pleasure
     </h3>
-    <p class="paragraphs">
+    <div class="paragraphs">
       <ng-container *ngTemplateOutlet="futilityOfPleasure"></ng-container>
       <ng-template #futilityOfPleasure>
         Alcohol and food, which are wholesome, which are given to us by God for our enjoyment, but are often perverted
@@ -340,7 +346,7 @@
         merry, but God forbid, for drunkenness; sex for reproduction, but God forbid, for immorality. Lust corrupts God
         given necessities into dissipation and waste: for over-eating is not for hunger, and drunkenness is not for
         thirst, and immorality is not for reproduction; all of these are for pleasure, and
-        <blog-reference-tooltip [reference]="'Ecclesiastes 7:4'">
+        <blog-reference-tooltip [reference]="'Ecclesiastes 7:4'" ngSkipHydration>
           The mind of the wise is in the house of mourning, while the mind of fools is in the house of pleasure.
         </blog-reference-tooltip>
         So pleasure is not of wisdom; and pleasure is fleeting - only lasting for a short while. No matter how much the
@@ -366,6 +372,10 @@
         <blog-reference-tooltip [reference]="'Ecclesiastes 1'">
           All things are full of weariness;<b>a man cannot utter it</b>; the eye is not satisfied with seeing, nor the
           ear filled with hearing.
+        </blog-reference-tooltip>
+        And,
+        <blog-reference-tooltip [reference]="'Ecclesiastes 6:7'">
+          All a man's labor is for his mouth and yet the appetite is not satisfied.
         </blog-reference-tooltip>
         <br />
 
@@ -438,7 +448,7 @@
         <a style="cursor: pointer" (click)="toAnchor('call-grace')">THE CALL - GRACE</a>
         portion of the Gospel. There are many edifying things there that will help encourage you in the faith.)
       </ng-template>
-    </p>
+    </div>
   </section>
 </div>
 
@@ -451,7 +461,7 @@
 <div class="filler">
   <section class="section section-dark">
     <h3 class="headers" (click)="navigateToGospelItem('Futility in Toil', futilityInToil)">Futility in Toil</h3>
-    <p class="paragraphs">
+    <div class="paragraphs">
       <ng-container *ngTemplateOutlet="futilityInToil"></ng-container>
       <ng-template #futilityInToil>
         Our lives are filled with work and toil: we work, then sleep, to do it all over again the next day. Our days are
@@ -554,7 +564,7 @@
         age - they have beauty products, wrinkling agents, and plastic surgery; but whatever we do, we cannot reverse
         death: all of us will return to Him in the end.
       </ng-template>
-    </p>
+    </div>
   </section>
 </div>
 
@@ -567,7 +577,7 @@
 <div class="pimg19">
   <section class="section section-dark floater">
     <h3 class="headers" (click)="navigateToGospelItem('Futility of Wealth', futilityOfWealth)">Futility of Wealth</h3>
-    <p class="paragraphs">
+    <div class="paragraphs">
       <ng-container *ngTemplateOutlet="futilityOfWealth"></ng-container>
       <ng-template #futilityOfWealth>
         A man goes into a pub with everything he owns. He sits down at a gambling table to gamble what he owns. At
@@ -674,7 +684,7 @@
           consider the years of his life, because God keeps him occupied with the gladness of his heart.
         </blog-reference-tooltip>
       </ng-template>
-    </p>
+    </div>
   </section>
 </div>
 
@@ -687,7 +697,7 @@
 <div class="filler">
   <section class="section section-dark">
     <h3 class="headers" (click)="navigateToGospelItem('Futility in Death', futilityInDeath)">Futility in Death</h3>
-    <p class="paragraphs">
+    <div class="paragraphs">
       <ng-container *ngTemplateOutlet="futilityInDeath"></ng-container>
       <ng-template #futilityInDeath>
         There is a man who lives in a tent. All his days are spent in constant agony in his tent since it is not
@@ -782,7 +792,7 @@
           So teach us to number our days, that we may present to You a heart of wisdom.
         </blog-reference-tooltip>
       </ng-template>
-    </p>
+    </div>
   </section>
 </div>
 <!-- #endregion THE DANGER - FUTILITY -->
@@ -799,7 +809,7 @@
     <h3 class="headers" (click)="navigateToGospelItem('God is a Consuming Fire', aConsumingFire)">
       God is a Consuming Fire
     </h3>
-    <p class="paragraphs">
+    <div class="paragraphs">
       <ng-container *ngTemplateOutlet="aConsumingFire"></ng-container>
       <ng-template #aConsumingFire>
         We desire to do good with our minds, but with our bodies, we don't do what we intend to do. We see it every
@@ -976,7 +986,7 @@
         <a style="cursor: pointer" (click)="toAnchor('call-grace')">THE CALL - GRACE</a>
         portion of the Gospel. There are many edifying things there that will help you in the faith.)
       </ng-template>
-    </p>
+    </div>
   </section>
 </div>
 
@@ -989,7 +999,7 @@
 <div class="filler">
   <section class="section section-dark">
     <h3 class="headers" (click)="navigateToGospelItem('He Sees & Hears', heSeesAndHears)">He Sees & Hears</h3>
-    <p class="paragraphs">
+    <div class="paragraphs">
       <ng-container *ngTemplateOutlet="heSeesAndHears"></ng-container>
       <ng-template #heSeesAndHears>
         God is living; He is the creator of all living things. He sees the thoughts and intentions of the human heart;
@@ -1092,7 +1102,7 @@
         powerful in speech before the coming of the Messiah to make a way for Him, the message of grace, then what will
         the fearful signs in the heavens suggest before the second coming of Him, the rule of the great King?
       </ng-template>
-    </p>
+    </div>
   </section>
 </div>
 
@@ -1105,7 +1115,7 @@
 <div class="pimg20" style="background-position: top">
   <section class="section section-dark floater">
     <h3 class="headers" (click)="navigateToGospelItem('Our Sin Nature', ourSinNature)">Our Sin Nature</h3>
-    <p class="paragraphs">
+    <div class="paragraphs">
       <ng-container *ngTemplateOutlet="ourSinNature"></ng-container>
       <ng-template #ourSinNature>
         Everyone is fallen. All of us are alike: we do evil. None of us continually does what we are supposed to do; and
@@ -1205,7 +1215,7 @@
           >Here is a gospel tract to show the power of sin through a parable of Fast Food.</a
         ><br />
       </ng-template>
-    </p>
+    </div>
   </section>
 </div>
 
@@ -1218,7 +1228,7 @@
 <div class="filler">
   <section class="section section-dark">
     <h3 class="headers" (click)="navigateToGospelItem('The Day of Judgement', dayOfJudgement)">The Day of Judgement</h3>
-    <p class="paragraphs">
+    <div class="paragraphs">
       <ng-container *ngTemplateOutlet="dayOfJudgement"></ng-container>
       <ng-template #dayOfJudgement>
         <blog-reference-tooltip [reference]="'2 Peter 3'">
@@ -1328,7 +1338,7 @@
           >THANK GOD! THE ANSWER IS IN JESUS CHRIST OUR LORD.</blog-reference-tooltip
         >
       </ng-template>
-    </p>
+    </div>
   </section>
 </div>
 <!-- #endregion THE DANGER - SIN -->
@@ -1345,7 +1355,7 @@
     <h3 class="headers" (click)="navigateToGospelItem('Jesus, the Servant of God', sufferingServant)">
       Jesus, the Servant of God
     </h3>
-    <p class="paragraphs">
+    <div class="paragraphs">
       <ng-container *ngTemplateOutlet="sufferingServant"></ng-container>
       <ng-template #sufferingServant>
         Hearing doesn't make us right with God, but hearing with faith and this is what you have heard before: Christ
@@ -1550,7 +1560,7 @@
           >And the difference between true worship (by grace) and false worship (by the law).</a
         >
       </ng-template>
-    </p>
+    </div>
   </section>
 </div>
 
@@ -1565,7 +1575,7 @@
     <h3 class="headers" (click)="navigateToGospelItem('Jesus, the Rock of our Salvation', theRockOfSalvation)">
       Jesus, the Rock of our Salvation
     </h3>
-    <p class="paragraphs">
+    <div class="paragraphs">
       <ng-container *ngTemplateOutlet="theRockOfSalvation"></ng-container>
       <ng-template #theRockOfSalvation>
         <blog-reference-tooltip [reference]="'Exodus 17'">
@@ -1685,7 +1695,7 @@
         who flees to Him. He is our Defense and our Offense, that we may take up the Word of God, that we may fight
         against the enemy with truth.
       </ng-template>
-    </p>
+    </div>
   </section>
 </div>
 
@@ -1700,7 +1710,7 @@
     <h3 class="headers" (click)="navigateToGospelItem('Jesus, the Lamb of God', theLambOfGod)">
       Jesus, the Lamb of God
     </h3>
-    <p class="paragraphs">
+    <div class="paragraphs">
       <ng-container *ngTemplateOutlet="theLambOfGod"></ng-container>
       <ng-template #theLambOfGod>
         Under the Old Covenant, the Israelites obtained atonement by God for their sins by sacrificing an animal; when
@@ -1824,7 +1834,7 @@
         God for Jesus Christ! And now, we purge out the old leaven from our homes in haste, for in haste we were brought
         up out of Egypt.
       </ng-template>
-    </p>
+    </div>
   </section>
 </div>
 
@@ -1839,7 +1849,7 @@
     <h3 class="headers" (click)="navigateToGospelItem('Jesus, the Door of Eternal Salvation', eternalSalvation)">
       Jesus, the Door of Eternal Salvation
     </h3>
-    <p class="paragraphs">
+    <div class="paragraphs">
       <ng-container *ngTemplateOutlet="eternalSalvation"></ng-container>
       <ng-template #eternalSalvation>
         The world was judged once before by water (the Book of Genesis). Historians know that the world under-went some
@@ -1941,7 +1951,7 @@
           strengthen the sick; but the fat and the strong I will destroy. I will feed them with judgment.
         </blog-reference-tooltip>
       </ng-template>
-    </p>
+    </div>
   </section>
 </div>
 
@@ -1956,7 +1966,7 @@
     <h3 class="headers" (click)="navigateToGospelItem('Jesus, the Lion from the Tribe of Judah', theLion)">
       Jesus, the Lion from the Tribe of Judah
     </h3>
-    <p class="paragraphs">
+    <div class="paragraphs">
       <ng-container *ngTemplateOutlet="theLion"></ng-container>
       <ng-template #theLion>
         <blog-reference-tooltip [reference]="'Judges 14'">
@@ -2048,7 +2058,7 @@
           and sister and mother."
         </blog-reference-tooltip>
       </ng-template>
-    </p>
+    </div>
   </section>
 </div>
 
@@ -2061,7 +2071,7 @@
 <div class="filler-light">
   <section class="section section-light">
     <h3 class="headers" (click)="navigateToGospelItem('Jesus, the Scapegoat', theScapegoat)">Jesus, the Scapegoat</h3>
-    <p class="paragraphs">
+    <div class="paragraphs">
       <ng-container *ngTemplateOutlet="theScapegoat"></ng-container>
       <ng-template #theScapegoat>
         <!-- In the book of Leviticus, there are two instances where two animals were brought for sacrifice: one was slain and
@@ -2247,7 +2257,7 @@
           >Confess!</a
         >
       </ng-template>
-    </p>
+    </div>
   </section>
 </div>
 
@@ -2262,7 +2272,7 @@
     <h3 class="headers" (click)="navigateToGospelItem('Jesus, the True Food & the True Drink', trueFoodAndTrueDrink)">
       Jesus, the True Food & the True Drink
     </h3>
-    <p class="paragraphs">
+    <div class="paragraphs">
       <ng-container *ngTemplateOutlet="trueFoodAndTrueDrink"></ng-container>
       <ng-template #trueFoodAndTrueDrink>
         The food we eat goes into the mouth, then into the stomach and out into the sewer; and yet, we constantly strive
@@ -2405,7 +2415,7 @@
           will never thirst.
         </blog-reference-tooltip>
       </ng-template>
-    </p>
+    </div>
   </section>
 </div>
 
@@ -2420,7 +2430,7 @@
     <h3 class="headers" (click)="navigateToGospelItem('Jesus, the Bronze Serpent', theBronzeSerpent)">
       Jesus, the Bronze Serpent
     </h3>
-    <p class="paragraphs">
+    <div class="paragraphs">
       <ng-container *ngTemplateOutlet="theBronzeSerpent"></ng-container>
       <ng-template #theBronzeSerpent>
         <blog-reference-tooltip [reference]="'Numbers 21'">
@@ -2541,7 +2551,7 @@
         the matter by fleeing to Him for refuge in the heavenly places where He is seated, setting your mind on the
         things above, not on the things below, so that, in return, we may see that faith is truly sight.
       </ng-template>
-    </p>
+    </div>
   </section>
 </div>
 
@@ -2554,7 +2564,7 @@
 <div class="pimg25">
   <section class="section section-light floater">
     <h3 class="headers" (click)="navigateToGospelItem('Jesus, the Victor', theVictor)">Jesus, the Victor</h3>
-    <p class="paragraphs">
+    <div class="paragraphs">
       <ng-container *ngTemplateOutlet="theVictor"></ng-container>
       <ng-template #theVictor>
         God sent Samson to Israel to be a judge. He was a mighty judge in the land of Israel, killing many of their
@@ -2696,7 +2706,7 @@
           >Here is more on this remarkable type found in Ester.</a
         >
       </ng-template>
-    </p>
+    </div>
   </section>
 </div>
 
@@ -2709,7 +2719,7 @@
 <div class="filler-light">
   <section class="section section-light">
     <h3 class="headers" (click)="navigateToGospelItem('Jesus, the Son of God', theSonOfGod)">Jesus, the Son of God</h3>
-    <p class="paragraphs">
+    <div class="paragraphs">
       <ng-container *ngTemplateOutlet="theSonOfGod"></ng-container>
       <ng-template #theSonOfGod>
         Jesus is the Son of God; someone may ask, "What does that mean?" We have a proverb that says, "Like mother like
@@ -2918,7 +2928,7 @@
         into the trap of worshipping a dead cross, bowing low to it, but worship your Lord and Savior and God, Jesus,
         living in the heavens, exalted. Beware of idols.
       </ng-template>
-    </p>
+    </div>
   </section>
 </div>
 <!-- #endregion THE CALL - GRACE -->
@@ -2935,7 +2945,7 @@
     <h3 class="headers" (click)="navigateToGospelItem('Running the Race of Faith', theRaceOfFaith)">
       Running the Race of Faith
     </h3>
-    <p class="paragraphs">
+    <div class="paragraphs">
       <ng-container *ngTemplateOutlet="theRaceOfFaith"></ng-container>
       <ng-template #theRaceOfFaith>
         Running the race of faith is in many places in the Scriptures,
@@ -3020,7 +3030,7 @@
           mercy.</blog-reference-tooltip
         >
       </ng-template>
-    </p>
+    </div>
   </section>
 </div>
 
@@ -3035,7 +3045,7 @@
     <h3 class="headers" (click)="navigateToGospelItem('Maintaining a Clear Conscience', clearConscience)">
       Maintaining a Clear Conscience
     </h3>
-    <p class="paragraphs">
+    <div class="paragraphs">
       <ng-container *ngTemplateOutlet="clearConscience"></ng-container>
       <ng-template #clearConscience>
         Our conscience was dead when we lived according to our lusts in this fallen world; it had been corrupted because
@@ -3148,7 +3158,7 @@
           the early church (2 Peter 2:1 & Jude 1:4).</a
         >
       </ng-template>
-    </p>
+    </div>
   </section>
 </div>
 
@@ -3161,7 +3171,7 @@
 <div class="pimg9">
   <section class="section section-light floater">
     <h3 class="headers" (click)="navigateToGospelItem('Abide in Christ', abideInHim)">Abide in Christ</h3>
-    <p class="paragraphs">
+    <div class="paragraphs">
       <ng-container *ngTemplateOutlet="abideInHim"></ng-container>
       <ng-template #abideInHim>
         God gave food guidelines to His people: only eat animals with the split hoof and chews the cud, fish with fins
@@ -3243,7 +3253,7 @@
           whoever feeds on this bread will live forever.
         </blog-reference-tooltip>
       </ng-template>
-    </p>
+    </div>
   </section>
 </div>
 
@@ -3258,7 +3268,7 @@
     <h3 class="headers" (click)="navigateToGospelItem('The Sign of Circumcision, a New Heart', aNewHeart)">
       The Sign of Circumcision, a New Heart
     </h3>
-    <p class="paragraphs">
+    <div class="paragraphs">
       <ng-container *ngTemplateOutlet="aNewHeart"></ng-container>
       <ng-template #aNewHeart>
         <blog-reference-tooltip [reference]="'Romans 9'">
@@ -3344,7 +3354,7 @@
           people.
         </blog-reference-tooltip>
       </ng-template>
-    </p>
+    </div>
   </section>
 </div>
 
@@ -3359,7 +3369,7 @@
     <h3 class="headers" (click)="navigateToGospelItem('Born Again by the Holy Spirit', bornAgain)">
       Born again by the Holy Spirit
     </h3>
-    <p class="paragraphs">
+    <div class="paragraphs">
       <ng-container *ngTemplateOutlet="bornAgain"></ng-container>
       <ng-template #bornAgain>
         <blog-reference-tooltip [reference]="'Ephesians 1'">
@@ -3500,7 +3510,7 @@
           >Being born again: the two baptisms.</a
         >
       </ng-template>
-    </p>
+    </div>
   </section>
 </div>
 <!-- #endregion THE CALL - FAITH -->
@@ -3517,7 +3527,7 @@
     <h3 class="headers" (click)="navigateToGospelItem('Repentance from Dead Things', repentance)">
       Repentence from Dead Things
     </h3>
-    <p class="paragraphs">
+    <div class="paragraphs">
       <ng-container *ngTemplateOutlet="repentance"></ng-container>
       <ng-template #repentance>
         <blog-reference-tooltip [reference]="'Galatians 2'">
@@ -3630,7 +3640,7 @@
           >Here is a picture showing how tightly coupled repentance and faith are.</a
         >
       </ng-template>
-    </p>
+    </div>
   </section>
 </div>
 
@@ -3643,7 +3653,7 @@
 <div class="pimg17">
   <section class="section section-light floater">
     <h3 class="headers" (click)="navigateToGospelItem('Baptism in Water', baptismInWater)">Baptism in Water</h3>
-    <p class="paragraphs">
+    <div class="paragraphs">
       <ng-container *ngTemplateOutlet="baptismInWater"></ng-container>
       <ng-template #baptismInWater>
         <blog-reference-tooltip [reference]="'Acts 2'">
@@ -3749,7 +3759,7 @@
           >Here is a drawing on the two baptisms found in Scripture.</a
         >
       </ng-template>
-    </p>
+    </div>
   </section>
 </div>
 
@@ -3764,7 +3774,7 @@
     <h3 class="headers" (click)="navigateToGospelItem('Believe in the Living God', believeInGod)">
       Believe in the Living God
     </h3>
-    <p class="paragraphs">
+    <div class="paragraphs">
       <ng-container *ngTemplateOutlet="believeInGod"></ng-container>
       <ng-template #believeInGod>
         Faith is always - it's how we start and how we end. As Paul says, "From faith to faith" (Romans 1:17) and "a law
@@ -3925,7 +3935,7 @@
           >Which goes hand-in-hand with the parable of the wineskins.</a
         >
       </ng-template>
-    </p>
+    </div>
   </section>
 </div>
 
@@ -3940,7 +3950,7 @@
     <h3 class="headers" (click)="navigateToGospelItem('Obedience unto Holiness', obedienceUntoHoliness)">
       Obedience unto Holiness
     </h3>
-    <p class="paragraphs">
+    <div class="paragraphs">
       <ng-container *ngTemplateOutlet="obedienceUntoHoliness"></ng-container>
       <ng-template #obedienceUntoHoliness>
         <blog-reference-tooltip [reference]="'1 Peter 1'">
@@ -4061,7 +4071,7 @@
           >Here is a drawing about sanctification.</a
         >
       </ng-template>
-    </p>
+    </div>
   </section>
 </div>
 
@@ -4076,7 +4086,7 @@
     <h3 class="headers" (click)="navigateToGospelItem('Call upon the Name of the Lord', callUponTheLord)">
       Call upon the Name of the Lord
     </h3>
-    <p class="paragraphs">
+    <div class="paragraphs">
       <ng-container *ngTemplateOutlet="callUponTheLord"></ng-container>
       <ng-template #callUponTheLord>
         <blog-reference-tooltip [reference]="'Luke 12'" [isJesusWord]="true">
@@ -4160,7 +4170,7 @@
           one will credit me with more than he sees in me or hears from me.
         </blog-reference-tooltip>
       </ng-template>
-    </p>
+    </div>
   </section>
 </div>
 
@@ -4175,7 +4185,7 @@
     <h3 class="headers" (click)="navigateToGospelItem('Live Worthy of God\'s Call', liveWorthy)">
       Live Worthy of God's Call
     </h3>
-    <p class="paragraphs">
+    <div class="paragraphs">
       <ng-container *ngTemplateOutlet="liveWorthy"></ng-container>
       <ng-template #liveWorthy>
         Strive to enter through the narrow gate to eternal life - wide is the way that leads to destruction and many are
@@ -4264,7 +4274,7 @@
           >Will inherit the Kingdom (categorical)</a
         >
       </ng-template>
-    </p>
+    </div>
   </section>
 </div>
 
@@ -4282,7 +4292,7 @@
     >
       Perseverance through Remembrance to the End
     </h3>
-    <p class="paragraphs">
+    <div class="paragraphs">
       <ng-container *ngTemplateOutlet="perseveranceToTheEnd"></ng-container>
       <ng-template #perseveranceToTheEnd>
         All humans are forgetful - not some, all. Want proof? Look at all the libraries filled with books - we write
@@ -4385,7 +4395,7 @@
           hand.
         </blog-reference-tooltip>
       </ng-template>
-    </p>
+    </div>
   </section>
 </div>
 <!-- #endregion THE RESPONSE -->
@@ -4405,7 +4415,7 @@
     >
       Persecution & the Resurrection from the Dead
     </h3>
-    <p class="paragraphs">
+    <div class="paragraphs">
       <ng-container *ngTemplateOutlet="resurrectionFromTheDead"></ng-container>
       <ng-template #resurrectionFromTheDead>
         <blog-reference-tooltip [reference]="'1 Corinthians 15'">
@@ -4517,7 +4527,7 @@
           >Here is a drawing about being a child of the light.</a
         >
       </ng-template>
-    </p>
+    </div>
   </section>
 </div>
 
@@ -4532,7 +4542,7 @@
     <h3 class="headers" (click)="navigateToGospelItem('New Spiritual Bodies', newSpiritualBodies)">
       New Spiritual Bodies
     </h3>
-    <p class="paragraphs">
+    <div class="paragraphs">
       <ng-container *ngTemplateOutlet="newSpiritualBodies"></ng-container>
       <ng-template #newSpiritualBodies>
         The promise of the inheritance is contingent on our present sufferings with Christ (see 1 Thessalonians 3); the
@@ -4638,7 +4648,7 @@
           >Here is a drawing about the two resurrections on judgement day.</a
         >
       </ng-template>
-    </p>
+    </div>
   </section>
 </div>
 
@@ -4651,7 +4661,7 @@
 <div class="pimg1">
   <section class="section section-light floater">
     <h3 class="headers" (click)="navigateToGospelItem('Eternal Reward', eternalReward)">Eternal Reward</h3>
-    <p class="paragraphs">
+    <div class="paragraphs">
       <ng-container *ngTemplateOutlet="eternalReward"></ng-container>
       <ng-template #eternalReward>
         <blog-reference-tooltip [reference]="'Revelation 2, 3, 21'" [isJesusWord]="true">
@@ -4792,7 +4802,7 @@
           >Here is a drawing about the Day of the Lord.</a
         >
       </ng-template>
-    </p>
+    </div>
   </section>
 </div>
 
@@ -4805,7 +4815,7 @@
 <div class="filler-light">
   <section class="section section-light">
     <h3 class="headers" (click)="navigateToGospelItem('Everlasting Life', everlastingLife)">Everlasting Life</h3>
-    <p class="paragraphs">
+    <div class="paragraphs">
       <ng-container *ngTemplateOutlet="everlastingLife"></ng-container>
       <ng-template #everlastingLife>
         We, being in the tent of our body, look forward to our permanent home and eternal life which God has promised to
@@ -4921,7 +4931,7 @@
           your fathers, to Abraham, Isaac, and Jacob, to give them.
         </blog-reference-tooltip>
       </ng-template>
-    </p>
+    </div>
   </section>
 </div>
 
@@ -4936,7 +4946,7 @@
     <h3 class="headers" (click)="navigateToGospelItem('A New Heaven & A New Earth', newHeavenAndNewEarth)">
       A New Heaven & A New Earth
     </h3>
-    <p class="paragraphs">
+    <div class="paragraphs">
       <ng-container *ngTemplateOutlet="newHeavenAndNewEarth"></ng-container>
       <ng-template #newHeavenAndNewEarth>
         <blog-reference-tooltip [reference]="'Isaiah 65'">
@@ -5039,7 +5049,7 @@
         us and granted to us every spiritual blessing in the heavenly places. Praise be unto Him who redeemed us with
         His own blood. Amen."
       </ng-template>
-    </p>
+    </div>
   </section>
 
   <div class="pimg24">

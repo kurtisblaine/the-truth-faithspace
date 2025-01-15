@@ -10,7 +10,7 @@
       "executor": "@angular-devkit/build-angular:browser",
       "outputs": ["{options.outputPath}"],
       "options": {
-        "outputPath": "dist/apps/gospel",
+        "outputPath": "dist/apps/gospel/browser",
         "index": "apps/gospel/src/index.html",
         "main": "apps/gospel/src/main.ts",
         "polyfills": "apps/gospel/src/polyfills.ts",
@@ -81,6 +81,67 @@
     },
     "deploy": {
       "executor": "angular-cli-ghpages:deploy"
+    },
+    "server": {
+      "dependsOn": ["build"],
+      "executor": "@angular-devkit/build-angular:server",
+      "options": {
+        "outputPath": "dist/apps/gospel/server",
+        "main": "apps/gospel/server.ts",
+        "tsConfig": "apps/gospel/tsconfig.server.json",
+        "sourceMap": true,
+        "inlineStyleLanguage": "scss"
+      },
+      "configurations": {
+        "production": {
+          "outputHashing": "media",
+          "fileReplacements": [
+            {
+              "replace": "apps/gospel/src/environments/environment.ts",
+              "with": "apps/gospel/src/environments/environment.prod.ts"
+            }
+          ]
+        },
+        "development": {
+          "buildOptimizer": false,
+          "optimization": false,
+          "sourceMap": true,
+          "extractLicenses": false,
+          "vendorChunk": true
+        }
+      },
+      "defaultConfiguration": "production"
+    },
+    "serve-ssr": {
+      "executor": "@angular-devkit/build-angular:ssr-dev-server",
+      "configurations": {
+        "development": {
+          "browserTarget": "gospel:build:development",
+          "serverTarget": "gospel:server:development"
+        },
+        "production": {
+          "browserTarget": "gospel:build:production",
+          "serverTarget": "gospel:server:production"
+        }
+      },
+      "defaultConfiguration": "development"
+    },
+    "prerender": {
+      "executor": "@angular-devkit/build-angular:prerender",
+      "options": {
+        "routes": ["/"]
+      },
+      "configurations": {
+        "development": {
+          "browserTarget": "gospel:build:development",
+          "serverTarget": "gospel:server:development"
+        },
+        "production": {
+          "browserTarget": "gospel:build:production",
+          "serverTarget": "gospel:server:production"
+        }
+      },
+      "defaultConfiguration": "production"
     }
   }
 }
