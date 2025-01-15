@@ -17,8 +17,8 @@
     "firebase:hosting": "firebase init hosting",
     "firebase:login": "firebase login",
     "firebase:logout": "firebase logout",
-    "firebase:serve": "npm run production && firebase serve --only hosting",
-    "firebase:deploy": "npm run production && firebase deploy",
+    "firebase:serve": "npx nx build gospel --prod --output-path apps/gospel/public && firebase serve --only hosting",
+    "firebase:deploy": "npx nx build gospel --prod --output-path apps/gospel/public && firebase deploy",
     "example:config:peer": "npm config set legacy-peer-deps true",
     "example:install:optional": "npm install --include=optional"
   },

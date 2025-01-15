@@ -80,7 +80,12 @@
       }
     },
     "deploy": {
-      "executor": "angular-cli-ghpages:deploy"
+      "builder": "@angular/fire:deploy",
+      "options": {
+        "browserTarget": "gospel:build:production",
+        "serverTarget": "gospel:server:production",
+        "prerenderTarget": "gospel:prerender:production"
+      }
     },
     "server": {
       "dependsOn": ["build"],
