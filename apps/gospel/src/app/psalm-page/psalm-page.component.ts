@@ -9,6 +9,7 @@ import { getPsalmLoaded } from "../state/psalm/psalm.selectors";
   templateUrl: "./psalm-page.component.html",
   styleUrls: ["./psalm-page.component.scss"],
   changeDetection: ChangeDetectionStrategy.OnPush,
+  standalone: false,
 })
 export class PsalmPageComponent implements OnInit {
   public isLoading$: Observable<boolean>;

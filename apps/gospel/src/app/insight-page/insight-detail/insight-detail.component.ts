@@ -10,6 +10,7 @@ import { getById } from "../../state/insight/insights.selectors";
   selector: "blog-insight-detail",
   templateUrl: "./insight-detail.component.html",
   styleUrls: ["./insight-detail.component.css"],
+  standalone: false,
 })
 export class InsightDetailComponent implements OnInit {
   public blog: InsightEntity;

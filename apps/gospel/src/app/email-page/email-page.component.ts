@@ -7,6 +7,7 @@ import { ContactService } from "./contact.service";
   selector: "blog-email-page",
   templateUrl: "./email-page.component.html",
   styleUrls: ["./email-page.component.scss"],
+  standalone: false,
 })
 export class EmailPageComponent implements OnInit {
   public FormData!: FormGroup;

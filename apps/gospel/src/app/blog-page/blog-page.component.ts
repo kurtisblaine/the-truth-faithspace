@@ -8,6 +8,7 @@ import { getBlogLoaded } from "../state/blog/blog.selectors";
   selector: "blog-blog-page",
   templateUrl: "./blog-page.component.html",
   styleUrls: ["./blog-page.component.scss"],
+  standalone: false,
 })
 export class BlogPageComponent implements OnInit {
   public isLoading$: Observable<boolean>;

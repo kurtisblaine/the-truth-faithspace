@@ -8,6 +8,7 @@ import { WindowService } from "../gospel-page/window.service";
   styleUrls: ["./home-page.component.scss"],
   changeDetection: ChangeDetectionStrategy.OnPush,
   animations: [fadeInOut],
+  standalone: false,
 })
 export default class HomePageComponent implements OnInit, AfterViewInit {
   constructor(private windowService: WindowService) {}

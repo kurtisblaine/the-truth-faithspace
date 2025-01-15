@@ -10,6 +10,7 @@ import { getById } from "../../state/study/study.selectors";
   templateUrl: "./study-detail.component.html",
   styleUrl: "./study-detail.component.scss",
   changeDetection: ChangeDetectionStrategy.OnPush,
+  standalone: false,
 })
 export class StudyDetailComponent implements OnInit {
   public study: StudyEntity;

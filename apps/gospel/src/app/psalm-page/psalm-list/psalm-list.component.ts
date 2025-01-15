@@ -11,6 +11,7 @@ import { getAllPsalm } from "../../state/psalm/psalm.selectors";
   templateUrl: "./psalm-list.component.html",
   styleUrls: ["./psalm-list.component.scss"],
   changeDetection: ChangeDetectionStrategy.OnPush,
+  standalone: false,
 })
 export class PsalmListComponent implements OnInit {
   @Input() public update = false;

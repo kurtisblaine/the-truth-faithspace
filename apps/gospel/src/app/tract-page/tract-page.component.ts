@@ -5,6 +5,7 @@ import { Router } from "@angular/router";
   selector: "blog-tract-page",
   templateUrl: "./tract-page.component.html",
   styleUrl: "./tract-page.component.css",
+  standalone: false,
 })
 export class TractPageComponent {
   constructor(private router: Router) {}

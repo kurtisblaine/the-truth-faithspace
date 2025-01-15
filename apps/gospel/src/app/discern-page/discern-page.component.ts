@@ -8,6 +8,7 @@ import { getDiscernLoaded } from "../state/discern/discern.selectors";
   selector: "blog-discern-page",
   templateUrl: "./discern-page.component.html",
   styleUrls: ["./discern-page.component.scss"],
+  standalone: false,
 })
 export class DiscernPageComponent implements OnInit {
   public isLoading$: Observable<boolean>;

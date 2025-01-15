@@ -12,6 +12,7 @@ import { selectAllItems } from "../../+state/items/items.selectors";
   templateUrl: "./item-list.component.html",
   styleUrl: "./item-list.component.scss",
   changeDetection: ChangeDetectionStrategy.OnPush,
+  standalone: false,
 })
 export class ItemListComponent {
   @Input() public update = false;

@@ -5,6 +5,7 @@ import { faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
   selector: "blog-audio-play",
   templateUrl: "./audio-play.component.html",
   styleUrl: "./audio-play.component.css",
+  standalone: false,
 })
 export class AudioPlayComponent {
   public faLink = faArrowUpRightFromSquare;

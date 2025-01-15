@@ -16,6 +16,7 @@ import { Image } from "../draw-page.component";
   selector: "blog-draw-item",
   templateUrl: "./draw-item.component.html",
   styleUrls: ["./draw-item.component.css"],
+  standalone: false,
 })
 export class DrawItemComponent implements OnInit, AfterViewInit, OnDestroy {
   // eslint-disable-next-line @angular-eslint/no-input-rename

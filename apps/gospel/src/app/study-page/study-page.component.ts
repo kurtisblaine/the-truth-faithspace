@@ -9,6 +9,7 @@ import { getStudyLoaded } from "../state/study/study.selectors";
   templateUrl: "./study-page.component.html",
   styleUrl: "./study-page.component.scss",
   changeDetection: ChangeDetectionStrategy.OnPush,
+  standalone: false,
 })
 export class StudyPageComponent implements OnInit {
   public isLoading$: Observable<boolean>;

@@ -8,6 +8,7 @@ import { getInsightLoaded } from "../state/insight/insights.selectors";
   selector: "blog-insight-page",
   templateUrl: "./insight-page.component.html",
   styleUrls: ["./insight-page.component.scss"],
+  standalone: false,
 })
 export class InsightPageComponent implements OnInit {
   public isLoading$: Observable<boolean>;

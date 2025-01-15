@@ -4,6 +4,7 @@ import { TemplateService } from "../template.service";
   selector: "blog-gospel-item",
   templateUrl: "./gospel-item.component.html",
   styleUrl: "./gospel-item.component.css",
+  standalone: false,
 })
 export class GospelItemComponent implements OnInit, AfterViewInit {
   @Input() public title: string;

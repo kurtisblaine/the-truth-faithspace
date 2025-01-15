@@ -11,6 +11,7 @@ import { getAllDiscern } from "../../state/discern/discern.selectors";
   selector: "blog-discern-list",
   templateUrl: "./discern-list.component.html",
   styleUrls: ["./discern-list.component.scss"],
+  standalone: false,
 })
 export class DiscernListComponent implements OnInit {
   @Input() public update = false;

@@ -5,6 +5,7 @@ import { ChangeDetectionStrategy, Component, Input, OnInit } from "@angular/core
   templateUrl: "./reference-tooltip.component.html",
   styleUrls: ["./reference-tooltip.component.scss"],
   changeDetection: ChangeDetectionStrategy.OnPush,
+  standalone: false,
 })
 export class ReferenceTooltipComponent implements OnInit {
   @Input() public reference!: string;

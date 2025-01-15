@@ -12,6 +12,7 @@ import { StudyActions } from "../state/study/study.actions";
   selector: "blog-server-page",
   templateUrl: "./server-page.component.html",
   styleUrls: ["./server-page.component.scss"],
+  standalone: false,
 })
 export class ServerPageComponent implements OnInit {
   public title!: string;

@@ -12,6 +12,7 @@ import { getAllStudy } from "../../state/study/study.selectors";
   templateUrl: "./study-list.component.html",
   styleUrl: "./study-list.component.scss",
   changeDetection: ChangeDetectionStrategy.OnPush,
+  standalone: false,
 })
 export class StudyListComponent implements OnInit {
   @Input() public update = false;

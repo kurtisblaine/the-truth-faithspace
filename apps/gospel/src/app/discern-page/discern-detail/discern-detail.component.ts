@@ -10,6 +10,7 @@ import { getById } from "../../state/discern/discern.selectors";
   selector: "blog-discern-detail",
   templateUrl: "./discern-detail.component.html",
   styleUrls: ["./discern-detail.component.css"],
+  standalone: false,
 })
 export class DiscernDetailComponent implements OnInit {
   public blog: DiscernEntity;
