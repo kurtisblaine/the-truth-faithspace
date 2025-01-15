@@ -1,7 +1,6 @@
 import { NgModule } from "@angular/core";
-import { BrowserModule } from "@angular/platform-browser";
+import { BrowserModule, provideClientHydration, withEventReplay } from "@angular/platform-browser";
 
-import { HttpClientModule } from "@angular/common/http";
 import { MatButtonModule } from "@angular/material/button";
 import { MatToolbarModule } from "@angular/material/toolbar";
 import { FontAwesomeModule } from "@fortawesome/angular-fontawesome";
@@ -33,7 +32,6 @@ const firebaseConfig = {
   declarations: [AppComponent],
   imports: [
     MatSidenavModule,
-    HttpClientModule,
     FirestoreModule,
     MatProgressBarModule,
     BrowserAnimationsModule,
@@ -47,7 +45,11 @@ const firebaseConfig = {
     MatListModule,
     MatTooltipModule,
   ],
-  providers: [provideFirebaseApp(() => initializeApp(firebaseConfig)), provideFirestore(() => getFirestore())],
+  providers: [
+    provideFirebaseApp(() => initializeApp(firebaseConfig)),
+    provideFirestore(() => getFirestore()),
+    provideClientHydration(withEventReplay()),
+  ],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
