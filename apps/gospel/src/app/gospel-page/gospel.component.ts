@@ -9,6 +9,7 @@ import { WindowService } from "./window.service";
   templateUrl: "./gospel.component.html",
   styleUrl: "./gospel.component.scss",
   animations: [fadeInOut],
+  standalone: false,
 })
 export class GospelComponent implements AfterViewInit, OnInit {
   public showAccordion = false;

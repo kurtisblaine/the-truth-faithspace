@@ -10,6 +10,7 @@ import { getById } from "../../state/psalm/psalm.selectors";
   selector: "blog-psalm-detail",
   templateUrl: "./psalm-detail.component.html",
   styleUrls: ["./psalm-detail.component.css"],
+  standalone: false,
 })
 export class PsalmDetailComponent implements OnInit {
   public blog: PsalmEntity;

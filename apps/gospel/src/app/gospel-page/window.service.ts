@@ -10,7 +10,7 @@ export class WindowService {
   }
 
   constructor(@Inject(PLATFORM_ID) private platformId: any) {
-    console.log("isPlatformBrowser" + isPlatformBrowser(this.platformId));
-    console.log("isPlatformServer" + isPlatformServer(this.platformId));
+    console.log("isPlatformBrowser: " + isPlatformBrowser(this.platformId));
+    console.log("isPlatformServer: " + isPlatformServer(this.platformId));
   }
 }

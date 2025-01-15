@@ -11,6 +11,7 @@ import { getAllInsight } from "../../state/insight/insights.selectors";
   selector: "blog-insight-list",
   templateUrl: "./insight-list.component.html",
   styleUrls: ["./insight-list.component.scss"],
+  standalone: false,
 })
 export class InsightListComponent implements OnInit {
   @Input() public update = false;

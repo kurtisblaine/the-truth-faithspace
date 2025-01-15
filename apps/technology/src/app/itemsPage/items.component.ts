@@ -10,6 +10,7 @@ import { selectAllItems, selectItemsLoaded } from "../+state/items/items.selecto
   templateUrl: "./items.component.html",
   styleUrl: "./items.component.scss",
   changeDetection: ChangeDetectionStrategy.OnPush,
+  standalone: false,
 })
 export class ItemsComponent {
   public items$!: Observable<ItemEntity[]>;

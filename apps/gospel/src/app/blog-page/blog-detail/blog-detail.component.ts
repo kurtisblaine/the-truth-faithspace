@@ -10,6 +10,7 @@ import { getById } from "../../state/blog/blog.selectors";
   selector: "blog-blog-detail",
   templateUrl: "./blog-detail.component.html",
   styleUrls: ["./blog-detail.component.css"],
+  standalone: false,
 })
 export class BlogDetailComponent implements OnInit {
   public blog: BlogEntity;

@@ -16,6 +16,7 @@ export interface Image {
   selector: "blog-draw-page",
   templateUrl: "./draw-page.component.html",
   styleUrls: ["./draw-page.component.scss"],
+  standalone: false,
 })
 export class DrawPageComponent implements OnInit {
   public imageIcon = faImage;

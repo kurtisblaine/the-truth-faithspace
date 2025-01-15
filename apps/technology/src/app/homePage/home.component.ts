@@ -6,5 +6,6 @@ import { fadeInOut } from "../../../../../libs/src";
   styleUrl: "./home.component.scss",
   animations: [fadeInOut],
   changeDetection: ChangeDetectionStrategy.OnPush,
+  standalone: false,
 })
 export class HomeComponent {}

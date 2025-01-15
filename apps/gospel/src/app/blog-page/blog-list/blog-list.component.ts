@@ -11,6 +11,7 @@ import { getAllBlog } from "../../state/blog/blog.selectors";
   selector: "blog-blog-list",
   templateUrl: "./blog-list.component.html",
   styleUrls: ["./blog-list.component.scss"],
+  standalone: false,
 })
 export class BlogListComponent implements OnInit {
   @Input() public update = false;

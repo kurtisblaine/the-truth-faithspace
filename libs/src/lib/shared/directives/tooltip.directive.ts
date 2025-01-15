@@ -9,19 +9,12 @@ import {
   VerticalConnectionPos,
 } from "@angular/cdk/overlay";
 import { ComponentPortal } from "@angular/cdk/portal";
-import {
-  ComponentRef,
-  Directive,
-  ElementRef,
-  HostListener,
-  Input,
-  OnDestroy,
-  OnInit,
-} from "@angular/core";
+import { ComponentRef, Directive, ElementRef, HostListener, Input, OnDestroy, OnInit } from "@angular/core";
 import { TooltipComponent, TooltipPosition } from "@angular/material/tooltip";
 
 @Directive({
   selector: "[libTooltip]",
+  standalone: false,
 })
 export class TooltipDirective implements OnInit, OnDestroy {
   private readonly defaultDelay = 0;
@@ -103,12 +96,8 @@ export class TooltipDirective implements OnInit, OnDestroy {
   }
 
   private createTooltipReference() {
-    this.tooltipRef = this.overlayRef.attach(
-      new ComponentPortal(TooltipComponent)
-    );
-    this.tooltipRef.instance.message = this.message
-      ? this.message
-      : this.htmlElement?.innerHTML;
+    this.tooltipRef = this.overlayRef.attach(new ComponentPortal(TooltipComponent));
+    this.tooltipRef.instance.message = this.message ? this.message : this.htmlElement?.innerHTML;
   }
 
   private getPositionStrategy = (positions: ConnectedPosition[]) =>
@@ -119,9 +108,7 @@ export class TooltipDirective implements OnInit, OnDestroy {
       .withPositions(positions);
 
   private isTextOverflowing = (element: HTMLElement) =>
-    this.verticalOverflow
-      ? element.offsetHeight < element.scrollHeight
-      : element.offsetWidth < element.scrollWidth;
+    this.verticalOverflow ? element.offsetHeight < element.scrollHeight : element.offsetWidth < element.scrollWidth;
 
   private getPositions(): ConnectedPosition[] {
     const position = this.position;
@@ -158,10 +145,7 @@ export class TooltipDirective implements OnInit, OnDestroy {
     ];
   }
 
-  private invertOriginPosition(
-    x: HorizontalConnectionPos,
-    y: VerticalConnectionPos
-  ) {
+  private invertOriginPosition(x: HorizontalConnectionPos, y: VerticalConnectionPos) {
     if (this.position === "above" || this.position === "below") {
       if (y === "top") y = "bottom";
       else if (y === "bottom") y = "top";

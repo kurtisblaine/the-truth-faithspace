@@ -11,6 +11,7 @@ import { getById } from "../../+state/items/items.selectors";
   templateUrl: "./item-detail.component.html",
   styleUrl: "./item-detail.component.scss",
   changeDetection: ChangeDetectionStrategy.OnPush,
+  standalone: false,
 })
 export class ItemDetailComponent {
   public item: ItemEntity;

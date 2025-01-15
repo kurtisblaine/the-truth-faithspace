@@ -5,6 +5,7 @@ import { Editor, NgxEditorComponent, Toolbar } from "ngx-editor";
   selector: "lib-text-editor",
   templateUrl: "./text-editor.component.html",
   styleUrls: ["./text-editor.component.scss"],
+  standalone: false,
 })
 export class TextEditorComponent implements OnInit, OnDestroy, AfterViewInit {
   public editor!: Editor;

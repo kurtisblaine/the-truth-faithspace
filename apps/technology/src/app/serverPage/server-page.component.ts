@@ -7,6 +7,8 @@ import { ItemEntity } from "../+state/items/items.reducer";
 @Component({
   selector: "app-server-page",
   changeDetection: ChangeDetectionStrategy.OnPush,
+  standalone: false,
+
   template: `<button mat-flat-button (click)="saveItems()">Post Item</button>
 
     <div>Title</div>
