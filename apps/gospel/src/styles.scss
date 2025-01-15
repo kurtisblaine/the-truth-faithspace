@@ -5,8 +5,8 @@
 
 $my-palette: mat.$m2-indigo-palette;
 
-$my-primary: mat.m2-define-palette(mat.$m2-indigo-palette, 500);
-$my-accent: mat.m2-define-palette(mat.$m2-indigo-palette, 900);
+$my-primary: mat.m2-define-palette(mat.$m2-indigo-palette);
+$my-accent: mat.m2-define-palette(mat.$m2-indigo-palette);
 
 $my-theme: mat.m2-define-light-theme(
   (
