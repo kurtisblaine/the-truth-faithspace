@@ -6,7 +6,7 @@ import { MatTooltipModule } from "@angular/material/tooltip";
 import { RouterModule, Routes } from "@angular/router";
 import { YOUTUBE_PLAYER_CONFIG, YouTubePlayer } from "@angular/youtube-player";
 import { FontAwesomeModule } from "@fortawesome/angular-fontawesome";
-import { PinchZoomModule } from "@meddv/ngx-pinch-zoom";
+import { PinchZoomComponent } from "@meddv/ngx-pinch-zoom";
 import { PhotoGalleryModule } from "@twogate/ngx-photo-gallery";
 import { DrawItemComponent } from "./draw-item/draw-item.component";
 import { DrawPageComponent } from "./draw-page.component";
@@ -43,7 +43,7 @@ const routes: Routes = [
     YouTubePlayer,
     FontAwesomeModule,
     MatTooltipModule,
-    PinchZoomModule,
+    PinchZoomComponent,
     PhotoGalleryModule.forRoot({
       defaultOptions: {
         arrowEl: false,
