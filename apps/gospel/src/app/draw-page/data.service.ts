@@ -416,7 +416,7 @@ export class DataService {
     this.images.push({
       id: 21,
       name: "The Day of Judgement",
-      description: `Before each judgement are a series of events: a gathering of nations, thrones setup, dead raised or the sleep raised, and finally, judgement.
+      description: `Before each judgment are a series of events: a gathering of nations, thrones setup, dead raised or the sleep raised, and finally, judgment.
       In the study of the book of Revelation, you will see this in common between both judgements of the righteous and the wicked.
       There are two judgements just as there are two resurrections.`,
       footer: "Two judgements of the righteous and the wicked, two resurrections...",
@@ -527,7 +527,7 @@ export class DataService {
       id: 32,
       name: "Tester of Metals",
       description: `It is a blessing to be tried by a prophet of God in this day.
-      If we cannot withstand his judgement, how can we withstand the All Mighty Judge when we stand before Him?
+      If we cannot withstand his judgment, how can we withstand the All Mighty Judge when we stand before Him?
       This is God's grace for us. We should repent and do as the prophet Jeremiah says and all the other prophets.
       They come to test the quality of us: they do so, so that we wouldn't be ultimately judged in the end with everlasting fire.`,
       footer: "There is tribulation and fire we will all be salted with just as a sacrifice is, will we overcome...",
