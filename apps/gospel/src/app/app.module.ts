@@ -1,5 +1,5 @@
 import { NgModule } from "@angular/core";
-import { BrowserModule, provideClientHydration, withEventReplay } from "@angular/platform-browser";
+import { BrowserModule } from "@angular/platform-browser";
 
 import { MatButtonModule } from "@angular/material/button";
 import { MatToolbarModule } from "@angular/material/toolbar";
@@ -45,11 +45,7 @@ const firebaseConfig = {
     MatListModule,
     MatTooltipModule,
   ],
-  providers: [
-    provideFirebaseApp(() => initializeApp(firebaseConfig)),
-    provideFirestore(() => getFirestore()),
-    provideClientHydration(withEventReplay()),
-  ],
+  providers: [provideFirebaseApp(() => initializeApp(firebaseConfig)), provideFirestore(() => getFirestore())],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
