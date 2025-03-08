@@ -1,10 +1,8 @@
 import { Component } from "@angular/core";
-import { CommonModule } from "@angular/common";
 
 @Component({
   selector: "blog-nagivation-header",
-  standalone: true,
-  imports: [CommonModule],
+  standalone: false,
   templateUrl: "./nagivation-header.component.html",
   styleUrl: "./nagivation-header.component.scss",
 })
