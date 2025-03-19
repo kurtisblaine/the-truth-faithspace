@@ -9,6 +9,6 @@ import { ChangeDetectionStrategy, Component, Input } from "@angular/core";
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class LinkComponent {
-  @Input() public title = "Read More";
+  @Input() public title = "See more";
   @Input() public link: string;
 }
