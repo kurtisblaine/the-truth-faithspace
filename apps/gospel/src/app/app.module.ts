@@ -6,6 +6,7 @@ import { MatToolbarModule } from "@angular/material/toolbar";
 import { FontAwesomeModule } from "@fortawesome/angular-fontawesome";
 import { AppComponent } from "./app.component";
 
+import { provideHttpClient } from "@angular/common/http";
 import { initializeApp, provideFirebaseApp } from "@angular/fire/app";
 import { FirestoreModule, getFirestore, provideFirestore } from "@angular/fire/firestore";
 import { MatListModule } from "@angular/material/list";
@@ -45,7 +46,11 @@ const firebaseConfig = {
     MatListModule,
     MatTooltipModule,
   ],
-  providers: [provideFirebaseApp(() => initializeApp(firebaseConfig)), provideFirestore(() => getFirestore())],
+  providers: [
+    provideFirebaseApp(() => initializeApp(firebaseConfig)),
+    provideFirestore(() => getFirestore()),
+    provideHttpClient(),
+  ],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
