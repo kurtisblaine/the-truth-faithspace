@@ -215,11 +215,11 @@ export class DataService {
     this.images.push({
       id: 38,
       name: "Grace and Truth",
-      description: `The Law is physical; the Gospel is spiritual. Greater is the Spirit than the flesh.
-      Through the Law comes a knowledge of sin; but through grace and truth come the knowledge of God.
+      description: `The law is physical; the Gospel is spiritual. Greater is the Spirit than the flesh.
+      Through the law comes a knowledge of sin; but through grace and truth come the knowledge of God.
       We have a choice which tree we are to eat from. God has restored to us one command: believe.
       Enter into covenant with God through His oath.`,
-      footer: "The Law revealed the coinscience through the written code, grace & truth revealed in Christ...",
+      footer: "The law revealed the coinscience through the written code, grace & truth revealed in Christ...",
       fileName: "grace&truth.webp",
 
       originUrl: "https://res.cloudinary.com/dffihsa2y/image/upload/v1711735327/teach/grace_truth_loj0u0.webp",
@@ -228,9 +228,9 @@ export class DataService {
     this.images.push({
       id: 41,
       name: "Worship the Father in spirit and truth",
-      description: `The Law gives power to pride and sin; it empowers sin within us. Through the law comes a false sense of worship.
+      description: `The law gives power to pride and sin; it empowers sin within us. Through the law comes a false sense of worship.
       However, through the Spirit, can we ever worship the Father as He intended us to: in spirit and truth.
-      We attribute proper worth to God who makes the temple holy rather than the temple itself. The Law honors the temple more than God who sanctifies the temple.
+      We attribute proper worth to God who makes the temple holy rather than the temple itself. The law honors the temple more than God who sanctifies the temple.
       Everything about the law is physical; however, the Spirit trumps over the flesh. Our bodies are the temples where the Holy Spirit resides.`,
       footer: "How the world worships God in the ways He does not desire, but how we're called to worship...",
       fileName: "TrueWorship.webp",
@@ -549,7 +549,7 @@ export class DataService {
 
     this.images.push({
       id: 34,
-      name: "The Law of Liberty",
+      name: "The law of Liberty",
       description: `The law of God is used correctly and incorrectly. For one, it is for the godless.
       It is there to convict. It is there to show us sin. It is there as a guardian for us (until the way of Christ is revealed).
       It is not a means to righteousness. It is not given for us to strict obedience to it, as the Parisees, while neglecting the inward heart of the matter.
