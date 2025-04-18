@@ -79,11 +79,18 @@
   <mat-drawer-content>
     <div class="header">
       <mat-toolbar color="primary">
-        <button mat-icon-button class="example-icon" (click)="drawer.toggle()" title="menu-button">
+        <button
+          mat-icon-button
+          class="example-icon"
+          (click)="drawer.toggle()"
+          title="menu-button"
+          aria-labelledby="menu-button"
+          aria-label="menu-button"
+        >
           <fa-icon [icon]="icon" [size]="'lg'"></fa-icon>
         </button>
 
-        <button mat-button (click)="goGospel()"><h1>The Good News</h1></button>
+        <button mat-button (click)="goGospel(); drawer.close()"><h1>The Good News</h1></button>
         <span style="flex: 1 1 auto"></span>
 
         <button mat-icon-button (click)="goGospel()" [matTooltip]="'Go to the Good News'">
@@ -98,7 +105,7 @@
     <router-outlet #toTop></router-outlet>
 
     <button class="scoll-to-top" mat-fab color="primary" style="z-index: 7777777" (click)="scrollToTop(toTop)">
-      Top
+      <fa-icon [icon]="arrowIcon" [size]="'lg'"></fa-icon>
     </button>
 
     <mat-progress-bar

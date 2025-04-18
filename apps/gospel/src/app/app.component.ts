@@ -1,6 +1,7 @@
 import { Component, ElementRef, OnInit, ViewChild } from "@angular/core";
 import { Router } from "@angular/router";
 import {
+  faArrowUp,
   faBars,
   faBible,
   faBook,
@@ -41,6 +42,7 @@ export class AppComponent implements OnInit {
   public gospelIcon = faNewspaper;
   public bookIcon = faBible;
   public studyIcon = faBook;
+  public arrowIcon = faArrowUp;
   public progressValue = new BehaviorSubject(0);
   public progressValue$!: Observable<number>;
   public scrollTimeout!: any;
