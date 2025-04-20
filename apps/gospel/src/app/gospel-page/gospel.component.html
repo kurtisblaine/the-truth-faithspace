@@ -19,11 +19,15 @@
         </mat-expansion-panel-header>
         <ng-template matExpansionPanelContent>
           <button style="font-size: 18px" mat-button (click)="toAnchor('futilityOfPleasure')">
-            Futility of Pleasure
+            The Futility of Pleasure
           </button>
-          <button style="font-size: 18px" mat-button (click)="toAnchor('futilityInToil')">Futility in Toil</button>
-          <button style="font-size: 18px" mat-button (click)="toAnchor('futilityOfWealth')">Futility of Wealth</button>
-          <button style="font-size: 18px" mat-button (click)="toAnchor('futilityInDeath')">Futility in Death</button>
+          <button style="font-size: 18px" mat-button (click)="toAnchor('futilityInToil')">The Futility in Toil</button>
+          <button style="font-size: 18px" mat-button (click)="toAnchor('futilityOfWealth')">
+            The Futility of Wealth
+          </button>
+          <button style="font-size: 18px" mat-button (click)="toAnchor('futilityInDeath')">
+            The Futility in Death
+          </button>
         </ng-template>
       </mat-expansion-panel>
       <mat-expansion-panel class="custom-panel" hideToggle>
@@ -314,8 +318,8 @@
 
 <div class="pimg12" style="background-position: top">
   <section class="section section-dark floater">
-    <h3 class="headers" (click)="navigateToGospelItem('Futility of Pleasure', futilityOfPleasure)">
-      Futility of Pleasure
+    <h3 class="headers" (click)="navigateToGospelItem('The Futility of Pleasure', futilityOfPleasure)">
+      The Futility of Pleasure
     </h3>
     <div class="paragraphs">
       <ng-container *ngTemplateOutlet="futilityOfPleasure"></ng-container>
@@ -498,7 +502,7 @@
 
 <div class="filler">
   <section class="section section-dark">
-    <h3 class="headers" (click)="navigateToGospelItem('Futility in Toil', futilityInToil)">Futility in Toil</h3>
+    <h3 class="headers" (click)="navigateToGospelItem('The Futility in Toil', futilityInToil)">The Futility in Toil</h3>
     <div class="paragraphs">
       <ng-container *ngTemplateOutlet="futilityInToil"></ng-container>
       <ng-template #futilityInToil>
@@ -634,7 +638,9 @@
 
 <div class="pimg19">
   <section class="section section-dark floater">
-    <h3 class="headers" (click)="navigateToGospelItem('Futility of Wealth', futilityOfWealth)">Futility of Wealth</h3>
+    <h3 class="headers" (click)="navigateToGospelItem('The Futility of Wealth', futilityOfWealth)">
+      The Futility of Wealth
+    </h3>
     <div class="paragraphs">
       <ng-container *ngTemplateOutlet="futilityOfWealth"></ng-container>
       <ng-template #futilityOfWealth>
@@ -806,7 +812,9 @@
 
 <div class="filler">
   <section class="section section-dark">
-    <h3 class="headers" (click)="navigateToGospelItem('Futility in Death', futilityInDeath)">Futility in Death</h3>
+    <h3 class="headers" (click)="navigateToGospelItem('The Futility in Death', futilityInDeath)">
+      The Futility in Death
+    </h3>
     <div class="paragraphs">
       <ng-container *ngTemplateOutlet="futilityInDeath"></ng-container>
       <ng-template #futilityInDeath>
