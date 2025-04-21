@@ -21,7 +21,7 @@ const routes: Routes = [
   },
   {
     path: "",
-    loadChildren: () => import("./insight-page/insight.module").then((m) => m.InsightModule),
+    loadChildren: () => import("./insight-page/insight-page.module").then((m) => m.InsightPageModule),
   },
   {
     path: "",

@@ -1,7 +1,20 @@
 <h3 class="primary-color">God bless you</h3>
-<h3 class="study-title primary-color">
-  {{ study?.title?.toUpperCase() }}
-</h3>
-<div>{{ study?.date | date: "short" }}</div>
 
-<lib-text-editor [readonly]="true" [document]="study.json" [showReadMore]="false"></lib-text-editor>
+<mat-card appearance="outlined" style="margin: 15px">
+  <mat-card-header>
+    <mat-card-title-group>
+      <mat-card-title>
+        <h3 class="study-title primary-color">
+          {{ study?.title?.toUpperCase() }}
+        </h3>
+      </mat-card-title>
+      <mat-card-subtitle>
+        <div>{{ study?.date | date: "short" }}</div>
+      </mat-card-subtitle>
+    </mat-card-title-group>
+  </mat-card-header>
+
+  <mat-card-content>
+    <lib-text-editor [readonly]="true" [document]="study.json" [showReadMore]="false"></lib-text-editor>
+  </mat-card-content>
+</mat-card>

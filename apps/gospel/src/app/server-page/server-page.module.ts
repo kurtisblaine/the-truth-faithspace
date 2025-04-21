@@ -7,7 +7,7 @@ import { RouterModule, Routes } from "@angular/router";
 import { SharedLibraryModule } from "shared";
 import { BlogPageModule } from "../blog-page/blog-page.module";
 import { DiscernPageModule } from "../discern-page/discern-page.module";
-import { InsightModule } from "../insight-page/insight.module";
+import { InsightPageModule } from "../insight-page/insight-page.module";
 import { PsalmPageModule } from "../psalm-page/psalm-page.module";
 import { SharedModule } from "../shared/shared.module";
 import { StudyPageModule } from "../study-page/study-page.module";
@@ -30,7 +30,7 @@ const routes: Routes = [
     FormsModule,
     ReactiveFormsModule,
     PsalmPageModule,
-    InsightModule,
+    InsightPageModule,
     BlogPageModule,
     DiscernPageModule,
     SharedLibraryModule,
