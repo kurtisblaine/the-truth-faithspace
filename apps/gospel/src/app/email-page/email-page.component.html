@@ -1,68 +1,64 @@
-<div class="container-form" style="margin: 0px 17px; display: flex">
-  <h3 class="primary-color">Peace</h3>
+<h3 class="primary-color">Peace</h3>
 
-  <mat-card appearance="outlined" style="margin: 15px">
-    <mat-card-header>
-      <mat-card-title-group>
-        <mat-card-title>
-          <h3 class="primary-color">Contact me</h3>
-        </mat-card-title>
-        <mat-card-subtitle>
-          Use the contact form below or email me, Kurtis Waldner, at
-          <span style="text-decoration: underline">kurtisblainewaldner&#64;gmail.com</span>. My phone number is
-          605-214-2910.
-        </mat-card-subtitle>
-      </mat-card-title-group>
-    </mat-card-header>
+<mat-card appearance="outlined" style="margin: 15px">
+  <mat-card-header>
+    <mat-card-title-group>
+      <mat-card-title>
+        <h3 class="primary-color">Contact me</h3>
+      </mat-card-title>
+      <mat-card-subtitle>
+        Use the contact form below or email me, Kurtis Waldner, at
+        <span style="text-decoration: underline">kurtisblainewaldner&#64;gmail.com</span>. My phone number is
+        605-214-2910.
+      </mat-card-subtitle>
+    </mat-card-title-group>
+  </mat-card-header>
 
-    <mat-card-content>
-      <form
-        [formGroup]="FormData"
-        (ngSubmit)="onSubmit(FormData.value)"
-        style="display: flex; flex-direction: column; max-width: 80%"
+  <mat-card-content>
+    <form
+      [formGroup]="FormData"
+      (ngSubmit)="onSubmit(FormData.value)"
+      style="display: flex; flex-direction: column; max-width: 80%"
+    >
+      <mat-form-field>
+        <mat-label for="Email">Email</mat-label>
+        <input
+          matInput
+          type="email"
+          class="form-control"
+          name="Email"
+          aria-describedby="emailHelp"
+          placeholder="Enter email"
+          formControlName="Email"
+        />
+        <mat-hint id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</mat-hint>
+      </mat-form-field>
+      <mat-form-field>
+        <mat-label for="fullname">Full Name</mat-label>
+        <input
+          matInput
+          type="text"
+          class="form-control"
+          name="Fullname"
+          placeholder="Full Name"
+          formControlName="Fullname"
+        />
+      </mat-form-field>
+      <mat-form-field>
+        <mat-label for="comment">Comment</mat-label>
+        <textarea matInput class="form-control" formControlName="Comment" name="Comment"></textarea>
+      </mat-form-field>
+
+      <button
+        mat-raised-button
+        color="primary"
+        type="submit"
+        class="btn btn-primary"
+        style="width: 100%"
+        [disabled]="!FormData.valid"
       >
-        <mat-form-field>
-          <mat-label for="Email">Email</mat-label>
-          <input
-            matInput
-            type="email"
-            class="form-control"
-            name="Email"
-            aria-describedby="emailHelp"
-            placeholder="Enter email"
-            formControlName="Email"
-          />
-          <mat-hint id="emailHelp" class="form-text text-muted"
-            >We'll never share your email with anyone else.</mat-hint
-          >
-        </mat-form-field>
-        <mat-form-field>
-          <mat-label for="fullname">Full Name</mat-label>
-          <input
-            matInput
-            type="text"
-            class="form-control"
-            name="Fullname"
-            placeholder="Full Name"
-            formControlName="Fullname"
-          />
-        </mat-form-field>
-        <mat-form-field>
-          <mat-label for="comment">Comment</mat-label>
-          <textarea matInput class="form-control" formControlName="Comment" name="Comment"></textarea>
-        </mat-form-field>
-
-        <button
-          mat-raised-button
-          color="primary"
-          type="submit"
-          class="btn btn-primary"
-          style="width: 100%"
-          [disabled]="!FormData.valid"
-        >
-          Submit
-        </button>
-      </form>
-    </mat-card-content>
-  </mat-card>
-</div>
+        Submit
+      </button>
+    </form>
+  </mat-card-content>
+</mat-card>
