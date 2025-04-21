@@ -1,0 +1,18 @@
+<mat-card
+  appearance="outlined"
+  class="section"
+  [class]="{ 'section-light': isLightMode, 'section-dark': !isLightMode, floater: isFloater }"
+>
+  <mat-card-header>
+    <mat-card-title-group style="justify-content: center">
+      <mat-card-title class="headers">
+        <ng-content select=".headers"></ng-content>
+      </mat-card-title>
+      <mat-card-subtitle> </mat-card-subtitle>
+    </mat-card-title-group>
+  </mat-card-header>
+
+  <mat-card-content [class]="{ 'regular-content': !isFloater, 'floater-content': isFloater }">
+    <ng-content select=".paragraphs"></ng-content>
+  </mat-card-content>
+</mat-card>
