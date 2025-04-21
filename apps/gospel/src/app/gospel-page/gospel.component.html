@@ -152,9 +152,10 @@
   </div>
 </div>
 
-<div class="pimg13" style="background-position: top; display: flex; align-items: flex-end; justify-content: center">
-  <section class="section-dark floater" style="text-align: center"></section>
-</div>
+<div
+  class="pimg13"
+  style="background-position: top; display: flex; align-items: flex-end; justify-content: center"
+></div>
 
 <div class="pimg13" style="background-position: top">
   <div class="ptext">
@@ -163,7 +164,7 @@
 </div>
 
 <section class="section-dark" style="text-align: center">
-  <!-- #region CAROUSEL -->
+  <!-- #region DEPRECIATED CAROUSEL -->
   <!-- <carousel
     [dots]="false"
     [cellWidth]="333"
@@ -317,7 +318,7 @@
 </div>
 
 <div class="pimg12" style="background-position: top">
-  <section class="section section-dark floater">
+  <blog-gospel-section [isLightMode]="false" [isFloater]="true">
     <h3 class="headers" (click)="navigateToGospelItem('The Futility of Pleasure', futilityOfPleasure)">
       The Futility of Pleasure
     </h3>
@@ -491,7 +492,7 @@
         portion of the Gospel. There are many edifying things there that will help encourage you in the faith.) -->
       </ng-template>
     </div>
-  </section>
+  </blog-gospel-section>
 </div>
 
 <div class="pimg12" style="background-position: top" id="futilityInToil">
@@ -501,7 +502,7 @@
 </div>
 
 <div class="filler">
-  <section class="section section-dark">
+  <blog-gospel-section [isLightMode]="false">
     <h3 class="headers" (click)="navigateToGospelItem('The Futility in Toil', futilityInToil)">The Futility in Toil</h3>
     <div class="paragraphs">
       <ng-container *ngTemplateOutlet="futilityInToil"></ng-container>
@@ -627,7 +628,7 @@
         man will see light.
       </ng-template>
     </div>
-  </section>
+  </blog-gospel-section>
 </div>
 
 <div class="pimg19" id="futilityOfWealth">
@@ -637,7 +638,7 @@
 </div>
 
 <div class="pimg19">
-  <section class="section section-dark floater">
+  <blog-gospel-section [isLightMode]="false" [isFloater]="true">
     <h3 class="headers" (click)="navigateToGospelItem('The Futility of Wealth', futilityOfWealth)">
       The Futility of Wealth
     </h3>
@@ -801,7 +802,7 @@
         </blog-reference-tooltip>
       </ng-template>
     </div>
-  </section>
+  </blog-gospel-section>
 </div>
 
 <div class="pimg19" id="futilityInDeath">
@@ -811,7 +812,7 @@
 </div>
 
 <div class="filler">
-  <section class="section section-dark">
+  <blog-gospel-section [isLightMode]="false">
     <h3 class="headers" (click)="navigateToGospelItem('The Futility in Death', futilityInDeath)">
       The Futility in Death
     </h3>
@@ -944,7 +945,7 @@
         who will bring him to see what will occur after him?"
       </ng-template>
     </div>
-  </section>
+  </blog-gospel-section>
 </div>
 <!-- #endregion THE DANGER - FUTILITY -->
 
@@ -956,7 +957,7 @@
 </div>
 
 <div class="pimg15">
-  <section class="section section-dark floater">
+  <blog-gospel-section [isLightMode]="false" [isFloater]="true">
     <h3 class="headers" (click)="navigateToGospelItem('Our Sin Nature', ourSinNature)">Our Sin Nature</h3>
     <div class="paragraphs">
       <ng-container *ngTemplateOutlet="ourSinNature"></ng-container>
@@ -1142,7 +1143,7 @@
         ><br /><br /> -->
       </ng-template>
     </div>
-  </section>
+  </blog-gospel-section>
 </div>
 
 <div class="pimg15" id="heSeesAndHears">
@@ -1152,7 +1153,7 @@
 </div>
 
 <div class="filler">
-  <section class="section section-dark">
+  <blog-gospel-section [isLightMode]="false">
     <h3 class="headers" (click)="navigateToGospelItem('God Sees & Hears', heSeesAndHears)">God Sees & Hears</h3>
     <div class="paragraphs">
       <ng-container *ngTemplateOutlet="heSeesAndHears"></ng-container>
@@ -1286,7 +1287,7 @@
         actions, the thought in itself is sin.
       </ng-template>
     </div>
-  </section>
+  </blog-gospel-section>
 </div>
 
 <div class="pimg20" style="background-position: top" id="aConsumingFire">
@@ -1296,7 +1297,7 @@
 </div>
 
 <div class="pimg20" style="background-position: top">
-  <section class="section section-dark floater">
+  <blog-gospel-section [isLightMode]="false" [isFloater]="true">
     <h3 class="headers" (click)="navigateToGospelItem('God is a Consuming Fire', aConsumingFire)">
       God is a Consuming Fire
     </h3>
@@ -1511,7 +1512,7 @@
         portion of the Gospel. There are many edifying things there that will help you in the faith.) -->
       </ng-template>
     </div>
-  </section>
+  </blog-gospel-section>
 </div>
 
 <div class="pimg20" style="background-position: top" id="dayOfJudgement">
@@ -1521,7 +1522,7 @@
 </div>
 
 <div class="filler">
-  <section class="section section-dark">
+  <blog-gospel-section [isLightMode]="false">
     <h3 class="headers" (click)="navigateToGospelItem('The Day of Judgement', dayOfJudgement)">The Day of Judgement</h3>
     <div class="paragraphs">
       <ng-container *ngTemplateOutlet="dayOfJudgement"></ng-container>
@@ -1680,7 +1681,7 @@
         >
       </ng-template>
     </div>
-  </section>
+  </blog-gospel-section>
 </div>
 <!-- #endregion THE DANGER - SIN -->
 
@@ -1692,7 +1693,7 @@
 </div>
 
 <div class="pimg21">
-  <section class="section section-light floater">
+  <blog-gospel-section [isLightMode]="true" [isFloater]="true">
     <h3 class="headers" (click)="navigateToGospelItem('Jesus, the Servant of God', sufferingServant)">
       Jesus, the Servant of God
     </h3>
@@ -1986,7 +1987,7 @@
         > -->
       </ng-template>
     </div>
-  </section>
+  </blog-gospel-section>
 </div>
 
 <div class="pimg21" id="theRockOfSalvation">
@@ -1996,7 +1997,7 @@
 </div>
 
 <div class="filler-light">
-  <section class="section section-light">
+  <blog-gospel-section [isLightMode]="true">
     <h3 class="headers" (click)="navigateToGospelItem('Jesus, the Rock of our Salvation', theRockOfSalvation)">
       Jesus, the Rock of our Salvation
     </h3>
@@ -2141,7 +2142,7 @@
         </blog-reference-tooltip>
       </ng-template>
     </div>
-  </section>
+  </blog-gospel-section>
 </div>
 
 <div class="pimg7" id="theLambOfGod">
@@ -2151,7 +2152,7 @@
 </div>
 
 <div class="pimg7">
-  <section class="section section-light floater">
+  <blog-gospel-section [isLightMode]="true" [isFloater]="true">
     <h3 class="headers" (click)="navigateToGospelItem('Jesus, the Lamb of God', theLambOfGod)">
       Jesus, the Lamb of God
     </h3>
@@ -2314,7 +2315,7 @@
         dwelling.
       </ng-template>
     </div>
-  </section>
+  </blog-gospel-section>
 </div>
 
 <div class="pimg7" id="eternalSalvation">
@@ -2324,7 +2325,7 @@
 </div>
 
 <div class="filler-light">
-  <section class="section section-light">
+  <blog-gospel-section [isLightMode]="true">
     <h3 class="headers" (click)="navigateToGospelItem('Jesus, the Door of Eternal Salvation', eternalSalvation)">
       Jesus, the Door of Eternal Salvation
     </h3>
@@ -2448,7 +2449,7 @@
         </blog-reference-tooltip>
       </ng-template>
     </div>
-  </section>
+  </blog-gospel-section>
 </div>
 
 <div class="pimg22" id="theLion">
@@ -2458,7 +2459,7 @@
 </div>
 
 <div class="pimg22">
-  <section class="section section-light floater">
+  <blog-gospel-section [isLightMode]="true" [isFloater]="true">
     <h3 class="headers" (click)="navigateToGospelItem('Jesus, the Lion from the Tribe of Judah', theLion)">
       Jesus, the Lion from the Tribe of Judah
     </h3>
@@ -2644,7 +2645,7 @@
         ></blog-link>
       </ng-template>
     </div>
-  </section>
+  </blog-gospel-section>
 </div>
 
 <div class="pimg22" id="theScapegoat">
@@ -2654,7 +2655,7 @@
 </div>
 
 <div class="filler-light">
-  <section class="section section-light">
+  <blog-gospel-section [isLightMode]="true">
     <h3 class="headers" (click)="navigateToGospelItem('Jesus, the Scapegoat', theScapegoat)">Jesus, the Scapegoat</h3>
     <div class="paragraphs">
       <ng-container *ngTemplateOutlet="theScapegoat"></ng-container>
@@ -2881,7 +2882,7 @@
         ></blog-link>
       </ng-template>
     </div>
-  </section>
+  </blog-gospel-section>
 </div>
 
 <div class="pimg6" id="trueFoodAndTrueDrink">
@@ -2891,7 +2892,7 @@
 </div>
 
 <div class="pimg6">
-  <section class="section section-light floater">
+  <blog-gospel-section [isLightMode]="true" [isFloater]="true">
     <h3 class="headers" (click)="navigateToGospelItem('Jesus, the True Food & the True Drink', trueFoodAndTrueDrink)">
       Jesus, the True Food & the True Drink
     </h3>
@@ -3062,7 +3063,7 @@
         </blog-reference-tooltip>
       </ng-template>
     </div>
-  </section>
+  </blog-gospel-section>
 </div>
 
 <div class="pimg6" id="theBronzeSerpent">
@@ -3072,7 +3073,7 @@
 </div>
 
 <div class="filler-light">
-  <section class="section section-light">
+  <blog-gospel-section [isLightMode]="true">
     <h3 class="headers" (click)="navigateToGospelItem('Jesus, the Bronze Serpent', theBronzeSerpent)">
       Jesus, the Bronze Serpent
     </h3>
@@ -3247,7 +3248,7 @@
         mind on things above, not on things below, so that we may see that faith is truly sight indeed.
       </ng-template>
     </div>
-  </section>
+  </blog-gospel-section>
 </div>
 
 <div class="pimg25" id="theVictor">
@@ -3257,7 +3258,7 @@
 </div>
 
 <div class="pimg25">
-  <section class="section section-light floater">
+  <blog-gospel-section [isLightMode]="true" [isFloater]="true">
     <h3 class="headers" (click)="navigateToGospelItem('Jesus, the Victor', theVictor)">Jesus, the Victor</h3>
     <div class="paragraphs">
       <ng-container *ngTemplateOutlet="theVictor"></ng-container>
@@ -3399,7 +3400,7 @@
         ></blog-link>
       </ng-template>
     </div>
-  </section>
+  </blog-gospel-section>
 </div>
 
 <div class="pimg25" id="theSonOfGod">
@@ -3409,7 +3410,7 @@
 </div>
 
 <div class="filler-light">
-  <section class="section section-light">
+  <blog-gospel-section [isLightMode]="true">
     <h3 class="headers" (click)="navigateToGospelItem('Jesus, the Son of God', theSonOfGod)">Jesus, the Son of God</h3>
     <div class="paragraphs">
       <ng-container *ngTemplateOutlet="theSonOfGod"></ng-container>
@@ -3636,7 +3637,7 @@
         idols.
       </ng-template>
     </div>
-  </section>
+  </blog-gospel-section>
 </div>
 <!-- #endregion THE CALL - GRACE -->
 
@@ -3648,7 +3649,7 @@
 </div>
 
 <div class="pimg8">
-  <section class="section section-light floater">
+  <blog-gospel-section [isLightMode]="true" [isFloater]="true">
     <h3 class="headers" (click)="navigateToGospelItem('Run the Race of Faith', theRaceOfFaith)">
       Run the Race of Faith
     </h3>
@@ -3745,7 +3746,7 @@
         >
       </ng-template>
     </div>
-  </section>
+  </blog-gospel-section>
 </div>
 
 <div class="pimg8" id="clearConscience">
@@ -3755,7 +3756,7 @@
 </div>
 
 <div class="filler-light">
-  <section class="section section-light">
+  <blog-gospel-section [isLightMode]="true">
     <h3 class="headers" (click)="navigateToGospelItem('Maintaining a Clear Conscience', clearConscience)">
       Maintaining a Clear Conscience
     </h3>
@@ -3897,7 +3898,7 @@
         ></blog-link>
       </ng-template>
     </div>
-  </section>
+  </blog-gospel-section>
 </div>
 
 <div class="pimg9" id="abideInHim">
@@ -3907,7 +3908,7 @@
 </div>
 
 <div class="pimg9">
-  <section class="section section-light floater">
+  <blog-gospel-section [isLightMode]="true" [isFloater]="true">
     <h3 class="headers" (click)="navigateToGospelItem('Abide in Christ', abideInHim)">Abide in Christ</h3>
     <div class="paragraphs">
       <ng-container *ngTemplateOutlet="abideInHim"></ng-container>
@@ -4073,7 +4074,7 @@
         cypress; From Me comes your fruit.” (Hosea 14:8)
       </ng-template>
     </div>
-  </section>
+  </blog-gospel-section>
 </div>
 
 <div class="pimg9" id="aNewHeart">
@@ -4083,7 +4084,7 @@
 </div>
 
 <div class="filler-light">
-  <section class="section section-light">
+  <blog-gospel-section [isLightMode]="true">
     <h3 class="headers" (click)="navigateToGospelItem('The Sign of Circumcision, a New Heart', aNewHeart)">
       The Sign of Circumcision, a New Heart
     </h3>
@@ -4181,7 +4182,7 @@
         </blog-reference-tooltip>
       </ng-template>
     </div>
-  </section>
+  </blog-gospel-section>
 </div>
 
 <div class="pimg23" id="bornAgain">
@@ -4191,7 +4192,7 @@
 </div>
 
 <div class="pimg23">
-  <section class="section section-light floater">
+  <blog-gospel-section [isLightMode]="true" [isFloater]="true">
     <h3 class="headers" (click)="navigateToGospelItem('Born Again by the Holy Spirit', bornAgain)">
       Born again by the Holy Spirit
     </h3>
@@ -4309,7 +4310,7 @@
         ></blog-link>
       </ng-template>
     </div>
-  </section>
+  </blog-gospel-section>
 </div>
 <!-- #endregion THE CALL - FAITH -->
 
@@ -4321,7 +4322,7 @@
 </div>
 
 <div class="filler-light">
-  <section class="section section-light">
+  <blog-gospel-section [isLightMode]="true">
     <h3 class="headers" (click)="navigateToGospelItem('Repentance from Dead Works', repentance)">
       Repentence from Dead Works
     </h3>
@@ -4458,7 +4459,7 @@
         how they repented in the Scriptures (Luke 3:10-14; Luke 19:8; Acts 19:18-19).
       </ng-template>
     </div>
-  </section>
+  </blog-gospel-section>
 </div>
 
 <div class="pimg17" id="baptismInWater">
@@ -4468,7 +4469,7 @@
 </div>
 
 <div class="pimg17">
-  <section class="section section-light floater">
+  <blog-gospel-section [isLightMode]="true" [isFloater]="true">
     <h3 class="headers" (click)="navigateToGospelItem('Baptism in Water', baptismInWater)">Baptism in Water</h3>
     <div class="paragraphs">
       <ng-container *ngTemplateOutlet="baptismInWater"></ng-container>
@@ -4582,7 +4583,7 @@
         been raised, how are we any different from they who worship mute idols? Jesus Christ lives.
       </ng-template>
     </div>
-  </section>
+  </blog-gospel-section>
 </div>
 
 <div class="pimg17" id="believeInGod">
@@ -4592,7 +4593,7 @@
 </div>
 
 <div class="filler-light">
-  <section class="section section-light">
+  <blog-gospel-section [isLightMode]="true">
     <h3 class="headers" (click)="navigateToGospelItem('Believe in the Living God', believeInGod)">
       Believe in the Living God
     </h3>
@@ -4713,7 +4714,7 @@
         outside, they're still godless on the inside - a hypocrite is only an actor, but God knows the truth.
       </ng-template>
     </div>
-  </section>
+  </blog-gospel-section>
 </div>
 
 <div class="pimg2" id="obedienceUntoHoliness">
@@ -4723,7 +4724,7 @@
 </div>
 
 <div class="pimg2">
-  <section class="section section-light floater">
+  <blog-gospel-section [isLightMode]="true" [isFloater]="true">
     <h3 class="headers" (click)="navigateToGospelItem('Obedience to Holiness', obedienceUntoHoliness)">
       Obedience to Holiness
     </h3>
@@ -4855,7 +4856,7 @@
         </blog-link>
       </ng-template>
     </div>
-  </section>
+  </blog-gospel-section>
 </div>
 
 <div class="pimg2" id="callUponTheLord">
@@ -4865,7 +4866,7 @@
 </div>
 
 <div class="filler-light">
-  <section class="section section-light">
+  <blog-gospel-section [isLightMode]="true">
     <h3 class="headers" (click)="navigateToGospelItem('Call upon the Name of the Lord', callUponTheLord)">
       Call upon the Name of the Lord
     </h3>
@@ -5030,7 +5031,7 @@
         forgivenss, that is faith, and abide in Him for confession, which is salvation. Come and remain!
       </ng-template>
     </div>
-  </section>
+  </blog-gospel-section>
 </div>
 
 <div class="pimg3" id="liveWorthy">
@@ -5040,7 +5041,7 @@
 </div>
 
 <div class="pimg3">
-  <section class="section section-light floater">
+  <blog-gospel-section [isLightMode]="true" [isFloater]="true">
     <h3 class="headers" (click)="navigateToGospelItem('Living Worthy of God\'s Call', liveWorthy)">
       Living Worthy of God's Call
     </h3>
@@ -5152,7 +5153,7 @@
         face—even Jacob. Selah.” (Psalms 24:2-6)
       </ng-template>
     </div>
-  </section>
+  </blog-gospel-section>
 </div>
 
 <div class="pimg3" id="perseveranceToTheEnd">
@@ -5162,7 +5163,7 @@
 </div>
 
 <div class="filler-light">
-  <section class="section section-light">
+  <blog-gospel-section [isLightMode]="true">
     <h3 class="headers" (click)="navigateToGospelItem('Perseverance through Remembrance', perseveranceToTheEnd)">
       Perseverance through Remembrance
     </h3>
@@ -5287,7 +5288,7 @@
         belongs to God. Amen.
       </ng-template>
     </div>
-  </section>
+  </blog-gospel-section>
 </div>
 <!-- #endregion THE RESPONSE -->
 
@@ -5299,7 +5300,7 @@
 </div>
 
 <div class="pimg11">
-  <section class="section section-light floater">
+  <blog-gospel-section [isLightMode]="true" [isFloater]="true">
     <h3 class="headers" (click)="navigateToGospelItem('The Resurrection of the Saints', resurrectionFromTheDead)">
       The Resurrection of the Saints
     </h3>
@@ -5429,7 +5430,7 @@
         ></blog-link>
       </ng-template>
     </div>
-  </section>
+  </blog-gospel-section>
 </div>
 
 <div class="pimg11" id="newSpiritualBodies">
@@ -5439,7 +5440,7 @@
 </div>
 
 <div class="pimg1">
-  <section class="section section-light">
+  <blog-gospel-section [isLightMode]="true">
     <h3 class="headers" (click)="navigateToGospelItem('New Spiritual Bodies', newSpiritualBodies)">
       New Spiritual Bodies
     </h3>
@@ -5569,7 +5570,7 @@
         the Lord, knowing that your toil is not in vain in the Lord.” (1 Corinthians 15:58)
       </ng-template>
     </div>
-  </section>
+  </blog-gospel-section>
 </div>
 
 <div class="pimg1" id="eternalReward">
@@ -5579,7 +5580,7 @@
 </div>
 
 <div class="pimg1">
-  <section class="section section-light floater">
+  <blog-gospel-section [isLightMode]="true" [isFloater]="true">
     <h3 class="headers" (click)="navigateToGospelItem('Eternal Reward', eternalReward)">Eternal Reward</h3>
     <div class="paragraphs">
       <ng-container *ngTemplateOutlet="eternalReward"></ng-container>
@@ -5700,7 +5701,7 @@
         </blog-reference-tooltip>
       </ng-template>
     </div>
-  </section>
+  </blog-gospel-section>
 </div>
 
 <div class="pimg1" id="everlastingLife">
@@ -5710,7 +5711,7 @@
 </div>
 
 <div class="filler-light">
-  <section class="section section-light">
+  <blog-gospel-section [isLightMode]="true">
     <h3 class="headers" (click)="navigateToGospelItem('Everlasting Life', everlastingLife)">Everlasting Life</h3>
     <div class="paragraphs">
       <ng-container *ngTemplateOutlet="everlastingLife"></ng-container>
@@ -5854,7 +5855,7 @@
         may receive now; and how much more the fulfillment of such promises?
       </ng-template>
     </div>
-  </section>
+  </blog-gospel-section>
 </div>
 
 <div class="pimg24" id="newHeavenAndNewEarth">
@@ -5864,7 +5865,7 @@
 </div>
 
 <div class="pimg24">
-  <section class="section section-light floater">
+  <blog-gospel-section [isLightMode]="true" [isFloater]="true">
     <h3 class="headers" (click)="navigateToGospelItem('The New Heaven & the New Earth', newHeavenAndNewEarth)">
       The New Heaven & the New Earth
     </h3>
@@ -6004,7 +6005,7 @@
         spiritual blessing in the heavenly places. Praise be unto Him who redeemed us with His own blood. Amen."
       </ng-template>
     </div>
-  </section>
+  </blog-gospel-section>
 
   <div class="pimg24">
     <div class="">

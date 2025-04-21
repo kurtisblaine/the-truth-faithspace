@@ -22,22 +22,6 @@ button[mat-button] {
   top: 111px;
 }
 
-.headers {
-  padding: 20px 0px 0px 20px;
-  margin-bottom: 20px;
-  text-decoration: underline;
-  cursor: pointer;
-  text-align: center;
-}
-
-.paragraphs {
-  padding: 0px 55px 40px 55px;
-}
-
-.section:not(.floater) > .paragraphs {
-  padding: 0px 110px 40px 110px;
-}
-
 .home-page_container {
   display: grid;
 }
@@ -175,26 +159,6 @@ img {
   min-height: 400px;
 }
 
-.section {
-  margin: auto;
-  width: 100%;
-}
-
-.section-light {
-  background-color: #f4f4f4;
-  color: #333333;
-}
-
-.floater {
-  width: 80%;
-  border-radius: 17px;
-}
-
-.section-dark {
-  background-color: #282e34;
-  color: #f4f4f4;
-}
-
 .ptext {
   position: absolute;
   top: 35%;
@@ -205,6 +169,11 @@ img {
   letter-spacing: 4px;
   text-transform: uppercase;
   line-height: normal;
+}
+
+.section-dark {
+  background-color: #282e34;
+  color: #f4f4f4;
 }
 
 .lighttext {

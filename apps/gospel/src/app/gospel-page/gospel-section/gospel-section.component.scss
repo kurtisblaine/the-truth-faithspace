@@ -1,0 +1,34 @@
+.section {
+  margin: auto;
+  width: 100%;
+}
+
+.section-light {
+  background-color: #f4f4f4;
+  color: #333333;
+}
+
+.section-dark {
+  background-color: #282e34;
+  color: #f4f4f4;
+}
+
+.floater {
+  width: 80%;
+  border-radius: 15px;
+}
+
+.headers {
+  margin-bottom: 20px;
+  text-decoration: underline;
+  cursor: pointer;
+  text-align: center;
+}
+
+.floater-content {
+  padding: 0px 55px 40px 55px;
+}
+
+.regular-content {
+  padding: 0px 110px 40px 110px;
+}
