@@ -14,6 +14,7 @@ export class SpeechService {
     const utterance = new SpeechSynthesisUtterance(text);
     utterance.volume = 10;
     utterance.lang = "eng";
+    // utterance.voice = new SpeechSynthesisVoice();
     this.speechSynthesis.speak(utterance);
   }
 
