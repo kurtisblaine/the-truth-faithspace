@@ -2,7 +2,7 @@
   <button mat-icon-button (click)="startReading()">
     <fa-icon [icon]="playIcon" [size]="'lg'"></fa-icon>
   </button>
-  <button mat-icon-button (click)="pauseReading()">
+  <button mat-icon-button (click)="pauseReading()" [disabled]="">
     <fa-icon [icon]="pauseIcon" [size]="'lg'"></fa-icon>
   </button>
   <button mat-icon-button (click)="resumeReading()">
