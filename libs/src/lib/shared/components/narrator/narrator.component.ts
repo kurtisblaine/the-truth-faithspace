@@ -15,14 +15,13 @@ export class NarratorComponent implements OnDestroy {
   public stopIcon = faStop;
 
   @ViewChild("textContainer", { read: ViewContainerRef }) private textContainer!: ViewContainerRef;
-  constructor(private speechService: SpeechService) {}
+  constructor(public speechService: SpeechService) {}
 
   ngOnDestroy(): void {
     this.speechService.cancel();
   }
 
   startReading() {
-    // const text = document.querySelector("app-text-reader div")?.textContent?.toString();
     const text = (this.textContainer.element.nativeElement as HTMLElement).textContent?.toString();
     if (text) {
       this.speechService.speak(text);
