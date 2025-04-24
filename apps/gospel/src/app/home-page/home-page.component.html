@@ -12,12 +12,15 @@
 
     <mat-card-content>
       <lib-narrator>
-        Before Covid-19, I had just gotten my first full time job, after experiencing military life and college. "What
-        is left, but to get married, have kids, and die?" I said to myself, “Surely life isn’t here, but where?” I
-        started seeking. I figured human-kind doesn’t know; if they did, wouldn’t they tell me? But all my life no-one
-        told me. I don't remember seeing a street preacher; nor do I remember anything spectacular in church. We were
-        the family that went during the holidays and once in a while outside of that, but it wasn't anything to me, and
-        nothing stood out.
+        <ng-container *ngTemplateOutlet="myTestimony"></ng-container>
+      </lib-narrator>
+      <ng-template #myTestimony>
+        Before Covid-19, I had just gotten my first full time job, after experiencing military life and college. I
+        asked, "What is left, but to get married, have kids, and die?" I said to myself, “Surely life isn’t here, but
+        where?” I started seeking. I figured human-kind doesn’t know; if they did, wouldn’t they tell me? But all my
+        life no-one told me. I don't remember seeing a street preacher; nor do I remember anything spectacular in
+        church. We were the family that went during the holidays and once in a while outside of that, but it wasn't
+        anything to me, and nothing stood out.
         <br /><br />
 
         I seen the churches that were claiming God, weren't trying to convince me of God, so they must not really know
@@ -72,19 +75,19 @@
         sorcery books, turned from idols, repented to Jesus. Paul, a preacher, once a persecutor of the church, turned
         to Jesus through revelation of the living Christ who appeared to Him. Besides him, all the other apostles seen
         the risen Savior. However, the entire Gospel message wasn’t contained in the book of Acts, only a small excerpt
-        of it - a little here and a little there. I still didn’t understand. (I see now that God was leading me and at
-        just the right time He gave me understanding) However, I sought Christ until I found Him; I said to myself,
+        of it - a little here and a little there. I still didn’t understand. (I see now that God was leading me, and at
+        just the right time He gave me understanding.) However, I sought Christ until I found Him; I said to myself,
         “There’s something about Jesus and I will not let go until I find it.”
         <br /><br />
 
         Then I read the book of Romans. The apostle Paul explains Christ. I could trust his testimony because the Lord
         revealed Himself on the road to Damascus, electing him to the work of ministering the Gospel. When reading,
-        that’s when Christ came alive to me. I seen Christ came for the very problem I had: sin. I did not know He came
-        to earth for me, for my sin, nor did I understand He knew my problem. He came to deliver me from the very
-        problem I had. He didn't expect me to figure it out on my own, but He did what I could not do: deliver. And
-        because of the revelation of His love toward me, despite my present wickedness, I wept and wept - I had not wept
-        in years. I didn't know I had a problem, but He revealed the problem through truth and took it away by His work
-        on the cross.
+        that’s when Christ came alive to me. I seen Christ came for the very problem I had: which is sin. I did not know
+        He came to earth for me, for my sin, nor did I understand He knew my problem. He came to deliver me from the
+        very problem I had. He didn't expect me to figure it out on my own, but He did what I could not do: which is
+        deliver. And because of the revelation of His love toward me, despite my present wickedness, I wept and wept - I
+        had not wept in years. I didn't know I had a problem, but He revealed the problem through truth and took it away
+        by His power in the cross.
         <br /><br />
 
         Romans 7:14 to 25 spoke to me directly for that was exactly what I was going through. It was like those very
@@ -104,9 +107,9 @@
         of the apostles were sweet to me, because I did them! I didn't need to be told to be full of joy, be thankful,
         sing to the Lord, be holy, tell others, study, separate from evil - all these things I did because of my love
         for Him! But in me I also had anger, I said to myself, "Why didn’t anyone tell me? This death I was living in
-        and no-one warned me?" I went outside and everything I seen for years was new to my eyes - I seen God in
-        everything. Everything was beautiful. The glory of the Lord filled the earth to my eyes; before I could see
-        nothing.
+        and no-one warned me?" (I see now that those who are taught by God are drawn to His Son.) I went outside and
+        everything I seen for years was new to my eyes - I seen God in everything. Everything was beautiful. The glory
+        of the Lord filled the earth to my eyes; before I could see nothing.
         <br /><br />
 
         Now, I have been studying to know more about Him, to know the Gospel. I know what He has done for me, He has
@@ -115,16 +118,16 @@
         teaches me through His Word how to speak and act for Him. I have experienced much discipline from the Lord, but
         I know it is for my good, that I may be conformed to His image. He disciplines me as a father disciplines his
         son - to purge from me my inner-most folly. The more I learn of the goodness of Him, the more evil I see in me.
-        In repentance and peace I conform my life to His; I follow Him and do not making for myself a pathway of my own,
+        In repentance and peace I conform my life to His; I follow Him and I do not make for myself a pathway of my own,
         but maintain to His highway - I know His Way is straight and narrow and leads to eternal life, I know Jesus is
         the Way.<br /><br />
 
         I was changed by God - and who can change me back? He is for me - and who can be against me? If these things are
         true for me, a massive sinner, how much more are they for you? For the things in which I was living in I cannot
         even write. Where sin abounds, His grace abounds more; those who are forgiven much, love more. Glory be to the
-        only wise God in heaven who redeemed us through His own blood, loving us in truth, who seen our sins and did not
-        smite us for our sins, but came to deliver us from our sins. Amen.
-      </lib-narrator>
+        only wise God in heaven who redeemed us through His own blood, loving us in truth, who seen our sins and came to
+        deliver us from our sins. Amen.
+      </ng-template>
     </mat-card-content>
   </mat-card>
 
@@ -138,36 +141,40 @@
 
     <mat-card-content>
       <lib-narrator>
+        <ng-container *ngTemplateOutlet="believeInChrist"></ng-container>
+      </lib-narrator>
+      <ng-template #believeInChrist>
         Greetings. We don't know where we came from - we can't say what we did a day ago, neither do we care; we don't
         know where we are going - we can't say what we will do tomorrow. All we know is today; all we know is right now
-        - and even that we don't know! Today is the day of salvation; right now is the time of God's favor. In times
-        past, the Israelites saw God's mighty works which were constantly on display before their eyes; and even today,
-        we do see His works, for we live in His work; and today, we have His Word. But we do not see Him who does these
-        works, neither Him who speaks these words. For in the wilderness, they seen the cloud covering Mount Sinai, but
-        not the form of Him; as it says,
+        - and even today and right now we don't know the fullness of! Today is the day of salvation; right now is the
+        time of God's favor. In times past, the Israelites saw God's mighty works which were constantly on display
+        before their eyes; and even today, we do see His works, for we live in His work; and today, we have His Word.
+        But we do not see Him who does these works, neither Him who speaks these words. For in the wilderness, they seen
+        the cloud covering Mount Sinai, but not the form of Him; as it says,
         <blog-reference-tooltip [reference]="'Exodus 33:20'">
           You cannot see My face, for no man can see Me and live! </blog-reference-tooltip
         >They seen Moses enter the Tent of Meeting, and the cloud descended, but not God; they seen the pillar of fire
-        by night and the pillar of cloud by day, but not the Holy one; they seen the manna from heaven and the water
-        from the rock, but not Him who preformed these signs. They seen Moses, who preformed the signs of God, but not
-        God. For they had good news preached to them, through word and deed, but it did not profit them because it was
-        not united in them by faith. And this is faith, and this is belief: the conviction of things unseen, the
-        assurance of things hoped for. For faith is made possible only with the unseen.<br /><br />
+        by night and the pillar of cloud by day, but not the Holy one who was in the fire and in the cloud; they seen
+        the manna from heaven and the water from the rock, but not Him who preformed these signs. They seen Moses, who
+        preformed the signs of God, but not God. For they had good news preached to them, through word and deed, but it
+        did not profit them because it was not united in them by faith. And this is faith, and this is belief: the
+        conviction of things unseen, the assurance of things hoped for. For faith is made possible only with the
+        unseen.<br /><br />
 
-        And that latter generation when Christ came tested Him and tried Him, and He was graciously putting up with
-        them; and that generation, for years, although seeing His works, which were numerous among them - yes, they were
-        constantly seeing His works, yet trying Him, questioning His authority, and not believing Him, even John who was
-        sent before Him, they did not believe him - they were seeking a sign from heaven, although they were seeing
-        greater signs than their ancestors which they constantly read about; but yet they did not repent to Him so they
-        may be healed for they did not believe in Him; and they were hardened and became blind to the truth. And they,
-        fulfilling Scripture, treated Christ shamefully even in the same way their ancestors treated the prophets; and
-        the very Scriptures that they read every Sabbath, they were unknowingly fulfilling them. Yes, do not resemble
-        that generation, who doubted, even though they seen things that were never before seen: God in the flesh, in
-        Jesus Christ, appearing to the nation of Israel, making Himself known by signs and miracles for the sake of
-        their forefathers. The majority did not believe Him, but a select few did receive Him; they received the promise
-        of eternal life by faith in His name. For although the majority seen Jesus in the flesh, it did not profit them
-        because they did not believe Him; for althought seeing Him, they still needed to believe, for He was hidden in
-        the vessel of human flesh; and it says of Him,
+        And that latter generation when Christ came, they tested Him and tried Him, and He was graciously putting up
+        with them; and that generation, for years, although seeing His works, which were numerous among them - yes, they
+        were constantly seeing His works, yet trying Him, questioning His authority, and not believing in Him, even John
+        who was sent before Him, they did not believe him - they were seeking a sign from heaven, although they were
+        seeing greater signs than their ancestors which they constantly read about in the law; but yet they did not
+        repent to Him so they may be healed for they did not believe in Him; and they were hardened and became blind to
+        the truth. And they, fulfilling Scripture, treated Christ shamefully even in the same way their ancestors
+        treated the prophets; and the very Scriptures that they read every Sabbath, they were unknowingly fulfilling
+        them. Yes, do not resemble that generation, who doubted, even though they seen things that were never before
+        seen: God in the flesh, in Jesus Christ, appearing to the nation of Israel, making Himself known by signs and
+        miracles for the sake of their forefathers. The majority did not believe Him, but a select few did receive Him;
+        they received the promise of eternal life by faith in His name. For although the majority seen Jesus in the
+        flesh, it did not profit them because they did not believe in Him; for althought seeing Him, they still needed
+        to believe, for He was hidden in the vessel of human flesh; and it says of Him,
         <blog-reference-tooltip [reference]="'Isaiah 53:2'">
           He has no stately form or majesty That we should look upon Him, Nor appearance that we should be attracted to
           Him.
@@ -179,7 +186,7 @@
         So although they seen Him, they were not able to recognize Him as Messiah, even though the Scriptures prophesy
         about Him, and they heard them every Sabbath; and He, fulfilling them, was amongst them, but their eyes were
         darkened for they did not believe the Word which was written. For the true way to see Christ is with the eyes of
-        faith, not with the eyes of the flesh; to see Him in the Spirit, not in the flesh; to look at Him from a
+        faith, not with the eyes of the flesh; to see Him in the Spirit, not in the flesh; to look upon Him from a
         heavenly view, not an earthly; this is true sight which is by hearing, hearing the Word of Christ.
         <br /><br />
 
@@ -244,15 +251,15 @@
           "<b>You unbelieving and perverse generation</b>, how long shall I be with you? How long shall I put up with
           you?"
         </blog-reference-tooltip>
-        He did not reprove them because of sin, but because of their faithlessness, the root of sin. Such are confused
-        from being double-minded, from being blended together with falsehood and truth, from fellowship with the world
-        and the Kingdom of God, from being in and out, hesitating between two opinions, from being hot and cold; and
-        sight becomes like a drunken man, wavering to and fro, like a ship tossed about by the waves of the sea, setting
-        the eye on the earthly and the other on the heavenly; vision becomes double and sight clouded; a drunkard is not
-        stable in any of his ways. This is why it says, "Love the Lord your God with <b>all</b> your heart, and
-        <b>all</b> your soul, and <b>all</b> your mind." (Deuteronomy 6:5) So let us beware lest we become a waverer
-        ourselves, for the things which happened before-hand provide examples for us to whom the end of the age has
-        come. For the root of all disobedience and sin is unbelief. <br /><br />
+        Therefore, He did not reprove them because of sin, but He rebuked them because of their faithlessness, the root
+        of sin. Such are confused from being double-minded, from being blended together with falsehood and truth, from
+        fellowship with the world and the Kingdom of God, from being in and out, hesitating between two opinions, from
+        being hot and cold; and sight becomes like a drunken man, wavering to and fro, like a ship tossed about by the
+        waves of the sea, setting the eye on the earthly and the other on the heavenly; vision becomes double and sight
+        clouded; a drunkard is not stable in any of his ways. This is why it says, "Love the Lord your God with
+        <b>all</b> your heart, and <b>all</b> your soul, and <b>all</b> your mind." (Deuteronomy 6:5) So let us beware
+        lest we become a waverer ourselves, for the things which happened before-hand provide examples for us to whom
+        the end of the age has come. For the root of all disobedience and sin is unbelief. <br /><br />
 
         So let us not be unbelieving and disobedient as these previous generations were, but instead, let us follow the
         men who were given to us as examples, who are men of faith. For to the believer, the things which are considered
@@ -283,8 +290,8 @@
         back then, it is today. Albeit we will all leave this place, we all will come back by the resurrection of the
         dead for everlasting judgment, to receive the recompense of our deeds which are done in the body; and God has
         elected Christ to sit on His judgment seat to judge the world in righteousness. So knowing the terror of the
-        Lord, we convince others, for the fear of the LORD is the beginning of wisdom; and through wisdom the church,
-        the house of God, is built.
+        Lord, we try to convince others, for the fear of the LORD is the beginning of wisdom; and through wisdom the
+        church, the house of God, is built.
         <br /><br />
 
         So let us see with the confidence which comes from faith in Christ Jesus, He died, He was buried, and He was
@@ -293,10 +300,10 @@
         deliverence from death thereof; and the deliverence from slavery of sin through His broken body, to be grafted
         to Himself by faith; that you may be declared righteous, not by a law of works, but by a law of faith, through
         the knowledge of the goodness of God towards you in Christ Jesus, through His loving-compassion and mercy,
-        through His beloved Son, Jesus Christ, who reconciled you to God by taking upon Himself the wrath due to us so
-        that we would serve God in the newness of the Spirit and life, not in the oldness of the letter of the law of
-        death - for the law condemns, but the Spirit gives life (and these words written to you are spirit and truth).
-        No longer is it said, "How does the Lord love me?" For He has proven His love toward us in that,
+        through His beloved Son, Jesus Christ, who reconciles the world to God by taking upon Himself the wrath due to
+        us so that we would serve God in the newness of the Spirit and life, not in the oldness of the letter of the law
+        of death - for the law condemns, but the Spirit gives life (and these words written to you are spirit and
+        truth). No longer is it said, "How does the Lord love me?" For He has proven His love toward us in that,
         <blog-reference-tooltip [reference]="'Romans 5:6'">
           While we were still helpless, at the right time Christ died for the ungodly.
         </blog-reference-tooltip>
@@ -310,33 +317,33 @@
           If it is by grace, it is no longer on the basis of works, otherwise grace is no longer grace.
         </blog-reference-tooltip>
         We are saved by grace; and it is the gift of God, not by our works, otherwise it would no longer be grace; for
-        grace is a gift, and gifts merit no work - otherwise it would no longer be a gift. For what have you done for
-        your birthday gift? Or what did you do to be born? Likewise, Christ gave Himself, even while we were deserving
-        wrath, He gave His life, so that, by the grace of God, Jesus would taste death for everyone; and if it is by
-        grace and not works, who then can boast? For God sees to it that no-one come to Him with any boast in the mouth,
-        except the boast of His name. <br /><br />
+        grace is a gift, and gifts merit no work - otherwise it would no longer be a gift. For what do you do for a
+        birthday gift? Or what did you do to be born? Likewise, Christ gave Himself, even while we were deserving wrath,
+        He gave His life, so that, by the grace of God, Jesus would taste death for everyone; and if it is by grace and
+        not works, who then can boast? For God sees to it that no-one come to Him with any boast in the mouth, except
+        the boast of His name. <br /><br />
 
         And this is the grace and the truth: seeing the depravity of mankind, God did not send forth a torrent of fire
         to devour us, but instead, He sent forth His beloved Son, the Son whom He loves and favors, He sent Him forth
         not to judge the world, but to save it. Although seeing the unseen nature of us all, He sent forth His Son, on
         whom abides the great love of God, to die for our sins - and who is worthy for such a thing? He who knew no sin,
         took upon Himself our sins, so that we might walk in the newness of the righteousness of God. All are turned out
-        of the way by the deed of one man, Adam, and brought near through the deed of One other, Jesus Christ; for it
-        says,
+        of the way by the deed of one man, Adam, and brought near to God through the deed of One other, Jesus Christ;
+        for it says,
         <blog-reference-tooltip [reference]="'Acts 4:12'">
           And there is salvation in no one else; for there is no other name under heaven that has been given among men
           by which we must be saved. </blog-reference-tooltip
         >He did this not while we deserved it, but while we least deserved it, while we were deserving of wrath, He gave
         us the gift of grace. He loved us in the greatest way possible while we were unfit for it, but fit for great
         wrath as sinners; for He knows our transgressions, even while they are hidden, yet Jesus died for us openly, and
-        that, to free us from our hidden sins and death; that which we are ashamed of, Christ bore, and He is not
-        ashamed to call us His brethren. Nothing is hidden from God's sight and He, seeing our hidden faults, sent His
-        Son into the world to reveal the message of His grace, which is to be received through faith, and faith in the
-        Message of the Son of God who loved us. No-one knows the totality of our sins, or even our thoughts, but God
-        knows; yet, He did not smite us for the greatness of our sins that we deserve. No, but smote His beloved Son, as
-        the Rock in the wilderness (Exodus 17:6) to bring forth living water; for the punishing of Him brings forth
-        peace with God our Father. And He being pure became dirty to make us clean; He takes away the sin of the world
-        by bearing it upon Himself; as John, the Baptist, testified,
+        that, to free us from our hidden sins; that which we are ashamed of, Christ bore, and He is not ashamed to call
+        us His brethren. Nothing is hidden from God's sight and He, seeing our hidden faults, sent His Son into the
+        world to reveal the message of His grace, which is to be received through faith, and faith in the Message of the
+        Son of God who loved us. No-one knows the totality of our sins, or even our thoughts, but God knows; yet, He did
+        not smite us for the greatness of our sins that we deserve. No, but smote His beloved Son, as the Rock in the
+        wilderness (Exodus 17:6) to bring forth living water; for the punishing of Him brings forth peace with God our
+        Father. And He being pure became dirty to make us clean; He takes away the sin of the world by bearing it upon
+        Himself; as John, the Baptist, testified,
         <blog-reference-tooltip [reference]="'John 1:29'">
           Behold! The Lamb of God who takes away the sin of the world!
         </blog-reference-tooltip>
@@ -366,8 +373,8 @@
         <blog-reference-tooltip [reference]="'Matthew 15:25-28'" [isJesusWord]="true">
           O woman, your <b>faith is great</b>; it shall be done for you as you wish.
         </blog-reference-tooltip>
-        For God, justifying the righteous and even the wicked by the same very faith, showed before-time with Rehab, who
-        was a prostitute, yet she was saved, she and her household, by believing God; as she believed and hid the
+        For God, justifying the Jews and even the wicked Gentiles by the same very faith, showed before-time with Rehab,
+        who was a prostitute, yet she was saved, she and her household, by believing God; as she believed and hid the
         messengers of God, and said,
         <blog-reference-tooltip [reference]="'Joshua 2:9-11'">
           When we heard it, our hearts melted and no courage remained in any man any longer because of you;
@@ -379,8 +386,8 @@
           justly, for we are receiving what we deserve for our deeds; but this man has done nothing wrong. Jesus,
           remember me when You come in Your kingdom!
         </blog-reference-tooltip>
-        Or what about the prayer of the man who loved money, being a tax collector, but prayed to God and humbled
-        himself in His sight? Wasn't he justified by what he said?
+        Or what about the prayer of the man who loved money, as he was a tax collector, but prayed to God and humbled
+        himself in His sight? Wasn't he justified by his faith in what he said?
         <blog-reference-tooltip [reference]="'Luke 18:10-14'" [isJesusWord]="true">
           'God, be merciful to me, the sinner!' I tell you, this man went to his house justified rather than the other;
           for everyone who exalts himself will be humbled, but he who humbles himself will be exalted.
@@ -422,7 +429,7 @@
         And love fulfills the entirety of the law, for love does no wrong to a neighbor.
         <br /><br />
 
-        We believe the Word of God, therefore we correct ourselves to it, setting our seal to this: God is true.
+        And since we believe the Word of God, we correct ourselves to it, setting our seal to this: God is true.
         Therefore, let every man be a liar. And this is the way of life: heeding to the Word of God and correcting
         ourselves to it. The one who disbelieves the warning, goes astray; the one who hears and fails to practice what
         he hears, does likewise; as Wisdom says,
@@ -450,11 +457,11 @@
         <blog-reference-tooltip [reference]="'Mark 10:18'" [isJesusWord]="true">
           Why do you call Me good? there is none good but one, that is, God.
         </blog-reference-tooltip>
-        So if anyone be moral, it's because of the morality that is in God through abiding in Christ, just as Christ
+        So if anyone be moral, it's because of the morality that is in God through abiding in Christ Jesus, just as He
         abides in God. No-one has seen God at anytime, but Jesus Christ has made Him known to us - He is the visible
-        image of the invisble God, and He alone has seen His form. Through Christ, we see the Father; and by faith in
-        Christ, by imitating Him, we obtain to the righteousness of God the Father; for salvation is of God, and the way
-        of life is not within ourselves; as it says,
+        image of the invisble God, and He alone has seen His form. Through Christ, we can see the Father; and by faith
+        in Christ by imitating Him we obtain to the righteousness of God the Father; for salvation is of God, and the
+        way of life is not within ourselves; as it says,
         <blog-reference-tooltip [reference]="'Jeremiah 10:23'"
           >I know, O LORD, that a man's way is not in himself, Nor is it in a man who walks to direct his
           steps.</blog-reference-tooltip
@@ -465,24 +472,24 @@
           who is proud, and humble him, And tread down the wicked where they stand. Hide them in the dust together; Bind
           them in the hidden place. Then I will also confess to you, That your own right hand can save you.
         </blog-reference-tooltip>
-        But righteousness and holiness are in God alone. Therefore abide in Him!
+        Thus righteousness and holiness and salviation is in God alone. Therefore abide in Him!
         <br /><br />
 
         We who believe, correct ourselves to the Word of God; we do so through rebuke, reproof and discipline. If the
-        Father considers us His own, He will chasten us; also, we are not lacking in the correction from God's family
+        Father considers us His own, He will chasten us; and also we are not lacking in the correction from God's family
         which we have been adopted into. For this is walking in love: reproving (Leviticus 19:17). And the wise listen
-        to correction, but a fool departs from it; and a fool does not heed to the Word, closing his eyes, he delights
+        to correction, but a fool departs from it; and a fool does not heed to the Word; he closes his eyes, he delights
         in wickedness. For in the teaching is salvation; for the Word of God revives us through faith; as it says,
         <blog-reference-tooltip [reference]="'1 Timothy 4:16'">
           Pay close attention to yourself and to your teaching; persevere in these things,
           <b>for as you do this you will ensure salvation both for yourself and for those who hear you.</b>
         </blog-reference-tooltip>
-        And,
+        And it says,
         <blog-reference-tooltip [reference]="'Psalm 119:107'">
           I am exceedingly afflicted; Revive me, O LORD, according to Your word.
         </blog-reference-tooltip>
         The Scriptures make one wise unto salvation, and through wisdom, we grow in the grace of the Lord; but a fool
-        does not fear the Lord, but he says in His heart, "No God", thus he walks in the way of death. In faith and
+        does not fear the Lord, but he says in His heart, "No God"; thus he walks in the way of death. In faith and
         through faith, we chose the fear of the Lord unto wisdom unto greater grace unto salvation; as it says,
         <blog-reference-tooltip [reference]="'2 Timothy 3:15'">
           you have known the Holy Scriptures, which are able to make you
@@ -492,7 +499,7 @@
         <blog-reference-tooltip [reference]="'Luke 2:52'">
           And Jesus increased in wisdom and stature, and in favor with God and men.
         </blog-reference-tooltip>
-        Therefore, we love the truth unto salvation; for in vain it does not say,
+        For in vain it does not say,
         <blog-reference-tooltip [reference]="'2 Thessalonians 2:10'">
           because they did not receive the love of the truth so as to be saved. </blog-reference-tooltip
         ><br /><br />
@@ -523,7 +530,7 @@
         For the life is in Christ, and to all who abide in Him enter into life by faith; as it says, “He who has the Son
         has the life; he who does not have the Son of God does not have the life. These things I have written to you who
         believe in the name of the Son of God, so that you may know that you have eternal life.” (1 John 5:12-13) Come,
-        Lord Jesus!</lib-narrator
+        Lord Jesus!</ng-template
       >
     </mat-card-content>
   </mat-card>

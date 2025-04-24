@@ -1,6 +1,11 @@
 <form [formGroup]="form">
+  <lib-narrator>
+    {{ ngxeditor.editor.view.dom.textContent }}
+  </lib-narrator>
+
   <div class="editor" [ngClass]="{ limitTextHeight: isEmpty && showReadMore && !isReadMore }">
     <ngx-editor-menu *ngIf="!readonly" [editor]="editor" [toolbar]="toolbar"> </ngx-editor-menu>
+
     <ngx-editor
       #ngxeditor
       class="ngx-editor"
