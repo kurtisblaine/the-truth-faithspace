@@ -8,11 +8,12 @@ import { MatInputModule } from "@angular/material/input";
 import { MatTooltipModule } from "@angular/material/tooltip";
 import { FontAwesomeModule } from "@fortawesome/angular-fontawesome";
 import { NgxEditorModule } from "ngx-editor";
+import { NarratorComponent } from "./components/narrator/narrator.component";
 import { TextEditorComponent } from "./components/text-editor/text-editor.component";
 import { TooltipDirective } from "./directives/tooltip.directive";
 
 @NgModule({
-  declarations: [TooltipDirective, TextEditorComponent],
+  declarations: [TooltipDirective, TextEditorComponent, NarratorComponent],
   imports: [
     CommonModule,
     MatTooltipModule,
@@ -24,6 +25,6 @@ import { TooltipDirective } from "./directives/tooltip.directive";
     NgxEditorModule.forRoot(),
     MatButtonModule,
   ],
-  exports: [TooltipDirective, TextEditorComponent],
+  exports: [TooltipDirective, TextEditorComponent, NarratorComponent],
 })
 export class SharedLibraryModule {}
