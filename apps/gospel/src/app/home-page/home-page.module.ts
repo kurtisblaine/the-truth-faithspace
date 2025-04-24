@@ -5,6 +5,7 @@ import { RouterModule, Routes } from "@angular/router";
 import { MatButtonModule } from "@angular/material/button";
 import { MatCardModule } from "@angular/material/card";
 import { MatDividerModule } from "@angular/material/divider";
+import { SharedLibraryModule } from "shared";
 import { SharedModule } from "../shared/shared.module";
 import HomePageComponent from "./home-page.component";
 
@@ -23,6 +24,7 @@ const routes: Routes = [
     MatDividerModule,
     MatButtonModule,
     MatCardModule,
+    SharedLibraryModule,
     RouterModule.forChild(routes),
   ],
 })
