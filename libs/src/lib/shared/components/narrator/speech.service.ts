@@ -1,57 +1,106 @@
-import { Injectable } from "@angular/core";
-import { BehaviorSubject } from "rxjs";
+import { Injectable, OnDestroy } from "@angular/core";
+import { Guid } from "guid-typescript";
+
+export enum SpeechStatus {
+  Stopped = "Stopped",
+  Playing = "Playing",
+  Paused = "Paused",
+}
 
 @Injectable({
-  providedIn: "any",
+  providedIn: "root",
 })
-export class SpeechService {
-  private speechSynthesis: SpeechSynthesis;
-  private isPaused = new BehaviorSubject<boolean>(false);
-  public isPaused$ = this.isPaused.asObservable();
+export class SpeechService implements OnDestroy {
+  private speechSynthesis: SpeechSynthesis | null;
 
-  private isPending = new BehaviorSubject<boolean>(false);
-  public isPending$ = this.isPending.asObservable();
-
-  private isSpeaking = new BehaviorSubject<boolean>(false);
-  public isSpeaking$ = this.isSpeaking.asObservable();
-
-  private state = new BehaviorSubject<string>("stopped");
-  public state$ = this.state.asObservable();
+  public allStates = new Map<string, SpeechStatus>();
+  public index = 0;
 
   constructor() {
     this.speechSynthesis = window.speechSynthesis;
-    this.state.next("stopped");
+    window.onbeforeunload = () => {
+      this.stop("all");
+    };
   }
 
-  speak(text: string) {
-    this.cancel(); //clear out the previous one...
-    const voices = this.speechSynthesis.getVoices();
-    console.log(voices);
+  ngOnDestroy(): void {
+    this.stop("all");
+    this.allStates.clear();
+  }
+
+  init() {
+    const id = Guid.create().toString();
+    const state = SpeechStatus.Stopped;
+    this.allStates.set(id, state);
+    return { id, state };
+  }
+
+  start(text: string, componentId: string) {
+    const speak = () => {
+      this.speak(text, componentId);
+    };
+
+    if (this.speechSynthesis!.speaking && this.speechSynthesis!.paused) {
+      this.resume(componentId);
+      return;
+    }
+
+    if (this.speechSynthesis!.speaking) {
+      this.stop(componentId);
+      setTimeout(speak, 1000); //we need to wait a little bit between these...
+      return;
+    }
+
+    speak();
+  }
+
+  speak(text: string, componentId: string) {
     const utterance = new SpeechSynthesisUtterance(text);
-    utterance.lang = "eng";
-    // utterance.voice = new SpeechSynthesisVoice();
-    this.speechSynthesis.speak(utterance);
-    this.isSpeaking.next(true);
-    this.state.next("speaking");
+
+    // const voices = this.speechSynthesis!.getVoices();
+    // utterance.voice = voices[0];
+    // console.log(voices);
+
+    // utterance.lang = "en-US";
+    // utterance.pitch = 1;
+    // utterance.rate = 0.9;
+
+    this.setStates(componentId, SpeechStatus.Playing);
+
+    this.speechSynthesis!.speak(utterance);
   }
 
-  pause() {
-    this.speechSynthesis.pause();
-    this.isPaused.next(true);
-    this.isSpeaking.next(false);
-    this.state.next("paused");
+  pause(componentId: string) {
+    this.speechSynthesis!.pause();
+
+    this.setStates(componentId, SpeechStatus.Paused);
   }
 
-  resume() {
-    this.speechSynthesis.resume();
-    this.isSpeaking.next(true);
-    this.state.next("speaking");
+  resume(componentId: string) {
+    this.speechSynthesis!.resume();
+
+    this.setStates(componentId, SpeechStatus.Playing);
   }
 
-  cancel() {
-    this.speechSynthesis.cancel();
-    this.isPaused.next(false);
-    this.isSpeaking.next(false);
-    this.state.next("stopped");
+  stop(componentId: string) {
+    if (componentId === "all") {
+      this.allStates.clear();
+    }
+
+    this.speechSynthesis!.cancel();
+    this.setStates(componentId, SpeechStatus.Stopped);
+  }
+
+  private setStates(componentId: string, state: SpeechStatus) {
+    this.allStates.forEach((value, key) => {
+      if (key === componentId) {
+        this.allStates.set(componentId, state);
+      }
+
+      if (state === SpeechStatus.Playing) {
+        //then we want to stop all the others...
+        this.allStates.set(key, SpeechStatus.Stopped);
+      }
+    });
   }
 }

@@ -6,12 +6,12 @@
       <div mat-card-avatar class="example-header-image"></div>
       <mat-card-title-group>
         <mat-card-title class="primary-color">My name is Kurtis</mat-card-title>
-        <mat-card-subtitle> Below is my testimony and a brief message of encouragement. </mat-card-subtitle>
+        <mat-card-subtitle> Below is my testimony. </mat-card-subtitle>
       </mat-card-title-group>
     </mat-card-header>
 
     <mat-card-content>
-      <lib-narrator>
+      <lib-narrator [buttonStyle]="narratorStyle.Group">
         <ng-container *ngTemplateOutlet="myTestimony"></ng-container>
       </lib-narrator>
       <ng-template #myTestimony>
@@ -33,10 +33,9 @@
 
         I started to open my Bible; my mom had given it to me. She was on a journey herself with God and gave all her
         possessions to the poor. I said, “What? This is from God?” Then she moved out of the state. That made me want to
-        seek all the more. So I opened up my Bible and remembered the change it had on my life; although the change was
-        quick, it wasn’t drastic: I had some peace and other spiritual things, but I was still in sin. Still, I kept
-        searching and reading. I knew the Bible was God's Word, even from the moment I read it; and the more I read, the
-        more my thinking changed.
+        seek all the more. So I opened up my Bible and remembered the change it had on my life; I had some peace and
+        other spiritual things, but I was still in sin. Still, I kept searching and reading. I knew the Bible was God's
+        Word, even from the moment I read it; and the more I read, the more my thinking changed.
         <br /><br />
 
         I remember doing much work at my new job; while working, I kept reading Scripture. I remember praying to God,
@@ -66,12 +65,12 @@
         wickedness. But I was persistent, knowing that only God could save me. My sins did not stop me from coming to
         Him because I knew He was loving and kind and gracious. But the things which I did not want to do, I constantly
         did. I did not want to do it, but I was compelled to do it anyway. I had no power in myself to say, "No" - for
-        sin was always there. I see now it was the power of my sin working in me, although in my mind I wanted to do
-        good. Many times I thought God would strike me because of my wickedness, especially when I would confess my sins
-        to Him; but actually, the opposite happened: I was relieved and felt better. I see now that God seen my sins,
-        and by acknowledging my sins to Him, He was pleased; for I confessed my sins through faith. But still, I
-        couldn't stop sinning. I would go a few days without it, but I would always end up back in it. I was getting
-        sick of crying out to God for forgiveness, so I started crying out for deliverance.
+        sin was always there. I see now it was the power of sin working in me, although in my mind I wanted to do good.
+        Many times I thought God would strike me because of my wickedness, especially when I would confess my sins to
+        Him; but actually, the opposite happened: I was relieved and felt better. I see now God seen my sins, and by
+        acknowledging my sins to Him, He was pleased, for I confessed my sins in faith. But still, I couldn't stop
+        sinning. I would go a few days without it, but I would always end up back in it. I was getting sick of crying
+        out to God for forgiveness, so I started crying out for deliverance.
         <br /><br />
 
         I heard the apostle’s sermons about Christ, and seen the effect their words had on people: they burned their
@@ -144,7 +143,7 @@
     </mat-card-header>
 
     <mat-card-content>
-      <lib-narrator>
+      <lib-narrator [buttonStyle]="narratorStyle.Group">
         <ng-container *ngTemplateOutlet="believeInChrist"></ng-container>
       </lib-narrator>
       <ng-template #believeInChrist>
