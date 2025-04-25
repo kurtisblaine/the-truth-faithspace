@@ -1,4 +1,5 @@
 import { AfterViewInit, Component, Input, OnInit, TemplateRef, ViewChild, ViewContainerRef } from "@angular/core";
+import { NarratorStyle } from "libs/src/lib/shared/components/narrator/narrator.component";
 import { TemplateService } from "../template.service";
 @Component({
   selector: "blog-gospel-item",
@@ -7,6 +8,8 @@ import { TemplateService } from "../template.service";
   standalone: false,
 })
 export class GospelItemComponent implements OnInit, AfterViewInit {
+  public narratorStyle = NarratorStyle;
+
   @Input() public title: string;
   private templateRef: TemplateRef<any>;
 

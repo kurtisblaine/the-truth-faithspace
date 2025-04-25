@@ -1,23 +1,23 @@
 <ng-container [ngSwitch]="buttonStyle">
-  <div *ngSwitchCase="narratorStyle.Group" style="display: flex; justify-content: flex-start">
-    <mat-button-toggle-group
-      [(ngModel)]="state"
-      style="display: flex; align-items: center; margin-bottom: 5px"
-      matTooltip="The reader is {{ state.toLowerCase() }}..."
-    >
-      <mat-button-toggle (click)="startReading()" [value]="speechStatus.Playing">
-        <fa-icon [icon]="playIcon" [size]="'lg'"></fa-icon>
-      </mat-button-toggle>
-      <mat-button-toggle (click)="pauseReading()" [value]="speechStatus.Paused">
-        <fa-icon [icon]="pauseIcon" [size]="'lg'"></fa-icon>
-      </mat-button-toggle>
-      <mat-button-toggle (click)="stopReading()" [value]="speechStatus.Stopped">
-        <fa-icon [icon]="stopIcon" [size]="'lg'"></fa-icon>
-      </mat-button-toggle>
-    </mat-button-toggle-group>
-  </div>
+  <mat-button-toggle-group
+    *ngSwitchCase="narratorStyle.Group"
+    [(ngModel)]="state"
+    style="margin-bottom: 5px"
+    matTooltip="The reader is {{ state.toLowerCase() }}..."
+    [hideSingleSelectionIndicator]="true"
+  >
+    <mat-button-toggle (click)="startReading()" [value]="speechStatus.Playing">
+      <fa-icon [icon]="playIcon" [size]="'lg'"></fa-icon>
+    </mat-button-toggle>
+    <mat-button-toggle (click)="pauseReading()" [value]="speechStatus.Paused">
+      <fa-icon [icon]="pauseIcon" [size]="'lg'"></fa-icon>
+    </mat-button-toggle>
+    <mat-button-toggle (click)="stopReading()" [value]="speechStatus.Stopped">
+      <fa-icon [icon]="stopIcon" [size]="'lg'"></fa-icon>
+    </mat-button-toggle>
+  </mat-button-toggle-group>
 
-  <div *ngSwitchCase="narratorStyle.Flex" style="display: flex; justify-content: space-around">
+  <div *ngSwitchCase="narratorStyle.Flex" style="display: flex; justify-content: center; margin-bottom: 5px">
     <button mat-icon-button (click)="startReading()">
       <fa-icon [icon]="playIcon" [size]="'lg'"></fa-icon>
     </button>
@@ -25,6 +25,18 @@
       <fa-icon [icon]="pauseIcon" [size]="'lg'"></fa-icon>
     </button>
     <button mat-icon-button (click)="stopReading()">
+      <fa-icon [icon]="stopIcon" [size]="'lg'"></fa-icon>
+    </button>
+  </div>
+
+  <div *ngSwitchCase="narratorStyle.Fab" style="display: flex; justify-content: center; margin-bottom: px">
+    <button mat-mini-fab (click)="startReading()">
+      <fa-icon [icon]="playIcon" [size]="'lg'"></fa-icon>
+    </button>
+    <button mat-mini-fab (click)="pauseReading()" style="margin-left: 3px">
+      <fa-icon [icon]="pauseIcon" [size]="'lg'"></fa-icon>
+    </button>
+    <button mat-mini-fab (click)="stopReading()" style="margin-left: 3px">
       <fa-icon [icon]="stopIcon" [size]="'lg'"></fa-icon>
     </button>
   </div>
