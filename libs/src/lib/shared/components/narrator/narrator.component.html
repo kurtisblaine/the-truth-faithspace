@@ -1,17 +1,34 @@
-<div style="display: flex; justify-content: space-around">
-  <button mat-icon-button (click)="startReading()">
-    <fa-icon [icon]="playIcon" [size]="'lg'"></fa-icon>
-  </button>
-  <button mat-icon-button (click)="pauseReading()" [disabled]="">
-    <fa-icon [icon]="pauseIcon" [size]="'lg'"></fa-icon>
-  </button>
-  <button mat-icon-button (click)="resumeReading()">
-    <fa-icon [icon]="playIcon" [size]="'lg'"></fa-icon>
-  </button>
-  <button mat-icon-button (click)="stopReading()">
-    <fa-icon [icon]="stopIcon" [size]="'lg'"></fa-icon>
-  </button>
-</div>
+<ng-container [ngSwitch]="buttonStyle">
+  <div *ngSwitchCase="narratorStyle.Group" style="display: flex; justify-content: flex-start">
+    <mat-button-toggle-group
+      [(ngModel)]="state"
+      style="display: flex; align-items: center; margin-bottom: 5px"
+      matTooltip="The reader is {{ state.toLowerCase() }}..."
+    >
+      <mat-button-toggle (click)="startReading()" [value]="speechStatus.Playing">
+        <fa-icon [icon]="playIcon" [size]="'lg'"></fa-icon>
+      </mat-button-toggle>
+      <mat-button-toggle (click)="pauseReading()" [value]="speechStatus.Paused">
+        <fa-icon [icon]="pauseIcon" [size]="'lg'"></fa-icon>
+      </mat-button-toggle>
+      <mat-button-toggle (click)="stopReading()" [value]="speechStatus.Stopped">
+        <fa-icon [icon]="stopIcon" [size]="'lg'"></fa-icon>
+      </mat-button-toggle>
+    </mat-button-toggle-group>
+  </div>
+
+  <div *ngSwitchCase="narratorStyle.Flex" style="display: flex; justify-content: space-around">
+    <button mat-icon-button (click)="startReading()">
+      <fa-icon [icon]="playIcon" [size]="'lg'"></fa-icon>
+    </button>
+    <button mat-icon-button (click)="pauseReading()">
+      <fa-icon [icon]="pauseIcon" [size]="'lg'"></fa-icon>
+    </button>
+    <button mat-icon-button (click)="stopReading()">
+      <fa-icon [icon]="stopIcon" [size]="'lg'"></fa-icon>
+    </button>
+  </div>
+</ng-container>
 
 <div #textContainer>
   <ng-content></ng-content>
