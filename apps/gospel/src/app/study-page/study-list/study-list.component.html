@@ -6,7 +6,11 @@
 
   <button mat-flat-button *ngIf="update" (click)="doUpdate(study)">Update</button>
 
-  <lib-text-editor [readonly]="!update" [document]="study.json" (editorChanged)="study.json = $event"></lib-text-editor>
+  <lib-text-editor
+    [readonly]="!update"
+    [document]="study?.json"
+    (editorChanged)="study.json = $event"
+  ></lib-text-editor>
 
   <mat-divider></mat-divider>
 </div>
