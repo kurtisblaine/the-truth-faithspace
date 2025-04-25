@@ -14,6 +14,7 @@ import { SpeechService, SpeechStatus } from "./speech.service";
 export enum NarratorStyle {
   Group = "Group",
   Flex = "Flex",
+  Fab = "Fab",
 }
 @Component({
   selector: "lib-narrator",
@@ -23,7 +24,7 @@ export enum NarratorStyle {
   standalone: false,
 })
 export class NarratorComponent implements OnDestroy, OnInit {
-  @Input() public buttonStyle = NarratorStyle.Flex;
+  @Input() public buttonStyle = NarratorStyle.Fab;
 
   public narratorStyle = NarratorStyle;
   public speechStatus = SpeechStatus;
