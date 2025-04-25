@@ -25,6 +25,7 @@ export enum NarratorStyle {
 })
 export class NarratorComponent implements OnDestroy, OnInit {
   @Input() public buttonStyle = NarratorStyle.Fab;
+  @Input() public text = "";
 
   public narratorStyle = NarratorStyle;
   public speechStatus = SpeechStatus;
@@ -61,10 +62,17 @@ export class NarratorComponent implements OnDestroy, OnInit {
   }
 
   startReading() {
-    const text = (this.textContainer.element.nativeElement as HTMLElement).textContent?.toString();
+    let text = (this.textContainer.element.nativeElement as HTMLElement).textContent?.toString();
+
+    const hasText = !!text;
+    if (!hasText && this.text) {
+      text = this.text;
+    }
+
     if (!text) return;
 
-    const cleanedText = this.removeParentheses(text!);
+    let cleanedText = this.removeParentheses(text!);
+    cleanedText = this.removeBrackets(cleanedText!);
     if (!cleanedText) return;
 
     this.state = SpeechStatus.Playing;
@@ -77,6 +85,10 @@ export class NarratorComponent implements OnDestroy, OnInit {
 
   removeParentheses(str: string) {
     return str.replace(/\([^)]*\)/g, "");
+  }
+
+  removeBrackets(str: string) {
+    return str.replace(/\[.*?\]/g, "");
   }
 
   pauseReading() {

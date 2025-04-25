@@ -1,6 +1,7 @@
 import { AfterViewInit, Component, EventEmitter, Input, OnDestroy, OnInit, Output, ViewChild } from "@angular/core";
 import { AbstractControl, FormControl, FormGroup } from "@angular/forms";
 import { Editor, NgxEditorComponent, Toolbar } from "ngx-editor";
+import { NarratorStyle } from "../narrator/narrator.component";
 @Component({
   selector: "lib-text-editor",
   templateUrl: "./text-editor.component.html",
@@ -8,6 +9,7 @@ import { Editor, NgxEditorComponent, Toolbar } from "ngx-editor";
   standalone: false,
 })
 export class TextEditorComponent implements OnInit, OnDestroy, AfterViewInit {
+  public narratorStyle = NarratorStyle;
   public editor!: Editor;
   public isReadMore = false;
   public isEmpty = false;
