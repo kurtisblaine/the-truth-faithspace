@@ -47,7 +47,7 @@ export class SpeechService implements OnDestroy {
 
     if (this.speechSynthesis!.speaking) {
       this.stop(componentId);
-      setTimeout(speak, 1000); //we need to wait a little bit between these...
+      setTimeout(speak, 0); //we need to wait a little bit between these...
       return;
     }
 

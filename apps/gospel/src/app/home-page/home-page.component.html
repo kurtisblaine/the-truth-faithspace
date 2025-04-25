@@ -11,7 +11,7 @@
     </mat-card-header>
 
     <mat-card-content>
-      <lib-narrator [buttonStyle]="narratorStyle.Group">
+      <lib-narrator [buttonStyle]="narratorStyle.Group" [text]="myTestimony?.elementRef?.nativeElement?.textContent">
         <ng-container *ngTemplateOutlet="myTestimony"></ng-container>
       </lib-narrator>
       <ng-template #myTestimony>
@@ -143,7 +143,10 @@
     </mat-card-header>
 
     <mat-card-content>
-      <lib-narrator [buttonStyle]="narratorStyle.Group">
+      <lib-narrator
+        [buttonStyle]="narratorStyle.Group"
+        [text]="believeInChrist?.elementRef?.nativeElement?.textContent"
+      >
         <ng-container *ngTemplateOutlet="believeInChrist"></ng-container>
       </lib-narrator>
       <ng-template #believeInChrist>
