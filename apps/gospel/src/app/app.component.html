@@ -7,7 +7,7 @@
         <span matListItemTitle>The Good News</span>
         <span>the everlasting covenant that will never change.</span>
       </mat-list-item>
-      <mat-list-item lines="3" (click)="openBible()">
+      <mat-list-item lines="3" (click)="openBible(); drawer.close()">
         <fa-icon matListItemIcon [icon]="bookIcon" [size]="'lg'"></fa-icon>
         <span matListItemTitle>The Holy Bible</span>
         <span>let God be true and every man a liar.</span>
