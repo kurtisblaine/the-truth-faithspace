@@ -57,13 +57,10 @@ export class SpeechService implements OnDestroy {
   speak(text: string, componentId: string) {
     const utterance = new SpeechSynthesisUtterance(text);
 
-    // const voices = this.speechSynthesis!.getVoices();
-    // utterance.voice = voices[0];
-    // console.log(voices);
-
-    // utterance.lang = "en-US";
-    // utterance.pitch = 1;
-    // utterance.rate = 0.9;
+    const voices = this.speechSynthesis!.getVoices();
+    const defaultVoice = voices[0];
+    utterance.voice = defaultVoice;
+    utterance.lang = defaultVoice.lang;
 
     this.setStates(componentId, SpeechStatus.Playing);
 
