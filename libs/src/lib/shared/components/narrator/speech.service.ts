@@ -1,4 +1,5 @@
-import { Injectable, OnDestroy } from "@angular/core";
+import { inject, Injectable, OnDestroy } from "@angular/core";
+import { MatSnackBar } from "@angular/material/snack-bar";
 import { Guid } from "guid-typescript";
 
 export enum SpeechStatus {
@@ -12,11 +13,21 @@ export enum SpeechStatus {
 })
 export class SpeechService implements OnDestroy {
   private speechSynthesis: SpeechSynthesis | null;
+  private _snackBar = inject(MatSnackBar);
 
   public allStates = new Map<string, SpeechStatus>();
-  public index = 0;
+  public hasBrowserSupport = false;
 
+  //or try to use talkify... if it is free...
   constructor() {
+    this.hasBrowserSupport = "speechSynthesis" in window && "SpeechSynthesisUtterance" in window;
+    if (!this.hasBrowserSupport) {
+      this._snackBar.open("Text to speech is not supported on your device.", "Dismiss", {
+        horizontalPosition: "start",
+        verticalPosition: "bottom",
+      });
+    }
+
     this.speechSynthesis = window.speechSynthesis;
     window.onbeforeunload = () => {
       this.stop("all");
