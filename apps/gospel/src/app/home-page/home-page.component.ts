@@ -7,7 +7,7 @@ import { WindowService } from "../gospel-page/window.service";
   selector: "blog-home-page",
   templateUrl: "./home-page.component.html",
   styleUrls: ["./home-page.component.scss"],
-  changeDetection: ChangeDetectionStrategy.OnPush,
+  changeDetection: ChangeDetectionStrategy.Default,
   animations: [fadeInOut],
   standalone: false,
 })

@@ -13,7 +13,7 @@
   </mat-card-header>
 
   <mat-card-content [class]="{ 'regular-content': !isFloater, 'floater-content': isFloater }">
-    <lib-narrator [text]="paragraphContent?.textContent">
+    <lib-narrator [text]="paragraphContent?.textContent" [buttonStyle]="narratorStyle.Fab">
       <ng-container #paragraphContent>
         <ng-content select=".paragraphs"></ng-content>
       </ng-container>
