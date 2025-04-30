@@ -2,7 +2,7 @@
   <lib-narrator
     *ngIf="!showReadMore"
     [buttonStyle]="narratorStyle.Group"
-    [text]="ngxeditor.editor?.view?.dom?.textContent ?? ''"
+    [text]="ngxeditor.editor?.view?.dom?.innerText ?? ''"
   >
   </lib-narrator>
 
