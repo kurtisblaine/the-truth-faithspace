@@ -82,6 +82,9 @@ export class SpeechService implements OnDestroy {
     utterance.lang = defaultVoice.lang;
 
     this.speechSynthesis!.speak(utterance);
+    utterance!.onend = () => {
+      this.setState(componentId, SpeechStatus.Stopped);
+    };
 
     this.setState(componentId, SpeechStatus.Playing);
   }

@@ -47,8 +47,7 @@ export class NarratorComponent implements OnDestroy, OnInit {
   }
 
   startReading() {
-    let text = (this.textContainer.element.nativeElement as HTMLElement).textContent?.trim()?.toString();
-
+    let text = (this.textContainer.element.nativeElement as HTMLElement).innerText?.trim()?.toString();
     const hasText = !!text;
     if (!hasText && this.text) {
       text = this.text;
