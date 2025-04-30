@@ -1,14 +1,6 @@
-import {
-  ChangeDetectionStrategy,
-  Component,
-  Input,
-  OnDestroy,
-  OnInit,
-  ViewChild,
-  ViewContainerRef,
-} from "@angular/core";
+import { Component, Input, OnDestroy, OnInit, ViewChild, ViewContainerRef } from "@angular/core";
 import { faPause, faPlay, faStop } from "@fortawesome/free-solid-svg-icons";
-import { BehaviorSubject } from "rxjs";
+import { Subscription } from "rxjs";
 import { SpeechService, SpeechStatus } from "./speech.service";
 
 export enum NarratorStyle {
@@ -20,7 +12,6 @@ export enum NarratorStyle {
   selector: "lib-narrator",
   templateUrl: "./narrator.component.html",
   styleUrl: "./narrator.component.scss",
-  changeDetection: ChangeDetectionStrategy.OnPush,
   standalone: false,
 })
 export class NarratorComponent implements OnDestroy, OnInit {
@@ -33,20 +24,10 @@ export class NarratorComponent implements OnDestroy, OnInit {
   public pauseIcon = faPause;
   public stopIcon = faStop;
 
-  private isPaused = new BehaviorSubject<boolean>(false);
-  public isPaused$ = this.isPaused.asObservable();
+  private subscription!: Subscription;
 
-  private isPending = new BehaviorSubject<boolean>(false);
-  public isPending$ = this.isPending.asObservable();
-
-  private isSpeaking = new BehaviorSubject<boolean>(false);
-  public isSpeaking$ = this.isSpeaking.asObservable();
-
-  private isStopped = new BehaviorSubject<boolean>(true);
-  public isStopped$ = this.isStopped.asObservable();
-
-  public state = SpeechStatus.Stopped;
   public componentId!: string;
+  public thisLocalState = SpeechStatus.Stopped;
 
   @ViewChild("textContainer", { read: ViewContainerRef }) private textContainer!: ViewContainerRef;
   constructor(public speechService: SpeechService) {}
@@ -54,11 +35,15 @@ export class NarratorComponent implements OnDestroy, OnInit {
   ngOnInit(): void {
     const { id, state } = this.speechService.init();
     this.componentId = id;
-    this.state = state;
+
+    this.subscription = state.subscribe((s) => {
+      this.thisLocalState = s;
+    });
   }
 
   ngOnDestroy(): void {
     this.stopReading();
+    this.subscription.unsubscribe();
   }
 
   startReading() {
@@ -75,12 +60,7 @@ export class NarratorComponent implements OnDestroy, OnInit {
     cleanedText = this.removeBrackets(cleanedText!);
     if (!cleanedText) return;
 
-    this.state = SpeechStatus.Playing;
     this.speechService.start(cleanedText, this.componentId);
-
-    this.isSpeaking.next(true);
-    this.isStopped.next(false);
-    this.isPending.next(true);
   }
 
   removeParentheses(str: string) {
@@ -93,26 +73,13 @@ export class NarratorComponent implements OnDestroy, OnInit {
 
   pauseReading() {
     this.speechService.pause(this.componentId);
-    this.state = SpeechStatus.Paused;
-
-    this.isPaused.next(true);
-    this.isSpeaking.next(false);
   }
 
   resumeReading() {
     this.speechService.resume(this.componentId);
-    this.state = SpeechStatus.Playing;
-
-    this.isSpeaking.next(true);
   }
 
   stopReading() {
     this.speechService.stop(this.componentId);
-    this.state = SpeechStatus.Stopped;
-
-    this.isPaused.next(false);
-    this.isSpeaking.next(false);
-    this.isStopped.next(true);
-    this.isPending.next(false);
   }
 }

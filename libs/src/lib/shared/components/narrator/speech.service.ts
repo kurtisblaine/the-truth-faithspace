@@ -1,6 +1,7 @@
 import { inject, Injectable, OnDestroy } from "@angular/core";
 import { MatSnackBar } from "@angular/material/snack-bar";
 import { Guid } from "guid-typescript";
+import { BehaviorSubject } from "rxjs";
 
 export enum SpeechStatus {
   Stopped = "Stopped",
@@ -15,10 +16,9 @@ export class SpeechService implements OnDestroy {
   private speechSynthesis: SpeechSynthesis | null;
   private _snackBar = inject(MatSnackBar);
 
-  public allStates = new Map<string, SpeechStatus>();
+  public allStates = new Map<string, BehaviorSubject<SpeechStatus>>();
   public hasBrowserSupport = false;
 
-  //or try to use talkify... if it is free...
   constructor() {
     this.hasBrowserSupport = "speechSynthesis" in window && "SpeechSynthesisUtterance" in window;
     if (!this.hasBrowserSupport) {
@@ -41,28 +41,36 @@ export class SpeechService implements OnDestroy {
 
   init() {
     const id = Guid.create().toString();
-    const state = SpeechStatus.Stopped;
+    const state = new BehaviorSubject<SpeechStatus>(SpeechStatus.Stopped);
     this.allStates.set(id, state);
-    return { id, state };
+    return { id, state: state.asObservable() };
   }
 
   start(text: string, componentId: string) {
-    const speak = () => {
-      this.speak(text, componentId);
-    };
+    const thisState = this.allStates.get(componentId)?.value;
 
-    if (this.speechSynthesis!.speaking && this.speechSynthesis!.paused) {
+    if (thisState === SpeechStatus.Paused) {
       this.resume(componentId);
       return;
     }
 
-    if (this.speechSynthesis!.speaking) {
-      this.stop(componentId);
-      setTimeout(speak, 0); //we need to wait a little bit between these...
+    const playingId = this.isSomePlaying();
+    if (playingId === componentId) {
+      this.pause(componentId); //hit play and the same one is already playing...
       return;
+    } else if (playingId) {
+      this.stop(playingId); //hit play on another item while one is already playing...
     }
 
-    speak();
+    if (thisState === SpeechStatus.Stopped && playingId) {
+      setTimeout(() => {
+        this.speak(text, componentId); //we just stopped and we need a little time between the stop to speak again...
+      }, 1000);
+      return;
+    } else if (thisState === SpeechStatus.Stopped) {
+      this.speak(text, componentId);
+      return;
+    }
   }
 
   speak(text: string, componentId: string) {
@@ -73,41 +81,58 @@ export class SpeechService implements OnDestroy {
     utterance.voice = defaultVoice;
     utterance.lang = defaultVoice.lang;
 
-    this.setStates(componentId, SpeechStatus.Playing);
-
     this.speechSynthesis!.speak(utterance);
+
+    this.setState(componentId, SpeechStatus.Playing);
   }
 
   pause(componentId: string) {
     this.speechSynthesis!.pause();
 
-    this.setStates(componentId, SpeechStatus.Paused);
+    this.setState(componentId, SpeechStatus.Paused);
   }
 
   resume(componentId: string) {
     this.speechSynthesis!.resume();
 
-    this.setStates(componentId, SpeechStatus.Playing);
+    this.setState(componentId, SpeechStatus.Playing);
   }
 
   stop(componentId: string) {
+    this.speechSynthesis!.cancel();
+
     if (componentId === "all") {
       this.allStates.clear();
+    } else {
+      this.resetStates();
     }
-
-    this.speechSynthesis!.cancel();
-    this.setStates(componentId, SpeechStatus.Stopped);
   }
 
-  private setStates(componentId: string, state: SpeechStatus) {
+  private isSomePlaying() {
+    let id = "";
+
+    this.allStates.forEach((value, key) => {
+      if (value.value === SpeechStatus.Playing) {
+        id = key;
+        return;
+      }
+    });
+
+    return id;
+  }
+
+  private resetStates() {
+    this.allStates.forEach((value, key) => {
+      const otherState = this.allStates.get(key);
+      otherState!.next(SpeechStatus.Stopped);
+    });
+  }
+
+  private setState(componentId: string, state: SpeechStatus) {
     this.allStates.forEach((value, key) => {
       if (key === componentId) {
-        this.allStates.set(componentId, state);
-      }
-
-      if (state === SpeechStatus.Playing) {
-        //then we want to stop all the others...
-        this.allStates.set(key, SpeechStatus.Stopped);
+        const thisState = this.allStates.get(componentId);
+        thisState!.next(state);
       }
     });
   }

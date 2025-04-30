@@ -1,9 +1,9 @@
 <ng-container [ngSwitch]="buttonStyle">
   <mat-button-toggle-group
     *ngSwitchCase="narratorStyle.Group"
-    [(ngModel)]="state"
+    [(ngModel)]="thisLocalState"
     style="margin-bottom: 5px"
-    matTooltip="The reader is {{ state.toLowerCase() }}..."
+    matTooltip="The reader is {{ thisLocalState.toLowerCase() }}..."
     [hideSingleSelectionIndicator]="true"
   >
     <mat-button-toggle (click)="startReading()" [value]="speechStatus.Playing">
@@ -33,10 +33,20 @@
     <button mat-mini-fab (click)="startReading()">
       <fa-icon [icon]="playIcon" [size]="'lg'"></fa-icon>
     </button>
-    <button mat-mini-fab (click)="pauseReading()" style="margin-left: 3px">
+    <button
+      mat-mini-fab
+      (click)="pauseReading()"
+      style="margin-left: 3px"
+      [disabled]="thisLocalState === speechStatus.Stopped"
+    >
       <fa-icon [icon]="pauseIcon" [size]="'lg'"></fa-icon>
     </button>
-    <button mat-mini-fab (click)="stopReading()" style="margin-left: 3px">
+    <button
+      mat-mini-fab
+      (click)="stopReading()"
+      style="margin-left: 3px"
+      [disabled]="thisLocalState === speechStatus.Stopped"
+    >
       <fa-icon [icon]="stopIcon" [size]="'lg'"></fa-icon>
     </button>
   </div>
