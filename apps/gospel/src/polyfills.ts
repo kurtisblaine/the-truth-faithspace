@@ -45,7 +45,6 @@
 /***************************************************************************************************
  * Zone JS is required by default for Angular itself.
  */
-import "web-speech-cognitive-services";
 import "zone.js"; // Included with Angular CLI.
 
 /***************************************************************************************************
