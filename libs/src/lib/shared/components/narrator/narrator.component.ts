@@ -25,9 +25,11 @@ export class NarratorComponent implements OnDestroy, OnInit {
   public stopIcon = faStop;
 
   private subscription!: Subscription;
+  private playingSubscription!: Subscription;
 
   public componentId!: string;
   public thisLocalState = SpeechStatus.Stopped;
+  public isAnotherPlaying = false;
 
   @ViewChild("textContainer", { read: ViewContainerRef }) private textContainer!: ViewContainerRef;
   constructor(public speechService: SpeechService) {}
@@ -39,11 +41,16 @@ export class NarratorComponent implements OnDestroy, OnInit {
     this.subscription = state.subscribe((s) => {
       this.thisLocalState = s;
     });
+
+    this.playingSubscription = this.speechService.currentlyPlayingId$.subscribe((id) => {
+      this.isAnotherPlaying = !!id && id !== this.componentId;
+    });
   }
 
   ngOnDestroy(): void {
     this.stopReading();
     this.subscription.unsubscribe();
+    this.playingSubscription.unsubscribe();
   }
 
   startReading() {
