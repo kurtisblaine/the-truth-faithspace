@@ -18,6 +18,8 @@ export class SpeechService implements OnDestroy {
 
   public allStates = new Map<string, BehaviorSubject<SpeechStatus>>();
   public hasBrowserSupport = false;
+  private currentlyPlayingId = new BehaviorSubject<string>("");
+  public currentlyPlayingId$ = this.currentlyPlayingId.asObservable();
 
   constructor() {
     this.hasBrowserSupport = "speechSynthesis" in window && "SpeechSynthesisUtterance" in window;
@@ -58,16 +60,9 @@ export class SpeechService implements OnDestroy {
     if (playingId === componentId) {
       this.pause(componentId); //hit play and the same one is already playing...
       return;
-    } else if (playingId) {
-      this.stop(playingId); //hit play on another item while one is already playing...
     }
 
-    if (thisState === SpeechStatus.Stopped && playingId) {
-      setTimeout(() => {
-        this.speak(text, componentId); //we just stopped and we need a little time between the stop to speak again...
-      }, 1000);
-      return;
-    } else if (thisState === SpeechStatus.Stopped) {
+    if (thisState === SpeechStatus.Stopped) {
       this.speak(text, componentId);
       return;
     }
@@ -75,6 +70,7 @@ export class SpeechService implements OnDestroy {
 
   speak(text: string, componentId: string) {
     const utterance = new SpeechSynthesisUtterance(text);
+    this.currentlyPlayingId.next(componentId);
 
     const voices = this.speechSynthesis!.getVoices();
     const defaultVoice = voices[0];
@@ -83,7 +79,8 @@ export class SpeechService implements OnDestroy {
 
     this.speechSynthesis!.speak(utterance);
     utterance!.onend = () => {
-      this.setState(componentId, SpeechStatus.Stopped);
+      this.currentlyPlayingId.next("");
+      this.resetStates();
     };
 
     this.setState(componentId, SpeechStatus.Playing);
@@ -91,18 +88,21 @@ export class SpeechService implements OnDestroy {
 
   pause(componentId: string) {
     this.speechSynthesis!.pause();
+    this.currentlyPlayingId.next(componentId);
 
     this.setState(componentId, SpeechStatus.Paused);
   }
 
   resume(componentId: string) {
     this.speechSynthesis!.resume();
+    this.currentlyPlayingId.next(componentId);
 
     this.setState(componentId, SpeechStatus.Playing);
   }
 
   stop(componentId: string) {
     this.speechSynthesis!.cancel();
+    this.currentlyPlayingId.next("");
 
     if (componentId === "all") {
       this.allStates.clear();
@@ -111,11 +111,11 @@ export class SpeechService implements OnDestroy {
     }
   }
 
-  private isSomePlaying() {
+  public isSomePlaying() {
     let id = "";
 
     this.allStates.forEach((value, key) => {
-      if (value.value === SpeechStatus.Playing) {
+      if (value.value === SpeechStatus.Playing || value.value === SpeechStatus.Paused) {
         id = key;
         return;
       }
@@ -126,8 +126,8 @@ export class SpeechService implements OnDestroy {
 
   private resetStates() {
     this.allStates.forEach((value, key) => {
-      const otherState = this.allStates.get(key);
-      otherState!.next(SpeechStatus.Stopped);
+      const state = this.allStates.get(key);
+      state!.next(SpeechStatus.Stopped);
     });
   }
 
@@ -136,6 +136,7 @@ export class SpeechService implements OnDestroy {
       if (key === componentId) {
         const thisState = this.allStates.get(componentId);
         thisState!.next(state);
+        return;
       }
     });
   }

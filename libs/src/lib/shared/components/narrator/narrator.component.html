@@ -3,13 +3,12 @@
     *ngSwitchCase="narratorStyle.Group"
     [(ngModel)]="thisLocalState"
     style="margin-bottom: 5px"
-    matTooltip="The reader is {{ thisLocalState.toLowerCase() }}..."
     [hideSingleSelectionIndicator]="true"
   >
-    <mat-button-toggle (click)="startReading()" [value]="speechStatus.Playing">
+    <mat-button-toggle (click)="startReading()" [value]="speechStatus.Playing" [disabled]="isAnotherPlaying">
       <fa-icon [icon]="playIcon" [size]="'lg'"></fa-icon>
     </mat-button-toggle>
-    <mat-button-toggle (click)="pauseReading()" [value]="speechStatus.Paused">
+    <mat-button-toggle (click)="pauseReading()" [value]="speechStatus.Paused" [disabled]="isAnotherPlaying">
       <fa-icon [icon]="pauseIcon" [size]="'lg'"></fa-icon>
     </mat-button-toggle>
     <mat-button-toggle (click)="stopReading()" [value]="speechStatus.Stopped">
@@ -30,14 +29,14 @@
   </div>
 
   <div *ngSwitchCase="narratorStyle.Fab" style="display: flex; justify-content: center; margin-bottom: px">
-    <button mat-mini-fab (click)="startReading()">
+    <button mat-mini-fab (click)="startReading()" [disabled]="isAnotherPlaying">
       <fa-icon [icon]="playIcon" [size]="'lg'"></fa-icon>
     </button>
     <button
       mat-mini-fab
       (click)="pauseReading()"
       style="margin-left: 3px"
-      [disabled]="thisLocalState === speechStatus.Stopped"
+      [disabled]="thisLocalState === speechStatus.Stopped || isAnotherPlaying"
     >
       <fa-icon [icon]="pauseIcon" [size]="'lg'"></fa-icon>
     </button>
@@ -45,7 +44,7 @@
       mat-mini-fab
       (click)="stopReading()"
       style="margin-left: 3px"
-      [disabled]="thisLocalState === speechStatus.Stopped"
+      [disabled]="thisLocalState === speechStatus.Stopped && !isAnotherPlaying"
     >
       <fa-icon [icon]="stopIcon" [size]="'lg'"></fa-icon>
     </button>
