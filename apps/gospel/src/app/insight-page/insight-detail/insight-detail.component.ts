@@ -9,7 +9,7 @@ import { getById } from "../../state/insight/insights.selectors";
 @Component({
   selector: "blog-insight-detail",
   templateUrl: "./insight-detail.component.html",
-  styleUrls: ["./insight-detail.component.css"],
+  styleUrls: ["./insight-detail.component.scss"],
   standalone: false,
 })
 export class InsightDetailComponent implements OnInit {

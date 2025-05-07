@@ -15,7 +15,7 @@ import { Image } from "../draw-page.component";
 @Component({
   selector: "blog-draw-item",
   templateUrl: "./draw-item.component.html",
-  styleUrls: ["./draw-item.component.css"],
+  styleUrls: ["./draw-item.component.scss"],
   standalone: false,
 })
 export class DrawItemComponent implements OnInit, AfterViewInit, OnDestroy {

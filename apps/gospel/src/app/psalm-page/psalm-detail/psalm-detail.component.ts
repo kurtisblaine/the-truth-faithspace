@@ -9,7 +9,7 @@ import { getById } from "../../state/psalm/psalm.selectors";
 @Component({
   selector: "blog-psalm-detail",
   templateUrl: "./psalm-detail.component.html",
-  styleUrls: ["./psalm-detail.component.css"],
+  styleUrls: ["./psalm-detail.component.scss"],
   standalone: false,
 })
 export class PsalmDetailComponent implements OnInit {

@@ -4,7 +4,7 @@ import { faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
 @Component({
   selector: "blog-audio-play",
   templateUrl: "./audio-play.component.html",
-  styleUrl: "./audio-play.component.css",
+  styleUrl: "./audio-play.component.scss",
   standalone: false,
 })
 export class AudioPlayComponent {

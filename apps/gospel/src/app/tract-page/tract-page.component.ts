@@ -4,7 +4,7 @@ import { Router } from "@angular/router";
 @Component({
   selector: "blog-tract-page",
   templateUrl: "./tract-page.component.html",
-  styleUrl: "./tract-page.component.css",
+  styleUrl: "./tract-page.component.scss",
   standalone: false,
 })
 export class TractPageComponent {

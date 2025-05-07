@@ -9,7 +9,7 @@ import { getById } from "../../state/discern/discern.selectors";
 @Component({
   selector: "blog-discern-detail",
   templateUrl: "./discern-detail.component.html",
-  styleUrls: ["./discern-detail.component.css"],
+  styleUrls: ["./discern-detail.component.scss"],
   standalone: false,
 })
 export class DiscernDetailComponent implements OnInit {
