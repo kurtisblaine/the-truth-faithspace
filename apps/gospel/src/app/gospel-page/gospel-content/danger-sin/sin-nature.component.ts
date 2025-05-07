@@ -1,0 +1,198 @@
+import { CommonModule } from "@angular/common";
+import { ChangeDetectionStrategy, Component } from "@angular/core";
+import { SharedModule } from "../../../shared/shared.module";
+
+@Component({
+  selector: "blog-sin-nature",
+  imports: [CommonModule, SharedModule],
+  template: `<ng-container *ngTemplateOutlet="ourSinNature"></ng-container>
+    <ng-template #ourSinNature>
+      Everyone is from a fallen nature. All of us are alike: we do evil. None of us continually does what we are
+      supposed to do; and no one always does right and never sins. We have all fallen short of the glory of God; we have
+      missed the mark; as it is written,
+      <blog-reference-tooltip [reference]="'Romans 3:10-18'"
+        >None is righteous, no, not one; no one understands; no one seeks for God. All have turned aside; together they
+        have become worthless; no one does good, not even one. Their throat is an open grave; they use their tongues to
+        deceive. The venom of asps is under their lips. Their mouth is full of curses and bitterness. Their feet are
+        swift to shed blood; in their paths are ruin and misery, and the way of peace they have not known. There is no
+        fear of God before their eyes.</blog-reference-tooltip
+      >
+      (And many other such testimonies as these: Isaiah 59:1-13, Isaiah 64:6-7, Psalm 5:9, Psalm 53:1-3, Psalm 36:1-4,
+      Micah 7:2-3) Even if we were to decide to do better today, it would not cover our past faults; even if we
+      declared, "I will change", it would only take us as far as our human strength will go; and aren't we becoming
+      weaker and weaker day by day? For the weakness of death is at work in all of us. Besides, if our nature is evil,
+      how can we reform ourselves? Wouldn't trying make us even worse? Can a dirty rag cleanse? Can filthy water make
+      someone clean? What we need does not come from ourselves, nor is it within ourselves; as it says, “I know, O LORD,
+      that a man's way is not in himself, Nor is it in a man who walks to direct his steps.” (Jeremiah 10:23) It comes
+      from the LORD God. We know a lot about a thing by looking to its beginning: so how do we measure up as newborns?
+      Yes, a new born baby is precious and innocent, but is it good or moral? We were all once infants and how we were
+      born is how we will always be; if a donkey is born a donkey, it cannot later become a horse, can he? Of course
+      not! So we are born human, but what kind of a human? Are we born a good human or a bad human? If we were good,
+      then we wouldn't need to be taught good, for we would just be good; however, we needed to be taught good from an
+      early age; if we were already good, then we wouldn't need to be taught, because we would already be. And since we
+      can only be good or bad, and there is no inbetween, and we certainly aren't good, then we must be evil. And this
+      is according to what we see and experience, isn't it? We all do that evil in which we know by nature; we all know
+      evil naturally and without any effort do it: it is like blinking to us, it is as automatic as breathing. We eat up
+      iniquity and drink down falsehood. Does not God testify the same thing? As the LORD God says, “Can the Ethiopian
+      change his skin Or the leopard his spots? Then you also can do good Who are accustomed to doing evil.” (Jeremiah
+      13:23) For we do not have any knowledge of God, who is Good; if we knew God from the womb, perhaps we would be
+      good, but we are born into ignorance, without any knowledge of God. But one may say, "If I know evil, then I must
+      know good, for good is opposite of evil." Yes, but even if we know good, we have not the power to execute the good
+      that we know, for sin is always present with us; and the goodness that we will to do is not of ourselves, but it
+      is of God, and He is contrary to our nature: for we walk by sight, but He is not seen. So therefore, it is through
+      the knowledge of God that we may obtain righteousness; as it says,
+      <blog-reference-tooltip [reference]="'Jeremiah 22:15-16'">
+        Did not your father eat and drink and do justice and righteousness? Then it was well with him. He judged the
+        cause of the poor and needy; then it was well. <b>Is this not what it means to know me?</b> declares the LORD.
+      </blog-reference-tooltip>
+      And,
+      <blog-reference-tooltip [reference]="'3 John 1:11'">
+        Beloved, do not imitate evil but imitate good. Whoever does good is from God; whoever does evil has not seen
+        God.
+      </blog-reference-tooltip>
+      For without God, it's impossible to do good; saying, “Without faith it is impossible to please Him, for he who
+      comes to God must believe that He is and that He is a rewarder of those who seek Him.” (Hebrews 11:6) “And those
+      who are in the flesh cannot please God.” (Romans 8:8) “For I know that nothing good dwells in me, that is, in my
+      flesh; for the willing is present in me, but the doing of the good is not.” (Romans 7:18) For we have all
+      inherited wickedness from one man, Adam; we have inherited our evil nature from the first man. In the Garden, he
+      sinned against God, eating the fruit of the tree of the knowledge of good and evil, which was against the
+      commandment of the LORD; and so since one man sinned one time, all became sinners, for all come from him; and as a
+      result of sin, we die, even they who do not sin in the likeness of Adam's transgression. But someone might say,
+      "Injustice! For if I were there, I would have obeyed." But such thinking is not wise, because it does not change a
+      thing. <br /><br />
+
+      Do we need further testimony about our sinful nature? As a child we were taught good, and without question, we are
+      only taught the things that we don't already know; and we already know evil from the womb, so we don't need to be
+      taught this - we didn't need to learn evil, but good. If we were good, then why does self-discipline exist? Is it
+      against the law to love so much? Or against the command, "Do not do so much good"? But rather discipline is needed
+      for mastering over evil thoughts, and murders, and adulteries, and fornications, and thefts, and false witness,
+      and slanders; it is for these evils self-discipline exists, for these need to be controlled by ourselves;
+      otherwise, if we cannot control ourselves, we will be controlled. That is why prisons exist. For what is a prison
+      besides discipline from an institution? But you may say, "For sinners like them prisons exist, but not for me."
+      However, the only difference between a prisoner and you is: you weren't caught - for you know you've done things
+      worthy of imprisonment. As it says, “Like a city that is broken into and without walls Is a man who has no control
+      over his spirit.” (Proverbs 25:28) Therefore, this is our nature: evil. It's effortless for us to do bad and takes
+      all our energy to do good and resist temptation. We love wickedness and eat it up like bread; it's a delicacy to
+      us, but it turns into venom within; we eat it up, and sleep in it, and drink from its cup. When we grow old,
+      reaching a certain age, and we are not taught good, our parents are blamed. But why? People say, "I blame the
+      parents for their child's behavior." Or, "Why didn't his parents teach him what is right?" So, we testify to
+      ourselves about the nature we belong: an evil one. For why would our parents be blamed if we were born righteous?
+      In that case, our actions would be on our own heads! Even more we say, "But I am only human." So we testify to
+      ourselves and to others that we belong to a nature that is fallen and broken. It is our nature; just as it's an
+      eagle's nature to fly or a penguin's nature not to fly; so we are sinful; it is our nature; and we are incapable
+      of changing or reforming ourselves. And if anyone claims they are not sinful, they show how utterly sinful they
+      really are, for they lie in regard to an obvious fact; as David said in the Psalm,
+      <blog-reference-tooltip [reference]="'Psalm 51:5-7'">
+        Surely I was sinful at birth, sinful from the time my mother conceived me. Surely you desire truth in the inner
+        parts; you teach me wisdom in the inmost place. Cleanse me with hyssop, and I will be clean; wash me, and I will
+        be whiter than snow.
+      </blog-reference-tooltip>
+      And if that comes from King David a man after God's own heart, how much more does it apply to us? We may think we
+      are better than others by comparing ourselves with ourselves or measuring ourselves by ourselves, but we are
+      without understanding. We think, "I am not in prison; I haven't killed anybody." Or even some might say, "I would
+      never do such a thing!" But you who condemn theives, have you pirated movies? You who judge murderers, have you
+      been angry and struck someone?
+      <blog-reference-tooltip [reference]="'Romans 2:1-3'">
+        Therefore you have no excuse, everyone of you who passes judgment, for in that which you judge another, you
+        condemn yourself; for you who judge practice the same things. And we know that the judgment of God rightly falls
+        upon those who practice such things. But do you suppose this, O man, when you pass judgment on those who
+        practice such things and do the same yourself, that you will escape the judgment of God?
+      </blog-reference-tooltip>
+      What then? Are we better than the worse? Not at all, for we are all under the power of sin; and the one who breaks
+      one law has broken them all; as it says,
+      <blog-reference-tooltip [reference]="'James 2:10-12'">
+        For whoever keeps the whole law and yet stumbles in one point, he has become guilty of all. For He who said, "DO
+        NOT COMMIT ADULTERY," also said, "DO NOT COMMIT MURDER." Now if you do not commit adultery, but do commit
+        murder, you have become a transgressor of the law. So speak and so act as those who are to be judged by the law
+        of liberty.
+      </blog-reference-tooltip>
+      <br /><br />
+
+      Sin is a living power within us, and it causes death - it's what makes us die in the end. It has its effect on all
+      creation, for everything wastes away because of it - even the animals die. When people think about sin, they think
+      about an instance of disobedience; which is true, but it's also a power and a nature and a law. It's what causes
+      us to be weak, it's what causes our muscles to ache with agony, it's what causes everything to decay and wear out.
+      We see what sin looks like by looking at death: it's gross, repugnant, a horrid stench, defiling anything it
+      touches, corrupting much that is good. God shows us a tangible result of sin: death. If sin looks like this to our
+      eyes, how much worse in the eyes of the holy God? And it lives within us! It's a cancer that does not submit to
+      the control of the body - it spreads uncontrollably. It is without law; it does not obey anyone; it's a hazard.
+      This thing which is causing death within us needs to be put to death, for it is killing us. It masters over us and
+      never submits to our will; it enslaves us, making us its master; we follow behind it in bonds; it is hostile
+      towards God; it's acts are prompts of war against God, provoking Him to anger; all it's thoughts, wicked; it girds
+      up it's loins to haste after evil; it has never submitted to the law of God, for it is not able - and never will
+      be able. It does not submit to our direction; it is an unruly animal. But surely, the desire to do good is in our
+      minds, but in our bodies, we don't do what we intend to do. We see it every new year: we make a resolution and
+      say, "This year will be nothing like the last, I am going to do this and do that!" And we do this and that very
+      well for the first few months, but the time comes when we inevitably go back to our old ways. What we desire in
+      our mind, we have not the strength in our flesh to carry out; in our mind we want to do good, but in our flesh, we
+      don't do the good we want to do; we have good intentions, but the power of sin carries us away. If we did
+      everything we wanted to do every new year, as time went on, we would be made more and more perfect, but in fact,
+      we become more and more sinful, storing up our wrongs and being wronged as a result; we sin piling up more and
+      more transgression into our accounts, which is a debt against us, storing up God's wrath for the day of wrath. For
+      the more we toil, the more we sin; the harder we work, the more abominable we are. As it says, “The more they
+      multiplied, the more they sinned against Me; I will change their glory into shame.” (Hosea 4:7) For, "Who can make
+      the clean out of the unclean? No one!” (Job 14:4) "'So is this people. And so is this nation before Me,' declares
+      the LORD, 'and so is every work of their hands; and what they offer there is unclean.” (Haggai 2:14) And who is
+      omitted from such a thing? As it says,
+      <blog-reference-tooltip [reference]="'Proverbs 20:9'">
+        Who can say, "I have cleansed my heart, I am pure from my sin"?
+      </blog-reference-tooltip>
+      <blog-reference-tooltip [reference]="'Ecclesiastes 7:20'">
+        Indeed, there is not a righteous man on earth who continually does good and who never sins.
+      </blog-reference-tooltip>
+      <blog-reference-tooltip [reference]="'Job 15:14-16, Job 25:3-6'">
+        What is man, that he should be pure, or he who is born of a woman, that he should be righteous? Behold, He puts
+        no trust in His holy ones, and the heavens are not pure in His sight; how much less one who is detestable and
+        corrupt, man, who drinks iniquity like water!
+      </blog-reference-tooltip>
+      <blog-reference-tooltip [reference]="'Psalm 130:4-5'">
+        If You, LORD, should mark iniquities, O Lord, who could stand? But there is forgiveness with You, That You may
+        be feared.
+      </blog-reference-tooltip>
+      “And do not enter into judgment with Your servant, For in Your sight no man living is righteous.” (Psalms 143:2)
+      <br /><br />
+
+      Yet someone may argue, "I am righteous, despite my unrighteousness. Is not God faithful to forgive?" However, it
+      says, "Without the shedding of blood there is no forgiveness." (Hebrews 9:22) And another may say, "I am good
+      always." But what does the law say?
+      <blog-reference-tooltip [reference]="'Exodus 22:2-3'">
+        If the thief is caught while breaking in and is struck so that he dies, there will be no bloodguiltiness on his
+        account. But if the sun has risen on him, there will be bloodguiltiness on his account.
+      </blog-reference-tooltip>
+      For the theif tried to hide his crime under the cover of darkness, so his punishment is more severe. Is that not
+      what you do when you say, "I have not sinned"? Saying to yourself, "I have peace though I walk in the stubbornness
+      of my heart in order to destroy the watered with the dry." (Deuteronomy 29:19) Will that person, even if hidden
+      from the eyes of man for a time, escape the light of the day of the coming of the Lord Almighty? The moon sets and
+      the sun rises, when he is caught, it is worse for that person than he who sins in the day and does not cover his
+      transgression; as the Lord says,
+      <blog-reference-tooltip [reference]="'Matthew 23:14, Mark 12:40, Luke 20:47'" [isJesusWord]="true">
+        [the Pharisees] who devour widows' houses, and for appearance's sake offer long prayers; these will receive
+        greater condemnation.
+      </blog-reference-tooltip>
+      For they sought to deceive, appearing righteous before men, but God knew their hearts. Therefore, no-one is just
+      in the sight of God by their works; furthermore, we certainly cannot justify ourselves with our mouths before Him;
+      as it says, “When there are many words, transgression is unavoidable, But he who restrains his lips is wise.”
+      (Proverbs 10:19) The cloak we cover ourselves with is too short; our lies cannot decieve the living God; "For He
+      knows false men, And He sees iniquity without investigating.” (Job 11:11) This nature is best spoken by the
+      apostle Paul, listen to what he has to say:
+      <blog-reference-tooltip [reference]="'Romans 7:14-24'"
+        >The trouble is not with the law, for it is spiritual and good. The trouble is with me, for I am all too human,
+        a slave to sin. I don’t really understand myself, for I want to do what is right, but I don’t do it. Instead, I
+        do what I hate. But if I know that what I am doing is wrong, this shows that I agree that the law is good. So I
+        am not the one doing wrong; it is sin living in me that does it. And I know that nothing good lives in me, that
+        is, in my sinful nature. I want to do what is right, but I can’t. I want to do what is good, but I don’t. I
+        don’t want to do what is wrong, but I do it anyway. But if I do what I don’t want to do, I am not really the one
+        doing wrong; it is sin living in me that does it. I have discovered this principle of life-—that when I want to
+        do what is right, I inevitably do what is wrong. I love God’s law with all my heart. But there is another power
+        within me that is at war with my mind. This power makes me a slave to the sin that is still within me. Oh, what
+        a miserable person I am! Who will free us from this life that is dominated by sin and death?
+      </blog-reference-tooltip>
+
+      <!-- <a href="https://thelightof.life/assets/tract/bewareofburgers.pdf" target="_blank"
+          >Here is a gospel tract to show the power of sin through a parable of Fast Food.</a
+        ><br /><br /> -->
+    </ng-template>`,
+  styles: ``,
+  changeDetection: ChangeDetectionStrategy.OnPush,
+})
+export class SinNatureComponent {}

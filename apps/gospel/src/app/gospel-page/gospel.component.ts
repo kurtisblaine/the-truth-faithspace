@@ -1,4 +1,4 @@
-import { AfterViewInit, Component, HostBinding, OnInit, TemplateRef } from "@angular/core";
+import { AfterViewInit, Component, HostBinding, OnInit } from "@angular/core";
 import { ActivatedRoute, Router } from "@angular/router";
 import { fadeInOut } from "shared";
 import { RouterService } from "./router.service";
@@ -43,8 +43,8 @@ export class GospelComponent implements AfterViewInit, OnInit {
     });
   }
 
-  public navigateToGospelItem(title: string, element: TemplateRef<any>) {
-    this.templateService.add(title, element);
+  public navigateToGospelItem(title: string, component: any) {
+    // this.templateService.add(title, element);
     this.router.navigateByUrl(`truthful-item/${title}`);
   }
 }
