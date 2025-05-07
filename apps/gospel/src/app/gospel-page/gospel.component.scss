@@ -54,27 +54,27 @@ img {
   width: 100%;
 }
 
-.pimg2 {
+.holy-image {
   background-image: url("https://res.cloudinary.com/dffihsa2y/image/upload/v1711590013/img/holy_wxwyzn.webp");
   min-height: 400px;
 }
 
-.pimg3 {
+.rent-image {
   background-image: url("https://res.cloudinary.com/dffihsa2y/image/upload/v1711590014/img/rent_wxiwvf.webp");
   min-height: 400px;
 }
 
-.pimg6 {
+.bread-image {
   background-image: url("https://res.cloudinary.com/dffihsa2y/image/upload/v1711590013/img/bread_iuzxxj.webp");
   min-height: 400px;
 }
 
-.pimg1 {
+.new-jerusalem-image {
   background-image: url("https://res.cloudinary.com/dffihsa2y/image/upload/v1711590013/img/newjer_ck9crv.webp");
   min-height: 400px;
 }
 
-.pimg7 {
+.lamb-image {
   background-image: url("https://res.cloudinary.com/dffihsa2y/image/upload/v1711590013/img/lamb_eo0gii.webp");
   min-height: 400px;
 }
@@ -99,12 +99,12 @@ img {
   min-height: 400px;
 }
 
-.pimg12 {
+.trumpets-image {
   background-image: url("https://res.cloudinary.com/dffihsa2y/image/upload/v1711590013/img/13-Seven-Angels-Seven-Trumpets_voye7o.webp");
   min-height: 400px;
 }
 
-.pimg13 {
+.wedding-image {
   background-image: url("https://res.cloudinary.com/dffihsa2y/image/upload/v1711590013/img/Mat25L_dzpagk.webp");
   min-height: 400px;
   box-shadow: inset 0 0 0 100vmax rgba(0, 0, 0, 0.1);
@@ -115,7 +115,7 @@ img {
   min-height: 400px;
 }
 
-.pimg17 {
+.pillar-fire-image {
   background-image: url("https://res.cloudinary.com/dffihsa2y/image/upload/v1711590013/img/pillarfire_bhe97a.webp");
   min-height: 400px;
 }
@@ -125,22 +125,22 @@ img {
   min-height: 400px;
 }
 
-.pimg20 {
+.sin-image {
   background-image: url("https://res.cloudinary.com/dffihsa2y/image/upload/v1711590027/img/sin_s3obrq.webp");
   min-height: 400px;
 }
 
-.pimg21 {
+.cross-image {
   background-image: url("https://res.cloudinary.com/dffihsa2y/image/upload/v1711590013/img/cross_z0d21o.webp");
   min-height: 400px;
 }
 
-.pimg22 {
+.lion-image {
   background-image: url("https://res.cloudinary.com/dffihsa2y/image/upload/v1711590013/img/lion_jw4h3p.webp");
   min-height: 400px;
 }
 
-.pimg23 {
+.bush-image {
   background-image: url("https://res.cloudinary.com/dffihsa2y/image/upload/v1711590013/img/bush_tudwx1.webp");
   min-height: 400px;
 }
@@ -150,56 +150,56 @@ img {
   min-height: 400px;
 }
 
-.pimg25 {
+.samson-image {
   background-image: url("https://res.cloudinary.com/dffihsa2y/image/upload/v1711590027/img/samson_q982ou.webp");
   min-height: 400px;
 }
 
 @media (max-width: 568px) {
-  .pimg1,
-  .pimg2,
-  .pimg3,
-  .pimg6,
-  .pimg7,
+  .new-jerusalem-image,
+  .holy-image,
+  .rent-image,
+  .bread-image,
+  .lamb-image,
   .pimg8,
   .pimg9,
   .pimg10,
   .pimg11,
-  .pimg12,
-  .pimg13,
+  .trumpets-image,
+  .wedding-image,
   .pimg15,
-  .pimg17,
+  .pillar-fire-image,
   .pimg19,
-  .pimg20,
-  .pimg21,
-  .pimg22,
-  .pimg23,
+  .sin-image,
+  .cross-image,
+  .lion-image,
+  .bush-image,
   .pimg24,
-  .pimg25 {
+  .samson-image {
     background-attachment: scroll;
   }
 }
 
-.pimg1,
-.pimg2,
-.pimg3,
-.pimg6,
-.pimg7,
+.new-jerusalem-image,
+.holy-image,
+.rent-image,
+.bread-image,
+.lamb-image,
 .pimg8,
 .pimg9,
 .pimg10,
 .pimg11,
-.pimg12,
-.pimg13,
+.trumpets-image,
+.wedding-image,
 .pimg15,
-.pimg17,
+.pillar-fire-image,
 .pimg19,
-.pimg20,
-.pimg21,
-.pimg22,
-.pimg23,
+.sin-image,
+.cross-image,
+.lion-image,
+.bush-image,
 .pimg24,
-.pimg25 {
+.samson-image {
   position: relative;
   background-position: center;
   background-size: cover;

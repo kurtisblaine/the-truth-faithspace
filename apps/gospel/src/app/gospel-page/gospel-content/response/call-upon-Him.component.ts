@@ -1,0 +1,165 @@
+import { CommonModule } from "@angular/common";
+import { ChangeDetectionStrategy, Component } from "@angular/core";
+import { SharedModule } from "../../../shared/shared.module";
+
+@Component({
+  selector: "gospel-call-upon-him",
+  imports: [CommonModule, SharedModule],
+  template: `<ng-container *ngTemplateOutlet="callUponTheLord"></ng-container>
+    <ng-template #callUponTheLord>
+      Jeremiah says, “Pour out Your wrath on the nations that do not know You And on the families that do not call Your
+      name.” (Jeremiah 10:25) For wrath is against the unbelieving who do not call, but salvation is for the believing
+      who by the knowledge of God calls. For everything we have, we obtain from the Lord by calling upon Him, so much so
+      even our earthly lives were given to us by God as a gift; or did you work so hard to create yourself? And it is
+      the same with the heavenly life, it is given to us from heaven; as John says, "A man can receive nothing unless it
+      has been given him from heaven.” (John 3:27) And as Paul was saying, "What do you have that you did not receive?
+      And if you did receive it, why do you boast as if you had not received it?” (1 Corinthians 4:7) Thus, "You do not
+      have because you do not ask.” (James 4:2-3) So much so, we even receive even the gift of God, the Holy Spirit, by
+      asking with faith;
+      <blog-reference-tooltip [reference]="'Luke 11:13'" [isJesusWord]="true">
+        If you then, being evil, know how to give good gifts to your children, how much more will your heavenly Father
+        give the Holy Spirit to those who ask Him?
+      </blog-reference-tooltip>
+      Not by a lump-some of money or any good work, lest it be contrary to the gospel of God; as Peter rebuked a man,
+      “May your silver perish with you, because you thought you could obtain the gift of God with money!” (Acts 8:20-23)
+      So that everything would be in accordance with grace which is in line with the gospel of God by which every good
+      thing is given by faith, for we call upon Him, asking in prayer and believing to receive; as the Lord says,
+      <blog-reference-tooltip [reference]="'Matthew 21:22, Mark 11:24, James 1:6-8'" [isJesusWord]="true">
+        And all things you ask in prayer, believing, you will receive.
+      </blog-reference-tooltip>
+      And,
+      <blog-reference-tooltip [reference]="'Matthew 7:7-8'" [isJesusWord]="true">
+        Ask, and it will be given to you; seek, and you will find; knock, and it will be opened to you. For everyone who
+        asks receives, and he who seeks finds, and to him who knocks it will be opened.
+      </blog-reference-tooltip>
+      Furthermore, the faith that believes God, that He is the Giver of all good things, says,
+      <blog-reference-tooltip [reference]="'Luke 6:38'" [isJesusWord]="true">
+        Give, and it will be given to you. They will pour into your lap a good measure—pressed down, shaken together,
+        and running over. For by your standard of measure it will be measured to you in return.
+      </blog-reference-tooltip>
+      And,
+      <blog-reference-tooltip [reference]="'Mark 11:25-26'" [isJesusWord]="true">
+        Whenever you stand praying, forgive, if you have anything against anyone, so that your Father who is in heaven
+        will also forgive you your transgressions. [But if you do not forgive, neither will your Father who is in heaven
+        forgive your transgressions.]
+      </blog-reference-tooltip>
+      For who believing the promises of God, that He is gracious and forgiving, is not gracious in his giving? And who
+      believing the Lord is forgiving, is not merciful in forgiving others? None! The believer gives knowing He will
+      receive, and he forgives believing he will be forgiven; for that is faith, and certainly, as it is impossible for
+      God to lie, He will give and He will forgive. Therefore, ask and believe! The Holy Spirit is given to those who
+      believe, and He is the mind of Christ (1 Corinthians 2:16); He knows how to pray according to the will of God, and
+      God, searching the hearts of men for the mind of the Spirit (Romans 8:26-27), gives according to His grace.
+      <br /><br />
+
+      Since we have been reconciled to God through faith in the Word, we clearly see the power of words, especially the
+      Word of God, which has the power to save; as the Proverb says, "Death and life are in the power of the tongue, And
+      those who love it will eat its fruit." (Proverbs 18:21) So,
+      <blog-reference-tooltip [reference]="'2 Corinthians 4:13'">
+        having the same spirit of faith, according to what is written, “I BELIEVED, THEREFORE I SPOKE,” we also believe,
+        therefore we also speak
+      </blog-reference-tooltip>
+      And,
+      <blog-reference-tooltip [reference]="'1 Peter 3:15'">
+        But in your hearts set apart Christ as Lord. Always be prepared to give an answer to everyone who asks you to
+        give the reason for the hope that you have. But do this with gentleness and respect.
+      </blog-reference-tooltip>
+      And,
+      <blog-reference-tooltip [reference]="'Romans 10:11-13'">
+        As Scripture says, "Anyone who believes in Him will never be put to shame.” For there is no difference between
+        Jew and Gentile — the same Lord is Lord of all and richly blesses all who call on him, for, 'Everyone who calls
+        on the name of the Lord will be saved.' (...) If you openly declare that Jesus is Lord and believe in your heart
+        that God raised him from the dead, you will be saved.
+      </blog-reference-tooltip>
+      Christ pours into us His Spirit, creating in us a bubbling brook, a spring of life, whose outpouring is the
+      testimony of Jesus. He planted in us His good Word to the effect that we would bear good fruit of righteousness
+      becoming a tree of life in those who eat, in those who believe through us, in those who hunger and thirst for
+      righteousness; we feed and give drink, pointing to Him who saves, namely Christ, the living water and the tree of
+      life, made possible by ourselves tasting the good word of salvation that is in Christ. Therefore, let us bear the
+      name of God without reproach, also bearing His reproach, walking blamelessly, free from hypocrisy, confessing His
+      name in sincerity, speaking of His righteous works, His goodness and love. As Christ called us according to His
+      grace, we call in the streets, in the byways, in the highways; wisdom calls out in the streets (Proverbs 1:20-23,
+      Proverbs 9:3-6). And He is not ashamed to call us His brothers, and we are not ashamed to call Him Lord; as it
+      says,
+      <blog-reference-tooltip [reference]="'Hebrews 13:12-15'">
+        So Jesus also suffered outside the gate in order to sanctify the people through his own blood. Therefore let us
+        go to him outside the camp and bear the reproach he endured. For here we have no lasting city, but we seek the
+        city that is to come. Through him then let us continually offer up a sacrifice of praise to God, that is, the
+        fruit of lips that acknowledge his name.
+      </blog-reference-tooltip>
+      And,
+      <blog-reference-tooltip [reference]="'Hebrews 2:11-12'">
+        For both He who sanctifies and those who are sanctified are all from one Father; for which reason He is not
+        ashamed to call them brethren, saying, "I WILL PROCLAIM YOUR NAME TO MY BRETHREN, IN THE MIDST OF THE
+        CONGREGATION I WILL SING YOUR PRAISE."
+      </blog-reference-tooltip>
+      Furthermore, Christ says,
+      <blog-reference-tooltip [reference]="'Luke 12:8-9'" [isJesusWord]="true">
+        I tell you, whoever publicly acknowledges Me before others, the Son of Man will also acknowledge before the
+        angels of God. But whoever disowns Me before others will be disowned before the angels of God.
+      </blog-reference-tooltip>
+      Here is the fruit of salvation: in confessing the Lord! If we even ask, "Must I confess?" What is preventing you?
+      No-one can confess the Lord Jesus except by the Holy Spirit, and I also believe that the Holy Spirit will prevent
+      us from confessing if we are living in hypocrisy. It's not they who confess, "Jesus is Lord" that are saved, but
+      they who confess, living "Jesus is Lord" who are saved; ("Why do you call Me Lord and not do what I say" and "Not
+      everyone who says to Me "Lord, Lord" will enter") Know for certain salvation lives here: obey and confess Christ!
+      For we have been justified by His blood and we are saved by His life; therefore, confess Him publically, uncover
+      your head and circumcise your heart. See the thirsty land and give drink; withhold not your bread, nor your water
+      from the poor; open up your lid and pour from your vessel. See the fruit of your labors and rejoice; and see
+      salvation at work within you.
+      <blog-link
+        [title]="'See More on Justification and Salvation'"
+        [link]="'https://thelightof.life/#/draw/justificationandsalvation.webp'"
+      >
+      </blog-link>
+      <br /><br />
+
+      Be ready and looking forward to give reason for your hope in Christ. The world always tells about restaurants and
+      movies and games: how much more we with such a great news. When we sell a car, we do so by telling the truth: the
+      sweet and the bitter about the car; otherwise, when they see the car and it isn't what we made it out to be, they
+      will not do business for the sake of dishonesty. Likewise, we sell Christ in truth, though Christ isn't sold, but
+      freely given to all; anyone who receives Him through faith, it will costs them, but through faith, they gain
+      tenfold, not to mention eternal life. By telling the truth we show that our faith is true and living; a faith that
+      is not living is dead, a lie; in fact, a belief that has no merit in reality is a delusion. When we do not speak,
+      when the Lord puts a word on our tongue, it's stifling the Spirit of God; we shrink back in disbelief when we do
+      so; and we don't love our neighbor as we should. God gives us a good example of the order of events we ought to
+      follow in regard to walking and speaking with integrity: study the Word, obey it, then teach others. A hypocrite
+      is an actor: someone who puts on a mask to play a different part in a different scene; such a person loses his
+      identity through deception, deceiving himself in order to play a part (1 John 1:8, James 1:22, James 1:26). All
+      actors have to deceive themselves to play a part; they lie to themselves, saying, "I am such and such" so that
+      they would be convincing to others when they act. Likewise we do the same when we're not truly obeying the Word.
+      This is a counterfeit faith, a false bill, a drossed coin. We can be sincere and earnest in different ways: our
+      word and our works, and our heart. These should never contradict each other lest we be found a hypocrite. When we
+      contradict, we are being hypocritical. But let us follow the example of Ezra, the scribe; as it is said of him,
+      <blog-reference-tooltip [reference]="'Ezra 7:10'">
+        Ezra had set his heart to study the law of the Lord, and to do it and to teach his statutes and rules in Israel </blog-reference-tooltip
+      >And Paul, not wishing for his speech to contradict his life, says,
+      <blog-reference-tooltip [reference]="'2 Corinthains 12:6'">
+        For if I do wish to boast I will not be foolish, for I will be speaking the truth; but I refrain, so that no one
+        will credit me with more than he sees in me or hears from me.
+      </blog-reference-tooltip>
+      The one who believes the Message will go to Jesus for salvation; and salvation comes by the forgiveness of our
+      sins; as it says, "To give to His people the knowledge of salvation by the forgiveness of their sins." (Luke 1:77)
+      But, "Without shedding of blood there is no forgiveness." (Hebrews 9:22) And Jesus is the propitiation for our
+      sins. So by going to Him through faith, we are saved, for salvation is in Him; as it says, "There is salvation in
+      no one else; for there is no other name under heaven that has been given among men by which we must be saved."
+      (Acts 4:12) And salvation is made possible by the resurrection of Jesus from the dead; for how can you go to Him
+      and be saved if He is not? As it says, "And if Christ be not raised, your faith is vain; you are still in your
+      sins." (1 Corinthians 15:17) And it is through faith that we may abide in Him, through understanding with our
+      hearts, through turning to Him to be saved, for this is true understanding; as it says, "AND UNDERSTAND WITH THEIR
+      HEART AND RETURN, AND I WOULD HEAL THEM." (Acts 28:27) Furthermore, when we come to Him, we must remain in Him. If
+      we leave our Refuge and do not remain, we've left our saftey, caught outside the city of Refuge, and still yet in
+      danger. And so by abiding in Christ, He will abide in us; if we confess Him, we know we abide in Him; as it says,
+      “Whoever confesses that Jesus is the Son of God, God abides in him, and he in God.” (1 John 4:15) And,
+      <blog-reference-tooltip [reference]="'Psalm 73:28'">
+        But as for me, the nearness of God is my good; I have made the Lord GOD my refuge, That I may tell of all Your
+        works.
+      </blog-reference-tooltip>
+      For, "No one can say, 'Jesus is Lord,' except by the Holy Spirit." (1 Corinthians 12:3) And He abides in us
+      through His Spirit. Therefore, "If you confess with your mouth Jesus as Lord, and believe in your heart that God
+      raised Him from the dead, you will be saved;” (Romans 10:9) So the way to salvation: come to Christ for
+      forgivenss, that is faith, and abide in Him for confession, which is salvation. Come and remain!
+    </ng-template>`,
+  styles: ``,
+  changeDetection: ChangeDetectionStrategy.OnPush,
+})
+export class CallUponHimComponent {}
