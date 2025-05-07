@@ -6,6 +6,7 @@ import { MatExpansionModule } from "@angular/material/expansion";
 import { RouterModule, Routes } from "@angular/router";
 import { SharedLibraryModule } from "shared";
 import { SharedModule } from "../shared/shared.module";
+import { GospelHeaderComponent } from "./gospel-header/gospel-header.component";
 import { GospelItemComponent } from "./gospel-item/gospel-item.component";
 import { GospelSectionComponent } from "./gospel-section/gospel-section.component";
 import { GospelComponent } from "./gospel.component";
@@ -24,7 +25,7 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  declarations: [GospelComponent, GospelItemComponent, GospelSectionComponent],
+  declarations: [GospelComponent, GospelItemComponent, GospelSectionComponent, GospelHeaderComponent],
   imports: [
     CommonModule,
     SharedModule,

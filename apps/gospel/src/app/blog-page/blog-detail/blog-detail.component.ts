@@ -9,7 +9,7 @@ import { getById } from "../../state/blog/blog.selectors";
 @Component({
   selector: "blog-blog-detail",
   templateUrl: "./blog-detail.component.html",
-  styleUrls: ["./blog-detail.component.css"],
+  styleUrls: ["./blog-detail.component.scss"],
   standalone: false,
 })
 export class BlogDetailComponent implements OnInit {

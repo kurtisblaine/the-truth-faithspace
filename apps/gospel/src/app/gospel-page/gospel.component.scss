@@ -22,13 +22,27 @@ button[mat-button] {
   top: 111px;
 }
 
-.home-page_container {
-  display: grid;
-}
-
-.header_container {
+.floating-header {
   display: flex;
   justify-content: center;
+  align-items: center;
+}
+
+.header-pane {
+  position: absolute;
+  top: 35%;
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  font-size: 22px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  line-height: normal;
+}
+
+.section-dark {
+  background-color: #282e34;
+  color: #f4f4f4;
 }
 
 $color-green: #00ffaa;
@@ -38,24 +52,6 @@ $color-text: #555;
 img {
   display: block;
   width: 100%;
-}
-
-.container {
-  margin: 0 auto;
-  max-width: 600px;
-  padding: 10px;
-  position: relative;
-}
-
-.scene {
-  margin: 0;
-  padding: 0;
-}
-
-@for $i from 2 through 6 {
-  .scene > *:nth-child(#{$i}) {
-    opacity: #{0.15 * $i};
-  }
 }
 
 .pimg2 {
@@ -159,62 +155,6 @@ img {
   min-height: 400px;
 }
 
-.ptext {
-  position: absolute;
-  top: 35%;
-  width: 100%;
-  text-align: center;
-  color: #fff;
-  font-size: 22px;
-  letter-spacing: 4px;
-  text-transform: uppercase;
-  line-height: normal;
-}
-
-.section-dark {
-  background-color: #282e34;
-  color: #f4f4f4;
-}
-
-.lighttext {
-  position: absolute;
-  top: 50%;
-  width: 100%;
-  text-align: center;
-  color: #000;
-  font-size: 27px;
-  letter-spacing: 8px;
-  text-transform: uppercase;
-}
-
-.border {
-  border: unset !important;
-  border-radius: 12px;
-  display: inline-flex;
-  line-height: normal;
-  letter-spacing: 1px;
-}
-
-.ptext .border {
-  background-color: #111;
-  color: #fff;
-  padding: 20px;
-}
-
-.ptext .border.trans {
-  background-color: transparent;
-}
-
-.lighttext .border {
-  background-color: #fff;
-  color: #111;
-  padding: 20px;
-}
-
-.lighttext .border.trans {
-  background-color: transparent;
-}
-
 @media (max-width: 568px) {
   .pimg1,
   .pimg2,
@@ -259,20 +199,10 @@ img {
 .pimg22,
 .pimg23,
 .pimg24,
-.pimg25,
-.filler,
-.filler-light {
+.pimg25 {
   position: relative;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
-}
-
-.filler {
-  background-color: #282e34;
-}
-
-.filler-light {
-  background-color: #f4f4f4;
 }

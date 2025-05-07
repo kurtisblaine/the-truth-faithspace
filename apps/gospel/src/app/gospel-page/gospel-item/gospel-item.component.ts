@@ -4,7 +4,7 @@ import { TemplateService } from "../template.service";
 @Component({
   selector: "blog-gospel-item",
   templateUrl: "./gospel-item.component.html",
-  styleUrl: "./gospel-item.component.css",
+  styleUrl: "./gospel-item.component.scss",
   standalone: false,
 })
 export class GospelItemComponent implements OnInit, AfterViewInit {
