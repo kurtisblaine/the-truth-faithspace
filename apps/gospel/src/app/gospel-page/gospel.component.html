@@ -14,25 +14,6 @@
       <mat-expansion-panel class="custom-panel" hideToggle>
         <mat-expansion-panel-header>
           <mat-panel-title>
-            <button style="font-size: 18px" mat-button>THE DANGER - FUTILITY</button>
-          </mat-panel-title>
-        </mat-expansion-panel-header>
-        <ng-template matExpansionPanelContent>
-          <button style="font-size: 18px" mat-button (click)="toAnchor('futilityOfPleasure')">
-            The Futility of Pleasure
-          </button>
-          <button style="font-size: 18px" mat-button (click)="toAnchor('futilityInToil')">The Futility in Toil</button>
-          <button style="font-size: 18px" mat-button (click)="toAnchor('futilityOfWealth')">
-            The Futility of Wealth
-          </button>
-          <button style="font-size: 18px" mat-button (click)="toAnchor('futilityInDeath')">
-            The Futility in Death
-          </button>
-        </ng-template>
-      </mat-expansion-panel>
-      <mat-expansion-panel class="custom-panel" hideToggle>
-        <mat-expansion-panel-header>
-          <mat-panel-title>
             <button style="font-size: 18px" mat-button>THE DANGER - SIN</button>
           </mat-panel-title>
         </mat-expansion-panel-header>
@@ -43,6 +24,26 @@
             God is a Consuming Fire
           </button>
           <button style="font-size: 18px" mat-button (click)="toAnchor('dayOfJudgement')">The Day of Judgement</button>
+        </ng-template>
+      </mat-expansion-panel>
+
+      <mat-expansion-panel class="custom-panel" hideToggle>
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            <button style="font-size: 18px" mat-button>THE DANGER - DEATH</button>
+          </mat-panel-title>
+        </mat-expansion-panel-header>
+        <ng-template matExpansionPanelContent>
+          <button style="font-size: 18px" mat-button (click)="toAnchor('futilityOfPleasure')">
+            The Futility of Pleasure
+          </button>
+          <button style="font-size: 18px" mat-button (click)="toAnchor('futilityInToil')">The Futility of Toil</button>
+          <button style="font-size: 18px" mat-button (click)="toAnchor('futilityOfWealth')">
+            The Futility of Wealth
+          </button>
+          <button style="font-size: 18px" mat-button (click)="toAnchor('futilityInDeath')">
+            The Futility of Death
+          </button>
         </ng-template>
       </mat-expansion-panel>
 
@@ -163,637 +164,6 @@
   <div>Below is the Gospel.</div>
 </section>
 <!-- #endregion INTRODUCTION -->
-
-<!-- #region THE DANGER - FUTILITY -->
-<div class="pimg12 floating-header" style="background-position: top" id="futilityOfPleasure" #dangerFutility>
-  <blog-gospel-header [isLightMode]="false" [@simpleFadeAnimation]>
-    <h3>The Danger - Futility</h3>
-  </blog-gospel-header>
-</div>
-
-<div class="pimg12" style="background-position: top">
-  <blog-gospel-section [isLightMode]="false" [isFloater]="true">
-    <h3 class="headers" (click)="navigateToGospelItem('The Futility of Pleasure', futilityOfPleasure)">
-      The Futility of Pleasure
-    </h3>
-    <div class="paragraphs">
-      <ng-container *ngTemplateOutlet="futilityOfPleasure"></ng-container>
-      <ng-template #futilityOfPleasure>
-        Alcohol and food, which are wholesome in themselves, which are given to us by God for our enjoyment, but they
-        are often perverted into drunkenness and gluttony, and drugs, which are often used for an escape from reality,
-        which are a false refuge, which are often corrupted for one's own enjoyment rather than medicine, and the
-        excessive love of pleasure, which is dissipation, which is folly and waste, and any other corrupt desire which
-        come from our lust, which wages war against our soul, these will never sustain us - they only mask our deeply
-        rooted issues for a little while and make life bearable for a short time. They come quickly and vanish quickly,
-        for the same way they come, the same way they go. Is life so terrible that we need these? We all have our share
-        in these during some time in our life, and if it was not then, perhaps now. But where is the light of life? For
-        the way we feel, living in such things, surely it is not life. We are calloused, without feeling, so we have
-        given ourselves over to sensuality, to the practice of every kind of impurity with greediness, for that is what
-        we can feel; we are hardened by the unbelief of the world, and stimulated by the lust which is in the world.
-        Isn't life supposed to be good? Isn't death bad? Yet our lives are not joyous, but they are like death. We don't
-        know what life truly is - if we seen it, we would not know what it is. Living for pleasure is not life; our
-        trouble may be gone for a moment, but it is not gone forever; living for pleasure is like hitting the snooze
-        button on an alarm clock - we may feel better now, but we will have to deal with the same problem later, but it
-        has gotten worse. Even if we feel satisfied or fulfilled with these things, it is never enough; we are feeding a
-        beast within us, the more we feed it, the bigger it gets; and the bigger it gets, the more we must feed it; it
-        is never satisfied; we make it stronger, and we are subdued by it. A dog growls when its not fed, how much more
-        sin living within us which is a hound from hell? And sin is deathly, living in the sons of men; we are living,
-        but sin is working death within us. We want to flee, but it's inside of us; we cover our eyes, but it lives in
-        the darkness.<br /><br />
-
-        <!-- <a href="https://thelightof.life/#/insight-detail/cd57c552-146a-8c5a-7bd2-d1314e9a4793" target="_blank"
-          >See more about the nature of sin here.</a
-        ><br /><br /> -->
-
-        It is written, "He enlarges his appetite like Sheol, And he is like death, never satisfied.” (Habakkuk 2:5) And
-        like death we are constantly seeking food - and we are not content; like Sheol we are always seeking drink, and
-        we are not quenched; we eat and we are hungry again later; we drink and we are thirsty again; as it says,
-        <blog-reference-tooltip [reference]="'Ecclesiastes 6:7'">
-          All a man's labor is for his mouth and yet the appetite is not satisfied.
-        </blog-reference-tooltip>
-        And these, being for our enjoyment and nourishment, are corrupted into something it was never intended for. Food
-        for the body, but God forbid for gluttony; drink to make the heart merry, but God forbid for drunkenness; sex
-        for reproduction, but God forbid for immorality. God made everything good and upright, but we have twisted that
-        which is straight. It is lust which corrupts God given necessities into dissipation and waste: for over-eating
-        is not of hunger, and drunkenness is not of thirst, and immorality is not of reproduction; all of these are for
-        pleasure; and from wisdom it does not come; as it says,
-        <blog-reference-tooltip [reference]="'Ecclesiastes 7:4'">
-          The mind of the wise is in the house of mourning, while the mind of fools is in the house of pleasure.
-        </blog-reference-tooltip>
-        So pleasure is not of wisdom; and seeking for pleasure is fleeting, for it lasts only for a short while; however
-        prudence makes the most of her time, and looks to the future. No matter how much the eye sees, it is not enough;
-        no matter how much the ear hears, it is not content. If these things truly make us happy, why wouldn't we
-        express it outwardly? If we are truly happy, shouldn't our happiness resemble a child's happiness? Children are
-        overcome with laughter and express joyfulness and run around expressing their happiness, jumping with joy. If
-        these things truly make us happy, why don't we show it? Most often we are chained by such things: we are
-        miserable inwardly, but outwardly we become less miserable, for these only mask our pain for a short while. In
-        the beginning, we used to be happy, when sin wasn't alive, in the innocence of our childhood, but later, sin
-        came alive and we died; sin put us to death, and it lives in our stead; we are dead in our sins, the whole lot
-        of us. All of us have become enslaved to our own desires which corrupt, for lust corrupts and twists and
-        perverts what is good. Who is exempt from this? None of us. We are all under the power of sin. Which of us does
-        not stoop to deficate? Who is it born without a mother? We are led by the hand of this world into a cycle of
-        dependence upon material things; we think we need these things to keep us in check; we say, "I don't feel normal
-        without them." I testify about myself that I've been chained by many sins and pleasures and vices for many years
-        of my life, and looking back, surely it was not life. Whatever a person is overcome by that he is also enslaved.
-        And how weak are we when something inaminate chains us! "I serve this and that, and I can't stop!" Whatever we
-        offer ourselves to as obedient servants, by that, we are enslaved. And I was enslaved to everything a man could
-        be enslaved by: food, alcohol, drugs, money, sex, and many others. These things are not alive, but somehow I was
-        enslaved to them as if they were; they are not gods at all, so why should I serve them? I must do for them, but
-        what are they doing for me? I wouldn't call myself a man, for I can't get out. I want out, but I can't escape; I
-        am surely in a prison cell. I want to stop sinning, but I can't; I want to be released, but I can't redeem
-        myself. I am without power. Hope, I have none. "Where is real pleasure and satisfaction?" And worse yet, I don't
-        know how to utter it; for perhaps if I could tell someone, they could help. But instead, guilt and shame keep me
-        from sharing, as if I am the only one dealing with such things without anyone to relate. Solomon, who had great
-        wisdom from God, writes,
-        <blog-reference-tooltip [reference]="'Ecclesiastes 1:8'">
-          All things are full of weariness; <b>a man cannot utter it</b>; the eye is not satisfied with seeing, nor the
-          ear filled with hearing.
-        </blog-reference-tooltip>
-        And so it is with me, full of weariness and I couldn't utter it. If only I could say,
-        <blog-reference-tooltip [reference]="'Job 33:27'">
-          I have sinned and perverted what is right, And it is not proper for me.
-        </blog-reference-tooltip>
-        So then I could say, "He has redeemed my soul from going to the pit, And my life shall see the light." (Job
-        33:28) However I am mute, unable to speak.
-        <br /><br />
-
-        Solomon in his wisdom searched out pleasure, and said,
-        <blog-reference-tooltip [reference]="'Ecclesiastes 2:1-11'">
-          I said in my heart, “Come now, I will test you with pleasure; enjoy yourself.” But behold, this also was
-          vanity. I said of laughter, “It is mad,” and of pleasure, “What use is it?” I searched with my heart how to
-          cheer my body with wine—my heart still guiding me with wisdom—and how to lay hold on folly, till I might see
-          what was good for the children of man to do under heaven during the few days of their life. (...) And whatever
-          my eyes desired I did not keep from them. I kept my heart from no pleasure, for my heart found pleasure in all
-          my toil, and this was my reward for all my toil. Then I considered all that my hands had done and the toil I
-          had expended in doing it, and behold, all was vanity and a striving after wind, and there was nothing to be
-          gained under the sun.
-        </blog-reference-tooltip>
-        As Solomon said, "My heart still guiding me with wisdom", for wisdom is insight, speaking the things which are
-        from within with the correct words; and Solomon's words are surely insightful, but wisdom originates from God.
-        Every sinful habit originates with lust, and lust entices the eyes. As he says, "And whatever my eyes desired I
-        did not keep from them." All sin begins here, and the end: as it says, "And behold, all was vanity and a
-        striving after wind." So by the things of this world, no man will be satisfied. Even by images, which are
-        copies, men have tried to find satisfaction. But if we aren't satisfied with the real thing, then why would we
-        be with an image? But rather, images stimulate more lust, for an image makes itself greater than reality which
-        it is portraying. And how computers stimulate desire through pictures! It is satisfying while on it, but
-        afterwards it's like waking from a sleep. We live in an age where media screens are everywhere: it started with
-        televisions in the living room, then escalated to monitors in the pocket. Surely these feed our eyes. This is
-        what I meant when I said, "We are led by the hand of this world", for who creates advertisements? Who makes
-        ready the fulfillment of our lusts? But still, the desire belongs to us and we will be the ones who suffer for
-        indulging it. We should not long for the things of the world, but the One who gives all good things is God. Do
-        you want further proof that we are dissatisfied and do not know it? A computer can create entire simulations for
-        living a new life inside. If life were so good, then why does this exist? Can a copy ever be as good as the
-        real? Which do you like better: name brand goods or knock offs? Yes, knock offs are cheaper and require less of
-        us, but they are not better, even in the slightest. In the same way, these simulations are cheaper: you can sit
-        on the couch and be at a sports game! But it is certainly not better. So lust shows itself as something great,
-        but it is lesser; it corrupts the natural into something seemingly greater and fulfills the desire with the
-        real, not with what it is portraying. Desire is like an advertisement image: and does the image ever portray
-        true reality? The artist makes it better than reality by skill, but it is not the true norm. And these images
-        are fantasy, imagination, from one's mind - and so is lust. Lustful desire is not reality; when something is
-        desired, it is made great in one's mind, but it remains the same in reality. On the television screen men can
-        put their imaginations on it so that you can say, "It must be, for I have seen it!" But it is not, it is
-        trickery. It is merely an image someone made in their mind, in their imagination, making it visible for you to
-        see; for it is what they want you to see and what they don't want you to see; and these images, which are from
-        imaginations, entice lustful desire in those who see them. For why would someone make an image unless it is to
-        be gazed at? So much so, covetousness is called idolitry; covetousness is lust. Furthermore, it says, “The
-        devising of folly is sin.” (Proverbs 24:9) This is why covetousness is condemned by the law.
-        <br /><br />
-
-        The natural use is better than the unnatural, the real is better than the copy, good is better than evil, even
-        in the meanwhile you think, "Ah! But it feels so good"; in the end you will not be thinking that! Everything we
-        sow, we will also reap. A person does not sow an apple and get an orange tree, neither does a person breed pigs
-        and get cows, so why do you think, "I will sow corruption and get life"? Lust sowed reaps corruption; and
-        righteousness sowed reaps blessing. Everything corrupts through lust; and lust conceived gives birth to sin. All
-        sin is dysfunctional; and a dysfunction is useless. And that which is useless is put into a pit and awaits
-        burning. A new sofa will become fettered, a new car will become a tin of rust, even our bodies are becoming old
-        and gray and worn out: it will be soon in the grave. Evil will inherit evil and goodness will inherit goodness.
-        This is true, even if in the meantime we see the wicked prospering and the righteous suffering; as it says,
-        <blog-reference-tooltip [reference]="'Ecclesiastes 7:15'">
-          I have seen everything during my lifetime of futility; there is a righteous man who perishes in his
-          righteousness and there is a wicked man who prolongs his life in his wickedness.
-        </blog-reference-tooltip>
-        And it says,
-        <blog-reference-tooltip [reference]="'Ecclesiastes 8:14'">
-          There is futility which is done on the earth, that is, there are righteous men to whom it happens according to
-          the deeds of the wicked. On the other hand, there are evil men to whom it happens according to the deeds of
-          the righteous. I say that this too is futility.
-        </blog-reference-tooltip>
-        But it also says,
-        <blog-reference-tooltip [reference]="'Ecclesiastes 3:17'">
-          I said to myself, "God will judge both the righteous man and the wicked man," for a time for every matter and
-          for every deed is there.
-        </blog-reference-tooltip>
-        Everyone will get what their deeds deserve in the end because God will cause His righteous judgment to be
-        upheld. So take heed! It says,
-        <blog-reference-tooltip [reference]="'1 Timothy 5:6'">
-          She who lives in pleasure is dead while she lives.
-        </blog-reference-tooltip>
-        If we live for pleasure, our life is a waste, which is dissipation. Instead, fear God. Enjoy what God has given
-        you without grumbling or complaining; as it says,
-        <blog-reference-tooltip [reference]="'Ecclesiastes 8:15'">
-          So I commended pleasure, for there is nothing good for a man under the sun except to eat and to drink and to
-          be merry, and this will stand by him in his toils throughout the days of his life which God has given him
-          under the sun.
-        </blog-reference-tooltip>
-        And it says,
-        <blog-reference-tooltip [reference]="'Ecclesiastes 3:12-13'">
-          I know that there is nothing better for them than to rejoice and to do good in one's lifetime; moreover, that
-          every man who eats and drinks sees good in all his labor - it is the gift of God.
-        </blog-reference-tooltip>
-        Therefore, seek what pleases God, for then you will be blessed; and where the blessing is, there is also
-        happiness and futility is no more, for labor in the Lord is not in vain!
-        <!-- <br /><br />
-
-        (If these things are review to you because you're already a believer, feel free to go to
-        <a style="cursor: pointer" (click)="toAnchor('call-grace')">THE CALL - GRACE</a>
-        portion of the Gospel. There are many edifying things there that will help encourage you in the faith.) -->
-      </ng-template>
-    </div>
-  </blog-gospel-section>
-</div>
-
-<div class="pimg12" style="background-position: top" id="futilityInToil"></div>
-
-<blog-gospel-section [isLightMode]="false">
-  <h3 class="headers" (click)="navigateToGospelItem('The Futility in Toil', futilityInToil)">The Futility in Toil</h3>
-  <div class="paragraphs">
-    <ng-container *ngTemplateOutlet="futilityInToil"></ng-container>
-    <ng-template #futilityInToil>
-      Our lives are filled with work and toil: we work then rest, to do it all over again the next day. The days do not
-      cease, they do not lag behind for anybody; they are short, yet we spend them in much pain and agony because of our
-      labors. The days are short because of our human weakness; each one is fit for the strength of a man. And what
-      drives our inner strength? For what reason do we toil so much? As it says,
-      <blog-reference-tooltip [reference]="'Ecclesiastes 4:4'">
-        I have seen that every labor and every skill which is done is the result of rivalry between a man and his
-        neighbor. This too is vanity and striving after wind.
-      </blog-reference-tooltip>
-      As it said, "every labor is the result of rivalry", which does not matter in the future; we work for the sake of
-      man who perishes, as we too are perishing; we work for objectives that are not ours, for fruit that we will not
-      eat; for we leave the fruit of our labors to another who comes after us. As it is written, “We have brought
-      nothing into the world, so we cannot take anything out of it either.” (1 Timothy 6:7) The things we do now will
-      not matter years from now, it will become old and outdated. In the future, people will look back and say, "Who
-      were they?" As it is today, for we presently do not care who were in the past; and it will be the same in the
-      future: they will not care for us; even if we think, "I do care", what does our boasting accomplish? No-one can
-      bring back a day which has been spent. We are constantly striving in labor, yet we don't receive our due wages; he
-      who does little work, harvests much, and we are dumb-founded; we do much work for little harvest; we work hard for
-      the holes in our pockets; we plant, and the locusts eat; we plant much, but gather very little. As it says, "You
-      have sown much, but harvest little; you eat, but there is not enough to be satisfied; you drink, but there is not
-      enough to become drunk; you put on clothing, but no one is warm enough; and he who earns, earns wages to put into
-      a purse with holes." (Haggai 1:6) It is a grievous task which has been given to us! As it says,
-      <blog-reference-tooltip [reference]="'Ecclesiastes 1:13-14'">
-        And I set my mind to seek and explore by wisdom concerning all that has been done under heaven. It is a grievous
-        task which God has given to the sons of men to be afflicted with. I have seen all the works which have been done
-        under the sun, and behold, all is vanity and striving after wind.
-      </blog-reference-tooltip>
-      And furthermore it says,
-      <blog-reference-tooltip [reference]="'Ecclesiastes 4:8'">
-        There was a certain man without a dependent, having neither a son nor a brother, yet there was no end to all his
-        labor. (...) This too is vanity and it is a grievous task.
-      </blog-reference-tooltip>
-      <br /><br />
-
-      Surely we are born into travail, born for trouble; as it says, "For man is born for trouble, As sparks fly
-      upward." (Job 5:7) All our days are struck with evil. We don't know where we are going, and we don't remember
-      where we came from; we aren't fully aware of even today; we're in a box without the ability to look out. And even
-      if we had 1000 lives of 1000 years a piece, we wouldn't be able to discover all that is set before us; how much
-      less the things we don't see? As it says, “For all our days have declined in Your fury; We have finished our years
-      like a sigh. As for the days of our life, they contain seventy years, Or if due to strength, eighty years, Yet
-      their pride is but labor and sorrow; For soon it is gone and we fly away.” (Psalms 90:9-10) We chase after things
-      we think will satisfy us, but we catch them and see they are empty; we are chasing after the wind; as it says,
-      “For they sow the wind And they reap the whirlwind. The standing grain has no heads; It yields no grain. Should it
-      yield, strangers would swallow it up.” (Hosea 8:7) We are born into a miserable existance! Are we even better than
-      the animals? For they come in futility and leave in futility just as it is with us; as it says,
-      <blog-reference-tooltip [reference]="'Ecclesiastes 3:19'">
-        For what happens to the sons of men also happens to animals; one thing befalls them: as one dies, so dies the
-        other. Surely, they all have one breath; <b>man has no advantage over animals,</b> for all is vanity.
-      </blog-reference-tooltip>
-      All living creatures die; what lives forever? Everything we strive and labor for, we do not keep; we strive for
-      beauty, but it is fading away. Our possessions become the possessions of another. Even our own lives are borrowed,
-      for we will return to the dust. Listen to what the King of Israel wrote toward the end of his life,
-      <blog-reference-tooltip [reference]="'Ecclesiastes 2:18-23'">
-        I hated all my toil in which I toil under the sun, seeing that I must leave it to the man who will come after
-        me, and who knows whether he will be wise or a fool? Yet he will be master of all for which I toiled and used my
-        wisdom under the sun. This also is vanity. So I turned about and gave my heart up to despair over all the toil
-        of my labors under the sun, because sometimes a person who has toiled with wisdom and knowledge and skill must
-        leave everything to be enjoyed by someone who did not toil for it. This also is vanity and a great evil. What
-        has a man from all the toil and striving of heart with which he toils beneath the sun? For all his days are full
-        of sorrow, and his work is a vexation. Even in the night his heart does not rest. This also is vanity.
-      </blog-reference-tooltip>
-      But what is futility? Futility is worthlessness, emptiness, aimlessness, not having a point or direction,
-      wandering about in blackest darkness. It does not see; it is always doing much, but it is accomplishing very
-      little; it is speaking much, but getting nothing done; it is dreaming, but living as a passing shadow. What then,
-      do we despair? But isn't that vain as well, a work of the wind? Why despair when there is hope.
-      <br /><br />
-
-      Life is short, yet it feels long. In life, we despair, without it, there is no hope either. We spend our lives
-      wasting on things that will pass away. We are passing away. In the place of the dead, in which we are going, there
-      is nothing: no toil, no labor, no speech, no sight, nothing. We have inherited this life, not because we asked for
-      it, for we did not even ask to be born, but because of the sin of Adam in the Garden, we have been given this kind
-      of life. All people on earth come from him and we inherit sin and death from him; he transgressed the commandment,
-      and judgment was pronounced on the earth because of him; as the curse pronounced says,
-      <blog-reference-tooltip [reference]="'Genesis 3:18-20'">
-        Cursed is the ground because of you; In toil you will eat of it all the days of your life. Both thorns and
-        thistles it shall grow for you; And you will eat the plants of the field; By the sweat of your face You will eat
-        bread, Till you return to the ground, Because from it you were taken; For you are dust, And to dust you shall
-        return.
-      </blog-reference-tooltip>
-      So our toil is a curse from God; as the LORD God Himself says,
-      <blog-reference-tooltip [reference]="'Deuteronomy 33:39-42'">
-        See now that I, I am He, And there is no god besides Me; It is I who put to death and give life. I have wounded
-        and it is I who heal, And there is no one who can deliver from My hand.
-      </blog-reference-tooltip>
-      Furthermore He says,
-      <blog-reference-tooltip [reference]="'Isaiah 45:5-7'">
-        I am the LORD, and there is no other; Besides Me there is no God. (...) The One forming light and creating
-        darkness, Causing well-being and creating calamity; I am the LORD who does all these.
-      </blog-reference-tooltip>
-      And it says, “Is it not indeed from the LORD of hosts That peoples toil for fire, And nations grow weary for
-      nothing?” (Habakkuk 2:13) Who are we to quarrel with our Maker? If we dare speak to Him, will He be compelled to
-      answer? But if He calls to us, we must answer Him. As it says, “But the LORD is in His holy temple. Let all the
-      earth be silent before Him." (Habakkuk 2:20) Who can take God to court? Who can accuse Him? But rather, it says,
-      <blog-reference-tooltip [reference]="'Ecclesiastes 2:24-26'">
-        There is nothing better for a man than to eat and drink and tell himself that his labor is good. This also I
-        have seen that it is from the hand of God. For who can eat and who can have enjoyment without Him? For to a
-        person who is good in His sight He has given wisdom and knowledge and joy, while to the sinner He has given the
-        task of gathering and collecting so that he may give to one who is good in God's sight. This too is vanity and
-        striving after wind.
-      </blog-reference-tooltip>
-      Also it says,
-      <blog-reference-tooltip [reference]="'Ecclesiastes 4:6'">
-        One hand full of rest is better than two fists full of labor and striving after wind.
-      </blog-reference-tooltip>
-      Therefore, it is better to accept your lot in life and be happy with it. Search and seek for Him; acknowledge your
-      futility and search and seek for fullness in God, not in the things of the world. For if the things of the world
-      were pleasing to us, then we wouldn't be seeking for anything more. Will that which has no breath at all inside it
-      satisfy us? But much greater is God who gives all good things by which all things came into being! And the Lord
-      has promised,
-      <blog-reference-tooltip [reference]="'Jeremiah 29:13'">
-        You will seek Me and find Me when you search for Me with all your heart.
-      </blog-reference-tooltip>
-      As it says, "seek Me with all your heart", for He knows your heart and how much heart you have, for He has given
-      your heart; He seen beforetime when the widow gave all her income (Mark 12:42-43), and He seen when Ananias kept
-      back some of the money from the field which he sold (Acts 5:1-4). So if we have little heart, with all our little
-      heart, therein seek, or if we have great heart, with all our great heart therein seek. He knows when we hold back,
-      for He knows the measure which He has measured out. Therefore, be unhappy with your futility and search for
-      answers. Do not follow the example of the disobedient who love their futility. See how the disobedient try to
-      fight against God, trying to reverse the curses which God has pronounced on the earth? Thinking their life is
-      forever, they fall into error; thinking their home is forever, they believe a lie. See how the world tries to
-      reverse things: for God gave woman pain in child-bearing, but they give numbing shots; for God made woman desire
-      for her husband, yet he rules over her, but they start feminist movements; for God cursed the ground so that in
-      toil it will produce its fruit, but they create technology that works at the push of a button; for God makes man
-      to return to the dust in old age, but they have beauty products and wrinkling agents and plastic surgery; but
-      whatever we try to do, we cannot reverse death: all of us will return to Him in the end, slave and free, rich and
-      poor. So you see, our lives are set this way by God to lead us to Himself, for by the things of the world He sees
-      to it that no man shall see the light of life.
-    </ng-template>
-  </div>
-</blog-gospel-section>
-
-<div class="pimg19" id="futilityOfWealth"></div>
-
-<div class="pimg19">
-  <blog-gospel-section [isLightMode]="false" [isFloater]="true">
-    <h3 class="headers" (click)="navigateToGospelItem('The Futility of Wealth', futilityOfWealth)">
-      The Futility of Wealth
-    </h3>
-    <div class="paragraphs">
-      <ng-container *ngTemplateOutlet="futilityOfWealth"></ng-container>
-      <ng-template #futilityOfWealth>
-        There was a man who went into a pub with everything he owned. He sat down at the table to gamble. At first, he
-        bet only a little of what he has. He rolls the dice and a miracle happens! All the dice line up. The man yells,
-        "Today is my lucky day. I will bet more next time!" So he rolls again, but this time with more on the table. A
-        miracle happens again! All the dice line up. The man continues this over and over and everytime he wins; then
-        eventually, everything he owns is on the table, even the shirt off his back. He thought to himself, "Surely I
-        have rolled these dice over and over and they haven't failed me yet." However, the dealer seen the man and
-        thought to himself, "You fool! One day these dice will not line up and everything you own will be mine, for I
-        have worked a long time in this pub and I see it everytime: the dice will one day not line up, and everything
-        you own will be mine." Sure enough, what the dealer said came true and the day came when the dice did not line
-        up and everything on the table was taken from him. And because the man didn't have enough money for even a beer,
-        he was cast out of the pub into darkness where he wept because everything he owned was gone. And so it is with
-        every man who trusts in this life and loves his possessions; as it is written,
-        <blog-reference-tooltip [reference]="'Psalms 49:10'"
-          >For he sees that even wise men die; The stupid and the senseless alike perish And leave their wealth to
-          others.</blog-reference-tooltip
-        >
-        And furthermore, it says,
-        <blog-reference-tooltip [reference]="'Psalms 49:17-20'">
-          When he dies he will carry nothing away; His glory will not descend after him. Though while he lives he
-          congratulates himself—And though men praise you when you do well for yourself— He shall go to the generation
-          of his fathers; They will never see the light. Man in his pomp, yet without understanding, Is like the beasts
-          that perish.
-        </blog-reference-tooltip>
-        <br /><br />
-
-        Solomon wrote,
-        <blog-reference-tooltip [reference]="'Ecclesiastes 5:10-17'">
-          He who loves money will not be satisfied with money, nor he who loves wealth with his income; this also is
-          vanity. When goods increase, they increase who eat them, and what advantage has their owner but to see them
-          with his eyes? Sweet is the sleep of a laborer, whether he eats little or much, but the full stomach of the
-          rich will not let him sleep. There is a grievous evil that I have seen under the sun: riches were kept by
-          their owner to his hurt, and those riches were lost in a bad venture. And he is father of a son, but he has
-          nothing in his hand. As he came from his mother's womb he shall go again, naked as he came, and shall take
-          nothing for his toil that he may carry away in his hand. This also is a grievous evil: just as he came, so
-          shall he go, and what gain is there to him who toils for the wind? Moreover, all his days he eats in darkness
-          in much vexation and sickness and anger.
-        </blog-reference-tooltip>
-        And furthermore, it says,
-        <blog-reference-tooltip [reference]="'Ecclesiastes 6:1-2'">
-          There is an evil which I have seen under the sun and it is prevalent among men— a man to whom God has given
-          riches and wealth and honor so that his soul lacks nothing of all that he desires; yet God has not empowered
-          him to eat from them, for a foreigner enjoys them. This is vanity and a severe affliction.
-        </blog-reference-tooltip>
-        So if we don't enjoy our wealth on earth, how can we in the grave? If we aren't happy with riches while they're
-        in our hands, will we be satisfied when they grow wings and fly away? Is the millionare ever satisified with
-        only one million? And is there any thing we can take with us when we die? Not even our body goes with us, for
-        the body goes back to the dust from which it came; as it is written,
-        <blog-reference-tooltip [reference]="'Genesis 2:7'">
-          Then the LORD God formed man of dust from the ground, and breathed into his nostrils the breath of life; and
-          man became a living being.
-        </blog-reference-tooltip>
-        And it is written,
-        <blog-reference-tooltip [reference]="'Ecclesiastes 12:7'">
-          Then the dust will return to the earth as it was, and the spirit will return to God who gave it.
-        </blog-reference-tooltip>
-        When we return, it will be as a single moment to Him, but a lifetime to us. Everything we think we have, we
-        don't have: we leave it to someone who comes after us, to him who did not work nor toil for it. And likewise,
-        that person will leave it behind as well. So what do any of us really own? As it says,
-        <blog-reference-tooltip [reference]="'Psalm 24:1'">
-          The earth is the LORD's and the fullness thereof, the world and those who dwell therein.
-        </blog-reference-tooltip>
-        Are these things not according to experience? Or are we making things up? We are merely stewards of what God has
-        given us. If we cannot be trusted with earthly things, who will trust us with heavenly things? If we hold
-        tightly to dust which is borrowed, who will give unto us refined gold? (Luke 16:10-12) Riches do not deliver on
-        the day of wrath; and all the silver and gold and costly stones cannot forgive even a single sin; as it says,
-        <blog-reference-tooltip [reference]="'Psalm 49:7-9'">
-          No man can by any means redeem his brother Or give to God a ransom for him — For the redemption of his soul is
-          costly, And he should cease trying forever — That he should live on eternally, That he should not undergo
-          decay.
-        </blog-reference-tooltip>
-        As he says, "He should cease trying forever", for that which is costly is freely given by God, and that, to
-        humiliate the rich. God is gracious, even giving freely what is most costly; He who owns everything and gives to
-        everyone, breath and life and all things, and He continues in His giving, even with the most precious. So God
-        gives freely to the praise of His glory, and the rich hold fast to riches to the pain of his own folly, for
-        amassing riches brings pain onto oneself, and trusting in them is a futile attempt for safety. Can a dead image
-        of the king on a coin or an inscription on a bill deliver? If you put a torch to it, it cannot even save itself!
-        Why trust in riches, except to inflict hurt onto oneself? <br /><br />
-
-        Many pierce themselves with many sins and sorrows chasing after deceitful riches in the love of money; saying,
-        <blog-reference-tooltip [reference]="'Jeremiah 17:11'">
-          Like the partridge that gathers a brood that she did not hatch, so is he who gets riches but not by justice;
-          in the midst of his days they will leave him, and at his end he will be a fool.
-        </blog-reference-tooltip>
-        And,
-        <blog-reference-tooltip [reference]="'Ecclesiastes 1:12'">
-          There is a grievous evil that I have seen under the sun: riches were kept by their owner to his hurt, and
-          those riches were lost in a bad venture.
-        </blog-reference-tooltip>
-        So, “When good things increase, those who consume them increase. So what is the advantage to their owners except
-        to look on?” (Ecclesiastes 5:11) The love of money is a snare among us, a trap which springs and captures and
-        does not release except by the truth; as it says,
-        <blog-reference-tooltip [reference]="'1 Timothy 6:9-10'">
-          For the love of money is a root of all sorts of evil, and some by longing for it have wandered away from the
-          faith and pierced themselves with many griefs.
-        </blog-reference-tooltip>
-        “Who suppose that godliness is a means of gain.” (1 Timothy 6:5) So it is obvious: fattening oneself with the
-        things of the world hurts, and hurts oneself and others. But here is the nature of God: He does not store up for
-        Himself, but in His riches He freely gives to those who ask, and He is generous even to the disobedient and
-        unthankful (Luke 6:35); He dwells in heaven and all that is on earth is given to the sons of men, even so, He
-        does not withhold what is more precious, what is eternal, which is stored up in heaven; this is even evident in
-        that He causes the rain to pour down from heaven onto all flesh, the unjust and the just alike. So who do we
-        really hurt by being rich towards ourselves only? If we give, it is to the benefit of others; if we withhold, it
-        is to the hurt of others; and even more so, we hurry along the judgment of God through greed; as it says,
-        <blog-reference-tooltip [reference]="'James 5:3-5'">
-          Your gold and silver have corroded, and their corrosion will be evidence against you and will eat your flesh
-          like fire. You have laid up treasure in the last days. Behold, the wages of the laborers who mowed your
-          fields, which you kept back by fraud, are crying out against you, and the cries of the harvesters have reached
-          the ears of the Lord of hosts. You have lived on the earth in luxury and in self-indulgence. You have fattened
-          your hearts in a day of slaughter.
-        </blog-reference-tooltip>
-        Such a one is an idolater, worshipping the things of the world. (Ephesians 5:5, Colossians 3:5) <br /><br />
-
-        Rather, be rich toward God; do not be the man that says to himself, “Soul, you have ample goods laid up for many
-        years; relax, eat, drink, be merry.”
-        <blog-reference-tooltip [reference]="'Luke 12:15-21'" [isJesusWord]="true">
-          But God said to him, "Fool! This night your soul is required of you, and the things you have prepared, whose
-          will they be?"
-          <b>So is the one who lays up treasure for himself and is not rich toward God.</b></blog-reference-tooltip
-        >
-        For when an animal offering was made, the fat of the offering was burnt up to God, so the fat is the LORD's. And
-        what we have in excess is fat. Judge for yourselves: is it good to see the poor suffering while indulging
-        yourself? See the parable and fear:
-        <blog-reference-tooltip [reference]="'Luke 16:20-31'" [isJesusWord]="true">
-          And a poor man named Lazarus was laid at his gate, covered with sores, and longing to be fed with the crumbs
-          which were falling from the rich man's table; besides, even the dogs were coming and licking his sores. Now
-          the poor man died and was carried away by the angels to Abraham's bosom; and the rich man also died and was
-          buried. In Hades he lifted up his eyes, being in torment, and saw Abraham far away and Lazarus in his bosom.
-          And he cried out and said, 'Father Abraham, have mercy on me, and send Lazarus so that he may dip the tip of
-          his finger in water and cool off my tongue, for I am in agony in this flame.' But Abraham said, 'Child,
-          remember that during your life you received your good things, and likewise Lazarus bad things; but now he is
-          being comforted here, and you are in agony. And besides all this, between us and you there is a great chasm
-          fixed, so that those who wish to come over from here to you will not be able, and that none may cross over
-          from there to us.' And he said, 'Then I beg you, father, that you send him to my father's house— for I have
-          five brothers—in order that he may warn them, so that they will not also come to this place of torment.' But
-          Abraham said, 'They have Moses and the Prophets; let them hear them.' But he said, 'No, father Abraham, but if
-          someone goes to them from the dead, they will repent!' But he said to him, 'If they do not listen to Moses and
-          the Prophets, they will not be persuaded even if someone rises from the dead.'
-        </blog-reference-tooltip>
-        What do you think God is asking from you? That you be hard pressed and another be eased? Of course not! But
-        rather in view of the graciousness of God: if you have more than enough, give to the one who lacks, and so by
-        doing you will store up for yourselves
-        <blog-reference-tooltip [reference]="'Matthew 6:20-21'" [isJesusWord]="true">
-          treasures in heaven, where neither moth nor rust destroys, and where thieves do not break in or steal; for
-          where your treasure is, there your heart will be also.
-        </blog-reference-tooltip>
-        And seek the gift of God, which is the reward of righteousness; as it says,
-        <blog-reference-tooltip [reference]="'Ecclesiastes 5:19-20'">
-          Furthermore, as for every man to whom God has given riches and wealth, He has also empowered him to eat from
-          them and to receive his reward and rejoice in his labor; this is the gift of God. For he will not often
-          consider the years of his life, because God keeps him occupied with the gladness of his heart.
-        </blog-reference-tooltip>
-      </ng-template>
-    </div>
-  </blog-gospel-section>
-</div>
-
-<div class="pimg19" id="futilityInDeath"></div>
-
-<blog-gospel-section [isLightMode]="false">
-  <h3 class="headers" (click)="navigateToGospelItem('The Futility in Death', futilityInDeath)">
-    The Futility in Death
-  </h3>
-  <div class="paragraphs">
-    <ng-container *ngTemplateOutlet="futilityInDeath"></ng-container>
-    <ng-template #futilityInDeath>
-      There was a man who lived in a tent. All his days were spent in constant agony because his tent is not
-      comfortable; furthermore, the flies bite, the sun beams, and the moon strikes. Nevertheless, he hoped forward to
-      his permanent home which was far away in a distant land being prepared for him. Night and day he longed for it and
-      thought about it, even dreaming of it in his sleep. After many years, his home was ready; at the perfect time too
-      because his tent tore, so he went away to his home in which he hoped for. The tent was destroyed, the man went to
-      his home, and he rejoiced and spent the rest of his days there forever-more.
-      <blog-reference-tooltip [reference]="'Ecclesiastes 12:5'">
-        For man goes to his eternal home while mourners go about in the street.
-      </blog-reference-tooltip>
-      We have this present life, but it is not ours to keep; if our life was for eternity, then we wouldn't have to die
-      and leave, but because we will die one day, we know this isn't our home; it is our temporary residence. Our lives
-      are entrusted to us for only a little while. So since we know we will die, we look forward to our next life, our
-      permanent home. If we reject our permanent home, we will try to make our temporary home permanent; saying,
-      <blog-reference-tooltip [reference]="'Psalm 49:11'">
-        Their inner thought is that their houses will last forever, Their dwelling places to all generations; They call
-        their lands after their own names.
-      </blog-reference-tooltip>
-      But everyone will go to an eternal dwelling, whether good or bad, as decreed by God according to His will. In the
-      state we finish, it will determine where we spend eternity. The time in the tent is a time of testing, and we
-      always have two choices: good or evil. If there were only one choice, we wouldn't have free will, since we would
-      be forced into choosing the only choice, but there are two choices. We will reap what we sow, we gain what we have
-      put in, we will be recompensed according to what we have done in our bodies. There is life after life, which is
-      eternal, and there is death after death, which is the second death; the second death is hell, the lake of fire, a
-      fire not quenched for the wood isn't consumed. Anyone whose name is not written in the Book of Life will die the
-      second death in eternal shame and torment. Paradise is the Kingdom of God, the new Jerusalem, Mount Zion, the new
-      heaven and the new earth, where righteousness dwells. The present heaven and earth are subjected to evil and
-      violence, but it is passing away with everything in it, as we ourselves are passing away. The new heaven and the
-      new earth will never pass away; it is an eternal home which cannot be shaken. The LORD will judge the living and
-      the dead according to their deeds, and recompense all according to what they have done in the body; as it says,
-      "For the day of the LORD draws near on all the nations. As you have done, it will be done to you. Your dealings
-      will return on your own head.” (Obadiah 1:15) From the judgement, each will go to their permanent home as decreed
-      by the righteous judgement of God; and God's judgment will be based on righteousness and justice; so who can argue
-      with the verdict? He will reward all who do good for the good done in the body and repay harm for the harm done.
-      Certainly, God has sown everlasting life in the human heart so that we would covet life; as it says,
-      <blog-reference-tooltip [reference]="'Ecclesiastes 3:11'">
-        He has made everything appropriate in its time. <b>He has also set eternity in their heart</b>, yet so that man
-        will not find out the work which God has done from the beginning even to the end.</blog-reference-tooltip
-      >
-      We don't want to die; we desire life, but we are without knowledge of the way of life; we know we should do good,
-      but we have not the goodness within ourselves.
-      <br /><br />
-
-      If a sinful man dies in his sins, he will be raised a sinful man; if a righteous man dies in his righteousness, he
-      will be raised a righteous man. The LORD shows us through sleep what death is like: we sleep and hours pass
-      without us knowing about it. In sleep, we've accomplished nothing, we've done nothing, except rest; those whom the
-      Lord is pleased, He teaches them in their sleep, while they dream in the night, He ministers in parables, but in
-      the place of the dead, there is nothing, no dreams, no plans - nothing. While we live, there is hope for
-      repentance, but in the place of the dead, there is no hope for anything; as it says,
-      <blog-reference-tooltip [reference]="'Ecclesiastes 9:3-10'">
-        The hearts of the children of man are full of evil, and madness is in their hearts while they live, and after
-        that they go to the dead. But he who is joined with all the living has hope, for a living dog is better than a
-        dead lion. For the living know that they will die, but the dead know nothing, and they have no more reward, for
-        the memory of them is forgotten. Their love and their hate and their envy have already perished, and forever
-        they have no more share in all that is done under the sun.
-      </blog-reference-tooltip>
-      Generations of our descendants grow up before our eyes, yet at the fullness of life, we leave and fly away. Not
-      one of us chose our family, no-one chose the body in which they would be born, not one chose the country they
-      would live, yea, no one even asked to be born! We are all given what we have without a say, and it is all taken
-      away without our gesture; a plate is set before us, and before we are finished eating, the waiter takes it away;
-      as it says,
-      <blog-reference-tooltip [reference]="'Ecclesiastes 8:8'">
-        No man has authority to restrain the wind with the wind, or authority over the day of death; and there is no
-        discharge in the time of war, and evil will not deliver those who practice it.
-      </blog-reference-tooltip>
-      And,
-      <blog-reference-tooltip [reference]="'Ecclesiastes 9:12'">
-        Moreover, man does not know his time: like fish caught in a trecherous net and birds trapped in a snare, so the
-        sons of men are ensnared at an evil time when it suddenly falls on them.
-      </blog-reference-tooltip>
-      We have all been dealt cards, and the dealer will gather them back up; the end will declare whether we have played
-      our cards right. No-one can take their cards back to the dealer; they are dealt out according to his will. Our
-      lives are granted to us by God; if we don't like it, do we dare quarrel with our Maker?
-      <blog-reference-tooltip [reference]="'Isaiah 45:9-10'"
-        >Woe to him who strives with Him who formed him, a pot among earthen pots! Does the clay say to him who forms
-        it, ‘What are you making?’ or ‘Your work has no handles’? Woe to him who says to a father, ‘What are you
-        begetting?’ or to a woman, ‘With what are you in labor?’</blog-reference-tooltip
-      >
-      But rather,
-      <blog-reference-tooltip [reference]="'Psalm 39:4-6'">
-        LORD, make me to know my end And what is the extent of my days; Let me know how transient I am. Behold, You have
-        made my days as handbreadths, And my lifetime as nothing in Your sight; Surely every man at his best is a mere
-        breath.
-      </blog-reference-tooltip>
-      And,
-      <blog-reference-tooltip [reference]="'Psalm 90:12'">
-        Teach us to number our days, that we may present to You a heart of wisdom. </blog-reference-tooltip
-      ><br /><br />
-
-      So certainly we are no better off than the animals; saying,
-      <blog-reference-tooltip [reference]="'Ecclesiastes 3:18-21'">
-        I concluded that God is testing us, to show us that we are no better than animals. After all, the same fate
-        awaits human beings and animals alike. One dies just like the other. They are both the same kind of creature. A
-        human being is no better off than an animal, because life has no meaning for either. They are both going to the
-        same place — the dust. They both came from it; they will both go back to it. How can anyone be sure that the
-        human spirit goes upwards while an animal's spirit goes down into the ground?
-      </blog-reference-tooltip>
-      Furthermore, the wise die like the fool and both are forgotten; as wisdom says,
-      <blog-reference-tooltip [reference]="'Ecclesiastes 2:15-16'">
-        Then I said to myself, "As is the fate of the fool, it will also befall me. Why then have I been extremely
-        wise?" So I said to myself, "This too is vanity." For there is no lasting remembrance of the wise man as with
-        the fool, inasmuch as in the coming days all will be forgotten. And how the wise man and the fool alike die!
-      </blog-reference-tooltip>
-      Because of this, the Psalmist says, “Surely in vain I have kept my heart pure And washed my hands in innocence;
-      For I have been stricken all day long And chastened every morning.” (Psalms 73:13-14) And about the wicked he
-      says, “For there are no pains in their death, And their body is fat. They are not in trouble as other men, Nor are
-      they plagued like mankind.” (Psalms 73:4-5) But, “Until I came into the sanctuary of God; Then I perceived their
-      end.” (Psalms 73:17) For death isn't the final end; God will give new breath to the living and the dead, the earth
-      will give up its dead and the depths its slain. It is God's grace that gave life, and His grace is revealed in the
-      resurrection of the dead, for He will give new life; as it says, “And inasmuch as it is appointed for men to die
-      once and after this comes judgment.” (Hebrews 9:27) At that time, the throne of grace will be taken down, and
-      judgement upheld. But, He says,
-      <blog-reference-tooltip [reference]="'Matthew 5:7'" [isJesusWord]="true">
-        Blessed are the merciful, for they shall receive mercy.
-      </blog-reference-tooltip>
-      Judgement will be based on what we have received from God, namely, what we have done with this grace of life. But
-      haven't we already ruined this good thing? If we have ruined our cards, can we take them back? Knowing where they
-      come from, can we take them back as goods bought in a store? Can we have a do-over in this life or trade our cards
-      for someone else's? Surely God is just. Wouldn't He show us the way of redemption and forgiveness? Does He not
-      know that we are wayward, turning to our own way, and in need of a Shepherd? One day we will return our cards to
-      the Dealer, for our hand is only for a little while. Shall we go all in for something that is temporary? Of course
-      not! Rather how much more shall we go all in for what is everlasting! But where is the everlasting path? Where is
-      the ancient road? Will someone show us the way of life? If there is a way, surely God would reveal it. Continue
-      on! And take hold of the hope: "Whatever your hand finds to do, do it with your might, for there is no work or
-      thought or knowledge or wisdom in Sheol, to which you are going." (Ecclesiastes 9:10) And, "I have seen that
-      nothing is better than that man should be happy in his activities, for that is his lot. For who will bring him to
-      see what will occur after him?" (Ecclesiastes 3:22)
-    </ng-template>
-  </div>
-</blog-gospel-section>
-<!-- #endregion THE DANGER - FUTILITY -->
 
 <!-- #region THE DANGER - SIN -->
 <div class="pimg15 floating-header" id="ourSinNature" #dangerSin>
@@ -1543,6 +913,637 @@
   </div>
 </blog-gospel-section>
 <!-- #endregion THE DANGER - SIN -->
+
+<!-- #region THE DANGER - FUTILITY -->
+<div class="pimg12 floating-header" style="background-position: top" id="futilityOfPleasure" #dangerFutility>
+  <blog-gospel-header [isLightMode]="false" [@simpleFadeAnimation]>
+    <h3>The Danger - Death</h3>
+  </blog-gospel-header>
+</div>
+
+<div class="pimg12" style="background-position: top">
+  <blog-gospel-section [isLightMode]="false" [isFloater]="true">
+    <h3 class="headers" (click)="navigateToGospelItem('The Futility of Pleasure', futilityOfPleasure)">
+      The Futility of Pleasure
+    </h3>
+    <div class="paragraphs">
+      <ng-container *ngTemplateOutlet="futilityOfPleasure"></ng-container>
+      <ng-template #futilityOfPleasure>
+        Alcohol and food, which are wholesome in themselves, which are given to us by God for our enjoyment, but they
+        are often perverted into drunkenness and gluttony, and drugs, which are often used for an escape from reality,
+        which are a false refuge, which are often corrupted for one's own enjoyment rather than medicine, and the
+        excessive love of pleasure, which is dissipation, which is folly and waste, and any other corrupt desire which
+        come from our lust, which wages war against our soul, these will never sustain us - they only mask our deeply
+        rooted issues for a little while and make life bearable for a short time. They come quickly and vanish quickly,
+        for the same way they come, the same way they go. Is life so terrible that we need these? We all have our share
+        in these during some time in our life, and if it was not then, perhaps now. But where is the light of life? For
+        the way we feel, living in such things, surely it is not life. We are calloused, without feeling, so we have
+        given ourselves over to sensuality, to the practice of every kind of impurity with greediness, for that is what
+        we can feel; we are hardened by the unbelief of the world, and stimulated by the lust which is in the world.
+        Isn't life supposed to be good? Isn't death bad? Yet our lives are not joyous, but they are like death. We don't
+        know what life truly is - if we seen it, we would not know what it is. Living for pleasure is not life; our
+        trouble may be gone for a moment, but it is not gone forever; living for pleasure is like hitting the snooze
+        button on an alarm clock - we may feel better now, but we will have to deal with the same problem later, but it
+        has gotten worse. Even if we feel satisfied or fulfilled with these things, it is never enough; we are feeding a
+        beast within us, the more we feed it, the bigger it gets; and the bigger it gets, the more we must feed it; it
+        is never satisfied; we make it stronger, and we are subdued by it. A dog growls when its not fed, how much more
+        sin living within us which is a hound from hell? And sin is deathly, living in the sons of men; we are living,
+        but sin is working death within us. We want to flee, but it's inside of us; we cover our eyes, but it lives in
+        the darkness.<br /><br />
+
+        <!-- <a href="https://thelightof.life/#/insight-detail/cd57c552-146a-8c5a-7bd2-d1314e9a4793" target="_blank"
+          >See more about the nature of sin here.</a
+        ><br /><br /> -->
+
+        It is written, "He enlarges his appetite like Sheol, And he is like death, never satisfied.” (Habakkuk 2:5) And
+        like death we are constantly seeking food - and we are not content; like Sheol we are always seeking drink, and
+        we are not quenched; we eat and we are hungry again later; we drink and we are thirsty again; as it says,
+        <blog-reference-tooltip [reference]="'Ecclesiastes 6:7'">
+          All a man's labor is for his mouth and yet the appetite is not satisfied.
+        </blog-reference-tooltip>
+        And these, being for our enjoyment and nourishment, are corrupted into something it was never intended for. Food
+        for the body, but God forbid for gluttony; drink to make the heart merry, but God forbid for drunkenness; sex
+        for reproduction, but God forbid for immorality. God made everything good and upright, but we have twisted that
+        which is straight. It is lust which corrupts God given necessities into dissipation and waste: for over-eating
+        is not of hunger, and drunkenness is not of thirst, and immorality is not of reproduction; all of these are for
+        pleasure; and from wisdom it does not come; as it says,
+        <blog-reference-tooltip [reference]="'Ecclesiastes 7:4'">
+          The mind of the wise is in the house of mourning, while the mind of fools is in the house of pleasure.
+        </blog-reference-tooltip>
+        So pleasure is not of wisdom; and seeking for pleasure is fleeting, for it lasts only for a short while; however
+        prudence makes the most of her time, and looks to the future. No matter how much the eye sees, it is not enough;
+        no matter how much the ear hears, it is not content. If these things truly make us happy, why wouldn't we
+        express it outwardly? If we are truly happy, shouldn't our happiness resemble a child's happiness? Children are
+        overcome with laughter and express joyfulness and run around expressing their happiness, jumping with joy. If
+        these things truly make us happy, why don't we show it? Most often we are chained by such things: we are
+        miserable inwardly, but outwardly we become less miserable, for these only mask our pain for a short while. In
+        the beginning, we used to be happy, when sin wasn't alive, in the innocence of our childhood, but later, sin
+        came alive and we died; sin put us to death, and it lives in our stead; we are dead in our sins, the whole lot
+        of us. All of us have become enslaved to our own desires which corrupt, for lust corrupts and twists and
+        perverts what is good. Who is exempt from this? None of us. We are all under the power of sin. Which of us does
+        not stoop to deficate? Who is it born without a mother? We are led by the hand of this world into a cycle of
+        dependence upon material things; we think we need these things to keep us in check; we say, "I don't feel normal
+        without them." I testify about myself that I've been chained by many sins and pleasures and vices for many years
+        of my life, and looking back, surely it was not life. Whatever a person is overcome by that he is also enslaved.
+        And how weak are we when something inaminate chains us! "I serve this and that, and I can't stop!" Whatever we
+        offer ourselves to as obedient servants, by that, we are enslaved. And I was enslaved to everything a man could
+        be enslaved by: food, alcohol, drugs, money, sex, and many others. These things are not alive, but somehow I was
+        enslaved to them as if they were; they are not gods at all, so why should I serve them? I must do for them, but
+        what are they doing for me? I wouldn't call myself a man, for I can't get out. I want out, but I can't escape; I
+        am surely in a prison cell. I want to stop sinning, but I can't; I want to be released, but I can't redeem
+        myself. I am without power. Hope, I have none. "Where is real pleasure and satisfaction?" And worse yet, I don't
+        know how to utter it; for perhaps if I could tell someone, they could help. But instead, guilt and shame keep me
+        from sharing, as if I am the only one dealing with such things without anyone to relate. Solomon, who had great
+        wisdom from God, writes,
+        <blog-reference-tooltip [reference]="'Ecclesiastes 1:8'">
+          All things are full of weariness; <b>a man cannot utter it</b>; the eye is not satisfied with seeing, nor the
+          ear filled with hearing.
+        </blog-reference-tooltip>
+        And so it is with me, full of weariness and I couldn't utter it. If only I could say,
+        <blog-reference-tooltip [reference]="'Job 33:27'">
+          I have sinned and perverted what is right, And it is not proper for me.
+        </blog-reference-tooltip>
+        So then I could say, "He has redeemed my soul from going to the pit, And my life shall see the light." (Job
+        33:28) However I am mute, unable to speak.
+        <br /><br />
+
+        Solomon in his wisdom searched out pleasure, and said,
+        <blog-reference-tooltip [reference]="'Ecclesiastes 2:1-11'">
+          I said in my heart, “Come now, I will test you with pleasure; enjoy yourself.” But behold, this also was
+          vanity. I said of laughter, “It is mad,” and of pleasure, “What use is it?” I searched with my heart how to
+          cheer my body with wine—my heart still guiding me with wisdom—and how to lay hold on folly, till I might see
+          what was good for the children of man to do under heaven during the few days of their life. (...) And whatever
+          my eyes desired I did not keep from them. I kept my heart from no pleasure, for my heart found pleasure in all
+          my toil, and this was my reward for all my toil. Then I considered all that my hands had done and the toil I
+          had expended in doing it, and behold, all was vanity and a striving after wind, and there was nothing to be
+          gained under the sun.
+        </blog-reference-tooltip>
+        As Solomon said, "My heart still guiding me with wisdom", for wisdom is insight, speaking the things which are
+        from within with the correct words; and Solomon's words are surely insightful, but wisdom originates from God.
+        Every sinful habit originates with lust, and lust entices the eyes. As he says, "And whatever my eyes desired I
+        did not keep from them." All sin begins here, and the end: as it says, "And behold, all was vanity and a
+        striving after wind." So by the things of this world, no man will be satisfied. Even by images, which are
+        copies, men have tried to find satisfaction. But if we aren't satisfied with the real thing, then why would we
+        be with an image? But rather, images stimulate more lust, for an image makes itself greater than reality which
+        it is portraying. And how computers stimulate desire through pictures! It is satisfying while on it, but
+        afterwards it's like waking from a sleep. We live in an age where media screens are everywhere: it started with
+        televisions in the living room, then escalated to monitors in the pocket. Surely these feed our eyes. This is
+        what I meant when I said, "We are led by the hand of this world", for who creates advertisements? Who makes
+        ready the fulfillment of our lusts? But still, the desire belongs to us and we will be the ones who suffer for
+        indulging it. We should not long for the things of the world, but the One who gives all good things is God. Do
+        you want further proof that we are dissatisfied and do not know it? A computer can create entire simulations for
+        living a new life inside. If life were so good, then why does this exist? Can a copy ever be as good as the
+        real? Which do you like better: name brand goods or knock offs? Yes, knock offs are cheaper and require less of
+        us, but they are not better, even in the slightest. In the same way, these simulations are cheaper: you can sit
+        on the couch and be at a sports game! But it is certainly not better. So lust shows itself as something great,
+        but it is lesser; it corrupts the natural into something seemingly greater and fulfills the desire with the
+        real, not with what it is portraying. Desire is like an advertisement image: and does the image ever portray
+        true reality? The artist makes it better than reality by skill, but it is not the true norm. And these images
+        are fantasy, imagination, from one's mind - and so is lust. Lustful desire is not reality; when something is
+        desired, it is made great in one's mind, but it remains the same in reality. On the television screen men can
+        put their imaginations on it so that you can say, "It must be, for I have seen it!" But it is not, it is
+        trickery. It is merely an image someone made in their mind, in their imagination, making it visible for you to
+        see; for it is what they want you to see and what they don't want you to see; and these images, which are from
+        imaginations, entice lustful desire in those who see them. For why would someone make an image unless it is to
+        be gazed at? So much so, covetousness is called idolitry; covetousness is lust. Furthermore, it says, “The
+        devising of folly is sin.” (Proverbs 24:9) This is why covetousness is condemned by the law.
+        <br /><br />
+
+        The natural use is better than the unnatural, the real is better than the copy, good is better than evil, even
+        in the meanwhile you think, "Ah! But it feels so good"; in the end you will not be thinking that! Everything we
+        sow, we will also reap. A person does not sow an apple and get an orange tree, neither does a person breed pigs
+        and get cows, so why do you think, "I will sow corruption and get life"? Lust sowed reaps corruption; and
+        righteousness sowed reaps blessing. Everything corrupts through lust; and lust conceived gives birth to sin. All
+        sin is dysfunctional; and a dysfunction is useless. And that which is useless is put into a pit and awaits
+        burning. A new sofa will become fettered, a new car will become a tin of rust, even our bodies are becoming old
+        and gray and worn out: it will be soon in the grave. Evil will inherit evil and goodness will inherit goodness.
+        This is true, even if in the meantime we see the wicked prospering and the righteous suffering; as it says,
+        <blog-reference-tooltip [reference]="'Ecclesiastes 7:15'">
+          I have seen everything during my lifetime of futility; there is a righteous man who perishes in his
+          righteousness and there is a wicked man who prolongs his life in his wickedness.
+        </blog-reference-tooltip>
+        And it says,
+        <blog-reference-tooltip [reference]="'Ecclesiastes 8:14'">
+          There is futility which is done on the earth, that is, there are righteous men to whom it happens according to
+          the deeds of the wicked. On the other hand, there are evil men to whom it happens according to the deeds of
+          the righteous. I say that this too is futility.
+        </blog-reference-tooltip>
+        But it also says,
+        <blog-reference-tooltip [reference]="'Ecclesiastes 3:17'">
+          I said to myself, "God will judge both the righteous man and the wicked man," for a time for every matter and
+          for every deed is there.
+        </blog-reference-tooltip>
+        Everyone will get what their deeds deserve in the end because God will cause His righteous judgment to be
+        upheld. So take heed! It says,
+        <blog-reference-tooltip [reference]="'1 Timothy 5:6'">
+          She who lives in pleasure is dead while she lives.
+        </blog-reference-tooltip>
+        If we live for pleasure, our life is a waste, which is dissipation. Instead, fear God. Enjoy what God has given
+        you without grumbling or complaining; as it says,
+        <blog-reference-tooltip [reference]="'Ecclesiastes 8:15'">
+          So I commended pleasure, for there is nothing good for a man under the sun except to eat and to drink and to
+          be merry, and this will stand by him in his toils throughout the days of his life which God has given him
+          under the sun.
+        </blog-reference-tooltip>
+        And it says,
+        <blog-reference-tooltip [reference]="'Ecclesiastes 3:12-13'">
+          I know that there is nothing better for them than to rejoice and to do good in one's lifetime; moreover, that
+          every man who eats and drinks sees good in all his labor - it is the gift of God.
+        </blog-reference-tooltip>
+        Therefore, seek what pleases God, for then you will be blessed; and where the blessing is, there is also
+        happiness and futility is no more, for labor in the Lord is not in vain!
+        <!-- <br /><br />
+
+        (If these things are review to you because you're already a believer, feel free to go to
+        <a style="cursor: pointer" (click)="toAnchor('call-grace')">THE CALL - GRACE</a>
+        portion of the Gospel. There are many edifying things there that will help encourage you in the faith.) -->
+      </ng-template>
+    </div>
+  </blog-gospel-section>
+</div>
+
+<div class="pimg12" style="background-position: top" id="futilityInToil"></div>
+
+<blog-gospel-section [isLightMode]="false">
+  <h3 class="headers" (click)="navigateToGospelItem('The Futility of Toil', futilityInToil)">The Futility of Toil</h3>
+  <div class="paragraphs">
+    <ng-container *ngTemplateOutlet="futilityInToil"></ng-container>
+    <ng-template #futilityInToil>
+      Our lives are filled with work and toil: we work then rest, to do it all over again the next day. The days do not
+      cease, they do not lag behind for anybody; they are short, yet we spend them in much pain and agony because of our
+      labors. The days are short because of our human weakness; each one is fit for the strength of a man. And what
+      drives our inner strength? For what reason do we toil so much? As it says,
+      <blog-reference-tooltip [reference]="'Ecclesiastes 4:4'">
+        I have seen that every labor and every skill which is done is the result of rivalry between a man and his
+        neighbor. This too is vanity and striving after wind.
+      </blog-reference-tooltip>
+      As it said, "every labor is the result of rivalry", which does not matter in the future; we work for the sake of
+      man who perishes, as we too are perishing; we work for objectives that are not ours, for fruit that we will not
+      eat; for we leave the fruit of our labors to another who comes after us. As it is written, “We have brought
+      nothing into the world, so we cannot take anything out of it either.” (1 Timothy 6:7) The things we do now will
+      not matter years from now, it will become old and outdated. In the future, people will look back and say, "Who
+      were they?" As it is today, for we presently do not care who were in the past; and it will be the same in the
+      future: they will not care for us; even if we think, "I do care", what does our boasting accomplish? No-one can
+      bring back a day which has been spent. We are constantly striving in labor, yet we don't receive our due wages; he
+      who does little work, harvests much, and we are dumb-founded; we do much work for little harvest; we work hard for
+      the holes in our pockets; we plant, and the locusts eat; we plant much, but gather very little. As it says, "You
+      have sown much, but harvest little; you eat, but there is not enough to be satisfied; you drink, but there is not
+      enough to become drunk; you put on clothing, but no one is warm enough; and he who earns, earns wages to put into
+      a purse with holes." (Haggai 1:6) It is a grievous task which has been given to us! As it says,
+      <blog-reference-tooltip [reference]="'Ecclesiastes 1:13-14'">
+        And I set my mind to seek and explore by wisdom concerning all that has been done under heaven. It is a grievous
+        task which God has given to the sons of men to be afflicted with. I have seen all the works which have been done
+        under the sun, and behold, all is vanity and striving after wind.
+      </blog-reference-tooltip>
+      And furthermore it says,
+      <blog-reference-tooltip [reference]="'Ecclesiastes 4:8'">
+        There was a certain man without a dependent, having neither a son nor a brother, yet there was no end to all his
+        labor. (...) This too is vanity and it is a grievous task.
+      </blog-reference-tooltip>
+      <br /><br />
+
+      Surely we are born into travail, born for trouble; as it says, "For man is born for trouble, As sparks fly
+      upward." (Job 5:7) All our days are struck with evil. We don't know where we are going, and we don't remember
+      where we came from; we aren't fully aware of even today; we're in a box without the ability to look out. And even
+      if we had 1000 lives of 1000 years a piece, we wouldn't be able to discover all that is set before us; how much
+      less the things we don't see? As it says, “For all our days have declined in Your fury; We have finished our years
+      like a sigh. As for the days of our life, they contain seventy years, Or if due to strength, eighty years, Yet
+      their pride is but labor and sorrow; For soon it is gone and we fly away.” (Psalms 90:9-10) We chase after things
+      we think will satisfy us, but we catch them and see they are empty; we are chasing after the wind; as it says,
+      “For they sow the wind And they reap the whirlwind. The standing grain has no heads; It yields no grain. Should it
+      yield, strangers would swallow it up.” (Hosea 8:7) We are born into a miserable existance! Are we even better than
+      the animals? For they come in futility and leave in futility just as it is with us; as it says,
+      <blog-reference-tooltip [reference]="'Ecclesiastes 3:19'">
+        For what happens to the sons of men also happens to animals; one thing befalls them: as one dies, so dies the
+        other. Surely, they all have one breath; <b>man has no advantage over animals,</b> for all is vanity.
+      </blog-reference-tooltip>
+      All living creatures die; what lives forever? Everything we strive and labor for, we do not keep; we strive for
+      beauty, but it is fading away. Our possessions become the possessions of another. Even our own lives are borrowed,
+      for we will return to the dust. Listen to what the King of Israel wrote toward the end of his life,
+      <blog-reference-tooltip [reference]="'Ecclesiastes 2:18-23'">
+        I hated all my toil in which I toil under the sun, seeing that I must leave it to the man who will come after
+        me, and who knows whether he will be wise or a fool? Yet he will be master of all for which I toiled and used my
+        wisdom under the sun. This also is vanity. So I turned about and gave my heart up to despair over all the toil
+        of my labors under the sun, because sometimes a person who has toiled with wisdom and knowledge and skill must
+        leave everything to be enjoyed by someone who did not toil for it. This also is vanity and a great evil. What
+        has a man from all the toil and striving of heart with which he toils beneath the sun? For all his days are full
+        of sorrow, and his work is a vexation. Even in the night his heart does not rest. This also is vanity.
+      </blog-reference-tooltip>
+      But what is futility? Futility is worthlessness, emptiness, aimlessness, not having a point or direction,
+      wandering about in blackest darkness. It does not see; it is always doing much, but it is accomplishing very
+      little; it is speaking much, but getting nothing done; it is dreaming, but living as a passing shadow. What then,
+      do we despair? But isn't that vain as well, a work of the wind? Why despair when there is hope.
+      <br /><br />
+
+      Life is short, yet it feels long. In life, we despair, without it, there is no hope either. We spend our lives
+      wasting on things that will pass away. We are passing away. In the place of the dead, in which we are going, there
+      is nothing: no toil, no labor, no speech, no sight, nothing. We have inherited this life, not because we asked for
+      it, for we did not even ask to be born, but because of the sin of Adam in the Garden, we have been given this kind
+      of life. All people on earth come from him and we inherit sin and death from him; he transgressed the commandment,
+      and judgment was pronounced on the earth because of him; as the curse pronounced says,
+      <blog-reference-tooltip [reference]="'Genesis 3:18-20'">
+        Cursed is the ground because of you; In toil you will eat of it all the days of your life. Both thorns and
+        thistles it shall grow for you; And you will eat the plants of the field; By the sweat of your face You will eat
+        bread, Till you return to the ground, Because from it you were taken; For you are dust, And to dust you shall
+        return.
+      </blog-reference-tooltip>
+      So our toil is a curse from God; as the LORD God Himself says,
+      <blog-reference-tooltip [reference]="'Deuteronomy 33:39-42'">
+        See now that I, I am He, And there is no god besides Me; It is I who put to death and give life. I have wounded
+        and it is I who heal, And there is no one who can deliver from My hand.
+      </blog-reference-tooltip>
+      Furthermore He says,
+      <blog-reference-tooltip [reference]="'Isaiah 45:5-7'">
+        I am the LORD, and there is no other; Besides Me there is no God. (...) The One forming light and creating
+        darkness, Causing well-being and creating calamity; I am the LORD who does all these.
+      </blog-reference-tooltip>
+      And it says, “Is it not indeed from the LORD of hosts That peoples toil for fire, And nations grow weary for
+      nothing?” (Habakkuk 2:13) Who are we to quarrel with our Maker? If we dare speak to Him, will He be compelled to
+      answer? But if He calls to us, we must answer Him. As it says, “But the LORD is in His holy temple. Let all the
+      earth be silent before Him." (Habakkuk 2:20) Who can take God to court? Who can accuse Him? But rather, it says,
+      <blog-reference-tooltip [reference]="'Ecclesiastes 2:24-26'">
+        There is nothing better for a man than to eat and drink and tell himself that his labor is good. This also I
+        have seen that it is from the hand of God. For who can eat and who can have enjoyment without Him? For to a
+        person who is good in His sight He has given wisdom and knowledge and joy, while to the sinner He has given the
+        task of gathering and collecting so that he may give to one who is good in God's sight. This too is vanity and
+        striving after wind.
+      </blog-reference-tooltip>
+      Also it says,
+      <blog-reference-tooltip [reference]="'Ecclesiastes 4:6'">
+        One hand full of rest is better than two fists full of labor and striving after wind.
+      </blog-reference-tooltip>
+      Therefore, it is better to accept your lot in life and be happy with it. Search and seek for Him; acknowledge your
+      futility and search and seek for fullness in God, not in the things of the world. For if the things of the world
+      were pleasing to us, then we wouldn't be seeking for anything more. Will that which has no breath at all inside it
+      satisfy us? But much greater is God who gives all good things by which all things came into being! And the Lord
+      has promised,
+      <blog-reference-tooltip [reference]="'Jeremiah 29:13'">
+        You will seek Me and find Me when you search for Me with all your heart.
+      </blog-reference-tooltip>
+      As it says, "seek Me with all your heart", for He knows your heart and how much heart you have, for He has given
+      your heart; He seen beforetime when the widow gave all her income (Mark 12:42-43), and He seen when Ananias kept
+      back some of the money from the field which he sold (Acts 5:1-4). So if we have little heart, with all our little
+      heart, therein seek, or if we have great heart, with all our great heart therein seek. He knows when we hold back,
+      for He knows the measure which He has measured out. Therefore, be unhappy with your futility and search for
+      answers. Do not follow the example of the disobedient who love their futility. See how the disobedient try to
+      fight against God, trying to reverse the curses which God has pronounced on the earth? Thinking their life is
+      forever, they fall into error; thinking their home is forever, they believe a lie. See how the world tries to
+      reverse things: for God gave woman pain in child-bearing, but they give numbing shots; for God made woman desire
+      for her husband, yet he rules over her, but they start feminist movements; for God cursed the ground so that in
+      toil it will produce its fruit, but they create technology that works at the push of a button; for God makes man
+      to return to the dust in old age, but they have beauty products and wrinkling agents and plastic surgery; but
+      whatever we try to do, we cannot reverse death: all of us will return to Him in the end, slave and free, rich and
+      poor. So you see, our lives are set this way by God to lead us to Himself, for by the things of the world He sees
+      to it that no man shall see the light of life.
+    </ng-template>
+  </div>
+</blog-gospel-section>
+
+<div class="pimg19" id="futilityOfWealth"></div>
+
+<div class="pimg19">
+  <blog-gospel-section [isLightMode]="false" [isFloater]="true">
+    <h3 class="headers" (click)="navigateToGospelItem('The Futility of Wealth', futilityOfWealth)">
+      The Futility of Wealth
+    </h3>
+    <div class="paragraphs">
+      <ng-container *ngTemplateOutlet="futilityOfWealth"></ng-container>
+      <ng-template #futilityOfWealth>
+        There was a man who went into a pub with everything he owned. He sat down at the table to gamble. At first, he
+        bet only a little of what he has. He rolls the dice and a miracle happens! All the dice line up. The man yells,
+        "Today is my lucky day. I will bet more next time!" So he rolls again, but this time with more on the table. A
+        miracle happens again! All the dice line up. The man continues this over and over and everytime he wins; then
+        eventually, everything he owns is on the table, even the shirt off his back. He thought to himself, "Surely I
+        have rolled these dice over and over and they haven't failed me yet." However, the dealer seen the man and
+        thought to himself, "You fool! One day these dice will not line up and everything you own will be mine, for I
+        have worked a long time in this pub and I see it everytime: the dice will one day not line up, and everything
+        you own will be mine." Sure enough, what the dealer said came true and the day came when the dice did not line
+        up and everything on the table was taken from him. And because the man didn't have enough money for even a beer,
+        he was cast out of the pub into darkness where he wept because everything he owned was gone. And so it is with
+        every man who trusts in this life and loves his possessions; as it is written,
+        <blog-reference-tooltip [reference]="'Psalms 49:10'"
+          >For he sees that even wise men die; The stupid and the senseless alike perish And leave their wealth to
+          others.</blog-reference-tooltip
+        >
+        And furthermore, it says,
+        <blog-reference-tooltip [reference]="'Psalms 49:17-20'">
+          When he dies he will carry nothing away; His glory will not descend after him. Though while he lives he
+          congratulates himself—And though men praise you when you do well for yourself— He shall go to the generation
+          of his fathers; They will never see the light. Man in his pomp, yet without understanding, Is like the beasts
+          that perish.
+        </blog-reference-tooltip>
+        <br /><br />
+
+        Solomon wrote,
+        <blog-reference-tooltip [reference]="'Ecclesiastes 5:10-17'">
+          He who loves money will not be satisfied with money, nor he who loves wealth with his income; this also is
+          vanity. When goods increase, they increase who eat them, and what advantage has their owner but to see them
+          with his eyes? Sweet is the sleep of a laborer, whether he eats little or much, but the full stomach of the
+          rich will not let him sleep. There is a grievous evil that I have seen under the sun: riches were kept by
+          their owner to his hurt, and those riches were lost in a bad venture. And he is father of a son, but he has
+          nothing in his hand. As he came from his mother's womb he shall go again, naked as he came, and shall take
+          nothing for his toil that he may carry away in his hand. This also is a grievous evil: just as he came, so
+          shall he go, and what gain is there to him who toils for the wind? Moreover, all his days he eats in darkness
+          in much vexation and sickness and anger.
+        </blog-reference-tooltip>
+        And furthermore, it says,
+        <blog-reference-tooltip [reference]="'Ecclesiastes 6:1-2'">
+          There is an evil which I have seen under the sun and it is prevalent among men— a man to whom God has given
+          riches and wealth and honor so that his soul lacks nothing of all that he desires; yet God has not empowered
+          him to eat from them, for a foreigner enjoys them. This is vanity and a severe affliction.
+        </blog-reference-tooltip>
+        So if we don't enjoy our wealth on earth, how can we in the grave? If we aren't happy with riches while they're
+        in our hands, will we be satisfied when they grow wings and fly away? Is the millionare ever satisified with
+        only one million? And is there any thing we can take with us when we die? Not even our body goes with us, for
+        the body goes back to the dust from which it came; as it is written,
+        <blog-reference-tooltip [reference]="'Genesis 2:7'">
+          Then the LORD God formed man of dust from the ground, and breathed into his nostrils the breath of life; and
+          man became a living being.
+        </blog-reference-tooltip>
+        And it is written,
+        <blog-reference-tooltip [reference]="'Ecclesiastes 12:7'">
+          Then the dust will return to the earth as it was, and the spirit will return to God who gave it.
+        </blog-reference-tooltip>
+        When we return, it will be as a single moment to Him, but a lifetime to us. Everything we think we have, we
+        don't have: we leave it to someone who comes after us, to him who did not work nor toil for it. And likewise,
+        that person will leave it behind as well. So what do any of us really own? As it says,
+        <blog-reference-tooltip [reference]="'Psalm 24:1'">
+          The earth is the LORD's and the fullness thereof, the world and those who dwell therein.
+        </blog-reference-tooltip>
+        Are these things not according to experience? Or are we making things up? We are merely stewards of what God has
+        given us. If we cannot be trusted with earthly things, who will trust us with heavenly things? If we hold
+        tightly to dust which is borrowed, who will give unto us refined gold? (Luke 16:10-12) Riches do not deliver on
+        the day of wrath; and all the silver and gold and costly stones cannot forgive even a single sin; as it says,
+        <blog-reference-tooltip [reference]="'Psalm 49:7-9'">
+          No man can by any means redeem his brother Or give to God a ransom for him — For the redemption of his soul is
+          costly, And he should cease trying forever — That he should live on eternally, That he should not undergo
+          decay.
+        </blog-reference-tooltip>
+        As he says, "He should cease trying forever", for that which is costly is freely given by God, and that, to
+        humiliate the rich. God is gracious, even giving freely what is most costly; He who owns everything and gives to
+        everyone, breath and life and all things, and He continues in His giving, even with the most precious. So God
+        gives freely to the praise of His glory, and the rich hold fast to riches to the pain of his own folly, for
+        amassing riches brings pain onto oneself, and trusting in them is a futile attempt for safety. Can a dead image
+        of the king on a coin or an inscription on a bill deliver? If you put a torch to it, it cannot even save itself!
+        Why trust in riches, except to inflict hurt onto oneself? <br /><br />
+
+        Many pierce themselves with many sins and sorrows chasing after deceitful riches in the love of money; saying,
+        <blog-reference-tooltip [reference]="'Jeremiah 17:11'">
+          Like the partridge that gathers a brood that she did not hatch, so is he who gets riches but not by justice;
+          in the midst of his days they will leave him, and at his end he will be a fool.
+        </blog-reference-tooltip>
+        And,
+        <blog-reference-tooltip [reference]="'Ecclesiastes 1:12'">
+          There is a grievous evil that I have seen under the sun: riches were kept by their owner to his hurt, and
+          those riches were lost in a bad venture.
+        </blog-reference-tooltip>
+        So, “When good things increase, those who consume them increase. So what is the advantage to their owners except
+        to look on?” (Ecclesiastes 5:11) The love of money is a snare among us, a trap which springs and captures and
+        does not release except by the truth; as it says,
+        <blog-reference-tooltip [reference]="'1 Timothy 6:9-10'">
+          For the love of money is a root of all sorts of evil, and some by longing for it have wandered away from the
+          faith and pierced themselves with many griefs.
+        </blog-reference-tooltip>
+        “Who suppose that godliness is a means of gain.” (1 Timothy 6:5) So it is obvious: fattening oneself with the
+        things of the world hurts, and hurts oneself and others. But here is the nature of God: He does not store up for
+        Himself, but in His riches He freely gives to those who ask, and He is generous even to the disobedient and
+        unthankful (Luke 6:35); He dwells in heaven and all that is on earth is given to the sons of men, even so, He
+        does not withhold what is more precious, what is eternal, which is stored up in heaven; this is even evident in
+        that He causes the rain to pour down from heaven onto all flesh, the unjust and the just alike. So who do we
+        really hurt by being rich towards ourselves only? If we give, it is to the benefit of others; if we withhold, it
+        is to the hurt of others; and even more so, we hurry along the judgment of God through greed; as it says,
+        <blog-reference-tooltip [reference]="'James 5:3-5'">
+          Your gold and silver have corroded, and their corrosion will be evidence against you and will eat your flesh
+          like fire. You have laid up treasure in the last days. Behold, the wages of the laborers who mowed your
+          fields, which you kept back by fraud, are crying out against you, and the cries of the harvesters have reached
+          the ears of the Lord of hosts. You have lived on the earth in luxury and in self-indulgence. You have fattened
+          your hearts in a day of slaughter.
+        </blog-reference-tooltip>
+        Such a one is an idolater, worshipping the things of the world. (Ephesians 5:5, Colossians 3:5) <br /><br />
+
+        Rather, be rich toward God; do not be the man that says to himself, “Soul, you have ample goods laid up for many
+        years; relax, eat, drink, be merry.”
+        <blog-reference-tooltip [reference]="'Luke 12:15-21'" [isJesusWord]="true">
+          But God said to him, "Fool! This night your soul is required of you, and the things you have prepared, whose
+          will they be?"
+          <b>So is the one who lays up treasure for himself and is not rich toward God.</b></blog-reference-tooltip
+        >
+        For when an animal offering was made, the fat of the offering was burnt up to God, so the fat is the LORD's. And
+        what we have in excess is fat. Judge for yourselves: is it good to see the poor suffering while indulging
+        yourself? See the parable and fear:
+        <blog-reference-tooltip [reference]="'Luke 16:20-31'" [isJesusWord]="true">
+          And a poor man named Lazarus was laid at his gate, covered with sores, and longing to be fed with the crumbs
+          which were falling from the rich man's table; besides, even the dogs were coming and licking his sores. Now
+          the poor man died and was carried away by the angels to Abraham's bosom; and the rich man also died and was
+          buried. In Hades he lifted up his eyes, being in torment, and saw Abraham far away and Lazarus in his bosom.
+          And he cried out and said, 'Father Abraham, have mercy on me, and send Lazarus so that he may dip the tip of
+          his finger in water and cool off my tongue, for I am in agony in this flame.' But Abraham said, 'Child,
+          remember that during your life you received your good things, and likewise Lazarus bad things; but now he is
+          being comforted here, and you are in agony. And besides all this, between us and you there is a great chasm
+          fixed, so that those who wish to come over from here to you will not be able, and that none may cross over
+          from there to us.' And he said, 'Then I beg you, father, that you send him to my father's house— for I have
+          five brothers—in order that he may warn them, so that they will not also come to this place of torment.' But
+          Abraham said, 'They have Moses and the Prophets; let them hear them.' But he said, 'No, father Abraham, but if
+          someone goes to them from the dead, they will repent!' But he said to him, 'If they do not listen to Moses and
+          the Prophets, they will not be persuaded even if someone rises from the dead.'
+        </blog-reference-tooltip>
+        What do you think God is asking from you? That you be hard pressed and another be eased? Of course not! But
+        rather in view of the graciousness of God: if you have more than enough, give to the one who lacks, and so by
+        doing you will store up for yourselves
+        <blog-reference-tooltip [reference]="'Matthew 6:20-21'" [isJesusWord]="true">
+          treasures in heaven, where neither moth nor rust destroys, and where thieves do not break in or steal; for
+          where your treasure is, there your heart will be also.
+        </blog-reference-tooltip>
+        And seek the gift of God, which is the reward of righteousness; as it says,
+        <blog-reference-tooltip [reference]="'Ecclesiastes 5:19-20'">
+          Furthermore, as for every man to whom God has given riches and wealth, He has also empowered him to eat from
+          them and to receive his reward and rejoice in his labor; this is the gift of God. For he will not often
+          consider the years of his life, because God keeps him occupied with the gladness of his heart.
+        </blog-reference-tooltip>
+      </ng-template>
+    </div>
+  </blog-gospel-section>
+</div>
+
+<div class="pimg19" id="futilityInDeath"></div>
+
+<blog-gospel-section [isLightMode]="false">
+  <h3 class="headers" (click)="navigateToGospelItem('The Futility of Death', futilityInDeath)">
+    The Futility of Death
+  </h3>
+  <div class="paragraphs">
+    <ng-container *ngTemplateOutlet="futilityInDeath"></ng-container>
+    <ng-template #futilityInDeath>
+      There was a man who lived in a tent. All his days were spent in constant agony because his tent is not
+      comfortable; furthermore, the flies bite, the sun beams, and the moon strikes. Nevertheless, he hoped forward to
+      his permanent home which was far away in a distant land being prepared for him. Night and day he longed for it and
+      thought about it, even dreaming of it in his sleep. After many years, his home was ready; at the perfect time too
+      because his tent tore, so he went away to his home in which he hoped for. The tent was destroyed, the man went to
+      his home, and he rejoiced and spent the rest of his days there forever-more.
+      <blog-reference-tooltip [reference]="'Ecclesiastes 12:5'">
+        For man goes to his eternal home while mourners go about in the street.
+      </blog-reference-tooltip>
+      We have this present life, but it is not ours to keep; if our life was for eternity, then we wouldn't have to die
+      and leave, but because we will die one day, we know this isn't our home; it is our temporary residence. Our lives
+      are entrusted to us for only a little while. So since we know we will die, we look forward to our next life, our
+      permanent home. If we reject our permanent home, we will try to make our temporary home permanent; saying,
+      <blog-reference-tooltip [reference]="'Psalm 49:11'">
+        Their inner thought is that their houses will last forever, Their dwelling places to all generations; They call
+        their lands after their own names.
+      </blog-reference-tooltip>
+      But everyone will go to an eternal dwelling, whether good or bad, as decreed by God according to His will. In the
+      state we finish, it will determine where we spend eternity. The time in the tent is a time of testing, and we
+      always have two choices: good or evil. If there were only one choice, we wouldn't have free will, since we would
+      be forced into choosing the only choice, but there are two choices. We will reap what we sow, we gain what we have
+      put in, we will be recompensed according to what we have done in our bodies. There is life after life, which is
+      eternal, and there is death after death, which is the second death; the second death is hell, the lake of fire, a
+      fire not quenched for the wood isn't consumed. Anyone whose name is not written in the Book of Life will die the
+      second death in eternal shame and torment. Paradise is the Kingdom of God, the new Jerusalem, Mount Zion, the new
+      heaven and the new earth, where righteousness dwells. The present heaven and earth are subjected to evil and
+      violence, but it is passing away with everything in it, as we ourselves are passing away. The new heaven and the
+      new earth will never pass away; it is an eternal home which cannot be shaken. The LORD will judge the living and
+      the dead according to their deeds, and recompense all according to what they have done in the body; as it says,
+      "For the day of the LORD draws near on all the nations. As you have done, it will be done to you. Your dealings
+      will return on your own head.” (Obadiah 1:15) From the judgement, each will go to their permanent home as decreed
+      by the righteous judgement of God; and God's judgment will be based on righteousness and justice; so who can argue
+      with the verdict? He will reward all who do good for the good done in the body and repay harm for the harm done.
+      Certainly, God has sown everlasting life in the human heart so that we would covet life; as it says,
+      <blog-reference-tooltip [reference]="'Ecclesiastes 3:11'">
+        He has made everything appropriate in its time. <b>He has also set eternity in their heart</b>, yet so that man
+        will not find out the work which God has done from the beginning even to the end.</blog-reference-tooltip
+      >
+      We don't want to die; we desire life, but we are without knowledge of the way of life; we know we should do good,
+      but we have not the goodness within ourselves.
+      <br /><br />
+
+      If a sinful man dies in his sins, he will be raised a sinful man; if a righteous man dies in his righteousness, he
+      will be raised a righteous man. The LORD shows us through sleep what death is like: we sleep and hours pass
+      without us knowing about it. In sleep, we've accomplished nothing, we've done nothing, except rest; those whom the
+      Lord is pleased, He teaches them in their sleep, while they dream in the night, He ministers in parables, but in
+      the place of the dead, there is nothing, no dreams, no plans - nothing. While we live, there is hope for
+      repentance, but in the place of the dead, there is no hope for anything; as it says,
+      <blog-reference-tooltip [reference]="'Ecclesiastes 9:3-10'">
+        The hearts of the children of man are full of evil, and madness is in their hearts while they live, and after
+        that they go to the dead. But he who is joined with all the living has hope, for a living dog is better than a
+        dead lion. For the living know that they will die, but the dead know nothing, and they have no more reward, for
+        the memory of them is forgotten. Their love and their hate and their envy have already perished, and forever
+        they have no more share in all that is done under the sun.
+      </blog-reference-tooltip>
+      Generations of our descendants grow up before our eyes, yet at the fullness of life, we leave and fly away. Not
+      one of us chose our family, no-one chose the body in which they would be born, not one chose the country they
+      would live, yea, no one even asked to be born! We are all given what we have without a say, and it is all taken
+      away without our gesture; a plate is set before us, and before we are finished eating, the waiter takes it away;
+      as it says,
+      <blog-reference-tooltip [reference]="'Ecclesiastes 8:8'">
+        No man has authority to restrain the wind with the wind, or authority over the day of death; and there is no
+        discharge in the time of war, and evil will not deliver those who practice it.
+      </blog-reference-tooltip>
+      And,
+      <blog-reference-tooltip [reference]="'Ecclesiastes 9:12'">
+        Moreover, man does not know his time: like fish caught in a trecherous net and birds trapped in a snare, so the
+        sons of men are ensnared at an evil time when it suddenly falls on them.
+      </blog-reference-tooltip>
+      We have all been dealt cards, and the dealer will gather them back up; the end will declare whether we have played
+      our cards right. No-one can take their cards back to the dealer; they are dealt out according to his will. Our
+      lives are granted to us by God; if we don't like it, do we dare quarrel with our Maker?
+      <blog-reference-tooltip [reference]="'Isaiah 45:9-10'"
+        >Woe to him who strives with Him who formed him, a pot among earthen pots! Does the clay say to him who forms
+        it, ‘What are you making?’ or ‘Your work has no handles’? Woe to him who says to a father, ‘What are you
+        begetting?’ or to a woman, ‘With what are you in labor?’</blog-reference-tooltip
+      >
+      But rather,
+      <blog-reference-tooltip [reference]="'Psalm 39:4-6'">
+        LORD, make me to know my end And what is the extent of my days; Let me know how transient I am. Behold, You have
+        made my days as handbreadths, And my lifetime as nothing in Your sight; Surely every man at his best is a mere
+        breath.
+      </blog-reference-tooltip>
+      And,
+      <blog-reference-tooltip [reference]="'Psalm 90:12'">
+        Teach us to number our days, that we may present to You a heart of wisdom. </blog-reference-tooltip
+      ><br /><br />
+
+      So certainly we are no better off than the animals; saying,
+      <blog-reference-tooltip [reference]="'Ecclesiastes 3:18-21'">
+        I concluded that God is testing us, to show us that we are no better than animals. After all, the same fate
+        awaits human beings and animals alike. One dies just like the other. They are both the same kind of creature. A
+        human being is no better off than an animal, because life has no meaning for either. They are both going to the
+        same place — the dust. They both came from it; they will both go back to it. How can anyone be sure that the
+        human spirit goes upwards while an animal's spirit goes down into the ground?
+      </blog-reference-tooltip>
+      Furthermore, the wise die like the fool and both are forgotten; as wisdom says,
+      <blog-reference-tooltip [reference]="'Ecclesiastes 2:15-16'">
+        Then I said to myself, "As is the fate of the fool, it will also befall me. Why then have I been extremely
+        wise?" So I said to myself, "This too is vanity." For there is no lasting remembrance of the wise man as with
+        the fool, inasmuch as in the coming days all will be forgotten. And how the wise man and the fool alike die!
+      </blog-reference-tooltip>
+      Because of this, the Psalmist says, “Surely in vain I have kept my heart pure And washed my hands in innocence;
+      For I have been stricken all day long And chastened every morning.” (Psalms 73:13-14) And about the wicked he
+      says, “For there are no pains in their death, And their body is fat. They are not in trouble as other men, Nor are
+      they plagued like mankind.” (Psalms 73:4-5) But, “Until I came into the sanctuary of God; Then I perceived their
+      end.” (Psalms 73:17) For death isn't the final end; God will give new breath to the living and the dead, the earth
+      will give up its dead and the depths its slain. It is God's grace that gave life, and His grace is revealed in the
+      resurrection of the dead, for He will give new life; as it says, “And inasmuch as it is appointed for men to die
+      once and after this comes judgment.” (Hebrews 9:27) At that time, the throne of grace will be taken down, and
+      judgement upheld. But, He says,
+      <blog-reference-tooltip [reference]="'Matthew 5:7'" [isJesusWord]="true">
+        Blessed are the merciful, for they shall receive mercy.
+      </blog-reference-tooltip>
+      Judgement will be based on what we have received from God, namely, what we have done with this grace of life. But
+      haven't we already ruined this good thing? If we have ruined our cards, can we take them back? Knowing where they
+      come from, can we take them back as goods bought in a store? Can we have a do-over in this life or trade our cards
+      for someone else's? Surely God is just. Wouldn't He show us the way of redemption and forgiveness? Does He not
+      know that we are wayward, turning to our own way, and in need of a Shepherd? One day we will return our cards to
+      the Dealer, for our hand is only for a little while. Shall we go all in for something that is temporary? Of course
+      not! Rather how much more shall we go all in for what is everlasting! But where is the everlasting path? Where is
+      the ancient road? Will someone show us the way of life? If there is a way, surely God would reveal it. Continue
+      on! And take hold of the hope: "Whatever your hand finds to do, do it with your might, for there is no work or
+      thought or knowledge or wisdom in Sheol, to which you are going." (Ecclesiastes 9:10) And, "I have seen that
+      nothing is better than that man should be happy in his activities, for that is his lot. For who will bring him to
+      see what will occur after him?" (Ecclesiastes 3:22)
+    </ng-template>
+  </div>
+</blog-gospel-section>
+<!-- #endregion THE DANGER - FUTILITY -->
 
 <!-- #region THE CALL - GRACE -->
 <div class="pimg21 floating-header" id="sufferingServant" #callGrace>
