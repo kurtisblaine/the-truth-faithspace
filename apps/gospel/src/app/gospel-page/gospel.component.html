@@ -21,7 +21,7 @@
           <button style="font-size: 18px" mat-button (click)="toAnchor('ourSinNature')">Our Sin Nature</button>
           <button style="font-size: 18px" mat-button (click)="toAnchor('heSeesAndHears')">God Knows</button>
           <button style="font-size: 18px" mat-button (click)="toAnchor('aConsumingFire')">A Consuming Fire</button>
-          <button style="font-size: 18px" mat-button (click)="toAnchor('dayOfJudgement')">Day of Judgement</button>
+          <button style="font-size: 18px" mat-button (click)="toAnchor('dayOfJudgement')">The Day of Judgement</button>
         </ng-template>
       </mat-expansion-panel>
 
@@ -32,10 +32,12 @@
           </mat-panel-title>
         </mat-expansion-panel-header>
         <ng-template matExpansionPanelContent>
-          <button style="font-size: 18px" mat-button (click)="toAnchor('futilityOfPleasure')">Love of Pleasure</button>
+          <button style="font-size: 18px" mat-button (click)="toAnchor('futilityOfPleasure')">
+            The Love of Pleasure
+          </button>
           <button style="font-size: 18px" mat-button (click)="toAnchor('futilityInToil')">Work and Toil</button>
-          <button style="font-size: 18px" mat-button (click)="toAnchor('futilityOfWealth')">Wealth</button>
-          <button style="font-size: 18px" mat-button (click)="toAnchor('futilityInDeath')">Day of Death</button>
+          <button style="font-size: 18px" mat-button (click)="toAnchor('futilityOfWealth')">The Love of Wealth</button>
+          <button style="font-size: 18px" mat-button (click)="toAnchor('futilityInDeath')">The Day of Death</button>
         </ng-template>
       </mat-expansion-panel>
 
@@ -196,7 +198,7 @@
 <div class="sin-image" style="background-position: top" id="dayOfJudgement"></div>
 
 <blog-gospel-section [isLightMode]="false">
-  <h3 class="headers" (click)="navigateToGospelItem('Day of Judgement', dayOfJudgement)">Day of Judgement</h3>
+  <h3 class="headers" (click)="navigateToGospelItem('The Day of Judgement', dayOfJudgement)">The Day of Judgement</h3>
   <div class="paragraphs">
     <gospel-judgement-day #dayOfJudgement></gospel-judgement-day>
   </div>
@@ -212,7 +214,7 @@
 
 <div class="trumpets-image" style="background-position: top">
   <blog-gospel-section [isLightMode]="false" [isFloater]="true">
-    <h3 class="headers" (click)="navigateToGospelItem('Love of Pleasure', futilityOfPleasure)">Love of Pleasure</h3>
+    <h3 class="headers" (click)="navigateToGospelItem('Love of Pleasure', futilityOfPleasure)">The Love of Pleasure</h3>
     <div class="paragraphs">
       <gospel-pleasure #futilityOfPleasure></gospel-pleasure>
     </div>
@@ -232,7 +234,7 @@
 
 <div class="pimg19">
   <blog-gospel-section [isLightMode]="false" [isFloater]="true">
-    <h3 class="headers" (click)="navigateToGospelItem('Wealth', futilityOfWealth)">Wealth</h3>
+    <h3 class="headers" (click)="navigateToGospelItem('Wealth', futilityOfWealth)">The Love of Wealth</h3>
     <div class="paragraphs">
       <gospel-wealth #futilityOfWealth></gospel-wealth>
     </div>
@@ -242,7 +244,7 @@
 <div class="pimg19" id="futilityInDeath"></div>
 
 <blog-gospel-section [isLightMode]="false">
-  <h3 class="headers" (click)="navigateToGospelItem('Day of Death', futilityInDeath)">Day of Death</h3>
+  <h3 class="headers" (click)="navigateToGospelItem('Day of Death', futilityInDeath)">The Day of Death</h3>
   <div class="paragraphs">
     <gospel-death #futilityInDeath></gospel-death>
   </div>
