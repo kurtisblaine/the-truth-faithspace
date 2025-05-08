@@ -95,6 +95,7 @@ const hopeLifeComponents = [
   NewHeartComponent,
   ResurrectionComponent,
   SpiritualBodyComponent,
+  NewHeavenEarthComponent,
 ];
 
 @NgModule({
@@ -113,7 +114,6 @@ const hopeLifeComponents = [
     ...callFaithComponents,
     ...responseComponents,
     ...hopeLifeComponents,
-    NewHeavenEarthComponent,
   ],
   providers: [TemplateService, RouterService],
 })
