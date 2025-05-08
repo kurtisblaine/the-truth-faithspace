@@ -42,9 +42,4 @@ export class GospelComponent implements AfterViewInit, OnInit {
       onSameUrlNavigation: "ignore",
     });
   }
-
-  public navigateToGospelItem(title: string, component: any) {
-    // this.templateService.add(title, element);
-    this.router.navigateByUrl(`truthful-item/${title}`);
-  }
 }
