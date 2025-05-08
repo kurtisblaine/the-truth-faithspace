@@ -105,7 +105,7 @@ import { SharedModule } from "../../../shared/shared.module";
       hosts In the day of His burning anger.” (Isaiah 13:9-13)<br /><br />
 
       So then, I ask, if we are sinful and God sees and hears everything, and He will not let anyone go unpunished, how
-      then can anyone be saved? As the Scriptures say, "few will be saved." But how is there few? Shouldn't there be
+      then can anyone be saved? As the Scriptures say, "Few will be saved." But how is there few? Shouldn't there be
       none? Furthermore He says,
       <blog-reference-tooltip [reference]="'Matthew 7:13,14'" [isJesusWord]="true"
         >Enter by the narrow gate. For the gate is wide and the way is easy that leads to destruction, and those who
@@ -134,40 +134,17 @@ import { SharedModule } from "../../../shared/shared.module";
         us and bring it to us, that we may hear it and do it?’ But the word is very near you. It is in your mouth and in
         your heart, so that you can do it.</blog-reference-tooltip
       >
-      As it says, "So that you can do it." For all things are possible with God. For who is He who has descended? And
-      who is He who has ascended? The world thinks the truth is hidden: in the depths of the ocean, in outer space, in
-      the center of the earth. They spend countless billions to explore where no man has gone before, searching for the
-      truth. Yet, God is widely known and everyone knows His name; for no-one needs to ask, “Who has ascended into
-      heaven and descended? Who has gathered the wind in His fists? Who has wrapped the waters in His garment? Who has
-      established all the ends of the earth? What is His name or His son's name? Surely you know!” (Proverbs 30:4) For
-      He has made Himself renown to all His creation. Whose name is constantly blasphemed? Yes, they know Him, but chose
-      not to honor Him. Whose symbol is the cross, which is put on buildings, hung around necks, pierced on the skin,
-      and marked on grave stones? Did we forget that it was once a device of death? (For Jesus was put on that cross,
-      turning what the enemy meant for evil into good.) Whose coming split our calender in half? Or who makes a week
-      seven days? Who hallows the seventh day? The same writings that declare a seven day week and a restful day on the
-      seventh, tells of Him; the same writings that quote wisdom, that we have all come to agree upon, even quoting it
-      without knowing its original source, also speaks of the truth. Who is it that lived a great while ago, but yet
-      died, and still proclaimed as resurrected from the dead? That which once was a sect, a heresy, a false teaching,
-      which was fought against, has now become world-wide good news. For who can fight against God and succeed? If this
-      thing were not of God, it wouldn't have withstood. And yet, we shoot rockets into the heavens to reach God, just
-      as they tried in times past at the Tower of Babel, by their own might to obtain to God, but they have failed; for
-      God sees to it that no-one can come near Him by their own self-will or effort, so that no-one will be able to
-      boast in His Presence; but rather, through the word of faith, through the word of truth, which says,
-      <blog-reference-tooltip [reference]="'Romans 10:8-13'"
-        >"The word is near you, in your mouth and in your heart” (that is, the word of faith that we proclaim); because,
-        if you confess with your mouth that Jesus is Lord and believe in your heart that God raised him from the dead,
-        you will be saved. For with the heart one believes and is justified, and with the mouth one confesses and is
-        saved. It is just as the Scripture says: “Anyone who believes in Him will never be put to shame.” For there is
-        no distinction between Jew and Greek; for the same Lord is Lord of all, bestowing his riches on all who call on
-        him. For everyone who calls on the name of the Lord will be saved.
-      </blog-reference-tooltip>
-      For the way of life is through the knowledge of God in the face of the Lord Jesus Christ; and He is the living
-      Grace, the living Truth; He has descended to us and He has ascended; and He sends forth the Spirit of Truth; and
-      He will come again with the clouds in the heavens, for He is always and forever. Every question is answered in a
-      single saying, as the apostle Paul says,
-      <blog-reference-tooltip [reference]="'Romans 7:25'"
-        >THANK GOD! THE ANSWER IS IN JESUS CHRIST OUR LORD.</blog-reference-tooltip
-      >
+      As it says, "So that you can do it." For the things which are impossible to us are possible with God. As He says,
+      "Behold, I am the LORD, the God of all flesh; is anything too difficult for Me?” (Jeremiah 32:27) And, “Thus says
+      the LORD of hosts, 'If it is too difficult in the sight of the remnant of this people in those days, will it also
+      be too difficult in My sight?' declares the LORD of hosts.” (Zechariah 8:6) For who has ascended? Or who has
+      descended? Salvation is not far away; as it says, “Rejoice greatly, O daughter of Zion! Shout in triumph, O
+      daughter of Jerusalem! Behold, your king is coming to you; He is just and endowed with salvation, Humble, and
+      mounted on a donkey, Even on a colt, the foal of a donkey.” (Zechariah 9:9) For it is God who descends, and it is
+      He who ascends. Man cannot save himself; as He says, "Or do you have an arm like God, And can you thunder with a
+      voice like His?” (Job 40:9) If so, "Then I will also confess to you, That your own right hand can save you.” (Job
+      40:14) Surely, we need a savior; surely, we need a rock. Can wealth save us? Can we gather up enough food for
+      ourselves to withstand the evil day? Surely, our best efforts are useless. Our motives are not right.
     </ng-template>`,
   styles: ``,
   changeDetection: ChangeDetectionStrategy.OnPush,

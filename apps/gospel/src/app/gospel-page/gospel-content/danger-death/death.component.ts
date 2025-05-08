@@ -128,11 +128,45 @@ import { SharedModule } from "../../../shared/shared.module";
       know that we are wayward, turning to our own way, and in need of a Shepherd? One day we will return our cards to
       the Dealer, for our hand is only for a little while. Shall we go all in for something that is temporary? Of course
       not! Rather how much more shall we go all in for what is everlasting! But where is the everlasting path? Where is
-      the ancient road? Will someone show us the way of life? If there is a way, surely God would reveal it. Continue
-      on! And take hold of the hope: "Whatever your hand finds to do, do it with your might, for there is no work or
-      thought or knowledge or wisdom in Sheol, to which you are going." (Ecclesiastes 9:10) And, "I have seen that
-      nothing is better than that man should be happy in his activities, for that is his lot. For who will bring him to
-      see what will occur after him?" (Ecclesiastes 3:22)
+      the ancient road? Will someone show us the way of life? If there is a way, surely God would reveal it. Take hold
+      of the hope: "Whatever your hand finds to do, do it with your might, for there is no work or thought or knowledge
+      or wisdom in Sheol, to which you are going." (Ecclesiastes 9:10) And, "I have seen that nothing is better than
+      that man should be happy in his activities, for that is his lot. For who will bring him to see what will occur
+      after him?" (Ecclesiastes 3:22) <br /><br />
+
+      The world thinks the truth is hidden: in the depths of the ocean, in outer space, in the center of the earth. They
+      spend countless billions to explore where no man has gone before, searching for the truth. Yet, God is widely
+      known and everyone knows His name; for no-one needs to ask, “Who has ascended into heaven and descended? Who has
+      gathered the wind in His fists? Who has wrapped the waters in His garment? Who has established all the ends of the
+      earth? What is His name or His son's name? Surely you know!” (Proverbs 30:4) For He has made Himself renown to all
+      His creation. Whose name is constantly blasphemed? Yes, they know Him, but chose not to honor Him. Whose symbol is
+      the cross, which is put on buildings, hung around necks, pierced on the skin, and marked on grave stones? Did we
+      forget that it was once a device of death? (For Jesus was put on that cross, turning what the enemy meant for evil
+      into good) Whose coming split our calender in half? Or who makes a week seven days? Who hallows the seventh day?
+      The same writings that declare a seven day week and a restful day on the seventh, tells of Him; the same writings
+      that quote wisdom, that we have all come to agree upon, even quoting it without knowing its original source, also
+      speaks of the truth. Who is it that lived a great while ago, but yet died, and still proclaimed as resurrected
+      from the dead? That which once was a sect, a heresy, a false teaching, which was fought against, has now become
+      world-wide good news. For who can fight against God and succeed? If this thing were not of God, it wouldn't have
+      withstood. And yet, we shoot rockets into the heavens to reach God, just as they tried in times past at the Tower
+      of Babel, by their own might to obtain to God, but they have failed; for God sees to it that no-one can come near
+      Him by their own self-will or effort, so that no-one will be able to boast in His Presence; but rather, through
+      the word of faith, through the word of truth, which says,
+      <blog-reference-tooltip [reference]="'Romans 10:8-13'"
+        >"The word is near you, in your mouth and in your heart” (that is, the word of faith that we proclaim); because,
+        if you confess with your mouth that Jesus is Lord and believe in your heart that God raised him from the dead,
+        you will be saved. For with the heart one believes and is justified, and with the mouth one confesses and is
+        saved. It is just as the Scripture says: “Anyone who believes in Him will never be put to shame.” For there is
+        no distinction between Jew and Greek; for the same Lord is Lord of all, bestowing his riches on all who call on
+        him. For everyone who calls on the name of the Lord will be saved.
+      </blog-reference-tooltip>
+      For the way of life is through the knowledge of God in the face of the Lord Jesus Christ; and He is the living
+      Grace, the living Truth; He has descended to us and He has ascended; and He sends forth the Spirit of Truth; and
+      He will come again with the clouds in the heavens, for He is always and forever. Every question is answered in a
+      single saying, as the apostle Paul says,
+      <blog-reference-tooltip [reference]="'Romans 7:25'"
+        >THANK GOD! THE ANSWER IS IN JESUS CHRIST OUR LORD.</blog-reference-tooltip
+      >
     </ng-template>`,
   styles: ``,
   changeDetection: ChangeDetectionStrategy.OnPush,
