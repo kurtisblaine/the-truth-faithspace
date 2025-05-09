@@ -147,7 +147,7 @@ import { SharedModule } from "../../../shared/shared.module";
       sins." (1 Corinthians 15:17) And it is through faith that we may abide in Him, through understanding with our
       hearts, through turning to Him to be saved, for this is true understanding; as it says, "AND UNDERSTAND WITH THEIR
       HEART AND RETURN, AND I WOULD HEAL THEM." (Acts 28:27) Furthermore, when we come to Him, we must remain in Him. If
-      we leave our Refuge and do not remain, we've left our saftey, caught outside the city of Refuge, and still yet in
+      we leave our Refuge and do not remain, we've left our safety, caught outside the city of Refuge, and still yet in
       danger. And so by abiding in Christ, He will abide in us; if we confess Him, we know we abide in Him; as it says,
       “Whoever confesses that Jesus is the Son of God, God abides in him, and he in God.” (1 John 4:15) And,
       <blog-reference-tooltip [reference]="'Psalm 73:28'">
