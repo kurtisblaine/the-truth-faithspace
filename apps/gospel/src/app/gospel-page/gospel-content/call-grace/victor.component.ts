@@ -7,14 +7,14 @@ import { SharedModule } from "../../../shared/shared.module";
   imports: [CommonModule, SharedModule],
   template: `<ng-container *ngTemplateOutlet="theVictor"></ng-container>
     <ng-template #theVictor>
-      God sent Samson to Israel to be a judge. He was a mighty judge in the land of Israel, killing many of their
-      enemies, the Philistines. Before he was born, His parents were given the command not to eat anything from the
-      grapevine and have no razor put to his head, for his strength came from his Head, that is to say Christ. He killed
-      many of the Philistines, even once with the jawbone of a donkey, striking down a thousand men. But later, He was
-      decieved and tricked by the one he loved, the one he ate bread with, and she shaved off the seven locks of his
-      head, and the LORD who gave him his strength left him; then he was subdued by his enemies, they gouged out his
-      eyes and put him into prison, where his hair began to grow again. The time came when the Philistines, merry with
-      wine, called for Samson to make a spectacle of him since he was their enemy, but Samson prayed to the Lord,
+      God raised up Samson to be a judge for Israel. He was a mighty judge in the land of Israel, killing many of their
+      enemies. Before he was born, His parents were given the command not to eat anything from the grapevine and have no
+      razor put to his head, for his strength came from his Head, that is to say, Christ. He killed many of the
+      Philistines, even once with the jawbone of a donkey, striking down a thousand men. But later, He was deceived and
+      tricked by the one he loved, the one he ate bread with, and she shaved off the seven locks of his head, and the
+      LORD, who gave him his strength, left him; then he was subdued by his enemies, they gouged out his eyes and put
+      him into prison, where his hair began to grow again. Then the time came when the Philistines, merry with wine,
+      called for Samson to make a spectacle of him since he was their enemy, but Samson prayed to the Lord,
       <blog-reference-tooltip [reference]="'Judges 16:28'">
         O Lord God, remember me, I pray! Strengthen me, I pray, just this once, O God, that I may with one blow take
         vengeance on the Philistines for my two eyes!
@@ -23,7 +23,7 @@ import { SharedModule } from "../../../shared/shared.module";
       one on his right and the other on his left." (Judges 16:29) "Then Samson said, “Let me die with the Philistines!”
       And he pushed with all his might, and the temple fell on the lords and all the people who were in it. So the dead
       that he killed at his death were more than he had killed in his life." (Judges 16:30) So Samson made a spectacle
-      of them, by destroying them in his death. <br /><br />
+      of them in that he destroyed them in his death. <br /><br />
 
       And Jesus, having removed many demons from people who were oppressed, subduing them, freeing them who were held
       captive by satan, was sent by God to be a judge, to be a deliverer; at the end of His life, He was betrayed by
@@ -37,13 +37,13 @@ import { SharedModule } from "../../../shared/shared.module";
       to see; the written charge against Him, "JESUS THE NAZARENE, KING OF THE JEWS". But it was in His death, that He
       disarmed more of the enemies of the rulers and principalities of this world than He did in His life, defeating
       them and rendering them powerless. For the power of a lion is in its mouth, for it has sharp and powerful teeth,
-      and the power of satan is in his mouth, his lies; but we have been set free by the Truth of God, namely Christ
-      Jesus crucified for us, received by us through faith in Him, and in Him there is no condemnation; for if we walk
-      according to the Spirit, we are no longer under the law, but we are under grace - and under Him and in Him, there
-      is no sin; so while we are in Him, we are free from sin, for where the Spirit of the Lord is there is freedom.
-      While the rulers of this world thought they were destroying Him, they were being destroyed; while they were
-      mocking Him, they were being mocked; while they put Him on display, they were put on public display. And later, as
-      prophecied, the accusations of the enemy will cease; as the Revelation says,
+      and the power of satan is in his mouth, his lies; but we have been set free by the Truth, namely Christ Jesus
+      crucified for us, received through faith in Him, and in Him there is no condemnation; for if we walk according to
+      the Spirit, we are no longer under the law, but under grace; under Him and in Him, there is no sin; so while we
+      are in Him, we are free from the power of sin, for where the Spirit of the Lord is there is freedom. While the
+      rulers of this world thought they were destroying Him, they were being destroyed; while they were mocking Him,
+      they were being mocked; while they put Him on display, they were put on public display. And later, as prophesied,
+      the accusations of the enemy will cease; as the Revelation says,
       <blog-reference-tooltip [reference]="'Revelation 12:10-12'">
         for the accuser of our brethren has been thrown down, he who accuses them before our God day and night.
       </blog-reference-tooltip>
@@ -54,6 +54,7 @@ import { SharedModule } from "../../../shared/shared.module";
       them off, but they are no gods at all; the one, and only God, does on our behalf, waging war for us and defeating
       our foes. He defeated them through the cross and we enter into His victory through faith. If we dwell in lies,
       being deceived or deceiving ourselves, we are under oppression, but the truth makes us free.
+      <!-- TODO: put the victorious link here -->
       <br /><br />
 
       Likewise, in a different testimony, Haman was an enemy of the Jews who sought to kill the innocent Mordecai and
@@ -73,7 +74,7 @@ import { SharedModule } from "../../../shared/shared.module";
       <b>So the evil Haman intended for Mordecai was poured out on his own head.</b>
       Then another decree was setup that allowed for the irrevocable decree previously made to be fought against:
       namely, on the day the Jews were to be slaughtered, they could defend themselves. And to this day, the Jewish
-      nation celebrates this as the Day of Purim as a testimony, which means "lots" because it was by lot that day was
+      nation celebrates this as the Day of Purim as a testimony, which means "lots" because it was by lot the day was
       chosen.<br /><br />
 
       Now, Christ looked to be defeated on the cross, but He was made weak willingly; moments before His crucifixion He
@@ -89,14 +90,17 @@ import { SharedModule } from "../../../shared/shared.module";
         charge I have received from My Father.
       </blog-reference-tooltip>
       If the rulers of this world would have known what they were doing, they would not have crucified the Lord of glory
-      - but their minds were darkened. The rulers of the people wanted for themselves the inheritance, the kingdom of
-      Israel (as with the parable of the vinyard written about in Matthew 21:33-46); but by the cross, Christ suffered
-      only a wound to His heel, and satan to his head (for we wrestle not against flesh and blood). We know that Christ
-      did not remain in the grave forever, but only three days; and the judgment upon the ruler of this world is
-      pronounced and has been executed. For who was really defeated by the cross? If satan was judged at the fall, and
-      was made to grovel on his belly, how much more is he rendered powerless through the cross of Christ? When the
-      rulers of this world made a public display of Him, He made a public display of them through the cross; as the
-      apostle Paul writes,
+      - but their minds were darkened. The rulers wanted for themselves the inheritance, the kingdom of Israel (as with
+      the parable of the vinyard written about in Matthew 21:33-46); but by the cross, Christ suffered only a wound to
+      His heel, and satan to his head (for we wrestle not against flesh and blood). We know that Christ did not remain
+      in the grave forever, but only three days; and the judgment upon the ruler of this world is pronounced and has
+      been executed. For who was really defeated by the cross? If satan was judged at the fall, and was made to grovel
+      on his belly, how much more is he rendered powerless through the cross of Christ? As Christ says,
+      <blog-reference-tooltip [reference]="'John 16:11'" [isJesusWord]="true">
+        Concerning judgment, because the ruler of this world has been judged.
+      </blog-reference-tooltip>
+      When the rulers of this world made a public display of Him, He made a public display of them through the cross; as
+      the apostle Paul writes,
       <blog-reference-tooltip [reference]="'Colosians 2:13-14'">
         When you were dead in your transgressions and the uncircumcision of your flesh, He made you alive together with
         Him, having forgiven us all our transgressions, having canceled out the certificate of debt consisting of
@@ -107,26 +111,22 @@ import { SharedModule } from "../../../shared/shared.module";
       Therefore,
       <b
         >the good the enemy intended for himself was given to Christ; and the evil the enemy intended for Christ was
-        poured out on himself.</b
+        poured out upon his own head.</b
       >
       As with Haman, he was impalled on the tree meant for Mordecai; likewise, it was the devil who was defeated by the
-      cross which was meant for Christ; however, it was Christ in fact who was crucified, but He was not defeated by the
-      cross, for He lives forevermore. And it is through the cross we have victory in His name! And the devil's final
-      end is decreed in the Book. Thus, the glory and honor which the enemy wanted for himself went to Christ - the King
-      of Kings and the Lord of Lords! The jugement which the enemy intended for Christ was poured out upon his own head;
-      as it says,
+      cross which was meant for Christ; however, it was Christ who was crucified, but He was not defeated by the cross,
+      for He lives forevermore. And it is through the cross we have the victory in His name! And the devil's final end
+      is decreed in the Book. Thus, the glory and honor which the enemy wanted for himself went to Christ - the King of
+      Kings and the Lord of Lords! The jugement which the enemy intended for Christ was poured out upon his own head; as
+      Jesus said,
       <blog-reference-tooltip [reference]="'John 12:31-32'" [isJesusWord]="true">
         Now judgment is upon this world; now the ruler of this world will be cast out. And I, if I am lifted up from the
         earth, will draw all men to Myself.
       </blog-reference-tooltip>
-      And,
-      <blog-reference-tooltip [reference]="'John 16:11'" [isJesusWord]="true">
-        concerning judgment, because the ruler of this world has been judged.
-      </blog-reference-tooltip>
       The devil now has no hold on you who believe, and his lies have no power in you who belong to Christ Jesus; fight
-      against him with the Sword of the Mouth of God; your defense of armor is from the Lord, your offensive weapon,
-      from the Lord; and you, O warrior in the kingdom of God - fight! For He has fought for us. He gives us the law of
-      the Spirit and life that we may defend ourselves against the law of sin and death.
+      against him with the Sword of the Word of God; your defense of armor is from the Lord, and your offensive weapon
+      is from the Lord; and you, O warrior in the kingdom of God - fight! For He has fought for us. He gives us the law
+      of the Spirit and life that we may defend ourselves against the law of sin and death.
       <blog-link
         [title]="'See more about the Two Laws Waging War'"
         [link]="'https://thelightof.life/#/edify-detail/52314b0f-bfbb-2b2b-6393-c8e3dcef2a2e'"

@@ -36,7 +36,7 @@ import { SharedModule } from "../../../shared/shared.module";
       the annointing we have received from Him. In His grace, He has also given to us teachers and evangelists and
       prophets and apostles. Know this for sure: the Holy Spirit will always lead us out of the world to be a set apart
       vessel for God's service. To say the same thing in other words: the Holy Spirit leads us to holiness. Do not be
-      decieved, but test the spirits to see if they come from God. There is one Spirit and one Gospel; if you have
+      deceived, but test the spirits to see if they come from God. There is one Spirit and one Gospel; if you have
       believed, you know the Gospel is from God. He speaks with us to lead us and guide us; for He was with us , now
       away from us, yet among us; as it says,
       <blog-reference-tooltip [reference]="'Isaiah 30:20-21'">

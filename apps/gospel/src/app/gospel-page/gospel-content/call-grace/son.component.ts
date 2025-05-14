@@ -154,7 +154,7 @@ import { SharedModule } from "../../../shared/shared.module";
         >By this we may know that we are in him: whoever says he abides in Him ought to walk in the same way in which he
         walked.</blog-reference-tooltip
       >
-      So let us not be decieved: if we act like a devil, we show ourselves sons of the devil, but if we pattern
+      So let us not be deceived: if we act like a devil, we show ourselves sons of the devil, but if we pattern
       ourselves after God, we show ourselves truly sons of God (John 8:30-47). This proves us and gives us confidence on
       the day of Salvation, and we watch ourselves constantly in many watchings and prayer. We really are sons of God if
       we have believed, and true sons pattern themselves after the Father; and we have been begotten of God by the
