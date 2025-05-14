@@ -1,10 +1,9 @@
 @use "@angular/material" as mat;
 @use "sass:map";
 
-@include mat.core();
+@import url(~fullpage.js/dist/fullpage.min.css);
 
-// $primary-palette: mat.define-palette(mat.$azure-palette);
-// $tertiary-palette: mat.define-palette(mat.$red-palette);
+@include mat.core();
 
 $theme: mat.define-theme(
   (

@@ -272,33 +272,34 @@ import { SharedModule } from "../../../shared/shared.module";
       If the goodness of God would ever be manifest to us, it would be supremely good such that nobody on earth would've
       considered it first; for the love of God is heavenly, beyond human thought; we wouldn't be able to conjure up the
       thought of it, for it wouldn't be of us. I know the things which are from me: they are sinful, they are no good; I
-      am ashamed of them. If God would reveal His love to us, I would know it is not from mankind, for it would be good.
-      The love of God is above, but I am below. I know what is in man, for I am a man; I see the world and what is in
-      it; and I am a man of this world. But God's love is not earthly, it's heavenly; the love that we know says, "You
-      love me, so I love you; if you hate me, then I hate you." But the love from above is above all, beyond human
-      thought, beyond human morals, beyond human imagination. For my mind is sinful, how can I think of anything good?
-      The depths of my heart utter the depths of hell; but the Word says about God's thoughts: "As the heavens are
-      higher than the earth, So are My ways higher than your ways And My thoughts than your thoughts.” (Isaiah 55:9) My
-      earthly love says, "My enemy is my enemy, why should I love him?" But the love of God says,
+      am ashamed of them. If God would reveal His love to us, I would know it is not from mankind, for it would be good;
+      and I know goodness does not dwell in me, that is, in my flesh. The love of God is above, but I am below. I know
+      what is in man, for I am a man; I see the world and what is in it, and I am a man of this world. But God's love is
+      not earthly, it's heavenly; the love that we know says, "You love me, so I love you; if you hate me, then I hate
+      you." But the love from above is above all, beyond human thought, beyond human morals, beyond human imagination.
+      For our mind is sinful, how can we think of anything good? The depths of our heart utter the depths of hell; but
+      the Word of God speaks of God's thoughts: "As the heavens are higher than the earth, So are My ways higher than
+      your ways And My thoughts than your thoughts.” (Isaiah 55:9) So my earthly love says, "My enemy is my enemy, why
+      should I love him?" But the love of God says,
       <blog-reference-tooltip [reference]="'Psalms 35:11-14'">
         They repay me evil for good, To the bereavement of my soul. But as for me, when they were sick, my clothing was
         sackcloth; I humbled my soul with fasting, And my prayer kept returning to my bosom. I went about as though it
         were my friend or brother; I bowed down mourning, as one who sorrows for a mother.
       </blog-reference-tooltip>
-      Jesus loved us, his enemies, to death, even death on a cross. If this is the love He shows for His enemies, what
-      kind of love does He have for His friends? Furthermore, the love I have is first toward myself, for I love myself
-      and care for myself. Who do I love more than myself? But the love of God says, "O my son Absalom, my son, my son
-      Absalom! Would I had died instead of you, O Absalom, my son, my son!" (2 Samuel 18:33) “For God so loved the
-      world, that He gave His only begotten Son.” (John 3:16) Jesus died, giving up His whole self; He did not give up
-      only a little bit of His time, but His whole soul; as it says, "To the bereavement of My soul." (Psalms 35:11) And
-      for His friends? No. For His enemies: to reconcile them to God. Furthermore, the love from me is first toward my
-      family; a stranger, I do not love. But the love of God is toward us strangers, foreigners, and aliens; we,
-      Gentiles, were once separate from the common wealth of Israel; we were like creatures in the depths of the ocean
-      to God; creatures in which men look at and say, "Ah! What is it?" Yet God loved the strange thing and brought it
-      near unto Himself; as it says, “So then you are no longer strangers and aliens, but you are fellow citizens with
-      the saints, and are of God's household.” (Ephesians 2:19) Furthermore, the love we have is written about: “The
-      hands of compassionate women Boiled their own children; They became food for them Because of the destruction of
-      the daughter of my people.” (Lamentations 4:10) But the love of Christ says,
+      Furthermore, the love I first have is toward myself, for I love myself and care for myself. Who do I love more
+      than myself? But the love of God says, "O my son Absalom, my son, my son Absalom! Would I had died instead of you,
+      O Absalom, my son, my son!" (2 Samuel 18:33) “For God so loved the world, that He gave His only begotten Son.”
+      (John 3:16) Jesus died, giving up His whole self; He did not give up only a little bit of Himself, but His whole
+      soul; as it says, "To the bereavement of My soul." (Psalms 35:11) And for His friends? No. For His enemies: to
+      reconcile them to God. For Jesus Christ first loved us, his enemies, even to death, even death on a cross. If this
+      is the love He shows to His enemies, what kind of love do you suppose He shows to His friends? Furthermore, the
+      love from me is first towards my family; and a stranger, how can I love? But the love of God is toward strangers,
+      foreigners, and aliens; we, Gentiles, were once separate from the commonwealth of Israel; we were like creatures
+      in the depths of the ocean to God; creatures in which men look at and say, "Ah! What is it?" Yet God loved the
+      strange thing and brought it near unto Himself; as it says, “So then you are no longer strangers and aliens, but
+      you are fellow citizens with the saints, and are of God's household.” (Ephesians 2:19) Furthermore, the love we
+      have is written about: “The hands of compassionate women Boiled their own children; They became food for them
+      Because of the destruction of the daughter of my people.” (Lamentations 4:10) But the love of Christ says,
       <blog-reference-tooltip [reference]="'Matthew 26:26'" [isJesusWord]="true">
         Take, eat; this is My body.
       </blog-reference-tooltip>
@@ -308,19 +309,24 @@ import { SharedModule } from "../../../shared/shared.module";
       the love of man says, "Keep to yourself, do not come near me, For I am holier than you!" (Isaiah 65:5) But the
       love of Christ says, "BEHOLD, I HAVE COME TO DO YOUR WILL." (Hebrews 10:9) Furthermore, the love of the LORD God
       says, "Can a woman forget her nursing child And have no compassion on the son of her womb? Even these may forget,
-      but I will not forget you.” (Isaiah 49:15) The love of man is written about: “For this reason a man shall leave
-      his father and his mother, and be joined to his wife; and they shall become one flesh.” (Genesis 2:24) For the man
-      first hates his father and his mother to be joined to his wife. But the love of Christ says,
+      but I will not forget you.” (Isaiah 49:15) And, "I WILL NEVER DESERT YOU, NOR WILL I EVER FORSAKE YOU." (Hebrews
+      13:5) The love of man is written about: “For this reason a man shall leave his father and his mother, and be
+      joined to his wife; and they shall become one flesh.” (Genesis 2:24) The love of man first hates his father and
+      his mother to be joined to his wife. But the love of Christ says,
       <blog-reference-tooltip [reference]="'Luke 14:26'" [isJesusWord]="true">
         If anyone comes to Me, and does not hate his own father and mother and wife and children and brothers and
         sisters, yes, and even his own life, he cannot be My disciple.
       </blog-reference-tooltip>
-      For when the love of God in Christ Jesus is measured up against our own love: our love is reckoned as hatred in
-      God's sight. “For as high as the heavens are above the earth, So great is His lovingkindness toward those who fear
-      Him.” (Psalms 103:11) And, "His lovingkindness is everlasting." (Psalm 136) The love of God is not from earth; it
-      is beyond the heavens: heavenly. And, “We love, because He first loved us.” (1 John 4:19) And, “We know that we
+      And, "The one who joins himself to the Lord is one spirit with Him.” (1 Corinthians 6:17) For when the love of God
+      in Christ Jesus is measured up against our own love: how cannot our natural love look like hatred in His sight?
+      “For as high as the heavens are above the earth, So great is His lovingkindness toward those who fear Him.”
+      (Psalms 103:11) And, "His lovingkindness is everlasting." (Psalm 136) The love of God is not from earth; it is
+      beyond the heavens: heavenly. And so: “We love, because He first loved us.” (1 John 4:19) And, “We know that we
       have passed out of death into life, because we love the brethren. He who does not love abides in death.” (1 John
-      3:14) “If anyone does not love the Lord, he is to be accursed. Maranatha.” (1 Corinthians 16:22)
+      3:14) “If anyone does not love the Lord, he is to be accursed. Maranatha.” (1 Corinthians 16:22) "For love is as
+      strong as death, Jealousy is as severe as Sheol; Its flashes are flashes of fire, The very flame of the LORD. Many
+      waters cannot quench love, Nor will rivers overflow it; If a man were to give all the riches of his house for
+      love, It would be utterly despised." (Song of Solomon 8:6-7)
       <br /><br />
 
       The Father God has testified to us in many ways concerning His Son; we may believe man's testimony, but how much

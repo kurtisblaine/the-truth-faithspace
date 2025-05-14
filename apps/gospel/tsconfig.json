@@ -18,7 +18,9 @@
     "noImplicitReturns": true,
     "noFallthroughCasesInSwitch": true,
     "target": "ES2022",
-    "noImplicitAny": false
+    "module": "ES2022",
+    "noImplicitAny": false,
+    "useDefineForClassFields": false
   },
   "angularCompilerOptions": {
     "strictInjectionParameters": true,
