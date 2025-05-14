@@ -9,22 +9,21 @@ import { SharedModule } from "../../../shared/shared.module";
     <ng-template #theVictor>
       God sent Samson to Israel to be a judge. He was a mighty judge in the land of Israel, killing many of their
       enemies, the Philistines. Before he was born, His parents were given the command not to eat anything from the
-      grapevine and have no razor put to his head, for his strength was his Head, that is to say Christ. He killed many
-      of the Philistines, even once with the jawbone of a donkey, striking down a thousand men. But later, He was
+      grapevine and have no razor put to his head, for his strength came from his Head, that is to say Christ. He killed
+      many of the Philistines, even once with the jawbone of a donkey, striking down a thousand men. But later, He was
       decieved and tricked by the one he loved, the one he ate bread with, and she shaved off the seven locks of his
       head, and the LORD who gave him his strength left him; then he was subdued by his enemies, they gouged out his
       eyes and put him into prison, where his hair began to grow again. The time came when the Philistines, merry with
-      wine, called for Samson to make a spectacle of him since he was their enemy, but Samson prayed to the Lord; as it
-      is written,
-      <blog-reference-tooltip [reference]="'Judges 16:28-30'">
-        Then Samson called to the Lord, saying, “O Lord God, remember me, I pray! Strengthen me, I pray, just this once,
-        O God, that I may with one blow take vengeance on the Philistines for my two eyes!” And Samson took hold of the
-        two middle pillars which supported the temple, and he braced himself against them, one on his right and the
-        other on his left. Then Samson said, “Let me die with the Philistines!” And he pushed with all his might, and
-        the temple fell on the lords and all the people who were in it. So the dead that he killed at his death were
-        more than he had killed in his life.
+      wine, called for Samson to make a spectacle of him since he was their enemy, but Samson prayed to the Lord,
+      <blog-reference-tooltip [reference]="'Judges 16:28'">
+        O Lord God, remember me, I pray! Strengthen me, I pray, just this once, O God, that I may with one blow take
+        vengeance on the Philistines for my two eyes!
       </blog-reference-tooltip>
-      So Samson made a spectacle of them, by destroying them in his death. <br /><br />
+      ” And Samson took hold of the two middle pillars which supported the temple, and he braced himself against them,
+      one on his right and the other on his left." (Judges 16:29) "Then Samson said, “Let me die with the Philistines!”
+      And he pushed with all his might, and the temple fell on the lords and all the people who were in it. So the dead
+      that he killed at his death were more than he had killed in his life." (Judges 16:30) So Samson made a spectacle
+      of them, by destroying them in his death. <br /><br />
 
       And Jesus, having removed many demons from people who were oppressed, subduing them, freeing them who were held
       captive by satan, was sent by God to be a judge, to be a deliverer; at the end of His life, He was betrayed by
@@ -39,44 +38,45 @@ import { SharedModule } from "../../../shared/shared.module";
       disarmed more of the enemies of the rulers and principalities of this world than He did in His life, defeating
       them and rendering them powerless. For the power of a lion is in its mouth, for it has sharp and powerful teeth,
       and the power of satan is in his mouth, his lies; but we have been set free by the Truth of God, namely Christ
-      Jesus, the righteousness of God, received by us through faith in Him, and in Him there is no condemnation; for if
-      we walk according to the Spirit, we are no longer under the law, but we are under grace - and under Him and in
-      Him, there is no sin; so while we are in Him, we are free from sin, for where the Spirit of the Lord is there is
-      freedom. While the rulers of this world thought they were destroying Him, they were being destroyed; while they
-      were mocking Him, they were being mocked; while they put Him on display, they were put on public display. And
-      later, as prophesied, the accusations of the enemy will cease; as the Revelation says,
+      Jesus crucified for us, received by us through faith in Him, and in Him there is no condemnation; for if we walk
+      according to the Spirit, we are no longer under the law, but we are under grace - and under Him and in Him, there
+      is no sin; so while we are in Him, we are free from sin, for where the Spirit of the Lord is there is freedom.
+      While the rulers of this world thought they were destroying Him, they were being destroyed; while they were
+      mocking Him, they were being mocked; while they put Him on display, they were put on public display. And later, as
+      prophecied, the accusations of the enemy will cease; as the Revelation says,
       <blog-reference-tooltip [reference]="'Revelation 12:10-12'">
         for the accuser of our brethren has been thrown down, he who accuses them before our God day and night.
       </blog-reference-tooltip>
-      And the prophesy also describes satan's rule ending, and Christ's kingdom coming. For Jesus fought the battle for
-      us and we enter into His victory; and our God is for us, doing on our behalf, fighting for us. Just as the
+      And the prophecy also describes satan's rule ending, and Christ's kingdom coming. For Jesus fought the battle for
+      us and we enter into His victory; for our God is for us, doing on our behalf, fighting for us. Just as the
       Israelites entered into the Promised Land by the mighty hand of God, so it is with us: we enter in by His powerful
       arm, following and obeying Him. Other gods require that you do something for them: stand them up, feed them, dust
-      them off, but they are no gods at all; the one and only God does on our behalf, waging war for us and defeating
+      them off, but they are no gods at all; the one, and only God, does on our behalf, waging war for us and defeating
       our foes. He defeated them through the cross and we enter into His victory through faith. If we dwell in lies,
       being deceived or deceiving ourselves, we are under oppression, but the truth makes us free.
       <br /><br />
 
-      Likewise, Haman was an enemy of the Jews who sought to kill the innocent Mordecai and with him, the Jewish nation.
-      He payed money to the king to establish a decree: on a certain day, all Jews would be killed. Furthermore, he had
-      set up a pole by his home to impale Mordecai on it; and what was preventing him? He needed the permission of the
-      king. Before all this, Mordecai saved the same king from being killed by spies; while Haman went to go ask the
-      king for permission to impale Mordecai, the king discovered from the book of the Chronicles that Mordecai saved
-      the king in the past; so the king asked Haman while he came in to ask for Mordecai's death, "What should be done
-      to the one whom the king is pleased", and Haman, thinking it was for himself, gave a favorable answer. The king
-      then told him to do all which he said unto Mordecai, the Jew, which was Haman's enemy.
+      Likewise, in a different testimony, Haman was an enemy of the Jews who sought to kill the innocent Mordecai and
+      with him, the Jewish nation. He payed money to the king to establish a decree: on a certain day, all Jews would be
+      killed. Furthermore, he had set up a pole by his home to impale Mordecai on it; and what was preventing him? He
+      needed the permission of the king. Before all this, Mordecai saved the same king from being killed by spies; while
+      Haman went to go ask the king for permission to impale Mordecai, the king discovered from the book of the
+      Chronicles that Mordecai saved the king in the past; so the king asked Haman while he came in to ask for
+      Mordecai's death, "What should be done to the one whom the king is pleased", and Haman, thinking the good was for
+      himself, gave a favorable answer. The king then told him to do all which he said unto Mordecai, the Jew, which was
+      Haman's enemy.
       <b>So the good Haman intended for himself went to Mordecai, his enemy.</b>
-      And later at a banquet, Ester, the Queen, who was a Jew and the neice of Mordecai, spoke of Haman's decree to kill
+      And later at a banquet, Ester, the Queen, who was a Jew and the niece of Mordecai, spoke of Haman's decree to kill
       the Jews which was approved by the king in ignorance, for he did not know the Queen was a Jew, for she kept her
       nationality hidden. And the king was furious because Haman sought to kill the Queen and he had Haman instead
-      killed; he was impalled on the pole which he set up for Mordecai, for it was told to him of Haman's plan.
-      <b>So the evil Haman intended for Mordecai, the innocent one, was poured out on his own head.</b>
+      killed; he was impalled on the pole which he set up for Mordecai, for it was told him of Haman's plan.
+      <b>So the evil Haman intended for Mordecai was poured out on his own head.</b>
       Then another decree was setup that allowed for the irrevocable decree previously made to be fought against:
-      namely, on the day the Jews were to be slaughtered, they could defend themselves. To this day, the Jewish nation
-      celebrates this as the Day of Purim as a testimony which means "lots" because it was by lot that day was
+      namely, on the day the Jews were to be slaughtered, they could defend themselves. And to this day, the Jewish
+      nation celebrates this as the Day of Purim as a testimony, which means "lots" because it was by lot that day was
       chosen.<br /><br />
 
-      Now, Christ looked to be defeated on the cross, but He was made weak willingly; moments before His crucifiction He
+      Now, Christ looked to be defeated on the cross, but He was made weak willingly; moments before His crucifixion He
       testified,
       <blog-reference-tooltip [reference]="'Matthew 26:52-53'" [isJesusWord]="true">
         Do you think I cannot call on my Father, and he will at once put at my disposal more than twelve legions of
@@ -94,9 +94,9 @@ import { SharedModule } from "../../../shared/shared.module";
       only a wound to His heel, and satan to his head (for we wrestle not against flesh and blood). We know that Christ
       did not remain in the grave forever, but only three days; and the judgment upon the ruler of this world is
       pronounced and has been executed. For who was really defeated by the cross? If satan was judged at the fall, and
-      was made to grovel on his belly, how much more is he rendered powerless through the cross of Christ now? When the
-      rulers of this world made a public display of Him, He made a public display of them through the cross; as Paul
-      writes,
+      was made to grovel on his belly, how much more is he rendered powerless through the cross of Christ? When the
+      rulers of this world made a public display of Him, He made a public display of them through the cross; as the
+      apostle Paul writes,
       <blog-reference-tooltip [reference]="'Colosians 2:13-14'">
         When you were dead in your transgressions and the uncircumcision of your flesh, He made you alive together with
         Him, having forgiven us all our transgressions, having canceled out the certificate of debt consisting of
@@ -104,7 +104,7 @@ import { SharedModule } from "../../../shared/shared.module";
         When He had disarmed the rulers and authorities, <b>He made a public display of them</b>, having triumphed over
         them through the cross.
       </blog-reference-tooltip>
-      So we see,
+      Therefore,
       <b
         >the good the enemy intended for himself was given to Christ; and the evil the enemy intended for Christ was
         poured out on himself.</b
@@ -124,7 +124,7 @@ import { SharedModule } from "../../../shared/shared.module";
         concerning judgment, because the ruler of this world has been judged.
       </blog-reference-tooltip>
       The devil now has no hold on you who believe, and his lies have no power in you who belong to Christ Jesus; fight
-      against him with the Sword of the Mouth of God; and your defense of armor is from the Lord, your offensive weapon,
+      against him with the Sword of the Mouth of God; your defense of armor is from the Lord, your offensive weapon,
       from the Lord; and you, O warrior in the kingdom of God - fight! For He has fought for us. He gives us the law of
       the Spirit and life that we may defend ourselves against the law of sin and death.
       <blog-link
