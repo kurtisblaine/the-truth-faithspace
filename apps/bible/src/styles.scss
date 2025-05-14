@@ -1,29 +1,22 @@
 @use "@angular/material" as mat;
 @use "sass:map";
 
-$my-palette: mat.$m2-indigo-palette;
-
 @include mat.core();
 
-$my-primary: mat.m2-define-palette(mat.$m2-indigo-palette, 500);
-$my-accent: mat.m2-define-palette(mat.$m2-indigo-palette, 900);
-
-$my-theme: mat.m2-define-light-theme(
+$theme: mat.define-theme(
   (
     color: (
-      primary: $my-primary,
-      accent: $my-accent,
+      primary: mat.$azure-palette,
+      tertiary: mat.$red-palette,
     ),
   )
 );
 
-@include mat.core-theme($my-theme);
+@include mat.typography-hierarchy($theme);
 
-@include mat.button-theme($my-theme);
-@include mat.all-component-themes($my-theme);
-
-$color-config: mat.m2-get-color-config($my-theme);
-$primary-palette: map.get($color-config, "primary");
+html {
+  @include mat.all-component-themes($theme);
+}
 
 .grid {
   display: grid;
@@ -35,12 +28,12 @@ $primary-palette: map.get($color-config, "primary");
 h3 {
   font-variant: small-caps;
   font-size: x-large;
-  color: mat.m2-get-color-from-palette($primary-palette);
+  color: var(--mat-sys-primary);
   margin-top: unset;
 }
 
 .primary-color {
-  color: mat.m2-get-color-from-palette($primary-palette);
+  color: var(--mat-sys-primary);
 }
 
 body {
