@@ -26,11 +26,12 @@ import { SharedModule } from "../../../shared/shared.module";
         something to eat, And out of the strong came something sweet." But they could not tell the riddle in three days. </blog-reference-tooltip
       ><br /><br /> -->
 
-      A lion is strong and powerful - no doubt about that. No-one certainly takes a lion into their home for their
-      children to play - no, they don't! A lion is dangerous; a lion isn't sweet; it won't let you pet it and it won't
-      give you any kisses - not without taking off some of your flesh first! In a similar way, Jesus Christ is mighty
-      and powerful; He is the Son of God, with the exact likeness of God, with the name which is above every other name;
-      and one of His names is the Lion from the Tribe of Judah; as it says about Him,
+      Someone may wonder, What is a testimony like this doing in the Scriptures? (Judges 14:5-9, 14:12-14) A lion is
+      strong and powerful - no doubt about that. No-one certainly takes a lion into their home for their children to
+      play - no, they don't! A lion is dangerous; a lion isn't sweet; it won't let you pet it and it won't give you any
+      kisses - not without taking off some of your flesh first! In a similar way, Jesus Christ is mighty and powerful;
+      He is the Son of God, with the exact likeness of God, with the name which is above every other name; and one of
+      His names is the Lion from the Tribe of Judah; as it says about Him,
       <blog-reference-tooltip [reference]="'Revelation 5:5'">
         See, the Lion of the tribe of Judah, the Root of David, has triumphed.
       </blog-reference-tooltip>
@@ -60,7 +61,6 @@ import { SharedModule } from "../../../shared/shared.module";
       makes His wisdom and power to be salvation unto us who believe; as it says, “The word of the cross is foolishness
       to those who are perishing, but to us who are being saved it is the power of God.” (1 Corinthians 1:18) And, "I
       WILL DESTROY THE WISDOM OF THE WISE, AND THE CLEVERNESS OF THE CLEVER I WILL SET ASIDE." (1 Corinthians 1:19)
-
       <br /><br />
 
       God's wisdom is spoken through spiritual words explained by the Spirit (1 Corinthians 2:12-15). But to those who
