@@ -3,31 +3,38 @@
 
 @include mat.core();
 
-$my-palette: mat.$m2-indigo-palette;
+// $primary-palette: mat.define-palette(mat.$azure-palette);
+// $tertiary-palette: mat.define-palette(mat.$red-palette);
 
-$my-primary: mat.m2-define-palette(mat.$m2-indigo-palette);
-$my-accent: mat.m2-define-palette(mat.$m2-indigo-palette);
-
-$my-theme: mat.m2-define-light-theme(
+$theme: mat.define-theme(
   (
     color: (
-      primary: $my-primary,
-      accent: $my-accent,
+      theme-type: light,
+      primary: mat.$azure-palette,
+      tertiary: mat.$azure-palette,
+    ),
+    typography: (
+      // brand-family: "Roboto",
+      // plain-family: "Roboto",
+      bold-weight: 777,
+      medium-weight: 555,
+      regular-weight: 444,
+    ),
+    density: (
+      scale: 0,
     ),
   )
 );
 
-// Emit theme-dependent styles for common features used across multiple components.
-@include mat.core-theme($my-theme);
+@include mat.typography-hierarchy($theme);
 
-// Emit styles for MatButton based on `$my-theme`. Because the configuration
-// passed to `define-light-theme` omits typography, `button-theme` will not
-// emit any typography styles.
-@include mat.button-theme($my-theme);
-@include mat.all-component-themes($my-theme);
+html {
+  @include mat.all-component-themes($theme);
+}
 
-$color-config: mat.m2-get-color-config($my-theme);
-$primary-palette: map.get($color-config, "primary");
+.primary-color {
+  color: --mat-sys-primary;
+}
 
 html {
   height: 100%;
@@ -76,10 +83,6 @@ mat-list-item {
 ::after,
 ::before {
   box-sizing: unset !important;
-}
-
-.primary-color {
-  color: mat.m2-get-color-from-palette($primary-palette);
 }
 
 // upright text example

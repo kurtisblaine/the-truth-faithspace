@@ -3,31 +3,20 @@
 
 @include mat.core();
 
-$my-palette: mat.$m2-indigo-palette;
-
-$my-primary: mat.m2-define-palette(mat.$m2-indigo-palette, 500);
-$my-accent: mat.m2-define-palette(mat.$m2-indigo-palette, 900);
-
-$my-theme: mat.m2-define-light-theme(
+$theme: mat.define-theme(
   (
     color: (
-      primary: $my-primary,
-      accent: $my-accent,
+      primary: mat.$azure-palette,
+      tertiary: mat.$red-palette,
     ),
   )
 );
 
-// Emit theme-dependent styles for common features used across multiple components.
-@include mat.core-theme($my-theme);
+@include mat.typography-hierarchy($theme);
 
-// Emit styles for MatButton based on `$my-theme`. Because the configuration
-// passed to `define-light-theme` omits typography, `button-theme` will not
-// emit any typography styles.
-@include mat.button-theme($my-theme);
-@include mat.all-component-themes($my-theme);
-
-$color-config: mat.m2-get-color-config($my-theme);
-$primary-palette: map.get($color-config, "primary");
+html {
+  @include mat.all-component-themes($theme);
+}
 
 html {
   height: 100%;
@@ -79,7 +68,7 @@ mat-list-item {
 }
 
 .primary-color {
-  color: mat.m2-get-color-from-palette($primary-palette);
+  color: --mat-sys-primary;
 }
 
 // upright text example
