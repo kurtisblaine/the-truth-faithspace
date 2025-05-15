@@ -26,8 +26,9 @@ import { SharedModule } from "../../../shared/shared.module";
       of them in that he destroyed them in his death. <br /><br />
 
       And Jesus, having removed many demons from people who were oppressed, subduing them, freeing them who were held
-      captive by satan, was sent by God to be Judge, to be Deliverer; at the end of His life, He was betrayed by Judas,
-      His beloved friend, and turned over to the Gentiles for mockery; just as it was written in the prophet's Psalm,
+      captive by satan, was sent by God to be Judge, to be a Deliverer; but at the end of His life, He was betrayed by
+      Judas, His beloved friend, and turned over to the Gentiles for mockery; just as it was written in the prophet's
+      Psalm,
       <blog-reference-tooltip [reference]="'Psalm 41:9'">
         Even my close friend in whom I trusted, Who ate my bread, Has lifted up his heel against me.
       </blog-reference-tooltip>
@@ -38,8 +39,8 @@ import { SharedModule } from "../../../shared/shared.module";
       them and rendering them powerless through the cross. For the power of a lion is in its mouth, for it has sharp and
       powerful teeth, and the power of satan is in his mouth, namely his lies; but we have been set free by the Truth,
       namely Christ Jesus crucified for us, received through faith in Him, and in Him there is no condemnation; for if
-      we walk according to the Spirit, we are no longer under the law, but under grace; under Him and in Him, there is
-      no sin; so while in Him, we are free from the power of sin, for where the Spirit of the Lord is there is freedom.
+      we walk according to the Spirit, we are not under the law, but under grace; and under Him and in Him, there is no
+      sin; so while in Him, we are free from the power of sin, for where the Spirit of the Lord is there is freedom.
       While the rulers of this world thought they were destroying Him, they were being destroyed; while they were
       mocking Him, they were being mocked; while they put Him on display, they were put on display. And later, as
       prophesied, the accusations of the enemy will cease; as the Revelation says,
@@ -65,12 +66,12 @@ import { SharedModule } from "../../../shared/shared.module";
       the king discovered from the book of the Chronicles that Mordecai saved him; so the king asked Haman, "What should
       be done to the one whom the king is pleased?"; and Haman, thinking the good was for himself, gave a favorable
       answer. The king then told him to do all he said to Mordecai, the Jew, which was Haman's enemy.
-      <b>So the good Haman intended for himself went to Mordecai, his enemy.</b>
+      <b>So it is: the good Haman intended for himself went to Mordecai, his enemy.</b>
       And later at a banquet, Ester, the Queen, who was a Jew and the niece to Mordecai, spoke of Haman's decree to kill
       the Jews which was approved by the king in ignorance, for he did not know the Queen was a Jew, for she kept her
       nationality hidden. And the king was furious because Haman sought to kill the Queen and he had Haman instead
       killed; he was impalled on the pole which he set up for Mordecai, for it was told him of Haman's plan.
-      <b>So the evil Haman intended for Mordecai was poured out on his own head.</b>
+      <b>So it is: the evil Haman intended for Mordecai was poured out on his own head.</b>
       Then another decree was setup that allowed for the irrevocable decree previously made to be fought against:
       namely, on the day the Jews were to be slaughtered, they could defend themselves. And to this day, the Jewish
       nation celebrates this as the Day of Purim as a testimony, which means "lots" because it was by lot the day was
@@ -90,11 +91,12 @@ import { SharedModule } from "../../../shared/shared.module";
       </blog-reference-tooltip>
       If the rulers of this world would have known what they were doing, they would not have crucified the Lord of glory
       - but their minds were darkened. The rulers wanted for themselves the inheritance, the kingdom of Israel (as with
-      the parable of the vinyard written about in Matthew 21:33-46); but by the cross, Christ suffered only a wound to
-      His heel, and satan to his head (for we wrestle not against flesh and blood). We know that Christ did not remain
-      in the grave forever, but only three days; and the judgment upon the ruler of this world is pronounced and has
-      been executed. For who was really defeated by the cross? If satan was judged at the fall, and was made to grovel
-      on his belly, how much more is he rendered powerless through the cross of Christ? As Christ says,
+      the parable of the vinyard written about in Matthew 21:33-46); and they sought to kill Him, but by the cross,
+      Christ suffered only a wound to His heel, and satan to his head (for we wrestle not against flesh and blood). For
+      Christ did not remain in the grave forever, but only three days; and the judgment upon the ruler of this world is
+      pronounced and has been executed. For who was really defeated by the cross? If satan was judged at the fall, and
+      was made to grovel on his belly, how much more is he rendered powerless through the cross of Christ? As Christ
+      says,
       <blog-reference-tooltip [reference]="'John 16:11'" [isJesusWord]="true">
         Concerning judgment, because the ruler of this world has been judged.
       </blog-reference-tooltip>
@@ -112,12 +114,12 @@ import { SharedModule } from "../../../shared/shared.module";
         >the good the enemy intended for himself was given to Christ; and the evil the enemy intended for Christ was
         poured out upon his own head.</b
       >
-      As with Haman, he was impalled on the tree meant for Mordecai; likewise, it was the devil who was defeated by the
-      cross which was meant for Christ; however, it was Christ who was crucified, but He was not defeated by the cross,
-      for He lives forevermore. And it is through the cross we have the victory in His name! And the devil's final end
-      is decreed in the Book. Thus, the glory and honor which the enemy wanted for himself went to Christ - the King of
-      Kings and the Lord of Lords! The jugement which the enemy intended for Christ was poured out upon his own head; as
-      Jesus said,
+      As with Haman, he was impalled on the tree that he set up for Mordecai; likewise, it was the devil who was
+      defeated by the cross which was meant for Christ; however, it was Christ who was crucified, but He was not
+      defeated by the cross, for He lives forevermore. And it is through the cross we have the victory in His name! And
+      the devil's final end is decreed in the Book. Thus, the glory and honor which the enemy wanted for himself went to
+      Christ - the King of Kings and the Lord of Lords! The jugement which the enemy intended for Christ was poured out
+      upon his own head; as Jesus said,
       <blog-reference-tooltip [reference]="'John 12:31-32'" [isJesusWord]="true">
         Now judgment is upon this world; now the ruler of this world will be cast out. And I, if I am lifted up from the
         earth, will draw all men to Myself.
