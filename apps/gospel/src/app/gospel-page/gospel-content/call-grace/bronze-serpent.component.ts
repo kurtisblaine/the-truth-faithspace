@@ -49,7 +49,7 @@ import { SharedModule } from "../../../shared/shared.module";
       those who beheld the serpent in faith, lived; thus looking upon the image itself does not save - it is God who
       saves, and that, through faith. And so it is today, we may be prone to worship a symbol of a cross, or a picture,
       or any other created thing, more than God who gives life from the dead, even giving life through the dead; He
-      choses to give life through Jesus Christ's death; He who died, who is now alive, by whom we consult God through;
+      elects to give life through Jesus Christ's death; He who died, who is now alive, by whom we consult God through;
       <blog-reference-tooltip [reference]="'Revelation 1:18'" [isJesusWord]="true">
         I am He who lives, and was dead, and behold, I am alive forevermore. Amen. And I have the keys of Hades and of
         Death. </blog-reference-tooltip
@@ -76,22 +76,21 @@ import { SharedModule } from "../../../shared/shared.module";
         How shall we picture the kingdom of God, or by what parable shall we present it?
       </blog-reference-tooltip>
       So we are saved by Jesus through parables, similitudes, concealed truths, through the testimonies given to us by
-      God concerning His Son; these further faith; and so the parable of the bronze serpent in itself is not Christ - it
-      is a picture to Christ; the same thing goes for all the testimonies found in the book of the law. And this is why
-      the serpent in the wilderness was a bronze image: God is showing that through images, parables, and pictures found
-      in God's Word, we may be encouraged in the faith; not that any physical picture can promote faith, but
-      specifically I am talking about parables through hearing God's Word. And these all point to Jesus Christ that we
-      may be encouraged to come to Him; these are not the Son of God in themselves, for these are dead, but Christ is
-      living, but these are images of the mind made possible by the Word of God; these point us to Christ so that we may
+      God concerning His Son; these further the faith; and so the parable of the bronze serpent in itself is not Christ
+      - it is a picture to Christ; the same thing goes for all the testimonies found in the book of the law. And this is
+      why the serpent in the wilderness was a bronze image: God is showing us that through images, parables, and
+      pictures found in His Word, we may be encouraged in the faith; not that any physical picture can promote faith,
+      but specifically I am talking about parables through hearing God's Word. And these all point to Jesus Christ that
+      we may be encouraged to come to Him; these are not the Son of God in themselves, for these are dead, but Christ is
+      living; these are images of the mind made possible by the Word of God; these point us to Christ so that we may
       come to Him for salvation; as He says,
       <blog-reference-tooltip [reference]="'John 5:39-40'" [isJesusWord]="true">
         You search the Scriptures because you think that in them you have eternal life; it is these that testify about
         Me; and you are unwilling to come to Me so that you may have life.
       </blog-reference-tooltip>
-      For Jesus is the visible image of the invisble God in the exact likeness of the Father God; He was sent to be
-      ransom for whoever will look upon Him, looking upon Him with the eyes of the heart: which is faith. He emptied
-      Himself to take on the form of man, which is made in the image of God, to rescue us who are made in the image of
-      God; as it says,
+      He was sent to be ransom for whoever will look upon Him, looking upon Him with the eyes of the heart: which is
+      faith. He emptied Himself to take on the form of man, which is made in the image of God, to rescue us who are made
+      in the image of God; as it says,
       <blog-reference-tooltip [reference]="'Hebrews 2:14-15'">
         Therefore, since the children share in flesh and blood, He Himself likewise also partook of the same, that
         through death He might render powerless him who had the power of death, that is, the devil, and might free those
@@ -100,23 +99,23 @@ import { SharedModule } from "../../../shared/shared.module";
       For Jesus became man to rescue mankind, and He died a death to rescue from death. And the bronze image was a
       serpent to save from the serpents; and the image was dead to save from death. <br /><br />
 
-      And yes, the representation on the stick which Moses lifted up was a serpent, and Christ is not a serpent at all.
-      However, the one who has been rendered powerless by the cross is satan, the serpent, that ancient dragon of old.
-      For although Christ was lifted up on the cross, He did not suffer defeat by the cross; it was the serpent who was
-      defeated; for Christ was raised to new life, and He will never die again; it was the serpent who suffered the head
-      wound, and Christ's heel was bruised (Genesis 3:15). So, this is why we see a serpent lifted up during the time of
-      Israel's wanderings in the desert; for Christ was glorified through the cross, and satan was defeated by the
-      cross. We may be full of fear looking upon Christ on the cross because of our great sin and God's wrath toward
-      sin, but we must look and trust that if we look upon Jesus Christ and Him crucified, we will be saved - we will
-      surely have life. I want to look away: I see my failings, I see my fault, I see death; I see the burden of my sin,
-      my punishment for sin; but the more I look, the more I see, and I see that Jesus is for me; I see the great love
-      of His kindness; I see the deliverance from my sin; He has made me right in His sight, and now I can truly see! We
-      will all die one day, but those who die in the Lord will sleep and awake on the last day. Everyone dies, but He
-      who looks upon Jesus, through the eyes of faith, when he dies, he sleeps - for he is alive to God by faith, having
-      loved Him although he has not seen Him. The one who loves God is known by Him; and the one known by Him is His
-      child; such a one will be raised up on the last day to eternal life by the Holy Spirit that raised Christ from the
-      dead. The eyes of faith are sharpened through hearing God's Word; and our faith in Him who is unseen should be as
-      strong as if we have seen Him; as Paul said to the Galatians,
+      And yes, the representation on the stick which Moses lifted up was a serpent. So the one who has been rendered
+      powerless by the cross is satan, the serpent, that ancient dragon of old. For although Christ was lifted up on the
+      cross, He did not suffer defeat by the cross; it was the serpent who was defeated; for Christ was raised to new
+      life, and He will never die again; it was the serpent who suffered the head wound, and Christ's heel was bruised
+      (Genesis 3:15). So, this is why we see a serpent lifted up during the time of Israel's wanderings in the desert;
+      for Christ was glorified through the cross, and satan was defeated by the cross. We may be full of fear looking
+      upon Christ on the cross because of our great sin and God's wrath toward sin, but we must look and trust that if
+      we look upon Jesus Christ and Him crucified, we will be saved - we will surely have life. "I want to look away: I
+      see my failings, I see my fault, I see death; I see the burden of my sin, my punishment for sin; but the more I
+      look, the more I see, and I see that Jesus is for me; I see the great love of His kindness; I see the deliverance
+      from my sin; He has made me right in His sight, and now I can truly see!" We will all die one day, but those who
+      die in the Lord will sleep and awake on the last day. Everyone dies, but He who looks upon Jesus, through the eyes
+      of faith, when he dies, he sleeps - for he is alive to God by faith, having loved Him although not seeing Him. The
+      one who loves God is known by Him; and the one known by Him is His child; such a one will be raised up on the last
+      day to eternal life by the Holy Spirit that raised Christ from the dead. The eyes of faith are sharpened through
+      hearing God's Word; and our faith in Him who is unseen should be as strong as if we have seen Him; as Paul said to
+      the Galatians,
       <blog-reference-tooltip [reference]="'Galatians 3:1'">
         For the meaning of Jesus Christ's death was made as clear to you as if you had seen a picture of his death on
         the cross.</blog-reference-tooltip
@@ -157,7 +156,7 @@ import { SharedModule } from "../../../shared/shared.module";
       crucified - and all this was foretold by God beforehand, but the meaning was hidden from them. It was God's
       predetermined plan for good, having testified beforehand by the Psalms and the Prophets, by acts of men of old,
       for prophets also performed acts before the people (The prophets Ezekiel, Hosea, and Zechariah for example). As
-      one of the prophets, Isaiah, said,
+      one of the prophets, Isaiah, says,
       <blog-reference-tooltip [reference]="'Isaiah 53:10'">
         But the LORD was pleased To crush Him, putting [Him] to grief; If He would render Himself [as] a guilt offering,
         He will see [His] offspring, He will prolong [His] days, And the good pleasure of the LORD will prosper in His
@@ -173,10 +172,10 @@ import { SharedModule } from "../../../shared/shared.module";
       eyes by turning to Him and see that your Brother is now alive, second in command, mediator between you and God,
       that He is very much alive and your guilt has been removed; for Joseph's brothers had guilt as long as they
       thought Joseph was dead, but the moment they seen Joseph alive, their guilt was removed and their hands cleansed
-      from his blood. See now, Jesus is for you, and does not seek revenge because of your transgressions that He bore,
-      but He even intercedes on your behalf before the Father. So prove yourself innocent in the matter by fleeing to
-      Christ for refuge in the heavenly places where He is seated, setting your mind on the things above, not on the
-      things below.
+      from his blood. See now, Jesus is for you, and He does not seek revenge because of your transgressions that He
+      bore, but He even intercedes on your behalf before the Father. So prove yourself innocent in the matter by fleeing
+      to Christ for refuge in the heavenly places where He is now seated, setting your mind on the things above, not on
+      the things below.
     </ng-template>`,
   styles: ``,
   changeDetection: ChangeDetectionStrategy.OnPush,
