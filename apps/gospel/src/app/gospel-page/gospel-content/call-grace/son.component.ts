@@ -24,7 +24,8 @@ import { SharedModule } from "../../../shared/shared.module";
         For a child will be born to us, a son will be given to us; And the government will rest on His shoulders; And
         His name will be called Wonderful Counselor, Mighty God, Eternal Father, Prince of Peace.
       </blog-reference-tooltip>
-      And what was the work the Father did in Christ?
+      As it says, "A child will be born to us", but it also says, "His name will be called Eternal Father." And what was
+      the work the Father did in Christ?
       <blog-reference-tooltip [reference]="'2 Corinthians 5:18'"
         >In Christ God was reconciling the world to himself, not counting their trespasses against them, and entrusting
         to us [apostles] the message of reconciliation.
@@ -68,7 +69,7 @@ import { SharedModule } from "../../../shared/shared.module";
         He [Abraham] considered that God is able to raise people even from the dead, from which he also received him
         [Isaac] back as a type.
       </blog-reference-tooltip>
-      And Abraham, being a prophet, saw this was going to happen beforehand and said things like these:
+      And Abraham, being a prophet, saw this was going to happen beforehand and said things like this:
       <blog-reference-tooltip [reference]="'Genesis 22:8'"
         >God will provide for Himself the lamb for the burnt offering.</blog-reference-tooltip
       >
@@ -76,7 +77,7 @@ import { SharedModule } from "../../../shared/shared.module";
       <blog-reference-tooltip [reference]="'Genesis 22:5'">
         Stay here with the donkey, and I and the lad will go over there; and we will worship and return to you.
       </blog-reference-tooltip>
-      And thereafter, he was looking in the future to Christ and said,
+      And thereafter, he was looking in the future to Christ and,
       <blog-reference-tooltip [reference]="'Gensis 22:14'">
         Abraham called the name of that place The LORD Will Provide, as it is said to this day, "In the mount of the
         LORD it will be provided."
@@ -86,7 +87,7 @@ import { SharedModule } from "../../../shared/shared.module";
       submitted to his father's will, and by so doing, points to Christ who laid down His life willingly; for no-one
       took His life from Him, but He laid it down as commanded by the Father. And it is not unrighteousness on God's
       behalf, for Christ was handed over to death for our sakes, once for all, as the propitiation for our sins.
-      Everything Christ did was as if the Father God was doing it, for Christ does the commands of the Father perfectly,
+      Everything Christ did, the Father was doing in Him; for Christ does the commands of the Father perfectly,
       resembling His exact likeness. When we have sons, our sons resemble us in a way, or two, or three, and he
       resembles his mother in other ways; but how much more do you suppose Christ resembles God, who is the perfect son
       of God? He does not resemble the Father in a way or two, but in His exact likeness; for Jesus resembles the Father
@@ -106,7 +107,8 @@ import { SharedModule } from "../../../shared/shared.module";
         <b>He will see His offspring,</b> He will prolong His days, And the good pleasure of the LORD will prosper in
         His hand.
       </blog-reference-tooltip>
-      And,
+      However, Christ died without children, so these offspring mentioned are sons of God after His own likeness, being
+      the Son of God; as it says,
       <blog-reference-tooltip [reference]="'Isaiah 8:18, Hebrews 2:13'">
         Behold, I and the children whom the LORD has given me are for signs and wonders in Israel from the LORD of
         hosts, who dwells on Mount Zion.
@@ -136,7 +138,7 @@ import { SharedModule } from "../../../shared/shared.module";
       brethren;” (Romans 8:29) And, “We all, with unveiled face, beholding as in a mirror the glory of the Lord, are
       being transformed into the same image from glory to glory, just as from the Lord, the Spirit.” (2 Corinthians
       3:18) Now, the body performs the acts of the mind, and Christ is our Head; a member that goes astray has lost
-      connection with the Head; as it says that member,
+      connection with the Head; as it says,
       <blog-reference-tooltip [reference]="'Colossians 2:18-19'">
         Let no one keep defrauding you of your prize by delighting in self-abasement and the worship of the angels,
         taking his stand on visions he has seen, inflated without cause by his fleshly mind,
@@ -149,11 +151,10 @@ import { SharedModule } from "../../../shared/shared.module";
       says, and our foot does what the mind says, even to every finger and every toe. So if we set our mind on spiritual
       things, namely Christ, He will give us the strength to present our members as servants to righteousness (Romans
       8:5-8, Philippians 4:8, Colossians 3:2). This is the way of faith: setting our minds on Jesus Christ. As it says
-      about the mind set on the flesh: "The day when you post your watchmen, Your punishment will come. Then their
-      confusion will occur.” (Micah 7:4) But then, it says about the mind set on the Spirit: “As for me, I will watch
-      expectantly for the LORD; I will wait for the God of my salvation. My God will hear me.” (Micah 7:7) For the mind
-      set on the flesh is set on punishment and wrath, but the mind set on the Spirit is set on the LORD, the God of
-      salvation.
+      about the mind of the flesh: "The day when you post your watchmen, Your punishment will come. Then their confusion
+      will occur.” (Micah 7:4) But then, it says about the mind of the Spirit: “As for me, I will watch expectantly for
+      the LORD; I will wait for the God of my salvation. My God will hear me.” (Micah 7:7) For the mind set on the flesh
+      is set on punishment and wrath, but the mind set on the Spirit is set on the LORD, the God of salvation.
       <blog-link
         [title]="'See more about the Father and the Son, the Son and the Church'"
         [link]="'https://thelightof.life/#/draw/Father&Son.webp'"
@@ -166,41 +167,41 @@ import { SharedModule } from "../../../shared/shared.module";
         >By this we may know that we are in him: whoever says he abides in Him ought to walk in the same way in which he
         walked.</blog-reference-tooltip
       >
-      So do not be deceived: if we walk after devils, we show ourselves sons of the devil; but if we pattern ourselves
-      after God, we show ourselves truly sons of God (John 8:30-47). This proves us and gives us confidence on the day
-      of Salvation, and we are to watch ourselves constantly in many watchings and prayer. We really are sons of God if
-      we have believed, and true sons pattern themselves after the Father; and we have been begotten of God by the
-      eternal Word of truth when we believed. When a son does not act like the father, the father says, "You are no son
-      of mine", although in truth, the son is still a son; but what they are really saying is: "You were raised better;
-      you're not acting as you've been taught", that is, you're not acting like your father. A son can rebel against the
-      father and go his own way (Luke 15:11-32), but the son can never stop being a son; but in such a state, the son is
-      dead to the father, and the father to the son. We are really sons of God; as Paul says to unbelievers, “for in Him
-      we live and move and exist, as even some of your own poets have said, 'For we also are His children.' Being then
-      the children of God, we ought not to think that the Divine Nature is like gold or silver or stone, an image formed
-      by the art and thought of man.” (Acts 17:28-29) So he affirms the truth in the saying: 'For we also are His
-      children'; but many of us, although being sons of God have turned to our own way, resembling beasts more than God;
-      as it says, "God has surely tested them in order for them to see that they are but beasts." (Ecclesiastes 3:18) So
-      although we are all sons of God, many of us do not pattern ourselves after God, for we have not seen God. Children
-      imitate their fathers by sight: they do what they see their fathers doing. They do not need to be told what to do,
-      but they do what they see. So likewise, we do what we see in Christ; and Christ reflects God; as it says, “No one
-      has seen God at any time; the only begotten God who is in the bosom of the Father, He has explained Him.” (John
-      1:18) And we are made to see God through faith in Christ; as it says, “For all who are being led by the Spirit of
-      God, these are sons of God.” (Romans 8:14) For children follow after their parents, namely by what they see; and
-      we follow after Christ by faith. For the Spirit of God does the leading, and as obedient children we follow after
-      Him. Do you not know, beloved, God first rescued His firstborn Israel from Egypt by a mighty hand, but later, when
-      they hardened their necks and kicked against Him and rebelled against Him for many years, then God handed them
-      over to the Babylonians and the Assyrians, even defiling His own temple on their account? And they were sons of
-      Israel, God's chosen people, saved by grace; but they were rejected by God because they rejected Him. For they
-      were constantly forgetting God, and they were closing their ears and not believing in Him. The LORD God set up
-      testimonies for them and their children so that they would not forget Him; but, as it says in the Psalms, “They
-      forgot His deeds And His miracles that He had shown them.” (Psalms 78:11) And, “They quickly forgot His works;
-      They did not wait for His counsel.” (Psalms 106:13) And, “Because they did not believe in God And did not trust in
-      His salvation.” (Psalms 78:22) And as a result, “They even sacrificed their sons and their daughters to the
-      demons, And shed innocent blood, The blood of their sons and their daughters, Whom they sacrificed to the idols of
-      Canaan; And the land was polluted with the blood.” (Psalms 106:37-38) So why would we imitate the ancestors who
-      followed after devils, and not God? For Jesus is our example, and Jesus is the Way; Jesus has loved us, even more
-      than Himself. Do devils love you more than God? Of course not! Devils desire the sacrifice of devils, but God
-      desires righteous sacrifices, and provides the Sacrifice in Jesus Christ; so therefore,
+      So do not be deceived: if we walk after devils, we show ourselves as sons of the devil; but if we pattern
+      ourselves after God, we show ourselves truly as sons of God (John 8:30-47). This proves us and gives us confidence
+      on the day of Salvation, and we are to watch ourselves constantly in many watchings and prayer. We really are sons
+      of God if we have believed, and true sons pattern themselves after the Father, and by this we may know that we
+      believe; and we have been begotten of God by the eternal Word of truth when we believed. When a son does not act
+      like the father, the father says, "You are no son of mine", although in truth, the son is still a son; but what
+      they are really saying is: "You were raised better; you're not acting as you've been taught", that is, you're not
+      acting like your father. A son can rebel against the father and go his own way (Luke 15:11-32), but the son can
+      never stop being a son; but in such a state, the son is dead to the father, and the father to the son. We are
+      really sons of God; as Paul says to unbelievers, “for in Him we live and move and exist, as even some of your own
+      poets have said, 'For we also are His children.'” (Acts 17:28-29) So he affirms the truth in the saying: 'For we
+      also are His children'; but many of us, although being sons of God have turned to our own way, resembling beasts
+      more than God; as it says, "God has surely tested them in order for them to see that they are but beasts."
+      (Ecclesiastes 3:18) So although we are all sons of God, many of us do not pattern ourselves after God, for we have
+      not seen God. Children imitate their fathers by sight: they do what they see their fathers doing. They do not need
+      to be told what to do, but they do what they see. So likewise, we do what we see in Christ; and Christ reflects
+      God; as it says, “No one has seen God at any time; the only begotten God who is in the bosom of the Father, He has
+      explained Him.” (John 1:18) And we are made to see God through faith in Jesus Christ; as it says, “For all who are
+      being led by the Spirit of God, these are sons of God.” (Romans 8:14) For children follow after their parents,
+      namely by what they see; and we follow after Christ by faith. For the Spirit of God does the leading, and as
+      obedient children we follow after Him. But do you not know, beloved, God first rescued His firstborn Israel from
+      Egypt by a mighty hand, but later, when they hardened their necks and kicked against Him and rebelled against Him
+      for many years, then God handed them over to the Babylonians and the Assyrians, even defiling His own temple on
+      their account? And they were sons of Israel, God's chosen people, saved by grace; but they were rejected by God
+      because they rejected Him. For they were constantly forgetting God, and they were closing their ears and not
+      believing in Him. The LORD God set up testimonies for them and their children so that they would not forget Him;
+      but, as it says in the Psalms, “They forgot His deeds And His miracles that He had shown them.” (Psalms 78:11)
+      And, “They quickly forgot His works; They did not wait for His counsel.” (Psalms 106:13) And, “Because they did
+      not believe in God And did not trust in His salvation.” (Psalms 78:22) And as a result, “They even sacrificed
+      their sons and their daughters to the demons, And shed innocent blood, The blood of their sons and their
+      daughters, Whom they sacrificed to the idols of Canaan; And the land was polluted with the blood.” (Psalms
+      106:37-38) So why would we imitate the ancestors who followed after devils, and not God? For Jesus is our example,
+      and Jesus is the Way; Jesus has loved us, even more than Himself. Do devils love you more than God? Of course not!
+      Devils desire the sacrifice of devils, but God desires righteous sacrifices, and provides the Sacrifice in Jesus
+      Christ; so therefore,
       <blog-reference-tooltip [reference]="'1 Peter 1:14-19'">
         As obedient children, do not be conformed to the former lusts which were yours in your ignorance, but like the
         Holy One who called you, be holy yourselves also in all your behavior; because it is written, "YOU SHALL BE
@@ -223,30 +224,31 @@ import { SharedModule } from "../../../shared/shared.module";
         >And the indictment which my adversary has written, surely I would carry it on my shoulder, I would bind it to
         myself like a crown.</blog-reference-tooltip
       >
-      For Jesus was blameless, but the indictment which the adversary had written against Him is
+      For Jesus was blameless, but the indictment which the adversary had written against Him states:
       <blog-reference-tooltip [reference]="'John 19:19'"
         >JESUS OF NAZARETH, THE KING OF THE JEWS</blog-reference-tooltip
       >
-      And Christ bore the cross on His shoulder, and He wore the crown of thorns on His head; He went to the cross and
-      confirmed His testimony in His own blood. This is what it means when it says, "This is the one who came by water
-      and blood. There are three that testify: the Spirit, the water, and the blood." (1 John 5:6-9) He was blameless,
-      even Pilate could not find fault in Him, and he was determined to release Him; but the accusation they had written
-      against Him, Jesus did not deny, He affirmed it as true, even though it meant death. He testified not by word
-      only, but by deed: by carrying the cross and wearing the crown of thorns. By the cross and the humiliation that He
-      underwent, He confirmed to everyone what He said was true - He did not deny, He confirmed. If anyone speaks lies,
-      before the end of their life, they confess them, or if their life depends on it, they would put a stop to their
-      lies; but Christ did not shrink back even when faced with death, but He testified to the truth; as Paul says, "And
-      of Christ Jesus, who testified the good confession before Pontius Pilate." (1 Timothy 6:13) It was for the end of
-      His life that He came; and by the cross, He affirms to all that He is the Son of God, confirming by His own blood;
-      and it stands today as a witness to all, that Christ is the Son of God; He transformed the cross, a device of
-      torture, into a signal of salvation. For what was once an object of horror, has become a sign and symbol of
-      redemption: it is now hung around necks and pierced on ear lobes; it is now put on tops of buildings and set up as
-      markers for graves. Are the sons of men so wicked that they put tortuous symbols on themselves? No! Rather, God is
-      so good that He has turned the detestable thing into a glorious sign of redemption and salvation. No-one can do
-      such a thing, except God, who turns the corrupt person into the believing, the detestable into the gracious, the
-      abominable into the saint. Christ did so, so that we would not lose heart or grow faint: believe in the Son. And
-      do not fall into the trap of worshipping a dead cross, bowing low to it; but worship the Lord your God and Savior,
-      Jesus Christ, who is living in the heavens, exalted for you. Beware of idols.
+      And even though the accusation meant bearing the cross on His shoulder, and wearing the crown of thorns on His
+      head, He went to the cross and confirmed His testimony in His own blood. This is what it means when it says, "This
+      is the one who came by water and blood. There are three that testify: the Spirit, the water, and the blood." (1
+      John 5:6-9) He was blameless, even Pilate could not find fault in Him, and he was determined to release Him; but
+      the accusation they had written against Him, Jesus did not deny, He affirmed it as true, even though it meant
+      death. He testified not by word only, but by deed: by carrying the cross and wearing the crown of thorns. By the
+      cross and the humiliation that He underwent, He confirmed to everyone what He said was true - He did not deny, He
+      confirmed. If anyone speaks lies, before the end of their life, they confess them, or if their life depends on it,
+      they would put a stop to their lies; but Christ did not shrink back even when faced with death, but He testified
+      to the truth; as Paul says, "And of Christ Jesus, who testified the good confession before Pontius Pilate." (1
+      Timothy 6:13) It was for the end of His life that He came; and by the cross, He affirms to all that He is the Son
+      of God, confirming by His own blood; and it stands today as a witness to all, that Christ is the Son of God; He
+      transformed the cross, a device of torture, into a signal of salvation. For what was once an object of horror, has
+      become a sign and symbol of redemption: it is now hung around necks and pierced on ear lobes; it is now carried on
+      the shoulders of many who believe; it is now put on tops of buildings and set up as markers for graves. Are the
+      sons of men so wicked that they put tortuous symbols on themselves? No! Rather, God is so good that He has turned
+      the detestable thing into a glorious sign of redemption and salvation. No-one can do such a thing, except God, who
+      turns the corrupt person into the believing, the detestable into the gracious, the abominable into the saint.
+      Christ did so, so that we would not lose heart or grow faint: believe in the Son. And do not fall into the trap of
+      worshipping a dead cross, bowing low to it; but worship the Lord your God and Savior, Jesus Christ, who is living
+      in the heavens, exalted for you. Beware of idols.
     </ng-template>`,
   styles: ``,
   changeDetection: ChangeDetectionStrategy.OnPush,
