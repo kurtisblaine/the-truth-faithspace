@@ -5,8 +5,8 @@ import { SharedModule } from "../../../shared/shared.module";
 @Component({
   selector: "gospel-holiness",
   imports: [CommonModule, SharedModule],
-  template: `<ng-container *ngTemplateOutlet="obedienceUntoHoliness"></ng-container>
-    <ng-template #obedienceUntoHoliness>
+  template: `<ng-container *ngTemplateOutlet="obedienceToHoliness"></ng-container>
+    <ng-template #obedienceToHoliness>
       We are made holy by the Holy Spirit of God, if indeed the Spirit of God dwells in you. Now if anyone does not have
       the Spirit of Christ, he is not His (Romans 8:9-10); He is the Helper; He is the Spirit of holiness. Our bodies
       are temples of the living God; and it's God's presence with us that sets us apart from the rest of the world. Or
@@ -79,6 +79,10 @@ import { SharedModule } from "../../../shared/shared.module";
       <blog-reference-tooltip [reference]="'Hebrews 13:12'">
         Therefore Jesus also, that He might sanctify the people through His own blood, suffered outside the gate.
       </blog-reference-tooltip>
+      “By His doing you are in Christ Jesus, who became to us wisdom from God, and righteousness and sanctification, and
+      redemption, so that, just as it is written, "LET HIM WHO BOASTS, BOAST IN THE LORD.” (1 Corinthians 1:30-31) And,
+      “He saved us, not on the basis of deeds which we have done in righteousness, but according to His mercy, by the
+      washing of regeneration and renewing by the Holy Spirit.” (Titus 3:5)
       <br /><br />
 
       If we obey God, we will be holy like Him, for He alone is holy; His Word is holy. Those who wish to be used

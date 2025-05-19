@@ -5,8 +5,8 @@ import { SharedModule } from "../../../shared/shared.module";
 @Component({
   selector: "gospel-death",
   imports: [CommonModule, SharedModule],
-  template: `<ng-container *ngTemplateOutlet="futilityInDeath"></ng-container>
-    <ng-template #futilityInDeath>
+  template: `<ng-container *ngTemplateOutlet="dayOfDeath"></ng-container>
+    <ng-template #dayOfDeath>
       There was a man who lived in a tent. All his days were spent in constant agony because his tent is not
       comfortable; furthermore, the flies bite, the sun beams, and the moon strikes. Nevertheless, he hoped forward to
       his permanent home which was far away in a distant land being prepared for him. Night and day he longed for it and

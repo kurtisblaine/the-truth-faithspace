@@ -3,9 +3,12 @@ import { NgModule } from "@angular/core";
 import { MatButtonModule } from "@angular/material/button";
 import { MatCardModule } from "@angular/material/card";
 import { MatExpansionModule } from "@angular/material/expansion";
+import { MatToolbarModule } from "@angular/material/toolbar";
 import { RouterModule, Routes } from "@angular/router";
+import { AngularFullpageModule } from "@fullpage/angular-fullpage";
 import { SharedLibraryModule } from "shared";
 import { SharedModule } from "../shared/shared.module";
+import { GospelComponent } from "./_legacy-gospel-page/gospel.component";
 import { AbideComponent } from "./gospel-content/call-faith/abide.component";
 import { BornAgainComponent } from "./gospel-content/call-faith/born-again.component";
 import { ClearConscienceComponent } from "./gospel-content/call-faith/clear-conscience.component";
@@ -43,15 +46,15 @@ import { RepentComponent } from "./gospel-content/response/repent.component";
 import { WorthyOfCallComponent } from "./gospel-content/response/worthy-of-call.component";
 import { GospelHeaderComponent } from "./gospel-header/gospel-header.component";
 import { GospelItemComponent } from "./gospel-item/gospel-item.component";
+import { GospelPageComponent } from "./gospel-page.component";
 import { GospelSectionComponent } from "./gospel-section/gospel-section.component";
-import { GospelComponent } from "./gospel.component";
 import { RouterService } from "./router.service";
 import { TemplateService } from "./template.service";
 
 const routes: Routes = [
   {
     path: "truth",
-    component: GospelComponent,
+    component: GospelPageComponent,
   },
   {
     path: "truthful-item/:title",
@@ -99,7 +102,13 @@ const hopeLifeComponents = [
 ];
 
 @NgModule({
-  declarations: [GospelComponent, GospelItemComponent, GospelSectionComponent, GospelHeaderComponent],
+  declarations: [
+    GospelComponent,
+    GospelItemComponent,
+    GospelSectionComponent,
+    GospelHeaderComponent,
+    GospelPageComponent,
+  ],
   imports: [
     CommonModule,
     SharedModule,
@@ -108,6 +117,8 @@ const hopeLifeComponents = [
     RouterModule.forChild(routes),
     MatCardModule,
     MatExpansionModule,
+    AngularFullpageModule,
+    MatToolbarModule,
     ...dangerSinComponents,
     ...dangerDeathComponents,
     ...callGraceComponents,

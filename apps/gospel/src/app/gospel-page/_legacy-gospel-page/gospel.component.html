@@ -19,7 +19,7 @@
         </mat-expansion-panel-header>
         <ng-template matExpansionPanelContent>
           <button style="font-size: 18px" mat-button (click)="toAnchor('ourSinNature')">Our Sin Nature</button>
-          <button style="font-size: 18px" mat-button (click)="toAnchor('heSeesAndHears')">God Knows</button>
+          <button style="font-size: 18px" mat-button (click)="toAnchor('heKnows')">God Knows</button>
           <button style="font-size: 18px" mat-button (click)="toAnchor('aConsumingFire')">A Consuming Fire</button>
           <button style="font-size: 18px" mat-button (click)="toAnchor('dayOfJudgement')">The Day of Judgement</button>
         </ng-template>
@@ -32,12 +32,10 @@
           </mat-panel-title>
         </mat-expansion-panel-header>
         <ng-template matExpansionPanelContent>
-          <button style="font-size: 18px" mat-button (click)="toAnchor('futilityOfPleasure')">
-            The Love of Pleasure
-          </button>
-          <button style="font-size: 18px" mat-button (click)="toAnchor('futilityInToil')">Work and Toil</button>
-          <button style="font-size: 18px" mat-button (click)="toAnchor('futilityOfWealth')">The Love of Wealth</button>
-          <button style="font-size: 18px" mat-button (click)="toAnchor('futilityInDeath')">The Day of Death</button>
+          <button style="font-size: 18px" mat-button (click)="toAnchor('loveOfPleasure')">The Love of Pleasure</button>
+          <button style="font-size: 18px" mat-button (click)="toAnchor('workAndToil')">Work and Toil</button>
+          <button style="font-size: 18px" mat-button (click)="toAnchor('loveOfWealth')">The Love of Wealth</button>
+          <button style="font-size: 18px" mat-button (click)="toAnchor('dayOfDeath')">The Day of Death</button>
         </ng-template>
       </mat-expansion-panel>
 
@@ -48,7 +46,7 @@
           </mat-panel-title>
         </mat-expansion-panel-header>
         <ng-template matExpansionPanelContent>
-          <button style="font-size: 18px" mat-button (click)="toAnchor('sufferingServant')">The Servant of God</button>
+          <button style="font-size: 18px" mat-button (click)="toAnchor('servantOfGod')">The Servant of God</button>
           <button style="font-size: 18px" mat-button (click)="toAnchor('theRockOfSalvation')">
             The Rock of Salvation
           </button>
@@ -78,7 +76,7 @@
         <ng-template matExpansionPanelContent>
           <button style="font-size: 18px" mat-button (click)="toAnchor('theRaceOfFaith')">The Race of Faith</button>
           <button style="font-size: 18px" mat-button (click)="toAnchor('clearConscience')">A Clear Conscience</button>
-          <button style="font-size: 18px" mat-button (click)="toAnchor('abideInHim')">Abide in Christ</button>
+          <button style="font-size: 18px" mat-button (click)="toAnchor('abideInHim')">Abide in Him</button>
           <button style="font-size: 18px" mat-button (click)="toAnchor('aNewHeart')">A New Heart</button>
           <button style="font-size: 18px" mat-button (click)="toAnchor('bornAgain')">Born Again</button>
         </ng-template>
@@ -92,14 +90,14 @@
         </mat-expansion-panel-header>
         <ng-template matExpansionPanelContent>
           <button style="font-size: 18px" mat-button (click)="toAnchor('repentance')">Repentance</button>
-          <button style="font-size: 18px" mat-button (click)="toAnchor('baptismInWater')">Baptism</button>
+          <button style="font-size: 18px" mat-button (click)="toAnchor('baptism')">Baptism</button>
           <button style="font-size: 18px" mat-button (click)="toAnchor('believeInGod')">Believe in God</button>
-          <button style="font-size: 18px" mat-button (click)="toAnchor('obedienceUntoHoliness')">
+          <button style="font-size: 18px" mat-button (click)="toAnchor('obedienceToHoliness')">
             Obedience to Holiness
           </button>
           <button style="font-size: 18px" mat-button (click)="toAnchor('callUponTheLord')">Call upon the Lord</button>
           <button style="font-size: 18px" mat-button (click)="toAnchor('liveWorthy')">Live Worthy</button>
-          <button style="font-size: 18px" mat-button (click)="toAnchor('perseveranceToTheEnd')">
+          <button style="font-size: 18px" mat-button (click)="toAnchor('perseverance')">
             Perseverance through Remembrance
           </button>
         </ng-template>
@@ -112,7 +110,7 @@
           </mat-panel-title>
         </mat-expansion-panel-header>
         <ng-template matExpansionPanelContent>
-          <button style="font-size: 18px" mat-button (click)="toAnchor('resurrectionFromTheDead')">
+          <button style="font-size: 18px" mat-button (click)="toAnchor('resurrectionOfLife')">
             The Resurrection of Life
           </button>
           <button style="font-size: 18px" mat-button (click)="toAnchor('newSpiritualBodies')">
@@ -157,12 +155,12 @@
   </blog-gospel-section>
 </div>
 
-<div class="horses-image" id="heSeesAndHears"></div>
+<div class="horses-image" id="heKnows"></div>
 
 <blog-gospel-section [isLightMode]="false">
   <h3 class="headers">God Knows</h3>
   <div class="paragraphs">
-    <blog-he-knows #heSeesAndHears></blog-he-knows>
+    <blog-he-knows #heKnows></blog-he-knows>
   </div>
 </blog-gospel-section>
 
@@ -188,7 +186,7 @@
 <!-- #endregion THE DANGER - SIN -->
 
 <!-- #region THE DANGER - FUTILITY -->
-<div class="trumpets-image floating-header" style="background-position: top" id="futilityOfPleasure" #dangerFutility>
+<div class="trumpets-image floating-header" style="background-position: top" id="loveOfPleasure" #dangerFutility>
   <blog-gospel-header [isLightMode]="false" [@simpleFadeAnimation]>
     <h3>The Danger - Death</h3>
   </blog-gospel-header>
@@ -198,43 +196,43 @@
   <blog-gospel-section [isLightMode]="false" [isFloater]="true">
     <h3 class="headers">The Love of Pleasure</h3>
     <div class="paragraphs">
-      <gospel-pleasure #futilityOfPleasure></gospel-pleasure>
+      <gospel-pleasure #loveOfPleasure></gospel-pleasure>
     </div>
   </blog-gospel-section>
 </div>
 
-<div class="trumpets-image" style="background-position: top" id="futilityInToil"></div>
+<div class="trumpets-image" style="background-position: top" id="workAndToil"></div>
 
 <blog-gospel-section [isLightMode]="false">
   <h3 class="headers">Work and Toil</h3>
   <div class="paragraphs">
-    <gospel-toil #futilityInToil></gospel-toil>
+    <gospel-toil #workAndToil></gospel-toil>
   </div>
 </blog-gospel-section>
 
-<div class="witnesses-image" id="futilityOfWealth"></div>
+<div class="witnesses-image" id="loveOfWealth"></div>
 
 <div class="witnesses-image">
   <blog-gospel-section [isLightMode]="false" [isFloater]="true">
     <h3 class="headers">The Love of Wealth</h3>
     <div class="paragraphs">
-      <gospel-wealth #futilityOfWealth></gospel-wealth>
+      <gospel-wealth #loveOfWealth></gospel-wealth>
     </div>
   </blog-gospel-section>
 </div>
 
-<div class="witnesses-image" id="futilityInDeath"></div>
+<div class="witnesses-image" id="dayOfDeath"></div>
 
 <blog-gospel-section [isLightMode]="false">
   <h3 class="headers">The Day of Death</h3>
   <div class="paragraphs">
-    <gospel-death #futilityInDeath></gospel-death>
+    <gospel-death #dayOfDeath></gospel-death>
   </div>
 </blog-gospel-section>
 <!-- #endregion THE DANGER - FUTILITY -->
 
 <!-- #region THE CALL - GRACE -->
-<div class="cross-image floating-header" id="sufferingServant" #callGrace>
+<div class="cross-image floating-header" id="servantOfGod" #callGrace>
   <blog-gospel-header [@simpleFadeAnimation]>
     <h3>The Call - Grace</h3>
   </blog-gospel-header>
@@ -244,7 +242,7 @@
   <blog-gospel-section [isLightMode]="true" [isFloater]="true">
     <h3 class="headers">The Servant of God</h3>
     <div class="paragraphs">
-      <gospel-servant #sufferingServant></gospel-servant>
+      <gospel-servant #servantOfGod></gospel-servant>
     </div>
   </blog-gospel-section>
 </div>
@@ -368,7 +366,7 @@
 
 <div class="camp-image">
   <blog-gospel-section [isLightMode]="true" [isFloater]="true">
-    <h3 class="headers">Abide in Christ</h3>
+    <h3 class="headers">Abide in Him</h3>
     <div class="paragraphs">
       <gospel-abide #abideInHim></gospel-abide>
     </div>
@@ -409,13 +407,13 @@
     </div>
   </blog-gospel-section>
 
-  <div class="pillar-fire-image" id="baptismInWater"></div>
+  <div class="pillar-fire-image" id="baptism"></div>
 
   <div class="pillar-fire-image">
     <blog-gospel-section [isLightMode]="true" [isFloater]="true">
       <h3 class="headers">Baptism</h3>
       <div class="paragraphs">
-        <gospel-baptism #baptismInWater></gospel-baptism>
+        <gospel-baptism #baptism></gospel-baptism>
       </div>
     </blog-gospel-section>
   </div>
@@ -429,13 +427,13 @@
     </div>
   </blog-gospel-section>
 
-  <div class="holy-image" id="obedienceUntoHoliness"></div>
+  <div class="holy-image" id="obedienceToHoliness"></div>
 
   <div class="holy-image">
     <blog-gospel-section [isLightMode]="true" [isFloater]="true">
       <h3 class="headers">Obedience to Holiness</h3>
       <div class="paragraphs">
-        <gospel-holiness #obedienceUntoHoliness></gospel-holiness>
+        <gospel-holiness #obedienceToHoliness></gospel-holiness>
       </div>
     </blog-gospel-section>
   </div>
@@ -460,18 +458,18 @@
     </blog-gospel-section>
   </div>
 
-  <div class="rent-image" id="perseveranceToTheEnd"></div>
+  <div class="rent-image" id="perseverance"></div>
 
   <blog-gospel-section [isLightMode]="true">
     <h3 class="headers">Perseverance through Remembrance</h3>
     <div class="paragraphs">
-      <gospel-persevere #perseveranceToTheEnd></gospel-persevere>
+      <gospel-persevere #perseverance></gospel-persevere>
     </div>
   </blog-gospel-section>
   <!-- #endregion THE RESPONSE -->
 
   <!-- #region THE DAY OF THE LORD -->
-  <div class="heaven-image floating-header" id="resurrectionFromTheDead" #theHope>
+  <div class="heaven-image floating-header" id="resurrectionOfLife" #theHope>
     <blog-gospel-header [@simpleFadeAnimation]>
       <h3>The Hope - The Day of the Lord</h3>
     </blog-gospel-header>
@@ -481,7 +479,7 @@
     <blog-gospel-section [isLightMode]="true" [isFloater]="true">
       <h3 class="headers">The Resurrection of Life</h3>
       <div class="paragraphs">
-        <gospel-resurrection #resurrectionFromTheDead></gospel-resurrection>
+        <gospel-resurrection #resurrectionOfLife></gospel-resurrection>
       </div>
     </blog-gospel-section>
   </div>

@@ -5,8 +5,8 @@ import { SharedModule } from "../../../shared/shared.module";
 @Component({
   selector: "gospel-wealth",
   imports: [CommonModule, SharedModule],
-  template: `<ng-container *ngTemplateOutlet="futilityOfWealth"></ng-container>
-    <ng-template #futilityOfWealth>
+  template: `<ng-container *ngTemplateOutlet="loveOfWealth"></ng-container>
+    <ng-template #loveOfWealth>
       There was a man who went into a pub with everything he owned. He sat down at the table to gamble. At first, he bet
       only a little of what he has. He rolls the dice and a miracle happens! All the dice line up. The man yells, "Today
       is my lucky day. I will bet more next time!" So he rolls again, but this time with more on the table. A miracle

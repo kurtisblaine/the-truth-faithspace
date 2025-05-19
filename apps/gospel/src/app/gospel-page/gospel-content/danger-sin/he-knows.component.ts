@@ -5,8 +5,8 @@ import { SharedModule } from "../../../shared/shared.module";
 @Component({
   selector: "blog-he-knows",
   imports: [CommonModule, SharedModule],
-  template: `<ng-container *ngTemplateOutlet="heSeesAndHears"></ng-container>
-    <ng-template #heSeesAndHears>
+  template: `<ng-container *ngTemplateOutlet="heKnows"></ng-container>
+    <ng-template #heKnows>
       God is living; He is the creator of all living things. He sees the thoughts and the intentions of the human heart;
       He is Spirit and sees not what man sees; He sees spiritual things; He sees the human heart, for it is spirit, even
       though it is carnal. When we ourselves do not know our motives and intentions of the heart, He knows them. We may

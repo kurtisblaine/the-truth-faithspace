@@ -5,8 +5,8 @@ import { SharedModule } from "../../../shared/shared.module";
 @Component({
   selector: "gospel-persevere",
   imports: [CommonModule, SharedModule],
-  template: `<ng-container *ngTemplateOutlet="perseveranceToTheEnd"></ng-container>
-    <ng-template #perseveranceToTheEnd>
+  template: `<ng-container *ngTemplateOutlet="perseverance"></ng-container>
+    <ng-template #perseverance>
       Humans are forgetful, not some of us, but all of us. Want proof? Look at all the libraries filled with books - we
       write things down so that we don't forget. What enters into our minds soon leaves it, unless it is constantly
       remembered, acted upon, and sharpened of course. Likewise, we have truth within us that requires constant
