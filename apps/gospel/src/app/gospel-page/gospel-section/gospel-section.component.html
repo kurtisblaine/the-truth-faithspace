@@ -1,18 +1,23 @@
-<mat-card class="section" [class]="{ 'section-light': isLightMode, 'section-dark': !isLightMode, floater: isFloater }">
+<mat-card class="card" [class]="{ 'section-light': isLightMode, 'section-dark': !isLightMode, floater: isFloater }">
   <mat-card-header>
     <mat-card-title-group style="justify-content: center">
       <mat-card-title class="headers">
         <ng-content select=".headers"></ng-content>
       </mat-card-title>
-      <mat-card-subtitle> </mat-card-subtitle>
+      <mat-card-subtitle>
+        <lib-narrator [text]="paragraphContent?.innerText" [buttonStyle]="narratorStyle.Fab"> </lib-narrator>
+      </mat-card-subtitle>
     </mat-card-title-group>
   </mat-card-header>
 
-  <mat-card-content [class]="{ 'regular-content': !isFloater, 'floater-content': isFloater }">
-    <lib-narrator [text]="paragraphContent?.innerText" [buttonStyle]="narratorStyle.Fab">
-      <ng-container #paragraphContent>
-        <ng-content select=".paragraphs"></ng-content>
-      </ng-container>
-    </lib-narrator>
+  <mat-card-content
+    class="card-content"
+    [class]="{ 'regular-content': !isFloater, 'floater-content': isFloater }"
+    (mousewheel)="handleOnScrollEvent($event)"
+    (scroll)="handleOnScrollEvent($event)"
+  >
+    <div #paragraphContent>
+      <ng-content select=".paragraphs"></ng-content>
+    </div>
   </mat-card-content>
 </mat-card>

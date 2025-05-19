@@ -13,4 +13,12 @@ export class GospelSectionComponent {
   @Input() public isFloater = false;
 
   public narratorStyle = NarratorStyle;
+
+  constructor() {}
+
+  public handleOnScrollEvent(event: Event) {
+    // console.log(event);
+    event.stopImmediatePropagation();
+    event.stopPropagation();
+  }
 }

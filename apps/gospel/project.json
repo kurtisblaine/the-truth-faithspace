@@ -20,7 +20,10 @@
         "inlineStyleLanguage": "scss",
         "assets": ["apps/gospel/src/favicon.ico", "apps/gospel/src/assets"],
         "styles": ["apps/gospel/src/styles.scss"],
-        "scripts": [],
+        "scripts": [
+          "./node_modules/fullpage.js/dist/fullpage.js",
+          "./node_modules/fullpage.js/dist/fullpage.extensions.min.js"
+        ],
         "sourceMap": true,
         "namedChunks": true,
         "allowedCommonJsDependencies": ["guid-typescript", "photoswipe", "photoswipe/dist/photoswipe-ui-default"]

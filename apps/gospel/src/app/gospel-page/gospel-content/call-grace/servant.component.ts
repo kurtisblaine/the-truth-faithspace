@@ -5,8 +5,8 @@ import { SharedModule } from "../../../shared/shared.module";
 @Component({
   selector: "gospel-servant",
   imports: [CommonModule, SharedModule],
-  template: `<ng-container *ngTemplateOutlet="sufferingServant"></ng-container>
-    <ng-template #sufferingServant>
+  template: `<ng-container *ngTemplateOutlet="servantOfGod"></ng-container>
+    <ng-template #servantOfGod>
       Jesus was handed over by evil men to crucifixion; He submitted Himself willingly to the Father's will; He went to
       the cross to justify many by His blood. He was buried in a tomb for three days, God rose Him up from the dead on
       the third day, for it was the will of man to kill Him, but it was God's will to raise Him from the grave. He

@@ -5,8 +5,8 @@ import { SharedModule } from "../../../shared/shared.module";
 @Component({
   selector: "gospel-pleasure",
   imports: [CommonModule, SharedModule],
-  template: `<ng-container *ngTemplateOutlet="futilityOfPleasure"></ng-container>
-    <ng-template #futilityOfPleasure>
+  template: `<ng-container *ngTemplateOutlet="loveOfPleasure"></ng-container>
+    <ng-template #loveOfPleasure>
       Alcohol and food, which are wholesome in themselves, which are given to us by God for our enjoyment, but they are
       often perverted into drunkenness and gluttony, and drugs, which are often used for an escape from reality, which
       are a false refuge, which are often corrupted for one's own enjoyment rather than medicine, and the excessive love

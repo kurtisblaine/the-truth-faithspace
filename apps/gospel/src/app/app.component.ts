@@ -80,6 +80,12 @@ export class AppComponent implements OnInit {
       block: "start",
       inline: "nearest",
     });
+
+    this.router.navigate([], {
+      fragment: "gospel",
+      queryParamsHandling: "merge",
+      onSameUrlNavigation: "ignore",
+    });
   }
 
   public openBible() {

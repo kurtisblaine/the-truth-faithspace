@@ -5,8 +5,8 @@ import { SharedModule } from "../../../shared/shared.module";
 @Component({
   selector: "gospel-baptism",
   imports: [CommonModule, SharedModule],
-  template: `<ng-container *ngTemplateOutlet="baptismInWater"></ng-container>
-    <ng-template #baptismInWater>
+  template: `<ng-container *ngTemplateOutlet="baptism"></ng-container>
+    <ng-template #baptism>
       We're only eligible for baptism when we know we are dead; do people bury the living or the dead? Baptism is
       burial; and only the dead are buried; as it says,
       <blog-reference-tooltip [reference]="'Romans 6:4'">

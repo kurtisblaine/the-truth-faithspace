@@ -5,8 +5,8 @@ import { SharedModule } from "../../../shared/shared.module";
 @Component({
   selector: "gospel-toil",
   imports: [CommonModule, SharedModule],
-  template: `<ng-container *ngTemplateOutlet="futilityInToil"></ng-container>
-    <ng-template #futilityInToil>
+  template: `<ng-container *ngTemplateOutlet="workAndToil"></ng-container>
+    <ng-template #workAndToil>
       Our lives are filled with work and toil: we work then rest, to do it all over again the next day. The days do not
       cease, they do not lag behind for anybody; they are short, yet we spend them in much pain and agony because of our
       labors. The days are short because of our human weakness; each one is fit for the strength of a man. And what

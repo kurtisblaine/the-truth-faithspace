@@ -5,8 +5,8 @@ import { SharedModule } from "../../../shared/shared.module";
 @Component({
   selector: "gospel-resurrection",
   imports: [CommonModule, SharedModule],
-  template: `<ng-container *ngTemplateOutlet="resurrectionFromTheDead"></ng-container>
-    <ng-template #resurrectionFromTheDead>
+  template: `<ng-container *ngTemplateOutlet="resurrectionOfLife"></ng-container>
+    <ng-template #resurrectionOfLife>
       Before the coming of the Lord, the antichrist will be revealed, the man of lawlessness; he will work many false
       signs and wonders to deceive those who love the world and the things of the world; they acknowledge not God, so
       God will give them over to him who is not at all god that they may fill up the full measure of their error. They

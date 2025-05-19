@@ -2,6 +2,23 @@
 @use "sass:map";
 
 @import url(~fullpage.js/dist/fullpage.min.css);
+.slide > .fp-overflow {
+  align-content: center;
+  margin-top: 64px;
+}
+
+#fp-nav ul li a span,
+.fp-slidesNav ul li a span {
+  background: white;
+}
+
+#fp-nav ul li .fp-tooltip {
+  padding: 0px 20px;
+}
+
+.fp-slidesNav {
+  text-align: center;
+}
 
 @include mat.core();
 
@@ -13,8 +30,6 @@ $theme: mat.define-theme(
       tertiary: mat.$azure-palette,
     ),
     typography: (
-      // brand-family: "Roboto",
-      // plain-family: "Roboto",
       bold-weight: 777,
       medium-weight: 555,
       regular-weight: 444,
@@ -29,6 +44,10 @@ $theme: mat.define-theme(
 
 html {
   @include mat.all-component-themes($theme);
+}
+
+.mat-expansion-panel-body > button {
+  text-decoration: underline !important;
 }
 
 .primary-color {
