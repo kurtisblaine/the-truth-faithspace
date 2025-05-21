@@ -10,12 +10,7 @@
     </mat-card-title-group>
   </mat-card-header>
 
-  <mat-card-content
-    class="card-content"
-    [class]="{ 'regular-content': !isFloater, 'floater-content': isFloater }"
-    (mousewheel)="handleOnScrollEvent($event)"
-    (scroll)="handleOnScrollEvent($event)"
-  >
+  <mat-card-content class="card-content" [class]="{ 'regular-content': !isFloater, 'floater-content': isFloater }">
     <div #paragraphContent>
       <ng-content select=".paragraphs"></ng-content>
     </div>
