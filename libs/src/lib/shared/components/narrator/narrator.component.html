@@ -5,13 +5,33 @@
     style="margin-bottom: 5px"
     [hideSingleSelectionIndicator]="true"
   >
-    <mat-button-toggle (click)="startReading()" [value]="speechStatus.Playing" [disabled]="isAnotherPlaying">
+    <mat-button-toggle
+      (click)="startReading()"
+      [value]="speechStatus.Playing"
+      [disabled]="isAnotherPlaying"
+      title="Play button"
+      aria-labelledby="Play button"
+      aria-label="Play button"
+    >
       <fa-icon [icon]="playIcon" [size]="'lg'"></fa-icon>
     </mat-button-toggle>
-    <mat-button-toggle (click)="pauseReading()" [value]="speechStatus.Paused" [disabled]="isAnotherPlaying">
+    <mat-button-toggle
+      (click)="pauseReading()"
+      [value]="speechStatus.Paused"
+      [disabled]="isAnotherPlaying"
+      title="Pause button"
+      aria-labelledby="Pause button"
+      aria-label="Pause button"
+    >
       <fa-icon [icon]="pauseIcon" [size]="'lg'"></fa-icon>
     </mat-button-toggle>
-    <mat-button-toggle (click)="stopReading()" [value]="speechStatus.Stopped">
+    <mat-button-toggle
+      (click)="stopReading()"
+      [value]="speechStatus.Stopped"
+      title="Stop button"
+      aria-labelledby="Stop button"
+      aria-label="Stop button"
+    >
       <fa-icon [icon]="stopIcon" [size]="'lg'"></fa-icon>
     </mat-button-toggle>
   </mat-button-toggle-group>
@@ -29,7 +49,14 @@
   </div>
 
   <div *ngSwitchCase="narratorStyle.Fab" style="display: flex; justify-content: center; margin-bottom: px">
-    <button mat-mini-fab (click)="startReading()" [disabled]="isAnotherPlaying">
+    <button
+      mat-mini-fab
+      (click)="startReading()"
+      [disabled]="isAnotherPlaying"
+      title="Play button"
+      aria-labelledby="Play button"
+      aria-label="Play button"
+    >
       <fa-icon [icon]="playIcon" [size]="'lg'"></fa-icon>
     </button>
     <button
@@ -37,6 +64,9 @@
       (click)="pauseReading()"
       style="margin-left: 3px"
       [disabled]="thisLocalState === speechStatus.Stopped || isAnotherPlaying"
+      title="Pause button"
+      aria-labelledby="Pause button"
+      aria-label="Pause button"
     >
       <fa-icon [icon]="pauseIcon" [size]="'lg'"></fa-icon>
     </button>
@@ -45,6 +75,9 @@
       (click)="stopReading()"
       style="margin-left: 3px"
       [disabled]="thisLocalState === speechStatus.Stopped && !isAnotherPlaying"
+      title="Stop button"
+      aria-labelledby="Stop button"
+      aria-label="Stop button"
     >
       <fa-icon [icon]="stopIcon" [size]="'lg'"></fa-icon>
     </button>

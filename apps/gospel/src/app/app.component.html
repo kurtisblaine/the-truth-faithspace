@@ -83,9 +83,9 @@
           mat-icon-button
           class="example-icon"
           (click)="drawer.toggle()"
-          title="menu-button"
-          aria-labelledby="menu-button"
-          aria-label="menu-button"
+          title="Menu button"
+          aria-labelledby="Menu button"
+          aria-label="Menu button"
         >
           <fa-icon [icon]="icon" [size]="'lg'"></fa-icon>
         </button>
@@ -93,10 +93,25 @@
         <button mat-button (click)="goGospel(); drawer.close()"><h1>The Good News</h1></button>
         <span style="flex: 1 1 auto"></span>
 
-        <button mat-icon-button (click)="goGospel()" [matTooltip]="'Go to the Good News'">
+        <button
+          mat-icon-button
+          (click)="goGospel()"
+          [matTooltip]="'Go to the Good News'"
+          title="Gospel button"
+          aria-labelledby="Gospel button"
+          aria-label="Gospel button"
+        >
           <fa-icon [icon]="gospelIcon" [size]="'lg'"></fa-icon>
         </button>
-        <button mat-icon-button (click)="openBible()" [matTooltip]="'Open the Bible'" style="margin-right: 12px">
+        <button
+          mat-icon-button
+          (click)="openBible()"
+          [matTooltip]="'Open the Bible'"
+          style="margin-right: 12px"
+          title="Bible button"
+          aria-labelledby="Bible button"
+          aria-label="Bible button"
+        >
           <fa-icon [icon]="bookIcon" [size]="'lg'"></fa-icon>
         </button>
       </mat-toolbar>
@@ -104,7 +119,16 @@
 
     <router-outlet #toTop></router-outlet>
 
-    <button class="scoll-to-top" mat-fab color="primary" style="z-index: 7777777" (click)="scrollToTop(toTop)">
+    <button
+      class="scoll-to-top"
+      mat-fab
+      color="primary"
+      style="z-index: 7777777"
+      (click)="scrollToTop(toTop)"
+      title="Top button"
+      aria-labelledby="Top button"
+      aria-label="Top button"
+    >
       <fa-icon [icon]="arrowIcon" [size]="'lg'"></fa-icon>
     </button>
 
