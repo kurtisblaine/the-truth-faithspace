@@ -1,9 +1,13 @@
 <div fullpage id="fullpage" [options]="config">
-  <div class="section wedding-image" style="background-position: top" data-anchor="goodNews">
-    <!--  -->
+  <div
+    class="section wedding-image"
+    style="background-position: top"
+    data-anchor="goodNews"
+    data-tooltip="The Good News"
+  >
     <div class="header-pane">
       <h3 class="header-title">The Good News of the Kingdom of God</h3>
-      <blog-reference-tooltip style="display: block" class="mat-caption" [reference]="'Romans 1:16-19'">
+      <blog-reference-tooltip style="display: block" class="mat-caption gospel-text" [reference]="'Romans 1:16-19'">
         For I am not ashamed of the gospel, for it is the power of God for salvation to everyone who believes, to the
         Jew first and also to the Greek. For in it the righteousness of God is revealed from faith to faith; as it is
         written, "BUT THE RIGHTEOUS SHALL LIVE BY FAITH." For the wrath of God is revealed from heaven against all
@@ -20,7 +24,7 @@
           </mat-expansion-panel-header>
           <ng-template matExpansionPanelContent>
             <button mat-button (click)="toAnchor('dangerSin', 'ourSinNature')">
-              <a>Our Sin Nature</a>
+              <a>The Sin Nature</a>
             </button>
             <button mat-button (click)="toAnchor('dangerSin', 'heKnows')"><a>God Knows</a></button>
             <button mat-button (click)="toAnchor('dangerSin', 'aConsumingFire')">A Consuming Fire</button>
@@ -120,15 +124,15 @@
     </div>
   </div>
 
-  <div class="section horses-image" data-anchor="theDanger1">
+  <div class="section horses-image" data-anchor="theDanger1" data-tooltip="The Danger">
     <div class="header-pane">
       <h3 class="header-title">THE DANGER - SIN</h3>
     </div>
   </div>
 
-  <div class="section horses-image" data-anchor="dangerSin">
+  <div class="section horses-image" data-anchor="dangerSin" data-tooltip="Sin">
     <blog-gospel-section class="slide" data-anchor="ourSinNature" [isLightMode]="false" [isFloater]="true">
-      <h3 class="headers">Our Sin Nature</h3>
+      <h3 class="headers">The Sin Nature</h3>
       <div class="paragraphs">
         <blog-sin-nature #ourSinNature></blog-sin-nature>
       </div>
@@ -156,13 +160,13 @@
     </blog-gospel-section>
   </div>
 
-  <div class="section sin-image" data-anchor="theDanger2">
+  <div class="section sin-image" data-anchor="theDanger2" data-tooltip="The Danger">
     <div class="header-pane">
       <h3 class="header-title">THE DANGER - DEATH</h3>
     </div>
   </div>
 
-  <div class="section sin-image" data-anchor="dangerDeath">
+  <div class="section sin-image" data-anchor="dangerDeath" data-tooltip="Death">
     <blog-gospel-section data-anchor="loveOfPleasure" class="slide" [isLightMode]="false" [isFloater]="true">
       <h3 class="headers">The Love of Pleasure</h3>
       <div class="paragraphs">
@@ -192,13 +196,13 @@
     </blog-gospel-section>
   </div>
 
-  <div class="section camp-image" data-anchor="theCall1">
+  <div class="section camp-image" data-anchor="theCall1" data-tooltip="The Call">
     <div class="header-pane">
       <h3 class="header-title">THE CALL - GRACE</h3>
     </div>
   </div>
 
-  <div class="section camp-image" data-anchor="callGrace">
+  <div class="section camp-image" data-anchor="callGrace" data-tooltip="Grace">
     <blog-gospel-section data-anchor="servantOfGod" class="slide" [isLightMode]="true" [isFloater]="true">
       <h3 class="headers">The Servant of God</h3>
       <div class="paragraphs">
@@ -270,13 +274,13 @@
     </blog-gospel-section>
   </div>
 
-  <div class="section armor-image" data-anchor="theCall2">
+  <div class="section armor-image" data-anchor="theCall2" data-tooltip="The Call">
     <div class="header-pane">
       <h3 class="header-title">THE CALL - FAITH</h3>
     </div>
   </div>
 
-  <div class="section armor-image" data-anchor="callFaith">
+  <div class="section armor-image" data-anchor="callFaith" data-tooltip="Faith">
     <blog-gospel-section data-anchor="theRaceOfFaith" class="slide" [isLightMode]="true" [isFloater]="true">
       <h3 class="headers">The Race of Faith</h3>
       <div class="paragraphs">
@@ -313,13 +317,13 @@
     </blog-gospel-section>
   </div>
 
-  <div class="section rent-image" data-anchor="theResponse1">
+  <div class="section rent-image" data-anchor="theResponse1" data-tooltip="The Response">
     <div class="header-pane">
       <h3 class="header-title">THE RESPONSE</h3>
     </div>
   </div>
 
-  <div class="section rent-image" data-anchor="theResponse">
+  <div class="section rent-image" data-anchor="theResponse" data-tooltip="The Response">
     <blog-gospel-section data-anchor="repentance" class="slide" [isLightMode]="true" [isFloater]="true">
       <h3 class="headers">Repentence</h3>
       <div class="paragraphs">
@@ -370,13 +374,13 @@
     </blog-gospel-section>
   </div>
 
-  <div class="section new-earth-image" data-anchor="theHope1">
+  <div class="section new-earth-image" data-anchor="theHope1" data-tooltip="The Hope">
     <div class="header-pane">
       <h3 class="header-title">THE HOPE - THE DAY OF THE LORD</h3>
     </div>
   </div>
 
-  <div class="section new-earth-image" data-anchor="theHope">
+  <div class="section new-earth-image" data-anchor="theHope" data-tooltip="The Hope">
     <blog-gospel-section data-anchor="resurrectionOfLife" class="slide" [isLightMode]="true" [isFloater]="true">
       <h3 class="headers">The Resurrection of Life</h3>
       <div class="paragraphs">

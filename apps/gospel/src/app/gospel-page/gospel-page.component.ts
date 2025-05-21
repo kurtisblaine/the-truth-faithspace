@@ -34,21 +34,19 @@ export class GospelPageComponent implements OnInit, AfterViewInit, OnDestroy {
 
       controlArrows: false,
       navigation: true,
-      navigationPosition: "center",
+      navigationPosition: "left",
       slidesNavigation: true,
       slidesNavPosition: "bottom",
 
-      cards: true,
       afterLoad: this.afterPageLoad.bind(this),
       afterSlideLoad: this.afterSlideLoad.bind(this),
       lockAnchors: true,
 
-      // DEBUGGING: THESE TURN OFF THE AUTO SCROLLING...
-      // fitToSection: false,
-      // autoScrolling: false,
-      scrollHorizontally: true,
-      scrollHorizontallyKey: "",
-      lazyLoading: true,
+      responsiveHeight: 700,
+      responsiveWidth: 700,
+      // parallax: true,
+      // responsiveSlides: true,
+      // scrollHorizontally: true,
       scrollBar: true,
       loopHorizontal: false,
       loopBottom: false,
