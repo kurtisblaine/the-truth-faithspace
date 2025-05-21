@@ -41,9 +41,10 @@ export class GospelPageComponent implements OnInit, AfterViewInit, OnDestroy {
       afterLoad: this.afterPageLoad.bind(this),
       afterSlideLoad: this.afterSlideLoad.bind(this),
       lockAnchors: true,
-
-      responsiveHeight: 700,
-      responsiveWidth: 700,
+      scrollOverflow: false,
+      normalScrollElements: ".card-content",
+      // responsiveHeight: 700,
+      // responsiveWidth: 700,
       // parallax: true,
       // responsiveSlides: true,
       // scrollHorizontally: true,
