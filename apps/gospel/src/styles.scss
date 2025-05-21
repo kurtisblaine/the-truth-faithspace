@@ -4,16 +4,12 @@
 @import url(~fullpage.js/dist/fullpage.min.css);
 .slide > .fp-overflow {
   align-content: center;
-  margin-top: 64px;
+  margin-top: 64px; //TODO make this the size of the header...
 }
 
 #fp-nav ul li a span,
 .fp-slidesNav ul li a span {
   background: white;
-}
-
-#fp-nav ul li .fp-tooltip {
-  padding: 0px 20px;
 }
 
 .fp-slidesNav {

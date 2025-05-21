@@ -10,10 +10,14 @@ button[mat-button] {
   font-size: 16px;
   color: white;
 }
-
-@media (max-height: 700px) {
+//TODO figure out both max-height and width...
+@media (max-height: 800px) {
   .menu {
     display: none;
+  }
+
+  .gospel-text {
+    display: none !important;
   }
 }
 
@@ -22,12 +26,13 @@ button[mat-button] {
 }
 
 .header-pane {
-  padding: 0px 38px;
+  padding: 0px 150px;
   text-align: center;
   color: #fff;
   letter-spacing: 4px;
   text-transform: uppercase;
   line-height: normal;
+  justify-items: center;
 }
 
 .holy-image {
@@ -129,31 +134,6 @@ button[mat-button] {
 .samson-image {
   background-image: url("https://res.cloudinary.com/dffihsa2y/image/upload/v1711590027/img/samson_q982ou.webp");
   min-height: 400px;
-}
-
-@media (max-width: 568px) {
-  .new-jerusalem-image,
-  .holy-image,
-  .rent-image,
-  .bread-image,
-  .lamb-image,
-  .armor-image,
-  .camp-image,
-  .battle-image,
-  .heaven-image,
-  .trumpets-image,
-  .wedding-image,
-  .horses-image,
-  .pillar-fire-image,
-  .witnesses-image,
-  .sin-image,
-  .cross-image,
-  .lion-image,
-  .bush-image,
-  .new-earth-image,
-  .samson-image {
-    background-attachment: scroll;
-  }
 }
 
 .new-jerusalem-image,
