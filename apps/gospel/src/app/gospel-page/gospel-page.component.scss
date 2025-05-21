@@ -10,29 +10,20 @@ button[mat-button] {
   font-size: 16px;
   color: white;
 }
-//TODO figure out both max-height and width...
-@media (max-height: 800px) {
-  .menu {
-    display: none;
-  }
-
-  .gospel-text {
-    display: none !important;
-  }
-}
 
 .header-title {
   letter-spacing: 5px;
 }
 
 .header-pane {
-  padding: 0px 150px;
+  padding: 0px 100px;
   text-align: center;
   color: #fff;
   letter-spacing: 4px;
   text-transform: uppercase;
   line-height: normal;
-  justify-items: center;
+  align-content: center;
+  height: 100%;
 }
 
 .holy-image {
