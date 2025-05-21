@@ -1,13 +1,13 @@
 <div fullpage id="fullpage" [options]="config">
-  <div
-    class="section wedding-image"
-    style="background-position: top"
-    data-anchor="goodNews"
-    data-tooltip="The Good News"
-  >
+  <div class="section wedding-image" style="background-position: top" data-anchor="goodNews" data-tooltip="Home">
     <div class="header-pane">
       <h3 class="header-title">The Good News of the Kingdom of God</h3>
-      <blog-reference-tooltip style="display: block" class="mat-caption gospel-text" [reference]="'Romans 1:16-19'">
+      <blog-reference-tooltip
+        *ngIf="!isMobile()"
+        style="display: block"
+        class="mat-caption gospel-text"
+        [reference]="'Romans 1:16-19'"
+      >
         For I am not ashamed of the gospel, for it is the power of God for salvation to everyone who believes, to the
         Jew first and also to the Greek. For in it the righteousness of God is revealed from faith to faith; as it is
         written, "BUT THE RIGHTEOUS SHALL LIVE BY FAITH." For the wrath of God is revealed from heaven against all
@@ -15,7 +15,7 @@
         about God is evident within them; for God made it evident to them.
       </blog-reference-tooltip>
 
-      <mat-accordion class="menu" style="text-transform: unset">
+      <mat-accordion *ngIf="!isMobile()" class="menu" style="text-transform: unset">
         <mat-expansion-panel class="custom-panel" hideToggle>
           <mat-expansion-panel-header>
             <mat-panel-title>

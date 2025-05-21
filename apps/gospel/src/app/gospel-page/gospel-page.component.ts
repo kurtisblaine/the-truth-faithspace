@@ -1,9 +1,11 @@
 import { Location } from "@angular/common";
-import { AfterViewInit, ChangeDetectionStrategy, Component, OnDestroy, OnInit, ViewChild } from "@angular/core";
+import { AfterViewInit, ChangeDetectionStrategy, Component, OnDestroy, OnInit, signal, ViewChild } from "@angular/core";
 import { ActivatedRoute } from "@angular/router";
 import { FullpageDirective } from "@fullpage/angular-fullpage";
 import { fullpageApi, fullpageOptions, Item, Trigger } from "fullpage.js/dist/fullpage.extensions.min";
+import { DeviceDetectorService } from "ngx-device-detector";
 import { distinctUntilChanged, filter, Subscription } from "rxjs";
+
 type TItem = { isActive: boolean } & Item;
 
 @Component({
@@ -15,20 +17,20 @@ type TItem = { isActive: boolean } & Item;
 })
 export class GospelPageComponent implements OnInit, AfterViewInit, OnDestroy {
   public config: fullpageOptions;
-  public showAccordion = false;
+  public isMobile = signal(false);
 
   @ViewChild(FullpageDirective) public fullpageDirective: FullpageDirective;
   public fullpageApi: fullpageApi;
 
   private routeSubscription: Subscription;
 
-  constructor(private route: ActivatedRoute, private location: Location) {}
+  constructor(
+    private route: ActivatedRoute,
+    private location: Location,
+    private deviceDetector: DeviceDetectorService
+  ) {}
 
   ngOnInit() {
-    setTimeout(() => {
-      this.showAccordion = true;
-    }, 0);
-
     this.config = {
       licenseKey: "GM477-9I82I-1L8K9-194JK-TJUVR",
 
@@ -37,14 +39,13 @@ export class GospelPageComponent implements OnInit, AfterViewInit, OnDestroy {
       navigationPosition: "left",
       slidesNavigation: true,
       slidesNavPosition: "bottom",
+      recordHistory: true,
 
       afterLoad: this.afterPageLoad.bind(this),
       afterSlideLoad: this.afterSlideLoad.bind(this),
       lockAnchors: true,
       scrollOverflow: false,
       normalScrollElements: ".card-content",
-      // responsiveHeight: 700,
-      // responsiveWidth: 700,
       // parallax: true,
       // responsiveSlides: true,
       // scrollHorizontally: true,
@@ -68,6 +69,12 @@ export class GospelPageComponent implements OnInit, AfterViewInit, OnDestroy {
         const [sectionId, slideId] = fragment.split("/");
         this.toAnchor(sectionId, slideId);
       });
+
+    this.isMobile.set(this.deviceDetector.isMobile());
+    if (this.isMobile()) {
+      console.log(this.deviceDetector.deviceType);
+      this.fullpageApi.setResponsive(true);
+    }
   }
 
   ngOnDestroy(): void {
