@@ -53,7 +53,7 @@ export class GospelPageComponent implements OnInit, AfterViewInit, OnDestroy {
       loopHorizontal: false,
       loopBottom: false,
       loopTop: false,
-      credits: { enabled: true, label: "Amen and amen.", position: "left" },
+      credits: { enabled: true, label: "Blessings to you in the Lord.", position: "left" },
     };
   }
 
