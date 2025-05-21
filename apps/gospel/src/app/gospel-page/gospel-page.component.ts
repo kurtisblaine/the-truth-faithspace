@@ -36,7 +36,7 @@ export class GospelPageComponent implements OnInit, AfterViewInit, OnDestroy {
 
       controlArrows: false,
       navigation: true,
-      navigationPosition: "left",
+      navigationPosition: "right",
       slidesNavigation: true,
       slidesNavPosition: "bottom",
       recordHistory: true,
@@ -46,9 +46,7 @@ export class GospelPageComponent implements OnInit, AfterViewInit, OnDestroy {
       lockAnchors: true,
       scrollOverflow: false,
       normalScrollElements: ".card-content, .mat-drawer",
-      // parallax: true,
-      // responsiveSlides: true,
-      // scrollHorizontally: true,
+
       scrollBar: true,
       loopHorizontal: false,
       loopBottom: false,

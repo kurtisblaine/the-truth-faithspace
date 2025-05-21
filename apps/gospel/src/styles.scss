@@ -37,14 +37,6 @@ html {
   @include mat.all-component-themes($theme);
 }
 
-.mat-drawer {
-  z-index: 101 !important;
-}
-
-.mat-list {
-  z-index: 101 !important;
-}
-
 .mat-expansion-panel-body > button {
   text-decoration: underline !important;
 }
