@@ -17,7 +17,6 @@ export class GospelSectionComponent {
   constructor() {}
 
   public handleOnScrollEvent(event: Event) {
-    // console.log(event);
     event.stopImmediatePropagation();
     event.stopPropagation();
   }

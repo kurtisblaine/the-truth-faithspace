@@ -658,7 +658,7 @@ export class DataService {
     this.images.push({
       id: 45,
       name: "Will not inherit the Kingdom of God (grouping)",
-      description: `Coveteousness results from being unthankful, desiring and lusting after other's possessions.
+      description: `Covetousness results from being unthankful, desiring and lusting after other's possessions.
       Impurity comes from falsehood, for from the mouth comes defilement. And, sin comes from not believing in Christ.
       Believe in God, loved ones.`,
       footer: "It is clear, these WILL NOT inherit the Kingdom of heaven...",
