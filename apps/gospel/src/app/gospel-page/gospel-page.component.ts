@@ -45,7 +45,7 @@ export class GospelPageComponent implements OnInit, AfterViewInit, OnDestroy {
       afterSlideLoad: this.afterSlideLoad.bind(this),
       lockAnchors: true,
       scrollOverflow: false,
-      normalScrollElements: ".card-content",
+      normalScrollElements: ".card-content, .mat-drawer",
       // parallax: true,
       // responsiveSlides: true,
       // scrollHorizontally: true,
@@ -72,7 +72,6 @@ export class GospelPageComponent implements OnInit, AfterViewInit, OnDestroy {
 
     this.isMobile.set(this.deviceDetector.isMobile());
     if (this.isMobile()) {
-      console.log(this.deviceDetector.deviceType);
       this.fullpageApi.setResponsive(true);
     }
   }
