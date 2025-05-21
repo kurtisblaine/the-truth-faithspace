@@ -1,4 +1,4 @@
-import { ChangeDetectionStrategy, Component, Input } from "@angular/core";
+import { AfterViewInit, ChangeDetectionStrategy, ChangeDetectorRef, Component, Input } from "@angular/core";
 import { NarratorStyle } from "libs/src/lib/shared/components/narrator/narrator.component";
 
 @Component({
@@ -8,16 +8,19 @@ import { NarratorStyle } from "libs/src/lib/shared/components/narrator/narrator.
   changeDetection: ChangeDetectionStrategy.Default,
   standalone: false,
 })
-export class GospelSectionComponent {
+export class GospelSectionComponent implements AfterViewInit {
   @Input() public isLightMode = true;
   @Input() public isFloater = false;
 
   public narratorStyle = NarratorStyle;
 
-  constructor() {}
+  constructor(private changeDetector: ChangeDetectorRef) {}
+
+  public ngAfterViewInit(): void {
+    this.changeDetector.detectChanges();
+  }
 
   public handleOnScrollEvent(event: Event) {
-    event.stopImmediatePropagation();
     event.stopPropagation();
   }
 }
