@@ -2,7 +2,6 @@
 @use "sass:map";
 
 @import url(~fullpage.js/dist/fullpage.min.css);
-
 #fp-nav ul li a span,
 .fp-slidesNav ul li a span {
   background: white;
@@ -36,6 +35,14 @@ $theme: mat.define-theme(
 
 html {
   @include mat.all-component-themes($theme);
+}
+
+.mat-drawer {
+  z-index: 101 !important;
+}
+
+.mat-list {
+  z-index: 101 !important;
 }
 
 .mat-expansion-panel-body > button {
