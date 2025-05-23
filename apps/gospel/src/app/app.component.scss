@@ -24,12 +24,19 @@
 }
 
 .mat-drawer-content {
-  overflow: hidden;
+  overflow: unset !important;
 }
 
-.header {
+.fixed-toolbar {
   width: 100%;
   position: fixed;
   top: 0;
-  z-index: 77777777777777777777777;
+  z-index: 7777777;
+}
+
+.sticky-toolbar {
+  width: 100%;
+  position: sticky;
+  top: 0;
+  z-index: 7777777;
 }

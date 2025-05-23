@@ -77,7 +77,12 @@
     </mat-list>
   </mat-drawer>
   <mat-drawer-content>
-    <div class="header">
+    <div
+      [ngClass]="{
+        'fixed-toolbar': isFullpagePage(),
+        'sticky-toolbar': !isFullpagePage()
+      }"
+    >
       <mat-toolbar>
         <button
           mat-icon-button
@@ -116,15 +121,16 @@
         </button>
       </mat-toolbar>
     </div>
-
-    <router-outlet #toTop></router-outlet>
+    <div class="content-page">
+      <router-outlet #toTop></router-outlet>
+    </div>
 
     <button
       class="scoll-to-top"
       mat-fab
       color="primary"
       style="z-index: 7777777"
-      (click)="scrollToTop(toTop)"
+      (click)="scrollToTop(toTop, true)"
       title="Top button"
       aria-labelledby="Top button"
       aria-label="Top button"
