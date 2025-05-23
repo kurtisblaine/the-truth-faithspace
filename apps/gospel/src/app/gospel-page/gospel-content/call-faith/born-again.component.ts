@@ -201,11 +201,11 @@ import { SharedModule } from "../../../shared/shared.module";
       I urge you then, by the mercies of God, to humbly accept the Word of God implanted which has the power to save
       you. Believe through me, and if you find any fault in me, I point to the faultless one - believe in Him; for your
       sakes I have made these many writings, for I wish for you to be converted. I am not the light, but I testify to
-      the Light - a lesser light in the darkness pointing to the great Light of the day. We are living in the day of
+      the Light - as a lesser light in the darkness pointing to the great Light of the day. We are living in the day of
       darkness; the day of His light is coming. I urge you then, therefore, by the mercies of God: be reconciled, for He
       has reconciled you; and be forgiven, for He has forgiven you; and consider yourselves dead to sin, for He has died
-      for you; and live for Him, for He has bought you. Draw near unto Him, for He has drawn near to you. And humble
-      yourselves, for He has come down from heaven. Be a child, for you are His children.
+      for you; and live for Him, for He has purchased you. Draw near unto Him, for He has stetched out His arms unto
+      you. Humble yourselves, for He has come down from heaven. And be a child, for you are His children.
     </ng-template>`,
   styles: ``,
   changeDetection: ChangeDetectionStrategy.OnPush,
