@@ -2,7 +2,7 @@ import { ChangeDetectionStrategy, Component, Input } from "@angular/core";
 
 @Component({
   selector: "blog-link",
-  template: `(<a style="color: blue" href="{{ link }}" target="_blank">{{ title }}</a
+  template: `(<a href="{{ link }}" target="_blank">{{ title }}</a
     >)`,
   styles: ``,
   standalone: false,

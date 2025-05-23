@@ -3,7 +3,8 @@
 }
 
 .JesusWord {
-  color: red;
+  // color: red;
+  color: var(--mat-sys-error);
   // font-style: unset;
   // font-weight: bold;
 }
