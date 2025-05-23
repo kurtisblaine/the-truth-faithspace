@@ -4,9 +4,9 @@
 @import url(~fullpage.js/dist/fullpage.min.css);
 #fp-nav ul li a span,
 .fp-slidesNav ul li a span {
-  background: var(--mat-sys-primary-container);
+  background: white;
   border-radius: var(--mat-sys-corner-medium);
-  color: var(--mat-sys-on-primary-container);
+  color: var(--mat-sys-on-primary);
   box-shadow: var(--mat-sys-level3);
 }
 
@@ -37,17 +37,17 @@ html {
       ),
     )
   );
+}
 
-  // @include mat-button-overrides();
-
-  // ,// (
-  // background-color: #00458f,
-  // border-radius: 12px,
-  // color: #d7e3ff,
-  // )
-  // box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.2),
-  // 0px 6px 10px 0px rgba(0, 0, 0, 0.14),
-  // 0px 1px 18px 0px rgba(0, 0, 0, 0.12),,,
+html {
+  @include mat.fab-overrides(
+    (
+      small-container-color: #00458f,
+      container-color: #00458f,
+      small-foreground-color: white,
+      foreground-color: white,
+    )
+  );
 }
 
 .mat-expansion-panel-body > button {
