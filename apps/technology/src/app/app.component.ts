@@ -42,7 +42,13 @@ import { faBars, faHome, faRobot } from "@fortawesome/free-solid-svg-icons";
       <mat-drawer-content>
         <div class="header">
           <mat-toolbar color="primary">
-            <button mat-icon-button class="example-icon" (click)="drawer.toggle()" title="menu-button">
+            <button
+              mat-icon-button
+              class="example-icon"
+              (click)="drawer.toggle()"
+              aria-labelledby="Menu button"
+              aria-label="Menu button"
+            >
               <fa-icon [icon]="icon" [size]="'lg'"></fa-icon>
             </button>
 

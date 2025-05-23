@@ -1,7 +1,7 @@
 <div fullpage id="fullpage" [options]="config">
   <div class="section wedding-image" style="background-position: top" data-anchor="goodNews" data-tooltip="Home">
     <div class="header-pane">
-      <h3 class="header-title">The Good News of the Kingdom of God</h3>
+      <h2 class="header-title">The Good News of the Kingdom of God</h2>
       <blog-reference-tooltip
         *ngIf="!isMobile()"
         style="display: block"
@@ -23,10 +23,8 @@
             </mat-panel-title>
           </mat-expansion-panel-header>
           <ng-template matExpansionPanelContent>
-            <button mat-button (click)="toAnchor('dangerSin', 'ourSinNature')">
-              <a>The Sin Nature</a>
-            </button>
-            <button mat-button (click)="toAnchor('dangerSin', 'heKnows')"><a>God Knows</a></button>
+            <button mat-button (click)="toAnchor('dangerSin', 'ourSinNature')">The Sin Nature</button>
+            <button mat-button (click)="toAnchor('dangerSin', 'heKnows')">God Knows</button>
             <button mat-button (click)="toAnchor('dangerSin', 'aConsumingFire')">A Consuming Fire</button>
             <button mat-button (click)="toAnchor('dangerSin', 'dayOfJudgement')">The Day of Judgement</button>
           </ng-template>

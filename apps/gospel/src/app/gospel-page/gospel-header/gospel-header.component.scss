@@ -6,11 +6,10 @@
 }
 
 .header-light {
-  background-color: #f4f4f4;
-  color: #333333;
+  color-scheme: light;
 }
 
 .header-dark {
-  background-color: #282e34;
-  color: #f4f4f4;
+  color-scheme: dark;
+  color: var(--mat-sys-on-surface);
 }

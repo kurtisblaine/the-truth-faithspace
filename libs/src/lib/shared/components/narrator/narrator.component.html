@@ -9,7 +9,6 @@
       (click)="startReading()"
       [value]="speechStatus.Playing"
       [disabled]="isAnotherPlaying"
-      title="Play button"
       aria-labelledby="Play button"
       aria-label="Play button"
     >
@@ -19,7 +18,6 @@
       (click)="pauseReading()"
       [value]="speechStatus.Paused"
       [disabled]="isAnotherPlaying"
-      title="Pause button"
       aria-labelledby="Pause button"
       aria-label="Pause button"
     >
@@ -28,7 +26,6 @@
     <mat-button-toggle
       (click)="stopReading()"
       [value]="speechStatus.Stopped"
-      title="Stop button"
       aria-labelledby="Stop button"
       aria-label="Stop button"
     >
@@ -53,7 +50,6 @@
       mat-mini-fab
       (click)="startReading()"
       [disabled]="isAnotherPlaying"
-      title="Play button"
       aria-labelledby="Play button"
       aria-label="Play button"
     >
@@ -64,7 +60,6 @@
       (click)="pauseReading()"
       style="margin-left: 3px"
       [disabled]="thisLocalState === speechStatus.Stopped || isAnotherPlaying"
-      title="Pause button"
       aria-labelledby="Pause button"
       aria-label="Pause button"
     >
@@ -75,7 +70,6 @@
       (click)="stopReading()"
       style="margin-left: 3px"
       [disabled]="thisLocalState === speechStatus.Stopped && !isAnotherPlaying"
-      title="Stop button"
       aria-labelledby="Stop button"
       aria-label="Stop button"
     >

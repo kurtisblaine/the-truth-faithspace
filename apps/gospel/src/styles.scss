@@ -4,7 +4,21 @@
 @import url(~fullpage.js/dist/fullpage.min.css);
 #fp-nav ul li a span,
 .fp-slidesNav ul li a span {
-  background: white;
+  background: var(--mat-sys-primary-container);
+  border-radius: var(--mat-sys-corner-medium);
+  color: var(--mat-sys-on-primary-container);
+  box-shadow: var(--mat-sys-level3);
+}
+
+#fp-nav ul li,
+.fp-slidesNav ul li {
+  padding: 5px;
+}
+
+#fp-nav ul li a span,
+.fp-slidesNav ul li a span {
+  height: 6px;
+  width: 6px;
 }
 
 .fp-slidesNav {
@@ -13,41 +27,51 @@
 
 @include mat.core();
 
-$theme: mat.define-theme(
-  (
-    color: (
-      theme-type: light,
-      primary: mat.$azure-palette,
-      tertiary: mat.$azure-palette,
-    ),
-    typography: (
-      bold-weight: 777,
-      medium-weight: 555,
-      regular-weight: 444,
-    ),
-    density: (
-      scale: 0,
-    ),
-  )
-);
-
-@include mat.typography-hierarchy($theme);
-
 html {
-  @include mat.all-component-themes($theme);
+  @include mat.theme(
+    (
+      color: mat.$azure-palette,
+      typography: (
+        plain-family: sans-serif,
+        brand-family: sans-serif,
+      ),
+    )
+  );
+
+  // @include mat-button-overrides();
+
+  // ,// (
+  // background-color: #00458f,
+  // border-radius: 12px,
+  // color: #d7e3ff,
+  // )
+  // box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.2),
+  // 0px 6px 10px 0px rgba(0, 0, 0, 0.14),
+  // 0px 1px 18px 0px rgba(0, 0, 0, 0.12),,,
 }
 
 .mat-expansion-panel-body > button {
   text-decoration: underline !important;
 }
 
-// .gospel-app,
 .gospel-body {
   overflow-x: hidden !important;
 }
 
-.primary-color {
-  color: --mat-sys-primary;
+.primary {
+  color: var(--mat-sys-primary);
+}
+
+.mat-caption {
+  font-size: 14px;
+  padding: 7px;
+}
+
+.mat-typography h3 {
+  font-size: 24px;
+  font-weight: 450;
+  margin-top: 0;
+  margin-bottom: 12px;
 }
 
 html {
@@ -75,18 +99,15 @@ body {
   margin-top: unset !important;
   text-align: center !important;
   align-self: center !important;
-  color: black !important;
   cursor: pointer !important;
   // font-size: large;
 }
 
 mat-list-item {
-  color: black !important;
   cursor: pointer !important;
 }
 
 .mdc-list-item:hover .mdc-list-item__primary-text {
-  color: black !important;
   cursor: pointer !important;
 }
 
@@ -115,7 +136,7 @@ mat-list-item {
 
 a {
   text-decoration: underline;
-  color: unset;
+  color: var(--mat-sys-primary);
 }
 
 .mat-drawer-container {
@@ -127,14 +148,4 @@ a {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-}
-
-.mat-caption {
-  font-size: 14px;
-  padding: 7px;
-}
-
-.mat-typography h3 {
-  font-size: 24px;
-  margin: 0;
 }

@@ -80,7 +80,8 @@
     <div
       [ngClass]="{
         'fixed-toolbar': isFullpagePage(),
-        'sticky-toolbar': !isFullpagePage()
+        'sticky-toolbar': !isFullpagePage(),
+
       }"
     >
       <mat-toolbar>
@@ -88,7 +89,6 @@
           mat-icon-button
           class="example-icon"
           (click)="drawer.toggle()"
-          title="Menu button"
           aria-labelledby="Menu button"
           aria-label="Menu button"
         >
@@ -102,7 +102,6 @@
           mat-icon-button
           (click)="goGospel()"
           [matTooltip]="'Go to the Good News'"
-          title="Gospel button"
           aria-labelledby="Gospel button"
           aria-label="Gospel button"
         >
@@ -113,7 +112,6 @@
           (click)="openBible()"
           [matTooltip]="'Open the Bible'"
           style="margin-right: 12px"
-          title="Bible button"
           aria-labelledby="Bible button"
           aria-label="Bible button"
         >
@@ -131,7 +129,6 @@
       color="primary"
       style="z-index: 7777777"
       (click)="scrollToTop(toTop, true)"
-      title="Top button"
       aria-labelledby="Top button"
       aria-label="Top button"
     >
@@ -141,10 +138,11 @@
     <mat-progress-bar
       id="progress-bar"
       role="progressbar"
-      title="Reading Progress"
       style="margin: 0"
       class="scoll-to-top"
       mode="determinate"
+      aria-labelledby="Progress bar"
+      aria-label="Progress bar"
       [value]="progressValue$ | async"
     ></mat-progress-bar>
   </mat-drawer-content>
