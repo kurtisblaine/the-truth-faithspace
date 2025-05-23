@@ -1,5 +1,6 @@
-import { Component, ElementRef, OnInit, ViewChild } from "@angular/core";
-import { Router } from "@angular/router";
+import { Component, ElementRef, OnInit, Signal, ViewChild } from "@angular/core";
+import { toSignal } from "@angular/core/rxjs-interop";
+import { NavigationEnd, Router } from "@angular/router";
 import {
   faArrowUp,
   faBars,
@@ -16,7 +17,7 @@ import {
   faNewspaper,
   faPenToSquare,
 } from "@fortawesome/free-solid-svg-icons";
-import { BehaviorSubject, Observable, fromEvent, map } from "rxjs";
+import { BehaviorSubject, Observable, filter, fromEvent, map } from "rxjs";
 import { WindowService } from "./gospel-page/window.service";
 
 @Component({
@@ -43,11 +44,23 @@ export class AppComponent implements OnInit {
   public bookIcon = faBible;
   public studyIcon = faBook;
   public arrowIcon = faArrowUp;
+
   public progressValue = new BehaviorSubject(0);
   public progressValue$!: Observable<number>;
+  public isFullpagePage!: Signal<boolean>;
+
   public scrollTimeout!: any;
 
-  constructor(private router: Router, private windowService: WindowService) {}
+  constructor(private router: Router, private windowService: WindowService) {
+    const isFullpagePage$ = this.router.events.pipe(
+      filter((event) => event instanceof NavigationEnd),
+      map((event: NavigationEnd) => {
+        return event.urlAfterRedirects.includes("truth");
+      })
+    );
+
+    this.isFullpagePage = toSignal(isFullpagePage$, { initialValue: true });
+  }
 
   public ngOnInit() {
     if (this.windowService.nativeWindow) {
@@ -74,18 +87,20 @@ export class AppComponent implements OnInit {
     this.scrollToTop(this.toTopElement.nativeElement);
   }
 
-  scrollToTop(element) {
+  scrollToTop(element, navigate = false) {
     element.scrollIntoView({
       behavior: "smooth",
       block: "start",
       inline: "nearest",
     });
 
-    this.router.navigate([], {
-      fragment: "gospel",
-      queryParamsHandling: "merge",
-      onSameUrlNavigation: "ignore",
-    });
+    if (navigate) {
+      this.router.navigate([], {
+        fragment: "gospel",
+        queryParamsHandling: "merge",
+        onSameUrlNavigation: "ignore",
+      });
+    }
   }
 
   public openBible() {

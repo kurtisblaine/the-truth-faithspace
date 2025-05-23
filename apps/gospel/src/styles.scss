@@ -41,6 +41,11 @@ html {
   text-decoration: underline !important;
 }
 
+// .gospel-app,
+.gospel-body {
+  overflow-x: hidden !important;
+}
+
 .primary-color {
   color: --mat-sys-primary;
 }
@@ -57,6 +62,11 @@ body {
 
 .mat-typography p {
   margin: unset;
+}
+
+.mat-toolbar-row,
+.mat-toolbar-single-row {
+  padding: unset;
 }
 
 .mdc-list-item.mdc-list-item--with-three-lines .mdc-list-item__start,
@@ -94,14 +104,6 @@ mat-list-item {
   box-sizing: unset !important;
 }
 
-// upright text example
-.side-header {
-  flex: 1 1 20%;
-  writing-mode: vertical-rl;
-  text-orientation: upright;
-  padding: 80px 100px;
-}
-
 .main-content {
   flex: 1 1 80%;
 }
@@ -118,6 +120,7 @@ a {
 
 .mat-drawer-container {
   background-color: white !important;
+  overflow: unset !important;
 }
 
 .container-form {
