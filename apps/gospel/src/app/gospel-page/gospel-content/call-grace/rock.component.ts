@@ -37,24 +37,26 @@ import { SharedModule } from "../../../shared/shared.module";
       resurrection of Jesus Christ; by this Living Water, we never thirst again; this is the heavenly water which God
       separated from the beginning which is above the expanse. They who drank the water from the Rock later died, but we
       who drink of God's Spirit poured out will never die. As He commands us, “I, the LORD, am your God, Who brought you
-      up from the land of Egypt; Open your mouth wide and I will fill it.” (Psalms 81:10) As Moses spent 40 days and
-      nights on a mountain with God, drinking no food nor water, so he was the first to taste of the Living Water of
-      Christ; on that mount he received tablets of the covenant, the Words of God written on stone. But to the people
-      whose hearts were stone, the covenant had no effect on them, for it was made ineffective because of the flesh;
-      however by Christ it says, "I will give you a new heart and put a new spirit within you; and I will remove the
-      heart of stone from your flesh and give you a heart of flesh.” (Ezekiel 36:26) And, "This is the covenant which I
-      will make with the house of Israel after those days," declares the LORD, "I will put My law within them and on
-      their heart I will write it; and I will be their God, and they shall be My people.” (Jeremiah 31:33) For the new
-      heart and new spirit is made possible through Christ, who was struck by God in our stead, and by His going to the
-      Father. It was God's good plan, and that, to preserve life rather than destroying it; as the prophecy in the
-      Gospel of John says,
+      up from the land of Egypt; Open your mouth wide and I will fill it.” (Psalms 81:10)
+      <br /><br />
+
+      As Moses spent 40 days and nights on a mountain with God, drinking no food nor water, so he was the first to taste
+      of the Living Water of Christ; on that mount he received tablets of the covenant, the Words of God written on
+      stone. But to the people whose hearts were stone, the covenant had no effect on them, for it was made ineffective
+      because of the flesh; however by Christ it says, "I will give you a new heart and put a new spirit within you; and
+      I will remove the heart of stone from your flesh and give you a heart of flesh.” (Ezekiel 36:26) And, "This is the
+      covenant which I will make with the house of Israel after those days," declares the LORD, "I will put My law
+      within them and on their heart I will write it; and I will be their God, and they shall be My people.” (Jeremiah
+      31:33) For the new heart and the new spirit is made possible through Christ, who was struck by God in our stead,
+      and by His going to the Father. It was God's good plan, and that, to preserve life rather than destroying it; as
+      the prophecy in the Gospel of John says,
       <blog-reference-tooltip [reference]="'John 11:49-52'">
         You know nothing at all! You do not realize that it is better for you that one man die for the people than that
         the whole nation perish.
       </blog-reference-tooltip>
       The staff of God which Moses had in his hand is a piece of wood; and by the wood, he worked many miracles with it.
       And by the cross, which is wood, Christ saves. A staff is no weapon at all, but God is powerful and He works
-      wonders by that which is no weapon at all to show His great power towards us who believe. It God commanded Moses,
+      wonders by that which is no weapon at all to show His great power towards us who believe. God commanded Moses,
       "Take in your hand the staff with which you struck the Nile", so it is the cross which opens up a way for us out
       of the captivity of sin to God; as Paul says,
       <blog-reference-tooltip [reference]="'Galatians 6:14'">
@@ -62,7 +64,7 @@ import { SharedModule } from "../../../shared/shared.module";
         has been crucified to me, and I to the world.
       </blog-reference-tooltip>
       And where the people resided was a wilderness with no water and no food. There they received a better water, a
-      better food, both coming from heaven, from the spiritual. So likewise apart from the world God has much better
+      better food, both coming from heaven, from the spiritual. So likewise apart from the world, God has much better
       things for us in Christ Jesus.
       <br /><br />
 
@@ -71,7 +73,7 @@ import { SharedModule } from "../../../shared/shared.module";
       banished from entering into the land promised because he did not honor God in front of the people and sanctify the
       miracle before them. And this is a warning for us today: Christ was sacrificed once. If we struggle against sin,
       let us pray to the Rock and get deliverance through the cross, instead of striking again by continuing in willful
-      sin; for it is possible to crucify again to oneself the Son of God by falling away. Let us not be confortable in
+      sin; for it is possible to crucify again to oneself the Son of God by falling away. Let us not be comfortable in
       sin especially now that Jesus saves us from sin; He has set us free to be free, and sin is not anything to coddle;
       for it is deadly and repugnant, it is the danger. Sin has lost its power, and it has been rendered powerless by
       the grace of God in Christ Jesus; therefore, if we continue to sin after receiving the knowledge of the truth,
@@ -83,8 +85,8 @@ import { SharedModule } from "../../../shared/shared.module";
       consume the adversaries of God (Hebrews 10:26-30). So take heed! That which is powerless shall not master over
       you, for you are no longer under law, but under grace. Sin can only be our master if we willingly submit to it;
       rather, obey righteousness, obey Christ. Test yourselves. Do you love the light of life? For Christ gives us the
-      grace to do the good we want to do: to say, "No" to sin, and to say, "Yes" to God. The following warning ought to
-      keep us from sin in the fear of the Lord, as the writer of Hebrews states,
+      grace to do the good we want to do, that is, to say, "No" to sin, and to say, "Yes" to God. The following warning
+      ought to keep us from sin in the fear of the Lord, as the writer of Hebrews states,
       <blog-reference-tooltip [reference]="'Hebrews 6:4-9'">
         For in the case of those who have once been enlightened and have tasted of the heavenly gift and have been made
         partakers of the Holy Spirit, and have tasted the good word of God and the powers of the age to come, and [then]
@@ -98,8 +100,8 @@ import { SharedModule } from "../../../shared/shared.module";
 
       Jesus is the Rock of our refuge, a city of refuge, in which one flees for protection from the onslaught of the
       enemy. Just as a man in the time of war after being defeated flees back to his stronghold, so Christ is our safety
-      from our enemies, from the powers of wickedness, from the wolves whose power is in their mouth, that is, in their
-      lies; as it says,
+      from our enemies, from the powers of wickedness, from the wolves - whose power is in their mouth, that is, in
+      their lies; as it says,
       <blog-reference-tooltip [reference]="'Psalm 34:22'">
         And none of those who take refuge in Him will be condemned.
       </blog-reference-tooltip>
@@ -123,7 +125,7 @@ import { SharedModule } from "../../../shared/shared.module";
         It is better to take refuge in the LORD than to trust in man. It is better to take refuge in the LORD than to
         trust in princes.
       </blog-reference-tooltip>
-      Or,
+      Or again,
       <blog-reference-tooltip [reference]="'Psalm 146:3-6'">
         Do not trust in princes, in mortal man, in whom there is no salvation.
       </blog-reference-tooltip>
@@ -135,7 +137,7 @@ import { SharedModule } from "../../../shared/shared.module";
       fight against the enemy by Him; "Blessed be the LORD, my rock, Who trains my hands for war, And my fingers for
       battle; My lovingkindness and my fortress, My stronghold and my deliverer, My shield and He in whom I take refuge,
       Who subdues my people under me.” (Psalms 144:1-2) He is a precious corner stone to the believing, but a stumbling
-      block to the disobedient,
+      block to the disobedient;
       <blog-reference-tooltip [reference]="'1 Peter 2:6-8'">
         For this is contained in Scripture: "BEHOLD, I LAY IN ZION A CHOICE STONE, A PRECIOUS CORNER stone, AND HE WHO
         BELIEVES IN HIM WILL NOT BE DISAPPOINTED." This precious value, then, is for you who believe; but for those who
