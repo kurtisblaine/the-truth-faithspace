@@ -80,26 +80,26 @@ import { SharedModule } from "../../../shared/shared.module";
         will see His offspring, He will prolong His days, And the good pleasure of the LORD will prosper in His hand.
       </blog-reference-tooltip>
       On the day of atonement, the high priest works and the rest of the people did no work, but yet they were commanded
-      to afflicted themselves; signifying that it's God's work to remit sins and our work is to humble ourselves. What
-      is less than doing nothing at all? Is it not afflicting yourself? Thus He commanded, on the day of atonement, to
-      use their own strength against themselves by fasting, weeping and mourning, and making lamentations, hating
-      themselves for their many sins. Likewise on the holy days and sabbaths no work was to be done, and during the
-      festival of Unleavened Bread, they ate "the bread of affliction" (Deuteronomy 16:3) to remind them of their
-      slavery in Egypt; for if we do any work, our strength should be used against ourselves to humble ourselves, making
-      ourselves weak for the power of God to work in us. For God opposes the proud, but gives grace to the humble. This
-      is why they ate the bread of affliction and afflicted themselves on the day of atonement; other than this, they
-      were commanded to do nothing at all on the holy days. As it says, "You shall surely observe My sabbaths; for this
-      is a sign between Me and you throughout your generations, that you may know that I am the LORD who sanctifies
-      you.” (Exodus 31:13) So it's God's work to sanctify and cleanse, and we enter into His rest through affliction and
-      lowliness and humility of mind. For in weakness God's grace is perfected to the effect that we may by His goodness
-      be filled with all goodness, for there is none good but God; and we have free access into His great goodness
-      through faith. Ah! The depths of the mercy and grace of the Almighty God, who loved us by the death of His Son and
-      continues to love us through the life of His Son; may it never be said or thought of again, "The Lord God doesn't
-      love me." Oh! How He demonstrated His great love for us on the cross at Calvary! He didn't merely say, "I love
-      you", but He proved His love in the greatest way possible by giving up His own life in the Man of His Presence,
-      choosing us unto adoption as sons, we who were formerly not His sons. Oh! That we would fear God, so that we would
-      stay away from all appearances of evil and never depart from Him; Ah, that we would know what is good for us, for
-      the fear of the Lord is to depart from iniquity; as it says,
+      to afflict themselves; signifying that it's God's work to remit sins and our work is to humble ourselves. What is
+      less than doing nothing at all? Is it not afflicting yourself? Thus He commanded, on the day of atonement, to use
+      their own strength against themselves by fasting, weeping, mourning, and making lamentations, hating themselves
+      for their many sins. Likewise on the holy days and sabbaths no work was to be done, and during the festival of
+      Unleavened Bread, they ate "the bread of affliction" (Deuteronomy 16:3) to remind them of their slavery in Egypt;
+      for if we do any work, our strength should be used against ourselves to humble ourselves, making ourselves weak
+      for the power of God to work in us. For God opposes the proud, but gives grace to the humble. This is why they ate
+      the bread of affliction and afflicted themselves on the day of atonement; other than this, they were commanded to
+      do nothing at all on the holy days. As it says, "You shall surely observe My sabbaths; for this is a sign between
+      Me and you throughout your generations, that you may know that I am the LORD who sanctifies you.” (Exodus 31:13)
+      So it's God's work to sanctify and cleanse, and we enter into His rest through affliction and lowliness and
+      humility of mind. For in weakness God's grace is perfected to the effect that we may, by His goodness be filled
+      with all goodness, for there is none good but God; and we have free access into His great goodness through faith.
+      The depths of the mercy and grace of the Almighty God, who loved us by the death of His Son and continues to love
+      us through the life of His Son; may it never be said or thought of again, "The Lord God doesn't love me." How He
+      demonstrated His great love for us on the cross at Calvary! He didn't merely say, "I love you", but He proved His
+      love in the greatest way possible by giving up His own life in the Man of His Presence, choosing us unto adoption
+      as sons, we who were formerly not His sons. That we would fear God, so that we would stay away from all
+      appearances of evil and never depart from Him; Ah, that we would know what is good for us, for the fear of the
+      Lord is to depart from iniquity; as it says,
       <blog-reference-tooltip [reference]="'Proverbs 16:6'">
         By lovingkindness and truth iniquity is atoned for, And by the fear of the LORD one keeps away from evil. </blog-reference-tooltip
       ><br /><br />
@@ -112,8 +112,8 @@ import { SharedModule } from "../../../shared/shared.module";
         again curse the ground for man’s sake, although the imagination of man’s heart is evil from his youth; nor will
         I again destroy every living thing as I have done."
       </blog-reference-tooltip>
-      Again, He was pleased with another man and blessed the world on account of him, that is, Abraham, the man of
-      faith; as it says of him,
+      Again, He was pleased with another man and blessed the world on account of him, namely, Abraham, the man of faith;
+      as it says of him,
       <blog-reference-tooltip [reference]="'Genesis 22:18'">
         In your seed all the nations of the earth shall be blessed, because you have obeyed My voice.
       </blog-reference-tooltip>
@@ -127,10 +127,10 @@ import { SharedModule } from "../../../shared/shared.module";
       And in regard to Christ, it is said, “For zeal for Your house has consumed Me, And the reproaches of those who
       reproach You have fallen on Me.” (Psalms 69:9) And who can forget David, the man after God's own heart? He was
       given a promise and covenant by God concerning His descendants forever; for in his freewill he looked for a
-      dwelling place for the LORD God of Israel. And Jesus Christ, being the fulfillment of these, is the One who
-      fulfills all things; He, having obeyed God one time at the cross brings salvation to many, un-doing the one act of
-      the one man, Adam, who sinned in the beginning, and brings salvation to the whole world, to whoever-so is ordained
-      to eternal life; as Paul was saying about Adam and Christ,
+      dwelling place for the LORD God of Israel. And Jesus Christ, being the fulfillment of all these men, is the One
+      who fulfills all things; He, having obeyed God one time at the cross brings salvation to many, un-doing the one
+      act of the one man, Adam, who sinned in the beginning, and brings salvation to the whole world, to whoever-so is
+      ordained to eternal life. Hear what Paul was saying about Adam and Christ:
       <blog-reference-tooltip [reference]="'Romans 5:12-20'">
         Therefore, just as sin entered the world through one man, and death through sin, and in this way death came to
         all people, because all sinned— To be sure, sin was in the world before the law was given, but sin is not
@@ -161,16 +161,17 @@ import { SharedModule } from "../../../shared/shared.module";
       willing and pure-hearted David, all who are like the Son of God, for they prophesied to Christ, are indeed sons of
       God, made sons by the Spirit of the Son; as it says, “For you are all sons of God through faith in Christ Jesus.”
       (Galatians 3:26) And, “For all who are being led by the Spirit of God, these are sons of God.” (Romans 8:14) So in
-      Christ Jesus the eternal blessing of the Jews comes to the Gentiles; and this is made possible by His obedience
-      for all, by the irrevocable covenants of God. What is acceptable in God's sight is serving Him with faith, as
-      faithful Abraham, and serving Him with a pure conscience, as pure-hearted David, in which these men of old served
-      God and received covenants of friendship with God.
+      Christ Jesus the eternal blessing of the Jews came to the Gentiles; and this is made possible by His obedience for
+      all, by the irrevocable covenants of God. What is acceptable in God's sight is serving Him with faith, as faithful
+      Abraham, and serving Him with a pure conscience, as pure-hearted David, in which these men of old served God and
+      received covenants of friendship with God.
       <br /><br />
 
       When the animal was brought into the temple, the Israelites confessed their error, for they brought the beast and
-      spoke to the priest, telling them what it was for: a sin offering, a guilt offering, etc. And by laying their
-      hands on its head, they acknowledged the animal was for them. So there are two confessions: one of sin and another
-      of atonement; as it is written by the apostle John, who seen the risen Lord and rested at His bosom; he writes,
+      spoke to the priest, telling them what it was for: either a sin offering, a guilt offering, etc. And by laying
+      their hands on its head, they acknowledged the animal was for them. So there are two confessions: one of sin and
+      another of atonement; as it is written by the apostle John, who seen the risen Lord and rested at His bosom; he
+      writes,
       <blog-reference-tooltip [reference]="'1 John 1:8'">
         If we say we have no sin, we deceive ourselves, and the truth is not in us. If we confess our sins, He is
         faithful and just to forgive us our sins and to cleanse us from all unrighteousness. If we say we have not
@@ -192,7 +193,7 @@ import { SharedModule } from "../../../shared/shared.module";
       Jesus Christ." (1 Corinthians 15:56-57) So while we abide in the grace of God, which is through faith, we have no
       obligation to serve sin which has been rendered powerless; we have been set free from sin in Christ Jesus, and our
       freedom depends on our abiding in Christ; if we slip or fall into sin, we confess it; we know our sins will be
-      forgiven if we confess, for He will cleanse our guilty consciences. We will know we have been forgiven because our
+      forgiven if we confess, for He will cleanse our guilty conscience. We will know we have been forgiven because our
       guilt will be removed and our heart will no longer condemn us. Jesus took upon Himself our burdens, our guilt and
       our shame, so that we would not have to carry it ourselves; therefore, confess! God has promised, and it is
       impossible for Him to lie; His promises are a sure foundation to build upon. Let us not walk around with our

@@ -108,7 +108,7 @@ import { SharedModule } from "../../../shared/shared.module";
         His hand.
       </blog-reference-tooltip>
       However, Christ died without children, so these offspring mentioned are sons of God after His own likeness, being
-      the Son of God; as it says,
+      the Son of God Himself; as it says,
       <blog-reference-tooltip [reference]="'Isaiah 8:18, Hebrews 2:13'">
         Behold, I and the children whom the LORD has given me are for signs and wonders in Israel from the LORD of
         hosts, who dwells on Mount Zion.
@@ -132,6 +132,7 @@ import { SharedModule } from "../../../shared/shared.module";
       ></blog-link
       ><br /><br />
 
+      <!-- TODO - a better spot for this?  -->
       The Father grafts us, even Gentiles, into God's household, the body of Christ, through faith in Jesus; He makes us
       sons of God by the Spirit of His Son, conforming us into His likeness; as it says, “For those whom He foreknew, He
       also predestined to become conformed to the image of His Son, so that He would be the firstborn among many
@@ -146,15 +147,16 @@ import { SharedModule } from "../../../shared/shared.module";
         joints and ligaments, grows with a growth which is from God.
       </blog-reference-tooltip>
       So we see our victory is won for us by Christ and we enter into this victory by setting our minds on the things
-      above, namely Christ. For if we set our minds on spiritual things, the members of our bodies will likewise conform
-      to the message of our head. And we set our minds on our Head, that is to say, Christ. Our hand does what the mind
-      says, and our foot does what the mind says, even to every finger and every toe. So if we set our mind on spiritual
-      things, namely Christ, He will give us the strength to present our members as servants to righteousness (Romans
-      8:5-8, Philippians 4:8, Colossians 3:2). This is the way of faith: setting our minds on Jesus Christ. As it says
-      about the mind of the flesh: "The day when you post your watchmen, Your punishment will come. Then their confusion
-      will occur.” (Micah 7:4) But then, it says about the mind of the Spirit: “As for me, I will watch expectantly for
-      the LORD; I will wait for the God of my salvation. My God will hear me.” (Micah 7:7) For the mind set on the flesh
-      is set on punishment and wrath, but the mind set on the Spirit is set on the LORD, the God of salvation.
+      above, namely Christ in the heavens. For if we set our minds on spiritual things, the members of our bodies will
+      likewise conform to the message of our head. And we set our minds on our Head, that is to say, Christ. Our hand
+      does what the mind says, and our foot does what the mind says, even to every finger and every toe. So if we set
+      our mind on spiritual things, namely Christ, He will give us the strength to present our members as servants to
+      righteousness (Romans 8:5-8, Philippians 4:8, Colossians 3:2). This is the way of faith: setting our minds on
+      Jesus Christ. As it says about the mind of the flesh: "The day when you post your watchmen, Your punishment will
+      come. Then their confusion will occur.” (Micah 7:4) But then, it says about the mind of the Spirit: “As for me, I
+      will watch expectantly for the LORD; I will wait for the God of my salvation. My God will hear me.” (Micah 7:7)
+      For the mind set on the flesh is set on punishment and wrath, but the mind set on the Spirit is set on the LORD,
+      the God of salvation.
       <blog-link
         [title]="'See more about the Father and the Son, the Son and the Church'"
         [link]="'https://thelightof.life/#/draw/Father&Son.webp'"
@@ -187,21 +189,22 @@ import { SharedModule } from "../../../shared/shared.module";
       explained Him.” (John 1:18) And we are made to see God through faith in Jesus Christ; as it says, “For all who are
       being led by the Spirit of God, these are sons of God.” (Romans 8:14) For children follow after their parents,
       namely by what they see; and we follow after Christ by faith. For the Spirit of God does the leading, and as
-      obedient children we follow after Him. But do you not know, beloved, God first rescued His firstborn Israel from
-      Egypt by a mighty hand, but later, when they hardened their necks and kicked against Him and rebelled against Him
-      for many years, then God handed them over to the Babylonians and the Assyrians, even defiling His own temple on
-      their account? And they were sons of Israel, God's chosen people, saved by grace; but they were rejected by God
-      because they rejected Him. For they were constantly forgetting God, and they were closing their ears and not
-      believing in Him. The LORD God set up testimonies for them and their children so that they would not forget Him;
-      but, as it says in the Psalms, “They forgot His deeds And His miracles that He had shown them.” (Psalms 78:11)
-      And, “They quickly forgot His works; They did not wait for His counsel.” (Psalms 106:13) And, “Because they did
-      not believe in God And did not trust in His salvation.” (Psalms 78:22) And as a result, “They even sacrificed
-      their sons and their daughters to the demons, And shed innocent blood, The blood of their sons and their
-      daughters, Whom they sacrificed to the idols of Canaan; And the land was polluted with the blood.” (Psalms
-      106:37-38) So why would we imitate the ancestors who followed after devils, and not God? For Jesus is our example,
-      and Jesus is the Way; Jesus has loved us, even more than Himself. Do devils love you more than God? Of course not!
-      Devils desire the sacrifice of devils, but God desires righteous sacrifices, and provides the Sacrifice in Jesus
-      Christ; so therefore,
+      obedient children we follow after Him. ><br /><br />
+
+      But do you not know, beloved, God first rescued His firstborn Israel from Egypt by a mighty hand, but later, when
+      they hardened their necks and kicked against Him and rebelled against Him for many years, then God handed them
+      over to the Babylonians and the Assyrians, even defiling His own temple on their account? And they were sons of
+      Israel, God's chosen people, saved by grace; but they were rejected by God because they rejected Him. For they
+      were constantly forgetting God, and they were closing their ears and not believing in Him. The LORD God set up
+      testimonies for them and their children so that they would not forget Him; but, as it says in the Psalms, “They
+      forgot His deeds And His miracles that He had shown them.” (Psalms 78:11) And, “They quickly forgot His works;
+      They did not wait for His counsel.” (Psalms 106:13) And, “Because they did not believe in God And did not trust in
+      His salvation.” (Psalms 78:22) And as a result, “They even sacrificed their sons and their daughters to the
+      demons, And shed innocent blood, The blood of their sons and their daughters, Whom they sacrificed to the idols of
+      Canaan; And the land was polluted with the blood.” (Psalms 106:37-38) So why would we imitate the ancestors who
+      followed after devils, and not God? For Jesus is our example, and Jesus is the Way; Jesus has loved us, even more
+      than Himself. Do devils love you more than God? Of course not! Devils desire the sacrifice of devils, but God
+      desires righteous sacrifices, and provides the Sacrifice; so therefore,
       <blog-reference-tooltip [reference]="'1 Peter 1:14-19'">
         As obedient children, do not be conformed to the former lusts which were yours in your ignorance, but like the
         Holy One who called you, be holy yourselves also in all your behavior; because it is written, "YOU SHALL BE
@@ -226,7 +229,7 @@ import { SharedModule } from "../../../shared/shared.module";
       >
       For Jesus was blameless, but the indictment which the adversary had written against Him states:
       <blog-reference-tooltip [reference]="'John 19:19'"
-        >JESUS OF NAZARETH, THE KING OF THE JEWS</blog-reference-tooltip
+        >JESUS OF NAZARETH, THE KING OF THE JEWS.</blog-reference-tooltip
       >
       And even though the accusation meant bearing the cross on His shoulder, and wearing the crown of thorns on His
       head, He went to the cross and confirmed His testimony in His own blood. This is what it means when it says, "This
@@ -245,8 +248,8 @@ import { SharedModule } from "../../../shared/shared.module";
       the shoulders of many who believe; it is now put on tops of buildings and set up as markers for graves. Are the
       sons of men so wicked that they put tortuous symbols on themselves? No! Rather, God is so good that He has turned
       the detestable thing into a glorious sign of redemption and salvation. No-one can do such a thing, except God, who
-      turns the corrupt person into the believing, the detestable into the gracious, the abominable into the saint.
-      Christ did so, so that we would not lose heart or grow faint: believe in the Son. And do not fall into the trap of
+      turns the corrupt into the believing, the detestable into the gracious, the abominable into the saint. Christ did
+      so, so that we would not lose heart or grow faint: believe in the Son. And do not fall into the trap of
       worshipping a dead cross, bowing low to it; but worship the Lord your God and Savior, Jesus Christ, who is living
       in the heavens, exalted for you. Beware of idols.
     </ng-template>`,

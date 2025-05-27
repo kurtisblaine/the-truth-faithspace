@@ -8,14 +8,14 @@ import { SharedModule } from "../../../shared/shared.module";
   template: `<ng-container *ngTemplateOutlet="trueFoodAndTrueDrink"></ng-container>
     <ng-template #trueFoodAndTrueDrink>
       The food we eat goes into our mouths, into the stomach and out into the sewer; and yet, we constantly strive for
-      such food, although we are never fully satisfied. The spiritual food we eat goes in through the eyes and hears,
-      into the heart and out of the mouth: a sort of spiritual digestive system. Jesus says,
+      such food, although we are never fully satisfied. The spiritual food we eat goes in through the eyes and ears,
+      into the heart and out of the mouth: a kind of spiritual digestive system. Jesus says,
       <blog-reference-tooltip [reference]="'Matthew 6:22-23'" [isJesusWord]="true">
         The eye is the lamp of the body; so then if your eye is clear, your whole body will be full of light. But if
         your eye is bad, your whole body will be full of darkness. If then the light that is in you is darkness, how
         great is the darkness!
       </blog-reference-tooltip>
-      So what we see resides in the body just as food resides in the body when eaten; similarily, it says,
+      So what we see resides in the spirit just as what we eat resides in the flesh; similarily, it says,
       <blog-reference-tooltip [reference]="'Job 12:11'">
         Does not the ear test words, As the palate tastes its food?
       </blog-reference-tooltip>
@@ -71,7 +71,7 @@ import { SharedModule } from "../../../shared/shared.module";
       a nourishment that we know nothing about. When we eat food in this world, we eat something that has died: a plant
       that has been plucked, an animal that has been slain, or a piece of fruit that has been harvested. Everything that
       is cut off from its life undergoes death; afterwards, the food begins to rot and grow hairs of mold, being
-      consumed slowly within and without, since it is plucked from its life and it is not comsumed by the living before
+      consumed slowly within and without, since it is plucked from its life and it is not consumed by the living before
       its time; however it doesn't perish while it is on the tree or in the ground or has the breath of life, for life
       preserves it. So if we live for a little while by eating the death of a thing, how much more do you suppose we
       would live by eating the life? For Jesus Christ is the true food and the true drink, He is the author of life; He
@@ -112,10 +112,10 @@ import { SharedModule } from "../../../shared/shared.module";
       <br /><br />
 
       So when an animal is sacrificed on the altar, the priest ate the meat of the sacrifice and gained strength for a
-      short while, living by the strength of the meat; how much more do you suppose new covenant priests live, who eat
-      the Sacrifice of God, and the grace thereof, who eat the Lamb who has been slain, rather, the Lamb who has been
-      raised? If we know a person by their works, or a tree by its fruit, what type of tree do you discern Jesus Christ
-      resembles by His fruit, except the Tree of Life? As Moses prayed,
+      short while, living by the strength of the meat; how much more do you suppose the new covenant priests live, who
+      eat the Sacrifice of God, and the grace thereof, who eat the Lamb who has been slain, rather, the Lamb who has
+      been raised? If we know a person by their works, or a tree by its fruit, what type of tree do you discern Jesus
+      Christ resembles by His fruit, except the Tree of Life? As Moses prayed,
       <blog-reference-tooltip [reference]="'Exodus 33:13'">
         Now therefore, I pray You, if I have found favor in Your sight, let me know Your ways that I may know You, so
         that I may find favor in Your sight.
@@ -129,16 +129,9 @@ import { SharedModule } from "../../../shared/shared.module";
       away, likewise waste away, as we are all wasting away, for everything which is seen is perishing; but we who live
       by Him, who is not seen, will live forever by the things which never die. While we are wasting away, we are being
       renewed by the Spirit day by day, to be made more like Him, to be made worthy of eternal life which is to be
-      revealed when He is revealed to the whole world;
-      <!-- The things of this world, which seem to be living in our eyes,
-      when put alongside Him, are dead, for He is exceedingly living, making the living seem dead; -->
-      <!-- furthermore, 
-      when the love of man is compared with the love of God in Christ, His love makes the love of man seem like hatred.
-      For I remind you, the Israelites were besiged by their enemies -->
-      <!-- TODO put eatting flesh son and Christ -->
-      so therefore, seek and search for Him, the living Life, dwelling above the heavens, and He will let you find Him
-      by His grace. We who sow to the Spirit reap life, and the mind set on the Spirit is life and peace; so set your
-      minds on the things above where Christ dwells.
+      revealed when He is revealed to the whole world. So therefore, seek and search for Him, the living Life, dwelling
+      above the heavens, and He will let you find Him by His grace. We who sow to the Spirit reap life, and the mind set
+      on the Spirit is life and peace; so set your minds on the things above where Christ dwells.
       <blog-link
         [title]="'See more on the Living Bread'"
         [link]="'https://thelightof.life/#/edify-detail/82f4d580-3f2d-a049-d46d-6036c26062a8'"
@@ -158,18 +151,18 @@ import { SharedModule } from "../../../shared/shared.module";
       likewise it says, "Today if you hear His voice..." (Hebrews 3:15) And it says,
       <blog-reference-tooltip [reference]="'2 Corinthians 6:2'">
         "AT THE ACCEPTABLE TIME I LISTENED TO YOU, AND ON THE DAY OF SALVATION I HELPED YOU." Behold, now is "THE
-        ACCEPTABLE TIME," behold, now is "THE DAY OF SALVATION"
+        ACCEPTABLE TIME," behold, now is "THE DAY OF SALVATION."
       </blog-reference-tooltip>
       For His favor is open for us everyday to abide in; as the lamenter says, “The LORD'S lovingkindnesses indeed never
       cease, For His compassions never fail. They are new every morning; Great is Your faithfulness.” (Lamentations
       3:22-23) So we rest in His kindness, and abide therein everyday, for God is good; the time of waiting for Him has
       ceased. We should fear lest we harden ourselves toward God by being ignorant of His ways, erring in the heart, and
-      departing out of the way. Remember His ways, declare His works. Remember Christ, that He is the Way. This is the
-      key to remaining: remember. And the key to abiding: not forgetting. God's grace is a gift to us, but to the
-      Father, costly. He gave up His Son, He lost Him for a short while, He gained Him back forever. Do not receive
-      God's grace in vain by forgetting these wonderful truths, but treat them as precious and hold fast to them. When
-      faced with death, I will not shake; I know Him that makes the earth-quake; hold fast dearly beloved, hold fast;
-      for in vain it does not say,
+      departing out of the way. Remember His ways, declare His works. Remember Christ, He is the Way. This is the key to
+      remaining: remember. And the key to abiding: not forgetting. God's grace is a gift to us, but to the Father,
+      costly. He gave up His Son, He lost Him for a short while, He gained Him back forever. Do not receive God's grace
+      in vain by forgetting these wonderful truths, but treat them as precious and hold fast to them. When faced with
+      death, I will not shake; I know Him that makes the earth-quake; hold fast dearly beloved, hold fast; for in vain
+      it does not say,
       <blog-reference-tooltip [reference]="'Hebrews 12:4'">
         You have not yet resisted to bloodshed, striving against sin.
       </blog-reference-tooltip>

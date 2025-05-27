@@ -52,18 +52,18 @@
           </mat-expansion-panel-header>
           <ng-template matExpansionPanelContent>
             <button mat-button (click)="toAnchor('callGrace', 'servantOfGod')">The Servant of God</button>
-            <button mat-button (click)="toAnchor('callGrace', 'theRockOfSalvation')">The Rock of Salvation</button>
-            <button mat-button (click)="toAnchor('callGrace', 'theLambOfGod')">The Lamb of God</button>
-            <button mat-button (click)="toAnchor('callGrace', 'eternalSalvation')">
-              The Door of Eternal Salvation
-            </button>
-            <button mat-button (click)="toAnchor('callGrace', 'theLion')">The Lion of the Tribe of Judah</button>
-            <button mat-button (click)="toAnchor('callGrace', 'theScapegoat')">The Scapegoat</button>
+            <button mat-button (click)="toAnchor('callGrace', 'theBronzeSerpent')">The Bronze Serpent</button>
+            <button mat-button (click)="toAnchor('callGrace', 'theVictor')">The Victor</button>
             <button mat-button (click)="toAnchor('callGrace', 'trueFoodAndTrueDrink')">
               The True Food & the True Drink
             </button>
-            <button mat-button (click)="toAnchor('callGrace', 'theBronzeSerpent')">The Bronze Serpent</button>
-            <button mat-button (click)="toAnchor('callGrace', 'theVictor')">The Victor</button>
+            <button mat-button (click)="toAnchor('callGrace', 'theLambOfGod')">The Lamb of God</button>
+            <button mat-button (click)="toAnchor('callGrace', 'theLion')">The Lion of the Tribe of Judah</button>
+            <button mat-button (click)="toAnchor('callGrace', 'theScapegoat')">The Scapegoat</button>
+            <button mat-button (click)="toAnchor('callGrace', 'theRockOfSalvation')">The Rock of Salvation</button>
+            <button mat-button (click)="toAnchor('callGrace', 'eternalSalvation')">
+              The Door of Eternal Salvation
+            </button>
             <button mat-button (click)="toAnchor('callGrace', 'theSonOfGod')">The Son of God</button>
           </ng-template>
         </mat-expansion-panel>
@@ -211,14 +211,14 @@
     <div class="header-pane">
       <h3 class="header-title">THE CALL - GRACE</h3>
       <button mat-button (click)="toAnchor('callGrace', 'servantOfGod')">The Servant of God</button>
-      <button mat-button (click)="toAnchor('callGrace', 'theRockOfSalvation')">The Rock of Salvation</button>
-      <button mat-button (click)="toAnchor('callGrace', 'theLambOfGod')">The Lamb of God</button>
-      <button mat-button (click)="toAnchor('callGrace', 'eternalSalvation')">The Door of Eternal Salvation</button>
-      <button mat-button (click)="toAnchor('callGrace', 'theLion')">The Lion of the Tribe of Judah</button>
-      <button mat-button (click)="toAnchor('callGrace', 'theScapegoat')">The Scapegoat</button>
-      <button mat-button (click)="toAnchor('callGrace', 'trueFoodAndTrueDrink')">The True Food & the True Drink</button>
       <button mat-button (click)="toAnchor('callGrace', 'theBronzeSerpent')">The Bronze Serpent</button>
       <button mat-button (click)="toAnchor('callGrace', 'theVictor')">The Victor</button>
+      <button mat-button (click)="toAnchor('callGrace', 'trueFoodAndTrueDrink')">The True Food & the True Drink</button>
+      <button mat-button (click)="toAnchor('callGrace', 'theLambOfGod')">The Lamb of God</button>
+      <button mat-button (click)="toAnchor('callGrace', 'theLion')">The Lion of the Tribe of Judah</button>
+      <button mat-button (click)="toAnchor('callGrace', 'theScapegoat')">The Scapegoat</button>
+      <button mat-button (click)="toAnchor('callGrace', 'theRockOfSalvation')">The Rock of Salvation</button>
+      <button mat-button (click)="toAnchor('callGrace', 'eternalSalvation')">The Door of Eternal Salvation</button>
       <button mat-button (click)="toAnchor('callGrace', 'theSonOfGod')">The Son of God</button>
     </div>
   </div>
@@ -231,10 +231,24 @@
       </div>
     </blog-gospel-section>
 
-    <blog-gospel-section data-anchor="theRockOfSalvation" class="slide" [isLightMode]="true" [isFloater]="true">
-      <h3 class="headers">The Rock of our Salvation</h3>
+    <blog-gospel-section data-anchor="theBronzeSerpent" class="slide" [isLightMode]="true" [isFloater]="true">
+      <h3 class="headers">The Bronze Serpent</h3>
       <div class="paragraphs">
-        <gospel-rock #theRockOfSalvation></gospel-rock>
+        <gospel-bronze-serpent #theBronzeSerpent></gospel-bronze-serpent>
+      </div>
+    </blog-gospel-section>
+
+    <blog-gospel-section data-anchor="theVictor" class="slide" [isLightMode]="true" [isFloater]="true">
+      <h3 class="headers">The Victor</h3>
+      <div class="paragraphs">
+        <gospel-victor #theVictor></gospel-victor>
+      </div>
+    </blog-gospel-section>
+
+    <blog-gospel-section data-anchor="trueFoodAndTrueDrink" class="slide" [isLightMode]="true" [isFloater]="true">
+      <h3 class="headers">The True Food & the True Drink</h3>
+      <div class="paragraphs">
+        <gospel-food-drink #trueFoodAndTrueDrink></gospel-food-drink>
       </div>
     </blog-gospel-section>
 
@@ -242,13 +256,6 @@
       <h3 class="headers">The Lamb of God</h3>
       <div class="paragraphs">
         <gospel-lamb #theLambOfGod></gospel-lamb>
-      </div>
-    </blog-gospel-section>
-
-    <blog-gospel-section data-anchor="eternalSalvation" class="slide" [isLightMode]="true" [isFloater]="true">
-      <h3 class="headers">The Door of Eternal Salvation</h3>
-      <div class="paragraphs">
-        <gospel-salvation #eternalSalvation></gospel-salvation>
       </div>
     </blog-gospel-section>
 
@@ -266,24 +273,17 @@
       </div>
     </blog-gospel-section>
 
-    <blog-gospel-section data-anchor="trueFoodAndTrueDrink" class="slide" [isLightMode]="true" [isFloater]="true">
-      <h3 class="headers">The True Food & the True Drink</h3>
+    <blog-gospel-section data-anchor="theRockOfSalvation" class="slide" [isLightMode]="true" [isFloater]="true">
+      <h3 class="headers">The Rock of our Salvation</h3>
       <div class="paragraphs">
-        <gospel-food-drink #trueFoodAndTrueDrink></gospel-food-drink>
+        <gospel-rock #theRockOfSalvation></gospel-rock>
       </div>
     </blog-gospel-section>
 
-    <blog-gospel-section data-anchor="theBronzeSerpent" class="slide" [isLightMode]="true" [isFloater]="true">
-      <h3 class="headers">The Bronze Serpent</h3>
+    <blog-gospel-section data-anchor="eternalSalvation" class="slide" [isLightMode]="true" [isFloater]="true">
+      <h3 class="headers">The Door of Eternal Salvation</h3>
       <div class="paragraphs">
-        <gospel-bronze-serpent #theBronzeSerpent></gospel-bronze-serpent>
-      </div>
-    </blog-gospel-section>
-
-    <blog-gospel-section data-anchor="theVictor" class="slide" [isLightMode]="true" [isFloater]="true">
-      <h3 class="headers">The Victor</h3>
-      <div class="paragraphs">
-        <gospel-victor #theVictor></gospel-victor>
+        <gospel-salvation #eternalSalvation></gospel-salvation>
       </div>
     </blog-gospel-section>
 

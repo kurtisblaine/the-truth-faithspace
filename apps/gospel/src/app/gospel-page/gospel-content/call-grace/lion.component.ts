@@ -26,12 +26,12 @@ import { SharedModule } from "../../../shared/shared.module";
         something to eat, And out of the strong came something sweet." But they could not tell the riddle in three days. </blog-reference-tooltip
       ><br /><br /> -->
 
-      Someone may wonder, What is a testimony like this doing in the Scriptures? (Judges 14:5-9, 14:12-14) A lion is
-      strong and powerful - no doubt about that. No-one certainly takes a lion into their home for their children to
-      play - no, they don't! A lion is dangerous; a lion isn't sweet; it won't let you pet it and it won't give you any
-      kisses - not without taking off some of your flesh first! In a similar way, Jesus Christ is mighty and powerful;
-      He is the Son of God, with the exact likeness of God, with the name which is above every other name; and one of
-      His names is the Lion from the Tribe of Judah; as it says about Him,
+      Someone may wonder, What is a testimony of Samson and the lion doing in the Scriptures? (Judges 14:5-9, 14:12-14)
+      A lion is strong and powerful - no doubt about that. No-one certainly takes a lion into their home for their
+      children to play - no, they don't! A lion is dangerous; a lion isn't sweet; it won't let you pet it and it won't
+      give you any kisses - not without taking off some of your flesh first! In a similar way, Jesus Christ is mighty
+      and powerful; He is the Son of God, with the exact likeness of God, with the name which is above every other name;
+      and one of His names is the Lion from the Tribe of Judah; as it says about Him,
       <blog-reference-tooltip [reference]="'Revelation 5:5'">
         See, the Lion of the tribe of Judah, the Root of David, has triumphed.
       </blog-reference-tooltip>
@@ -56,50 +56,51 @@ import { SharedModule } from "../../../shared/shared.module";
       not hold Christ either, for He was raised from the dead and He never dies again; if He had not come, He would've
       never had to die, but He came for this very purpose; and by the One's death, “One died for all, therefore all
       died;” (2 Corinthians 5:14) So that He "might free those who through fear of death were subject to slavery all
-      their lives.” (Hebrews 2:15) "So that by the grace of God He might taste death for everyone.” (Hebrews 2:9) And
-      from His death, He brings forth a substance of sweetness through the wisdom of God and the power of God, for God
-      makes His wisdom and power to be salvation unto us who believe; as it says, “The word of the cross is foolishness
-      to those who are perishing, but to us who are being saved it is the power of God.” (1 Corinthians 1:18) And, "I
-      WILL DESTROY THE WISDOM OF THE WISE, AND THE CLEVERNESS OF THE CLEVER I WILL SET ASIDE." (1 Corinthians 1:19)
+      their lives.” (Hebrews 2:15) And "So that by the grace of God He might taste death for everyone.” (Hebrews 2:9)
+      And from His death, He brings forth a substance of sweetness through the wisdom of God and the power of God, for
+      God makes His wisdom and power to be salvation unto us who believe; as it says, “The word of the cross is
+      foolishness to those who are perishing, but to us who are being saved it is the power of God.” (1 Corinthians
+      1:18) And, "I WILL DESTROY THE WISDOM OF THE WISE, AND THE CLEVERNESS OF THE CLEVER I WILL SET ASIDE." (1
+      Corinthians 1:19)
       <br /><br />
 
       God's wisdom is spoken through spiritual words explained by the Spirit (1 Corinthians 2:12-15). But to those who
       are carnal, God's wisdom is foolishness to them, and as a result, His power is against them; but to us who
-      believe, His power is for us; as it was with Daniel's enemies in the lion's den (Daniel 6:7-28); His power
-      preserved him so that the lions did not destroy him, but He opened the lion's mouths to tear his enemies. As the
-      LORD God says, “For I will be like a lion to Ephraim And like a young lion to the house of Judah. I, even I, will
-      tear to pieces and go away, I will carry away, and there will be none to deliver. I will go away and return to My
-      place Until they acknowledge their guilt and seek My face; In their affliction they will earnestly seek Me.”
-      (Hosea 5:14-15) God shows to us His incredible strength by His Son's death on the cross; for His weakness has
-      become power unto us who believe; for Jesus gains victory for us even by death - not by many bouts of strength,
-      but a single bout of weakness - for He was defeated in death, but overcame death, rising from the dead by the
-      power of the Holy Spirit; and not for a single nation only, but for the whole world, the living and the dead.
-      Thus, His great strength is made manifest in weakness. How strong then do you suppose is His strength? The rulers
-      had not known this power, otherwise they would have not crucified Him, for they did not consider God could save
-      the world through the death of His Son. The life of Christ was a torment to the rulers, that's why they sought to
-      put Him to death. So as it is, through death the sting of death is removed that the sweetness of the gospel may
-      come. For even nature testifies that everything precious is hidden in the depths of the earth: gems are found
-      covered in soil, gold is found in dark places, and in this testimony, honey is guarded by the pain of a stinger.
-      And so likewise, the sweetness of the Gospel is protected by the sting of death, that only through death may
-      someone find the sweetness of life. For who can be saved unless they behold Christ crucified? Thus the most
-      preciousness of the Gospel is guarded and treasured by the fear of the LORD, by judgement, by sin and death;
-      furthermore, the wisdom of God is protected by the fear of the LORD. As it says, "Where then does wisdom come
-      from? And where is the place of understanding? Thus it is hidden from the eyes of all living And concealed from
-      the birds of the sky.” (Job 28:20-21)
+      believe, His power is for us, not against us; as it was with Daniel's enemies in the lion's den (Daniel 6:7-28);
+      His power preserved him so that the lions did not destroy him, but He opened the lion's mouths to tear his
+      enemies. As the LORD God says, “For I will be like a lion to Ephraim And like a young lion to the house of Judah.
+      I, even I, will tear to pieces and go away, I will carry away, and there will be none to deliver. I will go away
+      and return to My place Until they acknowledge their guilt and seek My face; In their affliction they will
+      earnestly seek Me.” (Hosea 5:14-15) Thus God shows to us His incredible strength by His Son's death on the cross;
+      for His weakness has become power unto us who believe; for Jesus gains victory for us even by death - not by many
+      bouts of strength, but a single bout of weakness - for He was defeated in death, but overcame death, rising from
+      the dead by the power of the Holy Spirit; and not for a single nation only, but for the whole world, the living
+      and the dead. Thus, His great strength is made manifest in weakness. How strong then do you suppose is His
+      strength? The rulers had not known this power, otherwise they would have not crucified Him, for they did not
+      consider God could save the world through the death of His Son. The life of Christ was a torment to the rulers,
+      that's why they sought to put Him to death. So as it is, through death the sting of death is removed that the
+      sweetness of the gospel may come. For even nature testifies that everything precious is hidden in the depths of
+      the earth: gems are found covered in soil, gold is found in dark places, and in this testimony, honey is guarded
+      by the pain of a stinger. And so likewise, the sweetness of the Gospel is protected by the sting of death, that
+      only through death may someone find the sweetness of life. For who can be saved unless they behold Christ
+      crucified? Thus the most preciousness of the Gospel is guarded and treasured by the fear of the LORD, judgement,
+      and sin and death; furthermore, the wisdom of God is protected by the fear of the LORD. As it says, "Where then
+      does wisdom come from? And where is the place of understanding? Thus it is hidden from the eyes of all living And
+      concealed from the birds of the sky.” (Job 28:20-21)
       <br /><br />
 
-      The latter part of the riddle says, "Out of the eater came something to eat". Whenever a sacrifice was given to
-      the LORD, He consumed it, He consumed it with fire, for He is a consuming fire. All sacrifices were burnt on the
-      altar unto God as a soothing aroma. Those sacrifices were as food to Him, as it says, “The priest shall offer them
-      up in smoke on the altar as food.” (Leviticus 3:16) These were offered to God, but out of the Eater of sacrifices
-      comes a Sacrifice; or in the words of the riddle, "Out of the eater came something to eat." For men usually give
-      sacrifices to God, but God gave a sacrifice, His own Son, so that we may offer righteous sacrifices to God,
-      namely, our lives for Him - this is acceptable in God's sight, for He has purchased us. From Christ's sacrifice
-      comes forgiveness of sins, justification with God, our friendship restored, the seal of the Holy Spirit and the
-      sanctification of the Spirit, and everlasting life to come. Although Jesus is powerful as a lion, He also is meek
-      and lowly as a lamb; Jesus is the Great Shepherd of the flock, and He is also called, "the Lamb of God." Although
-      God is the Eater of sacrifices, He doesn't need us to eat, nor does He need our service; for He needs not anything
-      from us, but He gives all things; as the LORD God says in the Psalms,
+      The latter part of the riddle says, "Out of the eater came something to eat". For whenever a sacrifice was given
+      to the LORD, He consumed it, He consumed it with fire, for He is a consuming fire. All sacrifices were burnt on
+      the altar unto God as a soothing aroma. Those sacrifices were as food to Him; as it says, “The priest shall offer
+      them up in smoke on the altar as food.” (Leviticus 3:16) These were offered to God, but out of the Eater of
+      sacrifices comes a Sacrifice; or in the words of the riddle, "Out of the eater came something to eat." For men
+      usually give sacrifices to God, but God gave a sacrifice, His own Son, so that we may offer righteous sacrifices
+      to God, namely, our lives for Him - this is acceptable in God's sight, for He has purchased us. From Christ's
+      sacrifice comes forgiveness of sins, justification with God, friendship restored with God, the seal of the Holy
+      Spirit and the sanctification of the Spirit, and everlasting life to come. Although Jesus is powerful as a lion,
+      He also is meek and lowly as a lamb; Jesus is the Great Shepherd of the flock, and He is also called, "the Lamb of
+      God." Although God is the Eater of sacrifices, He doesn't need us to eat, nor does He need our service; for He
+      needs not anything from us, but He gives all things; as the LORD God says in the Psalms,
       <blog-reference-tooltip [reference]="'Psalm 50:7-15'">
         I am God, your God. I do not reprove you for your sacrifices, And your burnt offerings are continually before
         Me. I shall take no young bull out of your house Nor male goats out of your folds. For every beast of the forest
@@ -113,17 +114,17 @@ import { SharedModule } from "../../../shared/shared.module";
         I shall rescue you, and you will honor Me.
       </blog-reference-tooltip>
       And this is also according to nature; for we did not create our lives, but God gave us our lives; we did not
-      invent the growth of food; and we don't call to the weather man for rain from the sky - God gives all things. We
-      wouldn't know what a family is unless God gave us a family; we wouldn't know life unless God gave us life through
-      birth. Our mother did not spin, nor weave, nor labor so much to create us, did she? Our father did not work so
-      hard to desire a woman, did he? Did not God make him cling to his wife? Was it not God who knit us together in our
+      invent the growth of food; and we don't call to the weather man for rain from the sky - God gives all these
+      things. We wouldn't know what a family is unless God gave us a family; we wouldn't know life unless God gave us
+      life. For our mother did not spin, nor weave, nor labor so much to create us, did she? Our father did not work so
+      hard to desire a woman, did he? Did not God make man cling to his wife? Was it not God who knit us together in our
       mother's womb? Certainly we did not create ourselves, did we? That is why I say, "God gave us our life" because
       our mother did not work hard to create us, nor did our father, nor did we. As it is written, “Just as you do not
       know the path of the wind and how bones are formed in the womb of the pregnant woman, so you do not know the
       activity of God who makes all things.” (Ecclesiastes 11:5) God works all things for us and He also worked a
-      sacrifice for us - He needs nothing from our hands, but He gives all things. Even justification and sanctification
-      through Jesus Christ, His Son. He created us at the first by grace; and the new life also comes by grace. And so,
-      in conclusion: God, the Father, is the consumer of sacrifices, and He gave a Sacrifice, which is Christ; and
+      sacrifice for us - He needs nothing from our hands, but He gives us all things. Even justification and
+      sanctification through Jesus Christ, His Son. He created us at the first by grace; and the new life also comes by
+      grace. And so: God, the Father, is the consumer of sacrifices, and He gave a Sacrifice, which is Christ; and
       Sacrifices are eaten; as He says,
       <blog-reference-tooltip [reference]="'John 6:53'" [isJesusWord]="true">
         Truly, truly, I say to you, unless you eat the flesh of the Son of Man and drink His blood, you have no life in
@@ -149,10 +150,10 @@ import { SharedModule } from "../../../shared/shared.module";
       our spirits reviving within us; those sleeping were shocked with a jolt of fear. Beforetime, he would call for
       readers, and there would be hessitation - by obligation, one person would stand up; but now, a handful of
       volunteers stood up and battled for a chance to read. For we seen he was kind, but he was even more powerful than
-      a drill instructor. As it says, “The LORD will stretch forth Your strong scepter from Zion, saying, "Rule in the
-      midst of Your enemies." Your people will volunteer freely in the day of Your power; In holy array, from the womb
-      of the dawn, Your youth are to You as the dew.” (Psalms 110:2-3) Therefore, fear God! For how can you come to Him
-      without fear?
+      a drill instructor. And as a result of this, it says, “The LORD will stretch forth Your strong scepter from Zion,
+      saying, "Rule in the midst of Your enemies." Your people will volunteer freely in the day of Your power; In holy
+      array, from the womb of the dawn, Your youth are to You as the dew.” (Psalms 110:2-3) Therefore, fear God! For how
+      can you come to Him without fear?
       <br /><br />
 
       And in reference to the Tribe of Judah, Israel had twelve sons, and each son became a branch of Israel. And Jesus,
@@ -180,15 +181,15 @@ import { SharedModule } from "../../../shared/shared.module";
       </blog-reference-tooltip>
       Or even, "The total of the numbered men of the camp of Judah: 186,400, by their armies. They shall set out first.”
       (Numbers 2:9) For Judah was chosen by God to be first, and he was chosen as the place where His temple would
-      dwell; saying, “He also rejected the tent of Joseph, And did not choose the tribe of Ephraim, But chose the tribe
-      of Judah, Mount Zion which He loved.” (Psalms 78:67-68) And Judah remained during Israel's rebellion, for they
-      were kept by God's grace, by His promise, although the kings of Judah were unfaithful to the LORD (2 Kings 8:19, 2
-      Chronicles 21:7). So God by His gracious choice of Judah, He preserved him throughout the rebellion of Israel for
-      David's sake; as Paul also says, “In the same way then, there has also come to be at the present time a remnant
-      according to God's gracious choice.” (Romans 11:5) And those from Judah represent those who trust in God's mercy
-      and keep faith with God, for no-one can stand before Him if He takes into account our works. On a further note,
-      Judah, similar to Abel son of Adam, seen the costliness of his sins, and was willing to give life for his error;
-      so he has become a shadow of Christ by his deed.
+      dwell; as it says, “He also rejected the tent of Joseph, And did not choose the tribe of Ephraim, But chose the
+      tribe of Judah, Mount Zion which He loved.” (Psalms 78:67-68) And the branch of Judah remained during Israel's
+      rebellion, for they were kept by God's grace, by His promise, although the kings of Judah were unfaithful to the
+      LORD (2 Kings 8:19, 2 Chronicles 21:7). So God by His gracious choice, He preserved Judah throughout the rebellion
+      of Israel for David's sake; as Paul also says, “In the same way then, there has also come to be at the present
+      time a remnant according to God's gracious choice.” (Romans 11:5) And those from Judah represent those who trust
+      in God's mercy and keep faith with God, for no-one can stand before Him if He takes into account works. On a
+      further note, Judah, similar to Abel, son of Adam, seen the costliness of his sins, and was willing to give life
+      for his error; so he has become a shadow of Christ by his deed.
       <blog-link
         [title]="'See More about Jesus through Judah and Isaac'"
         [link]="'https://thelightof.life/#/draw/Jesuslionlamb.webp'"

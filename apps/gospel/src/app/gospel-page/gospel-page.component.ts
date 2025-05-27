@@ -13,7 +13,7 @@ type TItem = { isActive: boolean } & Item;
   standalone: false,
   templateUrl: "./gospel-page.component.html",
   styleUrl: "./gospel-page.component.scss",
-  changeDetection: ChangeDetectionStrategy.OnPush,
+  changeDetection: ChangeDetectionStrategy.Default,
 })
 export class GospelPageComponent implements OnInit, AfterViewInit, OnDestroy {
   public config: fullpageOptions;
