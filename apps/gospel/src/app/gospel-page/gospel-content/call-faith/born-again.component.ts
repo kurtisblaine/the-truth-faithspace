@@ -141,7 +141,7 @@ import { SharedModule } from "../../../shared/shared.module";
       mother's womb (Luke 1:15); and Christ's disciples waited until power from heaven came (Acts 1:4-5). So again, both
       had power from on high for the work of the ministry. For the Spirit is sent for the work of the ministry. So who
       can say, "John was not a disciple of Christ"? For he exemplifies a disciple perfectly: he preached that men should
-      repent, he baptised in water, and he pointed to Christ. This is what it means to be "born of water", that is:
+      repent, he baptized in water, and he pointed to Christ. This is what it means to be "born of water", that is:
       repentance towards God and baptism into Christ. For repentance is change; John preached a baptism of repentance,
       but no-one can turn to Christ when John first preached, because they did not know who the Christ was. How can you
       come to someone you don't know? Nevertheless, John told them to believe in Him who was to come. But when Jesus was

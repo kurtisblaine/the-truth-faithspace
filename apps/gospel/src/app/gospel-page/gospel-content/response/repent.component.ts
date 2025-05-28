@@ -117,7 +117,8 @@ import { SharedModule } from "../../../shared/shared.module";
         all the men who live in Jerusalem? I tell you, no, but unless you repent, you will all likewise perish.
       </blog-reference-tooltip>
       But then you may ask, how should I repent? Do justice and righteousness (Jeremiah 22:3, Proverbs 21:3). And see
-      the examples in the Scriptures, how men repented. (Luke 3:10-14; Luke 19:8; Acts 19:18-19).
+      the examples in the Scriptures, how men repented (Luke 3:10-14; Luke 19:8; Acts 19:18-19). We all know the sin in
+      our lives. But thanks be to God who grants unto us repentance through the knowledge of the truth!
     </ng-template>`,
   styles: ``,
   changeDetection: ChangeDetectionStrategy.OnPush,
