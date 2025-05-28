@@ -215,9 +215,10 @@ import { SharedModule } from "../../../shared/shared.module";
       Light - the lesser light in the darkness points to the great Light of the day. We are living in the day of
       darkness; the day of His light is coming. I urge you then, by the mercies of God: be reconciled, for He has
       reconciled you; and come, be forgiven, for He has forgiven you; and reckon yourself dead to sin, for He has died
-      for you; and live for Him, for He has purchased you. Draw near unto Him, for He has stretched out His arms unto
-      you. Humble yourself, for He has come down from heaven. Offer yourself as living sacrifice to God, for He has been
-      Sacrificed for you. And be His child, for you are His beloved children.
+      for you; you were crucified with Him, so crucify the flesh with its passions and desires; and live for Him, for He
+      has purchased you. Draw near unto Him, for He has stretched out His arms unto you. Humble yourself, for He has
+      come down from heaven. Offer yourself as living sacrifice to God, for He has been Sacrificed for you. And be His
+      child, for you are His beloved children.
     </ng-template>`,
   styles: ``,
   changeDetection: ChangeDetectionStrategy.OnPush,
