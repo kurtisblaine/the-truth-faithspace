@@ -7,33 +7,34 @@ import { SharedModule } from "../../../shared/shared.module";
   imports: [CommonModule, SharedModule],
   template: `<ng-container *ngTemplateOutlet="liveWorthy"></ng-container>
     <ng-template #liveWorthy>
-      We have been forgiven of our sins which were against us, stored up into our accounts, stored up because of our
-      transgressions under the former covenant; but now we having been reconciled to God in Jesus; the Lord has credited
-      to us a lumpsum, a positive balance to our accounts: to some He gives a talent, to others two talents, even to
-      others still five talents; the credit represents the gifts of the Spirit given to us according to how He sees fit,
-      according to our abilities. For we were born into this world with natural abilities, and we had no say in them;
-      likewise, we are born into Christ without say in our gifts, our supernatural abilities given to us by the Spirit.
-      In the last day, Jesus will return to settle accounts, to collect what we have earned with what was entrusted to
-      us (Matthew 25:14-30). So we see, because of our gifts, we have an obligation to barter and invest to earn more:
-      we are in debt to produce, even after we have been forgiven of our debts. Remember the parable of the four soils?
-      Only one soil was good and fertile, producing a crop - thirty, sixty, or even a hundred times more than what was
-      planted (Matthew 13:3-9). A sign of maturity in Christ is reproduction; as the Scriptures say, "Be fruitful and
-      multiply" (Genesis 1:22), and so we also are fruitful by multiplying with the same seed-bearing fruit. Only when
-      the fruit is mature on a tree, it is harvested; and only when a man reaches a certain age, he is eligible for
-      children. So only the mature in Christ can lead another to Christ; you must be first harvested to life to give
-      life to others. You can only produce in others after your kind; if you're kind is a hypocrite, will those that
-      listen to you be sincere? If you are easily angered, will those who are taught by you be temperate? Only of course
-      if they stop listening to you first! Fruit is good for multiplying; and we bear fruit by abiding in Christ, the
-      true Vine; our roots grow downward into Christ and produce fruit upward unto God. By His fruit in us many will be
-      edified. If you are from God, certainly as you cast seed, it will resemble you as you resemble God when it comes
-      to maturity - that is, as long as the soil is fertile and your seed is good. Therefore: abide in Him!
+      We have been forgiven of our sins which were a debt against us, stored up into our accounts, stored up because of
+      our transgressions under the former covenant; but now we having been reconciled to God in Jesus; the Lord has
+      credited to us a lumpsum, a positive balance to our accounts: to some He gives a talent, to others two talents,
+      even to others still five talents; the credit represents the gifts of the Spirit given to us according to how He
+      sees fit, according to our abilities. For we were born into this world with natural abilities, and we had no say
+      in them; likewise, we are born into Christ without say in our gifts, our supernatural abilities given to us by the
+      Spirit. In the last day, Jesus will return to settle accounts, to collect what we have earned with what was
+      entrusted to us (Matthew 25:14-30). So we see, because of our gifts, we have an obligation to barter and invest to
+      earn more: we are in debt to produce, even after we have been forgiven of our debts. Remember the parable of the
+      four soils? Only one soil was good and fertile, producing a crop - thirty, sixty, or even a hundred times more
+      than what was planted (Matthew 13:3-9). A sign of maturity in Christ is reproduction; as the Scriptures say, "Be
+      fruitful and multiply" (Genesis 1:22), and so we also are fruitful by multiplying with the same seed-bearing
+      fruit. Only when the fruit is mature on a tree, it is harvested; and only when a man reaches a certain age, he is
+      eligible for children. So only the mature in Christ can lead another to Christ; you must be first harvested to
+      life to give life to others. You can only produce in others after your kind; if you're kind is a hypocrite, will
+      those that listen to you be sincere? If you are easily angered, will those who are taught by you be temperate?
+      Only of course if they stop listening to you first! Fruit is good for multiplying; and we bear fruit by abiding in
+      Christ, the true Vine; our roots grow downward into Christ and produce fruit upward unto God. By His fruit in us
+      many will be edified. If you are from God, certainly as you cast seed, it will resemble you as you resemble God
+      when it comes to maturity - that is, as long as the soil is fertile and your seed is good. Therefore: abide in Him
+      and bear good fruit!
       <br /><br />
 
       Strive to enter through the narrow gate for wide is the way that leads to destruction and many are on it. Many
       will fight to enter the kingdom, but will not enter. Surely there will be few who inherit the kingdom of God: for
       there were only eight, Noah and his family, who were saved during the flood when the ancient world perished with
-      water; and only righteous Lot and his two daughters escaped from Sodom which was burned with fire by raining
-      sulfur; and Caleb and Joshua were the only two from 600,000 men who were allowed to enter into the promised land;
+      water; and only righteous Lot and his two daughters escaped from Sodom which was burned by raining sulfur and
+      fire; and Caleb and Joshua were the only two from 600,000 men who were allowed to enter into the promised land;
       and even Moses and Aaron who led the people out of Egypt were forbidden to enter the land. [But not all of them
       who perished in the wilderness won't be eternally saved, for Moses did not enter the promised land, yet he
       appeared with the Lord during His transfiguration (Mark 9:2-4)]. So these are examples unto us, so that we
@@ -88,8 +89,8 @@ import { SharedModule } from "../../../shared/shared.module";
       </blog-reference-tooltip>
       <br /><br />
 
-      Do not be deceived, the Scriptures clearly state those who will enter the Kingdom and those who will not enter.
-      For no unclean thing will enter into the Kingdom of heaven. As the Scriptures say,
+      So do not be deceived, the Scriptures clearly state those who will enter the Kingdom and those who will not enter.
+      For nothing unclean will enter into the Kingdom of heaven. As the Scriptures say,
       <blog-reference-tooltip [reference]="'1 Corinthians 6:9-10'">
         Or do you not know that the unrighteous will not inherit the kingdom of God? Do not be deceived: neither the
         sexually immoral, nor idolaters, nor adulterers, nor men who practice homosexuality, nor thieves, nor the
@@ -107,12 +108,11 @@ import { SharedModule } from "../../../shared/shared.module";
         discord, jealousy, and rage; rivalries, divisions, factions, and envy; drunkenness, orgies, and the like. I warn
         you, as I did before, that those who practice such things will not inherit the kingdom of God.
       </blog-reference-tooltip>
-      And if denied entrance into the Kingdom of God, where are those who practice such things sent?
       <blog-reference-tooltip [reference]="'Revelation 21:8'">
         But the cowardly, unbelieving, abominable, murderers, sexually immoral, sorcerers, idolaters, and all liars
         shall have their part in the lake which burns with fire and brimstone, which is the second death.
       </blog-reference-tooltip>
-      For this ought to make us cling to our God and Father and the Lord Jesus Christ even more, holding fast to the
+      For this ought to make us cling to our God and Father and the Lord Jesus Christ even more so, holding fast to the
       message of the Gospel firmly unto the end: strengthening our grip and being strengthened.
       <br /><br />
 
