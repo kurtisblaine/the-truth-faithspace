@@ -68,10 +68,10 @@ import { SharedModule } from "../../../shared/shared.module";
       things: a prohibition, a remedy, and a rationale. The prohibition is what we should not do, the remedy is what we
       should do instead, and the rationale is the reason why. The reason why for every command is Christ Jesus; and this
       is also the way of faith: everything brings us back to Christ, for He is the Way. Whatever you do to others, you
-      do unto yourself; whatever you do to the least of these, you do unto Christ (Matthew 25:31-46). If you do evil,
-      you will reap it; if you do good, God will repay it. Why then not do good? If you do good unto others, it will
-      come back to you. Not only one person is benefited, but two - he and you! And God is glorified. But watch out! If
-      you do evil, you will reap a whirlwind upon your own head; as it says,
+      do unto yourself (2 Corinthians 5:10); and whatever you do to the least of these, you do unto Christ (Matthew
+      25:31-46). If you do evil, you will reap it; if you do good, God will repay it. Why then not do good? If you do
+      good unto others, it will come back to you. Not only one person is benefited, but two - he and you! And God is
+      glorified. But watch out! If you do evil, you will reap a whirlwind upon your own head; as it says,
       <blog-reference-tooltip [reference]="'Exodus 20:5'">
         For I, the LORD your God, am a jealous God, visiting the iniquity of the fathers on the children, on the third
         and the fourth generations of those who hate Me.
