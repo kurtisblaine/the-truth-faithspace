@@ -55,7 +55,10 @@ import { SharedModule } from "../../../shared/shared.module";
       does on our behalf, waging war for us and defeating our foes. He defeated them through the cross and we enter into
       His victory through faith. If we dwell in lies, being deceived or deceiving ourselves, we are under oppression,
       but the truth makes us free.
-      <!-- TODO: put the victorious link here -->
+      <blog-link
+        [title]="'See more about Righteous Warfare'"
+        [link]="'https://thelightof.life/#/edify-detail/cff547c6-c5b8-3479-7472-f065fed444f5'"
+      ></blog-link>
       <br /><br />
 
       Likewise, in a different testimony (in the book of Ester), Haman, an enemy of the Jews, sought to kill the

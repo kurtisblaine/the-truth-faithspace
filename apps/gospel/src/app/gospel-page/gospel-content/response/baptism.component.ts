@@ -96,9 +96,9 @@ import { SharedModule } from "../../../shared/shared.module";
       resurrection; as Paul says again, “And if Christ has not been raised, then our preaching is vain, your faith also
       is vain.” (1 Corinthians 15:14) Jesus rose from the dead - and our guilt is removed. For Joseph's brothers who
       betrayed him had guilt as long as they believed Joseph was dead; however when he was found to be alive, they
-      didn't have guilt anymore. But afterwards they feared punishment, for love had not been perfected in them. (“There
+      didn't have guilt anymore. But afterwards they feared punishment, for love had not been perfected in them. [“There
       is no fear in love; but perfect love casts out fear, because fear involves punishment, and the one who fears is
-      not perfected in love.” (1 John 4:18)) For they thought after their father died, Joseph would take revenge; but it
+      not perfected in love.” (1 John 4:18)] For they thought after their father died, Joseph would take revenge; but it
       was not so, as Joseph said,
       <blog-reference-tooltip [reference]="'Genesis 50:20'">
         As for you, you meant evil against me, but God meant it for good in order to bring about this present result, to
