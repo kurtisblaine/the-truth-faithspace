@@ -7,57 +7,62 @@ import { SharedModule } from "../../../shared/shared.module";
   imports: [CommonModule, SharedModule],
   template: `<ng-container *ngTemplateOutlet="servantOfGod"></ng-container>
     <ng-template #servantOfGod>
-      Jesus was handed over by His own people to crucifixion; He submitted Himself willingly to the Father's will; He
-      went to the cross to justify many by His blood. He was buried in a tomb for three days, God rose Him up from the
-      dead on the third day, for it was the will of man to kill Him, but it was God's will to raise Him from the grave.
-      He appeared to many of His disciples, over 500 of them, showing unto them many signs. Afterwards, He ascended to
-      heaven to the Father's right hand where He is now exalted above every dominion and power and ruler and
-      principality. He will return on the last day to reign and rule with His holy people until His enemies are made a
-      footstool for His feet; His kingdom is everlasting and His rule is eternal. So when we were deserving of
-      punishment and wrath, God instead sent forth His Son, born of a woman, having appeared in the likeness of human
-      flesh, He came to put to death sin in the flesh. He died for sin, but not His own as with a criminal, but He died
-      as an innocent Man. They put him to trial, trying Him, but found no fault in Him; Pontius Pilate determined to
-      release Him, but the Jews wanted Him to be crucified; He was perfect, yet He died a criminal's death; He was
-      reckoned with the transgressors; and this was all according to the foreknowledge and predetermined plan of God.
-      When He was crucified, He had this written charge against Him: "THE KING OF THE JEWS". For this is the charge they
-      had against Him, that He said He is the Son of God. Showing His divinity in birth, He was born of a virgin; as a
-      newborn He put the king to fright that the king slew all children from two years old and under (Matthew 2:1-22);
-      if He instilled fear in the king at the time, even as a newborn, how much more as a full grown? He was instilling
-      fear into all everywhere He went; while He walked demons shrieked at the sight of Him; He worked fearful miracles;
-      He walked on the water, and silenced the tumultuous waves with a single word; His followers walked behind Him
-      trembling in fear (Mark 10:32); with His death came darkness and a great earthquake (Matthew 27:52); with His
-      resurrection came the appearing of angels, godly men awoke from the dead. He was a man, but He was no man: God in
-      the flesh. The Son of God was sent into the world to die, and the death He died was for us; for we must die, but
-      He who never dies died to redeem us from death. He was sent by the Father God bearing the message of His death,
-      for He prophesied about His death many times, fortelling even how He would die. Just as Uriah, the Hittite, was
-      sent by David, bearing in-hand the letter of his death, even so, he was innocent of wrong, so Christ was sent into
-      the world with the message of His own death; Uriah bore in his hand bad news, but it is impossible for Christ to
-      bear bad news, only good news, for the Father is in Him; so this message has become good news to us who believe;
-      that we may be joined to Another, namely God, our Father, who sent Him unto us to be Redeemer and Savior. Our sins
-      have separated us from God, our iniquities caused Him to hide His face from us, but God has reconciled us to
-      Himself through the body of Jesus Christ. For David could only marry Bathsheba if she were to be released by the
-      law of her husband by death, so David sent her husband Uriah to die; and so we are made to die to the law through
-      the body of Jesus Christ that we may be joined to Him who was raised from the dead (Romans 7:1-4). For even if a
-      man sins, God is able to use it for a testimony to Christ; for even the cross is a device of death which God used
-      in Christ to bring salvation to everyone who believes; for God's strength is not inhibited even when worked
-      through things which bring weakness and death; and His goodness is not stifled by that which is evil, but through
-      it, He makes His glory shine the ever-so brighter. For Paul, the apostle, uses Abraham sin to speak allegorically
-      of the two covenants: one of slavery and the other of freedom in Christ (Galatians 4:21-31). And Abraham errored
-      by trying to fulfill the promise of God by human effort. So even Paul is seen using a man's fault as a testimony
-      to Christ. And furthermore, the men of God in times past prophesied to Christ with their words, and they also
-      testified to Christ with their lives as well.<br /><br />
+      Jesus was handed over by His own people to crucifixion; He went to the cross to justify many by His blood,
+      according to the will of God. He was buried in a tomb for three days, God rose Him up from the dead on the third
+      day, for it was the will of man to kill Him, but it was God's will to raise Him from the grave. He appeared to
+      many of His disciples, over 500 of them, showing unto them many signs. Afterwards, He ascended to heaven to the
+      Father's right hand where He is now exalted above every dominion and power and ruler and principality. He will
+      return on the last day to reign and rule with His holy people until His enemies are made a footstool for His feet;
+      His kingdom is everlasting and His rule is eternal. So when we were deserving of punishment and wrath, God instead
+      sent forth His Son, born of a woman, having appeared in the likeness of human flesh, He came to put to death sin
+      in the flesh. He died for sin, but not His own as with a criminal, but He died as an innocent Man. They put him to
+      trial, trying Him, but found no fault in Him; Pontius Pilate determined to release Him, but the Jews wanted Him to
+      be crucified; He was perfect, yet He died a criminal's death; He was reckoned with the transgressors; and this was
+      all according to the foreknowledge and predetermined plan of God. When He was crucified, He had this written
+      charge against Him: "THE KING OF THE JEWS". For this is the charge they had against Him, that He said He is the
+      Son of God. Showing His divinity in birth, He was born of a virgin; as a newborn He put the king to fright that
+      the king slew all children from two years old and under (Matthew 2:1-22); if He instilled fear in the king at the
+      time, even as a newborn, how much more as a full grown? He was instilling fear into all everywhere He went; while
+      He walked demons shrieked at the sight of Him; He worked fearful miracles; He walked on the water, and silenced
+      the tumultuous waves with a single word; His followers walked behind Him trembling in fear (Mark 10:32); with His
+      death came darkness and a great earthquake (Matthew 27:52); with His resurrection came the appearing of angels,
+      godly men awoke from the dead. He was a man, but He was no man: God in the flesh. The Son of God was sent into the
+      world to die, and the death He died was for us; for we must die, but He who never dies died to redeem us from
+      death. He was sent by the Father God bearing the message of His death, for He prophesied about His death many
+      times, foretelling even how He would die. Just as Uriah, the Hittite, was sent by David, bearing in-hand the
+      letter of his death, even so, he was innocent of wrong, so Christ was sent into the world with the message of His
+      own death; Uriah bore in his hand bad news, but it is impossible for Christ to bear bad news, only good news, for
+      the Father is in Him; so this message has become good news to us who believe; that we may be joined to Another,
+      namely God, our Father, who sent Him unto us to be Redeemer and Savior. Our sins have separated us from God, our
+      iniquities caused Him to hide His face from us, but God has reconciled us to Himself through the body of Jesus
+      Christ. For David could only marry Bathsheba if she were to be released by the law of her husband by death, so
+      David sent her husband Uriah to die; and so we are made to die to the law through the body of Jesus Christ that we
+      may be joined to Him who was raised from the dead (Romans 7:1-4). For even if a man sins, God is able to use it
+      for a testimony to Christ; for even the cross is a device of death which God used in Christ to bring salvation to
+      everyone who believes; for God's strength is not inhibited even when worked through things which bring weakness
+      and death; and His goodness is not stifled by that which is evil, but through it, He makes His glory shine the
+      ever-so brighter. For Paul, the apostle, uses Abraham sin to speak allegorically of the two covenants: one of
+      slavery and the other of freedom in Christ (Galatians 4:21-31). And Abraham errored by trying to fulfill the
+      promise of God by human effort. So even Paul is seen using a man's fault as a testimony to Christ. And
+      furthermore, the men of God in times past prophesied to Christ with their words, and they also testified to Christ
+      with their lives as well.<br /><br />
 
       Jesus never sinned, yet He bore the transgression of us all upon Himself. He is righteous; and He is so righteous
       that He was not stifled from doing right even in His death, for He died for our sins - doing good in that He loved
       us to die for us. He is so righteous that He makes many right even by faith in His name. For He does not need to
       be present to do righteously; for He is absent, but yet His saving Word is declared. He does not even need to be
-      present in body to convert us; for even by the testimony of Him, He converts the damned soul into a blessed! He is
-      exceedingly righteous to do so. For even the testimony of Him converts, even from the testimony from another; and
-      how insufficient are we for such a task? If the testimony of Him changes lives while He is absent, how much more
-      if He appeared from heaven? Not that He isn't present with us now, for His Spirit is made to dwell in us who
-      believe. For He is the Righteous God who came down from heaven to work salvation to everyone who believes; so
-      thus, everyone who receives Him must do so by faith. And who could have foreknown this? As the prophet Isaiah
-      says,
+      present in body to convert us; for even by the testimony of Him, He converts the damned soul into a blessed one!
+      He is exceedingly righteous to do so. For even the testimony of Him converts, even from the testimony from
+      another; and how insufficient are we for such a task? If the testimony of Him changes lives while He is absent,
+      how much more when He appears from heaven? Not that He isn't present with us now, for His Spirit is made to dwell
+      with us who believe. Furthermore, He works miracles and powers in those who believe through the power and working
+      of His name; for He is exceedingly righteous to make men whole even by faith in His name. As the apostle of the
+      Lord Jesus healed a lame man and said, "Men of Israel, why are you amazed at this, or why do you gaze at us, as if
+      by our own power or piety we had made him walk?” (Acts 3:12) And this was after the Lord was exalted to heaven.
+      For Jesus is the Righteous God who came down from heaven to work salvation to everyone who believes; and the same
+      One who came down from heaven has been exalted above the heavens; and His great and righteous name is given for
+      all men to believe upon. So thus, everyone who receives Him must do so by faith. And who could have foreknown
+      this? Yet God has not left us without witness; as the prophet Isaiah says,
       <blog-reference-tooltip [reference]="'Isaiah 53:8'">
         And as for His generation, who considered That He was cut off out of the land of the living For the
         transgression of my people, to whom the stroke was due?
@@ -68,9 +73,10 @@ import { SharedModule } from "../../../shared/shared.module";
       for they do not know what they are doing." (Luke 23:34) For they were fulfilling Scripture, which they knew and
       read every Sabbath; they did not know they were accomplishing God's purpose; and they did not know it was for
       their sins He was perishing. But was it for them only and not us today? It is for anyone who will come, both now
-      and forever, for He died for the sins of the whole world. For the sin we do secretly, He died for openly; for He
-      had no chance to hide, as one does with shame, but He was brought out to the open; He was made a public spectacle,
-      He was lifted up for all to see; even for the whole earth to behold, as He says,
+      and forever, for He died for the sins of the whole world. And He is exceedingly righteous to do so. For the sin we
+      do secretly, He died for openly; for He had no chance to hide, as one does with shame, but He was brought out to
+      the open; He was made a public spectacle, He was lifted up for all to see; even for the whole earth to behold, as
+      He says,
       <blog-reference-tooltip [reference]="'John 12:32'" [isJesusWord]="true"
         >And I, when I am lifted up from the earth, will draw all people to myself.
       </blog-reference-tooltip>
@@ -126,20 +132,21 @@ import { SharedModule } from "../../../shared/shared.module";
       God; and all things created, He made beautiful, but much more beautiful and majestic is He who creates all; if He
       creates these things, and they are glorious and beautiful to our eyes, and not even all the scholars of the world
       can wrap their minds around them, and yet He destroys them as if they were nothing, He wraps them up like a
-      garment and changes them; how much greater then are the things to come, things that replace these, things which He
-      has for us, things prepared for us who love God, things which are forever? Yes, nothing can separate us from the
-      love of God that is in Christ Jesus our Lord! He is all in all.
+      garment and changes them out; how much greater then are the things to come, things that replace these, things
+      which He has for us, things prepared for us who love God, things which are forever? Yes, nothing can separate us
+      from the love of God that is in Christ Jesus our Lord!
       <br /><br />
 
       <!-- <a style="color: blue" href="https://thelightof.life/#/draw/bZsUhZAH6Hg/gospel.webp" target="_blank"
           >Here is a drawing of the work of the Gospel in us.</a
         ><br /><br /> -->
 
-      Jonathan, son of Saul, became accursed by his father when he ate some honey which was against his father's oath (1
-      Samuel 14:24-45); so Saul, in his zeal for his oath, sought to put him to death because of the oath of his curse
-      (1 Samuel 14:39, 1 Samuel 14:44). But Jonathan did not die, rather he bore the curse and lived on account of
-      another oath, the oath of life; and even yet, the people who ate meat with the blood, which is contrary to the law
-      of Moses (Leviticus 17:12-14), were not cut off (1 Samuel 14:32-34). And even when Saul sinned by making these
+      Beforetime I said, "That sin might lose its power in us who believe." And what I mean is this: Jonathan, son of
+      Saul, became accursed by his father when he ate some honey which was against his father's oath (1 Samuel
+      14:24-45); so Saul, in his zeal for his oath, sought to put him to death because of the oath of his curse (1
+      Samuel 14:39, 1 Samuel 14:44). But Jonathan did not die, rather he bore the curse and lived on account of another
+      oath, the oath of life; and even yet, the people who ate meat with the blood, which is contrary to the law of
+      Moses (Leviticus 17:12-14), were not cut off (1 Samuel 14:32-34). And even when Saul sinned by making these
       foolish oaths and the people sinned by eating with the blood, it was Jonathan who was determined by lot to have
       sinned, and the rest were free'd; even though Jonathan did no wrong, only he ate a little bit of honey; despite
       this, and despite the fact that Jonathan worked a great deliverance for Israel that day, he was still chosen by
@@ -161,9 +168,9 @@ import { SharedModule } from "../../../shared/shared.module";
       words of this law by doing them." (Deuteronomy 27:26) For we do not do what the law says. But Christ was chosen by
       God on our behalf to be our Substitute, and we are released from the curse; but it was impossible for death to
       hold Him, for Jesus walked in the ways of life and He was raised to life; He went through no decay, according to
-      the Word of truth and the power of an indestructible life. And He has become to us Savior from our sins, Savior
-      from the curse of the law, for He tasted death for everyone to bring about this present blessing; as it says of
-      Him,
+      foreknowledge of God in the Word of truth and the power of an indestructible life. And He has become to us Savior
+      from our sins, Savior from the curse of the law, for He tasted death for everyone to bring about this present
+      blessing and deliverance; as it says of Him,
       <blog-reference-tooltip [reference]="'Hebrews 2:9'">
         Jesus, because of the suffering of death crowned with glory and honor, so that by the grace of God He might
         taste death for everyone.
@@ -188,67 +195,71 @@ import { SharedModule } from "../../../shared/shared.module";
       <blog-reference-tooltip [reference]="'Romans 10:4'">
         For Christ is the end of the law for righteousness to everyone who believes.</blog-reference-tooltip
       >
-      For the law could never justify, it only condemns; through the law comes the knowledge of sin, but in Christ Jesus
-      comes the knowledge of God, the knowledge of His righteousness. And by His work He grants to us overwhelming
-      victory through His name; in His name, we obtain the victory, for only in the refuge of Him we are safe from the
-      wrath of God. So it's by His work on the cross and our work of faith in Him that we may please God; for faith is
-      reckoned to us as righteousness by God; and if it's by faith, then it's apart from works and credited as grace.
-      But someone may ask, "How is it that we do nothing, and believe, and yet we are justified?" By using a human
-      example: yes, you do no work, you believe and you win justification in Christ. In a similar way, you watch a
+      For the law could never justify, it only condemns the law-breaker; through the law comes the knowledge of sin, but
+      in Christ Jesus comes the knowledge of God, the knowledge of His righteousness. And by His work He grants to us
+      overwhelming victory through His name; in His name, we obtain the victory, for only in the refuge of Him we are
+      safe from the wrath of God. So it's by His work on the cross and our work of faith in Him that we may please God;
+      for faith is reckoned to us as righteousness by God. And if it's by faith, then it's apart from works and credited
+      as grace. But someone may ask, "How is it that we do nothing, and believe, and yet we are justified?" By using a
+      human example: yes, you do no work, you believe and you win justification in Christ. In a similar way, you watch a
       sports game, yet you do nothing, you watch and believe your team to win. You cheer for your favorite team without
       doing a single thing: except you believe in your team to win. You sit and watch on the sofa, hoping your team
-      would win, while they by their sweat and their tears do the work. When they score, you rejoice; when they are
+      would win, while they, by their sweat and their tears, do the work. When they score, you rejoice; when they are
       overcome, you lose heart. When they win, you celebrate with them, and when they lose, you suffer defeat as well.
-      If it is this way when you believe in your team, how much more with Christ? For a sports game mimics war; it is
+      If it is this way when you believe in your team, how much more with Christ? For a sports game is like war - it is
       not war in itself, but it mimics war. In a real war, two foes oppose each other and fight. The loser dies, and the
-      winner lives. If we knew who would win beforehand, we would chose that side - so that we may not suffer defeat.
-      The battle which Christ fought was spiritual, for spirit and body. And it is through Him that we have overwhelming
-      victory in our trustworthy Savior who wins and never loses, for even in His defeat gains us the victory - even in
-      weakness, He is strong! For "The weakness of God is stronger than men." (1 Corinthians 1:25) I say that He was
-      defeated, but it's not so, it only appeared that way to the world. Is one defeated when He is alive from the dead
-      and exalted? For God rose Him up.
+      winner lives. If we knew beforehand who would win and who would lose, we would choose that side, so that we may
+      not suffer defeat. Now this I say: the war that Christ fought on the cross was for the whole world. And the battle
+      which He fought was spiritual; it was for the spirit and the body. In a physical war, it is only for body - but He
+      fought for the soul of mankind. Just as David fought Goliath, and David, as one man, obtained the victory for the
+      whole nation of Israel, so Christ fought as One man and obtained victory for the whole world. And we who put our
+      faith in Him share in His victory. So it is: through our trustworthy Savior we have overwhelming victory in Him
+      who wins and never loses, and even in His defeat gains us the victory - for even in His weakness, He is strong!
+      For "The weakness of God is stronger than men." (1 Corinthians 1:25) I say that He was defeated, but it's not so,
+      it only appeared that way to the world. Is one defeated when He is alive from the dead and exalted? For God rose
+      Him up.
       <blog-reference-tooltip [reference]="'1 John 5:4'">
         For everyone who has been born of God overcomes the world. And this is the victory that has overcome the
         world—our faith.
       </blog-reference-tooltip>
       So it is by faith we enter into victory with Christ, according to the righteousness of God, not according to our
-      own works of righteousness that we have done; for our good works are sin, and our best works are an abomination:
-      the common people chanted for Jesus to be crucified, and the most righteous Pharisees plotted to kill Him; they
-      handed the Lord of glory to the Gentiles to death; as the prophet says, “The best of them is like a briar, The
-      most upright like a thorn hedge.” (Micah 7:4) And, “For all of us have become like one who is unclean, And all our
-      righteous deeds are like a filthy garment.” (Isaiah 64:6) [Furthermore, wisdom says, “The sacrifice of the wicked
-      is an abomination, How much more when he brings it with evil intent!” (Proverbs 21:27, Proverbs 15:8) And, “He who
-      turns away his ear from listening to the law, Even his prayer is an abomination.” (Proverbs 28:9) For God is the
-      God of the spirits of all flesh; and when the wicked seek to deceive Him with righteousness, it is worse for them
-      than the wicked who do wickedly.] But thanks be to God who purifies our hearts by faith in the gospel of Christ
-      that we may produce good fruit to God! Through the gospel the righteousness of God is revealed from faith to
-      faith.
+      own works of righteousness that we have done; no! For our good works are sin, and our best works are an
+      abomination: the common people chanted for Jesus to be crucified, and the most righteous Pharisees plotted to kill
+      Him; they handed the Lord of glory to the Gentiles to death; as the prophet says, “The best of them is like a
+      briar, The most upright like a thorn hedge.” (Micah 7:4) And, “For all of us have become like one who is unclean,
+      And all our righteous deeds are like a filthy garment.” (Isaiah 64:6) [Furthermore, wisdom says, “The sacrifice of
+      the wicked is an abomination, How much more when he brings it with evil intent!” (Proverbs 21:27, Proverbs 15:8)
+      And, “He who turns away his ear from listening to the law, Even his prayer is an abomination.” (Proverbs 28:9) For
+      God is the God of the spirits of all flesh; and when the wicked seek to deceive Him with righteousness, it is
+      worse for them than the wicked who do wickedly.] But thanks be to God who purifies our hearts by faith in the
+      gospel of Christ that we may produce good fruit to God! Through the gospel the righteousness of God is revealed
+      from faith to faith.
       <br /><br />
 
-      Through the cross Jesus made a public spectacle of the powers and authorities that govern this world; for He
+      So through the cross Jesus made a public spectacle of the powers and authorities that govern this world; for He
       disarmed them and triumphed over them through the cross. He took the written debt of sin which was stored up
-      against us, and He nailed it to the cross, paying for our transgressions and rescuing us from the elementary
-      spiritual principles of this world, and the rudimentary commands such as "Do not touch" and "Do not handle", to
-      serve God in the new way of the Spirit and life; and for those who will in their mind to do good, but do not have
-      the power in their flesh to do that good: God gives them power to do that good through abiding in Christ. For
-      Christ Jesus was clean, but became dirty to make us clean: for the bathwater is made dirty since it takes upon
-      itself the filth of the one it cleanses. The dirty goes into the water and he comes out clean - not without the
-      cost of the water becoming dirty. Dirty water cannot cleanse anyone; only pure water can cleanse. And Christ has
-      become unto us pure water to cleanse us from dead works by faith in His name; for He became dirty by taking upon
-      our filth in order to make us clean; and as a result, we are made clean by Him through faith. And this
-      sanctification is of God, of the Son, of the Spirit; for it is done by the washing of the water of the Word; as it
-      is written in the law about the Sabbath day:
+      against us along with the written ordinances, and He nailed it to the cross, paying for our transgressions and
+      rescuing us from the elementary spiritual principles of this world, and the rudimentary commands such as "Do not
+      touch" and "Do not handle", to serve God in the new way of the Spirit and life; and for those who will in their
+      mind to do good, but do not have the power in their flesh to do that good: God gives them power to do that good
+      through Christ. For Christ Jesus was clean, but became dirty to make us clean: for the bathwater is made dirty
+      since it takes upon itself the filth of the one it cleanses. The dirty goes into the water and he comes out clean
+      - not without the cost of the water becoming dirty. Dirty water cannot cleanse anyone; only pure water can
+      cleanse. And Christ has become unto us pure water to cleanse us from dead works by faith in His name; for He
+      became dirty by taking upon our filth in order to make us clean; and as a result, we are made clean by Him. And
+      this sanctification is of God, of the Son, of the Spirit; for it is done by the washing of the water of the Word;
+      as it is written in the law concerning the Sabbath day:
       <blog-reference-tooltip [reference]="'Exodus 31:13'">
         You shall surely observe My sabbaths; for this is a sign between Me and you throughout your generations, that
         you may know that I am the LORD who sanctifies you.
       </blog-reference-tooltip>
       For on the sabbath, the Israelites did no work according to the law of Moses and they were justified by God
       according to the ordinance; and they entered into the sabbath rest that they may know it's not by their works that
-      they are sanctified. If sanctification is not by our works, then it's by the work of God; as it says, "That you
+      they are sanctified. So if sanctification is not by our works, then it's by the work of God; as it says, "That you
       may know that I am the LORD who sanctifies you." And so it is today for us who enter into God's rest through
       Christ Jesus, for us who do no work, but trust in God to justify the ungodly. And this is the great stumbling
-      stone, an offensive thing to the unbelieving; as it says, "BEHOLD, I LAY IN ZION A STONE OF STUMBLING AND A ROCK
-      OF OFFENSE, AND HE WHO BELIEVES IN HIM WILL NOT BE DISAPPOINTED." (Romans 9:33)
+      stone and an offensive thing to the unbelieving; as it says, "BEHOLD, I LAY IN ZION A STONE OF STUMBLING AND A
+      ROCK OF OFFENSE, AND HE WHO BELIEVES IN HIM WILL NOT BE DISAPPOINTED." (Romans 9:33)
       <br /><br />
 
       So now, through faith can we fulfill the law of God - for neither circumcision nor uncircumcision matters, but
@@ -263,15 +274,15 @@ import { SharedModule } from "../../../shared/shared.module";
         Sin will have no dominion over you, since you are not under law but under grace.
       </blog-reference-tooltip>
       And in grace, sin has lost its power. But you may say, "If sin has lost its power and I sin, what does it mean?"
-      Sin has been rendered powerless through the cross, but you have yielded to it; you have offered yourself as an
-      obedient servant to serve sin: you have sold yourself to it. But Christ has bought you. You belong to Him.
+      Yes, sin has been rendered powerless through the cross, but you have yielded to it; you have offered yourself as
+      an obedient servant to serve sin: you have sold yourself to it. But Christ has bought you. You belong to Him.
       Therefore, offer yourself as a slave to righteousness, a bondslave of Christ. If you obey sin, offering yourself
-      as a slave to it, then watch out! In it's growth: death. But Christ Jesus came to set us free from the power of
-      sin and death, so that we would not be conformed to our old way of thinking, but that we would be made new through
-      the renewing of our mind by the Holy Spirit. Christ has nullified the power of sin, stripping it of its power, for
-      sin has power through the law, but He justifies us apart from the law through faith - it is the gift of God.
-      Furthermore, the Spirit of Him comes by faith, for everything that is of faith is also of the Spirit; for faith is
-      spiritual and everything spiritual is unseen. As Christ says,
+      as a slave to it, then watch out! In it's full growth: death. But Christ Jesus came to set us free from the power
+      of sin and death, so that we would not be conformed to our old way of thinking, but that we would be made new
+      through the renewing of our mind by the Holy Spirit. Christ has nullified the power of sin, stripping it of its
+      power, for sin has its power through the law, but He justifies us apart from the law through faith - it is the
+      gift of God so that no one may boast. Furthermore, the Spirit of Him comes by faith, for everything that is from
+      faith is also from the Spirit; for faith is spiritual and everything spiritual is unseen. As Christ says,
       <blog-reference-tooltip [reference]="'John 6:63'" [isJesusWord]="true">
         It is the Spirit who gives life; the flesh is no help at all. The words that I have spoken to you are spirit and
         life.
@@ -285,34 +296,33 @@ import { SharedModule } from "../../../shared/shared.module";
         THE WORD IS NEAR YOU, IN YOUR MOUTH AND IN YOUR HEART.
       </blog-reference-tooltip>
       Thus, the law strengthens sin, but faith strengthens the Spirit; in the Spirit there is freedom, but anyone who
-      sins is a slave of sin. Christ has called us to freedom! Your freedom was not free. It cost Jesus His life. By His
-      sacrifice we may obtain justification with God by faith. For we who are children of faith are fathered by Abraham,
-      the man of faith. For we are the descendants of faithful Abraham, the father of faith, considering we have faith
-      like Abraham; as it says, "So shall your descendants be." (Genesis 15:5) And as the saying says, "Like father,
-      like son"; so the sons of Abraham are like the father, Abraham, and he was a man of faith. It was not according to
-      the flesh that his descendants were counted, for Abraham had many other sons and they did not receive the
-      inheritance; however it was Isaac, the son of grace, the son of the promise, who received the blessing; for if it
-      is by faith, then it is apart from works and counted as grace. God has granted to us the same promise which He
-      promised to Abraham: as it says, "I will give it to you and to your descendants forever." (Genesis 13:15) And
-      later it says, "In your seed all the nations of the earth shall be blessed, because you have obeyed My voice."
-      (Genesis 22:18) And the "Seed" is Christ. So if we are His descendant, we have the promise; and if we have the
-      promise, we know that He is trustworthy who promised, and He will grant to us what's promised in that day. He has
-      promised to us a land flowing with milk and honey, an eternal kingdom; and if an eternal kingdom, everlasting
-      life, considering we endure in His grace until the end.
+      sins is a slave of sin. Christ has called us to freedom! Your freedom was not free. We who are children of faith
+      are fathered by Abraham, the man of faith. For we are the descendants of faithful Abraham, the father of faith,
+      considering we have faith like Abraham; as it says, "So shall your descendants be." (Genesis 15:5) And as the
+      saying says, "Like father, like son"; so the sons of Abraham are like the father, Abraham, and he was a man of
+      faith. It was not according to the flesh that his descendants were counted, for Abraham had many other sons and
+      they did not receive the inheritance; however it was Isaac, the son of grace, the son of the promise, who received
+      the blessing; for if it is by faith, then it is apart from works and counted as grace. So God has granted to us
+      the same promise which He promised to Abraham: as it says, "I will give it to you and to your descendants
+      forever." (Genesis 13:15) And later it says, "In your seed all the nations of the earth shall be blessed, because
+      you have obeyed My voice." (Genesis 22:18) And the "Seed" is Christ. So if we are His descendant, we have the
+      promise; and if we have the promise, we know that He is trustworthy who promised, and He will grant to us what's
+      promised in that day. He has promised to us a land flowing with milk and honey, an eternal kingdom; and if an
+      eternal kingdom, everlasting life, considering we endure in His grace until the end.
       <br /><br />
 
-      If the goodness of God would ever be manifest to us, it would be supremely good such that nobody on earth would've
-      considered it first; for the love of God is heavenly, beyond human thought; we wouldn't be able to conjure up the
-      thought of it, for it wouldn't be of us. I know the things which are from me: they are sinful, they are no good; I
-      am ashamed of them. If God would reveal His love to us, I would know it is not from mankind, for it would be good;
-      and I know goodness does not dwell in me, that is, in my flesh. The love of God is above, but I am below. I know
-      what is in man, for I am a man; I see the world and what is in it, and I am a man of this world. But God's love is
-      not earthly, it's heavenly; the love that we know says, "You love me, so I love you; if you hate me, then I hate
-      you." But the love from above is above all, beyond human thought, beyond human morals, beyond human imagination.
-      For our mind is sinful, how can we think of anything good? The depths of our heart utter the depths of hell; but
-      the Word of God speaks of God's thoughts: "As the heavens are higher than the earth, So are My ways higher than
-      your ways And My thoughts than your thoughts.” (Isaiah 55:9) So my earthly love says, "My enemy is my enemy, why
-      should I love him?" But the love of God says,
+      If the goodness of God would ever be manifested to us, it would be supremely good such that nobody on earth
+      would've considered it first; for the love of God is heavenly, beyond human thought; we wouldn't be able to
+      conjure up the thought of it, for it wouldn't be of us. I know the things which are from me: they are sinful, they
+      are no good; I am ashamed of them. If God would reveal His love to us, I would know it is not from mankind, for it
+      would be good; and I know goodness does not dwell in me, that is, in my flesh. The love of God is above, but I am
+      below. I know what is in man, for I am a man; I see the world and what is in it, and I am a man of this world. But
+      God's love is not earthly, it's heavenly; the love that we know says, "You love me, so I love you; if you hate me,
+      then I hate you." But the love from above is above all, beyond human thought, beyond human morals, beyond human
+      imagination. For our mind is sinful, how can we think of anything good? The depths of our heart utter the depths
+      of hell; but the Word of God speaks of God's thoughts: "As the heavens are higher than the earth, So are My ways
+      higher than your ways And My thoughts than your thoughts.” (Isaiah 55:9) So my earthly love says, "My enemy is my
+      enemy, why should I love him?" But the love of God says,
       <blog-reference-tooltip [reference]="'Psalms 35:11-14'">
         They repay me evil for good, To the bereavement of my soul. But as for me, when they were sick, my clothing was
         sackcloth; I humbled my soul with fasting, And my prayer kept returning to my bosom. I went about as though it
@@ -320,12 +330,15 @@ import { SharedModule } from "../../../shared/shared.module";
       </blog-reference-tooltip>
       Furthermore, the love I first have is toward myself, for I love myself and care for myself. Who do I love more
       than myself? But the love of God says, "O my son Absalom, my son, my son Absalom!
-      <b>Would I had died instead of you,</b> O Absalom, my son, my son!" (2 Samuel 18:33) “For God so loved the world,
-      that He gave His only begotten Son.” (John 3:16) He died, giving up His whole self; He did not give up only a
-      little bit of Himself, but His whole soul; as it says, "To the bereavement of My soul." (Psalms 35:11) And we are
-      enemies of God in thought and in deed; but He died for us, His enemies: to reconcile us to God. For Jesus Christ
-      first loved us, his enemies, even to death, even death on a cross. If this is the love He shows to His enemies,
-      what kind of love do you suppose He shows to His friends? <br /><br />
+      <b>Would I had died instead of you,</b> O Absalom, my son, my son!" (2 Samuel 18:33) Furthermore, in my earthly
+      love I may give a gift to a man, but only if he is family; to a stranger, how much of myself will I spend for him?
+      But the love of God freely gave the gift of life, even eternal life, which cannot be measured or counted. “For God
+      so loved the world, that He gave His only begotten Son.” (John 3:16) He died, giving up His whole self; He did not
+      give up only a little bit of Himself, but His whole soul; as it says, "To the bereavement of My soul." (Psalms
+      35:11) And we were enemies of God in thought and in deed - we were strangers to God, foreigners and aliens; but
+      Jesus died for us, His enemies: to reconcile us to God. For Jesus Christ first loved us, his enemies, even to
+      death, even death on a cross. If this is the love He shows to His enemies, what kind of love do you suppose He
+      would show His friends who obey Him? <br /><br />
 
       Furthermore, the love from me is first towards my family; and a stranger, how can I love? But the love of God is
       toward strangers, foreigners, and aliens; we, Gentiles, were once separate from the commonwealth of Israel; we
@@ -352,7 +365,7 @@ import { SharedModule } from "../../../shared/shared.module";
         If anyone comes to Me, and does not hate his own father and mother and wife and children and brothers and
         sisters, yes, and even his own life, he cannot be My disciple.
       </blog-reference-tooltip>
-      And, "The one who joins himself to the Lord is one spirit with Him.” (1 Corinthians 6:17) For when the love of God
+      For "The one who joins himself to the Lord is one spirit with Him.” (1 Corinthians 6:17) For when the love of God
       in Christ Jesus is measured up against our own love: how cannot our natural love look like hatred in His sight?
       “For as high as the heavens are above the earth, So great is His lovingkindness toward those who fear Him.”
       (Psalms 103:11) "His lovingkindness is everlasting." (Psalm 136) The love of God is not from earth; it is beyond
