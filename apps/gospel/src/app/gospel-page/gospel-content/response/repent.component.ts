@@ -89,8 +89,7 @@ import { SharedModule } from "../../../shared/shared.module";
       weaker and weaker. "Therefore do not let sin reign in your mortal body so that you obey its evil desires. Do not
       offer any part of yourself to sin as an instrument of wickedness." (Romans 6:12-13)
       <br /><br />
-      <!-- TODO -->
-      <!-- /#/edify-detail/220a13ba-239c-7637-61e4-196fc85a62ce -->
+
       Furthermore, how can one have faith without repentance? These are good friends, do not separate those who are good
       friends; for they walk together and talk together and agree with one another. We love Him because He first loved
       us; we have not seen Him at anytime, yet we love Him; we have seen Him if we have believed Him; as it says,
@@ -125,6 +124,11 @@ import { SharedModule } from "../../../shared/shared.module";
       the examples in the Scriptures, how men repented (Luke 3:10-14; Luke 19:8; Acts 19:18-19). We all know the sin in
       our lives. I charge you to read the epistles of the apostles; they show to us what it means to "obey the truth".
       Thanks be to God who grants unto us repentance through the knowledge of the truth.
+      <blog-link
+        [title]="'See more on Repentance'"
+        [link]="'https://thelightof.life/#/edify-detail/220a13ba-239c-7637-61e4-196fc85a62ce'"
+      >
+      </blog-link>
     </ng-template>`,
   styles: ``,
   changeDetection: ChangeDetectionStrategy.OnPush,
