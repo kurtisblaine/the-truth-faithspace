@@ -61,11 +61,10 @@ import { SharedModule } from "../../../shared/shared.module";
         were selling, they were planting, they were building; but on the day that Lot went out from Sodom it rained fire
         and brimstone from heaven and destroyed them all.
       </blog-reference-tooltip>
-      <!-- TODO deception of sin link -->
-      <!-- <blog-link
+      <blog-link
         [title]="'See more on the Snare of His Coming'"
-        [link]="'https://thelightof.life/#/draw/theWordofLife.webp'"
-      ></blog-link> -->
+        [link]="'https://thelightof.life/#/edify-detail/9a7773b4-01b5-ede3-0a07-218b0a4b42d6'"
+      ></blog-link>
       <br /><br />
 
       No one can serve two masters: you'll end up hating the one and loving the other. If we have love for the world in
