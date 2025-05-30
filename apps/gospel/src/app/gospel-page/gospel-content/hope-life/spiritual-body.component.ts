@@ -121,17 +121,23 @@ import { SharedModule } from "../../../shared/shared.module";
       in the air, because they also have their home on earth; so we see by this, the heavenly is not independent from
       the earthly. For example: the Holy Spirit descended upon Jesus like a dove (Mark 1:10), and the Spirit of God
       fluttered over the waters in the beginning (Genesis 1:2). And unclean spirits are called unclean birds (Revelation
-      18:2), and Paul called the devil the prince of the power of the air (Ephesians 2:2). Furthermore, there are
-      certain creatures in nature which have their home on earth and die, transforming to a heavenly life. For instance,
-      the butterfly: she was a caterpillar, moving on her belly eating the herbs of the ground. When her time came, she
-      hardened herself into a caccoon and broke forth into a butterfly. Her home is no longer among the earthly, but it
-      is in the heavens. A dragonfly is similar, except he lives in the water, in the depths of the water; he crawls up
-      a leaf and becomes hard by the sun, breaking forth into a flying creature. These have not their home in their
-      former estate, nor can they go back if they want to, but they live in the sky of heaven. They do not think to
-      themselves, "How I wish I were still a worm." No! They do not even consider their old estate, for their new is
-      much better. And these are found in nature, for they are created by God as teachers unto us. For He has created
-      nothing in vain. Creation cannot open its mouth and teach us, but God teaches us by His Spirit through His
-      creation. Just as Paul used the example of sowing and reaping to explain these things, so we see that nature
+      18:2), and Paul called the devil the prince of the power of the air (Ephesians 2:2). Also it says,
+      <blog-reference-tooltip [reference]="'Ecclesiastes 10:20'">
+        In your bedchamber do not curse a king, and in your sleeping rooms do not curse a rich man, for a bird of the
+        heavens will carry the sound and the winged creature will make the matter known.
+      </blog-reference-tooltip>
+      <br /><br />
+
+      There are certain creatures in nature which have their home on earth and die, transforming to a heavenly life. For
+      instance, the butterfly: she was a caterpillar, moving on her belly eating the herbs of the ground. When her time
+      came, she hardened herself into a caccoon and broke forth into a butterfly. Her home is no longer among the
+      earthly, but it is in the heavens. A dragonfly is similar, except he lives in the water, in the depths of the
+      water; he crawls up a leaf and becomes hard by the sun, breaking forth into a flying creature. These have not
+      their home in their former estate, nor can they go back if they want to, but they live in the sky of heaven. They
+      do not think to themselves, "How I wish I were still a worm." No! They do not even consider their old estate, for
+      their new is much better. And these are found in nature, for they are created by God as teachers unto us. For He
+      has created nothing in vain. Creation cannot open its mouth and teach us, but God teaches us by His Spirit through
+      His creation. Just as Paul used the example of sowing and reaping to explain these things, so we see that nature
       testifies. Furthermore, all the living herbs and plants die in the winter and come back to life in the spring.
       These things relate to our new heavenly life, our spiritual bodies, the resurrection. It is at work now, but it is
       not seen; when we see Him, we will become as He is. For Jesus is the firstfruits from the dead. And He ate food in
