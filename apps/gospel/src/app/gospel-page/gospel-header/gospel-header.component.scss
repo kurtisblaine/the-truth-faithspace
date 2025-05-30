@@ -1,3 +1,7 @@
+:host {
+  width: 50%;
+}
+
 .header-card {
   border-radius: 15px;
   text-transform: uppercase;
@@ -7,6 +11,7 @@
 
 .header-light {
   color-scheme: light;
+  color: var(--mat-sys-on-surface);
 }
 
 .header-dark {
