@@ -27,6 +27,10 @@ button[mat-button] {
   height: 100%;
 }
 
+.header-pane > button {
+  text-decoration: underline;
+}
+
 .holy-image {
   background-image: url("https://res.cloudinary.com/dffihsa2y/image/upload/v1711590013/img/holy_wxwyzn.webp");
   min-height: 400px;
