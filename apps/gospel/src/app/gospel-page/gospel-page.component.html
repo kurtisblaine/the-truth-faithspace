@@ -1,3 +1,7 @@
+<!-- <ng-container *ngIf="shouldInitFullpage()"  #fullPageContainer> </ng-container>
+
+<ng-template #fullPageTemplate> *ngIf="shouldInitFullpage()" </ng-template> -->
+
 <div fullpage id="fullpage" [options]="config">
   <div class="section wedding-image" style="background-position: top" data-anchor="goodNews" data-tooltip="Home">
     <div class="header-pane">
@@ -23,10 +27,10 @@
             </mat-panel-title>
           </mat-expansion-panel-header>
           <ng-template matExpansionPanelContent>
-            <button mat-button (click)="toAnchor('dangerSin', 'ourSinNature')">The Sin Nature</button>
-            <button mat-button (click)="toAnchor('dangerSin', 'heKnows')">God Knows</button>
-            <button mat-button (click)="toAnchor('dangerSin', 'aConsumingFire')">A Consuming Fire</button>
-            <button mat-button (click)="toAnchor('dangerSin', 'dayOfJudgement')">The Day of Judgement</button>
+            <button mat-button (click)="toAnchor('sin', 'ourSinNature')">The Sin Nature</button>
+            <button mat-button (click)="toAnchor('sin', 'heKnows')">God Knows</button>
+            <button mat-button (click)="toAnchor('sin', 'aConsumingFire')">A Consuming Fire</button>
+            <button mat-button (click)="toAnchor('sin', 'dayOfJudgement')">The Day of Judgement</button>
           </ng-template>
         </mat-expansion-panel>
 
@@ -37,10 +41,10 @@
             </mat-panel-title>
           </mat-expansion-panel-header>
           <ng-template matExpansionPanelContent>
-            <button mat-button (click)="toAnchor('dangerDeath', 'loveOfPleasure')">The Love of Pleasure</button>
-            <button mat-button (click)="toAnchor('dangerDeath', 'workAndToil')">Work and Toil</button>
-            <button mat-button (click)="toAnchor('dangerDeath', 'loveOfWealth')">The Love of Wealth</button>
-            <button mat-button (click)="toAnchor('dangerDeath', 'dayOfDeath')">The Day of Death</button>
+            <button mat-button (click)="toAnchor('death', 'loveOfPleasure')">The Love of Pleasure</button>
+            <button mat-button (click)="toAnchor('death', 'workAndToil')">Work and Toil</button>
+            <button mat-button (click)="toAnchor('death', 'loveOfWealth')">The Love of Wealth</button>
+            <button mat-button (click)="toAnchor('death', 'dayOfDeath')">The Day of Death</button>
           </ng-template>
         </mat-expansion-panel>
 
@@ -51,20 +55,18 @@
             </mat-panel-title>
           </mat-expansion-panel-header>
           <ng-template matExpansionPanelContent>
-            <button mat-button (click)="toAnchor('callGrace', 'servantOfGod')">The Servant of God</button>
-            <button mat-button (click)="toAnchor('callGrace', 'theBronzeSerpent')">The Bronze Serpent</button>
-            <button mat-button (click)="toAnchor('callGrace', 'theVictor')">The Victor</button>
-            <button mat-button (click)="toAnchor('callGrace', 'trueFoodAndTrueDrink')">
+            <button mat-button (click)="toAnchor('grace', 'servantOfGod')">The Servant of God</button>
+            <button mat-button (click)="toAnchor('grace', 'theBronzeSerpent')">The Bronze Serpent</button>
+            <button mat-button (click)="toAnchor('grace', 'theVictor')">The Victor</button>
+            <button mat-button (click)="toAnchor('grace', 'trueFoodAndTrueDrink')">
               The True Food & the True Drink
             </button>
-            <button mat-button (click)="toAnchor('callGrace', 'theLambOfGod')">The Lamb of God</button>
-            <button mat-button (click)="toAnchor('callGrace', 'theLion')">The Lion of the Tribe of Judah</button>
-            <button mat-button (click)="toAnchor('callGrace', 'theScapegoat')">The Scapegoat</button>
-            <button mat-button (click)="toAnchor('callGrace', 'theRockOfSalvation')">The Rock of Salvation</button>
-            <button mat-button (click)="toAnchor('callGrace', 'eternalSalvation')">
-              The Door of Eternal Salvation
-            </button>
-            <button mat-button (click)="toAnchor('callGrace', 'theSonOfGod')">The Son of God</button>
+            <button mat-button (click)="toAnchor('grace', 'theLambOfGod')">The Lamb of God</button>
+            <button mat-button (click)="toAnchor('grace', 'theLion')">The Lion of the Tribe of Judah</button>
+            <button mat-button (click)="toAnchor('grace', 'theScapegoat')">The Scapegoat</button>
+            <button mat-button (click)="toAnchor('grace', 'theRockOfSalvation')">The Rock of Salvation</button>
+            <button mat-button (click)="toAnchor('grace', 'eternalSalvation')">The Door of Eternal Salvation</button>
+            <button mat-button (click)="toAnchor('grace', 'theSonOfGod')">The Son of God</button>
           </ng-template>
         </mat-expansion-panel>
 
@@ -75,45 +77,43 @@
             </mat-panel-title>
           </mat-expansion-panel-header>
           <ng-template matExpansionPanelContent>
-            <button mat-button (click)="toAnchor('callFaith', 'theRaceOfFaith')">The Race of Faith</button>
-            <button mat-button (click)="toAnchor('callFaith', 'clearConscience')">A Clear Conscience</button>
-            <button mat-button (click)="toAnchor('callFaith', 'abideInHim')">Abide in Him</button>
-            <button mat-button (click)="toAnchor('callFaith', 'aNewHeart')">A New Heart</button>
-            <button mat-button (click)="toAnchor('callFaith', 'bornAgain')">Born Again</button>
+            <button mat-button (click)="toAnchor('faith', 'theRaceOfFaith')">The Race of Faith</button>
+            <button mat-button (click)="toAnchor('faith', 'clearConscience')">A Clear Conscience</button>
+            <button mat-button (click)="toAnchor('faith', 'abideInHim')">Abide in Him</button>
+            <button mat-button (click)="toAnchor('faith', 'aNewHeart')">A New Heart</button>
+            <button mat-button (click)="toAnchor('faith', 'bornAgain')">Born Again</button>
           </ng-template>
         </mat-expansion-panel>
 
         <mat-expansion-panel class="custom-panel" hideToggle>
           <mat-expansion-panel-header>
             <mat-panel-title>
-              <button mat-button>THE RESPONSE</button>
+              <button mat-button>THE RESPONSE - LOVE</button>
             </mat-panel-title>
           </mat-expansion-panel-header>
           <ng-template matExpansionPanelContent>
-            <button mat-button (click)="toAnchor('theResponse', 'repentance')">Repentance</button>
-            <button mat-button (click)="toAnchor('theResponse', 'baptism')">Baptism</button>
-            <button mat-button (click)="toAnchor('theResponse', 'believeInGod')">Believe in God</button>
-            <button mat-button (click)="toAnchor('theResponse', 'obedienceToHoliness')">Obedience to Holiness</button>
-            <button mat-button (click)="toAnchor('theResponse', 'callUponTheLord')">Call upon the Lord</button>
-            <button mat-button (click)="toAnchor('theResponse', 'liveWorthy')">Live Worthy</button>
-            <button mat-button (click)="toAnchor('theResponse', 'perseverance')">
-              Perseverance through Remembrance
-            </button>
+            <button mat-button (click)="toAnchor('love', 'repentance')">Repentance</button>
+            <button mat-button (click)="toAnchor('love', 'baptism')">Baptism</button>
+            <button mat-button (click)="toAnchor('love', 'believeInGod')">Believe in God</button>
+            <button mat-button (click)="toAnchor('love', 'obedienceToHoliness')">Obedience to Holiness</button>
+            <button mat-button (click)="toAnchor('love', 'callUponTheLord')">Call upon the Lord</button>
+            <button mat-button (click)="toAnchor('love', 'liveWorthy')">Live Worthy</button>
+            <button mat-button (click)="toAnchor('love', 'perseverance')">Perseverance through Remembrance</button>
           </ng-template>
         </mat-expansion-panel>
 
         <mat-expansion-panel class="custom-panel" hideToggle>
           <mat-expansion-panel-header>
             <mat-panel-title>
-              <button mat-button>THE HOPE - THE DAY OF THE LORD</button>
+              <button mat-button>THE DAY OF THE LORD - HOPE</button>
             </mat-panel-title>
           </mat-expansion-panel-header>
           <ng-template matExpansionPanelContent>
-            <button mat-button (click)="toAnchor('theHope', 'resurrectionOfLife')">The Resurrection of Life</button>
-            <button mat-button (click)="toAnchor('theHope', 'newSpiritualBodies')">New Spiritual Bodies</button>
-            <button mat-button (click)="toAnchor('theHope', 'eternalReward')">Eternal Reward</button>
-            <button mat-button (click)="toAnchor('theHope', 'everlastingLife')">Everlasting Life</button>
-            <button mat-button (click)="toAnchor('theHope', 'newHeavenAndNewEarth')">
+            <button mat-button (click)="toAnchor('hope', 'resurrectionOfLife')">The Resurrection of Life</button>
+            <button mat-button (click)="toAnchor('hope', 'newSpiritualBodies')">New Spiritual Bodies</button>
+            <button mat-button (click)="toAnchor('hope', 'eternalReward')">Eternal Reward</button>
+            <button mat-button (click)="toAnchor('hope', 'everlastingLife')">Everlasting Life</button>
+            <button mat-button (click)="toAnchor('hope', 'newHeavenAndNewEarth')">
               The New Heaven & the New Earth
             </button>
           </ng-template>
@@ -123,17 +123,17 @@
   </div>
 
   <!-- #region THE DANGER - SIN -->
-  <div class="section horses-image" data-anchor="theDanger1" data-tooltip="The Danger">
+  <div class="section horses-image" data-anchor="theDanger" data-tooltip="The Danger">
     <div class="header-pane">
       <h3 class="header-title">THE DANGER - SIN</h3>
-      <button mat-button (click)="toAnchor('dangerSin', 'ourSinNature')">The Sin Nature</button>
-      <button mat-button (click)="toAnchor('dangerSin', 'heKnows')">God Knows</button>
-      <button mat-button (click)="toAnchor('dangerSin', 'aConsumingFire')">A Consuming Fire</button>
-      <button mat-button (click)="toAnchor('dangerSin', 'dayOfJudgement')">The Day of Judgement</button>
+      <button mat-button (click)="toAnchor('sin', 'ourSinNature')">The Sin Nature</button>
+      <button mat-button (click)="toAnchor('sin', 'heKnows')">God Knows</button>
+      <button mat-button (click)="toAnchor('sin', 'aConsumingFire')">A Consuming Fire</button>
+      <button mat-button (click)="toAnchor('sin', 'dayOfJudgement')">The Day of Judgement</button>
     </div>
   </div>
 
-  <div class="section horses-image" data-anchor="dangerSin" data-tooltip="Sin">
+  <div class="section horses-image" data-anchor="sin" data-tooltip="Sin">
     <blog-gospel-section class="slide" data-anchor="ourSinNature" [isLightMode]="false" [isFloater]="true">
       <h3 class="headers">The Sin Nature</h3>
       <div class="paragraphs">
@@ -168,14 +168,14 @@
   <div class="section sin-image" data-anchor="theDanger2" data-tooltip="The Danger">
     <div class="header-pane">
       <h3 class="header-title">THE DANGER - DEATH</h3>
-      <button mat-button (click)="toAnchor('dangerDeath', 'loveOfPleasure')">The Love of Pleasure</button>
-      <button mat-button (click)="toAnchor('dangerDeath', 'workAndToil')">Work and Toil</button>
-      <button mat-button (click)="toAnchor('dangerDeath', 'loveOfWealth')">The Love of Wealth</button>
-      <button mat-button (click)="toAnchor('dangerDeath', 'dayOfDeath')">The Day of Death</button>
+      <button mat-button (click)="toAnchor('death', 'loveOfPleasure')">The Love of Pleasure</button>
+      <button mat-button (click)="toAnchor('death', 'workAndToil')">Work and Toil</button>
+      <button mat-button (click)="toAnchor('death', 'loveOfWealth')">The Love of Wealth</button>
+      <button mat-button (click)="toAnchor('death', 'dayOfDeath')">The Day of Death</button>
     </div>
   </div>
 
-  <div class="section sin-image" data-anchor="dangerDeath" data-tooltip="Death">
+  <div class="section sin-image" data-anchor="death" data-tooltip="Death">
     <blog-gospel-section data-anchor="loveOfPleasure" class="slide" [isLightMode]="false" [isFloater]="true">
       <h3 class="headers">The Love of Pleasure</h3>
       <div class="paragraphs">
@@ -207,23 +207,23 @@
   <!-- #endregion THE DANGER - DEATH -->
 
   <!-- #region THE CALL - GRACE -->
-  <div class="section camp-image" data-anchor="theCall1" data-tooltip="The Call">
+  <div class="section camp-image" data-anchor="theCall" data-tooltip="The Call">
     <div class="header-pane">
       <h3 class="header-title">THE CALL - GRACE</h3>
-      <button mat-button (click)="toAnchor('callGrace', 'servantOfGod')">The Servant of God</button>
-      <button mat-button (click)="toAnchor('callGrace', 'theBronzeSerpent')">The Bronze Serpent</button>
-      <button mat-button (click)="toAnchor('callGrace', 'theVictor')">The Victor</button>
-      <button mat-button (click)="toAnchor('callGrace', 'trueFoodAndTrueDrink')">The True Food & the True Drink</button>
-      <button mat-button (click)="toAnchor('callGrace', 'theLambOfGod')">The Lamb of God</button>
-      <button mat-button (click)="toAnchor('callGrace', 'theLion')">The Lion of the Tribe of Judah</button>
-      <button mat-button (click)="toAnchor('callGrace', 'theScapegoat')">The Scapegoat</button>
-      <button mat-button (click)="toAnchor('callGrace', 'theRockOfSalvation')">The Rock of Salvation</button>
-      <button mat-button (click)="toAnchor('callGrace', 'eternalSalvation')">The Door of Eternal Salvation</button>
-      <button mat-button (click)="toAnchor('callGrace', 'theSonOfGod')">The Son of God</button>
+      <button mat-button (click)="toAnchor('grace', 'servantOfGod')">The Servant of God</button>
+      <button mat-button (click)="toAnchor('grace', 'theBronzeSerpent')">The Bronze Serpent</button>
+      <button mat-button (click)="toAnchor('grace', 'theVictor')">The Victor</button>
+      <button mat-button (click)="toAnchor('grace', 'trueFoodAndTrueDrink')">The True Food & the True Drink</button>
+      <button mat-button (click)="toAnchor('grace', 'theLambOfGod')">The Lamb of God</button>
+      <button mat-button (click)="toAnchor('grace', 'theLion')">The Lion of the Tribe of Judah</button>
+      <button mat-button (click)="toAnchor('grace', 'theScapegoat')">The Scapegoat</button>
+      <button mat-button (click)="toAnchor('grace', 'theRockOfSalvation')">The Rock of Salvation</button>
+      <button mat-button (click)="toAnchor('grace', 'eternalSalvation')">The Door of Eternal Salvation</button>
+      <button mat-button (click)="toAnchor('grace', 'theSonOfGod')">The Son of God</button>
     </div>
   </div>
 
-  <div class="section camp-image" data-anchor="callGrace" data-tooltip="Grace">
+  <div class="section camp-image" data-anchor="grace" data-tooltip="Grace">
     <blog-gospel-section data-anchor="servantOfGod" class="slide" [isLightMode]="true" [isFloater]="true">
       <h3 class="headers">The Servant of God</h3>
       <div class="paragraphs">
@@ -300,15 +300,15 @@
   <div class="section armor-image" data-anchor="theCall2" data-tooltip="The Call">
     <div class="header-pane">
       <h3 class="header-title">THE CALL - FAITH</h3>
-      <button mat-button (click)="toAnchor('callFaith', 'theRaceOfFaith')">The Race of Faith</button>
-      <button mat-button (click)="toAnchor('callFaith', 'clearConscience')">A Clear Conscience</button>
-      <button mat-button (click)="toAnchor('callFaith', 'abideInHim')">Abide in Him</button>
-      <button mat-button (click)="toAnchor('callFaith', 'aNewHeart')">A New Heart</button>
-      <button mat-button (click)="toAnchor('callFaith', 'bornAgain')">Born Again</button>
+      <button mat-button (click)="toAnchor('faith', 'theRaceOfFaith')">The Race of Faith</button>
+      <button mat-button (click)="toAnchor('faith', 'clearConscience')">A Clear Conscience</button>
+      <button mat-button (click)="toAnchor('faith', 'abideInHim')">Abide in Him</button>
+      <button mat-button (click)="toAnchor('faith', 'aNewHeart')">A New Heart</button>
+      <button mat-button (click)="toAnchor('faith', 'bornAgain')">Born Again</button>
     </div>
   </div>
 
-  <div class="section armor-image" data-anchor="callFaith" data-tooltip="Faith">
+  <div class="section armor-image" data-anchor="faith" data-tooltip="Faith">
     <blog-gospel-section data-anchor="theRaceOfFaith" class="slide" [isLightMode]="true" [isFloater]="true">
       <h3 class="headers">The Race of Faith</h3>
       <div class="paragraphs">
@@ -346,21 +346,21 @@
   </div>
   <!-- #endregion THE CALL - FAITH -->
 
-  <!-- #region THE RESPONSE -->
-  <div class="section rent-image" data-anchor="theResponse1" data-tooltip="The Response">
+  <!-- #region THE RESPONSE - LOVE -->
+  <div class="section rent-image" data-anchor="theResponse" data-tooltip="The Response">
     <div class="header-pane">
-      <h3 class="header-title">THE RESPONSE</h3>
-      <button mat-button (click)="toAnchor('theResponse', 'repentance')">Repentance</button>
-      <button mat-button (click)="toAnchor('theResponse', 'baptism')">Baptism</button>
-      <button mat-button (click)="toAnchor('theResponse', 'believeInGod')">Believe in God</button>
-      <button mat-button (click)="toAnchor('theResponse', 'obedienceToHoliness')">Obedience to Holiness</button>
-      <button mat-button (click)="toAnchor('theResponse', 'callUponTheLord')">Call upon the Lord</button>
-      <button mat-button (click)="toAnchor('theResponse', 'liveWorthy')">Live Worthy</button>
-      <button mat-button (click)="toAnchor('theResponse', 'perseverance')">Perseverance through Remembrance</button>
+      <h3 class="header-title">THE RESPONSE - LOVE</h3>
+      <button mat-button (click)="toAnchor('love', 'repentance')">Repentance</button>
+      <button mat-button (click)="toAnchor('love', 'baptism')">Baptism</button>
+      <button mat-button (click)="toAnchor('love', 'believeInGod')">Believe in God</button>
+      <button mat-button (click)="toAnchor('love', 'obedienceToHoliness')">Obedience to Holiness</button>
+      <button mat-button (click)="toAnchor('love', 'callUponTheLord')">Call upon the Lord</button>
+      <button mat-button (click)="toAnchor('love', 'liveWorthy')">Live Worthy</button>
+      <button mat-button (click)="toAnchor('love', 'perseverance')">Perseverance through Remembrance</button>
     </div>
   </div>
 
-  <div class="section rent-image" data-anchor="theResponse" data-tooltip="Repentance">
+  <div class="section rent-image" data-anchor="love" data-tooltip="Love">
     <blog-gospel-section data-anchor="repentance" class="slide" [isLightMode]="true" [isFloater]="true">
       <h3 class="headers">Repentence</h3>
       <div class="paragraphs">
@@ -410,21 +410,21 @@
       </div>
     </blog-gospel-section>
   </div>
-  <!-- #endregion THE RESPONSE -->
+  <!-- #endregion THE RESPONSE - LOVE -->
 
-  <!-- #region THE HOPE - THE DAY OF THE LORD -->
-  <div class="section new-earth-image" data-anchor="theHope1" data-tooltip="The Hope">
+  <!-- #region THE DAY OF THE LORD - HOPE -->
+  <div class="section new-earth-image" data-anchor="theDayOfTheLord" data-tooltip="The Day of the Lord">
     <div class="header-pane">
-      <h3 class="header-title">THE HOPE - THE DAY OF THE LORD</h3>
-      <button mat-button (click)="toAnchor('theHope', 'resurrectionOfLife')">The Resurrection of Life</button>
-      <button mat-button (click)="toAnchor('theHope', 'newSpiritualBodies')">New Spiritual Bodies</button>
-      <button mat-button (click)="toAnchor('theHope', 'eternalReward')">Eternal Reward</button>
-      <button mat-button (click)="toAnchor('theHope', 'everlastingLife')">Everlasting Life</button>
-      <button mat-button (click)="toAnchor('theHope', 'newHeavenAndNewEarth')">The New Heaven & the New Earth</button>
+      <h3 class="header-title">THE DAY OF THE LORD - HOPE</h3>
+      <button mat-button (click)="toAnchor('hope', 'resurrectionOfLife')">The Resurrection of Life</button>
+      <button mat-button (click)="toAnchor('hope', 'newSpiritualBodies')">New Spiritual Bodies</button>
+      <button mat-button (click)="toAnchor('hope', 'eternalReward')">Eternal Reward</button>
+      <button mat-button (click)="toAnchor('hope', 'everlastingLife')">Everlasting Life</button>
+      <button mat-button (click)="toAnchor('hope', 'newHeavenAndNewEarth')">The New Heaven & the New Earth</button>
     </div>
   </div>
 
-  <div class="section new-earth-image" data-anchor="theHope" data-tooltip="The Day of the Lord">
+  <div class="section new-earth-image" data-anchor="hope" data-tooltip="Hope">
     <blog-gospel-section data-anchor="resurrectionOfLife" class="slide" [isLightMode]="true" [isFloater]="true">
       <h3 class="headers">The Resurrection of Life</h3>
       <div class="paragraphs">
@@ -460,5 +460,5 @@
       </div>
     </blog-gospel-section>
   </div>
-  <!-- #endregion THE HOPE - THE DAY OF THE LORD -->
+  <!-- #endregion THE DAY OF THE LORD - HOPE -->
 </div>
