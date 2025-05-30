@@ -11,15 +11,15 @@ import { SharedModule } from "../../../shared/shared.module";
       signs and wonders to deceive those who love the world, who acknowledge not God, so God will hand them over to him
       who is not at all god, that they may fill up the full measure of their error, and be found fit for the coming
       destruction. They will be given over to a great delusion because they did not receive the love of the truth, but
-      delighted in wickedness and falsehood. The antichrist will even be allowed to trample the hosts of heaven and
-      destroy God's saints; he will be victorious in all that he does, but his time is not forever - for the Lord Jesus
-      will come with a shout, at the last trumpet, with the voice of an archangel, slaying him with the appearing of His
+      delighted in wickedness and falsehood. The antichrist will even be allowed to trample the hosts of heaven and slay
+      God's saints; he will be victorious in all that he does, but his time is not forever - for the Lord Jesus will
+      come with a shout, at the last trumpet, with the voice of an archangel, slaying him with the appearing of His
       coming and the breath of His mouth. Then the dead in Christ will be raised and caught up with the Lord and be
       forevermore with the Lord. The antichrist's reign is only for a moment, but the glory of the reign of the kingdom
       of God is forever and ever; the antichrist's reign is finite, it is given a number, 42 months, 1,260 days (time,
-      times, and half), but the reign of Christ and the saints is given no such number. The antichrist will cast truth
-      to the ground during this time and he will trample under foot God's saints. As it says, "I kept looking, and that
-      horn was waging war with the saints and overpowering them.” (Daniel 7:21) And,
+      times, and half), but the reign of Christ and the saints is given no such number. The horn will cast truth to the
+      ground during this time and he will trample under foot God's saints. As it says, "I kept looking, and that horn
+      was waging war with the saints and overpowering them.” (Daniel 7:21) And,
       <blog-reference-tooltip [reference]="'Daniel 8:10-12'">
         It grew up to the host of heaven and caused some of the host and some of the stars to fall to the earth, and it
         trampled them down. It even magnified itself to be equal with the Commander of the host; and it removed the
@@ -28,16 +28,16 @@ import { SharedModule } from "../../../shared/shared.module";
         perform its will and prosper.
       </blog-reference-tooltip>
       These things are spoken about in further detail by the apostle Paul in the letter to the Thessalonians (2
-      Thessalonians 2:3-12). We cannot stop these things from occuring, for they are ordained by God to occur; and we,
-      as God's saints, are destined for affliction; as the apostle affirms, see to it that “no one would be disturbed by
-      these afflictions; for you yourselves know that we have been destined for this.” (1 Thessalonians 3:3) This
-      affliction does not come from God, but from the spiritual rulers of wickedness, whose ruler is the evil one. “But
-      the Lord is faithful, and He will strengthen and protect you from the evil one.” (2 Thessalonians 3:3) For “God
-      has not destined us for wrath, but for obtaining salvation through our Lord Jesus Christ, who died for us, so that
-      whether we are awake or asleep, we will live together with Him.” (1 Thessalonians 5:9-10) The wrath of the devil
-      is great, but his time is short; as it says, "Woe to the earth and the sea, because the devil has come down to
-      you, having great wrath, knowing that he has only a short time." (Revelation 12:12) And the works of devils and
-      antichrists are already at work in the world; as it says, “For the mystery of lawlessness is already at work.” (2
+      Thessalonians 2:3-12). We cannot stop these things from occuring, for they are ordained to occur; and we, as God's
+      saints, are destined for affliction; as the apostle affirms, see to it that “no one would be disturbed by these
+      afflictions; for you yourselves know that we have been destined for this.” (1 Thessalonians 3:3) This affliction
+      does not come from God, but from the spiritual rulers of wickedness, whose ruler is the evil one. “But the Lord is
+      faithful, and He will strengthen and protect you from the evil one.” (2 Thessalonians 3:3) For “God has not
+      destined us for wrath, but for obtaining salvation through our Lord Jesus Christ, who died for us, so that whether
+      we are awake or asleep, we will live together with Him.” (1 Thessalonians 5:9-10) The wrath of the devil is great,
+      but his time is short; as it says, "Woe to the earth and the sea, because the devil has come down to you, having
+      great wrath, knowing that he has only a short time." (Revelation 12:12) And the works of devils and antichrists
+      are already at work in the world; as it says, “For the mystery of lawlessness is already at work.” (2
       Thessalonians 2:7) Then it says,
       <blog-reference-tooltip [reference]="'1 John 2:18'">
         It is the last hour, and just as you have heard that antichrist is coming, even now many antichrists have
@@ -47,7 +47,7 @@ import { SharedModule } from "../../../shared/shared.module";
       world.” (1 John 4:3) And these are granted abilities to work false signs and miracles and wonders, even preaching
       false doctrines and gospels; as it says, “The Spirit explicitly says that in later times some will fall away from
       the faith, paying attention to deceitful spirits and doctrines of demons.” (1 Timothy 4:1) But as we cling to God,
-      He is faithful to protect us from deceit.
+      He is faithful to protect us from lying deceit.
       <br /><br />
 
       For “By this you know the Spirit of God: every spirit that confesses that Jesus Christ has come in the flesh is
@@ -74,25 +74,32 @@ import { SharedModule } from "../../../shared/shared.module";
         If the Spirit of Him who raised Jesus from the dead dwells in you, He who raised Christ Jesus from the dead will
         also give life to your mortal bodies through His Spirit who dwells in you.
       </blog-reference-tooltip>
-      This is “the hope of eternal life, which God, who cannot lie, promised long ages ago.” (Titus 1:2) And “This hope
-      we have as an anchor of the soul, a hope both sure and steadfast and one which enters within the veil.” (Hebrews
-      6:19) So, “Let us hold fast the confession of our hope without wavering, for He who promised is faithful.”
-      (Hebrews 10:23)
+      This is “the hope of eternal life, which God, who cannot lie, promised long ages ago.” (Titus 1:2) “This hope we
+      have as an anchor of the soul, a hope both sure and steadfast and one which enters within the veil.” (Hebrews
+      6:19) Therefore, “Let us hold fast the confession of our hope without wavering, for He who promised is faithful.”
+      (Hebrews 10:23) “And everyone who has this hope fixed on Him purifies himself, just as He is pure.” (1 John 3:3)
       <br /><br />
 
-      So therefore, we have confidence in the day of the Lord provided we share in the sufferings of Christ. For the
-      promise of everlasting life has a condition, and that condition is faith; as it says,
+      So we have confidence in the day of the Lord provided we share in the sufferings of Christ. For the promise of
+      everlasting life has a condition, and that condition is faith; as it says,
       <blog-reference-tooltip [reference]="'Romans 8:17'">
         <b>If</b> indeed we suffer with Him, that we may also be glorified together.
       </blog-reference-tooltip>
       And,
       <blog-reference-tooltip [reference]="'2 Timothy 2:11'">
-        <b>If</b> we died with Him, we will live with Him.
+        <b>If</b> we died with Him, we will live with Him. <b>If</b> we endure, we shall also regin with Him.
       </blog-reference-tooltip>
       For the death He died was to sin, and in His death He suffered for us; so fellowship with His sufferings through
       death is needed: which is striving against sin, remaining undefiled by it. “For <b>If</b> we have become united
       with Him in the likeness of His death, certainly we shall also be in the likeness of His resurrection.” (Romans
-      6:5) And Christ was saying things such as,
+      6:5) And, "<b>if</b> by the Spirit you are putting to death the deeds of the body, you will live.” (Romans 8:13)
+      <blog-link
+        [title]="'See more about the work of Christ and our work of faith'"
+        [link]="'https://thelightof.life/#/draw/Jl7k4Iu9mKs/repentandbelieve.webp'"
+      ></blog-link>
+      <br /><br />
+
+      And Christ was saying things such as,
       <blog-reference-tooltip [reference]="'John 8:29'" [isJesusWord]="true">
         I always do the things that are pleasing to Him.
       </blog-reference-tooltip>
@@ -100,7 +107,7 @@ import { SharedModule } from "../../../shared/shared.module";
       <blog-reference-tooltip [reference]="'John 6:38'" [isJesusWord]="true">
         For I have come down from heaven, not to do My own will, but the will of Him who sent Me.
       </blog-reference-tooltip>
-      For the apostle John affirms the life of Christ is for us, saying,
+      The apostle John affirms the life of Christ is for us to imitate today; as he says,
       <blog-reference-tooltip [reference]="'1 John 2:5-6'">
         By this we know that we are in Him: the one who says he abides in Him ought himself to walk in the same manner
         as He walked.
@@ -124,20 +131,21 @@ import { SharedModule } from "../../../shared/shared.module";
       <blog-reference-tooltip [reference]="'John 16:33'" [isJesusWord]="true">
         Take courage; I have overcome the world.
       </blog-reference-tooltip>
-      <blog-link
-        [title]="'See more about the work of Christ and our work of faith'"
-        [link]="'https://thelightof.life/#/draw/Jl7k4Iu9mKs/repentandbelieve.webp'"
-      ></blog-link>
+      “For you have been called for this purpose, since Christ also suffered for you, leaving you an example for you to
+      follow in His steps, WHO COMMITTED NO SIN, NOR WAS ANY DECEIT FOUND IN HIS MOUTH; and while being reviled, He did
+      not revile in return; while suffering, He uttered no threats, but kept entrusting Himself to Him who judges
+      righteously; and He Himself bore our sins in His body on the cross, so that we might die to sin and live to
+      righteousness; for by His wounds you were healed.” (1 Peter 2:21-24)
       <br /><br />
 
       Therefore, strive for blamelessness in all matters that we may be able to stand before the Son of Man, that we may
       be perfect before the Father, being made complete in all the fullness of the Spirit and the maturity of Christ.
       For the old nature has been crucified on the cross and done away with, but we fight temptation from this world
-      actively every day, picking up our cross daily, putting on the full armor of God, standing firm against the wiles
-      of the evil one, fleeing from immorality, idolatry, and youthful lusts, so that when we die, we don't remain as
-      one dead, but as though asleep, who wakes up to eternal life. You know what happens to them who sleep - they wake
-      up! So it is with us who die in the Lord, we awake to life and we are forever-more with the Lord - for even while
-      asleep, we are alive to the Lord.
+      actively every day, picking up our cross daily, and putting on the full armor of God, standing firm against the
+      wiles of the evil one, and fleeing from immorality, idolatry, and youthful lusts, so that when we die, we don't
+      remain as one dead, but as though asleep, who wakes up to eternal life. You know what happens to them who sleep -
+      they wake up! So it is with us who die in the Lord, we awake to life and we are forever-more with the Lord - for
+      even while asleep, we are alive to the Lord.
       <blog-reference-tooltip [reference]="'1 Corinthians 15:12-57'">
         Listen, I tell you a mystery: We will not all sleep, but we will all be changed— in an instant, in the twinkling
         of an eye, at the last trumpet. For the trumpet will sound, the dead will be raised imperishable, and we will be
@@ -154,14 +162,14 @@ import { SharedModule } from "../../../shared/shared.module";
       </blog-reference-tooltip>
       <br /><br />
 
-      Although our bodies may perish and our feet may slip, although our struggle is in the world, we look forward to
+      So although our bodies may perish and our feet may slip, although our struggle is in the world, we look forward to
       the fulfillment of the promise of the new bodies which are beyond decay, the freedom from our bodies of sin, and
       the new heaven and the new earth, in hope and against hope, believing that just as God has promised, He is able to
       do. And this is the great hope we hold onto. "For in this hope we were saved. But hope that is seen is no hope at
       all. Who hopes for what they already have? But if we hope for what we do not see, we wait for it with patience."
       (Romans 8:24-25) "Now faith is confidence in what we hope for and assurance about what we do not see." (Hebrews
       11:1) And this confidence and this assurance comes from the Word of God, the promises, from the prophecies of the
-      prophets, and from the foretelling of the Psalms. Just as what was previously promised, has been fulfilled, so
+      prophets, and from the foretelling of the Psalms. Just as what was previously promised and has been fulfilled, so
       these promises will be fulfilled at their appointed time. The coming of the Lord is nearer now than it once was,
       so do not slack behind in diligence, having thought we've already obtained salvation (Philippians 3:12-14); no,
       but rather eagerly awaiting for it from above. As for the Day of the Lord, it will be day unto us who are children
