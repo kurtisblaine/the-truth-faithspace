@@ -46,8 +46,8 @@ import { SharedModule } from "../../../shared/shared.module";
       without any knowledge of God. One may say, "If I know evil, then I must know good." Yes, but even if it is so, we
       have not the power to execute the good that we know, for sin is always present with us; and the goodness that we
       will to do is not of ourselves - it is of God; and He is contrary to our nature: for we walk by sight, but He is
-      unseen. And if the knowledge of God brings righteousness, then so does the power to execute righteousness. So
-      therefore, it is through the knowledge of God that we may obtain righteousness; as the LORD God says,
+      unseen. If the knowledge of God brings righteousness, how much more does the power to execute it? So therefore, it
+      is through the knowledge of God that we may obtain righteousness; as the LORD God says,
       <blog-reference-tooltip [reference]="'Jeremiah 22:15-16'">
         Did not your father eat and drink and do justice and righteousness? Then it was well with him. He judged the
         cause of the poor and needy; then it was well. <b>Is this not what it means to know me?</b>
@@ -79,24 +79,24 @@ import { SharedModule } from "../../../shared/shared.module";
       who has no control over his spirit.” (Proverbs 25:28) For this is our nature: evil. It's effortless for us to do
       bad and takes all our energy to do good. We love wickedness and eat it up like bread; it's a delicacy to us, but
       yet it turns into venom within us; nevertheless, we eat it up, and sleep in it, and drink from its cup. We do not
-      have self-discipline; we do not know the way to its door, so that we may knock and ask for some of it. We build up
-      our own laws and our own rules as a safeguard around us, but we look at them and despise them. What is wrong with
-      us? Only what I've been testifying to from the beginning: we are all subjected to the power of sin. But is it only
-      I who testify to this? When we grow old, reaching a certain age, and we are not taught good, our parents are
-      blamed. But why? People say, "I blame the parents for their child's behavior." Or they say, "Why didn't his
-      parents teach him what is right?" But if we were born good, why would we need to be taught? So, we testify to
-      ourselves about the nature we belong to: an evil one. For why would our parents be blamed if we were born
-      righteous? In that case, our actions would be on our own heads! Even more we say, "I am only human." So we testify
-      to ourselves and to others that we belong to a nature that is fallen and broken. This is our nature; just as it's
-      an eagle's nature to fly or a penguin's nature not to fly; so it is our nature to be sinful; and we are incapable
-      of changing ourselves or reforming ourselves by our own human effort. If anyone claims they are not sinful, they
-      show how utterly sinful sin really is, for they lie in regard to an obvious fact; as David said in the Psalm,
+      have self-discipline; we do not know the way to its door, so that we may knock and ask for it. We build up our own
+      laws and our own rules as a safeguard around us, but we look at them and despise them. What is wrong with us? Only
+      what I've been testifying to from the beginning: we are all subjected to the power of sin. But is it only I who
+      testify to this? When we grow old, reaching a certain age, and we are not taught good, our parents are blamed. But
+      why? People say, "I blame the parents for their child's behavior." Or they say, "Why didn't his parents teach him
+      what is right?" But if we were born good, why would we need to be taught? So, we testify to ourselves about the
+      nature we belong to: an evil one. For why would our parents be blamed if we were born righteous? In that case, our
+      actions would be on our own heads! Even more we say, "I am only human." So we testify to ourselves and to others
+      that we belong to a nature that is fallen and broken. This is our nature; just as it's an eagle's nature to fly or
+      a penguin's nature not to fly; so it is our nature to be sinful; and we are incapable of changing ourselves or
+      reforming ourselves by our own human effort. If anyone claims they are not sinful, they show how utterly sinful
+      sin really is, for they lie in regard to an obvious fact; as David said in the Psalm,
       <blog-reference-tooltip [reference]="'Psalm 51:5-7'">
         Surely I was sinful at birth, sinful from the time my mother conceived me. Surely you desire truth in the inner
         parts; you teach me wisdom in the inmost place. Cleanse me with hyssop, and I will be clean; wash me, and I will
         be whiter than snow.
       </blog-reference-tooltip>
-      And if that comes from King David a man after God's own heart, how much more does it apply to us? As he cries out
+      And if that comes from King David a man after God's own heart, how much more does it apply to us? But he cries out
       to God, "Cleanse me with hyssop and I will be clean; wash me, and I will be whiter than snow." For we must be
       washed by God for cleansing; we cannot cleanse ourselves. For we are filthy, how can we cleanse ourselves? As it
       says, "Who can make the clean out of the unclean? No one!” (Job 14:4) And, "'So is this people. And so is this
@@ -127,24 +127,24 @@ import { SharedModule } from "../../../shared/shared.module";
       weak, it's what causes our muscles to ache with agony, it's what causes everything to decay and wear out. We see
       what sin looks like by looking at death: it's gross, repugnant, a horrid stench, defiling anything it touches,
       corrupting much that is good. God shows us a tangible result of sin: death. If sin looks like this to our eyes,
-      how much worse is it in the eyes of the holy God? And it lives within us! It's a cancer that does not submit to
-      the control of the body - it spreads uncontrollably. It is without law; it does not obey anyone; it's a hazard.
-      This thing which is causing death within us needs to be put to death, for it is killing us. It masters over us and
-      never submits to our will; it enslaves us, making us its master; we follow behind sin in bonds; it is hostile
-      towards God; it's acts are prompts of war against God, provoking Him to anger; all it's thoughts: wicked; it girds
-      up it's loins to haste after evil; it has never submitted to the law of God, for it is not able to - and never
-      will be able to. It does not submit to our direction; it is an unruly animal within us. But surely, the desire to
-      do good is in our minds, but in our bodies, we don't do what we intend to do. We see it every new year: we make a
-      new year's resolution and say, "This year will be nothing like the last, I am going to do this and do that!" And
-      we do "this and that" very well for the first few months, but the time comes when we inevitably go back to our old
-      ways. We desire good in our minds, but we have not the strength in our flesh to carry it out; in our mind we want
-      to do good, but in our flesh, we don't do the good we want to do; we have good intentions, but the power of sin
-      carries us away. If we did everything we wanted to do every new year, as time went on, we would be made more and
-      more perfect, but in fact, we become more and more sinful, storing up wrongs and being wronged as a result; we
-      sin, piling up more and more transgression into our accounts, which is a debt against us, storing up God's wrath
-      for the day of wrath. For the more we toil, the more we sin; the harder we work, the more abominable we are; as
-      the LORD God says, “The more they multiplied, the more they sinned against Me; I will change their glory into
-      shame.” (Hosea 4:7) And who is omitted from such a thing? As it says,
+      how much worse is it in the eyes of a holy and living God? And it lives within us! It's a cancer that does not
+      submit to the control of the body - it spreads uncontrollably. It is without law; it does not obey anyone; it's a
+      hazard. This thing which is causing death within us needs to be put to death, for it is killing us. It masters
+      over us and never submits to our will; it enslaves us, making us its master; we follow behind sin in bonds; it is
+      hostile towards God; it's acts are prompts of war against God, provoking Him to anger; all it's thoughts: wicked;
+      it girds up it's loins to haste after evil; it has never submitted to the law of God, for it is not able to - and
+      never will be able to. It does not submit to our direction; it is an unruly animal within us. But surely, the
+      desire to do good is in our minds, but in our bodies, we don't do what we intend to do. We see it every new year:
+      we make a new year's resolution and say, "This year will be nothing like the last, I am going to do this and do
+      that!" And we do "this and that" very well for the first few months, but the time comes when we inevitably go back
+      to our old ways. We desire good in our minds, but we have not the strength in our flesh to carry it out; in our
+      mind we want to do good, but in our flesh, we don't do the good we want to do; we have good intentions, but the
+      power of sin carries us away. If we did everything we wanted to do every new year, as time went on, we would be
+      made more and more perfect, but in fact, we become more and more sinful, storing up wrongs and being wronged as a
+      result; we sin, piling up more and more transgression into our accounts, which is a debt against us, storing up
+      God's wrath for the day of wrath. For the more we toil, the more we sin; the harder we work, the more abominable
+      we are; as the LORD God says, “The more they multiplied, the more they sinned against Me; I will change their
+      glory into shame.” (Hosea 4:7) And who is omitted from such a thing? As it says,
       <blog-reference-tooltip [reference]="'Proverbs 20:9'">
         Who can say, "I have cleansed my heart, I am pure from my sin"?
       </blog-reference-tooltip>
@@ -167,13 +167,14 @@ import { SharedModule } from "../../../shared/shared.module";
       <br /><br />
 
       But someone may still say, "I am the product of my environment." But isn't righteousness stronger than wickedness,
-      just as the right hand is stronger than the left? So if you were righteous surely you could deliver yourself!
-      Furthermore, God created the world, and afterwards, “God saw all that He had made, and behold, it was very good.”
-      (Genesis 1:31) But in regard to humans it says, "Behold, I have found only this, that God made men upright, but
-      they have sought out many devices." (Ecclesiastes 7:29) So God has created the world good and man upright, but
-      mankind sought out evil. So the problem is with us. Yet someone may argue, "I am righteous, despite my
-      unrighteousness. Is not God faithful to forgive me?" However, it says, "Without the shedding of blood there is no
-      forgiveness." (Hebrews 9:22) And another may say, "I am good always." But what does the law say?
+      just as the right hand is stronger than the left? So if you were righteous surely you could deliver yourself from
+      your evil environment! Furthermore, God created the world, and afterwards, “God saw all that He had made, and
+      behold, it was very good.” (Genesis 1:31) But in regard to humans it says, "Behold, I have found only this, that
+      God made men upright, but they have sought out many devices." (Ecclesiastes 7:29) So God has created the world
+      good and man upright, but mankind sought out evil. So the problem is with us. Yet someone may argue, "I am
+      righteous, despite my unrighteousness. Is not God faithful to forgive me?" However, it says, "Without the shedding
+      of blood there is no forgiveness." (Hebrews 9:22) And another may say, "I am good always." But what does the law
+      say?
       <blog-reference-tooltip [reference]="'Exodus 22:2-3'">
         If the thief is caught while breaking in and is struck so that he dies, there will be no bloodguiltiness on his
         account. But if the sun has risen on him, there will be bloodguiltiness on his account.

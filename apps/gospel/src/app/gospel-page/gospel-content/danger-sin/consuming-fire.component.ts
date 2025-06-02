@@ -7,7 +7,7 @@ import { SharedModule } from "../../../shared/shared.module";
   imports: [CommonModule, SharedModule],
   template: `<ng-container *ngTemplateOutlet="aConsumingFire"></ng-container>
     <ng-template #aConsumingFire>
-      We are in a great debt and God's anger burns against sin, for it corrupts what He has created; as it says,
+      We are in a great debt, and God's anger burns against sin, for it corrupts what He has created; as it says,
       <blog-reference-tooltip [reference]="'Psalm 7:11'">
         God is a just judge, And God is angry with the wicked every day.
       </blog-reference-tooltip>
@@ -18,9 +18,9 @@ import { SharedModule } from "../../../shared/shared.module";
       And, “The boastful shall not stand before Your eyes; You hate all who do iniquity. You destroy those who speak
       falsehood; The LORD abhors the man of bloodshed and deceit.” (Psalms 5:5-6)
       <blog-reference-tooltip [reference]="'Hebrews 12:29'"> For our God is a consuming fire. </blog-reference-tooltip>
-      As Israel seen with their own eyes,
+      As Israel seen with their own eyes; as it is written,
       <blog-reference-tooltip [reference]="'Exodus 24:17'">
-        And to the eyes of the sons of Israel the appearance of the glory of the LORD was like a consuming fire on the
+        To the eyes of the sons of Israel the appearance of the glory of the LORD was like a consuming fire on the
         mountain top.
       </blog-reference-tooltip>
       Someone might say, "Isn't the devil fire, but not God?" But it is the devil that masquerades himself as an angel
@@ -52,6 +52,8 @@ import { SharedModule } from "../../../shared/shared.module";
       <blog-reference-tooltip [reference]="'Psalms 51:17'">
         The sacrifices of God are a broken spirit; A broken and a contrite heart, O God, You will not despise.
       </blog-reference-tooltip>
+      <br /><br />
+
       So lie not against the truth, but rather acknowledge your sins; humble yourself in the sight of the LORD, be poor
       and lowly and mourn and weep; tremble before the holy God. God loves truth, justice, and righteousness, and He
       hates evil, sin, and wrong-doing. He gives us His commands so that we would know what is good, and to walk in His
@@ -62,13 +64,13 @@ import { SharedModule } from "../../../shared/shared.module";
         The fear of the LORD is the beginning of wisdom.
       </blog-reference-tooltip>
       This is how we obtain wisdom, and this is how we perfect wisdom: by fearing God. The more we fear Him, the wiser
-      we become. If wisdom starts by the fear of the Lord, how much more is it perfected by the fear of the Lord? The
+      we are. If wisdom starts by the fear of the Lord, how much more is it perfected by the fear of the Lord? The
       wisest thing we can do is fear God; and the wisest thing to do: get wisdom. Revere Him like you would a Father or
       a King, for He is the Father of fathers and the King of kings; He is the Ancient one, who establishes kingdoms and
-      overthrows them. The one who does not fear God is foolish, for only a fool destroys himself. The left hand is the
-      weaker of the two hands, so strive for what is right; as light is better than darkness, so wisdom is better than
-      folly. The one who is wise has eyes in his head; he sees and walks in the day-time; a man who walks in darkness,
-      does not know where he is going; such a one does not know his way back to the city, for the eye of his
+      overthrows them. And the one who does not fear God is foolish, for only a fool destroys himself. The left hand is
+      the weaker of the two hands, so strive for what is right; as light is better than darkness, so wisdom is better
+      than folly. The one who is wise has eyes in his head; he sees and walks in the day-time; a man who walks in
+      darkness, does not know where he is going; such a one does not know his way back to the city, for the eye of his
       understanding is darkened. Therefore, fear not the devil, nor demons, nor principalities, nor powers - instead
       fear God. All things come from the Lord - the good and the calamity; as it says,
       <blog-reference-tooltip [reference]="'Job 2:10'">
@@ -90,29 +92,31 @@ import { SharedModule } from "../../../shared/shared.module";
       The LORD God is the First and the Last; He has no beginning nor end; He is the Beginning and the End; He lives
       from everlasting to everlasting; all things He has created. He alone has power to take up the sword and destroy,
       yet He gives life and relents in destruction; He is patient with the wicked everyday. He sets all things upright
-      and gives all a habitation to live; He gives fish to the sea, birds to the air, and animals to the land. He
-      created them and gives them their food; He doesn't create so they would be in want, but everything He established,
-      even from the beginning, so that everything would be nurtured by Him and depend on Him, so that nothing would
-      exist apart from Him. If He does this with the animals, how much more we humans? Are we not more precious than
-      many animals? Can anything breathe without Him? As it says, “If He should determine to do so, If He should gather
-      to Himself His spirit and His breath, All flesh would perish together, And man would return to dust.” (Job
-      34:14-15) He created once by wisdom, and all things have been established through wisdom, yet all things we
-      presently see are passing away; and they will eventually come to an end. The end has been mentioned from the
-      beginning; all ages have spoken about the end in times past; however,
+      and gives every living thing a habitation to live; He gives fish to the sea, birds to the air, and animals to the
+      land. He created them and gives them their food; He doesn't create so they would be in want, but everything He
+      established, even from the beginning, so that everything would be nurtured by Him and dependent on Him, so that
+      nothing would exist apart from Him. If He does this with the animals, how much more we humans? Are we not more
+      precious than many animals? Can anything breathe without Him? As it says, “If He should determine to do so, If He
+      should gather to Himself His spirit and His breath, All flesh would perish together, And man would return to
+      dust.” (Job 34:14-15) He created once by wisdom, and all things have been established through wisdom, yet all
+      things we presently see are passing away; and they will eventually come to an end. The end has been mentioned from
+      the beginning; all ages have spoken about the end in times past; yet it is delayed. However,
       <blog-reference-tooltip [reference]="'2 Peter 3:9'">
         The Lord is not slow about His promise, as some count slowness, but is patient toward you, not wishing for any
         to perish but for all to come to repentance.
       </blog-reference-tooltip>
-      So God has shown us grace; He has given us time that we would repent: and His goodness leads us to repentance. God
-      is not taught good, He is Good; God is not taught love, He is Love; God is not taught anything, for He knows all
-      things and all things come into being by Him. He is served by no-one, as if He needed anything, but He gives life
-      and breath to all. He has power and authority; and He does what He pleases, yet He chooses good. He is Good, and
-      outside of Him there is no goodness; and in Him there is the fullness of all goodness. Love abounds in Him, for He
-      alone is Love. With love is jealousy; and God's jealousy is a fire; as it says,
+      So God has shown us grace; He has given us time that we would repent: and His goodness leads us to repentance.
+      <br /><br />
+
+      God is not taught good, He is Good; God is not taught love, He is Love; God is not taught anything, for He knows
+      all things and all things come into being by Him. He is served by no-one, as if He needed anything, but He gives
+      life and breath to all. He has power and authority; and He does what He pleases, yet He chooses good. He is Good,
+      and outside of Him there is no goodness; and in Him there is the fullness of all goodness. Love abounds in Him,
+      for He alone is Love. With love is jealousy; and God's jealousy is a fire; as it says,
       <blog-reference-tooltip [reference]="'Exodus 34:14'">
         For you shall worship no other god, for the LORD, whose name is Jealous, is a jealous God.
       </blog-reference-tooltip>
-      And,
+      And it says,
       <blog-reference-tooltip [reference]="'Deuteronomy 4:24'">
         For the Lord your God is a consuming fire, a jealous God.
       </blog-reference-tooltip>
@@ -144,31 +148,30 @@ import { SharedModule } from "../../../shared/shared.module";
       <blog-reference-tooltip [reference]="'Proverbs 27:4'">
         Wrath is fierce and anger is a flood, But who can stand before jealousy?
       </blog-reference-tooltip>
-      Furthermore, using another human example: a father has a child and if the child continually plays with dangerous
-      things like snakes and knives; the father will discipline his child and start to hate the snakes and knives which
-      cause his child's harm. Is the discipline done because the father hates his child? Of course not! In fact, the
-      discipline is proof that he loves his child and the father considers him his own. If the father did not discipline
-      his child, then the would be considered illegitimate by him. Does not discipline purge to even the inmost folly?
-      As it says,
+      Using another human example: a father has a child and if the child continually plays with dangerous things like
+      snakes and knives; the father will discipline his child and start to hate the snakes and knives which cause his
+      child's harm. Is the discipline done because the father hates his child? Of course not! In fact, the discipline is
+      proof that he loves his child and the father considers him his own. If the father did not discipline his child,
+      then the would be considered illegitimate by him. Does not discipline purge to even the inmost folly? As it says,
       <blog-reference-tooltip [reference]="'Proverbs 22:15'">
         Foolishness is bound up in the heart of a child; The rod of discipline will remove it far from him.
       </blog-reference-tooltip>
       Discipline will not kill a child, but an undisciplined life will; saying, “Do not hold back discipline from the
       child, Although you strike him with the rod, he will not die. You shall strike him with the rod And rescue his
       soul from Sheol.” (Proverbs 23:13-14) So every loving father disciplines his child, and the father's hatred comes
-      from his love for his child. Likewise, the LORD God, the Creator of us all, hates sin because He loves us, for sin
-      harms you and others. What shall we say then, does God love me by hating me? By no means! He is the First and the
-      Last and He has our end in mind - and we only see what's immediatly before us. As it says, “But when we are
-      judged, we are disciplined by the Lord so that we will not be condemned along with the world.” (1 Corinthians
-      11:32) As He says,
+      from his love for his child. In a similar way, the LORD God, the Creator of us all, hates sin because He loves us,
+      for sin harms us. What shall we say then, "Does God love me by hating me?" By no means! He is the First and the
+      Last, so He has our end in mind - and we only see what's immediately before us. As it says, “When we are judged,
+      we are disciplined by the Lord so that we will not be condemned along with the world.” (1 Corinthians 11:32) As He
+      says,
       <blog-reference-tooltip [reference]="'Revelation 3:19'" [isJesusWord]="true">
         Those whom I love, I reprove and discipline; therefore be zealous and repent.
       </blog-reference-tooltip>
-      Similarily, one who loves children will hate abortion; a man who loves truth hates lies. And the LORD God is
-      Jealous; if we put anything else first in our lives above Him, tremble. Is anything greater than Him? Even if we
+      Similarily, one who loves children will hate abortion; and a man who loves truth hates lies. And the LORD God is
+      Jealous; if we put anything else first in our lives above Him: tremble. Is anything greater than Him? Even if we
       esteem something highly, isn't He higher still? “Or do we provoke the Lord to jealousy? We are not stronger than
-      He, are we?” (1 Corinthians 10:22) For He is the creator of all things. Are not all things given from His hand?
-      Will we love the things created more than the Creator? He loves us greatly; and can't it be terrifying? As He
+      He, are we?” (1 Corinthians 10:22) For He is the creator of all things. Aren't all things given from His hand?
+      Will we love the things created more than the Creator? For He loves us greatly; and can't it be terrifying? As He
       says,
       <blog-reference-tooltip [reference]="'Deuteronomy 32:21'">
         They have made Me jealous with what is not God; They have provoked Me to anger with their idols. So I will make
@@ -183,12 +186,13 @@ import { SharedModule } from "../../../shared/shared.module";
         that he was jealous
         <b>with My jealousy among them, so that I did not destroy the sons of Israel in My jealousy.</b>
       </blog-reference-tooltip>
-      And Jehu, who smote these false gods in the land of Israel with the jealousy of the Most High and with the zeal of
-      God, he was God's chosen instrument for this very purpose (2 Kings 9-10). Therefore, fear the LORD! Does not man
-      fear fire? He respects its power, not feeding it too much wood, not getting too close. How much more should we
-      fear God who is Creator of all? He is creator of the burning fire of the sun, Himself being a consuming fire! How
-      much less should we stoke the fire of God's fierce jealousy with idolitry? How much more should we stand at a
-      distance, make petitions from afar, hearing Him through another? Yes; as it says,
+      Furthermore, Jehu smote these false gods in the land of Israel with the jealousy of the Most High and with the
+      zeal of God, for he was God's chosen instrument for this very purpose (2 Kings 9-10). These men are examples of
+      God's fierce jealousy. Therefore, fear the LORD! For does not a man fear fire? He respects its power, not feeding
+      it too much wood, not getting too close. How much more should we fear God who is Creator of all? He is creator of
+      the burning fire of the sun, Himself being a consuming fire! How much less should we stoke the fire of God's
+      fierce jealousy with idolatry? How much more should we stand at a distance and make petitions from afar, hearing
+      Him through another? Yes; as it says,
       <blog-reference-tooltip [reference]="'Exodus 20:18-20'">
         All the people perceived the thunder and the lightning flashes and the sound of the trumpet and the mountain
         smoking; and when the people saw, they trembled and stood at a distance. Then they said to Moses, "Speak to us
@@ -205,9 +209,9 @@ import { SharedModule } from "../../../shared/shared.module";
         slaughter.
       </blog-reference-tooltip>
       However in these last days, the true way to see God is being revealed: that is, to see God through faith. This
-      faith is sight through hearing, seeing Him with the eye of our understanding. All who see Him through faith will
-      live and not die, but the one who sees Him naturally dies. Thus we see why faith is necessary: because He is Holy.
-      But through this faith, we are washed, we are sanctified, we are justified.
+      faith is sight by hearing, seeing Him with the eye of our understanding. All who see Him through faith will live
+      and not die, but the one who sees Him naturally dies. Thus we see why faith is necessary: because He is Holy. But
+      through this faith, we are washed, we are sanctified, and we are justified.
       <!-- <br /><br />
 
         (If these things are review to you because you're a believer, feel free to go to
