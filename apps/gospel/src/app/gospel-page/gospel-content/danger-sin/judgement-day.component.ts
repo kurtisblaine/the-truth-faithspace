@@ -7,18 +7,15 @@ import { SharedModule } from "../../../shared/shared.module";
   imports: [CommonModule, SharedModule],
   template: `<ng-container *ngTemplateOutlet="dayOfJudgement"></ng-container>
     <ng-template #dayOfJudgement>
-      Just as there was a world-wide judgment in Noah's day, so there will be at the end of time. If that judgment came
-      with water, then how will it be in the end except with fire? For it will be like the time of Lot in Sodom, when
-      the Lord will come from the heavens; it will be like the days of Noah, when His judgement is revealed to the
-      world; as Peter says,
+      Just as there was a world-wide judgment in Noah's day, so there will be a judgement at the end of time. If that
+      judgment came with water, then how will it be in the end except with fire? For it will be like the time of Lot in
+      Sodom, when the Lord will come from the heavens; it will be like the days of Noah, when His judgement is revealed
+      to the world; as Peter says,
       <blog-reference-tooltip [reference]="'2 Peter 3:3-9'">
         For they (scoffers) deliberately overlook this fact, that the heavens existed long ago, and the earth was formed
         out of water and through water by the word of God, and that by means of these the world that then existed was
         deluged with water and perished. But by the same word the heavens and earth that now exist are stored up for
-        fire, being kept until the day of judgment and destruction of the ungodly. But do not overlook this one fact,
-        beloved, that with the Lord one day is as a thousand years, and a thousand years as one day. The Lord is not
-        slow to fulfill his promise as some count slowness, but is patient toward you, not wishing that any should
-        perish, but that all should reach repentance.
+        fire, being kept until the day of judgment and destruction of the ungodly.
       </blog-reference-tooltip>
       In that day, everything done in the body will need to be accounted for. God is just; and He is just such that He
       cannot let anyone go unpunished. Evil cannot persist, not even a single lie; as it says, “Truthful lips will be
@@ -28,14 +25,16 @@ import { SharedModule } from "../../../shared/shared.module";
         >I will discipline you, but with justice; I cannot let you go unpunished.</blog-reference-tooltip
       >
       If He let just one sin go unpunished, He wouldn't be good and just. It is a good thing to judge evil and a lie:
-      that's justice. When justice is not upheld people riot; it is evil not to judge wrong-doing, but it is right to
-      render justice. It is good to do justice and show no partiality; as it says,
+      for that's justice. When justice is not upheld, people riot; it is evil not to judge wrong-doing, but it is right
+      to render justice. It is good to do justice and show no partiality; as it says,
       <blog-reference-tooltip [reference]="'Ecclesiastes 8:11'">
         Because the sentence against an evil deed is not executed quickly, therefore the hearts of the sons of men among
         them are given fully to do evil.
       </blog-reference-tooltip>
+      <br /><br />
+
       The Lord God is Judge. And He will make all to rise from their grave, the living and the dead, and they will stand
-      before Him on that great and terrible day; as it says,
+      before Him on that great and terrible day; as it says about that day:
       <blog-reference-tooltip [reference]="'Zephaniah 1:15-18'">
         A day of wrath is that day, A day of trouble and distress, A day of destruction and desolation, A day of
         darkness and gloom, A day of clouds and thick darkness, A day of trumpet and battle cry Against the fortified
@@ -45,38 +44,40 @@ import { SharedModule } from "../../../shared/shared.module";
         earth will be devoured In the fire of His jealousy, For He will make a complete end, Indeed a terrifying one, Of
         all the inhabitants of the earth.
       </blog-reference-tooltip>
-      And,
+      And it says about that day:
       <blog-reference-tooltip [reference]="'Amos 5:18-20'">
         Alas, you who are longing for the day of the LORD, For what purpose will the day of the LORD be to you? It will
         be darkness and not light; As when a man flees from a lion And a bear meets him, Or goes home, leans his hand
         against the wall And a snake bites him. Will not the day of the LORD be darkness instead of light, Even gloom
         with no brightness in it?
       </blog-reference-tooltip>
-      For the dead who lived in death, it says, “The dead will not live, the departed spirits will not rise; Therefore
+      To the dead who lived in death, it says, “The dead will not live, the departed spirits will not rise; Therefore
       You have punished and destroyed them, And You have wiped out all remembrance of them.” (Isaiah 26:14) But for the
       dead who lived in life, it says, “Your dead will live; Their corpses will rise. You who lie in the dust, awake and
       shout for joy, For your dew is as the dew of the dawn, And the earth will give birth to the departed spirits.”
-      (Isaiah 26:19) All evil and all lies will be made right, and it is made right through judgment; wickedness is put
-      in it's proper place and judged as wrong; and righteousness will be exalted and rewarded in that day. When evil is
-      reprimanded, reproved, and rebuked it is made good through correction; and our God is a God of justice and
-      righteousness. Right now is the time to receive correction and forgiveness, but in that day, it will be a time for
-      judgment, for condemnation or reward.
+      (Isaiah 26:19) So God will cause both the righteous and the wicked to rise, but only the righteous will arise to
+      life. For all evil and all lies will be made right, and it is made right through judgment; all wickedness will be
+      put into it's proper place and judged as wrong; and righteousness will be exalted and rewarded in that day. When
+      evil is reprimanded, reproved, and rebuked, it is made good through correction; and our God is a God of justice
+      and righteousness. Right now is the time to receive correction and forgiveness, but in that day, it will be a time
+      for judgment, for condemnation or reward.
       <br /><br />
       <!-- <a href="https://thelightof.life/#/draw/re.webp" target="_blank"
           >Differences between reprimand, reproof, and rebuke.</a
         ><br /><br /> -->
 
       Judgement is not merely in word, but in action too; the result of judgment is either condemnation or praise; to
-      compress the lips is to allow evil to pass, to allow injustice to persist; if sin goes uncorrected, it is allowed
-      to live a little longer; in it's persistance, it corrupts much that is good. Don't we bury that which is unclean?
-      We don't expose our uncleanness, do we? The body has waste to it; we put that waste in dark places, for it is not
-      good to be seen; we gather it together and burn it with fire. And don't men bury their dead? So what do you
-      suppose God will do with the moral filth of the world when He sends forth His angels? Won't everything unclean be
-      cosigned to its proper place and burned with fire? If we do these things with that which is unclean to our eyes,
-      how much more will God with that which is abhorrent to His eyes? For men riot when justice is not upheld; when
-      someone who is supposed to be punished gets off free, men go out and riot against the judge and police; and they
-      say, "The police is no good! We want justice! They aren't upholding it!" So we know it's good to render justice,
-      for we ourselves want justice; however, when it comes to our wrongs, we want mercy; that is why it says,
+      compress the lips is to allow evil to pass, to allow injustice to persist; but God will reveal His righteous
+      judgement in that day. If sin goes uncorrected, it is allowed to live a little longer; in it's persistance, it
+      corrupts much that is good; but nevertheless, all sin has an end. Do we not bury that which is unclean? We don't
+      expose our uncleanness, do we? Our bodies have waste to it; and we put that waste in dark places, for it is not
+      good to be seen; we gather it together and burn it with fire or bury it. And don't men bury their dead? So what do
+      you suppose God will do with the moral filth of the world when He sends forth His angels? Won't everything unclean
+      be cosigned to its proper place and burned with fire? If we do these things with that which is unclean to our
+      eyes, how much more will God with that which is abhorrent to His eyes? For men riot when justice is not upheld:
+      when someone who is supposed to be punished gets off free, men go out and riot against the judge and police; and
+      they say, "The police are no good! We want justice! They aren't upholding it!" So we know it's good to render
+      justice, for we ourselves want justice; however, when it comes to our wrongs, we want mercy; that is why it says,
       <blog-reference-tooltip [reference]="'James 2:12-13'">
         So speak and so act as those who are to be judged by the law of liberty. For judgment will be merciless to one
         who has shown no mercy; mercy triumphs over judgment.
@@ -85,28 +86,32 @@ import { SharedModule } from "../../../shared/shared.module";
       to the one who shows mercy, they will be shown mercy. As it says, "For the day of the LORD draws near on all the
       nations. As you have done, it will be done to you. Your dealings will return on your own head. Because just as you
       drank on My holy mountain, All the nations will drink continually. They will drink and swallow And become as if
-      they had never existed.” (Obadiah 1:15-16) God is not like any judge on earth: He is perfect. He will reward all
-      with righteous judgment in that day when the judgment of God is revealed through the One He has appointed; He will
-      reward those who by persistence seek immortality, life and peace, looking for the hope of everlasting life; “but
-      to those who are selfishly ambitious and do not obey the truth, but obey unrighteousness, wrath and indignation.”
-      (Romans 2:8) And even the righteous will be scarcely saved; as it says,
+      they had never existed.” (Obadiah 1:15-16)
+      <br /><br />
+
+      God is not like any judge on earth: He is perfect. He will reward all with righteous judgment in that day when the
+      judgment of God is revealed through the One He has appointed; He will reward those who by persistence seek
+      immortality, life and peace, looking for the hope of everlasting life; “but to those who are selfishly ambitious
+      and do not obey the truth, but obey unrighteousness, wrath and indignation.” (Romans 2:8) Even the righteous will
+      be scarcely saved; as it says,
       <blog-reference-tooltip [reference]="'1 Peter 4:17-18'"
         >For it is time for judgment to begin at the household of God; and if it begins with us, what will be the
         outcome for those who do not obey the gospel of God? AND IF IT IS WITH DIFFICULTY THAT THE RIGHTEOUS IS SAVED,
         WHAT WILL BECOME OF THE GODLESS MAN AND THE SINNER?</blog-reference-tooltip
       >
-      If we cannot withstand the judgment of mere mortals, how can we withstand the judgment of the Almighty God? As it
-      says, “Behold, the day of the LORD is coming, Cruel, with fury and burning anger, To make the land a desolation;
-      And He will exterminate its sinners from it. For the stars of heaven and their constellations Will not flash forth
-      their light; The sun will be dark when it rises And the moon will not shed its light. Thus I will punish the world
-      for its evil And the wicked for their iniquity; I will also put an end to the arrogance of the proud And abase the
+      Someone might say, "Stop judging me!" Or, "Only God can judge me." But if we cannot withstand the judgment of mere
+      mortals, how can we withstand the judgment of the Almighty God? Is it not a terrifying thing? As it says, “Behold,
+      the day of the LORD is coming, Cruel, with fury and burning anger, To make the land a desolation; And He will
+      exterminate its sinners from it. For the stars of heaven and their constellations Will not flash forth their
+      light; The sun will be dark when it rises And the moon will not shed its light. Thus I will punish the world for
+      its evil And the wicked for their iniquity; I will also put an end to the arrogance of the proud And abase the
       haughtiness of the ruthless. I will make mortal man scarcer than pure gold And mankind than the gold of Ophir.
       Therefore I will make the heavens tremble, And the earth will be shaken from its place At the fury of the LORD of
       hosts In the day of His burning anger.” (Isaiah 13:9-13)<br /><br />
 
       So then, I ask, if we are sinful and God sees and hears everything, and He will not let anyone go unpunished, how
       then can anyone be saved? As the Scriptures say, "Few will be saved." But how is there few? Shouldn't there be
-      none? Furthermore He says,
+      none? As He says,
       <blog-reference-tooltip [reference]="'Matthew 7:13,14'" [isJesusWord]="true"
         >Enter by the narrow gate. For the gate is wide and the way is easy that leads to destruction, and those who
         enter by it are many. For the gate is narrow and the way is hard that leads to life, and those who find it are
@@ -114,19 +119,18 @@ import { SharedModule } from "../../../shared/shared.module";
       </blog-reference-tooltip>
       But then again, He says,
       <blog-reference-tooltip [reference]="'Matthew 19:23-30'" [isJesusWord]="true"
-        >Again I tell you, it is easier for a camel to go through the eye of a needle than for a rich person to enter
-        the kingdom of God. (...) With man this is impossible, but with God all things are possible.
+        >With man this is impossible, but with God all things are possible.
       </blog-reference-tooltip>
-      If there were no hope,
+      If there were no hope, then
       <blog-reference-tooltip [reference]="'Isaiah 22:13'"
         >Let us eat and drink, for tomorrow we die.</blog-reference-tooltip
       >
-      Isn't the danger evident? We're evil; God is Holy. What must we do to be saved from the wrath which is to come!
+      Isn't the danger evident? We're evil and God is Holy. What must we do to be saved from the wrath which is to come!
       <blog-reference-tooltip [reference]="'Romans 7:24'"
         >Wreched and miserable man that I am! Who will free me from this body of sin and death?</blog-reference-tooltip
       >
       Does someone need to send a rocket into space to find the cure to bring it down to us? Or does someone need to dig
-      into the center of the earth to reveal the mystery? Where is the knowledge of salvation? In who does it exist? As
+      into the center of the earth to reveal the mystery? Where is the knowledge of salvation? In whom does it exist? As
       Moses wrote in the Book of the law,
       <blog-reference-tooltip [reference]="'Deuteronomy 30:12-14'"
         >It (The command) is not in heaven, that you should say, ‘Who will ascend to heaven for us and bring it to us,
@@ -134,17 +138,18 @@ import { SharedModule } from "../../../shared/shared.module";
         us and bring it to us, that we may hear it and do it?’ But the word is very near you. It is in your mouth and in
         your heart, so that you can do it.</blog-reference-tooltip
       >
-      As it says, "So that you can do it." For the things which are impossible to us are possible with God. As He says,
-      "Behold, I am the LORD, the God of all flesh; is anything too difficult for Me?” (Jeremiah 32:27) And, “Thus says
-      the LORD of hosts, 'If it is too difficult in the sight of the remnant of this people in those days, will it also
-      be too difficult in My sight?' declares the LORD of hosts.” (Zechariah 8:6) For who has ascended? Or who has
-      descended? Salvation is not far away; as it says, “Rejoice greatly, O daughter of Zion! Shout in triumph, O
-      daughter of Jerusalem! Behold, your king is coming to you; He is just and endowed with salvation, Humble, and
-      mounted on a donkey, Even on a colt, the foal of a donkey.” (Zechariah 9:9) For it is God who descends, and it is
-      He who ascends. Man cannot save himself; as He says, "Or do you have an arm like God, And can you thunder with a
-      voice like His?” (Job 40:9) If so, "Then I will also confess to you, That your own right hand can save you.” (Job
-      40:14) Surely, we need a savior; surely, we need a rock. Can wealth save us? Can we gather up enough food for
-      ourselves to withstand the evil day? Surely, our best efforts are useless. Our motives are not right.
+      As it says, "So that you can do it." For the things which seem impossible to us are possible through God, so that
+      we can do it. As He says, "Behold, I am the LORD, the God of all flesh; is anything too difficult for Me?”
+      (Jeremiah 32:27) And, “Thus says the LORD of hosts, 'If it is too difficult in the sight of the remnant of this
+      people in those days, will it also be too difficult in My sight?' declares the LORD of hosts.” (Zechariah 8:6) For
+      who has ascended? Or who has descended? Salvation is not far away from any one of us; as it says, “Rejoice
+      greatly, O daughter of Zion! Shout in triumph, O daughter of Jerusalem!
+      <b>Behold, your king is coming to you; He is just and endowed with salvation,</b> Humble, and mounted on a donkey,
+      Even on a colt, the foal of a donkey.” (Zechariah 9:9) For it is God who descended, and it is He who ascended. For
+      man cannot save himself; as He says, "Or do you have an arm like God, And can you thunder with a voice like His?”
+      (Job 40:9) If so, "Then I will also confess to you, That your own right hand can save you.” (Job 40:14) So surely,
+      we need a savior; surely, we need a rock. Or can wealth save us? Can we gather up enough food for ourselves to
+      withstand the evil day? Surely, our best efforts are useless.
     </ng-template>`,
   styles: ``,
   changeDetection: ChangeDetectionStrategy.OnPush,
