@@ -19,7 +19,7 @@ import { SharedModule } from "../../../shared/shared.module";
       to sensuality, to the practice of every kind of impurity with greediness, for that is what we can feel; we are
       hardened by the unbelief of the world, and stimulated by the lust which is in the world. Isn't life supposed to be
       good? Isn't death bad? Yet our lives are not joyous, but they are like death. We don't know what life truly is -
-      if we seen it, we would not know what it is. Living for pleasure is not life; our trouble may be gone for a
+      if we seen it, we would say, "What was that?" Living for pleasure is not life; our trouble may be gone for a
       moment, but it is not gone forever; living for pleasure is like hitting the snooze button on an alarm clock - we
       may feel better now, but we will have to deal with the same problem later, but it has gotten worse. Even if we
       feel satisfied or fulfilled with these things, it is never enough; we are feeding a beast within us, the more we
@@ -56,34 +56,37 @@ import { SharedModule } from "../../../shared/shared.module";
       but outwardly we become less miserable, for these only mask our pain for a short while. In the beginning, we used
       to be happy, when sin wasn't alive, in the innocence of our childhood, but later, sin came alive and we died; sin
       put us to death, and it lives in our stead; we are dead in our sins, the whole lot of us. All of us have become
-      enslaved to our own desires which corrupt, for lust corrupts and twists and perverts what is good. Who is exempt
-      from this? None of us. We are all under the power of sin. Which of us does not stoop to deficate? Who is it born
-      without a mother? We are led by the hand of this world into a cycle of dependence upon material things; we think
-      we need these things to keep us in check; we say, "I don't feel normal without them." I testify about myself that
-      I've been chained by many sins and pleasures and vices for many years of my life, and looking back, surely it was
-      not life. Whatever a person is overcome by that he is also enslaved. And how weak are we when something inaminate
-      chains us! "I serve this and that, and I can't stop!" Whatever we offer ourselves to as obedient servants, by
-      that, we are enslaved. And I was enslaved to everything a man could be enslaved by: food, alcohol, drugs, money,
-      sex, and many others. These things are not alive, but somehow I was enslaved to them as if they were; they are not
-      gods at all, so why should I serve them? I must do for them, but what are they doing for me? I wouldn't call
-      myself a man, for I can't get out. I want out, but I can't escape; I am surely in a prison cell. I want to stop
-      sinning, but I can't; I want to be released, but I can't redeem myself. I am without power. Hope, I have none.
-      "Where is real pleasure and satisfaction?" And worse yet, I don't know how to utter it; for perhaps if I could
-      tell someone, they could help. But instead, guilt and shame keep me from sharing, as if I am the only one dealing
-      with such things without anyone to relate. Solomon, who had great wisdom from God, writes,
+      enslaved to our own desires which corrupt, for lust corrupts and twists and perverts what is good.
+      <br /><br />
+
+      And who is exempt from this? None of us. We are all under the power of sin. Which of us does not stoop to
+      deficate? Who is it born without a mother? We are led by the hand of this world into a cycle of dependence upon
+      material things; we think we need these things to keep us in check; we say, "I don't feel normal without them." I
+      testify about myself that I've been chained by many sins and pleasures and vices for many years of my life, and
+      looking back, surely it was not life. Whatever a person is overcome by, that he is also enslaved. And how weak are
+      we when something inaminate chains us! "I serve this and that, and I can't stop!" Whatever we offer ourselves to
+      as obedient servants, by that, we are enslaved. And I was enslaved to everything a man could be enslaved by: food,
+      alcohol, drugs, money, sex, and many others. These things are not alive, but somehow I was enslaved to them as if
+      they were; they are not gods at all, so why should I serve them? I must do for them, but what are they doing for
+      me? I wouldn't call myself a man, for I can't get out. I want out, but I can't escape; I am surely in a prison
+      cell. I want to stop sinning, but I can't; I want to be released, but I can't redeem myself. I am without power;
+      hope, I have none. "Where is real pleasure and satisfaction?" And worse yet, I don't know how to utter it; for
+      perhaps if I could tell someone, they could help. But instead, guilt and shame keep me from sharing, as if I am
+      the only one dealing with such things without anyone to relate; just as Solomon, who had great wisdom from God,
+      writes,
       <blog-reference-tooltip [reference]="'Ecclesiastes 1:8'">
         All things are full of weariness; <b>a man cannot utter it</b>; the eye is not satisfied with seeing, nor the
         ear filled with hearing.
       </blog-reference-tooltip>
-      And so it is with me, full of weariness and I couldn't utter it. If only I could say,
+      And so it is with me, I am full of weariness and I couldn't utter it. If only I could say,
       <blog-reference-tooltip [reference]="'Job 33:27'">
         I have sinned and perverted what is right, And it is not proper for me.
       </blog-reference-tooltip>
       So then I could say, "He has redeemed my soul from going to the pit, And my life shall see the light." (Job 33:28)
-      However I am mute, unable to speak.
+      However I am mute; I am unable to speak.
       <br /><br />
 
-      Solomon in his wisdom searched out pleasure, and said,
+      Solomon, still using his wisdom, searched out pleasure, and said:
       <blog-reference-tooltip [reference]="'Ecclesiastes 2:1-11'">
         I said in my heart, “Come now, I will test you with pleasure; enjoy yourself.” But behold, this also was vanity.
         I said of laughter, “It is mad,” and of pleasure, “What use is it?” I searched with my heart how to cheer my
@@ -94,46 +97,46 @@ import { SharedModule } from "../../../shared/shared.module";
         in doing it, and behold, all was vanity and a striving after wind, and there was nothing to be gained under the
         sun.
       </blog-reference-tooltip>
-      As Solomon said, "My heart still guiding me with wisdom", for wisdom is insight, speaking the things which are
-      from within with the correct words; and Solomon's words are surely insightful, but wisdom originates from God.
-      Every sinful habit originates with lust, and lust entices the eyes. As he says, "And whatever my eyes desired I
-      did not keep from them." All sin begins here, and the end: as it says, "And behold, all was vanity and a striving
-      after wind." So by the things of this world, no man will be satisfied. Even by images, which are copies, men have
-      tried to find satisfaction. But if we aren't satisfied with the real thing, then why would we be with an image?
-      But rather, images stimulate more lust, for an image makes itself greater than reality which it is portraying. And
-      how computers stimulate desire through pictures! It is satisfying while on it, but afterwards it's like waking
-      from a sleep. We live in an age where media screens are everywhere: it started with televisions in the living
-      room, then escalated to monitors in the pocket. Surely these feed our eyes. This is what I meant when I said, "We
-      are led by the hand of this world", for who creates advertisements? Who makes ready the fulfillment of our lusts?
-      But still, the desire belongs to us and we will be the ones who suffer for indulging it. We should not long for
-      the things of the world, but the One who gives all good things is God. Do you want further proof that we are
-      dissatisfied and do not know it? A computer can create entire simulations for living a new life inside. If life
-      were so good, then why does this exist? Can a copy ever be as good as the real? Which do you like better: name
-      brand goods or knock offs? Yes, knock offs are cheaper and require less of us, but they are not better, even in
-      the slightest. In the same way, these simulations are cheaper: you can sit on the couch and be at a sports game!
-      But it is certainly not better. So lust shows itself as something great, but it is lesser; it corrupts the natural
-      into something seemingly greater and fulfills the desire with the real, not with what it is portraying. Desire is
-      like an advertisement image: and does the image ever portray true reality? The artist makes it better than reality
-      by skill, but it is not the true norm. And these images are fantasy, imagination, from one's mind - and so is
-      lust. Lustful desire is not reality; when something is desired, it is made great in one's mind, but it remains the
-      same in reality. On the television screen men can put their imaginations on it so that you can say, "It must be,
-      for I have seen it!" But it is not, it is trickery. It is merely an image someone made in their mind, in their
-      imagination, making it visible for you to see; for it is what they want you to see and what they don't want you to
-      see; and these images, which are from imaginations, entice lustful desire in those who see them. For why would
-      someone make an image unless it is to be gazed at? So much so, covetousness is called idolitry; covetousness is
-      lust. Furthermore, it says, “The devising of folly is sin.” (Proverbs 24:9) This is why covetousness is condemned
-      by the law.
+      As Solomon said, "My heart still guiding me with wisdom", for wisdom guided him into all these things; and he
+      spoke all these things so that we wouldn't have to pierce ourselves with these sorrows. Solomon's words are surely
+      insightful. Wisdom originates from God; but every sinful habit originates with lust; and lust entices the eyes. As
+      he says, "And whatever my eyes desired I did not keep from them." All sin begins here. And the end: as it says,
+      "And behold, all was vanity and a striving after wind." So by the things of this world, no man will be satisfied.
+      Even by images, which are copies, men have tried to find satisfaction. But if we aren't satisfied with the real
+      thing, then why would we be with an image? For an image is a copy. But rather, images stimulate more lust, for an
+      image makes itself greater than reality which it is portraying. And how computers stimulate desire through
+      pictures! It is satisfying while on it, but afterwards it's like waking up from a sleep. We live in an age where
+      media screens are everywhere: it started with televisions in the living room, then escalated to monitors in the
+      pocket. Surely these feed our eyes. This is what I meant when I said, "We are led by the hand of this world", for
+      who creates advertisements? Who makes ready the fulfillment of our lusts? But still, the desire belongs to us, and
+      we will be the ones who suffer for indulging it. We should not long for the things of the world, but the One who
+      gives all good things is God.
       <br /><br />
 
-      The natural use is better than the unnatural, the real is better than the copy, good is better than evil, even in
-      the meanwhile you think, "Ah! But it feels so good"; in the end you will not be thinking that! Everything we sow,
-      we will also reap. A person does not sow an apple and get an orange tree, neither does a person breed pigs and get
-      cows, so why do you think, "I will sow corruption and get life"? Lust sowed reaps corruption; and righteousness
-      sowed reaps blessing. Everything corrupts through lust; and lust conceived gives birth to sin. All sin is
-      dysfunctional; and a dysfunction is useless. And that which is useless is put into a pit and awaits burning. A new
-      sofa will become fettered, a new car will become a tin of rust, even our bodies are becoming old and gray and worn
-      out: it will be soon in the grave. Evil will inherit evil and goodness will inherit goodness. This is true, even
-      if in the meantime we see the wicked prospering and the righteous suffering; as it says,
+      Do you want further proof that we are dissatisfied and do not know it? A computer can create entire simulations
+      for living a new life inside. If life were so good, then why does this exist? Can a copy ever be as good as the
+      real? Which do you like better: name brand goods or knock offs? Yes, knock offs are cheaper and require less of
+      us, but they are not better, even in the slightest. In the same way, these simulations are cheaper: you can sit on
+      the couch and be at a sports game! But it is certainly not better. So lust shows itself as something great, but it
+      is less; it corrupts the natural into something seemingly greater and fulfills the desire with reality, not with
+      what it is portraying. Desire is like an advertisement image: and does the image ever portray true reality? The
+      artist makes it better than reality by skill, but it is not the true norm. And these images are fantasy,
+      imagination, from one's mind - and so is lust. Lustful desire is not reality; for when something is desired, it is
+      made great in one's mind, but it remains the same in reality. On the television screen men can put their
+      imaginations on it so that you can say, "It must be, for I have seen it!" But it is not, it is trickery. It is
+      merely an image someone made in their mind, in their imagination, making it visible for you to see; for it is what
+      they want you to see and what they don't want you to see; and these images, which are from imaginations, entice
+      lustful desire in those who see them. For why would someone make an image unless it is to be gazed at?
+      (Covetousness is called idolatry; and covetousness is lust. And covetousness is condemned by the law.) The natural
+      use is better than the unnatural, the real is better than the copy, good is better than evil, even in the
+      meanwhile, if you think, "Ah! But it feels so good!" In the end you will not be thinking that! Everything we sow,
+      we will also reap. A person does not sow an apple and get an orange tree, does he? Neither does a person breed
+      pigs and get cows. So why do you think, "I will sow corruption and get life"? Lust sowed reaps corruption;
+      righteousness sowed reaps blessing; and lust conceived gives birth to sin. All sin is dysfunctional; and a
+      dysfunction is useless. And that which is useless is put into a pit and awaits burning. A new sofa will become
+      fettered, a new car will become a tin of rust, even our bodies are becoming old and gray and worn out: it will be
+      soon in the grave. Evil will inherit evil and goodness will inherit goodness in the end. This is true, even if in
+      the meantime we see the wicked prospering and the righteous suffering; as it says,
       <blog-reference-tooltip [reference]="'Ecclesiastes 7:15'">
         I have seen everything during my lifetime of futility; there is a righteous man who perishes in his
         righteousness and there is a wicked man who prolongs his life in his wickedness.
@@ -149,8 +152,8 @@ import { SharedModule } from "../../../shared/shared.module";
         I said to myself, "God will judge both the righteous man and the wicked man," for a time for every matter and
         for every deed is there.
       </blog-reference-tooltip>
-      Everyone will get what their deeds deserve in the end because God will cause His righteous judgment to be upheld.
-      So take heed! It says,
+      So everyone will get what their deeds deserve in the end because God will cause His righteous judgment to be
+      upheld. So take heed! As it says,
       <blog-reference-tooltip [reference]="'1 Timothy 5:6'">
         She who lives in pleasure is dead while she lives.
       </blog-reference-tooltip>
@@ -161,13 +164,11 @@ import { SharedModule } from "../../../shared/shared.module";
         merry, and this will stand by him in his toils throughout the days of his life which God has given him under the
         sun.
       </blog-reference-tooltip>
-      And it says,
+      And then it says,
       <blog-reference-tooltip [reference]="'Ecclesiastes 3:12-13'">
         I know that there is nothing better for them than to rejoice and to do good in one's lifetime; moreover, that
         every man who eats and drinks sees good in all his labor - it is the gift of God.
       </blog-reference-tooltip>
-      Therefore, seek what pleases God, for then you will be blessed; and where the blessing is, there is also happiness
-      and futility is no more, for labor in the Lord is not in vain!
       <!-- <br /><br />
 
         (If these things are review to you because you're already a believer, feel free to go to
