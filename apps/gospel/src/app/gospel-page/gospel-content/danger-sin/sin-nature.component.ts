@@ -179,7 +179,7 @@ import { SharedModule } from "../../../shared/shared.module";
         If the thief is caught while breaking in and is struck so that he dies, there will be no bloodguiltiness on his
         account. But if the sun has risen on him, there will be bloodguiltiness on his account.
       </blog-reference-tooltip>
-      For the theif tried to hide his crime under the cover of darkness, so his punishment is more severe. Is that not
+      For the thief tried to hide his crime under the cover of darkness, so his punishment is more severe. Is that not
       what you do when you say, "I have not sinned"? Saying to yourself, "I have peace though I walk in the stubbornness
       of my heart in order to destroy the watered with the dry." (Deuteronomy 29:19) Will that person, even if hidden
       from the eyes of man for a time, escape the light of the day of the coming of the Lord Almighty? The moon sets and

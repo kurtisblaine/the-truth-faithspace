@@ -67,7 +67,7 @@ import { SharedModule } from "../../../shared/shared.module";
         has a man from all the toil and striving of heart with which he toils beneath the sun? For all his days are full
         of sorrow, and his work is a vexation. Even in the night his heart does not rest. This also is vanity.
       </blog-reference-tooltip>
-      But what is futility? Futility is worthlessness, emptiness, aimlessness, not having a point or direction,
+      But what even is vanity? Futility is worthlessness, emptiness, aimlessness, not having a point or direction,
       wandering about in blackest darkness. It does not see; it is always doing much, but it is accomplishing very
       little; it is speaking much, but getting nothing done; it is dreaming, but living as a passing shadow. What then,
       do we despair? But isn't that vain as well, a work of the wind? Why despair when there is hope.
@@ -98,7 +98,10 @@ import { SharedModule } from "../../../shared/shared.module";
       And it says, “Is it not indeed from the LORD of hosts That peoples toil for fire, And nations grow weary for
       nothing?” (Habakkuk 2:13) Who are we to quarrel with our Maker? If we dare speak to Him, will He be compelled to
       answer? But if He calls to us, we must answer Him. As it says, “But the LORD is in His holy temple. Let all the
-      earth be silent before Him." (Habakkuk 2:20) Who can take God to court? Who can accuse Him? But rather, it says,
+      earth be silent before Him." (Habakkuk 2:20) Who can take God to court? Or who can accuse Him?
+      <br /><br />
+
+      But rather, it says,
       <blog-reference-tooltip [reference]="'Ecclesiastes 2:24-26'">
         There is nothing better for a man than to eat and drink and tell himself that his labor is good. This also I
         have seen that it is from the hand of God. For who can eat and who can have enjoyment without Him? For to a
@@ -112,9 +115,10 @@ import { SharedModule } from "../../../shared/shared.module";
       </blog-reference-tooltip>
       Therefore, it is better to accept your lot in life and be happy with it. Search and seek for Him; acknowledge your
       futility and search and seek for fullness in God, not in the things of the world. For if the things of the world
-      were pleasing to us, then we wouldn't be seeking for anything more. Will that which has no breath at all inside it
-      satisfy us? But much greater is God who gives all good things by which all things came into being! And the Lord
-      has promised,
+      were pleasing to us, then we wouldn't be seeking for anything more. Will that which has no breath satisfy us? And
+      if we think that which breathes will satisfy us, won't it one day cease breathing? But much greater is God who
+      gives all good things by which all things came into being! He lives and does not cease living. And the Lord has
+      promised,
       <blog-reference-tooltip [reference]="'Jeremiah 29:13'">
         You will seek Me and find Me when you search for Me with all your heart.
       </blog-reference-tooltip>
