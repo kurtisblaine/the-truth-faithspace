@@ -1,7 +1,19 @@
-import { Location } from "@angular/common";
-import { AfterViewInit, ChangeDetectionStrategy, Component, OnDestroy, OnInit, signal, ViewChild } from "@angular/core";
+import { isPlatformBrowser, Location } from "@angular/common";
+import {
+  AfterViewInit,
+  ChangeDetectionStrategy,
+  Component,
+  Inject,
+  isDevMode,
+  OnDestroy,
+  OnInit,
+  PLATFORM_ID,
+  signal,
+  ViewChild,
+} from "@angular/core";
 import { ActivatedRoute } from "@angular/router";
 import { FullpageDirective } from "@fullpage/angular-fullpage";
+import { isScullyGenerated } from "@scullyio/ng-lib";
 import { fullpageApi, fullpageOptions, Item, Trigger } from "fullpage.js/dist/fullpage.extensions.min";
 import { DeviceDetectorService } from "ngx-device-detector";
 import { distinctUntilChanged, filter, Subscription } from "rxjs";
@@ -13,7 +25,7 @@ type TItem = { isActive: boolean } & Item;
   standalone: false,
   templateUrl: "./gospel-page.component.html",
   styleUrl: "./gospel-page.component.scss",
-  changeDetection: ChangeDetectionStrategy.Default,
+  changeDetection: ChangeDetectionStrategy.Default, //requires 'Default' so the audio player buttons will reset.
 })
 export class GospelPageComponent implements OnInit, AfterViewInit, OnDestroy {
   public config: fullpageOptions;
@@ -27,7 +39,8 @@ export class GospelPageComponent implements OnInit, AfterViewInit, OnDestroy {
   constructor(
     private route: ActivatedRoute,
     private location: Location,
-    private deviceDetector: DeviceDetectorService
+    private deviceDetector: DeviceDetectorService,
+    @Inject(PLATFORM_ID) private platformId: Object
   ) {}
 
   ngOnInit() {
@@ -51,7 +64,7 @@ export class GospelPageComponent implements OnInit, AfterViewInit, OnDestroy {
       loopHorizontal: false,
       loopBottom: false,
       loopTop: false,
-      credits: { enabled: true, label: "Blessings to you in the Lord.", position: "left" },
+      credits: { enabled: true, label: "Blessings to you.", position: "left" },
     };
   }
 
@@ -77,6 +90,10 @@ export class GospelPageComponent implements OnInit, AfterViewInit, OnDestroy {
   ngOnDestroy(): void {
     this.fullpageApi.destroy("all");
     this.routeSubscription.unsubscribe();
+  }
+
+  public shouldInitFullpage() {
+    return isDevMode() || (isPlatformBrowser(this.platformId) && isScullyGenerated());
   }
 
   public toAnchor(sectionId: string, slideId: string = "") {

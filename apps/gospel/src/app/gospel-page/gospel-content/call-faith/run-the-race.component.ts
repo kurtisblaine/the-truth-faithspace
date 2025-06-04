@@ -67,18 +67,20 @@ import { SharedModule } from "../../../shared/shared.module";
         the race marked out for us, fixing our eyes on Jesus, the pioneer and perfecter of faith.
       </blog-reference-tooltip>
       As it says, "fixing our eyes on Jesus", but Jesus is unseen, so it is, we fix our eyes on Jesus by faith; and this
-      is the race we run: the race of faith. For disciple means "disciplined one", and we are called disciples of
-      Christ; self-discipline is a fruit of the Holy Spirit, and discipline is needed for running the race. Any
-      discipline that does not come from the Holy Spirit is not truly self-discipline. When I was in the military, they
-      told me I would have self-discipline, but what I found was the military disciplined me, and my discipline did not
-      come from myself; therefore, it was not self-discipline. In fact, when I got out of the military, I did all the
-      things I could not do while I was in the military, but to a greater degree. For I desired to do them while in, but
-      I couldn't - and this is yet another form of slavery. I didn't do according to my desires, but I willed to do so.
-      Is this any different from willing to do good, but not having the ability? In both cases, the willing is present
-      but the doing is not - but still, sin is slavery regardless. So I found that the discipline they tried to inflict
-      upon me, actually made me worse; for the things they tried to inflict upon me was according to the strength of
-      human flesh, and it had a reverse effect upon me - for it strengthened my sinful flesh. But thank God, He gives us
-      the Holy Spirit that we may overcome ourselves, that is, our flesh! As the warning to Abel says,
+      is the race we run: the race of faith. Just as it says about Moses, “He endured, as seeing Him who is unseen.”
+      (Hebrews 11:27) For it is by faith that he seen Him who is unseen. Disciple means "disciplined one", and we are
+      called disciples of Christ; self-discipline is a fruit of the Holy Spirit, and discipline is needed for running
+      the race. Any discipline that does not come from the Holy Spirit is not truly self-discipline. When I was in the
+      military, they told me I would have self-discipline, but what I found was the military disciplined me, and my
+      discipline did not come from myself; therefore, it was not self-discipline. In fact, when I got out of the
+      military, I did all the things I could not do while I was in the military, but to a greater degree. For I desired
+      to do them while in, but I couldn't - and this is yet another form of slavery. I didn't do according to my
+      desires, but I willed to do so. Is this any different from willing to do good, but not having the ability? In both
+      cases, the willing is present but the doing is not - but still, sin is slavery regardless. So I found that the
+      discipline they tried to inflict upon me, actually made me worse; for the things they tried to inflict upon me was
+      according to the strength of human flesh, and it had a reverse effect upon me - for it strengthened my sinful
+      flesh. But thank God, He gives us the Holy Spirit that we may overcome ourselves, that is, our flesh! As the
+      warning to Abel says,
       <blog-reference-tooltip [reference]="'Genesis 4:7'">
         If you do well, will not your countenance be lifted up? And if you do not do well, sin is crouching at the door;
         and its desire is for you, <b>but you must master it.</b>
