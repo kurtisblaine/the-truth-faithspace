@@ -101,12 +101,16 @@ import { SharedModule } from "../../../shared/shared.module";
       believe in, except the testimony about God?" And without question, God's actions in Christ speak louder than many
       words; but by His grace, even His words are preserved for us. And I thank God for that. Therefore, seek the
       knowledge of God. Or, as it says, "My people are destroyed for lack of knowledge." (Hosea 4:6) But we who have
-      believed, have been saved by the knowledge of God. For God desires that “all men to be saved and to come to the
-      knowledge of the truth.” (1 Timothy 2:4) Faith is simple - a child can do it. Believing is following - just as a
-      son follows his father and imitates what he sees his father doing; so likewise, those of us who have seen God,
-      imitate Him - that's what it means to know Him, to be a son of God, and to be born of Him. A man is a hypocrite
-      when he is godless in heart; although appearing godly outwardly, he's godless. A hypocrite is only an actor, a
-      contradiction, but God knows the truth, for He sees man as he is.
+      believed, have been saved by the knowledge of God; as Christ says,
+      <blog-reference-tooltip [reference]="'John 17:3'" [isJesusWord]="true">
+        This is eternal life, that they may know You, the only true God, and Jesus Christ whom You have sent.
+      </blog-reference-tooltip>
+      For God desires that “all men to be saved and to come to the knowledge of the truth.” (1 Timothy 2:4) Faith is
+      simple - a child can do it. Believing is following - just as a son follows his father and imitates what he sees
+      his father doing; so likewise, those of us who have seen God, imitate Him - that's what it means to know Him, to
+      be a son of God, and to be born of Him. A man is a hypocrite when he is godless in heart; although appearing godly
+      outwardly, he's godless. A hypocrite is only an actor, a contradiction, but God knows the truth, for He sees man
+      as he is.
     </ng-template>`,
   styles: ``,
   changeDetection: ChangeDetectionStrategy.OnPush,
