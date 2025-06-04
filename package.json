@@ -2,6 +2,7 @@
   "name": "the-truth-faithspace",
   "version": "0.0.0",
   "license": "MIT",
+  "private": true,
   "scripts": {
     "ng": "npx nx",
     "start": "npx nx serve",
@@ -20,9 +21,10 @@
     "firebase:serve": "npx nx build gospel --prod --output-path apps/gospel/public && firebase serve --only hosting",
     "firebase:deploy": "npx nx build gospel --prod --output-path apps/gospel/public && firebase deploy",
     "example:config:peer": "npm config set legacy-peer-deps true",
-    "example:install:optional": "npm install --include=optional"
+    "example:install:optional": "npm install --include=optional",
+    "scully": "npx scully",
+    "scully:serve": "npx scully serve"
   },
-  "private": true,
   "dependencies": {
     "@angular/animations": "19.0.6",
     "@angular/cdk": "19.0.5",
@@ -81,6 +83,7 @@
     "@nx/workspace": "20.3.3",
     "@schematics/angular": "19.0.7",
     "@scullyio/init": "^2.1.41",
+    "@scullyio/scully-plugin-puppeteer": "^2.1.41",
     "@swc-node/register": "1.9.2",
     "@swc/core": "1.5.7",
     "@types/express": "4.17.14",

@@ -31,11 +31,11 @@ export class PsalmListComponent implements OnInit {
       })
     );
 
-    // this.router.navigateByUrl("psalms");
+    // this.router.navigateByUrl("poems");
   }
 
   public navigate(blog) {
-    this.router.navigateByUrl("psalm-detail/" + blog.id, {
+    this.router.navigateByUrl("poem-detail/" + blog.id, {
       state: { blog },
     });
   }

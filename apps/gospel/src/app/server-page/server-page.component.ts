@@ -70,7 +70,7 @@ export class ServerPageComponent implements OnInit {
       })
     );
 
-    this.router.navigateByUrl("psalms");
+    this.router.navigateByUrl("poems");
   }
 
   public saveBlog() {
