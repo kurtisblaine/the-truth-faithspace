@@ -132,6 +132,11 @@ button[mat-button] {
   min-height: 400px;
 }
 
+.casting-crowns-image {
+  background-image: url("https://res.cloudinary.com/dffihsa2y/image/upload/img/06_Elders_Casting_Crowns_d9q1kf.jpg");
+  min-height: 400px;
+}
+
 .new-jerusalem-image,
 .holy-image,
 .rent-image,
@@ -151,6 +156,7 @@ button[mat-button] {
 .lion-image,
 .bush-image,
 .new-earth-image,
+.casting-crowns-image,
 .samson-image {
   position: relative;
   background-position: center;

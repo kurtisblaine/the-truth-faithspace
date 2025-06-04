@@ -12,10 +12,10 @@ import { PsalmListComponent } from "./psalm-list/psalm-list.component";
 import { PsalmPageComponent } from "./psalm-page.component";
 const routes: Routes = [
   {
-    path: "psalms",
+    path: "poems",
     component: PsalmPageComponent,
   },
-  { path: "psalm-detail/:id", component: PsalmDetailComponent },
+  { path: "poem-detail/:id", component: PsalmDetailComponent },
 ];
 @NgModule({
   declarations: [PsalmPageComponent, PsalmListComponent, PsalmDetailComponent],

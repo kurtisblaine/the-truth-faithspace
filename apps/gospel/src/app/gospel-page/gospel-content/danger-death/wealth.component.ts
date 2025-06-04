@@ -86,18 +86,18 @@ import { SharedModule } from "../../../shared/shared.module";
       As he says, "He should cease trying forever", for that which is costly is freely given by God, humiliating the
       rich. For God is gracious, even giving freely what is most costly; He who owns everything and gives to everyone,
       breath and life and all things, also continues in His giving with the most precious, which is beyond price. So God
-      gives freely to the praise of His glory, and the rich hold fast to riches to the pain of his own folly, for
-      amassing riches brings pain onto oneself; and trusting in them is a futile attempt for safety. Or can a dead image
-      of a king on a coin or an inscription on a bill deliver? If you put a torch to it, it can't even save itself! And
-      when the king was alive, he couldn't save himself, otherwise he wouldn't have died; how much less can his picture
-      save you now when he is in the realm of the dead?
+      gives freely to the praise of His glory, and the rich hold fast to riches to the pain of flesh, for amassing
+      riches brings pain onto oneself; and trusting in them is a futile attempt for safety. Or can a dead image of a
+      king on a coin or an inscription on a bill deliver? If you put a torch to it, it can't even save itself! And when
+      the king was alive, he couldn't save himself, otherwise he wouldn't have died; how much less can his picture save
+      now when he is in the realm of the dead?
       <br /><br />
 
       So what good comes from riches? There is much in every way, for “Wealth adds many friends, But a poor man is
       separated from his friend.” (Proverbs 19:4) But then it says, “When good things increase, those who consume them
       increase. So what is the advantage to their owners except to look on?” (Ecclesiastes 5:11) So wealth is good to
       make friends, but it is not a trustworthy servant and it is not worthy of our affections. For many pierce
-      themselves with many sins and sorrows chasing after weath in the love of money; as it says,
+      themselves with many sins and sorrows chasing after wealth in the love of money; as it says,
       <!-- <blog-reference-tooltip [reference]="'Jeremiah 17:11'">
         Like the partridge that gathers a brood that she did not hatch, so is he who gets riches but not by justice; in
         the midst of his days they will leave him, and at his end he will be a fool.
@@ -145,7 +145,7 @@ import { SharedModule } from "../../../shared/shared.module";
       >
       For when an animal offering was made, the fat of the offering was burnt up to God, so the fat is the LORD's. And
       what we have in excess is fat. Judge for yourselves: is it good to see the poor suffering while indulging
-      yourself? See the parable and fear:
+      yourself? See this parable and fear:
       <blog-reference-tooltip [reference]="'Luke 16:20-31'" [isJesusWord]="true">
         And a poor man named Lazarus was laid at his gate, covered with sores, and longing to be fed with the crumbs
         which were falling from the rich man's table; besides, even the dogs were coming and licking his sores. Now the
@@ -163,9 +163,9 @@ import { SharedModule } from "../../../shared/shared.module";
         persuaded even if someone rises from the dead.' </blog-reference-tooltip
       ><br /><br />
 
-      So what do you think God is asking from you? That you be hard pressed and another be eased? Of course not! But
-      rather in view of the graciousness of God: if you have more than enough, give to the one who lacks, and so by
-      doing you will store up for yourselves
+      What do you think God is asking from you? That you be hard pressed and another be eased? Of course not! But rather
+      in view of the graciousness of God: if you have more than enough, give to the one who lacks, and so by doing you
+      will store up for yourselves
       <blog-reference-tooltip [reference]="'Matthew 6:20-21'" [isJesusWord]="true">
         treasures in heaven, where neither moth nor rust destroys, and where thieves do not break in or steal; for where
         your treasure is, there your heart will be also.

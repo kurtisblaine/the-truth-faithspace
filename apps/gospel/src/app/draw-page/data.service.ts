@@ -46,7 +46,6 @@ export class DataService {
        watching in prayer for His coming and against the enemy of darkness.`,
       footer: "Be of the Day, a child of the Light, servants of the Lord...",
       fileName: "daynight.webp",
-
       originUrl: "https://res.cloudinary.com/dffihsa2y/image/upload/v1711590187/teach/daynight_yob9oh.webp",
     });
 
@@ -81,7 +80,6 @@ export class DataService {
       Going from what is made with human hands, to that which is made not with hands; Going from what pleases men, to what pleases God.`,
       footer: "Moving away from earthly things to heavenly things...",
       fileName: "sanctification.webp",
-
       originUrl: "https://res.cloudinary.com/dffihsa2y/image/upload/v1711590244/teach/sanctification_jjdelm.webp",
     });
 
@@ -166,7 +164,6 @@ export class DataService {
       These represent Jesus, who God gave up for the sins of the world, because of His great love for us, giving up His beloved Son whom He loves.`,
       footer: "Similarities between Isaac and Benjamin prophesying about Jesus...",
       fileName: "Jesuslionlamb.webp",
-
       originUrl: "https://res.cloudinary.com/dffihsa2y/image/upload/v1711590217/teach/Jesuslionlamb_y91dzk.webp",
     });
 
@@ -197,7 +194,6 @@ export class DataService {
       Unless you believe Jesus is He, you will die in your sins. Jesus is Lord and the Powerful one able to save.`,
       footer: "The response to the Gospel to all who have heard and believed unto new life...",
       fileName: "repentandbelieve.webp",
-
       originUrl: "https://res.cloudinary.com/dffihsa2y/image/upload/v1711590234/teach/repentandbelieve_nq987c.webp",
       video: "Jl7k4Iu9mKs",
     });
@@ -208,7 +204,6 @@ export class DataService {
       description: `The race is from start to finish by faith. We race for the eternal crown of life.`,
       footer: "To live the life of faith, is to be like an athlete, running a race...",
       fileName: "runtherace.webp",
-
       originUrl: "https://res.cloudinary.com/dffihsa2y/image/upload/v1711590238/teach/runtherace_pnfqmo.webp",
     });
 
@@ -221,7 +216,6 @@ export class DataService {
       Enter into covenant with God through His oath.`,
       footer: "The law revealed the coinscience through the written code, grace & truth revealed in Christ...",
       fileName: "grace&truth.webp",
-
       originUrl: "https://res.cloudinary.com/dffihsa2y/image/upload/v1711735327/teach/grace_truth_loj0u0.webp",
     });
 
@@ -234,7 +228,6 @@ export class DataService {
       Everything about the law is physical; however, the Spirit trumps over the flesh. Our bodies are the temples where the Holy Spirit resides.`,
       footer: "How the world worships God in the ways He does not desire, but how we're called to worship...",
       fileName: "TrueWorship.webp",
-
       originUrl: "https://res.cloudinary.com/dffihsa2y/image/upload/v1711735327/teach/TrueWorship_prs84a.webp",
     });
 
@@ -270,7 +263,6 @@ export class DataService {
       Jesus Christ is the Rock. We believe in Him and also follow after Him: following Him is doing the things He did when He was on earth - He is the Example, He is the Way.`,
       footer: "How do you know if you're well built, only by testing...",
       fileName: "buildingontheRock.webp",
-
       originUrl: "https://res.cloudinary.com/dffihsa2y/image/upload/v1711590180/teach/buildingontheRock_mxzsvs.webp",
     });
 
@@ -333,7 +325,6 @@ export class DataService {
       This so called wisdom is folly.`,
       footer: "The day of the Lord vs the night of the thief...",
       fileName: "dayoftheLord.webp",
-
       originUrl: "https://res.cloudinary.com/dffihsa2y/image/upload/v1711590189/teach/dayoftheLord_a7yocn.webp",
     });
 
@@ -351,7 +342,6 @@ export class DataService {
       `,
       footer: "Death must work in us, so that His life will also be revealed in us...",
       fileName: "deathandlife.webp",
-
       originUrl: "https://res.cloudinary.com/dffihsa2y/image/upload/v1711590191/teach/deathandlife_gcfidy.webp",
     });
 
@@ -377,7 +367,6 @@ export class DataService {
       He is the eldest, yet He is the firstborn, for He existed from the beginning. He is the complete Word: the Alpha and the Omega.`,
       footer: "Jesus was Servant of all & now, is First in heaven: Lord of Lords and King of Kings...",
       fileName: "firstandlast.webp",
-
       originUrl: "https://res.cloudinary.com/dffihsa2y/image/upload/v1711590199/teach/firstandlast_qvzmdt.webp",
     });
 
@@ -387,7 +376,6 @@ export class DataService {
     //   footer:
     //     "There is sin of the flesh & also of the soul, which contains the mind...",
     //   fileName: "flesh.webp",
-
     //   originUrl: "https://res.cloudinary.com/dffihsa2y/image/upload/v1711590202/teach/flesh_izazns.webp",
     // });
 
@@ -397,7 +385,6 @@ export class DataService {
       description: `Jesus is the first to rise from the dead as first fruits to God. At the fullness of the feast of trumpets, all the godly saints will rise from the dead.`,
       footer: "All things created by Him and for Him (see the First & Last teaching)...",
       fileName: "harvest.webp",
-
       originUrl: "https://res.cloudinary.com/dffihsa2y/image/upload/v1711590208/teach/harvest_tncb4h.webp",
     });
 
@@ -409,7 +396,6 @@ export class DataService {
       Solomon, who was filled with wisdom, built the temple; and Bazadel and Oholiab were filled with the Spirit to build the Tabernacle.`,
       footer: "We can see teachings & parables through the creation of the Tabernacle...",
       fileName: "israelitecamp.webp",
-
       originUrl: "https://res.cloudinary.com/dffihsa2y/image/upload/v1711590211/teach/israelitecamp_iuepsc.webp",
     });
 
@@ -421,7 +407,6 @@ export class DataService {
       There are two judgements just as there are two resurrections.`,
       footer: "Two judgements of the righteous and the wicked, two resurrections...",
       fileName: "judgementday.webp",
-
       originUrl: "https://res.cloudinary.com/dffihsa2y/image/upload/v1711590223/teach/judgementday_pfgryw.webp",
     });
 
@@ -435,7 +420,6 @@ export class DataService {
       I would consider Bondage and Slavery, the rocky soil, which the birds ate, since oppression comes from the evil one.`,
       footer: "Which land are you currently residing in (only four options)...",
       fileName: "land.webp",
-
       originUrl: "https://res.cloudinary.com/dffihsa2y/image/upload/v1711590225/teach/land_wvithb.webp",
     });
 
@@ -445,7 +429,6 @@ export class DataService {
       description: `There is one God and one Mediator between God and man: Christ Jesus.`,
       footer: "One God all in all...",
       fileName: "oneGod.webp",
-
       originUrl: "https://res.cloudinary.com/dffihsa2y/image/upload/v1711590229/teach/oneGod_vv0hh8.webp",
     });
 
@@ -457,7 +440,6 @@ export class DataService {
       Jesus mentioned, "Baptized with Spirit and Fire..." This is the harvesting to eternal life and suffering.`,
       footer: "The seed must first be planted on fertile soil then by a miracle of God...",
       fileName: "salvation.webp",
-
       originUrl: "https://res.cloudinary.com/dffihsa2y/image/upload/v1711590242/teach/salvation_piunap.webp",
     });
 
@@ -467,7 +449,6 @@ export class DataService {
       description: `There are trustworthy saying Paul gave Timothy and Titus; also there are commands he charged them with.`,
       footer: "In the personal letters to Titus and Timothy, Paul gives sayings and commands...",
       fileName: "sayingsandcommands.webp",
-
       originUrl: "https://res.cloudinary.com/dffihsa2y/image/upload/v1711590247/teach/sayingsandcommands_xuhgyh.webp",
     });
 
@@ -480,7 +461,6 @@ export class DataService {
       We're all born into sin through Adam; but in Christ, we've been made new. Cross over into life through Jesus Christ.`,
       footer: "We are in the middle of a battle of two opposite wills, natures, and kingdoms...",
       fileName: "sinvswillofGod.webp",
-
       originUrl: "https://res.cloudinary.com/dffihsa2y/image/upload/v1711590252/teach/sinvswillofGod_qwzj8a.webp",
     });
 
@@ -543,7 +523,6 @@ export class DataService {
       We, the church, are brought forth out of Christ's broken body as His body; just as Eve was created out of Adam's body and is his body.`,
       footer: "We are one with Christ as Eve was one with Adam...",
       fileName: "thechurch.webp",
-
       originUrl: "https://res.cloudinary.com/dffihsa2y/image/upload/v1711590268/teach/thechurch_n6uhvl.webp",
     });
 
@@ -556,7 +535,6 @@ export class DataService {
       Surely, we obey the law, but only can we through Jesus Christ and the new creation.`,
       footer: "Those who do what is right have no need to fear the authorities...",
       fileName: "theLaw.webp",
-
       originUrl: "https://res.cloudinary.com/dffihsa2y/image/upload/v1711590271/teach/theLaw_xtsiev.webp",
     });
 
@@ -569,7 +547,6 @@ export class DataService {
       Walking is living step by step, running is the same thing, but with eagarness.`,
       footer: "What are we rushing for will reveal what we are eagar for...",
       fileName: "theway.webp",
-
       originUrl: "https://res.cloudinary.com/dffihsa2y/image/upload/v1711590274/teach/theway_hywb5a.webp",
     });
 
@@ -582,7 +559,6 @@ export class DataService {
       A thief only feels shame when he gets caught! Be a bandit, and be primed for Christ Jesus!`,
       footer: "Some wear their sin on the inside and others on the outside, yet all are with sin...",
       fileName: "thievesbandits.webp",
-
       originUrl: "https://res.cloudinary.com/dffihsa2y/image/upload/v1711590277/teach/thievesbandits_ybigmc.webp",
     });
 
@@ -593,7 +569,6 @@ export class DataService {
       He loves truth and mercy and humility. He looks at the heart; and He sees the heart is decietfully wicked always.`,
       footer: "What the Most High detests and what is a delight to Him...",
       fileName: "detestvsdelight.webp",
-
       originUrl: "https://res.cloudinary.com/dffihsa2y/image/upload/v1711735328/teach/detestvsdelight_h4xby0.webp",
     });
 
@@ -606,7 +581,6 @@ export class DataService {
       How great is He! How much greater is He whom He testified to, "For the Father is greater than I" who no man has seen at anytime except the Son who has revealed Him to us.`,
       footer: "Revelation about the Father, Son, and the Spirit.. how we worship one God.",
       fileName: "theFatherSonSpirit.webp",
-
       originUrl: "https://res.cloudinary.com/dffihsa2y/image/upload/v1711735327/teach/theFatherSonSpirit_cv11oq.webp",
     });
 
@@ -619,7 +593,6 @@ export class DataService {
       Our prayers are to the Father.`,
       footer: "Scripture gathering of the Father and the Son...",
       fileName: "theFather&theSon.webp",
-
       originUrl: "https://res.cloudinary.com/dffihsa2y/image/upload/v1711735329/teach/theFather_theSon_d2ax76.webp",
     });
 

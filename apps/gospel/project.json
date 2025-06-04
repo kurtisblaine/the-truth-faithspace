@@ -12,7 +12,7 @@
       "options": {
         "preserveSymlinks": true,
         "aot": true,
-        "outputPath": "dist/apps/gospel/browser",
+        "outputPath": "apps/gospel/public",
         "index": "apps/gospel/src/index.html",
         "main": "apps/gospel/src/main.ts",
         "polyfills": "apps/gospel/src/polyfills.ts",
@@ -122,20 +122,6 @@
         }
       },
       "defaultConfiguration": "production"
-    },
-    "serve-ssr": {
-      "executor": "@angular-devkit/build-angular:ssr-dev-server",
-      "configurations": {
-        "development": {
-          "browserTarget": "gospel:build:development",
-          "serverTarget": "gospel:server:development"
-        },
-        "production": {
-          "browserTarget": "gospel:build:production",
-          "serverTarget": "gospel:server:production"
-        }
-      },
-      "defaultConfiguration": "development"
     },
     "prerender": {
       "executor": "@angular-devkit/build-angular:prerender",

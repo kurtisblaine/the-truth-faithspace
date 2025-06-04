@@ -150,7 +150,7 @@ export class AppComponent implements OnInit {
   }
 
   public goPsalm() {
-    this.router.navigateByUrl("psalms").then(() => {
+    this.router.navigateByUrl("poems").then(() => {
       this.emitScrollEvent();
     });
   }
