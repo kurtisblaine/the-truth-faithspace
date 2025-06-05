@@ -5,7 +5,7 @@ import { MatRippleModule } from "@angular/material/core";
 import { MatGridListModule } from "@angular/material/grid-list";
 import { Router } from "@angular/router";
 import { Store } from "@ngrx/store";
-import * as _ from "lodash-es";
+import { flatMap } from "lodash-es";
 import { SharedLibraryModule } from "shared";
 import { selectLanguage } from "../../+state/bibles/bibles.actions";
 import { Bible, ScriptDirection, SortedBibles } from "../../models/bibles";
@@ -25,13 +25,13 @@ export class LanguageItemComponent {
   public rtl: ScriptDirection = "RTL";
 
   public getCountries(sortedBibles: Bible[]) {
-    const flattened = _.flatMap(sortedBibles, (g) => g.countries);
+    const flattened = flatMap(sortedBibles, (g) => g.countries);
     const dedupped = [...new Set(flattened.map((f) => f.name))];
     return dedupped.join(", ");
   }
 
   public getScripts(sortedBibles: Bible[]) {
-    const flattened = _.flatMap(sortedBibles, (g) => g.language);
+    const flattened = flatMap(sortedBibles, (g) => g.language);
     const dedupped = [...new Set(flattened.map((f) => f.script))];
     return dedupped.join(", ");
   }

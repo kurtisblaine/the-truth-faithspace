@@ -1,5 +1,5 @@
 import { createFeatureSelector, createSelector } from "@ngrx/store";
-import * as _ from "lodash-es";
+import { flatMap } from "lodash-es";
 import { Script, SortedBibles } from "../../models/bibles";
 import { BIBLES_FEATURE_KEY, BiblesState, biblesAdapter } from "./bibles.reducer";
 
@@ -31,7 +31,7 @@ export const selectTranslationEntity = createSelector(selectAllBibles, selectTra
 );
 
 export const selectAllCountries = createSelector(selectAllBibles, (bibles) => {
-  const allCountries = _.flatMap(bibles, (book) => book.countries);
+  const allCountries = flatMap(bibles, (book) => book.countries);
   return [...new Set(allCountries.map((c) => c.name))];
 });
 

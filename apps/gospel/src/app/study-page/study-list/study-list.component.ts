@@ -1,7 +1,7 @@
 import { ChangeDetectionStrategy, Component, Input, OnInit } from "@angular/core";
 import { Router } from "@angular/router";
 import { Store } from "@ngrx/store";
-import * as lodash from "lodash-es";
+import { cloneDeep } from "lodash-es";
 import { map, Observable } from "rxjs";
 import { StudyActions } from "../../state/study/study.actions";
 import { StudyEntity } from "../../state/study/study.model";
@@ -22,7 +22,7 @@ export class StudyListComponent implements OnInit {
   constructor(private store: Store, private router: Router) {}
 
   ngOnInit(): void {
-    this.studies$ = this.store.select(getAllStudy).pipe(map((studies) => lodash.cloneDeep(studies)));
+    this.studies$ = this.store.select(getAllStudy).pipe(map((studies) => cloneDeep(studies)));
   }
 
   public doUpdate(study: StudyEntity) {
