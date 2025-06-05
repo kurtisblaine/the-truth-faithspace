@@ -1,7 +1,7 @@
 import { inject, Injectable, OnDestroy } from "@angular/core";
 import { MatSnackBar } from "@angular/material/snack-bar";
-import { Guid } from "guid-typescript";
 import { BehaviorSubject } from "rxjs";
+import { v4 } from "uuid";
 
 export enum SpeechStatus {
   Stopped = "Stopped",
@@ -42,7 +42,7 @@ export class SpeechService implements OnDestroy {
   }
 
   init() {
-    const id = Guid.create().toString();
+    const id = v4().toString();
     const state = new BehaviorSubject<SpeechStatus>(SpeechStatus.Stopped);
     this.allStates.set(id, state);
     return { id, state: state.asObservable() };
