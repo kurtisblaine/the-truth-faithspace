@@ -25,7 +25,8 @@
     "example:config:peer": "npm config set legacy-peer-deps true",
     "example:install:optional": "npm install --include=optional",
     "scully:build": "npx scully build --project static-gospel",
-    "scully:serve": "npx scully serve --project static-gospel"
+    "scully:serve": "npx scully serve --project static-gospel",
+    "analyze:gospel": "nx build gospel --stats-json --named-chunks && npx -y @angular-experts/hawkeye ./apps/gospel/public/stats.json"
   },
   "dependencies": {
     "@angular/animations": "20.0.0",
@@ -70,6 +71,7 @@
     "@angular-eslint/eslint-plugin": "19.7.1",
     "@angular-eslint/eslint-plugin-template": "19.7.1",
     "@angular-eslint/template-parser": "19.7.1",
+    "@angular-experts/hawkeye": "^1.7.2",
     "@angular/cli": "20.0.0",
     "@angular/compiler-cli": "20.0.0",
     "@angular/language-service": "20.0.0",
