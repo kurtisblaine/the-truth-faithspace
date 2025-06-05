@@ -120,9 +120,10 @@ import { SharedModule } from "../../../shared/shared.module";
       even the disobedient and unthankful (Luke 6:35); He dwells in heaven, but all that is on earth is given to the
       sons of men, even so, He does not withhold that which is most precious, which is eternal, which is stored up in
       heaven; this is evident in that He causes the rain to pour down from heaven onto all flesh, the unjust and the
-      just alike. And if it is so with rain, how much more with spiritual blessings? So who do we really hurt by being
-      rich towards ourselves? If we give, it is to the benefit of others; if we withhold, it is to the hurt of others;
-      and even so, we hurry along the judgment of God.
+      just alike. And if it is so with rain, how much more with spiritual blessings? As it says, "It is time to seek the
+      LORD Until He comes to rain righteousness on you.” (Hosea 10:12) So who do we really hurt by being rich towards
+      ourselves? If we give, it is to the benefit of others; if we withhold, it is to the hurt of others; and even so,
+      we hurry along the judgment of God.
       <blog-reference-tooltip [reference]="'James 5:3-5'">
         Your gold and silver have corroded, and their corrosion will be evidence against you and will eat your flesh
         like fire. You have laid up treasure in the last days. Behold, the wages of the laborers who mowed your fields,
