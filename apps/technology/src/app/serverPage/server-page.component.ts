@@ -1,7 +1,7 @@
 import { ChangeDetectionStrategy, Component } from "@angular/core";
 import { Router } from "@angular/router";
 import { Store } from "@ngrx/store";
-import { Guid } from "guid-typescript";
+import { v4 } from "uuid";
 import { ItemsActions } from "../+state/items/items.actions";
 import { ItemEntity } from "../+state/items/items.reducer";
 @Component({
@@ -46,7 +46,7 @@ export class ServerPageComponent {
           title: this.title,
           json: this._document,
           date: Date.now().toString(),
-          id: Guid.create().toString(),
+          id: v4().toString(),
         },
       })
     );

@@ -26,7 +26,7 @@
         ],
         "sourceMap": true,
         "namedChunks": true,
-        "allowedCommonJsDependencies": ["guid-typescript", "photoswipe", "photoswipe/dist/photoswipe-ui-default"]
+        "allowedCommonJsDependencies": ["photoswipe", "photoswipe/dist/photoswipe-ui-default"]
       },
       "configurations": {
         "production": {

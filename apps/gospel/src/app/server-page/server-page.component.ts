@@ -1,7 +1,7 @@
 import { Component, OnInit } from "@angular/core";
 import { Router } from "@angular/router";
 import { Store } from "@ngrx/store";
-import { Guid } from "guid-typescript";
+import { v4 } from "uuid";
 import { createBlog, loadBlogs } from "../state/blog/blog.actions";
 import { createDiscern, loadDiscernments } from "../state/discern/discern.actions";
 import { createInsight, loadInsights } from "../state/insight/insights.actions";
@@ -35,7 +35,7 @@ export class ServerPageComponent implements OnInit {
           title: this.title,
           json: this._document,
           date: Date.now().toString(),
-          id: Guid.create().toString(),
+          id: v4().toString(),
         },
       })
     );
@@ -50,7 +50,7 @@ export class ServerPageComponent implements OnInit {
           title: this.title,
           json: this._document,
           date: Date.now().toString(),
-          id: Guid.create().toString(),
+          id: v4().toString(),
         },
       })
     );
@@ -65,7 +65,7 @@ export class ServerPageComponent implements OnInit {
           title: this.title,
           json: this._document,
           date: Date.now().toString(),
-          id: Guid.create().toString(),
+          id: v4().toString(),
         },
       })
     );
@@ -80,7 +80,7 @@ export class ServerPageComponent implements OnInit {
           title: this.title,
           json: this._document,
           date: Date.now().toString(),
-          id: Guid.create().toString(),
+          id: v4().toString(),
         },
       })
     );
@@ -95,7 +95,7 @@ export class ServerPageComponent implements OnInit {
           title: this.title,
           json: this._document,
           date: Date.now().toString(),
-          id: Guid.create().toString(),
+          id: v4().toString(),
         },
       })
     );
