@@ -6,7 +6,6 @@
   "hosting": {
     "public": "static",
     "trailingSlash": false,
-    "cleanUrls": true,
     "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
     "rewrites": [
       {
