@@ -8,7 +8,6 @@ import { RouterModule, Routes } from "@angular/router";
 import { AngularFullpageModule } from "@fullpage/angular-fullpage";
 import { SharedLibraryModule } from "shared";
 import { SharedModule } from "../shared/shared.module";
-import { GospelComponent } from "./_legacy-gospel-page/gospel.component";
 import { AbideComponent } from "./gospel-content/call-faith/abide.component";
 import { BornAgainComponent } from "./gospel-content/call-faith/born-again.component";
 import { ClearConscienceComponent } from "./gospel-content/call-faith/clear-conscience.component";
@@ -102,13 +101,7 @@ const hopeLifeComponents = [
 ];
 
 @NgModule({
-  declarations: [
-    GospelComponent,
-    GospelItemComponent,
-    GospelSectionComponent,
-    GospelHeaderComponent,
-    GospelPageComponent,
-  ],
+  declarations: [GospelItemComponent, GospelSectionComponent, GospelHeaderComponent, GospelPageComponent],
   imports: [
     CommonModule,
     SharedModule,

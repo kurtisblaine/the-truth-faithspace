@@ -56,7 +56,7 @@ const routes: Routes = [
         allowPanToNext: true,
         closeOnVerticalDrag: true,
         shareEl: false,
-        maxSpreadZoom: 100,
+        maxSpreadZoom: 20,
         escKey: true,
         errorMsg: "We could not load the picture",
       },
