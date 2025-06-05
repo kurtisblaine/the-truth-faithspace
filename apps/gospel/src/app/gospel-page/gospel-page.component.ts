@@ -53,6 +53,7 @@ export class GospelPageComponent implements OnInit, AfterViewInit, OnDestroy {
       slidesNavigation: true,
       slidesNavPosition: "bottom",
       recordHistory: true,
+      lazyLoading: true,
 
       afterLoad: this.afterPageLoad.bind(this),
       afterSlideLoad: this.afterSlideLoad.bind(this),
@@ -64,7 +65,7 @@ export class GospelPageComponent implements OnInit, AfterViewInit, OnDestroy {
       loopHorizontal: false,
       loopBottom: false,
       loopTop: false,
-      credits: { enabled: true, label: "Amen.", position: "left" },
+      credits: { enabled: true, label: "God bless you.", position: "left" },
     };
   }
 
@@ -82,9 +83,9 @@ export class GospelPageComponent implements OnInit, AfterViewInit, OnDestroy {
       });
 
     this.isMobile.set(this.deviceDetector.isMobile());
-    if (this.isMobile()) {
-      this.fullpageApi.setResponsive(true);
-    }
+    // if (this.isMobile()) {
+    //   this.fullpageApi.setResponsive(true);
+    // }
   }
 
   ngOnDestroy(): void {

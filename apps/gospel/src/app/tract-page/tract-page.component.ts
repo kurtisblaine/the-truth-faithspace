@@ -1,4 +1,5 @@
 import { Component } from "@angular/core";
+import { Meta, Title } from "@angular/platform-browser";
 import { Router } from "@angular/router";
 
 @Component({
@@ -8,7 +9,8 @@ import { Router } from "@angular/router";
   standalone: false,
 })
 export class TractPageComponent {
-  constructor(private router: Router) {}
+  constructor(private router: Router, private meta: Meta, private title: Title) {}
+
   openLink(link: string) {
     window.open(link, "_blank");
   }
