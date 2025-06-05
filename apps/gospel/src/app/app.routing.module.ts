@@ -66,12 +66,6 @@ const routes: Routes = [
     }),
   ],
   exports: [RouterModule],
-  providers: [
-    provideRouter(
-      routes
-
-      // withHashLocation()
-    ),
-  ],
+  providers: [provideRouter(routes)],
 })
 export class AppRoutingModule {}
