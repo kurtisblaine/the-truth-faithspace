@@ -1,7 +1,8 @@
 @use "@angular/material" as mat;
 @use "sass:map";
 
-@import url(~fullpage.js/dist/fullpage.min.css);
+@import "../../../node_modules/fullpage.js/dist/fullpage.min.css";
+
 #fp-nav ul li a span,
 .fp-slidesNav ul li a span {
   background: white;
