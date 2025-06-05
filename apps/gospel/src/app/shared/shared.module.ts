@@ -10,7 +10,6 @@ import { AudioPlayComponent } from "./components/audio-play/audio-play.component
 import { LinkComponent } from "./components/link-redirect/link.component";
 import { NagivationHeaderComponent } from "./components/navigation-header/nagivation-header.component";
 import { ReferenceTooltipComponent } from "./components/reference-tooltip/reference-tooltip.component";
-import { ScriptService } from "./service/script.service";
 
 @NgModule({
   declarations: [ReferenceTooltipComponent, AudioPlayComponent, NagivationHeaderComponent, LinkComponent],
@@ -24,7 +23,6 @@ import { ScriptService } from "./service/script.service";
     ReactiveFormsModule,
     MatTooltipModule,
   ],
-  providers: [ScriptService],
   exports: [ReferenceTooltipComponent, AudioPlayComponent, NagivationHeaderComponent, LinkComponent],
 })
 export class SharedModule {}
