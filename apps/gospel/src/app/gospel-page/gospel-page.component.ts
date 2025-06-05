@@ -54,7 +54,7 @@ export class GospelPageComponent implements OnInit, AfterViewInit, OnDestroy {
       slidesNavPosition: "bottom",
       recordHistory: true,
       lazyLoading: true,
-      scrollingSpeed: 777,
+      scrollingSpeed: 700,
 
       afterLoad: this.afterPageLoad.bind(this),
       afterSlideLoad: this.afterSlideLoad.bind(this),
