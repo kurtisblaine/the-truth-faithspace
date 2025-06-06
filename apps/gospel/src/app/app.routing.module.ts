@@ -14,6 +14,7 @@ const routes: Routes = [
   },
   {
     path: "poems",
+    title: "Poems",
     loadChildren: () => import("./psalm-page/psalm-page.module").then((m) => m.PsalmPageModule),
   },
   {
