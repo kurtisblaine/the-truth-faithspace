@@ -14,7 +14,6 @@
           "executor": "@angular-devkit/build-angular:browser-esbuild",
           "outputs": ["{options.outputPath}"],
           "options": {
-            "preserveSymlinks": true,
             "aot": true,
             "outputPath": "apps/gospel/public",
             "index": "apps/gospel/src/index.html",

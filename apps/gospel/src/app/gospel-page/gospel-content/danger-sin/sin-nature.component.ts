@@ -5,8 +5,8 @@ import { SharedModule } from "../../../shared/shared.module";
 @Component({
   selector: "blog-sin-nature",
   imports: [CommonModule, SharedModule],
-  template: `<ng-container *ngTemplateOutlet="ourSinNature"></ng-container>
-    <ng-template #ourSinNature>
+  template: `<ng-container *ngTemplateOutlet="theSinNature"></ng-container>
+    <ng-template #theSinNature>
       Everyone is from a fallen nature. All of us are alike: we do evil. None of us continually does good; no one always
       does right and never sins. We have all fallen short of the glory of God; we have missed the mark; as it is
       written,
