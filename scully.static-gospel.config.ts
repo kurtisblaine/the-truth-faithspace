@@ -7,32 +7,34 @@ export const config: ScullyConfig = {
   projectName: "static-gospel",
   target: "targets",
   outDir: "./apps/gospel/static",
-  routes: {
-    "/server": {
-      type: "ignored",
-    },
-    "/edifications": {
-      type: "json",
-      url: "https://firestore.googleapis.com/v1/projects/blog-46974/databases/(default)/documents/blog",
-    },
-    "/discernments": {
-      type: "json",
-      url: "https://firestore.googleapis.com/v1/projects/blog-46974/databases/(default)/documents/discern",
-    },
-    "/studies": {
-      type: "json",
-      url: "https://firestore.googleapis.com/v1/projects/blog-46974/databases/(default)/documents/study",
-    },
-    "/poems": {
-      type: "json",
-      url: "https://firestore.googleapis.com/v1/projects/blog-46974/databases/(default)/documents/psalm",
-    },
-    "/insights": {
-      type: "json",
-      url: "https://firestore.googleapis.com/v1/projects/blog-46974/databases/(default)/documents/proverb",
-    },
-  },
-  // extraRoutes: ["/insights", "/poems", "/studies", "/discernments", "/edifications"],
+  routes: {},
+  // routes: {
+  //   "/edifications/edify-detail/:id": {
+  //     type: "json",
+  //     property: "id",
+  //     url: "https://firestore.googleapis.com/v1/projects/blog-46974/databases/(default)/documents/blog/${id}",
+  //   },
+  //   "/discernments/discernment-detail/:id": {
+  //     type: "json",
+  //     property: "id",
+  //     url: "https://firestore.googleapis.com/v1/projects/blog-46974/databases/(default)/documents/discern/${id}",
+  //   },
+  //   "/studies/study-detail/:id": {
+  //     type: "json",
+  //     property: "id",
+  //     url: "https://firestore.googleapis.com/v1/projects/blog-46974/databases/(default)/documents/study/${id}",
+  //   },
+  //   "/poems/poem-detail/:id": {
+  //     type: "json",
+  //     property: "id",
+  //     url: "https://firestore.googleapis.com/v1/projects/blog-46974/databases/(default)/documents/psalm/${id}",
+  //   },
+  //   "/insights/insight-detail/:id": {
+  //     type: "json",
+  //     property: "id",
+  //     url: "https://firestore.googleapis.com/v1/projects/blog-46974/databases/(default)/documents/proverb/${id}",
+  //   },
+  // },
   puppeteerLaunchOptions: {
     args: [
       "--disable-gpu",
