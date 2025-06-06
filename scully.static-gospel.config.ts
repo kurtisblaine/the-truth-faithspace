@@ -1,6 +1,7 @@
 import { ScullyConfig } from "@scullyio/scully";
 
 import "@scullyio/scully-plugin-puppeteer";
+//TODO: missing plugin?
 
 export const config: ScullyConfig = {
   projectRoot: "./apps/gospel/public",
