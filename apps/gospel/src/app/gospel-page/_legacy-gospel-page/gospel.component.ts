@@ -30,9 +30,9 @@ export class GospelComponent implements AfterViewInit, OnInit {
   }
 
   ngAfterViewInit(): void {
-    if (this.windowService.nativeWindow) {
-      (this.windowService.nativeWindow as any).BLB.Tagger.pageInit();
-    }
+    // if (this.windowService.nativeWindow) {
+    //   (this.windowService.nativeWindow as any).BLB.Tagger.pageInit();
+    // }
   }
 
   public toAnchor(elementId: string): void {

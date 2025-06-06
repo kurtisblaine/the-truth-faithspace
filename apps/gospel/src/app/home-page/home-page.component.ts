@@ -19,8 +19,8 @@ export default class HomePageComponent implements OnInit, AfterViewInit {
   ngOnInit() {}
 
   ngAfterViewInit(): void {
-    if (this.windowService.nativeWindow) {
-      (this.windowService.nativeWindow as any).BLB.Tagger.pageInit();
-    }
+    // if (this.windowService.nativeWindow) {
+    //   (this.windowService.nativeWindow as any).BLB.Tagger.pageInit();
+    // }
   }
 }
