@@ -42,8 +42,8 @@ button[mat-button] {
   min-height: 400px;
 }
 
-.pillar-fire-image {
-  background-image: url("https://res.cloudinary.com/dffihsa2y/image/upload/v1711590013/img/pillarfire_bhe97a.webp");
+.rent-image {
+  background-image: url("https://res.cloudinary.com/dffihsa2y/image/upload/v1711590014/img/rent_wxiwvf.webp");
   min-height: 400px;
 }
 
@@ -74,7 +74,8 @@ button[mat-button] {
 .camp-image,
 .sin-image,
 .horses-image,
-.new-earth-image {
+.new-earth-image,
+.rent-image {
   position: relative;
   background-position: center;
   background-size: cover;
