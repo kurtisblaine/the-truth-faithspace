@@ -8,6 +8,10 @@ button[mat-button] {
   z-index: 777;
 }
 
+.paragraphs {
+  max-height: 500px;
+}
+
 .custom-panel {
   background: transparent;
   box-shadow: none !important;
@@ -38,11 +42,6 @@ button[mat-button] {
   letter-spacing: 4px;
   text-transform: uppercase;
   line-height: normal;
-}
-
-.section-dark {
-  color-scheme: dark;
-  color: var(--mat-sys-on-surface);
 }
 
 $color-green: #00ffaa;
