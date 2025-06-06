@@ -26,6 +26,7 @@
     "example:install:optional": "npm install --include=optional",
     "scully:build": "npx scully build --project static-gospel",
     "scully:serve": "npx scully serve --project static-gospel",
+    "scully:scan": "npx scully --project static-gospel --scanRoutes",
     "analyze:gospel": "nx build gospel --stats-json --named-chunks && npx -y @angular-experts/hawkeye ./apps/gospel/public/stats.json"
   },
   "dependencies": {
@@ -77,11 +78,12 @@
     "@angular/language-service": "20.0.0",
     "@ngrx/schematics": "19.2.1",
     "@ngrx/store-devtools": "19.2.1",
-    "@nx/angular": "21.1.2",
+    "@nx/angular": "^20.5.1",
     "@nx/js": "21.1.2",
     "@nx/workspace": "21.1.2",
     "@schematics/angular": "19.0.7",
-    "@scullyio/init": "^2.1.41",
+    "@scullyio/init": "^1.0.1",
+    "@scullyio/scully-plugin-playwright": "^2.1.41",
     "@scullyio/scully-plugin-puppeteer": "^2.1.41",
     "@swc-node/register": "1.9.2",
     "@swc/core": "1.5.7",
