@@ -36,7 +36,7 @@ export class StudyListComponent implements OnInit {
   }
 
   public navigate(blog) {
-    this.router.navigateByUrl("study-detail/" + blog.id, {
+    this.router.navigateByUrl("studies/study-detail/" + blog.id, {
       state: { blog },
     });
   }

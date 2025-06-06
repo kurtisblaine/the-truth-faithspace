@@ -35,7 +35,7 @@ export class InsightListComponent implements OnInit {
   }
 
   public navigate(blog) {
-    this.router.navigateByUrl("insight-detail/" + blog.id, {
+    this.router.navigateByUrl("insights/insight-detail/" + blog.id, {
       state: { blog },
     });
   }

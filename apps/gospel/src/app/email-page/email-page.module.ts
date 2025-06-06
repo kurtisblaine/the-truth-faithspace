@@ -12,7 +12,7 @@ import { EmailPageComponent } from "./email-page.component";
 
 const routes: Routes = [
   {
-    path: "email",
+    path: "",
     component: EmailPageComponent,
   },
 ];

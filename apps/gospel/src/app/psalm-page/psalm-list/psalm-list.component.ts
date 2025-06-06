@@ -35,7 +35,7 @@ export class PsalmListComponent implements OnInit {
   }
 
   public navigate(blog) {
-    this.router.navigateByUrl("poem-detail/" + blog.id, {
+    this.router.navigateByUrl("poems/poem-detail/" + blog.id, {
       state: { blog },
     });
   }

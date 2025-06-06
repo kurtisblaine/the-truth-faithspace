@@ -13,7 +13,7 @@ import { StudyPageComponent } from "./study-page.component";
 
 const routes: Routes = [
   {
-    path: "studies",
+    path: "",
     component: StudyPageComponent,
   },
   { path: "study-detail/:id", component: StudyDetailComponent },

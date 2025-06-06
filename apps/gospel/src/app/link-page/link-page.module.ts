@@ -6,7 +6,7 @@ import { MatListModule } from "@angular/material/list";
 import { LinkPageComponent } from "./link-page.component";
 const routes: Routes = [
   {
-    path: "resource",
+    path: "",
     component: LinkPageComponent,
   },
 ];

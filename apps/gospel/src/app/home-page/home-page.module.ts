@@ -11,7 +11,7 @@ import HomePageComponent from "./home-page.component";
 
 const routes: Routes = [
   {
-    path: "home",
+    path: "",
     component: HomePageComponent,
   },
 ];

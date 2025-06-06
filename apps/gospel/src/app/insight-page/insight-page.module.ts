@@ -12,7 +12,7 @@ import { InsightListComponent } from "./insight-list/insight-list.component";
 import { InsightPageComponent } from "./insight-page.component";
 const routes: Routes = [
   {
-    path: "insights",
+    path: "",
     component: InsightPageComponent,
   },
   { path: "insight-detail/:id", component: InsightDetailComponent },

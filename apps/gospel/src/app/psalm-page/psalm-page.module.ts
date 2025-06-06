@@ -12,7 +12,7 @@ import { PsalmListComponent } from "./psalm-list/psalm-list.component";
 import { PsalmPageComponent } from "./psalm-page.component";
 const routes: Routes = [
   {
-    path: "poems",
+    path: "",
     component: PsalmPageComponent,
   },
   { path: "poem-detail/:id", component: PsalmDetailComponent },
