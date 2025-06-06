@@ -3,6 +3,7 @@ import { NgModule } from "@angular/core";
 import { MatButtonModule } from "@angular/material/button";
 import { MatCardModule } from "@angular/material/card";
 import { MatExpansionModule } from "@angular/material/expansion";
+import { MatProgressSpinnerModule } from "@angular/material/progress-spinner";
 import { MatToolbarModule } from "@angular/material/toolbar";
 import { RouterModule, Routes } from "@angular/router";
 import { AngularFullpageModule } from "@fullpage/angular-fullpage";
@@ -44,6 +45,7 @@ const routes: Routes = [
     MatExpansionModule,
     AngularFullpageModule,
     MatToolbarModule,
+    MatProgressSpinnerModule,
     DangerSinModule,
     DangerDeathModule,
     CallGraceModule,

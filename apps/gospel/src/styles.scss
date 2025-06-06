@@ -49,6 +49,11 @@ html {
       foreground-color: white,
     )
   );
+  @include mat.progress-spinner-overrides(
+    (
+      active-indicator-color: #00458f,
+    )
+  );
 }
 
 .mat-expansion-panel-body > button {

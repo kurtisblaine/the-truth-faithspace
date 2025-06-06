@@ -21,7 +21,7 @@
             "polyfills": "apps/gospel/src/polyfills.ts",
             "tsConfig": "apps/gospel/tsconfig.app.json",
             "inlineStyleLanguage": "scss",
-            "assets": ["apps/gospel/src/favicon.ico", "apps/gospel/src/assets", "apps/gospel/robots.txt"],
+            "assets": ["apps/gospel/src/favicon.ico", "apps/gospel/src/assets", "apps/gospel/src/robots.txt"],
             "styles": ["apps/gospel/src/styles.scss"],
             "scripts": [
               "./node_modules/fullpage.js/dist/fullpage.js",
@@ -53,7 +53,8 @@
               ],
               "outputHashing": "all",
               "buildOptimizer": true,
-              "optimization": true
+              "optimization": true,
+              "sourceMap": true
             },
             "development": {
               "buildOptimizer": false,
