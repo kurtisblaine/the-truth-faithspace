@@ -15,7 +15,7 @@ import { ServerPageComponent } from "./server-page.component";
 
 const routes: Routes = [
   {
-    path: "",
+    path: "f3bc7c75-cdf7-4c51-beab-3ef81d6a5e5c",
     component: ServerPageComponent,
   },
 ];

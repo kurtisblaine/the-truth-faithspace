@@ -18,7 +18,7 @@ import {
   faPenToSquare,
 } from "@fortawesome/free-solid-svg-icons";
 import { BehaviorSubject, Observable, filter, fromEvent, map } from "rxjs";
-import { WindowService } from "./gospel-page/window.service";
+import { WindowService } from "./shared/service/window.service";
 
 @Component({
   selector: "blog-root",
