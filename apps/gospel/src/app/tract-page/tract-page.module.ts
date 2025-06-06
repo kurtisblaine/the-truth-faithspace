@@ -5,7 +5,7 @@ import { RouterModule, Routes } from "@angular/router";
 import { TractPageComponent } from "./tract-page.component";
 const routes: Routes = [
   {
-    path: "tract",
+    path: "",
     component: TractPageComponent,
   },
 ];

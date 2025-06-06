@@ -12,7 +12,7 @@ import { DiscernListComponent } from "./discern-list/discern-list.component";
 import { DiscernPageComponent } from "./discern-page.component";
 const routes: Routes = [
   {
-    path: "discernments",
+    path: "",
     component: DiscernPageComponent,
   },
   { path: "discernment-detail/:id", component: DiscernDetailComponent },

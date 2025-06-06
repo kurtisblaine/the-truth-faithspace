@@ -52,7 +52,7 @@ import { TemplateService } from "./template.service";
 
 const routes: Routes = [
   {
-    path: "truth",
+    path: "",
     component: GospelPageComponent,
   },
   {

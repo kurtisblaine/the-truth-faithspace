@@ -27,9 +27,9 @@ export class DrawPageComponent implements OnInit {
 
   navigate(image: Image) {
     if (image.video) {
-      this.router.navigateByUrl("draw/" + image.video + "/" + image.fileName, { state: image });
+      this.router.navigateByUrl("drawings/draw/" + image.video + "/" + image.fileName, { state: image });
     } else {
-      this.router.navigateByUrl("draw/" + image.fileName, { state: image });
+      this.router.navigateByUrl("drawings/draw/" + image.fileName, { state: image });
     }
   }
 

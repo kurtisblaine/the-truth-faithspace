@@ -35,7 +35,7 @@ export class DiscernListComponent implements OnInit {
   }
 
   public navigate(blog) {
-    this.router.navigateByUrl("discernment-detail/" + blog.id, {
+    this.router.navigateByUrl("discernments/discernment-detail/" + blog.id, {
       state: { blog },
     });
   }

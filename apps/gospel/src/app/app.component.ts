@@ -132,7 +132,7 @@ export class AppComponent implements OnInit {
   }
 
   public goDrawings() {
-    this.router.navigateByUrl("drawing").then(() => {
+    this.router.navigateByUrl("drawings").then(() => {
       this.emitScrollEvent();
     });
   }
@@ -168,7 +168,7 @@ export class AppComponent implements OnInit {
   }
 
   public goResources() {
-    this.router.navigateByUrl("resource").then(() => {
+    this.router.navigateByUrl("resources").then(() => {
       this.emitScrollEvent();
     });
   }

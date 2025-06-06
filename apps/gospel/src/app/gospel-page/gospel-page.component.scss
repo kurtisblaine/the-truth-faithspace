@@ -31,53 +31,8 @@ button[mat-button] {
   text-decoration: underline;
 }
 
-.holy-image {
-  background-image: url("https://res.cloudinary.com/dffihsa2y/image/upload/v1711590013/img/holy_wxwyzn.webp");
-  min-height: 400px;
-}
-
 .rent-image {
   background-image: url("https://res.cloudinary.com/dffihsa2y/image/upload/v1711590014/img/rent_wxiwvf.webp");
-  min-height: 400px;
-}
-
-.bread-image {
-  background-image: url("https://res.cloudinary.com/dffihsa2y/image/upload/v1711590013/img/bread_iuzxxj.webp");
-  min-height: 400px;
-}
-
-.new-jerusalem-image {
-  background-image: url("https://res.cloudinary.com/dffihsa2y/image/upload/v1711590013/img/newjer_ck9crv.webp");
-  min-height: 400px;
-}
-
-.lamb-image {
-  background-image: url("https://res.cloudinary.com/dffihsa2y/image/upload/v1711590013/img/lamb_eo0gii.webp");
-  min-height: 400px;
-}
-
-.armor-image {
-  background-image: url("https://res.cloudinary.com/dffihsa2y/image/upload/v1711590027/img/Rotator-10f_srbkmk.webp");
-  min-height: 400px;
-}
-
-.camp-image {
-  background-image: url("https://res.cloudinary.com/dffihsa2y/image/upload/v1711590014/img/Rotator-4f_zydoe1.webp");
-  min-height: 400px;
-}
-
-.battle-image {
-  background-image: url("https://res.cloudinary.com/dffihsa2y/image/upload/v1711590014/img/Rotator-8f_gmpjw8.webp");
-  min-height: 400px;
-}
-
-.heaven-image {
-  background-image: url("https://res.cloudinary.com/dffihsa2y/image/upload/v1711590027/img/Rotator-14f_ksynvm.webp");
-  min-height: 400px;
-}
-
-.trumpets-image {
-  background-image: url("https://res.cloudinary.com/dffihsa2y/image/upload/v1711590013/img/13-Seven-Angels-Seven-Trumpets_voye7o.webp");
   min-height: 400px;
 }
 
@@ -87,8 +42,8 @@ button[mat-button] {
   box-shadow: inset 0 0 0 100vmax rgba(0, 0, 0, 0.1);
 }
 
-.horses-image {
-  background-image: url("https://res.cloudinary.com/dffihsa2y/image/upload/v1711590014/img/Rotator-7f_ydnvku.webp");
+.armor-image {
+  background-image: url("https://res.cloudinary.com/dffihsa2y/image/upload/v1711590027/img/Rotator-10f_srbkmk.webp");
   min-height: 400px;
 }
 
@@ -97,8 +52,8 @@ button[mat-button] {
   min-height: 400px;
 }
 
-.witnesses-image {
-  background-image: url("https://res.cloudinary.com/dffihsa2y/image/upload/v1711590014/img/Rotator-6f_ujqyqg.webp");
+.camp-image {
+  background-image: url("https://res.cloudinary.com/dffihsa2y/image/upload/v1711590014/img/Rotator-4f_zydoe1.webp");
   min-height: 400px;
 }
 
@@ -107,19 +62,10 @@ button[mat-button] {
   min-height: 400px;
 }
 
-.cross-image {
-  background-image: url("https://res.cloudinary.com/dffihsa2y/image/upload/v1711590013/img/cross_z0d21o.webp");
+.horses-image {
+  background-image: url("https://res.cloudinary.com/dffihsa2y/image/upload/v1711590014/img/Rotator-7f_ydnvku.webp");
   min-height: 400px;
-}
-
-.lion-image {
-  background-image: url("https://res.cloudinary.com/dffihsa2y/image/upload/v1711590013/img/lion_jw4h3p.webp");
-  min-height: 400px;
-}
-
-.bush-image {
-  background-image: url("https://res.cloudinary.com/dffihsa2y/image/upload/v1711590013/img/bush_tudwx1.webp");
-  min-height: 400px;
+  box-shadow: inset 0 0 0 100vmax rgba(0, 0, 0, 0.1);
 }
 
 .new-earth-image {
@@ -127,37 +73,14 @@ button[mat-button] {
   min-height: 400px;
 }
 
-.samson-image {
-  background-image: url("https://res.cloudinary.com/dffihsa2y/image/upload/v1711590027/img/samson_q982ou.webp");
-  min-height: 400px;
-}
-
-.casting-crowns-image {
-  background-image: url("https://res.cloudinary.com/dffihsa2y/image/upload/img/06_Elders_Casting_Crowns_d9q1kf.jpg");
-  min-height: 400px;
-}
-
-.new-jerusalem-image,
-.holy-image,
-.rent-image,
-.bread-image,
-.lamb-image,
-.armor-image,
-.camp-image,
-.battle-image,
-.heaven-image,
-.trumpets-image,
 .wedding-image,
-.horses-image,
+.armor-image,
+.rent-image,
 .pillar-fire-image,
-.witnesses-image,
+.camp-image,
 .sin-image,
-.cross-image,
-.lion-image,
-.bush-image,
-.new-earth-image,
-.casting-crowns-image,
-.samson-image {
+.horses-image,
+.new-earth-image {
   position: relative;
   background-position: center;
   background-size: cover;

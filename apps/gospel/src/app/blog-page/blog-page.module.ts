@@ -12,7 +12,7 @@ import { BlogListComponent } from "./blog-list/blog-list.component";
 import { BlogPageComponent } from "./blog-page.component";
 const routes: Routes = [
   {
-    path: "edifications",
+    path: "",
     component: BlogPageComponent,
   },
   { path: "edify-detail/:id", component: BlogDetailComponent },

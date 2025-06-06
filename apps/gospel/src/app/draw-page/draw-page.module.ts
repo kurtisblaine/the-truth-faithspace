@@ -13,7 +13,7 @@ import { DrawPageComponent } from "./draw-page.component";
 
 const routes: Routes = [
   {
-    path: "drawing",
+    path: "",
     component: DrawPageComponent,
   },
   {
