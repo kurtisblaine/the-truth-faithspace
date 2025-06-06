@@ -42,7 +42,6 @@
     "@angular/platform-browser-dynamic": "20.0.0",
     "@angular/platform-server": "20.0.0",
     "@angular/router": "20.0.0",
-    "@angular/youtube-player": "20.0.0",
     "@fortawesome/angular-fontawesome": "^0.10.2",
     "@fortawesome/fontawesome-svg-core": "^6.1.1",
     "@fortawesome/free-solid-svg-icons": "^6.1.1",

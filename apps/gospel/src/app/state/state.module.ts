@@ -11,14 +11,15 @@ import { InsightsEffects } from "./insight/insights.effects";
 import * as fromInsights from "./insight/insights.reducer";
 import { PsalmEffects } from "./psalm/psalm.effects";
 import * as fromPsalm from "./psalm/psalm.reducer";
-import * as fromStudy from './study/study.reducer';
-import { StudyEffects } from './study/study.effects';
+import { StudyEffects } from "./study/study.effects";
+import * as fromStudy from "./study/study.reducer";
 
 export interface AppState {
   [fromBlog.BLOG_FEATURE_KEY]: fromBlog.State;
   [fromPsalm.PSALM_FEATURE_KEY]: fromPsalm.State;
   [fromInsights.insightsFeatureKey]: fromInsights.State;
   [fromDiscern.DiscernmentsFeatureKey]: fromDiscern.State;
+  [fromStudy.studyFeatureKey]: fromStudy.State;
 }
 
 export const reducers: ActionReducerMap<AppState> = {
@@ -26,12 +27,13 @@ export const reducers: ActionReducerMap<AppState> = {
   psalm: fromPsalm.reducer,
   insights: fromInsights.reducer,
   discernments: fromDiscern.reducer,
+  study: fromStudy.reducer,
 };
 
 export const metaReducers: MetaReducer<AppState>[] = !environment.production ? [] : [];
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
-export const effects: Type<any>[] = [PsalmEffects, BlogEffects, InsightsEffects, DiscernmentsEffects];
+export const effects: Type<any>[] = [PsalmEffects, BlogEffects, InsightsEffects, DiscernmentsEffects, StudyEffects];
 
 @NgModule({
   declarations: [],
@@ -39,8 +41,6 @@ export const effects: Type<any>[] = [PsalmEffects, BlogEffects, InsightsEffects,
     StoreModule.forRoot(reducers, { metaReducers }),
     EffectsModule.forRoot(effects),
     StoreDevtoolsModule.instrument(),
-    StoreModule.forFeature(fromStudy.studyFeatureKey, fromStudy.reducer),
-    EffectsModule.forFeature([StudyEffects]),
   ],
 })
 export class StateModule {}

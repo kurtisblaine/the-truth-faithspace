@@ -1,9 +1,8 @@
 import { AfterViewInit, Component, HostBinding, OnInit } from "@angular/core";
 import { ActivatedRoute, Router } from "@angular/router";
 import { fadeInOut } from "shared";
-import { RouterService } from "../router.service";
-import { TemplateService } from "../template.service";
-import { WindowService } from "../window.service";
+import { RouterService } from "./router.service";
+import { TemplateService } from "./template.service";
 @Component({
   selector: "blog-gospel",
   templateUrl: "./gospel.component.html",
@@ -19,8 +18,7 @@ export class GospelComponent implements AfterViewInit, OnInit {
     private router: Router,
     public templateService: TemplateService,
     public routerService: RouterService,
-    public activeRoute: ActivatedRoute,
-    private windowService: WindowService
+    public activeRoute: ActivatedRoute
   ) {}
 
   ngOnInit() {

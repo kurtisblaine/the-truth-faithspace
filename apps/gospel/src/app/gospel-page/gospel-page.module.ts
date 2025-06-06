@@ -16,25 +16,18 @@ import { DangerSinModule } from "./gospel-content/danger-sin/danger-sin.module";
 import { HopeLifeModule } from "./gospel-content/hope-life/hope-life.module";
 import { ResponseModule } from "./gospel-content/response/response.module";
 import { GospelHeaderComponent } from "./gospel-header/gospel-header.component";
-import { GospelItemComponent } from "./gospel-item/gospel-item.component";
 import { GospelPageComponent } from "./gospel-page.component";
 import { GospelSectionComponent } from "./gospel-section/gospel-section.component";
-import { RouterService } from "./router.service";
-import { TemplateService } from "./template.service";
 
 const routes: Routes = [
   {
     path: "",
     component: GospelPageComponent,
   },
-  {
-    path: "truthful-item/:title",
-    component: GospelItemComponent,
-  },
 ];
 
 @NgModule({
-  declarations: [GospelItemComponent, GospelSectionComponent, GospelHeaderComponent, GospelPageComponent],
+  declarations: [GospelSectionComponent, GospelHeaderComponent, GospelPageComponent],
   imports: [
     CommonModule,
     SharedModule,
@@ -53,6 +46,6 @@ const routes: Routes = [
     ResponseModule,
     HopeLifeModule,
   ],
-  providers: [TemplateService, RouterService],
+  providers: [],
 })
 export class GospelPageModule {}

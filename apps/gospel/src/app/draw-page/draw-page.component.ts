@@ -33,11 +33,6 @@ export class DrawPageComponent implements OnInit {
     }
   }
 
-  // hideLoader(id: number) {
-  //   const i = this.dataService.images.find((image) => image.id === id);
-  //   i.isFinishedLoading = true;
-  // }
-
   ngOnInit(): void {
     this.images = this.dataService.init();
   }

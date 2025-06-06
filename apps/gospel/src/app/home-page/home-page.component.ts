@@ -1,7 +1,6 @@
 import { AfterViewInit, ChangeDetectionStrategy, Component, OnInit } from "@angular/core";
 import { fadeInOut } from "shared";
 import { NarratorStyle } from "../../../../../libs/src/lib/shared/components/narrator/narrator.component";
-import { WindowService } from "../gospel-page/window.service";
 
 @Component({
   selector: "blog-home-page",
@@ -14,7 +13,7 @@ import { WindowService } from "../gospel-page/window.service";
 export default class HomePageComponent implements OnInit, AfterViewInit {
   public narratorStyle = NarratorStyle;
 
-  constructor(private windowService: WindowService) {}
+  constructor() {}
 
   ngOnInit() {}
 

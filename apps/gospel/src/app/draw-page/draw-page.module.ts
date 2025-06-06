@@ -1,10 +1,8 @@
 import { CommonModule } from "@angular/common";
 import { NgModule } from "@angular/core";
 import { MatGridListModule } from "@angular/material/grid-list";
-import { MatProgressSpinnerModule } from "@angular/material/progress-spinner";
 import { MatTooltipModule } from "@angular/material/tooltip";
 import { RouterModule, Routes } from "@angular/router";
-import { YOUTUBE_PLAYER_CONFIG, YouTubePlayer } from "@angular/youtube-player";
 import { FontAwesomeModule } from "@fortawesome/angular-fontawesome";
 import { PinchZoomComponent } from "@meddv/ngx-pinch-zoom";
 import { PhotoGalleryModule } from "@twogate/ngx-photo-gallery";
@@ -27,20 +25,11 @@ const routes: Routes = [
 ];
 @NgModule({
   declarations: [DrawPageComponent, DrawItemComponent],
-  providers: [
-    {
-      provide: YOUTUBE_PLAYER_CONFIG,
-      useValue: {
-        disablePlaceholder: true,
-      },
-    },
-  ],
+  providers: [],
   imports: [
     CommonModule,
-    MatProgressSpinnerModule,
     RouterModule.forChild(routes),
     MatGridListModule,
-    YouTubePlayer,
     FontAwesomeModule,
     MatTooltipModule,
     PinchZoomComponent,

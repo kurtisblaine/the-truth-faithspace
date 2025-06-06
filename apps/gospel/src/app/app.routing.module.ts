@@ -41,16 +41,16 @@ const routes: Routes = [
     path: "drawings",
     loadChildren: () => import("./draw-page/draw-page.module").then((m) => m.DrawPageModule),
   },
-  {
-    path: "resources",
-    loadChildren: () => import("./link-page/link-page.module").then((m) => m.LinkPageModule),
-  },
+  // {
+  //   path: "resources",
+  //   loadChildren: () => import("./link-page/link-page.module").then((m) => m.LinkPageModule),
+  // },
   {
     path: "studies",
     loadChildren: () => import("./study-page/study-page.module").then((m) => m.StudyPageModule),
   },
   {
-    path: "server/f3bc7c75-cdf7-4c51-beab-3ef81d6a5e5c",
+    path: "server",
     loadChildren: () => import("./server-page/server-page.module").then((m) => m.ServerPageModule),
   },
   { path: "**", redirectTo: "error" },
