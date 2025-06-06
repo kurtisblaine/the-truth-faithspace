@@ -10,6 +10,7 @@ const routes: Routes = [
   },
   {
     path: "truth",
+    title: "The Good News of the Kingdom of God",
     loadChildren: () => import("./gospel-page/gospel-page.module").then((m) => m.GospelPageModule),
   },
   {
@@ -19,26 +20,32 @@ const routes: Routes = [
   },
   {
     path: "edifications",
+    title: "Edifications",
     loadChildren: () => import("./blog-page/blog-page.module").then((m) => m.BlogPageModule),
   },
   {
     path: "insights",
+    title: "Insights",
     loadChildren: () => import("./insight-page/insight-page.module").then((m) => m.InsightPageModule),
   },
   {
     path: "email",
+    title: "Contact Me",
     loadChildren: () => import("./email-page/email-page.module").then((m) => m.EmailPageModule),
   },
   {
     path: "discernments",
+    title: "Discernments",
     loadChildren: () => import("./discern-page/discern-page.module").then((m) => m.DiscernPageModule),
   },
   {
-    path: "tract",
+    path: "tracts",
+    title: "Gospel Tracts",
     loadChildren: () => import("./tract-page/tract-page.module").then((m) => m.TractPageModule),
   },
   {
     path: "drawings",
+    title: "Drawings",
     loadChildren: () => import("./draw-page/draw-page.module").then((m) => m.DrawPageModule),
   },
   // {
@@ -47,6 +54,7 @@ const routes: Routes = [
   // },
   {
     path: "studies",
+    title: "Studies",
     loadChildren: () => import("./study-page/study-page.module").then((m) => m.StudyPageModule),
   },
   {

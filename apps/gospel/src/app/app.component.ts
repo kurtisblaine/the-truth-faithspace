@@ -162,7 +162,7 @@ export class AppComponent implements OnInit {
   }
 
   public goTracts() {
-    this.router.navigateByUrl("tract").then(() => {
+    this.router.navigateByUrl("tracts").then(() => {
       this.emitScrollEvent();
     });
   }
