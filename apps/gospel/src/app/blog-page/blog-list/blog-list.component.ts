@@ -1,8 +1,12 @@
+import { CommonModule } from "@angular/common";
 import { Component, Input, OnInit } from "@angular/core";
+import { MatButtonModule } from "@angular/material/button";
+import { MatDividerModule } from "@angular/material/divider";
 import { Router } from "@angular/router";
 import { Store } from "@ngrx/store";
 import { cloneDeep } from "lodash-es";
 import { Observable, map } from "rxjs";
+import { SharedLibraryModule } from "shared";
 import { createBlog } from "../../state/blog/blog.actions";
 import { BlogEntity } from "../../state/blog/blog.models";
 import { getAllBlog } from "../../state/blog/blog.selectors";
@@ -11,7 +15,8 @@ import { getAllBlog } from "../../state/blog/blog.selectors";
   selector: "blog-blog-list",
   templateUrl: "./blog-list.component.html",
   styleUrls: ["./blog-list.component.scss"],
-  standalone: false,
+  standalone: true,
+  imports: [MatDividerModule, CommonModule, SharedLibraryModule, MatButtonModule],
 })
 export class BlogListComponent implements OnInit {
   @Input() public update = false;

@@ -1,8 +1,12 @@
+import { CommonModule } from "@angular/common";
 import { Component, Input, OnInit } from "@angular/core";
+import { MatButtonModule } from "@angular/material/button";
+import { MatDividerModule } from "@angular/material/divider";
 import { Router } from "@angular/router";
 import { Store } from "@ngrx/store";
 import { cloneDeep } from "lodash-es";
 import { Observable, map } from "rxjs";
+import { SharedLibraryModule } from "shared";
 import { InsightEntity } from "../../state/insight/insight.models";
 import { createInsight } from "../../state/insight/insights.actions";
 import { getAllInsight } from "../../state/insight/insights.selectors";
@@ -11,7 +15,8 @@ import { getAllInsight } from "../../state/insight/insights.selectors";
   selector: "blog-insight-list",
   templateUrl: "./insight-list.component.html",
   styleUrls: ["./insight-list.component.scss"],
-  standalone: false,
+  imports: [MatDividerModule, CommonModule, SharedLibraryModule, MatButtonModule],
+  standalone: true,
 })
 export class InsightListComponent implements OnInit {
   @Input() public update = false;

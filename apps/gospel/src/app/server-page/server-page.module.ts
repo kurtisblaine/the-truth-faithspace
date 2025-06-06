@@ -5,12 +5,12 @@ import { MatButtonModule } from "@angular/material/button";
 import { MatExpansionModule } from "@angular/material/expansion";
 import { RouterModule, Routes } from "@angular/router";
 import { SharedLibraryModule } from "shared";
-import { BlogPageModule } from "../blog-page/blog-page.module";
-import { DiscernPageModule } from "../discern-page/discern-page.module";
-import { InsightPageModule } from "../insight-page/insight-page.module";
-import { PsalmPageModule } from "../psalm-page/psalm-page.module";
+import { BlogListComponent } from "../blog-page/blog-list/blog-list.component";
+import { DiscernListComponent } from "../discern-page/discern-list/discern-list.component";
+import { InsightListComponent } from "../insight-page/insight-list/insight-list.component";
+import { PsalmListComponent } from "../psalm-page/psalm-list/psalm-list.component";
 import { SharedModule } from "../shared/shared.module";
-import { StudyPageModule } from "../study-page/study-page.module";
+import { StudyListComponent } from "../study-page/study-list/study-list.component";
 import { ServerPageComponent } from "./server-page.component";
 
 const routes: Routes = [
@@ -29,12 +29,12 @@ const routes: Routes = [
     MatButtonModule,
     FormsModule,
     ReactiveFormsModule,
-    PsalmPageModule,
-    InsightPageModule,
-    BlogPageModule,
-    DiscernPageModule,
     SharedLibraryModule,
-    StudyPageModule,
+    PsalmListComponent,
+    BlogListComponent,
+    DiscernListComponent,
+    StudyListComponent,
+    InsightListComponent,
   ],
 })
 export class ServerPageModule {}

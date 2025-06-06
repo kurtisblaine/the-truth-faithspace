@@ -18,9 +18,10 @@ const routes: Routes = [
   { path: "discernment-detail/:id", component: DiscernDetailComponent },
 ];
 @NgModule({
-  declarations: [DiscernListComponent, DiscernPageComponent, DiscernDetailComponent],
+  declarations: [DiscernPageComponent, DiscernDetailComponent],
   imports: [
     CommonModule,
+    DiscernListComponent,
     RouterModule.forChild(routes),
     MatDividerModule,
     MatProgressSpinnerModule,

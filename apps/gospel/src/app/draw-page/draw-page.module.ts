@@ -15,10 +15,6 @@ const routes: Routes = [
     component: DrawPageComponent,
   },
   {
-    path: "draw/:video/:id",
-    component: DrawItemComponent,
-  },
-  {
     path: "draw/:id",
     component: DrawItemComponent,
   },

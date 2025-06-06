@@ -18,9 +18,10 @@ const routes: Routes = [
   { path: "edify-detail/:id", component: BlogDetailComponent },
 ];
 @NgModule({
-  declarations: [BlogPageComponent, BlogListComponent, BlogDetailComponent],
+  declarations: [BlogPageComponent, BlogDetailComponent],
   imports: [
     CommonModule,
+    BlogListComponent,
     MatDividerModule,
     SharedModule,
     MatProgressSpinnerModule,

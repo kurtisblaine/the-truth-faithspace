@@ -18,9 +18,10 @@ const routes: Routes = [
   { path: "insight-detail/:id", component: InsightDetailComponent },
 ];
 @NgModule({
-  declarations: [InsightPageComponent, InsightListComponent, InsightDetailComponent],
+  declarations: [InsightPageComponent, InsightDetailComponent],
   imports: [
     CommonModule,
+    InsightListComponent,
     SharedModule,
     RouterModule.forChild(routes),
     MatDividerModule,

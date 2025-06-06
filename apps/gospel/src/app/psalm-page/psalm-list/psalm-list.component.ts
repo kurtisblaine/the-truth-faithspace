@@ -1,8 +1,12 @@
+import { CommonModule } from "@angular/common";
 import { ChangeDetectionStrategy, Component, Input, OnInit } from "@angular/core";
+import { MatButtonModule } from "@angular/material/button";
+import { MatDividerModule } from "@angular/material/divider";
 import { Router } from "@angular/router";
 import { Store } from "@ngrx/store";
 import { cloneDeep } from "lodash-es";
 import { Observable, map } from "rxjs";
+import { SharedLibraryModule } from "shared";
 import { createPsalm } from "../../state/psalm/psalm.actions";
 import { PsalmEntity } from "../../state/psalm/psalm.models";
 import { getAllPsalm } from "../../state/psalm/psalm.selectors";
@@ -10,8 +14,9 @@ import { getAllPsalm } from "../../state/psalm/psalm.selectors";
   selector: "blog-psalm-list",
   templateUrl: "./psalm-list.component.html",
   styleUrls: ["./psalm-list.component.scss"],
+  imports: [MatDividerModule, CommonModule, SharedLibraryModule, MatButtonModule],
   changeDetection: ChangeDetectionStrategy.OnPush,
-  standalone: false,
+  standalone: true,
 })
 export class PsalmListComponent implements OnInit {
   @Input() public update = false;

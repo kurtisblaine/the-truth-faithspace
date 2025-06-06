@@ -8,6 +8,9 @@ export const config: ScullyConfig = {
   target: "targets",
   outDir: "./apps/gospel/static",
   routes: {
+    "/server": {
+      type: "ignored",
+    },
     "/edifications": {
       type: "json",
       url: "https://firestore.googleapis.com/v1/projects/blog-46974/databases/(default)/documents/blog",
@@ -29,6 +32,7 @@ export const config: ScullyConfig = {
       url: "https://firestore.googleapis.com/v1/projects/blog-46974/databases/(default)/documents/proverb",
     },
   },
+  // extraRoutes: ["/insights", "/poems", "/studies", "/discernments", "/edifications"],
   puppeteerLaunchOptions: {
     args: [
       "--disable-gpu",

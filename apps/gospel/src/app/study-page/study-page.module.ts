@@ -19,9 +19,10 @@ const routes: Routes = [
   { path: "study-detail/:id", component: StudyDetailComponent },
 ];
 @NgModule({
-  declarations: [StudyDetailComponent, StudyListComponent, StudyPageComponent],
+  declarations: [StudyDetailComponent, StudyPageComponent],
   imports: [
     CommonModule,
+    StudyListComponent,
     SharedModule,
     RouterModule.forChild(routes),
     MatDividerModule,
