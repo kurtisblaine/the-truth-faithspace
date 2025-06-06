@@ -5,6 +5,7 @@ const routes: Routes = [
   { path: "", pathMatch: "full", redirectTo: "truth" },
   {
     path: "home",
+    title: "Testimony",
     loadChildren: () => import("./home-page/home-page.module").then((m) => m.HomePageModule),
   },
   {
