@@ -10,6 +10,7 @@ import { SharedModule } from "../shared/shared.module";
 import { PsalmDetailComponent } from "./psalm-detail/psalm-detail.component";
 import { PsalmListComponent } from "./psalm-list/psalm-list.component";
 import { PsalmPageComponent } from "./psalm-page.component";
+
 const routes: Routes = [
   {
     path: "",
@@ -17,10 +18,12 @@ const routes: Routes = [
   },
   { path: "poem-detail/:id", component: PsalmDetailComponent },
 ];
+
 @NgModule({
-  declarations: [PsalmPageComponent, PsalmListComponent, PsalmDetailComponent],
+  declarations: [PsalmPageComponent, PsalmDetailComponent],
   imports: [
     CommonModule,
+    PsalmListComponent,
     SharedModule,
     RouterModule.forChild(routes),
     MatDividerModule,
@@ -29,6 +32,6 @@ const routes: Routes = [
     SharedLibraryModule,
     MatCardModule,
   ],
-  exports: [PsalmListComponent],
+  exports: [],
 })
 export class PsalmPageModule {}
