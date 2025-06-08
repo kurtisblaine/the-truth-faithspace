@@ -13,10 +13,17 @@
   <mat-card-content class="card-content" [class]="{ 'regular-content': !isFloater, 'floater-content': isFloater }">
     <div #paragraphContent>
       @defer(on viewport(paragraphContent)) {
-      <ng-content select=".paragraphs"></ng-content>
+      <ng-content select=".lazy-paragraphs"></ng-content>
       } @placeholder {
-      <mat-spinner style="justify-self: center"></mat-spinner>
+      <mat-spinner
+        *ngIf="isDefer"
+        aria-labelledby="Loading bar"
+        aria-label="Loading bar"
+        style="justify-self: center"
+      ></mat-spinner>
       }
+
+      <ng-content select=".paragraphs"></ng-content>
     </div>
   </mat-card-content>
 </mat-card>
