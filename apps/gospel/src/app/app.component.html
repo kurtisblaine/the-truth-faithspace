@@ -17,7 +17,7 @@
       <div mat-subheader>Posts</div>
       <mat-list-item lines="3" (click)="goDiscern(); drawer.close()">
         <fa-icon matListItemIcon [icon]="discernIcon" [size]="'lg'"></fa-icon>
-        <span matListItemTitle>Discern</span>
+        <span matListItemTitle>Discernment</span>
         <span>Understanding different kinds of spirits & gospels.</span>
       </mat-list-item>
       <mat-list-item lines="3" (click)="goBlog(); drawer.close()">
@@ -86,14 +86,39 @@
     >
       <mat-toolbar>
         <button
+          *ngIf="!isMobile()"
           mat-icon-button
-          class="example-icon"
           (click)="drawer.toggle()"
           aria-labelledby="Menu button"
           aria-label="Menu button"
         >
           <fa-icon [icon]="icon" [size]="'lg'"></fa-icon>
         </button>
+
+        <button
+          *ngIf="isMobile()"
+          [matMenuTriggerFor]="menu"
+          (click)="openMenu()"
+          mat-icon-button
+          aria-labelledby="Menu button"
+          aria-label="Menu button"
+        >
+          <fa-icon [icon]="icon" [size]="'lg'"></fa-icon>
+        </button>
+
+        <mat-menu #menu="matMenu">
+          <button mat-menu-item (click)="goDiscern()">Discernment</button>
+          <button mat-menu-item (click)="goBlog()">Edification</button>
+          <button mat-menu-item (click)="goInsight()">Insight</button>
+          <button mat-menu-item (click)="goPsalm()">Poem</button>
+          <button mat-menu-item (click)="goStudies()">Study</button>
+          <mat-divider></mat-divider>
+          <button mat-menu-item (click)="goDrawings()">Drawing</button>
+          <button mat-menu-item (click)="goTracts()">Tract</button>
+          <mat-divider></mat-divider>
+          <button mat-menu-item (click)="goHome()">About Me</button>
+          <button mat-menu-item (click)="goEmail()">Contact Me</button>
+        </mat-menu>
 
         <button mat-button (click)="goGospel(); drawer.close()"><h1>The Good News</h1></button>
         <span style="flex: 1 1 auto"></span>
