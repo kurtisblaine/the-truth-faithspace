@@ -1,5 +1,6 @@
-import { Component, ElementRef, OnInit, Signal, ViewChild } from "@angular/core";
+import { Component, ElementRef, OnInit, signal, Signal, ViewChild } from "@angular/core";
 import { toSignal } from "@angular/core/rxjs-interop";
+import { MatMenuTrigger } from "@angular/material/menu";
 import { NavigationEnd, Router } from "@angular/router";
 import {
   faArrowUp,
@@ -17,7 +18,8 @@ import {
   faNewspaper,
   faPenToSquare,
 } from "@fortawesome/free-solid-svg-icons";
-import { BehaviorSubject, Observable, filter, fromEvent, map } from "rxjs";
+import { DeviceDetectorService } from "ngx-device-detector";
+import { BehaviorSubject, filter, fromEvent, map, Observable } from "rxjs";
 import { WindowService } from "./shared/service/window.service";
 
 @Component({
@@ -28,6 +30,7 @@ import { WindowService } from "./shared/service/window.service";
 })
 export class AppComponent implements OnInit {
   @ViewChild("toTop") public toTopElement: ElementRef;
+  @ViewChild(MatMenuTrigger) trigger: MatMenuTrigger;
 
   public title = "The Good News of the Kingdom of God";
   public icon = faBars;
@@ -48,10 +51,15 @@ export class AppComponent implements OnInit {
   public progressValue = new BehaviorSubject(0);
   public progressValue$!: Observable<number>;
   public isFullpagePage!: Signal<boolean>;
+  public isMobile = signal(false);
 
   public scrollTimeout!: any;
 
-  constructor(private router: Router, private windowService: WindowService) {
+  constructor(
+    private router: Router,
+    private windowService: WindowService,
+    private deviceDetector: DeviceDetectorService
+  ) {
     const isFullpagePage$ = this.router.events.pipe(
       filter((event) => event instanceof NavigationEnd),
       map((event: NavigationEnd) => {
@@ -63,6 +71,8 @@ export class AppComponent implements OnInit {
   }
 
   public ngOnInit() {
+    this.isMobile.set(this.deviceDetector.isMobile());
+
     if (this.windowService.nativeWindow) {
       this.progressValue$ = fromEvent(this.windowService.nativeWindow, "scroll", { passive: true }).pipe(
         map(() => {
@@ -81,6 +91,10 @@ export class AppComponent implements OnInit {
         })
       );
     }
+  }
+
+  openMenu() {
+    this.trigger.openMenu();
   }
 
   emitScrollEvent() {
