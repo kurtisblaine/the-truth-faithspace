@@ -11,7 +11,7 @@ import { NarratorStyle } from "libs/src/lib/shared/components/narrator/narrator.
 export class GospelSectionComponent implements AfterViewInit {
   @Input() public isLightMode = true;
   @Input() public isFloater = false;
-  @Input() public isDefer = true;
+  @Input() public isDefer = false;
 
   public narratorStyle = NarratorStyle;
 
