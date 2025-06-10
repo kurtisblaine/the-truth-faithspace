@@ -2,22 +2,21 @@ import { Component, ElementRef, OnInit, signal, Signal, ViewChild } from "@angul
 import { toSignal } from "@angular/core/rxjs-interop";
 import { MatMenuTrigger } from "@angular/material/menu";
 import { NavigationEnd, Router } from "@angular/router";
-import {
-  faArrowUp,
-  faBars,
-  faBible,
-  faBook,
-  faBrain,
-  faDumbbell,
-  faEnvelope,
-  faFile,
-  faGavel,
-  faInfoCircle,
-  faLink,
-  faMusic,
-  faNewspaper,
-  faPenToSquare,
-} from "@fortawesome/free-solid-svg-icons";
+import { faArrowUp } from "@fortawesome/free-solid-svg-icons/faArrowUp";
+import { faBars } from "@fortawesome/free-solid-svg-icons/faBars";
+import { faBible } from "@fortawesome/free-solid-svg-icons/faBible";
+import { faBook } from "@fortawesome/free-solid-svg-icons/faBook";
+import { faBrain } from "@fortawesome/free-solid-svg-icons/faBrain";
+import { faDumbbell } from "@fortawesome/free-solid-svg-icons/faDumbbell";
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons/faEnvelope";
+import { faFile } from "@fortawesome/free-solid-svg-icons/faFile";
+import { faGavel } from "@fortawesome/free-solid-svg-icons/faGavel";
+import { faInfoCircle } from "@fortawesome/free-solid-svg-icons/faInfoCircle";
+import { faLink } from "@fortawesome/free-solid-svg-icons/faLink";
+import { faMusic } from "@fortawesome/free-solid-svg-icons/faMusic";
+import { faNewspaper } from "@fortawesome/free-solid-svg-icons/faNewspaper";
+import { faPenToSquare } from "@fortawesome/free-solid-svg-icons/faPenToSquare";
+
 import { DeviceDetectorService } from "ngx-device-detector";
 import { BehaviorSubject, filter, fromEvent, map, Observable } from "rxjs";
 import { WindowService } from "./shared/service/window.service";

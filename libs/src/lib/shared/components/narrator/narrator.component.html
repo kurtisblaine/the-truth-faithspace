@@ -12,7 +12,7 @@
       aria-labelledby="Play button"
       aria-label="Play button"
     >
-      <fa-icon [icon]="playIcon" [size]="'lg'"></fa-icon>
+      <lib-fa-icon [icon]="playIcon"></lib-fa-icon>
     </mat-button-toggle>
     <mat-button-toggle
       (click)="pauseReading()"
@@ -21,7 +21,7 @@
       aria-labelledby="Pause button"
       aria-label="Pause button"
     >
-      <fa-icon [icon]="pauseIcon" [size]="'lg'"></fa-icon>
+      <lib-fa-icon [icon]="pauseIcon"></lib-fa-icon>
     </mat-button-toggle>
     <mat-button-toggle
       (click)="stopReading()"
@@ -29,19 +29,19 @@
       aria-labelledby="Stop button"
       aria-label="Stop button"
     >
-      <fa-icon [icon]="stopIcon" [size]="'lg'"></fa-icon>
+      <lib-fa-icon [icon]="stopIcon"></lib-fa-icon>
     </mat-button-toggle>
   </mat-button-toggle-group>
 
   <div *ngSwitchCase="narratorStyle.Flex" style="display: flex; justify-content: center; margin-bottom: 5px">
     <button mat-icon-button (click)="startReading()">
-      <fa-icon [icon]="playIcon" [size]="'lg'"></fa-icon>
+      <lib-fa-icon [icon]="playIcon"></lib-fa-icon>
     </button>
     <button mat-icon-button (click)="pauseReading()">
-      <fa-icon [icon]="pauseIcon" [size]="'lg'"></fa-icon>
+      <lib-fa-icon [icon]="pauseIcon"></lib-fa-icon>
     </button>
     <button mat-icon-button (click)="stopReading()">
-      <fa-icon [icon]="stopIcon" [size]="'lg'"></fa-icon>
+      <lib-fa-icon [icon]="stopIcon"></lib-fa-icon>
     </button>
   </div>
 
@@ -53,7 +53,7 @@
       aria-labelledby="Play button"
       aria-label="Play button"
     >
-      <fa-icon [icon]="playIcon" [size]="'lg'"></fa-icon>
+      <lib-fa-icon [icon]="playIcon"></lib-fa-icon>
     </button>
     <button
       mat-mini-fab
@@ -63,7 +63,7 @@
       aria-labelledby="Pause button"
       aria-label="Pause button"
     >
-      <fa-icon [icon]="pauseIcon" [size]="'lg'"></fa-icon>
+      <lib-fa-icon [icon]="pauseIcon"></lib-fa-icon>
     </button>
     <button
       mat-mini-fab
@@ -73,7 +73,7 @@
       aria-labelledby="Stop button"
       aria-label="Stop button"
     >
-      <fa-icon [icon]="stopIcon" [size]="'lg'"></fa-icon>
+      <lib-fa-icon [icon]="stopIcon"></lib-fa-icon>
     </button>
   </div>
 </ng-container>

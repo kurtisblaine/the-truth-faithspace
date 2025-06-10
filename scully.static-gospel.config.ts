@@ -50,5 +50,7 @@ export const config: ScullyConfig = {
       "--single-process",
       "--disable-extensions",
     ],
+    // slowMo: 5000,
+    // devtools: true, with -- --showBrowser
   },
 };
