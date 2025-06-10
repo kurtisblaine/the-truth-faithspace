@@ -3,17 +3,15 @@ import {
   AfterViewInit,
   ChangeDetectionStrategy,
   Component,
-  Inject,
   isDevMode,
   OnDestroy,
   OnInit,
-  PLATFORM_ID,
   signal,
   ViewChild,
 } from "@angular/core";
 import { ActivatedRoute } from "@angular/router";
 import { FullpageDirective } from "@fullpage/angular-fullpage";
-import { isScullyRunning } from "@scullyio/ng-lib";
+import { isScullyGenerated, isScullyRunning } from "@scullyio/ng-lib";
 import { fullpageApi, fullpageOptions, Item, Trigger } from "fullpage.js/dist/fullpage.extensions.min";
 import { DeviceDetectorService } from "ngx-device-detector";
 import { distinctUntilChanged, filter, Subscription } from "rxjs";
@@ -40,8 +38,7 @@ export class GospelPageComponent implements OnInit, AfterViewInit, OnDestroy {
   constructor(
     private route: ActivatedRoute,
     private location: Location,
-    private deviceDetector: DeviceDetectorService,
-    @Inject(PLATFORM_ID) private platformId: Object
+    private deviceDetector: DeviceDetectorService
   ) {}
 
   ngOnInit() {
@@ -94,7 +91,7 @@ export class GospelPageComponent implements OnInit, AfterViewInit, OnDestroy {
   }
 
   public shouldInitFullpage() {
-    return isDevMode() || this.isScullyRunning; //|| (isPlatformBrowser(this.platformId) && isScullyGenerated());
+    return isDevMode() || this.isScullyRunning || isScullyGenerated();
   }
 
   public toAnchor(sectionId: string, slideId: string = "") {
