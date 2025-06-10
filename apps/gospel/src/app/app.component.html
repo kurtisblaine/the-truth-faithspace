@@ -3,12 +3,12 @@
     <mat-list>
       <!-- <div mat-subheader>Truth</div> -->
       <mat-list-item lines="3" (click)="goGospel(); drawer.close()">
-        <fa-icon matListItemIcon [icon]="gospelIcon" [size]="'lg'"></fa-icon>
+        <lib-fa-icon matListItemIcon [icon]="gospelIcon"></lib-fa-icon>
         <span matListItemTitle>The Good News</span>
         <span>The everlasting covenant that will never change.</span>
       </mat-list-item>
       <mat-list-item lines="3" (click)="openBible(); drawer.close()">
-        <fa-icon matListItemIcon [icon]="bookIcon" [size]="'lg'"></fa-icon>
+        <lib-fa-icon matListItemIcon [icon]="bookIcon"></lib-fa-icon>
         <span matListItemTitle>The Holy Bible</span>
         <span>Let God be true and every man a liar.</span>
       </mat-list-item>
@@ -16,27 +16,27 @@
 
       <div mat-subheader>Posts</div>
       <mat-list-item lines="3" (click)="goDiscern(); drawer.close()">
-        <fa-icon matListItemIcon [icon]="discernIcon" [size]="'lg'"></fa-icon>
+        <lib-fa-icon matListItemIcon [icon]="discernIcon"></lib-fa-icon>
         <span matListItemTitle>Discernment</span>
         <span>Understanding different kinds of spirits & gospels.</span>
       </mat-list-item>
       <mat-list-item lines="3" (click)="goBlog(); drawer.close()">
-        <fa-icon matListItemIcon [icon]="blogIcon" [size]="'lg'"></fa-icon>
+        <lib-fa-icon matListItemIcon [icon]="blogIcon"></lib-fa-icon>
         <span matListItemTitle>Edification</span>
         <span>Scriptures knit together for encouraging.</span>
       </mat-list-item>
       <mat-list-item lines="3" (click)="goInsight(); drawer.close()">
-        <fa-icon matListItemIcon [icon]="insightIcon" [size]="'lg'"></fa-icon>
+        <lib-fa-icon matListItemIcon [icon]="insightIcon"></lib-fa-icon>
         <span matListItemTitle>Insight</span>
         <span>Things understood from experience and nature.</span>
       </mat-list-item>
       <mat-list-item lines="3" (click)="goPsalm(); drawer.close()">
-        <fa-icon matListItemIcon [icon]="psalmIcon" [size]="'lg'"></fa-icon>
+        <lib-fa-icon matListItemIcon [icon]="psalmIcon"></lib-fa-icon>
         <span matListItemTitle>Poem</span>
         <span>Magnifying the Lord with poetry and song. </span>
       </mat-list-item>
       <mat-list-item lines="3" (click)="goStudies(); drawer.close()">
-        <fa-icon matListItemIcon [icon]="studyIcon" [size]="'lg'"></fa-icon>
+        <lib-fa-icon matListItemIcon [icon]="studyIcon"></lib-fa-icon>
         <span matListItemTitle>Study</span>
         <span>Grouping scripture for a complete understanding. </span>
       </mat-list-item>
@@ -44,12 +44,12 @@
 
       <div mat-subheader>Pictures</div>
       <mat-list-item lines="3" (click)="goDrawings(); drawer.close()">
-        <fa-icon matListItemIcon [icon]="drawingIcon" [size]="'lg'"></fa-icon>
+        <lib-fa-icon matListItemIcon [icon]="drawingIcon"></lib-fa-icon>
         <span matListItemTitle>Drawing</span>
         <span>Contrast spiritual truths in a simple way.</span>
       </mat-list-item>
       <mat-list-item lines="3" (click)="goTracts(); drawer.close()">
-        <fa-icon matListItemIcon [icon]="tractIcon" [size]="'lg'"></fa-icon>
+        <lib-fa-icon matListItemIcon [icon]="tractIcon"></lib-fa-icon>
         <span matListItemTitle>Tract</span>
         <span>Tracts to communicate truth in a quick & effective way.</span>
       </mat-list-item>
@@ -57,7 +57,7 @@
       <!-- <mat-divider></mat-divider>
       <div mat-subheader>Resources</div>
       <mat-list-item lines="3" (click)="goResources(); drawer.close()">
-        <fa-icon matListItemIcon [icon]="resourceIcon" [size]="'lg'"></fa-icon>
+        <lib-fa-icon matListItemIcon [icon]="resourceIcon" ></lib-fa-icon>
         <span matListItemTitle>Link</span>
         <span>other proven links and websites and resources.</span>
       </mat-list-item> -->
@@ -65,12 +65,12 @@
       <mat-divider></mat-divider>
       <div mat-subheader>Contact</div>
       <mat-list-item lines="3" (click)="goHome(); drawer.close()">
-        <fa-icon matListItemIcon [icon]="homeIcon" [size]="'lg'"></fa-icon>
+        <lib-fa-icon matListItemIcon [icon]="homeIcon"></lib-fa-icon>
         <span matListItemTitle>About Me</span>
         <span>My testimony & a message of encouragement.</span>
       </mat-list-item>
       <mat-list-item lines="2" (click)="goEmail(); drawer.close()">
-        <fa-icon matListItemIcon [icon]="mailIcon" [size]="'lg'"></fa-icon>
+        <lib-fa-icon matListItemIcon [icon]="mailIcon"></lib-fa-icon>
         <span matListItemTitle>Contact Me</span>
         <span>Be honest & contact me.</span>
       </mat-list-item>
@@ -92,7 +92,7 @@
           aria-labelledby="Menu button"
           aria-label="Menu button"
         >
-          <fa-icon [icon]="icon" [size]="'lg'"></fa-icon>
+          <lib-fa-icon [icon]="icon"></lib-fa-icon>
         </button>
 
         <button
@@ -103,7 +103,7 @@
           aria-labelledby="Menu button"
           aria-label="Menu button"
         >
-          <fa-icon [icon]="icon" [size]="'lg'"></fa-icon>
+          <lib-fa-icon [icon]="icon"></lib-fa-icon>
         </button>
 
         <mat-menu #menu="matMenu">
@@ -130,7 +130,7 @@
           aria-labelledby="Gospel button"
           aria-label="Gospel button"
         >
-          <fa-icon [icon]="gospelIcon" [size]="'lg'"></fa-icon>
+          <lib-fa-icon [icon]="gospelIcon"></lib-fa-icon>
         </button>
         <button
           mat-icon-button
@@ -140,7 +140,7 @@
           aria-labelledby="Bible button"
           aria-label="Bible button"
         >
-          <fa-icon [icon]="bookIcon" [size]="'lg'"></fa-icon>
+          <lib-fa-icon [icon]="bookIcon"></lib-fa-icon>
         </button>
       </mat-toolbar>
     </div>
@@ -157,7 +157,7 @@
       aria-labelledby="Top button"
       aria-label="Top button"
     >
-      <fa-icon [icon]="arrowIcon" [size]="'lg'"></fa-icon>
+      <lib-fa-icon [icon]="arrowIcon"></lib-fa-icon>
     </button>
 
     <mat-progress-bar

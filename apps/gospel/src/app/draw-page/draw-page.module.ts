@@ -6,6 +6,7 @@ import { RouterModule, Routes } from "@angular/router";
 import { FontAwesomeModule } from "@fortawesome/angular-fontawesome";
 import { PinchZoomComponent } from "@meddv/ngx-pinch-zoom";
 import { PhotoGalleryModule } from "@twogate/ngx-photo-gallery";
+import { LibFaIconComponent } from "shared";
 import { DrawItemComponent } from "./draw-item/draw-item.component";
 import { DrawPageComponent } from "./draw-page.component";
 
@@ -29,6 +30,7 @@ const routes: Routes = [
     FontAwesomeModule,
     MatTooltipModule,
     PinchZoomComponent,
+    LibFaIconComponent,
     PhotoGalleryModule.forRoot({
       defaultOptions: {
         arrowEl: false,

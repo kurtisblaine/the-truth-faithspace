@@ -5,7 +5,7 @@
       class="primary-color"
       style="text-decoration: underline; cursor: pointer"
       >{{ image.name }}
-      <fa-icon [icon]="faLink" [size]="'lg'" style="padding-left: 2px"></fa-icon>
+      <lib-fa-icon [icon]="faLink" style="padding-left: 2px"></lib-fa-icon>
     </mat-grid-tile-header>
     <mat-grid-tile-footer>{{ image.footer }}</mat-grid-tile-footer>
     <div [photoGallery]="image.originUrl" [photoGalleryCaption]="image.name + ' - ' + image.description">

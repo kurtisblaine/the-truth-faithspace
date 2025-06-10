@@ -15,6 +15,7 @@ import { MatProgressBarModule } from "@angular/material/progress-bar";
 import { MatSidenavModule } from "@angular/material/sidenav";
 import { MatTooltipModule } from "@angular/material/tooltip";
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
+import { LibFaIconComponent } from "shared";
 import { AppRoutingModule } from "./app.routing.module";
 import { SharedModule } from "./shared/shared.module";
 import { StateModule } from "./state/state.module";
@@ -47,6 +48,7 @@ const firebaseConfig = {
     MatListModule,
     MatTooltipModule,
     MatMenuModule,
+    LibFaIconComponent,
   ],
   providers: [
     provideFirebaseApp(() => initializeApp(firebaseConfig)),

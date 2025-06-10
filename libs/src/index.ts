@@ -1,2 +1,3 @@
 export * from "./lib/shared/animations/animation";
+export * from "./lib/shared/components/icon/fa-icon.component";
 export * from "./lib/shared/shared.module";
