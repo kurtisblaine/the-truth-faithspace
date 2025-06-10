@@ -1,7 +1,5 @@
 import { Component, Input, OnDestroy, OnInit, ViewChild, ViewContainerRef } from "@angular/core";
-import { faPause } from "@fortawesome/free-solid-svg-icons/faPause";
-import { faPlay } from "@fortawesome/free-solid-svg-icons/faPlay";
-import { faStop } from "@fortawesome/free-solid-svg-icons/faStop";
+import { faPause, faPlay, faStop } from "@fortawesome/free-solid-svg-icons";
 import { Subscription } from "rxjs";
 import { SpeechService, SpeechStatus } from "./speech.service";
 

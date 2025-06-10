@@ -8,7 +8,6 @@ import { MatIconModule } from "@angular/material/icon";
 import { MatInputModule } from "@angular/material/input";
 import { MatSnackBarModule } from "@angular/material/snack-bar";
 import { MatTooltipModule } from "@angular/material/tooltip";
-import { FontAwesomeModule } from "@fortawesome/angular-fontawesome";
 import { NgxEditorModule } from "ngx-editor";
 import { LibFaIconComponent } from "./components/icon/fa-icon.component";
 import { NarratorComponent } from "./components/narrator/narrator.component";
@@ -24,7 +23,6 @@ import { TooltipDirective } from "./directives/tooltip.directive";
     MatFormFieldModule,
     MatInputModule,
     ReactiveFormsModule,
-    FontAwesomeModule,
     NgxEditorModule.forRoot(),
     MatButtonModule,
     MatButtonToggleModule,

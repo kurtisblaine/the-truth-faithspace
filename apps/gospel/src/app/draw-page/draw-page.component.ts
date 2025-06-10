@@ -1,6 +1,6 @@
 import { Component, OnInit } from "@angular/core";
 import { Router } from "@angular/router";
-import { faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons/faArrowUpRightFromSquare";
+import { faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
 import { DataService } from "./data.service";
 export interface Image {
   id: number;
