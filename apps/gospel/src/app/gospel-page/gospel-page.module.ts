@@ -9,6 +9,7 @@ import { RouterModule, Routes } from "@angular/router";
 import { AngularFullpageModule } from "@fullpage/angular-fullpage";
 import { SharedLibraryModule } from "shared";
 import { SharedModule } from "../shared/shared.module";
+import { FullGospelComponent } from "./full-gospel/full-gospel.component";
 import { CallFaithModule } from "./gospel-content/call-faith/call-faith.module";
 import { CallGraceModule } from "./gospel-content/call-grace/call-grace.module";
 import { DangerDeathModule } from "./gospel-content/danger-death/danger-death.module";
@@ -18,20 +19,23 @@ import { ResponseModule } from "./gospel-content/response/response.module";
 import { GospelHeaderComponent } from "./gospel-header/gospel-header.component";
 import { GospelPageComponent } from "./gospel-page.component";
 import { GospelSectionComponent } from "./gospel-section/gospel-section.component";
+import { StaticGospelComponent } from "./static-gospel/static-gospel.component";
 
 const routes: Routes = [
   {
     path: "",
     component: GospelPageComponent,
   },
-  // {
-  //   path: "legacy",
-  //   component: GospelComponent,
-  // },
 ];
 
 @NgModule({
-  declarations: [GospelSectionComponent, GospelHeaderComponent, GospelPageComponent],
+  declarations: [
+    GospelSectionComponent,
+    GospelHeaderComponent,
+    GospelPageComponent,
+    FullGospelComponent,
+    StaticGospelComponent,
+  ],
   imports: [
     CommonModule,
     SharedModule,
