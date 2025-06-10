@@ -3,7 +3,6 @@ import { BrowserModule } from "@angular/platform-browser";
 
 import { MatButtonModule } from "@angular/material/button";
 import { MatToolbarModule } from "@angular/material/toolbar";
-import { FontAwesomeModule } from "@fortawesome/angular-fontawesome";
 import { AppComponent } from "./app.component";
 
 import { provideHttpClient } from "@angular/common/http";
@@ -42,7 +41,6 @@ const firebaseConfig = {
     BrowserModule,
     MatButtonModule,
     MatToolbarModule,
-    FontAwesomeModule,
     StateModule,
     AppRoutingModule,
     MatListModule,

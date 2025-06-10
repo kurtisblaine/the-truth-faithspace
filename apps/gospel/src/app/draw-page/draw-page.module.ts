@@ -3,7 +3,6 @@ import { NgModule } from "@angular/core";
 import { MatGridListModule } from "@angular/material/grid-list";
 import { MatTooltipModule } from "@angular/material/tooltip";
 import { RouterModule, Routes } from "@angular/router";
-import { FontAwesomeModule } from "@fortawesome/angular-fontawesome";
 import { PinchZoomComponent } from "@meddv/ngx-pinch-zoom";
 import { PhotoGalleryModule } from "@twogate/ngx-photo-gallery";
 import { LibFaIconComponent } from "shared";
@@ -27,7 +26,6 @@ const routes: Routes = [
     CommonModule,
     RouterModule.forChild(routes),
     MatGridListModule,
-    FontAwesomeModule,
     MatTooltipModule,
     PinchZoomComponent,
     LibFaIconComponent,
