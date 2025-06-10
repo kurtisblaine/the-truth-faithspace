@@ -51,6 +51,7 @@ export const config: ScullyConfig = {
       "--disable-extensions",
     ],
     // slowMo: 5000,
-    // devtools: true, with -- --showBrowser
+    // devtools: true
+    // npm run scully:build -- --showBrowser
   },
 };

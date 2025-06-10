@@ -1,25 +1,18 @@
-import { AfterViewInit, Component, HostBinding, OnInit } from "@angular/core";
+import { AfterViewInit, ChangeDetectionStrategy, Component, HostBinding, OnInit } from "@angular/core";
 import { ActivatedRoute, Router } from "@angular/router";
-import { fadeInOut } from "shared";
-import { RouterService } from "./router.service";
-import { TemplateService } from "./template.service";
+
 @Component({
-  selector: "blog-gospel",
-  templateUrl: "./gospel.component.html",
-  styleUrl: "./gospel.component.scss",
-  animations: [fadeInOut],
+  selector: "gospel-static-gospel",
   standalone: false,
+  templateUrl: "./static-gospel.component.html",
+  styleUrl: "./static-gospel.component.scss",
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class GospelComponent implements AfterViewInit, OnInit {
+export class StaticGospelComponent implements AfterViewInit, OnInit {
   public showAccordion = false;
   @HostBinding("id.scrollProgress") someField = true;
 
-  constructor(
-    private router: Router,
-    public templateService: TemplateService,
-    public routerService: RouterService,
-    public activeRoute: ActivatedRoute
-  ) {}
+  constructor(private router: Router, public activeRoute: ActivatedRoute) {}
 
   ngOnInit() {
     setTimeout(() => {

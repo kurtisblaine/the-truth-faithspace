@@ -1,0 +1,84 @@
+.custom-panel {
+  background: transparent;
+  box-shadow: none !important;
+  margin: 0;
+  text-transform: none;
+  justify-items: center;
+}
+
+button[mat-button] {
+  font-size: 16px;
+  color: white;
+}
+
+.header-title {
+  letter-spacing: 5px;
+}
+
+.header-pane {
+  padding: 0px 100px;
+  text-align: center;
+  color: #fff;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  line-height: normal;
+  align-content: center;
+  align-self: center;
+  height: 100%;
+}
+
+.header-pane > button {
+  text-decoration: underline;
+}
+
+.wedding-image {
+  background-image: url("https://res.cloudinary.com/dffihsa2y/image/upload/v1711590013/img/Mat25L_dzpagk.webp");
+  min-height: 400px;
+  box-shadow: inset 0 0 0 100vmax rgba(0, 0, 0, 0.1);
+}
+
+.armor-image {
+  background-image: url("https://res.cloudinary.com/dffihsa2y/image/upload/v1711590027/img/Rotator-10f_srbkmk.webp");
+  min-height: 400px;
+}
+
+.rent-image {
+  background-image: url("https://res.cloudinary.com/dffihsa2y/image/upload/v1711590014/img/rent_wxiwvf.webp");
+  min-height: 400px;
+}
+
+.camp-image {
+  background-image: url("https://res.cloudinary.com/dffihsa2y/image/upload/v1711590014/img/Rotator-4f_zydoe1.webp");
+  min-height: 400px;
+}
+
+.sin-image {
+  background-image: url("https://res.cloudinary.com/dffihsa2y/image/upload/v1711590027/img/sin_s3obrq.webp");
+  min-height: 400px;
+}
+
+.horses-image {
+  background-image: url("https://res.cloudinary.com/dffihsa2y/image/upload/v1711590014/img/Rotator-7f_ydnvku.webp");
+  min-height: 400px;
+  box-shadow: inset 0 0 0 100vmax rgba(0, 0, 0, 0.1);
+}
+
+.new-earth-image {
+  background-image: url("https://res.cloudinary.com/dffihsa2y/image/upload/v1711590013/img/new_xvdoun.webp");
+  min-height: 400px;
+}
+
+.wedding-image,
+.armor-image,
+.pillar-fire-image,
+.camp-image,
+.sin-image,
+.horses-image,
+.new-earth-image,
+.rent-image {
+  position: relative;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
