@@ -9,7 +9,6 @@ import { RouterModule, Routes } from "@angular/router";
 import { AngularFullpageModule } from "@fullpage/angular-fullpage";
 import { SharedLibraryModule } from "shared";
 import { SharedModule } from "../shared/shared.module";
-import { GospelComponent } from "./_legacy-gospel-page/gospel.component";
 import { CallFaithModule } from "./gospel-content/call-faith/call-faith.module";
 import { CallGraceModule } from "./gospel-content/call-grace/call-grace.module";
 import { DangerDeathModule } from "./gospel-content/danger-death/danger-death.module";
@@ -25,14 +24,14 @@ const routes: Routes = [
     path: "",
     component: GospelPageComponent,
   },
-  {
-    path: "legacy",
-    component: GospelComponent,
-  },
+  // {
+  //   path: "legacy",
+  //   component: GospelComponent,
+  // },
 ];
 
 @NgModule({
-  declarations: [GospelSectionComponent, GospelHeaderComponent, GospelPageComponent, GospelComponent],
+  declarations: [GospelSectionComponent, GospelHeaderComponent, GospelPageComponent],
   imports: [
     CommonModule,
     SharedModule,
