@@ -73,7 +73,7 @@ export class SpeechService implements OnDestroy {
     this.currentlyPlayingId.next(componentId);
 
     const voices = this.speechSynthesis!.getVoices();
-    const defaultVoice = voices.find((v) => v.default || v.name === "Alex");
+    const defaultVoice = voices.find((v) => v.name === "Alex");
     const voice = defaultVoice ?? voices[0];
     utterance.voice = voice;
     utterance.lang = voice.lang;

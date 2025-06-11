@@ -50,7 +50,7 @@ export class FullGospelComponent implements OnInit, AfterViewInit, OnDestroy {
       loopHorizontal: false,
       loopBottom: false,
       loopTop: false,
-      credits: { enabled: true, label: "May the grace of the Lord be with you.", position: "left" },
+      credits: { enabled: true, label: "May the Lord keep you.", position: "left" },
     };
   }
 
