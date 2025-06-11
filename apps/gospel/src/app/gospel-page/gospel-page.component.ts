@@ -1,6 +1,5 @@
 import { ChangeDetectionStrategy, Component } from "@angular/core";
 import { isScullyRunning } from "@scullyio/ng-lib";
-import { SeoBaseComponent } from "../shared/components/seo-base/seo-base.component";
 
 @Component({
   selector: "gospel-gospel-page",
@@ -9,6 +8,6 @@ import { SeoBaseComponent } from "../shared/components/seo-base/seo-base.compone
   styleUrl: "./gospel-page.component.scss",
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class GospelPageComponent extends SeoBaseComponent {
+export class GospelPageComponent {
   public renderUserExperience = !isScullyRunning();
 }
