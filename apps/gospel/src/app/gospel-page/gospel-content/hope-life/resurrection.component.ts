@@ -1,10 +1,11 @@
 import { CommonModule } from "@angular/common";
 import { ChangeDetectionStrategy, Component } from "@angular/core";
-import { SharedModule } from "../../../shared/shared.module";
+import { LinkComponent } from "../../../shared/components/link-redirect/link.component";
+import { ReferenceTooltipComponent } from "../../../shared/components/reference-tooltip/reference-tooltip.component";
 
 @Component({
   selector: "gospel-resurrection",
-  imports: [CommonModule, SharedModule],
+  imports: [CommonModule, ReferenceTooltipComponent, LinkComponent],
   template: `<ng-container *ngTemplateOutlet="resurrectionOfLife"></ng-container>
     <ng-template #resurrectionOfLife>
       Before the coming of the Lord, the antichrist will be revealed, the man of lawlessness; he will work many false

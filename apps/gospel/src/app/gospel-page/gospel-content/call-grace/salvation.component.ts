@@ -1,10 +1,10 @@
 import { CommonModule } from "@angular/common";
 import { ChangeDetectionStrategy, Component } from "@angular/core";
-import { SharedModule } from "../../../shared/shared.module";
+import { ReferenceTooltipComponent } from "../../../shared/components/reference-tooltip/reference-tooltip.component";
 
 @Component({
   selector: "gospel-salvation",
-  imports: [CommonModule, SharedModule],
+  imports: [CommonModule, ReferenceTooltipComponent],
   template: `<ng-container *ngTemplateOutlet="eternalSalvation"></ng-container>
     <ng-template #eternalSalvation>
       The world was judged before by water, a massive flood; historians know that the world went through some

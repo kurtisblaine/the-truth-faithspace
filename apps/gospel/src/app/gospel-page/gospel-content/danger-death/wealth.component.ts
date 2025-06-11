@@ -1,10 +1,10 @@
 import { CommonModule } from "@angular/common";
 import { ChangeDetectionStrategy, Component } from "@angular/core";
-import { SharedModule } from "../../../shared/shared.module";
+import { ReferenceTooltipComponent } from "../../../shared/components/reference-tooltip/reference-tooltip.component";
 
 @Component({
   selector: "gospel-wealth",
-  imports: [CommonModule, SharedModule],
+  imports: [CommonModule, ReferenceTooltipComponent],
   template: `<ng-container *ngTemplateOutlet="loveOfWealth"></ng-container>
     <ng-template #loveOfWealth>
       There was a man who went into a pub with everything he owned. He sat down at the table to gamble. At first, he

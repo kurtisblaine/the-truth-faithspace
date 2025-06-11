@@ -1,10 +1,11 @@
 import { CommonModule } from "@angular/common";
 import { ChangeDetectionStrategy, Component } from "@angular/core";
-import { SharedModule } from "../../../shared/shared.module";
+import { LinkComponent } from "../../../shared/components/link-redirect/link.component";
+import { ReferenceTooltipComponent } from "../../../shared/components/reference-tooltip/reference-tooltip.component";
 
 @Component({
   selector: "gospel-scapegoat",
-  imports: [CommonModule, SharedModule],
+  imports: [CommonModule, ReferenceTooltipComponent, LinkComponent],
   template: `<ng-container *ngTemplateOutlet="theScapegoat"></ng-container>
     <ng-template #theScapegoat>
       <!-- In the book of Leviticus, there are two instances where two animals were brought for sacrifice: one was slain and

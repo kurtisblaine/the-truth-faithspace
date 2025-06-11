@@ -1,10 +1,11 @@
 import { CommonModule } from "@angular/common";
 import { ChangeDetectionStrategy, Component } from "@angular/core";
-import { SharedModule } from "../../../shared/shared.module";
+import { LinkComponent } from "../../../shared/components/link-redirect/link.component";
+import { ReferenceTooltipComponent } from "../../../shared/components/reference-tooltip/reference-tooltip.component";
 
 @Component({
   selector: "gospel-victor",
-  imports: [CommonModule, SharedModule],
+  imports: [CommonModule, ReferenceTooltipComponent, LinkComponent],
   template: `<ng-container *ngTemplateOutlet="theVictor"></ng-container>
     <ng-template #theVictor>
       God raised up Samson to be a judge for Israel. He was a mighty judge in the land of Israel, killing many of their

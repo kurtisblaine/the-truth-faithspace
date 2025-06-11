@@ -1,10 +1,10 @@
 import { CommonModule } from "@angular/common";
 import { ChangeDetectionStrategy, Component } from "@angular/core";
-import { SharedModule } from "../../../shared/shared.module";
+import { ReferenceTooltipComponent } from "../../../shared/components/reference-tooltip/reference-tooltip.component";
 
 @Component({
   selector: "gospel-toil",
-  imports: [CommonModule, SharedModule],
+  imports: [CommonModule, ReferenceTooltipComponent],
   template: `<ng-container *ngTemplateOutlet="workAndToil"></ng-container>
     <ng-template #workAndToil>
       Our lives are filled with work and toil: we work then rest, to do it all over again the next day. The days do not

@@ -16,7 +16,8 @@ import { MatTooltipModule } from "@angular/material/tooltip";
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 import { LibFaIconComponent } from "shared";
 import { AppRoutingModule } from "./app.routing.module";
-import { SharedModule } from "./shared/shared.module";
+import { LinkComponent } from "./shared/components/link-redirect/link.component";
+import { ReferenceTooltipComponent } from "./shared/components/reference-tooltip/reference-tooltip.component";
 import { StateModule } from "./state/state.module";
 
 const firebaseConfig = {
@@ -37,7 +38,8 @@ const firebaseConfig = {
     FirestoreModule,
     MatProgressBarModule,
     BrowserAnimationsModule,
-    SharedModule,
+    LinkComponent,
+    ReferenceTooltipComponent,
     BrowserModule,
     MatButtonModule,
     MatToolbarModule,

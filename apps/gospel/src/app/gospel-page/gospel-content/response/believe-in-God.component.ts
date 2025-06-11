@@ -1,10 +1,10 @@
 import { CommonModule } from "@angular/common";
 import { ChangeDetectionStrategy, Component } from "@angular/core";
-import { SharedModule } from "../../../shared/shared.module";
+import { ReferenceTooltipComponent } from "../../../shared/components/reference-tooltip/reference-tooltip.component";
 
 @Component({
   selector: "gospel-believe-in-god",
-  imports: [CommonModule, SharedModule],
+  imports: [CommonModule, ReferenceTooltipComponent],
   template: `<ng-container *ngTemplateOutlet="believeInGod"></ng-container>
     <ng-template #believeInGod>
       After we have died and been buried, united with Christ, it is necessary for us to be alive to something else. By

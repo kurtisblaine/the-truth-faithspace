@@ -1,10 +1,11 @@
 import { CommonModule } from "@angular/common";
 import { ChangeDetectionStrategy, Component } from "@angular/core";
-import { SharedModule } from "../../../shared/shared.module";
+import { LinkComponent } from "../../../shared/components/link-redirect/link.component";
+import { ReferenceTooltipComponent } from "../../../shared/components/reference-tooltip/reference-tooltip.component";
 
 @Component({
   selector: "gospel-bronze-serpent",
-  imports: [CommonModule, SharedModule],
+  imports: [CommonModule, ReferenceTooltipComponent, LinkComponent],
   template: `<ng-container *ngTemplateOutlet="theBronzeSerpent"></ng-container>
     <ng-template #theBronzeSerpent>
       God sent fiery serpents against His people in the wilderness, then He gave them a provision through His grace so

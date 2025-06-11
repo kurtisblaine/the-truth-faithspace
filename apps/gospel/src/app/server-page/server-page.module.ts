@@ -9,7 +9,6 @@ import { BlogListComponent } from "../blog-page/blog-list/blog-list.component";
 import { DiscernListComponent } from "../discern-page/discern-list/discern-list.component";
 import { InsightListComponent } from "../insight-page/insight-list/insight-list.component";
 import { PsalmListComponent } from "../psalm-page/psalm-list/psalm-list.component";
-import { SharedModule } from "../shared/shared.module";
 import { StudyListComponent } from "../study-page/study-list/study-list.component";
 import { ServerPageComponent } from "./server-page.component";
 
@@ -25,7 +24,6 @@ const routes: Routes = [
     RouterModule.forChild(routes),
     MatExpansionModule,
     CommonModule,
-    SharedModule,
     MatButtonModule,
     FormsModule,
     ReactiveFormsModule,

@@ -5,7 +5,7 @@ import { RouterModule, Routes } from "@angular/router";
 import { MatButtonModule } from "@angular/material/button";
 import { MatCardModule } from "@angular/material/card";
 import { NarratorComponent } from "shared";
-import { SharedModule } from "../shared/shared.module";
+import { ReferenceTooltipComponent } from "../shared/components/reference-tooltip/reference-tooltip.component";
 import HomePageComponent from "./home-page.component";
 
 const routes: Routes = [
@@ -19,7 +19,7 @@ const routes: Routes = [
   declarations: [HomePageComponent],
   imports: [
     CommonModule,
-    SharedModule,
+    ReferenceTooltipComponent,
     MatButtonModule,
     MatCardModule,
     NarratorComponent,

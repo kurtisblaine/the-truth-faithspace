@@ -1,10 +1,10 @@
 import { CommonModule } from "@angular/common";
 import { ChangeDetectionStrategy, Component } from "@angular/core";
-import { SharedModule } from "../../../shared/shared.module";
+import { ReferenceTooltipComponent } from "../../../shared/components/reference-tooltip/reference-tooltip.component";
 
 @Component({
   selector: "gospel-consuming-fire",
-  imports: [CommonModule, SharedModule],
+  imports: [CommonModule, ReferenceTooltipComponent],
   template: `<ng-container *ngTemplateOutlet="aConsumingFire"></ng-container>
     <ng-template #aConsumingFire>
       We are in a great debt, and God's anger burns against sin, for it corrupts what He has created; as it says,

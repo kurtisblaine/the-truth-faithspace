@@ -7,8 +7,8 @@ import { MatProgressSpinnerModule } from "@angular/material/progress-spinner";
 import { MatToolbarModule } from "@angular/material/toolbar";
 import { RouterModule, Routes } from "@angular/router";
 import { NarratorComponent } from "shared";
+import { ReferenceTooltipComponent } from "../shared/components/reference-tooltip/reference-tooltip.component";
 import { FullpageDirective } from "../shared/directives/fullpage/fullpage.directive";
-import { SharedModule } from "../shared/shared.module";
 import { CallFaithModule } from "./gospel-content/call-faith/call-faith.module";
 import { CallGraceModule } from "./gospel-content/call-grace/call-grace.module";
 import { DangerDeathModule } from "./gospel-content/danger-death/danger-death.module";
@@ -30,7 +30,6 @@ const routes: Routes = [
   declarations: [GospelSectionComponent, GospelHeaderComponent, GospelPageComponent],
   imports: [
     CommonModule,
-    SharedModule,
     MatButtonModule,
     RouterModule.forChild(routes),
     MatCardModule,
@@ -45,6 +44,7 @@ const routes: Routes = [
     HopeLifeModule,
     FullpageDirective,
     NarratorComponent,
+    ReferenceTooltipComponent,
   ],
   providers: [],
 })

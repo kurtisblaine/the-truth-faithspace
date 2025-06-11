@@ -1,3 +1,4 @@
+import { CommonModule } from "@angular/common";
 import { ChangeDetectionStrategy, Component, Input, OnInit } from "@angular/core";
 
 @Component({
@@ -5,7 +6,8 @@ import { ChangeDetectionStrategy, Component, Input, OnInit } from "@angular/core
   templateUrl: "./reference-tooltip.component.html",
   styleUrls: ["./reference-tooltip.component.scss"],
   changeDetection: ChangeDetectionStrategy.OnPush,
-  standalone: false,
+  standalone: true,
+  imports: [CommonModule],
 })
 export class ReferenceTooltipComponent implements OnInit {
   @Input() public reference!: string;
