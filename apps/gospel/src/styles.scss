@@ -29,6 +29,7 @@
 @include mat.core();
 
 html {
+  color-scheme: light dark;
   @include mat.theme(
     (
       color: mat.$azure-palette,

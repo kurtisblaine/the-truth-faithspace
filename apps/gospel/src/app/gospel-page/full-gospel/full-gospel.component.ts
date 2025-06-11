@@ -68,9 +68,9 @@ export class FullGospelComponent implements OnInit, AfterViewInit, OnDestroy {
       });
 
     this.isMobile.set(this.deviceDetector.isMobile());
-    // if (this.isMobile()) {
-    //   this.fullpageApi.setResponsive(true);
-    // }
+    if (this.isMobile()) {
+      this.fullpageApi.setResponsive(true);
+    }
   }
 
   ngOnDestroy(): void {
