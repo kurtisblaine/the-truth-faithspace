@@ -1,6 +1,5 @@
 import { Component } from "@angular/core";
-import { Meta, Title } from "@angular/platform-browser";
-import { Router } from "@angular/router";
+import { SeoBaseComponent } from "../shared/components/seo-base/seo-base.component";
 
 @Component({
   selector: "blog-tract-page",
@@ -8,8 +7,8 @@ import { Router } from "@angular/router";
   styleUrl: "./tract-page.component.scss",
   standalone: false,
 })
-export class TractPageComponent {
-  constructor(private router: Router, private meta: Meta, private title: Title) {}
+export class TractPageComponent extends SeoBaseComponent {
+  override keywords: string = "tracts, bookmarks, cards, reminder, print, truth, eternity";
 
   openLink(link: string) {
     window.open(link, "_blank");

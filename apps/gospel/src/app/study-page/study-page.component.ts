@@ -1,6 +1,7 @@
 import { ChangeDetectionStrategy, Component, OnInit } from "@angular/core";
 import { Store } from "@ngrx/store";
 import { map, Observable } from "rxjs";
+import { SeoBaseComponent } from "../shared/components/seo-base/seo-base.component";
 import { StudyActions } from "../state/study/study.actions";
 import { getStudyLoaded } from "../state/study/study.selectors";
 
@@ -11,9 +12,13 @@ import { getStudyLoaded } from "../state/study/study.selectors";
   changeDetection: ChangeDetectionStrategy.OnPush,
   standalone: false,
 })
-export class StudyPageComponent implements OnInit {
+export class StudyPageComponent extends SeoBaseComponent implements OnInit {
   public isLoading$: Observable<boolean>;
-  constructor(private store: Store) {}
+  protected override keywords: string = "scriptures, truth, rightly divide, worker, unashamed";
+
+  constructor(private store: Store) {
+    super();
+  }
 
   ngOnInit(): void {
     this.store.dispatch(StudyActions.loadStudies());

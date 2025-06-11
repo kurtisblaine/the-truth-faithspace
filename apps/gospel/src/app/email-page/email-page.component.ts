@@ -1,6 +1,7 @@
 import { Component, OnInit } from "@angular/core";
 import { FormBuilder, FormControl, FormGroup, ValidatorFn, Validators } from "@angular/forms";
 import { MatSnackBar } from "@angular/material/snack-bar";
+import { SeoBaseComponent } from "../shared/components/seo-base/seo-base.component";
 import { ContactService } from "./contact.service";
 
 @Component({
@@ -9,10 +10,13 @@ import { ContactService } from "./contact.service";
   styleUrls: ["./email-page.component.scss"],
   standalone: false,
 })
-export class EmailPageComponent implements OnInit {
+export class EmailPageComponent extends SeoBaseComponent implements OnInit {
   public FormData!: FormGroup;
+  protected override keywords: string = "contact, email, phone, help, kurtis, waldner";
 
-  constructor(private builder: FormBuilder, private contact: ContactService, private snackBar: MatSnackBar) {}
+  constructor(private builder: FormBuilder, private contact: ContactService, private snackBar: MatSnackBar) {
+    super();
+  }
 
   public ngOnInit(): void {
     const emailValidators = Validators.compose([Validators.required, Validators.email]) as ValidatorFn;

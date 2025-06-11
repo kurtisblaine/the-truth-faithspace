@@ -1,5 +1,5 @@
 import { CommonModule } from "@angular/common";
-import { AfterViewInit, ChangeDetectionStrategy, Component, ElementRef, ViewChild } from "@angular/core";
+import { AfterViewInit, ChangeDetectionStrategy, Component, ElementRef, inject, ViewChild } from "@angular/core";
 import { Meta, Title } from "@angular/platform-browser";
 
 @Component({
@@ -10,14 +10,19 @@ import { Meta, Title } from "@angular/platform-browser";
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class SeoBaseComponent implements AfterViewInit {
+  private meta = inject(Meta);
+  private title = inject(Title);
+
   @ViewChild("seoCaption") private seoCaption: ElementRef;
   @ViewChild("seoTitle") private seoTitle: ElementRef;
 
   protected keywords: string;
 
-  constructor(private meta: Meta, private title: Title) {}
-
   ngAfterViewInit(): void {
+    console.log(this.seoCaption.nativeElement.innerText);
+    console.log(this.seoTitle.nativeElement.innerText);
+    console.log(this.keywords);
+
     this.title.setTitle(this.seoTitle.nativeElement.innerText);
     this.meta.addTags([
       { name: "description", content: this.seoCaption.nativeElement.innerText },

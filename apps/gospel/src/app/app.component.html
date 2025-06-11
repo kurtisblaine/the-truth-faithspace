@@ -1,7 +1,6 @@
 <mat-drawer-container style="width: 100%; height: 100%" [hasBackdrop]="false">
   <mat-drawer style="width: 280px; position: fixed" #drawer [mode]="'side'" [autoFocus]="true">
     <mat-list>
-      <!-- <div mat-subheader>Truth</div> -->
       <mat-list-item lines="3" (click)="goGospel(); drawer.close()">
         <lib-fa-icon matListItemIcon [icon]="gospelIcon"></lib-fa-icon>
         <span matListItemTitle>The Good News</span>
@@ -54,16 +53,7 @@
         <span>Tracts to communicate truth in a quick & effective way.</span>
       </mat-list-item>
 
-      <!-- <mat-divider></mat-divider>
-      <div mat-subheader>Resources</div>
-      <mat-list-item lines="3" (click)="goResources(); drawer.close()">
-        <lib-fa-icon matListItemIcon [icon]="resourceIcon" ></lib-fa-icon>
-        <span matListItemTitle>Link</span>
-        <span>other proven links and websites and resources.</span>
-      </mat-list-item> -->
-
       <mat-divider></mat-divider>
-      <div mat-subheader>Contact</div>
       <mat-list-item lines="3" (click)="goHome(); drawer.close()">
         <lib-fa-icon matListItemIcon [icon]="homeIcon"></lib-fa-icon>
         <span matListItemTitle>About Me</span>
