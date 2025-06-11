@@ -6,7 +6,7 @@ import { Router } from "@angular/router";
 import { Store } from "@ngrx/store";
 import { cloneDeep } from "lodash-es";
 import { Observable, map } from "rxjs";
-import { SharedLibraryModule } from "shared";
+import { TextEditorComponent } from "shared";
 import { createDiscern } from "../../state/discern/discern.actions";
 import { DiscernEntity } from "../../state/discern/discern.models";
 import { getAllDiscern } from "../../state/discern/discern.selectors";
@@ -15,7 +15,7 @@ import { getAllDiscern } from "../../state/discern/discern.selectors";
   selector: "blog-discern-list",
   templateUrl: "./discern-list.component.html",
   styleUrls: ["./discern-list.component.scss"],
-  imports: [MatDividerModule, CommonModule, SharedLibraryModule, MatButtonModule],
+  imports: [MatDividerModule, CommonModule, TextEditorComponent, MatButtonModule],
 
   standalone: true,
 })

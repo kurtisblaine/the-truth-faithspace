@@ -6,7 +6,7 @@ import { Router } from "@angular/router";
 import { Store } from "@ngrx/store";
 import { cloneDeep } from "lodash-es";
 import { map, Observable } from "rxjs";
-import { SharedLibraryModule } from "shared";
+import { TextEditorComponent } from "shared";
 import { StudyActions } from "../../state/study/study.actions";
 import { StudyEntity } from "../../state/study/study.model";
 import { getAllStudy } from "../../state/study/study.selectors";
@@ -17,7 +17,7 @@ import { getAllStudy } from "../../state/study/study.selectors";
   styleUrl: "./study-list.component.scss",
   changeDetection: ChangeDetectionStrategy.OnPush,
   standalone: true,
-  imports: [MatDividerModule, CommonModule, SharedLibraryModule, MatButtonModule],
+  imports: [MatDividerModule, CommonModule, MatButtonModule, TextEditorComponent],
 })
 export class StudyListComponent implements OnInit {
   @Input() public update = false;

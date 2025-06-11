@@ -4,7 +4,7 @@ import { MatListModule } from "@angular/material/list";
 import { Router } from "@angular/router";
 import { Store } from "@ngrx/store";
 import { Observable } from "rxjs";
-import { SharedLibraryModule } from "shared";
+import { TooltipDirective } from "shared";
 import { selectTranslation } from "../+state/bibles/bibles.actions";
 import { getBibleByLanguageName } from "../+state/bibles/bibles.selectors";
 import { Bible } from "../models/bibles";
@@ -12,7 +12,7 @@ import { Bible } from "../models/bibles";
 @Component({
   selector: "app-bible-page",
   standalone: true,
-  imports: [CommonModule, MatListModule, SharedLibraryModule],
+  imports: [CommonModule, MatListModule, TooltipDirective],
   templateUrl: "./bible-page.component.html",
   styleUrl: "./bible-page.component.scss",
   changeDetection: ChangeDetectionStrategy.OnPush,

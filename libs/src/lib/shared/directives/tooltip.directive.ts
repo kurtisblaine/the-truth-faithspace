@@ -14,7 +14,7 @@ import { TooltipComponent, TooltipPosition } from "@angular/material/tooltip";
 
 @Directive({
   selector: "[libTooltip]",
-  standalone: false,
+  standalone: true,
 })
 export class TooltipDirective implements OnInit, OnDestroy {
   private readonly defaultDelay = 0;

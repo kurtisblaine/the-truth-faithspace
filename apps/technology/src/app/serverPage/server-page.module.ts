@@ -8,10 +8,11 @@ import { MatInputModule } from "@angular/material/input";
 import { MatTooltipModule } from "@angular/material/tooltip";
 import { RouterModule, Routes } from "@angular/router";
 import { FontAwesomeModule } from "@fortawesome/angular-fontawesome";
-import { SharedLibraryModule } from "../../../../../libs/src";
+import { TextEditorComponent } from "../../../../../libs/src";
 import { ItemsModule } from "../itemsPage/items-page.module";
 import { SharedModule } from "../shared/shared.module";
 import { ServerPageComponent } from "./server-page.component";
+
 const routes: Routes = [
   {
     path: "server/777c7c75-cdf7-4c51-beab-3ef81d6a5777",
@@ -33,7 +34,7 @@ const routes: Routes = [
     MatInputModule,
     MatTooltipModule,
     ItemsModule,
-    SharedLibraryModule,
+    TextEditorComponent,
     RouterModule.forChild(routes),
   ],
 })

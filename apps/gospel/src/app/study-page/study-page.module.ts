@@ -5,7 +5,7 @@ import { MatCardModule } from "@angular/material/card";
 import { MatDividerModule } from "@angular/material/divider";
 import { MatProgressSpinnerModule } from "@angular/material/progress-spinner";
 import { RouterModule, Routes } from "@angular/router";
-import { SharedLibraryModule } from "shared";
+import { TextEditorComponent } from "shared";
 import { SharedModule } from "../shared/shared.module";
 import { StudyDetailComponent } from "./study-detail/study-detail.component";
 import { StudyListComponent } from "./study-list/study-list.component";
@@ -28,8 +28,8 @@ const routes: Routes = [
     MatDividerModule,
     MatProgressSpinnerModule,
     MatButtonModule,
-    SharedLibraryModule,
     MatCardModule,
+    TextEditorComponent,
   ],
   exports: [StudyListComponent],
 })

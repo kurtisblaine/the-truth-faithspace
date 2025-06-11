@@ -7,7 +7,7 @@ import { MatProgressSpinnerModule } from "@angular/material/progress-spinner";
 import { MatTooltipModule } from "@angular/material/tooltip";
 import { RouterModule, Routes } from "@angular/router";
 import { FontAwesomeModule } from "@fortawesome/angular-fontawesome";
-import { SharedLibraryModule } from "../../../../../libs/src";
+import { TextEditorComponent } from "../../../../../libs/src";
 import { ItemDetailComponent } from "./item-detail/item-detail.component";
 import { ItemListComponent } from "./item-list/item-list.component";
 import { ItemsComponent } from "./items.component";
@@ -24,7 +24,6 @@ const routes: Routes = [
   declarations: [ItemListComponent, ItemDetailComponent, ItemsComponent],
   imports: [
     CommonModule,
-    SharedLibraryModule,
     MatButtonModule,
     MatDividerModule,
     FormsModule,
@@ -32,6 +31,7 @@ const routes: Routes = [
     ReactiveFormsModule,
     MatTooltipModule,
     MatProgressSpinnerModule,
+    TextEditorComponent,
     RouterModule.forChild(routes),
   ],
   exports: [ItemListComponent],

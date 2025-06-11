@@ -1,6 +1,11 @@
+import { CommonModule } from "@angular/common";
 import { Component, Input, OnDestroy, OnInit, ViewChild, ViewContainerRef } from "@angular/core";
+import { FormsModule } from "@angular/forms";
+import { MatButtonModule } from "@angular/material/button";
+import { MatButtonToggleModule } from "@angular/material/button-toggle";
 import { faPause, faPlay, faStop } from "@fortawesome/free-solid-svg-icons";
 import { Subscription } from "rxjs";
+import { LibFaIconComponent } from "../icon/fa-icon.component";
 import { SpeechService, SpeechStatus } from "./speech.service";
 
 export enum NarratorStyle {
@@ -12,7 +17,8 @@ export enum NarratorStyle {
   selector: "lib-narrator",
   templateUrl: "./narrator.component.html",
   styleUrl: "./narrator.component.scss",
-  standalone: false,
+  imports: [MatButtonModule, MatButtonToggleModule, CommonModule, LibFaIconComponent, FormsModule],
+  standalone: true,
 })
 export class NarratorComponent implements OnDestroy, OnInit {
   @Input() public buttonStyle = NarratorStyle.Fab;

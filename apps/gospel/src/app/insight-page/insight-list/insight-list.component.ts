@@ -6,7 +6,7 @@ import { Router } from "@angular/router";
 import { Store } from "@ngrx/store";
 import { cloneDeep } from "lodash-es";
 import { Observable, map } from "rxjs";
-import { SharedLibraryModule } from "shared";
+import { TextEditorComponent } from "shared";
 import { InsightEntity } from "../../state/insight/insight.models";
 import { createInsight } from "../../state/insight/insights.actions";
 import { getAllInsight } from "../../state/insight/insights.selectors";
@@ -15,7 +15,7 @@ import { getAllInsight } from "../../state/insight/insights.selectors";
   selector: "blog-insight-list",
   templateUrl: "./insight-list.component.html",
   styleUrls: ["./insight-list.component.scss"],
-  imports: [MatDividerModule, CommonModule, SharedLibraryModule, MatButtonModule],
+  imports: [MatDividerModule, CommonModule, TextEditorComponent, MatButtonModule],
   standalone: true,
 })
 export class InsightListComponent implements OnInit {
