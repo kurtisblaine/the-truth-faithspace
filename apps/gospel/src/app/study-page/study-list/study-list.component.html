@@ -1,6 +1,6 @@
 <div class="study-item" *ngFor="let study of studies$ | async">
   <div class="study-title primary-color" (click)="navigate(study)">
-    {{ study.title.toUpperCase() }}
+    {{ study.title }}
   </div>
   <div>{{ study.date | date: "short" }}</div>
 
