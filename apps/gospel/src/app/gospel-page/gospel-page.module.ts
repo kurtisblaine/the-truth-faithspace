@@ -6,10 +6,9 @@ import { MatExpansionModule } from "@angular/material/expansion";
 import { MatProgressSpinnerModule } from "@angular/material/progress-spinner";
 import { MatToolbarModule } from "@angular/material/toolbar";
 import { RouterModule, Routes } from "@angular/router";
-import { AngularFullpageModule } from "@fullpage/angular-fullpage";
 import { SharedLibraryModule } from "shared";
+import { FullpageDirective } from "../shared/directives/fullpage/fullpage.directive";
 import { SharedModule } from "../shared/shared.module";
-import { FullGospelComponent } from "./full-gospel/full-gospel.component";
 import { CallFaithModule } from "./gospel-content/call-faith/call-faith.module";
 import { CallGraceModule } from "./gospel-content/call-grace/call-grace.module";
 import { DangerDeathModule } from "./gospel-content/danger-death/danger-death.module";
@@ -19,7 +18,6 @@ import { ResponseModule } from "./gospel-content/response/response.module";
 import { GospelHeaderComponent } from "./gospel-header/gospel-header.component";
 import { GospelPageComponent } from "./gospel-page.component";
 import { GospelSectionComponent } from "./gospel-section/gospel-section.component";
-import { StaticGospelComponent } from "./static-gospel/static-gospel.component";
 
 const routes: Routes = [
   {
@@ -29,13 +27,7 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  declarations: [
-    GospelSectionComponent,
-    GospelHeaderComponent,
-    GospelPageComponent,
-    FullGospelComponent,
-    StaticGospelComponent,
-  ],
+  declarations: [GospelSectionComponent, GospelHeaderComponent, GospelPageComponent],
   imports: [
     CommonModule,
     SharedModule,
@@ -44,7 +36,6 @@ const routes: Routes = [
     RouterModule.forChild(routes),
     MatCardModule,
     MatExpansionModule,
-    AngularFullpageModule,
     MatToolbarModule,
     MatProgressSpinnerModule,
     DangerSinModule,
@@ -53,6 +44,7 @@ const routes: Routes = [
     CallFaithModule,
     ResponseModule,
     HopeLifeModule,
+    FullpageDirective,
   ],
   providers: [],
 })

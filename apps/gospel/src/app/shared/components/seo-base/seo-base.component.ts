@@ -13,8 +13,8 @@ export class SeoBaseComponent implements AfterViewInit {
   private meta = inject(Meta);
   private title = inject(Title);
 
-  @ViewChild("seoCaption") private seoCaption: ElementRef;
-  @ViewChild("seoTitle") private seoTitle: ElementRef;
+  @ViewChild("seoCaption", { read: ElementRef }) private seoCaption: ElementRef;
+  @ViewChild("seoTitle", { read: ElementRef }) private seoTitle: ElementRef;
 
   protected keywords: string;
 
