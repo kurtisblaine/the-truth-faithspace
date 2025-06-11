@@ -1,6 +1,7 @@
-import { AfterViewInit, ChangeDetectionStrategy, Component, OnInit } from "@angular/core";
+import { ChangeDetectionStrategy, Component, OnInit } from "@angular/core";
 import { fadeInOut } from "shared";
 import { NarratorStyle } from "../../../../../libs/src/lib/shared/components/narrator/narrator.component";
+import { SeoBaseComponent } from "../shared/components/seo-base/seo-base.component";
 
 @Component({
   selector: "blog-home-page",
@@ -10,16 +11,9 @@ import { NarratorStyle } from "../../../../../libs/src/lib/shared/components/nar
   animations: [fadeInOut],
   standalone: false,
 })
-export default class HomePageComponent implements OnInit, AfterViewInit {
+export default class HomePageComponent extends SeoBaseComponent implements OnInit {
   public narratorStyle = NarratorStyle;
-
-  constructor() {}
+  protected override keywords: string = "testimony, believe, faith, Jesus, Word, change, repentance";
 
   ngOnInit() {}
-
-  ngAfterViewInit(): void {
-    // if (this.windowService.nativeWindow) {
-    //   (this.windowService.nativeWindow as any).BLB.Tagger.pageInit();
-    // }
-  }
 }
