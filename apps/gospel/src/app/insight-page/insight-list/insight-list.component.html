@@ -1,6 +1,6 @@
 <div class="insight-item" *ngFor="let insight of insights$ | async">
   <div class="insight-title primary-color" (click)="navigate(insight)">
-    {{ insight.title.toUpperCase() }}
+    {{ insight.title }}
   </div>
   <div>{{ insight.date | date: "short" }}</div>
 

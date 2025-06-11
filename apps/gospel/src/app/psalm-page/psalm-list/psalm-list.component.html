@@ -1,6 +1,6 @@
 <div class="psalm-item" *ngFor="let psalm of psalms$ | async">
   <div class="psalm-title primary-color" (click)="navigate(psalm)">
-    {{ psalm.title.toUpperCase() }}
+    {{ psalm.title }}
   </div>
   <div>{{ psalm.date | date: "short" }}</div>
 
