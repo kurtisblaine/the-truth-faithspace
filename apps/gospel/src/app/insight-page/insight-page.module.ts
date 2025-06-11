@@ -6,7 +6,6 @@ import { MatDividerModule } from "@angular/material/divider";
 import { MatProgressSpinnerModule } from "@angular/material/progress-spinner";
 import { RouterModule, Routes } from "@angular/router";
 import { TextEditorComponent } from "shared";
-import { SharedModule } from "../shared/shared.module";
 import { InsightDetailComponent } from "./insight-detail/insight-detail.component";
 import { InsightListComponent } from "./insight-list/insight-list.component";
 import { InsightPageComponent } from "./insight-page.component";
@@ -22,7 +21,6 @@ const routes: Routes = [
   imports: [
     CommonModule,
     InsightListComponent,
-    SharedModule,
     RouterModule.forChild(routes),
     MatDividerModule,
     MatButtonModule,

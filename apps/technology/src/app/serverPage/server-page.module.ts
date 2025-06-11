@@ -10,7 +10,6 @@ import { RouterModule, Routes } from "@angular/router";
 import { FontAwesomeModule } from "@fortawesome/angular-fontawesome";
 import { TextEditorComponent } from "../../../../../libs/src";
 import { ItemsModule } from "../itemsPage/items-page.module";
-import { SharedModule } from "../shared/shared.module";
 import { ServerPageComponent } from "./server-page.component";
 
 const routes: Routes = [
@@ -24,7 +23,6 @@ const routes: Routes = [
   declarations: [ServerPageComponent],
   imports: [
     CommonModule,
-    SharedModule,
     MatExpansionModule,
     MatButtonModule,
     MatDividerModule,
