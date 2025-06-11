@@ -4,7 +4,7 @@ import { FormsModule, ReactiveFormsModule } from "@angular/forms";
 import { MatButtonModule } from "@angular/material/button";
 import { MatExpansionModule } from "@angular/material/expansion";
 import { RouterModule, Routes } from "@angular/router";
-import { SharedLibraryModule } from "shared";
+import { TextEditorComponent } from "shared";
 import { BlogListComponent } from "../blog-page/blog-list/blog-list.component";
 import { DiscernListComponent } from "../discern-page/discern-list/discern-list.component";
 import { InsightListComponent } from "../insight-page/insight-list/insight-list.component";
@@ -29,12 +29,12 @@ const routes: Routes = [
     MatButtonModule,
     FormsModule,
     ReactiveFormsModule,
-    SharedLibraryModule,
     PsalmListComponent,
     BlogListComponent,
     DiscernListComponent,
     StudyListComponent,
     InsightListComponent,
+    TextEditorComponent,
   ],
 })
 export class ServerPageModule {}

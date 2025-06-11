@@ -6,7 +6,7 @@ import { MatExpansionModule } from "@angular/material/expansion";
 import { MatProgressSpinnerModule } from "@angular/material/progress-spinner";
 import { MatToolbarModule } from "@angular/material/toolbar";
 import { RouterModule, Routes } from "@angular/router";
-import { SharedLibraryModule } from "shared";
+import { NarratorComponent } from "shared";
 import { FullpageDirective } from "../shared/directives/fullpage/fullpage.directive";
 import { SharedModule } from "../shared/shared.module";
 import { CallFaithModule } from "./gospel-content/call-faith/call-faith.module";
@@ -31,7 +31,6 @@ const routes: Routes = [
   imports: [
     CommonModule,
     SharedModule,
-    SharedLibraryModule,
     MatButtonModule,
     RouterModule.forChild(routes),
     MatCardModule,
@@ -45,6 +44,7 @@ const routes: Routes = [
     ResponseModule,
     HopeLifeModule,
     FullpageDirective,
+    NarratorComponent,
   ],
   providers: [],
 })

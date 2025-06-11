@@ -5,7 +5,7 @@ import { MatCardModule } from "@angular/material/card";
 import { MatDividerModule } from "@angular/material/divider";
 import { MatProgressSpinnerModule } from "@angular/material/progress-spinner";
 import { RouterModule, Routes } from "@angular/router";
-import { SharedLibraryModule } from "shared";
+import { TextEditorComponent } from "shared";
 import { SharedModule } from "../shared/shared.module";
 import { DiscernDetailComponent } from "./discern-detail/discern-detail.component";
 import { DiscernListComponent } from "./discern-list/discern-list.component";
@@ -26,9 +26,9 @@ const routes: Routes = [
     MatDividerModule,
     MatProgressSpinnerModule,
     SharedModule,
-    SharedLibraryModule,
     MatButtonModule,
     MatCardModule,
+    TextEditorComponent,
   ],
   exports: [DiscernListComponent],
 })

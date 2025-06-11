@@ -6,7 +6,7 @@ import { Router } from "@angular/router";
 import { Store } from "@ngrx/store";
 import { cloneDeep } from "lodash-es";
 import { Observable, map } from "rxjs";
-import { SharedLibraryModule } from "shared";
+import { TextEditorComponent } from "shared";
 import { createPsalm } from "../../state/psalm/psalm.actions";
 import { PsalmEntity } from "../../state/psalm/psalm.models";
 import { getAllPsalm } from "../../state/psalm/psalm.selectors";
@@ -14,7 +14,7 @@ import { getAllPsalm } from "../../state/psalm/psalm.selectors";
   selector: "blog-psalm-list",
   templateUrl: "./psalm-list.component.html",
   styleUrls: ["./psalm-list.component.scss"],
-  imports: [MatDividerModule, CommonModule, SharedLibraryModule, MatButtonModule],
+  imports: [MatDividerModule, CommonModule, TextEditorComponent, MatButtonModule],
   changeDetection: ChangeDetectionStrategy.OnPush,
   standalone: true,
 })

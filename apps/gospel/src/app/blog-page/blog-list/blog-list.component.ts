@@ -6,7 +6,7 @@ import { Router } from "@angular/router";
 import { Store } from "@ngrx/store";
 import { cloneDeep } from "lodash-es";
 import { Observable, map } from "rxjs";
-import { SharedLibraryModule } from "shared";
+import { TextEditorComponent } from "shared";
 import { createBlog } from "../../state/blog/blog.actions";
 import { BlogEntity } from "../../state/blog/blog.models";
 import { getAllBlog } from "../../state/blog/blog.selectors";
@@ -16,7 +16,7 @@ import { getAllBlog } from "../../state/blog/blog.selectors";
   templateUrl: "./blog-list.component.html",
   styleUrls: ["./blog-list.component.scss"],
   standalone: true,
-  imports: [MatDividerModule, CommonModule, SharedLibraryModule, MatButtonModule],
+  imports: [MatDividerModule, CommonModule, MatButtonModule, TextEditorComponent],
 })
 export class BlogListComponent implements OnInit {
   @Input() public update = false;

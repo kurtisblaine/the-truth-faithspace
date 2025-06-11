@@ -1,12 +1,15 @@
+import { CommonModule } from "@angular/common";
 import { AfterViewInit, Component, EventEmitter, Input, OnDestroy, OnInit, Output, ViewChild } from "@angular/core";
-import { AbstractControl, FormControl, FormGroup } from "@angular/forms";
-import { Editor, NgxEditorComponent, Toolbar } from "ngx-editor";
-import { NarratorStyle } from "../narrator/narrator.component";
+import { AbstractControl, FormControl, FormGroup, ReactiveFormsModule } from "@angular/forms";
+import { MatButtonModule } from "@angular/material/button";
+import { Editor, NgxEditorComponent, NgxEditorModule, Toolbar } from "ngx-editor";
+import { NarratorComponent, NarratorStyle } from "../narrator/narrator.component";
 @Component({
   selector: "lib-text-editor",
   templateUrl: "./text-editor.component.html",
   styleUrls: ["./text-editor.component.scss"],
-  standalone: false,
+  standalone: true,
+  imports: [MatButtonModule, NgxEditorModule, CommonModule, NarratorComponent, ReactiveFormsModule],
 })
 export class TextEditorComponent implements OnInit, OnDestroy, AfterViewInit {
   public narratorStyle = NarratorStyle;

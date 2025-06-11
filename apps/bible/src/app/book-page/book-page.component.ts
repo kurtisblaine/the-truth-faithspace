@@ -6,7 +6,7 @@ import { MatSnackBar, MatSnackBarModule } from "@angular/material/snack-bar";
 import { Router } from "@angular/router";
 import { Store } from "@ngrx/store";
 import { Observable, map } from "rxjs";
-import { SharedLibraryModule } from "shared";
+import { TooltipDirective } from "shared";
 import { selectTranslationEntity } from "../+state/bibles/bibles.selectors";
 import { BooksActions } from "../+state/books/books.actions";
 import { selectAllBooks, selectBooksError, selectBooksLoaded } from "../+state/books/books.selectors";
@@ -15,7 +15,7 @@ import { Book } from "../models/books";
 @Component({
   selector: "app-book-page",
   standalone: true,
-  imports: [MatProgressSpinnerModule, CommonModule, MatListModule, MatSnackBarModule, SharedLibraryModule],
+  imports: [MatProgressSpinnerModule, CommonModule, MatListModule, MatSnackBarModule, TooltipDirective],
   templateUrl: "./book-page.component.html",
   styleUrl: "./book-page.component.scss",
   changeDetection: ChangeDetectionStrategy.OnPush,

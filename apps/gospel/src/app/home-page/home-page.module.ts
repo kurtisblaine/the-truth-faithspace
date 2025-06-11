@@ -4,7 +4,7 @@ import { RouterModule, Routes } from "@angular/router";
 
 import { MatButtonModule } from "@angular/material/button";
 import { MatCardModule } from "@angular/material/card";
-import { SharedLibraryModule } from "shared";
+import { NarratorComponent } from "shared";
 import { SharedModule } from "../shared/shared.module";
 import HomePageComponent from "./home-page.component";
 
@@ -22,7 +22,7 @@ const routes: Routes = [
     SharedModule,
     MatButtonModule,
     MatCardModule,
-    SharedLibraryModule,
+    NarratorComponent,
     RouterModule.forChild(routes),
   ],
 })
