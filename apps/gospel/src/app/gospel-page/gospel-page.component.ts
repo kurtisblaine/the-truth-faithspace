@@ -40,8 +40,8 @@ export class GospelPageComponent extends SeoBaseComponent implements OnInit, Aft
     credits: { enabled: true, label: "May the Lord bless you.", position: "left" },
   };
 
-  public isMobile = signal(false);
   public isScullyRunning = isScullyRunning();
+  public isMobile = signal(false);
 
   public fullpageApi: fullpageApi;
   protected override keywords: string = "gospel, faith, righteous, live, kingdom, Jesus, revealed, truth";
