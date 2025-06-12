@@ -26,6 +26,9 @@ export class GospelPageComponent extends SeoBaseComponent implements OnInit, Aft
     slidesNavigation: true,
     slidesNavPosition: "bottom",
     recordHistory: true,
+    //reset slides... if only it does not break things.
+    //todo see about scroll slides...
+    //i think neither one of these would be good... only try to figure out the typing issues.
 
     afterLoad: this.afterPageLoad.bind(this),
     afterSlideLoad: this.afterSlideLoad.bind(this),
