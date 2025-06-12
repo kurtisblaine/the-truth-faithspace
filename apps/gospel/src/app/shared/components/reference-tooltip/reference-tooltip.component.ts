@@ -1,5 +1,5 @@
 import { CommonModule } from "@angular/common";
-import { ChangeDetectionStrategy, Component, Input, OnInit } from "@angular/core";
+import { ChangeDetectionStrategy, Component, HostBinding, Input, OnInit } from "@angular/core";
 
 @Component({
   selector: "blog-reference-tooltip",
@@ -12,8 +12,11 @@ import { ChangeDetectionStrategy, Component, Input, OnInit } from "@angular/core
 export class ReferenceTooltipComponent implements OnInit {
   @Input() public reference!: string;
   @Input() public isJesusWord = false;
-  @Input() public padding = "0px 30px";
   @Input() public flex = false;
+
+  @HostBinding("style.padding")
+  @Input()
+  public padding = "";
 
   constructor() {}
 
