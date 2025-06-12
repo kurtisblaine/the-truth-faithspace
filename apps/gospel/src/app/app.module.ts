@@ -14,6 +14,7 @@ import { MatProgressBarModule } from "@angular/material/progress-bar";
 import { MatSidenavModule } from "@angular/material/sidenav";
 import { MatTooltipModule } from "@angular/material/tooltip";
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
+import { ScullyLibModule } from "@scullyio/ng-lib";
 import { LibFaIconComponent } from "shared";
 import { AppRoutingModule } from "./app.routing.module";
 import { LinkComponent } from "./shared/components/link-redirect/link.component";
@@ -49,6 +50,10 @@ const firebaseConfig = {
     MatTooltipModule,
     MatMenuModule,
     LibFaIconComponent,
+    ScullyLibModule.forRoot({
+      useTransferState: true,
+      alwaysMonitor: true,
+    }),
   ],
   providers: [
     provideFirebaseApp(() => initializeApp(firebaseConfig)),
