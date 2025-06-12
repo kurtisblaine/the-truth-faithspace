@@ -59,13 +59,13 @@ button[mat-button] {
   min-height: 400px;
 }
 
-.new-earth-image {
-  background-image: url("https://res.cloudinary.com/dffihsa2y/image/upload/v1711590013/img/new_xvdoun.webp");
+.bush-image {
+  background-image: url("https://res.cloudinary.com/dffihsa2y/image/upload/v1711590013/img/bush_tudwx1.webp");
   min-height: 400px;
 }
 
-.bush-image {
-  background-image: url("https://res.cloudinary.com/dffihsa2y/image/upload/v1711590013/img/bush_tudwx1.webp");
+.new-jerusalem-image {
+  background-image: url("https://res.cloudinary.com/dffihsa2y/image/upload/v1711590027/img/Rotator-14f_ksynvm.webp");
   min-height: 400px;
 }
 
@@ -75,7 +75,7 @@ button[mat-button] {
 .camp-image,
 .sin-image,
 .horses-image,
-.new-earth-image,
+.new-jerusalem-image,
 .bush-image {
   position: relative;
   background-position: center;
@@ -92,7 +92,7 @@ button[mat-button] {
   .camp-image,
   .sin-image,
   .horses-image,
-  .new-earth-image,
+  .new-jerusalem-image,
   .rent-image,
   .bush-image {
     background-attachment: scroll;
