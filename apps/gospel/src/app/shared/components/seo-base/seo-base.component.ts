@@ -19,10 +19,14 @@ export class SeoBaseComponent implements AfterViewInit {
   protected keywords: string;
 
   ngAfterViewInit(): void {
-    this.title.setTitle(this.seoTitle.nativeElement.innerText);
-    this.meta.addTags([
-      { name: "description", content: this.seoCaption?.nativeElement?.innerText },
-      { name: "keywords", content: this.keywords },
-    ]);
+    if (this.seoTitle?.nativeElement) {
+      this.title.setTitle(this.seoTitle?.nativeElement?.innerText);
+    }
+    if (this.seoCaption?.nativeElement) {
+      this.meta.addTag({ name: "description", content: this.seoCaption?.nativeElement?.innerText });
+    }
+    if (this.keywords) {
+      this.meta.addTag({ name: "keywords", content: this.keywords });
+    }
   }
 }
