@@ -8,45 +8,44 @@ import { ReferenceTooltipComponent } from "../../../shared/components/reference-
   imports: [CommonModule, ReferenceTooltipComponent, LinkComponent],
   template: `<ng-container *ngTemplateOutlet="servantOfGod"></ng-container>
     <ng-template #servantOfGod>
-      Jesus was handed over by His own people to crucifixion; He went to the cross to justify many by His blood,
-      according to the will of God. He was buried in a tomb for three days, God rose Him up from the dead on the third
-      day, for it was the will of man to kill Him, but it was God's will to raise Him from the grave. He appeared to
-      many of His disciples, over 500 of them, showing unto them many signs. Afterwards, He ascended to heaven to the
-      Father's right hand where He is now exalted above every dominion and power and ruler and principality. He will
-      return on the last day to reign and rule with His holy people until His enemies are made a footstool for His feet;
-      His kingdom is everlasting and His rule is eternal. So when we were deserving of punishment and wrath, God instead
-      sent forth His Son, born of a woman, having appeared in the likeness of human flesh, He came to put to death sin
-      in the flesh. He died for sin, but not His own as with a criminal, but He died as an innocent Man. They put him to
-      trial, trying Him, but found no fault in Him; Pontius Pilate determined to release Him, but the Jews wanted Him to
-      be crucified; He was perfect, yet He died a criminal's death; He was reckoned with the transgressors; and this was
-      all according to the foreknowledge and predetermined plan of God. When He was crucified, He had this written
-      charge against Him: "THE KING OF THE JEWS". For this is the charge they had against Him, that He said He is the
-      Son of God. Showing His divinity in birth, He was born of a virgin; as a newborn He put the king to fright that
-      the king slew all children from two years old and under (Matthew 2:1-22); if He instilled fear in the king at the
-      time, even as a newborn, how much more as a full grown? He was instilling fear into all everywhere He went; while
-      He walked demons shrieked at the sight of Him; He worked fearful miracles; He walked on the water, and silenced
-      the tumultuous waves with a single word; His followers walked behind Him trembling in fear (Mark 10:32); with His
-      death came darkness and a great earthquake (Matthew 27:52); with His resurrection came the appearing of angels,
-      godly men awoke from the dead. He was a man, but He was no man: God in the flesh. The Son of God was sent into the
-      world to die, and the death He died was for us; for we must die, but He who never dies died to redeem us from
-      death. He was sent by the Father God bearing the message of His death, for He prophesied about His death many
-      times, foretelling even how He would die. Just as Uriah, the Hittite, was sent by David, bearing in-hand the
-      letter of his death, even so, he was innocent of wrong, so Christ was sent into the world with the message of His
-      own death; Uriah bore in his hand bad news, but it is impossible for Christ to bear bad news, only good news, for
-      the Father is in Him; so this message has become good news to us who believe; that we may be joined to Another,
-      namely God, our Father, who sent Him unto us to be Redeemer and Savior. Our sins have separated us from God, our
-      iniquities caused Him to hide His face from us, but God has reconciled us to Himself through the body of Jesus
-      Christ. For David could only marry Bathsheba if she were to be released by the law of her husband by death, so
-      David sent her husband Uriah to die; and so we are made to die to the law through the body of Jesus Christ that we
-      may be joined to Him who was raised from the dead (Romans 7:1-4). For even if a man sins, God is able to use it
-      for a testimony to Christ; for even the cross is a device of death which God used in Christ to bring salvation to
-      everyone who believes; for God's strength is not inhibited even when worked through things which bring weakness
-      and death; and His goodness is not stifled by that which is evil, but through it, He makes His glory shine the
-      ever-so brighter. For Paul, the apostle, uses Abraham sin to speak allegorically of the two covenants: one of
-      slavery and the other of freedom in Christ (Galatians 4:21-31). And Abraham errored by trying to fulfill the
-      promise of God by human effort. So even Paul is seen using a man's fault as a testimony to Christ. And
-      furthermore, the men of God in times past prophesied to Christ with their words, and they also testified to Christ
-      with their lives as well.<br /><br />
+      Jesus was handed over by sinful men to crucifixion; He went to the cross to justify many by His blood, according
+      to the will of God. He was buried in a tomb for three days, God rose Him up from the dead on the third day, for it
+      was the will of man to kill Him, but it was God's will to raise Him from the grave. He appeared to many of His
+      disciples, over 500 of them, showing unto them many signs. Afterwards, He ascended to heaven to the Father's right
+      hand where He is now exalted above every dominion and power and ruler and principality. He will return on the last
+      day to reign and rule with His holy people until His enemies are made a footstool for His feet; His kingdom is
+      everlasting and His rule is eternal. So when we were deserving of punishment and wrath, God instead sent forth His
+      Son, born of a woman, having appeared in the likeness of human flesh, He came to put to death sin in the flesh. He
+      died for sin, but not His own as with a criminal, but He died as an innocent Man. They put him to trial, trying
+      Him, but found no fault in Him; Pontius Pilate determined to release Him, but the Jews wanted Him to be crucified;
+      He was perfect, yet He died a criminal's death; He was reckoned with the transgressors; and this was all according
+      to the foreknowledge and predetermined plan of God. When He was crucified, He had this written charge against Him:
+      "THE KING OF THE JEWS". For this is the charge they had against Him, that He said He is the Son of God. Showing
+      His divinity in birth, He was born of a virgin; as a newborn He put the king to fright that the king slew all
+      children from two years old and under (Matthew 2:1-22); if He instilled fear in the king at the time, even as a
+      newborn, how much more as a full grown? He was instilling fear into all everywhere He went; while He walked demons
+      shrieked at the sight of Him; He worked fearful miracles; He walked on the water, and silenced the tumultuous
+      waves with a single word; His followers walked behind Him trembling in fear (Mark 10:32); with His death came
+      darkness and a great earthquake (Matthew 27:52); with His resurrection came the appearing of angels, godly men
+      awoke from the dead. He was a man, but He was no man: God in the flesh. The Son of God was sent into the world to
+      die, and the death He died was for us; for we must die, but He who never dies died to redeem us from death. He was
+      sent by the Father God bearing the message of His death, for He prophesied about His death many times, foretelling
+      even how He would die. Just as Uriah, the Hittite, was sent by David, bearing in-hand the letter of his death,
+      even so, he was innocent of wrong, so Christ was sent into the world with the message of His own death; Uriah bore
+      in his hand bad news, but it is impossible for Christ to bear bad news, only good news, for the Father is in Him;
+      so this message has become good news to us who believe; that we may be joined to Another, namely God, our Father,
+      who sent Him unto us to be Redeemer and Savior. Our sins have separated us from God, our iniquities caused Him to
+      hide His face from us, but God has reconciled us to Himself through the body of Jesus Christ. For David could only
+      marry Bathsheba if she were to be released by the law of her husband by death, so David sent her husband Uriah to
+      die; and so we are made to die to the law through the body of Jesus Christ that we may be joined to Him who was
+      raised from the dead (Romans 7:1-4). For even if a man sins, God is able to use it for a testimony to Christ; for
+      even the cross is a device of death which God used in Christ to bring salvation to everyone who believes; for
+      God's strength is not inhibited even when worked through things which bring weakness and death; and His goodness
+      is not stifled by that which is evil, but through it, He makes His glory shine the ever-so brighter. For Paul, the
+      apostle, uses Abraham sin to speak allegorically of the two covenants: one of slavery and the other of freedom in
+      Christ (Galatians 4:21-31). And Abraham errored by trying to fulfill the promise of God by human effort. So even
+      Paul is seen using a man's fault as a testimony to Christ. And furthermore, the men of God in times past
+      prophesied to Christ with their words, and they also testified to Christ with their lives as well.<br /><br />
 
       Jesus never sinned, yet He bore the transgression of us all upon Himself. He is righteous; and He is so righteous
       that He was not stifled from doing right even in His death, for He died for our sins - doing good in that He loved
