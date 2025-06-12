@@ -9,6 +9,7 @@ const routes: Routes = [
   },
   {
     path: "truth",
+    title: "The Good News of the Kingdom of God",
     loadChildren: () => import("./gospel-page/gospel-page.module").then((m) => m.GospelPageModule),
   },
   {

@@ -9,8 +9,8 @@ export const config: ScullyConfig = {
   projectName: "static-gospel",
   target: "targets",
   outDir: "./apps/gospel/static",
-  routes: {},
   defaultPostRenderers: [getFlashPreventionPlugin({ appRootSelector: "blog-root" })],
+  routes: {},
   // routes: {
   //   "/edifications/edify-detail/:id": {
   //     type: "json",
