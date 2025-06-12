@@ -21,7 +21,7 @@ export class SeoBaseComponent implements AfterViewInit {
   ngAfterViewInit(): void {
     this.title.setTitle(this.seoTitle.nativeElement.innerText);
     this.meta.addTags([
-      { name: "description", content: this.seoCaption.nativeElement.innerText },
+      { name: "description", content: this.seoCaption?.nativeElement?.innerText },
       { name: "keywords", content: this.keywords },
     ]);
   }
