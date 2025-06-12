@@ -1,9 +1,9 @@
 mat-list-option {
-  /* text-decoration: underline; */
+  text-decoration: underline;
 }
 
 :host {
   display: block;
-  max-width: 1211px;
+  background-color: var(--mat-sys-surface-container-lowest);
   padding: 14px;
 }

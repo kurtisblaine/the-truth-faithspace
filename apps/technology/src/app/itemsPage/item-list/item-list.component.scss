@@ -3,12 +3,11 @@
 }
 
 .item-title {
-  // font-weight: 700;
   text-decoration: underline;
   cursor: pointer;
 }
 
 :host {
-  max-width: 1211px;
+  background-color: var(--mat-sys-surface-container-lowest);
   display: block;
 }
