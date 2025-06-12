@@ -6,8 +6,10 @@
     data-tooltip="The Gospel"
   >
     <h2 class="header-title" style="text-transform: uppercase">The Good News of the Kingdom of God</h2>
+    @if(isScullyRunning) {
+    <mat-spinner></mat-spinner>
+    } @else if(!isMobile()){
     <blog-reference-tooltip
-      *ngIf="!isMobile()"
       style="display: block"
       class="header-caption"
       [padding]="'0px 100px'"
@@ -21,7 +23,7 @@
       within them; for God made it evident to them.
     </blog-reference-tooltip>
 
-    <mat-accordion *ngIf="!isMobile()" class="menu" style="text-transform: unset">
+    <mat-accordion class="menu" style="text-transform: unset">
       <mat-expansion-panel class="custom-panel" hideToggle>
         <mat-expansion-panel-header>
           <mat-panel-title>
@@ -125,6 +127,7 @@
         </ng-template>
       </mat-expansion-panel>
     </mat-accordion>
+    }
   </div>
 
   <!-- #region THE DANGER - SIN -->
