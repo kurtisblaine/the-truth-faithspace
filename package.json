@@ -77,6 +77,7 @@
     "@schematics/angular": "19.0.7",
     "@scullyio/init": "^2.1.41",
     "@scullyio/ng-lib": "^2.1.41",
+    "@scullyio/scully-plugin-flash-prevention": "^2.1.41",
     "@scullyio/scully-plugin-playwright": "^2.1.41",
     "@scullyio/scully-plugin-puppeteer": "^2.1.41",
     "@swc-node/register": "1.9.2",

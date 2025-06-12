@@ -23,7 +23,7 @@ export class FullpageDirective implements AfterViewInit, OnDestroy {
 
   initFullpage() {
     this.fullpageApi = new fullpage("#" + this.id, this.options);
-    // this.addBuildFunction();
+    this.addBuildFunction();
     this.ref.emit(this.fullpageApi);
   }
 

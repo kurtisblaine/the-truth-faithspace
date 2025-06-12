@@ -1,5 +1,7 @@
 import { ScullyConfig } from "@scullyio/scully";
 
+import { getFlashPreventionPlugin } from "@scullyio/scully-plugin-flash-prevention";
+
 import "@scullyio/scully-plugin-playwright";
 
 export const config: ScullyConfig = {
@@ -8,6 +10,7 @@ export const config: ScullyConfig = {
   target: "targets",
   outDir: "./apps/gospel/static",
   routes: {},
+  defaultPostRenderers: [getFlashPreventionPlugin({ appRootSelector: "blog-root" })],
   // routes: {
   //   "/edifications/edify-detail/:id": {
   //     type: "json",
