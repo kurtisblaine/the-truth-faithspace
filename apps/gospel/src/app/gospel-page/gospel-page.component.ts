@@ -1,11 +1,12 @@
 import { Location } from "@angular/common";
-import { AfterViewInit, ChangeDetectionStrategy, Component, OnDestroy, OnInit, signal } from "@angular/core";
+import { AfterViewInit, ChangeDetectionStrategy, Component, OnDestroy, OnInit, signal, ViewChild } from "@angular/core";
 import { ActivatedRoute } from "@angular/router";
 import { isScullyRunning } from "@scullyio/ng-lib";
-import { fullpageApi, fullpageOptions, Item, Trigger } from "fullpage.js/dist/fullpage.extensions.min";
+import { fullpageApi, fullpageOptions, Item, Trigger } from "fullpage.js/dist/fullpage.min";
 import { DeviceDetectorService } from "ngx-device-detector";
 import { distinctUntilChanged, filter, Subscription } from "rxjs";
 import { SeoBaseComponent } from "../shared/components/seo-base/seo-base.component";
+import { FullpageDirective } from "../shared/directives/fullpage/fullpage.directive";
 
 type TItem = { isActive: boolean } & Item;
 
@@ -40,6 +41,8 @@ export class GospelPageComponent extends SeoBaseComponent implements OnInit, Aft
     credits: { enabled: true, label: "May the Lord bless you.", position: "left" },
   };
 
+  @ViewChild(FullpageDirective) private fullpageDirective: FullpageDirective;
+
   public isScullyRunning = isScullyRunning();
   public isMobile = signal(false);
 
@@ -64,8 +67,8 @@ export class GospelPageComponent extends SeoBaseComponent implements OnInit, Aft
     this.routeSubscription.unsubscribe();
   }
 
-  getApi(fullPageRef: fullpageApi) {
-    this.fullpageApi = fullPageRef;
+  override ngAfterViewInit(): void {
+    this.fullpageApi = this.fullpageDirective.fullpageApi;
 
     this.routeSubscription = this.route.fragment
       .pipe(
