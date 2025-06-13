@@ -51,7 +51,6 @@ const firebaseConfig = {
     MatMenuModule,
     LibFaIconComponent,
     ScullyLibModule.forRoot({
-      useTransferState: true,
       alwaysMonitor: true,
     }),
   ],
