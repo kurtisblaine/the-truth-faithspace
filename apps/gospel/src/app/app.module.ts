@@ -15,8 +15,7 @@ import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 import { ScullyLibModule } from "@scullyio/ng-lib";
 import { LibFaIconComponent } from "shared";
 import { AppRoutingModule } from "./app.routing.module";
-import { LinkComponent } from "./shared/components/link-redirect/link.component";
-import { ReferenceTooltipComponent } from "./shared/components/reference-tooltip/reference-tooltip.component";
+import { FirebaseModule } from "./firebase.module";
 import { StateModule } from "./state/state.module";
 
 @NgModule({
@@ -25,11 +24,10 @@ import { StateModule } from "./state/state.module";
     MatSidenavModule,
     MatProgressBarModule,
     BrowserAnimationsModule,
-    LinkComponent,
-    ReferenceTooltipComponent,
     BrowserModule,
     MatButtonModule,
     MatToolbarModule,
+    FirebaseModule,
     StateModule,
     AppRoutingModule,
     MatListModule,

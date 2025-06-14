@@ -6,7 +6,6 @@ import { MatDividerModule } from "@angular/material/divider";
 import { MatProgressSpinnerModule } from "@angular/material/progress-spinner";
 import { RouterModule, Routes } from "@angular/router";
 import { TextEditorComponent } from "shared";
-import { FirebaseModule } from "../firebase.module";
 import { StudyDetailComponent } from "./study-detail/study-detail.component";
 import { StudyListComponent } from "./study-list/study-list.component";
 import { StudyPageComponent } from "./study-page.component";
@@ -21,7 +20,6 @@ const routes: Routes = [
 @NgModule({
   declarations: [StudyDetailComponent, StudyPageComponent],
   imports: [
-    FirebaseModule,
     CommonModule,
     StudyListComponent,
     RouterModule.forChild(routes),
