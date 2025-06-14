@@ -6,6 +6,7 @@ import { MatDividerModule } from "@angular/material/divider";
 import { MatProgressSpinnerModule } from "@angular/material/progress-spinner";
 import { RouterModule, Routes } from "@angular/router";
 import { TextEditorComponent } from "shared";
+import { FirebaseModule } from "../firebase.module";
 import { PsalmDetailComponent } from "./psalm-detail/psalm-detail.component";
 import { PsalmListComponent } from "./psalm-list/psalm-list.component";
 import { PsalmPageComponent } from "./psalm-page.component";
@@ -23,6 +24,8 @@ const routes: Routes = [
   imports: [
     CommonModule,
     PsalmListComponent,
+
+    FirebaseModule,
     RouterModule.forChild(routes),
     MatDividerModule,
     MatProgressSpinnerModule,

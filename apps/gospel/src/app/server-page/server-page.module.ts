@@ -7,6 +7,7 @@ import { RouterModule, Routes } from "@angular/router";
 import { TextEditorComponent } from "shared";
 import { BlogListComponent } from "../blog-page/blog-list/blog-list.component";
 import { DiscernListComponent } from "../discern-page/discern-list/discern-list.component";
+import { FirebaseModule } from "../firebase.module";
 import { InsightListComponent } from "../insight-page/insight-list/insight-list.component";
 import { PsalmListComponent } from "../psalm-page/psalm-list/psalm-list.component";
 import { StudyListComponent } from "../study-page/study-list/study-list.component";
@@ -33,6 +34,7 @@ const routes: Routes = [
     StudyListComponent,
     InsightListComponent,
     TextEditorComponent,
+    FirebaseModule,
   ],
 })
 export class ServerPageModule {}
