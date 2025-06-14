@@ -6,7 +6,6 @@ import { MatDividerModule } from "@angular/material/divider";
 import { MatProgressSpinnerModule } from "@angular/material/progress-spinner";
 import { RouterModule, Routes } from "@angular/router";
 import { TextEditorComponent } from "shared";
-import { FirebaseModule } from "../firebase.module";
 import { InsightDetailComponent } from "./insight-detail/insight-detail.component";
 import { InsightListComponent } from "./insight-list/insight-list.component";
 import { InsightPageComponent } from "./insight-page.component";
@@ -28,7 +27,6 @@ const routes: Routes = [
     MatProgressSpinnerModule,
     MatCardModule,
     TextEditorComponent,
-    FirebaseModule,
   ],
   exports: [InsightListComponent],
 })
