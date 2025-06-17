@@ -12,6 +12,7 @@ import {
   faEnvelope,
   faFile,
   faGavel,
+  faGears,
   faInfoCircle,
   faLink,
   faMusic,
@@ -47,6 +48,7 @@ export class AppComponent implements OnInit {
   public gospelIcon = faNewspaper;
   public bookIcon = faBible;
   public studyIcon = faBook;
+  public settingsIcon = faGears;
   public arrowIcon = faArrowUp;
 
   public progressValue = new BehaviorSubject(0);

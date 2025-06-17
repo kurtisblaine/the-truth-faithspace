@@ -32,7 +32,7 @@ export class GospelPageComponent extends SeoBaseComponent implements OnInit, Aft
     afterSlideLoad: this.afterSlideLoad.bind(this),
     lockAnchors: true,
     scrollOverflow: false,
-    normalScrollElements: ".card-content, .mat-drawer",
+    normalScrollElements: ".card-content, .mat-drawer, .cdk-overlay-pane",
 
     scrollBar: true,
     loopHorizontal: false,
@@ -86,7 +86,7 @@ export class GospelPageComponent extends SeoBaseComponent implements OnInit, Aft
   }
 
   private afterPageLoad(origin: TItem, destination: TItem, direction: string, trigger: Trigger) {
-    if (!direction || !destination.isActive) return;
+    if (!direction || !destination.isActive || !trigger) return;
 
     let pageAnchor = destination.anchor?.toString();
     this.navigateToFragment(pageAnchor, "");

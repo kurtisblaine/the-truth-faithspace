@@ -1,4 +1,4 @@
-import { inject, Injectable, OnDestroy } from "@angular/core";
+import { inject, Injectable, OnDestroy, signal } from "@angular/core";
 import { MatSnackBar } from "@angular/material/snack-bar";
 import { BehaviorSubject } from "rxjs";
 import { v4 } from "uuid";
@@ -13,15 +13,26 @@ export enum SpeechStatus {
   providedIn: "root",
 })
 export class SpeechService implements OnDestroy {
-  private speechSynthesis: SpeechSynthesis | null;
+  public speechSynthesis: SpeechSynthesis | null;
   private _snackBar = inject(MatSnackBar);
 
   public allStates = new Map<string, BehaviorSubject<SpeechStatus>>();
   public hasBrowserSupport = false;
+
   private currentlyPlayingId = new BehaviorSubject<string>("");
   public currentlyPlayingId$ = this.currentlyPlayingId.asObservable();
 
+  public selectedVoice!: SpeechSynthesisVoice;
+
+  public voices = signal<SpeechSynthesisVoice[]>([]);
+
   constructor() {
+    this.speechSynthesis = window.speechSynthesis;
+    this.speechSynthesis.onvoiceschanged = () => {
+      const voices = this.speechSynthesis?.getVoices()?.filter((v) => v.lang.startsWith("en")) ?? [];
+      this.voices.set(voices);
+    };
+
     this.hasBrowserSupport = "speechSynthesis" in window && "SpeechSynthesisUtterance" in window;
     if (!this.hasBrowserSupport) {
       this._snackBar.open("Text to speech is not supported on your device.", "Dismiss", {
@@ -29,8 +40,6 @@ export class SpeechService implements OnDestroy {
         verticalPosition: "bottom",
       });
     }
-
-    this.speechSynthesis = window.speechSynthesis;
     window.onbeforeunload = () => {
       this.stop("all");
     };
@@ -47,6 +56,12 @@ export class SpeechService implements OnDestroy {
     this.allStates.set(id, state);
     return { id, state: state.asObservable() };
   }
+
+  setVoice(name: string) {
+    this.selectedVoice = this._getVoice(name);
+  }
+
+  _getVoice = (name: string) => this.voices().filter((voice) => voice.name === name)[0];
 
   start(text: string, componentId: string) {
     const thisState = this.allStates.get(componentId)?.value;
@@ -72,11 +87,8 @@ export class SpeechService implements OnDestroy {
     const utterance = new SpeechSynthesisUtterance(text);
     this.currentlyPlayingId.next(componentId);
 
-    const voices = this.speechSynthesis!.getVoices();
-    const defaultVoice = voices.find((v) => v.name === "Alex" || v.lang === "en-US");
-    const voice = defaultVoice ?? voices[0];
-    utterance.voice = voice;
-    utterance.lang = voice.lang;
+    utterance.voice = this.selectedVoice;
+    utterance.lang = this.selectedVoice.lang;
     utterance.rate = 1;
     utterance.pitch = 1;
 
