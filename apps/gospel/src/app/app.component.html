@@ -131,6 +131,18 @@
         >
           <lib-fa-icon [icon]="bookIcon"></lib-fa-icon>
         </button>
+        <button
+          mat-icon-button
+          [matTooltip]="'Settings'"
+          aria-labelledby="Settings button"
+          aria-label="Settings button"
+          [matMenuTriggerFor]="settingsMenu"
+        >
+          <lib-fa-icon [icon]="settingsIcon"></lib-fa-icon>
+        </button>
+        <mat-menu #settingsMenu="matMenu">
+          <gospel-settings-widget></gospel-settings-widget>
+        </mat-menu>
       </mat-toolbar>
     </div>
     <div class="content-page">

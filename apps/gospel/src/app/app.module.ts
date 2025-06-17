@@ -16,6 +16,7 @@ import { ScullyLibModule } from "@scullyio/ng-lib";
 import { LibFaIconComponent } from "shared";
 import { AppRoutingModule } from "./app.routing.module";
 import { FirebaseModule } from "./firebase.module";
+import { SettingsWidgetComponent } from "./shared/components/settings-widget/settings-widget.component";
 import { StateModule } from "./state/state.module";
 
 @NgModule({
@@ -34,6 +35,7 @@ import { StateModule } from "./state/state.module";
     MatTooltipModule,
     MatMenuModule,
     LibFaIconComponent,
+    SettingsWidgetComponent,
     ScullyLibModule.forRoot({
       alwaysMonitor: true,
     }),
