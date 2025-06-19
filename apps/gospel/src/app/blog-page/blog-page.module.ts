@@ -21,10 +21,10 @@ const routes: Routes = [
   imports: [
     CommonModule,
     BlogListComponent,
-    MatDividerModule,
-    MatProgressSpinnerModule,
     RouterModule.forChild(routes),
+    MatDividerModule,
     MatButtonModule,
+    MatProgressSpinnerModule,
     MatCardModule,
     TextEditorComponent,
   ],

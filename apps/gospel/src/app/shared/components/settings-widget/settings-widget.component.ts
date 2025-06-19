@@ -76,6 +76,12 @@ export class SettingsWidgetComponent implements OnInit, OnDestroy {
   };
 
   constructor() {
+    const storedSettings = localStorage.getItem("appSettings");
+    if (storedSettings) {
+      this.settings = JSON.parse(storedSettings) as AppSettings;
+      this.themeService.setTheme(this.settings.theme);
+    }
+
     effect(() => {
       if (!this.speechService.voices().length) return;
 
@@ -83,7 +89,6 @@ export class SettingsWidgetComponent implements OnInit, OnDestroy {
       if (storedSettings) {
         this.settings = JSON.parse(storedSettings) as AppSettings;
         this.speechService.setVoice(this.settings.voice.name);
-        this.themeService.setTheme(this.settings.theme);
       } else {
         const defaultEnglishVoice =
           this.speechService.voices().find((voice) => voice.name === "Alex" || voice.lang === "en-US") ??
