@@ -40,7 +40,7 @@ import { ReferenceTooltipComponent } from "../../../shared/components/reference-
       </blog-reference-tooltip>
       <br /><br />
 
-      Surely we are born into travail, born for trouble; as it says, "For man is born for trouble, As sparks fly
+      So surely we are born into travail, born for trouble; as it says, "For man is born for trouble, As sparks fly
       upward." (Job 5:7) All our days are struck with evil. We don't know where we are going, and we don't remember
       where we came from; we aren't fully aware of even today; we're in a box without the ability to look out. And even
       if we had 1000 lives of 1000 years a piece, we wouldn't be able to discover all that is set before us; how much
@@ -50,14 +50,14 @@ import { ReferenceTooltipComponent } from "../../../shared/components/reference-
       we think will satisfy us, but we catch them and see they are empty; we are chasing after the wind; as it says,
       “For they sow the wind And they reap the whirlwind. The standing grain has no heads; It yields no grain. Should it
       yield, strangers would swallow it up.” (Hosea 8:7) We are born into a miserable existance! Are we even better than
-      the animals? For they come in futility and leave in futility just as it is with us; as it says,
+      the animals? For they come in futility and they leave in futility just as it is with us; as it says,
       <blog-reference-tooltip [reference]="'Ecclesiastes 3:19'">
         For what happens to the sons of men also happens to animals; one thing befalls them: as one dies, so dies the
         other. Surely, they all have one breath; <b>man has no advantage over animals,</b> for all is vanity.
       </blog-reference-tooltip>
       All living creatures die; what lives forever? Everything we strive and labor for, we do not keep; we strive for
       beauty, but it is fading away. Our possessions become the possessions of another. Even our own lives are borrowed,
-      for we will return to the dust. Listen to what the King of Israel wrote toward the end of his life,
+      for we will return to the dust. Listen to what the King of Israel wrote toward the end of his life:
       <blog-reference-tooltip [reference]="'Ecclesiastes 2:18-23'">
         I hated all my toil in which I toil under the sun, seeing that I must leave it to the man who will come after
         me, and who knows whether he will be wise or a fool? Yet he will be master of all for which I toiled and used my
@@ -67,10 +67,10 @@ import { ReferenceTooltipComponent } from "../../../shared/components/reference-
         has a man from all the toil and striving of heart with which he toils beneath the sun? For all his days are full
         of sorrow, and his work is a vexation. Even in the night his heart does not rest. This also is vanity.
       </blog-reference-tooltip>
-      But what even is vanity? Futility is worthlessness, emptiness, aimlessness, not having a point or direction,
-      wandering about in blackest darkness. It does not see; it is always doing much, but it is accomplishing very
-      little; it is speaking much, but getting nothing done; it is dreaming, but living as a passing shadow. What then,
-      do we despair? But isn't that vain as well, a work of the wind? Why despair when there is hope.
+      But what is vanity? Futility is worthlessness, emptiness, aimlessness, not having a point or direction, wandering
+      about in blackest darkness. It does not see; it is always doing much, but it is accomplishing very little; it is
+      speaking much, but getting nothing done; it is dreaming, but living as a passing shadow. What then, do we despair?
+      But isn't that vain as well, a work of the wind? Why despair when there is hope.
       <br /><br />
 
       Life is short, yet it feels long. In life, we despair, without it, there is no hope either. We spend our lives
@@ -85,7 +85,7 @@ import { ReferenceTooltipComponent } from "../../../shared/components/reference-
         bread, Till you return to the ground, Because from it you were taken; For you are dust, And to dust you shall
         return.
       </blog-reference-tooltip>
-      So our toil is a curse from God; as the LORD God Himself says,
+      So our toil is a curse from God because of the sin of Adam; as the LORD God Himself says,
       <blog-reference-tooltip [reference]="'Deuteronomy 33:39-42'">
         See now that I, I am He, And there is no god besides Me; It is I who put to death and give life. I have wounded
         and it is I who heal, And there is no one who can deliver from My hand.
@@ -95,10 +95,10 @@ import { ReferenceTooltipComponent } from "../../../shared/components/reference-
         I am the LORD, and there is no other; Besides Me there is no God. (...) The One forming light and creating
         darkness, Causing well-being and creating calamity; I am the LORD who does all these.
       </blog-reference-tooltip>
-      And it says, “Is it not indeed from the LORD of hosts That peoples toil for fire, And nations grow weary for
-      nothing?” (Habakkuk 2:13) Who are we to quarrel with our Maker? If we dare speak to Him, will He be compelled to
-      answer? But if He calls to us, we must answer Him. As it says, “But the LORD is in His holy temple. Let all the
-      earth be silent before Him." (Habakkuk 2:20) Who can take God to court? Or who can accuse Him?
+      And it also says, “Is it not indeed from the LORD of hosts That peoples toil for fire, And nations grow weary for
+      nothing?” (Habakkuk 2:13) But who are we to quarrel with our Maker? If we dare speak to Him, will He be compelled
+      to answer? But if He calls to us, we must answer Him. As it says, “But the LORD is in His holy temple. Let all the
+      earth be silent before Him." (Habakkuk 2:20) For who can take God to court? Or who can accuse Him?
       <br /><br />
 
       But rather, it says,
@@ -113,30 +113,30 @@ import { ReferenceTooltipComponent } from "../../../shared/components/reference-
       <blog-reference-tooltip [reference]="'Ecclesiastes 4:6'">
         One hand full of rest is better than two fists full of labor and striving after wind.
       </blog-reference-tooltip>
-      Therefore, it is better to accept your lot in life and be happy with it. Search and seek for Him; acknowledge your
-      futility and search and seek for fullness in God, not in the things of the world. For if the things of the world
-      were pleasing to us, then we wouldn't be seeking for anything more. Will that which has no breath satisfy us? And
-      if we think that which breathes will satisfy us, won't it one day cease breathing? But much greater is God who
-      gives all good things by which all things came into being! He lives and does not cease living. And the Lord has
-      promised,
+      Therefore it is better to accept your lot in life and be happy with it. Search and seek for the LORD God;
+      acknowledge your futility and search and seek for fullness in God, not in the things of the world. For if the
+      things of the world were pleasing to us, then we wouldn't be seeking for anything more. Will that which has no
+      breath satisfy us? And if we think that which breathes will satisfy us, won't it one day cease breathing? But much
+      greater is God who gives all things by which all things came into being! He lives and does not cease living. And
+      the Lord has promised,
       <blog-reference-tooltip [reference]="'Jeremiah 29:13'">
         You will seek Me and find Me when you search for Me with all your heart.
       </blog-reference-tooltip>
       As it says, "seek Me with all your heart", for He knows your heart and how much heart you have, for He has given
       your heart; He seen beforetime when the widow gave all her income (Mark 12:42-43), and He seen when Ananias kept
-      back some of the money from the field which he sold (Acts 5:1-4). So if we have little heart, with all our little
-      heart, therein seek, or if we have great heart, with all our great heart therein seek. He knows when we hold back,
-      for He knows the measure which He has measured out. Therefore, be unhappy with your futility and search for
-      answers. Do not follow the example of the disobedient who love their futility. See how the disobedient try to
-      fight against God, trying to reverse the curses which God has pronounced on the earth? Thinking their life is
-      forever, they fall into error; thinking their home is forever, they believe a lie. See how the world tries to
-      reverse things: for God gave woman pain in child-bearing, but they give numbing shots; for God made woman desire
-      for her husband, yet he rules over her, but they start feminist movements; for God cursed the ground so that in
-      toil it will produce its fruit, but they create technology that works at the push of a button; for God makes man
-      to return to the dust in old age, but they have beauty products and wrinkling agents and plastic surgery; but
-      whatever we try to do, we cannot reverse death: all of us will return to Him in the end, slave and free, rich and
-      poor. So you see, our lives are set this way by God to lead us to Himself, for by the things of the world He sees
-      to it that no man shall see the light of life.
+      back some of the money from the field which he sold (Acts 5:1-4). He knows the amount He has allotted. So if we
+      have little heart, with all our little heart, therein seek, or if we have great heart, with all our great heart
+      therein seek. He knows when we hold back, for He knows the measure which He has measured out. Therefore, be
+      unhappy with your futility and search for answers. Do not follow the example of the disobedient who love their
+      futility. See how the disobedient try to resist God, trying to reverse the curses which God has pronounced on the
+      earth? Thinking their life is forever, they fall into error; thinking their home is forever, they believe a lie.
+      See how the world tries to reverse things: for God gave woman pain in child-bearing, but they give numbing shots;
+      for God made woman desire for her husband, yet he rules over her, but they start feminist movements; for God
+      cursed the ground so that in toil it will produce its fruit, but they create technology that works at the push of
+      a button; for God makes man to return to the dust in old age, but they have beauty products and wrinkling agents
+      and plastic surgery; but whatever we try to do, we cannot reverse death: all of us will return to Him in the end,
+      slave and free, rich and poor. So you see, our lives are set this way by God to lead us to Himself, for by the
+      things of the world He sees to it that no man shall see the light of life.
     </ng-template>`,
   styles: ``,
   changeDetection: ChangeDetectionStrategy.OnPush,
