@@ -39,9 +39,9 @@ import { ReferenceTooltipComponent } from "../../../shared/components/reference-
       is complete.” (2 Corinthians 10:6) For the apostles also disciplined in the Lord. So therefore, the Israelites had
       to sacrifice a perfect lamb or which-ever clean animal prescribed by the law for forgiveness of unintentional
       sins; it is like this: the clean animal cleansed them from their filth and the unblemished beast took away their
-      blemish. The sacrifice did not cleanse the offerer's conscience though because the guilt remained, for an innocent
-      animal had to die in their place; the sacrifice did not take away their sin, but only covered their sin
-      temporarily according to the physical requirement; as it says in Hebrews,
+      blemish. The sacrifice did not cleanse the offerer's conscience though, because the guilt remained, for an
+      innocent animal had to die in their place; the sacrifice did not take away their sin, but only covered their sin
+      temporarily according to the physical requirement; as it says in the book of Hebrews,
       <blog-reference-tooltip [reference]="'Hebrews 10:3-4'"
         >But in those (sacrifices) there is a reminder of sins year by year. For it is impossible for the blood of bulls
         and goats to take away sins.</blog-reference-tooltip
@@ -70,9 +70,9 @@ import { ReferenceTooltipComponent } from "../../../shared/components/reference-
       thousand.” (1 Chronicles 12:14) And it says of David, "You (David) should not go out; for if we indeed flee, they
       will not care about us; even if half of us die, they will not care about us. But you are worth ten thousand of
       us." (2 Samuel 18:3) If David is as ten thousand, and the greatest of Gad a thousand, how do you suppose Christ is
-      reckoned, being the Son of God, except as the whole world, including both the living and dead? So He is one, yet
-      for all, being God's own Son. Those sin offerings in the Old Covenant for the whole congregation of Israel were
-      not eaten; but yet,
+      reckoned, being the Son of God, but as the whole world, including both the living and dead? So He is one, yet for
+      all, being God's own Son. Those sin offerings in the Old Covenant for the whole congregation of Israel were not
+      eaten; but yet,
       <blog-reference-tooltip [reference]="'Hebrews 13:10'">
         We have an altar from which those who serve the tent have no right to eat.
       </blog-reference-tooltip>
@@ -83,20 +83,20 @@ import { ReferenceTooltipComponent } from "../../../shared/components/reference-
       forevermore, He is seated in the heavens; and so He is contrary to the law in that He was raised, for the animals
       sacrificed in the Old Covenant did not rise, and sorrow and guilt remained with the offerer. So God raised Christ
       from the dead and by His resurrection, we have justification with God. It is His act of obedience that matters in
-      the sight of God, united with our obedient work of faith. God shows us the way of atonement in the law; there is
-      no forgiveness without the shedding of blood. These laws came not from man, although they were spoken by the mouth
-      of Moses, they came from God, and this is God's way. Everything Moses spoke, God spoke to him to tell the people.
-      These things he spoke were also written down by the commandment of God. And by reading these things, we may
-      believe through Moses, for they point to Christ; for faith comes by hearing and hearing the Word of Christ. So
-      it's by faith, which is contrary to works; and if it's contrary to work, then it's accounted as grace, for grace
-      is a gift; and on the contrary, if it's works, then grace is no longer grace, but due wages; for those who work
-      deserve wages, but he who receives a gift has done no work for it. So Christ was sacrificed apart from our works
-      by the grace of God to be received by faith. And He, being the High Priest, brought an offering to God, offering
-      Himself to sanctify for-ever those who are being saved. And thereafter, having been raised, He has been exalted as
-      Lord of all, especially to those who believe. The work of the obedience of Christ forgives, making many who
-      believe righteous and justifying the many by His one act. And He proves to us these facts through the testimonies
-      of the Psalms and the Prophets, the book of the law, which were all written beforehand, foretelling God's plan,
-      which is now revealed in Christ; as it says,
+      the sight of God, united with our obedient work of faith. God shows us the way of atonement in the law; for there
+      is no forgiveness without the shedding of blood. These laws came not from man, although they were spoken by the
+      mouth of Moses, they came from God, and this is God's way. Everything Moses spoke, God spoke to him to speak to
+      the people. These things he spoke were also written down by the commandment of God. And by reading these things,
+      we may believe through Moses, for they point to Christ; for faith comes by hearing and hearing the Word of Christ.
+      So it's by faith, which is contrary to works; and if it's contrary to work, then it's accounted as grace, for
+      grace is a gift; and on the contrary, if it's work, then grace is no longer grace, but due wages; for those who
+      work deserve wages, but he who receives a gift has done no work for it. So Christ was sacrificed apart from our
+      works by the grace of God to be received by faith. And He, being the High Priest, brought an offering to God,
+      offering Himself to sanctify for-ever those who are being saved. And thereafter, having been raised, He has been
+      exalted as Lord of all, especially to those who believe. The work of the obedience of Christ forgives, making many
+      who believe righteous and justifying the many by His one act. And He proves to us these facts through the
+      testimonies of the Psalms and the Prophets, the book of the law, which were all written beforehand, foretelling
+      God's plan, which is now revealed in Christ; as it says,
       <blog-reference-tooltip [reference]="'Luke 24:13-35'" [isJesusWord]="true">
         And Jesus said to them, "O foolish men and slow of heart to believe in all that the prophets have spoken! Was it
         not necessary for the Christ to suffer these things and to enter into His glory?" Then beginning with Moses and
@@ -120,32 +120,32 @@ import { ReferenceTooltipComponent } from "../../../shared/components/reference-
       Furthermore, when the Israelites were in slavery in Egypt, the Israelites had to sacrifice a lamb and paint the
       doorpost of their house with its blood. The angel of death sent by God came through the city and slayed the
       firstborn of every house whose doorpost was not marked with the lamb's blood; and the death angel was commanded to
-      pass over the house marked with blood and not to harm anyone inside. This is remembered now by the Israelites,
-      even to this day as the Passover. For seven days after the Passover, they cleaned out all leaven from their homes;
-      and even to this day they celebrate the Festival of Unleavened Bread. And the apostle Paul says about this:
+      pass over the house marked with blood and not harm anyone inside. This is remembered now by the Israelites, even
+      to this day as the Passover. For seven days after the Passover, they cleaned out all leaven from their homes; and
+      even to this day they celebrate the Festival of Unleavened Bread. And the apostle Paul says about this:
       <blog-reference-tooltip [reference]="'1 Corinthians 5:7-8'">
         Therefore purge out the old leaven, that you may be a new lump, since you truly are unleavened. For indeed
         Christ, our Passover, was sacrificed for us. Therefore let us keep the feast, not with old leaven, nor with the
         leaven of malice and wickedness, but with the unleavened bread of sincerity and truth.
       </blog-reference-tooltip>
       And so, we have been rescued from our slavery to Egypt by the Passover Lamb; which is to say: we have been
-      redeemed from our slavery to sin by the blood of Jesus Christ, our Passover Lamb. By His cross, we have been
-      crucified to the world and the world crucified to us. Israel crossed through the sea on dry ground while their
-      enemies perished. So in Christ, the world and everything it esteems, is brought to nought through the cross; for,
-      "God has chosen the foolish things of the world to shame the wise, and God has chosen the weak things of the world
-      to shame the things which are strong, and the base things of the world and the despised God has chosen, the things
-      that are not, so that He may nullify the things that are.” (1 Corinthians 1:27-28) And so if anyone who has the
-      love of this world in them, the love of the Father is not in them; for how can we love what God hates? As the
-      prophet asks, "Should you help the wicked and love those who hate the LORD and so bring wrath on yourself from the
-      LORD?” (2 Chronicles 19:2) Everything that is of the world is contrary to God, and everything men value is
-      detestable in the sight of God (Luke 16:15). But we who love the Father have been rescued from this world's lusts.
-      This is the sacrifice that God desires: not of bulls, or goats, or lambs, but of setting apart our sins for
-      destruction, crucifying the misdeeds of the body, devoting them to death, so that we may not be destroyed with
-      them; this is the sacrifice of death that we may live, which is initiated by God's Sacrifice of Atonement for us,
-      even the Passover; for even if we purge out every crumb of leaven in our lives, if we do not have blood, our work
-      is in vain. This is the thing Solomon seen when he prayed after the completion of the permanent temple of God;
-      instead of praying, asking for the LORD God to forgive the people according to the ordinances of sacrifice even
-      though they were written according to the law; he says,
+      redeemed from our slavery to sin by the blood of Jesus Christ. By His cross, we have been crucified to the world
+      and the world crucified to us. Israel crossed through the sea on dry ground while their enemies perished. So in
+      Christ, the world and everything it esteems, is brought to nought through the cross; for, "God has chosen the
+      foolish things of the world to shame the wise, and God has chosen the weak things of the world to shame the things
+      which are strong, and the base things of the world and the despised God has chosen, the things that are not, so
+      that He may nullify the things that are.” (1 Corinthians 1:27-28) And so if anyone who has the love of this world
+      in them, the love of the Father is not in them; for how can we love what God hates? As the prophet asks, "Should
+      you help the wicked and love those who hate the LORD and so bring wrath on yourself from the LORD?” (2 Chronicles
+      19:2) Everything that is of the world is contrary to God, and everything men value is detestable in the sight of
+      God (Luke 16:15). But we who love the Father have been rescued from this world's lusts. This is the sacrifice that
+      God desires: not of bulls, or goats, or lambs, but of setting apart our sins for destruction, crucifying the
+      misdeeds of the body by devoting them to death, so that we may not be destroyed with them; this is the sacrifice
+      of death that we may live, which is initiated by God's Sacrifice of Atonement for us, even the Passover; for even
+      if we purge out every crumb of leaven in our lives, if we do not have blood, our work is in vain. This is the
+      thing Solomon seen when he prayed after the completion of the permanent temple of God; instead of praying, asking
+      for the LORD God to forgive the people according to the ordinances of sacrifice even though they were written
+      according to the law; he says,
       <blog-reference-tooltip [reference]="'2 Chronicles 6:46-49'">
         If they return to You with all their heart and with all their soul in the land of their captivity, where they
         have been taken captive, and pray toward their land which You have given to their fathers and the city which You
@@ -160,9 +160,9 @@ import { ReferenceTooltipComponent } from "../../../shared/components/reference-
         obey is better than sacrifice, And to heed than the fat of rams.
       </blog-reference-tooltip>
       And there are many other such things written in the Scriptures as these (Hosea 6:6, Micah 6:7-8, Psalm 40:6-8,
-      Jeremiah 7:21-23, Psalm 50:8-15, Psalm 51:16-17). For Christ is the Sacrifice; God desires not a sacrifice from
-      us, but He gives the Sacrifice. The sacrifices of man are loyalty, the knowledge of God, obedience, giving heed,
-      loving kindness, doing justice, and walking humbly with Your God; with these God will not despise.
+      Jeremiah 7:21-23, Psalm 50:8-15, Psalm 51:16-17). Christ is the Sacrifice; God desires not a sacrifice from us,
+      but He gives the Sacrifice. The sacrifices of man are loyalty and obedience, the knowledge of God, giving heed to
+      His Word, doing loving-kindness and justice, and walking humbly with Your God; with these God will not despise.
     </ng-template>`,
   styles: ``,
   changeDetection: ChangeDetectionStrategy.OnPush,

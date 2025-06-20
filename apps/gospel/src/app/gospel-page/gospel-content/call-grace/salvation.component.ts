@@ -73,7 +73,7 @@ import { ReferenceTooltipComponent } from "../../../shared/components/reference-
       the fire refines and purifies. So after the flood of water, God put the rainbow in the sky; and He caused the rain
       to pour down on the righteous and the wicked alike, showing grace to everyone despite their wickedness; so with
       the covenant came grace and peace from God to the whole world; and this pertains to this very time, as God says
-      through Isaiah, the prophet:
+      through Isaiah the prophet:
       <blog-reference-tooltip [reference]="'Isaiah 54:9-10'">
         For this is like the days of Noah to Me, When I swore that the waters of Noah Would not flood the earth again;
         So I have sworn that I will not be angry with you Nor will I rebuke you. For the mountains may be removed and
@@ -94,15 +94,15 @@ import { ReferenceTooltipComponent } from "../../../shared/components/reference-
       and fire to drink - as it is with water. "Oh, but today we have never seen the water as fire, ever since the
       beginning of the world these things have always been the same. The fire we can see in the heavens, but it never
       comes down to the earth." But with the revelation of the grace of God comes the revelation of the wrath of God;
-      for Christ was the first to preach openly about Gehenna, and He was the first reveal the Good News of God's grace.
-      The world as we know it is passing away and anyone found of it in the end will be found deserving judgment with
-      it, but God calls us out ahead of time, calling us to come to Christ. He wills that none should perish, but all
-      come to the knowledge of God, coming to repentance to everlasting life; and He has proved this, so much so in that
-      He has made peace with us ahead of the time through Jesus, our Savior. Greater is the Spirit in us than the spirit
-      in the world; the Spirit in us who believe is the Spirit of Christ Jesus, and He has overcome the world;
+      for Christ was the first to preach openly about Gehenna, and He was the first to reveal the Good News of God's
+      grace. The world as we know it is passing away and anyone found of it in the end will be found deserving judgment
+      with it, but God calls us out ahead of time, calling us to come to Christ. He wills that none should perish, but
+      all come to the knowledge of God, coming to repentance to everlasting life; and He has proved this, so much so in
+      that He has made peace with us ahead of the time through Jesus, our Savior. Greater is the Spirit in us than the
+      spirit in the world; the Spirit in us who believe is the Spirit of Christ Jesus, and He has overcome the world;
       therefore, we have strength in Christ to flee the world and its lusts and pride. Those who entered into the ark
       floated above the destruction of the earth by water; so it will be for those who enter into Christ; we will be
-      caught up with Jesus when He returns; as it is says,
+      caught up with Jesus when He returns; as it says,
       <blog-reference-tooltip [reference]="'1 Thessalonians 4:17'">
         Then we who are alive and remain will be caught up together with them in the clouds to meet the Lord in the air,
         and so we shall always be with the Lord.
@@ -135,6 +135,7 @@ import { ReferenceTooltipComponent } from "../../../shared/components/reference-
         I say to you, ask, and it will be given to you; seek, and you will find; knock, and it will be opened to you.
         For everyone who asks, receives; and he who seeks, finds; and to him who knocks, it will be opened.
       </blog-reference-tooltip>
+      For Jesus is the Way and the Door. He is the refuge.
     </ng-template>`,
   styles: ``,
   changeDetection: ChangeDetectionStrategy.OnPush,

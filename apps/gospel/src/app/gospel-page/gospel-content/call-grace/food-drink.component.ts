@@ -93,12 +93,12 @@ import { ReferenceTooltipComponent } from "../../../shared/components/reference-
         food. Incline your ear, and come to me; hear, that your soul may live; and I will make with you an everlasting
         covenant, my steadfast, sure love for David.
       </blog-reference-tooltip>
-      Also it says, "If a man were to give all the riches of his house for love, It would be utterly despised." (Song of
-      Solomon 8:7) Everlasting springs and everlasting bread, given free of cost, yet for all eternity; something so
-      precious, not all the money in the world can buy, but God gives them freely: His grace is the free gift of God. No
-      longer are we under the bonds of futility, working for food which does not last, for our labor in the Lord is not
-      in vain! For the will of the Lord is our bread; and our work in the Lord is the work of faith. Therefore, run the
-      race of faith, believing in the Son of God; as our Lord says,
+      For it says, "If a man were to give all the riches of his house for love, It would be utterly despised." (Song of
+      Solomon 8:7) So God gives everlasting springs and everlasting bread free of cost, which lasts for all eternity;
+      something so precious, not all the money in the world can buy, and God gives them freely: for His grace is the
+      free gift of God. No longer are we under the bonds of futility, working for food which does not last, for our
+      labor in the Lord is not in vain! For the will of the Lord is our bread; and our work in the Lord is the work of
+      faith. Therefore, run the race of faith, believing in the Son of God; as our Lord says,
       <blog-reference-tooltip [reference]="'John 6:27-35'" [isJesusWord]="true">
         Do not work for the food which perishes, but for the food which endures to eternal life, which the Son of Man
         will give to you, for on Him the Father, God, has set His seal. (...) This is the work of God, that you believe

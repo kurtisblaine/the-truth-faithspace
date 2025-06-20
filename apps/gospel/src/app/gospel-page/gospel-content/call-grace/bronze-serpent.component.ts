@@ -64,32 +64,32 @@ import { ReferenceTooltipComponent } from "../../../shared/components/reference-
       taken away from it; the image is made by the skill of man where-as God creates all things, even the skill of man;
       thus, when we create a copy of God's creation, we take the life from it when recreating it; and this is the nature
       of all images created by man: they are dead. So the image of the serpent that Moses created is dead; and Christ is
-      the visible image of God; however, Christ is not dead. Christ died for three days, and yet lives. In a similar
-      way, man is created in the image of God, and we also are not considered dead; as it says, “God created man in His
-      own image, in the image of God He created him; male and female He created them.” (Genesis 1:27) So not all images
-      are dead, only the ones man creates. But these testimonies are pictures, images in one's mind pointing to Christ.
-      And so, through these pictures we may see Christ. These testimonies are not Christ in themselves, but they are
-      only images, pictures, parables given about Christ; through these testimonies of Christ, we can see Christ: that
-      is, through faith; so although images are dead, and Christ is the visible image of God, it is through these
-      parables, which are dead, which point to Christ, which we have conviction and assurance in the faith; as Christ
-      often spoke in parables and once said,
+      the visible image of God; however, Christ is not dead. Christ died for three days, and yet lives forevermore. In a
+      similar way, man is created in the image of God, and we also are not considered dead; as it says, “God created man
+      in His own image, in the image of God He created him; male and female He created them.” (Genesis 1:27) So not all
+      images are dead, only the ones man creates. But these testimonies are pictures, images in one's mind pointing to
+      Christ. And so, through these dead pictures we may see Christ. These testimonies are not Christ in themselves, but
+      they are only images, pictures, parables given about Christ; through these testimonies of Christ, we can see
+      Christ: that is, through faith; so although images are dead, and Christ is the visible image of God, it is through
+      these parables, which are dead, which point to Christ, which we have conviction and assurance in the faith; as
+      Christ often spoke in parables and once said,
       <blog-reference-tooltip [reference]="'Mark 4:30'" [isJesusWord]="true">
         How shall we picture the kingdom of God, or by what parable shall we present it?
       </blog-reference-tooltip>
       So we are saved by Jesus through parables, similitudes, concealed truths, through the testimonies given to us by
-      God concerning His Son; these further the faith; and so the parable of the bronze serpent in itself is not Christ
-      - it is a picture to Christ; the same thing goes for all the testimonies found in the book of the law. And this is
-      why the serpent in the wilderness was a bronze image: God is showing us that through images, parables, and
-      pictures found in His Word, we may be encouraged in the faith; not that any physical picture can promote faith,
-      but specifically I am talking about parables through hearing God's Word. And these all point to Jesus Christ that
-      we may be encouraged to come to Him; these are not the Son of God in themselves, for these are dead, but Christ is
-      living; these are images of the mind made possible by the Word of God; these point us to Christ so that we may
-      come to Him for salvation; as He says,
+      God concerning His Son; for these further the faith; and so the parable of the bronze serpent in itself is not
+      Christ - it is a picture to Christ; the same thing goes for all the testimonies found in the book of the law. And
+      this is why the serpent in the wilderness was a bronze image: God is showing us that through images, parables, and
+      pictures found in His Word, we may be build up in the faith; not that any physical picture can promote faith, but
+      specifically I am talking about parables through hearing God's Word. And these all point to Jesus Christ that we
+      may be encouraged to come to Him; these images are not the Son of God in themselves, for these are dead, but
+      Christ is living; these are images of the mind made possible by the Word of God; these point us to Christ so that
+      we may come to Him for salvation; as He says,
       <blog-reference-tooltip [reference]="'John 5:39-40'" [isJesusWord]="true">
         You search the Scriptures because you think that in them you have eternal life; it is these that testify about
         Me; and you are unwilling to come to Me so that you may have life.
       </blog-reference-tooltip>
-      He was sent to be Ransom for whoever will look upon Him, looking upon Him with the eyes of the heart: which is
+      He was sent to be a Ransom for whoever will look upon Him, looking upon Him with the eyes of the heart: which is
       faith. He emptied Himself to take on the form of man, which is made in the image of God, to rescue us who are made
       in the image of God; as it says,
       <blog-reference-tooltip [reference]="'Hebrews 2:14-15'">
@@ -104,7 +104,7 @@ import { ReferenceTooltipComponent } from "../../../shared/components/reference-
       powerless by the cross is satan, the serpent, that ancient dragon of old. For although Christ was lifted up on the
       cross, He did not suffer defeat by the cross; it was the serpent who was defeated; for Christ was raised to new
       life, and He will never die again; it was the serpent who suffered the head wound, and Christ's heel was bruised
-      (Genesis 3:15). So, this is why we see a serpent lifted up during the time of Israel's wanderings in the desert;
+      (Genesis 3:15). So this is why we see a serpent lifted up during the time of Israel's wanderings in the desert;
       for Christ was glorified through the cross, and satan was defeated by the cross. We may be full of fear looking
       upon Christ on the cross because of our great sin and God's wrath toward sin, but we must look and trust that if
       we look upon Jesus Christ and Him crucified, we will be saved - we will surely have life. "I want to look away: I
@@ -124,7 +124,7 @@ import { ReferenceTooltipComponent } from "../../../shared/components/reference-
       For faith is the conviction of things unseen and the assurance of things hoped for. Don't be led astray by seeking
       for images of Christ and thinking that is faith - it is not. For faith comes from hearing and hearing the Word of
       God. We walk by faith, not by sight, and so, faith and sight are opposites. Faith is from hearing God's Word, and
-      if God is gracious to us, perhaps we may see a miracle; however, it's unbelieving to seek for such miracles and
+      if God is gracious to us, perhaps we may see a miracle; however it's unbelieving to seek for such miracles and
       signs, for everything we need is already given. There is a great blessing to us who believe without seeing; as
       Christ says,
       <blog-reference-tooltip [reference]="'John 20:29'" [isJesusWord]="true">
@@ -153,11 +153,11 @@ import { ReferenceTooltipComponent } from "../../../shared/components/reference-
           So it was not you who sent me here, but God.</b
         >
       </blog-reference-tooltip>
-      And so likewise, Christ was betrayed by His own brethren, the Jews, and they turned Him over to the Gentiles to be
+      And so likewise, Christ was betrayed by His own brothers, the Jews, and they turned Him over to the Gentiles to be
       crucified - and all this was foretold by God beforehand, but the meaning was hidden from them. It was God's
-      predetermined plan for good, having testified beforehand by the Psalms and the Prophets, by acts of men of old,
-      for prophets also performed acts before the people (The prophets Ezekiel, Hosea, and Zechariah for example). As
-      one of the prophets, Isaiah, says,
+      predetermined plan for good, having testified beforehand by the Psalms and the Prophets, by the acts of men of
+      old, for prophets also performed acts before the people (The prophets Ezekiel, Hosea, and Zechariah for example).
+      For one of the prophets, Isaiah, says,
       <blog-reference-tooltip [reference]="'Isaiah 53:10'">
         But the LORD was pleased To crush Him, putting [Him] to grief; If He would render Himself [as] a guilt offering,
         He will see [His] offspring, He will prolong [His] days, And the good pleasure of the LORD will prosper in His
@@ -170,7 +170,7 @@ import { ReferenceTooltipComponent } from "../../../shared/components/reference-
       come to hate ourselves because of our sins, namely, what they have done to Christ; but we find power in that
       Christ is alive from the dead, seated at the right hand of Power on High, and that it was according to God's plan.
       Even if our eyes may be veiled for a time, they become unvieled when we turn to the Lord. Therefore, unveil your
-      eyes by turning to Him and see that your Brother is now alive, second in command, mediator between you and God,
+      eyes by turning to Him and see that your Brother is now alive, second in command, mediator between us and God,
       that He is very much alive and your guilt has been removed; for Joseph's brothers had guilt as long as they
       thought Joseph was dead, but the moment they seen Joseph alive, their guilt was removed and their hands cleansed
       from his blood. See now, Jesus is for you, and He does not seek revenge because of your transgressions that He

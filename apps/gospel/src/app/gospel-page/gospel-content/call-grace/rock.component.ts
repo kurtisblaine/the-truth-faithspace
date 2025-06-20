@@ -14,7 +14,7 @@ import { ReferenceTooltipComponent } from "../../../shared/components/reference-
         They said, “Why did you bring us up out of Egypt to make us and our children and livestock die of thirst?” Then
         Moses cried out to the Lord, “What am I to do with these people? They are almost ready to stone me.”
       </blog-reference-tooltip>
-      In the people's stony hearts is revealed the content of their stony hearts by desiring to physically stone Moses.
+      In the people's stony hearts is revealed the content of their stony hearts by wanting to physically stone Moses.
       Their anger, unbelief, and hardness of heart was toward Moses, for they wanted to stone him with hard stones; as
       the proverb says, "Out of the wicked comes forth wickedness." (1 Samuel 24:13) Moses was God's representative, he
       spoke on behalf of God, so the people's anger was actually directed toward God - they were angry with Him; as
@@ -58,7 +58,7 @@ import { ReferenceTooltipComponent } from "../../../shared/components/reference-
       And by the cross, which is wood, Christ saves. A staff is no weapon at all, but God is powerful and He works
       wonders by that which is no weapon at all to show His great power towards us who believe. God commanded Moses,
       "Take in your hand the staff with which you struck the Nile", so it is the cross which opens up a way for us out
-      of the captivity of sin to God; as Paul says,
+      of the captivity of this world to God; as Paul says,
       <blog-reference-tooltip [reference]="'Galatians 6:14'">
         But may it never be that I would boast, except in the cross of our Lord Jesus Christ, through which the world
         has been crucified to me, and I to the world.
@@ -75,9 +75,9 @@ import { ReferenceTooltipComponent } from "../../../shared/components/reference-
       let us pray to the Rock and get deliverance through the cross, instead of striking again by continuing in willful
       sin; for it is possible to crucify again to oneself the Son of God by falling away. Let us not be comfortable in
       sin especially now that Jesus saves us from sin; He has set us free to be free, and sin is not anything to coddle;
-      for it is deadly and repugnant, it is the danger. Sin has lost its power, and it has been rendered powerless by
-      the grace of God in Christ Jesus; therefore, if we continue to sin after receiving the knowledge of the truth,
-      it's because,
+      for it is deadly and repugnant - it is the danger. Sin has lost its power, and it has been rendered powerless by
+      the grace of God in Christ Jesus; therefore if we continue to sin after receiving the knowledge of the truth, it's
+      because,
       <blog-reference-tooltip [reference]="'John 3:19'">
         the light is come into the world, and men loved darkness rather than the light: for their works were evil.
       </blog-reference-tooltip>
@@ -85,7 +85,7 @@ import { ReferenceTooltipComponent } from "../../../shared/components/reference-
       consume the adversaries of God (Hebrews 10:26-30). So take heed! That which is powerless shall not master over
       you, for you are no longer under law, but under grace. Sin can only be our master if we willingly submit to it;
       rather, obey righteousness, obey Christ. Test yourselves. Do you love the light of life? For Christ gives us the
-      grace to do the good we want to do, that is, to say, "No" to sin, and to say, "Yes" to God. The following warning
+      grace to do the good we want to do, that is, saying, "No" to sin, and saying, "Yes" to God. The following warning
       ought to keep us from sin in the fear of the Lord, as the writer of Hebrews states,
       <blog-reference-tooltip [reference]="'Hebrews 6:4-9'">
         For in the case of those who have once been enlightened and have tasted of the heavenly gift and have been made
@@ -93,9 +93,11 @@ import { ReferenceTooltipComponent } from "../../../shared/components/reference-
         have fallen away, it is impossible to renew them again to repentance, since they again crucify to themselves the
         Son of God and put Him to open shame. For ground that drinks the rain which often falls on it and brings forth
         vegetation useful to those for whose sake it is also tilled, receives a blessing from God; but if it yields
-        thorns and thistles, it is worthless and close to being cursed, and it ends up being burned. But, beloved, we
-        are convinced of better things concerning you, and things that accompany salvation, though we are speaking in
-        this way. </blog-reference-tooltip
+        thorns and thistles, it is worthless and close to being cursed, and it ends up being burned.
+        <b
+          >But, beloved, we are convinced of better things concerning you, and things that accompany salvation, though
+          we are speaking in this way.</b
+        > </blog-reference-tooltip
       ><br /><br />
 
       Jesus is the Rock of our refuge, a city of refuge, in which one flees for protection from the onslaught of the
@@ -116,7 +118,7 @@ import { ReferenceTooltipComponent } from "../../../shared/components/reference-
         your soul.
       </blog-reference-tooltip>
       For when the seasons change and the trees lose foliage, the grass withers and dies, but the Rock remains unchanged
-      forever, as it says,
+      forever; as it says,
       <blog-reference-tooltip [reference]="'Psalm 125:1'">
         Those who trust in the LORD are as Mount Zion, which cannot be moved but abides forever.
       </blog-reference-tooltip>

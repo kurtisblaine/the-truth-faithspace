@@ -61,16 +61,16 @@
           <button mat-button (click)="toAnchor('theCallGrace', 'servantOfGod')">The Servant of God</button>
           <button mat-button (click)="toAnchor('theCallGrace', 'theBronzeSerpent')">The Bronze Serpent</button>
           <button mat-button (click)="toAnchor('theCallGrace', 'theVictor')">The Victor</button>
-          <button mat-button (click)="toAnchor('theCallGrace', 'trueFoodAndTrueDrink')">
-            The True Food & the True Drink
-          </button>
           <button mat-button (click)="toAnchor('theCallGrace', 'theLambOfGod')">The Lamb of God</button>
           <button mat-button (click)="toAnchor('theCallGrace', 'theLion')">The Lion of the Tribe of Judah</button>
           <button mat-button (click)="toAnchor('theCallGrace', 'theScapegoat')">The Scapegoat</button>
-          <button mat-button (click)="toAnchor('theCallGrace', 'theRockOfSalvation')">The Rock of Salvation</button>
+          <button mat-button (click)="toAnchor('theCallGrace', 'trueFoodAndTrueDrink')">
+            The True Food & the True Drink
+          </button>
           <button mat-button (click)="toAnchor('theCallGrace', 'eternalSalvation')">
             The Door of Eternal Salvation
           </button>
+          <button mat-button (click)="toAnchor('theCallGrace', 'theRockOfSalvation')">The Rock of Salvation</button>
           <button mat-button (click)="toAnchor('theCallGrace', 'theSonOfGod')">The Son of God</button>
         </ng-template>
       </mat-expansion-panel>
@@ -264,14 +264,14 @@
       <button mat-button (click)="toAnchor('theCallGrace', 'servantOfGod')">The Servant of God</button>
       <button mat-button (click)="toAnchor('theCallGrace', 'theBronzeSerpent')">The Bronze Serpent</button>
       <button mat-button (click)="toAnchor('theCallGrace', 'theVictor')">The Victor</button>
-      <button mat-button (click)="toAnchor('theCallGrace', 'trueFoodAndTrueDrink')">
-        The True Food & the True Drink
-      </button>
       <button mat-button (click)="toAnchor('theCallGrace', 'theLambOfGod')">The Lamb of God</button>
       <button mat-button (click)="toAnchor('theCallGrace', 'theLion')">The Lion of the Tribe of Judah</button>
       <button mat-button (click)="toAnchor('theCallGrace', 'theScapegoat')">The Scapegoat</button>
-      <button mat-button (click)="toAnchor('theCallGrace', 'theRockOfSalvation')">The Rock of Salvation</button>
+      <button mat-button (click)="toAnchor('theCallGrace', 'trueFoodAndTrueDrink')">
+        The True Food & the True Drink
+      </button>
       <button mat-button (click)="toAnchor('theCallGrace', 'eternalSalvation')">The Door of Eternal Salvation</button>
+      <button mat-button (click)="toAnchor('theCallGrace', 'theRockOfSalvation')">The Rock of Salvation</button>
       <button mat-button (click)="toAnchor('theCallGrace', 'theSonOfGod')">The Son of God</button>
     </div>
 
@@ -316,19 +316,6 @@
 
     <blog-gospel-section
       [isDefer]="!isScullyRunning"
-      data-anchor="trueFoodAndTrueDrink"
-      class="slide"
-      [isLightMode]="true"
-      [isFloater]="true"
-    >
-      <h3 class="headers">The True Food & the True Drink</h3>
-      <div class="paragraphs">
-        <gospel-food-drink #trueFoodAndTrueDrink></gospel-food-drink>
-      </div>
-    </blog-gospel-section>
-
-    <blog-gospel-section
-      [isDefer]="!isScullyRunning"
       data-anchor="theLambOfGod"
       class="slide"
       [isLightMode]="true"
@@ -368,14 +355,14 @@
 
     <blog-gospel-section
       [isDefer]="!isScullyRunning"
-      data-anchor="theRockOfSalvation"
+      data-anchor="trueFoodAndTrueDrink"
       class="slide"
       [isLightMode]="true"
       [isFloater]="true"
     >
-      <h3 class="headers">The Rock of our Salvation</h3>
+      <h3 class="headers">The True Food & the True Drink</h3>
       <div class="paragraphs">
-        <gospel-rock #theRockOfSalvation></gospel-rock>
+        <gospel-food-drink #trueFoodAndTrueDrink></gospel-food-drink>
       </div>
     </blog-gospel-section>
 
@@ -389,6 +376,19 @@
       <h3 class="headers">The Door of Eternal Salvation</h3>
       <div class="paragraphs">
         <gospel-salvation #eternalSalvation></gospel-salvation>
+      </div>
+    </blog-gospel-section>
+
+    <blog-gospel-section
+      [isDefer]="!isScullyRunning"
+      data-anchor="theRockOfSalvation"
+      class="slide"
+      [isLightMode]="true"
+      [isFloater]="true"
+    >
+      <h3 class="headers">The Rock of our Salvation</h3>
+      <div class="paragraphs">
+        <gospel-rock #theRockOfSalvation></gospel-rock>
       </div>
     </blog-gospel-section>
 
