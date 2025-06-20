@@ -10,7 +10,7 @@ import { ReferenceTooltipComponent } from "../../../shared/components/reference-
       Just as there was a world-wide judgment in Noah's day, so there will be a judgement at the end of time. If that
       judgment came with water, then how will it be in the end except with fire? For it will be like the time of Lot in
       Sodom, when the Lord will come from the heavens; it will be like the days of Noah, when His judgement is revealed
-      to the world; as Peter says,
+      to the world; as the apostle Peter says,
       <blog-reference-tooltip [reference]="'2 Peter 3:3-9'">
         For they (scoffers) deliberately overlook this fact, that the heavens existed long ago, and the earth was formed
         out of water and through water by the word of God, and that by means of these the world that then existed was
@@ -24,9 +24,11 @@ import { ReferenceTooltipComponent } from "../../../shared/components/reference-
       <blog-reference-tooltip [reference]="'Jeremiah 46:28'"
         >I will discipline you, but with justice; I cannot let you go unpunished.</blog-reference-tooltip
       >
-      If He let just one sin go unpunished, He wouldn't be good and just. It is a good thing to judge evil and a lie:
-      for that's justice. When justice is not upheld, people riot; it is evil not to judge wrong-doing, but it is right
-      to render justice. It is good to do justice and show no partiality; as it says,
+      And He said this to His own people, so how much more to the rest of the nations? If He doesn't spare His own
+      people, what is the fate of the nations that do not know Him? If He let just one sin go unpunished, He wouldn't be
+      good and just. It is a good thing to judge evil and a lie: for that's justice. When justice is not upheld, people
+      riot; it is evil not to judge wrong-doing, but it is right to render justice. It is good to do justice and show no
+      partiality; as it says,
       <blog-reference-tooltip [reference]="'Ecclesiastes 8:11'">
         Because the sentence against an evil deed is not executed quickly, therefore the hearts of the sons of men among
         them are given fully to do evil.
@@ -53,14 +55,14 @@ import { ReferenceTooltipComponent } from "../../../shared/components/reference-
       </blog-reference-tooltip>
       To the dead who lived in death, it says, “The dead will not live, the departed spirits will not rise; Therefore
       You have punished and destroyed them, And You have wiped out all remembrance of them.” (Isaiah 26:14) But for the
-      dead who lived in life, it says, “Your dead will live; Their corpses will rise. You who lie in the dust, awake and
-      shout for joy, For your dew is as the dew of the dawn, And the earth will give birth to the departed spirits.”
-      (Isaiah 26:19) So God will cause both the righteous and the wicked to rise, but only the righteous will arise to
-      life. For all evil and all lies will be made right, and it is made right through judgment; all wickedness will be
-      put into it's proper place and judged as wrong; and righteousness will be exalted and rewarded in that day. When
-      evil is reprimanded, reproved, and rebuked, it is made good through correction; and our God is a God of justice
-      and righteousness. Right now is the time to receive correction and forgiveness, but in that day, it will be a time
-      for judgment, for condemnation or reward.
+      dead who lived in the life which is truly life, it says, “Your dead will live; Their corpses will rise. You who
+      lie in the dust, awake and shout for joy, For your dew is as the dew of the dawn, And the earth will give birth to
+      the departed spirits.” (Isaiah 26:19) So God will cause both the righteous and the wicked to rise, but only the
+      righteous will arise to life. For all evil and all lies will be made right, and it is made right through judgment;
+      all wickedness will be put into it's proper place and judged as wrong; and righteousness will be exalted and
+      rewarded in that day. When evil is reprimanded, reproved, and rebuked, it is made good through the correction; and
+      our God is a God of justice and righteousness. Right now is the time to receive correction and forgiveness, but in
+      that day, it will be a time for judgment and wrath, for condemnation or reward.
       <br /><br />
       <!-- <a href="https://thelightof.life/#/draw/re.webp" target="_blank"
           >Differences between reprimand, reproof, and rebuke.</a
@@ -68,7 +70,7 @@ import { ReferenceTooltipComponent } from "../../../shared/components/reference-
 
       Judgement is not merely in word, but in action too; the result of judgment is either condemnation or praise; to
       compress the lips is to allow evil to pass, to allow injustice to persist; but God will reveal His righteous
-      judgement in that day. If sin goes uncorrected, it is allowed to live a little longer; in it's persistance, it
+      judgement in that day. If sin goes uncorrected, it is allowed to live a little longer; in it's persistence, it
       corrupts much that is good; but nevertheless, all sin has an end. Do we not bury that which is unclean? We don't
       expose our uncleanness, do we? Our bodies have waste to it; and we put that waste in dark places, for it is not
       good to be seen; we gather it together and burn it with fire or bury it. And don't men bury their dead? So what do
@@ -86,7 +88,8 @@ import { ReferenceTooltipComponent } from "../../../shared/components/reference-
       to the one who shows mercy, they will be shown mercy. As it says, "For the day of the LORD draws near on all the
       nations. As you have done, it will be done to you. Your dealings will return on your own head. Because just as you
       drank on My holy mountain, All the nations will drink continually. They will drink and swallow And become as if
-      they had never existed.” (Obadiah 1:15-16)
+      they had never existed.” (Obadiah 1:15-16) And this drink is the chalice of God's fierce wrath drained to the
+      dregs (Isaiah 51:17-22).
       <br /><br />
 
       God is not like any judge on earth: He is perfect. He will reward all with righteous judgment in that day when the
@@ -100,7 +103,7 @@ import { ReferenceTooltipComponent } from "../../../shared/components/reference-
         WHAT WILL BECOME OF THE GODLESS MAN AND THE SINNER?</blog-reference-tooltip
       >
       Someone might say, "Stop judging me!" Or, "Only God can judge me." But if we cannot withstand the judgment of mere
-      mortals, how can we withstand the judgment of the Almighty God? Is it not a terrifying thing? As it says, “Behold,
+      mortals, how can we withstand the judgment of the Almighty God? Is it not a terrifying thing? As He says, “Behold,
       the day of the LORD is coming, Cruel, with fury and burning anger, To make the land a desolation; And He will
       exterminate its sinners from it. For the stars of heaven and their constellations Will not flash forth their
       light; The sun will be dark when it rises And the moon will not shed its light. Thus I will punish the world for
@@ -125,7 +128,8 @@ import { ReferenceTooltipComponent } from "../../../shared/components/reference-
       <blog-reference-tooltip [reference]="'Isaiah 22:13'"
         >Let us eat and drink, for tomorrow we die.</blog-reference-tooltip
       >
-      Isn't the danger evident? We're evil and God is Holy. What must we do to be saved from the wrath which is to come!
+      Isn't the danger so evident? We're evil and God is Holy. What must we do to be saved from the wrath which is to
+      come!
       <blog-reference-tooltip [reference]="'Romans 7:24'"
         >Wreched and miserable man that I am! Who will free me from this body of sin and death?</blog-reference-tooltip
       >
@@ -139,17 +143,18 @@ import { ReferenceTooltipComponent } from "../../../shared/components/reference-
         your heart, so that you can do it.</blog-reference-tooltip
       >
       As it says, "So that you can do it." For the things which seem impossible to us are possible through God, so that
-      we can do it. As He says, "Behold, I am the LORD, the God of all flesh; is anything too difficult for Me?”
-      (Jeremiah 32:27) And, “Thus says the LORD of hosts, 'If it is too difficult in the sight of the remnant of this
-      people in those days, will it also be too difficult in My sight?' declares the LORD of hosts.” (Zechariah 8:6) For
-      who has ascended? Or who has descended? Salvation is not far away from any one of us; as it says, “Rejoice
-      greatly, O daughter of Zion! Shout in triumph, O daughter of Jerusalem!
+      we can do. As He says, "Behold, I am the LORD, the God of all flesh; is anything too difficult for Me?” (Jeremiah
+      32:27) And, “Thus says the LORD of hosts, 'If it is too difficult in the sight of the remnant of this people in
+      those days, will it also be too difficult in My sight?' declares the LORD of hosts.” (Zechariah 8:6) For who has
+      ascended? Or who has descended? Salvation is not far away from any one of us; as it says, “Rejoice greatly, O
+      daughter of Zion! Shout in triumph, O daughter of Jerusalem!
       <b>Behold, your king is coming to you; He is just and endowed with salvation,</b> Humble, and mounted on a donkey,
-      Even on a colt, the foal of a donkey.” (Zechariah 9:9) For it is God who descended, and it is He who ascended. For
-      man cannot save himself; as He says, "Or do you have an arm like God, And can you thunder with a voice like His?”
-      (Job 40:9) If so, "Then I will also confess to you, That your own right hand can save you.” (Job 40:14) So surely,
-      we need a savior; surely, we need a rock. Or can wealth save us? Can we gather up enough food for ourselves to
-      withstand the evil day? Surely, our best efforts are useless.
+      Even on a colt, the foal of a donkey.” (Zechariah 9:9) For it is God who descended, and it is He who ascended. It
+      is He who came! For man surely cannot save himself; as He says, "Or do you have an arm like God, And can you
+      thunder with a voice like His?” (Job 40:9) If so, "Then I will also confess to you, That your own right hand can
+      save you.” (Job 40:14) So surely, we need a savior; surely, we need a rock. Or can wealth save us? Can we gather
+      up enough food for ourselves to withstand the evil day? Which gun can shoot against spirits? Or which sword can
+      fight against the unseen? Surely, even our best efforts are useless. We ought to cease trying.
     </ng-template>`,
   styles: ``,
   changeDetection: ChangeDetectionStrategy.OnPush,
