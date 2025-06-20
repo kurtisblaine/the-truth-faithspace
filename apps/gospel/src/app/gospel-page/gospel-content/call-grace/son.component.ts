@@ -8,7 +8,7 @@ import { ReferenceTooltipComponent } from "../../../shared/components/reference-
   imports: [CommonModule, ReferenceTooltipComponent, LinkComponent],
   template: `<ng-container *ngTemplateOutlet="theSonOfGod"></ng-container>
     <ng-template #theSonOfGod>
-      Jesus is the Son of God, yet He is God in the flesh; as it says,
+      Jesus is the Son of God; He is God in the flesh; as it says,
       <blog-reference-tooltip [reference]="'Colossians 1:15'">
         The Son is the visible image of the invisible God, the firstborn over all creation.
       </blog-reference-tooltip>
@@ -78,31 +78,30 @@ import { ReferenceTooltipComponent } from "../../../shared/components/reference-
       <blog-reference-tooltip [reference]="'Genesis 22:5'">
         Stay here with the donkey, and I and the lad will go over there; and we will worship and return to you.
       </blog-reference-tooltip>
-      And thereafter, he was looking in the future to Christ and,
+      And thereafter, he was looking in the future to Christ and
       <blog-reference-tooltip [reference]="'Gensis 22:14'">
         Abraham called the name of that place The LORD Will Provide, as it is said to this day, "In the mount of the
         LORD it will be provided."
       </blog-reference-tooltip>
-      Furthermore, it says: "Shall I present my firstborn for my rebellious acts, The fruit of my body for the sin of my
-      soul?” (Micah 6:7) No! But rather God provides the Sacrifice as it is in this case. For Isaac, Abraham's son,
-      submitted to his father's will, and by so doing, points to Christ who laid down His life willingly; for no-one
-      took His life from Him, but He laid it down as commanded by the Father. And it is not unrighteousness on God's
-      behalf, for Christ was handed over to death for our sakes, once for all, as the propitiation for our sins.
-      Everything Christ did, the Father was doing in Him; for Christ does the commands of the Father perfectly,
-      resembling His exact likeness. When we have sons, our sons resemble us in a way, or two, or three, and he
-      resembles his mother in other ways; but how much more do you suppose Christ resembles God, who is the perfect son
-      of God? He does not resemble the Father in a way or two, but in His exact likeness; for Jesus resembles the Father
-      God perfectly.
+      So then, "Shall I present my firstborn for my rebellious acts, The fruit of my body for the sin of my soul?”
+      (Micah 6:7) No! Rather God provides the Sacrifice. For Isaac, Abraham's son, submitted to his father's will, and
+      by so doing, points to Christ who laid down His life willingly; for no-one took His life from Him, but He laid it
+      down as commanded by the Father. And it is not unrighteousness on God's behalf, for Christ was handed over to
+      death for our sakes, once for all, as the propitiation for our sins. Everything Christ did, the Father was doing
+      in Him; for Christ does the commands of the Father perfectly, resembling His exact likeness. When we have sons,
+      our sons resemble us in a way, or two, or three, and he resembles his mother in other ways; but how much more do
+      you suppose Christ resembles God, as the perfect son of God? He does not resemble the Father in a way or two, but
+      in His exact likeness; for Jesus resembles the Father God perfectly.
       <br /><br />
 
       In another instance, Jacob, who came from Isaac, who came from Abraham, also gave up his only son, but he had many
       other sons; he had one and only son from his beloved wife Rachel: that is Benjamin. Jacob had two sons from
-      Rachel, but to him, Joseph was dead, although he was only in Egypt, for he believed Joseph was dead, but he was
+      Rachel, but to him, Joseph was dead, although he was only in Egypt; for he believed Joseph was dead, but he was
       deceived. So Jacob let Benjamin, his only beloved son, go into the hands of his brothers to save his family from
       the famine, for they were going to Egypt to buy food. So Jacob gave up his one and only son, Benjamin, and gained
       him back from the dead, along with another, Joseph who he received back from the dead; and likewise, the Fahter
-      God gave up His Son, Jesus, to receive Him back again from the dead, and gained many other descendents; as it
-      says,
+      God gave up His Son, Jesus, to receive Him back again from the dead, and gained many other descendents through
+      Him; as it says,
       <blog-reference-tooltip [reference]="'Isaiah 53:10'">
         If He would render Himself as a guilt offering,
         <b>He will see His offspring,</b> He will prolong His days, And the good pleasure of the LORD will prosper in
@@ -119,21 +118,21 @@ import { ReferenceTooltipComponent } from "../../../shared/components/reference-
       <blog-reference-tooltip [reference]="'Ephesians 2:5'">
         Even when we were dead in our transgressions, made us alive together with Christ by grace you have been saved.
       </blog-reference-tooltip>
-      And it says,
+      And then it says,
       <blog-reference-tooltip [reference]="'Colossians 2:13-14'">
         When you were dead in your transgressions and the uncircumcision of your flesh, He made you alive together with
         Him, having forgiven us all our transgressions.
       </blog-reference-tooltip>
-      Furthermore, Jacob considered Joseph's two sons, Ephriam and Manasseh, as his own sons; they were considered like
-      Reuben and Simeon to him (Genesis 48:5); and likewise God sent His Son into the world and gained back many more
-      descendants through Him, even descendants among many nations of the world, even to the offspring of His offspring
-      - these are them who are begotten by the Word of Truth.<blog-link
+      So we are made alive with Christ through faith. Furthermore, Jacob considered Joseph's two sons, Ephriam and
+      Manasseh, as his own sons; they were considered like Reuben and Simeon to him (Genesis 48:5); and likewise God
+      sent His Son into the world and gained back many more descendants through Him, even descendants among many nations
+      of the world, even to the offspring of His offspring - these are them who are begotten by the Word of
+      Truth.<blog-link
         [title]="'See more about Benjamin and Isaac'"
         [link]="'https://thelightof.life/#/draw/Jesuslionlamb.webp'"
       ></blog-link
       ><br /><br />
 
-      <!-- TODO - a better spot for this?  -->
       The Father grafts us, even Gentiles, into God's household, the body of Christ, through faith in Jesus; He makes us
       sons of God by the Spirit of His Son, conforming us into His likeness; as it says, “For those whom He foreknew, He
       also predestined to become conformed to the image of His Son, so that He would be the firstborn among many
@@ -149,10 +148,10 @@ import { ReferenceTooltipComponent } from "../../../shared/components/reference-
       </blog-reference-tooltip>
       So we see our victory is won for us by Christ and we enter into this victory by setting our minds on the things
       above, namely Christ in the heavens. For if we set our minds on spiritual things, the members of our bodies will
-      likewise conform to the message of our head. And we set our minds on our Head, that is to say, Christ. Our hand
-      does what the mind says, and our foot does what the mind says, even to every finger and every toe. So if we set
-      our mind on spiritual things, namely Christ, He will give us the strength to present our members as servants to
-      righteousness (Romans 8:5-8, Philippians 4:8, Colossians 3:2). This is the way of faith: setting our minds on
+      likewise conform to the message of our head. And we set our minds on our Head, that is to say, Christ. For our
+      hand does what the mind says, and our foot does what the mind says, even to every finger and every toe. So if we
+      set our mind on spiritual things, namely Christ, He will give us the strength to present our members as servants
+      to righteousness (Romans 8:5-8, Philippians 4:8, Colossians 3:2). This is the way of faith: setting our minds on
       Jesus Christ. As it says about the mind of the flesh: "The day when you post your watchmen, Your punishment will
       come. Then their confusion will occur.” (Micah 7:4) But then, it says about the mind of the Spirit: “As for me, I
       will watch expectantly for the LORD; I will wait for the God of my salvation. My God will hear me.” (Micah 7:7)
@@ -181,8 +180,8 @@ import { ReferenceTooltipComponent } from "../../../shared/components/reference-
       never stop being a son; but in such a state, the son is dead to the father, and the father to the son. We are
       really sons of God; as Paul says to unbelievers, “for in Him we live and move and exist, as even some of your own
       poets have said, 'For we also are His children.'” (Acts 17:28-29) So he affirms the truth in the saying: 'For we
-      also are His children'; but many of us, although being sons of God have turned to our own way, resembling beasts
-      more than God; as it says, "God has surely tested them in order for them to see that they are but beasts."
+      also are His children'; but many of us, although being sons of God have turned to our own way, resembling unruly
+      beasts more than God; as it says, "God has surely tested them in order for them to see that they are but beasts."
       (Ecclesiastes 3:18) So although we are all sons of God, many of us do not pattern ourselves after God, for we have
       not seen God. Children imitate their fathers by sight: they do what they see their fathers doing. They do not need
       to be told what to do, but they do what they see. So likewise, we do what we see in Christ; and Christ reflects
@@ -190,7 +189,7 @@ import { ReferenceTooltipComponent } from "../../../shared/components/reference-
       explained Him.” (John 1:18) And we are made to see God through faith in Jesus Christ; as it says, “For all who are
       being led by the Spirit of God, these are sons of God.” (Romans 8:14) For children follow after their parents,
       namely by what they see; and we follow after Christ by faith. For the Spirit of God does the leading, and as
-      obedient children we follow after Him. ><br /><br />
+      obedient children we follow after Him. <br /><br />
 
       But do you not know, beloved, God first rescued His firstborn Israel from Egypt by a mighty hand, but later, when
       they hardened their necks and kicked against Him and rebelled against Him for many years, then God handed them
@@ -205,7 +204,7 @@ import { ReferenceTooltipComponent } from "../../../shared/components/reference-
       Canaan; And the land was polluted with the blood.” (Psalms 106:37-38) So why would we imitate the ancestors who
       followed after devils, and not God? For Jesus is our example, and Jesus is the Way; Jesus has loved us, even more
       than Himself. Do devils love you more than God? Of course not! Devils desire the sacrifice of devils, but God
-      desires righteous sacrifices, and provides the Sacrifice; so therefore,
+      desires righteous sacrifices, and He provides the Sacrifice; so therefore,
       <blog-reference-tooltip [reference]="'1 Peter 1:14-19'">
         As obedient children, do not be conformed to the former lusts which were yours in your ignorance, but like the
         Holy One who called you, be holy yourselves also in all your behavior; because it is written, "YOU SHALL BE
@@ -219,11 +218,12 @@ import { ReferenceTooltipComponent } from "../../../shared/components/reference-
       ></blog-link
       ><br /><br />
 
-      Finally, Christ gave the good testimony before Pontius Pilate even though he had power to crucify Him and also
+      Finally: Christ gave the good testimony before Pontius Pilate even though he had power to crucify Him and also
       power to let Him go; still Christ stood for the truth and testified to the truth - no one takes His life, but He
       laid it down willingly. He said to the people numerous times, "I came from the Father", and "the Father and I are
       One". And when the time came, the very hour which He came for, He confirmed His testimony, even with His own
-      blood; they tried Him, but they had nothing against Him; as prophesied by Job, who confirmed his own innocence,
+      blood; they tried Him, but they had nothing against Him; as prophesied by Job, who confirmed his own innocence; as
+      he says,
       <blog-reference-tooltip [reference]="'Job 31:35-36'"
         >And the indictment which my adversary has written, surely I would carry it on my shoulder, I would bind it to
         myself like a crown.</blog-reference-tooltip
@@ -247,10 +247,10 @@ import { ReferenceTooltipComponent } from "../../../shared/components/reference-
       transformed the cross, a device of torture, into a signal of salvation. For what was once an object of horror, has
       become a sign and symbol of redemption: it is now hung around necks and pierced on ear lobes; it is now carried on
       the shoulders of many who believe; it is now put on tops of buildings and set up as markers for graves. Are the
-      sons of men so wicked that they put tortuous symbols on themselves? No! Rather, God is so good that He has turned
+      sons of men so wicked that they put tortuous symbols on themselves? No! Rather God is so good that He has turned
       the detestable thing into a glorious sign of redemption and salvation. No-one can do such a thing, except God, who
       turns the corrupt into the believing, the detestable into the gracious, the abominable into the saint. Christ did
-      so, so that we would not lose heart or grow faint: believe in the Son. And do not fall into the trap of
+      so, so that we would not lose heart or grow faint: believe in the Son! And do not fall into the trap of
       worshipping a dead cross, bowing low to it; but worship the Lord your God and Savior, Jesus Christ, who is living
       in the heavens, exalted for you. Beware of idols.
     </ng-template>`,

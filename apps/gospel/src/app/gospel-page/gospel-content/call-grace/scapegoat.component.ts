@@ -49,23 +49,15 @@ import { ReferenceTooltipComponent } from "../../../shared/components/reference-
       wanted, but at the appointed time, according to the set time given by God. And likewise, "While we were still
       helpless, at the right time..."; as it says,
       <blog-reference-tooltip [reference]="'Romans 5:6-11'">
-        For while we were still helpless, at the right time Christ died for the ungodly. For scarcely for a righteous
-        man will one die; yet perhaps for a good man someone would even dare to die. But God demonstrates His own love
-        toward us, in that while we were still sinners, Christ died for us. Much more then, having now been justified by
-        His blood, we shall be saved from wrath through Him. For if when we were enemies we were reconciled to God
-        through the death of His Son, much more, having been reconciled, we shall be saved by His life. And not only
-        that, but we also rejoice in God through our Lord Jesus Christ, through whom we have now received the
-        reconciliation.
+        For while we were still helpless, at the right time Christ died for the ungodly.
       </blog-reference-tooltip>
-      The scapegoat is a picture of Christ, for He cast away our sins to a remote place, not to be remembered; as it
-      says,
+      The scapegoat is a picture of Christ, for God has cast away our sins to a remote place, not to be remembered; as
+      it says,
       <blog-reference-tooltip [reference]="'Hebrews 13:12'">
         Therefore Jesus also, that He might sanctify the people through His own blood, suffered outside the gate.
       </blog-reference-tooltip>
       And as the Psalmist says,
       <blog-reference-tooltip [reference]="'Psalm 103:10-13'">
-        He has not dealt with us according to our sins, Nor rewarded us according to our iniquities. For as high as the
-        heavens are above the earth, So great is His lovingkindness toward those who fear Him.
         <b>As far as the east is from the west</b>, So far has He removed our transgressions from us. Just as a father
         has compassion on his children, So the LORD has compassion on those who fear Him.
       </blog-reference-tooltip>
@@ -77,29 +69,29 @@ import { ReferenceTooltipComponent } from "../../../shared/components/reference-
       Jesus is our Scapegoat; He took upon Himself our blame as a guilt offering; we are not made to bear our guilt
       ourselves; just as the prophet, Isaiah, foreseeing by the Spirit of God, said,
       <blog-reference-tooltip [reference]="'Isaha 53:10'">
-        But the LORD was pleased To crush Him, putting Him to grief; If He would render Himself as a guilt offering, He
-        will see His offspring, He will prolong His days, And the good pleasure of the LORD will prosper in His hand.
+        If He would render Himself as a guilt offering, He will see His offspring, He will prolong His days, And the
+        good pleasure of the LORD will prosper in His hand.
       </blog-reference-tooltip>
       On the day of atonement, the high priest works and the rest of the people did no work, but yet they were commanded
       to afflict themselves; signifying that it's God's work to remit sins and our work is to humble ourselves. What is
       less than doing nothing at all? Is it not afflicting yourself? Thus He commanded, on the day of atonement, to use
-      their own strength against themselves by fasting, weeping, mourning, and making lamentations, hating themselves
+      their own strength against themselves by fasting, weeping, mourning, and making lamentations - hating themselves
       for their many sins. Likewise on the holy days and sabbaths no work was to be done, and during the festival of
       Unleavened Bread, they ate "the bread of affliction" (Deuteronomy 16:3) to remind them of their slavery in Egypt;
       for if we do any work, our strength should be used against ourselves to humble ourselves, making ourselves weak
       for the power of God to work in us. For God opposes the proud, but gives grace to the humble. This is why they ate
       the bread of affliction and afflicted themselves on the day of atonement; other than this, they were commanded to
-      do nothing at all on the holy days. As it says, "You shall surely observe My sabbaths; for this is a sign between
-      Me and you throughout your generations, that you may know that I am the LORD who sanctifies you.” (Exodus 31:13)
-      So it's God's work to sanctify and cleanse, and we enter into His rest through affliction and lowliness and
-      humility of mind. For in weakness God's grace is perfected to the effect that we may, by His goodness be filled
-      with all goodness, for there is none good but God; and we have free access into His great goodness through faith.
-      The depths of the mercy and grace of the Almighty God, who loved us by the death of His Son and continues to love
-      us through the life of His Son; may it never be said or thought of again, "The Lord God doesn't love me." How He
+      do nothing on the holy days. As it says, "You shall surely observe My sabbaths; for this is a sign between Me and
+      you throughout your generations, that you may know that I am the LORD who sanctifies you.” (Exodus 31:13) So it's
+      God's work to sanctify and cleanse, and we enter into His rest through affliction and lowliness and humility of
+      mind. For in weakness God's grace is perfected to the effect that we may, by His goodness be filled with all
+      goodness, for there is none good but God; and we have free access into His great goodness through faith. The
+      depths of the mercy and grace of the Almighty God, who loved us by the death of His Son and continues to love us
+      through the life of His Son; may it never be said or thought of again, "The Lord God doesn't love me." How He
       demonstrated His great love for us on the cross at Calvary! He didn't merely say, "I love you", but He proved His
       love in the greatest way possible by giving up His own life in the Man of His Presence, choosing us unto adoption
       as sons, we who were formerly not His sons. That we would fear God, so that we would stay away from all
-      appearances of evil and never depart from Him; Ah, that we would know what is good for us, for the fear of the
+      appearances of evil and never depart from Him; ah, that we would know what is good for us, for the fear of the
       Lord is to depart from iniquity; as it says,
       <blog-reference-tooltip [reference]="'Proverbs 16:6'">
         By lovingkindness and truth iniquity is atoned for, And by the fear of the LORD one keeps away from evil. </blog-reference-tooltip
@@ -131,76 +123,56 @@ import { ReferenceTooltipComponent } from "../../../shared/components/reference-
       dwelling place for the LORD God of Israel. And Jesus Christ, being the fulfillment of all these men, is the One
       who fulfills all things; He, having obeyed God one time at the cross brings salvation to many, un-doing the one
       act of the one man, Adam, who sinned in the beginning, and brings salvation to the whole world, to whoever-so is
-      ordained to eternal life. Hear what Paul was saying about Adam and Christ:
-      <blog-reference-tooltip [reference]="'Romans 5:12-20'">
-        Therefore, just as sin entered the world through one man, and death through sin, and in this way death came to
-        all people, because all sinned— To be sure, sin was in the world before the law was given, but sin is not
-        charged against anyone’s account where there is no law. Nevertheless, death reigned from the time of Adam to the
-        time of Moses, even over those who did not sin by breaking a command, as did Adam, who is a pattern of the one
-        to come. But the gift is not like the trespass. For if the many died by the trespass of the one man, how much
-        more did God’s grace and the gift that came by the grace of the one man, Jesus Christ, overflow to the many! Nor
-        can the gift of God be compared with the result of one man’s sin: The judgment followed one sin and brought
-        condemnation, but the gift followed many trespasses and brought justification. For if, by the trespass of the
-        one man, death reigned through that one man, how much more will those who receive God’s abundant provision of
-        grace and of the gift of righteousness reign in life through the one man, Jesus Christ! Consequently, just as
-        one trespass resulted in condemnation for all people, so also one righteous act resulted in justification and
-        life for all people. For just as through the disobedience of the one man the many were made sinners, so also
-        through the obedience of the one man the many will be made righteous. The law was brought in so that the
-        trespass might increase. But where sin increased, grace increased all the more, so that, just as sin reigned in
-        death, so also grace might reign through righteousness to bring eternal life through Jesus Christ our Lord.
-      </blog-reference-tooltip>
-      And as he says in another place,
-      <blog-reference-tooltip [reference]="'1 Corinthians 15:21-22'">
-        For since by a man came death, by a man also came the resurrection of the dead. For as in Adam all die, so also
-        in Christ all will be made alive.
-      </blog-reference-tooltip>
-      And so by one Man, Jesus Christ, blessing has also come to all the nations - not Jews only, but also Gentiles. The
-      promise which was given to Abraham was to him and His Seed, which is Christ; and the covenant given to David was
-      to him and his Descendant, which is the King to come, Jesus. And we are the descendants of David, the descendants
-      of Abraham, if we are like them; for as the father is, so is the son. And this is not according to ancestry or
-      genealogy or according to the flesh, but according to the spirit in truth. So all who are like faithful Abraham or
-      willing and pure-hearted David, all who are like the Son of God, for they prophesied to Christ, are indeed sons of
-      God, made sons by the Spirit of the Son; as it says, “For you are all sons of God through faith in Christ Jesus.”
-      (Galatians 3:26) And, “For all who are being led by the Spirit of God, these are sons of God.” (Romans 8:14) So in
-      Christ Jesus the eternal blessing of the Jews came to the Gentiles; and this is made possible by His obedience for
-      all, by the irrevocable covenants of God. What is acceptable in God's sight is serving Him with faith, as faithful
-      Abraham, and serving Him with a pure conscience, as pure-hearted David, in which these men of old served God and
-      received covenants of friendship with God.
+      ordained to eternal life through faith. (Hear what Paul was saying about Adam and Christ: Romans 5:12-20, 1
+      Corinthians 15:21-22) And so by one Man, Jesus Christ, blessing has also come to all the nations - not Jews only,
+      but also Gentiles. The promise which was given to Abraham was to him and His Seed, which is Christ; and the
+      covenant given to David was to him and his Descendant, which is the King to come, Jesus. And we are the
+      descendants of David, the descendants of Abraham, if we are like them; for as the father is, so is the son. And
+      this is not according to ancestry or genealogy or according to the flesh, but according to the spirit in truth. So
+      all who are like faithful Abraham or willing and pure-hearted David, all who are like the Son of God, for they
+      prophesied to Christ, are indeed sons of God, made sons by the Spirit of the Son; as it says, “For you are all
+      sons of God through faith in Christ Jesus.” (Galatians 3:26) And, “For all who are being led by the Spirit of God,
+      these are sons of God.” (Romans 8:14) So in Christ Jesus the eternal blessing of the Jews came to the Gentiles;
+      and this is made possible by His obedience for all, by the irrevocable covenants of God. What is acceptable in
+      God's sight is serving Him in faith, as faithful Abraham, and serving Him in a pure conscience, as pure-hearted
+      David, in which these men of old served God and received covenants of friendship with God. And we enter into the
+      promises and covenants given by God to these men through faith in Jesus Christ.
       <br /><br />
 
-      When the animal was brought into the temple, the Israelites confessed their error, for they brought the beast and
-      spoke to the priest, telling them what it was for: either a sin offering, a guilt offering, etc. And by laying
-      their hands on its head, they acknowledged the animal was for them. So there are two confessions: one of sin and
-      another of atonement; as it is written by the apostle John, who seen the risen Lord and rested at His bosom; he
-      writes,
+      Furthermore, when the animal was brought into the temple, the Israelites confessed their error, for they brought
+      the beast and spoke to the priest, telling them what it was for: either a sin offering, a guilt offering, etc. And
+      by laying their hands on its head, they acknowledged the animal was for them. So there are two confessions: one of
+      sin and another of atonement; as it is written by the apostle John, who seen the risen Lord and rested at His
+      bosom,
       <blog-reference-tooltip [reference]="'1 John 1:8'">
         If we say we have no sin, we deceive ourselves, and the truth is not in us. If we confess our sins, He is
         faithful and just to forgive us our sins and to cleanse us from all unrighteousness. If we say we have not
         sinned, we make Him out to be a liar, and His word is not in us.
       </blog-reference-tooltip>
-      For this is how we abide in the truth, this is how we remain in the light: confess our sins. It is possible to
-      deceive ourselves, but these things are written so that we would not deceive ourselves. When we claim we have not
-      sinned, there is no forgiveness since we do not own our sin, even though we have truly sinned. For what could we
-      be forgiven of in that case, if we affirm we have not sinned? How can we be forgiven of sin that we reject as
-      ours? Let us be truthful and confess our sins, remaining in the light, so that we may be forgiven and cleansed
-      from our sins, for with sin comes darkness and death, and in darkness we are not able to see clearly. Everyone has
-      been declared guilty by the law, but Christ is the end of the law for righteousness to everyone who believes; He
-      grants to us the righteousness which is by faith. And even in Christ, the law is conviction of sin by the Spirit;
-      but in Christ or without, no-one can be declared righteous by the law, for the law declares everyone as sinners;
-      but in Christ, even apart from the law, He makes many righteous by His obedient act, for by His righteousness do
-      we know what is right. What is it then, are we righteous sinners? Of course not! The law gives sin it's power, but
-      Christ justifies us apart from the law, therefore sin has lost its strength; as the apostle proclaims, "The sting
-      of death is sin, and the power of sin is the law; but thanks to God, which giveth us the victory through our Lord
-      Jesus Christ." (1 Corinthians 15:56-57) So while we abide in the grace of God, which is through faith, we have no
-      obligation to serve sin which has been rendered powerless; we have been set free from sin in Christ Jesus, and our
-      freedom depends on our abiding in Christ; if we slip or fall into sin, we confess it; we know our sins will be
-      forgiven if we confess, for He will cleanse our guilty conscience. We will know we have been forgiven because our
-      guilt will be removed and our heart will no longer condemn us. Jesus took upon Himself our burdens, our guilt and
-      our shame, so that we would not have to carry it ourselves; therefore, confess! God has promised, and it is
-      impossible for Him to lie; His promises are a sure foundation to build upon. Let us not walk around with our
-      burdens, but instead freely give them to Him. Let us not walk with a hunch because of our burden, but walk
-      uprightly being freed from our burden; do not be loaded down by guilt; who do we hurt by not confessing? I bring
-      about by way of reminder, the Psalmist, who had great anguish because he did not confess his iniquity; as he says,
+      For this is how we abide in the truth, and this is how we remain in the light: confession of our sins. It is
+      possible to deceive ourselves, but these things are written so that we would not deceive ourselves. When we claim
+      we have not sinned, there is no forgiveness since we do not own our sin, even though we have truly sinned. For
+      what could we be forgiven of in that case, if we affirm we have not sinned? How can we be forgiven of sin that we
+      reject as ours? Let us be truthful and confess our sins, remaining in the light, so that we may be forgiven and
+      cleansed from our sins, for with sin comes darkness and death, and in darkness we are not able to see clearly.
+      Everyone has been declared guilty by the law, but Christ is the end of the law for righteousness to everyone who
+      believes; He grants to us the righteousness which is by faith. And even in Christ, the law is conviction of sin by
+      the Spirit; but in Christ or without, no-one can be declared righteous by the law, for the law declares everyone
+      as sinners; but in Christ, even apart from the law, He makes many righteous by His obedient act, for by His
+      righteousness do we know what is right. What is it then, are we righteous sinners? Of course not! The law gives
+      sin it's power, but Christ justifies us apart from the law, therefore sin has lost its strength; as the apostle
+      proclaims, "The power of sin is the law; but thanks to God, which giveth us the victory through our Lord Jesus
+      Christ." (1 Corinthians 15:56-57) So while we abide in the grace of God, which is through faith, we have no
+      obligation to serve sin which has been rendered powerless by the cross; we have been set free from sin in Christ
+      Jesus, and our freedom depends on our abiding in Christ; if we slip or fall into sin, we confess it; we know our
+      sins will be forgiven if we confess, for He will cleanse our guilty conscience. We will know we have been forgiven
+      because our guilt will be removed and our heart will no longer condemn us. Jesus took upon Himself our burdens,
+      our guilt and our shame, so that we would not have to carry it ourselves; therefore, confess! God has promised,
+      and it is impossible for Him to lie; His promises are a sure foundation to build upon. Let us not walk around with
+      our burdens, but instead freely give them to Him. Let us not walk with a hunch because of our burden, but let us
+      walk uprightly being freed from our burden; do not be loaded down by guilt; who do we hurt by not confessing? I
+      bring about by way of reminder, the Psalmist, who had great anguish because he did not confess his iniquity; as he
+      says,
       <blog-reference-tooltip [reference]="'Psalm 32:3-5'">
         When I kept silent [about my sin,] my body wasted away Through my groaning all day long. For day and night Your
         hand was heavy upon me; My vitality was drained away [as] with the fever heat of summer. Selah. I acknowledged
