@@ -28,6 +28,10 @@ export class SpeechService implements OnDestroy {
 
   constructor() {
     this.speechSynthesis = window.speechSynthesis;
+
+    const voices = this.speechSynthesis?.getVoices()?.filter((v) => v.lang.startsWith("en")) ?? [];
+    this.voices.set(voices);
+
     this.speechSynthesis.onvoiceschanged = () => {
       const voices = this.speechSynthesis?.getVoices()?.filter((v) => v.lang.startsWith("en")) ?? [];
       this.voices.set(voices);
