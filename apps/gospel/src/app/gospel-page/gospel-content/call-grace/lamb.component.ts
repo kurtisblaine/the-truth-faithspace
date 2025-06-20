@@ -131,7 +131,7 @@ import { ReferenceTooltipComponent } from "../../../shared/components/reference-
       And so, we have been rescued from our slavery to Egypt by the Passover Lamb; which is to say: we have been
       redeemed from our slavery to sin by the blood of Jesus Christ. By His cross, we have been crucified to the world
       and the world crucified to us. Israel crossed through the sea on dry ground while their enemies perished. So in
-      Christ, the world and everything it esteems, is brought to nought through the cross; for, "God has chosen the
+      Christ, the world and everything it esteems, is brought to nought through the cross; for "God has chosen the
       foolish things of the world to shame the wise, and God has chosen the weak things of the world to shame the things
       which are strong, and the base things of the world and the despised God has chosen, the things that are not, so
       that He may nullify the things that are.” (1 Corinthians 1:27-28) And so if anyone who has the love of this world
