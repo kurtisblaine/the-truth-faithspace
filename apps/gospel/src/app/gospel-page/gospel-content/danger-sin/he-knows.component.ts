@@ -7,22 +7,26 @@ import { ReferenceTooltipComponent } from "../../../shared/components/reference-
   imports: [CommonModule, ReferenceTooltipComponent],
   template: `<ng-container *ngTemplateOutlet="heKnows"></ng-container>
     <ng-template #heKnows>
-      God is living; He is the creator of all living things. He sees the thoughts and the intentions of the human heart;
-      He is Spirit and sees not what man sees; He sees spiritual things; He sees the human heart, for it is spirit, even
-      though it is carnal. When we ourselves do not know our motives and intentions of the heart, He knows them. We may
-      think, "My motives are right; I will stand before Him and He will agree." Are our thoughts God's thoughts? Are our
-      ways God's ways? As the heavens are higher than the earth, so are God's ways higher than our ways, and His
-      thoughts higher than our thoughts. What we think can never be, unless we think with the mind of God according to
-      the Word of God; we can't even begin to think how He thinks, unless we know His Words, which are His revealed
-      thoughts. The heart of us is deceitfully wicked - who can understand it? Will it not even trick us saying, "I can
-      understand myself"? Our hearts are constantly flattering ourselves; as it says,
+      The LORD God is the creator of all living things. He sees the thoughts and the intentions of the human heart; He
+      is Spirit and sees not what man sees; He sees spiritual things; as He says,
+      <blog-reference-tooltip [reference]="'Luke 11:40'" [isJesusWord]="true">
+        You foolish ones, did not He who made the outside make the inside also?
+      </blog-reference-tooltip>
+      So He sees the human heart, for it is spirit, even though it is carnal. When we ourselves do not know our motives
+      and intentions of the heart, He knows them. We may think, "My motives are right; I will stand before Him and He
+      will agree." Are our thoughts God's thoughts? Are our ways God's ways? As the heavens are higher than the earth,
+      so are God's ways higher than our ways, and His thoughts higher than our thoughts. What we think can never be,
+      unless we think with the mind of God according to the Word of God; we can't even begin to think how He thinks,
+      unless we know His Words, which are His revealed thoughts. The heart of us is deceitfully wicked - who can
+      understand it? Will it not even trick us saying, "I can understand myself"? Our hearts are constantly flattering
+      ourselves; as it says,
       <blog-reference-tooltip [reference]="'Psalm 36:2'">
         Transgression speaks to the ungodly within his heart; There is no fear of God before his eyes. For it flatters
         him in his own eyes concerning the discovery of his iniquity and the hatred of it.
       </blog-reference-tooltip>
-      If we're led by our own thoughts or our own understandings, we're in darkness; for our heart is deceitful, filled
-      with iniquity, darkened by the ignorance which is in us; and where there is deceit, there is no truth; where there
-      is no truth, there is no light. Our hearts are not trustworthy servants; even the apostle says,
+      So if we're led by our own thoughts or our own understandings, we're in darkness; for our heart is deceitful,
+      filled with iniquity, darkened by the ignorance which is in us; and where there is deceit, there is no truth;
+      where there is no truth, no light. Our hearts are not trustworthy servants; even the apostle says,
       <blog-reference-tooltip [reference]="'1 Corinthians 4:3-5'">
         I do not even judge myself. For I am not aware of anything against myself, but I am not thereby acquitted. It is
         the Lord who judges me.
@@ -34,11 +38,13 @@ import { ReferenceTooltipComponent } from "../../../shared/components/reference-
       </blog-reference-tooltip>
       <br /><br />
 
-      God's Word is light; as it says, “The unfolding of Your words gives light; It gives understanding to the simple.”
-      (Psalms 119:130) And, “The words of the LORD are pure words; As silver tried in a furnace on the earth, refined
-      seven times.” (Psalms 12:6) And the LORD declares, "Is not My word like fire? And like a hammer which shatters a
-      rock?” (Jeremiah 23:29) Just as a sword slices, disclosing our hidden guts, sinews, and organs, by it's division
-      of the flesh, so God's Word
+      But we see that God's Word brings light; as it says, “The unfolding of Your words gives light; It gives
+      understanding to the simple.” (Psalms 119:130) And, “The words of the LORD are pure words; As silver tried in a
+      furnace on the earth, refined seven times.” (Psalms 12:6) So His Word also purifies and sanctifies. As the LORD
+      declares, "Is not My word like fire? And like a hammer which shatters a rock?” (Jeremiah 23:29) For God's Word is
+      powerful and sharp; it is like this when He is far so that when He comes, He will not have to be powerful in deed.
+      For just as a sword slices, disclosing our hidden guts, sinews, and organs, by it's division of the flesh, so
+      God's Word
       <blog-reference-tooltip [reference]="'Hebrews 4:12-13'">
         is living and active, sharper than any two-edged sword, piercing to the division of soul and of spirit, of
         joints and of marrow, and discerning the thoughts and intentions of the heart. And no creature is hidden from
@@ -72,7 +78,7 @@ import { ReferenceTooltipComponent } from "../../../shared/components/reference-
       every man and of every angel. When you think you're alone, looking out through your eyes, He is there. As you are
       reading this - behold! His mighty Cheribum are under His throne; they are covered with eyes on their wings, inside
       and out. God sends His angels out and calls them "Watchers", for they watch. He sees all, but He is not seen by
-      any. Yet it says, “Your eyes are too pure to approve evil, And You can not look on wickedness with favor.”
+      any. Yet it says of Him, “Your eyes are too pure to approve evil, And You can not look on wickedness with favor.”
       (Habakkuk 1:13) For God seen what was happening below on Mount Sinai while the people were building a golden calf
       and worshiping it; He seen before Moses did with his eyes or heard the sound of a party in the camp. God seen
       where Jonah went to get away from Him. He seen Saul hiding among the baggage. He hears the cries of the humble on
@@ -82,44 +88,44 @@ import { ReferenceTooltipComponent } from "../../../shared/components/reference-
         nations, does he not rebuke? He who teaches man knowledge — the LORD — knows the thoughts of man, that they are
         but a breath.</blog-reference-tooltip
       >
-      God's sovereignty can be a great comfort to us, but it could also be a great discomfort to us; for it is a most
-      fearful thing if we're sinning. But still: who are we that He is mindful of us? As the man of God in his distress
-      says,
+      God's sovereignty can be a great comfort to us, but it could also be a great discomfort; for it is a most fearful
+      thing if we're sinning. But still: He sees it all, yet you're still alive! And who are we that He is mindful of
+      us? As the man of God in his distress says,
       <blog-reference-tooltip [reference]="'Job 7:17-19'">
         What is man that You magnify him, And that You are concerned about him, That You examine him every morning And
         try him every moment? Will You never turn Your gaze away from me, Nor let me alone until I swallow my spittle?
       </blog-reference-tooltip>
       <br /><br />
 
-      But yet, God does not look at man as mankind looks, that is, according to outward appearance. Our eyes see natural
+      But yet God does not look at man as mankind looks, that is, according to outward appearance. Our eyes see natural
       things, but God sees spiritual things, for He Himself is Spirit; everything spiritual is unseen, and the spiritual
       is what God sees. Everything hidden will be brought to the light; all things concealed will be revealed and made
       know to all. What He sees will be seen by all; no-one sees Him now, but then He will be seen by all. The dead will
       rise and behold their Maker; and our hearts, which men do not see, will be revealed to all at His visitation; and
-      that which is secret and silent will be revealed and proclaimed throughout; and that which is invisible and
-      covered will be clear and exposed. The things we presently see will pass away, but the things unseen remain
-      forever; and God's judgment is eternal; the judgment of the LORD is from inward to outward, from the heart to the
-      works of the flesh; and in the end, only the spirit will remain and all that can withstand the fire. So knowing
-      the fear of the Lord, we hope for the mercy and lovingkindness of God, by which only we can stand before a holy
-      God. For by our works, no man is justified before God. For if a man gives to the poor, but for a pretense, to
-      receive praise of men, will it be well with him? Does God not see the heart? Or the innocent man who is beaten
-      under false accusation, will not God see that he is truly innocent, although by human sight he is condemned? Is
-      this not what the apostle means when he says,
+      that which is secret and silent will be known and proclaimed throughout; and that which is invisible and covered
+      will be clear and exposed. The things we presently see will pass away, but the things unseen remain forever; and
+      God's judgment is eternal; the judgment of the LORD is from inward to outward, from the heart to the flesh; and in
+      the end, only the spirit will remain and all that can withstand the fire. So knowing the fear of the Lord, we warn
+      others, and hope for the mercy and lovingkindness of God, by which only we can stand before Him. For it is clear
+      by our works, no man is justified before God. For if a man gives to the poor, but for a pretense, to receive
+      praise of men, will it be well with him? Does God not see the heart? Or the innocent man who is beaten under false
+      accusation, will not God see that he is truly innocent, although by human sight he is condemned? Is this not what
+      the apostle means when he says,
       <blog-reference-tooltip [reference]="'Romans 3:27'">
-        And he who is physically uncircumcised, if he keeps the law, will he not judge you who though having the letter
-        and circumcision are a transgressor of the law?
+        He who is physically uncircumcised, if he keeps the law, will he not judge you who though having the letter and
+        circumcision are a transgressor of the law?
       </blog-reference-tooltip>
       For, “He is a Jew who is one inwardly; and circumcision is that which is of the heart, by the Spirit, not by the
       letter; and his praise is not from men, but from God.” (Romans 2:29)
       <br /><br />
 
       God's judgment is always in righteousness and justice, and in that day, He will bring all into judgment - the
-      living and the dead. The Lord's judgment is not short of being executed today; as it says,
+      living and the dead. The Lord's judgment is not short of being executed today however; as it says,
       <blog-reference-tooltip [reference]="'Proverbs 11:31'">
         If the righteous will be rewarded in the earth, How much more the wicked and the sinner!
       </blog-reference-tooltip>
       All of His judgements which happened beforehand were written down for our admonishment today, that we wouldn't
-      follow their examples of disobedience; as it says,
+      follow their examples of disobedience; as it explicitly says,
       <blog-reference-tooltip [reference]="'1 Corinthians 10:6-11'">
         Now these things happened as examples for us, so that we would not crave evil things as they also craved. Do not
         be idolaters, as some of them were; as it is written, "THE PEOPLE SAT DOWN TO EAT AND DRINK, AND STOOD UP TO
@@ -138,13 +144,13 @@ import { ReferenceTooltipComponent } from "../../../shared/components/reference-
       >
       So we see that God saw their heart and their thoughts and their intentions, judging them by them. And if their
       mind was sinful, how much more their actions? For the mind governs all the members of the body. So if the mind is
-      sinful, then the entire body is also given over to wickedness. Likewise, it is said over and over that the kings
-      of Israel, which are the heads of Israel, made Israel to sin (1 Kings 14:16, 1 Kings 15:26, 1 Kings 16:2, 1 Kings
+      sinful, then the entire body is also given over to wickedness. Likewise it is said over and over that the kings of
+      Israel, which are the heads of Israel, made Israel to sin (1 Kings 14:16, 1 Kings 15:26, 1 Kings 16:2, 1 Kings
       21:22). For the king is head of Israel and Israel is the body. So if the head is wicked, then so is the body. If
       we were honest with ourselves, we would see that our thoughts are no better than these in the days of Noah; and it
       is no laughing matter, for the LORD God does not laugh at sin, but He abhors it. It says, “The devising of folly
-      is sin, And the scoffer is an abomination to men.” (Proverbs 24:9) So even the planning of foolishness is sin; how
-      much more sinful is the act?
+      is sin, And the scoffer is an abomination to men.” (Proverbs 24:9) So even the planning of foolishness is sin; and
+      how much more is the act?
     </ng-template>`,
   styles: ``,
   changeDetection: ChangeDetectionStrategy.OnPush,
