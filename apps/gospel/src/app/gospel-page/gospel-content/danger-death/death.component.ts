@@ -7,19 +7,19 @@ import { ReferenceTooltipComponent } from "../../../shared/components/reference-
   imports: [CommonModule, ReferenceTooltipComponent],
   template: `<ng-container *ngTemplateOutlet="dayOfDeath"></ng-container>
     <ng-template #dayOfDeath>
-      There was a man who lived in a tent. All his days were spent in constant agony because his tent was not
-      comfortable; for the flies bite, the sun beams, and the moon strikes. Nevertheless, he hoped forward to his
-      permanent home which was far away in a distant land being prepared for him. Night and day he longed for it and
-      thought about it, even dreaming of it in his sleep. After many years, his home was ready; at the perfect time he
-      went away to his home in which he hoped for. The tent was destroyed, the man went to his home, and he rejoiced and
-      spent the rest of his days in it forever more. As it says,
+      There was a man who lived in a tent. All his days were spent in agony because his tent was not comfortable; for
+      the flies bite, the sun beams, and the moon strikes. Nevertheless, he hoped forward to his permanent home which
+      was far away in a distant land being prepared for him. Night and day he longed for it and thought about it, even
+      dreaming of it in his sleep. After many years, his home was ready; at the perfect time he went away to his home in
+      which he hoped for. The tent was destroyed, the man went to his home, and he rejoiced and spent the rest of his
+      days in it forever more. As it says,
       <blog-reference-tooltip [reference]="'Ecclesiastes 12:5'">
         For man goes to his eternal home while mourners go about in the street.
       </blog-reference-tooltip>
-      We have this present life, but it is not ours to keep; if our life was forever, then we wouldn't die, but because
-      we die one day, we know this isn't our home; it is our temporary residence; our lives are entrusted to us for only
-      a little while. So since we know we will die, we look forward to our next life, our permanent home. If we reject
-      our permanent home, we will try to make our home here on earth eternal; as it says,
+      For we have this present life, but it is not ours to keep; if our life was forever, then we wouldn't die, but
+      because we die one day, we know this isn't our home; it is our temporary residence, the tent we live in; our lives
+      are entrusted to us for only a little while. So since we know we will die, we look forward to our next life, our
+      permanent home. If we reject our permanent home, we will try to make our home here on earth eternal; as it says,
       <blog-reference-tooltip [reference]="'Psalm 49:11'">
         Their inner thought is that their houses will last forever, Their dwelling places to all generations; They call
         their lands after their own names.
@@ -28,19 +28,20 @@ import { ReferenceTooltipComponent } from "../../../shared/components/reference-
       bad, as decreed by God. In the state we finish, it will determine where we spend eternity. The time in the tent is
       a time of testing, and we always have two choices: good or evil. If there were only one choice, we wouldn't have
       free will, since we would be forced into choosing the only choice, but there are two choices. We will reap what we
-      sow, we gain what we have put in, we will be recompensed according to what we have done. There is life after life,
-      which is eternal, and there is death after death, which is the second death; the second death is hell, the lake of
-      fire, a fire that is not quenched, for the wood is not consumed. Anyone whose name is not written in the Book of
-      Life will die the second death in eternal shame and torment. Paradise is the Kingdom of God, the new Jerusalem,
-      Mount Zion, the new heaven and the new earth, where righteousness dwells. The present heaven and earth are
-      subjected to evil and violence, but it is passing away with everything in it, as we ourselves are passing away.
-      The new heaven and the new earth will never pass away; it is an eternal home which cannot be shaken. The LORD God
-      will judge the living and the dead according to their deeds, and recompense all according to what they have done
-      in the body; as it says, "For the day of the LORD draws near on all the nations. As you have done, it will be done
-      to you. Your dealings will return on your own head.” (Obadiah 1:15) So from the judgement, each will go to their
-      permanent home as decreed by the judgement of God; and God's judgment will be based on righteousness and justice;
-      so who can argue with the verdict? He will reward all who do good for the good done and repay harm for the harm
-      done. But certainly, God has sown everlasting life in the human heart so that we would covet life; as it says,
+      sow, we gain what we have put in, we will be recompensed according to what we have done in our body. There is life
+      after life, which is eternal, and there is death after death, which is the second death; the second death is hell,
+      the lake of fire, a fire that is not quenched, for the wood is not consumed. Anyone whose name is not written in
+      the Book of Life will die the second death in eternal shame and torment. Paradise is the Kingdom of God, the new
+      Jerusalem, Mount Zion, the new heaven and the new earth, where righteousness dwells. The present heaven and earth
+      are subjected to evil and violence, but it is passing away with everything in it, as we ourselves are passing
+      away. The new heaven and the new earth will never pass away; for it is an eternal home which cannot be shaken. The
+      LORD God will judge the living and the dead according to their deeds, and recompense all according to what they
+      have done in the body; as God says, “Now the end is upon you, and I will send My anger against you; I will judge
+      you according to your ways and bring all your abominations upon you.” (Ezekiel 7:3-4) So from the judgement, each
+      will go to their permanent home as decreed by the judgement of God; and God's judgment will be based on
+      righteousness and justice; so who can argue with the verdict? He will reward all who do good for the good done and
+      repay harm for the harm done. But certainly, God has sown everlasting life in the human heart so that we would
+      covet life; as it says,
       <blog-reference-tooltip [reference]="'Ecclesiastes 3:11'">
         He has made everything appropriate in its time. <b>He has also set eternity in their heart</b>, yet so that man
         will not find out the work which God has done from the beginning even to the end.</blog-reference-tooltip
@@ -97,9 +98,9 @@ import { ReferenceTooltipComponent } from "../../../shared/components/reference-
         Teach us to number our days, that we may present to You a heart of wisdom.
       </blog-reference-tooltip>
       So therefore, "Whatever your hand finds to do, do it with your might, for there is no work or thought or knowledge
-      or wisdom in Sheol, to which you are going." (Ecclesiastes 9:10) For, "I have seen that nothing is better than
-      that man should be happy in his activities, for that is his lot. For who will bring him to see what will occur
-      after him?" (Ecclesiastes 3:22)
+      or wisdom in Sheol, to which you are going." (Ecclesiastes 9:10) For "I have seen that nothing is better than that
+      man should be happy in his activities, for that is his lot. For who will bring him to see what will occur after
+      him?" (Ecclesiastes 3:22)
       <br /><br />
 
       So certainly we are no better off than the animals, are we? As it says,
@@ -110,8 +111,8 @@ import { ReferenceTooltipComponent } from "../../../shared/components/reference-
         same place — the dust. They both came from it; they will both go back to it. How can anyone be sure that the
         human spirit goes upwards while an animal's spirit goes down into the ground?
       </blog-reference-tooltip>
-      So surely we are no better than the animals. Furthermore, we are no better off than the foolish, for the wise die
-      like the fool and both are forgotten; as wisdom sees and says,
+      So surely we are no better off than the animals. Furthermore, we are no better off than the foolish, for the wise
+      die like the fool, and both are forgotten; as wisdom sees and says,
       <blog-reference-tooltip [reference]="'Ecclesiastes 2:15-16'">
         Then I said to myself, "As is the fate of the fool, it will also befall me. Why then have I been extremely
         wise?" So I said to myself, "This too is vanity." For there is no lasting remembrance of the wise man as with
@@ -126,7 +127,7 @@ import { ReferenceTooltipComponent } from "../../../shared/components/reference-
       living and the dead, the earth will give up its dead and the depths its slain. It is God's grace that gave life,
       and His grace is revealed in the resurrection of the dead, for He will give new life; “Inasmuch as it is appointed
       for men to die once and after this comes judgment.” (Hebrews 9:27) At that time, the throne of grace will be taken
-      down, and judgement will be upheld. But, He says,
+      down, and judgement will be upheld. But He says,
       <blog-reference-tooltip [reference]="'Matthew 5:7'" [isJesusWord]="true">
         Blessed are the merciful, for they shall receive mercy.
       </blog-reference-tooltip>
@@ -148,19 +149,20 @@ import { ReferenceTooltipComponent } from "../../../shared/components/reference-
       widely known and everyone knows His name; for no-one needs to ask, “Who has ascended into heaven and descended?
       Who has gathered the wind in His fists? Who has wrapped the waters in His garment? Who has established all the
       ends of the earth? What is His name or His son's name? Surely you know!” (Proverbs 30:4) For He has made Himself
-      renown to all His creation. But whose name is constantly blasphemed? Yes, they know Him, but choose not to honor
-      Him. Whose symbol is the cross, which is put on buildings, hung around necks, pierced on the skin, and marked on
-      grave stones? Did we forget that it was once a device of death? (For Jesus was put on that cross, turning what the
-      enemy meant for evil into good.) Whose coming split our calender in half? Or who makes a week seven days? Who is
-      it that hallows the seventh day? The same writings that declare a seven day week and a restful day on the seventh,
-      tells of Him; the same writings that quote wisdom, that we have all come to agree upon, even quoting it without
-      knowing its original source, also speak of the truth. Who is it that lived a great while ago, but yet died, and is
-      proclaimed as resurrected from the dead? That which once was a sect, a heresy, a false teaching, which was fought
-      against, has now become world-wide good news. For who can fight against God and succeed? If this thing were not of
-      God, it wouldn't have withstood. And yet, we shoot rockets into the heavens to reach God, just as they tried in
-      times past at the Tower of Babel, by their own might to make a name for themselves, but they have failed; for God
-      sees to it that no-one can come near Him by their own self-will or effort, so that no-one will be able to boast in
-      His Presence; but rather, through the word of faith, through the word of truth, which says,
+      renown to all His creation. We can discern the signs of the sky, but we cannot discern the truth? Whose name is
+      constantly blasphemed? Yes, we all know Him, but we choose not to honor Him as God. Whose symbol is the cross,
+      which is put on buildings, hung around necks, pierced on the skin, and marked on grave stones? Did we forget that
+      it was once a device of death? (For Jesus was put on that cross, turning what the enemy meant for evil into good.)
+      Whose coming split our calender in half? Or who makes a week seven days? Who is it that hallows the seventh day?
+      The same writings that declare a seven day week and a restful day on the seventh, tells of Him; the same writings
+      that quote wisdom, that we have all come to agree upon, even quoting it without knowing its original source, also
+      speak of the truth. Who is it that lived a great while ago, but yet died, and is proclaimed as resurrected from
+      the dead? That which once was a sect, a heresy, a false teaching, which was fought against, has now become
+      world-wide good news. For who can fight against God and succeed? If this thing were not of God, it wouldn't have
+      withstood. And yet, we shoot rockets into the heavens to reach God, just as they tried in times past at the Tower
+      of Babel, by their own might to make a name for themselves, but they have failed; for God sees to it that no-one
+      can come near Him by their own self-will or effort, so that no-one will be able to boast in His Presence; but
+      rather, through the word of faith, through the word of truth, which says,
       <blog-reference-tooltip [reference]="'Romans 10:8-13'"
         >"The word is near you, in your mouth and in your heart” (that is, the word of faith that we proclaim); because,
         if you confess with your mouth that Jesus is Lord and believe in your heart that God raised him from the dead,

@@ -60,7 +60,7 @@ import { ReferenceTooltipComponent } from "../../../shared/components/reference-
       <blog-reference-tooltip [reference]="'Ecclesiastes 12:7'">
         The dust will return to the earth as it was, and the spirit will return to God who gave it.
       </blog-reference-tooltip>
-      For,
+      For
       <blog-reference-tooltip [reference]="'Ecclesiastes 5:15-17'">
         As he came from his mother's womb he shall go again, naked as he came, and shall take nothing for his toil that
         he may carry away in his hand. This also is a grievous evil: just as he came, so shall he go, and what gain is
@@ -69,7 +69,7 @@ import { ReferenceTooltipComponent } from "../../../shared/components/reference-
       <br /><br />
 
       Everything we think we have, we don't have: we leave it to someone who comes after us; we leave it to him who did
-      not work nor toil for it. So what do any of us really own? But rather, it says,
+      not work nor toil for it. So what do any of us really own? But rather it says,
       <blog-reference-tooltip [reference]="'Psalm 24:1'">
         The earth is the LORD's and the fullness thereof, the world and those who dwell therein.
       </blog-reference-tooltip>
@@ -77,8 +77,10 @@ import { ReferenceTooltipComponent } from "../../../shared/components/reference-
       the ancestors, those who were before us, for they died and in their death they still speak. We are merely stewards
       of what God has entrusted to us. And if we cannot be trusted with earthly things, who will trust us with heavenly
       things? If we hold tightly to dust which is borrowed, who will give unto us refined gold? (Luke 16:10-12) Riches
-      do not deliver on the day of wrath; and all the silver and gold and costly stones cannot forgive even a single
-      sin; as it says,
+      do not deliver on the day of wrath; as it says about that day, “They will fling their silver into the streets and
+      their gold will become an abhorrent thing; their silver and their gold will not be able to deliver them in the day
+      of the wrath of the LORD.” (Ezekiel 7:19) For not even all the silver and gold and costly stones can forgive even
+      a single sin; as it says,
       <blog-reference-tooltip [reference]="'Psalm 49:7-9'">
         No man can by any means redeem his brother Or give to God a ransom for him — For the redemption of his soul is
         costly, And he should cease trying forever — That he should live on eternally, That he should not undergo decay.
@@ -116,14 +118,17 @@ import { ReferenceTooltipComponent } from "../../../shared/components/reference-
       “Who suppose that godliness is a means of gain.” (1 Timothy 6:5) For why do men do evil, except for the love of
       things? As it says, “You lust and do not have; so you commit murder. You are envious and cannot obtain; so you
       fight and quarrel. You do not have because you do not ask.” (James 4:2) For here is the nature of God: He does not
-      store up for Himself, but in His riches and kindness He freely gives to those who ask, and He is generous to all,
-      even the disobedient and unthankful (Luke 6:35); He dwells in heaven, but all that is on earth is given to the
-      sons of men, even so, He does not withhold that which is most precious, which is eternal, which is stored up in
-      heaven; this is evident in that He causes the rain to pour down from heaven onto all flesh, the unjust and the
+      store up for Himself, but in His riches and kindness He gives freely to everyone who ask, and He is generous to
+      all, even the disobedient and unthankful (Luke 6:35); He dwells in heaven, but all that is on earth is given to
+      the sons of men, even so, He does not withhold that which is most precious, which is eternal, which is stored up
+      in heaven; this is evident in that He causes the rain to pour down from heaven onto all flesh, the unjust and the
       just alike. And if it is so with rain, how much more with spiritual blessings? As it says, "It is time to seek the
       LORD Until He comes to rain righteousness on you.” (Hosea 10:12) So who do we really hurt by being rich towards
-      ourselves? If we give, it is to the benefit of others; if we withhold, it is to the hurt of others; and even so,
-      we hurry along the judgment of God.
+      ourselves? If we give, it is to the benefit of others; if we withhold, it is to the hurt of others; as it says,
+      “"If you have sinned, what do you accomplish against Him? And if your transgressions are many, what do you do to
+      Him? "If you are righteous, what do you give to Him, Or what does He receive from your hand? "Your wickedness is
+      for a man like yourself, And your righteousness is for a son of man.” (Job 35:6-8) But even so, if we are rich
+      towards ourselves, we hurry along the judgment of God on ourselves; as it says,
       <blog-reference-tooltip [reference]="'James 5:3-5'">
         Your gold and silver have corroded, and their corrosion will be evidence against you and will eat your flesh
         like fire. You have laid up treasure in the last days. Behold, the wages of the laborers who mowed your fields,
@@ -173,9 +178,9 @@ import { ReferenceTooltipComponent } from "../../../shared/components/reference-
       </blog-reference-tooltip>
       Seek the gift of God, which is the reward of righteousness; as it says,
       <blog-reference-tooltip [reference]="'Ecclesiastes 5:19-20'">
-        Furthermore, as for every man to whom God has given riches and wealth, He has also empowered him to eat from
-        them and to receive his reward and rejoice in his labor; this is the gift of God. For he will not often consider
-        the years of his life, because God keeps him occupied with the gladness of his heart.
+        As for every man to whom God has given riches and wealth, He has also empowered him to eat from them and to
+        receive his reward and rejoice in his labor; this is the gift of God. For he will not often consider the years
+        of his life, because God keeps him occupied with the gladness of his heart.
       </blog-reference-tooltip>
     </ng-template>`,
   styles: ``,

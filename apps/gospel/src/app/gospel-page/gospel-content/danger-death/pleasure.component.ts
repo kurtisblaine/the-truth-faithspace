@@ -23,10 +23,10 @@ import { ReferenceTooltipComponent } from "../../../shared/components/reference-
       moment, but it is not gone forever; living for pleasure is like hitting the snooze button on an alarm clock - we
       may feel better now, but we will have to deal with the same problem later, but it has gotten worse. Even if we
       feel satisfied or fulfilled with these things, it is never enough; we are feeding a beast within us, the more we
-      feed it, the bigger it gets; and the bigger it gets, the more we must feed it; it is never satisfied; we make it
-      stronger, and we are subdued by it. A dog growls when its not fed, how much more sin living within us which is a
-      hound from hell? And sin is deathly, living in the sons of men; we are living, but sin is working death within us.
-      We want to flee, but it's inside of us; we cover our eyes, but it lives in the darkness.<br /><br />
+      feed it, the bigger it gets; and the bigger it gets, the more we must feed it; it is never satisfied; we are the
+      ones who make it stronger, and we are subdued by it. A dog growls when its not fed, how much more sin living
+      within us which is a hound from hell? And sin is deathly, living in the sons of men; we are living, but sin is
+      working death within us. We want to flee, but it's inside of us; we cover our eyes, but it lives in darkness.<br /><br />
 
       <!-- <a href="https://thelightof.life/#/insight-detail/cd57c552-146a-8c5a-7bd2-d1314e9a4793" target="_blank"
           >See more about the nature of sin here.</a
@@ -42,8 +42,8 @@ import { ReferenceTooltipComponent } from "../../../shared/components/reference-
       for the body, but God forbid for gluttony; drink to make the heart merry, but God forbid for drunkenness; sex for
       reproduction, but God forbid for immorality. God made everything good and upright, but we have twisted that which
       is straight. It is lust which corrupts God given necessities into dissipation and waste: for over-eating is not of
-      hunger, and drunkenness is not of thirst, and immorality is not of reproduction; all of these are for pleasure;
-      and from wisdom it does not come; as it says,
+      hunger, and drunkenness is not of thirst, and immorality is not of reproduction; all of these are of pleasure; and
+      from wisdom it does not come; as it says,
       <blog-reference-tooltip [reference]="'Ecclesiastes 7:4'">
         The mind of the wise is in the house of mourning, while the mind of fools is in the house of pleasure.
       </blog-reference-tooltip>
@@ -60,20 +60,20 @@ import { ReferenceTooltipComponent } from "../../../shared/components/reference-
       <br /><br />
 
       And who is exempt from this? None of us. We are all under the power of sin. Which of us does not stoop to
-      deficate? Who is it born without a mother? We are led by the hand of this world into a cycle of dependence upon
+      deficate? Who is born without a mother? We are led by the hand of this world into a cycle of dependence upon
       material things; we think we need these things to keep us in check; we say, "I don't feel normal without them." I
       testify about myself that I've been chained by many sins and pleasures and vices for many years of my life, and
       looking back, surely it was not life. Whatever a person is overcome by, that he is also enslaved. And how weak are
       we when something inaminate chains us! "I serve this and that, and I can't stop!" Whatever we offer ourselves to
       as obedient servants, by that, we are enslaved. And I was enslaved to everything a man could be enslaved by: food,
-      alcohol, drugs, money, sex, and many others. These things are not alive, but somehow I was enslaved to them as if
-      they were; they are not gods at all, so why should I serve them? I must do for them, but what are they doing for
-      me? I wouldn't call myself a man, for I can't get out. I want out, but I can't escape; I am surely in a prison
+      alcohol, drugs, money, sex, and many other things. These things are not alive, but somehow I was enslaved to them
+      as if they were; they are not gods at all, so why should I serve them? I must do for them, but what are they doing
+      for me? I wouldn't call myself a man, for I can't get out. I want out, but I can't escape; I am surely in a prison
       cell. I want to stop sinning, but I can't; I want to be released, but I can't redeem myself. I am without power;
       hope, I have none. "Where is real pleasure and satisfaction?" And worse yet, I don't know how to utter it; for
       perhaps if I could tell someone, they could help. But instead, guilt and shame keep me from sharing, as if I am
-      the only one dealing with such things without anyone to relate; just as Solomon, who had great wisdom from God,
-      writes,
+      the only one dealing with such things, and there is no-one to relate; just as Solomon, who had great wisdom from
+      God, writes,
       <blog-reference-tooltip [reference]="'Ecclesiastes 1:8'">
         All things are full of weariness; <b>a man cannot utter it</b>; the eye is not satisfied with seeing, nor the
         ear filled with hearing.
@@ -98,19 +98,19 @@ import { ReferenceTooltipComponent } from "../../../shared/components/reference-
         sun.
       </blog-reference-tooltip>
       As Solomon said, "My heart still guiding me with wisdom", for wisdom guided him into all these things; and he
-      spoke all these things so that we wouldn't have to pierce ourselves with these sorrows. Solomon's words are surely
-      insightful. Wisdom originates from God; but every sinful habit originates with lust; and lust entices the eyes. As
-      he says, "And whatever my eyes desired I did not keep from them." All sin begins here. And the end: as it says,
-      "And behold, all was vanity and a striving after wind." So by the things of this world, no man will be satisfied.
-      Even by images, which are copies, men have tried to find satisfaction. But if we aren't satisfied with the real
-      thing, then why would we be with an image? For an image is a copy. But rather, images stimulate more lust, for an
-      image makes itself greater than reality which it is portraying. And how computers stimulate desire through
-      pictures! It is satisfying while on it, but afterwards it's like waking up from a sleep. We live in an age where
-      media screens are everywhere: it started with televisions in the living room, then escalated to monitors in the
-      pocket. Surely these feed our eyes. This is what I meant when I said, "We are led by the hand of this world", for
-      who creates advertisements? Who makes ready the fulfillment of our lusts? But still, the desire belongs to us, and
-      we will be the ones who suffer for indulging it. We should not long for the things of the world, but the One who
-      gives all good things is God.
+      spoke all these things so that we wouldn't have to pierce ourselves with these same sorrows. Solomon's words are
+      surely insightful. Wisdom originates from God; but every sinful habit originates with lust; and lust entices the
+      eyes. As he says, "And whatever my eyes desired I did not keep from them." All sin begins here. And the end: as it
+      says, "And behold, all was vanity and a striving after wind." So by the things of this world, no man will be
+      satisfied. Even by images, which are copies, men have tried to find satisfaction. But if we aren't satisfied with
+      the real thing, then why would we be satisfied with an image? For an image is a copy. But rather, images stimulate
+      more lust, for an image makes itself greater than reality which it is portraying. And how computers stimulate
+      desire through pictures! It is satisfying while on it, but afterwards it's like waking from a sleep. We live in an
+      age where media screens are everywhere: it started with televisions in the living room, then escalated to monitors
+      in the pocket. Surely these feed our eyes. This is what I meant when I said, "We are led by the hand of this
+      world", for who creates advertisements? Who makes ready the fulfillment of our lusts? But still, the desire
+      belongs to us, and we will be the ones who suffer for indulging it. We should not long for the things of the
+      world, but the One who gives all good things is God.
       <br /><br />
 
       Do you want further proof that we are dissatisfied and do not know it? A computer can create entire simulations
@@ -129,14 +129,14 @@ import { ReferenceTooltipComponent } from "../../../shared/components/reference-
       lustful desire in those who see them. For why would someone make an image unless it is to be gazed at?
       (Covetousness is called idolatry; and covetousness is lust. And covetousness is condemned by the law.) The natural
       use is better than the unnatural, the real is better than the copy, good is better than evil, even in the
-      meanwhile, if you think, "Ah! But it feels so good!" In the end you will not be thinking that! Everything we sow,
-      we will also reap. A person does not sow an apple and get an orange tree, does he? Neither does a person breed
-      pigs and get cows. So why do you think, "I will sow corruption and get life"? Lust sowed reaps corruption;
+      meanwhile, if you think, "Ah! But it feels so good!" In the end you will not be saying that! Everything we sow, we
+      will also reap. A person does not sow an apple and get an orange tree, does he? Neither does a person breed pigs
+      and get cows. So why do you think, "I will sow corruption and get life"? Lust sowed reaps corruption;
       righteousness sowed reaps blessing; and lust conceived gives birth to sin. All sin is dysfunctional; and a
       dysfunction is useless. And that which is useless is put into a pit and awaits burning. A new sofa will become
       fettered, a new car will become a tin of rust, even our bodies are becoming old and gray and worn out: it will be
       soon in the grave. Evil will inherit evil and goodness will inherit goodness in the end. This is true, even if in
-      the meantime we see the wicked prospering and the righteous suffering; as it says,
+      the meantime we see the wicked prospering and the righteous suffering; as wisdom says,
       <blog-reference-tooltip [reference]="'Ecclesiastes 7:15'">
         I have seen everything during my lifetime of futility; there is a righteous man who perishes in his
         righteousness and there is a wicked man who prolongs his life in his wickedness.
@@ -157,8 +157,9 @@ import { ReferenceTooltipComponent } from "../../../shared/components/reference-
       <blog-reference-tooltip [reference]="'1 Timothy 5:6'">
         She who lives in pleasure is dead while she lives.
       </blog-reference-tooltip>
-      If we live for pleasure, our life is a waste, which is dissipation. Instead, fear God. Enjoy what God has given
-      you without grumbling or complaining; as it says,
+      If we live for pleasure, our life is a waste, which is dissipation. What good comes from waste? When you burn
+      garbage it is not even useful for the fire. Instead, fear God. Enjoy what God has given you without grumbling or
+      complaining; as it says,
       <blog-reference-tooltip [reference]="'Ecclesiastes 8:15'">
         So I commended pleasure, for there is nothing good for a man under the sun except to eat and to drink and to be
         merry, and this will stand by him in his toils throughout the days of his life which God has given him under the
