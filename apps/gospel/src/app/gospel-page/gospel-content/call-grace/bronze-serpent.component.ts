@@ -21,15 +21,17 @@ import { ReferenceTooltipComponent } from "../../../shared/components/reference-
       </blog-reference-tooltip> -->
       God did not remove the serpents as the people asked, but He opened up a way by grace through which the people
       could believe and look upon the bronze serpent in faith and be saved. It's "in faith" since they had to look at
-      the serpent and believe that by so doing, they would be saved; they were hoping for what they did not yet have,
-      namely salvation, for they were dying from the sting of the serpents. And God saved the Israelites who looked upon
-      the serpent through a bronze image of that same serpent; the image of the serpent was dead, for it was only an
-      image, but they had to hope and believe that it would give life. The living serpents stung to death, but the dead
-      serpent brought forth life and deliverance from death. The serpents which were alive stung to death, but the
-      bronze serpent which was dead, healed to life, even from the peril of death. So the death in them was purged by
-      the dead image of the serpent, but they had to believe that dead image would give life; and by God's promise and
-      provision of grace, it saved everyone who looked upon it - not merely with eyes of flesh, but with eyes of faith,
-      for the looking upon the image did not save, but believing in God's promise did. As Jesus says about this:
+      the serpent and believe that by so doing, they would be saved; and faith is contrary to sight, for by sight, "How
+      can a dead image save?" We know medicine can heal, but how can gazing upon a bronze serpent? So faith is contrary
+      to sight; for they were hoping for what they did not yet have, namely salvation, and they were dying from the
+      sting of the serpents. And so God saved the Israelites who looked upon the serpent through a bronze image of that
+      same serpent; the image of the serpent was dead, for it was only an image, but they had to hope and believe that
+      it would give life. The living serpents stung to death, but the dead serpent brought forth life and deliverance
+      from death. The serpents which were alive stung to death, but the bronze serpent which was dead, healed to life,
+      even from the peril of death. So the death in them was purged by the dead image of the serpent, but they had to
+      believe that dead image would give life; and by God's promise and provision of grace, it saved everyone who looked
+      upon it - not merely with eyes of flesh, but with eyes of faith, for the looking upon the image did not save, but
+      believing in God's promise did. As Jesus says about this:
       <blog-reference-tooltip [reference]="'John 3:14-15'" [isJesusWord]="true">
         Just as Moses lifted up the snake in the desert, the Son of Man must also be lifted up. So that everyone who
         believes can have eternal life in him.
@@ -50,7 +52,7 @@ import { ReferenceTooltipComponent } from "../../../shared/components/reference-
       those who beheld the serpent in faith, lived; thus looking upon the image itself did not save - it is God who
       saves, and that, through faith. And so it is today, we may be prone to worship a symbol of a cross, or a picture,
       or any other created thing, more than God who gives life from the dead, even giving life through the dead; He
-      elects to give life through Jesus Christ's death; He who died, who is now alive, by whom we consult God through;
+      elects to give life through Jesus Christ's death; He who died, and is now alive, by whom we consult God through;
       <blog-reference-tooltip [reference]="'Revelation 1:18'" [isJesusWord]="true">
         I am He who lives, and was dead, and behold, I am alive forevermore. Amen. And I have the keys of Hades and of
         Death. </blog-reference-tooltip
@@ -64,15 +66,15 @@ import { ReferenceTooltipComponent } from "../../../shared/components/reference-
       taken away from it; the image is made by the skill of man where-as God creates all things, even the skill of man;
       thus, when we create a copy of God's creation, we take the life from it when recreating it; and this is the nature
       of all images created by man: they are dead. So the image of the serpent that Moses created is dead; and Christ is
-      the visible image of God; however, Christ is not dead. Christ died for three days, and yet lives forevermore. In a
-      similar way, man is created in the image of God, and we also are not considered dead; as it says, “God created man
-      in His own image, in the image of God He created him; male and female He created them.” (Genesis 1:27) So not all
-      images are dead, only the ones man creates. But these testimonies are pictures, images in one's mind pointing to
-      Christ. And so, through these dead pictures we may see Christ. These testimonies are not Christ in themselves, but
-      they are only images, pictures, parables given about Christ; through these testimonies of Christ, we can see
-      Christ: that is, through faith; so although images are dead, and Christ is the visible image of God, it is through
-      these parables, which are dead, which point to Christ, which we have conviction and assurance in the faith; as
-      Christ often spoke in parables and once said,
+      the visible image of God. Christ died for three days, and yet lives forevermore. In a similar way, man is created
+      in the image of God, and we also are not considered dead; as it says, “God created man in His own image, in the
+      image of God He created him; male and female He created them.” (Genesis 1:27) So not all images are dead, only the
+      ones man creates. But these testimonies are pictures, images in one's mind pointing to Christ. And so, through
+      these dead pictures we may see Christ. These testimonies are not Christ in themselves, but they are only images,
+      pictures, parables given about Christ; through these testimonies of Christ, we can see Christ: that is, through
+      faith; so although images are dead, and Christ is the visible image of God, it is through these parables, which
+      are dead, which point to Christ, give us conviction and assurance in the faith; as Christ often spoke in parables
+      and once said,
       <blog-reference-tooltip [reference]="'Mark 4:30'" [isJesusWord]="true">
         How shall we picture the kingdom of God, or by what parable shall we present it?
       </blog-reference-tooltip>
@@ -80,11 +82,11 @@ import { ReferenceTooltipComponent } from "../../../shared/components/reference-
       God concerning His Son; for these further the faith; and so the parable of the bronze serpent in itself is not
       Christ - it is a picture to Christ; the same thing goes for all the testimonies found in the book of the law. And
       this is why the serpent in the wilderness was a bronze image: God is showing us that through images, parables, and
-      pictures found in His Word, we may be build up in the faith; not that any physical picture can promote faith, but
+      pictures found in His Word, we may be built up in the faith; not that any physical picture can promote faith, but
       specifically I am talking about parables through hearing God's Word. And these all point to Jesus Christ that we
-      may be encouraged to come to Him; these images are not the Son of God in themselves, for these are dead, but
-      Christ is living; these are images of the mind made possible by the Word of God; these point us to Christ so that
-      we may come to Him for salvation; as He says,
+      may be encouraged to come to Him; these images are not the Son of God in themselves, for these are dead images,
+      but Christ is living; these are images of the mind made possible by the Word of God; these point us to Christ so
+      that we may come to Him for salvation; as He says,
       <blog-reference-tooltip [reference]="'John 5:39-40'" [isJesusWord]="true">
         You search the Scriptures because you think that in them you have eternal life; it is these that testify about
         Me; and you are unwilling to come to Me so that you may have life.
@@ -122,7 +124,7 @@ import { ReferenceTooltipComponent } from "../../../shared/components/reference-
         the cross.</blog-reference-tooltip
       >
       For faith is the conviction of things unseen and the assurance of things hoped for. Don't be led astray by seeking
-      for images of Christ and thinking that is faith - it is not. For faith comes from hearing and hearing the Word of
+      for images of Christ, thinking that is faith - it is not. For faith comes from hearing and hearing the Word of
       God. We walk by faith, not by sight, and so, faith and sight are opposites. Faith is from hearing God's Word, and
       if God is gracious to us, perhaps we may see a miracle; however it's unbelieving to seek for such miracles and
       signs, for everything we need is already given. There is a great blessing to us who believe without seeing; as
@@ -137,13 +139,13 @@ import { ReferenceTooltipComponent } from "../../../shared/components/reference-
       <br /><br />
 
       We should not be distressed or angry with ourselves on account of Christ's death because it was according to God's
-      predetermined plan that He died for us; also, He was raised from the dead and He no longer suffers death. Rather
-      we should fear God, knowing the penalty for our sins that He Himself bore; we should hate sin which crushed Him,
-      for when we sinned, He was bruised; He did this on account of His great love towards us to rescue us from bondage
-      to sin. Joseph, the son of Jacob, prophesied to Christ, for he was sold into slavery to Egypt by his own brothers;
-      however, before these things occurred, God gave Joseph a dream of his brothers bowing down to him; at that time,
-      the meaning of the dream was hidden from his eyes; but we see through the words of Joseph that it was God's good
-      plan to send him to Egypt, to preserve life, not to destroy it; as Joseph said to his brothers,
+      predetermined plan that He died for us, and He was raised from the dead and He no longer suffers death. Rather we
+      should fear God, knowing the penalty for our sins that He Himself bore; we should hate sin which crushed Him, for
+      when we sinned, He was bruised; He did this on account of His great love towards us to rescue us from bondage to
+      sin. And we see this in Joseph, the son of Jacob, who prophesied to Christ, for he was sold into slavery to Egypt
+      by his own brothers; before these things occurred, God gave Joseph a dream of his brothers bowing down to him; at
+      that time, the meaning of the dream was hidden from his eyes; but we see through the words of Joseph that it was
+      God's good plan to send him to Egypt, to preserve life, not to destroy it; as Joseph said to his brothers,
       <blog-reference-tooltip [reference]="'Genesis 45:4-5'">
         I am your brother, Joseph, whom you sold into Egypt. And now do not be distressed or angry with yourselves
         because you sold me here, for God sent me before you to preserve life. For the famine has been in the land these
@@ -157,15 +159,15 @@ import { ReferenceTooltipComponent } from "../../../shared/components/reference-
       crucified - and all this was foretold by God beforehand, but the meaning was hidden from them. It was God's
       predetermined plan for good, having testified beforehand by the Psalms and the Prophets, by the acts of men of
       old, for prophets also performed acts before the people (The prophets Ezekiel, Hosea, and Zechariah for example).
-      For one of the prophets, Isaiah, says,
+      As one of the prophets, Isaiah, says,
       <blog-reference-tooltip [reference]="'Isaiah 53:10'">
         But the LORD was pleased To crush Him, putting [Him] to grief; If He would render Himself [as] a guilt offering,
         He will see [His] offspring, He will prolong [His] days, And the good pleasure of the LORD will prosper in His
         hand.
       </blog-reference-tooltip>
       As it says, "He was pleased to crush Him", for it was God's good plan to send Christ into the world to die for us.
-      And so, God sent Jesus into the world for our good, to save life rather than to destroy it. He left witness for us
-      to receive Him by faith in these latter days; and these are preserved through the writings. He also preserved the
+      And so, God sent Jesus into the world for our good, to save life rather than destroy it. He left witness for us to
+      receive Him by faith in these latter days; and these are preserved through the writings. He also preserved the
       testimonies of the apostles who seen the risen Lord firsthand. So although when we come to love Christ, we also
       come to hate ourselves because of our sins, namely, what they have done to Christ; but we find power in that
       Christ is alive from the dead, seated at the right hand of Power on High, and that it was according to God's plan.
