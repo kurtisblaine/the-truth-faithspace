@@ -218,11 +218,12 @@ import { ReferenceTooltipComponent } from "../../../shared/components/reference-
       God (2 Corinthians 5:20), for He has reconciled you (2 Corinthians 5:19); and come to Him for forgiveness (Acts
       2:38), for He has forgiven you (1 Corinthians 15:3); and reckon yourself to be dead to sin (Romans 6:11), for He
       has died for you (2 Corinthians 5:14); you were crucified with Him (Galatians 2:20), so crucify the flesh with its
-      passions and desires (Galatians 5:24); and live for Him (2 Corinthians 5:15), for He has purchased you (1
-      Corinthians 6:20). Draw near unto Him (James 4:8), for He has drawn near to you (1 Timothy 1:15). And humble
-      yourself (James 4:10), for He has come down from heaven (Philippians 2:5-8). And offer yourself as a living
-      sacrifice to God (Romans 12:1), for Jesus Christ was Sacrificed for you (1 Corinthians 5:7). And walk as His
-      obedient children (1 Peter 1:14), for you are born of Him (1 John 5:1).
+      passions and desires (Galatians 5:24); and save yourself from this wicked generation (Acts 2:40), for He has saved
+      us, not on the basis of deeds which we have done (Titus 3:5); and live for Him (2 Corinthians 5:15), for He has
+      purchased you (1 Corinthians 6:20). Draw near unto Him (James 4:8), for He has drawn near to you (1 Timothy 1:15).
+      And humble yourself (James 4:10), for He has come down from heaven (Philippians 2:5-8). And offer yourself as a
+      living sacrifice to God (Romans 12:1), for Jesus Christ was Sacrificed for you (1 Corinthians 5:7). And walk as
+      His obedient children (1 Peter 1:14), for you are born of Him (1 John 5:1).
     </ng-template>`,
   styles: ``,
   changeDetection: ChangeDetectionStrategy.OnPush,
