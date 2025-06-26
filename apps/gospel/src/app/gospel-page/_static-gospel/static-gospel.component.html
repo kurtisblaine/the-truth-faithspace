@@ -95,11 +95,11 @@
           <button style="font-size: 18px" mat-button (click)="toAnchor('obedienceToHoliness')">
             Obedience to Holiness
           </button>
-          <button style="font-size: 18px" mat-button (click)="toAnchor('callUponTheLord')">Call upon the Lord</button>
           <button style="font-size: 18px" mat-button (click)="toAnchor('liveWorthy')">Live Worthy</button>
           <button style="font-size: 18px" mat-button (click)="toAnchor('perseverance')">
             Perseverance through Remembrance
           </button>
+          <button style="font-size: 18px" mat-button (click)="toAnchor('callUponTheLord')">Call upon the Lord</button>
         </ng-template>
       </mat-expansion-panel>
 
@@ -438,18 +438,7 @@
     </blog-gospel-section>
   </div>
 
-  <div class="holy-image" id="callUponTheLord"></div>
-
-  <blog-gospel-section [isDefer]="false" [isLightMode]="true">
-    <h3 class="headers">Call upon the Lord</h3>
-    <div class="paragraphs">
-      <gospel-call-upon-him #callUponTheLord></gospel-call-upon-him>
-    </div>
-  </blog-gospel-section>
-
-  <div class="rent-image" id="liveWorthy"></div>
-
-  <div class="rent-image">
+  <div class="holy-image" id="liveWorthy">
     <blog-gospel-section [isDefer]="false" [isLightMode]="true" [isFloater]="true">
       <h3 class="headers">Live Worthy</h3>
       <div class="paragraphs">
@@ -458,14 +447,25 @@
     </blog-gospel-section>
   </div>
 
-  <div class="rent-image" id="perseverance"></div>
+  <div class="rent-image" id="perseverance">
+    <blog-gospel-section [isDefer]="false" [isLightMode]="true">
+      <h3 class="headers">Perseverance through Remembrance</h3>
+      <div class="paragraphs">
+        <gospel-persevere #perseverance></gospel-persevere>
+      </div>
+    </blog-gospel-section>
+  </div>
 
-  <blog-gospel-section [isDefer]="false" [isLightMode]="true">
-    <h3 class="headers">Perseverance through Remembrance</h3>
-    <div class="paragraphs">
-      <gospel-persevere #perseverance></gospel-persevere>
-    </div>
-  </blog-gospel-section>
+  <div class="rent-image"></div>
+
+  <div class="rent-image" id="callUponTheLord">
+    <blog-gospel-section [isDefer]="false" [isLightMode]="true">
+      <h3 class="headers">Call upon the Lord</h3>
+      <div class="paragraphs">
+        <gospel-call-upon-him #callUponTheLord></gospel-call-upon-him>
+      </div>
+    </blog-gospel-section>
+  </div>
   <!-- #endregion THE RESPONSE - LOVE -->
 
   <!-- #region THE DAY OF THE LORD -->
