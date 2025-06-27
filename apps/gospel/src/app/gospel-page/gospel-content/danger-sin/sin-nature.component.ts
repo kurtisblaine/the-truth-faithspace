@@ -32,7 +32,7 @@ import { ReferenceTooltipComponent } from "../../../shared/components/reference-
       already be. We were all pure and innocent from an early age, for God has made us perfect; for as a child we were
       innocent because we did not know right from wrong; but the time arrived when the commandment came and sin became
       alive and we died; and sin lived in our stead. We became its prisoner, its hostage - we were sold as its servant;
-      for just as there is not a man who does not comes from woman, so there is not a man on earth who continually does
+      for just as there is not a man who does not come from woman, so there is not a man on earth who continually does
       good and never sins. And this is according to what we see and experience, isn't it? We all do that evil in which
       we know by nature; we all know evil naturally and without any effort do it: it is like blinking to us, it is as
       automatic as breathing. It takes all our effort to resist sin, and it takes even more effort to do good. We eat up
