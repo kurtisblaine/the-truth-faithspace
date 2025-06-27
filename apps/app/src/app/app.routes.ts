@@ -4,7 +4,7 @@ import { HomePageComponent } from "./homePage/home-page.component";
 export const appRoutes: Route[] = [
   {
     path: "",
-    component: HomePageComponent,
+    loadComponent: () => HomePageComponent,
   },
   { path: "**", redirectTo: "", pathMatch: "full" },
 ];
