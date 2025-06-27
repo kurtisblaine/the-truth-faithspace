@@ -40,14 +40,15 @@ import { ReferenceTooltipComponent } from "../../../shared/components/reference-
       from us, but God has reconciled us to Himself through the body of Jesus Christ. For David could only marry
       Bathsheba if she were to be released by the law of her husband by death, so David sent her husband Uriah to die;
       and so we are made to die to the law through the body of Jesus Christ that we may be joined to Him who was raised
-      from the dead (Romans 7:1-4). And this is the new covenant; as promised through the prophet Jeremiah, as he says,
+      from the dead (Romans 7:1-4). And Christ has become the Mediator of a better covenant; as promised through the
+      prophet Jeremiah, as he says,
       <blog-reference-tooltip [reference]="'Jeremiah 31:31-32'"
         >"Behold, days are coming," declares the LORD, "when I will make a new covenant with the house of Israel and
         with the house of Judah, not like the covenant which I made with their fathers in the day I took them by the
         hand to bring them out of the land of Egypt, My covenant which they broke, although I was a husband to them,"
         declares the LORD.
       </blog-reference-tooltip>
-      As it says, "not like the covenant which I made with their fathers," for the new covenant is not like the old; but
+      As it says, "Not like the covenant which I made with their fathers," for the new covenant is not like the old; but
       rather, "Through the Law I died to the Law, so that I might live to God.” (Galatians 2:19)
       <br /><br />
 

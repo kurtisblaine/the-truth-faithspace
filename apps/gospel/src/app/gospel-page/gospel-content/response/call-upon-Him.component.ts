@@ -15,26 +15,28 @@ import { ReferenceTooltipComponent } from "../../../shared/components/reference-
       with the heavenly life: it is given to us from heaven; as John says, "A man can receive nothing unless it has been
       given him from heaven.” (John 3:27) And as Paul was saying, "What do you have that you did not receive? And if you
       did receive it, why do you boast as if you had not received it?” (1 Corinthians 4:7) Thus "You do not have because
-      you do not ask.” (James 4:2-3) So much so, we even receive the gift of God, the Holy Spirit, by asking with faith;
-      as the Lord Jesus says,
+      you do not ask.” (James 4:2-3) So much so, we even receive the gift of God by asking with faith; as the Lord Jesus
+      says,
       <blog-reference-tooltip [reference]="'Luke 11:13'" [isJesusWord]="true">
         If you then, being evil, know how to give good gifts to your children, how much more will your heavenly Father
         give the Holy Spirit to those who ask Him?
       </blog-reference-tooltip>
-      And He gives not because of a lump-some of money or any good work, lest it be contrary to the gospel of God; as
-      Peter rebuked a man, saying, “May your silver perish with you, because you thought you could obtain the gift of
+      And He gives not because of a lump-some of money or any good work we do, lest it be contrary to the gospel of God;
+      as Peter rebuked a man, saying, “May your silver perish with you, because you thought you could obtain the gift of
       God with money!” (Acts 8:20-23) So that everything would be in accordance with grace, which is in line with the
       gospel of God by which every good thing is given by faith; for if we call upon Him, asking in prayer and believing
       to receive, the Lord says,
       <blog-reference-tooltip [reference]="'Matthew 21:22, Mark 11:24, James 1:6-8'" [isJesusWord]="true">
         All things you ask in prayer, believing, you will receive.
       </blog-reference-tooltip>
-      And,
+      And then He says,
       <blog-reference-tooltip [reference]="'Matthew 7:7-8'" [isJesusWord]="true">
         Ask, and it will be given to you; seek, and you will find; knock, and it will be opened to you. For everyone who
         asks receives, and he who seeks finds, and to him who knocks it will be opened.
       </blog-reference-tooltip>
-      Furthermore, the faith that believes God, namely that He is the Giver of all good things, says,
+      <br /><br />
+
+      The faith that believes God, namely that He is the Giver of all good things, says,
       <blog-reference-tooltip [reference]="'Luke 6:38'" [isJesusWord]="true">
         Give, and it will be given to you. They will pour into your lap a good measure—pressed down, shaken together,
         and running over. For by your standard of measure it will be measured to you in return.
@@ -50,7 +52,13 @@ import { ReferenceTooltipComponent } from "../../../shared/components/reference-
       he forgives, believing he will be forgiven; for that is of faith, and certainly, as it is impossible for God to
       lie: He will give and He will forgive. Therefore, ask and believe! The Holy Spirit is given to those who believe,
       and He is the mind of Christ (1 Corinthians 2:16); He knows how to pray according to the will of God, and God,
-      searching the hearts of men for the mind of the Spirit (Romans 8:26-27), gives according to His grace.
+      searching the hearts of men for the mind of the Spirit (Romans 8:26-27), gives according to grace. And we pray
+      through Christ; as the LORD God declares,
+      <blog-reference-tooltip [reference]="'Jeremiah 30:21'" [isJesusWord]="true">
+        Their leader shall be one of them, And their ruler shall come forth from their midst; And I will bring him near
+        and he shall approach Me; For who would dare to risk his life to approach Me?
+      </blog-reference-tooltip>
+      For our leader is Christ “in whom we have boldness and confident access through faith in Him.” (Ephesians 3:12)
       <br /><br />
 
       Since we have been reconciled to God through faith in the Word, we clearly see the power of words, especially the
