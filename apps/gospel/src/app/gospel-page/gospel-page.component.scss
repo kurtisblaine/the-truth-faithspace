@@ -34,67 +34,8 @@ button[mat-button] {
   width: 50%;
 }
 
-.wedding-image {
-  background-image: url("https://res.cloudinary.com/dffihsa2y/image/upload/v1711590013/img/Mat25L_dzpagk.webp");
-  min-height: 400px;
-}
-
-.armor-image {
-  background-image: url("https://res.cloudinary.com/dffihsa2y/image/upload/v1711590027/img/Rotator-10f_srbkmk.webp");
-  min-height: 400px;
-}
-
-.camp-image {
-  background-image: url("https://res.cloudinary.com/dffihsa2y/image/upload/v1711590014/img/Rotator-4f_zydoe1.webp");
-  min-height: 400px;
-}
-
-.sin-image {
-  background-image: url("https://res.cloudinary.com/dffihsa2y/image/upload/v1711590027/img/sin_s3obrq.webp");
-  min-height: 400px;
-}
-
-.horses-image {
-  background-image: url("https://res.cloudinary.com/dffihsa2y/image/upload/v1711590014/img/Rotator-7f_ydnvku.webp");
-  min-height: 400px;
-}
-
-.bush-image {
-  background-image: url("https://res.cloudinary.com/dffihsa2y/image/upload/v1711590013/img/bush_tudwx1.webp");
-  min-height: 400px;
-}
-
-.new-jerusalem-image {
-  background-image: url("https://res.cloudinary.com/dffihsa2y/image/upload/v1711590027/img/Rotator-14f_ksynvm.webp");
-  min-height: 400px;
-}
-
-.wedding-image,
-.armor-image,
-.pillar-fire-image,
-.camp-image,
-.sin-image,
-.horses-image,
-.new-jerusalem-image,
-.bush-image {
-  position: relative;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
+img {
+  object-fit: cover;
+  z-index: -1;
   box-shadow: inset 0 0 0 100vmax rgba(0, 0, 0, 0.1);
-}
-
-@media (max-width: 568px) {
-  .wedding-image,
-  .armor-image,
-  .pillar-fire-image,
-  .camp-image,
-  .sin-image,
-  .horses-image,
-  .new-jerusalem-image,
-  .rent-image,
-  .bush-image {
-    background-attachment: scroll;
-  }
 }

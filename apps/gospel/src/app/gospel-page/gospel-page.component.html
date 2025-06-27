@@ -1,10 +1,7 @@
 <div gospelFullpage id="fullpage" [options]="config" (ref)="fullpageApi = $event">
-  <div
-    class="section wedding-image header-pane"
-    style="background-position: top"
-    data-anchor="goodNews"
-    data-tooltip="The Gospel"
-  >
+  <div class="section header-pane" data-anchor="goodNews" data-tooltip="The Gospel">
+    <img fill style="object-position: top" [ngSrc]="'v1711590013/img/Mat25L_dzpagk.webp'" priority />
+
     <h2 class="header-title" style="text-transform: uppercase">The Good News of the Kingdom of God</h2>
     @if(isScullyRunning) {
     <mat-spinner></mat-spinner>
@@ -101,9 +98,9 @@
           <button mat-button (click)="toAnchor('theResponse', 'baptism')">Baptism</button>
           <button mat-button (click)="toAnchor('theResponse', 'believeInGod')">Believe in God</button>
           <button mat-button (click)="toAnchor('theResponse', 'obedienceToHoliness')">Obedience to Holiness</button>
-          <button mat-button (click)="toAnchor('theResponse', 'callUponTheLord')">Call upon the Lord</button>
           <button mat-button (click)="toAnchor('theResponse', 'liveWorthy')">Live Worthy</button>
           <button mat-button (click)="toAnchor('theResponse', 'perseverance')">Perseverance through Remembrance</button>
+          <button mat-button (click)="toAnchor('theResponse', 'callUponTheLord')">Call upon the Lord</button>
         </ng-template>
       </mat-expansion-panel>
 
@@ -130,7 +127,9 @@
   </div>
 
   <!-- #region THE DANGER - SIN -->
-  <div class="section horses-image" data-anchor="theDangerSin" data-tooltip="The Danger - Sin">
+  <div class="section" data-anchor="theDangerSin" data-tooltip="The Danger - Sin">
+    <img fill [ngSrc]="'v1711590014/img/Rotator-7f_ydnvku.webp'" />
+
     <div class="header-pane slide">
       <h3 class="header-title">THE DANGER - SIN</h3>
       <button mat-button (click)="toAnchor('theDangerSin', 'theSinNature')">The Sin Nature</button>
@@ -194,7 +193,9 @@
   <!-- #endregion THE DANGER - SIN -->
 
   <!-- #region THE DANGER - DEATH -->
-  <div class="section sin-image" data-anchor="theDangerDeath" data-tooltip="The Danger - Death">
+  <div class="section" data-anchor="theDangerDeath" data-tooltip="The Danger - Death">
+    <img fill [ngSrc]="'v1711590027/img/sin_s3obrq.webp'" />
+
     <div class="header-pane slide">
       <h3 class="header-title">THE DANGER - DEATH</h3>
       <button mat-button (click)="toAnchor('theDangerDeath', 'loveOfPleasure')">The Love of Pleasure</button>
@@ -258,7 +259,9 @@
   <!-- #endregion THE DANGER - DEATH -->
 
   <!-- #region THE CALL - GRACE -->
-  <div class="section camp-image" data-anchor="theCallGrace" data-tooltip="The Call - Grace">
+  <div class="section" data-anchor="theCallGrace" data-tooltip="The Call - Grace">
+    <img fill [ngSrc]="'v1711590014/img/Rotator-4f_zydoe1.webp'" />
+
     <div class="header-pane slide">
       <h3 class="header-title">THE CALL - GRACE</h3>
       <button mat-button (click)="toAnchor('theCallGrace', 'servantOfGod')">The Servant of God</button>
@@ -408,7 +411,9 @@
   <!-- #endregion THE CALL - GRACE -->
 
   <!-- #region THE CALL - FATIH -->
-  <div class="section armor-image" data-anchor="theCallFaith" data-tooltip="The Call - Faith">
+  <div class="section" data-anchor="theCallFaith" data-tooltip="The Call - Faith">
+    <img fill [ngSrc]="'v1711590027/img/Rotator-10f_srbkmk.webp'" />
+
     <div class="header-pane slide">
       <h3 class="header-title">THE CALL - FAITH</h3>
       <button mat-button (click)="toAnchor('theCallFaith', 'theRaceOfFaith')">The Race of Faith</button>
@@ -486,16 +491,18 @@
   <!-- #endregion THE CALL - FAITH -->
 
   <!-- #region THE RESPONSE -->
-  <div class="section bush-image" data-anchor="theResponse" data-tooltip="The Response">
+  <div class="section" data-anchor="theResponse" data-tooltip="The Response">
+    <img fill [ngSrc]="'v1711590013/img/bush_tudwx1.webp'" />
+
     <div class="header-pane slide">
       <h3 class="header-title">THE RESPONSE</h3>
       <button mat-button (click)="toAnchor('theResponse', 'repentance')">Repentance</button>
       <button mat-button (click)="toAnchor('theResponse', 'baptism')">Baptism</button>
       <button mat-button (click)="toAnchor('theResponse', 'believeInGod')">Believe in God</button>
       <button mat-button (click)="toAnchor('theResponse', 'obedienceToHoliness')">Obedience to Holiness</button>
-      <button mat-button (click)="toAnchor('theResponse', 'callUponTheLord')">Call upon the Lord</button>
       <button mat-button (click)="toAnchor('theResponse', 'liveWorthy')">Live Worthy</button>
       <button mat-button (click)="toAnchor('theResponse', 'perseverance')">Perseverance through Remembrance</button>
+      <button mat-button (click)="toAnchor('theResponse', 'callUponTheLord')">Call upon the Lord</button>
     </div>
 
     <blog-gospel-section
@@ -552,19 +559,6 @@
 
     <blog-gospel-section
       [isDefer]="!isScullyRunning"
-      data-anchor="callUponTheLord"
-      class="slide"
-      [isLightMode]="true"
-      [isFloater]="true"
-    >
-      <h3 class="headers">Call upon the Lord</h3>
-      <div class="paragraphs">
-        <gospel-call-upon-him #callUponTheLord></gospel-call-upon-him>
-      </div>
-    </blog-gospel-section>
-
-    <blog-gospel-section
-      [isDefer]="!isScullyRunning"
       data-anchor="liveWorthy"
       class="slide"
       [isLightMode]="true"
@@ -588,11 +582,26 @@
         <gospel-persevere #perseverance></gospel-persevere>
       </div>
     </blog-gospel-section>
+
+    <blog-gospel-section
+      [isDefer]="!isScullyRunning"
+      data-anchor="callUponTheLord"
+      class="slide"
+      [isLightMode]="true"
+      [isFloater]="true"
+    >
+      <h3 class="headers">Call upon the Lord</h3>
+      <div class="paragraphs">
+        <gospel-call-upon-him #callUponTheLord></gospel-call-upon-him>
+      </div>
+    </blog-gospel-section>
   </div>
   <!-- #endregion THE RESPONSE -->
 
   <!-- #region THE DAY OF THE LORD - HOPE -->
-  <div class="section new-jerusalem-image" data-anchor="theDayOfTheLord" data-tooltip="The Day of the Lord - Hope">
+  <div class="section" data-anchor="theDayOfTheLord" data-tooltip="The Day of the Lord - Hope">
+    <img fill [ngSrc]="'v1711590027/img/Rotator-14f_ksynvm.webp'" />
+
     <div class="header-pane slide">
       <h3 class="header-title">THE DAY OF THE LORD - HOPE</h3>
       <button mat-button (click)="toAnchor('theDayOfTheLord', 'resurrectionOfLife')">The Resurrection of Life</button>

@@ -1,4 +1,4 @@
-import { CommonModule } from "@angular/common";
+import { CommonModule, NgOptimizedImage, provideCloudinaryLoader } from "@angular/common";
 import { NgModule } from "@angular/core";
 import { MatButtonModule } from "@angular/material/button";
 import { MatCardModule } from "@angular/material/card";
@@ -45,7 +45,8 @@ const routes: Routes = [
     FullpageDirective,
     NarratorComponent,
     ReferenceTooltipComponent,
+    NgOptimizedImage,
   ],
-  providers: [],
+  providers: [provideCloudinaryLoader("https://res.cloudinary.com/dffihsa2y/")],
 })
 export class GospelPageModule {}
