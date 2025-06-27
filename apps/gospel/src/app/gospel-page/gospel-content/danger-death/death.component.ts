@@ -8,7 +8,7 @@ import { ReferenceTooltipComponent } from "../../../shared/components/reference-
   template: `<ng-container *ngTemplateOutlet="dayOfDeath"></ng-container>
     <ng-template #dayOfDeath>
       There was a man who lived in a tent. All his days were spent in agony because his tent was not comfortable; for
-      the flies bite, the sun beams, and the moon strikes. Nevertheless, he hoped forward to his permanent home which
+      the flies bit, the sun beamed, and the moon striked. Nevertheless, he hoped forward to his permanent home which
       was far away in a distant land being prepared for him. Night and day he longed for it and thought about it, even
       dreaming of it in his sleep. After many years, his home was ready; at the perfect time he went away to his home in
       which he hoped for. The tent was destroyed, the man went to his home, and he rejoiced and spent the rest of his
@@ -37,23 +37,23 @@ import { ReferenceTooltipComponent } from "../../../shared/components/reference-
       away. The new heaven and the new earth will never pass away; for it is an eternal home which cannot be shaken. The
       LORD God will judge the living and the dead according to their deeds, and recompense all according to what they
       have done in the body; as God says, “Now the end is upon you, and I will send My anger against you; I will judge
-      you according to your ways and bring all your abominations upon you.” (Ezekiel 7:3-4) So from the judgement, each
-      will go to their permanent home as decreed by the judgement of God; and God's judgment will be based on
-      righteousness and justice; so who can argue with the verdict? He will reward all who do good for the good done and
-      repay harm for the harm done. But certainly, God has sown everlasting life in the human heart so that we would
-      covet life; as it says,
+      you according to your ways and bring all your abominations upon you.” (Ezekiel 7:3-4) So He judges us based on our
+      own works. And from the judgement, each will go to their permanent home as decreed by the judgement of God; and
+      God's judgment will be based on righteousness and justice; so who can argue with the verdict? He will reward all
+      who do good for the good done and repay harm for the harm done. But certainly, God has sown everlasting life in
+      the human heart so that we would covet life; as it says,
       <blog-reference-tooltip [reference]="'Ecclesiastes 3:11'">
         He has made everything appropriate in its time. <b>He has also set eternity in their heart</b>, yet so that man
         will not find out the work which God has done from the beginning even to the end.</blog-reference-tooltip
       >
-      For we don't want to die; we desire life, but we are without knowledge of the way of life; we know we should do
+      For we don't want to die; we covet life, but we are without knowledge of the way of life; we know we should do
       good, but we have not the goodness within ourselves.
       <br /><br />
 
       Nevertheless, if a sinful man dies in his sins, he will be raised a sinful man, and he will be judged for his
-      sins; if a righteous man dies in his righteousness, he will be raised a righteous man, and be rewarded for his
+      sins; but if a righteous man dies in his righteousness, he will be raised a righteous man, and be rewarded for his
       righteousness. The LORD shows us through sleep what death is like: we sleep and hours pass without us knowing
-      about it. In sleep, we've accomplished nothing, we've done nothing, except rest; those who belong to the LORD, He
+      about it. In sleep, we've accomplished nothing, we've done nothing, but rest; those who belong to the LORD, He
       teaches them in their sleep; while they dream in the night, He ministers to them in parables; but in the place of
       the dead, there is nothing, no dreams, no plans - nothing. While we live, there is hope for repentance, but in the
       place of the dead, there is no hope for anything; as it says,
@@ -79,15 +79,15 @@ import { ReferenceTooltipComponent } from "../../../shared/components/reference-
       </blog-reference-tooltip>
       <br /><br />
 
-      We have all been dealt cards, and the dealer will gather them back up; the end will declare whether we have played
-      our cards right. No-one can take their cards back to the dealer; they are dealt out according to his will. For our
-      lives have been dealt out to us by God; if we don't like them, do we dare quarrel with our Maker?
+      So we have all been dealt cards, and the dealer will gather them back up; the end will declare whether we have
+      played our cards right. No-one can take their cards back to the dealer; they are dealt out according to his will.
+      For our lives have been dealt out to us by God; if we don't like them, do we dare quarrel with our Maker?
       <blog-reference-tooltip [reference]="'Isaiah 45:9-10'"
         >Woe to him who strives with Him who formed him, a pot among earthen pots! Does the clay say to him who forms
         it, ‘What are you making?’ or ‘Your work has no handles’? Woe to him who says to a father, ‘What are you
         begetting?’ or to a woman, ‘With what are you in labor?’</blog-reference-tooltip
       >
-      But rather, this is the righteous response:
+      But rather this is the righteous response:
       <blog-reference-tooltip [reference]="'Psalm 39:4-6'">
         LORD, make me to know my end And what is the extent of my days; Let me know how transient I am. Behold, You have
         made my days as handbreadths, And my lifetime as nothing in Your sight; Surely every man at his best is a mere
@@ -97,13 +97,18 @@ import { ReferenceTooltipComponent } from "../../../shared/components/reference-
       <blog-reference-tooltip [reference]="'Psalm 90:12'">
         Teach us to number our days, that we may present to You a heart of wisdom.
       </blog-reference-tooltip>
-      So therefore, "Whatever your hand finds to do, do it with your might, for there is no work or thought or knowledge
+      So therefore "Whatever your hand finds to do, do it with your might, for there is no work or thought or knowledge
       or wisdom in Sheol, to which you are going." (Ecclesiastes 9:10) For "I have seen that nothing is better than that
       man should be happy in his activities, for that is his lot. For who will bring him to see what will occur after
       him?" (Ecclesiastes 3:22)
       <br /><br />
 
-      So certainly we are no better off than the animals, are we? As it says,
+      So God has given us many days of life, but there is a day of death; He has given us many days of grace, but there
+      is one day of judgement. The many is not like the one; but while we live in the many, we ought to consider the
+      one. “For God will bring every act to judgment, everything which is hidden, whether it is good or evil.”
+      (Ecclesiastes 12:14) So in our days of pride, we ought to consider from where we came, and we should consider
+      where we are going. When we consider ourselves more than what we really are, we should remember we are no
+      different from beasts that perish; as it says,
       <blog-reference-tooltip [reference]="'Ecclesiastes 3:18-21'">
         I concluded that God is testing us, to show us that we are no better than animals. After all, the same fate
         awaits human beings and animals alike. One dies just like the other. They are both the same kind of creature. A
@@ -111,8 +116,8 @@ import { ReferenceTooltipComponent } from "../../../shared/components/reference-
         same place — the dust. They both came from it; they will both go back to it. How can anyone be sure that the
         human spirit goes upwards while an animal's spirit goes down into the ground?
       </blog-reference-tooltip>
-      So surely we are no better off than the animals. Furthermore, we are no better off than the foolish, for the wise
-      die like the fool, and both are forgotten; as wisdom sees and says,
+      For surely we are no better off than animals. Furthermore, we are no better off than the foolish, for the wise die
+      like the fool, and both are forgotten; as wisdom sees and says,
       <blog-reference-tooltip [reference]="'Ecclesiastes 2:15-16'">
         Then I said to myself, "As is the fate of the fool, it will also befall me. Why then have I been extremely
         wise?" So I said to myself, "This too is vanity." For there is no lasting remembrance of the wise man as with
@@ -131,14 +136,14 @@ import { ReferenceTooltipComponent } from "../../../shared/components/reference-
       <blog-reference-tooltip [reference]="'Matthew 5:7'" [isJesusWord]="true">
         Blessed are the merciful, for they shall receive mercy.
       </blog-reference-tooltip>
-      Judgement will be based on what we have received from God, namely, what we have done with this grace of life. But
-      there is not a single man on earth who has not soiled his garments. Haven't we all already ruined this good thing
-      of life? So if we have ruined our cards, can we take them back? Knowing where they come from, can we take them
-      back as goods bought in a store? Can we have a do-over in this life or trade our cards for someone else's? Surely
-      God is just. Wouldn't He show us the way of redemption from sin and forgiveness of sins? Does He not know that we
-      are wayward, and in need of a Shepherd? Surely one day we will return our cards to the Dealer, for our hand is
-      only for a little while. Will we be able to ask Him at that time? Certainly it will be too late for questions. For
-      He will question us and we are the ones who must answer. So shall we go all in for something that is nothing? Of
+      Judgement will be based on what we have received from God, what we have done with this grace of life. But there is
+      not a single man on earth who has not soiled his garments. Haven't we all already ruined this good thing of life?
+      So if we have ruined our cards, can we take them back? Knowing where they come from, can we take them back as
+      goods bought in a store? Can we have a do-over in this life or trade our cards for someone else's? Surely God is
+      just. Wouldn't He show us the way of redemption from sin and forgiveness of sins? Does He not know that we are
+      wayward, and in need of a Shepherd? Surely one day we will return our cards to the Dealer, for our hand is only
+      for a little while. Will we be able to ask Him at that time? Certainly it will be too late for questions. For He
+      will question us and we are the ones who must answer. So shall we go all in for something that is nothing? Of
       course not! Rather how much more shall we go all in for what is everlasting! But where is the everlasting path?
       Where is the ancient road? Will someone show us the way of life? If there was a way, surely God would reveal it,
       wouldn't He?
@@ -150,7 +155,7 @@ import { ReferenceTooltipComponent } from "../../../shared/components/reference-
       Who has gathered the wind in His fists? Who has wrapped the waters in His garment? Who has established all the
       ends of the earth? What is His name or His son's name? Surely you know!” (Proverbs 30:4) For He has made Himself
       renown to all His creation. We can discern the signs of the sky, but we cannot discern the truth? Whose name is
-      constantly blasphemed? Yes, we all know Him, but we choose not to honor Him as God. Whose symbol is the cross,
+      constantly blasphemed? Yes, we all know Him, but we choose not to honor Him as God. And whose symbol is the cross,
       which is put on buildings, hung around necks, pierced on the skin, and marked on grave stones? Did we forget that
       it was once a device of death? (For Jesus was put on that cross, turning what the enemy meant for evil into good.)
       Whose coming split our calender in half? Or who makes a week seven days? Who is it that hallows the seventh day?
@@ -159,10 +164,10 @@ import { ReferenceTooltipComponent } from "../../../shared/components/reference-
       speak of the truth. Who is it that lived a great while ago, but yet died, and is proclaimed as resurrected from
       the dead? That which once was a sect, a heresy, a false teaching, which was fought against, has now become
       world-wide good news. For who can fight against God and succeed? If this thing were not of God, it wouldn't have
-      withstood. And yet, we shoot rockets into the heavens to reach God, just as they tried in times past at the Tower
-      of Babel, by their own might to make a name for themselves, but they have failed; for God sees to it that no-one
-      can come near Him by their own self-will or effort, so that no-one will be able to boast in His Presence; but
-      rather, through the word of faith, through the word of truth, which says,
+      withstood. And yet we shoot rockets into the heavens to reach God, just as they tried in times past at the Tower
+      of Babel, by their own might to make a name for themselves, but they failed; for God sees to it that no-one can
+      come near Him by their own self-will or effort, so that no-one will be able to boast in His Presence; but rather,
+      through the word of faith, through the word of truth, which says,
       <blog-reference-tooltip [reference]="'Romans 10:8-13'"
         >"The word is near you, in your mouth and in your heart” (that is, the word of faith that we proclaim); because,
         if you confess with your mouth that Jesus is Lord and believe in your heart that God raised him from the dead,
