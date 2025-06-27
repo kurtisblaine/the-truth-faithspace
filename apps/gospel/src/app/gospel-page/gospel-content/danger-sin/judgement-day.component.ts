@@ -24,11 +24,11 @@ import { ReferenceTooltipComponent } from "../../../shared/components/reference-
       <blog-reference-tooltip [reference]="'Jeremiah 46:28'"
         >I will discipline you, but with justice; I cannot let you go unpunished.</blog-reference-tooltip
       >
-      And He said this to His own people, so how much more to the rest of the nations? If He doesn't spare His own
-      people, what is the fate of the nations that do not know Him? If He let just one sin go unpunished, He wouldn't be
-      good and just. It is a good thing to judge evil and a lie: for that's justice. When justice is not upheld, people
-      riot; it is evil not to judge wrong-doing, but it is right to render justice. It is good to do justice and show no
-      partiality; as it says,
+      And He said this to His own people, so how much more is it applicable to the rest of the nations? If He doesn't
+      spare His own people, what is the fate of the nations that do not know Him? If He let just one sin go unpunished,
+      He wouldn't be good and just. It is a good thing to judge evil and a lie: for that's justice. When justice is not
+      upheld, people riot; for it is evil not to judge wrong-doing, but it is right to render justice. It is good to do
+      justice and show no partiality; as it says,
       <blog-reference-tooltip [reference]="'Ecclesiastes 8:11'">
         Because the sentence against an evil deed is not executed quickly, therefore the hearts of the sons of men among
         them are given fully to do evil.
@@ -72,14 +72,14 @@ import { ReferenceTooltipComponent } from "../../../shared/components/reference-
       compress the lips is to allow evil to pass, to allow injustice to persist; but God will reveal His righteous
       judgement in that day. If sin goes uncorrected, it is allowed to live a little longer; in it's persistence, it
       corrupts much that is good; but nevertheless, all sin has an end. Do we not bury that which is unclean? We don't
-      expose our uncleanness, do we? Our bodies have waste to it; and we put that waste in dark places, for it is not
-      good to be seen; we gather it together and burn it with fire or bury it. And don't men bury their dead? So what do
+      expose our uncleanness, do we? Our bodies have waste to it; and we put that waste in dark places, for it is good
+      to be not seen; we gather it together and burn it with fire or bury it. And don't men bury their dead? So what do
       you suppose God will do with the moral filth of the world when He sends forth His angels? Won't everything unclean
       be cosigned to its proper place and burned with fire? If we do these things with that which is unclean to our
       eyes, how much more will God with that which is abhorrent to His eyes? For men riot when justice is not upheld:
       when someone who is supposed to be punished gets off free, men go out and riot against the judge and police; and
-      they say, "The police are no good! We want justice! They aren't upholding it!" So we know it's good to render
-      justice, for we ourselves want justice; however, when it comes to our wrongs, we want mercy; that is why it says,
+      they say, "The police are no good! We want justice!" So we know it's good to render justice, for we ourselves want
+      justice; however, when it comes to our wrongs, we want mercy; that is why it says,
       <blog-reference-tooltip [reference]="'James 2:12-13'">
         So speak and so act as those who are to be judged by the law of liberty. For judgment will be merciless to one
         who has shown no mercy; mercy triumphs over judgment.
@@ -88,13 +88,13 @@ import { ReferenceTooltipComponent } from "../../../shared/components/reference-
       to the one who shows mercy, they will be shown mercy. As it says, "For the day of the LORD draws near on all the
       nations. As you have done, it will be done to you. Your dealings will return on your own head. Because just as you
       drank on My holy mountain, All the nations will drink continually. They will drink and swallow And become as if
-      they had never existed.” (Obadiah 1:15-16) And this drink is the chalice of God's fierce wrath drained to the
-      dregs (Isaiah 51:17-22).
+      they had never existed.” (Obadiah 1:15-16) And this drink is the chalice of God's fierce wrath which is drained to
+      the dregs (Isaiah 51:17-22).
       <br /><br />
 
       God is not like any judge on earth: He is perfect. He will reward all with righteous judgment in that day when the
       judgment of God is revealed through the One He has appointed; He will reward those who by persistence seek
-      immortality, life and peace, looking for the hope of everlasting life; “but to those who are selfishly ambitious
+      immortality, life and peace, looking for the hope of everlasting life; “But to those who are selfishly ambitious
       and do not obey the truth, but obey unrighteousness, wrath and indignation.” (Romans 2:8) Even the righteous will
       be scarcely saved; as it says,
       <blog-reference-tooltip [reference]="'1 Peter 4:17-18'"
@@ -120,11 +120,11 @@ import { ReferenceTooltipComponent } from "../../../shared/components/reference-
         enter by it are many. For the gate is narrow and the way is hard that leads to life, and those who find it are
         few.
       </blog-reference-tooltip>
-      But then again, He says,
+      But then He says,
       <blog-reference-tooltip [reference]="'Matthew 19:23-30'" [isJesusWord]="true"
         >With man this is impossible, but with God all things are possible.
       </blog-reference-tooltip>
-      If there were no hope, then
+      So if there were no hope, then
       <blog-reference-tooltip [reference]="'Isaiah 22:13'"
         >Let us eat and drink, for tomorrow we die.</blog-reference-tooltip
       >
@@ -133,28 +133,28 @@ import { ReferenceTooltipComponent } from "../../../shared/components/reference-
       <blog-reference-tooltip [reference]="'Romans 7:24'"
         >Wreched and miserable man that I am! Who will free me from this body of sin and death?</blog-reference-tooltip
       >
-      Does someone need to send a rocket into space to find the cure to bring it down to us? Or does someone need to dig
-      into the center of the earth to reveal the mystery? Where is the knowledge of salvation? In whom does it exist? As
-      Moses wrote in the Book of the law,
+      Does someone need to send a rocket into space to find the cure and bring it down to us? Or does someone need to
+      dig into the center of the earth to reveal the mystery? Where is the knowledge of salvation? In whom does it
+      exist? As Moses wrote in the Book of the law,
       <blog-reference-tooltip [reference]="'Deuteronomy 30:12-14'"
         >It (The command) is not in heaven, that you should say, ‘Who will ascend to heaven for us and bring it to us,
         that we may hear it and do it?’ Neither is it beyond the sea, that you should say, ‘Who will go over the sea for
         us and bring it to us, that we may hear it and do it?’ But the word is very near you. It is in your mouth and in
         your heart, so that you can do it.</blog-reference-tooltip
       >
-      As it says, "So that you can do it." For the things which seem impossible to us are possible through God, so that
-      we can do. As He says, "Behold, I am the LORD, the God of all flesh; is anything too difficult for Me?” (Jeremiah
-      32:27) And, “Thus says the LORD of hosts, 'If it is too difficult in the sight of the remnant of this people in
-      those days, will it also be too difficult in My sight?' declares the LORD of hosts.” (Zechariah 8:6) For who has
-      ascended? Or who has descended? Salvation is not far away from any one of us; as it says, “Rejoice greatly, O
-      daughter of Zion! Shout in triumph, O daughter of Jerusalem!
+      As it says, "So that you can do it," for the things which seem impossible to us are possible to God, so that we
+      can do. As He says, "Behold, I am the LORD, the God of all flesh; is anything too difficult for Me?” (Jeremiah
+      32:27) Then He says, “If it is too difficult in the sight of the remnant of this people in those days, will it
+      also be too difficult in My sight?” (Zechariah 8:6) For who has ascended? Or who has descended? Salvation is not
+      far away from any one of us; as it says, “Rejoice greatly, O daughter of Zion! Shout in triumph, O daughter of
+      Jerusalem!
       <b>Behold, your king is coming to you; He is just and endowed with salvation,</b> Humble, and mounted on a donkey,
       Even on a colt, the foal of a donkey.” (Zechariah 9:9) For it is God who descended, and it is He who ascended. It
       is He who came! For man surely cannot save himself; as He says, "Or do you have an arm like God, And can you
       thunder with a voice like His?” (Job 40:9) If so, "Then I will also confess to you, That your own right hand can
-      save you.” (Job 40:14) So surely, we need a savior; surely, we need a rock. Or can wealth save us? Can we gather
-      up enough food for ourselves to withstand the evil day? Which gun can shoot against spirits? Or which sword can
-      fight against the unseen? Surely, even our best efforts are useless. We ought to cease trying.
+      save you.” (Job 40:14) So surely we need a savior; surely we need a rock. Or can wealth save us? Can we gather up
+      enough food for ourselves to withstand the evil day? Which gun can shoot against spirits? Or which sword can fight
+      against the unseen? Surely, even our best efforts are useless. We ought to cease.
     </ng-template>`,
   styles: ``,
   changeDetection: ChangeDetectionStrategy.OnPush,

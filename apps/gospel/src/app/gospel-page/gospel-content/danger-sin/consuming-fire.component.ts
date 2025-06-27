@@ -11,23 +11,23 @@ import { ReferenceTooltipComponent } from "../../../shared/components/reference-
       <blog-reference-tooltip [reference]="'Psalm 7:11'">
         God is a just judge, And God is angry with the wicked every day.
       </blog-reference-tooltip>
-      And,
+      And
       <blog-reference-tooltip [reference]="'Psalms 11:5'">
         The LORD tests the righteous and the wicked, And the one who loves violence His soul hates.
       </blog-reference-tooltip>
-      And, “The boastful shall not stand before Your eyes; You hate all who do iniquity. You destroy those who speak
+      And “The boastful shall not stand before Your eyes; You hate all who do iniquity. You destroy those who speak
       falsehood; The LORD abhors the man of bloodshed and deceit.” (Psalms 5:5-6)
       <blog-reference-tooltip [reference]="'Hebrews 12:29'"> For our God is a consuming fire. </blog-reference-tooltip>
-      As Israel seen with their own eyes;
+      As Israel seen with their own eyes; as it says,
       <blog-reference-tooltip [reference]="'Exodus 24:17'">
         To the eyes of the sons of Israel the appearance of the glory of the LORD was like a consuming fire on the
         mountain top.
       </blog-reference-tooltip>
-      Someone might say, "Isn't the devil fire, but not God?" But it is the devil that masquerades himself as an angel
-      of light, himself truly being darkness; but God, being fire and light, shrouds Himself in a dark cloud lest man
-      see Him and die, for no one can see Him and live. The devil doesn't rule over hell, but God prepared hell for the
-      devil and his angels. And He has prepared a place for us, a heavenly place, provided we do not follow demons, but
-      God; for who we follow, we will receive the same's end: demons unto hell or God unto Paradise. For who-ever we
+      But someone might say, "Isn't the devil fire, but not God?" But it is the devil that masquerades himself as an
+      angel of light, himself truly being darkness; but God, being fire and light, shrouds Himself in a dark cloud lest
+      man see Him and die, for no one can see Him and live. The devil doesn't rule over hell, but God prepared hell for
+      the devil and his angels. And He has prepared a place for us, a heavenly place, provided we do not follow demons,
+      but God; for who we follow, we will receive the same's end: demons unto hell or God unto Paradise. For who-ever we
       follow, we follow to a place, to an end, to a destination; and who we follow, we do the same of him who we follow.
       But someone might say, "I only follow, but they are deceiving me." But
       <blog-reference-tooltip [reference]="'Luke 6:39'" [isJesusWord]="true">
@@ -35,32 +35,32 @@ import { ReferenceTooltipComponent } from "../../../shared/components/reference-
       </blog-reference-tooltip>
       And furthermore, it says, "They will bear the punishment of their iniquity; as the iniquity of the inquirer is, so
       the iniquity of the [false] prophet will be.” (Ezekiel 14:10) So the judgement is the same for both, the false
-      leader and the follower; and all sin must be punished. God is just, He cannot let sin go unpunished. But you still
-      might say, "Sin in me causes me to do wrong, but I myself want to do good. How is God just in punishing me?" Sin
-      is inseperable from the sinner; we are the ones to allow sin, inclining our hearts toward sin rather than to God,
-      being led astray by our sinful desires; and we error out of the way. But yet,
+      leader and the follower; and all sin must be punished. For God is just, He cannot let sin go unpunished. But you
+      still might say, "Sin in me causes me to do wrong, but I myself want to do good. How is God just in punishing me?"
+      Sin is inseperable from the sinner; we are the ones to allow sin, inclining our hearts toward sin rather than to
+      God, being led astray by our sinful desires; and we error out of the way. But yet
       <blog-reference-tooltip [reference]="'Proverbs 24:12'">
         If you say, "See, we did not know this," Does He not consider it who weighs the hearts? And does He not know it
         who keeps your soul? And will He not render to man according to his work?
       </blog-reference-tooltip>
       For God knows the heart of man, and He is kind and compassionate towards those who act in ignorance. All sin is
       against God, for sin is transgression against God's law, the written and the unwritten code. The law is written on
-      the heart of man, and He knows what we know. Yet, this one thing I know: God, the Most High, dwells with the lowly
-      and contrite of heart; He is rich, but He dwells with the poor; He is Most High, but He dwells with the low; as He
+      the heart of man, and He knows what we know. Yet, this one thing I know: the Most High dwells with the lowly and
+      contrite of heart; He is rich, but He dwells with the poor; He is Most High, but He dwells with the low; as He
       says through Isaiah, the prophet,
       <blog-reference-tooltip [reference]="'Isaiah 66:2'">
-        But on this one will I look: On him who is poor and of a contrite spirit, And who trembles at My Word.
+        On this one will I look: On him who is poor and of a contrite spirit, And who trembles at My Word.
       </blog-reference-tooltip>
-      And,
+      And then it says,
       <blog-reference-tooltip [reference]="'Psalms 51:17'">
         The sacrifices of God are a broken spirit; A broken and a contrite heart, O God, You will not despise.
       </blog-reference-tooltip>
       <br /><br />
 
-      So lie not against the truth, but rather acknowledge your sins; humble yourself in the sight of the LORD, be poor
-      and lowly and mourn and weep; tremble before a holy God. For God loves truth, justice, and righteousness, and He
-      hates evil, sin, and wrong-doing. He gives us His commands so that we would know what is good, and to walk in His
-      ways - His directives surely direct us. God never changes: He is, was, and will be. He fills all, yet in all,
+      So do not lie against the truth, but rather acknowledge your sin; humble yourself in the sight of the LORD, be
+      poor and lowly and mourn and weep; tremble before a holy God. For God loves truth, justice, and righteousness, and
+      He hates evil, sin, and wrong-doing. He gives us His commands so that we would know what is good, and to walk in
+      His ways - His directives surely direct us. God never changes: He is, was, and will be. He fills all, yet in all,
       nothing compares to Him; however there is one in all which He is like: namely, a consuming fire. This is the fear
       of the LORD: abhor evil. If you love life, fear the LORD. If you want wisdom, Solomon in His wisdom says,
       <blog-reference-tooltip [reference]="'Proverbs 1:7'">
@@ -75,7 +75,7 @@ import { ReferenceTooltipComponent } from "../../../shared/components/reference-
       than folly. The one who is wise has eyes in his head; he sees and walks in the day-time; a man who walks in
       darkness, does not know where he is going; such a one does not know his way back to the city, for the eye of his
       understanding is darkened. Therefore, fear not the devil, nor demons, nor principalities, nor powers - instead
-      fear God. For all things come from the Lord - the good and the calamity; as it says,
+      fear God. For all things come from the Lord - the good and the bad; as it says,
       <blog-reference-tooltip [reference]="'Job 2:10'">
         Shall we indeed accept good from God and not accept adversity?
       </blog-reference-tooltip>
@@ -103,7 +103,7 @@ import { ReferenceTooltipComponent } from "../../../shared/components/reference-
       spirit and His breath, All flesh would perish together, And man would return to dust.” (Job 34:14-15) He created
       once by wisdom, and all things have been established through wisdom, yet all things we presently see are passing
       away; and they will eventually come to an end. The end has been mentioned from the beginning; all ages have spoken
-      about the end in times past; yet it is delayed. However,
+      about the end in times past; and yet it is delayed even to this day. However,
       <blog-reference-tooltip [reference]="'2 Peter 3:9'">
         The Lord is not slow about His promise, as some count slowness, but is patient toward you, not wishing for any
         to perish but for all to come to repentance.
@@ -117,18 +117,18 @@ import { ReferenceTooltipComponent } from "../../../shared/components/reference-
       Good, and outside of Him there is no goodness at all; and in Him there is the fullness of all goodness. Love
       abounds in Him, for He alone is Love. With love is jealousy; and God's jealousy is a fire; as it says,
       <blog-reference-tooltip [reference]="'Exodus 34:14'">
-        For you shall worship no other god, for the LORD, whose name is Jealous, is a jealous God.
+        You shall worship no other god, for the LORD, whose name is Jealous, is a jealous God.
       </blog-reference-tooltip>
       And it says,
       <blog-reference-tooltip [reference]="'Deuteronomy 4:24'">
-        For the Lord your God is a consuming fire, a jealous God.
+        The Lord your God is a consuming fire, a jealous God.
       </blog-reference-tooltip>
       The LORD God shows us love in truth, and through truth, we find love; He does not love in word alone, but in deed
       and truth; as it says,
       <blog-reference-tooltip [reference]="'Song of Solomon 8:6'">
-        For love is as strong as death, Jealousy is as severe as Sheol; Its flashes are flashes of fire, The very flame
-        of the LORD. Many waters cannot quench love, Nor will rivers overflow it; If a man were to give all the riches
-        of his house for love, It would be utterly despised.
+        Love is as strong as death, Jealousy is as severe as Sheol; Its flashes are flashes of fire, The very flame of
+        the LORD. Many waters cannot quench love, Nor will rivers overflow it; If a man were to give all the riches of
+        his house for love, It would be utterly despised.
       </blog-reference-tooltip>
       And He is jealous for us, His creation; as it says,
       <blog-reference-tooltip [reference]="'James 4:5'">
@@ -166,16 +166,16 @@ import { ReferenceTooltipComponent } from "../../../shared/components/reference-
       for sin harms us. What shall we say then, "Does God love me by hating me?" By no means! He is the First and the
       Last, so He has our end in mind - and we only see what's immediately before us. As it says, “When we are judged,
       we are disciplined by the Lord so that we will not be condemned along with the world.” (1 Corinthians 11:32) So
-      fear - if you are not disciplined by Him; as He says,
+      rather, be afraid if you are not disciplined by Him; as He says,
       <blog-reference-tooltip [reference]="'Revelation 3:19'" [isJesusWord]="true">
         Those whom I love, I reprove and discipline; therefore be zealous and repent.
       </blog-reference-tooltip>
       Similarily, one who loves children will hate abortion; and a man who loves truth hates lies. And the LORD God is
-      Jealous; if we put anything else first in our lives above Him: tremble. Is anything greater than Him? Even if we
-      esteem something highly, isn't He higher still? “Or do we provoke the Lord to jealousy? We are not stronger than
-      He, are we?” (1 Corinthians 10:22) For He is the creator of all things. Aren't all things given from His hand?
-      Will we love the things created more than the Creator? For He loves us greatly; and can't it be terrifying? As He
-      says,
+      Jealous; if we put anything else first in our lives above Him: then tremble. Is anything greater than Him? Even if
+      we esteem something highly, isn't He higher still? “Or do we provoke the Lord to jealousy? We are not stronger
+      than He, are we?” (1 Corinthians 10:22) For He is the creator of all things. Aren't all things given from His
+      hand? Will we love the things created more than the Creator? For He loves us greatly; and can't it be terrifying?
+      As He says,
       <blog-reference-tooltip [reference]="'Deuteronomy 32:21'">
         They have made Me jealous with what is not God; They have provoked Me to anger with their idols. So I will make
         them jealous with those who are not a people; I will provoke them to anger with a foolish nation.
@@ -195,18 +195,17 @@ import { ReferenceTooltipComponent } from "../../../shared/components/reference-
       respects its power, not feeding it too much wood, not getting too close. How much more should we fear God who is
       Creator of all? He is creator of the burning fire of the sun, Himself being a consuming fire! How much less should
       we stoke the fire of God's fierce jealousy with idolatry? How much more should we stand at a distance and make
-      petitions from afar, hearing Him and speaking to Him through another? Yes; as it says,
+      petitions from afar, hearing Him and speaking to Him through another? As it says,
       <blog-reference-tooltip [reference]="'Exodus 20:18-20'">
         All the people perceived the thunder and the lightning flashes and the sound of the trumpet and the mountain
         smoking; and when the people saw, they trembled and stood at a distance. Then they said to Moses, "Speak to us
         yourself and we will listen; but let not God speak to us, or we will die."
       </blog-reference-tooltip>
-      If they feared death while hearing Him, and no-one can see Him and live, how much more should we fear the whisper
-      of another who speaks in His name? If we may lose our eyes looking at the light of the sun, what do you suppose
-      would happen if we beheld Him who dwells in unapproachable Light? As God says, "You cannot see My face, for no man
-      can see Me and live!" (Exodus 33:20) If they who looked into the ark of the LORD which His Spirit rested above and
-      were struck, how much more severer a fate do you suppose if we beheld Him with our natural eyes? As it says about
-      this:
+      If they feared death while hearing Him, and no-one can see Him and live, shouldn't we fear the whisper of another
+      who speaks in His name? If we may lose our eyes looking at the light of the sun, what do you suppose would happen
+      if we beheld Him who dwells in unapproachable Light? As God says, "You cannot see My face, for no man can see Me
+      and live!" (Exodus 33:20) If they who looked into the ark of the LORD which His Spirit rested above and were
+      struck, how much more severer a fate do you think if we beheld Him with our natural eyes? As it says about this:
       <blog-reference-tooltip [reference]="'1 Samuel 6:19'">
         He struck down some of the men of Beth-shemesh because they had looked into the ark of the LORD. He struck down
         of all the people, 50,070 men, and the people mourned because the LORD had struck the people with a great

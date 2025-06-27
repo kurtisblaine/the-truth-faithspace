@@ -53,23 +53,23 @@ import { ReferenceTooltipComponent } from "../../../shared/components/reference-
       For we're an open scroll to God; He knows our words before we speak them; He knows our going up and our sitting
       down; nothing is hidden from His sight. “If I say, 'Surely the darkness will overwhelm me, And the light around me
       will be night,' Even the darkness is not dark to You, And the night is as bright as the day. Darkness and light
-      are alike to You.” (Psalms 139:11-12) And, “Your eyes have seen my unformed substance; And in Your book were all
-      written The days that were ordained for me, When as yet there was not one of them.” (Psalms 139:16) Your thoughts
-      are on display; they are put on the big screen! You're secret thoughts proclaimed abroad, publicised for all to
-      see - the things you think, on public display! You're afraid of a camera, which can only see in the light; if it's
-      dark, you must first shine a light to capture a shot. A camera can only see the outside of a man - if you want to
-      see the inside, you must swallow it. From afar, what is it? Up close, what could it be? But it is not so with they
-      eyes of the Father: darkness is as light to Him, darkness and the light are the same. He who created the outside,
-      made the inside as well. He is near, yet He is far away; He is seated in the heights and nothing escapes His
-      notice. When you want to get a shot of the city, you must go high - but who is higher than the Most High? What is
-      outside of His panorama? What can He not zoom into? A hair falling from the head, He sees; all the stars in the
-      skies are numbered, and He gives them a name. What can you truly disclose from Him? Everything hidden in you is
-      public to Him. What is your secret that He doesn't already know? He who created the eye of a falcon, are His eyes
-      not greater? The falcon can see even from great heights, yet He created their eye. He who created the owl to see
-      in the dark, can He not see likewise? He who made it possible for x-rays to see the inside of man, can He not see
-      even to your inmost spirit, having created it? He is not seen, yet He sees all. He created you, and He cares for
-      you. As it says, “What is man that You take thought of him, And the son of man that You care for him?” (Psalms
-      8:4)
+      are alike to You.” (Psalms 139:11-12) And then it says, “Your eyes have seen my unformed substance; And in Your
+      book were all written The days that were ordained for me, When as yet there was not one of them.” (Psalms 139:16)
+      So your thoughts are on display; they are put on the big screen! You're secret thoughts proclaimed abroad,
+      publicised for all to see - the things you think, on public display! You're afraid of a camera, which can only see
+      in the light; if it's dark, you must first shine a light to capture a shot. A camera can only see the outside of a
+      man - if you want to see the inside, you must swallow it. From afar, what is it? Up close, what could it be? But
+      it is not so with they eyes of the Father: darkness is as light to Him, darkness and the light are the same. He
+      who created the outside, made the inside as well. He is near, yet He is far away; He is seated in the heights and
+      nothing escapes His notice. When you want to get a shot of the city, you must go high - but who is higher than the
+      Most High? What is outside of His panorama? What can He not zoom into? A hair falling from the head, He sees; all
+      the stars in the skies are numbered, and He gives them a name. What can you truly disclose from Him? Everything
+      hidden in you is public to Him. What is your secret that He doesn't already know? He who created the eye of a
+      falcon, are His eyes not greater? The falcon can see even from great heights, yet He created their eye. He who
+      created the owl to see in the dark, can He not see likewise? He who made it possible for x-rays to see the inside
+      of man, can He not see even to your inmost spirit, having created it? He is not seen, yet He sees all. He created
+      you, and He cares for you. As it says, “What is man that You take thought of him, And the son of man that You care
+      for him?” (Psalms 8:4)
       <br /><br />
 
       Is there any place on earth that you can hide from God? Is there any place where He isn't? If we make our hiding
@@ -82,28 +82,28 @@ import { ReferenceTooltipComponent } from "../../../shared/components/reference-
       (Habakkuk 1:13) For God seen what was happening below on Mount Sinai while the people were building a golden calf
       and worshiping it; He seen before Moses did with his eyes or heard the sound of a party in the camp. God seen
       where Jonah went to get away from Him. He seen Saul hiding among the baggage. He hears the cries of the humble on
-      earth, and He Himself is their Avenger; He seeks for those who seek Him; listen to what the Psalmist says!
+      earth, and He Himself is their Avenger; He seeks for those who seek Him; so listen to what the Psalmist says!
       <blog-reference-tooltip [reference]="'Psalm 94:9-11'"
         >He who planted the ear, does he not hear? He who formed the eye, does he not see? He who disciplines the
         nations, does he not rebuke? He who teaches man knowledge — the LORD — knows the thoughts of man, that they are
         but a breath.</blog-reference-tooltip
       >
       God's sovereignty can be a great comfort to us, but it could also be a great discomfort; for it is a most fearful
-      thing if we're sinning. But still: He sees it all, yet you're still alive! And who are we that He is mindful of
-      us? As the man of God in his distress says,
+      thing if we're in sin. But still: He sees it all, yet you're still alive! And who are we that He is mindful of us?
+      As the man of God in his distress says,
       <blog-reference-tooltip [reference]="'Job 7:17-19'">
         What is man that You magnify him, And that You are concerned about him, That You examine him every morning And
         try him every moment? Will You never turn Your gaze away from me, Nor let me alone until I swallow my spittle?
       </blog-reference-tooltip>
       <br /><br />
 
-      But yet God does not look at man as mankind looks, that is, according to outward appearance. Our eyes see natural
+      So God does not look at man as mankind looks, that is, according to outward appearance. Our eyes see natural
       things, but God sees spiritual things, for He Himself is Spirit; everything spiritual is unseen, and the spiritual
       is what God sees. Everything hidden will be brought to the light; all things concealed will be revealed and made
       know to all. What He sees will be seen by all; no-one sees Him now, but then He will be seen by all. The dead will
       rise and behold their Maker; and our hearts, which men do not see, will be revealed to all at His visitation; and
       that which is secret and silent will be known and proclaimed throughout; and that which is invisible and covered
-      will be clear and exposed. The things we presently see will pass away, but the things unseen remain forever; and
+      will be clear and exposed. The things we presently see are passing away, but the things unseen remain forever; and
       God's judgment is eternal; the judgment of the LORD is from inward to outward, from the heart to the flesh; and in
       the end, only the spirit will remain and all that can withstand the fire. So knowing the fear of the Lord, we warn
       others, and hope for the mercy and lovingkindness of God, by which only we can stand before Him. For it is clear
@@ -115,28 +115,24 @@ import { ReferenceTooltipComponent } from "../../../shared/components/reference-
         He who is physically uncircumcised, if he keeps the law, will he not judge you who though having the letter and
         circumcision are a transgressor of the law?
       </blog-reference-tooltip>
-      For, “He is a Jew who is one inwardly; and circumcision is that which is of the heart, by the Spirit, not by the
+      For “He is a Jew who is one inwardly; and circumcision is that which is of the heart, by the Spirit, not by the
       letter; and his praise is not from men, but from God.” (Romans 2:29)
       <br /><br />
 
       God's judgment is always in righteousness and justice, and in that day, He will bring all into judgment - the
-      living and the dead. The Lord's judgment is not short of being executed today however; as it says,
+      living and the dead. The Lord's judgment is not short of being executed today either; as it says,
       <blog-reference-tooltip [reference]="'Proverbs 11:31'">
         If the righteous will be rewarded in the earth, How much more the wicked and the sinner!
       </blog-reference-tooltip>
       All of His judgements which happened beforehand were written down for our admonishment today, that we wouldn't
       follow their examples of disobedience; as it explicitly says,
       <blog-reference-tooltip [reference]="'1 Corinthians 10:6-11'">
-        Now these things happened as examples for us, so that we would not crave evil things as they also craved. Do not
-        be idolaters, as some of them were; as it is written, "THE PEOPLE SAT DOWN TO EAT AND DRINK, AND STOOD UP TO
-        PLAY." Nor let us act immorally, as some of them did, and twenty-three thousand fell in one day. Nor let us try
-        the Lord, as some of them did, and were destroyed by the serpents. Nor grumble, as some of them did, and were
-        destroyed by the destroyer. Now these things happened to them as an example, and they were written for our
-        instruction, upon whom the ends of the ages have come.
+        Now these things happened to them as an example, and they were written for our instruction, upon whom the ends
+        of the ages have come.
       </blog-reference-tooltip>
-      And these were God's people whom He redeemed. For God is not partial in judgement, even in judging His own people.
-      His judgement is upon the whole world as well. For He judged the whole world, all nations, in times past with a
-      flood; and this is what God saw when He judged the earth during the time of Noah:
+      And the "them" written about were God's own people whom He redeemed; so He is not partial to anyone. So how much
+      more is His judgement upon the rest of the world? For He judged the whole world in times past with a flood in the
+      days of Noah; and this is what God saw when He judged the earth:
       <blog-reference-tooltip [reference]="'Genesis 6:5-6'"
         >The LORD saw that the wickedness of man was great in the earth, and that every intention of the thoughts of his
         heart was only evil continually. And the LORD regretted that he had made man on the earth, and it grieved him to
