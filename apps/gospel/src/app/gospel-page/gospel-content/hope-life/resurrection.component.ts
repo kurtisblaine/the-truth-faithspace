@@ -96,7 +96,7 @@ import { ReferenceTooltipComponent } from "../../../shared/components/reference-
       And "<b>If</b> by the Spirit you are putting to death the deeds of the body, you will live.” (Romans 8:13)
       <blog-link
         [title]="'See more about the work of Christ and our work of faith'"
-        [link]="'https://thelightof.life/drawings/draw/Jl7k4Iu9mKs/repentandbelieve'"
+        [link]="'https://thelightof.life/drawings/draw/repentandbelieve'"
       ></blog-link>
       <br /><br />
 
