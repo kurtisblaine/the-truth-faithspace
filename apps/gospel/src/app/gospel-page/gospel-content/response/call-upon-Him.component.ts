@@ -110,7 +110,7 @@ import { ReferenceTooltipComponent } from "../../../shared/components/reference-
       your labors and rejoice; and see salvation at work within you and others.
       <blog-link
         [title]="'See More on Justification and Salvation'"
-        [link]="'https://thelightof.life/draw/justificationandsalvation'"
+        [link]="'https://thelightof.life/drawings/draw/justificationandsalvation'"
       >
       </blog-link>
       <br /><br />

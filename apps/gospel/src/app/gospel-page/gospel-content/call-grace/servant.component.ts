@@ -152,7 +152,7 @@ import { ReferenceTooltipComponent } from "../../../shared/components/reference-
       which He has for us, things prepared for us who love God, things which are forever? Yes, nothing can separate us
       from the love of God that is in Christ Jesus our Lord! -->
 
-      <!-- <a style="color: blue" href="https://thelightof.life/draw/bZsUhZAH6Hg/gospel" target="_blank"
+      <!-- <a style="color: blue" href="https://thelightof.life/drawings/draw/bZsUhZAH6Hg/gospel" target="_blank"
           >Here is a drawing of the work of the Gospel in us.</a
         ><br /><br /> -->
 
@@ -417,11 +417,11 @@ import { ReferenceTooltipComponent } from "../../../shared/components/reference-
       of faith.
       <!-- <br /><br /> -->
 
-      <!-- <a style="color: blue" href="https://thelightof.life/draw/grace&truth" target="_blank"
+      <!-- <a style="color: blue" href="https://thelightof.life/drawings/draw/grace&truth" target="_blank"
           >The difference between the law and grace.</a
         ><br /><br />
 
-        <a style="color: blue" href="https://thelightof.life/draw/TrueWorship" target="_blank"
+        <a style="color: blue" href="https://thelightof.life/drawings/draw/TrueWorship" target="_blank"
           >And the difference between true worship (by grace) and false worship (by the law).</a
         > -->
     </ng-template>`,

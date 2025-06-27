@@ -46,7 +46,7 @@ import { ReferenceTooltipComponent } from "../../../shared/components/reference-
       grace.
       <blog-link
         [title]="'See more about the Race of Faith'"
-        [link]="'https://thelightof.life/draw/runtherace'"
+        [link]="'https://thelightof.life/drawings/draw/runtherace'"
       ></blog-link
       ><br /><br />
 
