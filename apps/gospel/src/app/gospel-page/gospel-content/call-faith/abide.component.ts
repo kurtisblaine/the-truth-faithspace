@@ -59,7 +59,7 @@ import { ReferenceTooltipComponent } from "../../../shared/components/reference-
       </blog-reference-tooltip>
       <blog-link
         [title]="'See more on Abiding in Christ'"
-        [link]="'https://thelightof.life/#/draw/theWordofLife.webp'"
+        [link]="'https://thelightof.life/draw/theWordofLife'"
       ></blog-link
       ><br /><br />
 
@@ -103,7 +103,7 @@ import { ReferenceTooltipComponent } from "../../../shared/components/reference-
       alone and discern properly between the clean and the unclean, we will remain in God.
       <blog-link
         [title]="'See more on Biblical Separation'"
-        [link]="'https://thelightof.life/#/draw/biblicalseparation.webp'"
+        [link]="'https://thelightof.life/draw/biblicalseparation'"
       ></blog-link
       ><br /><br />
 

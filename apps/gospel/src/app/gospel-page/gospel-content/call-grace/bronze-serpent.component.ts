@@ -134,7 +134,7 @@ import { ReferenceTooltipComponent } from "../../../shared/components/reference-
       >
       <blog-link
         [title]="'See more about Spiritual Sight'"
-        [link]="'https://thelightof.life/#/edify-detail/156e9f30-db77-2664-f613-9d02a030135f'"
+        [link]="'https://thelightof.life/edify-detail/156e9f30-db77-2664-f613-9d02a030135f'"
       ></blog-link>
       <br /><br />
 

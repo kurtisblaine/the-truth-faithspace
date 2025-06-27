@@ -64,7 +64,7 @@ import { ReferenceTooltipComponent } from "../../../shared/components/reference-
       our God is a God of justice and righteousness. Right now is the time to receive correction and forgiveness, but in
       that day, it will be a time for judgment and wrath, for condemnation or reward.
       <br /><br />
-      <!-- <a href="https://thelightof.life/#/draw/re.webp" target="_blank"
+      <!-- <a href="https://thelightof.life/draw/re" target="_blank"
           >Differences between reprimand, reproof, and rebuke.</a
         ><br /><br /> -->
 

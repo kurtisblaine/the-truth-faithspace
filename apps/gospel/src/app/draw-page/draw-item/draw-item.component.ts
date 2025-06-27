@@ -8,7 +8,6 @@ import {
   OnInit,
   ViewChild,
 } from "@angular/core";
-import { ActivatedRoute } from "@angular/router";
 import { DataService } from "../data.service";
 import { Image } from "../draw-page.component";
 
@@ -24,11 +23,7 @@ export class DrawItemComponent implements OnInit, AfterViewInit, OnDestroy {
   // eslint-disable-next-line @angular-eslint/no-input-rename
   @Input("video") public youtubeVideo: string;
 
-  constructor(
-    private route: ActivatedRoute,
-    private changeDetectorRef: ChangeDetectorRef,
-    private dataService: DataService
-  ) {}
+  constructor(private changeDetectorRef: ChangeDetectorRef, private dataService: DataService) {}
 
   @ViewChild("youTubePlayer") youTubePlayer: ElementRef<HTMLDivElement>;
 
@@ -39,7 +34,7 @@ export class DrawItemComponent implements OnInit, AfterViewInit, OnDestroy {
 
   ngOnInit(): void {
     const images = this.dataService.init();
-    this.selectedImage = images.find((i) => i.fileName == this.fileName);
+    this.selectedImage = images.find((i) => i.fileName === this.fileName + ".webp");
   }
 
   ngOnDestroy() {}

@@ -132,7 +132,7 @@ import { ReferenceTooltipComponent } from "../../../shared/components/reference-
       Thanks be to God who grants unto us repentance through the knowledge of the truth.
       <blog-link
         [title]="'See more on Repentance'"
-        [link]="'https://thelightof.life/#/edify-detail/220a13ba-239c-7637-61e4-196fc85a62ce'"
+        [link]="'https://thelightof.life/edify-detail/220a13ba-239c-7637-61e4-196fc85a62ce'"
       >
       </blog-link>
     </ng-template>`,
