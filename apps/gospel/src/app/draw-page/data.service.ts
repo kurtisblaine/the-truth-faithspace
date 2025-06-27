@@ -20,7 +20,6 @@ export class DataService {
        but because we were so helpless; God's grace had nothing to do with us, He gave us love unmerited, so if we boast, we boast in Christ.`,
       footer: "Jesus has done everything for us, and we are His work, we enter into His rest...",
       originUrl: "v1711590205/teach/gospel_cxqott.webp",
-      video: "bZsUhZAH6Hg",
       fileName: "gospel.webp",
     });
 
@@ -35,7 +34,6 @@ export class DataService {
         Christ died - and what's more? He lives on!`,
       footer: "The promise, then the covenant founded on the promise...",
       originUrl: "v1711590185/teach/covenantpromise_lq6374.webp",
-      video: "FHfh48WzFcU",
       fileName: "covenantpromise.webp",
     });
 
@@ -58,7 +56,6 @@ export class DataService {
       The Word of the LORD is life. He is True. All who believe in Him set their seal to this: God is true. Let every man be a liar and God be true.`,
       footer: "The fear of the Lord produces humility and a righteous hatred...",
       fileName: "fearLord.webp",
-      video: "O--SQdICRVk",
       originUrl: "v1711590197/teach/fearLord_znqj9t.webp",
     });
 
@@ -152,7 +149,6 @@ export class DataService {
       footer:
         "Death must be worked out in the body and soul of the flesh. Many know about the body of the flesh. What about the mind of flesh? ...",
       fileName: "alterofGod.webp",
-      video: "iITISwdEGYM",
       originUrl: "v1711590174/teach/armorofGod_h3blcr.webp",
     });
 
@@ -194,7 +190,6 @@ export class DataService {
       footer: "The response to the Gospel to all who have heard and believed unto new life...",
       fileName: "repentandbelieve.webp",
       originUrl: "v1711590234/teach/repentandbelieve_nq987c.webp",
-      video: "Jl7k4Iu9mKs",
     });
 
     this.images.push({
@@ -248,7 +243,6 @@ export class DataService {
 `,
       footer: "You must be born again of Water and Spirit (John 3)...",
       originUrl: "v1711590176/teach/baptismwaterandfire_z41pny.webp",
-      video: "dPiS7XPJei0",
       fileName: "baptismwaterandfire.webp",
     });
 
