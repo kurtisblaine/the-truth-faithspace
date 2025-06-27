@@ -127,7 +127,7 @@ import { ReferenceTooltipComponent } from "../../../shared/components/reference-
       </blog-reference-tooltip>
       <blog-link
         [title]="'See more about the Two Resurrections'"
-        [link]="'https://thelightof.life/draw/judgementday'"
+        [link]="'https://thelightof.life/drawings/draw/judgementday'"
       ></blog-link>
       <br /><br />
 

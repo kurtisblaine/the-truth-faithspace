@@ -40,7 +40,7 @@ import { ReferenceTooltipComponent } from "../../../shared/components/reference-
         believed, you were marked in him with a seal, the promised Holy Spirit, Who is a deposit guaranteeing our
         inheritance until the redemption of those who are God’s possession—to the praise of His glory.
       </blog-reference-tooltip>
-      <blog-link [title]="'See more on John 16'" [link]="'https://thelightof.life/draw/john16'"></blog-link>
+      <blog-link [title]="'See more on John 16'" [link]="'https://thelightof.life/drawings/draw/john16'"></blog-link>
       <br /><br />
 
       If we are born of God, we do not need to be taught the truth because the Holy Spirit testifies to us what is true,
@@ -206,7 +206,7 @@ import { ReferenceTooltipComponent } from "../../../shared/components/reference-
       </blog-reference-tooltip>
       <blog-link
         [title]="'See more on Baptisms'"
-        [link]="'https://thelightof.life/draw/dPiS7XPJei0/baptismwaterandfire'"
+        [link]="'https://thelightof.life/drawings/draw/dPiS7XPJei0/baptismwaterandfire'"
       ></blog-link>
       <br /><br />
 

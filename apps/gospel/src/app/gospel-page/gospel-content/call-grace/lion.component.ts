@@ -211,7 +211,7 @@ import { ReferenceTooltipComponent } from "../../../shared/components/reference-
       to keep, provided we remain humble in faith.
       <blog-link
         [title]="'See More about Jesus through Judah and Isaac'"
-        [link]="'https://thelightof.life/draw/Jesuslionlamb'"
+        [link]="'https://thelightof.life/drawings/draw/Jesuslionlamb'"
       ></blog-link>
     </ng-template>`,
   styles: ``,
