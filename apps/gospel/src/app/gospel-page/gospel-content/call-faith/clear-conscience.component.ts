@@ -42,7 +42,7 @@ import { ReferenceTooltipComponent } from "../../../shared/components/reference-
       spirit, and those who worship Him must worship in spirit and truth." (John 4:24)
       <blog-link
         [title]="'See more about the law of Christ'"
-        [link]="'https://thelightof.life/#/edify-detail/eec06cc1-2ce2-3f35-fa35-8c08aaf6c431'"
+        [link]="'https://thelightof.life/edify-detail/eec06cc1-2ce2-3f35-fa35-8c08aaf6c431'"
       ></blog-link>
       <br /><br />
 
@@ -77,7 +77,7 @@ import { ReferenceTooltipComponent } from "../../../shared/components/reference-
       His coming.
       <blog-link
         [title]="'See again more about the law of Christ'"
-        [link]="'https://thelightof.life/#/edify-detail/eec06cc1-2ce2-3f35-fa35-8c08aaf6c431'"
+        [link]="'https://thelightof.life/edify-detail/eec06cc1-2ce2-3f35-fa35-8c08aaf6c431'"
       ></blog-link>
       <br /><br />
 
@@ -172,7 +172,7 @@ import { ReferenceTooltipComponent } from "../../../shared/components/reference-
       made new in the heart, you will obey in the flesh as well.
       <blog-link
         [title]="'See more about the Stumbling Block of Lawlessness'"
-        [link]="'https://thelightof.life/#/discernment-detail/2cb3f25e-cc6d-8533-b2e7-b18890410091'"
+        [link]="'https://thelightof.life/discernment-detail/2cb3f25e-cc6d-8533-b2e7-b18890410091'"
       ></blog-link>
     </ng-template>`,
   styles: ``,

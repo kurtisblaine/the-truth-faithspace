@@ -135,7 +135,7 @@ import { ReferenceTooltipComponent } from "../../../shared/components/reference-
       </blog-reference-tooltip>
       <blog-link
         [title]="'See more about Benjamin and Isaac'"
-        [link]="'https://thelightof.life/#/draw/Jesuslionlamb.webp'"
+        [link]="'https://thelightof.life/draw/Jesuslionlamb'"
       ></blog-link
       ><br /><br />
 
@@ -165,7 +165,7 @@ import { ReferenceTooltipComponent } from "../../../shared/components/reference-
       is set on the LORD, the God of salvation.
       <blog-link
         [title]="'See more about the Father and the Son, the Son and the Church'"
-        [link]="'https://thelightof.life/#/draw/Father&Son.webp'"
+        [link]="'https://thelightof.life/draw/Father&Son'"
       ></blog-link
       ><br /><br />
 
@@ -228,7 +228,7 @@ import { ReferenceTooltipComponent } from "../../../shared/components/reference-
         precious blood, as of a lamb unblemished and spotless, the blood of Christ. </blog-reference-tooltip
       ><blog-link
         [title]="'See more about Sons and Slaves'"
-        [link]="'https://thelightof.life/#/draw/slavesvssons.webp'"
+        [link]="'https://thelightof.life/draw/slavesvssons'"
       ></blog-link
       ><br /><br />
 

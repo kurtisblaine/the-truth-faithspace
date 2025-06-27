@@ -5,6 +5,7 @@ import { MatButtonModule } from "@angular/material/button";
 import { MatToolbarModule } from "@angular/material/toolbar";
 import { AppComponent } from "./app.component";
 
+import { provideCloudinaryLoader } from "@angular/common";
 import { provideHttpClient } from "@angular/common/http";
 import { MatListModule } from "@angular/material/list";
 import { MatMenuModule } from "@angular/material/menu";
@@ -40,7 +41,7 @@ import { StateModule } from "./state/state.module";
       alwaysMonitor: true,
     }),
   ],
-  providers: [provideHttpClient()],
+  providers: [provideHttpClient(), provideCloudinaryLoader("https://res.cloudinary.com/dffihsa2y/")],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

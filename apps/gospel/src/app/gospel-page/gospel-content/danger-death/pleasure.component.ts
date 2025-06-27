@@ -29,7 +29,7 @@ import { ReferenceTooltipComponent } from "../../../shared/components/reference-
       working death within us. We want to flee, but it's inside of us; we cover our eyes, but it lives in the
       darkness.<br /><br />
 
-      <!-- <a href="https://thelightof.life/#/insight-detail/cd57c552-146a-8c5a-7bd2-d1314e9a4793" target="_blank"
+      <!-- <a href="https://thelightof.life/insight-detail/cd57c552-146a-8c5a-7bd2-d1314e9a4793" target="_blank"
           >See more about the nature of sin here.</a
         ><br /><br /> -->
 

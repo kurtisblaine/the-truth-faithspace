@@ -94,7 +94,7 @@ import { ReferenceTooltipComponent } from "../../../shared/components/reference-
       on the Spirit is life and peace; so set your minds on the things above where Christ dwells.
       <blog-link
         [title]="'See more on the Living Bread'"
-        [link]="'https://thelightof.life/#/edify-detail/82f4d580-3f2d-a049-d46d-6036c26062a8'"
+        [link]="'https://thelightof.life/edify-detail/82f4d580-3f2d-a049-d46d-6036c26062a8'"
       ></blog-link>
       <br /><br />
 
@@ -138,7 +138,7 @@ import { ReferenceTooltipComponent } from "../../../shared/components/reference-
       </blog-reference-tooltip>
       <blog-link
         [title]="'See more on Christ as Food'"
-        [link]="'https://thelightof.life/#/edify-detail/7666deae-3d71-86fe-0d07-0f3a29a99599'"
+        [link]="'https://thelightof.life/edify-detail/7666deae-3d71-86fe-0d07-0f3a29a99599'"
       ></blog-link>
       <br /><br />
 

@@ -25,10 +25,11 @@ export class DrawPageComponent implements OnInit {
   constructor(private router: Router, private dataService: DataService) {}
 
   navigate(image: Image) {
+    const cleanedFileName = image.fileName.split(".")[0];
     if (image.video) {
-      this.router.navigateByUrl("drawings/draw/" + image.video + "/" + image.fileName, { state: image });
+      this.router.navigateByUrl("drawings/draw/" + image.video + "/" + cleanedFileName, { state: image });
     } else {
-      this.router.navigateByUrl("drawings/draw/" + image.fileName, { state: image });
+      this.router.navigateByUrl("drawings/draw/" + cleanedFileName, { state: image });
     }
   }
 

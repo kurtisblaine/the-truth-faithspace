@@ -70,7 +70,7 @@ import { ReferenceTooltipComponent } from "../../../shared/components/reference-
       defeating our foes. He defeated them through the cross, and we enter into His victory through faith.
       <blog-link
         [title]="'See more about Righteous Warfare'"
-        [link]="'https://thelightof.life/#/edify-detail/cff547c6-c5b8-3479-7472-f065fed444f5'"
+        [link]="'https://thelightof.life/edify-detail/cff547c6-c5b8-3479-7472-f065fed444f5'"
       ></blog-link>
       <br /><br />
 
@@ -136,7 +136,7 @@ import { ReferenceTooltipComponent } from "../../../shared/components/reference-
       of the Spirit and life that we may defend ourselves against the law of sin and death.
       <blog-link
         [title]="'See more about the Two Laws Waging War'"
-        [link]="'https://thelightof.life/#/edify-detail/52314b0f-bfbb-2b2b-6393-c8e3dcef2a2e'"
+        [link]="'https://thelightof.life/edify-detail/52314b0f-bfbb-2b2b-6393-c8e3dcef2a2e'"
       ></blog-link>
       <blog-reference-tooltip [reference]="'Romans 8:35-37'">
         Does it mean he no longer loves us if we have trouble or calamity, or are persecuted, or hungry, or destitute,
@@ -146,7 +146,7 @@ import { ReferenceTooltipComponent } from "../../../shared/components/reference-
       </blog-reference-tooltip>
       <blog-link
         [title]="'See more about Mordecai'"
-        [link]="'https://thelightof.life/#/edify-detail/69f8db0f-ef45-212e-beb9-2a7dcea600a4'"
+        [link]="'https://thelightof.life/edify-detail/69f8db0f-ef45-212e-beb9-2a7dcea600a4'"
       ></blog-link>
     </ng-template>`,
   styles: ``,

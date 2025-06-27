@@ -66,7 +66,7 @@ import { ReferenceTooltipComponent } from "../../../shared/components/reference-
       </blog-reference-tooltip>
       <blog-link
         [title]="'See more on the Snare of His Coming'"
-        [link]="'https://thelightof.life/#/edify-detail/9a7773b4-01b5-ede3-0a07-218b0a4b42d6'"
+        [link]="'https://thelightof.life/edify-detail/9a7773b4-01b5-ede3-0a07-218b0a4b42d6'"
       ></blog-link>
       <br /><br />
 

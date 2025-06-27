@@ -1,4 +1,4 @@
-import { CommonModule } from "@angular/common";
+import { CommonModule, NgOptimizedImage } from "@angular/common";
 import { NgModule } from "@angular/core";
 import { MatGridListModule } from "@angular/material/grid-list";
 import { MatTooltipModule } from "@angular/material/tooltip";
@@ -29,6 +29,7 @@ const routes: Routes = [
     MatTooltipModule,
     PinchZoomComponent,
     LibFaIconComponent,
+    NgOptimizedImage,
     PhotoGalleryModule.forRoot({
       defaultOptions: {
         arrowEl: false,
