@@ -84,7 +84,7 @@ import { ReferenceTooltipComponent } from "../../../shared/components/reference-
       of his sins? Let us examine and probe our ways, And let us return to the LORD.” (Lamentations 3:37-40)
       <br /><br />
 
-      <!-- <a href="https://thelightof.life/drawings/draw/O--SQdICRVk/fearLord" target="_blank"
+      <!-- <a href="https://thelightof.life/drawings/draw/fearLord" target="_blank"
           >There is a healthy fear of the Lord, and an unhealthy fear.</a
         ><br /><br />
 

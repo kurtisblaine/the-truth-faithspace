@@ -206,7 +206,7 @@ import { ReferenceTooltipComponent } from "../../../shared/components/reference-
       </blog-reference-tooltip>
       <blog-link
         [title]="'See more on Baptisms'"
-        [link]="'https://thelightof.life/drawings/draw/dPiS7XPJei0/baptismwaterandfire'"
+        [link]="'https://thelightof.life/drawings/draw/baptismwaterandfire'"
       ></blog-link>
       <br /><br />
 
