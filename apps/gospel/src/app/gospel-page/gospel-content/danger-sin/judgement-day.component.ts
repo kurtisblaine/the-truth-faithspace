@@ -25,10 +25,10 @@ import { ReferenceTooltipComponent } from "../../../shared/components/reference-
         >I will discipline you, but with justice; I cannot let you go unpunished.</blog-reference-tooltip
       >
       And He said this to His own people, so how much more is it applicable to the rest of the nations? If He doesn't
-      spare His own people, what is the fate of the nations that do not know Him? If He let just one sin go unpunished,
-      He wouldn't be good and just. It is a good thing to judge evil and a lie: for that's justice. When justice is not
-      upheld, people riot; for it is evil not to judge wrong-doing, but it is right to render justice. It is good to do
-      justice and show no partiality; as it says,
+      spare His own people, what is the fate of the rest of the world that do not know Him? If He let just one sin go
+      unpunished, He wouldn't be good and just. It is a good thing to judge evil and a lie: for that's justice. When
+      justice is not upheld, people riot; for it is evil not to judge wrong-doing, but it is right to render justice. It
+      is good to do justice and show no partiality; as it says,
       <blog-reference-tooltip [reference]="'Ecclesiastes 8:11'">
         Because the sentence against an evil deed is not executed quickly, therefore the hearts of the sons of men among
         them are given fully to do evil.
@@ -53,11 +53,11 @@ import { ReferenceTooltipComponent } from "../../../shared/components/reference-
         against the wall And a snake bites him. Will not the day of the LORD be darkness instead of light, Even gloom
         with no brightness in it?
       </blog-reference-tooltip>
-      To the dead who lived in death, it says, “The dead will not live, the departed spirits will not rise; Therefore
+      For the dead who lived in death, it says, “The dead will not live, the departed spirits will not rise; Therefore
       You have punished and destroyed them, And You have wiped out all remembrance of them.” (Isaiah 26:14) But for the
-      dead who lived in the life which is truly life, it says, “Your dead will live; Their corpses will rise. You who
-      lie in the dust, awake and shout for joy, For your dew is as the dew of the dawn, And the earth will give birth to
-      the departed spirits.” (Isaiah 26:19) So God will cause both the righteous and the wicked to rise, but only the
+      dead who lived in life, which is truly life, it says, “Your dead will live; Their corpses will rise. You who lie
+      in the dust, awake and shout for joy, For your dew is as the dew of the dawn, And the earth will give birth to the
+      departed spirits.” (Isaiah 26:19) So God will cause both the righteous and the wicked to rise, but only the
       righteous will arise to life. For all evil and all lies will be made right, and it is made right through judgment;
       all wickedness will be put into it's proper place and judged as wrong; and righteousness will be exalted and
       rewarded in that day. When evil is reprimanded, reproved, and rebuked, it is made good through the correction; and
@@ -73,13 +73,13 @@ import { ReferenceTooltipComponent } from "../../../shared/components/reference-
       judgement in that day. If sin goes uncorrected, it is allowed to live a little longer; in it's persistence, it
       corrupts much that is good; but nevertheless, all sin has an end. Do we not bury that which is unclean? We don't
       expose our uncleanness, do we? Our bodies have waste to it; and we put that waste in dark places, for it is good
-      to be not seen; we gather it together and burn it with fire or bury it. And don't men bury their dead? So what do
-      you suppose God will do with the moral filth of the world when He sends forth His angels? Won't everything unclean
-      be cosigned to its proper place and burned with fire? If we do these things with that which is unclean to our
-      eyes, how much more will God with that which is abhorrent to His eyes? For men riot when justice is not upheld:
-      when someone who is supposed to be punished gets off free, men go out and riot against the judge and police; and
-      they say, "The police are no good! We want justice!" So we know it's good to render justice, for we ourselves want
-      justice; however, when it comes to our wrongs, we want mercy; that is why it says,
+      to be not seen; we gather it together and put it into a pit and burn it with fire or cover it with dirt. And don't
+      we bury their dead? So what do you suppose God will do with the moral filth of the world when He sends forth His
+      angels? Won't everything unclean be cosigned to its proper place and burned with fire? If we do these things with
+      that which is unclean to our eyes, how much more will God with that which is abhorrent to His eyes? For men riot
+      when justice is not upheld: when someone who is supposed to be punished gets off free, men go out and riot against
+      the judge and police; and they say, "The police are no good! We want justice!" So we know it's good to render
+      justice, for we ourselves want justice; however, when it comes to our wrongs, we want mercy; that is why it says,
       <blog-reference-tooltip [reference]="'James 2:12-13'">
         So speak and so act as those who are to be judged by the law of liberty. For judgment will be merciless to one
         who has shown no mercy; mercy triumphs over judgment.
@@ -92,8 +92,8 @@ import { ReferenceTooltipComponent } from "../../../shared/components/reference-
       the dregs (Isaiah 51:17-22).
       <br /><br />
 
-      God is not like any judge on earth: He is perfect. He will reward all with righteous judgment in that day when the
-      judgment of God is revealed through the One He has appointed; He will reward those who by persistence seek
+      God is not like any judge on earth: for He is perfect. He will reward all with righteous judgment in that day when
+      the judgment of God is revealed through the One He has appointed; He will reward those who by persistence seek
       immortality, life and peace, looking for the hope of everlasting life; “But to those who are selfishly ambitious
       and do not obey the truth, but obey unrighteousness, wrath and indignation.” (Romans 2:8) Even the righteous will
       be scarcely saved; as it says,
@@ -124,7 +124,7 @@ import { ReferenceTooltipComponent } from "../../../shared/components/reference-
       <blog-reference-tooltip [reference]="'Matthew 19:23-30'" [isJesusWord]="true"
         >With man this is impossible, but with God all things are possible.
       </blog-reference-tooltip>
-      So if there were no hope, then
+      If there is no hope, then
       <blog-reference-tooltip [reference]="'Isaiah 22:13'"
         >Let us eat and drink, for tomorrow we die.</blog-reference-tooltip
       >
@@ -154,7 +154,7 @@ import { ReferenceTooltipComponent } from "../../../shared/components/reference-
       thunder with a voice like His?” (Job 40:9) If so, "Then I will also confess to you, That your own right hand can
       save you.” (Job 40:14) So surely we need a savior; surely we need a rock. Or can wealth save us? Can we gather up
       enough food for ourselves to withstand the evil day? Which gun can shoot against spirits? Or which sword can fight
-      against the unseen? Surely, even our best efforts are useless. We ought to cease.
+      against the unseen? Surely, even our best efforts are useless.
     </ng-template>`,
   styles: ``,
   changeDetection: ChangeDetectionStrategy.OnPush,
