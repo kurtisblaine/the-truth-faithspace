@@ -1,12 +1,13 @@
 import { Component } from "@angular/core";
 import { MatButtonModule } from "@angular/material/button";
 import { MatListModule } from "@angular/material/list";
-import { MatSidenavModule } from "@angular/material/sidenav";
+import { MatMenuModule } from "@angular/material/menu";
 import { MatToolbarModule } from "@angular/material/toolbar";
 import { MatTooltipModule } from "@angular/material/tooltip";
 import { Router, RouterModule, RouterOutlet } from "@angular/router";
 import { FontAwesomeModule } from "@fortawesome/angular-fontawesome";
-import { faBars, faHome } from "@fortawesome/free-solid-svg-icons";
+import { faBars, faGears } from "@fortawesome/free-solid-svg-icons";
+import { SettingsWidgetComponent } from "./shared/component/settings-widget.component";
 
 @Component({
   imports: [
@@ -16,8 +17,9 @@ import { faBars, faHome } from "@fortawesome/free-solid-svg-icons";
     MatToolbarModule,
     FontAwesomeModule,
     MatListModule,
-    MatSidenavModule,
     MatTooltipModule,
+    SettingsWidgetComponent,
+    MatMenuModule,
   ],
   selector: "app-root",
   templateUrl: "./app.component.html",
@@ -25,8 +27,8 @@ import { faBars, faHome } from "@fortawesome/free-solid-svg-icons";
 })
 export class AppComponent {
   public title = "App";
-  public homeIcon = faHome;
   public menuIcon = faBars;
+  public settingsIcon = faGears;
 
   constructor(private router: Router) {}
 
