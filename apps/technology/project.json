@@ -42,7 +42,6 @@
         "outputPath": "dist/apps/technology",
         "index": "apps/technology/src/index.html",
         "main": "apps/technology/src/main.ts",
-        "polyfills": ["zone.js"],
         "tsConfig": "apps/technology/tsconfig.app.json",
         "inlineStyleLanguage": "scss",
         "assets": [
