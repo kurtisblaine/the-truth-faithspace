@@ -1,4 +1,4 @@
-import { ApplicationConfig, isDevMode, provideZoneChangeDetection } from "@angular/core";
+import { ApplicationConfig, isDevMode, provideZonelessChangeDetection } from "@angular/core";
 import {
   PreloadAllModules,
   provideRouter,
@@ -35,7 +35,6 @@ export const appConfig: ApplicationConfig = {
     provideStore(),
     provideEffects(ItemsEffects),
     provideState(fromItems.itemsFeatureKey, fromItems.reducer),
-    provideZoneChangeDetection({ eventCoalescing: true }),
     provideStoreDevtools({ logOnly: !isDevMode(), maxAge: 25 }),
     provideRouter(
       routes,
@@ -52,6 +51,7 @@ export const appConfig: ApplicationConfig = {
     provideFirestore(() => getFirestore()),
     provideHttpClient(),
     provideAnimations(),
+    provideZonelessChangeDetection(),
     {
       provide: MAT_RIPPLE_GLOBAL_OPTIONS,
       useValue: {

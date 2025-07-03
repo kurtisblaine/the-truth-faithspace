@@ -13,7 +13,6 @@
         "outputPath": "dist/apps/bible",
         "index": "apps/bible/src/index.html",
         "browser": "apps/bible/src/main.ts",
-        "polyfills": ["zone.js"],
         "tsConfig": "apps/bible/tsconfig.app.json",
         "inlineStyleLanguage": "scss",
         "assets": ["apps/bible/src/favicon.ico", "apps/bible/src/assets"],

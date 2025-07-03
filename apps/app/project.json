@@ -13,7 +13,6 @@
         "outputPath": "dist/apps/app",
         "index": "apps/app/src/index.html",
         "browser": "apps/app/src/main.ts",
-        "polyfills": ["zone.js"],
         "tsConfig": "apps/app/tsconfig.app.json",
         "inlineStyleLanguage": "scss",
         "assets": [

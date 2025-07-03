@@ -1,5 +1,5 @@
 import { provideHttpClient } from "@angular/common/http";
-import { ApplicationConfig, isDevMode } from "@angular/core";
+import { ApplicationConfig, isDevMode, provideZonelessChangeDetection } from "@angular/core";
 import { MAT_RIPPLE_GLOBAL_OPTIONS, RippleGlobalOptions } from "@angular/material/core";
 import { provideAnimations } from "@angular/platform-browser/animations";
 import {
@@ -40,6 +40,7 @@ export const appConfig: ApplicationConfig = {
     ),
     provideHttpClient(),
     provideAnimations(),
+    provideZonelessChangeDetection(),
     {
       provide: MAT_RIPPLE_GLOBAL_OPTIONS,
       useValue: {
