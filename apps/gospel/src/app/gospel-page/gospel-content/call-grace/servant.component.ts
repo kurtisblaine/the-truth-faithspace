@@ -272,7 +272,7 @@ import { ReferenceTooltipComponent } from "../../../shared/components/reference-
       sin and death in Christ Jesus, our Lord!
       <blog-link
         [title]="'See more about Jonathan'"
-        [link]="'https://thelightof.life/edify-detail/5877cee0-b83a-28b6-2a3e-bd6b98c3e687'"
+        [link]="'https://thelightof.life/edifications/edify-detail/5877cee0-b83a-28b6-2a3e-bd6b98c3e687'"
       ></blog-link>
       <br /><br />
 

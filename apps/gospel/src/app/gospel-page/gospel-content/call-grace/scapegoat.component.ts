@@ -155,7 +155,7 @@ import { ReferenceTooltipComponent } from "../../../shared/components/reference-
       </blog-reference-tooltip>
       <blog-link
         [title]="'See more about Confessing'"
-        [link]="'https://thelightof.life/edify-detail/eba900e6-909b-1873-e0a3-ef2d8fcc13ed'"
+        [link]="'https://thelightof.life/edifications/edify-detail/eba900e6-909b-1873-e0a3-ef2d8fcc13ed'"
       ></blog-link>
 
       Our Lord Jesus is one, and what He did was for many; and the scapegoat for Israel was one goat, but was for the

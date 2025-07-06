@@ -136,7 +136,7 @@ import { ReferenceTooltipComponent } from "../../../shared/components/reference-
       </blog-reference-tooltip>
       <blog-link
         [title]="'See more about the Riddle'"
-        [link]="'https://thelightof.life/edify-detail/7666deae-3d71-86fe-0d07-0f3a29a99599'"
+        [link]="'https://thelightof.life/edifications/edify-detail/7666deae-3d71-86fe-0d07-0f3a29a99599'"
       ></blog-link
       ><br /><br />
 
