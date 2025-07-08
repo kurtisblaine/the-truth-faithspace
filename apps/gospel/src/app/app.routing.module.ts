@@ -1,5 +1,11 @@
 import { NgModule } from "@angular/core";
-import { NoPreloading, RouterModule, Routes, provideRouter } from "@angular/router";
+import {
+  NoPreloading,
+  RouterModule,
+  Routes,
+  provideRouter,
+  withEnabledBlockingInitialNavigation,
+} from "@angular/router";
 
 const routes: Routes = [
   { path: "", pathMatch: "full", redirectTo: "truth" },
@@ -64,6 +70,6 @@ const routes: Routes = [
     }),
   ],
   exports: [RouterModule],
-  providers: [provideRouter(routes)],
+  providers: [provideRouter(routes, withEnabledBlockingInitialNavigation())],
 })
 export class AppRoutingModule {}

@@ -9,6 +9,7 @@ scully.gospel.config.js
 /.scully
 *.log
 /apps/gospel/static
+/apps/app/static
 
 # compiled output
 /dist
@@ -56,3 +57,5 @@ package-lock.json
 .firebase
 *-debug.log
 .runtimeconfig.json
+.cursor/rules/nx-rules.mdc
+.github/instructions/nx.instructions.md

@@ -1,4 +1,4 @@
-import { NgModule } from "@angular/core";
+import { NgModule, provideZonelessChangeDetection } from "@angular/core";
 import { BrowserModule } from "@angular/platform-browser";
 
 import { MatButtonModule } from "@angular/material/button";
@@ -13,7 +13,6 @@ import { MatProgressBarModule } from "@angular/material/progress-bar";
 import { MatSidenavModule } from "@angular/material/sidenav";
 import { MatTooltipModule } from "@angular/material/tooltip";
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
-import { ScullyLibModule } from "@scullyio/ng-lib";
 import { LibFaIconComponent } from "shared";
 import { AppRoutingModule } from "./app.routing.module";
 import { FirebaseModule } from "./firebase.module";
@@ -37,11 +36,12 @@ import { StateModule } from "./state/state.module";
     MatMenuModule,
     LibFaIconComponent,
     SettingsWidgetComponent,
-    ScullyLibModule.forRoot({
-      alwaysMonitor: true,
-    }),
   ],
-  providers: [provideHttpClient(), provideCloudinaryLoader("https://res.cloudinary.com/dffihsa2y/")],
+  providers: [
+    provideHttpClient(),
+    provideZonelessChangeDetection(),
+    provideCloudinaryLoader("https://res.cloudinary.com/dffihsa2y/"),
+  ],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

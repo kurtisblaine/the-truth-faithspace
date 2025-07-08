@@ -1,5 +1,16 @@
-import { AfterViewInit, Directive, EventEmitter, Input, isDevMode, OnDestroy, Output, Renderer2 } from "@angular/core";
-import { isScullyRunning } from "@scullyio/ng-lib";
+import { isPlatformServer } from "@angular/common";
+import {
+  AfterViewInit,
+  Directive,
+  EventEmitter,
+  Inject,
+  Input,
+  isDevMode,
+  OnDestroy,
+  Output,
+  PLATFORM_ID,
+  Renderer2,
+} from "@angular/core";
 
 declare let fullpage: any;
 
@@ -13,10 +24,10 @@ export class FullpageDirective implements AfterViewInit, OnDestroy {
 
   public fullpageApi;
 
-  constructor(private renderer: Renderer2) {}
+  constructor(private renderer: Renderer2, @Inject(PLATFORM_ID) private platformId: object) {}
 
   ngAfterViewInit() {
-    if (isDevMode() || isScullyRunning()) {
+    if (isDevMode() || isPlatformServer(this.platformId)) {
       this.initFullpage();
     } else {
       this.renderer.removeClass(document.documentElement, "fp-enabled");
