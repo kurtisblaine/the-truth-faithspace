@@ -1,4 +1,4 @@
-import { isPlatformServer, Location } from "@angular/common";
+import { isPlatformBrowser, Location } from "@angular/common";
 import {
   AfterViewInit,
   ChangeDetectionStrategy,
@@ -10,7 +10,7 @@ import {
   signal,
 } from "@angular/core";
 import { ActivatedRoute } from "@angular/router";
-import { fullpageApi, fullpageOptions, Item, Trigger } from "fullpage.js/dist/fullpage.min";
+import { fullpageApi, fullpageOptions, Item, Trigger } from "fullpage.js/dist/fullpage.extensions.min";
 import { DeviceDetectorService } from "ngx-device-detector";
 import { distinctUntilChanged, filter, Subscription } from "rxjs";
 import { SeoBaseComponent } from "../shared/components/seo-base/seo-base.component";
@@ -48,7 +48,10 @@ export class GospelPageComponent extends SeoBaseComponent implements OnInit, Aft
     credits: { enabled: true, label: "May the Lord bless you.", position: "left" },
   };
 
-  public isStaticSite = isPlatformServer(this.platformId);
+  get isPlatformBrowser() {
+    return isPlatformBrowser(this.platformId);
+  }
+
   public isMobile = signal(false);
 
   public fullpageApi: fullpageApi;

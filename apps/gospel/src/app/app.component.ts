@@ -20,6 +20,7 @@ import {
   faPenToSquare,
 } from "@fortawesome/free-solid-svg-icons";
 
+import { CommonModule } from "@angular/common";
 import { MatButtonModule } from "@angular/material/button";
 import { MatListModule } from "@angular/material/list";
 import { MatProgressBarModule } from "@angular/material/progress-bar";
@@ -47,6 +48,7 @@ import { WindowService } from "./shared/service/window.service";
     MatMenuModule,
     LibFaIconComponent,
     SettingsWidgetComponent,
+    CommonModule,
   ],
 })
 export class AppComponent implements OnInit {
@@ -95,7 +97,7 @@ export class AppComponent implements OnInit {
   public ngOnInit() {
     this.isMobile.set(this.deviceDetector.isMobile());
 
-    if (this.windowService.nativeWindow) {
+    if (this.windowService?.nativeWindow) {
       this.progressValue$ = fromEvent(this.windowService.nativeWindow, "scroll", { passive: true }).pipe(
         map(() => {
           clearTimeout(this.scrollTimeout);
@@ -140,7 +142,7 @@ export class AppComponent implements OnInit {
   }
 
   public openBible() {
-    window.open("https://the-truth-from-the-beginning.web.app/", "_blank");
+    this.windowService?.nativeWindow?.open("https://the-truth-from-the-beginning.web.app/", "_blank");
   }
 
   public goHome() {

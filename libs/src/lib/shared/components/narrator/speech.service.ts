@@ -1,4 +1,5 @@
-import { inject, Injectable, OnDestroy, signal } from "@angular/core";
+import { isPlatformBrowser } from "@angular/common";
+import { Inject, inject, Injectable, OnDestroy, PLATFORM_ID, signal } from "@angular/core";
 import { MatSnackBar } from "@angular/material/snack-bar";
 import { BehaviorSubject } from "rxjs";
 import { v4 } from "uuid";
@@ -13,7 +14,7 @@ export enum SpeechStatus {
   providedIn: "root",
 })
 export class SpeechService implements OnDestroy {
-  public speechSynthesis: SpeechSynthesis | null;
+  public speechSynthesis: SpeechSynthesis | null | undefined;
   private _snackBar = inject(MatSnackBar);
 
   public allStates = new Map<string, BehaviorSubject<SpeechStatus>>();
@@ -26,7 +27,9 @@ export class SpeechService implements OnDestroy {
 
   public voices = signal<SpeechSynthesisVoice[]>([]);
 
-  constructor() {
+  constructor(@Inject(PLATFORM_ID) private platformId: any) {
+    if (!isPlatformBrowser(this.platformId)) return;
+
     this.speechSynthesis = window.speechSynthesis;
 
     const voices = this.speechSynthesis?.getVoices()?.filter((v) => v.lang.startsWith("en")) ?? [];
@@ -96,8 +99,8 @@ export class SpeechService implements OnDestroy {
     utterance.rate = 1;
     utterance.pitch = 1;
 
-    this.speechSynthesis!.speak(utterance);
-    utterance!.onend = () => {
+    this.speechSynthesis?.speak(utterance);
+    utterance.onend = () => {
       this.currentlyPlayingId.next("");
       this.resetStates();
     };
@@ -106,21 +109,21 @@ export class SpeechService implements OnDestroy {
   }
 
   pause(componentId: string) {
-    this.speechSynthesis!.pause();
+    this.speechSynthesis?.pause();
     this.currentlyPlayingId.next(componentId);
 
     this.setState(componentId, SpeechStatus.Paused);
   }
 
   resume(componentId: string) {
-    this.speechSynthesis!.resume();
+    this.speechSynthesis?.resume();
     this.currentlyPlayingId.next(componentId);
 
     this.setState(componentId, SpeechStatus.Playing);
   }
 
   stop(componentId: string) {
-    this.speechSynthesis!.cancel();
+    this.speechSynthesis?.cancel();
     this.currentlyPlayingId.next("");
 
     if (componentId === "all") {
@@ -146,7 +149,7 @@ export class SpeechService implements OnDestroy {
   private resetStates() {
     this.allStates.forEach((value, key) => {
       const state = this.allStates.get(key);
-      state!.next(SpeechStatus.Stopped);
+      state?.next(SpeechStatus.Stopped);
     });
   }
 
@@ -154,7 +157,7 @@ export class SpeechService implements OnDestroy {
     this.allStates.forEach((value, key) => {
       if (key === componentId) {
         const thisState = this.allStates.get(componentId);
-        thisState!.next(state);
+        thisState?.next(state);
         return;
       }
     });

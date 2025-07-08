@@ -9,5 +9,9 @@ export class WindowService {
     return isPlatformBrowser(this.platformId) ? window : undefined;
   }
 
+  get localStorage(): Storage | undefined {
+    return isPlatformBrowser(this.platformId) ? localStorage : undefined;
+  }
+
   constructor(@Inject(PLATFORM_ID) private platformId: any) {}
 }

@@ -67,7 +67,7 @@ export class TextEditorComponent implements OnInit, OnDestroy, AfterViewInit {
   }
 
   ngOnDestroy(): void {
-    this.editor.destroy();
+    this.editor?.destroy();
   }
 
   showText() {

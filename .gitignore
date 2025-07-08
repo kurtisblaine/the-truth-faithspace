@@ -2,11 +2,6 @@
 /.nx
 **/public
 
-#scully
-/scully
-scully.static-gospel.config.js
-scully.gospel.config.js
-/.scully
 *.log
 /apps/gospel/static
 /apps/app/static

@@ -14,16 +14,6 @@
     ]
   },
   "generators": {
-    "@nrwl/angular:application": {
-      "style": "scss",
-      "linter": "eslint"
-    },
-    "@nrwl/angular:library": {
-      "linter": "eslint"
-    },
-    "@nrwl/angular:component": {
-      "style": "scss"
-    },
     "@nx/angular:application": {
       "e2eTestRunner": "none",
       "linter": "eslint",

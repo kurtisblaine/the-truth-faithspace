@@ -4,6 +4,7 @@ import { provideCloudinaryLoader } from "@angular/common";
 import { provideHttpClient } from "@angular/common/http";
 import { initializeApp, provideFirebaseApp } from "@angular/fire/app";
 import { getFirestore, provideFirestore } from "@angular/fire/firestore";
+import { provideClientHydration, withEventReplay, withIncrementalHydration } from "@angular/platform-browser";
 import { provideAnimations } from "@angular/platform-browser/animations";
 import {
   NoPreloading,
@@ -100,6 +101,7 @@ export const appConfig: ApplicationConfig = {
       withEnabledBlockingInitialNavigation()
     ),
     provideHttpClient(),
+    provideClientHydration(withIncrementalHydration(), withEventReplay()),
     provideZonelessChangeDetection(),
     provideCloudinaryLoader("https://res.cloudinary.com/dffihsa2y/"),
     provideAnimations(),
