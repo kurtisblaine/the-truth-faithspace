@@ -73,6 +73,7 @@
         "scripts": ["./node_modules/fullpage.js/dist/fullpage.min.js"],
         "namedChunks": true,
         "allowedCommonJsDependencies": ["photoswipe", "photoswipe/dist/photoswipe-ui-default"],
+        "browser": "apps/gospel/src/main.ts",
         "server": "apps/gospel/src/main.server.ts",
         "outputMode": "static"
       },

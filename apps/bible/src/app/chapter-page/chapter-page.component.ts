@@ -13,7 +13,6 @@ import { ChapterItemComponent } from "./chapter-item/chapter-item.component";
 
 @Component({
   selector: "app-chapter-page",
-  standalone: true,
   imports: [MatProgressSpinnerModule, CommonModule, ChapterItemComponent, MatSnackBarModule],
   templateUrl: "./chapter-page.component.html",
   styleUrl: "./chapter-page.component.scss",

@@ -9,7 +9,6 @@ import { FontAwesomeModule } from "@fortawesome/angular-fontawesome";
 import { faBars, faHome, faRobot } from "@fortawesome/free-solid-svg-icons";
 @Component({
   selector: "app-root",
-  standalone: true,
   changeDetection: ChangeDetectionStrategy.OnPush,
   imports: [
     RouterOutlet,

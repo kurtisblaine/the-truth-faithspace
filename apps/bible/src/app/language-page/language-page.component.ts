@@ -21,7 +21,6 @@ import { LanguageItemComponent } from "./language-item/language-item.component";
 
 @Component({
   selector: "app-language-page",
-  standalone: true,
   imports: [
     MatExpansionModule,
     CommonModule,

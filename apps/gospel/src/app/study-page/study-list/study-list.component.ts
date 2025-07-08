@@ -16,7 +16,6 @@ import { getAllStudy } from "../../state/study/study.selectors";
   templateUrl: "./study-list.component.html",
   styleUrl: "./study-list.component.scss",
   changeDetection: ChangeDetectionStrategy.OnPush,
-  standalone: true,
   imports: [MatDividerModule, CommonModule, MatButtonModule, TextEditorComponent],
 })
 export class StudyListComponent implements OnInit {

@@ -1,5 +1,6 @@
-import { NgModule } from "@angular/core";
+import { ApplicationConfig, mergeApplicationConfig } from "@angular/core";
 import { provideServerRendering, RenderMode, ServerRoute, withRoutes } from "@angular/ssr";
+import { appConfig } from "./app.config";
 
 const serverRoutes: ServerRoute[] = [
   {
@@ -7,7 +8,9 @@ const serverRoutes: ServerRoute[] = [
     renderMode: RenderMode.Prerender,
   },
 ];
-@NgModule({
+
+const serverConfig: ApplicationConfig = {
   providers: [provideServerRendering(withRoutes(serverRoutes))],
-})
-export class AppServerRoutingModule {}
+};
+
+export const config = mergeApplicationConfig(appConfig, serverConfig);

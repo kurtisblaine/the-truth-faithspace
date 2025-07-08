@@ -12,7 +12,6 @@ import { Bible, ScriptDirection, SortedBibles } from "../../models/bibles";
 
 @Component({
   selector: "app-language-item",
-  standalone: true,
   imports: [CommonModule, MatGridListModule, MatCardModule, MatRippleModule, TooltipDirective],
   templateUrl: "./language-item.component.html",
   styleUrl: "./language-item.component.scss",

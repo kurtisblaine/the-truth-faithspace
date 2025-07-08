@@ -8,7 +8,6 @@ import { NarratorComponent, NarratorStyle } from "../narrator/narrator.component
   selector: "lib-text-editor",
   templateUrl: "./text-editor.component.html",
   styleUrls: ["./text-editor.component.scss"],
-  standalone: true,
   imports: [MatButtonModule, NgxEditorModule, CommonModule, NarratorComponent, ReactiveFormsModule],
 })
 export class TextEditorComponent implements OnInit, OnDestroy, AfterViewInit {

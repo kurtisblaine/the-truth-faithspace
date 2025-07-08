@@ -1,7 +1,7 @@
 import { Component, ElementRef, OnInit, signal, Signal, ViewChild } from "@angular/core";
 import { toSignal } from "@angular/core/rxjs-interop";
-import { MatMenuTrigger } from "@angular/material/menu";
-import { NavigationEnd, Router } from "@angular/router";
+import { MatMenuModule, MatMenuTrigger } from "@angular/material/menu";
+import { NavigationEnd, Router, RouterModule } from "@angular/router";
 import {
   faArrowUp,
   faBars,
@@ -20,15 +20,34 @@ import {
   faPenToSquare,
 } from "@fortawesome/free-solid-svg-icons";
 
+import { MatButtonModule } from "@angular/material/button";
+import { MatListModule } from "@angular/material/list";
+import { MatProgressBarModule } from "@angular/material/progress-bar";
+import { MatSidenavModule } from "@angular/material/sidenav";
+import { MatToolbarModule } from "@angular/material/toolbar";
+import { MatTooltipModule } from "@angular/material/tooltip";
 import { DeviceDetectorService } from "ngx-device-detector";
 import { BehaviorSubject, filter, fromEvent, map, Observable } from "rxjs";
+import { LibFaIconComponent } from "shared";
+import { SettingsWidgetComponent } from "./shared/components/settings-widget/settings-widget.component";
 import { WindowService } from "./shared/service/window.service";
 
 @Component({
   selector: "blog-root",
   templateUrl: "./app.component.html",
   styleUrls: ["./app.component.scss"],
-  standalone: false,
+  imports: [
+    MatSidenavModule,
+    MatProgressBarModule,
+    MatButtonModule,
+    MatToolbarModule,
+    RouterModule,
+    MatListModule,
+    MatTooltipModule,
+    MatMenuModule,
+    LibFaIconComponent,
+    SettingsWidgetComponent,
+  ],
 })
 export class AppComponent implements OnInit {
   @ViewChild("toTop") public toTopElement: ElementRef;

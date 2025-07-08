@@ -18,7 +18,6 @@ import { MyDataSource } from "./data-source";
 
 @Component({
   selector: "app-scripture-page",
-  standalone: true,
   imports: [CommonModule, MatCardModule, ScrollingModule, MatRippleModule, MatDividerModule, MatProgressSpinnerModule],
   templateUrl: "./scripture-page.component.html",
   styleUrl: "./scripture-page.component.scss",

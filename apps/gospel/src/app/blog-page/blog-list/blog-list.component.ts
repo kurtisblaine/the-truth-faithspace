@@ -15,7 +15,6 @@ import { getAllBlog } from "../../state/blog/blog.selectors";
   selector: "blog-blog-list",
   templateUrl: "./blog-list.component.html",
   styleUrls: ["./blog-list.component.scss"],
-  standalone: true,
   imports: [MatDividerModule, CommonModule, MatButtonModule, TextEditorComponent],
 })
 export class BlogListComponent implements OnInit {

@@ -4,8 +4,8 @@ import { provideAnimations } from "@angular/platform-browser/animations";
 import {
   provideRouter,
   withComponentInputBinding,
-  withRouterConfig,
   withEnabledBlockingInitialNavigation,
+  withRouterConfig,
 } from "@angular/router";
 import { appRoutes } from "./app.routes";
 
