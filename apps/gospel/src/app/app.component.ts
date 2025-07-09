@@ -1,4 +1,4 @@
-import { Component, ElementRef, OnInit, signal, Signal, ViewChild } from "@angular/core";
+import { afterNextRender, Component, ElementRef, OnInit, signal, Signal, ViewChild } from "@angular/core";
 import { toSignal } from "@angular/core/rxjs-interop";
 import { MatMenuModule, MatMenuTrigger } from "@angular/material/menu";
 import { NavigationEnd, Router, RouterModule } from "@angular/router";
@@ -92,12 +92,8 @@ export class AppComponent implements OnInit {
     );
 
     this.isFullpagePage = toSignal(isFullpagePage$, { initialValue: true });
-  }
 
-  public ngOnInit() {
-    this.isMobile.set(this.deviceDetector.isMobile());
-
-    if (this.windowService?.nativeWindow) {
+    afterNextRender(() => {
       this.progressValue$ = fromEvent(this.windowService.nativeWindow, "scroll", { passive: true }).pipe(
         map(() => {
           clearTimeout(this.scrollTimeout);
@@ -114,7 +110,11 @@ export class AppComponent implements OnInit {
           return scrollPercentRounded;
         })
       );
-    }
+    });
+  }
+
+  public ngOnInit() {
+    this.isMobile.set(this.deviceDetector.isMobile());
   }
 
   openMenu() {

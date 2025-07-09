@@ -85,7 +85,7 @@
       <mat-expansion-panel class="custom-panel" hideToggle>
         <mat-expansion-panel-header>
           <mat-panel-title>
-            <button mat-button>THE RESPONSE - LOVE</button>
+            <button mat-button>THE RESPONSE</button>
           </mat-panel-title>
         </mat-expansion-panel-header>
         <ng-template matExpansionPanelContent>
@@ -118,7 +118,8 @@
   </div>
 </div>
 
-<div class="wedding-image" style="background-position: top"></div>
+<!-- <img fill style="object-position: top;" [ngSrc]="'v1711590013/img/Mat25L_dzpagk.webp'" alt="" priority /> -->
+<div class="wedding-image"></div>
 
 <section style="text-align: center">
   <div>Below is the Gospel.</div>
@@ -379,10 +380,10 @@
   </div>
   <!-- #endregion THE CALL - FAITH -->
 
-  <!-- #region THE RESPONSE - LOVE -->
+  <!-- #region THE RESPONSE -->
   <div class="bush-image floating-header" id="repentance" #ourResponse>
     <blog-gospel-header>
-      <h3>The Response - Love</h3>
+      <h3>The Response</h3>
     </blog-gospel-header>
   </div>
 
@@ -424,8 +425,10 @@
     </blog-gospel-section>
   </div>
 
-  <div class="holy-image" id="liveWorthy">
-    <blog-gospel-section [isLightMode]="true" [isFloater]="true">
+  <div class="holy-image" id="liveWorthy"></div>
+
+  <div class="holy-image">
+    <blog-gospel-section [isLightMode]="true">
       <h3 class="headers">Live Worthy</h3>
       <div class="paragraphs">
         <gospel-worthy-of-call #liveWorthy></gospel-worthy-of-call>
@@ -433,8 +436,10 @@
     </blog-gospel-section>
   </div>
 
-  <div class="rent-image" id="perseverance">
-    <blog-gospel-section [isLightMode]="true">
+  <div class="rent-image" id="perseverance"></div>
+
+  <div class="rent-image">
+    <blog-gospel-section [isLightMode]="true" [isFloater]="true">
       <h3 class="headers">Perseverance through Remembrance</h3>
       <div class="paragraphs">
         <gospel-persevere #perseverance></gospel-persevere>
@@ -442,9 +447,9 @@
     </blog-gospel-section>
   </div>
 
-  <div class="rent-image"></div>
+  <div class="rent-image" id="callUponTheLord"></div>
 
-  <div class="rent-image" id="callUponTheLord">
+  <div class="rent-image">
     <blog-gospel-section [isLightMode]="true">
       <h3 class="headers">Call upon the Lord</h3>
       <div class="paragraphs">
@@ -452,7 +457,7 @@
       </div>
     </blog-gospel-section>
   </div>
-  <!-- #endregion THE RESPONSE - LOVE -->
+  <!-- #endregion THE RESPONSE -->
 
   <!-- #region THE DAY OF THE LORD -->
   <div class="heaven-image floating-header" id="resurrectionOfLife" #theHope>

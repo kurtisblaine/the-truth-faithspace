@@ -42,12 +42,12 @@ const routes: Routes = [
     title: "The Good News of the Kingdom of God",
     loadChildren: () => import("./gospel-page/gospel-page.module").then((m) => m.GospelPageModule),
   },
-  // {
-  //   path: "truth",
-  //   title: "The Good News of the Kingdom of God",
-  //   loadComponent: () =>
-  //     import("./gospel-page/_static-gospel/static-gospel.component").then((m) => m.StaticGospelComponent),
-  // },
+  {
+    path: "truth2",
+    title: "The Good News of the Kingdom of God",
+    loadComponent: () =>
+      import("./gospel-page/_static-gospel/static-gospel.component").then((m) => m.StaticGospelComponent),
+  },
   {
     path: "poems",
     loadChildren: () => import("./psalm-page/psalm-page.module").then((m) => m.PsalmPageModule),
@@ -101,7 +101,7 @@ export const appConfig: ApplicationConfig = {
         onSameUrlNavigation: "reload",
       }),
       withComponentInputBinding(),
-      withInMemoryScrolling({ anchorScrolling: "enabled", scrollPositionRestoration: "top" }),
+      withInMemoryScrolling({ anchorScrolling: "enabled", scrollPositionRestoration: "enabled" }),
       withPreloading(NoPreloading)
     ),
     provideHttpClient(),
