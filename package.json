@@ -42,7 +42,6 @@
     "@fortawesome/angular-fontawesome": "^0.10.2",
     "@fortawesome/fontawesome-svg-core": "^6.1.1",
     "@fortawesome/free-solid-svg-icons": "^6.1.1",
-    "@fullpage/angular-fullpage": "^0.1.9",
     "@meddv/ngx-pinch-zoom": "20.0.0",
     "@ngrx/effects": "19.2.1",
     "@ngrx/entity": "19.2.1",

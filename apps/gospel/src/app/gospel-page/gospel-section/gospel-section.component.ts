@@ -1,17 +1,18 @@
 import { AfterViewInit, ChangeDetectionStrategy, ChangeDetectorRef, Component, Input } from "@angular/core";
-import { NarratorStyle } from "libs/src/lib/shared/components/narrator/narrator.component";
+import { MatCardModule } from "@angular/material/card";
+import { MatProgressSpinnerModule } from "@angular/material/progress-spinner";
+import { NarratorComponent, NarratorStyle } from "libs/src/lib/shared/components/narrator/narrator.component";
 
 @Component({
   selector: "blog-gospel-section",
   templateUrl: "./gospel-section.component.html",
   styleUrl: "./gospel-section.component.scss",
   changeDetection: ChangeDetectionStrategy.Default,
-  standalone: false,
+  imports: [MatCardModule, MatProgressSpinnerModule, NarratorComponent],
 })
 export class GospelSectionComponent implements AfterViewInit {
   @Input() public isLightMode = true;
   @Input() public isFloater = false;
-  @Input() public isDefer = true;
 
   public narratorStyle = NarratorStyle;
 

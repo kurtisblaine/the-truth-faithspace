@@ -1,22 +1,37 @@
-button[mat-button] {
-  padding: 5px;
-  color: white !important;
-  width: 100%;
-  font-size: 16px;
-  text-decoration: underline;
-  font-family: inherit;
-  z-index: 777;
-}
-
-.paragraphs {
-  max-height: 500px;
-}
-
 .custom-panel {
   background: transparent;
   box-shadow: none !important;
   margin: 0;
   text-transform: none;
+  justify-items: center;
+}
+
+button[mat-button] {
+  font-size: 16px;
+  color: white;
+}
+
+.header-title {
+  letter-spacing: 5px;
+}
+
+.header-pane {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+}
+
+.header-caption {
+  letter-spacing: 4px;
+  margin-bottom: 10px;
+}
+
+.header-pane > button {
+  text-decoration: underline;
+  width: 50%;
 }
 
 .navigation {
@@ -32,25 +47,9 @@ button[mat-button] {
   align-items: center;
 }
 
-.header-pane {
-  position: absolute;
-  top: 35%;
-  width: 100%;
-  text-align: center;
-  color: #fff;
-  font-size: 22px;
-  letter-spacing: 4px;
-  text-transform: uppercase;
-  line-height: normal;
-}
-
-$color-green: #00ffaa;
-$color-background: #111;
-$color-text: #555;
-
 img {
-  display: block;
-  width: 100%;
+  object-fit: cover;
+  z-index: -1;
 }
 
 .holy-image {
@@ -106,7 +105,6 @@ img {
 .wedding-image {
   background-image: url("https://res.cloudinary.com/dffihsa2y/image/upload/v1711590013/img/Mat25L_dzpagk.webp");
   min-height: 400px;
-  box-shadow: inset 0 0 0 100vmax rgba(0, 0, 0, 0.1);
 }
 
 .horses-image {
@@ -179,4 +177,6 @@ img {
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
+
+  box-shadow: inset 0 0 0 100vmax rgba(0, 0, 0, 0.1);
 }
