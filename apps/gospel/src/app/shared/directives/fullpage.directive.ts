@@ -16,12 +16,6 @@ export class FullpageDirective implements AfterViewInit, OnDestroy {
 
   ngAfterViewInit() {
     this.initFullpage();
-    // if (isDevMode() || isPlatformBrowser()) {
-    //   this.initFullpage();
-    // } else {
-    //   this.renderer.removeClass(document.documentElement, "fp-enabled");
-    //   this.initFullpage();
-    // }
   }
 
   initFullpage() {

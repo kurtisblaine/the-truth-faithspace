@@ -101,7 +101,7 @@ export const appConfig: ApplicationConfig = {
         onSameUrlNavigation: "reload",
       }),
       withComponentInputBinding(),
-      withInMemoryScrolling({ anchorScrolling: "enabled", scrollPositionRestoration: "enabled" }),
+      withInMemoryScrolling({ anchorScrolling: "enabled", scrollPositionRestoration: "top" }),
       withPreloading(NoPreloading)
     ),
     provideHttpClient(),

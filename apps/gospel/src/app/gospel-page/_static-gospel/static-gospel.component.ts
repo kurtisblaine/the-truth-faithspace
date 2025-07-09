@@ -1,4 +1,4 @@
-import { CommonModule, NgOptimizedImage } from "@angular/common";
+import { CommonModule } from "@angular/common";
 import { ChangeDetectionStrategy, Component, HostBinding, OnInit, signal } from "@angular/core";
 import { MatButtonModule } from "@angular/material/button";
 import { MatExpansionModule } from "@angular/material/expansion";
@@ -33,7 +33,6 @@ import { GospelSectionComponent } from "../gospel-section/gospel-section.compone
     GospelSectionComponent,
     ReferenceTooltipComponent,
     CommonModule,
-    NgOptimizedImage,
   ],
 })
 export class StaticGospelComponent extends SeoBaseComponent implements OnInit {

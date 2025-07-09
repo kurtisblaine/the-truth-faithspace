@@ -1,17 +1,16 @@
 <mat-drawer-container style="width: 100%; height: 100%" [hasBackdrop]="false">
   <mat-drawer style="width: 280px; position: fixed" #drawer [mode]="'side'" [autoFocus]="true">
     <mat-list>
-      <mat-list-item lines="3" (click)="goGospel(); drawer.close()">
-        <lib-fa-icon matListItemIcon [icon]="gospelIcon"></lib-fa-icon>
-        <span matListItemTitle>The Good News</span>
-        <span>The everlasting covenant that will never change.</span>
+      <mat-list-item lines="3" (click)="goHome(); drawer.close()">
+        <lib-fa-icon matListItemIcon [icon]="homeIcon"></lib-fa-icon>
+        <span matListItemTitle>About Me</span>
+        <span>My testimony & a message of encouragement.</span>
       </mat-list-item>
-      <mat-list-item lines="3" (click)="openBible(); drawer.close()">
-        <lib-fa-icon matListItemIcon [icon]="bookIcon"></lib-fa-icon>
-        <span matListItemTitle>The Holy Bible</span>
-        <span>Let God be true and every man a liar.</span>
+      <mat-list-item lines="3" (click)="goEmail(); drawer.close()">
+        <lib-fa-icon matListItemIcon [icon]="mailIcon"></lib-fa-icon>
+        <span matListItemTitle>Contact Me</span>
+        <span>If you're encouraged, please leave a message.</span>
       </mat-list-item>
-      <mat-divider></mat-divider>
 
       <div mat-subheader>Posts</div>
       <mat-list-item lines="3" (click)="goDiscern(); drawer.close()">
@@ -39,7 +38,6 @@
         <span matListItemTitle>Study</span>
         <span>Grouping scripture for a complete understanding. </span>
       </mat-list-item>
-      <mat-divider></mat-divider>
 
       <div mat-subheader>Pictures</div>
       <mat-list-item lines="3" (click)="goDrawings(); drawer.close()">
@@ -51,18 +49,6 @@
         <lib-fa-icon matListItemIcon [icon]="tractIcon"></lib-fa-icon>
         <span matListItemTitle>Tract</span>
         <span>Tracts to communicate truth in a quick & effective way.</span>
-      </mat-list-item>
-
-      <mat-divider></mat-divider>
-      <mat-list-item lines="3" (click)="goHome(); drawer.close()">
-        <lib-fa-icon matListItemIcon [icon]="homeIcon"></lib-fa-icon>
-        <span matListItemTitle>About Me</span>
-        <span>My testimony & a message of encouragement.</span>
-      </mat-list-item>
-      <mat-list-item lines="2" (click)="goEmail(); drawer.close()">
-        <lib-fa-icon matListItemIcon [icon]="mailIcon"></lib-fa-icon>
-        <span matListItemTitle>Contact Me</span>
-        <span>Be honest & contact me.</span>
       </mat-list-item>
     </mat-list>
   </mat-drawer>

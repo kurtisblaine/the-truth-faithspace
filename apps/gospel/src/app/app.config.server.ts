@@ -1,5 +1,6 @@
 import { ApplicationConfig, mergeApplicationConfig } from "@angular/core";
-import { provideServerRendering, RenderMode, ServerRoute, withRoutes } from "@angular/ssr";
+import { provideServerRendering, RenderMode, ServerRoute, withAppShell, withRoutes } from "@angular/ssr";
+import { AppComponent } from "./app.component";
 import { appConfig } from "./app.config";
 
 const serverRoutes: ServerRoute[] = [
@@ -38,7 +39,7 @@ const serverRoutes: ServerRoute[] = [
 ];
 
 const serverConfig: ApplicationConfig = {
-  providers: [provideServerRendering(withRoutes(serverRoutes))],
+  providers: [provideServerRendering(withRoutes(serverRoutes), withAppShell(AppComponent))],
 };
 
 export const config = mergeApplicationConfig(appConfig, serverConfig);
