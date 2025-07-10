@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from "@angular/core";
+import { SeoBaseComponent } from "../../shared/components/seo-base/seo-base.component";
 import { DataService } from "../data.service";
 import { Image } from "../draw-page.component";
 
@@ -8,11 +9,15 @@ import { Image } from "../draw-page.component";
   styleUrls: ["./draw-item.component.scss"],
   standalone: false,
 })
-export class DrawItemComponent implements OnInit {
+export class DrawItemComponent extends SeoBaseComponent implements OnInit {
   // eslint-disable-next-line @angular-eslint/no-input-rename
   @Input("id") public fileName: string;
 
-  constructor(private dataService: DataService) {}
+  protected override keywords: string = "study, draw, Jesus, hope, life, faith, truth, love, Christ, Messiah";
+
+  constructor(private dataService: DataService) {
+    super();
+  }
 
   videoHeight: number | undefined;
   videoWidth: number | undefined;

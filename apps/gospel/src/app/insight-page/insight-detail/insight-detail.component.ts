@@ -2,6 +2,7 @@ import { Component, OnInit } from "@angular/core";
 import { ActivatedRoute } from "@angular/router";
 import { Store } from "@ngrx/store";
 import { switchMap } from "rxjs";
+import { SeoBaseComponent } from "../../shared/components/seo-base/seo-base.component";
 import { InsightEntity } from "../../state/insight/insight.models";
 import { loadInsights } from "../../state/insight/insights.actions";
 import { getById } from "../../state/insight/insights.selectors";
@@ -12,10 +13,14 @@ import { getById } from "../../state/insight/insights.selectors";
   styleUrls: ["./insight-detail.component.scss"],
   standalone: false,
 })
-export class InsightDetailComponent implements OnInit {
+export class InsightDetailComponent extends SeoBaseComponent implements OnInit {
   public blog: InsightEntity;
 
-  constructor(private store: Store, private route: ActivatedRoute) {}
+  protected override keywords: string = "insight, wisdom, truth, eyes, sight, spiritual, understanding, proverbs";
+
+  constructor(private store: Store, private route: ActivatedRoute) {
+    super();
+  }
 
   ngOnInit(): void {
     this.store.dispatch(loadInsights());
