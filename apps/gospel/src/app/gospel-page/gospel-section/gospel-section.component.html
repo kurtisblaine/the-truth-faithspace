@@ -12,7 +12,7 @@
 
   <mat-card-content class="card-content" [class]="{ 'regular-content': !isFloater, 'floater-content': isFloater }">
     <div #paragraphContent>
-      @defer(on viewport(paragraphContent); hydrate never){
+      @defer(on viewport(paragraphContent); hydrate on viewport()){
       <ng-content select=".paragraphs"></ng-content>
       } @placeholder {
       <mat-spinner aria-labelledby="Loading bar" aria-label="Loading bar" style="justify-self: center"></mat-spinner>
