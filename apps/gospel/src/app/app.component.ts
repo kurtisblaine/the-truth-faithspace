@@ -31,7 +31,6 @@ import { DeviceDetectorService } from "ngx-device-detector";
 import { BehaviorSubject, filter, fromEvent, map, Observable } from "rxjs";
 import { LibFaIconComponent } from "shared";
 import { SettingsWidgetComponent } from "./shared/components/settings-widget/settings-widget.component";
-import { WindowService } from "./shared/service/window.service";
 
 @Component({
   selector: "blog-root",
@@ -79,11 +78,7 @@ export class AppComponent implements OnInit {
 
   public scrollTimeout!: any;
 
-  constructor(
-    private router: Router,
-    private windowService: WindowService,
-    private deviceDetector: DeviceDetectorService
-  ) {
+  constructor(private router: Router, private deviceDetector: DeviceDetectorService) {
     const isFullpagePage$ = this.router.events.pipe(
       filter((event) => event instanceof NavigationEnd),
       map((event: NavigationEnd) => {
@@ -94,7 +89,7 @@ export class AppComponent implements OnInit {
     this.isFullpagePage = toSignal(isFullpagePage$, { initialValue: true });
 
     afterNextRender(() => {
-      this.progressValue$ = fromEvent(this.windowService.nativeWindow, "scroll", { passive: true }).pipe(
+      this.progressValue$ = fromEvent(window, "scroll", { passive: true }).pipe(
         map(() => {
           clearTimeout(this.scrollTimeout);
 
@@ -102,9 +97,9 @@ export class AppComponent implements OnInit {
             // console.log("Scroll ended");
           }, 100);
 
-          const scrollTop = this.windowService.nativeWindow.scrollY;
+          const scrollTop = window.scrollY;
           const docHeight = document.body.offsetHeight;
-          const winHeight = this.windowService.nativeWindow.innerHeight;
+          const winHeight = window.innerHeight;
           const scrollPercent = scrollTop / (docHeight - winHeight);
           const scrollPercentRounded = Math.round(scrollPercent * 100);
           return scrollPercentRounded;
@@ -142,7 +137,7 @@ export class AppComponent implements OnInit {
   }
 
   public openBible() {
-    this.windowService?.nativeWindow?.open("https://the-truth-from-the-beginning.web.app/", "_blank");
+    window.open("https://the-truth-from-the-beginning.web.app/", "_blank");
   }
 
   public goHome() {
