@@ -97,13 +97,13 @@ img {
 }
 
 .wedding-image {
-  background-image: url("https://res.cloudinary.com/dffihsa2y/image/upload/v1711590013/img/Mat25L_dzpagk.webp");
-  min-height: 400px;
+  // background-image: url("https://res.cloudinary.com/dffihsa2y/image/upload/v1711590013/img/Mat25L_dzpagk.webp");
+  // min-height: 400px;
 }
 
 .horses-image {
-  background-image: url("https://res.cloudinary.com/dffihsa2y/image/upload/v1711590014/img/Rotator-7f_ydnvku.webp");
-  min-height: 400px;
+  // background-image: url("https://res.cloudinary.com/dffihsa2y/image/upload/v1711590014/img/Rotator-7f_ydnvku.webp");
+  // min-height: 400px;
 }
 
 .pillar-fire-image {
@@ -171,6 +171,8 @@ img {
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
+
+  width: 100%;
 
   align-content: center;
   height: 100vh;

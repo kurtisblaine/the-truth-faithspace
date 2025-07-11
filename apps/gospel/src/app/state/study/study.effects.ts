@@ -1,4 +1,4 @@
-import { Injectable } from "@angular/core";
+import { Injectable, Injector, runInInjectionContext } from "@angular/core";
 import {
   collection,
   collectionData,
@@ -9,7 +9,7 @@ import {
   setDoc,
 } from "@angular/fire/firestore";
 import { Actions, createEffect, ofType } from "@ngrx/effects";
-import { from, map, mergeMap } from "rxjs";
+import { from, map, mapTo, mergeMap } from "rxjs";
 import { StudyActions } from "./study.actions";
 import { StudyEntity } from "./study.model";
 
@@ -18,8 +18,12 @@ export class StudyEffects {
   public getStudy$ = createEffect(() =>
     this.actions$.pipe(
       ofType(StudyActions.loadStudies),
-      map(() => collection(this.database, "study")),
-      mergeMap((data) => collectionData(data as any, { idField: "collectionId" })),
+      mergeMap(() =>
+        runInInjectionContext(this.injector, () => {
+          const data = collection(this.database, "study");
+          return collectionData(data, { idField: "collectionId" });
+        })
+      ),
       map((data) => {
         return StudyActions.loadStudiesSuccess({
           study: data as StudyEntity[],
@@ -31,20 +35,16 @@ export class StudyEffects {
   public createStudy$ = createEffect(() =>
     this.actions$.pipe(
       ofType(StudyActions.createStudy),
-      map(({ study }) => {
-        return {
-          collection: doc(
+      mergeMap(({ study }) =>
+        runInInjectionContext(this.injector, () => {
+          const collection = doc(
             this.database,
             `study/${study.collectionId ? study.collectionId : study.id}`
-          ) as DocumentReference<StudyEntity>,
-          study,
-        };
-      }),
-      mergeMap(({ collection, study }) => {
-        const doc = from(setDoc<StudyEntity, DocumentData>(collection, study));
-        return doc.pipe(map(() => study));
-      }),
-      // mergeMap((created) => from(getDoc(created))),
+          ) as DocumentReference<StudyEntity>;
+          const doc$ = from(setDoc<StudyEntity, DocumentData>(collection, study));
+          return doc$.pipe(mapTo(study));
+        })
+      ),
       map((document: StudyEntity) =>
         StudyActions.createStudySuccess({
           study: document,
@@ -53,12 +53,5 @@ export class StudyEffects {
     )
   );
 
-  // public reload$ = createEffect(() =>
-  //   this.actions$.pipe(
-  //     ofType(StudyActions.createStudySuccess),
-  //     map(() => StudyActions.loadStudys())
-  //   )
-  // );
-
-  constructor(private readonly actions$: Actions, private database: Firestore) {}
+  constructor(private readonly actions$: Actions, private database: Firestore, private injector: Injector) {}
 }
