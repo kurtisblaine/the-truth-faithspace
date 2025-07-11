@@ -14,13 +14,13 @@ const serverRoutes: ServerRoute[] = [
   {
     path: "edifications/edify-detail/:id",
     renderMode: RenderMode.Prerender,
-    getPrerenderParams() {
+    async getPrerenderParams() {
       const firebase = inject(Firestore);
 
       const collectionRef = collection(firebase, "blog");
       const collectionData$ = collectionData(collectionRef, { idField: "collectionId" });
 
-      return firstValueFrom(collectionData$);
+      return await firstValueFrom(collectionData$);
     },
   },
   {
@@ -36,6 +36,42 @@ const serverRoutes: ServerRoute[] = [
     },
   },
   {
+    path: "studies/study-detail/:id",
+    renderMode: RenderMode.Prerender,
+    async getPrerenderParams() {
+      const firebase = inject(Firestore);
+
+      const collectionRef = collection(firebase, "study");
+      const collectionData$ = collectionData(collectionRef, { idField: "collectionId" });
+
+      return await firstValueFrom(collectionData$);
+    },
+  },
+  {
+    path: "insights/insight-detail/:id",
+    renderMode: RenderMode.Prerender,
+    async getPrerenderParams() {
+      const firebase = inject(Firestore);
+
+      const collectionRef = collection(firebase, "proverb");
+      const collectionData$ = collectionData(collectionRef, { idField: "collectionId" });
+
+      return await firstValueFrom(collectionData$);
+    },
+  },
+  {
+    path: "poems/poem-detail/:id",
+    renderMode: RenderMode.Prerender,
+    async getPrerenderParams() {
+      const firebase = inject(Firestore);
+
+      const collectionRef = collection(firebase, "psalm");
+      const collectionData$ = collectionData(collectionRef, { idField: "collectionId" });
+
+      return await firstValueFrom(collectionData$);
+    },
+  },
+  {
     path: "drawings/draw/:id",
     renderMode: RenderMode.Prerender,
     async getPrerenderParams() {
@@ -43,42 +79,6 @@ const serverRoutes: ServerRoute[] = [
       const images = dataService.init();
 
       return images.map((image) => ({ id: image.fileName.split(".")[0] }));
-    },
-  },
-  {
-    path: "studies/study-detail/:id",
-    renderMode: RenderMode.Prerender,
-    getPrerenderParams() {
-      const firebase = inject(Firestore);
-
-      const collectionRef = collection(firebase, "study");
-      const collectionData$ = collectionData(collectionRef, { idField: "collectionId" });
-
-      return firstValueFrom(collectionData$);
-    },
-  },
-  {
-    path: "insights/insight-detail/:id",
-    renderMode: RenderMode.Prerender,
-    getPrerenderParams() {
-      const firebase = inject(Firestore);
-
-      const collectionRef = collection(firebase, "proverb");
-      const collectionData$ = collectionData(collectionRef, { idField: "collectionId" });
-
-      return firstValueFrom(collectionData$);
-    },
-  },
-  {
-    path: "poems/poem-detail/:id",
-    renderMode: RenderMode.Prerender,
-    getPrerenderParams() {
-      const firebase = inject(Firestore);
-
-      const collectionRef = collection(firebase, "psalm");
-      const collectionData$ = collectionData(collectionRef, { idField: "collectionId" });
-
-      return firstValueFrom(collectionData$);
     },
   },
   {
