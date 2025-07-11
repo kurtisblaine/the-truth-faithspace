@@ -1,7 +1,7 @@
 import { Component, OnInit } from "@angular/core";
 import { ActivatedRoute } from "@angular/router";
 import { Store } from "@ngrx/store";
-import { switchMap } from "rxjs";
+import { Observable, tap } from "rxjs";
 import { SeoBaseComponent } from "../../shared/components/seo-base/seo-base.component";
 import { loadDiscernments } from "../../state/discern/discern.actions";
 import { DiscernEntity } from "../../state/discern/discern.models";
@@ -14,7 +14,7 @@ import { getById } from "../../state/discern/discern.selectors";
   standalone: false,
 })
 export class DiscernDetailComponent extends SeoBaseComponent implements OnInit {
-  public blog: DiscernEntity;
+  public blog$: Observable<DiscernEntity>;
 
   protected override keywords: string =
     "discernment, judgement, judge, discern, truth, lies,  falsehood, understanding, light, darkness";
@@ -26,14 +26,7 @@ export class DiscernDetailComponent extends SeoBaseComponent implements OnInit {
   ngOnInit(): void {
     this.store.dispatch(loadDiscernments());
 
-    this.route.params
-      .pipe(
-        switchMap((p) => {
-          return this.store.select(getById(p["id"]));
-        })
-      )
-      .subscribe((r) => {
-        this.blog = r;
-      });
+    const id = this.route.snapshot.paramMap.get("id");
+    this.blog$ = this.store.select(getById(id)).pipe(tap(() => this.init()));
   }
 }

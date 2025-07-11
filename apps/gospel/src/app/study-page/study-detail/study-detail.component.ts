@@ -1,7 +1,8 @@
 import { ChangeDetectionStrategy, Component, OnInit } from "@angular/core";
 import { ActivatedRoute } from "@angular/router";
 import { Store } from "@ngrx/store";
-import { switchMap } from "rxjs";
+import { Observable, tap } from "rxjs";
+import { SeoBaseComponent } from "../../shared/components/seo-base/seo-base.component";
 import { StudyActions } from "../../state/study/study.actions";
 import { StudyEntity } from "../../state/study/study.model";
 import { getById } from "../../state/study/study.selectors";
@@ -12,22 +13,17 @@ import { getById } from "../../state/study/study.selectors";
   changeDetection: ChangeDetectionStrategy.OnPush,
   standalone: false,
 })
-export class StudyDetailComponent implements OnInit {
-  public study: StudyEntity;
+export class StudyDetailComponent extends SeoBaseComponent implements OnInit {
+  public blog$: Observable<StudyEntity>;
 
-  constructor(private store: Store, private route: ActivatedRoute) {}
+  constructor(private store: Store, private route: ActivatedRoute) {
+    super();
+  }
 
   ngOnInit(): void {
     this.store.dispatch(StudyActions.loadStudies());
 
-    this.route.params
-      .pipe(
-        switchMap((p) => {
-          return this.store.select(getById(p["id"]));
-        })
-      )
-      .subscribe((r) => {
-        this.study = r;
-      });
+    const id = this.route.snapshot.paramMap.get("id");
+    this.blog$ = this.store.select(getById(id)).pipe(tap(() => this.init()));
   }
 }
