@@ -1,5 +1,5 @@
 import { CommonModule, NgOptimizedImage } from "@angular/common";
-import { ChangeDetectionStrategy, Component, OnInit, signal } from "@angular/core";
+import { afterNextRender, ChangeDetectionStrategy, Component, OnInit, signal } from "@angular/core";
 import { MatButtonModule } from "@angular/material/button";
 import { MatExpansionModule } from "@angular/material/expansion";
 import { ActivatedRoute, Router } from "@angular/router";
@@ -35,7 +35,7 @@ import { GospelSectionComponent } from "../gospel-section/gospel-section.compone
   ],
 })
 export class StaticGospelComponent extends SeoBaseComponent implements OnInit {
-  public isMobile = signal(false);
+  public isMobile = signal(true);
 
   protected override keywords: string = "gospel, faith, righteous, live, kingdom, Jesus, revealed, truth";
 
@@ -45,11 +45,11 @@ export class StaticGospelComponent extends SeoBaseComponent implements OnInit {
     private deviceDetector: DeviceDetectorService
   ) {
     super();
+
+    afterNextRender(() => this.isMobile.set(this.deviceDetector.isMobile()));
   }
 
-  ngOnInit() {
-    this.isMobile.set(this.deviceDetector.isMobile());
-  }
+  ngOnInit() {}
 
   public toAnchor(elementId: string): void {
     //TODO change the url route...

@@ -1,8 +1,7 @@
 import { ApplicationConfig, inject, mergeApplicationConfig } from "@angular/core";
 import { collection, collectionData, Firestore } from "@angular/fire/firestore";
-import { provideServerRendering, RenderMode, ServerRoute, withAppShell, withRoutes } from "@angular/ssr";
+import { provideServerRendering, RenderMode, ServerRoute, withRoutes } from "@angular/ssr";
 import { firstValueFrom } from "rxjs";
-import { AppComponent } from "./app.component";
 import { appConfig } from "./app.config";
 import { DataService } from "./draw-page/data.service";
 
@@ -88,7 +87,7 @@ const serverRoutes: ServerRoute[] = [
 ];
 
 const serverConfig: ApplicationConfig = {
-  providers: [provideServerRendering(withRoutes(serverRoutes), withAppShell(AppComponent))],
+  providers: [provideServerRendering(withRoutes(serverRoutes))],
 };
 
 export const config = mergeApplicationConfig(appConfig, serverConfig);

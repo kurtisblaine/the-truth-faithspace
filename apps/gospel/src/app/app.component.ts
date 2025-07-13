@@ -74,7 +74,7 @@ export class AppComponent implements OnInit {
   public progressValue = new BehaviorSubject(0);
   public progressValue$!: Observable<number>;
   public isFullpagePage!: Signal<boolean>;
-  public isMobile = signal(false);
+  public isMobile = signal(true);
 
   public scrollTimeout!: any;
 
@@ -89,6 +89,8 @@ export class AppComponent implements OnInit {
     this.isFullpagePage = toSignal(isFullpagePage$, { initialValue: true });
 
     afterNextRender(() => {
+      this.isMobile.set(this.deviceDetector.isMobile());
+
       this.progressValue$ = fromEvent(window, "scroll", { passive: true }).pipe(
         map(() => {
           clearTimeout(this.scrollTimeout);
@@ -108,9 +110,7 @@ export class AppComponent implements OnInit {
     });
   }
 
-  public ngOnInit() {
-    this.isMobile.set(this.deviceDetector.isMobile());
-  }
+  public ngOnInit() {}
 
   openMenu() {
     this.trigger.openMenu();

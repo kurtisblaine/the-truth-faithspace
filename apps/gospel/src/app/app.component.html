@@ -3,12 +3,12 @@
     <mat-list>
       <mat-list-item lines="3" (click)="goHome(); drawer.close()">
         <lib-fa-icon matListItemIcon [icon]="homeIcon"></lib-fa-icon>
-        <span matListItemTitle>About Me</span>
+        <span matListItemTitle>About</span>
         <span>My testimony & a message of encouragement.</span>
       </mat-list-item>
       <mat-list-item lines="3" (click)="goEmail(); drawer.close()">
         <lib-fa-icon matListItemIcon [icon]="mailIcon"></lib-fa-icon>
-        <span matListItemTitle>Contact Me</span>
+        <span matListItemTitle>Contact</span>
         <span>If you're encouraged, please leave a message.</span>
       </mat-list-item>
 
@@ -82,6 +82,9 @@
         </button>
 
         <mat-menu #menu="matMenu">
+          <button mat-menu-item (click)="goHome()">About</button>
+          <button mat-menu-item (click)="goEmail()">Contact</button>
+          <mat-divider></mat-divider>
           <button mat-menu-item (click)="goDiscern()">Discernment</button>
           <button mat-menu-item (click)="goBlog()">Edification</button>
           <button mat-menu-item (click)="goInsight()">Insight</button>
@@ -90,9 +93,6 @@
           <mat-divider></mat-divider>
           <button mat-menu-item (click)="goDrawings()">Drawing</button>
           <button mat-menu-item (click)="goTracts()">Tract</button>
-          <mat-divider></mat-divider>
-          <button mat-menu-item (click)="goHome()">About Me</button>
-          <button mat-menu-item (click)="goEmail()">Contact Me</button>
         </mat-menu>
 
         <button mat-button (click)="goGospel(); drawer.close()"><h1>The Good News</h1></button>

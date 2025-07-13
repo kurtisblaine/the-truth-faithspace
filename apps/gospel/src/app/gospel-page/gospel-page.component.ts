@@ -1,5 +1,6 @@
 import { isPlatformBrowser, Location } from "@angular/common";
 import {
+  afterNextRender,
   AfterViewInit,
   ChangeDetectionStrategy,
   Component,
@@ -52,7 +53,7 @@ export class GospelPageComponent extends SeoBaseComponent implements OnInit, Aft
     return isPlatformBrowser(this.platformId);
   }
 
-  public isMobile = signal(false);
+  public isMobile = signal(true);
 
   public fullpageApi: fullpageApi;
   protected override keywords: string = "gospel, faith, righteous, live, kingdom, Jesus, revealed, truth";
@@ -66,11 +67,11 @@ export class GospelPageComponent extends SeoBaseComponent implements OnInit, Aft
     @Inject(PLATFORM_ID) private platformId: object
   ) {
     super();
+
+    afterNextRender(() => this.isMobile.set(this.deviceDetector.isMobile()));
   }
 
-  ngOnInit() {
-    this.isMobile.set(this.deviceDetector.isMobile());
-  }
+  ngOnInit() {}
 
   ngOnDestroy() {
     this.routeSubscription?.unsubscribe();
