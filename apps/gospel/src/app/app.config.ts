@@ -43,12 +43,6 @@ const routes: Routes = [
     loadChildren: () => import("./gospel-page/gospel-page.module").then((m) => m.GospelPageModule),
   },
   {
-    path: "truth2",
-    title: "The Good News of the Kingdom of God",
-    loadComponent: () =>
-      import("./gospel-page/_static-gospel/static-gospel.component").then((m) => m.StaticGospelComponent),
-  },
-  {
     path: "poems",
     loadChildren: () => import("./psalm-page/psalm-page.module").then((m) => m.PsalmPageModule),
   },
