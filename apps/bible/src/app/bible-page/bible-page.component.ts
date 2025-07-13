@@ -11,7 +11,6 @@ import { Bible } from "../models/bibles";
 
 @Component({
   selector: "app-bible-page",
-  standalone: true,
   imports: [CommonModule, MatListModule, TooltipDirective],
   templateUrl: "./bible-page.component.html",
   styleUrl: "./bible-page.component.scss",

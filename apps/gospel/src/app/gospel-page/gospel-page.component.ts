@@ -1,8 +1,16 @@
-import { Location } from "@angular/common";
-import { AfterViewInit, ChangeDetectionStrategy, Component, OnDestroy, OnInit, signal } from "@angular/core";
+import { isPlatformBrowser, Location } from "@angular/common";
+import {
+  AfterViewInit,
+  ChangeDetectionStrategy,
+  Component,
+  Inject,
+  OnDestroy,
+  OnInit,
+  PLATFORM_ID,
+  signal,
+} from "@angular/core";
 import { ActivatedRoute } from "@angular/router";
-import { isScullyRunning } from "@scullyio/ng-lib";
-import { fullpageApi, fullpageOptions, Item, Trigger } from "fullpage.js/dist/fullpage.min";
+import { fullpageApi, fullpageOptions, Item, Trigger } from "fullpage.js/dist/fullpage.extensions.min";
 import { DeviceDetectorService } from "ngx-device-detector";
 import { distinctUntilChanged, filter, Subscription } from "rxjs";
 import { SeoBaseComponent } from "../shared/components/seo-base/seo-base.component";
@@ -40,7 +48,10 @@ export class GospelPageComponent extends SeoBaseComponent implements OnInit, Aft
     credits: { enabled: true, label: "May the Lord bless you.", position: "left" },
   };
 
-  public isScullyRunning = isScullyRunning();
+  get isPlatformBrowser() {
+    return isPlatformBrowser(this.platformId);
+  }
+
   public isMobile = signal(false);
 
   public fullpageApi: fullpageApi;
@@ -51,7 +62,8 @@ export class GospelPageComponent extends SeoBaseComponent implements OnInit, Aft
   constructor(
     private route: ActivatedRoute,
     private location: Location,
-    private deviceDetector: DeviceDetectorService
+    private deviceDetector: DeviceDetectorService,
+    @Inject(PLATFORM_ID) private platformId: object
   ) {
     super();
   }

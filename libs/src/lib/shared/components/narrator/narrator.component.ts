@@ -18,7 +18,6 @@ export enum NarratorStyle {
   templateUrl: "./narrator.component.html",
   styleUrl: "./narrator.component.scss",
   imports: [MatButtonModule, MatButtonToggleModule, CommonModule, LibFaIconComponent, FormsModule],
-  standalone: true,
 })
 export class NarratorComponent implements OnDestroy, OnInit {
   @Input() public buttonStyle = NarratorStyle.Fab;
@@ -55,8 +54,8 @@ export class NarratorComponent implements OnDestroy, OnInit {
 
   ngOnDestroy(): void {
     this.stopReading();
-    this.subscription.unsubscribe();
-    this.playingSubscription.unsubscribe();
+    this.subscription?.unsubscribe();
+    this.playingSubscription?.unsubscribe();
   }
 
   startReading() {

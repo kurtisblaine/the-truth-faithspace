@@ -1,4 +1,4 @@
-import { Injectable } from "@angular/core";
+import { Injectable, Injector, runInInjectionContext } from "@angular/core";
 import {
   collection,
   collectionData,
@@ -13,13 +13,18 @@ import { from, map, mapTo, mergeMap } from "rxjs";
 
 import * as DiscernActions from "./discern.actions";
 import { DiscernEntity } from "./discern.models";
+
 @Injectable()
 export class DiscernmentsEffects {
   public getDiscern$ = createEffect(() =>
     this.actions$.pipe(
       ofType(DiscernActions.loadDiscernments),
-      mapTo(collection(this.database, "discern")),
-      mergeMap((data) => collectionData(data, { idField: "collectionId" })),
+      mergeMap(() =>
+        runInInjectionContext(this.injector, () => {
+          const data = collection(this.database, "discern");
+          return collectionData(data, { idField: "collectionId" });
+        })
+      ),
       map((data) =>
         DiscernActions.loadDiscernmentsSuccess({
           discern: data as DiscernEntity[],
@@ -31,18 +36,16 @@ export class DiscernmentsEffects {
   public createDiscern$ = createEffect(() =>
     this.actions$.pipe(
       ofType(DiscernActions.createDiscern),
-      map(({ discern }) => ({
-        collection: doc(
-          this.database,
-          `discern/${discern.collectionId ? discern.collectionId : discern.id}`
-        ) as DocumentReference<DiscernEntity>,
-        discern,
-      })),
-      mergeMap(({ collection, discern }) => {
-        const doc = from(setDoc<DiscernEntity, DocumentData>(collection, discern));
-        return doc.pipe(mapTo(discern));
-      }),
-      // mergeMap((created) => from(getDoc(created))),
+      mergeMap(({ discern }) =>
+        runInInjectionContext(this.injector, () => {
+          const collection = doc(
+            this.database,
+            `discern/${discern.collectionId ? discern.collectionId : discern.id}`
+          ) as DocumentReference<DiscernEntity>;
+          const doc$ = from(setDoc<DiscernEntity, DocumentData>(collection, discern));
+          return doc$.pipe(mapTo(discern));
+        })
+      ),
       map((document) =>
         DiscernActions.createDiscernmentsuccess({
           discern: document,
@@ -51,5 +54,5 @@ export class DiscernmentsEffects {
     )
   );
 
-  constructor(private readonly actions$: Actions, private database: Firestore) {}
+  constructor(private readonly actions$: Actions, private database: Firestore, private injector: Injector) {}
 }

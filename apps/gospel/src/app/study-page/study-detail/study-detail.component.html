@@ -1,18 +1,18 @@
-<mat-card style="margin: 15px">
+<mat-card style="margin: 15px" *ngIf="blog$ | async as blog">
   <mat-card-header>
     <mat-card-title-group>
       <mat-card-title>
-        <h3 class="study-title primary-color">
-          {{ study?.title }}
+        <h3 class="study-title primary-color" #seoTitle>
+          {{ blog?.title }}
         </h3>
       </mat-card-title>
       <mat-card-subtitle>
-        <div>{{ study?.date | date: "short" }}</div>
+        <div #seoCaption>{{ blog?.date | date: "short" }}</div>
       </mat-card-subtitle>
     </mat-card-title-group>
   </mat-card-header>
 
   <mat-card-content>
-    <lib-text-editor [readonly]="true" [document]="study.json" [showReadMore]="false"></lib-text-editor>
+    <lib-text-editor [readonly]="true" [document]="blog.json" [showReadMore]="false"></lib-text-editor>
   </mat-card-content>
 </mat-card>

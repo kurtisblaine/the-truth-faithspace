@@ -1,7 +1,7 @@
-import { Component, ElementRef, OnInit, signal, Signal, ViewChild } from "@angular/core";
+import { afterNextRender, Component, ElementRef, OnInit, signal, Signal, ViewChild } from "@angular/core";
 import { toSignal } from "@angular/core/rxjs-interop";
-import { MatMenuTrigger } from "@angular/material/menu";
-import { NavigationEnd, Router } from "@angular/router";
+import { MatMenuModule, MatMenuTrigger } from "@angular/material/menu";
+import { NavigationEnd, Router, RouterModule } from "@angular/router";
 import {
   faArrowUp,
   faBars,
@@ -20,15 +20,35 @@ import {
   faPenToSquare,
 } from "@fortawesome/free-solid-svg-icons";
 
+import { CommonModule } from "@angular/common";
+import { MatButtonModule } from "@angular/material/button";
+import { MatListModule } from "@angular/material/list";
+import { MatProgressBarModule } from "@angular/material/progress-bar";
+import { MatSidenavModule } from "@angular/material/sidenav";
+import { MatToolbarModule } from "@angular/material/toolbar";
+import { MatTooltipModule } from "@angular/material/tooltip";
 import { DeviceDetectorService } from "ngx-device-detector";
 import { BehaviorSubject, filter, fromEvent, map, Observable } from "rxjs";
-import { WindowService } from "./shared/service/window.service";
+import { LibFaIconComponent } from "shared";
+import { SettingsWidgetComponent } from "./shared/components/settings-widget/settings-widget.component";
 
 @Component({
   selector: "blog-root",
   templateUrl: "./app.component.html",
   styleUrls: ["./app.component.scss"],
-  standalone: false,
+  imports: [
+    MatSidenavModule,
+    MatProgressBarModule,
+    MatButtonModule,
+    MatToolbarModule,
+    RouterModule,
+    MatListModule,
+    MatTooltipModule,
+    MatMenuModule,
+    LibFaIconComponent,
+    SettingsWidgetComponent,
+    CommonModule,
+  ],
 })
 export class AppComponent implements OnInit {
   @ViewChild("toTop") public toTopElement: ElementRef;
@@ -58,11 +78,7 @@ export class AppComponent implements OnInit {
 
   public scrollTimeout!: any;
 
-  constructor(
-    private router: Router,
-    private windowService: WindowService,
-    private deviceDetector: DeviceDetectorService
-  ) {
+  constructor(private router: Router, private deviceDetector: DeviceDetectorService) {
     const isFullpagePage$ = this.router.events.pipe(
       filter((event) => event instanceof NavigationEnd),
       map((event: NavigationEnd) => {
@@ -71,13 +87,9 @@ export class AppComponent implements OnInit {
     );
 
     this.isFullpagePage = toSignal(isFullpagePage$, { initialValue: true });
-  }
 
-  public ngOnInit() {
-    this.isMobile.set(this.deviceDetector.isMobile());
-
-    if (this.windowService.nativeWindow) {
-      this.progressValue$ = fromEvent(this.windowService.nativeWindow, "scroll", { passive: true }).pipe(
+    afterNextRender(() => {
+      this.progressValue$ = fromEvent(window, "scroll", { passive: true }).pipe(
         map(() => {
           clearTimeout(this.scrollTimeout);
 
@@ -85,15 +97,19 @@ export class AppComponent implements OnInit {
             // console.log("Scroll ended");
           }, 100);
 
-          const scrollTop = this.windowService.nativeWindow.scrollY;
+          const scrollTop = window.scrollY;
           const docHeight = document.body.offsetHeight;
-          const winHeight = this.windowService.nativeWindow.innerHeight;
+          const winHeight = window.innerHeight;
           const scrollPercent = scrollTop / (docHeight - winHeight);
           const scrollPercentRounded = Math.round(scrollPercent * 100);
           return scrollPercentRounded;
         })
       );
-    }
+    });
+  }
+
+  public ngOnInit() {
+    this.isMobile.set(this.deviceDetector.isMobile());
   }
 
   openMenu() {

@@ -8,14 +8,14 @@ import { MatToolbarModule } from "@angular/material/toolbar";
 import { RouterModule, Routes } from "@angular/router";
 import { NarratorComponent } from "shared";
 import { ReferenceTooltipComponent } from "../shared/components/reference-tooltip/reference-tooltip.component";
-import { FullpageDirective } from "../shared/directives/fullpage/fullpage.directive";
+import { FullpageDirective } from "../shared/directives/fullpage.directive";
+import { StaticGospelComponent } from "./_static-gospel/static-gospel.component";
 import { CallFaithModule } from "./gospel-content/call-faith/call-faith.module";
 import { CallGraceModule } from "./gospel-content/call-grace/call-grace.module";
 import { DangerDeathModule } from "./gospel-content/danger-death/danger-death.module";
 import { DangerSinModule } from "./gospel-content/danger-sin/danger-sin.module";
 import { HopeLifeModule } from "./gospel-content/hope-life/hope-life.module";
 import { ResponseModule } from "./gospel-content/response/response.module";
-import { GospelHeaderComponent } from "./gospel-header/gospel-header.component";
 import { GospelPageComponent } from "./gospel-page.component";
 import { GospelSectionComponent } from "./gospel-section/gospel-section.component";
 
@@ -27,7 +27,7 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  declarations: [GospelSectionComponent, GospelHeaderComponent, GospelPageComponent],
+  declarations: [GospelPageComponent],
   imports: [
     CommonModule,
     MatButtonModule,
@@ -42,10 +42,12 @@ const routes: Routes = [
     CallFaithModule,
     ResponseModule,
     HopeLifeModule,
-    FullpageDirective,
     NarratorComponent,
     ReferenceTooltipComponent,
     NgOptimizedImage,
+    FullpageDirective,
+    GospelSectionComponent,
+    StaticGospelComponent,
   ],
   providers: [],
 })

@@ -1,8 +1,7 @@
 .card {
   margin: auto;
   width: 100%;
-  max-height: 65%;
-  min-height: 65%;
+  height: 65vh;
 }
 
 .card-content {
@@ -29,9 +28,9 @@
 }
 
 .floater-content {
-  margin: 10px 25px;
+  margin: 10px 25px 20px 25px;
 }
 
 .regular-content {
-  margin: 0px 110px 40px 110px;
+  margin: 10px 50px 20px 50px;
 }

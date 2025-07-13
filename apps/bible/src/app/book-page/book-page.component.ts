@@ -14,7 +14,6 @@ import { Book } from "../models/books";
 
 @Component({
   selector: "app-book-page",
-  standalone: true,
   imports: [MatProgressSpinnerModule, CommonModule, MatListModule, MatSnackBarModule, TooltipDirective],
   templateUrl: "./book-page.component.html",
   styleUrl: "./book-page.component.scss",

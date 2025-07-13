@@ -5,7 +5,6 @@ import { ChangeDetectionStrategy, Component, Input } from "@angular/core";
   template: `(<a href="{{ link }}" target="_blank">{{ title }}</a
     >)`,
   styles: ``,
-  standalone: true,
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class LinkComponent {

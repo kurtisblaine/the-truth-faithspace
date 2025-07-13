@@ -16,7 +16,6 @@ import { getAllInsight } from "../../state/insight/insights.selectors";
   templateUrl: "./insight-list.component.html",
   styleUrls: ["./insight-list.component.scss"],
   imports: [MatDividerModule, CommonModule, TextEditorComponent, MatButtonModule],
-  standalone: true,
 })
 export class InsightListComponent implements OnInit {
   @Input() public update = false;

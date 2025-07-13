@@ -1,13 +1,5 @@
-import {
-  AfterViewInit,
-  ChangeDetectorRef,
-  Component,
-  ElementRef,
-  Input,
-  OnDestroy,
-  OnInit,
-  ViewChild,
-} from "@angular/core";
+import { Component, Input, OnInit } from "@angular/core";
+import { SeoBaseComponent } from "../../shared/components/seo-base/seo-base.component";
 import { DataService } from "../data.service";
 import { Image } from "../draw-page.component";
 
@@ -17,15 +9,15 @@ import { Image } from "../draw-page.component";
   styleUrls: ["./draw-item.component.scss"],
   standalone: false,
 })
-export class DrawItemComponent implements OnInit, AfterViewInit, OnDestroy {
+export class DrawItemComponent extends SeoBaseComponent implements OnInit {
   // eslint-disable-next-line @angular-eslint/no-input-rename
   @Input("id") public fileName: string;
-  // eslint-disable-next-line @angular-eslint/no-input-rename
-  @Input("video") public youtubeVideo: string;
 
-  constructor(private changeDetectorRef: ChangeDetectorRef, private dataService: DataService) {}
+  protected override keywords: string = "study, draw, Jesus, hope, life, faith, truth, love, Christ, Messiah";
 
-  @ViewChild("youTubePlayer") youTubePlayer: ElementRef<HTMLDivElement>;
+  constructor(private dataService: DataService) {
+    super();
+  }
 
   videoHeight: number | undefined;
   videoWidth: number | undefined;
@@ -35,20 +27,5 @@ export class DrawItemComponent implements OnInit, AfterViewInit, OnDestroy {
   ngOnInit(): void {
     const images = this.dataService.init();
     this.selectedImage = images.find((i) => i.fileName === this.fileName + ".webp");
-  }
-
-  ngOnDestroy() {}
-
-  ngAfterViewInit(): void {
-    this.onResize();
-    window.addEventListener("resize", this.onResize.bind(this));
-  }
-
-  onResize(): void {
-    if (!this.youTubePlayer) return;
-
-    this.videoWidth = Math.min(this.youTubePlayer.nativeElement.clientWidth, 1200);
-    this.videoHeight = this.videoWidth * 0.6;
-    this.changeDetectorRef.detectChanges();
   }
 }

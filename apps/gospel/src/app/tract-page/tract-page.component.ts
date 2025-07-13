@@ -1,5 +1,6 @@
 import { Component } from "@angular/core";
 import { SeoBaseComponent } from "../shared/components/seo-base/seo-base.component";
+import { WindowService } from "../shared/service/window.service";
 
 @Component({
   selector: "blog-tract-page",
@@ -10,7 +11,11 @@ import { SeoBaseComponent } from "../shared/components/seo-base/seo-base.compone
 export class TractPageComponent extends SeoBaseComponent {
   override keywords: string = "tracts, bookmarks, cards, reminder, print, truth, eternity";
 
+  constructor(private windowService: WindowService) {
+    super();
+  }
+
   openLink(link: string) {
-    window.open(link, "_blank");
+    this.windowService.nativeWindow?.open(link, "_blank");
   }
 }

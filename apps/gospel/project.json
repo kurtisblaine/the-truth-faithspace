@@ -7,23 +7,21 @@
   "tags": [],
   "targets": {
     "build": {
-      "executor": "@angular-devkit/build-angular:browser-esbuild",
+      "executor": "@angular-devkit/build-angular:application",
       "outputs": ["{options.outputPath}"],
       "options": {
-        "statsJson": true,
-        "aot": true,
         "outputPath": "apps/gospel/public",
         "index": "apps/gospel/src/index.html",
-        "main": "apps/gospel/src/main.ts",
-        "polyfills": "apps/gospel/src/polyfills.ts",
+        "browser": "apps/gospel/src/main.ts",
         "tsConfig": "apps/gospel/tsconfig.app.json",
         "inlineStyleLanguage": "scss",
+        "namedChunks": true,
         "assets": ["apps/gospel/src/favicon.ico", "apps/gospel/src/assets", "apps/gospel/src/robots.txt"],
         "styles": ["apps/gospel/src/styles.scss"],
         "scripts": ["./node_modules/fullpage.js/dist/fullpage.min.js"],
-        "sourceMap": true,
-        "namedChunks": true,
-        "allowedCommonJsDependencies": ["photoswipe", "photoswipe/dist/photoswipe-ui-default"]
+        "allowedCommonJsDependencies": ["photoswipe", "photoswipe/dist/photoswipe-ui-default"],
+        "server": "apps/gospel/src/main.server.ts",
+        "outputMode": "static"
       },
       "configurations": {
         "production": {
@@ -45,18 +43,14 @@
               "with": "apps/gospel/src/environments/environment.prod.ts"
             }
           ],
-          "outputHashing": "all",
-          "buildOptimizer": true,
-          "optimization": true,
-          "sourceMap": true
+          "outputHashing": "all"
         },
         "development": {
-          "buildOptimizer": false,
           "optimization": false,
-          "vendorChunk": true,
           "extractLicenses": false,
           "sourceMap": true,
-          "namedChunks": true
+          "namedChunks": true,
+          "statsJson": true
         }
       },
       "defaultConfiguration": "production"
@@ -71,7 +65,8 @@
           "buildTarget": "gospel:build:development"
         }
       },
-      "defaultConfiguration": "development"
+      "defaultConfiguration": "development",
+      "continuous": true
     },
     "extract-i18n": {
       "executor": "@angular-devkit/build-angular:extract-i18n",
@@ -80,10 +75,7 @@
       }
     },
     "lint": {
-      "executor": "@nrwl/linter:eslint",
-      "options": {
-        "lintFilePatterns": ["apps/gospel/**/*.ts", "apps/gospel/**/*.html"]
-      }
+      "executor": "@nx/eslint:lint"
     },
     "deploy": {
       "builder": "@angular/fire:deploy",
@@ -92,53 +84,6 @@
         "serverTarget": "gospel:server:production",
         "prerenderTarget": "gospel:prerender:production"
       }
-    },
-    "server": {
-      "dependsOn": ["build"],
-      "executor": "@angular-devkit/build-angular:server",
-      "options": {
-        "outputPath": "dist/apps/gospel/server",
-        "main": "apps/gospel/server.ts",
-        "tsConfig": "apps/gospel/tsconfig.server.json",
-        "sourceMap": true,
-        "inlineStyleLanguage": "scss"
-      },
-      "configurations": {
-        "production": {
-          "outputHashing": "media",
-          "fileReplacements": [
-            {
-              "replace": "apps/gospel/src/environments/environment.ts",
-              "with": "apps/gospel/src/environments/environment.prod.ts"
-            }
-          ]
-        },
-        "development": {
-          "buildOptimizer": false,
-          "optimization": false,
-          "sourceMap": true,
-          "extractLicenses": false,
-          "vendorChunk": true
-        }
-      },
-      "defaultConfiguration": "production"
-    },
-    "prerender": {
-      "executor": "@angular-devkit/build-angular:prerender",
-      "options": {
-        "routes": ["/"]
-      },
-      "configurations": {
-        "development": {
-          "browserTarget": "gospel:build:development",
-          "serverTarget": "gospel:server:development"
-        },
-        "production": {
-          "browserTarget": "gospel:build:production",
-          "serverTarget": "gospel:server:production"
-        }
-      },
-      "defaultConfiguration": "production"
     }
   }
 }

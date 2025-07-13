@@ -1,4 +1,4 @@
-import { Injectable } from "@angular/core";
+import { Injectable, Injector, runInInjectionContext } from "@angular/core";
 import {
   collection,
   collectionData,
@@ -19,8 +19,12 @@ export class BlogEffects {
   public getBlog$ = createEffect(() =>
     this.actions$.pipe(
       ofType(BlogActions.loadBlogs),
-      mapTo(collection(this.database, "blog")),
-      mergeMap((data) => collectionData(data, { idField: "collectionId" })),
+      mergeMap(() =>
+        runInInjectionContext(this.injector, () => {
+          const data = collection(this.database, "blog");
+          return collectionData(data, { idField: "collectionId" });
+        })
+      ),
       map((data) =>
         BlogActions.loadBlogsSuccess({
           blog: data as BlogEntity[],
@@ -32,18 +36,16 @@ export class BlogEffects {
   public createBlog$ = createEffect(() =>
     this.actions$.pipe(
       ofType(BlogActions.createBlog),
-      map(({ blog }) => ({
-        collection: doc(
-          this.database,
-          `blog/${blog.collectionId ? blog.collectionId : blog.id}`
-        ) as DocumentReference<BlogEntity>,
-        blog,
-      })),
-      mergeMap(({ collection, blog }) => {
-        const doc = from(setDoc<BlogEntity, DocumentData>(collection, blog));
-        return doc.pipe(mapTo(blog));
-      }),
-      // mergeMap((created) => from(getDoc(created))),
+      mergeMap(({ blog }) =>
+        runInInjectionContext(this.injector, () => {
+          const collection = doc(
+            this.database,
+            `blog/${blog.collectionId ? blog.collectionId : blog.id}`
+          ) as DocumentReference<BlogEntity>;
+          const doc$ = from(setDoc<BlogEntity, DocumentData>(collection, blog));
+          return doc$.pipe(mapTo(blog));
+        })
+      ),
       map((document) =>
         BlogActions.createBlogSuccess({
           blog: document,
@@ -52,5 +54,5 @@ export class BlogEffects {
     )
   );
 
-  constructor(private readonly actions$: Actions, private database: Firestore) {}
+  constructor(private readonly actions$: Actions, private database: Firestore, private injector: Injector) {}
 }

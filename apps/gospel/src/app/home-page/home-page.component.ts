@@ -1,5 +1,4 @@
-import { ChangeDetectionStrategy, Component, OnInit } from "@angular/core";
-import { fadeInOut } from "shared";
+import { Component, OnInit } from "@angular/core";
 import { NarratorStyle } from "../../../../../libs/src/lib/shared/components/narrator/narrator.component";
 import { SeoBaseComponent } from "../shared/components/seo-base/seo-base.component";
 
@@ -7,8 +6,6 @@ import { SeoBaseComponent } from "../shared/components/seo-base/seo-base.compone
   selector: "blog-home-page",
   templateUrl: "./home-page.component.html",
   styleUrls: ["./home-page.component.scss"],
-  changeDetection: ChangeDetectionStrategy.Default,
-  animations: [fadeInOut],
   standalone: false,
 })
 export default class HomePageComponent extends SeoBaseComponent implements OnInit {

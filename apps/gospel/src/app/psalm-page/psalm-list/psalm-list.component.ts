@@ -16,7 +16,6 @@ import { getAllPsalm } from "../../state/psalm/psalm.selectors";
   styleUrls: ["./psalm-list.component.scss"],
   imports: [MatDividerModule, CommonModule, TextEditorComponent, MatButtonModule],
   changeDetection: ChangeDetectionStrategy.OnPush,
-  standalone: true,
 })
 export class PsalmListComponent implements OnInit {
   @Input() public update = false;

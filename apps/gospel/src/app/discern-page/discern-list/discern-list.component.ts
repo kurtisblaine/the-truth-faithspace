@@ -16,8 +16,6 @@ import { getAllDiscern } from "../../state/discern/discern.selectors";
   templateUrl: "./discern-list.component.html",
   styleUrls: ["./discern-list.component.scss"],
   imports: [MatDividerModule, CommonModule, TextEditorComponent, MatButtonModule],
-
-  standalone: true,
 })
 export class DiscernListComponent implements OnInit {
   @Input() public update = false;

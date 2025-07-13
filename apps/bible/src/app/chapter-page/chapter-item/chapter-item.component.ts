@@ -6,7 +6,6 @@ import { Chapter } from "../../models/chapters";
 
 @Component({
   selector: "app-chapter-item",
-  standalone: true,
   imports: [CommonModule, MatCardModule, MatRippleModule],
   templateUrl: "./chapter-item.component.html",
   styleUrl: "./chapter-item.component.scss",

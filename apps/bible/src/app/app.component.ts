@@ -7,7 +7,6 @@ import { MatStepperModule } from "@angular/material/stepper";
 import { Router, RouterModule } from "@angular/router";
 
 @Component({
-  standalone: true,
   imports: [RouterModule, CommonModule, MatStepperModule, FormsModule, ReactiveFormsModule, MatButtonModule],
   selector: "app-root",
   providers: [

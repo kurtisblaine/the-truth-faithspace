@@ -1,5 +1,14 @@
-import { CommonModule } from "@angular/common";
-import { ChangeDetectionStrategy, Component, inject, OnDestroy, OnInit } from "@angular/core";
+import { CommonModule, isPlatformBrowser } from "@angular/common";
+import {
+  afterNextRender,
+  ChangeDetectionStrategy,
+  Component,
+  Inject,
+  inject,
+  OnDestroy,
+  OnInit,
+  PLATFORM_ID,
+} from "@angular/core";
 import { FormsModule } from "@angular/forms";
 import { MatButtonModule } from "@angular/material/button";
 import { MatButtonToggleModule } from "@angular/material/button-toggle";
@@ -49,23 +58,27 @@ export class SettingsWidgetComponent implements OnInit, OnDestroy {
     theme: "light",
   };
 
-  constructor() {
-    const storedSettings = localStorage.getItem("appSettings");
-    if (storedSettings) {
-      this.settings = JSON.parse(storedSettings) as AppSettings;
-      this.themeService.setTheme(this.settings.theme);
-    }
+  constructor(@Inject(PLATFORM_ID) private platformId: object) {
+    afterNextRender(() => {
+      const storedSettings = localStorage.getItem("appSettings");
+      if (storedSettings) {
+        this.settings = JSON.parse(storedSettings) as AppSettings;
+        this.themeService.setTheme(this.settings.theme);
+      }
+    });
   }
 
   ngOnInit(): void {}
 
   ngOnDestroy(): void {
+    if (!isPlatformBrowser(this.platformId)) return;
+
     localStorage.clear();
   }
 
   save() {
     const jsonSettings = JSON.stringify({ theme: this.settings.theme });
-    localStorage.setItem("appSettings", jsonSettings);
+    if (isPlatformBrowser(this.platformId)) localStorage.setItem("appSettings", jsonSettings);
 
     this.themeService.setTheme(this.settings.theme);
   }

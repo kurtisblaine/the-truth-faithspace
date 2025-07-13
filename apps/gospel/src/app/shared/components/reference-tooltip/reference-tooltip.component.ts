@@ -6,7 +6,6 @@ import { ChangeDetectionStrategy, Component, HostBinding, Input, OnInit } from "
   templateUrl: "./reference-tooltip.component.html",
   styleUrls: ["./reference-tooltip.component.scss"],
   changeDetection: ChangeDetectionStrategy.OnPush,
-  standalone: true,
   imports: [CommonModule],
 })
 export class ReferenceTooltipComponent implements OnInit {

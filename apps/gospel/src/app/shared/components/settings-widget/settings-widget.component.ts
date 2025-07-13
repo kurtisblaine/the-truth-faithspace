@@ -7,6 +7,7 @@ import { MatDividerModule } from "@angular/material/divider";
 import { MatSelectModule } from "@angular/material/select";
 import { SpeechService } from "libs/src/lib/shared/components/narrator/speech.service";
 import { ThemeService } from "../../service/theme.service";
+import { WindowService } from "../../service/window.service";
 
 type AppSettings = {
   theme: "light" | "dark";
@@ -75,8 +76,8 @@ export class SettingsWidgetComponent implements OnInit, OnDestroy {
     voice: { name: "Loading...", default: true, lang: "", voiceURI: "", localService: false },
   };
 
-  constructor() {
-    const storedSettings = localStorage.getItem("appSettings");
+  constructor(private windowService: WindowService) {
+    const storedSettings = this.windowService.localStorage?.getItem("appSettings");
     if (storedSettings) {
       this.settings = JSON.parse(storedSettings) as AppSettings;
       this.themeService.setTheme(this.settings.theme);
@@ -85,7 +86,7 @@ export class SettingsWidgetComponent implements OnInit, OnDestroy {
     effect(() => {
       if (!this.speechService.voices().length) return;
 
-      const storedSettings = localStorage.getItem("appSettings");
+      const storedSettings = this.windowService.localStorage?.getItem("appSettings");
       if (storedSettings) {
         this.settings = JSON.parse(storedSettings) as AppSettings;
         this.speechService.setVoice(this.settings.voice.name);
@@ -103,14 +104,14 @@ export class SettingsWidgetComponent implements OnInit, OnDestroy {
   ngOnInit(): void {}
 
   ngOnDestroy(): void {
-    localStorage.clear();
+    this.windowService.localStorage?.clear();
   }
 
   save() {
     this.speechService.setVoice(this.settings.voice.name);
 
     const jsonSettings = JSON.stringify({ theme: this.settings.theme, voice: this.settings.voice });
-    localStorage.setItem("appSettings", jsonSettings);
+    this.windowService.localStorage?.setItem("appSettings", jsonSettings);
 
     this.themeService.setTheme(this.settings.theme);
   }
