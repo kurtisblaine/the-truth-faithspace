@@ -9,11 +9,11 @@ on:
     paths:
       - "apps/gospel/**"
 jobs:
-  build_and_deploy-static-gospel:
+  build_and_deploy-gospel:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - run: npm install --force && npx nx build gospel --prod && npx scully build --project static-gospel
+      - run: npm install --force && npx nx build gospel --prod --output-path apps/gospel/public
       - uses: FirebaseExtended/action-hosting-deploy@v0
         with:
           repoToken: "${{ secrets.GITHUB_TOKEN }}"
