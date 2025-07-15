@@ -47,7 +47,7 @@ export class TextEditorComponent implements OnInit, OnDestroy, AfterViewInit {
     this.editor = new Editor({
       attributes: {
         spellcheck: "true",
-        class: this.className,
+        style: "user-select: text",
         contenteditable: `${!this.readonly}`,
       },
     });
