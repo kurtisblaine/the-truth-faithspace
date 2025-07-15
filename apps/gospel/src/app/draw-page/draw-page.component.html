@@ -1,22 +1,12 @@
-<mat-grid-list cols="5" rowHeight="1.1:2" gutterSize="5" [photoGalleryGroup]="{}">
-  <mat-grid-tile *ngFor="let image of this.images" style="cursor: pointer">
-    <mat-grid-tile-header
-      (click)="navigate(image)"
-      class="primary-color"
-      style="text-decoration: underline; cursor: pointer"
-      >{{ image.name }}
+<mat-grid-list cols="5" rowHeight="1.1:2" gutterSize="5">
+  <mat-grid-tile *ngFor="let image of this.images">
+    <mat-grid-tile-header style="text-decoration: underline; cursor: pointer" (click)="navigate(image)">
+      {{ image.name }}
       <lib-fa-icon [icon]="faLink" style="padding-left: 2px"></lib-fa-icon>
     </mat-grid-tile-header>
     <mat-grid-tile-footer>{{ image.footer }}</mat-grid-tile-footer>
-    <div
-      [photoGallery]="'https://res.cloudinary.com/dffihsa2y/' + image.originUrl"
-      [photoGalleryCaption]="image.name + ' - ' + image.description"
-    >
-      <img
-        role="presentation"
-        style="max-width: 100%; max-height: 100%"
-        [src]="'https://res.cloudinary.com/dffihsa2y/' + image.originUrl"
-      />
+    <div>
+      <img [ngSrc]="image.originUrl" alt="" fill style="object-fit: contain" />
     </div>
   </mat-grid-tile>
 </mat-grid-list>

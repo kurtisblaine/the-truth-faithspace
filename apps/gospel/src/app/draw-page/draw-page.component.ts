@@ -19,17 +19,19 @@ export interface Image {
   standalone: false,
 })
 export class DrawPageComponent implements OnInit {
-  public faLink = faArrowUpRightFromSquare;
   public images: Image[] = [];
+  public faLink = faArrowUpRightFromSquare;
 
-  constructor(private router: Router, private dataService: DataService) {}
-
-  navigate(image: Image) {
-    const cleanedFileName = image.fileName.split(".")[0];
-    this.router.navigateByUrl("drawings/draw/" + cleanedFileName, { state: image });
-  }
+  constructor(private dataService: DataService, private router: Router) {}
 
   ngOnInit(): void {
     this.images = this.dataService.init();
+  }
+
+  navigate(image: Image) {
+    const cleanedFileName = image.fileName.split(".")[0];
+    const url = this.router.serializeUrl(this.router.createUrlTree(["drawings/draw/" + cleanedFileName]));
+
+    window.open(url, "_blank");
   }
 }

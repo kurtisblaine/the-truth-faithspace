@@ -1,4 +1,15 @@
-import { AfterViewInit, Directive, EventEmitter, Input, OnDestroy, Output, Renderer2 } from "@angular/core";
+import { isPlatformBrowser } from "@angular/common";
+import {
+  AfterViewInit,
+  Directive,
+  EventEmitter,
+  Inject,
+  Input,
+  OnDestroy,
+  Output,
+  PLATFORM_ID,
+  Renderer2,
+} from "@angular/core";
 
 declare let fullpage: any;
 
@@ -12,10 +23,12 @@ export class FullpageDirective implements AfterViewInit, OnDestroy {
 
   public fullpageApi;
 
-  constructor(private renderer: Renderer2) {}
+  constructor(private renderer: Renderer2, @Inject(PLATFORM_ID) private platformId) {}
 
   ngAfterViewInit() {
-    this.initFullpage();
+    if (isPlatformBrowser(this.platformId)) {
+      this.initFullpage();
+    }
   }
 
   initFullpage() {

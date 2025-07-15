@@ -4,7 +4,6 @@ import { MatGridListModule } from "@angular/material/grid-list";
 import { MatTooltipModule } from "@angular/material/tooltip";
 import { RouterModule, Routes } from "@angular/router";
 import { PinchZoomComponent } from "@meddv/ngx-pinch-zoom";
-import { PhotoGalleryModule } from "@twogate/ngx-photo-gallery";
 import { LibFaIconComponent } from "shared";
 import { DrawItemComponent } from "./draw-item/draw-item.component";
 import { DrawPageComponent } from "./draw-page.component";
@@ -30,23 +29,6 @@ const routes: Routes = [
     PinchZoomComponent,
     LibFaIconComponent,
     NgOptimizedImage,
-    PhotoGalleryModule.forRoot({
-      defaultOptions: {
-        arrowEl: false,
-        closeEl: false,
-        zoomEl: false,
-        captionEl: true,
-        indexIndicatorSep: " of ",
-        closeOnScroll: false,
-        arrowKeys: true,
-        allowPanToNext: true,
-        closeOnVerticalDrag: true,
-        shareEl: false,
-        maxSpreadZoom: 20,
-        escKey: true,
-        errorMsg: "We could not load the picture",
-      },
-    }),
   ],
 })
 export class DrawPageModule {}

@@ -19,9 +19,6 @@ export class DrawItemComponent extends SeoBaseComponent implements OnInit {
     super();
   }
 
-  videoHeight: number | undefined;
-  videoWidth: number | undefined;
-
   selectedImage: Image;
 
   ngOnInit(): void {
