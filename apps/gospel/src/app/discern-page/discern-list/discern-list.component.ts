@@ -3,10 +3,11 @@ import { Component, Input, OnInit } from "@angular/core";
 import { MatButtonModule } from "@angular/material/button";
 import { MatDividerModule } from "@angular/material/divider";
 import { Router } from "@angular/router";
+import { faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
 import { Store } from "@ngrx/store";
 import { cloneDeep } from "lodash-es";
 import { Observable, map } from "rxjs";
-import { TextEditorComponent } from "shared";
+import { LibFaIconComponent, TextEditorComponent } from "shared";
 import { createDiscern } from "../../state/discern/discern.actions";
 import { DiscernEntity } from "../../state/discern/discern.models";
 import { getAllDiscern } from "../../state/discern/discern.selectors";
@@ -15,12 +16,13 @@ import { getAllDiscern } from "../../state/discern/discern.selectors";
   selector: "blog-discern-list",
   templateUrl: "./discern-list.component.html",
   styleUrls: ["./discern-list.component.scss"],
-  imports: [MatDividerModule, CommonModule, TextEditorComponent, MatButtonModule],
+  imports: [MatDividerModule, CommonModule, TextEditorComponent, MatButtonModule, LibFaIconComponent],
 })
 export class DiscernListComponent implements OnInit {
   @Input() public update = false;
 
   public discernments$!: Observable<DiscernEntity[]>;
+  public faLink = faArrowUpRightFromSquare;
 
   constructor(private store: Store, private router: Router) {}
 
@@ -39,8 +41,8 @@ export class DiscernListComponent implements OnInit {
   }
 
   public navigate(blog) {
-    this.router.navigateByUrl("discernments/discernment-detail/" + blog.id, {
-      state: { blog },
-    });
+    const url = this.router.serializeUrl(this.router.createUrlTree(["discernments/discernment-detail/" + blog.id]));
+
+    window.open(url, "_blank");
   }
 }

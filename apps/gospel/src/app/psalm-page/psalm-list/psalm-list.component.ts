@@ -3,10 +3,11 @@ import { ChangeDetectionStrategy, Component, Input, OnInit } from "@angular/core
 import { MatButtonModule } from "@angular/material/button";
 import { MatDividerModule } from "@angular/material/divider";
 import { Router } from "@angular/router";
+import { faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
 import { Store } from "@ngrx/store";
 import { cloneDeep } from "lodash-es";
 import { Observable, map } from "rxjs";
-import { TextEditorComponent } from "shared";
+import { LibFaIconComponent, TextEditorComponent } from "shared";
 import { createPsalm } from "../../state/psalm/psalm.actions";
 import { PsalmEntity } from "../../state/psalm/psalm.models";
 import { getAllPsalm } from "../../state/psalm/psalm.selectors";
@@ -14,13 +15,14 @@ import { getAllPsalm } from "../../state/psalm/psalm.selectors";
   selector: "blog-psalm-list",
   templateUrl: "./psalm-list.component.html",
   styleUrls: ["./psalm-list.component.scss"],
-  imports: [MatDividerModule, CommonModule, TextEditorComponent, MatButtonModule],
+  imports: [MatDividerModule, CommonModule, TextEditorComponent, MatButtonModule, LibFaIconComponent],
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class PsalmListComponent implements OnInit {
   @Input() public update = false;
 
   public psalms$!: Observable<PsalmEntity[]>;
+  public faLink = faArrowUpRightFromSquare;
 
   constructor(private store: Store, private router: Router) {}
 
@@ -39,8 +41,8 @@ export class PsalmListComponent implements OnInit {
   }
 
   public navigate(blog) {
-    this.router.navigateByUrl("poems/poem-detail/" + blog.id, {
-      state: { blog },
-    });
+    const url = this.router.serializeUrl(this.router.createUrlTree(["poems/poem-detail/" + blog.id]));
+
+    window.open(url, "_blank");
   }
 }

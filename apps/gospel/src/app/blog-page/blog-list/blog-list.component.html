@@ -1,6 +1,7 @@
 <div class="blog-item" *ngFor="let blog of blogs$ | async">
   <div class="blog-title primary-color" (click)="navigate(blog)">
     {{ blog.title }}
+    <lib-fa-icon [icon]="faLink" style="padding-left: 2px"></lib-fa-icon>
   </div>
   <div>{{ blog.date | date: "short" }}</div>
 

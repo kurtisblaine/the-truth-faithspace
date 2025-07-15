@@ -1,6 +1,7 @@
 <div class="discern-item" *ngFor="let discern of discernments$ | async">
   <div class="discern-title primary-color" (click)="navigate(discern)">
     {{ discern.title }}
+    <lib-fa-icon [icon]="faLink" style="padding-left: 2px"></lib-fa-icon>
   </div>
   <div>{{ discern.date | date: "short" }}</div>
 

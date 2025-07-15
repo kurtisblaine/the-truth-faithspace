@@ -1,6 +1,7 @@
 <div class="psalm-item" *ngFor="let psalm of psalms$ | async">
   <div class="psalm-title primary-color" (click)="navigate(psalm)">
     {{ psalm.title }}
+    <lib-fa-icon [icon]="faLink" style="padding-left: 2px"></lib-fa-icon>
   </div>
   <div>{{ psalm.date | date: "short" }}</div>
 

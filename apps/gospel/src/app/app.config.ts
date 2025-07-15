@@ -77,6 +77,7 @@ const routes: Routes = [
   },
   {
     path: "server",
+    title: "Server",
     loadChildren: () => import("./server-page/server-page.module").then((m) => m.ServerPageModule),
   },
   { path: "**", redirectTo: "error" },

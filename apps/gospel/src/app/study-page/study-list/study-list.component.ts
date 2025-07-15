@@ -3,10 +3,11 @@ import { ChangeDetectionStrategy, Component, Input, OnInit } from "@angular/core
 import { MatButtonModule } from "@angular/material/button";
 import { MatDividerModule } from "@angular/material/divider";
 import { Router } from "@angular/router";
+import { faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
 import { Store } from "@ngrx/store";
 import { cloneDeep } from "lodash-es";
 import { map, Observable } from "rxjs";
-import { TextEditorComponent } from "shared";
+import { LibFaIconComponent, TextEditorComponent } from "shared";
 import { StudyActions } from "../../state/study/study.actions";
 import { StudyEntity } from "../../state/study/study.model";
 import { getAllStudy } from "../../state/study/study.selectors";
@@ -16,12 +17,13 @@ import { getAllStudy } from "../../state/study/study.selectors";
   templateUrl: "./study-list.component.html",
   styleUrl: "./study-list.component.scss",
   changeDetection: ChangeDetectionStrategy.OnPush,
-  imports: [MatDividerModule, CommonModule, MatButtonModule, TextEditorComponent],
+  imports: [MatDividerModule, CommonModule, MatButtonModule, TextEditorComponent, LibFaIconComponent],
 })
 export class StudyListComponent implements OnInit {
   @Input() public update = false;
 
   public studies$!: Observable<StudyEntity[]>;
+  public faLink = faArrowUpRightFromSquare;
 
   constructor(private store: Store, private router: Router) {}
 
@@ -40,8 +42,8 @@ export class StudyListComponent implements OnInit {
   }
 
   public navigate(blog) {
-    this.router.navigateByUrl("studies/study-detail/" + blog.id, {
-      state: { blog },
-    });
+    const url = this.router.serializeUrl(this.router.createUrlTree(["studies/study-detail/" + blog.id]));
+
+    window.open(url, "_blank");
   }
 }

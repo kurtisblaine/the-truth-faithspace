@@ -3,10 +3,11 @@ import { Component, Input, OnInit } from "@angular/core";
 import { MatButtonModule } from "@angular/material/button";
 import { MatDividerModule } from "@angular/material/divider";
 import { Router } from "@angular/router";
+import { faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
 import { Store } from "@ngrx/store";
 import { cloneDeep } from "lodash-es";
 import { Observable, map } from "rxjs";
-import { TextEditorComponent } from "shared";
+import { LibFaIconComponent, TextEditorComponent } from "shared";
 import { createBlog } from "../../state/blog/blog.actions";
 import { BlogEntity } from "../../state/blog/blog.models";
 import { getAllBlog } from "../../state/blog/blog.selectors";
@@ -15,12 +16,13 @@ import { getAllBlog } from "../../state/blog/blog.selectors";
   selector: "blog-blog-list",
   templateUrl: "./blog-list.component.html",
   styleUrls: ["./blog-list.component.scss"],
-  imports: [MatDividerModule, CommonModule, MatButtonModule, TextEditorComponent],
+  imports: [MatDividerModule, CommonModule, MatButtonModule, TextEditorComponent, LibFaIconComponent],
 })
 export class BlogListComponent implements OnInit {
   @Input() public update = false;
 
   public blogs$!: Observable<BlogEntity[]>;
+  public faLink = faArrowUpRightFromSquare;
 
   constructor(private store: Store, private router: Router) {}
 
@@ -39,6 +41,8 @@ export class BlogListComponent implements OnInit {
   }
 
   public navigate(blog) {
-    this.router.navigateByUrl("edifications/edify-detail/" + blog.id, { state: { blog } });
+    const url = this.router.serializeUrl(this.router.createUrlTree(["edifications/edify-detail/" + blog.id]));
+
+    window.open(url, "_blank");
   }
 }
