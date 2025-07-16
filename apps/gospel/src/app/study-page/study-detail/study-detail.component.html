@@ -13,6 +13,6 @@
   </mat-card-header>
 
   <mat-card-content>
-    <lib-text-editor [readonly]="true" [document]="blog.json" [showReadMore]="false"></lib-text-editor>
+    <lib-readonly-text-editor [html]="blog?.json?.toString()" [showReadMore]="false"></lib-readonly-text-editor>
   </mat-card-content>
 </mat-card>

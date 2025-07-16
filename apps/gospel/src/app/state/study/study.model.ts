@@ -1,7 +1,7 @@
 export interface StudyEntity {
   collectionId?: string;
   id: string | number; // Primary ID
-  json: object;
+  json: string | object;
   title: string;
   date: string;
 }

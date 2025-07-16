@@ -5,13 +5,12 @@
   </div>
   <div>{{ insight.date | date: "short" }}</div>
 
-  <button mat-flat-button *ngIf="update" (click)="doUpdate(insight)">Update</button>
-
-  <lib-text-editor
-    [readonly]="!update"
-    [document]="insight.json"
-    (editorChanged)="insight.json = $event"
-  ></lib-text-editor>
+  @if(update) {
+  <button mat-flat-button (click)="doUpdate(insight)">Update</button>
+  <lib-text-editor [document]="insight.json" (editorChanged)="insight.json = $event"></lib-text-editor>
+  } @else {
+  <lib-readonly-text-editor [html]="insight?.json?.toString()"></lib-readonly-text-editor>
+  }
 
   <mat-divider></mat-divider>
 </div>

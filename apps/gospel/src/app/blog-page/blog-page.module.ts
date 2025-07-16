@@ -5,7 +5,7 @@ import { MatCardModule } from "@angular/material/card";
 import { MatDividerModule } from "@angular/material/divider";
 import { MatProgressSpinnerModule } from "@angular/material/progress-spinner";
 import { RouterModule, Routes } from "@angular/router";
-import { TextEditorComponent } from "shared";
+import { ReadonlyTextEditorComponent } from "shared";
 import { BlogDetailComponent } from "./blog-detail/blog-detail.component";
 import { BlogListComponent } from "./blog-list/blog-list.component";
 import { BlogPageComponent } from "./blog-page.component";
@@ -26,7 +26,7 @@ const routes: Routes = [
     MatButtonModule,
     MatProgressSpinnerModule,
     MatCardModule,
-    TextEditorComponent,
+    ReadonlyTextEditorComponent,
   ],
   exports: [BlogListComponent],
 })

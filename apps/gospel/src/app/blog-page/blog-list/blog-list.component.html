@@ -5,9 +5,12 @@
   </div>
   <div>{{ blog.date | date: "short" }}</div>
 
-  <button mat-flat-button *ngIf="update" (click)="doUpdate(blog)">Update</button>
-
-  <lib-text-editor [readonly]="!update" [document]="blog?.json" (editorChanged)="blog.json = $event"></lib-text-editor>
+  @if(update) {
+  <button mat-flat-button (click)="doUpdate(blog)">Update</button>
+  <lib-text-editor [document]="blog.json" (editorChanged)="blog.json = $event"></lib-text-editor>
+  } @else {
+  <lib-readonly-text-editor [html]="blog?.json?.toString()"></lib-readonly-text-editor>
+  }
 
   <mat-divider></mat-divider>
 </div>

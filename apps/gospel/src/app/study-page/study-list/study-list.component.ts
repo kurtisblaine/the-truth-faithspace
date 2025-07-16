@@ -6,8 +6,9 @@ import { Router } from "@angular/router";
 import { faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
 import { Store } from "@ngrx/store";
 import { cloneDeep } from "lodash-es";
+import { toHTML } from "ngx-editor";
 import { map, Observable } from "rxjs";
-import { LibFaIconComponent, TextEditorComponent } from "shared";
+import { LibFaIconComponent, ReadonlyTextEditorComponent, TextEditorComponent } from "shared";
 import { StudyActions } from "../../state/study/study.actions";
 import { StudyEntity } from "../../state/study/study.model";
 import { getAllStudy } from "../../state/study/study.selectors";
@@ -17,7 +18,14 @@ import { getAllStudy } from "../../state/study/study.selectors";
   templateUrl: "./study-list.component.html",
   styleUrl: "./study-list.component.scss",
   changeDetection: ChangeDetectionStrategy.OnPush,
-  imports: [MatDividerModule, CommonModule, MatButtonModule, TextEditorComponent, LibFaIconComponent],
+  imports: [
+    MatDividerModule,
+    CommonModule,
+    MatButtonModule,
+    TextEditorComponent,
+    ReadonlyTextEditorComponent,
+    LibFaIconComponent,
+  ],
 })
 export class StudyListComponent implements OnInit {
   @Input() public update = false;
@@ -32,13 +40,13 @@ export class StudyListComponent implements OnInit {
   }
 
   public doUpdate(study: StudyEntity) {
+    study.json = toHTML(study.json as object);
+
     this.store.dispatch(
       StudyActions.createStudy({
         study,
       })
     );
-
-    // this.router.navigateByUrl("studies");
   }
 
   public navigate(blog) {

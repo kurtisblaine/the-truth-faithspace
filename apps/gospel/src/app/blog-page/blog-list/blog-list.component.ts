@@ -6,8 +6,9 @@ import { Router } from "@angular/router";
 import { faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
 import { Store } from "@ngrx/store";
 import { cloneDeep } from "lodash-es";
+import { toHTML } from "ngx-editor";
 import { Observable, map } from "rxjs";
-import { LibFaIconComponent, TextEditorComponent } from "shared";
+import { LibFaIconComponent, ReadonlyTextEditorComponent, TextEditorComponent } from "shared";
 import { createBlog } from "../../state/blog/blog.actions";
 import { BlogEntity } from "../../state/blog/blog.models";
 import { getAllBlog } from "../../state/blog/blog.selectors";
@@ -16,7 +17,14 @@ import { getAllBlog } from "../../state/blog/blog.selectors";
   selector: "blog-blog-list",
   templateUrl: "./blog-list.component.html",
   styleUrls: ["./blog-list.component.scss"],
-  imports: [MatDividerModule, CommonModule, MatButtonModule, TextEditorComponent, LibFaIconComponent],
+  imports: [
+    MatDividerModule,
+    CommonModule,
+    MatButtonModule,
+    TextEditorComponent,
+    ReadonlyTextEditorComponent,
+    LibFaIconComponent,
+  ],
 })
 export class BlogListComponent implements OnInit {
   @Input() public update = false;
@@ -31,13 +39,12 @@ export class BlogListComponent implements OnInit {
   }
 
   public doUpdate(blog: BlogEntity) {
+    blog.json = toHTML(blog.json as object);
     this.store.dispatch(
       createBlog({
         blog,
       })
     );
-
-    // this.router.navigateByUrl("edifications");
   }
 
   public navigate(blog) {

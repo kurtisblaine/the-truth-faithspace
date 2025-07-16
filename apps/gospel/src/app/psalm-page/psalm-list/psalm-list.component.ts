@@ -6,8 +6,9 @@ import { Router } from "@angular/router";
 import { faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
 import { Store } from "@ngrx/store";
 import { cloneDeep } from "lodash-es";
+import { toHTML } from "ngx-editor";
 import { Observable, map } from "rxjs";
-import { LibFaIconComponent, TextEditorComponent } from "shared";
+import { LibFaIconComponent, ReadonlyTextEditorComponent, TextEditorComponent } from "shared";
 import { createPsalm } from "../../state/psalm/psalm.actions";
 import { PsalmEntity } from "../../state/psalm/psalm.models";
 import { getAllPsalm } from "../../state/psalm/psalm.selectors";
@@ -15,7 +16,14 @@ import { getAllPsalm } from "../../state/psalm/psalm.selectors";
   selector: "blog-psalm-list",
   templateUrl: "./psalm-list.component.html",
   styleUrls: ["./psalm-list.component.scss"],
-  imports: [MatDividerModule, CommonModule, TextEditorComponent, MatButtonModule, LibFaIconComponent],
+  imports: [
+    MatDividerModule,
+    CommonModule,
+    TextEditorComponent,
+    ReadonlyTextEditorComponent,
+    MatButtonModule,
+    LibFaIconComponent,
+  ],
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class PsalmListComponent implements OnInit {
@@ -31,13 +39,12 @@ export class PsalmListComponent implements OnInit {
   }
 
   public doUpdate(psalm: PsalmEntity) {
+    psalm.json = toHTML(psalm.json as object);
     this.store.dispatch(
       createPsalm({
         psalm,
       })
     );
-
-    // this.router.navigateByUrl("poems");
   }
 
   public navigate(blog) {

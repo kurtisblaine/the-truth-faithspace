@@ -5,13 +5,12 @@
   </div>
   <div>{{ psalm.date | date: "short" }}</div>
 
-  <button mat-flat-button *ngIf="update" (click)="doUpdate(psalm)">Update</button>
-
-  <lib-text-editor
-    [readonly]="!update"
-    [document]="psalm?.json"
-    (editorChanged)="psalm.json = $event"
-  ></lib-text-editor>
+  @if(update) {
+  <button mat-flat-button (click)="doUpdate(psalm)">Update</button>
+  <lib-text-editor [document]="psalm.json" (editorChanged)="psalm.json = $event"></lib-text-editor>
+  } @else {
+  <lib-readonly-text-editor [html]="psalm?.json?.toString()"></lib-readonly-text-editor>
+  }
 
   <mat-divider></mat-divider>
 </div>

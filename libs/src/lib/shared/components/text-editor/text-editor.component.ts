@@ -29,7 +29,6 @@ export class TextEditorComponent implements OnInit, OnDestroy {
 
   @Input() public document = {};
   @Input() public showReadMore = true;
-  @Input() public readonly = false;
   @Output() public editorChanged = new EventEmitter();
 
   @ViewChild("ngxeditor") public editorComponent?: NgxEditorComponent;
