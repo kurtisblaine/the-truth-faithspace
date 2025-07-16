@@ -44,7 +44,6 @@ export const transferStateMetaReducer = (reducer) => {
     let lastState: any = {};
     transferState.set(storeStateKey, lastState);
 
-    // Only include the keys that are useful to access immediately
     transferState.onSerialize<any>(storeStateKey, () => ({
       blog: lastState["blog"],
       psalm: lastState["psalm"],
