@@ -23,7 +23,7 @@ export class SafeHtmlPipe implements PipeTransform {
   styleUrl: "./readonly-text-editor.component.scss",
   changeDetection: ChangeDetectionStrategy.OnPush,
   encapsulation: ViewEncapsulation.None,
-  host: { ngSkipHydration: "true" },
+  // host: { ngSkipHydration: "true" },
 })
 export class ReadonlyTextEditorComponent {
   public html = input.required<string>();
