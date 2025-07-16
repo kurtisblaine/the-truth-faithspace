@@ -2,24 +2,3 @@
   height: 55px;
   overflow: hidden;
 }
-
-.readonly-editor {
-  background: #fff;
-  color: #000;
-  background-clip: padding-box;
-  border-radius: 4px;
-  border: 1px solid rgba(0, 0, 0, 0.2);
-  position: relative;
-  padding: 8px;
-
-  p {
-    margin: 0 0 10px;
-  }
-
-  blockquote {
-    padding-left: 16px;
-    border-left: 3px solid #ddd;
-    margin-left: 0;
-    margin-right: 0;
-  }
-}

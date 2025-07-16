@@ -1,0 +1,17 @@
+@if (!showReadMore()) {
+<lib-narrator [buttonStyle]="narratorStyle.Group" [text]="readonlyHtml?.innerText ?? ''"> </lib-narrator>
+}
+
+<div [ngClass]="{ limitTextHeight: showReadMore() && hasHtml && !isReadMore }">
+  <div #readonlyHtml class="readonly-editor" [innerHTML]="html() | safeHtml"></div>
+</div>
+
+<button
+  type="button"
+  mat-flat-button
+  *ngIf="hasHtml && showReadMore()"
+  style="width: 100%; padding: 0px"
+  (click)="isReadMore = !isReadMore"
+>
+  {{ isReadMore ? "See Less" : "See More" }}
+</button>

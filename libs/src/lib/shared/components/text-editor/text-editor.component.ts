@@ -1,47 +1,38 @@
 import { CommonModule } from "@angular/common";
 import {
-  AfterViewInit,
+  ChangeDetectionStrategy,
   Component,
-  ElementRef,
   EventEmitter,
-  inject,
   Input,
   OnDestroy,
   OnInit,
   Output,
   ViewChild,
-  ViewEncapsulation,
 } from "@angular/core";
 import { AbstractControl, FormControl, FormGroup, ReactiveFormsModule } from "@angular/forms";
 import { MatButtonModule } from "@angular/material/button";
-import { DomSanitizer } from "@angular/platform-browser";
-import { Editor, NgxEditorComponent, NgxEditorModule, toHTML, Toolbar } from "ngx-editor";
+import { Editor, NgxEditorComponent, NgxEditorModule, Toolbar } from "ngx-editor";
 import { Subscription } from "rxjs";
-import { NarratorComponent, NarratorStyle } from "../narrator/narrator.component";
 @Component({
   selector: "lib-text-editor",
   templateUrl: "./text-editor.component.html",
   styleUrls: ["./text-editor.component.scss"],
-  encapsulation: ViewEncapsulation.None,
-  imports: [MatButtonModule, NgxEditorModule, CommonModule, NarratorComponent, ReactiveFormsModule],
+  changeDetection: ChangeDetectionStrategy.OnPush,
+  imports: [MatButtonModule, NgxEditorModule, CommonModule, ReactiveFormsModule],
 })
-export class TextEditorComponent implements OnInit, OnDestroy, AfterViewInit {
-  private sanitizer = inject(DomSanitizer);
-
-  public narratorStyle = NarratorStyle;
+export class TextEditorComponent implements OnInit, OnDestroy {
   public editor!: Editor;
   public isReadMore = false;
-  public isEmpty = false;
+  public hasData = false;
 
   private subscription!: Subscription;
 
   @Input() public document = {};
-  @Input() public readonly = false;
   @Input() public showReadMore = true;
+  @Input() public readonly = false;
   @Output() public editorChanged = new EventEmitter();
 
   @ViewChild("ngxeditor") public editorComponent?: NgxEditorComponent;
-  @ViewChild("readonlyHtml", { read: ElementRef }) public readonlyEditor?: ElementRef;
 
   public toolbar: Toolbar = [
     ["bold", "italic"],
@@ -61,13 +52,11 @@ export class TextEditorComponent implements OnInit, OnDestroy, AfterViewInit {
   }
 
   ngOnInit(): void {
-    this.isEmpty = !!Object.entries(this.document).length;
+    this.hasData = !!Object.entries(this.document).length;
 
     this.editor = new Editor({
       attributes: {
         spellcheck: "true",
-        style: "user-select: text",
-        contenteditable: `${!this.readonly}`,
       },
     });
 
@@ -81,24 +70,9 @@ export class TextEditorComponent implements OnInit, OnDestroy, AfterViewInit {
     });
   }
 
-  ngAfterViewInit() {
-    this.editorComponent?.setDisabledState(this.readonly);
-  }
-
   ngOnDestroy(): void {
     this.editor?.destroy();
     this.subscription?.unsubscribe();
-  }
-
-  getText() {
-    return this.readonly
-      ? this.readonlyEditor?.nativeElement?.innerText
-      : this.editorComponent!.editor?.view?.dom?.innerText;
-  }
-
-  getReadonlyHtml() {
-    const html = toHTML(this.document);
-    return this.sanitizer.bypassSecurityTrustHtml(html);
   }
 
   showText() {

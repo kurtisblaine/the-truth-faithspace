@@ -6,8 +6,9 @@ import { Router } from "@angular/router";
 import { faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
 import { Store } from "@ngrx/store";
 import { cloneDeep } from "lodash-es";
+import { toHTML } from "ngx-editor";
 import { Observable, map } from "rxjs";
-import { LibFaIconComponent, TextEditorComponent } from "shared";
+import { LibFaIconComponent, ReadonlyTextEditorComponent, TextEditorComponent } from "shared";
 import { createDiscern } from "../../state/discern/discern.actions";
 import { DiscernEntity } from "../../state/discern/discern.models";
 import { getAllDiscern } from "../../state/discern/discern.selectors";
@@ -16,7 +17,14 @@ import { getAllDiscern } from "../../state/discern/discern.selectors";
   selector: "blog-discern-list",
   templateUrl: "./discern-list.component.html",
   styleUrls: ["./discern-list.component.scss"],
-  imports: [MatDividerModule, CommonModule, TextEditorComponent, MatButtonModule, LibFaIconComponent],
+  imports: [
+    MatDividerModule,
+    CommonModule,
+    ReadonlyTextEditorComponent,
+    TextEditorComponent,
+    MatButtonModule,
+    LibFaIconComponent,
+  ],
 })
 export class DiscernListComponent implements OnInit {
   @Input() public update = false;
@@ -31,18 +39,16 @@ export class DiscernListComponent implements OnInit {
   }
 
   public doUpdate(discern: DiscernEntity) {
+    discern.json = toHTML(discern.json as object);
     this.store.dispatch(
       createDiscern({
         discern,
       })
     );
-
-    // this.router.navigateByUrl("discernments");
   }
 
   public navigate(blog) {
     const url = this.router.serializeUrl(this.router.createUrlTree(["discernments/discernment-detail/" + blog.id]));
-
     window.open(url, "_blank");
   }
 }

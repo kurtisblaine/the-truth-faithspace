@@ -70,7 +70,7 @@
     "@angular/ssr": "^20.0.5",
     "@ngrx/schematics": "19.2.1",
     "@ngrx/store-devtools": "19.2.1",
-    "@nx/angular": "21.2.2",
+    "@nx/angular": "^21.2.1",
     "@nx/workspace": "21.2.2",
     "@schematics/angular": "19.0.7",
     "@swc-node/register": "1.9.2",

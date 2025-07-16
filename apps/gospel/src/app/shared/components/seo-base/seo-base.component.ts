@@ -1,6 +1,24 @@
 import { CommonModule } from "@angular/common";
-import { AfterViewInit, ChangeDetectionStrategy, Component, ElementRef, inject, ViewChild } from "@angular/core";
+import {
+  AfterViewInit,
+  ChangeDetectionStrategy,
+  Component,
+  Directive,
+  ElementRef,
+  inject,
+  ViewChild,
+} from "@angular/core";
 import { Meta, Title } from "@angular/platform-browser";
+
+@Directive({ selector: "[seoCaption]" })
+export class SeoCaptionDirective {
+  constructor(public elementRef: ElementRef) {}
+}
+
+@Directive({ selector: "[seoTitle]" })
+export class SeoTitleDirective {
+  constructor(public elementRef: ElementRef) {}
+}
 
 @Component({
   selector: "gospel-seo-base",

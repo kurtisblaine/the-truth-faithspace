@@ -1,11 +1,6 @@
 <form [formGroup]="form">
-  <lib-narrator *ngIf="!showReadMore" [buttonStyle]="narratorStyle.Group" [text]="getText()"> </lib-narrator>
-
-  <div class="editor" [ngClass]="{ limitTextHeight: isEmpty && showReadMore && !isReadMore }">
-    @if(readonly) {
-    <div class="readonly-editor" #readonlyHtml [innerHTML]="getReadonlyHtml()"></div>
-    } @else {
-    <ngx-editor-menu *ngIf="!readonly" [editor]="editor" [toolbar]="toolbar"> </ngx-editor-menu>
+  <div class="editor" [ngClass]="{ limitTextHeight: hasData && showReadMore && !isReadMore }">
+    <ngx-editor-menu [editor]="editor" [toolbar]="toolbar"> </ngx-editor-menu>
 
     <ngx-editor
       #ngxeditor
@@ -15,11 +10,10 @@
       [placeholder]="'Type here...'"
     >
     </ngx-editor>
-    }
   </div>
 
   <button
-    *ngIf="isEmpty && showReadMore"
+    *ngIf="hasData && showReadMore"
     mat-flat-button
     type="button"
     (click)="showText()"
