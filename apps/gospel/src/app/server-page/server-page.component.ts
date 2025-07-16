@@ -1,6 +1,7 @@
 import { Component, OnInit } from "@angular/core";
 import { Router } from "@angular/router";
 import { Store } from "@ngrx/store";
+import { toHTML } from "ngx-editor";
 import { v4 } from "uuid";
 import { createBlog, loadBlogs } from "../state/blog/blog.actions";
 import { createDiscern, loadDiscernments } from "../state/discern/discern.actions";
@@ -33,7 +34,7 @@ export class ServerPageComponent implements OnInit {
       StudyActions.createStudy({
         study: {
           title: this.title,
-          json: this._document,
+          json: toHTML(this._document),
           date: Date.now().toString(),
           id: v4().toString(),
         },
@@ -48,7 +49,7 @@ export class ServerPageComponent implements OnInit {
       createDiscern({
         discern: {
           title: this.title,
-          json: this._document,
+          json: toHTML(this._document),
           date: Date.now().toString(),
           id: v4().toString(),
         },
@@ -63,7 +64,7 @@ export class ServerPageComponent implements OnInit {
       createPsalm({
         psalm: {
           title: this.title,
-          json: this._document,
+          json: toHTML(this._document),
           date: Date.now().toString(),
           id: v4().toString(),
         },
@@ -78,7 +79,7 @@ export class ServerPageComponent implements OnInit {
       createBlog({
         blog: {
           title: this.title,
-          json: this._document,
+          json: toHTML(this._document),
           date: Date.now().toString(),
           id: v4().toString(),
         },
@@ -93,7 +94,7 @@ export class ServerPageComponent implements OnInit {
       createInsight({
         insight: {
           title: this.title,
-          json: this._document,
+          json: toHTML(this._document),
           date: Date.now().toString(),
           id: v4().toString(),
         },

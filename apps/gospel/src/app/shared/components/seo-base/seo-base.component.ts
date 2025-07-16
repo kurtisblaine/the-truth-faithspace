@@ -36,6 +36,8 @@ export class SeoBaseComponent implements AfterViewInit {
 
   protected keywords: string;
 
+  constructor() {}
+
   ngAfterViewInit(): void {
     this.init();
   }
