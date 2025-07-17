@@ -9,7 +9,6 @@ import { RouterModule, Routes } from "@angular/router";
 import { NarratorComponent } from "shared";
 import { ReferenceTooltipComponent } from "../shared/components/reference-tooltip/reference-tooltip.component";
 import { FullpageDirective } from "../shared/directives/fullpage.directive";
-import { StaticGospelComponent } from "./_static-gospel/static-gospel.component";
 import { CallFaithModule } from "./gospel-content/call-faith/call-faith.module";
 import { CallGraceModule } from "./gospel-content/call-grace/call-grace.module";
 import { DangerDeathModule } from "./gospel-content/danger-death/danger-death.module";
@@ -47,7 +46,6 @@ const routes: Routes = [
     NgOptimizedImage,
     FullpageDirective,
     GospelSectionComponent,
-    StaticGospelComponent,
   ],
   providers: [],
 })

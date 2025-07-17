@@ -2,6 +2,20 @@
   position: fixed !important; //override the toolbar in app.component
 }
 
+.section {
+  height: 100vh;
+  box-shadow: inset 0 0 0 100vmax rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.slide,
+.fp-slides {
+  width: 100vw;
+  height: 100vh;
+}
+
 .menu > .custom-panel {
   background: transparent;
   box-shadow: none !important;
@@ -20,7 +34,7 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-  color: #fff;
+  color: white;
 }
 
 .header-caption {
@@ -32,19 +46,15 @@
   text-decoration: underline;
   width: 50%;
   font-size: 16px;
-  color: white;
+  color: white !important;
 }
 
 .custom-panel button {
-  color: white !important;
   font-size: 16px;
+  color: white !important;
 }
 
-img {
+.section img {
   object-fit: cover;
   z-index: -1;
-}
-
-.section {
-  box-shadow: inset 0 0 0 100vmax rgba(0, 0, 0, 0.1);
 }
