@@ -1,4 +1,5 @@
-import { Component, Input, OnInit } from "@angular/core";
+import { isPlatformBrowser } from "@angular/common";
+import { Component, Inject, Input, OnInit, PLATFORM_ID } from "@angular/core";
 import { SeoBaseComponent } from "../../shared/components/seo-base/seo-base.component";
 import { DataService } from "../data.service";
 import { Image } from "../draw-page.component";
@@ -15,8 +16,12 @@ export class DrawItemComponent extends SeoBaseComponent implements OnInit {
 
   protected override keywords: string = "study, draw, Jesus, hope, life, faith, truth, love, Christ, Messiah";
 
-  constructor(private dataService: DataService) {
+  constructor(private dataService: DataService, @Inject(PLATFORM_ID) private platformId: object) {
     super();
+  }
+
+  get isPlatformBrowser() {
+    return isPlatformBrowser(this.platformId);
   }
 
   selectedImage: Image;
