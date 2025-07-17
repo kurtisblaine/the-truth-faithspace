@@ -72,7 +72,6 @@ export class AppComponent implements OnInit {
 
   public progressValue = new BehaviorSubject(0);
   public progressValue$!: Observable<number>;
-  public isFullpagePage = signal(false);
   public isMobile = signal(true);
 
   public scrollTimeout!: any;
@@ -101,10 +100,6 @@ export class AppComponent implements OnInit {
   }
 
   public ngOnInit() {}
-
-  onActivate($event) {
-    this.isFullpagePage.set(!!$event?.fullpageConfig);
-  }
 
   openMenu() {
     this.trigger.openMenu();

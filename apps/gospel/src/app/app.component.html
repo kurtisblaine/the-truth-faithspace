@@ -53,12 +53,7 @@
     </mat-list>
   </mat-drawer>
   <mat-drawer-content>
-    <div
-      class="header"
-      [ngStyle]="{
-        'position': isFullpagePage() ? 'fixed' : 'sticky',
-      }"
-    >
+    <div class="header">
       <mat-toolbar>
         <button
           *ngIf="!isMobile()"
@@ -132,7 +127,7 @@
       </mat-toolbar>
     </div>
     <div class="content-page">
-      <router-outlet (activate)="onActivate($event)" #toTop></router-outlet>
+      <router-outlet #toTop></router-outlet>
     </div>
 
     <button
