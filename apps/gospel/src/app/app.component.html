@@ -54,9 +54,9 @@
   </mat-drawer>
   <mat-drawer-content>
     <div
-      [ngClass]="{
-        'fixed-toolbar': isFullpagePage(),
-        'sticky-toolbar': !isFullpagePage(),
+      class="header"
+      [ngStyle]="{
+        'position': isFullpagePage() ? 'fixed' : 'sticky',
       }"
     >
       <mat-toolbar>
@@ -132,7 +132,7 @@
       </mat-toolbar>
     </div>
     <div class="content-page">
-      <router-outlet #toTop></router-outlet>
+      <router-outlet (activate)="onActivate($event)" #toTop></router-outlet>
     </div>
 
     <button

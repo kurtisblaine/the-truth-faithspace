@@ -9,6 +9,7 @@ import {
   OnInit,
   PLATFORM_ID,
   signal,
+  ViewEncapsulation,
 } from "@angular/core";
 import { ActivatedRoute } from "@angular/router";
 import { fullpageApi, fullpageOptions, Item, Trigger } from "fullpage.js/dist/fullpage.extensions.min";
@@ -23,10 +24,11 @@ type TItem = { isActive: boolean } & Item;
   standalone: false,
   templateUrl: "./gospel-page.component.html",
   styleUrl: "./gospel-page.component.scss",
+  encapsulation: ViewEncapsulation.None,
   changeDetection: ChangeDetectionStrategy.Default, //requires 'Default' so the audio player buttons will reset.
 })
 export class GospelPageComponent extends SeoBaseComponent implements OnInit, AfterViewInit, OnDestroy {
-  public config: fullpageOptions = {
+  public fullpageConfig: fullpageOptions = {
     licenseKey: "GM477-9I82I-1L8K9-194JK-TJUVR",
 
     controlArrows: false,

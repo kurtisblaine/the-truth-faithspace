@@ -50,6 +50,7 @@ html {
       foreground-color: white,
     )
   );
+
   @include mat.progress-spinner-overrides(
     (
       active-indicator-color: #00458f,
@@ -116,19 +117,6 @@ mat-list-item {
 
 .mat-drawer-inner-container {
   overflow-x: hidden !important;
-}
-
-.pswp__caption__center {
-  max-width: 1111px !important;
-}
-
-.main-content {
-  flex: 1 1 80%;
-}
-
-.page {
-  display: flex;
-  flex-direction: row;
 }
 
 a {

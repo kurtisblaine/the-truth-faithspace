@@ -19,7 +19,6 @@
         "assets": ["apps/gospel/src/favicon.ico", "apps/gospel/src/assets", "apps/gospel/src/robots.txt"],
         "styles": ["apps/gospel/src/styles.scss"],
         "scripts": ["./node_modules/fullpage.js/dist/fullpage.min.js"],
-        "allowedCommonJsDependencies": ["photoswipe", "photoswipe/dist/photoswipe-ui-default"],
         "server": "apps/gospel/src/main.server.ts",
         "outputMode": "static"
       },
@@ -49,8 +48,7 @@
           "optimization": false,
           "extractLicenses": false,
           "sourceMap": true,
-          "namedChunks": true,
-          "statsJson": true
+          "namedChunks": true
         }
       },
       "defaultConfiguration": "production"
@@ -78,7 +76,7 @@
       "executor": "@nx/eslint:lint"
     },
     "deploy": {
-      "builder": "@angular/fire:deploy",
+      "executor": "@angular/fire:deploy",
       "options": {
         "browserTarget": "gospel:build:production",
         "serverTarget": "gospel:server:production",

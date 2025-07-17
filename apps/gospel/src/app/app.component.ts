@@ -1,7 +1,7 @@
-import { afterNextRender, Component, ElementRef, OnInit, signal, Signal, ViewChild } from "@angular/core";
-import { toSignal } from "@angular/core/rxjs-interop";
+import { afterNextRender, Component, ElementRef, OnInit, signal, ViewChild } from "@angular/core";
 import { MatMenuModule, MatMenuTrigger } from "@angular/material/menu";
-import { NavigationEnd, Router, RouterModule } from "@angular/router";
+import {} from "@angular/platform-server/testing";
+import { Router, RouterModule } from "@angular/router";
 import {
   faArrowUp,
   faBars,
@@ -28,10 +28,9 @@ import { MatSidenavModule } from "@angular/material/sidenav";
 import { MatToolbarModule } from "@angular/material/toolbar";
 import { MatTooltipModule } from "@angular/material/tooltip";
 import { DeviceDetectorService } from "ngx-device-detector";
-import { BehaviorSubject, filter, fromEvent, map, Observable } from "rxjs";
+import { BehaviorSubject, fromEvent, map, Observable } from "rxjs";
 import { LibFaIconComponent } from "shared";
 import { SettingsWidgetComponent } from "./shared/components/settings-widget/settings-widget.component";
-
 @Component({
   selector: "blog-root",
   templateUrl: "./app.component.html",
@@ -73,21 +72,12 @@ export class AppComponent implements OnInit {
 
   public progressValue = new BehaviorSubject(0);
   public progressValue$!: Observable<number>;
-  public isFullpagePage!: Signal<boolean>;
+  public isFullpagePage = signal(false);
   public isMobile = signal(true);
 
   public scrollTimeout!: any;
 
   constructor(private router: Router, private deviceDetector: DeviceDetectorService) {
-    const isFullpagePage$ = this.router.events.pipe(
-      filter((event) => event instanceof NavigationEnd),
-      map((event: NavigationEnd) => {
-        return event.urlAfterRedirects.includes("truth");
-      })
-    );
-
-    this.isFullpagePage = toSignal(isFullpagePage$, { initialValue: true });
-
     afterNextRender(() => {
       this.isMobile.set(this.deviceDetector.isMobile());
 
@@ -111,6 +101,10 @@ export class AppComponent implements OnInit {
   }
 
   public ngOnInit() {}
+
+  onActivate($event) {
+    this.isFullpagePage.set(!!$event?.fullpageConfig);
+  }
 
   openMenu() {
     this.trigger.openMenu();

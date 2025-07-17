@@ -54,10 +54,6 @@ mat-list-item {
   overflow-x: hidden !important;
 }
 
-.pswp__caption__center {
-  max-width: 1111px !important;
-}
-
 *,
 ::after,
 ::before {
@@ -66,23 +62,6 @@ mat-list-item {
 
 .primary-color {
   color: var(--mat-sys-primary);
-}
-
-// upright text example
-.side-header {
-  flex: 1 1 20%;
-  writing-mode: vertical-rl;
-  text-orientation: upright;
-  padding: 80px 100px;
-}
-
-.main-content {
-  flex: 1 1 80%;
-}
-
-.page {
-  display: flex;
-  flex-direction: row;
 }
 
 a {
