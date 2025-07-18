@@ -138,8 +138,9 @@ import { ReferenceTooltipComponent } from "../../../shared/components/reference-
         The woman who is unmarried, and the virgin, is concerned about the things of the Lord, that she may be holy both
         in body and spirit
       </blog-reference-tooltip> -->
-      <blog-link [title]="'See More on Sanctification'" [link]="'https://thelightof.life/drawings/draw/sanctification'">
-      </blog-link>
+      <blog-link [link]="'https://thelightof.life/drawings/draw/sanctification'">
+        (See More on Sanctification)</blog-link
+      >
     </ng-template>`,
   styles: ``,
   changeDetection: ChangeDetectionStrategy.OnPush,

@@ -9,6 +9,7 @@ import { cloneDeep } from "lodash-es";
 import { toHTML } from "ngx-editor";
 import { map, Observable } from "rxjs";
 import { LibFaIconComponent, ReadonlyTextEditorComponent, TextEditorComponent } from "shared";
+import { LinkComponent } from "../../shared/components/link-redirect/link.component";
 import { StudyActions } from "../../state/study/study.actions";
 import { StudyEntity } from "../../state/study/study.model";
 import { getAllStudy } from "../../state/study/study.selectors";
@@ -25,6 +26,7 @@ import { getAllStudy } from "../../state/study/study.selectors";
     TextEditorComponent,
     ReadonlyTextEditorComponent,
     LibFaIconComponent,
+    LinkComponent,
   ],
 })
 export class StudyListComponent implements OnInit {
@@ -47,11 +49,5 @@ export class StudyListComponent implements OnInit {
         study,
       })
     );
-  }
-
-  public navigate(blog) {
-    const url = this.router.serializeUrl(this.router.createUrlTree(["studies/study-detail/" + blog.id]));
-
-    window.open(url, "_blank");
   }
 }

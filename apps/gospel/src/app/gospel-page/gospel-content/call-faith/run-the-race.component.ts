@@ -44,10 +44,8 @@ import { ReferenceTooltipComponent } from "../../../shared/components/reference-
       Jesus Christ, we run to life eternal. So run! And to win! The race of faith is the good fight; for we fight with
       words of truth told by the Spirit, who is our Sword, with words seasoned with salt, preserving the truth of God's
       grace.
-      <blog-link
-        [title]="'See more about the Race of Faith'"
-        [link]="'https://thelightof.life/drawings/draw/runtherace'"
-      ></blog-link
+      <blog-link [link]="'https://thelightof.life/drawings/draw/runtherace'"
+        >(See more about the Race of Faith)</blog-link
       ><br /><br />
 
       No one runs a race for a prize without first training, and they who run, certainly run to win; they strip off
@@ -86,10 +84,8 @@ import { ReferenceTooltipComponent } from "../../../shared/components/reference-
         If you do well, will not your countenance be lifted up? And if you do not do well, sin is crouching at the door;
         and its desire is for you, <b>but you must master it.</b>
       </blog-reference-tooltip>
-      <blog-link
-        [title]="'See more about True Discipline'"
-        [link]="'https://thelightof.life/assets/tract/GoodNewsOfFreedom.pdf'"
-      ></blog-link
+      <blog-link [link]="'https://thelightof.life/assets/tract/GoodNewsOfFreedom.pdf'"
+        >(See more about True Discipline)</blog-link
       ><br /><br />
 
       We run the race of faith not for a perishable crown, but for an indestructible, that of life; as Paul says, "Do

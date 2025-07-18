@@ -92,10 +92,9 @@ import { ReferenceTooltipComponent } from "../../../shared/components/reference-
       revealed when He is revealed to the whole world. So therefore, seek and search for Him, the living Life, dwelling
       above the heavens, and He will let you find Him by His grace. We who sow to the Spirit reap life, and the mind set
       on the Spirit is life and peace; so set your minds on the things above where Christ dwells.
-      <blog-link
-        [title]="'See more on the Living Bread'"
-        [link]="'https://thelightof.life/edifications/edify-detail/82f4d580-3f2d-a049-d46d-6036c26062a8'"
-      ></blog-link>
+      <blog-link [link]="'https://thelightof.life/edifications/edify-detail/82f4d580-3f2d-a049-d46d-6036c26062a8'"
+        >(See more on the Living Bread)</blog-link
+      >
       <br /><br />
 
       For how is it that Moses fasted for 40 days and 40 nights without food nor water? He had nourishment from the
@@ -136,10 +135,9 @@ import { ReferenceTooltipComponent } from "../../../shared/components/reference-
         the world. (...) I am the bread of life; he who comes to Me will not hunger, and he who believes in Me will
         never thirst.
       </blog-reference-tooltip>
-      <blog-link
-        [title]="'See more on Christ as Food'"
-        [link]="'https://thelightof.life/edifications/edify-detail/7666deae-3d71-86fe-0d07-0f3a29a99599'"
-      ></blog-link>
+      <blog-link [link]="'https://thelightof.life/edifications/edify-detail/7666deae-3d71-86fe-0d07-0f3a29a99599'"
+        >(See more on Christ as Food)</blog-link
+      >
       <br /><br />
 
       See a tremendous thing: God has given us a tangible act of communion with Him in which we eat bread and drink

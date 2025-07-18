@@ -1,7 +1,9 @@
 <div class="study-item" *ngFor="let study of studies$ | async">
-  <div class="study-title primary-color" (click)="navigate(study)">
-    {{ study.title }}
-    <lib-fa-icon [icon]="faLink" style="padding-left: 2px"></lib-fa-icon>
+  <div class="study-title primary-color">
+    <blog-link [link]="'https://thelightof.life/studies/study-detail/' + study.id"
+      >{{ study.title }}
+      <lib-fa-icon [icon]="faLink" style="padding-left: 2px"></lib-fa-icon>
+    </blog-link>
   </div>
   <div>{{ study.date | date: "short" }}</div>
 

@@ -40,10 +40,9 @@ import { ReferenceTooltipComponent } from "../../../shared/components/reference-
       "Christ appeared as a high priest of the good things to come." (Hebrews 9:11) And concerning the sacrifice, it
       says, "He offered one sacrifice for sins for all time." (Hebrews 10:12) And concerning worship, it says, "God is
       spirit, and those who worship Him must worship in spirit and truth." (John 4:24)
-      <blog-link
-        [title]="'See more about the law of Christ'"
-        [link]="'https://thelightof.life/edifications/edify-detail/eec06cc1-2ce2-3f35-fa35-8c08aaf6c431'"
-      ></blog-link>
+      <blog-link [link]="'https://thelightof.life/edifications/edify-detail/eec06cc1-2ce2-3f35-fa35-8c08aaf6c431'"
+        >(See more about the law of Christ)</blog-link
+      >
       <br /><br />
 
       The law of Christ is weightier than the law of God, and if we fulfill the law of Christ, we fulfill the law of
@@ -75,10 +74,9 @@ import { ReferenceTooltipComponent } from "../../../shared/components/reference-
       fulfill the law of faith, we fulfill the law of God - for God the Father puts a new heart and a new spirit in us,
       so that, through the sanctifying work of the Holy Spirit, we may be presented to Him as holy and blameless before
       His coming.
-      <blog-link
-        [title]="'See again more about the law of Christ'"
-        [link]="'https://thelightof.life/edifications/edify-detail/eec06cc1-2ce2-3f35-fa35-8c08aaf6c431'"
-      ></blog-link>
+      <blog-link [link]="'https://thelightof.life/edifications/edify-detail/eec06cc1-2ce2-3f35-fa35-8c08aaf6c431'"
+        >(See again more about the law of Christ)</blog-link
+      >
       <br /><br />
 
       So thus, we are not bound by the law of God if we follow the law of the Spirit and life, for the fruit of the
@@ -170,10 +168,9 @@ import { ReferenceTooltipComponent } from "../../../shared/components/reference-
       commanded to work out what God works in us. “Do not quench the Spirit;” (1 Thessalonians 5:19) For the law of God
       pertains to the flesh and the law of Christ pertains to the heart; the heart is greater than the flesh; if you are
       made new in the heart, you will obey in the flesh as well.
-      <blog-link
-        [title]="'See more about the Stumbling Block of Lawlessness'"
-        [link]="'https://thelightof.life/discernments/discernment-detail/2cb3f25e-cc6d-8533-b2e7-b18890410091'"
-      ></blog-link>
+      <blog-link [link]="'https://thelightof.life/discernments/discernment-detail/2cb3f25e-cc6d-8533-b2e7-b18890410091'"
+        >(See more about the Stumbling Block of Lawlessness)</blog-link
+      >
     </ng-template>`,
   styles: ``,
   changeDetection: ChangeDetectionStrategy.OnPush,

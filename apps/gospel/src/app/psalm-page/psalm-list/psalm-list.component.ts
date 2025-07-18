@@ -2,13 +2,13 @@ import { CommonModule } from "@angular/common";
 import { ChangeDetectionStrategy, Component, Input, OnInit } from "@angular/core";
 import { MatButtonModule } from "@angular/material/button";
 import { MatDividerModule } from "@angular/material/divider";
-import { Router } from "@angular/router";
 import { faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
 import { Store } from "@ngrx/store";
 import { cloneDeep } from "lodash-es";
 import { toHTML } from "ngx-editor";
 import { Observable, map } from "rxjs";
 import { LibFaIconComponent, ReadonlyTextEditorComponent, TextEditorComponent } from "shared";
+import { LinkComponent } from "../../shared/components/link-redirect/link.component";
 import { createPsalm } from "../../state/psalm/psalm.actions";
 import { PsalmEntity } from "../../state/psalm/psalm.models";
 import { getAllPsalm } from "../../state/psalm/psalm.selectors";
@@ -23,6 +23,7 @@ import { getAllPsalm } from "../../state/psalm/psalm.selectors";
     ReadonlyTextEditorComponent,
     MatButtonModule,
     LibFaIconComponent,
+    LinkComponent,
   ],
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
@@ -32,7 +33,7 @@ export class PsalmListComponent implements OnInit {
   public psalms$!: Observable<PsalmEntity[]>;
   public faLink = faArrowUpRightFromSquare;
 
-  constructor(private store: Store, private router: Router) {}
+  constructor(private store: Store) {}
 
   ngOnInit(): void {
     this.psalms$ = this.store.select(getAllPsalm).pipe(map((psalms) => cloneDeep(psalms)));
@@ -45,11 +46,5 @@ export class PsalmListComponent implements OnInit {
         psalm,
       })
     );
-  }
-
-  public navigate(blog) {
-    const url = this.router.serializeUrl(this.router.createUrlTree(["poems/poem-detail/" + blog.id]));
-
-    window.open(url, "_blank");
   }
 }

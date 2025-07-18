@@ -9,6 +9,7 @@ import { cloneDeep } from "lodash-es";
 import { toHTML } from "ngx-editor";
 import { Observable, map } from "rxjs";
 import { LibFaIconComponent, ReadonlyTextEditorComponent, TextEditorComponent } from "shared";
+import { LinkComponent } from "../../shared/components/link-redirect/link.component";
 import { InsightEntity } from "../../state/insight/insight.models";
 import { createInsight } from "../../state/insight/insights.actions";
 import { getAllInsight } from "../../state/insight/insights.selectors";
@@ -24,6 +25,7 @@ import { getAllInsight } from "../../state/insight/insights.selectors";
     ReadonlyTextEditorComponent,
     MatButtonModule,
     LibFaIconComponent,
+    LinkComponent,
   ],
 })
 export class InsightListComponent implements OnInit {
@@ -46,11 +48,5 @@ export class InsightListComponent implements OnInit {
         insight,
       })
     );
-  }
-
-  public navigate(blog) {
-    const url = this.router.serializeUrl(this.router.createUrlTree(["insights/insight-detail/" + blog.id]));
-
-    window.open(url, "_blank");
   }
 }

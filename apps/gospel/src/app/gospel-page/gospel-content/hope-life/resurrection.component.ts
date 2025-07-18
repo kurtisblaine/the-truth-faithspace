@@ -94,10 +94,9 @@ import { ReferenceTooltipComponent } from "../../../shared/components/reference-
       For the death He died was to sin, and in His death He suffered for us; “For <b>If</b> we have become united with
       Him in the likeness of His death, certainly we shall also be in the likeness of His resurrection.” (Romans 6:5)
       And "<b>If</b> by the Spirit you are putting to death the deeds of the body, you will live.” (Romans 8:13)
-      <blog-link
-        [title]="'See more about the work of Christ and our work of faith'"
-        [link]="'https://thelightof.life/drawings/draw/repentandbelieve'"
-      ></blog-link>
+      <blog-link [link]="'https://thelightof.life/drawings/draw/repentandbelieve'"
+        >(See more about the work of Christ and our work of faith)</blog-link
+      >
       <br /><br />
 
       And Christ was saying things such as,
@@ -176,10 +175,9 @@ import { ReferenceTooltipComponent } from "../../../shared/components/reference-
       but rather as we wait eagerly for it from above, we do so patiently. And as for the Day of the Lord, it will be
       day unto us who are children of the day, but night to those who walk in darkness (1 Thessalonians 5:1-11). So
       therefore, be on the alert! His coming is as a thief in the night. So watch and pray (Luke 21:36).
-      <blog-link
-        [title]="'See more about the Children of the Light'"
-        [link]="'https://thelightof.life/drawings/draw/daynight'"
-      ></blog-link>
+      <blog-link [link]="'https://thelightof.life/drawings/draw/daynight'"
+        >(See more about the Children of the Light)</blog-link
+      >
     </ng-template>`,
   styles: ``,
   changeDetection: ChangeDetectionStrategy.OnPush,

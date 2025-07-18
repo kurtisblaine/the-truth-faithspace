@@ -153,10 +153,9 @@ import { ReferenceTooltipComponent } from "../../../shared/components/reference-
         me, because I follow what is good. Do not forsake me, O LORD; O my God, do not be far from me! Make haste to
         help me, O Lord, my salvation!
       </blog-reference-tooltip>
-      <blog-link
-        [title]="'See more about Confessing'"
-        [link]="'https://thelightof.life/edifications/edify-detail/eba900e6-909b-1873-e0a3-ef2d8fcc13ed'"
-      ></blog-link>
+      <blog-link [link]="'https://thelightof.life/edifications/edify-detail/eba900e6-909b-1873-e0a3-ef2d8fcc13ed'"
+        >(See more about Confessing)</blog-link
+      >
 
       Our Lord Jesus is one, and what He did was for many; and the scapegoat for Israel was one goat, but was for the
       whole nation of Israel. And likewise the LORD God, Most High, was pleased with one man, Noah, the man of

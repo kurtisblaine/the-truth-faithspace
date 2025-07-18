@@ -134,10 +134,8 @@ import { ReferenceTooltipComponent } from "../../../shared/components/reference-
         Truly, truly, I say to you, unless you eat the flesh of the Son of Man and drink His blood, you have no life in
         yourselves.
       </blog-reference-tooltip>
-      <blog-link
-        [title]="'See more about the Riddle'"
-        [link]="'https://thelightof.life/edifications/edify-detail/7666deae-3d71-86fe-0d07-0f3a29a99599'"
-      ></blog-link
+      <blog-link [link]="'https://thelightof.life/edifications/edify-detail/7666deae-3d71-86fe-0d07-0f3a29a99599'"
+        >(See more about the Riddle)</blog-link
       ><br /><br />
 
       Although God is greatly kind towards us in Christ, we do not neglect the fear of Him; His kindness is not an
@@ -209,10 +207,9 @@ import { ReferenceTooltipComponent } from "../../../shared/components/reference-
       </blog-reference-tooltip>
       So God chooses to show us grace in Christ Jesus, for the sake of the covenants of promise which He swore on oath
       to keep, provided we remain humble in faith.
-      <blog-link
-        [title]="'See More about Jesus through Judah and Isaac'"
-        [link]="'https://thelightof.life/drawings/draw/Jesuslionlamb'"
-      ></blog-link>
+      <blog-link [link]="'https://thelightof.life/drawings/draw/Jesuslionlamb'"
+        >(See More about Jesus through Judah and Isaac)</blog-link
+      >
     </ng-template>`,
   styles: ``,
   changeDetection: ChangeDetectionStrategy.OnPush,

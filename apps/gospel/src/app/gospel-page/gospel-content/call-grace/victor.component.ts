@@ -68,10 +68,9 @@ import { ReferenceTooltipComponent } from "../../../shared/components/reference-
       arm, following Him and obeying Him. Other gods require that you do something for them: stand them up, feed them,
       dust them off, but they are no gods at all; but the one and only God does on our behalf, waging war for us and
       defeating our foes. He defeated them through the cross, and we enter into His victory through faith.
-      <blog-link
-        [title]="'See more about Righteous Warfare'"
-        [link]="'https://thelightof.life/edifications/edify-detail/cff547c6-c5b8-3479-7472-f065fed444f5'"
-      ></blog-link>
+      <blog-link [link]="'https://thelightof.life/edifications/edify-detail/cff547c6-c5b8-3479-7472-f065fed444f5'"
+        >(See more about Righteous Warfare)</blog-link
+      >
       <br /><br />
 
       In a different testimony, Haman, an enemy of the Jews, sought to kill the innocent Mordecai and with him, the
@@ -134,20 +133,18 @@ import { ReferenceTooltipComponent } from "../../../shared/components/reference-
       against him with the Sword of the Word of God; your defense of armor is from the Lord, and your offensive weapon
       is from the Lord; and you, O warrior in the kingdom of God - fight! For He has fought for us. He gives us the law
       of the Spirit and life that we may defend ourselves against the law of sin and death.
-      <blog-link
-        [title]="'See more about the Two Laws Waging War'"
-        [link]="'https://thelightof.life/edifications/edify-detail/52314b0f-bfbb-2b2b-6393-c8e3dcef2a2e'"
-      ></blog-link>
+      <blog-link [link]="'https://thelightof.life/edifications/edify-detail/52314b0f-bfbb-2b2b-6393-c8e3dcef2a2e'"
+        >(See more about the Two Laws Waging War)</blog-link
+      >
       <blog-reference-tooltip [reference]="'Romans 8:35-37'">
         Does it mean he no longer loves us if we have trouble or calamity, or are persecuted, or hungry, or destitute,
         or in danger, or threatened with death? (As the Scriptures say, "For your sake we are killed every day; we are
         being slaughtered like sheep.") No, despite all these things,
         <b>overwhelming victory is ours through Christ, who loved us.</b>
       </blog-reference-tooltip>
-      <blog-link
-        [title]="'See more about Mordecai'"
-        [link]="'https://thelightof.life/edifications/edify-detail/69f8db0f-ef45-212e-beb9-2a7dcea600a4'"
-      ></blog-link>
+      <blog-link [link]="'https://thelightof.life/edifications/edify-detail/69f8db0f-ef45-212e-beb9-2a7dcea600a4'"
+        >(See more about Mordecai)</blog-link
+      >
     </ng-template>`,
   styles: ``,
   changeDetection: ChangeDetectionStrategy.OnPush,

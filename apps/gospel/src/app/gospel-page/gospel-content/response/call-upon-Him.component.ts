@@ -108,10 +108,8 @@ import { ReferenceTooltipComponent } from "../../../shared/components/reference-
       confess Him publically, uncover your head and circumcise your heart. See the thirsty land and give drink; do not
       withhold your bread, nor your water from the poor; open up your lid and pour from your vessel. See the fruit of
       your labors and rejoice; and see salvation at work within you and others.
-      <blog-link
-        [title]="'See More on Justification and Salvation'"
-        [link]="'https://thelightof.life/drawings/draw/justificationandsalvation'"
-      >
+      <blog-link [link]="'https://thelightof.life/drawings/draw/justificationandsalvation'"
+        >(See More on Justification and Salvation)
       </blog-link>
       <br /><br />
 

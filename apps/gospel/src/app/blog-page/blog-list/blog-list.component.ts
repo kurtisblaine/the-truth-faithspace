@@ -2,13 +2,13 @@ import { CommonModule } from "@angular/common";
 import { Component, Input, OnInit } from "@angular/core";
 import { MatButtonModule } from "@angular/material/button";
 import { MatDividerModule } from "@angular/material/divider";
-import { Router } from "@angular/router";
 import { faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
 import { Store } from "@ngrx/store";
 import { cloneDeep } from "lodash-es";
 import { toHTML } from "ngx-editor";
 import { Observable, map } from "rxjs";
 import { LibFaIconComponent, ReadonlyTextEditorComponent, TextEditorComponent } from "shared";
+import { LinkComponent } from "../../shared/components/link-redirect/link.component";
 import { createBlog } from "../../state/blog/blog.actions";
 import { BlogEntity } from "../../state/blog/blog.models";
 import { getAllBlog } from "../../state/blog/blog.selectors";
@@ -24,6 +24,7 @@ import { getAllBlog } from "../../state/blog/blog.selectors";
     TextEditorComponent,
     ReadonlyTextEditorComponent,
     LibFaIconComponent,
+    LinkComponent,
   ],
 })
 export class BlogListComponent implements OnInit {
@@ -32,7 +33,7 @@ export class BlogListComponent implements OnInit {
   public blogs$!: Observable<BlogEntity[]>;
   public faLink = faArrowUpRightFromSquare;
 
-  constructor(private store: Store, private router: Router) {}
+  constructor(private store: Store) {}
 
   ngOnInit(): void {
     this.blogs$ = this.store.select(getAllBlog).pipe(map((blog) => cloneDeep(blog)));
@@ -45,11 +46,5 @@ export class BlogListComponent implements OnInit {
         blog,
       })
     );
-  }
-
-  public navigate(blog) {
-    const url = this.router.serializeUrl(this.router.createUrlTree(["edifications/edify-detail/" + blog.id]));
-
-    window.open(url, "_blank");
   }
 }

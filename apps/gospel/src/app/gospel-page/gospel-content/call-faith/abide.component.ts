@@ -57,10 +57,8 @@ import { ReferenceTooltipComponent } from "../../../shared/components/reference-
         you; but as His anointing teaches you about all things, and is true and is not a lie,
         <b>and just as it has taught you, you abide in Him.</b>
       </blog-reference-tooltip>
-      <blog-link
-        [title]="'See more on Abiding in Christ'"
-        [link]="'https://thelightof.life/drawings/draw/theWordofLife'"
-      ></blog-link
+      <blog-link [link]="'https://thelightof.life/drawings/draw/theWordofLife'"
+        >(See more on Abiding in Christ)</blog-link
       ><br /><br />
 
       What we abide in will come out of us; yes, the filling of the heart will pour out of the mouth; what we set our
@@ -101,10 +99,8 @@ import { ReferenceTooltipComponent } from "../../../shared/components/reference-
       the clean and the unclean, for He teaches us all things; and we will not be led astray from Him. Words can lead
       you to God or they can counsel rebellion against God (Jeremiah 28:16, Deuteronomy 13:5); if we trust in His Word
       alone and discern properly between the clean and the unclean, we will remain in God.
-      <blog-link
-        [title]="'See more on Biblical Separation'"
-        [link]="'https://thelightof.life/drawings/draw/biblicalseparation'"
-      ></blog-link
+      <blog-link [link]="'https://thelightof.life/drawings/draw/biblicalseparation'"
+        >(See more on Biblical Separation)</blog-link
       ><br /><br />
 
       Jesus is the Word of God; it is He who we eat and drink; as He says,

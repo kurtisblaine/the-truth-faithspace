@@ -133,10 +133,8 @@ import { ReferenceTooltipComponent } from "../../../shared/components/reference-
         have put in your mouth shall not depart from your mouth, nor from the mouth of your offspring, nor from the
         mouth of your offspring's offspring," says the LORD, "from now and forever".
       </blog-reference-tooltip>
-      <blog-link
-        [title]="'See more about Benjamin and Isaac'"
-        [link]="'https://thelightof.life/drawings/draw/Jesuslionlamb'"
-      ></blog-link
+      <blog-link [link]="'https://thelightof.life/drawings/draw/Jesuslionlamb'"
+        >(See more about Benjamin and Isaac)</blog-link
       ><br /><br />
 
       The Father grafts us, even Gentiles, into God's household, the body of Christ, through faith in Jesus; He makes us
@@ -163,10 +161,8 @@ import { ReferenceTooltipComponent } from "../../../shared/components/reference-
       Spirit: “As for me, I will watch expectantly for the LORD; I will wait for the God of my salvation. My God will
       hear me.” (Micah 7:7) For the mind set on the flesh is set on punishment and wrath, but the mind set on the Spirit
       is set on the LORD, the God of salvation.
-      <blog-link
-        [title]="'See more about the Father and the Son, the Son and the Church'"
-        [link]="'https://thelightof.life/drawings/draw/Father&Son'"
-      ></blog-link
+      <blog-link [link]="'https://thelightof.life/drawings/draw/Father&Son'"
+        >(See more about the Father and the Son, the Son and the Church)</blog-link
       ><br /><br />
 
       Now, a son conforms himself to the pattern of the father, for a son does the things that the father does; as it
@@ -226,10 +222,8 @@ import { ReferenceTooltipComponent } from "../../../shared/components/reference-
         conduct yourselves in fear during the time of your stay on earth; knowing that you were not redeemed with
         perishable things like silver or gold from your futile way of life inherited from your forefathers, but with
         precious blood, as of a lamb unblemished and spotless, the blood of Christ. </blog-reference-tooltip
-      ><blog-link
-        [title]="'See more about Sons and Slaves'"
-        [link]="'https://thelightof.life/drawings/draw/slavesvssons'"
-      ></blog-link
+      ><blog-link [link]="'https://thelightof.life/drawings/draw/slavesvssons'"
+        >(See more about Sons and Slaves)</blog-link
       ><br /><br />
 
       Finally: Christ gave the good testimony before Pontius Pilate even though he had power to crucify Him and also

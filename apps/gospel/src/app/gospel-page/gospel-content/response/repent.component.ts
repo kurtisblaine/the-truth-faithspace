@@ -130,10 +130,8 @@ import { ReferenceTooltipComponent } from "../../../shared/components/reference-
       examples in the Scriptures, how men repented (Luke 3:10-14; Luke 19:8; Acts 19:18-19). We all know the sin in our
       lives. So I charge you to read the epistles of the apostles; for they show to us what it means to obey the truth.
       Thanks be to God who grants unto us repentance through the knowledge of the truth.
-      <blog-link
-        [title]="'See more on Repentance'"
-        [link]="'https://thelightof.life/edifications/edify-detail/220a13ba-239c-7637-61e4-196fc85a62ce'"
-      >
+      <blog-link [link]="'https://thelightof.life/edifications/edify-detail/220a13ba-239c-7637-61e4-196fc85a62ce'"
+        >(See more on Repentance)
       </blog-link>
     </ng-template>`,
   styles: ``,

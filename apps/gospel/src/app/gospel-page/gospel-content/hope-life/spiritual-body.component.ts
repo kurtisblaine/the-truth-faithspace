@@ -125,10 +125,9 @@ import { ReferenceTooltipComponent } from "../../../shared/components/reference-
         In your bedchamber do not curse a king, and in your sleeping rooms do not curse a rich man, for a bird of the
         heavens will carry the sound and the winged creature will make the matter known.
       </blog-reference-tooltip>
-      <blog-link
-        [title]="'See more about the Two Resurrections'"
-        [link]="'https://thelightof.life/drawings/draw/judgementday'"
-      ></blog-link>
+      <blog-link [link]="'https://thelightof.life/drawings/draw/judgementday'"
+        >(See more about the Two Resurrections)</blog-link
+      >
       <br /><br />
 
       Speaking further of the resurrection: there are certain creatures in nature which have their home on earth and

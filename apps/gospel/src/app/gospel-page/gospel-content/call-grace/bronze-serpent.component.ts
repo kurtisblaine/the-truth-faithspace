@@ -136,10 +136,9 @@ import { ReferenceTooltipComponent } from "../../../shared/components/reference-
       <blog-reference-tooltip [reference]="'John 20:29'" [isJesusWord]="true">
         Blessed are those who have not seen and yet have believed.</blog-reference-tooltip
       >
-      <blog-link
-        [title]="'See more about Spiritual Sight'"
-        [link]="'https://thelightof.life/edifications/edify-detail/156e9f30-db77-2664-f613-9d02a030135f'"
-      ></blog-link>
+      <blog-link [link]="'https://thelightof.life/edifications/edify-detail/156e9f30-db77-2664-f613-9d02a030135f'"
+        >(See more about Spiritual Sight)</blog-link
+      >
       <br /><br />
 
       We should not be distressed or angry with ourselves on account of Christ's death because it was according to God's
