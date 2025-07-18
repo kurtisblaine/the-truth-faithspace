@@ -4,9 +4,12 @@
   </div>
   <div>{{ item.date | date: "short" }}</div>
 
-  <button mat-flat-button *ngIf="update" (click)="doUpdate(item)">Update</button>
-
-  <lib-text-editor [readonly]="!update" [document]="item?.json" (editorChanged)="item.json = $event"></lib-text-editor>
+  @if(update) {
+  <button mat-flat-button (click)="doUpdate(item)">Update</button>
+  <lib-text-editor [document]="item?.json" (editorChanged)="item.json = $event"></lib-text-editor>
+  } @else {
+  <lib-readonly-text-editor [html]="item?.json?.toString()" [showReadMore]="false"></lib-readonly-text-editor>
+  }
 
   <mat-divider></mat-divider>
 </div>

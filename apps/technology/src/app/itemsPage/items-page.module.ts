@@ -7,7 +7,7 @@ import { MatProgressSpinnerModule } from "@angular/material/progress-spinner";
 import { MatTooltipModule } from "@angular/material/tooltip";
 import { RouterModule, Routes } from "@angular/router";
 import { FontAwesomeModule } from "@fortawesome/angular-fontawesome";
-import { TextEditorComponent } from "../../../../../libs/src";
+import { ReadonlyTextEditorComponent, TextEditorComponent } from "../../../../../libs/src";
 import { ItemDetailComponent } from "./item-detail/item-detail.component";
 import { ItemListComponent } from "./item-list/item-list.component";
 import { ItemsComponent } from "./items.component";
@@ -32,6 +32,7 @@ const routes: Routes = [
     MatTooltipModule,
     MatProgressSpinnerModule,
     TextEditorComponent,
+    ReadonlyTextEditorComponent,
     RouterModule.forChild(routes),
   ],
   exports: [ItemListComponent],

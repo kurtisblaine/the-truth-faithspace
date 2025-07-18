@@ -3,4 +3,4 @@
 </h3>
 <div>{{ item?.date | date: "short" }}</div>
 
-<lib-text-editor [readonly]="true" [document]="item.json" [showReadMore]="false"></lib-text-editor>
+<lib-readonly-text-editor [html]="blog?.json?.toString()" [showReadMore]="false"></lib-readonly-text-editor>
