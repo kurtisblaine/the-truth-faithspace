@@ -6,11 +6,11 @@ export const routes: Routes = [
     loadChildren: () => import("./homePage/home.module").then((m) => m.HomeModule),
   },
   {
-    path: "",
+    path: "server",
     loadChildren: () => import("./serverPage/server-page.module").then((m) => m.ServerModule),
   },
   {
-    path: "",
+    path: "items",
     loadChildren: () => import("./itemsPage/items-page.module").then((m) => m.ItemsModule),
   },
 ];

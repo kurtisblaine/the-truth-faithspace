@@ -1,6 +1,18 @@
-<h3 class="item-title primary-color">
-  {{ item?.title?.toUpperCase() }}
-</h3>
-<div>{{ item?.date | date: "short" }}</div>
+<mat-card style="margin: 15px" *ngIf="item$ | async as item">
+  <mat-card-header>
+    <mat-card-title-group>
+      <mat-card-title>
+        <h3 class="item-title primary-color">
+          {{ item?.title }}
+        </h3>
+      </mat-card-title>
+      <mat-card-subtitle>
+        <div>{{ item?.date | date: "short" }}</div>
+      </mat-card-subtitle>
+    </mat-card-title-group>
+  </mat-card-header>
 
-<lib-readonly-text-editor [html]="item?.json?.toString()" [showReadMore]="false"></lib-readonly-text-editor>
+  <mat-card-content>
+    <lib-readonly-text-editor [html]="item?.json?.toString()" [showReadMore]="false"></lib-readonly-text-editor>
+  </mat-card-content>
+</mat-card>

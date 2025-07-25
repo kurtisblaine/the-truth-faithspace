@@ -1,9 +1,10 @@
 import { ApplicationConfig, isDevMode, provideZonelessChangeDetection } from "@angular/core";
 import {
-  PreloadAllModules,
+  NoPreloading,
   provideRouter,
   withComponentInputBinding,
   withHashLocation,
+  withInMemoryScrolling,
   withPreloading,
   withRouterConfig,
 } from "@angular/router";
@@ -42,8 +43,8 @@ export const appConfig: ApplicationConfig = {
         onSameUrlNavigation: "reload",
         paramsInheritanceStrategy: "always",
       }),
-      withPreloading(PreloadAllModules),
-      // withInMemoryScrolling(),
+      withPreloading(NoPreloading),
+      withInMemoryScrolling(),
       withComponentInputBinding(),
       withHashLocation()
     ),

@@ -7,7 +7,7 @@ export const itemsFeatureKey = "items";
 export interface ItemEntity {
   collectionId?: string;
   id: string | number; // Primary ID
-  json: object;
+  json: object | string;
   title: string;
   date: string;
 }

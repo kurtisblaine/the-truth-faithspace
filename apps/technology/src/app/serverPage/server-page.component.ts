@@ -1,6 +1,6 @@
 import { ChangeDetectionStrategy, Component } from "@angular/core";
-import { Router } from "@angular/router";
 import { Store } from "@ngrx/store";
+import { toHTML } from "ngx-editor";
 import { v4 } from "uuid";
 import { ItemsActions } from "../+state/items/items.actions";
 import { ItemEntity } from "../+state/items/items.reducer";
@@ -33,7 +33,7 @@ export class ServerPageComponent {
   public title!: string;
   private _document!: ItemEntity;
 
-  constructor(private store: Store, private router: Router) {}
+  constructor(private store: Store) {}
 
   ngOnInit(): void {
     this.store.dispatch(ItemsActions.loadItems());
@@ -44,14 +44,12 @@ export class ServerPageComponent {
       ItemsActions.createItem({
         item: {
           title: this.title,
-          json: this._document,
+          json: toHTML(this._document),
           date: Date.now().toString(),
           id: v4().toString(),
         },
       })
     );
-
-    this.router.navigateByUrl("items");
   }
 
   public onChange(change: ItemEntity) {

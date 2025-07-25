@@ -1,12 +1,15 @@
-import { ChangeDetectionStrategy, Component } from "@angular/core";
+import { ChangeDetectionStrategy, Component, ViewChild } from "@angular/core";
 import { MatButtonModule } from "@angular/material/button";
 import { MatListModule } from "@angular/material/list";
+import { MatMenuModule, MatMenuTrigger } from "@angular/material/menu";
 import { MatSidenavModule } from "@angular/material/sidenav";
 import { MatToolbarModule } from "@angular/material/toolbar";
 import { MatTooltipModule } from "@angular/material/tooltip";
 import { Router, RouterOutlet } from "@angular/router";
 import { FontAwesomeModule } from "@fortawesome/angular-fontawesome";
-import { faBars, faHome, faRobot } from "@fortawesome/free-solid-svg-icons";
+import { faBars, faGears, faHome, faRobot } from "@fortawesome/free-solid-svg-icons";
+import { SettingsWidgetComponent } from "./shared/settings-widget.component";
+
 @Component({
   selector: "app-root",
   changeDetection: ChangeDetectionStrategy.OnPush,
@@ -18,6 +21,8 @@ import { faBars, faHome, faRobot } from "@fortawesome/free-solid-svg-icons";
     MatListModule,
     MatSidenavModule,
     MatTooltipModule,
+    MatMenuModule,
+    SettingsWidgetComponent,
   ],
 
   template: `
@@ -51,7 +56,23 @@ import { faBars, faHome, faRobot } from "@fortawesome/free-solid-svg-icons";
               <fa-icon [icon]="icon" [size]="'lg'"></fa-icon>
             </button>
 
-            <span>Beware of Idols</span>
+            <button mat-button (click)="goHome(); drawer.close()"><h1>Beware of Idols</h1></button>
+
+            <span style="flex: 1 1 auto"></span>
+
+            <button
+              mat-icon-button
+              [matTooltip]="'Settings'"
+              aria-labelledby="Settings button"
+              aria-label="Settings button"
+              [matMenuTriggerFor]="settingsMenu"
+            >
+              <fa-icon [icon]="settingsIcon" [size]="'lg'"></fa-icon>
+            </button>
+
+            <mat-menu #settingsMenu="matMenu">
+              <app-settings-widget></app-settings-widget>
+            </mat-menu>
           </mat-toolbar>
         </div>
 
@@ -66,7 +87,15 @@ export class AppComponent {
   public icon = faBars;
   public homeIcon = faHome;
   public itemIcon = faRobot;
+  public settingsIcon = faGears;
+
+  @ViewChild(MatMenuTrigger) trigger: MatMenuTrigger;
+
   constructor(private router: Router) {}
+
+  openMenu() {
+    this.trigger.openMenu();
+  }
 
   public goHome() {
     this.router.navigateByUrl("").then(() => {});

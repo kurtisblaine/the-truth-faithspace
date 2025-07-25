@@ -1,14 +1,15 @@
 <div class="item-item" *ngFor="let item of items$ | async">
-  <div class="item-title primary-color" (click)="navigate(item)">
-    {{ item.title.toUpperCase() }}
-  </div>
+  <app-link class="item-title primary-color" [link]="'#/items/item-detail/' + item.id">
+    {{ item.title }}
+    <fa-icon [icon]="faLink" style="padding-left: 2px"></fa-icon>
+  </app-link>
   <div>{{ item.date | date: "short" }}</div>
 
   @if(update) {
   <button mat-flat-button (click)="doUpdate(item)">Update</button>
   <lib-text-editor [document]="item?.json" (editorChanged)="item.json = $event"></lib-text-editor>
   } @else {
-  <lib-readonly-text-editor [html]="item?.json?.toString()" [showReadMore]="false"></lib-readonly-text-editor>
+  <lib-readonly-text-editor [html]="item?.json?.toString()"></lib-readonly-text-editor>
   }
 
   <mat-divider></mat-divider>
