@@ -11,7 +11,7 @@ import { ReferenceTooltipComponent } from "../../../shared/components/reference-
       animal; when they sinned, blood needed to be shed and applied to the horns of the altar for atonement; the animal
       had to be perfect (no defects, blemishes, etc), a clean animal, and it had to be innocent of all wrong (like
       goring, etc). For with sin comes death, sin and death go together; death trails behind sin in its path, and the
-      end of its way is death; so death is needed for atonement for sin, blood needed to be shed for forgiveness. When
+      end of its way is death; so death is needed for atonement for sin, blood needs to be shed for forgiveness. When
       the substitute sacrifice of an animal occurred, the one offering was covered of his fault; afterwards, it was like
       the fault never occurred, for it was forgiven and the wrong was offset. The blood does nothing if it's still
       within the animal; the animal needed to be slain and dealt with according to the law. God established these laws
@@ -25,17 +25,13 @@ import { ReferenceTooltipComponent } from "../../../shared/components/reference-
         I have prepared. Be on your guard before Him and obey His voice; do not be rebellious toward Him, for He will
         not pardon your transgression since My name is in Him.
       </blog-reference-tooltip>
-      And that angel is Christ. For it is the same in the New Covenant; as it says,
-      <blog-reference-tooltip [reference]="'Hebrews 10:26-27'">
-        If we go on sinning willfully after receiving the knowledge of the truth, there no longer remains a sacrifice
-        for sins, but a terrifying expectation of judgment and THE FURY OF A FIRE WHICH WILL CONSUME THE ADVERSARIES.
-      </blog-reference-tooltip>
-      For all rebellion is willful - such sins are punished through chastisement; but,
+      And that angel is Christ. For it is the same in the New Covenant (Hebrews 10:26-27). For all rebellion is willful
+      - such sins are punished through chastisement; but,
       <blog-reference-tooltip [reference]="'1 Corinthians 11:30-32'">
         When we are judged, we are disciplined by the Lord so that we will not be condemned along with the world.
       </blog-reference-tooltip>
-      For the apostles are also on record saying, “And we are ready to punish all disobedience, whenever your obedience
-      is complete.” (2 Corinthians 10:6) For the apostles also disciplined in the Lord. <br /><br />
+      For the apostles are also on record saying, "We are ready to punish all disobedience, whenever your obedience is
+      complete.” (2 Corinthians 10:6) For the apostles also disciplined in the Lord. <br /><br />
 
       So therefore, the Israelites had to sacrifice a perfect lamb or which-ever clean animal prescribed by the law for
       forgiveness of unintentional sins; it is like this: the clean animal cleansed them from their filth and the
@@ -43,15 +39,15 @@ import { ReferenceTooltipComponent } from "../../../shared/components/reference-
       the guilt remained, for an innocent animal had to die in their place; the sacrifice did not take away their sin,
       but only covered their sin temporarily according to the physical requirement; as it says in the book of Hebrews,
       <blog-reference-tooltip [reference]="'Hebrews 10:3-4'"
-        >But in those (sacrifices) there is a reminder of sins year by year. For it is impossible for the blood of bulls
-        and goats to take away sins.</blog-reference-tooltip
+        >In those (sacrifices) there is a reminder of sins year by year. For it is impossible for the blood of bulls and
+        goats to take away sins.</blog-reference-tooltip
       >
       For a goat is not equivalent to a human, so it cannot be substituted for a human; but rather,
       <blog-reference-tooltip [reference]="'Deuteronomy 19:21'">
-        life shall be for life, eye for eye, tooth for tooth, hand for hand, foot for foot.
+        Life shall be for life, eye for eye, tooth for tooth, hand for hand, foot for foot.
       </blog-reference-tooltip>
-      And certain sin offerings were brought into the Holy Place when the congregation as a whole sinned; the bodies of
-      those animals were burned outside the camp and not eaten by the priest; as it says,
+      Furthermore, certain sin offerings were brought into the Holy Place when the congregation as a whole sinned; the
+      bodies of those animals were burned outside the camp and not eaten by the priest; as it says,
       <blog-reference-tooltip [reference]="'Hebrews 13:11'">
         Although the high priest brings the blood of animals into the Holy Place as a sacrifice for sin, the bodies are
         burned outside the camp.
@@ -60,18 +56,16 @@ import { ReferenceTooltipComponent } from "../../../shared/components/reference-
       <blog-reference-tooltip [reference]="'John 1:29'">
         Behold, the Lamb of God, who takes away the sin of the world!
       </blog-reference-tooltip>
-      "And so Jesus also suffered outside the city gate, to sanctify the people by His own blood. Therefore let us go to
-      Him outside the camp, bearing the disgrace He bore. For here we do not have a permanent city, but we are looking
-      for the city that is to come." (Hebrews 13:12-14) He was sacrificed on our behalf as our substitute, for the
+      "Jesus also suffered outside the city gate, to sanctify the people by His own blood. Therefore let us go to Him
+      outside the camp, bearing the disgrace He bore. For here we do not have a permanent city, but we are looking for
+      the city that is to come." (Hebrews 13:12-14) He was sacrificed on our behalf as our substitute, for the
       forgiveness of sins - not a sacrifice that needed to be offered over and over, but once for all; and He was the
-      sin offering for the whole world, not just for the congregation of Israel. But how is one for all? As it is
-      written, “These of the sons of Gad were captains of the army; he who was least was equal to a hundred and the
-      greatest to a thousand.” (1 Chronicles 12:14) And it says of David, "You (David) should not go out; for if we
-      indeed flee, they will not care about us; even if half of us die, they will not care about us. But you are worth
-      ten thousand of us." (2 Samuel 18:3) If David is as ten thousand, and the greatest of Gad a thousand, how do you
-      suppose Christ is reckoned, being the Son of God, but as the whole world, including both the living and the dead?
-      So He is one, yet for all, being God's own Son. Those sin offerings in the Old Covenant for the whole congregation
-      of Israel were not eaten; but yet
+      sin offering for the whole world, not only for the congregation of Israel. But how is one for all? As it is
+      written, “He who was least was equal to a hundred and the greatest to a thousand.” (1 Chronicles 12:14) And it
+      says of David, "You are worth ten thousand of us." (2 Samuel 18:3) If David is as ten thousand, and the greatest
+      of Gad a thousand, how do you suppose Christ is reckoned, being the Son of God, but as the whole world, including
+      both the living and the dead? So He is one, yet for all, being God's own Son. Those sin offerings in the Old
+      Covenant for the whole congregation of Israel were not eaten; but yet
       <blog-reference-tooltip [reference]="'Hebrews 13:10'">
         We have an altar from which those who serve the tent have no right to eat.
       </blog-reference-tooltip>
@@ -84,8 +78,8 @@ import { ReferenceTooltipComponent } from "../../../shared/components/reference-
       Christ from the dead and by His resurrection, we have justification with God. It is His act of obedience that
       matters in the sight of God, united with our work of faith. God shows us the way of atonement in the law; for
       there is no forgiveness without the shedding of blood. These laws came not from man, although they were spoken by
-      the mouth of Moses, they came from God, and this is God's way. Everything Moses spoke, God spoke to him to speak
-      to the people. These things he spoke were also written down by the commandment of God. And by reading these
+      the mouth of Moses, they came from God; and this is God's way. Everything Moses spoke, God spoke to him to speak
+      to the people. These things he spoke were also written down by the commandment of the LORD. And by reading these
       things, we may believe through Moses, for they point to Christ; for faith comes by hearing and hearing the Word of
       Christ. So it's by faith, which is contrary to works; and if it's contrary to work, then it's accounted as grace,
       for grace is a gift; and on the contrary, if it's work, then grace is no longer grace, but due wages; for those
@@ -93,24 +87,24 @@ import { ReferenceTooltipComponent } from "../../../shared/components/reference-
       our works by the grace of God to be received by faith. And He, being the High Priest, brought an offering to God,
       offering Himself to sanctify for-ever those who are being saved. And thereafter, having been raised, He has been
       exalted as Lord of all, especially of those who believe. The work of the obedience of Christ forgives, making many
-      who believe righteous and justifying the many by His one act. And He proves to us these facts through the
+      that believe righteous and justifying the many by His one act. And He proves to us these facts through the
       testimonies of the Psalms and the Prophets, the book of the law, which were all written beforehand, foretelling
-      God's plan, which is now revealed in Christ; as it says,
+      God's plan, which is now revealed in Christ; as Christ says,
       <blog-reference-tooltip [reference]="'Luke 24:13-35'" [isJesusWord]="true">
-        And Jesus said to them, "O foolish men and slow of heart to believe in all that the prophets have spoken! Was it
-        not necessary for the Christ to suffer these things and to enter into His glory?" Then beginning with Moses and
-        with all the prophets, He explained to them the things concerning Himself in all the Scriptures.
+        Jesus said to them, "O foolish men and slow of heart to believe in all that the prophets have spoken! Was it not
+        necessary for the Christ to suffer these things and to enter into His glory?" Then beginning with Moses and with
+        all the prophets, He explained to them the things concerning Himself in all the Scriptures.
       </blog-reference-tooltip>
-      Not to mention, we also have the testimonies of the Apostles, who seen the risen Lord, testifying to what they
+      Not to mention: we also have the testimonies of the Apostles, who seen the risen Lord, testifying to what they
       seen and heard, namely, Jesus appointed by God to be the Savior of the world; so now, we may have confidence to
-      approach the living God through His Way, which is by the blood of Christ; as it says,
+      approach the living God through His Way, by the blood of Christ; as it says,
       <blog-reference-tooltip [reference]="'Hebrews 10:18-22'">
         Now where there is forgiveness of these things, there is no longer any offering for sin. Therefore, brethren,
         since we have confidence to enter the holy place by the blood of Jesus, by a new and living way which He
         inaugurated for us through the veil, that is, His flesh, and since we have a great priest over the house of God,
         let us draw near with a sincere heart in full assurance of faith, having our hearts sprinkled clean from an evil
         conscience and our bodies washed with pure water. </blog-reference-tooltip
-      >For this is God's Way, and there is no other; as Jesus testified and His testimony is true,
+      >For this is God's Way, and there is no other; as Jesus testified and His testimony is true; as He says,
       <blog-reference-tooltip [reference]="'John 14:6'" [isJesusWord]="true">
         I am the way, and the truth, and the life; no one comes to the Father but through Me.
       </blog-reference-tooltip>
@@ -135,16 +129,16 @@ import { ReferenceTooltipComponent } from "../../../shared/components/reference-
       which are strong, and the base things of the world and the despised God has chosen, the things that are not, so
       that He may nullify the things that are.” (1 Corinthians 1:27-28) <br /><br />
 
-      And so if anyone who has the love of this world in them, the love of the Father is not in them; for how can we
-      love what God hates? As the prophet asks, "Should you help the wicked and love those who hate the LORD and so
-      bring wrath on yourself from the LORD?” (2 Chronicles 19:2) Everything that is of the world is contrary to God,
-      and everything men value is detestable in the sight of God (Luke 16:15). But we who love the Father have been
-      rescued from this world's lusts. This is the sacrifice that God desires: not of bulls, or goats, or lambs, but of
-      setting apart our sins for destruction, crucifying the misdeeds of the body by devoting them to death, so that we
-      may not be destroyed with them; this is the sacrifice of death that we may live, which is initiated by God's
-      Sacrifice of Atonement for us, even the Passover; for even if we purge out every crumb of leaven in our lives, if
-      we do not have blood, our work is in vain. This is the thing Solomon seen when he prayed after the completion of
-      the permanent temple of God; instead of praying, asking for the LORD God to forgive the people according to the
+      So if anyone who has the love of this world in them, the love of the Father is not in them; for how can we love
+      what God hates? As the prophet asks, "Should you help the wicked and love those who hate the LORD and so bring
+      wrath on yourself from the LORD?” (2 Chronicles 19:2) Everything that is of the world is contrary to God, and
+      everything men value is detestable in the sight of God (Luke 16:15). But we who love the Father have been rescued
+      from this world. This is the sacrifice that God desires: not of bulls, or goats, or lambs, but of setting apart
+      our sins for destruction, crucifying the misdeeds of the body by devoting them to death, so that we may not be
+      destroyed with them; this is the sacrifice of death that we may live, which is initiated by God's Sacrifice of
+      Atonement for us, even the Passover; for even if we purge out every crumb of leaven in our lives, if we do not
+      have blood, our work is in vain. This is the thing Solomon seen when he prayed after the completion of the
+      permanent temple of God; instead of praying, asking for the LORD God to forgive the people according to the
       ordinances of sacrifice even though they were written according to the law; he says,
       <blog-reference-tooltip [reference]="'2 Chronicles 6:46-49'">
         If they return to You with all their heart and with all their soul in the land of their captivity, where they
@@ -154,16 +148,15 @@ import { ReferenceTooltipComponent } from "../../../shared/components/reference-
         You.
       </blog-reference-tooltip>
       As it says, "If they return to You with all their heart and with all their soul and pray." It does not say, "If
-      they sacrifice an offering according to the law to You." For,
+      they sacrifice an offering according to the law to You." For
       <blog-reference-tooltip [reference]="'1 Samuel 15:22'">
         Has the LORD as much delight in burnt offerings and sacrifices As in obeying the voice of the LORD? Behold, to
         obey is better than sacrifice, And to heed than the fat of rams.
       </blog-reference-tooltip>
-      And there are many other such things written in the Scriptures as these (Hosea 6:6, Micah 6:7-8, Psalm 40:6-8,
-      Jeremiah 7:21-23, Psalm 50:8-15, Psalm 51:16-17). Christ is the Sacrifice; God desires not a sacrifice from us,
-      but He gives the Sacrifice. The sacrifices of man are loyalty and obedience, the knowledge of God, giving heed to
-      His Word, doing loving-kindness and justice, and walking humbly with Your God; with these things God will not
-      despise.
+      (And there are many other such things written in the Scriptures as these: Hosea 6:6, Micah 6:7-8, Psalm 40:6-8,
+      Jeremiah 7:21-23, Psalm 50:8-15, Psalm 51:16-17) Christ is the Sacrifice; God desires not a sacrifice from us, but
+      He gives the Sacrifice. The sacrifices of man are loyalty and obedience, the knowledge of God, giving heed to His
+      Word, doing loving-kindness and justice, and walking humbly with God; with these things God will not despise.
     </ng-template>`,
   styles: ``,
   changeDetection: ChangeDetectionStrategy.OnPush,

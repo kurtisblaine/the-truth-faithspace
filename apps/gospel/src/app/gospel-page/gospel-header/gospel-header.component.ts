@@ -1,11 +1,10 @@
-import { ChangeDetectionStrategy, Component, Input } from "@angular/core";
+import { Component, Input } from "@angular/core";
 import { MatCardModule } from "@angular/material/card";
 
 @Component({
   selector: "blog-gospel-header",
   templateUrl: "./gospel-header.component.html",
   styleUrl: "./gospel-header.component.scss",
-  changeDetection: ChangeDetectionStrategy.OnPush,
   imports: [MatCardModule],
 })
 export class GospelHeaderComponent {

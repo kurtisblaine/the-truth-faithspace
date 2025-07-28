@@ -125,7 +125,7 @@ import { ReferenceTooltipComponent } from "../../../shared/components/reference-
       sinners Christ died for us; great is His hatred towards sin, and much greater is His love towards us, who for the
       sake of our sins, endured our sins. If sin ends in death, how much more does His righteousness lead to life? How
       great is His wrath toward sin; how much greater is His lovingkindness toward us in that He endured the penalty for
-      our sins, having died for us. He pacified God's wrath through the cross; through the cross He leads many to
+      our sins, having died for us. He pacified God's wrath through the cross; and through His life He leads many to
       righteousness by faith in His name; for He put on our sin and shame, bearing our wrongs, suffering with us and for
       us; for this end: that we would put off sin and put on Him like new clothes. How much more should we hate our sins
       for the sake of Him who loved us; for He loved us more than the hatred of the sins of even the whole world. “For I
@@ -134,24 +134,25 @@ import { ReferenceTooltipComponent } from "../../../shared/components/reference-
       which is in Christ Jesus our Lord.” (Romans 8:39)
       <br /><br />
 
-      Beforetime I said, "That sin might lose its power in us who believe,": Jonathan, the son of Saul, became accursed
-      by his father when he ate some honey which was against his father's oath (1 Samuel 14:24-45); for his father Saul
-      made a foolish oath that no-one should eat until he had vengeance on his enemies. So Saul, in his zeal for his
-      oath, sought to put even his own son to death for the sake of the oath of his curse (1 Samuel 14:39, 1 Samuel
-      14:44). But Jonathan did not die, rather he bore the curse and lived on account of another oath, the oath of life;
-      and even yet, the people who ate meat with the blood, which is contrary to the law of Moses (Leviticus 17:12-14),
-      were not cut off (1 Samuel 14:32-34). And even though Saul sinned by making these foolish oaths and the people
-      sinned by eating with the blood, it was Jonathan who was determined by lot, which was determined by God, to have
-      sinned, and the rest were free'd; even though Jonathan did no wrong, only he ate a little bit of honey; despite
-      these things, and despite the fact that Jonathan worked a great deliverance for Israel that day, he was still
-      chosen by lot to die; but still yet, he lived thereafter; as it says about him,
+      Beforetime I said, "That sin might lose its power in us who believe," and this is what I mean: so Jonathan, the
+      son of Saul, became accursed by his father when he ate some honey which was against his father's oath (1 Samuel
+      14:24-45); for his father Saul made a foolish oath that no-one should eat until he had vengeance on his enemies.
+      So Saul, in his zeal for his oath, sought to put even his own son to death for the sake of the oath of his curse
+      (1 Samuel 14:39, 1 Samuel 14:44), for Jonathan tasted a little bit of honey unaware of his father's oath. But
+      Jonathan did not die, rather he bore the curse and lived on account of another oath, the oath of life; and even
+      yet, the people who ate meat with the blood, which is contrary to the law of Moses (Leviticus 17:12-14), were not
+      cut off (1 Samuel 14:32-34). And even though Saul sinned by making these foolish oaths and the people sinned by
+      eating with the blood, it was Jonathan who was determined by lot, which is determined by God, to have sinned, and
+      the rest were free'd; even though Jonathan did no wrong, only he ate a little bit of honey; despite these things,
+      and despite the fact that Jonathan worked with God to bring about a great deliverance for Israel that day, he was
+      still chosen by lot to die; but still yet, he lived thereafter; as it says about him,
       <blog-reference-tooltip [reference]="'1 Samuel 14:45'">
         "Must Jonathan die, who has brought about this great deliverance in Israel? Far from it! As the LORD lives, not
         one hair of his head shall fall to the ground, for he has worked with God this day." So the people rescued
         Jonathan and he did not die.
       </blog-reference-tooltip>
-      Which is surely a picture of Christ, who worked with God to bring about this great deliverance which is witnessed
-      today; for it says,
+      And these things pertain to Christ, who worked with God to bring about a great deliverance, witnessed today; for
+      it says,
       <blog-reference-tooltip [reference]="'Galatians 3:13-14'">
         Christ redeemed us from the curse of the law by becoming a curse for us—for it is written, “Cursed is everyone
         who is hanged on a tree”— so that in Christ Jesus the blessing of Abraham might come to the Gentiles, so that we
@@ -161,10 +162,10 @@ import { ReferenceTooltipComponent } from "../../../shared/components/reference-
       we are the ones who are rightfully under the curse of the law, which says, "Cursed is he who does not confirm the
       words of this law by doing them." (Deuteronomy 27:26) For we do not do what the law says. But Christ was chosen by
       God on our behalf to be our Substitute, and we are released from the curse; but it was impossible for death to
-      hold Him, for He walked in the ways of life and was raised to life; He went through no decay, according to the
-      foreknowledge of God in the Word of truth and the power of an indestructible life. And He has become to us Savior
-      from our sins, Savior from the curse of the law, Savior from death, for He tasted death for everyone to bring
-      about this present blessing and deliverance; as it says of Him,
+      hold Him, for He walked in the ways of life and was raised to life; He went through no decay, by the foreknowledge
+      of God and the power of an indestructible life. And He has become unto us Savior from our sins, Savior from the
+      curse of the law, Savior from death, for He tasted death for everyone to bring about this present blessing and
+      deliverance; as it says of Him,
       <blog-reference-tooltip [reference]="'Hebrews 2:9'">
         Jesus, because of the suffering of death crowned with glory and honor, so that by the grace of God He might
         taste death for everyone.
@@ -184,7 +185,7 @@ import { ReferenceTooltipComponent } from "../../../shared/components/reference-
       <br /><br />
 
       Our Lord disarmed the rulers and authorities through the cross, for they have their power in the law, for in the
-      law sin has its strength; however, Christ Jesus justifies us apart from our works of the law, through faith in His
+      law sin has its strength; however Christ Jesus justifies us apart from our works of the law, through faith in His
       name, rendering our works ineffective for justification; as the apostle affirms,
       <blog-reference-tooltip [reference]="'Romans 10:4'">
         Christ is the end of the law for righteousness to everyone who believes.</blog-reference-tooltip
@@ -193,9 +194,9 @@ import { ReferenceTooltipComponent } from "../../../shared/components/reference-
       in Christ Jesus comes the knowledge of God, the knowledge of His righteousness. And by His work He grants to us
       overwhelming victory through His name; and in His name, we obtain the victory, for only in the refuge of Him we
       are safe from the wrath of God. So it's by His work on the cross and our work of faith in Him that we may please
-      God; for faith is reckoned as righteousness, and it's by God's grace it is reckoned. And if it's by faith, then
-      it's apart from works and credited as grace. But someone may ask, "How is it that we do no work and believe, but
-      yet we are justified?" By using a human example: yes, you do no work, you believe and you win justification in
+      God; for faith is reckoned as righteousness, and through it we have entrance into His grace. And if it's by faith,
+      then it's apart from works and credited as grace. But someone may ask, "How is it that we do no work and believe,
+      but yet we are justified?" By using a human example: yes, you do no work, you believe and you win justification in
       Christ. In a similar way, you watch a sports game, yet you do nothing, you watch and believe your team to win. You
       cheer for your favorite team without doing a single thing: except you believe in your team to win. You sit and
       watch on the sofa, hoping your team would win, while they, by their sweat and their tears, do the work. When they
@@ -208,9 +209,9 @@ import { ReferenceTooltipComponent } from "../../../shared/components/reference-
       physical war, it is for body - but Jesus fought for the soul and body of mankind. Just as David fought Goliath,
       and David, as one man, obtained the victory for the whole nation of Israel, so Christ fought as One man and
       obtained victory for the whole world. And we who put our faith in Him share in His victory; for He is our
-      trustworthy Savior, who wins and never loses, and even in His defeat gains us the victory - for even in His
-      weakness, He is strong! And even in His defeat gains the victory! For "The weakness of God is stronger than men."
-      (1 Corinthians 1:25) I say that He was defeated, but it's not so, it only appeared that way to the world. Is one
+      trustworthy Savior, who wins and never loses, and even in His defeat is victorious - for even in His weakness, He
+      is strong! And even in His defeat gains the victory! For "The weakness of God is stronger than men." (1
+      Corinthians 1:25) I say that He was defeated, but it's not so, it only appeared that way to the world. Is one
       defeated when He is alive from the dead and exalted? For God rose Him up.
       <blog-reference-tooltip [reference]="'1 John 5:4'">
         For everyone who has been born of God overcomes the world. And this is the victory that has overcome the
@@ -219,15 +220,14 @@ import { ReferenceTooltipComponent } from "../../../shared/components/reference-
       So it is by faith we enter into victory with Christ, according to the righteousness of God, not according to our
       own works of righteousness that we have done; for our good works are sin, and our best works are an abomination:
       the common people chanted for Jesus to be crucified, and the most righteous Pharisees plotted to kill Him; they
-      handed the Lord of glory to the Gentiles to death; as the prophet says, “The best of them is like a briar, The
-      most upright like a thorn hedge.” (Micah 7:4) “For all of us have become like one who is unclean, And all our
-      righteous deeds are like a filthy garment.” (Isaiah 64:6) [Furthermore, wisdom says, “The sacrifice of the wicked
-      is an abomination, How much more when he brings it with evil intent!” (Proverbs 21:27, Proverbs 15:8) And, “He who
-      turns away his ear from listening to the law, Even his prayer is an abomination.” (Proverbs 28:9) For God is the
-      God of the spirits of all flesh; and when the wicked seek to deceive Him with righteousness, it is worse for them
-      than the wicked who do wickedly.] But thanks be to God who purifies our hearts by faith in the gospel of Christ
-      that we may produce good fruit to God! So through the gospel the righteousness of God is revealed from faith to
-      faith.
+      handed the Lord of glory to death; as the prophet says, “The best of them is like a briar, The most upright like a
+      thorn hedge.” (Micah 7:4) “For all of us have become like one who is unclean, And all our righteous deeds are like
+      a filthy garment.” (Isaiah 64:6) [Furthermore, wisdom says, “The sacrifice of the wicked is an abomination, How
+      much more when he brings it with evil intent!” (Proverbs 21:27, Proverbs 15:8) And, “He who turns away his ear
+      from listening to the law, Even his prayer is an abomination.” (Proverbs 28:9) For God is the God of the spirits
+      of all flesh; and when the wicked seek to deceive Him with righteousness, it is worse for them than the wicked who
+      do wickedly.] But thanks be to God who purifies our hearts by faith in the gospel of Christ that we may produce
+      good fruit to God! So through the gospel the righteousness of God is revealed from faith to faith.
       <br /><br />
 
       So through the cross Jesus made a public spectacle of the powers and authorities that govern this world; for He
@@ -274,9 +274,10 @@ import { ReferenceTooltipComponent } from "../../../shared/components/reference-
       yourself as a slave to it, then watch out! In it's full growth: it's death. But Christ Jesus came to set us free
       from the power of sin and death, so that we would not be conformed to our old way of thinking, but that we would
       be made new through the renewing of our mind by the Holy Spirit. Christ has nullified the power of sin, stripping
-      it of its power, for sin has its power through the law, but He justifies us apart from the law through faith - it
-      is the gift of God so that no one may boast. And the Spirit of Him comes by faith, for everything that is from
-      faith is also from the Spirit; for faith is spiritual, and everything spiritual is unseen; as Christ says,
+      it of its power, for sin has its power through the law, but He justifies us apart from the law through faith -
+      this justification is the gift of God so that no one may boast. And the Spirit of Him comes by faith, for
+      everything that is from faith is also from the Spirit; for faith is spiritual, and everything spiritual is unseen;
+      as Christ says,
       <blog-reference-tooltip [reference]="'John 6:63'" [isJesusWord]="true">
         It is the Spirit who gives life; the flesh is no help at all. The words that I have spoken to you are spirit and
         life. </blog-reference-tooltip

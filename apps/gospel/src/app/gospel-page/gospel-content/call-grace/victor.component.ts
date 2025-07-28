@@ -55,19 +55,18 @@ import { ReferenceTooltipComponent } from "../../../shared/components/reference-
         them through the cross.
       </blog-reference-tooltip>
       For in His death, they were put to death; as it says, “His grave was assigned with wicked men." (Isaiah 53:9) For
-      Jesus satisfied the just requirement of the law by dying for our sins, rendering the law ineffective for
-      salvation; and He established a law of faith "so that He would be just and the justifier of the one who has faith
-      in Jesus.” (Romans 3:26) So that He may turn us from the power of satan unto Himself through the gospel of God.
-      For the accuser has lost his strength in us who believe, for we have the forgiveness of sins; and where there is
+      Jesus satisfied the just requirement of the law by dying for our sins, rendering the law ineffective; and He
+      established a law of faith "so that He would be just and the justifier of the one who has faith in Jesus.” (Romans
+      3:26) So that He may turn us from the power of satan unto Himself through the gospel of God. For the accuser has
+      lost his strength in us who believe, for in Him we have the forgiveness of our sins; and where there is
       forgiveness, there is no longer any remembrance; as it says, "I will forgive their iniquity, and their sin I will
       remember no more." (Jeremiah 31:34) “For by one offering He has perfected for all time those who are sanctified.”
-      (Hebrews 10:14) And this kingdom we are entering into has came, and it is coming; and His kingdom is an eternal
-      kingdom, and His rule is an eternal rule; satan's rule is only temporary. And it is Christ Jesus fought the battle
-      for us - we enter into His victory; for our God is for us, doing on our behalf, fighting for us. Just as the
-      Israelites entered into the Promised Land by the mighty hand of God, so it is with us: we enter in by His powerful
-      arm, following Him and obeying Him. Other gods require that you do something for them: stand them up, feed them,
-      dust them off, but they are no gods at all; but the one and only God does on our behalf, waging war for us and
-      defeating our foes. He defeated them through the cross, and we enter into His victory through faith.
+      (Hebrews 10:14) It is Christ Jesus fought the battle for us - we enter into His victory; for our God is for us,
+      doing on our behalf, fighting for us. Just as the Israelites entered into the Promised Land by the mighty hand of
+      God, so it is with us: we enter in by His powerful arm, following Him and obeying Him. Other gods require that you
+      do something for them: stand them up, feed them, dust them off, but they are no gods at all; but the one and only
+      God does on our behalf, waging war for us and defeating our foes. He defeated them through the cross, and we enter
+      into His victory through faith.
       <blog-link [link]="'https://thelightof.life/edifications/edify-detail/cff547c6-c5b8-3479-7472-f065fed444f5'"
         >(See more about Righteous Warfare)</blog-link
       >
@@ -81,9 +80,9 @@ import { ReferenceTooltipComponent } from "../../../shared/components/reference-
       book of the Chronicles that Mordecai saved him; so the king asked Haman, "What should be done to the one whom the
       king is pleased?" (Ester 6:6) And Haman, thinking the good was for himself, gave a favorable answer. The king then
       told him to do all he said to Mordecai, the Jew, which was Haman's enemy.
-      <b>So the good Haman intended for himself went to Mordecai, his enemy.</b>
+      <b>So the good Haman intended for himself went to Mordecai.</b>
       And later at a banquet, Queen Ester who was a Jew and the niece to Mordecai spoke of Haman's decree to kill the
-      Jews which was approved by the king in ignorance; for he did not know the Queen was a Jew, for she kept her
+      Jews, which was approved by the king in ignorance; for he did not know the Queen was a Jew, for she kept her
       nationality hidden. And the king was furious because Haman sought to kill the Queen, and he had Haman instead
       killed; he was impaled on the pole which he set up for Mordecai, for it was told the king of Haman's plan.
       <b>So the evil Haman intended for Mordecai was poured out on his own head.</b>
@@ -98,7 +97,7 @@ import { ReferenceTooltipComponent } from "../../../shared/components/reference-
         Do you think I cannot call on my Father, and he will at once put at my disposal more than twelve legions of
         angels? But how then would the Scriptures be fulfilled that say it must happen in this way?
       </blog-reference-tooltip>
-      Also He says,
+      Also He said,
       <blog-reference-tooltip [reference]="'John 10:17-18'" [isJesusWord]="true">
         The reason the Father loves Me is that I lay down My life in order to take it up again. No one takes it from Me,
         but I lay it down of My own accord. I have authority to lay it down and authority to take it up again. This
@@ -108,10 +107,9 @@ import { ReferenceTooltipComponent } from "../../../shared/components/reference-
       - but their minds were darkened. The rulers wanted for themselves the inheritance, the kingdom of Israel (as with
       the parable of the vinyard written about in Matthew 21:33-46); so they sought to kill Him, but by the cross,
       Christ suffered only a wound to His heel, and satan to his head (for we wrestle not against flesh and blood). For
-      Christ did not remain in the grave forever, but only three days; and the judgment upon the ruler of this world has
-      been pronounced and has been executed. For who was really defeated by the cross? If satan was judged at the fall,
-      and was made to grovel on his belly, how much more is he rendered powerless through the cross of Christ? As Christ
-      says,
+      Christ did not remain in the grave forever, only three days; and the judgment upon the ruler of this world has
+      been pronounced and has been executed. For who was defeated by the cross? If satan was judged at the fall, and was
+      made to grovel on his belly, how much more is he rendered powerless through the cross of Christ? As Christ says,
       <blog-reference-tooltip [reference]="'John 16:11'" [isJesusWord]="true">
         Concerning judgment, because the ruler of this world has been judged. </blog-reference-tooltip
       ><br /><br />
@@ -121,10 +119,10 @@ import { ReferenceTooltipComponent } from "../../../shared/components/reference-
         >the good the enemy intended for himself was given to Christ; and the evil the enemy intended for Christ was
         poured out upon his own head.</b
       >
-      As with Haman, he was impaled on the tree that he set up for Mordecai; likewise, it was the devil who was defeated
-      by the cross. And it is through the cross we have victory in His name! The devil's final end is decreed in the
-      Book. Thus, the glory and honor which the enemy wanted for himself went to Christ - the King of Kings and the Lord
-      of Lords! The jugement which the enemy intended for Christ was poured out upon his own head; as Jesus said,
+      As with Haman, he was impaled on the tree that he set up for Mordecai; so likewise it was the devil who was
+      defeated by the cross. It is through the cross we have victory in Jesus! The devil's final end is decreed in the
+      Book. Thus the glory and honor which the enemy wanted for himself went to Christ Jesus - the King of Kings and the
+      Lord of Lords! The jugement which the enemy intended for Christ was poured out upon his own head; as Jesus said,
       <blog-reference-tooltip [reference]="'John 12:31-32'" [isJesusWord]="true">
         Now judgment is upon this world; now the ruler of this world will be cast out. And I, if I am lifted up from the
         earth, will draw all men to Myself.

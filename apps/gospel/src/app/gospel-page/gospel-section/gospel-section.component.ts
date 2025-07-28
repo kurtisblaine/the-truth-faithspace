@@ -1,4 +1,4 @@
-import { AfterViewInit, ChangeDetectionStrategy, ChangeDetectorRef, Component, Input } from "@angular/core";
+import { AfterViewInit, ChangeDetectorRef, Component, Input } from "@angular/core";
 import { MatCardModule } from "@angular/material/card";
 import { MatProgressSpinnerModule } from "@angular/material/progress-spinner";
 import { NarratorComponent, NarratorStyle } from "libs/src/lib/shared/components/narrator/narrator.component";
@@ -7,7 +7,6 @@ import { NarratorComponent, NarratorStyle } from "libs/src/lib/shared/components
   selector: "blog-gospel-section",
   templateUrl: "./gospel-section.component.html",
   styleUrl: "./gospel-section.component.scss",
-  changeDetection: ChangeDetectionStrategy.Default,
   imports: [MatCardModule, MatProgressSpinnerModule, NarratorComponent],
 })
 export class GospelSectionComponent implements AfterViewInit {

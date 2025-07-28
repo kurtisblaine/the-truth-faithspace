@@ -16,7 +16,7 @@ import { ReferenceTooltipComponent } from "../../../shared/components/reference-
         your eye is bad, your whole body will be full of darkness. If then the light that is in you is darkness, how
         great is the darkness!
       </blog-reference-tooltip>
-      So what we see resides in the spirit just as what we eat resides in the flesh; similarily, it says,
+      So just as what we eat resides in the flesh, what we see resides in the spirit; similarily, it says,
       <blog-reference-tooltip [reference]="'Job 12:11'">
         Does not the ear test words, As the palate tastes its food?
       </blog-reference-tooltip>
@@ -73,9 +73,9 @@ import { ReferenceTooltipComponent } from "../../../shared/components/reference-
 
       So when an animal is sacrificed on the altar, the priest ate the meat of the sacrifice and gained strength for a
       short while, living by the strength of the meat; how much more do you suppose the new covenant priests live, who
-      eat the Sacrifice of God, and the grace thereof, who eat the Lamb who has been slain, rather, the Lamb who has
-      been raised? If we know a person by their works, or a tree by its fruit, what type of tree do you discern Jesus
-      Christ resembles by His fruit, except the Tree of Life? As Moses prayed,
+      eat the Sacrifice of God, and the grace thereof, who eat the Lamb who has been slain, rather the Lamb who has been
+      raised? If we know a person by their works, or a tree by its fruit, what type of tree do you discern Jesus Christ
+      resembles by His fruit, except the Tree of Life? As Moses prayed,
       <blog-reference-tooltip [reference]="'Exodus 33:13'">
         Now therefore, I pray You, if I have found favor in Your sight, let me know Your ways that I may know You, so
         that I may find favor in Your sight.

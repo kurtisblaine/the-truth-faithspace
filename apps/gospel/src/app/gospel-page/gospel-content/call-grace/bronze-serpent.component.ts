@@ -44,9 +44,9 @@ import { ReferenceTooltipComponent } from "../../../shared/components/reference-
         Just as Moses lifted up the snake in the desert, the Son of Man must also be lifted up. So that everyone who
         believes can have eternal life in him.
       </blog-reference-tooltip>
-      Thus by looking upon Christ lifted up on a cross, we are saved (for an image is dead, and Christ died for us).
-      However we are not saved by His death only, but by His resurrection from the dead. For if Christ remains dead, we
-      would be no better off than mediums who consult the dead, or an idolater who worships a dead image; as it says,
+      Thus by looking upon Christ lifted up on a cross, we are saved (for an image is dead, and Christ died for us). So
+      we are saved by His resurrection from the dead. For if Christ remains dead, we would be no better off than mediums
+      who consult the dead, or an idolater who worships a dead image; as it says,
       <blog-reference-tooltip [reference]="'Isaiah 8:19-20'">
         Should not a people inquire of their God? Why consult the dead on behalf of the living?
       </blog-reference-tooltip>
@@ -118,11 +118,11 @@ import { ReferenceTooltipComponent } from "../../../shared/components/reference-
       look, the more I see, and I see that Jesus is for me; I see the great love of His kindness; I see the deliverance
       from my sin; He has made me right in His sight, and now I can truly see!" We will all die one day, but those who
       die in the Lord will sleep and awake on the last day. Everyone dies, but He who looks upon Jesus crucified,
-      through the eyes of faith, when he dies, he sleeps - for he is alive to God by faith, having loved Him although
-      not seeing Him. The one who loves God is known by Him; and the one known by Him is His child; such a one will be
-      raised up on the last day to eternal life by the Holy Spirit that raised Christ from the dead. The eyes of faith
-      are sharpened through hearing God's Word; and our faith in Him who is unseen should be as strong as if we have
-      seen Him; as Paul said to the Galatians (New Living Translation),
+      through the eyes of faith, when he dies, he sleeps - for he is alive to God through faith, having loved Him
+      although not seeing Him. The one who loves God is known by Him; and the one known by Him is His child; such a one
+      will be raised up on the last day to eternal life by the Holy Spirit that raised Christ from the dead. The eyes of
+      faith are sharpened through hearing God's Word; and our faith in Him who is unseen should be as strong as if we
+      have seen Him; as Paul said to the Galatians (New Living Translation),
       <blog-reference-tooltip [reference]="'Galatians 3:1'">
         For the meaning of Jesus Christ's death was made as clear to you as if you had seen a picture of his death on
         the cross.</blog-reference-tooltip
@@ -142,7 +142,7 @@ import { ReferenceTooltipComponent } from "../../../shared/components/reference-
       <br /><br />
 
       We should not be distressed or angry with ourselves on account of Christ's death because it was according to God's
-      predetermined plan that He died for us, and He was raised from the dead and He no longer suffers death. Rather we
+      predetermined plan that He died for us; also He was raised from the dead and He no longer suffers death. Rather we
       should fear God, knowing the penalty for our sins that He Himself bore; we should hate sin which crushed Him, for
       when we sinned, He was bruised; He did this on account of His great love towards us to rescue us from bondage to
       sin. And we see this in Joseph, the son of Jacob, who prophesied to Christ with his life, for he was sold into
@@ -150,7 +150,7 @@ import { ReferenceTooltipComponent } from "../../../shared/components/reference-
       down to him; at that time, the meaning of the dream was hidden from his eyes, for it was a parable; in the same
       way, God has hidden parables throughout His Word which testify to the truth; they have always been there, but
       their meaning has been concealed. So we see Joseph; and through the words of Joseph he testified that it was God's
-      good plan to send him to Egypt to preserve life not to destroy it; as Joseph said to his brothers,
+      good plan to send him to Egypt to preserve life, not to destroy it; as Joseph said to his brothers,
       <blog-reference-tooltip [reference]="'Genesis 45:4-5'">
         I am your brother, Joseph, whom you sold into Egypt. And now do not be distressed or angry with yourselves
         because you sold me here, for God sent me before you to preserve life. For the famine has been in the land these
@@ -176,14 +176,14 @@ import { ReferenceTooltipComponent } from "../../../shared/components/reference-
       preserved the testimonies of the apostles who seen the risen Lord firsthand. So although when we come to love
       Christ, we also come to hate ourselves because of our many sins, namely what they have done to Christ; but we find
       power in that Christ is alive from the dead, seated at the right hand of Power on High, and that it was according
-      to God's good plan. Even if our eyes may be veiled for a time, they become unvieled when we turn to the Lord.
-      Therefore, unveil your eyes by turning to Him and see that your Brother is now alive, second in command, mediator
-      between us and God, that He is very much alive and your guilt has been removed; for Joseph's brothers had guilt as
-      long as they thought Joseph was dead, but the moment they seen Joseph alive, their guilt was removed and their
-      hands cleansed from his blood. See now, Jesus is for you, and He does not seek revenge because of your
-      transgressions that He bore, but He even intercedes on your behalf before the Father. So prove yourself innocent
-      in the matter by fleeing to Christ for refuge in the heavenly places where He is now seated, setting your mind on
-      the things above, not on the things below.
+      to God's good plan for Jesus to die for us. Even if our eyes may be veiled for a time, they become unvieled when
+      we turn to the Lord. Therefore, unveil your eyes by turning to Him and see that your Brother is now alive, second
+      in command, mediator between us and God, that He is very much alive and your guilt has been removed; for Joseph's
+      brothers had guilt as long as they thought Joseph was dead, but the moment they seen Joseph alive, their guilt was
+      removed and their hands cleansed from his blood. See now, Jesus is for you, and He does not seek revenge because
+      of your transgressions that He bore, but He even intercedes on your behalf before the Father. So prove yourself
+      innocent in the matter by fleeing to Christ for refuge in the heavenly places where He is now seated, setting your
+      mind on the things above, not on the things below.
     </ng-template>`,
   styles: ``,
   changeDetection: ChangeDetectionStrategy.OnPush,

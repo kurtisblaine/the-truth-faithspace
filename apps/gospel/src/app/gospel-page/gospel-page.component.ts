@@ -2,7 +2,6 @@ import { isPlatformBrowser, Location } from "@angular/common";
 import {
   afterNextRender,
   AfterViewInit,
-  ChangeDetectionStrategy,
   Component,
   Inject,
   OnDestroy,
@@ -25,7 +24,6 @@ type TItem = { isActive: boolean } & Item;
   templateUrl: "./gospel-page.component.html",
   styleUrl: "./gospel-page.component.scss",
   encapsulation: ViewEncapsulation.None,
-  changeDetection: ChangeDetectionStrategy.Default, //requires 'Default' so the audio player buttons will reset.
 })
 export class GospelPageComponent extends SeoBaseComponent implements OnInit, AfterViewInit, OnDestroy {
   public fullpageConfig: fullpageOptions = {
