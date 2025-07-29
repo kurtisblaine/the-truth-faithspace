@@ -2,6 +2,7 @@ import { CommonModule } from "@angular/common";
 import { ChangeDetectionStrategy, Component } from "@angular/core";
 import { LinkComponent } from "../../../shared/components/link-redirect/link.component";
 import { ReferenceTooltipComponent } from "../../../shared/components/reference-tooltip/reference-tooltip.component";
+import { GospelContentBaseComponent } from "../gospel-content.base.component";
 
 @Component({
   selector: "gospel-victor",
@@ -147,4 +148,6 @@ import { ReferenceTooltipComponent } from "../../../shared/components/reference-
   styles: ``,
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class VictorComponent {}
+export class VictorComponent extends GospelContentBaseComponent {
+  override name: string = "theVictor";
+}

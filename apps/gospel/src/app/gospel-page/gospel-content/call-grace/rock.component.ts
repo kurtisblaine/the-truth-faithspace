@@ -1,12 +1,13 @@
 import { CommonModule } from "@angular/common";
 import { ChangeDetectionStrategy, Component } from "@angular/core";
 import { ReferenceTooltipComponent } from "../../../shared/components/reference-tooltip/reference-tooltip.component";
+import { GospelContentBaseComponent } from "../gospel-content.base.component";
 
 @Component({
   selector: "gospel-rock",
   imports: [CommonModule, ReferenceTooltipComponent],
-  template: `<ng-container *ngTemplateOutlet="theRockOfSalvation"></ng-container>
-    <ng-template #theRockOfSalvation>
+  template: `<ng-container *ngTemplateOutlet="theRockOfOurSalvation"></ng-container>
+    <ng-template #theRockOfOurSalvation>
       Israel, who God delivered out of Egypt with a powerful arm and a mighty hand, had stony hearts, and were
       constantly disbelieving in Him; they had just been redeemed from Egypt by Moses, and then wanted to stone Moses
       who rescued them; as it is written of them,
@@ -161,4 +162,6 @@ import { ReferenceTooltipComponent } from "../../../shared/components/reference-
   styles: ``,
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class RockComponent {}
+export class RockComponent extends GospelContentBaseComponent {
+  override name: string = "theRockOfOurSalvation";
+}

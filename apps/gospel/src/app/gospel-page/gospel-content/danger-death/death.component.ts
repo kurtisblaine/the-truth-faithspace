@@ -1,12 +1,13 @@
 import { CommonModule } from "@angular/common";
 import { ChangeDetectionStrategy, Component } from "@angular/core";
 import { ReferenceTooltipComponent } from "../../../shared/components/reference-tooltip/reference-tooltip.component";
+import { GospelContentBaseComponent } from "../gospel-content.base.component";
 
 @Component({
   selector: "gospel-death",
   imports: [CommonModule, ReferenceTooltipComponent],
-  template: `<ng-container *ngTemplateOutlet="dayOfDeath"></ng-container>
-    <ng-template #dayOfDeath>
+  template: `<ng-container *ngTemplateOutlet="theDayOfDeath"></ng-container>
+    <ng-template #theDayOfDeath>
       There was a man who lived in a tent. All his days were spent in agony because his tent was not comfortable; for
       the flies bit, the sun beamed, and the moon striked. Nevertheless, he hoped forward to his permanent home which
       was far away in a distant land being prepared for him. Night and day he longed for it and thought about it, even
@@ -187,4 +188,6 @@ import { ReferenceTooltipComponent } from "../../../shared/components/reference-
   styles: ``,
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class DeathComponent {}
+export class DeathComponent extends GospelContentBaseComponent {
+  override name: string = "theDayOfDeath";
+}

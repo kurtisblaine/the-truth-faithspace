@@ -1,0 +1,14 @@
+<mat-card style="margin: 15px">
+  <mat-card-header>
+    <mat-card-title-group>
+      <mat-card-title #seoTitle>
+        <h3 class="blog-title primary-color">{{ page() | camelToTitle }}</h3>
+      </mat-card-title>
+      <mat-card-subtitle>
+        <lib-narrator [buttonStyle]="narratorStyle.Group" [text]="content?.innerText ?? ''"> </lib-narrator>
+      </mat-card-subtitle>
+    </mat-card-title-group>
+  </mat-card-header>
+
+  <mat-card-content #content> </mat-card-content>
+</mat-card>

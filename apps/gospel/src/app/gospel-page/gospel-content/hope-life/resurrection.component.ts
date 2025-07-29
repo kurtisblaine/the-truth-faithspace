@@ -2,12 +2,13 @@ import { CommonModule } from "@angular/common";
 import { ChangeDetectionStrategy, Component } from "@angular/core";
 import { LinkComponent } from "../../../shared/components/link-redirect/link.component";
 import { ReferenceTooltipComponent } from "../../../shared/components/reference-tooltip/reference-tooltip.component";
+import { GospelContentBaseComponent } from "../gospel-content.base.component";
 
 @Component({
   selector: "gospel-resurrection",
   imports: [CommonModule, ReferenceTooltipComponent, LinkComponent],
-  template: `<ng-container *ngTemplateOutlet="resurrectionOfLife"></ng-container>
-    <ng-template #resurrectionOfLife>
+  template: `<ng-container *ngTemplateOutlet="theResurrectionOfLife"></ng-container>
+    <ng-template #theResurrectionOfLife>
       Before the coming of the Lord, the antichrist will be revealed, the man of lawlessness; he will work many false
       signs and wonders to deceive those who love the world, who acknowledge not God, so God will hand them over to him
       who is not at all god, that they may fill up the full measure of their error, and be found fit for the coming
@@ -182,4 +183,6 @@ import { ReferenceTooltipComponent } from "../../../shared/components/reference-
   styles: ``,
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class ResurrectionComponent {}
+export class ResurrectionComponent extends GospelContentBaseComponent {
+  override name: string = "theResurrectionOfLife";
+}

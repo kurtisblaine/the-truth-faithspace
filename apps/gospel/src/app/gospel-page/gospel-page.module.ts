@@ -9,12 +9,14 @@ import { RouterModule, Routes } from "@angular/router";
 import { NarratorComponent } from "shared";
 import { ReferenceTooltipComponent } from "../shared/components/reference-tooltip/reference-tooltip.component";
 import { FullpageDirective } from "../shared/directives/fullpage.directive";
+import { CamelToTitlePipe } from "../shared/pipes/camel-title.pipe";
 import { CallFaithModule } from "./gospel-content/call-faith/call-faith.module";
 import { CallGraceModule } from "./gospel-content/call-grace/call-grace.module";
 import { DangerDeathModule } from "./gospel-content/danger-death/danger-death.module";
 import { DangerSinModule } from "./gospel-content/danger-sin/danger-sin.module";
 import { HopeLifeModule } from "./gospel-content/hope-life/hope-life.module";
 import { ResponseModule } from "./gospel-content/response/response.module";
+import { GospelItemComponent } from "./gospel-item/gospel-item.component";
 import { GospelPageComponent } from "./gospel-page.component";
 import { GospelSectionComponent } from "./gospel-section/gospel-section.component";
 
@@ -23,10 +25,14 @@ const routes: Routes = [
     path: "",
     component: GospelPageComponent,
   },
+  {
+    path: "truthful-item/:page",
+    component: GospelItemComponent,
+  },
 ];
 
 @NgModule({
-  declarations: [GospelPageComponent],
+  declarations: [GospelPageComponent, GospelItemComponent],
   imports: [
     CommonModule,
     MatButtonModule,
@@ -46,6 +52,7 @@ const routes: Routes = [
     NgOptimizedImage,
     FullpageDirective,
     GospelSectionComponent,
+    CamelToTitlePipe,
   ],
   providers: [],
 })

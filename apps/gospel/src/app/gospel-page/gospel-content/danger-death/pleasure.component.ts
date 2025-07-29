@@ -1,12 +1,13 @@
 import { CommonModule } from "@angular/common";
 import { ChangeDetectionStrategy, Component } from "@angular/core";
 import { ReferenceTooltipComponent } from "../../../shared/components/reference-tooltip/reference-tooltip.component";
+import { GospelContentBaseComponent } from "../gospel-content.base.component";
 
 @Component({
   selector: "gospel-pleasure",
   imports: [CommonModule, ReferenceTooltipComponent],
-  template: `<ng-container *ngTemplateOutlet="loveOfPleasure"></ng-container>
-    <ng-template #loveOfPleasure>
+  template: `<ng-container *ngTemplateOutlet="theLoveOfPleasure"></ng-container>
+    <ng-template #theLoveOfPleasure>
       Alcohol and food, which are wholesome in themselves, which are given to us by God for our enjoyment, but they are
       often perverted into drunkenness and gluttony, and drugs, which are often used for an escape from reality, which
       are a false refuge, which are often corrupted for one's own enjoyment rather than medicine, and the excessive love
@@ -180,4 +181,6 @@ import { ReferenceTooltipComponent } from "../../../shared/components/reference-
   styles: ``,
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class PleasureComponent {}
+export class PleasureComponent extends GospelContentBaseComponent {
+  override name: string = "theLoveOfPleasure";
+}

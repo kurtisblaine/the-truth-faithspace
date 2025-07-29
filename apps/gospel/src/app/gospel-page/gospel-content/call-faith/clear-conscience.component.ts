@@ -2,12 +2,13 @@ import { CommonModule } from "@angular/common";
 import { ChangeDetectionStrategy, Component } from "@angular/core";
 import { LinkComponent } from "../../../shared/components/link-redirect/link.component";
 import { ReferenceTooltipComponent } from "../../../shared/components/reference-tooltip/reference-tooltip.component";
+import { GospelContentBaseComponent } from "../gospel-content.base.component";
 
 @Component({
   selector: "gospel-clear-conscience",
   imports: [CommonModule, ReferenceTooltipComponent, LinkComponent],
-  template: `<ng-container *ngTemplateOutlet="clearConscience"></ng-container>
-    <ng-template #clearConscience>
+  template: `<ng-container *ngTemplateOutlet="aClearConscience"></ng-container>
+    <ng-template #aClearConscience>
       Our conscience was dead when we lived according to the lusts of this world; it had been corrupted because of sin,
       seared as with a hot iron, calloused and devoid of any conviction. By the message of the truth, He purified our
       conscience from dead works to serve the living God. He set us free from the law for righteousness and has made us
@@ -175,4 +176,6 @@ import { ReferenceTooltipComponent } from "../../../shared/components/reference-
   styles: ``,
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class ClearConscienceComponent {}
+export class ClearConscienceComponent extends GospelContentBaseComponent {
+  override name: string = "aClearConscience";
+}

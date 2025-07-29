@@ -2,12 +2,13 @@ import { CommonModule } from "@angular/common";
 import { ChangeDetectionStrategy, Component } from "@angular/core";
 import { LinkComponent } from "../../../shared/components/link-redirect/link.component";
 import { ReferenceTooltipComponent } from "../../../shared/components/reference-tooltip/reference-tooltip.component";
+import { GospelContentBaseComponent } from "../gospel-content.base.component";
 
 @Component({
   selector: "gospel-food-drink",
   imports: [CommonModule, ReferenceTooltipComponent, LinkComponent],
-  template: `<ng-container *ngTemplateOutlet="trueFoodAndTrueDrink"></ng-container>
-    <ng-template #trueFoodAndTrueDrink>
+  template: `<ng-container *ngTemplateOutlet="theTrueFoodAndTheTrueDrink"></ng-container>
+    <ng-template #theTrueFoodAndTheTrueDrink>
       The food we eat goes into our mouths, into the stomach and out into the sewer; and yet, we constantly strive for
       such food, although we are never fully satisfied. The spiritual food we eat goes in through the eyes and ears,
       into the heart and out of the mouth: a kind of spiritual digestive system. Jesus says,
@@ -177,4 +178,6 @@ import { ReferenceTooltipComponent } from "../../../shared/components/reference-
   styles: ``,
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class FoodDrinkComponent {}
+export class FoodDrinkComponent extends GospelContentBaseComponent {
+  override name: string = "theTrueFoodAndTheTrueDrink";
+}

@@ -1,6 +1,7 @@
 import { CommonModule } from "@angular/common";
 import { ChangeDetectionStrategy, Component } from "@angular/core";
 import { ReferenceTooltipComponent } from "../../../shared/components/reference-tooltip/reference-tooltip.component";
+import { GospelContentBaseComponent } from "../gospel-content.base.component";
 
 @Component({
   selector: "gospel-toil",
@@ -118,9 +119,9 @@ import { ReferenceTooltipComponent } from "../../../shared/components/reference-
       Therefore it is better to accept your lot in life and be happy with it. Search and seek for the LORD God;
       acknowledge your futility and search and seek for fullness in God, not in the things of the world. For if the
       things of the world were pleasing to us, then we wouldn't be seeking for anything more. Will that which has no
-      breath satisfy us? And if we think the living will satisfy us, won't it one day cease? But much
-      greater is God who gives all things by which all things came into being! He lives and does not cease living. And
-      the Lord has promised,
+      breath satisfy us? And if we think the living will satisfy us, won't it one day cease? But much greater is God who
+      gives all things by which all things came into being! He lives and does not cease living. And the Lord has
+      promised,
       <blog-reference-tooltip [reference]="'Jeremiah 29:13'">
         You will seek Me and find Me when you search for Me with all your heart.
       </blog-reference-tooltip>
@@ -128,19 +129,21 @@ import { ReferenceTooltipComponent } from "../../../shared/components/reference-
       your heart; He seen beforetime when the widow gave all her income (Mark 12:42-43), and He seen when Ananias kept
       back some of the money from the field which he sold (Acts 5:1-4). He knows the amount He has allotted. So if we
       have little heart, with all our little heart, therein seek; or if we have great heart, with all our great heart
-      therein seek. He knows when we hold back, for He knows the measure which He has measured out. Therefore be
-      unhappy with your futility and search for answers. Do not follow the example of the disobedient who love their
-      futility. See how the disobedient try to resist God, trying to reverse the curses which God has pronounced on the
-      earth: thinking their life is forever, they fall into error; thinking their home is forever, they believe a lie.
-      See how the world tries to reverse things: for God gave woman pain in child-bearing, but they give numbing shots;
-      for God made woman desire for her husband, yet he rules over her, but they start feminist movements; for God
-      cursed the ground so that in toil it will produce its fruit, but they create technology that works at the push of
-      a button; for God makes man to return to the dust in old age, but they have beauty products and wrinkling agents
-      and plastic surgery; but whatever we try to do, we cannot reverse death: all of us will return to Him in the end,
-      slave and free, rich and poor. So you see, our lives are set this way by God to lead us to Himself, for by the
-      things of the world He sees to it that no man shall see the light of life.
+      therein seek. He knows when we hold back, for He knows the measure which He has measured out. Therefore be unhappy
+      with your futility and search for answers. Do not follow the example of the disobedient who love their futility.
+      See how the disobedient try to resist God, trying to reverse the curses which God has pronounced on the earth:
+      thinking their life is forever, they fall into error; thinking their home is forever, they believe a lie. See how
+      the world tries to reverse things: for God gave woman pain in child-bearing, but they give numbing shots; for God
+      made woman desire for her husband, yet he rules over her, but they start feminist movements; for God cursed the
+      ground so that in toil it will produce its fruit, but they create technology that works at the push of a button;
+      for God makes man to return to the dust in old age, but they have beauty products and wrinkling agents and plastic
+      surgery; but whatever we try to do, we cannot reverse death: all of us will return to Him in the end, slave and
+      free, rich and poor. So you see, our lives are set this way by God to lead us to Himself, for by the things of the
+      world He sees to it that no man shall see the light of life.
     </ng-template>`,
   styles: ``,
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class ToilComponent {}
+export class ToilComponent extends GospelContentBaseComponent {
+  override name: string = "workAndToil";
+}

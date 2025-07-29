@@ -1,12 +1,13 @@
 import { CommonModule } from "@angular/common";
 import { ChangeDetectionStrategy, Component } from "@angular/core";
 import { ReferenceTooltipComponent } from "../../../shared/components/reference-tooltip/reference-tooltip.component";
+import { GospelContentBaseComponent } from "../gospel-content.base.component";
 
 @Component({
   selector: "gospel-salvation",
   imports: [CommonModule, ReferenceTooltipComponent],
-  template: `<ng-container *ngTemplateOutlet="eternalSalvation"></ng-container>
-    <ng-template #eternalSalvation>
+  template: `<ng-container *ngTemplateOutlet="theDoorOfEternalSalvation"></ng-container>
+    <ng-template #theDoorOfEternalSalvation>
       The world was judged before by water, a massive flood; historians know that the world went through some
       catastrophic change, but their speculations vary. But the Truth is found in the Word of Truth: God repented that
       He created man and was sorry that He created them; so He warned Noah and commanded him to build an ark; Noah's
@@ -149,4 +150,6 @@ import { ReferenceTooltipComponent } from "../../../shared/components/reference-
   styles: ``,
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class SalvationComponent {}
+export class SalvationComponent extends GospelContentBaseComponent {
+  override name: string = "theDoorOfEternalSalvation";
+}

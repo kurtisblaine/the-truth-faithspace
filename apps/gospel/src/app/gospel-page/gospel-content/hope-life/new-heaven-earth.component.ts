@@ -2,12 +2,13 @@ import { CommonModule } from "@angular/common";
 import { ChangeDetectionStrategy, Component } from "@angular/core";
 import { LinkComponent } from "../../../shared/components/link-redirect/link.component";
 import { ReferenceTooltipComponent } from "../../../shared/components/reference-tooltip/reference-tooltip.component";
+import { GospelContentBaseComponent } from "../gospel-content.base.component";
 
 @Component({
   selector: "gospel-new-heaven-earth",
   imports: [CommonModule, ReferenceTooltipComponent, LinkComponent],
-  template: `<ng-container *ngTemplateOutlet="newHeavenAndNewEarth"></ng-container>
-    <ng-template #newHeavenAndNewEarth>
+  template: `<ng-container *ngTemplateOutlet="theNewHeavenAndTheNewEarth"></ng-container>
+    <ng-template #theNewHeavenAndTheNewEarth>
       We have been created anew in Christ Jesus: He has given us a new Spirit and cut away our old nature with a
       circumcision not done by human hands, building us up into a holy temple, made not by human hands, in which He
       dwells. And God is preparing a new heaven and a new earth for His body, the church, where righteousness dwells.
@@ -172,4 +173,6 @@ import { ReferenceTooltipComponent } from "../../../shared/components/reference-
   styles: ``,
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class NewHeavenEarthComponent {}
+export class NewHeavenEarthComponent extends GospelContentBaseComponent {
+  override name: string = "theNewHeavenAndTheNewEarth";
+}

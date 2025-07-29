@@ -1,12 +1,13 @@
 import { CommonModule } from "@angular/common";
 import { ChangeDetectionStrategy, Component } from "@angular/core";
 import { ReferenceTooltipComponent } from "../../../shared/components/reference-tooltip/reference-tooltip.component";
+import { GospelContentBaseComponent } from "../gospel-content.base.component";
 
 @Component({
   selector: "gospel-persevere",
   imports: [CommonModule, ReferenceTooltipComponent],
-  template: `<ng-container *ngTemplateOutlet="perseverance"></ng-container>
-    <ng-template #perseverance>
+  template: `<ng-container *ngTemplateOutlet="perseveranceByRememberance"></ng-container>
+    <ng-template #perseveranceByRememberance>
       Humans are forgetful, not some of us, but all of us. Do you want proof? Look at all the libraries filled with
       books - for we write things down so that we don't forget. What enters into our minds soon leaves it, unless it is
       constantly remembered, acted upon, and sharpened; likewise we have truth within us that requires constant
@@ -126,4 +127,6 @@ import { ReferenceTooltipComponent } from "../../../shared/components/reference-
   styles: ``,
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class PersevereComponent {}
+export class PersevereComponent extends GospelContentBaseComponent {
+  override name: string = "perseveranceByRememberance";
+}

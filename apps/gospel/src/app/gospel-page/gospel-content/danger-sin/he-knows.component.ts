@@ -1,12 +1,13 @@
 import { CommonModule } from "@angular/common";
 import { ChangeDetectionStrategy, Component } from "@angular/core";
 import { ReferenceTooltipComponent } from "../../../shared/components/reference-tooltip/reference-tooltip.component";
+import { GospelContentBaseComponent } from "../gospel-content.base.component";
 
 @Component({
   selector: "blog-he-knows",
   imports: [CommonModule, ReferenceTooltipComponent],
-  template: `<ng-container *ngTemplateOutlet="heKnows"></ng-container>
-    <ng-template #heKnows>
+  template: `<ng-container *ngTemplateOutlet="GodKnows"></ng-container>
+    <ng-template #GodKnows>
       The LORD God is the creator of all living things. He sees the thoughts and the intentions of the human heart; He
       is Spirit and sees not what man sees; He sees spiritual things; as He says,
       <blog-reference-tooltip [reference]="'Luke 11:40'" [isJesusWord]="true">
@@ -151,4 +152,6 @@ import { ReferenceTooltipComponent } from "../../../shared/components/reference-
   styles: ``,
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class HeKnowsComponent {}
+export class HeKnowsComponent extends GospelContentBaseComponent {
+  override name: string = "GodKnows";
+}

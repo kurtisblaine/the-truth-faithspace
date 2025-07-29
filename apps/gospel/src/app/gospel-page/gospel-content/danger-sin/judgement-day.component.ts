@@ -1,12 +1,13 @@
 import { CommonModule } from "@angular/common";
 import { ChangeDetectionStrategy, Component } from "@angular/core";
 import { ReferenceTooltipComponent } from "../../../shared/components/reference-tooltip/reference-tooltip.component";
+import { GospelContentBaseComponent } from "../gospel-content.base.component";
 
 @Component({
   selector: "gospel-judgement-day",
   imports: [CommonModule, ReferenceTooltipComponent],
-  template: `<ng-container *ngTemplateOutlet="dayOfJudgement"></ng-container>
-    <ng-template #dayOfJudgement>
+  template: `<ng-container *ngTemplateOutlet="theDayOfJudgement"></ng-container>
+    <ng-template #theDayOfJudgement>
       Just as there was a world-wide judgment in Noah's day, so there will be a judgement at the end of time. If that
       judgment came with water, then how will it be in the end except with fire? For it will be like the time of Lot in
       Sodom, when the Lord will come from the heavens; it will be like the days of Noah, when His judgement is revealed
@@ -159,4 +160,6 @@ import { ReferenceTooltipComponent } from "../../../shared/components/reference-
   styles: ``,
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class JudgementDayComponent {}
+export class JudgementDayComponent extends GospelContentBaseComponent {
+  override name: string = "theDayOfJudgement";
+}

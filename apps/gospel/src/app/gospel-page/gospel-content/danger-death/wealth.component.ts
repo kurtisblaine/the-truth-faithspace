@@ -1,12 +1,13 @@
 import { CommonModule } from "@angular/common";
 import { ChangeDetectionStrategy, Component } from "@angular/core";
 import { ReferenceTooltipComponent } from "../../../shared/components/reference-tooltip/reference-tooltip.component";
+import { GospelContentBaseComponent } from "../gospel-content.base.component";
 
 @Component({
   selector: "gospel-wealth",
   imports: [CommonModule, ReferenceTooltipComponent],
-  template: `<ng-container *ngTemplateOutlet="loveOfWealth"></ng-container>
-    <ng-template #loveOfWealth>
+  template: `<ng-container *ngTemplateOutlet="theLoveOfWealth"></ng-container>
+    <ng-template #theLoveOfWealth>
       There was a man who went into a pub with everything he owned. He sat down at the table to gamble. At first, he
       bets only a little of what he has. He rolls the dice and a miracle happens! All the dice line up. The man yells,
       "Today is my lucky day. I will bet more next time!" So he rolls again, but this time with more on the table. A
@@ -186,4 +187,6 @@ import { ReferenceTooltipComponent } from "../../../shared/components/reference-
   styles: ``,
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class WealthComponent {}
+export class WealthComponent extends GospelContentBaseComponent {
+  override name: string = "theLoveOfWealth";
+}

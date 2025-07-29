@@ -2,12 +2,13 @@ import { CommonModule } from "@angular/common";
 import { ChangeDetectionStrategy, Component } from "@angular/core";
 import { LinkComponent } from "../../../shared/components/link-redirect/link.component";
 import { ReferenceTooltipComponent } from "../../../shared/components/reference-tooltip/reference-tooltip.component";
+import { GospelContentBaseComponent } from "../gospel-content.base.component";
 
 @Component({
   selector: "gospel-servant",
   imports: [CommonModule, ReferenceTooltipComponent, LinkComponent],
-  template: `<ng-container *ngTemplateOutlet="servantOfGod"></ng-container>
-    <ng-template #servantOfGod>
+  template: `<ng-container *ngTemplateOutlet="theServantOfGod"></ng-container>
+    <ng-template #theServantOfGod>
       Jesus Christ came into the world to do the will of God; He went to the cross to justify many by His blood. He was
       buried in a tomb for three days, God rose Him up from the dead on the third day, for it was the will of man to put
       Him to death, but it was God's will to raise Him from the grave. He appeared to many of His disciples, over 500 of
@@ -336,4 +337,6 @@ import { ReferenceTooltipComponent } from "../../../shared/components/reference-
   styles: ``,
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class ServantComponent {}
+export class ServantComponent extends GospelContentBaseComponent {
+  override name: string = "theServantOfGod";
+}
