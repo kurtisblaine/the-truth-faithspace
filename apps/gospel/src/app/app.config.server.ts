@@ -4,6 +4,7 @@ import { provideServerRendering, RenderMode, ServerRoute, withRoutes } from "@an
 import { firstValueFrom } from "rxjs";
 import { appConfig } from "./app.config";
 import { DataService } from "./draw-page/data.service";
+import { GospelItemService } from "./gospel-page/gospel-item/gospel-item.service";
 
 const serverRoutes: ServerRoute[] = [
   {
@@ -78,6 +79,16 @@ const serverRoutes: ServerRoute[] = [
       const images = dataService.init();
 
       return images.map((image) => ({ id: image.fileName.split(".")[0] }));
+    },
+  },
+  {
+    path: "truth/truthful-item/:page",
+    renderMode: RenderMode.Prerender,
+    async getPrerenderParams() {
+      const dataService = inject(GospelItemService);
+      const components = dataService.init();
+
+      return Array.from(components.keys()).map((page) => ({ page }));
     },
   },
   {
