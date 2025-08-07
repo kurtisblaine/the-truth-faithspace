@@ -1,4 +1,4 @@
-<div class="study-item" *ngFor="let study of studies$ | async">
+<div class="study-item" *ngFor="let study of pagedStudies()">
   <div class="study-title primary-color">
     <blog-link [link]="'https://thelightof.life/studies/study-detail/' + study.id"
       >{{ study.title }}
@@ -16,3 +16,10 @@
 
   <mat-divider></mat-divider>
 </div>
+
+<mat-paginator
+  [length]="total"
+  [showFirstLastButtons]="true"
+  [pageSize]="5"
+  (page)="onPageChange($event)"
+></mat-paginator>

@@ -1,12 +1,12 @@
 import { CommonModule } from "@angular/common";
-import { Component, Input, OnInit } from "@angular/core";
+import { Component, effect, Input, OnInit, signal, Signal } from "@angular/core";
+import { toSignal } from "@angular/core/rxjs-interop";
 import { MatButtonModule } from "@angular/material/button";
 import { MatDividerModule } from "@angular/material/divider";
+import { MatPaginatorModule, PageEvent } from "@angular/material/paginator";
 import { faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
 import { Store } from "@ngrx/store";
-import { cloneDeep } from "lodash-es";
 import { toHTML } from "ngx-editor";
-import { Observable, map } from "rxjs";
 import { LibFaIconComponent, ReadonlyTextEditorComponent, TextEditorComponent } from "shared";
 import { LinkComponent } from "../../shared/components/link-redirect/link.component";
 import { createDiscern } from "../../state/discern/discern.actions";
@@ -25,18 +25,33 @@ import { getAllDiscern } from "../../state/discern/discern.selectors";
     MatButtonModule,
     LibFaIconComponent,
     LinkComponent,
+    MatPaginatorModule,
   ],
 })
 export class DiscernListComponent implements OnInit {
   @Input() public update = false;
 
-  public discernments$!: Observable<DiscernEntity[]>;
+  public discernments!: Signal<DiscernEntity[]>;
+  public pagedDiscernments = signal<DiscernEntity[]>([]);
+  public total!: number;
+
   public faLink = faArrowUpRightFromSquare;
 
-  constructor(private store: Store) {}
+  constructor(private store: Store) {
+    this.discernments = toSignal(this.store.select(getAllDiscern));
 
-  ngOnInit(): void {
-    this.discernments$ = this.store.select(getAllDiscern).pipe(map((discern) => cloneDeep(discern)));
+    effect(() => {
+      this.total = this.discernments().length;
+      this.onPageChange({ pageIndex: 0, pageSize: 5 } as PageEvent);
+    });
+  }
+
+  ngOnInit(): void {}
+
+  onPageChange(event?: PageEvent): void {
+    const startIndex = event.pageIndex * event.pageSize;
+    const endIndex = startIndex + event.pageSize;
+    this.pagedDiscernments.set(this.discernments().slice(startIndex, endIndex));
   }
 
   public doUpdate(discern: DiscernEntity) {

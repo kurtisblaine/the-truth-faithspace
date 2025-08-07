@@ -1,4 +1,4 @@
-<div class="discern-item" *ngFor="let discern of discernments$ | async">
+<div class="discern-item" *ngFor="let discern of pagedDiscernments()">
   <div class="discern-title primary-color">
     <blog-link [link]="'https://thelightof.life/discernments/discernment-detail/' + discern.id"
       >{{ discern.title }}
@@ -16,3 +16,10 @@
 
   <mat-divider></mat-divider>
 </div>
+
+<mat-paginator
+  [length]="total"
+  [showFirstLastButtons]="true"
+  [pageSize]="5"
+  (page)="onPageChange($event)"
+></mat-paginator>

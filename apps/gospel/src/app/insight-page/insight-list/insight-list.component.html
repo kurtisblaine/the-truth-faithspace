@@ -1,4 +1,4 @@
-<div class="insight-item" *ngFor="let insight of insights$ | async">
+<div class="insight-item" *ngFor="let insight of pagedInsights()">
   <div class="insight-title primary-color">
     <blog-link [link]="'https://thelightof.life/insights/insight-detail/' + insight.id"
       >{{ insight.title }}
@@ -16,3 +16,10 @@
 
   <mat-divider></mat-divider>
 </div>
+
+<mat-paginator
+  [length]="total"
+  [showFirstLastButtons]="true"
+  [pageSize]="5"
+  (page)="onPageChange($event)"
+></mat-paginator>

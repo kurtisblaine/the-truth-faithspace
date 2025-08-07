@@ -1,4 +1,4 @@
-<div class="blog-item" *ngFor="let blog of blogs$ | async">
+<div class="blog-item" *ngFor="let blog of pagedBlogs()">
   <div class="blog-title primary-color">
     <blog-link [link]="'https://thelightof.life/edifications/edify-detail/' + blog.id"
       >{{ blog.title }}
@@ -16,3 +16,10 @@
 
   <mat-divider></mat-divider>
 </div>
+
+<mat-paginator
+  [length]="total"
+  [showFirstLastButtons]="true"
+  [pageSize]="5"
+  (page)="onPageChange($event)"
+></mat-paginator>

@@ -58,6 +58,10 @@ html {
   );
 }
 
+.mat-mdc-paginator-container {
+  justify-content: flex-start !important;
+}
+
 .mat-expansion-panel-body > button {
   text-decoration: underline !important;
 }

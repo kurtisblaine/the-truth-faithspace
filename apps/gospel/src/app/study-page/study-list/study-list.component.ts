@@ -1,13 +1,12 @@
 import { CommonModule } from "@angular/common";
-import { ChangeDetectionStrategy, Component, Input, OnInit } from "@angular/core";
+import { ChangeDetectionStrategy, Component, effect, Input, OnInit, signal, Signal } from "@angular/core";
+import { toSignal } from "@angular/core/rxjs-interop";
 import { MatButtonModule } from "@angular/material/button";
 import { MatDividerModule } from "@angular/material/divider";
-import { Router } from "@angular/router";
+import { MatPaginatorModule, PageEvent } from "@angular/material/paginator";
 import { faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
 import { Store } from "@ngrx/store";
-import { cloneDeep } from "lodash-es";
 import { toHTML } from "ngx-editor";
-import { map, Observable } from "rxjs";
 import { LibFaIconComponent, ReadonlyTextEditorComponent, TextEditorComponent } from "shared";
 import { LinkComponent } from "../../shared/components/link-redirect/link.component";
 import { StudyActions } from "../../state/study/study.actions";
@@ -27,18 +26,33 @@ import { getAllStudy } from "../../state/study/study.selectors";
     ReadonlyTextEditorComponent,
     LibFaIconComponent,
     LinkComponent,
+    MatPaginatorModule,
   ],
 })
 export class StudyListComponent implements OnInit {
   @Input() public update = false;
 
-  public studies$!: Observable<StudyEntity[]>;
+  public studies!: Signal<StudyEntity[]>;
+  public pagedStudies = signal<StudyEntity[]>([]);
+  public total!: number;
+
   public faLink = faArrowUpRightFromSquare;
 
-  constructor(private store: Store, private router: Router) {}
+  constructor(private store: Store) {
+    this.studies = toSignal(this.store.select(getAllStudy));
 
-  ngOnInit(): void {
-    this.studies$ = this.store.select(getAllStudy).pipe(map((studies) => cloneDeep(studies)));
+    effect(() => {
+      this.total = this.studies().length;
+      this.onPageChange({ pageIndex: 0, pageSize: 5 } as PageEvent);
+    });
+  }
+
+  ngOnInit(): void {}
+
+  onPageChange(event?: PageEvent): void {
+    const startIndex = event.pageIndex * event.pageSize;
+    const endIndex = startIndex + event.pageSize;
+    this.pagedStudies.set(this.studies().slice(startIndex, endIndex));
   }
 
   public doUpdate(study: StudyEntity) {
