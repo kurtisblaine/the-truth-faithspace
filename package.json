@@ -13,6 +13,7 @@
     "config": "npx nx config",
     "depcheck": "npx depcheck",
     "migrate": "npx nx migrate latest",
+    "migrate:angular": "npx nx migrate @angular/core@latest && npx nx migrate @angular/cli@latest && npx nx migrate @angular/material@latest && npx nx migrate @angular-devkit/build-angular@latest",
     "npm:update": "npm update",
     "npm:cache:clear": "npm cache clean --force",
     "npm:update:global": "sudo npm install -g npm",
@@ -52,8 +53,7 @@
     "ngx-editor": "^13.0.0",
     "npm": "^10.5.0",
     "rxjs": "^7.8.1",
-    "uuid": "^11.1.0",
-    "zone.js": "~0.15.0"
+    "uuid": "^11.1.0"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "20.0.0",
@@ -62,19 +62,16 @@
     "@angular-eslint/eslint-plugin": "20.1.1",
     "@angular-eslint/eslint-plugin-template": "20.1.1",
     "@angular-eslint/template-parser": "20.1.1",
-    "@angular-experts/hawkeye": "^1.7.2",
-    "@angular/build": "^20.0.5",
-    "@angular/cli": "^18.0.7",
+    "@angular/build": "20.0.0",
+    "@angular/cli": "20.0.0",
     "@angular/compiler-cli": "20.0.0",
     "@angular/language-service": "20.0.0",
-    "@angular/ssr": "^20.0.5",
+    "@angular/ssr": "20.0.0",
     "@ngrx/schematics": "20.0.0",
     "@ngrx/store-devtools": "20.0.0",
-    "@nx/angular": "^21.2.1",
-    "@nx/workspace": "21.2.2",
+    "@nx/angular": "21.3.11",
+    "@nx/workspace": "21.3.11",
     "@schematics/angular": "19.0.7",
-    "@swc-node/register": "1.9.2",
-    "@swc/core": "1.5.7",
     "@types/fullpage.js": "^2.9.6",
     "@types/lodash-es": "^4.17.12",
     "@types/node": "^18.16.9",
@@ -83,19 +80,11 @@
     "browser-sync": "^3.0.0",
     "eslint": "8.57.1",
     "eslint-config-prettier": "9.0.0",
-    "jasmine-marbles": "~0.9.1",
     "jsonc-eslint-parser": "^2.1.0",
-    "nx": "21.2.2",
+    "nx": "21.3.11",
     "prettier": "^2.6.2",
     "ts-node": "10.9.1",
     "tslib": "^2.3.0",
     "typescript": "5.8.3"
-  },
-  "optionalDependencies": {
-    "@nx/nx-darwin-arm64": "16.8.1",
-    "@nx/nx-darwin-x64": "16.8.1",
-    "@nx/nx-linux-x64-gnu": "16.8.1",
-    "@nx/nx-linux-x64-musl": "16.8.1",
-    "@nx/nx-win32-x64-msvc": "16.8.1"
   }
 }
