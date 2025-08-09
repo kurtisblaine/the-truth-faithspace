@@ -34,6 +34,7 @@ export class InsightListComponent implements OnInit {
   public insights!: Signal<InsightEntity[]>;
   public pagedInsights = signal<InsightEntity[]>([]);
   public total!: number;
+  public updatedJson: string | object;
 
   public faLink = faArrowUpRightFromSquare;
 
@@ -55,7 +56,7 @@ export class InsightListComponent implements OnInit {
   }
 
   public doUpdate(insight: InsightEntity) {
-    insight.json = toHTML(insight.json as object);
+    insight = { ...insight, json: toHTML(this.updatedJson as object) };
 
     this.store.dispatch(
       createInsight({

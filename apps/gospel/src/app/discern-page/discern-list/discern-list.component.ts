@@ -34,6 +34,7 @@ export class DiscernListComponent implements OnInit {
   public discernments!: Signal<DiscernEntity[]>;
   public pagedDiscernments = signal<DiscernEntity[]>([]);
   public total!: number;
+  public updatedJson: string | object;
 
   public faLink = faArrowUpRightFromSquare;
 
@@ -55,7 +56,8 @@ export class DiscernListComponent implements OnInit {
   }
 
   public doUpdate(discern: DiscernEntity) {
-    discern.json = toHTML(discern.json as object);
+    discern = { ...discern, json: toHTML(this.updatedJson as object) };
+
     this.store.dispatch(
       createDiscern({
         discern,

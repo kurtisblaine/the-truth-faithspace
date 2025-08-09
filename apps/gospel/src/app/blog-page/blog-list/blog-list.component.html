@@ -9,7 +9,7 @@
 
   @if(update) {
   <button mat-flat-button (click)="doUpdate(blog)">Update</button>
-  <lib-text-editor [document]="blog.json" (editorChanged)="blog.json = $event"></lib-text-editor>
+  <lib-text-editor [document]="blog.json" (editorChanged)="updatedJson = $event"></lib-text-editor>
   } @else {
   <lib-readonly-text-editor [html]="blog?.json?.toString()"></lib-readonly-text-editor>
   }

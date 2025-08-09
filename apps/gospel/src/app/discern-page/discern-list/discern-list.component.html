@@ -9,7 +9,7 @@
 
   @if(update) {
   <button mat-flat-button (click)="doUpdate(discern)">Update</button>
-  <lib-text-editor [document]="discern.json" (editorChanged)="discern.json = $event"></lib-text-editor>
+  <lib-text-editor [document]="discern.json" (editorChanged)="updatedJson = $event"></lib-text-editor>
   } @else {
   <lib-readonly-text-editor [html]="discern?.json?.toString()"></lib-readonly-text-editor>
   }

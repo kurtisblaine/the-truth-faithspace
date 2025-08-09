@@ -34,6 +34,7 @@ export class BlogListComponent implements OnInit {
   public blogs!: Signal<BlogEntity[]>;
   public pagedBlogs = signal<BlogEntity[]>([]);
   public total!: number;
+  public updatedJson: string | object;
 
   public faLink = faArrowUpRightFromSquare;
 
@@ -55,7 +56,8 @@ export class BlogListComponent implements OnInit {
   }
 
   public doUpdate(blog: BlogEntity) {
-    blog.json = toHTML(blog.json as object);
+    blog = { ...blog, json: toHTML(this.updatedJson as object) };
+
     this.store.dispatch(
       createBlog({
         blog,

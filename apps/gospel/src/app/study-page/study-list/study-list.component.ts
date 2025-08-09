@@ -35,6 +35,7 @@ export class StudyListComponent implements OnInit {
   public studies!: Signal<StudyEntity[]>;
   public pagedStudies = signal<StudyEntity[]>([]);
   public total!: number;
+  public updatedJson: string | object;
 
   public faLink = faArrowUpRightFromSquare;
 
@@ -56,7 +57,7 @@ export class StudyListComponent implements OnInit {
   }
 
   public doUpdate(study: StudyEntity) {
-    study.json = toHTML(study.json as object);
+    study = { ...study, json: toHTML(this.updatedJson as object) };
 
     this.store.dispatch(
       StudyActions.createStudy({

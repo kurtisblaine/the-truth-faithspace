@@ -34,6 +34,7 @@ export class PsalmListComponent implements OnInit {
   public psalms!: Signal<PsalmEntity[]>;
   public pagedPsalms = signal<PsalmEntity[]>([]);
   public total!: number;
+  public updatedJson: string | object;
 
   public faLink = faArrowUpRightFromSquare;
 
@@ -55,7 +56,8 @@ export class PsalmListComponent implements OnInit {
   }
 
   public doUpdate(psalm: PsalmEntity) {
-    psalm.json = toHTML(psalm.json as object);
+    psalm = { ...psalm, json: toHTML(this.updatedJson as object) };
+
     this.store.dispatch(
       createPsalm({
         psalm,
