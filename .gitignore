@@ -1,10 +1,9 @@
 # See http://help.github.com/ignore-files/ for more about ignoring files.
 /.nx
 **/public
+**/static
 
 *.log
-/apps/gospel/static
-/apps/app/static
 
 # compiled output
 /dist

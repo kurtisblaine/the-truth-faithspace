@@ -1,25 +1,29 @@
 {
-  "name": "app",
+  "name": "quality-painting",
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
   "projectType": "application",
   "prefix": "app",
-  "sourceRoot": "apps/app/src",
+  "sourceRoot": "apps/quality-painting/src",
   "tags": [],
   "targets": {
     "build": {
       "executor": "@angular-devkit/build-angular:application",
       "outputs": ["{options.outputPath}"],
       "options": {
-        "outputPath": "apps/app/public",
-        "index": "apps/app/src/index.html",
-        "browser": "apps/app/src/main.ts",
-        "tsConfig": "apps/app/tsconfig.app.json",
+        "outputPath": "apps/quality-painting/public",
+        "index": "apps/quality-painting/src/index.html",
+        "browser": "apps/quality-painting/src/main.ts",
+        "tsConfig": "apps/quality-painting/tsconfig.app.json",
         "inlineStyleLanguage": "scss",
         "namedChunks": true,
-        "assets": ["apps/app/src/favicon.ico", "apps/app/src/assets"],
-        "styles": ["apps/app/src/styles.scss"],
+        "assets": ["apps/quality-painting/src/favicon.ico", "apps/quality-painting/src/assets"],
+        "styles": [
+          "apps/quality-painting/src/styles.scss",
+          "node_modules/ngx-owl-carousel-o/lib/styles/prebuilt-themes/owl.carousel.min.css",
+          "node_modules/ngx-owl-carousel-o/lib/styles/prebuilt-themes/owl.theme.default.min.css"
+        ],
         "scripts": [],
-        "server": "apps/app/src/main.server.ts",
+        "server": "apps/quality-painting/src/main.server.ts",
         "outputMode": "static"
       },
       "configurations": {
@@ -50,10 +54,10 @@
       "executor": "@angular-devkit/build-angular:dev-server",
       "configurations": {
         "production": {
-          "buildTarget": "app:build:production"
+          "buildTarget": "quality-painting:build:production"
         },
         "development": {
-          "buildTarget": "app:build:development"
+          "buildTarget": "quality-painting:build:development"
         }
       },
       "defaultConfiguration": "development",
@@ -62,7 +66,7 @@
     "extract-i18n": {
       "executor": "@angular-devkit/build-angular:extract-i18n",
       "options": {
-        "buildTarget": "app:build"
+        "buildTarget": "quality-painting:build"
       }
     },
     "lint": {
@@ -71,8 +75,8 @@
     "serve-static": {
       "executor": "@nx/web:file-server",
       "options": {
-        "buildTarget": "app:build",
-        "staticFilePath": "dist/apps/app/browser",
+        "buildTarget": "quality-painting:build",
+        "staticFilePath": "dist/apps/quality-painting/browser",
         "spa": true
       }
     }

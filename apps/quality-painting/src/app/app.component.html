@@ -1,0 +1,29 @@
+<div class="header">
+  <mat-toolbar>
+    <img
+      width="48"
+      height="48"
+      src="https://img.icons8.com/color/48/paint-brush.png"
+      alt="paint-brush"
+      style="margin-right: 7px"
+    />
+
+    <span>Dave's Quality Painting</span>
+    <span style="flex: 1 1 auto"></span>
+
+    <button
+      mat-icon-button
+      aria-labelledby="Settings button"
+      aria-label="Settings button"
+      [matTooltip]="'App Settings'"
+      [matMenuTriggerFor]="settingsMenu"
+    >
+      <fa-icon [icon]="settingsIcon"></fa-icon>
+    </button>
+    <mat-menu #settingsMenu="matMenu">
+      <app-settings-widget></app-settings-widget>
+    </mat-menu>
+  </mat-toolbar>
+</div>
+
+<router-outlet></router-outlet>
