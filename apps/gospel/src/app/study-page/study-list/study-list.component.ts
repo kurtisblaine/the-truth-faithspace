@@ -44,7 +44,7 @@ export class StudyListComponent implements OnInit {
 
     effect(() => {
       this.total = this.studies().length;
-      this.onPageChange({ pageIndex: 0, pageSize: 5 } as PageEvent);
+      this.onPageChange({ pageIndex: 0, pageSize: 7 } as PageEvent);
     });
   }
 

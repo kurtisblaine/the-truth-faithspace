@@ -43,7 +43,7 @@ export class InsightListComponent implements OnInit {
 
     effect(() => {
       this.total = this.insights().length;
-      this.onPageChange({ pageIndex: 0, pageSize: 5 } as PageEvent);
+      this.onPageChange({ pageIndex: 0, pageSize: 7 } as PageEvent);
     });
   }
 

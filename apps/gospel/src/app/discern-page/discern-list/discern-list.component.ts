@@ -43,7 +43,7 @@ export class DiscernListComponent implements OnInit {
 
     effect(() => {
       this.total = this.discernments().length;
-      this.onPageChange({ pageIndex: 0, pageSize: 5 } as PageEvent);
+      this.onPageChange({ pageIndex: 0, pageSize: 7 } as PageEvent);
     });
   }
 
