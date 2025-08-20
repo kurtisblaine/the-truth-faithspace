@@ -38,6 +38,8 @@ export class ContactFormComponent implements OnInit {
   constructor(private builder: FormBuilder, private contact: ContactService, private snackBar: MatSnackBar) {}
 
   public ngOnInit(): void {
+    this.contact.api = this.formSpreeApi();
+
     const emailValidators = Validators.compose([Validators.required, Validators.email]) as ValidatorFn;
     this.formData = this.builder.group({
       Fullname: new FormControl("", [Validators.required]),
