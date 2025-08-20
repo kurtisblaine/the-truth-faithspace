@@ -7,7 +7,7 @@ html {
   color-scheme: light dark;
   @include mat.theme(
     (
-      color: mat.$azure-palette,
+      color: mat.$orange-palette,
       typography: (
         plain-family: sans-serif,
         brand-family: sans-serif,

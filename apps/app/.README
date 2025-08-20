@@ -1,0 +1,9 @@
+THINGS TO DO
+
+1. Copy paste app
+2. Change name
+3. Change project.json to new name
+4. Navigate to app and run `firebase init`
+5. Select Hosting with Github actions
+6. Authenticate with Github
+7.
