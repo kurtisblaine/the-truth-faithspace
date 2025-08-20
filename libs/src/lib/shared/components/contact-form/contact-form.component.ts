@@ -1,6 +1,7 @@
 import { CommonModule } from "@angular/common";
 import { ChangeDetectionStrategy, Component, input, OnInit } from "@angular/core";
 import {
+  AbstractControl,
   FormBuilder,
   FormControl,
   FormGroup,
@@ -55,10 +56,18 @@ export class ContactFormComponent implements OnInit {
         duration: 10000,
       });
 
-      this.formData.controls["Fullname"].setValue(null);
-      this.formData.controls["Email"].setValue(null);
-      this.formData.controls["Comment"].setValue(null);
+      this.clearControlErrors(this.formData);
+      this.clearControlErrors(this.formData.controls["Fullname"]);
+      this.clearControlErrors(this.formData.controls["Email"]);
+      this.clearControlErrors(this.formData.controls["Comment"]);
       console.log(response);
     });
+  }
+
+  public clearControlErrors(control: AbstractControl) {
+    control.reset();
+    control.setErrors(null);
+    control.markAsPristine();
+    control.markAsUntouched();
   }
 }
