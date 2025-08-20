@@ -29,7 +29,7 @@ import { SettingsWidgetComponent } from "./shared/component/settings-widget.comp
   styleUrl: "./app.component.scss",
 })
 export class AppComponent {
-  public title = "Dave's Drywall & Painting Etc.";
+  public title = "Dave's Drywall & Painting";
   public afterFirstRender = false;
   public isMobile = false;
 
