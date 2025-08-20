@@ -1,4 +1,4 @@
-import { createEntityAdapter, Dictionary, EntityAdapter, EntityState } from "@ngrx/entity";
+import { createEntityAdapter, EntityAdapter, EntityState } from "@ngrx/entity";
 import { createFeature, createReducer, on } from "@ngrx/store";
 import { ItemsActions } from "./items.actions";
 
@@ -23,12 +23,9 @@ export const itemAdapter: EntityAdapter<ItemEntity> = createEntityAdapter<ItemEn
 });
 
 export const initialState: State = itemAdapter.getInitialState<State>({
-  // set initial required properties
   loaded: false,
   error: null,
   id: "",
-  entities: {} as Dictionary<ItemEntity>,
-  ids: [] as string[],
 });
 
 export const reducer = createReducer(
