@@ -76,7 +76,7 @@ export class SettingsWidgetComponent implements OnInit, OnDestroy {
   };
 
   constructor() {
-    const storedSettings = window.localStorage?.getItem("appSettings");
+    const storedSettings = window.localStorage?.getItem("technologyAppSettings");
     if (storedSettings) {
       this.settings = JSON.parse(storedSettings) as AppSettings;
       this.themeService.setTheme(this.settings.theme);
@@ -85,7 +85,7 @@ export class SettingsWidgetComponent implements OnInit, OnDestroy {
     effect(() => {
       if (!this.speechService.voices().length) return;
 
-      const storedSettings = window.localStorage?.getItem("appSettings");
+      const storedSettings = window.localStorage?.getItem("technologyAppSettings");
       if (storedSettings) {
         this.settings = JSON.parse(storedSettings) as AppSettings;
         this.speechService.setVoice(this.settings.voice.name);
@@ -110,7 +110,7 @@ export class SettingsWidgetComponent implements OnInit, OnDestroy {
     this.speechService.setVoice(this.settings.voice.name);
 
     const jsonSettings = JSON.stringify({ theme: this.settings.theme, voice: this.settings.voice });
-    window.localStorage?.setItem("appSettings", jsonSettings);
+    window.localStorage?.setItem("technologyAppSettings", jsonSettings);
 
     this.themeService.setTheme(this.settings.theme);
   }

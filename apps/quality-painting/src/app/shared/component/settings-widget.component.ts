@@ -60,7 +60,7 @@ export class SettingsWidgetComponent implements OnInit, OnDestroy {
 
   constructor(@Inject(PLATFORM_ID) private platformId: object) {
     afterNextRender(() => {
-      const storedSettings = localStorage.getItem("appSettings");
+      const storedSettings = localStorage.getItem("davesAppSettings");
       if (storedSettings) {
         this.settings = JSON.parse(storedSettings) as AppSettings;
         this.themeService.setTheme(this.settings.theme);
@@ -78,7 +78,7 @@ export class SettingsWidgetComponent implements OnInit, OnDestroy {
 
   save() {
     const jsonSettings = JSON.stringify({ theme: this.settings.theme });
-    if (isPlatformBrowser(this.platformId)) localStorage.setItem("appSettings", jsonSettings);
+    if (isPlatformBrowser(this.platformId)) localStorage.setItem("davesAppSettings", jsonSettings);
 
     this.themeService.setTheme(this.settings.theme);
   }
