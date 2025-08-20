@@ -1,5 +1,6 @@
 {
   "hosting": {
+    "site": "davesdrywallandpainting",
     "public": "public/browser",
     "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
     "rewrites": [
