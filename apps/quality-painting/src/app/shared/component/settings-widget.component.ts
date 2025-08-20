@@ -12,6 +12,7 @@ import {
 import { FormsModule } from "@angular/forms";
 import { MatButtonModule } from "@angular/material/button";
 import { MatButtonToggleModule } from "@angular/material/button-toggle";
+import { MatDividerModule } from "@angular/material/divider";
 import { MatSelectModule } from "@angular/material/select";
 import { ThemeService } from "../service/theme.service";
 
@@ -21,7 +22,7 @@ type AppSettings = {
 
 @Component({
   selector: "app-settings-widget",
-  imports: [CommonModule, FormsModule, MatSelectModule, MatButtonToggleModule, MatButtonModule],
+  imports: [CommonModule, FormsModule, MatSelectModule, MatButtonToggleModule, MatButtonModule, MatDividerModule],
   template: `
     <h3>Settings</h3>
     <div>
@@ -37,6 +38,7 @@ type AppSettings = {
       </mat-button-toggle-group>
     </div>
 
+    <mat-divider></mat-divider>
     <button matButton="filled" (click)="save()">Save</button>
   `,
   styles: `:host

@@ -16,13 +16,22 @@ export class CarouselComponent {
     loop: true,
     dots: true,
     navSpeed: 700,
+    merge: true,
     autoplay: false,
     autoplaySpeed: 2500,
-    margin: 10,
+    margin: 5,
     lazyLoad: true,
     autoHeight: true,
     autoWidth: true,
     dotsData: false,
     items: 4,
+    responsive: {
+      678: {
+        mergeFit: true,
+      },
+      1000: {
+        mergeFit: false,
+      },
+    },
   };
 }

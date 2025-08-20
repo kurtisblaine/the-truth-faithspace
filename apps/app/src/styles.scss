@@ -21,8 +21,11 @@ html {
 }
 
 body {
-  margin: unset;
+  margin: 0;
+  height: 100%;
+  overflow-x: hidden !important;
   font-family: Roboto, "Helvetica Neue", sans-serif;
+  color: var(--mat-sys-on-surface);
 }
 
 a {
