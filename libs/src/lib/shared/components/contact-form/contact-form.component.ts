@@ -49,11 +49,9 @@ export class ContactFormComponent implements OnInit {
   public onSubmit(formData: FormGroup) {
     console.log(formData);
     this.contact.postMessage(formData).subscribe((response) => {
-      this.snackBar.open(
-        "Email has been sent successfully. Thank you for emailing me! God willing, I will get back to you as soon as possible.",
-        "",
-        { duration: 10000 }
-      );
+      this.snackBar.open("Thank you for emailing me! God willing, I will get back to you as soon as possible.", "", {
+        duration: 10000,
+      });
 
       this.formData.controls["Fullname"].setValue(null);
       this.formData.controls["Email"].setValue(null);

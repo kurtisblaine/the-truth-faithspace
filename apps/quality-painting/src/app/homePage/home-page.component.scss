@@ -1,9 +1,12 @@
-.custom-card {
-  margin: 15px;
-  width: 50%;
+.card-section {
+  background-color: var(--mat-sys-primary);
+  display: flex;
+  justify-content: space-evenly;
+  height: 50vh;
 }
 
-img {
-  z-index: -1;
-  object-fit: fill !important;
+.custom-card {
+  margin: 15px;
+  min-width: 25vw;
+  width: 45vw;
 }

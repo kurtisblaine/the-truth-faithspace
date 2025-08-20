@@ -1,75 +1,11 @@
-<owl-carousel-o [options]="customOptions">
-  <ng-template carouselSlide [dotContent]="'Painting'">
-    <img [ngSrc]="'../../assets/paint-min.webp'" alt="" fill priority />
-  </ng-template>
-  <ng-template carouselSlide [dotContent]="'Staining'">
-    <img [ngSrc]="'../../assets/high-deck-min.webp'" alt="" fill />
-  </ng-template>
-  <ng-template carouselSlide [dotContent]="'Texturing'">
-    <img [ngSrc]="'../../assets/texture-min.webp'" alt="" fill />
-  </ng-template>
-  <ng-template carouselSlide [dotContent]="'Before Awning'">
-    <img [ngSrc]="'../../assets/awning-old-min.webp'" alt="" fill />
-  </ng-template>
-  <ng-template carouselSlide [dotContent]="'After Awning'">
-    <img [ngSrc]="'../../assets/awning-new-min.webp'" alt="" fill />
-  </ng-template>
-  <ng-template carouselSlide [dotContent]="'Before Drywall'">
-    <img [ngSrc]="'../../assets/ceiling-old-min.webp'" alt="" fill />
-  </ng-template>
-  <ng-template carouselSlide [dotContent]="'After Drywall'">
-    <img [ngSrc]="'../../assets/ceiling-new-min.webp'" alt="" fill />
-  </ng-template>
-  <ng-template carouselSlide [dotContent]="'Old Deck'">
-    <img [ngSrc]="'../../assets/deck-old-min.webp'" alt="" fill />
-  </ng-template>
-  <ng-template carouselSlide [dotContent]="'Old Deck'">
-    <img [ngSrc]="'../../assets/deck-old2-min.webp'" alt="" fill />
-  </ng-template>
-  <ng-template carouselSlide [dotContent]="'New Deck'">
-    <img [ngSrc]="'../../assets/deck-new-min.webp'" alt="" fill />
-  </ng-template>
-  <ng-template carouselSlide [dotContent]="'New Deck'">
-    <img [ngSrc]="'../../assets/deck-new2-min.webp'" alt="" fill />
-  </ng-template>
-  <ng-template carouselSlide [dotContent]="'Old Garage'">
-    <img [ngSrc]="'../../assets/garage-old-min.webp'" alt="" fill />
-  </ng-template>
-  <ng-template carouselSlide [dotContent]="'Old Garage'">
-    <img [ngSrc]="'../../assets/garage-old2-min.webp'" alt="" fill />
-  </ng-template>
-  <ng-template carouselSlide [dotContent]="'New Garage'">
-    <img [ngSrc]="'../../assets/garage-new-min.webp'" alt="" fill />
-  </ng-template>
-  <ng-template carouselSlide [dotContent]="'New Garage'">
-    <img [ngSrc]="'../../assets/garage-new2-min.webp'" alt="" fill />
-  </ng-template>
-  <ng-template carouselSlide [dotContent]="'Old House'">
-    <img [ngSrc]="'../../assets/house-old-min.webp'" alt="" fill />
-  </ng-template>
-  <ng-template carouselSlide [dotContent]="'New House'">
-    <img [ngSrc]="'../../assets/house-new-min.webp'" alt="" fill />
-  </ng-template>
-  <ng-template carouselSlide [dotContent]="'Old Wall'">
-    <img [ngSrc]="'../../assets/wall-old-min.webp'" alt="" fill />
-  </ng-template>
-  <ng-template carouselSlide [dotContent]="'Old Wall'">
-    <img [ngSrc]="'../../assets/wall-old2-min.webp'" alt="" fill />
-  </ng-template>
-  <ng-template carouselSlide [dotContent]="'New Wall'">
-    <img [ngSrc]="'../../assets/wall-new-min.webp'" alt="" fill />
-  </ng-template>
-  <ng-template carouselSlide [dotContent]="'New Wall'">
-    <img [ngSrc]="'../../assets/wall-new2-min.webp'" alt="" fill />
-  </ng-template>
-</owl-carousel-o>
+<app-carousel></app-carousel>
 
-<div style="display: flex">
-  <mat-card class="custom-card">
+<div class="card-section">
+  <mat-card class="custom-card" [@slideInFromLeft]>
     <mat-card-header>
       <mat-card-title-group>
         <mat-card-title>
-          <h3>About</h3>
+          <h3>About Me</h3>
         </mat-card-title>
         <mat-card-subtitle><h4>David D Waldner</h4></mat-card-subtitle>
       </mat-card-title-group>
@@ -78,19 +14,14 @@
     <mat-card-content>
       I'm a Maintenance Technician from Renner, SD. If you have any projects you don't want to tackle yourself, I do
       painting, carpentry, drywall, taping and texturing; also flooring, light, electrical and plumbing.
-      <br />
-      <br />
-
-      Interior & Exterior * Pressure Washing * Drywall Taping & Texturing * 25+ Years Experience * Residential &
-      Commercial * Free Estimates
     </mat-card-content>
   </mat-card>
 
-  <mat-card class="custom-card">
+  <mat-card class="custom-card" [@slideInFromRight]>
     <mat-card-header>
       <mat-card-title-group>
         <mat-card-title>
-          <h3>Contact</h3>
+          <h3>Contact Me</h3>
         </mat-card-title>
         <mat-card-subtitle> </mat-card-subtitle>
       </mat-card-title-group>

@@ -1,33 +1,45 @@
 <div class="header">
   <mat-toolbar>
-    <img
-      width="48"
-      height="48"
-      src="https://img.icons8.com/color/48/paint-brush.png"
-      alt="paint-brush"
-      style="margin-right: 7px"
-    />
+    <mat-toolbar-row>
+      <img
+        width="48"
+        height="48"
+        src="https://img.icons8.com/color/48/paint-brush.png"
+        alt="paint-brush"
+        style="margin-right: 7px"
+      />
 
-    <span>Dave's Quality Painting</span>
-    <span style="flex: 1 1 auto"></span>
+      <span>Dave's Quality Painting</span>
+      <span style="flex: 1 1 auto"></span>
 
-    <a href="tel:+16055495690" style="font-size: 22px; margin-right: 7px">
-      <fa-icon [icon]="phoneIcon"></fa-icon>
-      +1 (605) 496-5690
-    </a>
+      <button
+        mat-icon-button
+        aria-labelledby="Settings button"
+        aria-label="Settings button"
+        [matTooltip]="'App Settings'"
+        [matMenuTriggerFor]="settingsMenu"
+      >
+        <fa-icon [icon]="settingsIcon"></fa-icon>
+      </button>
+      <mat-menu #settingsMenu="matMenu">
+        <app-settings-widget></app-settings-widget>
+      </mat-menu>
+    </mat-toolbar-row>
 
-    <button
-      mat-icon-button
-      aria-labelledby="Settings button"
-      aria-label="Settings button"
-      [matTooltip]="'App Settings'"
-      [matMenuTriggerFor]="settingsMenu"
-    >
-      <fa-icon [icon]="settingsIcon"></fa-icon>
-    </button>
-    <mat-menu #settingsMenu="matMenu">
-      <app-settings-widget></app-settings-widget>
-    </mat-menu>
+    <mat-toolbar-row>
+      <span>25+ Years of Experience</span>
+      <span style="flex: 1 1 auto"></span>
+
+      <span>Free Estimates</span>
+      <span style="flex: 1 1 auto"></span>
+
+      @if(afterFirstRender) {
+      <a href="tel:+16055495690" class="phone-number-link">
+        <fa-icon [icon]="phoneIcon"></fa-icon>
+        +1 (605) 496-5690
+      </a>
+      }
+    </mat-toolbar-row>
   </mat-toolbar>
 </div>
 

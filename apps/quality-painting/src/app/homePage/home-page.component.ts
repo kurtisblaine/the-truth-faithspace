@@ -1,26 +1,30 @@
-import { CommonModule, NgOptimizedImage } from "@angular/common";
+import { animate, style, transition, trigger } from "@angular/animations";
+import { CommonModule } from "@angular/common";
 import { Component } from "@angular/core";
 import { MatCardModule } from "@angular/material/card";
-import { CarouselModule, OwlOptions } from "ngx-owl-carousel-o";
 import { ContactFormComponent } from "shared";
+import { CarouselComponent } from "./carousel/carousel.component";
 
 @Component({
   selector: "app-home-page",
-  imports: [CommonModule, CarouselModule, ContactFormComponent, MatCardModule, NgOptimizedImage],
+  imports: [CommonModule, ContactFormComponent, MatCardModule, CarouselComponent],
   templateUrl: "./home-page.component.html",
   styleUrl: "./home-page.component.scss",
+  animations: [
+    trigger("slideInFromLeft", [
+      transition(":enter", [
+        style({ transform: "translateX(-100%)" }),
+        animate("500ms ease-out", style({ transform: "translateX(0)" })),
+      ]),
+      transition(":leave", [animate("500ms ease-in", style({ transform: "translateX(-100%)" }))]),
+    ]),
+    trigger("slideInFromRight", [
+      transition(":enter", [
+        style({ transform: "translateX(100%)" }),
+        animate("500ms ease-out", style({ transform: "translateX(0)" })),
+      ]),
+      transition(":leave", [animate("500ms ease-out", style({ transform: "translateX(-100%)" }))]),
+    ]),
+  ],
 })
-export class HomePageComponent {
-  public customOptions: OwlOptions = {
-    loop: true,
-    dots: true,
-    navSpeed: 700,
-    autoplay: true,
-    autoplaySpeed: 2500,
-    margin: 10,
-    lazyLoad: true,
-    autoHeight: true,
-    autoWidth: true,
-    dotsData: false,
-  };
-}
+export class HomePageComponent {}
