@@ -23,3 +23,7 @@ html {
 body {
   margin: unset;
 }
+
+.owl-carousel .owl-item {
+  min-height: 40vh !important;
+}
