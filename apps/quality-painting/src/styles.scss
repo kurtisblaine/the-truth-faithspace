@@ -28,6 +28,10 @@ body {
   color: var(--mat-sys-on-surface);
 }
 
+.primary-color {
+  color: var(--mat-sys-primary);
+}
+
 .owl-carousel .owl-item {
   min-height: 40vh !important;
 }

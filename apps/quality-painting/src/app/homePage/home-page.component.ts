@@ -2,20 +2,13 @@ import { animate, style, transition, trigger } from "@angular/animations";
 import { CommonModule, NgOptimizedImage } from "@angular/common";
 import { Component } from "@angular/core";
 import { MatCardModule } from "@angular/material/card";
-import { ContactFormComponent, ElementInViewportDirective } from "shared";
+import { ContactFormComponent } from "shared";
 import { fadeInOut } from "../../../../../libs/src/lib/shared/animations/animation";
 import { CarouselComponent } from "./carousel/carousel.component";
 
 @Component({
   selector: "app-home-page",
-  imports: [
-    CommonModule,
-    ContactFormComponent,
-    MatCardModule,
-    CarouselComponent,
-    ElementInViewportDirective,
-    NgOptimizedImage,
-  ],
+  imports: [CommonModule, ContactFormComponent, MatCardModule, CarouselComponent, NgOptimizedImage],
   templateUrl: "./home-page.component.html",
   styleUrl: "./home-page.component.scss",
   animations: [

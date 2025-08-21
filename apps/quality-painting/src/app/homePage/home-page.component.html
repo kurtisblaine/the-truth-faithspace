@@ -1,19 +1,20 @@
 <div class="home-image" style="background-position: top" #toGospel>
-  <img fill style="object-position: top" [ngSrc]="'../../assets/home-handing.jpg'" alt="" priority />
+  <img fill style="object-position: top" [ngSrc]="'../../assets/home-landing-min.webp'" alt="" priority />
 
   <div class="header-pane">
-    <h1 class="header-title" [@slideInFromRight]>DAVE'S DRYWALL & PAINTING</h1>
-    <h2 class="header-caption" [@slideInFromLeft]>
-      25+ Years Experience, Residential & Commercial, Interior & Exterior
-    </h2>
+    <h1 class="header-title primary-color" [@slideInFromRight]>DAVE'S DRYWALL & PAINTING</h1>
+    <h3 class="header-caption" [@slideInFromLeft]>Drywall & Painting, All Trades, 25+ Years Experience</h3>
+    <h3 class="header-caption" [@slideInFromLeft]>Residential & Commercial, Interior & Exterior</h3>
   </div>
 </div>
 
-<app-carousel [@simpleFadeAnimation]></app-carousel>
+<div class="carousel-section" #carouselSection>
+  <app-carousel [@simpleFadeAnimation]></app-carousel>
+</div>
 
-<div class="card-section" elementInViewport (inViewport)="onInViewportChange($event)">
-  Testing
-  <mat-card class="custom-card" [@slideInFromLeft] *ngIf="isElementInViewport">
+<div class="card-section" #cardSection>
+  @defer (on viewport(cardSection)) {
+  <mat-card class="custom-card" [@slideInFromLeft]>
     <mat-card-header>
       <mat-card-title-group>
         <mat-card-title>
@@ -24,12 +25,14 @@
     </mat-card-header>
 
     <mat-card-content>
-      I'm a Maintenance Technician from Renner, SD. If you have any projects you don't want to tackle yourself, I do
-      painting, carpentry, drywall, taping and texturing; also flooring, light, electrical and plumbing.
+      <span>
+        I'm a Maintenance Technician from Renner, SD. If you have any projects you don't want to tackle yourself, I do
+        painting, carpentry, drywall, taping and texturing; also flooring, light, electrical and plumbing.
+      </span>
     </mat-card-content>
   </mat-card>
 
-  <mat-card class="custom-card" [@slideInFromRight] *ngIf="isElementInViewport">
+  <mat-card class="custom-card" [@slideInFromRight]>
     <mat-card-header>
       <mat-card-title-group>
         <mat-card-title>
@@ -43,4 +46,5 @@
       <lib-contact-form formSpreeApi="https://formspree.io/f/xblkvypq"></lib-contact-form>
     </mat-card-content>
   </mat-card>
+  }
 </div>
