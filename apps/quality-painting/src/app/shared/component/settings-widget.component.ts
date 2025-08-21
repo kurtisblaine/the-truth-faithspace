@@ -47,6 +47,7 @@ type AppSettings = {
     flex-direction: column;
     padding: 0px 15px;
     color: var(--mat-sys-on-background);
+    z-index: -777;
   }
   `,
   changeDetection: ChangeDetectionStrategy.Default,
