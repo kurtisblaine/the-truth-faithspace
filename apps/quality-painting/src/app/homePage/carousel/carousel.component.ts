@@ -1,7 +1,6 @@
 import { CommonModule, NgOptimizedImage } from "@angular/common";
 import { ChangeDetectionStrategy, Component } from "@angular/core";
 import { CarouselModule, OwlOptions } from "ngx-owl-carousel-o";
-import { fadeInOut } from "shared";
 
 @Component({
   selector: "app-carousel",
@@ -9,7 +8,6 @@ import { fadeInOut } from "shared";
   templateUrl: "./carousel.component.html",
   styleUrl: "./carousel.component.scss",
   changeDetection: ChangeDetectionStrategy.OnPush,
-  animations: [fadeInOut],
 })
 export class CarouselComponent {
   public customOptions: OwlOptions = {
@@ -17,7 +15,7 @@ export class CarouselComponent {
     dots: true,
     navSpeed: 700,
     merge: true,
-    autoplay: true,
+    autoplay: false,
     autoplaySpeed: 2500,
     margin: 5,
     lazyLoad: true,

@@ -1,15 +1,5 @@
 {
   "projects": {
-    "default": "davesdrywallandpainting",
-    "davesdrywallandpainting": "davesqualitypainting"
-  },
-  "targets": {
-    "davesqualitypainting": {
-      "hosting": {
-        "quality-painting": [
-          "davesdrywallandpainting"
-        ]
-      }
-    }
+    "default": "davesqualitypainting"
   }
 }

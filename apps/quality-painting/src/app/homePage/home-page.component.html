@@ -1,13 +1,25 @@
-<app-carousel></app-carousel>
+<div class="home-image" style="background-position: top" #toGospel>
+  <img fill style="object-position: top" [ngSrc]="'../../assets/home-handing.jpg'" alt="" priority />
 
-<div class="card-section">
-  <mat-card class="custom-card" [@slideInFromLeft]>
+  <div class="header-pane">
+    <h1 class="header-title" [@slideInFromRight]>DAVE'S DRYWALL & PAINTING</h1>
+    <h2 class="header-caption" [@slideInFromLeft]>
+      25+ Years Experience, Residential & Commercial, Interior & Exterior
+    </h2>
+  </div>
+</div>
+
+<app-carousel [@simpleFadeAnimation]></app-carousel>
+
+<div class="card-section" elementInViewport (inViewport)="onInViewportChange($event)">
+  Testing
+  <mat-card class="custom-card" [@slideInFromLeft] *ngIf="isElementInViewport">
     <mat-card-header>
       <mat-card-title-group>
         <mat-card-title>
           <h3>About Me</h3>
         </mat-card-title>
-        <mat-card-subtitle><h4>David D Waldner</h4></mat-card-subtitle>
+        <mat-card-subtitle><h4>David Waldner</h4></mat-card-subtitle>
       </mat-card-title-group>
     </mat-card-header>
 
@@ -17,7 +29,7 @@
     </mat-card-content>
   </mat-card>
 
-  <mat-card class="custom-card" [@slideInFromRight]>
+  <mat-card class="custom-card" [@slideInFromRight] *ngIf="isElementInViewport">
     <mat-card-header>
       <mat-card-title-group>
         <mat-card-title>
