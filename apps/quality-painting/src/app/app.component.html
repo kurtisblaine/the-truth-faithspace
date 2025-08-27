@@ -25,19 +25,19 @@
       </mat-menu>
     </mat-toolbar-row>
 
-    <mat-toolbar-row>
+    @if(afterFirstRender) {
+    <mat-toolbar-row [@fadeInOut]>
       <ng-container *ngTemplateOutlet="phoneNumber"></ng-container>
     </mat-toolbar-row>
+    }
 
     <ng-template #phoneNumber>
-      @if(afterFirstRender) {
       <span>Free Estimates</span>
       <span style="flex: 1 1 auto"></span>
       <a href="tel:+16054965690" class="phone-number-link">
         <fa-icon [icon]="phoneIcon"></fa-icon>
         +1 (605) 496-5690
       </a>
-      }
     </ng-template>
   </mat-toolbar>
 </div>

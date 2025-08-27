@@ -1,5 +1,15 @@
-import { CommonModule } from "@angular/common";
-import { ChangeDetectionStrategy, Component, effect, inject, OnDestroy, OnInit } from "@angular/core";
+import { CommonModule, isPlatformBrowser } from "@angular/common";
+import {
+  afterNextRender,
+  ChangeDetectionStrategy,
+  Component,
+  effect,
+  Inject,
+  inject,
+  OnDestroy,
+  OnInit,
+  PLATFORM_ID,
+} from "@angular/core";
 import { FormsModule } from "@angular/forms";
 import { MatButtonModule } from "@angular/material/button";
 import { MatButtonToggleModule } from "@angular/material/button-toggle";
@@ -7,7 +17,6 @@ import { MatDividerModule } from "@angular/material/divider";
 import { MatSelectModule } from "@angular/material/select";
 import { SpeechService } from "libs/src/lib/shared/components/narrator/speech.service";
 import { ThemeService } from "../../service/theme.service";
-import { WindowService } from "../../service/window.service";
 
 type AppSettings = {
   theme: "light" | "dark";
@@ -76,17 +85,19 @@ export class SettingsWidgetComponent implements OnInit, OnDestroy {
     voice: { name: "Loading...", default: true, lang: "", voiceURI: "", localService: false },
   };
 
-  constructor(private windowService: WindowService) {
-    const storedSettings = this.windowService.localStorage?.getItem("gospelAppSettings");
-    if (storedSettings) {
-      this.settings = JSON.parse(storedSettings) as AppSettings;
-      this.themeService.setTheme(this.settings.theme);
-    }
+  constructor(@Inject(PLATFORM_ID) private platformId: object) {
+    afterNextRender(() => {
+      const storedSettings = localStorage.getItem("gospelAppSettings");
+      if (storedSettings) {
+        this.settings = JSON.parse(storedSettings) as AppSettings;
+        this.themeService.setTheme(this.settings.theme);
+      }
+    });
 
     effect(() => {
       if (!this.speechService.voices().length) return;
 
-      const storedSettings = this.windowService.localStorage?.getItem("gospelAppSettings");
+      const storedSettings = localStorage.getItem("gospelAppSettings");
       if (storedSettings && (JSON.parse(storedSettings) as AppSettings)?.voice) {
         this.settings = JSON.parse(storedSettings) as AppSettings;
         this.speechService.setVoice(this.settings.voice.name);
@@ -104,14 +115,16 @@ export class SettingsWidgetComponent implements OnInit, OnDestroy {
   ngOnInit(): void {}
 
   ngOnDestroy(): void {
-    this.windowService.localStorage?.clear();
+    if (!isPlatformBrowser(this.platformId)) return;
+
+    localStorage.clear();
   }
 
   save() {
     this.speechService.setVoice(this.settings.voice.name);
 
     const jsonSettings = JSON.stringify({ theme: this.settings.theme, voice: this.settings.voice });
-    this.windowService.localStorage?.setItem("gospelAppSettings", jsonSettings);
+    localStorage.setItem("gospelAppSettings", jsonSettings);
 
     this.themeService.setTheme(this.settings.theme);
   }

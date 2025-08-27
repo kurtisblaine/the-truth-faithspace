@@ -8,6 +8,7 @@ import {
   OnDestroy,
   OnInit,
   PLATFORM_ID,
+  signal,
 } from "@angular/core";
 import { FormsModule } from "@angular/forms";
 import { MatButtonModule } from "@angular/material/button";
@@ -30,7 +31,7 @@ type AppSettings = {
       <mat-button-toggle-group
         aria-label="Theme Select"
         aria-labelledby="Theme Select"
-        [(ngModel)]="this.settings.theme"
+        [(ngModel)]="settings().theme"
         (click)="$event.stopPropagation()"
       >
         <mat-button-toggle value="light">Light</mat-button-toggle>
@@ -55,16 +56,16 @@ type AppSettings = {
 export class SettingsWidgetComponent implements OnInit, OnDestroy {
   public themeService = inject(ThemeService);
 
-  public settings: AppSettings = {
+  public settings = signal<AppSettings>({
     theme: "light",
-  };
+  });
 
   constructor(@Inject(PLATFORM_ID) private platformId: object) {
     afterNextRender(() => {
       const storedSettings = localStorage.getItem("davesAppSettings");
       if (storedSettings) {
-        this.settings = JSON.parse(storedSettings) as AppSettings;
-        this.themeService.setTheme(this.settings.theme);
+        this.settings.set(JSON.parse(storedSettings) as AppSettings);
+        this.themeService.setTheme(this.settings().theme);
       }
     });
   }
@@ -78,9 +79,9 @@ export class SettingsWidgetComponent implements OnInit, OnDestroy {
   }
 
   save() {
-    const jsonSettings = JSON.stringify({ theme: this.settings.theme });
+    const jsonSettings = JSON.stringify({ theme: this.settings().theme });
     if (isPlatformBrowser(this.platformId)) localStorage.setItem("davesAppSettings", jsonSettings);
 
-    this.themeService.setTheme(this.settings.theme);
+    this.themeService.setTheme(this.settings().theme);
   }
 }

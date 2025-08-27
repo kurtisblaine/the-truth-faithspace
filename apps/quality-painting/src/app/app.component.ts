@@ -9,6 +9,7 @@ import { Router, RouterModule, RouterOutlet } from "@angular/router";
 import { FontAwesomeModule } from "@fortawesome/angular-fontawesome";
 import { faGears, faPhone } from "@fortawesome/free-solid-svg-icons";
 import { DeviceDetectorService } from "ngx-device-detector";
+import { fadeInOut } from "shared";
 import { SettingsWidgetComponent } from "./shared/component/settings-widget.component";
 
 @Component({
@@ -27,6 +28,7 @@ import { SettingsWidgetComponent } from "./shared/component/settings-widget.comp
   selector: "app-root",
   templateUrl: "./app.component.html",
   styleUrl: "./app.component.scss",
+  animations: [fadeInOut],
 })
 export class AppComponent {
   public title = "Dave's Drywall and Painting";

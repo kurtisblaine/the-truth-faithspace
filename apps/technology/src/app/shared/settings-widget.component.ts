@@ -1,5 +1,5 @@
 import { CommonModule } from "@angular/common";
-import { ChangeDetectionStrategy, Component, effect, inject, OnDestroy, OnInit } from "@angular/core";
+import { ChangeDetectionStrategy, Component, effect, inject, OnDestroy, OnInit, signal } from "@angular/core";
 import { FormsModule } from "@angular/forms";
 import { MatButtonModule } from "@angular/material/button";
 import { MatButtonToggleModule } from "@angular/material/button-toggle";
@@ -23,7 +23,7 @@ type AppSettings = {
       <mat-button-toggle-group
         aria-label="Theme Select"
         aria-labelledby="Theme Select"
-        [(ngModel)]="this.settings.theme"
+        [(ngModel)]="settings().theme"
         (click)="$event.stopPropagation()"
       >
         <mat-button-toggle value="light">Light</mat-button-toggle>
@@ -37,7 +37,7 @@ type AppSettings = {
       <mat-select
         aria-labelledby="Voice Select"
         aria-label="Voice Select"
-        [(ngModel)]="this.settings.voice.name"
+        [(ngModel)]="settings().voice.name"
         (click)="$event.stopPropagation()"
       >
         @for (voice of speechService.voices(); track $index) {
@@ -70,16 +70,16 @@ export class SettingsWidgetComponent implements OnInit, OnDestroy {
   public speechService = inject(SpeechService);
   public themeService = inject(ThemeService);
 
-  public settings: AppSettings = {
+  public settings = signal<AppSettings>({
     theme: "light",
     voice: { name: "Loading...", default: true, lang: "", voiceURI: "", localService: false },
-  };
+  });
 
   constructor() {
     const storedSettings = window.localStorage?.getItem("technologyAppSettings");
     if (storedSettings) {
-      this.settings = JSON.parse(storedSettings) as AppSettings;
-      this.themeService.setTheme(this.settings.theme);
+      this.settings.set(JSON.parse(storedSettings) as AppSettings);
+      this.themeService.setTheme(this.settings().theme);
     }
 
     effect(() => {
@@ -87,15 +87,15 @@ export class SettingsWidgetComponent implements OnInit, OnDestroy {
 
       const storedSettings = window.localStorage?.getItem("technologyAppSettings");
       if (storedSettings) {
-        this.settings = JSON.parse(storedSettings) as AppSettings;
-        this.speechService.setVoice(this.settings.voice.name);
+        this.settings.set(JSON.parse(storedSettings) as AppSettings);
+        this.speechService.setVoice(this.settings().voice.name);
       } else {
         const defaultEnglishVoice =
           this.speechService.voices().find((voice) => voice.name === "Alex" || voice.lang === "en-US") ??
           this.speechService.voices()[0];
 
         this.speechService.setVoice(defaultEnglishVoice.name);
-        this.settings.voice = this._convert(defaultEnglishVoice);
+        this.settings().voice = this._convert(defaultEnglishVoice);
       }
     });
   }
@@ -107,12 +107,12 @@ export class SettingsWidgetComponent implements OnInit, OnDestroy {
   }
 
   save() {
-    this.speechService.setVoice(this.settings.voice.name);
+    this.speechService.setVoice(this.settings().voice.name);
 
-    const jsonSettings = JSON.stringify({ theme: this.settings.theme, voice: this.settings.voice });
+    const jsonSettings = JSON.stringify({ theme: this.settings().theme, voice: this.settings().voice });
     window.localStorage?.setItem("technologyAppSettings", jsonSettings);
 
-    this.themeService.setTheme(this.settings.theme);
+    this.themeService.setTheme(this.settings().theme);
   }
 
   _convert = (voice: SpeechSynthesisVoice) => ({
