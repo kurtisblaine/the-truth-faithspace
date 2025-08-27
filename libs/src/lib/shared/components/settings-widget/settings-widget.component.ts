@@ -5,6 +5,7 @@ import {
   Component,
   Inject,
   inject,
+  input,
   OnDestroy,
   OnInit,
   PLATFORM_ID,
@@ -15,14 +16,14 @@ import { MatButtonModule } from "@angular/material/button";
 import { MatButtonToggleModule } from "@angular/material/button-toggle";
 import { MatDividerModule } from "@angular/material/divider";
 import { MatSelectModule } from "@angular/material/select";
-import { ThemeService } from "../service/theme.service";
+import { ThemeService } from "./theme.service";
 
 type AppSettings = {
   theme: "light" | "dark";
 };
 
 @Component({
-  selector: "app-settings-widget",
+  selector: "lib-settings-widget",
   imports: [CommonModule, FormsModule, MatSelectModule, MatButtonToggleModule, MatButtonModule, MatDividerModule],
   template: `
     <h3>Settings</h3>
@@ -48,6 +49,7 @@ type AppSettings = {
     flex-direction: column;
     padding: 0px 15px;
     color: var(--mat-sys-on-background);
+    z-index: -777;
   }
   `,
   changeDetection: ChangeDetectionStrategy.Default,
@@ -55,13 +57,15 @@ type AppSettings = {
 export class SettingsWidgetComponent implements OnInit, OnDestroy {
   public themeService = inject(ThemeService);
 
+  public storageName = input<string>("appSettings");
+
   public settings = signal<AppSettings>({
     theme: "light",
   });
 
   constructor(@Inject(PLATFORM_ID) private platformId: object) {
     afterNextRender(() => {
-      const storedSettings = localStorage.getItem("appSettings");
+      const storedSettings = localStorage.getItem(this.storageName());
       if (storedSettings) {
         this.settings.set(JSON.parse(storedSettings) as AppSettings);
         this.themeService.setTheme(this.settings().theme);
@@ -79,7 +83,7 @@ export class SettingsWidgetComponent implements OnInit, OnDestroy {
 
   save() {
     const jsonSettings = JSON.stringify({ theme: this.settings().theme });
-    if (isPlatformBrowser(this.platformId)) localStorage.setItem("appSettings", jsonSettings);
+    if (isPlatformBrowser(this.platformId)) localStorage.setItem(this.storageName(), jsonSettings);
 
     this.themeService.setTheme(this.settings().theme);
   }

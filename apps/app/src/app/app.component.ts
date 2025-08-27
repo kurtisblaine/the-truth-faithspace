@@ -7,7 +7,7 @@ import { MatTooltipModule } from "@angular/material/tooltip";
 import { Router, RouterModule, RouterOutlet } from "@angular/router";
 import { FontAwesomeModule } from "@fortawesome/angular-fontawesome";
 import { faBars, faGears } from "@fortawesome/free-solid-svg-icons";
-import { SettingsWidgetComponent } from "./shared/component/settings-widget.component";
+import { SettingsWidgetComponent } from "shared";
 
 @Component({
   imports: [

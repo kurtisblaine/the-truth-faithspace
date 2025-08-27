@@ -9,8 +9,7 @@ import { Router, RouterModule, RouterOutlet } from "@angular/router";
 import { FontAwesomeModule } from "@fortawesome/angular-fontawesome";
 import { faGears, faPhone } from "@fortawesome/free-solid-svg-icons";
 import { DeviceDetectorService } from "ngx-device-detector";
-import { fadeInOut } from "shared";
-import { SettingsWidgetComponent } from "./shared/component/settings-widget.component";
+import { fadeInOut, SettingsWidgetComponent } from "shared";
 
 @Component({
   imports: [
