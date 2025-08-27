@@ -6,7 +6,7 @@ import { MatExpansionModule } from "@angular/material/expansion";
 import { MatProgressSpinnerModule } from "@angular/material/progress-spinner";
 import { MatToolbarModule } from "@angular/material/toolbar";
 import { RouterModule, Routes } from "@angular/router";
-import { NarratorComponent } from "shared";
+import { NarratorComponent, ShareComponent } from "shared";
 import { ReferenceTooltipComponent } from "../shared/components/reference-tooltip/reference-tooltip.component";
 import { FullpageDirective } from "../shared/directives/fullpage.directive";
 import { CamelToTitlePipe } from "../shared/pipes/camel-title.pipe";
@@ -37,6 +37,7 @@ const routes: Routes = [
     CommonModule,
     MatButtonModule,
     RouterModule.forChild(routes),
+    ShareComponent,
     MatCardModule,
     MatExpansionModule,
     MatToolbarModule,

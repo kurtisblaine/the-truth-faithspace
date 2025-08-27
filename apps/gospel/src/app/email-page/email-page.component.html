@@ -5,12 +5,31 @@
         <h3 class="primary-color">Contact Me</h3>
       </mat-card-title>
       <mat-card-subtitle #seoCaption>
-        Use the contact form below to contact me, Kurtis Waldner. My phone number is 605-214-2910.
+        Use the contact form below to contact me, Kurtis Waldner. My phone number is 605-214-2910.<br />
       </mat-card-subtitle>
     </mat-card-title-group>
   </mat-card-header>
 
   <mat-card-content>
     <lib-contact-form formSpreeApi="https://formspree.io/f/mzbnezkd"></lib-contact-form>
+  </mat-card-content>
+</mat-card>
+
+<mat-card style="margin: 15px">
+  <mat-card-header>
+    <mat-card-title>
+      <h3 class="primary-color">Social</h3>
+    </mat-card-title>
+  </mat-card-header>
+
+  <mat-card-content>
+    <lib-share
+      [githubLink]="'https://github.com/kurtisblaine'"
+      [youtubeLink]="'https://www.youtube.com/@too.Wonderful.to.Understand'"
+      [linkedinLink]="'https://www.linkedin.com/in/kurt-waldner/'"
+      [redditLink]="'https://www.reddit.com/user/Ok_Captain5084/'"
+      [slackLink]="'https://godlyconversation.slack.com/archives/C09D5CN1LM6'"
+      [discordLink]="'https://discord.gg/sKM3U32q'"
+    ></lib-share>
   </mat-card-content>
 </mat-card>

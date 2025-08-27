@@ -90,6 +90,7 @@ html {
 body {
   margin: 0;
   font-family: Roboto, "Helvetica Neue", sans-serif;
+  height: 100vh;
 }
 
 .mat-typography p {
@@ -129,7 +130,6 @@ a {
 }
 
 .mat-drawer-container {
-  background-color: white !important;
   overflow: unset !important;
 }
 
