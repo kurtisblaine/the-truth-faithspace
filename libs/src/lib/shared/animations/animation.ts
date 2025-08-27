@@ -27,3 +27,19 @@ export const fadeInOut = [
     ]),
   ]),
 ];
+
+export const slideInFromLeft = trigger("slideInFromLeft", [
+  transition(":enter", [
+    style({ transform: "translateX(-100%)" }),
+    animate("500ms ease-out", style({ transform: "translateX(0)" })),
+  ]),
+  transition(":leave", [animate("500ms ease-in", style({ transform: "translateX(-100%)" }))]),
+]);
+
+export const slideInFromRight = trigger("slideInFromRight", [
+  transition(":enter", [
+    style({ transform: "translateX(100%)" }),
+    animate("500ms ease-out", style({ transform: "translateX(0)" })),
+  ]),
+  transition(":leave", [animate("500ms ease-out", style({ transform: "translateX(-100%)" }))]),
+]);
