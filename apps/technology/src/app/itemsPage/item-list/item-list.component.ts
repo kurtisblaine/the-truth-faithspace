@@ -1,7 +1,7 @@
 import { ChangeDetectionStrategy, Component, Input } from "@angular/core";
 import { faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
 import { Store } from "@ngrx/store";
-import { cloneDeep } from "lodash";
+import { cloneDeep } from "lodash-es";
 import { toHTML } from "ngx-editor";
 import { map, Observable } from "rxjs";
 import { ItemsActions } from "../../+state/items/items.actions";

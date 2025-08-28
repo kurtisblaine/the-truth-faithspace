@@ -1,8 +1,7 @@
 import { CommonModule, NgOptimizedImage } from "@angular/common";
 import { Component } from "@angular/core";
 import { MatCardModule } from "@angular/material/card";
-import { ContactFormComponent } from "shared";
-import { fadeInOut, slideInFromLeft, slideInFromRight } from "../../../../../libs/src/lib/shared/animations/animation";
+import { ContactFormComponent, fadeInOut, slideInFromLeft, slideInFromRight } from "shared";
 import { CarouselComponent } from "./carousel/carousel.component";
 
 @Component({

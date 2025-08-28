@@ -1,5 +1,5 @@
 import { Component, OnInit } from "@angular/core";
-import { NarratorStyle } from "../../../../../libs/src/lib/shared/components/narrator/narrator.component";
+import { NarratorStyle } from "shared";
 import { SeoBaseComponent } from "../shared/components/seo-base/seo-base.component";
 
 @Component({

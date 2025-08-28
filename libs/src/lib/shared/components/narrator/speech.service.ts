@@ -24,6 +24,7 @@ export class SpeechService implements OnDestroy {
   public currentlyPlayingId$ = this.currentlyPlayingId.asObservable();
 
   public selectedVoice!: SpeechSynthesisVoice;
+  public selectedRate!: number;
 
   public voices = signal<SpeechSynthesisVoice[]>([]);
 
@@ -64,8 +65,9 @@ export class SpeechService implements OnDestroy {
     return { id, state: state.asObservable() };
   }
 
-  setVoice(name: string) {
+  set(name: string, rate: number) {
     this.selectedVoice = this._getVoice(name);
+    this.selectedRate = rate;
   }
 
   _getVoice = (name: string) => this.voices().filter((voice) => voice.name === name)[0];
@@ -96,7 +98,7 @@ export class SpeechService implements OnDestroy {
 
     utterance.voice = this.selectedVoice;
     utterance.lang = this.selectedVoice.lang;
-    utterance.rate = 1;
+    utterance.rate = this.selectedRate;
     utterance.pitch = 1;
 
     this.speechSynthesis?.speak(utterance);

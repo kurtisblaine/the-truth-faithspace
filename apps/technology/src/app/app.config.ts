@@ -3,7 +3,6 @@ import {
   NoPreloading,
   provideRouter,
   withComponentInputBinding,
-  withHashLocation,
   withInMemoryScrolling,
   withPreloading,
   withRouterConfig,
@@ -45,8 +44,7 @@ export const appConfig: ApplicationConfig = {
       }),
       withPreloading(NoPreloading),
       withInMemoryScrolling(),
-      withComponentInputBinding(),
-      withHashLocation()
+      withComponentInputBinding()
     ),
     provideFirebaseApp(() => initializeApp(firebaseConfig)),
     provideFirestore(() => getFirestore()),

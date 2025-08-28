@@ -8,6 +8,7 @@ import {
   input,
   OnDestroy,
   OnInit,
+  output,
   PLATFORM_ID,
   signal,
 } from "@angular/core";
@@ -18,7 +19,7 @@ import { MatDividerModule } from "@angular/material/divider";
 import { MatSelectModule } from "@angular/material/select";
 import { ThemeService } from "./theme.service";
 
-type AppSettings = {
+export type ThemeSettings = {
   theme: "light" | "dark";
 };
 
@@ -27,8 +28,8 @@ type AppSettings = {
   imports: [CommonModule, FormsModule, MatSelectModule, MatButtonToggleModule, MatButtonModule, MatDividerModule],
   template: `
     <h3>Settings</h3>
-    <div>
-      <mat-label>Theme</mat-label>
+    <div style="padding: 5px 0px">
+      <mat-label style="padding-right: 5px">Theme</mat-label>
       <mat-button-toggle-group
         aria-label="Theme Select"
         aria-labelledby="Theme Select"
@@ -39,6 +40,8 @@ type AppSettings = {
         <mat-button-toggle value="dark">Dark</mat-button-toggle>
       </mat-button-toggle-group>
     </div>
+
+    <ng-content></ng-content>
 
     <mat-divider></mat-divider>
     <button matButton="filled" (click)="save()">Save</button>
@@ -58,8 +61,9 @@ export class SettingsWidgetComponent implements OnInit, OnDestroy {
   public themeService = inject(ThemeService);
 
   public storageName = input<string>("appSettings");
+  public onSave = output<ThemeSettings>();
 
-  public settings = signal<AppSettings>({
+  public settings = signal<ThemeSettings>({
     theme: "light",
   });
 
@@ -67,7 +71,7 @@ export class SettingsWidgetComponent implements OnInit, OnDestroy {
     afterNextRender(() => {
       const storedSettings = localStorage.getItem(this.storageName());
       if (storedSettings) {
-        this.settings.set(JSON.parse(storedSettings) as AppSettings);
+        this.settings.set(JSON.parse(storedSettings) as ThemeSettings);
         this.themeService.setTheme(this.settings().theme);
       }
     });
@@ -82,9 +86,7 @@ export class SettingsWidgetComponent implements OnInit, OnDestroy {
   }
 
   save() {
-    const jsonSettings = JSON.stringify({ theme: this.settings().theme });
-    if (isPlatformBrowser(this.platformId)) localStorage.setItem(this.storageName(), jsonSettings);
-
     this.themeService.setTheme(this.settings().theme);
+    this.onSave.emit(this.settings());
   }
 }

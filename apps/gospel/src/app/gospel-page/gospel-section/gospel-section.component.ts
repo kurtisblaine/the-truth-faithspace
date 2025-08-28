@@ -1,7 +1,7 @@
 import { AfterViewInit, ChangeDetectorRef, Component, input, Input } from "@angular/core";
 import { MatCardModule } from "@angular/material/card";
 import { MatProgressSpinnerModule } from "@angular/material/progress-spinner";
-import { NarratorComponent, NarratorStyle } from "libs/src/lib/shared/components/narrator/narrator.component";
+import { NarratorComponent, NarratorStyle } from "shared";
 
 @Component({
   selector: "blog-gospel-section",

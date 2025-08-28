@@ -7,7 +7,7 @@ import { MatTooltipModule } from "@angular/material/tooltip";
 import { Router, RouterModule, RouterOutlet } from "@angular/router";
 import { FontAwesomeModule } from "@fortawesome/angular-fontawesome";
 import { faBars, faGears } from "@fortawesome/free-solid-svg-icons";
-import { SettingsWidgetComponent } from "shared";
+import { SettingsWidgetComponent, ThemeSettings } from "shared";
 
 @Component({
   imports: [
@@ -27,6 +27,8 @@ import { SettingsWidgetComponent } from "shared";
 })
 export class AppComponent {
   public title = "App";
+  public storageName = "TODO App";
+
   public menuIcon = faBars;
   public settingsIcon = faGears;
 
@@ -34,5 +36,10 @@ export class AppComponent {
 
   public goHome() {
     this.router.navigateByUrl("").then(() => {});
+  }
+
+  public save(settings: ThemeSettings) {
+    const jsonSettings = JSON.stringify({ theme: settings.theme });
+    localStorage.setItem(this.storageName, jsonSettings);
   }
 }

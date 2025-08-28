@@ -4,9 +4,10 @@
   "extends": "../../tsconfig.base.json",
   "compilerOptions": {
     "outDir": "../../dist/out-tsc",
+    "target": "es2022",
     "types": [],
     "allowSyntheticDefaultImports": true
   },
-  "files": ["src/main.ts"],
+  "files": ["src/main.ts", "src/main.server.ts"],
   "include": ["src/**/*.d.ts"]
 }

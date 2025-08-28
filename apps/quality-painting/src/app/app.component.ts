@@ -9,7 +9,7 @@ import { Router, RouterModule, RouterOutlet } from "@angular/router";
 import { FontAwesomeModule } from "@fortawesome/angular-fontawesome";
 import { faGears, faPhone } from "@fortawesome/free-solid-svg-icons";
 import { DeviceDetectorService } from "ngx-device-detector";
-import { fadeInOut, SettingsWidgetComponent } from "shared";
+import { fadeInOut, SettingsWidgetComponent, ThemeSettings } from "shared";
 
 @Component({
   imports: [
@@ -31,6 +31,8 @@ import { fadeInOut, SettingsWidgetComponent } from "shared";
 })
 export class AppComponent {
   public title = "Dave's Drywall and Painting";
+  public storageName = "davesAppSettings";
+
   public afterFirstRender = false;
   public isMobile = false;
 
@@ -46,5 +48,10 @@ export class AppComponent {
 
   public goHome() {
     this.router.navigateByUrl("").then(() => {});
+  }
+
+  public save(settings: ThemeSettings) {
+    const jsonSettings = JSON.stringify({ theme: settings.theme });
+    localStorage.setItem(this.storageName, jsonSettings);
   }
 }

@@ -28,8 +28,7 @@ import { MatToolbarModule } from "@angular/material/toolbar";
 import { MatTooltipModule } from "@angular/material/tooltip";
 import { DeviceDetectorService } from "ngx-device-detector";
 import { BehaviorSubject, fromEvent, map, Observable } from "rxjs";
-import { LibFaIconComponent } from "shared";
-import { SettingsWidgetComponent } from "./shared/components/settings-widget/settings-widget.component";
+import { LibFaIconComponent, SettingsWidgetComponent } from "shared";
 @Component({
   selector: "blog-root",
   templateUrl: "./app.component.html",

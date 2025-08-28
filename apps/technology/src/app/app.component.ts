@@ -8,7 +8,7 @@ import { MatTooltipModule } from "@angular/material/tooltip";
 import { Router, RouterOutlet } from "@angular/router";
 import { FontAwesomeModule } from "@fortawesome/angular-fontawesome";
 import { faBars, faGears, faHome, faRobot } from "@fortawesome/free-solid-svg-icons";
-import { SettingsWidgetComponent } from "./shared/settings-widget.component";
+import { SettingsWidgetComponent, VoiceSettingsComponent } from "../../../../libs/src";
 
 @Component({
   selector: "app-root",
@@ -23,6 +23,7 @@ import { SettingsWidgetComponent } from "./shared/settings-widget.component";
     MatTooltipModule,
     MatMenuModule,
     SettingsWidgetComponent,
+    VoiceSettingsComponent,
   ],
 
   template: `
@@ -71,7 +72,9 @@ import { SettingsWidgetComponent } from "./shared/settings-widget.component";
             </button>
 
             <mat-menu #settingsMenu="matMenu">
-              <app-settings-widget></app-settings-widget>
+              <lib-settings-widget storageName="technologyAppSettings" (onSave)="voiceSettings.save($event)">
+                <lib-voice-settings storageName="technologyAppSettings" #voiceSettings></lib-voice-settings>
+              </lib-settings-widget>
             </mat-menu>
           </mat-toolbar>
         </div>
