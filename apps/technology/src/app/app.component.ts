@@ -63,7 +63,7 @@ import { SettingsWidgetComponent, VoiceSettingsComponent } from "../../../../lib
 
             <button
               mat-icon-button
-              [matTooltip]="'Settings'"
+              [matTooltip]="'App Settings'"
               aria-labelledby="Settings button"
               aria-label="Settings button"
               [matMenuTriggerFor]="settingsMenu"

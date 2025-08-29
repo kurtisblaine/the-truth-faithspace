@@ -1,0 +1,29 @@
+<div class="header">
+  <mat-toolbar>
+    <button mat-icon-button aria-labelledby="Menu button" aria-label="Menu button" [matMenuTriggerFor]="navigationMenu">
+      <fa-icon [icon]="menuIcon"></fa-icon>
+    </button>
+
+    <mat-menu #navigationMenu="matMenu">
+      <button mat-menu-item (click)="goHome()">Home</button>
+    </mat-menu>
+
+    <span>TODO</span>
+    <span style="flex: 1 1 auto"></span>
+
+    <button
+      mat-icon-button
+      aria-labelledby="Settings button"
+      aria-label="Settings button"
+      [matTooltip]="'App Settings'"
+      [matMenuTriggerFor]="settingsMenu"
+    >
+      <fa-icon [icon]="settingsIcon"></fa-icon>
+    </button>
+    <mat-menu #settingsMenu="matMenu">
+      <lib-settings-widget [storageName]="storageName" (onSave)="save($event)"></lib-settings-widget>
+    </mat-menu>
+  </mat-toolbar>
+</div>
+
+<router-outlet></router-outlet>

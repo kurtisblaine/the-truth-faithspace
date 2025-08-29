@@ -26,8 +26,8 @@ import { SettingsWidgetComponent, ThemeSettings } from "shared";
   styleUrl: "./app.component.scss",
 })
 export class AppComponent {
-  public title = "App";
-  public storageName = "TODO App";
+  public title = "Flares of Glory";
+  public storageName = "flaresOfGloryAppSettings";
 
   public menuIcon = faBars;
   public settingsIcon = faGears;

@@ -1,25 +1,29 @@
 {
-  "name": "app",
+  "name": "flaresofglory",
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
   "projectType": "application",
   "prefix": "app",
-  "sourceRoot": "apps/app/src",
+  "sourceRoot": "apps/flaresofglory/src",
   "tags": [],
   "targets": {
     "build": {
       "executor": "@angular-devkit/build-angular:application",
       "outputs": ["{options.outputPath}"],
       "options": {
-        "outputPath": "apps/app/public",
-        "index": "apps/app/src/index.html",
-        "browser": "apps/app/src/main.ts",
-        "tsConfig": "apps/app/tsconfig.app.json",
+        "outputPath": "apps/flaresofglory/public",
+        "index": "apps/flaresofglory/src/index.html",
+        "browser": "apps/flaresofglory/src/main.ts",
+        "tsConfig": "apps/flaresofglory/tsconfig.app.json",
         "inlineStyleLanguage": "scss",
         "namedChunks": true,
-        "assets": ["apps/app/src/favicon.ico", "apps/app/src/assets", "apps/app/src/robots.txt"],
-        "styles": ["apps/app/src/styles.scss"],
+        "assets": [
+          "apps/flaresofglory/src/favicon.ico",
+          "apps/flaresofglory/src/assets",
+          "apps/flaresofglory/src/robots.txt"
+        ],
+        "styles": ["apps/flaresofglory/src/styles.scss"],
         "scripts": [],
-        "server": "apps/app/src/main.server.ts",
+        "server": "apps/flaresofglory/src/main.server.ts",
         "outputMode": "static"
       },
       "configurations": {
@@ -50,10 +54,10 @@
       "executor": "@angular-devkit/build-angular:dev-server",
       "configurations": {
         "production": {
-          "buildTarget": "app:build:production"
+          "buildTarget": "flaresofglory:build:production"
         },
         "development": {
-          "buildTarget": "app:build:development"
+          "buildTarget": "flaresofglory:build:development"
         }
       },
       "defaultConfiguration": "development",
@@ -62,7 +66,7 @@
     "extract-i18n": {
       "executor": "@angular-devkit/build-angular:extract-i18n",
       "options": {
-        "buildTarget": "app:build"
+        "buildTarget": "flaresofglory:build"
       }
     },
     "lint": {
@@ -71,8 +75,8 @@
     "serve-static": {
       "executor": "@nx/web:file-server",
       "options": {
-        "buildTarget": "app:build",
-        "staticFilePath": "dist/apps/app/browser",
+        "buildTarget": "flaresofglory:build",
+        "staticFilePath": "dist/apps/flaresofglory/browser",
         "spa": true
       }
     }

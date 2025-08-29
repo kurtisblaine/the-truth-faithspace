@@ -1,0 +1,37 @@
+@use "@angular/material" as mat;
+@use "sass:map";
+
+@include mat.core();
+
+html {
+  color-scheme: light dark;
+  @include mat.theme(
+    (
+      color: mat.$azure-palette,
+      typography: (
+        plain-family: sans-serif,
+        brand-family: sans-serif,
+      ),
+    )
+  );
+}
+
+html {
+  height: 100vh;
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+  overflow-x: hidden !important;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+a {
+  text-decoration: underline;
+  color: var(--mat-sys-primary);
+}
+
+.primary-color {
+  color: var(--mat-sys-primary);
+}
