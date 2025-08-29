@@ -1,15 +1,11 @@
 import { CommonModule } from "@angular/common";
 import { NgModule } from "@angular/core";
-import { FormsModule, ReactiveFormsModule } from "@angular/forms";
 import { MatButtonModule } from "@angular/material/button";
 import { MatCardModule } from "@angular/material/card";
 import { MatDividerModule } from "@angular/material/divider";
 import { MatProgressSpinnerModule } from "@angular/material/progress-spinner";
-import { MatTooltipModule } from "@angular/material/tooltip";
 import { RouterModule, Routes } from "@angular/router";
-import { FontAwesomeModule } from "@fortawesome/angular-fontawesome";
-import { ReadonlyTextEditorComponent, TextEditorComponent } from "../../../../../libs/src";
-import { LinkComponent } from "../shared/link.component";
+import { ReadonlyTextEditorComponent } from "../../../../../libs/src";
 import { ItemDetailComponent } from "./item-detail/item-detail.component";
 import { ItemListComponent } from "./item-list/item-list.component";
 import { ItemsComponent } from "./items.component";
@@ -23,22 +19,16 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  declarations: [ItemListComponent, ItemDetailComponent, ItemsComponent],
+  declarations: [ItemDetailComponent, ItemsComponent],
   imports: [
     CommonModule,
-    MatButtonModule,
-    MatDividerModule,
-    FormsModule,
-    FontAwesomeModule,
-    ReactiveFormsModule,
-    MatTooltipModule,
-    MatProgressSpinnerModule,
-    TextEditorComponent,
-    ReadonlyTextEditorComponent,
-    MatCardModule,
-    LinkComponent,
+    ItemListComponent,
     RouterModule.forChild(routes),
+    MatDividerModule,
+    MatButtonModule,
+    MatProgressSpinnerModule,
+    MatCardModule,
+    ReadonlyTextEditorComponent,
   ],
-  exports: [ItemListComponent],
 })
 export class ItemsModule {}

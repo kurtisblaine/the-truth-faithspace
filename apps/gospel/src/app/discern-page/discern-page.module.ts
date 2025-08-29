@@ -28,6 +28,5 @@ const routes: Routes = [
     MatCardModule,
     ReadonlyTextEditorComponent,
   ],
-  exports: [DiscernListComponent],
 })
 export class DiscernPageModule {}

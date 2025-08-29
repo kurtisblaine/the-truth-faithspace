@@ -1,10 +1,11 @@
 import { ChangeDetectionStrategy, Component } from "@angular/core";
 import { ActivatedRoute } from "@angular/router";
 import { Store } from "@ngrx/store";
-import { Observable } from "rxjs";
+import { Observable, tap } from "rxjs";
 import { ItemsActions } from "../../+state/items/items.actions";
 import { ItemEntity } from "../../+state/items/items.reducer";
 import { getById } from "../../+state/items/items.selectors";
+import { SeoBaseComponent } from "../../shared/seo-base/seo-base.component";
 
 @Component({
   selector: "app-item-detail",
@@ -13,15 +14,20 @@ import { getById } from "../../+state/items/items.selectors";
   changeDetection: ChangeDetectionStrategy.OnPush,
   standalone: false,
 })
-export class ItemDetailComponent {
+export class ItemDetailComponent extends SeoBaseComponent {
   public item$!: Observable<ItemEntity | undefined>;
 
-  constructor(private store: Store, private route: ActivatedRoute) {}
+  protected override keywords: string =
+    "blog, technology, tech, ai, truth, falsehood, dark web, truth, revealed, uncovered, web, internet";
+
+  constructor(private store: Store, private route: ActivatedRoute) {
+    super();
+  }
 
   ngOnInit(): void {
     this.store.dispatch(ItemsActions.loadItems());
 
     const id = this.route.snapshot.paramMap.get("id");
-    if (id) this.item$ = this.store.select(getById(id));
+    if (id) this.item$ = this.store.select(getById(id)).pipe(tap(() => this.init()));
   }
 }

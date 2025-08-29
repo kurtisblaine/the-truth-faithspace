@@ -27,7 +27,7 @@ import { SettingsWidgetComponent, VoiceSettingsComponent } from "../../../../lib
   ],
 
   template: `
-    <mat-drawer-container style="width: 100%; height: 100%" [hasBackdrop]="false">
+    <mat-drawer-container style="width: 100%;" [hasBackdrop]="false">
       <mat-drawer style="width: 280px; position: fixed" #drawer [mode]="'side'" [autoFocus]="true">
         <mat-list>
           <mat-list-item lines="1" (click)="goHome(); drawer.close()">

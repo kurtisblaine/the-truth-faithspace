@@ -29,6 +29,5 @@ const routes: Routes = [
     MatCardModule,
     ReadonlyTextEditorComponent,
   ],
-  exports: [StudyListComponent],
 })
 export class StudyPageModule {}

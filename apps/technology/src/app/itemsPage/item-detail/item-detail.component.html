@@ -2,12 +2,12 @@
   <mat-card-header>
     <mat-card-title-group>
       <mat-card-title>
-        <h3 class="item-title primary-color">
+        <h3 class="item-title primary-color" #seoTitle>
           {{ item?.title }}
         </h3>
       </mat-card-title>
       <mat-card-subtitle>
-        <div>{{ item?.date | date: "short" }}</div>
+        <div #seoCaption>{{ item?.date | date: "short" }}</div>
       </mat-card-subtitle>
     </mat-card-title-group>
   </mat-card-header>
