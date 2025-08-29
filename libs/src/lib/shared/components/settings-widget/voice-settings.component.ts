@@ -91,17 +91,22 @@ export class VoiceSettingsComponent implements OnInit, OnDestroy {
     voice: { name: "Loading...", default: true, lang: "", voiceURI: "", localService: false },
     rate: 1.0,
   });
+  private _settings!: VoiceAppSettings;
 
   public storageName = input<string>("appSettings");
 
   constructor(@Inject(PLATFORM_ID) private platformId: object) {
     effect(() => {
+      this._settings = this.settings();
+    });
+
+    effect(() => {
       if (!this.speechService.voices().length || !isPlatformBrowser(this.platformId)) return;
 
       const storedSettings = localStorage.getItem(this.storageName());
       if (storedSettings) {
-        this.settings.set({ ...this.settings(), ...(JSON.parse(storedSettings) as VoiceAppSettings) });
-        this.speechService.set(this.settings().voice.name, this.settings().rate);
+        this.settings.set({ ...this._settings, ...(JSON.parse(storedSettings) as VoiceAppSettings) });
+        this.speechService.set(this._settings.voice.name, this._settings.rate);
       } else {
         const defaultEnglishVoice =
           this.speechService.voices().find((voice) => voice.name === "Alex" || voice.lang === "en-US") ??
@@ -110,8 +115,8 @@ export class VoiceSettingsComponent implements OnInit, OnDestroy {
 
         this.speechService.set(defaultEnglishVoice.name, defaultRate);
 
-        this.settings().voice = this._convert(defaultEnglishVoice);
-        this.settings().rate = defaultRate;
+        this._settings.voice = this._convert(defaultEnglishVoice);
+        this._settings.rate = defaultRate;
       }
     });
   }
