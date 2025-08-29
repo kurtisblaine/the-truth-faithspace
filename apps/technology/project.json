@@ -44,14 +44,7 @@
         "browser": "apps/technology/src/main.ts",
         "tsConfig": "apps/technology/tsconfig.app.json",
         "inlineStyleLanguage": "scss",
-        "assets": [
-          {
-            "glob": "**/*",
-            "input": "apps/technology/public"
-          },
-          "apps/technology/src/favicon.ico",
-          "apps/technology/src/assets"
-        ],
+        "assets": ["apps/technology/src/favicon.ico", "apps/technology/src/assets", "apps/technology/src/robots.txt"],
         "styles": ["apps/technology/src/styles.scss"],
         "scripts": [],
         "server": "apps/technology/src/main.server.ts",

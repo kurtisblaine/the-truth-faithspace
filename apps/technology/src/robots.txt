@@ -1,0 +1,3 @@
+User-agent: *
+Disallow:
+Sitemap: https://shining-light-on-the-dark-web.firebaseapp.com/assets/sitemaps/items.xml
