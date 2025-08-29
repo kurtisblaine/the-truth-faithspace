@@ -82,7 +82,7 @@ type VoiceAppSettings = {
     color: var(--mat-sys-error);
   }
   `,
-  changeDetection: ChangeDetectionStrategy.Default,
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class VoiceSettingsComponent implements OnInit, OnDestroy {
   public speechService = inject(SpeechService);
@@ -96,9 +96,9 @@ export class VoiceSettingsComponent implements OnInit, OnDestroy {
 
   constructor(@Inject(PLATFORM_ID) private platformId: object) {
     effect(() => {
-      if (!this.speechService.voices().length) return;
+      if (!this.speechService.voices().length || !isPlatformBrowser(this.platformId)) return;
 
-      const storedSettings = window.localStorage?.getItem(this.storageName());
+      const storedSettings = localStorage.getItem(this.storageName());
       if (storedSettings) {
         this.settings.set({ ...this.settings(), ...(JSON.parse(storedSettings) as VoiceAppSettings) });
         this.speechService.set(this.settings().voice.name, this.settings().rate);
@@ -121,7 +121,7 @@ export class VoiceSettingsComponent implements OnInit, OnDestroy {
   ngOnDestroy(): void {
     if (!isPlatformBrowser(this.platformId)) return;
 
-    window.localStorage?.clear();
+    localStorage.clear();
   }
 
   save(appSettings: ThemeSettings) {
@@ -132,7 +132,8 @@ export class VoiceSettingsComponent implements OnInit, OnDestroy {
       voice: this.settings().voice,
       rate: this.settings().rate,
     });
-    window.localStorage?.setItem(this.storageName(), jsonSettings);
+
+    localStorage.setItem(this.storageName(), jsonSettings);
   }
 
   _convert = (voice: SpeechSynthesisVoice) => ({

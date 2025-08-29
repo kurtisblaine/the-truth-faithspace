@@ -55,7 +55,7 @@ export type ThemeSettings = {
     z-index: -777;
   }
   `,
-  changeDetection: ChangeDetectionStrategy.Default,
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class SettingsWidgetComponent implements OnInit, OnDestroy {
   public themeService = inject(ThemeService);
