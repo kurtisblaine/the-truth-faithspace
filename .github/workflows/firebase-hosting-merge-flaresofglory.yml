@@ -20,4 +20,4 @@ jobs:
           firebaseServiceAccount: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_FLARESOFGLORY }}
           channelId: live
           projectId: flaresofglory
-          entryPoint: ./apps/bible
+          entryPoint: ./apps/flaresofglory
