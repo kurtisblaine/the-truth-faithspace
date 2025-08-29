@@ -122,7 +122,9 @@
           <lib-fa-icon [icon]="settingsIcon"></lib-fa-icon>
         </button>
         <mat-menu #settingsMenu="matMenu">
-          <gospel-settings-widget></gospel-settings-widget>
+          <lib-settings-widget storageName="gospelAppSettings" (onSave)="voiceSettings.save($event)">
+            <lib-voice-settings storageName="gospelAppSettings" #voiceSettings></lib-voice-settings>
+          </lib-settings-widget>
         </mat-menu>
       </mat-toolbar>
     </div>

@@ -1,5 +1,16 @@
-import { CommonModule } from "@angular/common";
-import { ChangeDetectionStrategy, Component, effect, inject, input, OnDestroy, OnInit, signal } from "@angular/core";
+import { CommonModule, isPlatformBrowser } from "@angular/common";
+import {
+  ChangeDetectionStrategy,
+  Component,
+  effect,
+  Inject,
+  inject,
+  input,
+  OnDestroy,
+  OnInit,
+  PLATFORM_ID,
+  signal,
+} from "@angular/core";
 import { FormsModule, ReactiveFormsModule } from "@angular/forms";
 import { MatButtonModule } from "@angular/material/button";
 import { MatButtonToggleModule } from "@angular/material/button-toggle";
@@ -83,14 +94,14 @@ export class VoiceSettingsComponent implements OnInit, OnDestroy {
 
   public storageName = input<string>("appSettings");
 
-  constructor() {
+  constructor(@Inject(PLATFORM_ID) private platformId: object) {
     effect(() => {
       if (!this.speechService.voices().length) return;
 
       const storedSettings = window.localStorage?.getItem(this.storageName());
       if (storedSettings) {
-        this.settings.set(JSON.parse(storedSettings) as VoiceAppSettings);
-        this.speechService.set(this.settings().voice.name, this.settings().rate ?? 1.0);
+        this.settings.set({ ...this.settings(), ...(JSON.parse(storedSettings) as VoiceAppSettings) });
+        this.speechService.set(this.settings().voice.name, this.settings().rate);
       } else {
         const defaultEnglishVoice =
           this.speechService.voices().find((voice) => voice.name === "Alex" || voice.lang === "en-US") ??
@@ -108,6 +119,8 @@ export class VoiceSettingsComponent implements OnInit, OnDestroy {
   ngOnInit(): void {}
 
   ngOnDestroy(): void {
+    if (!isPlatformBrowser(this.platformId)) return;
+
     window.localStorage?.clear();
   }
 

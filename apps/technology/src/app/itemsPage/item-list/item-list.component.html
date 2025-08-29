@@ -1,5 +1,8 @@
 <div class="item-item" *ngFor="let item of items$ | async">
-  <app-link class="item-title primary-color" [link]="'/items/item-detail/' + item.id">
+  <app-link
+    class="item-title primary-color"
+    [link]="'https://shining-light-on-the-dark-web.firebaseapp.com/items/item-detail/' + item.id"
+  >
     {{ item.title }}
     <fa-icon [icon]="faLink" style="padding-left: 2px"></fa-icon>
   </app-link>

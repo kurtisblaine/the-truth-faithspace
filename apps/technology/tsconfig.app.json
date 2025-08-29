@@ -6,7 +6,8 @@
     "outDir": "../../dist/out-tsc",
     "target": "es2022",
     "types": [],
-    "allowSyntheticDefaultImports": true
+    "allowSyntheticDefaultImports": true,
+    "useDefineForClassFields": false
   },
   "files": ["src/main.ts", "src/main.server.ts"],
   "include": ["src/**/*.d.ts"]

@@ -35,13 +35,13 @@
   },
   "targets": {
     "build": {
-      "executor": "@angular-devkit/build-angular:browser",
+      "executor": "@angular-devkit/build-angular:application",
       "outputs": ["{options.outputPath}"],
       "commonChunk": false,
       "options": {
-        "outputPath": "dist/apps/technology",
+        "outputPath": "apps/technology/public",
         "index": "apps/technology/src/index.html",
-        "main": "apps/technology/src/main.ts",
+        "browser": "apps/technology/src/main.ts",
         "tsConfig": "apps/technology/tsconfig.app.json",
         "inlineStyleLanguage": "scss",
         "assets": [
@@ -53,7 +53,9 @@
           "apps/technology/src/assets"
         ],
         "styles": ["apps/technology/src/styles.scss"],
-        "scripts": []
+        "scripts": [],
+        "server": "apps/technology/src/main.server.ts",
+        "outputMode": "static"
       },
       "configurations": {
         "production": {

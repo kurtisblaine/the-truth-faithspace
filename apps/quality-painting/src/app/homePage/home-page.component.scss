@@ -2,7 +2,7 @@
   background-color: var(--mat-sys-primary);
   display: flex;
   justify-content: space-evenly;
-  min-height: 25px;
+  min-height: 50vh;
 }
 
 .custom-card {
@@ -22,7 +22,11 @@
   align-items: center;
   text-align: center;
   color: #fff;
-  height: 80vh;
+}
+
+.header-pane,
+.home-image {
+  height: 85vh;
 }
 
 .header-caption {
@@ -44,7 +48,6 @@
   background-repeat: no-repeat;
   background-attachment: fixed;
 
-  height: 75vh;
   align-content: end;
 
   box-shadow: inset 0 0 0 100vmax rgba(0, 0, 0, 0.1);

@@ -20,4 +20,8 @@ export const serverRoutes: ServerRoute[] = [
       return await firstValueFrom(collectionData$);
     },
   },
+  {
+    path: "server/**",
+    renderMode: RenderMode.Client,
+  },
 ];
