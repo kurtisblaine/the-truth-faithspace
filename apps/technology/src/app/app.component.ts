@@ -72,8 +72,9 @@ import { SettingsWidgetComponent, VoiceSettingsComponent } from "../../../../lib
             </button>
 
             <mat-menu #settingsMenu="matMenu">
-              <lib-settings-widget storageName="technologyAppSettings" (onSave)="voiceSettings.save($event)">
-                <lib-voice-settings storageName="technologyAppSettings" #voiceSettings></lib-voice-settings>
+              <!-- (onSave)="voiceSettings.save($event)" -->
+              <lib-settings-widget storageName="technologyAppSettings">
+                <!-- <lib-voice-settings storageName="technologyAppSettings" #voiceSettings></lib-voice-settings> -->
               </lib-settings-widget>
             </mat-menu>
           </mat-toolbar>
