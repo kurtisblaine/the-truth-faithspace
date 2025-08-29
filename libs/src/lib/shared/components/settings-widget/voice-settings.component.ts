@@ -87,36 +87,33 @@ type VoiceAppSettings = {
 export class VoiceSettingsComponent implements OnInit, OnDestroy {
   public speechService = inject(SpeechService);
 
-  public settings = signal<VoiceAppSettings>({
+  private _defaultSettings: VoiceAppSettings = {
     voice: { name: "Loading...", default: true, lang: "", voiceURI: "", localService: false },
-    rate: 1.0,
-  });
+    rate: 1,
+  };
+  public settings = signal<VoiceAppSettings>(this._defaultSettings);
   private _settings!: VoiceAppSettings;
 
   public storageName = input<string>("appSettings");
 
   constructor(@Inject(PLATFORM_ID) private platformId: object) {
     effect(() => {
-      this._settings = this.settings();
-    });
-
-    effect(() => {
       if (!this.speechService.voices().length || !isPlatformBrowser(this.platformId)) return;
 
       const storedSettings = localStorage.getItem(this.storageName());
       if (storedSettings) {
-        this.settings.set({ ...this._settings, ...(JSON.parse(storedSettings) as VoiceAppSettings) });
+        this._settings = { ...this._defaultSettings, ...(JSON.parse(storedSettings) as VoiceAppSettings) };
+        this.settings.set(this._settings);
         this.speechService.set(this._settings.voice.name, this._settings.rate);
       } else {
         const defaultEnglishVoice =
           this.speechService.voices().find((voice) => voice.name === "Alex" || voice.lang === "en-US") ??
           this.speechService.voices()[0];
-        const defaultRate = 1;
 
-        this.speechService.set(defaultEnglishVoice.name, defaultRate);
+        this.speechService.set(defaultEnglishVoice.name, this._defaultSettings.rate);
 
         this._settings.voice = this._convert(defaultEnglishVoice);
-        this._settings.rate = defaultRate;
+        this._settings.rate = this._defaultSettings.rate;
       }
     });
   }

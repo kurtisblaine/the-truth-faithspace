@@ -6,7 +6,7 @@ on:
   push:
     branches:
       - master
-      paths:
+    paths:
       - "apps/flaresofglory/**"
 jobs:
   build_and_deploy:
