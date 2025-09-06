@@ -185,6 +185,9 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
       of your transgressions that He bore, but He even intercedes on your behalf before the Father. So prove yourself
       innocent in the matter by fleeing to Christ for refuge in the heavenly places where He is now seated, setting your
       mind on the things above, not on the things below.
+      <blog-link [link]="'https://thelightof.life/edifications/edify-detail/75eaed82-3d6f-4dc0-85aa-b0606a108c63'"
+        >(See more about Joseph)</blog-link
+      >
     </ng-template>`,
   styles: ``,
   changeDetection: ChangeDetectionStrategy.OnPush,

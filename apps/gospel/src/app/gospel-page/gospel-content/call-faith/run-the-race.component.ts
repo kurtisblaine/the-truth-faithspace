@@ -67,7 +67,7 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
       </blog-reference-tooltip>
       As it says, "fixing our eyes on Jesus", but Jesus is unseen, so it is, we fix our eyes on Jesus by faith; and this
       is the race we run: the race of faith. Just as it says about Moses, “He endured, as seeing Him who is unseen.”
-      (Hebrews 11:27) For it is by faith that he seen Him who is unseen. ><br /><br />
+      (Hebrews 11:27) For it is by faith that he seen Him who is unseen. <br /><br />
 
       Disciple means "disciplined one", and we are called disciples of Christ; self-discipline is a fruit of the Holy
       Spirit, and discipline is needed for running the race. Any discipline that does not come from the Holy Spirit is

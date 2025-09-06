@@ -92,7 +92,7 @@ export class VoiceSettingsComponent implements OnInit, OnDestroy {
     rate: 1,
   };
   public settings = signal<VoiceAppSettings>(this._defaultSettings);
-  private _settings!: VoiceAppSettings;
+  private _settings: VoiceAppSettings = this._defaultSettings;
 
   public storageName = input<string>("appSettings");
 
