@@ -39,7 +39,7 @@ const routes: Routes = [
   },
   {
     path: "truth",
-    title: "The Good News of the Kingdom of God",
+    title: "The Good News of the Kingdom | The Gospel of Grace and Truth",
     loadChildren: () => import("./gospel-page/gospel-page.module").then((m) => m.GospelPageModule),
   },
   {

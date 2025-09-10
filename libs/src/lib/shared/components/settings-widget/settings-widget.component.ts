@@ -1,4 +1,4 @@
-import { CommonModule, isPlatformBrowser } from "@angular/common";
+import { CommonModule } from "@angular/common";
 import {
   afterNextRender,
   ChangeDetectionStrategy,
@@ -6,7 +6,6 @@ import {
   Inject,
   inject,
   input,
-  OnDestroy,
   OnInit,
   output,
   PLATFORM_ID,
@@ -57,7 +56,7 @@ export type ThemeSettings = {
   `,
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class SettingsWidgetComponent implements OnInit, OnDestroy {
+export class SettingsWidgetComponent implements OnInit {
   public themeService = inject(ThemeService);
 
   public storageName = input<string>("appSettings");
@@ -78,12 +77,6 @@ export class SettingsWidgetComponent implements OnInit, OnDestroy {
   }
 
   ngOnInit(): void {}
-
-  ngOnDestroy(): void {
-    if (!isPlatformBrowser(this.platformId)) return;
-
-    localStorage.clear();
-  }
 
   save() {
     this.themeService.setTheme(this.settings().theme);

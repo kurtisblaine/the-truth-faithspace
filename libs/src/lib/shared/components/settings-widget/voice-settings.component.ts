@@ -6,7 +6,6 @@ import {
   Inject,
   inject,
   input,
-  OnDestroy,
   OnInit,
   PLATFORM_ID,
   signal,
@@ -84,7 +83,7 @@ type VoiceAppSettings = {
   `,
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class VoiceSettingsComponent implements OnInit, OnDestroy {
+export class VoiceSettingsComponent implements OnInit {
   public speechService = inject(SpeechService);
 
   private _defaultSettings: VoiceAppSettings = {
@@ -119,12 +118,6 @@ export class VoiceSettingsComponent implements OnInit, OnDestroy {
   }
 
   ngOnInit(): void {}
-
-  ngOnDestroy(): void {
-    if (!isPlatformBrowser(this.platformId)) return;
-
-    localStorage.clear();
-  }
 
   save(appSettings: ThemeSettings) {
     this.speechService.set(this.settings().voice.name, this.settings().rate);
