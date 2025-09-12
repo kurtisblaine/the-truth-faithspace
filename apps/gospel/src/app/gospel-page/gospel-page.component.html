@@ -26,7 +26,7 @@
     </blog-reference-tooltip>
 
     <mat-accordion class="menu" style="text-transform: unset">
-      <mat-expansion-panel class="custom-panel" hideToggle>
+      <mat-expansion-panel class="custom-panel error" hideToggle>
         <mat-expansion-panel-header>
           <mat-panel-title>
             <button mat-button>THE DANGER - SIN</button>
@@ -43,10 +43,10 @@
       <mat-expansion-panel class="custom-panel" hideToggle>
         <mat-expansion-panel-header>
           <mat-panel-title>
-            <button mat-button>THE DANGER - DEATH</button>
+            <button mat-button class="error">THE DANGER - DEATH</button>
           </mat-panel-title>
         </mat-expansion-panel-header>
-        <ng-template matExpansionPanelContent>
+        <ng-template matExpansionPanelContent class="error">
           <button mat-button (click)="toAnchor('theDangerDeath', 'theLoveOfPleasure')">The Love Of Pleasure</button>
           <button mat-button (click)="toAnchor('theDangerDeath', 'workAndToil')">Work And Toil</button>
           <button mat-button (click)="toAnchor('theDangerDeath', 'theLoveOfWealth')">The Love Of Wealth</button>
@@ -54,7 +54,7 @@
         </ng-template>
       </mat-expansion-panel>
 
-      <mat-expansion-panel class="custom-panel" hideToggle>
+      <mat-expansion-panel class="custom-panel primary" hideToggle>
         <mat-expansion-panel-header>
           <mat-panel-title>
             <button mat-button>THE CALL - GRACE</button>
@@ -80,7 +80,7 @@
         </ng-template>
       </mat-expansion-panel>
 
-      <mat-expansion-panel class="custom-panel" hideToggle>
+      <mat-expansion-panel class="custom-panel primary" hideToggle>
         <mat-expansion-panel-header>
           <mat-panel-title>
             <button mat-button>THE CALL - FAITH</button>

@@ -1,15 +1,24 @@
 <div class="header">
   <mat-toolbar>
+    @if(isMobile()) {
     <button mat-icon-button aria-labelledby="Menu button" aria-label="Menu button" [matMenuTriggerFor]="navigationMenu">
       <fa-icon [icon]="menuIcon"></fa-icon>
     </button>
 
     <mat-menu #navigationMenu="matMenu">
       <button mat-menu-item (click)="goHome()">Home</button>
+      <button mat-menu-item (click)="goStore()">Store</button>
+      <button mat-menu-item (click)="goCart()">Cart</button>
     </mat-menu>
+    } @else {
+    <button matButton (click)="goHome()"><h1>Flares of Glory</h1></button>
+    <button matButton (click)="goStore()">Store</button>
 
-    <span>Flares of Glory</span>
     <span style="flex: 1 1 auto"></span>
+    <button mat-icon-button (click)="goCart()" [matBadge]="cartItemTotal()">
+      <fa-icon [icon]="cartIcon"></fa-icon>
+    </button>
+    }
 
     <button
       mat-icon-button
