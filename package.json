@@ -25,6 +25,7 @@
     "firebase:deploy": "firebase deploy",
     "example:config:peer": "npm config set legacy-peer-deps true",
     "example:install:optional": "npm install --include=optional",
+    "example:store": "npx nx generate @nx/angular:ngrx-feature-store --name=products/products --parent=./apps/flaresofglory/src/app/app.config.ts --no-interactive",
     "analyze:gospel": "nx build gospel --stats-json --named-chunks && npx -y @angular-experts/hawkeye ./apps/gospel/public/stats.json"
   },
   "dependencies": {
@@ -40,7 +41,7 @@
     "@angular/platform-browser-dynamic": "20.0.0",
     "@angular/platform-server": "20.0.0",
     "@angular/router": "20.0.0",
-    "@fortawesome/angular-fontawesome": "^7.0.0",
+    "@fortawesome/angular-fontawesome": "^3.0.0",
     "@fortawesome/fontawesome-svg-core": "^7.0.0",
     "@fortawesome/free-brands-svg-icons": "^7.0.0",
     "@fortawesome/free-solid-svg-icons": "^7.0.0",
@@ -73,7 +74,7 @@
     "@angular/ssr": "20.0.0",
     "@ngrx/schematics": "20.0.0",
     "@ngrx/store-devtools": "20.0.0",
-    "@nx/angular": "21.3.11",
+    "@nx/angular": "^21.5.2",
     "@nx/workspace": "21.3.11",
     "@schematics/angular": "19.0.7",
     "@types/fullpage.js": "^2.9.6",

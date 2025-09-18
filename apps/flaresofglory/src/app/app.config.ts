@@ -1,5 +1,5 @@
 import { provideHttpClient } from "@angular/common/http";
-import { ApplicationConfig, provideZonelessChangeDetection, isDevMode } from "@angular/core";
+import { ApplicationConfig, isDevMode, provideZonelessChangeDetection } from "@angular/core";
 import { initializeApp, provideFirebaseApp } from "@angular/fire/app";
 import { provideClientHydration, withEventReplay, withIncrementalHydration } from "@angular/platform-browser";
 import { provideAnimations } from "@angular/platform-browser/animations";
@@ -11,10 +11,12 @@ import {
   withPreloading,
   withRouterConfig,
 } from "@angular/router";
-import { appRoutes } from "./app.routes";
-import { provideStore } from "@ngrx/store";
 import { provideEffects } from "@ngrx/effects";
+import { provideState, provideStore } from "@ngrx/store";
 import { provideStoreDevtools } from "@ngrx/store-devtools";
+import { ProductsEffects } from "./+state/products/products.effects";
+import * as fromProducts from "./+state/products/products.reducer";
+import { appRoutes } from "./app.routes";
 
 const firebaseConfig = {
   apiKey: "",
@@ -29,11 +31,11 @@ const firebaseConfig = {
 
 export const appConfig: ApplicationConfig = {
   providers: [
+    provideEffects(ProductsEffects),
+    provideState(fromProducts.PRODUCTS_FEATURE_KEY, fromProducts.productsReducer),
     provideStore(),
     provideStoreDevtools({ logOnly: !isDevMode() }),
-    provideEffects(),
     provideFirebaseApp(() => initializeApp(firebaseConfig)),
-    // provideAuth(),
     provideRouter(
       appRoutes,
       withRouterConfig({

@@ -12,11 +12,17 @@ export const appRoutes: Route[] = [
   {
     path: "store",
     loadComponent: () => StorePageComponent,
-    children: [{ path: "product-detail/:id", loadComponent: () => ProductDetailPageComponent }],
+    title: "Store | Flares of Glory",
+  },
+  {
+    path: "store/product/:id",
+    loadComponent: () => ProductDetailPageComponent,
+    title: "Product | Flares of Glory",
   },
   {
     path: "cart",
     loadComponent: () => CartPageComponent,
+    title: "Cart | Flares of Glory",
   },
 
   { path: "**", redirectTo: "", pathMatch: "full" },

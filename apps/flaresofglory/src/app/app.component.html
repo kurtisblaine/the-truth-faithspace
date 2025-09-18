@@ -15,7 +15,7 @@
     <button matButton (click)="goStore()">Store</button>
 
     <span style="flex: 1 1 auto"></span>
-    <button mat-icon-button (click)="goCart()" [matBadge]="cartItemTotal()">
+    <button mat-icon-button (click)="goCart()" [matBadge]="cartItemTotal$ | async">
       <fa-icon [icon]="cartIcon"></fa-icon>
     </button>
     }

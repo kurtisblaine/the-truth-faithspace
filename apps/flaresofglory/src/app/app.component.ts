@@ -1,3 +1,4 @@
+import { CommonModule } from "@angular/common";
 import { afterNextRender, Component, signal } from "@angular/core";
 import { MatBadgeModule } from "@angular/material/badge";
 import { MatButtonModule } from "@angular/material/button";
@@ -8,8 +9,12 @@ import { MatTooltipModule } from "@angular/material/tooltip";
 import { Router, RouterModule, RouterOutlet } from "@angular/router";
 import { FontAwesomeModule } from "@fortawesome/angular-fontawesome";
 import { faBars, faGears, faShoppingCart } from "@fortawesome/free-solid-svg-icons";
+import { Store } from "@ngrx/store";
 import { DeviceDetectorService } from "ngx-device-detector";
+import { Observable } from "rxjs";
 import { SettingsWidgetComponent, ThemeSettings } from "shared";
+import { initProducts } from "./+state/products/products.actions";
+import { selectCartCount } from "./+state/products/products.selectors";
 
 @Component({
   imports: [
@@ -23,6 +28,7 @@ import { SettingsWidgetComponent, ThemeSettings } from "shared";
     SettingsWidgetComponent,
     MatMenuModule,
     MatBadgeModule,
+    CommonModule,
   ],
   selector: "app-root",
   templateUrl: "./app.component.html",
@@ -31,16 +37,19 @@ import { SettingsWidgetComponent, ThemeSettings } from "shared";
 export class AppComponent {
   public title = "Flares of Glory";
   public storageName = "flaresOfGloryAppSettings";
-  public isMobile = signal(true);
-  public cartItemTotal = signal(0);
+  public isMobile = signal(false);
+  public cartItemTotal$: Observable<number>;
 
   public menuIcon = faBars;
   public cartIcon = faShoppingCart;
   public settingsIcon = faGears;
 
-  constructor(private router: Router, private deviceDetector: DeviceDetectorService) {
+  constructor(private router: Router, private deviceDetector: DeviceDetectorService, private store: Store) {
+    this.store.dispatch(initProducts());
+
     afterNextRender(() => {
       this.isMobile.set(this.deviceDetector.isMobile());
+      this.cartItemTotal$ = this.store.select(selectCartCount);
     });
   }
 

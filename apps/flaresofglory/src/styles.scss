@@ -16,6 +16,15 @@ html {
   );
 }
 
+:root {
+  @include mat.badge-overrides(
+    (
+      background-color: blue,
+      disabled-state-background-color: red,
+    )
+  );
+}
+
 html {
   height: 100vh;
 }

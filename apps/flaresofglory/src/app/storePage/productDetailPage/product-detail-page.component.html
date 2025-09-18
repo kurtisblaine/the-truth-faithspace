@@ -1,1 +1,37 @@
-<p>product-detail-page works!</p>
+<div *ngIf="selectedProduct$ | async as product">
+  <div>
+    <img
+      mat-card-image
+      [ngSrc]="product.image"
+      [alt]="product.name"
+      fill
+      priority
+      style="object-fit: contain; background-size: cover"
+    />
+  </div>
+
+  <mat-button-toggle-group name="size" aria-label="Size" [(ngModel)]="product.size">
+    <mat-button-toggle value="small">S</mat-button-toggle>
+    <mat-button-toggle value="medium">M</mat-button-toggle>
+    <mat-button-toggle value="large">L</mat-button-toggle>
+    <mat-button-toggle value="xlarge">XL</mat-button-toggle>
+  </mat-button-toggle-group>
+
+  <mat-form-field appearance="outline" subscriptSizing="dynamic">
+    <mat-label>Quantity</mat-label>
+    <input
+      matInput
+      aria-label="Quantity Input"
+      aria-labelledby="Quantity Input"
+      type="number"
+      step="1"
+      min="1"
+      [(ngModel)]="product.count"
+      (click)="$event.stopPropagation()"
+    />
+  </mat-form-field>
+
+  <button matButton="filled" [disabled]="!product.count || !product.size" (click)="addToCart(product)">
+    Add to Cart
+  </button>
+</div>

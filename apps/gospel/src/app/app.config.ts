@@ -39,7 +39,7 @@ const routes: Routes = [
   },
   {
     path: "truth",
-    title: "The Good News of the Kingdom | The Gospel of Grace and Truth",
+    title: "The Good News of the Kingdom",
     loadChildren: () => import("./gospel-page/gospel-page.module").then((m) => m.GospelPageModule),
   },
   {
@@ -68,7 +68,7 @@ const routes: Routes = [
   },
   {
     path: "drawings",
-    title: "Drawings",
+    title: "Drawings | The Good News",
     loadChildren: () => import("./draw-page/draw-page.module").then((m) => m.DrawPageModule),
   },
   {
@@ -77,7 +77,7 @@ const routes: Routes = [
   },
   {
     path: "server",
-    title: "Server",
+    title: "Server | The Good News",
     loadChildren: () => import("./server-page/server-page.module").then((m) => m.ServerPageModule),
   },
   { path: "**", redirectTo: "error" },
