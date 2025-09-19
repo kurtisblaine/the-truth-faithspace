@@ -1,8 +1,14 @@
 mat-card {
   height: 100%;
   width: 100%;
+  min-height: 100%;
 }
 
-.select-container {
+.image-container {
+  transform: translateZ(0);
+  overflow: hidden;
+}
+
+.tile {
   cursor: pointer;
 }

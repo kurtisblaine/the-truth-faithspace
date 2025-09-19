@@ -3,10 +3,10 @@
   @for(product of cartProducts$ | async; track product) {
   <mat-list-item>
     <div matListItemIcon matRipple (click)="selectProduct(product.id)" style="cursor: pointer">
-      <img [ngSrc]="product.image" [alt]="product.subtitle" fill style="object-fit: contain; background-size: cover" />
+      <img [ngSrc]="product.image" [alt]="product.name" fill style="object-fit: contain; background-size: cover" />
     </div>
     <span matListItemTitle>{{ product.name }}</span>
-    <mat-card-subtitle matListItemMeta>{{ product.subtitle }}</mat-card-subtitle>
+    <mat-card-subtitle matListItemMeta>{{ product.description }}</mat-card-subtitle>
     <mat-button-toggle-group matListItemMeta name="size" aria-label="Size" [(ngModel)]="product.size">
       <mat-button-toggle value="small">S</mat-button-toggle>
       <mat-button-toggle value="medium">M</mat-button-toggle>

@@ -1,0 +1,16 @@
+.large-image {
+  object-fit: contain;
+  background-size: cover;
+  position: relative !important;
+}
+
+.product-options {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.product-options > * {
+  margin: 15px 20px;
+  height: 50px;
+}
