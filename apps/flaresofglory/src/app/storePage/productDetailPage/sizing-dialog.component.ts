@@ -1,4 +1,5 @@
 import { ChangeDetectionStrategy, Component } from "@angular/core";
+import { MatDialogModule } from "@angular/material/dialog";
 import { MatTableModule } from "@angular/material/table";
 
 type TableData = {
@@ -17,10 +18,10 @@ const TABLE_DATA: TableData[] = [
 
 @Component({
   selector: "app-sizing-dialog",
-  imports: [MatTableModule],
+  imports: [MatTableModule, MatDialogModule],
   template: `
-    <div style="margin: 25px;">
-      <h1>Size Guide</h1>
+    <h1 mat-dialog-title>Size Guide</h1>
+    <mat-dialog-content>
       <table mat-table [dataSource]="dataSource" class="mat-elevation-z8 demo-table">
         <ng-container matColumnDef="name">
           <th mat-header-cell *matHeaderCellDef>Name</th>
@@ -40,7 +41,7 @@ const TABLE_DATA: TableData[] = [
         <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
         <tr mat-row *matRowDef="let row; columns: displayedColumns"></tr>
       </table>
-    </div>
+    </mat-dialog-content>
   `,
   styles: ``,
   changeDetection: ChangeDetectionStrategy.OnPush,

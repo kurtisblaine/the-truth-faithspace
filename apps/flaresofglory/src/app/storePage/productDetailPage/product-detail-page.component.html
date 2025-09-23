@@ -7,14 +7,17 @@
     <h1>{{ product.name }}</h1>
     <h2>{{ product.price | currency: "USD" }}</h2>
 
-    <div style="align-items: center; width: max-content">
-      <mat-button-toggle-group name="size" aria-label="Size" [(ngModel)]="product.size">
-        <mat-button-toggle value="small">Small</mat-button-toggle>
-        <mat-button-toggle value="medium">Medium</mat-button-toggle>
-        <mat-button-toggle value="large">Large</mat-button-toggle>
-        <mat-button-toggle value="xlarge">X-Large</mat-button-toggle>
-        <mat-button-toggle value="xxlarge">2X-Large</mat-button-toggle>
-      </mat-button-toggle-group>
+    <div style="display: inline-table">
+      <mat-form-field name="size" aria-label="Size" appearance="outline" [subscriptSizing]="'dynamic'">
+        <mat-label>Size</mat-label>
+        <mat-select [(ngModel)]="product.size" required>
+          <mat-option value="small">Small</mat-option>
+          <mat-option value="medium">Medium</mat-option>
+          <mat-option value="large">Large</mat-option>
+          <mat-option value="xlarge">X-Large</mat-option>
+          <mat-option value="xxlarge">2X-Large</mat-option>
+        </mat-select>
+      </mat-form-field>
       <button mat-button (click)="openSizeGuide()">Size Guide <fa-icon [icon]="sizeIcon"></fa-icon></button>
     </div>
 
@@ -40,7 +43,6 @@
       <mat-expansion-panel hideToggle expanded="true">
         <mat-expansion-panel-header>
           <mat-panel-title> Description </mat-panel-title>
-          <mat-panel-description> </mat-panel-description>
         </mat-expansion-panel-header>
         <p>{{ product.description }}</p>
       </mat-expansion-panel>
@@ -48,7 +50,6 @@
       <mat-expansion-panel hideToggle>
         <mat-expansion-panel-header>
           <mat-panel-title> Product Details </mat-panel-title>
-          <mat-panel-description> </mat-panel-description>
         </mat-expansion-panel-header>
         <p>For Makale to fill out...</p>
       </mat-expansion-panel>
@@ -56,7 +57,6 @@
       <mat-expansion-panel hideToggle>
         <mat-expansion-panel-header>
           <mat-panel-title> Shipping & Returns </mat-panel-title>
-          <mat-panel-description> </mat-panel-description>
         </mat-expansion-panel-header>
         <h5>Delivery Details</h5>
         <p>

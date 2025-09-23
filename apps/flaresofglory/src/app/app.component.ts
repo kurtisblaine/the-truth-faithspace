@@ -48,7 +48,7 @@ export class AppComponent {
     this.store.dispatch(initProducts());
 
     afterNextRender(() => {
-      this.isMobile.set(this.deviceDetector.isMobile());
+      // this.isMobile.set(this.deviceDetector.isMobile());
       this.cartItemTotal$ = this.store.select(selectCartCount);
     });
   }

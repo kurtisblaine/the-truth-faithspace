@@ -1,0 +1,12 @@
+.cart-button {
+  align-self: center !important;
+  height: 50%;
+}
+
+.product-image {
+  object-fit: contain;
+  background-size: cover;
+  width: 15vw !important;
+  position: relative !important;
+  cursor: pointer;
+}

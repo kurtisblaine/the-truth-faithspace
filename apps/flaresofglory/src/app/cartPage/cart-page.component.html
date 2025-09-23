@@ -1,34 +1,28 @@
 <h1>My Cart</h1>
-<mat-list>
-  @for(product of cartProducts$ | async; track product) {
-  <mat-list-item>
-    <div matListItemIcon matRipple (click)="selectProduct(product.id)" style="cursor: pointer">
-      <img [ngSrc]="product.image" [alt]="product.name" fill style="object-fit: contain; background-size: cover" />
-    </div>
-    <span matListItemTitle>{{ product.name }}</span>
-    <mat-card-subtitle matListItemMeta>{{ product.description }}</mat-card-subtitle>
-    <mat-button-toggle-group matListItemMeta name="size" aria-label="Size" [(ngModel)]="product.size">
-      <mat-button-toggle value="small">S</mat-button-toggle>
-      <mat-button-toggle value="medium">M</mat-button-toggle>
-      <mat-button-toggle value="large">L</mat-button-toggle>
-      <mat-button-toggle value="xlarge">XL</mat-button-toggle>
-    </mat-button-toggle-group>
-    <mat-form-field appearance="outline" subscriptSizing="dynamic" matListItemMeta>
-      <mat-label>Quantity</mat-label>
-      <input
-        matInput
-        aria-label="Quantity Input"
-        aria-labelledby="Quantity Input"
-        type="number"
-        step="1"
-        min="1"
-        [(ngModel)]="product.count"
+<div style="display: flex; flex-direction: column">
+  <mat-list>
+    @for(product of cartProducts$ | async; track product) {
+    <mat-list-item lines="3">
+      <img
+        matListItemAvatar
+        class="product-image"
+        (click)="selectProduct(product.id)"
+        [ngSrc]="product.image"
+        [alt]="product.name"
+        fill
       />
-    </mat-form-field>
-    <button matButton (click)="updateCart(product)" matListItemMeta>Update</button>
-    <button mat-icon-button (click)="deleteCart(product)" matListItemMeta>
-      <fa-icon [icon]="trashIcon"></fa-icon>
-    </button>
-  </mat-list-item>
-  }
-</mat-list>
+      <span matListItemTitle>{{ product.name }}</span>
+      <span matListItemLine>{{ product.size.charAt(0).toUpperCase() + product.size.slice(1) }}</span>
+      <span matListItemLine>{{ product.price | currency: "USD" }}</span>
+
+      <button mat-icon-button (click)="openEditDialog(product)" matListItemMeta class="cart-button">
+        <fa-icon [icon]="updateIcon"></fa-icon>
+      </button>
+      <button mat-icon-button (click)="deleteCart(product)" matListItemMeta class="cart-button">
+        <fa-icon [icon]="trashIcon"></fa-icon>
+      </button>
+    </mat-list-item>
+    }
+  </mat-list>
+  <div class="pay-module"></div>
+</div>
