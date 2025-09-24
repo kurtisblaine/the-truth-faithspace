@@ -10,3 +10,17 @@
   position: relative !important;
   cursor: pointer;
 }
+
+.pay-module {
+  margin: 10px;
+}
+
+.cart-page {
+  display: flex;
+}
+
+@media (max-width: 1000px) {
+  .cart-page {
+    flex-direction: column;
+  }
+}

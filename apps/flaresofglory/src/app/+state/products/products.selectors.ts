@@ -27,6 +27,10 @@ export const selectCartCount = createSelector(selectProductsState, (state: Produ
 );
 export const selectCartProducts = createSelector(selectProductsState, (state: ProductsState) => state.cartProducts);
 
+export const selectCartTotal = createSelector(selectCartProducts, (cartProducts) =>
+  cartProducts.reduce((total, product) => (total += product.price * product.count), 0)
+);
+
 export const selectEntity = createSelector(selectProductsEntities, selectSelectedId, (entities, selectedId) =>
   selectedId ? entities[selectedId] : undefined
 );

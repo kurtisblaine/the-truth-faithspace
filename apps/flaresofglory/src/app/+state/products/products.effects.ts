@@ -107,9 +107,13 @@ export class ProductsEffects {
       map(({ product }) => {
         const cart = localStorage.getItem(this.cart);
         const cartProducts = JSON.parse(cart) as CartProduct[];
-        const updatedProducts = cartProducts.map((item) =>
-          item.id.toString() === product.id.toString() ? { ...item, ...product } : item
-        );
+        const updatedProducts = cartProducts.map((item) => {
+          if (item.id.toString() === product.id.toString()) {
+            item.size = product.size;
+            item.count = product.count;
+          }
+          return item;
+        });
 
         localStorage.setItem(this.cart, JSON.stringify(updatedProducts));
         return updatedProducts;

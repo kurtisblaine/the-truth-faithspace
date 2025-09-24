@@ -1,5 +1,6 @@
 import { Route } from "@angular/router";
 import { CartPageComponent } from "./cartPage/cart-page.component";
+import { CheckoutPageComponent } from "./checkoutPage/checkoutPage.component";
 import { HomePageComponent } from "./homePage/home-page.component";
 import { ProductDetailPageComponent } from "./storePage/productDetailPage/product-detail-page.component";
 import { StorePageComponent } from "./storePage/store-page.component";
@@ -24,6 +25,10 @@ export const appRoutes: Route[] = [
     loadComponent: () => CartPageComponent,
     title: "Cart | Flares of Glory",
   },
-
+  {
+    path: "checkout",
+    loadComponent: () => CheckoutPageComponent,
+    title: "Checkout | Flares of Glory",
+  },
   { path: "**", redirectTo: "", pathMatch: "full" },
 ];

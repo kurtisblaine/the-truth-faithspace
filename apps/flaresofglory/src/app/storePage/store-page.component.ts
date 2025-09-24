@@ -8,6 +8,7 @@ import { MatRippleModule } from "@angular/material/core";
 import { MatFormFieldModule } from "@angular/material/form-field";
 import { MatGridListModule } from "@angular/material/grid-list";
 import { MatInputModule } from "@angular/material/input";
+import { MatTabsModule } from "@angular/material/tabs";
 import { Router } from "@angular/router";
 import { Store } from "@ngrx/store";
 import { Observable } from "rxjs";
@@ -27,6 +28,7 @@ import { selectAllCartProducts } from "../+state/products/products.selectors";
     MatInputModule,
     MatFormFieldModule,
     FormsModule,
+    MatTabsModule,
   ],
   templateUrl: "./store-page.component.html",
   styleUrl: "./store-page.component.scss",

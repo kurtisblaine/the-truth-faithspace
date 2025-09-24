@@ -14,9 +14,11 @@ import {
 import { provideEffects } from "@ngrx/effects";
 import { provideState, provideStore } from "@ngrx/store";
 import { provideStoreDevtools } from "@ngrx/store-devtools";
+import { provideNgxStripe } from "ngx-stripe";
 import { ProductsEffects } from "./+state/products/products.effects";
 import * as fromProducts from "./+state/products/products.reducer";
 import { appRoutes } from "./app.routes";
+import { PLUTO_ID } from "./checkoutPage/payment.service";
 
 const firebaseConfig = {
   apiKey: "",
@@ -35,6 +37,11 @@ export const appConfig: ApplicationConfig = {
     provideState(fromProducts.PRODUCTS_FEATURE_KEY, fromProducts.productsReducer),
     provideStore(),
     provideStoreDevtools({ logOnly: !isDevMode() }),
+    provideNgxStripe(),
+    {
+      provide: PLUTO_ID,
+      useValue: "449f8516-791a-49ab-a09d-50f79a0678b6",
+    },
     provideFirebaseApp(() => initializeApp(firebaseConfig)),
     provideRouter(
       appRoutes,
