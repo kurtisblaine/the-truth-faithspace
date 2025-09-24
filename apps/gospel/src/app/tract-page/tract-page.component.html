@@ -3,40 +3,62 @@
 <h3 style="padding: 15px 15px 0px" class="primary-color" #seoTitle>Tracts</h3>
 <div style="padding-bottom: 15px" class="mat-caption" style="margin: 0px 17px" #seoCaption>
   Using bookmarks as tracts has a two-fold purpose: it points to the Word of God for truth and gives the Gospel,
-  offering a continual reminder of the Good News. You can print these off with the double-sided setting and cut along
-  the dotted lines and then laminate them. I hope this helps even with creating your own tracts. I also like using cards
-  because people can put them in their wallet; but the best place for all these things is your heart, meditating and
-  ruminating on them day and night: the paper will fade as a flower passes away, but the Word of God remains forever.
+  offering a continual reminder of the Good News. Contact me if you would like any of these and I can provide them for
+  you. I hope this helps even with creating your own tracts. Secondly, I like using cards because people can put them in
+  their wallet; but the best place for all these things is in the heart, meditating and ruminating on them day and
+  night: the paper fades as a flower passes away, but the Word of God remains forever.
 </div>
 
 <mat-selection-list role="list" [multiple]="false" hideSingleSelectionIndicator>
-  <mat-list-option role="listitem" (click)="openLink('assets/tract/softGospelCard.pdf')">Gospel Card</mat-list-option>
-  <mat-list-option role="listitem" (click)="openLink('assets/tract/plasticGospelCard.pdf')"
-    >Plastic Gospel Card</mat-list-option
-  >
-  <mat-list-option role="listitem" (click)="openLink('assets/tract/bewareofburgers.pdf')"
-    >Beware of the Fast Food</mat-list-option
-  >
-  <mat-list-option role="listitem" (click)="openLink('assets/tract/bewareofimages.pdf')"
-    >Watch Yourselves, Idols</mat-list-option
-  >
-  <mat-list-option role="listitem" (click)="openLink('assets/tract/unfailingLoveOfGod.pdf')">
-    The Unfailing Love of God
+  <mat-list-option lines="2" disableRipple="true">
+    <img
+      matListItemAvatar
+      class="product-image"
+      [ngSrc]="'v1711590013/img/audioplayer-min_litzdj.webp'"
+      [alt]="'Bible Audio Player'"
+      fill
+    />
+    <span matListItemTitle>Bible Audio Player</span>
+    <span matListItemLine
+      >Ecclesiastes, Mark, Acts, Romans, 2 Corinthians, Galatians, Ephesians, Colossians, Hebrews, James, 1 Peter, 1
+      John, Revelation, John</span
+    >
   </mat-list-option>
-  <mat-list-option role="listitem" (click)="openLink('assets/tract/faithfulloveofGod.pdf')"
-    >The Faithful Love of God</mat-list-option
+  <mat-list-option lines="2" role="listitem" (click)="openLink('assets/tract/softGospelCard.pdf')"
+    ><span matListItemTitle>The Good News </span> <span matListItemLine>Soft Business Card</span></mat-list-option
   >
-  <mat-list-option role="listitem" (click)="openLink('assets/tract/promisedGiftOfGod.pdf')"
-    >The Promised Gift of God</mat-list-option
+  <mat-list-option lines="2" role="listitem" (click)="openLink('assets/tract/plasticGospelCard.pdf')">
+    <span matListItemTitle>The Good News </span> <span matListItemLine>Plastic Business Card</span></mat-list-option
   >
-  <mat-list-option role="listitem" (click)="openLink('assets/tract/thegoodnewsofgraceandtruth.pdf')"
-    >The Good News of Grace & Truth</mat-list-option
+  <mat-list-option lines="2" role="listitem" (click)="openLink('assets/tract/bewareofburgers.pdf')">
+    <span matListItemTitle>Beware of Fast Food </span> <span matListItemLine>Bookmark</span></mat-list-option
   >
-  <mat-list-option role="listitem" (click)="openLink('assets/tract/GoodNewsOfFreedom.pdf')"
-    >The Good News of Freedom</mat-list-option
+  <mat-list-option lines="2" role="listitem" (click)="openLink('assets/tract/bewareofimages.pdf')">
+    <span matListItemTitle>Watch Yourselves, Idols </span> <span matListItemLine>Bookmark</span></mat-list-option
   >
-  <mat-list-option role="listitem" (click)="openLink('assets/tract/justice.pdf')"
-    >The Good News of Justice</mat-list-option
+  <mat-list-option lines="2" role="listitem" (click)="openLink('assets/tract/unfailingLoveOfGod.pdf')">
+    <span matListItemTitle>The Unfailing Love of God </span>
+    <span matListItemLine>Bookmark</span></mat-list-option
   >
-  <mat-list-option role="listitem" (click)="openLink('assets/tract/faith.pdf')">The Gospel of Faith</mat-list-option>
+  <mat-list-option lines="2" role="listitem" (click)="openLink('assets/tract/faithfulloveofGod.pdf')">
+    <span matListItemTitle>The Faithful Love of God </span> <span matListItemLine>Bookmark</span></mat-list-option
+  >
+  <mat-list-option lines="2" role="listitem" (click)="openLink('assets/tract/promisedGiftOfGod.pdf')">
+    <span matListItemTitle>The Promised Gift from God </span> <span matListItemLine>Bookmark</span></mat-list-option
+  >
+  <mat-list-option lines="2" role="listitem" (click)="openLink('assets/tract/thegoodnewsofgraceandtruth.pdf')">
+    <span matListItemTitle>The Good News of Grace and Truth </span>
+    <span matListItemLine>Bookmark</span></mat-list-option
+  >
+  <mat-list-option lines="2" role="listitem" (click)="openLink('assets/tract/GoodNewsOfFreedom.pdf')">
+    <span matListItemTitle>The Good News of Freedom </span> <span matListItemLine>Bookmark</span></mat-list-option
+  >
+  <mat-list-option lines="2" role="listitem" (click)="openLink('assets/tract/justice.pdf')">
+    <span matListItemTitle>The Good News of Justice </span>
+    <span matListItemLine>Bookmark</span></mat-list-option
+  >
+  <mat-list-option role="listitem" (click)="openLink('assets/tract/faith.pdf')">
+    <span matListItemTitle>The Gospel of Faith </span>
+    <span matListItemLine>Bookmark</span>
+  </mat-list-option>
 </mat-selection-list>

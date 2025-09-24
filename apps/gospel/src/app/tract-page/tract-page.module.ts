@@ -1,4 +1,4 @@
-import { CommonModule } from "@angular/common";
+import { CommonModule, NgOptimizedImage } from "@angular/common";
 import { NgModule } from "@angular/core";
 import { MatListModule } from "@angular/material/list";
 import { RouterModule, Routes } from "@angular/router";
@@ -11,6 +11,6 @@ const routes: Routes = [
 ];
 @NgModule({
   declarations: [TractPageComponent],
-  imports: [CommonModule, RouterModule.forChild(routes), MatListModule],
+  imports: [CommonModule, RouterModule.forChild(routes), MatListModule, NgOptimizedImage],
 })
 export class TractPageModule {}

@@ -1,9 +1,11 @@
-mat-list-option {
-  text-decoration: underline;
-}
-
 :host {
   display: block;
-
   padding: 14px;
+}
+
+.product-image {
+  object-fit: contain;
+  background-size: cover;
+  width: 15vw !important;
+  position: relative !important;
 }

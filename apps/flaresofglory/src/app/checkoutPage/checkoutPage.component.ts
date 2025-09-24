@@ -93,6 +93,7 @@ export class CheckoutPageComponent {
         colorPrimary: "#673ab7",
       },
     },
+    clientSecret: "123",
   };
 
   public total$: Observable<number>;
@@ -113,14 +114,14 @@ export class CheckoutPageComponent {
     const amount = this.checkoutForm.get("amount")?.value;
     this.cartProducts$ = this.store.select(selectCartProducts);
 
-    this.paymentService
-      .createPaymentIntent({
-        amount,
-        currency: "eur",
-      })
-      .subscribe((pi) => {
-        this.elementsOptions.clientSecret = pi.client_secret as string;
-      });
+    // this.paymentService
+    //   .createPaymentIntent({
+    //     amount,
+    //     currency: "eur",
+    //   })
+    //   .subscribe((pi) => {
+    //     this.elementsOptions.clientSecret = pi.client_secret as string;
+    //   });
   }
 
   clear() {
