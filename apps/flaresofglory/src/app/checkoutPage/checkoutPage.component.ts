@@ -7,13 +7,14 @@ import { MatDialog, MatDialogModule } from "@angular/material/dialog";
 import { MatDividerModule } from "@angular/material/divider";
 import { MatInputModule } from "@angular/material/input";
 import { MatListModule } from "@angular/material/list";
+import { MatStepperModule } from "@angular/material/stepper";
 import { MatToolbarModule } from "@angular/material/toolbar";
 import { Router } from "@angular/router";
 import { FontAwesomeModule } from "@fortawesome/angular-fontawesome";
 import { Store } from "@ngrx/store";
-import { StripeElementsOptions } from "@stripe/stripe-js";
-import { injectStripe, StripeElementsDirective, StripePaymentElementComponent } from "ngx-stripe";
-import { Observable } from "rxjs";
+import { StripeCardElementOptions, StripeElementsOptions } from "@stripe/stripe-js";
+import { injectStripe, StripeCardComponent, StripeElementsDirective, StripePaymentElementComponent } from "ngx-stripe";
+import { Observable, tap } from "rxjs";
 import { CartProduct } from "../+state/products/products.models";
 import { selectCartProducts, selectCartTotal } from "../+state/products/products.selectors";
 import { PaymentConfirmationComponent } from "./payment-confirmation.component";
@@ -28,6 +29,7 @@ import { PaymentService, STRIPE_PUBLIC_KEY } from "./payment.service";
     MatCardModule,
     MatDialogModule,
     MatDividerModule,
+    MatStepperModule,
     MatInputModule,
     MatToolbarModule,
     StripePaymentElementComponent,
@@ -36,6 +38,8 @@ import { PaymentService, STRIPE_PUBLIC_KEY } from "./payment.service";
     CommonModule,
     NgOptimizedImage,
     FontAwesomeModule,
+    MatDividerModule,
+    StripeCardComponent,
   ],
   templateUrl: "./checkoutPage.component.html",
   styleUrl: "./checkoutPage.component.scss",
@@ -46,6 +50,21 @@ export class CheckoutPageComponent {
   public paymentElement!: StripePaymentElementComponent;
 
   public cartProducts$: Observable<CartProduct[]>;
+
+  cardOptions: StripeCardElementOptions = {
+    style: {
+      base: {
+        iconColor: "#666EE8",
+        color: "#31325F",
+        fontWeight: 300,
+        fontFamily: '"Helvetica Neue", Helvetica, sans-serif',
+        fontSize: "18px",
+        "::placeholder": {
+          color: "#CFD7E0",
+        },
+      },
+    },
+  };
 
   private readonly fb = inject(FormBuilder);
   private readonly dialog = inject(MatDialog);
@@ -65,7 +84,7 @@ export class CheckoutPageComponent {
     amount: [0, [Validators.required, Validators.pattern(/\d+/)]],
   });
 
-  elementsOptions: StripeElementsOptions = {
+  public elementsOptions: StripeElementsOptions = {
     locale: "en",
     appearance: {
       theme: "stripe",
@@ -77,8 +96,10 @@ export class CheckoutPageComponent {
   };
 
   public total$: Observable<number>;
+  public total: number;
 
   public paying = signal(false);
+  public isCustomerDetailsEntered = signal(false);
 
   get amount() {
     const amountValue = this.checkoutForm.get("amount")?.value;
@@ -88,8 +109,8 @@ export class CheckoutPageComponent {
   }
 
   ngOnInit() {
+    this.total$ = this.store.select(selectCartTotal).pipe(tap((r) => (this.total = r)));
     const amount = this.checkoutForm.get("amount")?.value;
-    this.total$ = this.store.select(selectCartTotal);
     this.cartProducts$ = this.store.select(selectCartProducts);
 
     this.paymentService
@@ -116,6 +137,18 @@ export class CheckoutPageComponent {
 
   public goCart() {
     this.router.navigateByUrl("cart").then(() => {});
+  }
+
+  public calculateShippingCosts() {
+    return 0;
+  }
+
+  public calculateSalesTax() {
+    return 0;
+  }
+
+  public calculateTotalCosts() {
+    return 0;
   }
 
   collectPayment() {

@@ -1,40 +1,42 @@
-<h1>My Cart</h1>
-<div class="cart-page">
-  <mat-list>
-    @for(product of cartProducts$ | async; track product) {
-    <mat-list-item lines="3">
-      <img
-        matListItemAvatar
-        class="product-image"
-        (click)="selectProduct(product.id)"
-        [ngSrc]="product.image"
-        [alt]="product.name"
-        fill
-      />
-      <span matListItemTitle>{{ product.name }}</span>
-      <span matListItemLine>{{ product.size }}</span>
-      <span matListItemLine>{{ product.count }} | {{ product.price | currency: "USD" }}</span>
+<div style="padding: 0px 20px; height: 100%">
+  <h1>My Cart</h1>
+  <div class="cart-page">
+    <mat-list>
+      @for(product of cartProducts$ | async; track product) {
+      <mat-list-item lines="3">
+        <img
+          matListItemAvatar
+          class="product-image"
+          (click)="selectProduct(product.id)"
+          [ngSrc]="product.image"
+          [alt]="product.name"
+          fill
+        />
+        <span matListItemTitle>{{ product.name }}</span>
+        <span matListItemLine>Size: {{ product.size }}</span>
+        <span matListItemLine>{{ product.count }} | {{ product.price | currency: "USD" }}</span>
 
-      <button mat-icon-button (click)="openEditDialog(product)" matListItemMeta class="cart-button">
-        <fa-icon [icon]="updateIcon"></fa-icon>
-      </button>
-      <button mat-icon-button (click)="deleteCart(product)" matListItemMeta class="cart-button">
-        <fa-icon [icon]="trashIcon"></fa-icon>
-      </button>
-    </mat-list-item>
-    }
-  </mat-list>
+        <button mat-icon-button (click)="openEditDialog(product)" matListItemMeta class="cart-button">
+          <fa-icon [icon]="updateIcon"></fa-icon>
+        </button>
+        <button mat-icon-button (click)="deleteCart(product)" matListItemMeta class="cart-button">
+          <fa-icon [icon]="trashIcon"></fa-icon>
+        </button>
+      </mat-list-item>
+      }
+    </mat-list>
 
-  <div class="pay-module" *ngIf="total$ | async as total">
-    <mat-card appearance="outlined">
-      <mat-card-header>
-        <mat-card-title> Subtotal</mat-card-title>
-        <mat-card-subtitle> {{ total | currency: "USD" }}</mat-card-subtitle>
-      </mat-card-header>
-      <mat-card-content> Shipping & taxes are calculated at checkout. </mat-card-content>
-      <mat-card-actions>
-        <button matButton (click)="goCheckout()">Checkout</button>
-      </mat-card-actions>
-    </mat-card>
+    <div class="pay-module" *ngIf="total$ | async as total">
+      <mat-card appearance="raised">
+        <mat-card-header>
+          <mat-card-title> Subtotal</mat-card-title>
+          <mat-card-subtitle> {{ total | currency: "USD" }}</mat-card-subtitle>
+        </mat-card-header>
+        <mat-card-content> Shipping & taxes are calculated at checkout. </mat-card-content>
+        <mat-card-actions>
+          <button matButton="filled" style="width: 100%" (click)="goCheckout()">Checkout</button>
+        </mat-card-actions>
+      </mat-card>
+    </div>
   </div>
 </div>

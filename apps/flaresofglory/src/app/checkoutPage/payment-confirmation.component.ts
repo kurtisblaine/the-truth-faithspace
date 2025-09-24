@@ -4,7 +4,7 @@ import { MAT_DIALOG_DATA, MatDialogModule } from "@angular/material/dialog";
 
 @Component({
   template: `
-    <h1 mat-dialog-title>Ngx Stripe</h1>
+    <h1 mat-dialog-title>Payment Information</h1>
     <div mat-dialog-content>{{ data.type | uppercase }}: {{ data.message }}</div>
     <div mat-dialog-actions>
       <button mat-button mat-dialog-close>OK</button>

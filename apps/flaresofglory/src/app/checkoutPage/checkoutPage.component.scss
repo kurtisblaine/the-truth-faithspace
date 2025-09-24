@@ -2,6 +2,23 @@
   display: flex;
 }
 
+.checkout-page > * {
+  margin: 10px;
+}
+
+.total-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.product-image {
+  object-fit: contain;
+  background-size: cover;
+  width: 10vw !important;
+  position: relative !important;
+}
+
 @media (max-width: 1000px) {
   .checkout-page {
     flex-direction: column;

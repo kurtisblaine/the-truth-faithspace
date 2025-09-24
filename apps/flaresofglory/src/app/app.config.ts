@@ -1,4 +1,4 @@
-import { provideHttpClient } from "@angular/common/http";
+import { provideHttpClient, withFetch } from "@angular/common/http";
 import { ApplicationConfig, isDevMode, provideZonelessChangeDetection } from "@angular/core";
 import { initializeApp, provideFirebaseApp } from "@angular/fire/app";
 import { provideClientHydration, withEventReplay, withIncrementalHydration } from "@angular/platform-browser";
@@ -53,7 +53,7 @@ export const appConfig: ApplicationConfig = {
       withInMemoryScrolling({ anchorScrolling: "enabled", scrollPositionRestoration: "enabled" }),
       withPreloading(NoPreloading)
     ),
-    provideHttpClient(),
+    provideHttpClient(withFetch()),
     provideAnimations(),
     provideZonelessChangeDetection(),
     provideClientHydration(withIncrementalHydration(), withEventReplay()),
