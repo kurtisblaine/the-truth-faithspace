@@ -1,5 +1,5 @@
 import { RenderMode, ServerRoute } from "@angular/ssr";
-import { products } from "./+state/products/products.models";
+import { products } from "./+state/products/products.database";
 
 export const serverRoutes: ServerRoute[] = [
   {

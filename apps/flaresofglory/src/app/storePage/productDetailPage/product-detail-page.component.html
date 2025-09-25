@@ -7,15 +7,26 @@
     <h1>{{ product.name }}</h1>
     <h2>{{ product.price | currency: "USD" }}</h2>
 
+    @if(product.colors) {
+    <div style="display: block">
+      <div>Color: {{ product.color }}</div>
+      <mat-radio-group aria-label="Color" [(ngModel)]="product.color" (click)="$event.stopImmediatePropagation()">
+        @for(color of product.colors; track color.value) {
+        <mat-radio-button (change)="changeImageColor(product, $event.value)" [value]="color.value"></mat-radio-button>
+        }
+      </mat-radio-group>
+    </div>
+    }
+
     <div style="display: inline-table">
       <mat-form-field name="size" aria-label="Size" appearance="outline" [subscriptSizing]="'dynamic'">
         <mat-label>Size</mat-label>
         <mat-select [(ngModel)]="product.size" required>
-          <mat-option value="small">Small</mat-option>
-          <mat-option value="medium">Medium</mat-option>
-          <mat-option value="large">Large</mat-option>
-          <mat-option value="xlarge">X-Large</mat-option>
-          <mat-option value="xxlarge">2X-Large</mat-option>
+          <mat-option value="Small">Small</mat-option>
+          <mat-option value="Medium">Medium</mat-option>
+          <mat-option value="Large">Large</mat-option>
+          <mat-option value="XL">XL</mat-option>
+          <mat-option value="2XL">2XL</mat-option>
         </mat-select>
       </mat-form-field>
       <button mat-button (click)="openSizeGuide()">Size Guide <fa-icon [icon]="sizeIcon"></fa-icon></button>
@@ -40,21 +51,21 @@
     </button>
 
     <mat-accordion>
-      <mat-expansion-panel hideToggle expanded="true">
+      <mat-expansion-panel expanded="true">
         <mat-expansion-panel-header>
           <mat-panel-title> Description </mat-panel-title>
         </mat-expansion-panel-header>
         <p>{{ product.description }}</p>
       </mat-expansion-panel>
 
-      <mat-expansion-panel hideToggle>
+      <mat-expansion-panel>
         <mat-expansion-panel-header>
           <mat-panel-title> Product Details </mat-panel-title>
         </mat-expansion-panel-header>
         <p>For Makale to fill out...</p>
       </mat-expansion-panel>
 
-      <mat-expansion-panel hideToggle>
+      <mat-expansion-panel>
         <mat-expansion-panel-header>
           <mat-panel-title> Shipping & Returns </mat-panel-title>
         </mat-expansion-panel-header>

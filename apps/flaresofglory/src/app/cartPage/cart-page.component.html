@@ -1,8 +1,10 @@
 <div style="padding: 0px 20px; height: 100%">
   <h1>My Cart</h1>
+
+  @if(hasProducts$ | async) {
   <div class="cart-page">
     <mat-list>
-      @for(product of cartProducts$ | async; track product) {
+      @for(product of cartProducts$ | async; track $index) {
       <mat-list-item lines="3">
         <img
           matListItemAvatar
@@ -13,8 +15,13 @@
           fill
         />
         <span matListItemTitle>{{ product.name }}</span>
-        <span matListItemLine>Size: {{ product.size }}</span>
-        <span matListItemLine>{{ product.count }} | {{ product.price | currency: "USD" }}</span>
+        <span matListItemLine
+          >Size: {{ product.size }}
+          @if(product.colors) {
+          <span>| Color: {{ product.color }}</span>
+          }
+        </span>
+        <span matListItemLine>Quantity: {{ product.count }} | Price: {{ product.price | currency: "USD" }}</span>
 
         <button mat-icon-button (click)="openEditDialog(product)" matListItemMeta class="cart-button">
           <fa-icon [icon]="updateIcon"></fa-icon>
@@ -39,4 +46,7 @@
       </mat-card>
     </div>
   </div>
+  } @else {
+  <h5>There is nothing to show here yet. Please add products to your cart.</h5>
+  }
 </div>

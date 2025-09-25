@@ -3,7 +3,8 @@ import { inject, Injectable, PLATFORM_ID } from "@angular/core";
 import { Actions, createEffect, ofType } from "@ngrx/effects";
 import { catchError, map, of, switchMap } from "rxjs";
 import * as ProductsActions from "./products.actions";
-import { CartProduct, products } from "./products.models";
+import { products } from "./products.database";
+import { CartProduct } from "./products.models";
 
 @Injectable()
 export class ProductsEffects {
@@ -33,10 +34,12 @@ export class ProductsEffects {
       ofType(ProductsActions.addProduct),
       map(({ product }) => {
         const cart = localStorage.getItem(this.cart);
-        const cartProducts = cart ? JSON.parse(cart) : ([] as CartProduct[]);
+        const cartProducts = cart ? (JSON.parse(cart) as CartProduct[]) : ([] as CartProduct[]);
         cartProducts.push(product);
-        localStorage.setItem(this.cart, JSON.stringify(cartProducts));
-        return cartProducts;
+
+        const flattenedProducts = this.consoladateProducts(cartProducts);
+        localStorage.setItem(this.cart, JSON.stringify(flattenedProducts));
+        return flattenedProducts;
       }),
       switchMap((cartProducts) => of(ProductsActions.addProductSuccess({ cartProducts }))),
       catchError((error) => {
@@ -52,7 +55,7 @@ export class ProductsEffects {
       map(({ product }) => {
         const cart = localStorage.getItem(this.cart);
         let cartProducts = JSON.parse(cart) as CartProduct[];
-        cartProducts = cartProducts.filter((item) => item.id.toString() !== product.id.toString());
+        cartProducts = cartProducts.filter((item) => item.cartProductId !== product.cartProductId);
         localStorage.setItem(this.cart, JSON.stringify(cartProducts));
         return cartProducts;
       }),
@@ -71,15 +74,16 @@ export class ProductsEffects {
         const cart = localStorage.getItem(this.cart);
         const cartProducts = JSON.parse(cart) as CartProduct[];
         const updatedProducts = cartProducts.map((item) => {
-          if (item.id.toString() === product.id.toString()) {
-            item.size = product.size;
-            item.count = product.count;
+          if (item.cartProductId === product.cartProductId) {
+            item = { ...item, ...product };
           }
           return item;
         });
 
-        localStorage.setItem(this.cart, JSON.stringify(updatedProducts));
-        return updatedProducts;
+        const flattenedProducts = this.consoladateProducts(updatedProducts);
+
+        localStorage.setItem(this.cart, JSON.stringify(flattenedProducts));
+        return flattenedProducts;
       }),
       switchMap((cartProducts) => of(ProductsActions.updateProductSuccess({ cartProducts }))),
       catchError((error) => {
@@ -88,4 +92,24 @@ export class ProductsEffects {
       })
     )
   );
+
+  private consoladateProducts = (cartProducts: CartProduct[]) => {
+    const groupedItems = cartProducts.reduce((acc, currentItem) => {
+      const groupKey = `${currentItem.id.toString()}_${currentItem.color}_${currentItem.size}`;
+      if (!acc[groupKey]) {
+        acc[groupKey] = [];
+      }
+      acc[groupKey].push(currentItem);
+      return acc;
+    }, {} as Record<string, CartProduct[]>);
+
+    const flattenedProducts = Object.entries(groupedItems).map(([_, groupedItems]) => {
+      const total = groupedItems.reduce((quantity, item) => (quantity += item.count), 0);
+      const flatProduct = { ...groupedItems[0] };
+      flatProduct.count = total;
+      return flatProduct;
+    });
+
+    return flattenedProducts;
+  };
 }

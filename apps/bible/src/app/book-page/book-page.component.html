@@ -5,7 +5,7 @@
 <mat-spinner *ngIf="isLoading$ | async; let isLoading"></mat-spinner>
 
 <mat-selection-list [multiple]="false" hideSingleSelectionIndicator>
-  @for (book of books$ | async; track book) {
+  @for (book of books$ | async; track $index) {
   <mat-list-option [value]="book" (click)="getChapters(book)"
     ><div libTooltip="{{ book.name }} - {{ book.nameLong }}" style="font-size: large" *ngIf="book.nameLong">
       {{ book.name }} - {{ book.nameLong }}

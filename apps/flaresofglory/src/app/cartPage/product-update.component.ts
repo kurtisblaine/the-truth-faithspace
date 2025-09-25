@@ -37,13 +37,31 @@ import { CartProduct } from "../+state/products/products.models";
       >
         <mat-label>Size</mat-label>
         <mat-select [(ngModel)]="product().size">
-          <mat-option value="small">Small</mat-option>
-          <mat-option value="medium">Medium</mat-option>
-          <mat-option value="large">Large</mat-option>
-          <mat-option value="xlarge">X-Large</mat-option>
-          <mat-option value="xxlarge">2X-Large</mat-option>
+          <mat-option value="Small">Small</mat-option>
+          <mat-option value="Medium">Medium</mat-option>
+          <mat-option value="Large">Large</mat-option>
+          <mat-option value="XL">XL</mat-option>
+          <mat-option value="2XL">2XL</mat-option>
         </mat-select>
       </mat-form-field>
+
+      @if(product().colors) {
+      <mat-form-field
+        name="color"
+        aria-label="Color"
+        appearance="outline"
+        [subscriptSizing]="'dynamic'"
+        class="cart-form-field"
+        matListItemMeta
+      >
+        <mat-label>Color</mat-label>
+        <mat-select [(ngModel)]="product().color">
+          @for(color of product().colors; track color.value) {
+          <mat-option [value]="color.value">{{ color.value }}</mat-option>
+          }
+        </mat-select>
+      </mat-form-field>
+      }
     </mat-dialog-content>
     <mat-dialog-actions>
       <button matButton="elevated" [mat-dialog-close]="true" (click)="updateCart(product())" matListItemMeta>
@@ -69,6 +87,10 @@ export class ProductUpdateComponent {
   }
 
   public updateCart(product: CartProduct) {
+    if (product.colors) {
+      product.image = product.colors.find((c) => c.value === product.color).image;
+    }
+
     this.store.dispatch(updateProduct({ product }));
   }
 }

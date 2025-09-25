@@ -1,5 +1,5 @@
 <div class="checkout-page">
-  <mat-card appearance="raised">
+  <mat-card appearance="raised" class="checkout-card">
     <mat-card-header>
       <mat-card-title>Checkout </mat-card-title>
       <mat-card-subtitle></mat-card-subtitle>
@@ -24,7 +24,7 @@
               </mat-form-field>
               <mat-form-field appearance="outline" style="flex: 1" hideRequiredMarker="true">
                 <mat-label>Address Line 2</mat-label>
-                <input matInput formControlName="address" placeholder="Apt, Suite, Unit Number, Etc" />
+                <input matInput formControlName="address2" placeholder="Apt, Suite, Unit Number, Etc" />
               </mat-form-field>
               <mat-form-field appearance="outline" style="flex: 1">
                 <mat-label>City</mat-label>
@@ -38,7 +38,7 @@
                 <mat-label>ZIP Code</mat-label>
                 <input matInput formControlName="zipcode" />
               </mat-form-field>
-              <button matButton matStepperNext>Next</button>
+              <button matButton="filled" matStepperNext (click)="saveAddress()">Next</button>
             </div>
           </form>
         </mat-step>
@@ -47,13 +47,13 @@
         </mat-step>
         <mat-step>
           <ng-template matStepLabel>Payment Method</ng-template>
-          <!-- <ngx-stripe-card [options]="cardOptions" [elementsOptions]="elementsOptions"></ngx-stripe-card>
+          <ngx-stripe-card [options]="cardOptions" [elementsOptions]="elementsOptions"></ngx-stripe-card>
 
-          @if (elementsOptions.clientSecret) {
+          <!-- @if (elementsOptions.clientSecret) {
           <ngx-stripe-elements [stripe]="stripe" [elementsOptions]="elementsOptions">
             <ngx-stripe-payment> </ngx-stripe-payment>
           </ngx-stripe-elements>
-          } -->
+          }  -->
           <div style="margin-bottom: 20px"></div>
           <mat-divider></mat-divider>
           <div style="margin-bottom: 20px"></div>
@@ -90,12 +90,16 @@
     </mat-card-header>
     <mat-card-content>
       <mat-list>
-        @for(product of cartProducts$ | async; track product) {
+        @for(product of cartProducts$ | async; track $index) {
         <mat-list-item lines="3">
-          <img matListItemAvatar class="product-image" [ngSrc]="product.image" [alt]="product.name" fill />
+          <img matListItemAvatar class="product-image" [ngSrc]="product.image" [alt]="product.name" fill priority />
           <span matListItemTitle>{{ product.name }}</span>
-          <span matListItemLine>Size: {{ product.size }}</span>
-          <span matListItemLine>{{ product.count }} | {{ product.price | currency: "USD" }}</span>
+          <span matListItemLine
+            >Size: {{ product.size }} @if(product.colors) {
+            <span>| Color: {{ product.color }}</span>
+            }</span
+          >
+          <span matListItemLine>Quantity: {{ product.count }} | Price: {{ product.price | currency: "USD" }}</span>
         </mat-list-item>
         }
       </mat-list>

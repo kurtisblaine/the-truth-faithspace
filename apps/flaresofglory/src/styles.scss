@@ -19,8 +19,14 @@ html {
 :root {
   @include mat.badge-overrides(
     (
-      background-color: blue,
-      disabled-state-background-color: red,
+      background-color: var(--mat-sys-primary),
+    )
+  );
+
+  @include mat.toolbar-overrides(
+    (
+      container-text-color: var(--mat-sys-primary),
+      // container-background-color: var(--mat-sys-background),
     )
   );
 }
@@ -34,7 +40,8 @@ body {
   height: 100vh;
   overflow-x: hidden !important;
   font-family: Roboto, "Helvetica Neue", sans-serif;
-  color: var(--mat-sys-on-surface);
+  color: var(--mat-sys-on-background);
+  background-color: var(--mat-sys-background);
 }
 
 a {

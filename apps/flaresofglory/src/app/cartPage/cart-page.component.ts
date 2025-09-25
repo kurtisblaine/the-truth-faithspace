@@ -8,7 +8,7 @@ import { Router } from "@angular/router";
 import { FontAwesomeModule } from "@fortawesome/angular-fontawesome";
 import { faEdit, faTrash } from "@fortawesome/free-solid-svg-icons";
 import { Store } from "@ngrx/store";
-import { Observable } from "rxjs";
+import { map, Observable } from "rxjs";
 import { deleteProduct } from "../+state/products/products.actions";
 import { CartProduct } from "../+state/products/products.models";
 import { selectCartProducts, selectCartTotal } from "../+state/products/products.selectors";
@@ -22,12 +22,14 @@ import { ProductUpdateComponent } from "./product-update.component";
 })
 export class CartPageComponent {
   public cartProducts$: Observable<CartProduct[]>;
+  public hasProducts$: Observable<boolean>;
   public total$: Observable<number>;
   public trashIcon = faTrash;
   public updateIcon = faEdit;
 
   constructor(private store: Store, private router: Router, private dialog: MatDialog) {
     this.cartProducts$ = this.store.select(selectCartProducts);
+    this.hasProducts$ = this.cartProducts$.pipe(map((products) => !!products.length));
     this.total$ = this.store.select(selectCartTotal);
   }
 

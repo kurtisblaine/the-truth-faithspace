@@ -114,6 +114,11 @@ export class CheckoutPageComponent {
     const amount = this.checkoutForm.get("amount")?.value;
     this.cartProducts$ = this.store.select(selectCartProducts);
 
+    const savedData = localStorage.getItem("flaresOfGloryAddressInformation");
+    if (savedData) {
+      this.checkoutForm.patchValue(JSON.parse(savedData));
+    }
+
     // this.paymentService
     //   .createPaymentIntent({
     //     amount,
@@ -122,6 +127,10 @@ export class CheckoutPageComponent {
     //   .subscribe((pi) => {
     //     this.elementsOptions.clientSecret = pi.client_secret as string;
     //   });
+  }
+
+  saveAddress() {
+    localStorage.setItem("flaresOfGloryAddressInformation", JSON.stringify(this.checkoutForm.value));
   }
 
   clear() {

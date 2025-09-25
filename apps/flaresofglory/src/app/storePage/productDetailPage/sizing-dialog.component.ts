@@ -22,7 +22,7 @@ const TABLE_DATA: TableData[] = [
   template: `
     <h1 mat-dialog-title>Size Guide</h1>
     <mat-dialog-content>
-      <table mat-table [dataSource]="dataSource" class="mat-elevation-z8 demo-table">
+      <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
         <ng-container matColumnDef="name">
           <th mat-header-cell *matHeaderCellDef>Name</th>
           <td mat-cell *matCellDef="let element">{{ element.name }}</td>
