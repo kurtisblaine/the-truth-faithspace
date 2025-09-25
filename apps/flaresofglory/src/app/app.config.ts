@@ -1,3 +1,4 @@
+import { STEPPER_GLOBAL_OPTIONS } from "@angular/cdk/stepper";
 import { provideHttpClient, withFetch } from "@angular/common/http";
 import { ApplicationConfig, isDevMode, provideZonelessChangeDetection } from "@angular/core";
 import { initializeApp, provideFirebaseApp } from "@angular/fire/app";
@@ -18,7 +19,6 @@ import { provideNgxStripe } from "ngx-stripe";
 import { ProductsEffects } from "./+state/products/products.effects";
 import * as fromProducts from "./+state/products/products.reducer";
 import { appRoutes } from "./app.routes";
-import { PLUTO_ID } from "./checkoutPage/payment.service";
 
 const firebaseConfig = {
   apiKey: "",
@@ -39,8 +39,8 @@ export const appConfig: ApplicationConfig = {
     provideStoreDevtools({ logOnly: !isDevMode() }),
     provideNgxStripe(),
     {
-      provide: PLUTO_ID,
-      useValue: "449f8516-791a-49ab-a09d-50f79a0678b6",
+      provide: STEPPER_GLOBAL_OPTIONS,
+      useValue: { showError: true },
     },
     provideFirebaseApp(() => initializeApp(firebaseConfig)),
     provideRouter(

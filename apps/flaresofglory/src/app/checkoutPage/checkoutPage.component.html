@@ -5,7 +5,7 @@
       <mat-card-subtitle></mat-card-subtitle>
     </mat-card-header>
     <mat-card-content>
-      <mat-vertical-stepper [linear]="false" #stepper>
+      <mat-vertical-stepper linear #stepper>
         <mat-step [stepControl]="checkoutForm">
           <form [formGroup]="checkoutForm" style="margin: 10px">
             <ng-template matStepLabel>Shipping Information</ng-template>
