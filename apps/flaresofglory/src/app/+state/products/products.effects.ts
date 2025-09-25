@@ -1,9 +1,9 @@
 import { isPlatformBrowser } from "@angular/common";
-import { Injectable, PLATFORM_ID, inject } from "@angular/core";
+import { inject, Injectable, PLATFORM_ID } from "@angular/core";
 import { Actions, createEffect, ofType } from "@ngrx/effects";
 import { catchError, map, of, switchMap } from "rxjs";
 import * as ProductsActions from "./products.actions";
-import { CartProduct, ProductsEntity } from "./products.models";
+import { CartProduct, products } from "./products.models";
 
 @Injectable()
 export class ProductsEffects {
@@ -16,47 +16,10 @@ export class ProductsEffects {
     this.actions$.pipe(
       ofType(ProductsActions.initProducts),
       switchMap(() => {
-        const products = [] as ProductsEntity[];
-        products.push({
-          id: 1,
-          name: "Flares of Glory | Black",
-          description: "Available in all colors.",
-          image: "../../../assets/blackflares.webp",
-          price: 50.0,
-        });
-        products.push({
-          id: 2,
-          name: "Flares of Glory | White",
-          description: "Available in all colors.",
-          image: "../../../assets/whiteflares.webp",
-          price: 50.0,
-        });
-        products.push({
-          id: 3,
-          name: "The Holy Spirit descended like a dove",
-          description: "Matthew 3:13",
-          image: "../../../assets/dovefire.webp",
-          price: 50.0,
-        });
-        products.push({
-          id: 4,
-          name: "Nothing but the Blood",
-          description: "Available in all colors.",
-          image: "../../../assets/nothingbut.webp",
-          price: 50.0,
-        });
-        products.push({
-          id: 5,
-          name: "Dove",
-          description: "Matthew 3:13",
-          image: "../../../assets/dove.webp",
-          price: 50.0,
-        });
-
         const cart = isPlatformBrowser(this.platformId) ? localStorage.getItem(this.cart) : null;
         const cartProducts = cart ? JSON.parse(cart) : ([] as CartProduct[]);
 
-        return of(ProductsActions.loadProductsSuccess({ products, cartProducts }));
+        return of(ProductsActions.loadProductsSuccess({ products: products, cartProducts }));
       }),
       catchError((error) => {
         console.error("Error", error);

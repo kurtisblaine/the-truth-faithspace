@@ -11,6 +11,7 @@ import { MatInputModule } from "@angular/material/input";
 import { MatTabsModule } from "@angular/material/tabs";
 import { Router } from "@angular/router";
 import { Store } from "@ngrx/store";
+import { DeviceDetectorService } from "ngx-device-detector";
 import { Observable } from "rxjs";
 import { CartProduct } from "../+state/products/products.models";
 import { selectAllCartProducts } from "../+state/products/products.selectors";
@@ -34,10 +35,12 @@ import { selectAllCartProducts } from "../+state/products/products.selectors";
   styleUrl: "./store-page.component.scss",
 })
 export class StorePageComponent {
+  public rowHeight: string;
   public products$: Observable<CartProduct[]>;
 
-  constructor(private store: Store, private router: Router) {
+  constructor(private store: Store, private router: Router, private deviceDetector: DeviceDetectorService) {
     this.products$ = this.store.select(selectAllCartProducts);
+    this.rowHeight = this.deviceDetector.isMobile() ? "1:2" : "2:1";
   }
 
   selectProduct(id: number | string) {
