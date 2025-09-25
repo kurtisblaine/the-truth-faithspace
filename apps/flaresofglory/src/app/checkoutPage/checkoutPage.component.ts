@@ -1,6 +1,7 @@
 import { CommonModule, CurrencyPipe, NgOptimizedImage } from "@angular/common";
-import { ChangeDetectionStrategy, Component, inject, signal, ViewChild } from "@angular/core";
+import { ChangeDetectionStrategy, Component, ElementRef, inject, signal, ViewChild } from "@angular/core";
 import { FormBuilder, FormGroup, ReactiveFormsModule, Validators } from "@angular/forms";
+import { MatAutocompleteModule } from "@angular/material/autocomplete";
 import { MatButtonModule } from "@angular/material/button";
 import { MatCardModule } from "@angular/material/card";
 import { MatDialog, MatDialogModule } from "@angular/material/dialog";
@@ -40,32 +41,13 @@ import { PaymentService, STRIPE_PUBLIC_KEY } from "./payment.service";
     FontAwesomeModule,
     MatDividerModule,
     StripeCardComponent,
+    MatAutocompleteModule,
   ],
   templateUrl: "./checkoutPage.component.html",
   styleUrl: "./checkoutPage.component.scss",
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class CheckoutPageComponent {
-  @ViewChild(StripePaymentElementComponent)
-  public paymentElement!: StripePaymentElementComponent;
-
-  public cartProducts$: Observable<CartProduct[]>;
-
-  cardOptions: StripeCardElementOptions = {
-    style: {
-      base: {
-        iconColor: "#666EE8",
-        color: "#31325F",
-        fontWeight: 300,
-        fontFamily: '"Helvetica Neue", Helvetica, sans-serif',
-        fontSize: "18px",
-        "::placeholder": {
-          color: "#CFD7E0",
-        },
-      },
-    },
-  };
-
   private readonly fb = inject(FormBuilder);
   private readonly dialog = inject(MatDialog);
   private readonly paymentService = inject(PaymentService);
@@ -84,6 +66,26 @@ export class CheckoutPageComponent {
     amount: [0, [Validators.required, Validators.pattern(/\d+/)]],
   });
 
+  @ViewChild(StripePaymentElementComponent)
+  public paymentElement!: StripePaymentElementComponent;
+
+  @ViewChild("autocompleteInput") autocompleteInput: ElementRef<HTMLInputElement>;
+
+  cardOptions: StripeCardElementOptions = {
+    style: {
+      base: {
+        iconColor: "#666EE8",
+        color: "#31325F",
+        fontWeight: 300,
+        fontFamily: '"Helvetica Neue", Helvetica, sans-serif',
+        fontSize: "18px",
+        "::placeholder": {
+          color: "#CFD7E0",
+        },
+      },
+    },
+  };
+
   public elementsOptions: StripeElementsOptions = {
     locale: "en",
     appearance: {
@@ -96,11 +98,66 @@ export class CheckoutPageComponent {
     clientSecret: "123",
   };
 
+  public cartProducts$: Observable<CartProduct[]>;
   public total$: Observable<number>;
   public total: number;
 
   public paying = signal(false);
   public isCustomerDetailsEntered = signal(false);
+
+  public states: string[] = [
+    "Alabama",
+    "Alaska",
+    "Arizona",
+    "Arkansas",
+    "California",
+    "Colorado",
+    "Connecticut",
+    "Delaware",
+    "Florida",
+    "Georgia",
+    "Hawaii",
+    "Idaho",
+    "Illinois",
+    "Indiana",
+    "Iowa",
+    "Kansas",
+    "Kentucky",
+    "Louisiana",
+    "Maine",
+    "Maryland",
+    "Massachusetts",
+    "Michigan",
+    "Minnesota",
+    "Mississippi",
+    "Missouri",
+    "Montana",
+    "Nebraska",
+    "Nevada",
+    "New Hampshire",
+    "New Jersey",
+    "New Mexico",
+    "New York",
+    "North Carolina",
+    "North Dakota",
+    "Ohio",
+    "Oklahoma",
+    "Oregon",
+    "Pennsylvania",
+    "Rhode Island",
+    "South Carolina",
+    "South Dakota",
+    "Tennessee",
+    "Texas",
+    "Utah",
+    "Vermont",
+    "Virginia",
+    "Washington",
+    "West Virginia",
+    "Wisconsin",
+    "Wyoming",
+  ];
+  public filteredStates: string[] = this.states;
 
   get amount() {
     const amountValue = this.checkoutForm.get("amount")?.value;
@@ -214,5 +271,10 @@ export class CheckoutPageComponent {
           });
         },
       });
+  }
+
+  filter() {
+    const filterValue = this.autocompleteInput.nativeElement.value.toLowerCase();
+    this.filteredStates = this.states.filter((state) => state.toLowerCase().includes(filterValue));
   }
 }

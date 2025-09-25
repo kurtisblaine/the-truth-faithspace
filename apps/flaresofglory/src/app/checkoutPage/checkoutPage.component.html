@@ -32,7 +32,22 @@
               </mat-form-field>
               <mat-form-field appearance="outline" style="flex: 1">
                 <mat-label>State</mat-label>
-                <input matInput formControlName="state" />
+                <input
+                  type="text"
+                  placeholder="Pick a state"
+                  aria-label="State"
+                  matInput
+                  formControlName="state"
+                  #autocompleteInput
+                  (input)="filter()"
+                  (focus)="filter()"
+                  [matAutocomplete]="auto"
+                />
+                <mat-autocomplete requireSelection #auto="matAutocomplete">
+                  <mat-option *ngFor="let state of filteredStates" [value]="state">
+                    {{ state }}
+                  </mat-option>
+                </mat-autocomplete>
               </mat-form-field>
               <mat-form-field appearance="outline" style="flex: 1">
                 <mat-label>ZIP Code</mat-label>
