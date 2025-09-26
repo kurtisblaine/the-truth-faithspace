@@ -4,7 +4,7 @@
   <mat-tab-group>
     <mat-tab label="Sweatshirts & Hoodies">
       <mat-grid-list cols="2" [rowHeight]="rowHeight" gutterSize="16">
-        @for(product of products$ | async; track product.id) {
+        @for(product of sweatshirts$ | async; track product.id) {
         <mat-grid-tile (click)="selectProduct(product.id)" class="tile">
           <mat-card appearance="outlined" matRipple>
             <mat-card-header>

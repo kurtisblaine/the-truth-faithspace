@@ -15,7 +15,6 @@ import {
 import { provideEffects } from "@ngrx/effects";
 import { provideState, provideStore } from "@ngrx/store";
 import { provideStoreDevtools } from "@ngrx/store-devtools";
-import { provideNgxStripe } from "ngx-stripe";
 import { ProductsEffects } from "./+state/products/products.effects";
 import * as fromProducts from "./+state/products/products.reducer";
 import { appRoutes } from "./app.routes";
@@ -37,7 +36,6 @@ export const appConfig: ApplicationConfig = {
     provideState(fromProducts.PRODUCTS_FEATURE_KEY, fromProducts.productsReducer),
     provideStore(),
     provideStoreDevtools({ logOnly: !isDevMode() }),
-    provideNgxStripe(),
     {
       provide: STEPPER_GLOBAL_OPTIONS,
       useValue: { showError: true },

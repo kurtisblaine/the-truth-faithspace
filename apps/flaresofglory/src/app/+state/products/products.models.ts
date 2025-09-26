@@ -4,9 +4,14 @@ export interface ProductsEntity {
   description?: string;
   image: string;
   price: number;
+  type: ProductType;
   colors?: ColorProduct[];
 }
 
+export const enum ProductType {
+  Sweatshirts,
+  Accessories,
+}
 export interface ColorProduct {
   value: string;
   image: string;

@@ -1,5 +1,14 @@
-import { CommonModule, CurrencyPipe, NgOptimizedImage } from "@angular/common";
-import { ChangeDetectionStrategy, Component, ElementRef, inject, signal, ViewChild } from "@angular/core";
+import { CommonModule, CurrencyPipe, isPlatformBrowser, NgOptimizedImage } from "@angular/common";
+import {
+  afterNextRender,
+  ChangeDetectionStrategy,
+  Component,
+  ElementRef,
+  inject,
+  PLATFORM_ID,
+  signal,
+  ViewChild,
+} from "@angular/core";
 import { FormBuilder, FormGroup, ReactiveFormsModule, Validators } from "@angular/forms";
 import { MatAutocompleteModule } from "@angular/material/autocomplete";
 import { MatButtonModule } from "@angular/material/button";
@@ -13,13 +22,20 @@ import { MatToolbarModule } from "@angular/material/toolbar";
 import { Router } from "@angular/router";
 import { FontAwesomeModule } from "@fortawesome/angular-fontawesome";
 import { Store } from "@ngrx/store";
-import { StripeCardElementOptions, StripeElementsOptions } from "@stripe/stripe-js";
-import { injectStripe, StripeCardComponent, StripeElementsDirective, StripePaymentElementComponent } from "ngx-stripe";
+import {
+  ICancelCallbackData,
+  IClientAuthorizeCallbackData,
+  ICreateOrderRequest,
+  IOnApproveCallbackActions,
+  IOnApproveCallbackData,
+  IOnClickCallbackActions,
+  IPayPalConfig,
+  NgxPayPalModule,
+} from "ngx-paypal";
 import { Observable, tap } from "rxjs";
 import { CartProduct } from "../+state/products/products.models";
 import { selectCartProducts, selectCartTotal } from "../+state/products/products.selectors";
-import { PaymentConfirmationComponent } from "./payment-confirmation.component";
-import { PaymentService, STRIPE_PUBLIC_KEY } from "./payment.service";
+import { PaymentService } from "./payment.service";
 
 @Component({
   selector: "app-checkout-page",
@@ -33,15 +49,13 @@ import { PaymentService, STRIPE_PUBLIC_KEY } from "./payment.service";
     MatStepperModule,
     MatInputModule,
     MatToolbarModule,
-    StripePaymentElementComponent,
-    StripeElementsDirective,
     MatListModule,
     CommonModule,
     NgOptimizedImage,
     FontAwesomeModule,
     MatDividerModule,
-    StripeCardComponent,
     MatAutocompleteModule,
+    NgxPayPalModule,
   ],
   templateUrl: "./checkoutPage.component.html",
   styleUrl: "./checkoutPage.component.scss",
@@ -53,11 +67,11 @@ export class CheckoutPageComponent {
   private readonly paymentService = inject(PaymentService);
   private readonly store = inject(Store);
   private readonly router = inject(Router);
-  readonly stripe = injectStripe(STRIPE_PUBLIC_KEY);
+  private readonly platformId = inject(PLATFORM_ID);
 
   checkoutForm: FormGroup = this.fb.group({
     name: ["", [Validators.required]],
-    email: ["", [Validators.required]],
+    email: ["", [Validators.required, Validators.email]],
     address: ["", [Validators.required]],
     address2: ["", []],
     zipcode: ["", [Validators.required]],
@@ -66,37 +80,10 @@ export class CheckoutPageComponent {
     amount: [0, [Validators.required, Validators.pattern(/\d+/)]],
   });
 
-  @ViewChild(StripePaymentElementComponent)
-  public paymentElement!: StripePaymentElementComponent;
+  public paypalConfig!: IPayPalConfig;
+  public isPlatformBrowser = isPlatformBrowser(this.platformId);
 
   @ViewChild("autocompleteInput") autocompleteInput: ElementRef<HTMLInputElement>;
-
-  cardOptions: StripeCardElementOptions = {
-    style: {
-      base: {
-        iconColor: "#666EE8",
-        color: "#31325F",
-        fontWeight: 300,
-        fontFamily: '"Helvetica Neue", Helvetica, sans-serif',
-        fontSize: "18px",
-        "::placeholder": {
-          color: "#CFD7E0",
-        },
-      },
-    },
-  };
-
-  public elementsOptions: StripeElementsOptions = {
-    locale: "en",
-    appearance: {
-      theme: "stripe",
-      labels: "floating",
-      variables: {
-        colorPrimary: "#673ab7",
-      },
-    },
-    clientSecret: "123",
-  };
 
   public cartProducts$: Observable<CartProduct[]>;
   public total$: Observable<number>;
@@ -159,31 +146,82 @@ export class CheckoutPageComponent {
   ];
   public filteredStates: string[] = this.states;
 
-  get amount() {
-    const amountValue = this.checkoutForm.get("amount")?.value;
-    if (!amountValue || amountValue < 0) return 0;
+  constructor() {
+    afterNextRender(() => {
+      const savedData = localStorage.getItem("flaresOfGloryAddressInformation");
+      if (savedData) {
+        this.checkoutForm.patchValue(JSON.parse(savedData));
+      }
 
-    return Number(amountValue) / 100;
+      this.paypalConfig = {
+        currency: "usd",
+        clientId: "Acu5NzWjbsV2kTqyoemCdBg83kY_tXg6jDZ5-xRD6Yg_Ml3ZTem7Zbb4wGRNHl63gVdL9IoEaux07f7t",
+        createOrderOnClient: (data) =>
+          <ICreateOrderRequest>{
+            intent: "CAPTURE",
+            purchase_units: [
+              {
+                amount: {
+                  currency_code: "EUR",
+                  value: "9.99",
+                  breakdown: {
+                    item_total: {
+                      currency_code: "EUR",
+                      value: "9.99",
+                    },
+                  },
+                },
+                items: [
+                  {
+                    name: "Enterprise Subscription",
+                    quantity: "1",
+                    category: "DIGITAL_GOODS",
+                    unit_amount: {
+                      currency_code: "EUR",
+                      value: "9.99",
+                    },
+                  },
+                ],
+              },
+            ],
+          },
+        advanced: {
+          commit: "true",
+        },
+        style: {
+          label: "paypal",
+          tagline: true,
+          layout: "vertical",
+        },
+        onApprove: (data: IOnApproveCallbackData, actions: IOnApproveCallbackActions) => {
+          console.log("onApprove - transaction was approved, but not authorized", data, actions);
+          actions.order.get().then((details) => {
+            console.log("onApprove - you can get full order details inside onApprove: ", details);
+          });
+        },
+        onClientAuthorization: (data: IClientAuthorizeCallbackData) => {
+          console.log(
+            "onClientAuthorization - you should probably inform your server about completed transaction at this point",
+            data
+          );
+          // this.showSuccess = true;
+        },
+        onCancel: (data: ICancelCallbackData, actions: any) => {
+          console.log("OnCancel", data, actions);
+        },
+        onError: (err) => {
+          console.log("OnError", err);
+        },
+        onClick: (data, actions: IOnClickCallbackActions) => {
+          console.log("onClick", data, actions);
+        },
+      };
+    });
   }
 
   ngOnInit() {
     this.total$ = this.store.select(selectCartTotal).pipe(tap((r) => (this.total = r)));
-    const amount = this.checkoutForm.get("amount")?.value;
     this.cartProducts$ = this.store.select(selectCartProducts);
-
-    const savedData = localStorage.getItem("flaresOfGloryAddressInformation");
-    if (savedData) {
-      this.checkoutForm.patchValue(JSON.parse(savedData));
-    }
-
-    // this.paymentService
-    //   .createPaymentIntent({
-    //     amount,
-    //     currency: "eur",
-    //   })
-    //   .subscribe((pi) => {
-    //     this.elementsOptions.clientSecret = pi.client_secret as string;
-    //   });
   }
 
   saveAddress() {
@@ -223,54 +261,6 @@ export class CheckoutPageComponent {
     this.paying.set(true);
 
     const { name, email, address, zipcode, city } = this.checkoutForm.getRawValue();
-
-    this.stripe
-      .confirmPayment({
-        elements: this.paymentElement.elements,
-        confirmParams: {
-          payment_method_data: {
-            billing_details: {
-              name: name as string,
-              email: email as string,
-              address: {
-                line1: address as string,
-                postal_code: zipcode as string,
-                city: city as string,
-              },
-            },
-          },
-        },
-        redirect: "if_required",
-      })
-      .subscribe({
-        next: (result) => {
-          this.paying.set(false);
-          if (result.error) {
-            this.dialog.open(PaymentConfirmationComponent, {
-              data: {
-                type: "error",
-                message: result.error.message,
-              },
-            });
-          } else if (result.paymentIntent.status === "succeeded") {
-            this.dialog.open(PaymentConfirmationComponent, {
-              data: {
-                type: "success",
-                message: "Payment processed successfully",
-              },
-            });
-          }
-        },
-        error: (err) => {
-          this.paying.set(false);
-          this.dialog.open(PaymentConfirmationComponent, {
-            data: {
-              type: "error",
-              message: err.message || "Unknown Error",
-            },
-          });
-        },
-      });
   }
 
   filter() {

@@ -1,5 +1,5 @@
 import { createFeatureSelector, createSelector } from "@ngrx/store";
-import { CartProduct } from "./products.models";
+import { CartProduct, ProductType } from "./products.models";
 import { PRODUCTS_FEATURE_KEY, ProductsState, productsAdapter } from "./products.reducer";
 
 // Lookup the 'Products' feature state managed by NgRx
@@ -14,6 +14,9 @@ export const selectProductsError = createSelector(selectProductsState, (state: P
 export const selectAllProducts = createSelector(selectProductsState, (state: ProductsState) => selectAll(state));
 export const selectAllCartProducts = createSelector(selectProductsState, (state: ProductsState) =>
   selectAll(state).map((p) => ({ ...p, count: 1 } as CartProduct))
+);
+export const selectAllSweatshirts = createSelector(selectAllCartProducts, (products: CartProduct[]) =>
+  products.filter((p) => p.type === ProductType.Sweatshirts)
 );
 
 export const selectProductsEntities = createSelector(selectProductsState, (state: ProductsState) =>

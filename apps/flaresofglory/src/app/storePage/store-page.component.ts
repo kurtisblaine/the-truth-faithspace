@@ -14,7 +14,7 @@ import { Store } from "@ngrx/store";
 import { DeviceDetectorService } from "ngx-device-detector";
 import { Observable } from "rxjs";
 import { CartProduct } from "../+state/products/products.models";
-import { selectAllCartProducts } from "../+state/products/products.selectors";
+import { selectAllSweatshirts } from "../+state/products/products.selectors";
 
 @Component({
   selector: "app-store-page",
@@ -36,10 +36,10 @@ import { selectAllCartProducts } from "../+state/products/products.selectors";
 })
 export class StorePageComponent {
   public rowHeight: string;
-  public products$: Observable<CartProduct[]>;
+  public sweatshirts$: Observable<CartProduct[]>;
 
   constructor(private store: Store, private router: Router, private deviceDetector: DeviceDetectorService) {
-    this.products$ = this.store.select(selectAllCartProducts);
+    this.sweatshirts$ = this.store.select(selectAllSweatshirts);
     this.rowHeight = this.deviceDetector.isMobile() ? "1:2" : "2:1";
   }
 

@@ -1,7 +1,8 @@
-import { CommonModule } from "@angular/common";
+import { CommonModule, NgOptimizedImage } from "@angular/common";
 import { afterNextRender, Component, signal } from "@angular/core";
 import { MatBadgeModule } from "@angular/material/badge";
 import { MatButtonModule } from "@angular/material/button";
+import { MatDividerModule } from "@angular/material/divider";
 import { MatListModule } from "@angular/material/list";
 import { MatMenuModule } from "@angular/material/menu";
 import { MatToolbarModule } from "@angular/material/toolbar";
@@ -12,7 +13,7 @@ import { faBars, faGears, faShoppingCart } from "@fortawesome/free-solid-svg-ico
 import { Store } from "@ngrx/store";
 import { DeviceDetectorService } from "ngx-device-detector";
 import { Observable } from "rxjs";
-import { SettingsWidgetComponent, ThemeSettings } from "shared";
+import { SettingsWidgetComponent, ShareComponent, ThemeSettings } from "shared";
 import { initProducts } from "./+state/products/products.actions";
 import { selectCartCount } from "./+state/products/products.selectors";
 
@@ -29,6 +30,9 @@ import { selectCartCount } from "./+state/products/products.selectors";
     MatMenuModule,
     MatBadgeModule,
     CommonModule,
+    NgOptimizedImage,
+    ShareComponent,
+    MatDividerModule,
   ],
   selector: "app-root",
   templateUrl: "./app.component.html",
