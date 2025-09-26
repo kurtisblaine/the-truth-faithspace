@@ -7,6 +7,7 @@ import {
   inject,
   OnInit,
   PLATFORM_ID,
+  Signal,
   signal,
   ViewChild,
 } from "@angular/core";
@@ -34,7 +35,7 @@ import {
 import { Observable, tap } from "rxjs";
 import { CartProduct } from "../+state/products/products.models";
 import { selectCartProducts, selectCartTotal } from "../+state/products/products.selectors";
-import { PaymentService } from "./payment.service";
+import { PaymentConfirmationComponent } from "./payment-confirmation.component";
 
 @Component({
   selector: "app-checkout-page",
@@ -55,12 +56,11 @@ import { PaymentService } from "./payment.service";
   ],
   templateUrl: "./checkoutPage.component.html",
   styleUrl: "./checkoutPage.component.scss",
-  changeDetection: ChangeDetectionStrategy.OnPush,
+  changeDetection: ChangeDetectionStrategy.Default,
 })
 export class CheckoutPageComponent implements OnInit, AfterViewInit {
   private readonly fb = inject(FormBuilder);
   private readonly dialog = inject(MatDialog);
-  private readonly paymentService = inject(PaymentService);
   private readonly store = inject(Store);
   private readonly router = inject(Router);
   private readonly platformId = inject(PLATFORM_ID);
@@ -75,7 +75,7 @@ export class CheckoutPageComponent implements OnInit, AfterViewInit {
   public paypalConfig!: IPayPalConfig;
   public isPlatformBrowser = isPlatformBrowser(this.platformId);
 
-  public cartProducts$: Observable<CartProduct[]>;
+  public cartProducts: Signal<CartProduct[]>;
   public total$: Observable<number>;
   public total: number;
 
@@ -92,35 +92,7 @@ export class CheckoutPageComponent implements OnInit, AfterViewInit {
       this.paypalConfig = {
         currency: "USD",
         clientId: "Acu5NzWjbsV2kTqyoemCdBg83kY_tXg6jDZ5-xRD6Yg_Ml3ZTem7Zbb4wGRNHl63gVdL9IoEaux07f7t",
-        createOrderOnClient: (data) =>
-          <ICreateOrderRequest>{
-            intent: "CAPTURE",
-            purchase_units: [
-              {
-                amount: {
-                  currency_code: "USD",
-                  value: "9.99",
-                  breakdown: {
-                    item_total: {
-                      currency_code: "USD",
-                      value: "9.99",
-                    },
-                  },
-                },
-                items: [
-                  {
-                    name: "Enterprise Subscription",
-                    quantity: "1",
-                    category: "DIGITAL_GOODS",
-                    unit_amount: {
-                      currency_code: "USD",
-                      value: "9.99",
-                    },
-                  },
-                ],
-              },
-            ],
-          },
+        createOrderOnClient: this.createOrder(),
         advanced: {
           commit: "true",
         },
@@ -139,13 +111,14 @@ export class CheckoutPageComponent implements OnInit, AfterViewInit {
             "onClientAuthorization - you should probably inform your server about completed transaction at this point",
             data
           );
-          // this.showSuccess = true;
+          this.dialog.open(PaymentConfirmationComponent, { data: { type: "success", message: JSON.stringify(data) } });
         },
         onCancel: (data: ICancelCallbackData, actions: any) => {
           console.log("OnCancel", data, actions);
         },
         onError: (err) => {
           console.log("OnError", err);
+          this.dialog.open(PaymentConfirmationComponent, { data: { type: "error", message: JSON.stringify(err) } });
         },
         onClick: (data, actions: IOnClickCallbackActions) => {
           console.log("onClick", data, actions);
@@ -156,12 +129,40 @@ export class CheckoutPageComponent implements OnInit, AfterViewInit {
 
   ngOnInit() {
     this.total$ = this.store.select(selectCartTotal).pipe(tap((r) => (this.total = r)));
-    this.cartProducts$ = this.store.select(selectCartProducts);
+    this.cartProducts = this.store.selectSignal(selectCartProducts);
   }
 
-  ngAfterViewInit(): void {
-    console.log(this.matStepper);
-  }
+  ngAfterViewInit(): void {}
+
+  createOrder = () => (data) =>
+    <ICreateOrderRequest>{
+      intent: "CAPTURE",
+      purchase_units: [
+        {
+          amount: {
+            currency_code: "USD",
+            value: "9.99",
+            breakdown: {
+              item_total: {
+                currency_code: "USD",
+                value: "9.99",
+              },
+            },
+          },
+          items: [
+            {
+              name: "Enterprise Subscription",
+              quantity: "1",
+              category: "DIGITAL_GOODS",
+              unit_amount: {
+                currency_code: "USD",
+                value: "9.99",
+              },
+            },
+          ],
+        },
+      ],
+    };
 
   saveAddress() {
     localStorage.setItem("flaresOfGloryPersonalInformation", JSON.stringify(this.contactForm.value));

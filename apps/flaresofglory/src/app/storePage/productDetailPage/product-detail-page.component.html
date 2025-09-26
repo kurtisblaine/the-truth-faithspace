@@ -1,14 +1,14 @@
-<div *ngIf="selectedProduct$ | async as product" style="display: flex; align-content: center">
+<div *ngIf="selectedProduct$ | async as product" style="display: flex; align-content: center; height: 100%">
   <div style="height: 80vh; width: 50vw">
     <img class="large-image" [ngSrc]="product.image" [alt]="product.name" fill priority />
   </div>
 
   <div class="product-options">
     <h1>{{ product.name }}</h1>
-    <h2>{{ product.price | currency: "USD" }}</h2>
+    <h3>{{ product.price | currency: "USD" }}</h3>
 
     @if(product.colors) {
-    <div style="display: block">
+    <div style="display: block" class="product-option">
       <div>Color: {{ product.color }}</div>
       <mat-radio-group aria-label="Color" [(ngModel)]="product.color" (click)="$event.stopImmediatePropagation()">
         @for(color of product.colors; track color.value) {
@@ -18,7 +18,7 @@
     </div>
     }
 
-    <div style="display: inline-table">
+    <div style="display: inline-table" class="product-option">
       <mat-form-field name="size" aria-label="Size" appearance="outline" [subscriptSizing]="'dynamic'">
         <mat-label>Size</mat-label>
         <mat-select [(ngModel)]="product.size" required>
@@ -32,7 +32,7 @@
       <button mat-button (click)="openSizeGuide()">Size Guide <fa-icon [icon]="sizeIcon"></fa-icon></button>
     </div>
 
-    <mat-form-field appearance="outline" subscriptSizing="dynamic">
+    <mat-form-field appearance="outline" subscriptSizing="dynamic" class="product-option">
       <mat-label>Quantity</mat-label>
       <input
         matInput
@@ -46,11 +46,18 @@
       />
     </mat-form-field>
 
-    <button matButton="filled" [disabled]="!product.count || !product.size" (click)="addToCart(product)">
-      Add to Cart
-    </button>
+    <div class="product-option">
+      <button
+        matButton="filled"
+        style="height: 50px; width: 100%"
+        [disabled]="!product.count || !product.size"
+        (click)="addToCart(product)"
+      >
+        Add to Cart
+      </button>
+    </div>
 
-    <mat-accordion>
+    <mat-accordion style="height: 100%; margin: 15px 20px">
       <mat-expansion-panel expanded="true">
         <mat-expansion-panel-header>
           <mat-panel-title> Description </mat-panel-title>

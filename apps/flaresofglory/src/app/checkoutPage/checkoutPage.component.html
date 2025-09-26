@@ -17,9 +17,9 @@
               <mat-form-field appearance="outline" style="flex: 1">
                 <mat-label>Email</mat-label>
                 <input matInput formControlName="email" type="email" placeholder="you@example.com" />
-                <mat-hint>We'll never share your information with anybody else.</mat-hint>
+                <mat-hint>We'll never share your information.</mat-hint>
               </mat-form-field>
-              <button matButton="filled" matStepperNext (click)="saveAddress()">Save</button>
+              <button style="margin-top: 14px" matButton="filled" matStepperNext (click)="saveAddress()">Save</button>
             </div>
           </form>
         </mat-step>
@@ -30,7 +30,7 @@
           <ng-template matStepLabel>Payment Method</ng-template>
           @if(isPlatformBrowser) {
           <div style="padding: 20px">
-            <ngx-paypal [config]="paypalConfig"></ngx-paypal>
+            <ngx-paypal ngSkipHydration [config]="paypalConfig"></ngx-paypal>
           </div>
           }
         </mat-step>
@@ -49,7 +49,7 @@
     </mat-card-header>
     <mat-card-content>
       <mat-list>
-        @for(product of cartProducts$ | async; track $index) {
+        @for(product of cartProducts(); track $index) {
         <mat-list-item lines="3">
           <img matListItemAvatar class="product-image" [ngSrc]="product.image" [alt]="product.name" fill priority />
           <span matListItemTitle>{{ product.name }}</span>

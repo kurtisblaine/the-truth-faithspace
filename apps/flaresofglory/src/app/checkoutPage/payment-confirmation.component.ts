@@ -1,5 +1,6 @@
 import { CommonModule } from "@angular/common";
 import { Component, inject } from "@angular/core";
+import { MatButtonModule } from "@angular/material/button";
 import { MAT_DIALOG_DATA, MatDialogModule } from "@angular/material/dialog";
 
 @Component({
@@ -11,7 +12,7 @@ import { MAT_DIALOG_DATA, MatDialogModule } from "@angular/material/dialog";
     </div>
   `,
   standalone: true,
-  imports: [CommonModule, MatDialogModule],
+  imports: [CommonModule, MatDialogModule, MatButtonModule],
 })
 export class PaymentConfirmationComponent {
   data = inject<{ type: "error" | "success"; message?: string }>(MAT_DIALOG_DATA);
