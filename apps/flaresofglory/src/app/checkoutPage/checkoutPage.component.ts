@@ -1,23 +1,22 @@
 import { CommonModule, CurrencyPipe, isPlatformBrowser, NgOptimizedImage } from "@angular/common";
 import {
   afterNextRender,
+  AfterViewInit,
   ChangeDetectionStrategy,
   Component,
-  ElementRef,
   inject,
+  OnInit,
   PLATFORM_ID,
   signal,
   ViewChild,
 } from "@angular/core";
 import { FormBuilder, FormGroup, ReactiveFormsModule, Validators } from "@angular/forms";
-import { MatAutocompleteModule } from "@angular/material/autocomplete";
 import { MatButtonModule } from "@angular/material/button";
 import { MatCardModule } from "@angular/material/card";
 import { MatDialog, MatDialogModule } from "@angular/material/dialog";
-import { MatDividerModule } from "@angular/material/divider";
 import { MatInputModule } from "@angular/material/input";
 import { MatListModule } from "@angular/material/list";
-import { MatStepperModule } from "@angular/material/stepper";
+import { MatStepper, MatStepperModule } from "@angular/material/stepper";
 import { MatToolbarModule } from "@angular/material/toolbar";
 import { Router } from "@angular/router";
 import { FontAwesomeModule } from "@fortawesome/angular-fontawesome";
@@ -45,7 +44,6 @@ import { PaymentService } from "./payment.service";
     MatButtonModule,
     MatCardModule,
     MatDialogModule,
-    MatDividerModule,
     MatStepperModule,
     MatInputModule,
     MatToolbarModule,
@@ -53,15 +51,13 @@ import { PaymentService } from "./payment.service";
     CommonModule,
     NgOptimizedImage,
     FontAwesomeModule,
-    MatDividerModule,
-    MatAutocompleteModule,
     NgxPayPalModule,
   ],
   templateUrl: "./checkoutPage.component.html",
   styleUrl: "./checkoutPage.component.scss",
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class CheckoutPageComponent {
+export class CheckoutPageComponent implements OnInit, AfterViewInit {
   private readonly fb = inject(FormBuilder);
   private readonly dialog = inject(MatDialog);
   private readonly paymentService = inject(PaymentService);
@@ -69,92 +65,32 @@ export class CheckoutPageComponent {
   private readonly router = inject(Router);
   private readonly platformId = inject(PLATFORM_ID);
 
-  checkoutForm: FormGroup = this.fb.group({
+  @ViewChild("stepper") public matStepper!: MatStepper;
+
+  contactForm: FormGroup = this.fb.group({
     name: ["", [Validators.required]],
     email: ["", [Validators.required, Validators.email]],
-    address: ["", [Validators.required]],
-    address2: ["", []],
-    zipcode: ["", [Validators.required]],
-    city: ["", [Validators.required]],
-    state: ["", [Validators.required]],
-    amount: [0, [Validators.required, Validators.pattern(/\d+/)]],
   });
 
   public paypalConfig!: IPayPalConfig;
   public isPlatformBrowser = isPlatformBrowser(this.platformId);
 
-  @ViewChild("autocompleteInput") autocompleteInput: ElementRef<HTMLInputElement>;
-
   public cartProducts$: Observable<CartProduct[]>;
   public total$: Observable<number>;
   public total: number;
 
-  public paying = signal(false);
   public isCustomerDetailsEntered = signal(false);
-
-  public states: string[] = [
-    "Alabama",
-    "Alaska",
-    "Arizona",
-    "Arkansas",
-    "California",
-    "Colorado",
-    "Connecticut",
-    "Delaware",
-    "Florida",
-    "Georgia",
-    "Hawaii",
-    "Idaho",
-    "Illinois",
-    "Indiana",
-    "Iowa",
-    "Kansas",
-    "Kentucky",
-    "Louisiana",
-    "Maine",
-    "Maryland",
-    "Massachusetts",
-    "Michigan",
-    "Minnesota",
-    "Mississippi",
-    "Missouri",
-    "Montana",
-    "Nebraska",
-    "Nevada",
-    "New Hampshire",
-    "New Jersey",
-    "New Mexico",
-    "New York",
-    "North Carolina",
-    "North Dakota",
-    "Ohio",
-    "Oklahoma",
-    "Oregon",
-    "Pennsylvania",
-    "Rhode Island",
-    "South Carolina",
-    "South Dakota",
-    "Tennessee",
-    "Texas",
-    "Utah",
-    "Vermont",
-    "Virginia",
-    "Washington",
-    "West Virginia",
-    "Wisconsin",
-    "Wyoming",
-  ];
-  public filteredStates: string[] = this.states;
 
   constructor() {
     afterNextRender(() => {
-      const savedData = localStorage.getItem("flaresOfGloryAddressInformation");
+      const savedData = localStorage.getItem("flaresOfGloryPersonalInformation");
       if (savedData) {
-        this.checkoutForm.patchValue(JSON.parse(savedData));
+        this.contactForm.patchValue(JSON.parse(savedData));
+        !this.contactForm.errors ? this.matStepper.next() : null;
       }
 
       this.paypalConfig = {
-        currency: "usd",
+        currency: "USD",
         clientId: "Acu5NzWjbsV2kTqyoemCdBg83kY_tXg6jDZ5-xRD6Yg_Ml3ZTem7Zbb4wGRNHl63gVdL9IoEaux07f7t",
         createOrderOnClient: (data) =>
           <ICreateOrderRequest>{
@@ -162,11 +98,11 @@ export class CheckoutPageComponent {
             purchase_units: [
               {
                 amount: {
-                  currency_code: "EUR",
+                  currency_code: "USD",
                   value: "9.99",
                   breakdown: {
                     item_total: {
-                      currency_code: "EUR",
+                      currency_code: "USD",
                       value: "9.99",
                     },
                   },
@@ -177,7 +113,7 @@ export class CheckoutPageComponent {
                     quantity: "1",
                     category: "DIGITAL_GOODS",
                     unit_amount: {
-                      currency_code: "EUR",
+                      currency_code: "USD",
                       value: "9.99",
                     },
                   },
@@ -190,7 +126,6 @@ export class CheckoutPageComponent {
         },
         style: {
           label: "paypal",
-          tagline: true,
           layout: "vertical",
         },
         onApprove: (data: IOnApproveCallbackData, actions: IOnApproveCallbackActions) => {
@@ -224,20 +159,12 @@ export class CheckoutPageComponent {
     this.cartProducts$ = this.store.select(selectCartProducts);
   }
 
-  saveAddress() {
-    localStorage.setItem("flaresOfGloryAddressInformation", JSON.stringify(this.checkoutForm.value));
+  ngAfterViewInit(): void {
+    console.log(this.matStepper);
   }
 
-  clear() {
-    this.checkoutForm.patchValue({
-      name: "",
-      email: "",
-      address: "",
-      address2: "",
-      zipcode: "",
-      city: "",
-      state: "",
-    });
+  saveAddress() {
+    localStorage.setItem("flaresOfGloryPersonalInformation", JSON.stringify(this.contactForm.value));
   }
 
   public goCart() {
@@ -254,17 +181,5 @@ export class CheckoutPageComponent {
 
   public calculateTotalCosts() {
     return 0;
-  }
-
-  collectPayment() {
-    if (this.paying() || this.checkoutForm.invalid) return;
-    this.paying.set(true);
-
-    const { name, email, address, zipcode, city } = this.checkoutForm.getRawValue();
-  }
-
-  filter() {
-    const filterValue = this.autocompleteInput.nativeElement.value.toLowerCase();
-    this.filteredStates = this.states.filter((state) => state.toLowerCase().includes(filterValue));
   }
 }

@@ -6,9 +6,9 @@
     </mat-card-header>
     <mat-card-content>
       <mat-vertical-stepper linear #stepper>
-        <mat-step [stepControl]="checkoutForm">
-          <form [formGroup]="checkoutForm" style="margin: 10px">
-            <ng-template matStepLabel>Shipping Information</ng-template>
+        <mat-step [stepControl]="contactForm">
+          <form [formGroup]="contactForm" style="margin: 10px">
+            <ng-template matStepLabel>Contact Information</ng-template>
             <div style="display: flex; flex-direction: column; gap: 5px; width: 100%">
               <mat-form-field appearance="outline" style="flex: 1">
                 <mat-label>Full Name</mat-label>
@@ -17,71 +17,22 @@
               <mat-form-field appearance="outline" style="flex: 1">
                 <mat-label>Email</mat-label>
                 <input matInput formControlName="email" type="email" placeholder="you@example.com" />
+                <mat-hint>We'll never share your information with anybody else.</mat-hint>
               </mat-form-field>
-              <mat-form-field appearance="outline" style="flex: 1">
-                <mat-label>Address Line 1</mat-label>
-                <input matInput formControlName="address" />
-              </mat-form-field>
-              <mat-form-field appearance="outline" style="flex: 1" hideRequiredMarker="true">
-                <mat-label>Address Line 2</mat-label>
-                <input matInput formControlName="address2" placeholder="Apt, Suite, Unit Number, Etc" />
-              </mat-form-field>
-              <mat-form-field appearance="outline" style="flex: 1">
-                <mat-label>City</mat-label>
-                <input matInput formControlName="city" />
-              </mat-form-field>
-              <mat-form-field appearance="outline" style="flex: 1">
-                <mat-label>State</mat-label>
-                <input
-                  type="text"
-                  placeholder="Pick a state"
-                  aria-label="State"
-                  matInput
-                  formControlName="state"
-                  #autocompleteInput
-                  (input)="filter()"
-                  (focus)="filter()"
-                  [matAutocomplete]="auto"
-                />
-                <mat-autocomplete requireSelection #auto="matAutocomplete">
-                  <mat-option *ngFor="let state of filteredStates" [value]="state">
-                    {{ state }}
-                  </mat-option>
-                </mat-autocomplete>
-              </mat-form-field>
-              <mat-form-field appearance="outline" style="flex: 1">
-                <mat-label>ZIP Code</mat-label>
-                <input matInput formControlName="zipcode" />
-              </mat-form-field>
-              <button matButton="filled" matStepperNext (click)="saveAddress()">Next</button>
+              <button matButton="filled" matStepperNext (click)="saveAddress()">Save</button>
             </div>
           </form>
         </mat-step>
-        <mat-step>
+        <!-- <mat-step>
           <ng-template matStepLabel>Shipping Method</ng-template>
-          @if(isPlatformBrowser) {
-          <ngx-paypal [config]="paypalConfig"></ngx-paypal>
-          }
-        </mat-step>
+        </mat-step> -->
         <mat-step>
           <ng-template matStepLabel>Payment Method</ng-template>
-
-          <div style="margin-bottom: 20px"></div>
-          <mat-divider></mat-divider>
-          <div style="margin-bottom: 20px"></div>
-
-          <div style="text-align: right">
-            <button mat-stroked-button color="warn" [disabled]="paying" (click)="clear()" style="margin-right: 16px">
-              CLEAR
-            </button>
-            <button mat-raised-button color="primary" [disabled]="paying()" (click)="collectPayment()">
-              @if (paying()) {
-              <span>PROCESSING...</span>
-              } @else {
-              <span> PAY </span>
-              }
-            </button>
+          @if(isPlatformBrowser) {
+          <div style="padding: 20px">
+            <ngx-paypal [config]="paypalConfig"></ngx-paypal>
           </div>
+          }
         </mat-step>
       </mat-vertical-stepper>
     </mat-card-content>
