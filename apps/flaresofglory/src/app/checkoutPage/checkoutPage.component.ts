@@ -3,6 +3,7 @@ import {
   afterNextRender,
   AfterViewInit,
   ChangeDetectionStrategy,
+  ChangeDetectorRef,
   Component,
   inject,
   OnInit,
@@ -30,6 +31,7 @@ import {
   IOnApproveCallbackData,
   IOnClickCallbackActions,
   IPayPalConfig,
+  ITransactionItem,
   NgxPayPalModule,
 } from "ngx-paypal";
 import { Observable, tap } from "rxjs";
@@ -63,6 +65,7 @@ export class CheckoutPageComponent implements OnInit, AfterViewInit {
   private readonly dialog = inject(MatDialog);
   private readonly store = inject(Store);
   private readonly router = inject(Router);
+  private readonly changeDetection = inject(ChangeDetectorRef);
   private readonly platformId = inject(PLATFORM_ID);
 
   @ViewChild("stepper") public matStepper!: MatStepper;
@@ -87,12 +90,13 @@ export class CheckoutPageComponent implements OnInit, AfterViewInit {
       if (savedData) {
         this.contactForm.patchValue(JSON.parse(savedData));
         !this.contactForm.errors ? this.matStepper.next() : null;
+        this.changeDetection.markForCheck();
       }
 
       this.paypalConfig = {
         currency: "USD",
-        clientId: "Acu5NzWjbsV2kTqyoemCdBg83kY_tXg6jDZ5-xRD6Yg_Ml3ZTem7Zbb4wGRNHl63gVdL9IoEaux07f7t",
-        createOrderOnClient: this.createOrder(),
+        clientId: "ATBsnevpyAGuaebwGBk6tEFC5nCV0ZiElxyq9vBTLNnIzDAgHq5hDMxAUw7yf217dYl3HJPyxRwJnIV9",
+        createOrderOnClient: this.createOrder.bind(this),
         advanced: {
           commit: "true",
         },
@@ -134,35 +138,37 @@ export class CheckoutPageComponent implements OnInit, AfterViewInit {
 
   ngAfterViewInit(): void {}
 
-  createOrder = () => (data) =>
-    <ICreateOrderRequest>{
+  createOrder = (data) => {
+    const cartProducts = this.cartProducts();
+    const pricedProducts = cartProducts.map((product) => {
+      return {
+        name: product.name,
+        quantity: product.count.toString(),
+        unit_amount: { value: product.price.toString(), currency_code: "USD" },
+        description: product.description,
+        category: "PHYSICAL_GOODS",
+      } as ITransactionItem;
+    });
+
+    return {
       intent: "CAPTURE",
       purchase_units: [
         {
           amount: {
             currency_code: "USD",
-            value: "9.99",
+            value: this.total.toString(),
             breakdown: {
               item_total: {
                 currency_code: "USD",
-                value: "9.99",
+                value: this.total.toString(),
               },
             },
           },
-          items: [
-            {
-              name: "Enterprise Subscription",
-              quantity: "1",
-              category: "DIGITAL_GOODS",
-              unit_amount: {
-                currency_code: "USD",
-                value: "9.99",
-              },
-            },
-          ],
+          items: pricedProducts,
         },
       ],
-    };
+    } as ICreateOrderRequest;
+  };
 
   saveAddress() {
     localStorage.setItem("flaresOfGloryPersonalInformation", JSON.stringify(this.contactForm.value));
