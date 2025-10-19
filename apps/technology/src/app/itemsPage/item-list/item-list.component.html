@@ -1,25 +1,37 @@
-<div class="item-item" *ngFor="let item of pagedItems()">
-  <div class="item-title primary-color">
-    <app-link [link]="'https://shining-light-on-the-dark-web.firebaseapp.com/items/item-detail/' + item.id">
-      {{ item.title }}
-      <fa-icon [icon]="faLink" style="padding-left: 2px"></fa-icon>
-    </app-link>
-  </div>
-  <div>{{ item.date | date: "short" }}</div>
-
-  @if(update) {
-  <button mat-flat-button (click)="doUpdate(item)">Update</button>
-  <lib-text-editor [document]="item?.json" (editorChanged)="item.json = $event"></lib-text-editor>
-  } @else {
-  <lib-readonly-text-editor [html]="item?.json?.toString()"></lib-readonly-text-editor>
+<div class="item-page">
+  @if(!update) {
+  <lib-filter style="flex: 1 1 20%" (onChange)="searchTerm.set($event)"></lib-filter>
   }
 
-  <mat-divider></mat-divider>
-</div>
+  <div style="flex: 1 1 80%">
+    <div class="item-item" *ngFor="let item of pagedItems()">
+      <div class="item-title primary-color">
+        <app-link [link]="'https://shining-light-on-the-dark-web.firebaseapp.com/items/item-detail/' + item.id">
+          {{ item.title }}
+          <fa-icon [icon]="faLink" style="padding-left: 2px"></fa-icon>
+        </app-link>
+      </div>
+      <div>{{ item.date | date: "short" }}</div>
 
-<mat-paginator
-  [length]="total"
-  [showFirstLastButtons]="true"
-  [pageSize]="7"
-  (page)="onPageChange($event)"
-></mat-paginator>
+      @if(update) {
+      <button mat-flat-button (click)="doUpdate(item)">Update</button>
+      <lib-text-editor [document]="item?.json" (editorChanged)="item.json = $event"></lib-text-editor>
+      } @else {
+      <lib-readonly-text-editor
+        [html]="item?.json?.toString()"
+        [link]="'https://shining-light-on-the-dark-web.firebaseapp.com/items/item-detail/' + item.id"
+      ></lib-readonly-text-editor>
+      }
+
+      <mat-divider></mat-divider>
+    </div>
+
+    <mat-paginator
+      [length]="total()"
+      [showFirstLastButtons]="true"
+      [pageSize]="pageSize()"
+      [pageIndex]="pageIndex()"
+      (page)="onPageChange($event)"
+    ></mat-paginator>
+  </div>
+</div>

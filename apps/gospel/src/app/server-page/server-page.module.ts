@@ -3,6 +3,7 @@ import { NgModule } from "@angular/core";
 import { FormsModule, ReactiveFormsModule } from "@angular/forms";
 import { MatButtonModule } from "@angular/material/button";
 import { MatExpansionModule } from "@angular/material/expansion";
+import { MatFormFieldModule } from "@angular/material/form-field";
 import { RouterModule, Routes } from "@angular/router";
 import { TextEditorComponent } from "shared";
 import { BlogListComponent } from "../blog-page/blog-list/blog-list.component";
@@ -11,6 +12,7 @@ import { InsightListComponent } from "../insight-page/insight-list/insight-list.
 import { PsalmListComponent } from "../psalm-page/psalm-list/psalm-list.component";
 import { StudyListComponent } from "../study-page/study-list/study-list.component";
 import { ServerPageComponent } from "./server-page.component";
+import { MatInputModule } from "@angular/material/input";
 
 const routes: Routes = [
   {
@@ -33,6 +35,8 @@ const routes: Routes = [
     StudyListComponent,
     InsightListComponent,
     TextEditorComponent,
+    MatFormFieldModule,
+    MatInputModule,
   ],
 })
 export class ServerPageModule {}

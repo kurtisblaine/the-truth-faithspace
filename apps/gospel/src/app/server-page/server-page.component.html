@@ -4,10 +4,14 @@
 <button mat-flat-button (click)="saveDiscernment()">Post Discern</button>
 <button mat-flat-button (click)="saveStudy()">Post Study</button>
 
-<div>Title</div>
-<input matInput type="text" [(ngModel)]="title" required />
+<div style="display: flex; flex-direction: column; margin: 10px">
+  <mat-form-field appearance="outline">
+    <mat-label>Title</mat-label>
+    <input matInput type="text" [(ngModel)]="title" required />
+  </mat-form-field>
 
-<lib-text-editor (editorChanged)="onChange($event)"></lib-text-editor>
+  <lib-text-editor (editorChanged)="onChange($event)"></lib-text-editor>
+</div>
 
 <mat-accordion class="example-headers-align" multi>
   <mat-expansion-panel>

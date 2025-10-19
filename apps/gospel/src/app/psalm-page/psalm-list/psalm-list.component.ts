@@ -1,5 +1,5 @@
 import { CommonModule } from "@angular/common";
-import { ChangeDetectionStrategy, Component, effect, Input, OnInit, signal, Signal } from "@angular/core";
+import { ChangeDetectionStrategy, Component, computed, effect, Input, OnInit, signal, Signal } from "@angular/core";
 import { toSignal } from "@angular/core/rxjs-interop";
 import { MatButtonModule } from "@angular/material/button";
 import { MatDividerModule } from "@angular/material/divider";
@@ -7,7 +7,7 @@ import { MatPaginatorModule, PageEvent } from "@angular/material/paginator";
 import { faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
 import { Store } from "@ngrx/store";
 import { toHTML } from "ngx-editor";
-import { LibFaIconComponent, ReadonlyTextEditorComponent, TextEditorComponent } from "shared";
+import { FilterComponent, LibFaIconComponent, ReadonlyTextEditorComponent, TextEditorComponent } from "shared";
 import { LinkComponent } from "../../shared/components/link-redirect/link.component";
 import { createPsalm } from "../../state/psalm/psalm.actions";
 import { PsalmEntity } from "../../state/psalm/psalm.models";
@@ -25,6 +25,7 @@ import { getAllPsalm } from "../../state/psalm/psalm.selectors";
     LibFaIconComponent,
     LinkComponent,
     MatPaginatorModule,
+    FilterComponent,
   ],
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
@@ -32,27 +33,53 @@ export class PsalmListComponent implements OnInit {
   @Input() public update = false;
 
   public psalms!: Signal<PsalmEntity[]>;
-  public pagedPsalms = signal<PsalmEntity[]>([]);
-  public total!: number;
+  public pagedPsalms!: Signal<PsalmEntity[]>;
+  public total!: Signal<number>;
   public updatedJson: string | object;
+
+  public searchTerm = signal<string>("");
+  public properties: string[] = ["title", "json"];
+  public pageSize = signal(5);
+  public pageIndex = signal(0);
 
   public faLink = faArrowUpRightFromSquare;
 
   constructor(private store: Store) {
     this.psalms = toSignal(this.store.select(getAllPsalm));
 
+    this.pagedPsalms = computed(() => {
+      const filter = this.searchTerm().toLowerCase();
+
+      const filteredItems = this.psalms().filter(
+        (item) => item.json.toString().toLowerCase().includes(filter) || item.title.toLowerCase().includes(filter)
+      );
+
+      const startIndex = this.pageIndex() * this.pageSize();
+      const endIndex = startIndex + this.pageSize();
+      return filteredItems.slice(startIndex, endIndex);
+    });
+
+    this.total = computed(() => {
+      const filter = this.searchTerm().toLowerCase();
+
+      const filteredItems = this.psalms().filter(
+        (item) => item.json.toString().toLowerCase().includes(filter) || item.title.toLowerCase().includes(filter)
+      );
+
+      return filteredItems.length;
+    });
+
     effect(() => {
-      this.total = this.psalms().length;
-      this.onPageChange({ pageIndex: 0, pageSize: 7 } as PageEvent);
+      const _ = this.searchTerm();
+      this.pageIndex.set(0);
     });
   }
 
   ngOnInit(): void {}
 
   onPageChange(event?: PageEvent): void {
-    const startIndex = event.pageIndex * event.pageSize;
-    const endIndex = startIndex + event.pageSize;
-    this.pagedPsalms.set(this.psalms().slice(startIndex, endIndex));
+    this.pageIndex.set(event.pageIndex);
+    this.pageSize.set(event.pageSize);
   }
 
   public doUpdate(psalm: PsalmEntity) {

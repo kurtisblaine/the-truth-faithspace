@@ -1,3 +1,9 @@
+.psalm-page {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: flex-start;
+}
+
 .psalm-item {
   padding: 7px 0px;
 }
@@ -6,4 +12,14 @@
   // font-weight: 700;
   text-decoration: underline;
   cursor: pointer;
+}
+
+@media (max-width: 1000px) {
+  .psalm-page {
+    flex-direction: column;
+  }
+
+  .filter-card {
+    margin: unset;
+  }
 }

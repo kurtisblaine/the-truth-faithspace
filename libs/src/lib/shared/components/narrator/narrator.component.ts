@@ -53,7 +53,7 @@ export class NarratorComponent implements OnDestroy, OnInit {
   }
 
   ngOnDestroy(): void {
-    this.stopReading();
+    // this.stopReading();
     this.subscription?.unsubscribe();
     this.playingSubscription?.unsubscribe();
   }

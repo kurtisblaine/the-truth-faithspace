@@ -6,6 +6,9 @@
     "The beginning of wisdom is this: Get wisdom, and whatever you get, get insight." [Proverbs 4:7]
   </div>
 
-  <mat-spinner *ngIf="isLoading$ | async"></mat-spinner>
+  @if(isLoading$ | async) {
+  <mat-spinner></mat-spinner>
+  } @else {
   <app-item-list></app-item-list>
+  }
 </div>

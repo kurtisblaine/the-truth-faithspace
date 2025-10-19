@@ -1,5 +1,5 @@
 import { CommonModule } from "@angular/common";
-import { Component, effect, Input, OnInit, signal, Signal } from "@angular/core";
+import { Component, computed, effect, Input, OnInit, signal, Signal } from "@angular/core";
 import { toSignal } from "@angular/core/rxjs-interop";
 import { MatButtonModule } from "@angular/material/button";
 import { MatDividerModule } from "@angular/material/divider";
@@ -7,7 +7,7 @@ import { MatPaginatorModule, PageEvent } from "@angular/material/paginator";
 import { faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
 import { Store } from "@ngrx/store";
 import { toHTML } from "ngx-editor";
-import { LibFaIconComponent, ReadonlyTextEditorComponent, TextEditorComponent } from "shared";
+import { FilterComponent, LibFaIconComponent, ReadonlyTextEditorComponent, TextEditorComponent } from "shared";
 import { LinkComponent } from "../../shared/components/link-redirect/link.component";
 import { InsightEntity } from "../../state/insight/insight.models";
 import { createInsight } from "../../state/insight/insights.actions";
@@ -26,33 +26,60 @@ import { getAllInsight } from "../../state/insight/insights.selectors";
     LibFaIconComponent,
     LinkComponent,
     MatPaginatorModule,
+    FilterComponent,
   ],
 })
 export class InsightListComponent implements OnInit {
   @Input() public update = false;
 
   public insights!: Signal<InsightEntity[]>;
-  public pagedInsights = signal<InsightEntity[]>([]);
-  public total!: number;
+  public pagedInsights!: Signal<InsightEntity[]>;
+  public total!: Signal<number>;
   public updatedJson: string | object;
+
+  public searchTerm = signal<string>("");
+  public properties: string[] = ["title", "json"];
+  public pageSize = signal(5);
+  public pageIndex = signal(0);
 
   public faLink = faArrowUpRightFromSquare;
 
   constructor(private store: Store) {
     this.insights = toSignal(this.store.select(getAllInsight));
 
+    this.pagedInsights = computed(() => {
+      const filter = this.searchTerm().toLowerCase();
+
+      const filteredItems = this.insights().filter(
+        (item) => item.json.toString().toLowerCase().includes(filter) || item.title.toLowerCase().includes(filter)
+      );
+
+      const startIndex = this.pageIndex() * this.pageSize();
+      const endIndex = startIndex + this.pageSize();
+      return filteredItems.slice(startIndex, endIndex);
+    });
+
+    this.total = computed(() => {
+      const filter = this.searchTerm().toLowerCase();
+
+      const filteredItems = this.insights().filter(
+        (item) => item.json.toString().toLowerCase().includes(filter) || item.title.toLowerCase().includes(filter)
+      );
+
+      return filteredItems.length;
+    });
+
     effect(() => {
-      this.total = this.insights().length;
-      this.onPageChange({ pageIndex: 0, pageSize: 7 } as PageEvent);
+      const _ = this.searchTerm();
+      this.pageIndex.set(0);
     });
   }
 
   ngOnInit(): void {}
 
   onPageChange(event?: PageEvent): void {
-    const startIndex = event.pageIndex * event.pageSize;
-    const endIndex = startIndex + event.pageSize;
-    this.pagedInsights.set(this.insights().slice(startIndex, endIndex));
+    this.pageIndex.set(event.pageIndex);
+    this.pageSize.set(event.pageSize);
   }
 
   public doUpdate(insight: InsightEntity) {

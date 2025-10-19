@@ -5,6 +5,9 @@
     "The natural person does not accept the things of the Spirit of God, for they are folly to him, and he is not able
     to understand them because they are spiritually discerned." (1 Corinthians 2:14)
   </div>
-  <mat-spinner *ngIf="isLoading$ | async"></mat-spinner>
+  @if(isLoading$ | async) {
+  <mat-spinner></mat-spinner>
+  } @else {
   <blog-discern-list></blog-discern-list>
+  }
 </div>

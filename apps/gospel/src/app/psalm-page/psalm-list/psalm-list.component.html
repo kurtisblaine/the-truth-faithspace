@@ -1,25 +1,37 @@
-<div class="psalm-item" *ngFor="let psalm of pagedPsalms()">
-  <div class="psalm-title primary-color">
-    <blog-link [link]="'https://thelightof.life/poems/poem-detail/' + psalm.id"
-      >{{ psalm.title }}
-      <lib-fa-icon [icon]="faLink" style="padding-left: 2px"></lib-fa-icon>
-    </blog-link>
-  </div>
-  <div>{{ psalm.date | date: "short" }}</div>
-
-  @if(update) {
-  <button mat-flat-button (click)="doUpdate(psalm)">Update</button>
-  <lib-text-editor [document]="psalm.json" (editorChanged)="updatedJson = $event"></lib-text-editor>
-  } @else {
-  <lib-readonly-text-editor [html]="psalm?.json?.toString()"></lib-readonly-text-editor>
+<div class="psalm-page">
+  @if(!update) {
+  <lib-filter style="flex: 1 1 20%" (onChange)="searchTerm.set($event)"></lib-filter>
   }
 
-  <mat-divider></mat-divider>
-</div>
+  <div style="flex: 1 1 80%">
+    <div class="psalm-item" *ngFor="let psalm of pagedPsalms()">
+      <div class="psalm-title primary-color">
+        <blog-link [link]="'https://thelightof.life/poems/poem-detail/' + psalm.id"
+          >{{ psalm.title }}
+          <lib-fa-icon [icon]="faLink" style="padding-left: 2px"></lib-fa-icon>
+        </blog-link>
+      </div>
+      <div>{{ psalm.date | date: "short" }}</div>
 
-<mat-paginator
-  [length]="total"
-  [showFirstLastButtons]="true"
-  [pageSize]="7"
-  (page)="onPageChange($event)"
-></mat-paginator>
+      @if(update) {
+      <button mat-flat-button (click)="doUpdate(psalm)">Update</button>
+      <lib-text-editor [document]="psalm.json" (editorChanged)="updatedJson = $event"></lib-text-editor>
+      } @else {
+      <lib-readonly-text-editor
+        [html]="psalm?.json?.toString()"
+        [link]="'https://thelightof.life/poems/poem-detail/' + psalm.id"
+      ></lib-readonly-text-editor>
+      }
+
+      <mat-divider></mat-divider>
+    </div>
+
+    <mat-paginator
+      [length]="total()"
+      [showFirstLastButtons]="true"
+      [pageSize]="pageSize()"
+      [pageIndex]="pageIndex()"
+      (page)="onPageChange($event)"
+    ></mat-paginator>
+  </div>
+</div>

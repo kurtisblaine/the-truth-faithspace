@@ -6,6 +6,9 @@
     "Be diligent to present yourself approved to God, a worker who does not need to be ashamed, rightly dividing the
     word of truth." (2 Timothy 2:15)
   </div>
-  <mat-spinner *ngIf="isLoading$ | async"></mat-spinner>
+  @if(isLoading$ | async) {
+  <mat-spinner></mat-spinner>
+  } @else {
   <blog-study-list></blog-study-list>
+  }
 </div>

@@ -6,6 +6,9 @@
     "Speak to one another with psalms, hymns, and spiritual songs. Sing and make music in your hearts to the Lord,
     always giving thanks to God the Father for everything in the name of our Lord Jesus Christ." (Ephesians 5:19,20)
   </div>
-  <mat-spinner *ngIf="isLoading$ | async"></mat-spinner>
+  @if(isLoading$ | async) {
+  <mat-spinner></mat-spinner>
+  } @else {
   <blog-psalm-list></blog-psalm-list>
+  }
 </div>

@@ -1,5 +1,5 @@
 import { CommonModule } from "@angular/common";
-import { ChangeDetectionStrategy, Component, effect, Input, Signal, signal } from "@angular/core";
+import { ChangeDetectionStrategy, Component, computed, effect, Input, Signal, signal } from "@angular/core";
 import { toSignal } from "@angular/core/rxjs-interop";
 import { MatButtonModule } from "@angular/material/button";
 import { MatDividerModule } from "@angular/material/divider";
@@ -10,7 +10,7 @@ import { toHTML } from "ngx-editor";
 import { ItemsActions } from "../../+state/items/items.actions";
 import { ItemEntity } from "../../+state/items/items.reducer";
 import { selectAllItems } from "../../+state/items/items.selectors";
-import { ReadonlyTextEditorComponent, TextEditorComponent } from "../../../../../../libs/src";
+import { FilterComponent, ReadonlyTextEditorComponent, TextEditorComponent } from "../../../../../../libs/src";
 import { LinkComponent } from "../../shared/link/link.component";
 
 @Component({
@@ -21,40 +21,65 @@ import { LinkComponent } from "../../shared/link/link.component";
   imports: [
     MatDividerModule,
     CommonModule,
-    MatButtonModule,
     TextEditorComponent,
     ReadonlyTextEditorComponent,
+    MatButtonModule,
     LinkComponent,
     MatPaginatorModule,
+    FilterComponent,
   ],
 })
 export class ItemListComponent {
   @Input() public update = false;
 
   public items!: Signal<ItemEntity[] | undefined>;
-  public pagedItems = signal<ItemEntity[]>([]);
-  public total!: number;
-  public updatedJson: string | object;
+  public pagedItems!: Signal<ItemEntity[]>;
+  public total!: Signal<number>;
+  public updatedJson!: string | object;
+
+  public searchTerm = signal<string>("");
+  public properties: string[] = ["title", "json"];
+  public pageSize = signal(5);
+  public pageIndex = signal(0);
 
   public faLink = faArrowUpRightFromSquare;
 
   constructor(private store: Store) {
     this.items = toSignal(this.store.select(selectAllItems));
 
+    this.pagedItems = computed(() => {
+      const filter = this.searchTerm().toLowerCase();
+
+      const filteredItems = this.items()!.filter(
+        (item) => item.json.toString().toLowerCase().includes(filter) || item.title.toLowerCase().includes(filter)
+      );
+
+      const startIndex = this.pageIndex() * this.pageSize();
+      const endIndex = startIndex + this.pageSize();
+      return filteredItems.slice(startIndex, endIndex);
+    });
+
+    this.total = computed(() => {
+      const filter = this.searchTerm().toLowerCase();
+
+      const filteredItems = this.items()!.filter(
+        (item) => item.json.toString().toLowerCase().includes(filter) || item.title.toLowerCase().includes(filter)
+      );
+
+      return filteredItems.length;
+    });
+
     effect(() => {
-      this.total = this.items()!.length;
-      this.onPageChange({ pageIndex: 0, pageSize: 7 } as PageEvent);
+      const _ = this.searchTerm();
+      this.pageIndex.set(0);
     });
   }
 
   ngOnInit(): void {}
 
   onPageChange(event?: PageEvent): void {
-    if (!event) return;
-
-    const startIndex = event.pageIndex * event.pageSize;
-    const endIndex = startIndex + event.pageSize;
-    this.pagedItems.set(this.items()!.slice(startIndex, endIndex));
+    this.pageIndex.set(event!.pageIndex);
+    this.pageSize.set(event!.pageSize);
   }
 
   public doUpdate(item: ItemEntity) {

@@ -28,6 +28,7 @@ export class SafeHtmlPipe implements PipeTransform {
 export class ReadonlyTextEditorComponent {
   public html = input.required<string>();
   public showReadMore = input<boolean>(true);
+  public link = input<string>();
 
   public narratorStyle = NarratorStyle;
 
@@ -36,5 +37,10 @@ export class ReadonlyTextEditorComponent {
 
   constructor() {
     this.hasHtml = !!this.html;
+  }
+
+  goToLink() {
+    this.isReadMore = !this.isReadMore;
+    // window.open(this.link(), "_blank");
   }
 }
