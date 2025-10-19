@@ -48,11 +48,14 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
       charge you in the Lord to read the Book of Hebrews which calls all believers to hold fast the confession and the
       hope of Christ, persevering in the Lord until the end. Also read the Psalms of Asaph. We remember the Lord and
       what He has done for us through the confession of our lips, proclaiming His deeds to our neighbors, to our
-      household through the testimony He has given us of His grace and by His grace. For we did not discover the mystery
-      of the gospel ourselves, but we have come to the understanding of it through others. So thus we ought to be always
-      growing in love, faith and good works unto all people, especially those in the household of faith; if we grow in
-      these ways, we will not be ineffective in our knowledge of the Lord Jesus Christ as we await for His coming. We
-      have many great examples of patience and perseverance; as the apostle James provides examples, for he says,
+      household through the testimony He has given us of His grace. For we did not discover the mystery of the gospel
+      ourselves, but we have come to the understanding of it through others. So thus we ought to be always growing in
+      love, speaking the truth to one another; as the Psalmists says, “I have not hidden Your righteousness within my
+      heart; I have spoken of Your faithfulness and Your salvation; I have not concealed Your lovingkindness and Your
+      truth from the great congregation.” (Psalms 40:10) Do good works unto all people, especially those in the
+      household of faith; for if we grow in these ways, we will not be ineffective in our knowledge of the Lord Jesus
+      Christ as we await for His coming. We have many great examples of patience and perseverance; as the apostle James
+      provides examples, for he says,
       <blog-reference-tooltip [reference]="'James 5:7-11'">
         See how the farmer waits for the land to yield its valuable crop, patiently waiting for the autumn and spring
         rains. You too, be patient and stand firm, because the Lord’s coming is near. Don’t grumble against one another,
@@ -122,7 +125,8 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
       am convinced that even if our head be destroyed, and the functioning of our brain grows dim, and our bodies
       utterly perish in fire, we who believe with the heart won't be utterly crushed nor destroyed - for our faith in
       the heart will not be taken away. For the enemy may destroy the body, but can do nothing more thereafter: for the
-      body of flesh belongs to the ground, but the body of the spirit belongs to God.
+      body of flesh belongs to the ground, but the body of the spirit belongs to God. “Though He slay me, I will hope in
+      Him.” (Job 13:15)
     </ng-template>`,
   styles: ``,
   changeDetection: ChangeDetectionStrategy.OnPush,

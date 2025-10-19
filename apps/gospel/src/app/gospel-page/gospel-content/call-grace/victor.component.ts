@@ -27,10 +27,10 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
       that he killed at his death were more than he had killed in his life." (Judges 16:30) So Samson made a spectacle
       of them in that he destroyed them in his death; and he died with the uncircumcised Philistines. <br /><br />
 
-      And Jesus, having removed many demons from people who were oppressed, subduing them, freeing them who were held
-      captive by satan, was sent by God to be Judge, to be a Deliverer; but at the end of His life, He was betrayed by
-      Judas, His beloved disciple, and He was turned over to the Gentiles for mockery; just as it was written in the
-      prophet's Psalm,
+      These things point to Jesus, who, having removed many demons from people who were oppressed, subduing them,
+      freeing them who were held captive by satan, was sent by God to be Judge, to be a Deliverer; but at the end of His
+      life, He was betrayed by Judas, His beloved disciple, and He was turned over to the Gentiles for mockery; just as
+      it was written in the prophet's Psalm,
       <blog-reference-tooltip [reference]="'Psalm 41:9'">
         Even my close friend in whom I trusted, Who ate my bread, Has lifted up his heel against me.
       </blog-reference-tooltip>
@@ -56,18 +56,18 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
         them through the cross.
       </blog-reference-tooltip>
       For in His death, they were put to death; as it says, “His grave was assigned with wicked men." (Isaiah 53:9) For
-      Jesus satisfied the just requirement of the law by dying for our sins, rendering the law ineffective; and He
-      established a law of faith "so that He would be just and the justifier of the one who has faith in Jesus.” (Romans
-      3:26) So that He may turn us from the power of satan unto Himself through the gospel of God. For the accuser has
-      lost his strength in us who believe, for in Him we have the forgiveness of our sins; and where there is
+      He died for them. Jesus satisfied the just requirement of the law by dying for our sins, rendering the law
+      ineffective; and He established a law of faith "so that He would be just and the justifier of the one who has
+      faith in Jesus.” (Romans 3:26) So that He may turn us from the power of satan unto Himself through the gospel of
+      God. For the accuser has lost his strength, for in Him we have the forgiveness of our sins; and where there is
       forgiveness, there is no longer any remembrance; as it says, "I will forgive their iniquity, and their sin I will
       remember no more." (Jeremiah 31:34) “For by one offering He has perfected for all time those who are sanctified.”
-      (Hebrews 10:14) It is Christ Jesus fought the battle for us - we enter into His victory; for our God is for us,
-      doing on our behalf, fighting for us. Just as the Israelites entered into the Promised Land by the mighty hand of
-      God, so it is with us: we enter in by His powerful arm, following Him and obeying Him. Other gods require that you
-      do something for them: stand them up, feed them, dust them off, but they are no gods at all; but the one and only
-      God does on our behalf, waging war for us and defeating our foes. He defeated them through the cross, and we enter
-      into His victory through faith.
+      (Hebrews 10:14) It is Christ Jesus who fought the battle for us - we enter into His victory; for our God is for
+      us, doing on our behalf, fighting for us. Just as the Israelites entered into the Promised Land by the mighty hand
+      of God, so it is with us: we enter in by His powerful arm, following Him and obeying Him. Other gods require that
+      you do something for them: stand them up, feed them, dust them off, but they are no gods at all; but the one and
+      only God does on our behalf, waging war for us and defeating our foes. He defeated them through the cross, and we
+      enter into His victory through faith.
       <blog-link [link]="'https://thelightof.life/edifications/edify-detail/cff547c6-c5b8-3479-7472-f065fed444f5'"
         >(See more about Righteous Warfare)</blog-link
       >
@@ -75,14 +75,14 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
 
       In a different testimony, Haman, an enemy of the Jews, sought to kill the innocent Mordecai and with him, the
       Jewish nation. He payed money to the king to establish a decree: on a certain day, all Jews would be killed.
-      Furthermore, he had set up a pole by his home to impale Mordecai on it; but what was preventing him? He needed the
+      Furthermore, he had set up a pole by his home to impale Mordecai on it. But what was preventing him? He needed the
       permission of the king. But Mordecai was righteous and innocent: for he even saved the same king from being killed
       by spies. So while Haman went to go ask the king for permission to impale Mordecai, the king discovered from the
       book of the Chronicles that Mordecai saved him; so the king asked Haman, "What should be done to the one whom the
       king is pleased?" (Ester 6:6) And Haman, thinking the good was for himself, gave a favorable answer. The king then
       told him to do all he said to Mordecai, the Jew, which was Haman's enemy.
       <b>So the good Haman intended for himself went to Mordecai.</b>
-      And later at a banquet, Queen Ester who was a Jew and the niece to Mordecai spoke of Haman's decree to kill the
+      And later at a banquet, Queen Ester who was a Jew, and the niece to Mordecai, spoke of Haman's decree to kill the
       Jews, which was approved by the king in ignorance; for he did not know the Queen was a Jew, for she kept her
       nationality hidden. And the king was furious because Haman sought to kill the Queen, and he had Haman instead
       killed; he was impaled on the pole which he set up for Mordecai, for it was told the king of Haman's plan.
@@ -92,8 +92,8 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
       nation celebrates this as the Day of Purim as a testimony, which means "lots", because it was by lot the day was
       chosen.<br /><br />
 
-      Now, Christ looked to be defeated on the cross, but He was made weak willingly; moments before His crucifixion He
-      testified,
+      Now, concerning Christ, He looked to be defeated on the cross, but He was made weak willingly; moments before His
+      crucifixion He testified,
       <blog-reference-tooltip [reference]="'Matthew 26:52-53'" [isJesusWord]="true">
         Do you think I cannot call on my Father, and he will at once put at my disposal more than twelve legions of
         angels? But how then would the Scriptures be fulfilled that say it must happen in this way?
@@ -101,8 +101,7 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
       Also He said,
       <blog-reference-tooltip [reference]="'John 10:17-18'" [isJesusWord]="true">
         The reason the Father loves Me is that I lay down My life in order to take it up again. No one takes it from Me,
-        but I lay it down of My own accord. I have authority to lay it down and authority to take it up again. This
-        charge I have received from My Father.
+        but I lay it down of My own accord. I have authority to lay it down and authority to take it up again.
       </blog-reference-tooltip>
       If the rulers of this world would have known what they were doing, they would not have crucified the Lord of glory
       - but their minds were darkened. The rulers wanted for themselves the inheritance, the kingdom of Israel (as with
@@ -110,7 +109,7 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
       Christ suffered only a wound to His heel, and satan to his head (for we wrestle not against flesh and blood). For
       Christ did not remain in the grave forever, only three days; and the judgment upon the ruler of this world has
       been pronounced and has been executed. For who was defeated by the cross? If satan was judged at the fall, and was
-      made to grovel on his belly, how much more is he rendered powerless through the cross of Christ? As Christ says,
+      made to grovel on his belly, how much more is he weakened through the cross of Christ? As Christ says,
       <blog-reference-tooltip [reference]="'John 16:11'" [isJesusWord]="true">
         Concerning judgment, because the ruler of this world has been judged. </blog-reference-tooltip
       ><br /><br />
@@ -120,10 +119,9 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
         >the good the enemy intended for himself was given to Christ; and the evil the enemy intended for Christ was
         poured out upon his own head.</b
       >
-      As with Haman, he was impaled on the tree that he set up for Mordecai; so likewise it was the devil who was
-      defeated by the cross. It is through the cross we have victory in Jesus! The devil's final end is decreed in the
-      Book. Thus the glory and honor which the enemy wanted for himself went to Christ Jesus - the King of Kings and the
-      Lord of Lords! The jugement which the enemy intended for Christ was poured out upon his own head; as Jesus said,
+      So it was the devil who was defeated by the cross. The devil's final end is decreed in the Book. Thus the glory
+      and honor which the enemy wanted for himself went to Christ Jesus - the King of Kings and the Lord of Lords! The
+      jugement which the enemy intended for Christ was poured out upon his own head; as Jesus said,
       <blog-reference-tooltip [reference]="'John 12:31-32'" [isJesusWord]="true">
         Now judgment is upon this world; now the ruler of this world will be cast out. And I, if I am lifted up from the
         earth, will draw all men to Myself.

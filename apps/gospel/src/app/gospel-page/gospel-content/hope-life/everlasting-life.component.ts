@@ -46,7 +46,7 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
       For those who follow, follow their leader, and they go where ever the leader goes. For we who believe in Jesus,
       trust in Him and follow Him where ever He goes. Those who follow Him, do as He does; and those who do as He does,
       receive the reward as He did. Christ is the Gate, the Door, the Way to life. And furthermore in Him is the life;
-      there is one life and the life is in the Son;
+      there is one life and the life is in the Son; for
       <blog-reference-tooltip [reference]="'Romans 6:23'">
         The gift of God is eternal life <b>in</b> Christ Jesus our Lord.
       </blog-reference-tooltip>
@@ -55,11 +55,11 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
       <br /><br />
 
       Our race is a race of faith, but there is also a walk, a walk after the Spirit, following Him as He goes ahead of
-      us- yes, the Spirit goes on ahead and we follow. Christ, firstly, was the forerunner, racing the race perfectly
-      before us. So we don't make up our own way for ourselves, because we know He is the Way; and we do not need to be
-      afraid since Christ went on ahead of us and paved the way for us; and we know His goodly end. For just as the
-      Israelites had a pillar of fire by night and a pillar of cloud by day to lead them, the same God who said to them
-      has also said to us,
+      us - surely, the Spirit goes on ahead and we follow. Christ, firstly, was the forerunner, racing the race
+      perfectly before us. So we don't make up our own way for ourselves, because we know He is the Way; and we do not
+      need to be afraid since Christ went on ahead of us and paved the way for us; and we know His goodly end. For just
+      as the Israelites had a pillar of fire by night and a pillar of cloud by day to lead them, the same God who said
+      to them has also said to us,
       <blog-reference-tooltip [reference]="'Exodus 23:20'">
         Behold, I send an angel before you to guard you on the way
         <b>and to bring you to the place that I have prepared.</b>
@@ -87,8 +87,8 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
         <b>For the ways of the LORD are right, And the righteous will walk in them</b>, But transgressors will stumble
         in them.
       </blog-reference-tooltip>
-      We know of Christ's exaltation; and we also know of Christ's sufferings: death, even on a cross. His sufferings
-      were here on earth; and our sufferings which we will undergo are here as well; as Jesus said,
+      We know of Christ's exaltation; and we also know of Christ's sufferings: even the cross. His sufferings were here
+      on earth; and our sufferings which we will undergo are here as well; as Jesus said,
       <blog-reference-tooltip [reference]="'John 15:20'" [isJesusWord]="true">
         Remember the word that I said to you, 'A slave is not greater than his master.' If they persecuted Me, they will
         also persecute you; if they kept My word, they will keep yours also.

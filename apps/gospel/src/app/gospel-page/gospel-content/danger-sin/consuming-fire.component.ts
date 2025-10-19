@@ -28,23 +28,23 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
       angel of light, himself truly being darkness; but God, being fire and light, shrouds Himself in a dark cloud lest
       man see Him and die, for no one can see Him and live. The devil doesn't rule over hell, but God prepared hell for
       the devil and his angels. And He has prepared a place for us, a heavenly place, provided we do not follow demons,
-      but God; for who we follow, we will receive the same's end: demons unto hell or God unto Paradise. For who-ever we
-      follow, we follow to a place, to an end, to a destination; and who we follow, we do the same of him who we follow.
-      But someone might say, "I only follow, but they are deceiving me." But
+      but God; for who we follow, we will receive the same's end: demons unto hell, or God unto Paradise. For who-ever
+      we follow, we follow to a place, to an end, to a destination; and who we follow, we do the same of him who we
+      follow. But someone might say, "I only follow, but they are deceiving me." But
       <blog-reference-tooltip [reference]="'Luke 6:39'" [isJesusWord]="true">
-        A blind man cannot guide a blind man, can he? Will they not both fall into a pit?
+        A blind man cannot guide a blind man, can he?
       </blog-reference-tooltip>
       And furthermore, it says, "They will bear the punishment of their iniquity; as the iniquity of the inquirer is, so
       the iniquity of the [false] prophet will be.” (Ezekiel 14:10) So the judgement is the same for both, the false
       leader and the follower; and all sin must be punished. For God is just, He cannot let sin go unpunished. But you
       still might say, "Sin in me causes me to do wrong, but I myself want to do good. How is God just in punishing me?"
       Sin is inseperable from the sinner; we are the ones to allow sin, inclining our hearts toward sin rather than to
-      God, being led astray by our sinful desires; and we error out of the way. But yet
+      God, being led astray by our sinful desires; and we error out of the way. But yet,
       <blog-reference-tooltip [reference]="'Proverbs 24:12'">
         If you say, "See, we did not know this," Does He not consider it who weighs the hearts? And does He not know it
         who keeps your soul? And will He not render to man according to his work?
       </blog-reference-tooltip>
-      For God knows the heart of man, and He is kind and compassionate towards those who act in ignorance. All sin is
+      For God knows the heart of man, He is kind and compassionate towards those who act in ignorance. All sin is
       against God, for sin is transgression against God's law, the written and the unwritten code. The law is written on
       the heart of man, and He knows what we know. Yet, this one thing I know: the Most High dwells with the lowly and
       contrite of heart; He is rich, but He dwells with the poor; He is Most High, but He dwells with the low; as He
@@ -69,7 +69,7 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
       </blog-reference-tooltip>
       This is how we obtain wisdom, and this is how we perfect wisdom: by fearing God. The more we fear Him, the wiser
       we become. If wisdom starts by the fear of the Lord, how much more is it perfected by the fear of the Lord? The
-      wisest thing we can do is fear God; and the wisest thing to do: get wisdom. Revere Him like you would a Father or
+      wisest thing we can do is fear God; and the wisest thing to do: get wisdom. Revere Him like you would a Father and
       a King, for He is the Father of fathers and the King of kings; He is the Ancient one, who establishes kingdoms and
       overthrows them. And the one who does not fear God is foolish, for only a fool destroys himself. The left hand is
       the weaker of the two hands, so strive for what is right; as light is better than darkness, so wisdom is better
@@ -93,18 +93,18 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
           >How to understand the fear of the LORD.</a
         > -->
 
-      The LORD God is the First and the Last; He has no beginning nor end; He is the Beginning and the End; He lives
+      The LORD God is the First and the Last; He has no beginning nor end; but He is the Beginning and the End; He lives
       from everlasting to everlasting; all things He has created. He alone has power to take up the sword and destroy,
       yet He gives life and relents in destruction; He is patient with the wicked everyday. He sets all things upright
       and gives every living thing a habitation to live; He gives fish to the sea, birds to the air, and animals to the
       land. He created them and gives them their food; He doesn't create so they would be in want, but everything He
-      established so that everything would be nurtured by Him and dependent on Him, so that nothing would exist apart
-      from Him. If He does this with the animals, how much more we humans? Are we not more precious than many animals?
-      Can anything breathe without Him? As it says, “If He should determine to do so, If He should gather to Himself His
-      spirit and His breath, All flesh would perish together, And man would return to dust.” (Job 34:14-15) He created
-      once by wisdom, and all things have been established through wisdom, yet all things we presently see are passing
-      away; and they will eventually come to an end. The end has been mentioned from the beginning; all ages have spoken
-      about the end in times past; and yet it is delayed even to this day. However,
+      established so that everything would be nurtured by Him and dependent on Him, so that nothing would exist
+      independent from Him. If He does this with the animals, how much more we humans? Are we not more precious than
+      many animals? Can anything breathe without Him? As it says, “If He should determine to do so, If He should gather
+      to Himself His spirit and His breath, All flesh would perish together, And man would return to dust.” (Job
+      34:14-15) He created once by wisdom, and all things have been established through wisdom, yet all things we
+      presently see are passing away; and they will eventually come to an end. The end has been mentioned from the
+      beginning; all ages have spoken about the end in times past; and yet it is delayed even to this day. However,
       <blog-reference-tooltip [reference]="'2 Peter 3:9'">
         The Lord is not slow about His promise, as some count slowness, but is patient toward you, not wishing for any
         to perish but for all to come to repentance.
@@ -113,10 +113,10 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
       <br /><br />
 
       For God is not taught good, He is Good; God is not taught love, He is Love; God is not taught anything, for He
-      knows all things and all things come into being by Him. He is served by no-one, as if He needed anything, but He
-      gives life and breath to all. He has power and authority; and He does what He pleases, yet He chooses good. He is
-      Good, and outside of Him there is no goodness at all; and in Him there is the fullness of all goodness. Love
-      abounds in Him, for He alone is Love. With love is jealousy; and God's jealousy is a fire; as it says,
+      knows all things and all things come into being by Him. He is served by no-one, as if He needed anything; He gives
+      life and breath to all. He has power and authority; and He does what He pleases, yet He chooses good. He is Good,
+      and outside of Him there is no goodness at all; and in Him there is the fullness of all goodness. Love abounds in
+      Him, for He alone is Love. With love is jealousy; and God's jealousy is a fire; as it says,
       <blog-reference-tooltip [reference]="'Exodus 34:14'">
         You shall worship no other god, for the LORD, whose name is Jealous, is a jealous God.
       </blog-reference-tooltip>
@@ -142,7 +142,7 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
 
       If a husband loves his wife and his wife cheats with another man, he is going to have two strong emotions: anger
       and jealousy. Are these emotions evil? They can be, but are they evil in this case? They are powerful emotions;
-      they come from his love for his wife. If he did not love his wife, there would be no reason to be angry or
+      they come from the man's love for his wife. If he did not love his wife, there would be no reason to be angry or
       jealous; but since he loves his wife, it says,
       <blog-reference-tooltip [reference]="'Proverbs 6:34-35'">
         Jealousy enrages a husband, and he will show no mercy in the day of vengeance. He will not be appeased by any
@@ -156,7 +156,7 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
       snakes and knives; the father will discipline his child and start to hate the snakes and knives which cause his
       child's harm. Is the discipline done because the father hates his child? Of course not! In fact, the discipline is
       proof that he loves his child and the father considers him his own. If the father did not discipline his child,
-      then he would be considered illegitimate by him. Does not discipline purge to even the inmost folly? As it says,
+      then he would be considered illegitimate. Does not discipline purge to even the inmost folly? As it says,
       <blog-reference-tooltip [reference]="'Proverbs 22:15'">
         Foolishness is bound up in the heart of a child; The rod of discipline will remove it far from him.
       </blog-reference-tooltip>
@@ -190,13 +190,13 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
         that he was jealous
         <b>with My jealousy among them, so that I did not destroy the sons of Israel in My jealousy.</b>
       </blog-reference-tooltip>
-      Furthermore, Jehu smote these false gods in the land of Israel with the jealousy of the Most High and with the
+      Furthermore, Jehu destroyed these false gods in the land of Israel with the jealousy of the Most High and with the
       zeal of God, for he was God's chosen instrument for this very purpose (2 Kings 9-10). So without question, these
       men were used by God to execute His fierce jealousy. Therefore, fear the LORD! For does not a man fear fire? He
       respects its power, not feeding it too much wood, not getting too close. How much more should we fear God who is
-      Creator of all? He is creator of the burning fire of the sun, Himself being a consuming fire! How much less should
-      we stoke the fire of God's fierce jealousy with idolatry? How much more should we stand at a distance and make
-      petitions from afar, hearing Him and speaking to Him through another? As it says,
+      Creator of all, a consuming fire? He is creator of the burning fire of the sun, Himself being a consuming fire!
+      How much less should we stoke the fire of God's fierce jealousy with idolatry? How much more should we stand at a
+      distance and make petitions from afar, hearing Him and speaking to Him through another? As it says,
       <blog-reference-tooltip [reference]="'Exodus 20:18-20'">
         All the people perceived the thunder and the lightning flashes and the sound of the trumpet and the mountain
         smoking; and when the people saw, they trembled and stood at a distance. Then they said to Moses, "Speak to us
@@ -212,7 +212,7 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
         of all the people, 50,070 men, and the people mourned because the LORD had struck the people with a great
         slaughter.
       </blog-reference-tooltip>
-      However in these last days, the true way to see God is being revealed: that is, to see God through faith. This
+      However in these last days, the true way to see God is being revealed: that is, to see Him through faith. This
       faith is sight by hearing, seeing Him with the eye of our understanding. All who see Him through faith will live
       and not die, but the one who sees Him naturally dies. Thus we see why faith is necessary: because He is Holy. But
       through this faith, we are washed, we are sanctified, and we are justified. And this faith is in God.

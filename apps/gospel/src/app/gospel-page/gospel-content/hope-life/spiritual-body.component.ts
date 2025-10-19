@@ -10,28 +10,32 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
   template: `<ng-container *ngTemplateOutlet="newSpiritualBodies"></ng-container>
     <ng-template #newSpiritualBodies>
       The promise of the inheritance is contingent on our present sufferings with Christ; the fellowship of His
-      sufferings, sharing in His afflictions through faith. Since Christ suffered and gave Himself up for us, not living
-      for His own will, but for the will of God; He followed God's will perfectly, even to death, even death on a cross;
-      so we also pick up our cross, suffering for the sake of Christ: bearing His reproach and living not for our own
-      will, but for the will of God; and so, we do not depend on our own strength for life, although death is at work in
-      us, but we trust in the power of His life and grace. For we are to obey Christ in this way, following His example,
-      for He is the Way; and His every directive very much direct us to everlasting life, so therefore they are not
-      burdensome - they're for our good. Everything He commands us to do, our Commander and Chief has done; and we are
-      His soldiers in His heavenly legion with weapons of warfare for good, fighting the righteous warfare with weapons
-      of righteousness in the right hand and the left, striving for the faith, tearing down every stronghold of the
-      enemy and every lofty imagination which exalts itself against the knowledge of the truth. And He trains our hands
-      for battle, for we suffer for a cause not of our own, but for the one who enlisted us. We constantly hand
-      ourselves over to death so that the life of Jesus may be expressed in our mortal body. So then we see that the
-      newness of creation is not just something to be partaken of in the future, but it is also partaken of in the
-      present: for the more we die, the more Christ lives in us. "For we who are alive are always being given over to
-      death for Jesus' sake, so that his life may be revealed in our mortal body." (2 Corinthians 4:11) Therefore "Bear
-      fruit in keeping with repentance." (Matthew 3:8) For in truth, this is death. As Paul said, “I affirm, brethren,
-      by the boasting in you which I have in Christ Jesus our Lord, I die daily.” (1 Corinthians 15:31) For this is the
-      goal and the prize: to be filled with the fullness of the Spirit and to grow into the full maturity of Christ, to
-      be in the like resemblance of perfection and holiness of the Father, to be in unity with the body of Christ with
-      one mind and one purpose, loving one another in truth, keeping in step with all of God's saints. Growing up in the
-      likeness of the Lord just as we're called to grow. For “though our outer man is decaying, yet our inner man is
-      being renewed day by day.” (2 Corinthians 4:16)
+      sufferings, sharing in His afflictions. Since Christ suffered and gave Himself up for us, not living for His own
+      will, but for the will of God; He followed God's will perfectly, even to death, even death on a cross; so we also
+      pick up our cross, suffering for the sake of Christ: bearing His reproach and living not for our own will, but for
+      the will of God; and so, we do not depend on our own strength for life, although death is at work in us, but we
+      trust in the power of His life and grace. For we are to obey Christ in this way, following His example, for He is
+      the Way; and His every directive very much direct us to everlasting life, so therefore they are not burdensome -
+      they're for our good. Everything He commands us to do, our Commander and Chief has done; and we are His soldiers
+      in His heavenly legion with weapons of warfare for good, fighting the righteous warfare with weapons of
+      righteousness in the right hand and the left, striving for the faith, tearing down every stronghold of the enemy
+      and every lofty imagination which exalts itself against the knowledge of the truth. And He trains our hands for
+      battle, for we suffer for a cause not of our own, but for the one who enlisted us. We constantly hand ourselves
+      over to death so that the life of Jesus may be expressed in our mortal body. So then we see that the newness of
+      creation is not just something to be partaken of in the future, but it is also partaken of in the present: for the
+      more we die, the more Christ lives in us. "For we who are alive are always being given over to death for Jesus'
+      sake, so that his life may be revealed in our mortal body." (2 Corinthians 4:11) Therefore "Bear fruit in keeping
+      with repentance." (Matthew 3:8) For in truth, this is death. As Paul said, “I affirm, brethren, by the boasting in
+      you which I have in Christ Jesus our Lord, I die daily.” (1 Corinthians 15:31) As the Lord said,
+      <blog-reference-tooltip [reference]="'Luke 9:23'" [isJesusWord]="true"
+        >If anyone wishes to come after Me, he must deny himself, and take up his cross daily and follow
+        Me.</blog-reference-tooltip
+      >
+      For this is the goal and the prize: to be filled with the fullness of the Spirit and to grow into the full
+      maturity of Christ, to be in the like resemblance of perfection and holiness of the Father, to be in unity with
+      the body of Christ with one mind and one purpose, loving one another in truth, keeping in step with all of God's
+      saints. Growing up in the likeness of the Lord just as we're called to grow. For “though our outer man is
+      decaying, yet our inner man is being renewed day by day.” (2 Corinthians 4:16)
       <br /><br />
 
       So mortification of the former body, and the fruitless deeds of it, is needed if we want any hope of an eternal
@@ -77,8 +81,8 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
       will be. We know that when He appears, we will be like Him, because we will see Him just as He is.” (1 John 3:2)
       The things we presently see are perishing, but our hope, which is unseen, is in Christ. He has promised us an
       imperishable body, free from sin and decay. And if we have the promise, we have what is promised, for God is
-      faithful. For this reason we count ourselves to be saved even though eternal salvation has not yet come; as the
-      writer of Hebrews says, "Christ also, having been offered once to bear the sins of many,
+      faithful. For this reason we count ourselves to be saved although the fulfillment of eternal salvation has not yet
+      come; as the writer of Hebrews says, "Christ also, having been offered once to bear the sins of many,
       <b>will appear a second time for salvation</b> without reference to sin, to those who eagerly await Him.” (Hebrews
       9:28) So when He comes, He will bring along this eternal deliverance with Him. As it also says,
       <blog-reference-tooltip [reference]="'Isaiah 62:11'">
@@ -99,9 +103,9 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
       one hundred years old and his wife Sarah was ninety years old, and he had no descendants, and he was still a
       foreigner in the land. But yet it says, "I have given." Even yet when Isaac was born, the descendants did not
       receive the land for another 400 years! But God said, "To your descendants I have <b>given</b> this land.”
-      (Genesis 15:18) And this shows us that God's promise is sure, as if what He has promised has already been given.
-      So it is: God has given us eternal salvation in Jesus Christ, our Lord. And we are saved by faith in His name. So
-      therefore, hold fast to the truth committed to you! <br /><br />
+      (Genesis 15:18) And this shows us that God's promise is sure, as if what He has promised has already been
+      fulfilled; for who can contradict God? So it is: God has given us eternal salvation in Jesus Christ, our Lord. And
+      we are saved by faith in His name. So therefore, hold fast to the truth committed to you! <br /><br />
 
       For the new creation has already begun! It starts with our minds being renewed, then when Christ comes, He will
       bring with Him these new heavenly bodies - and we will be changed. The new creation will never die; they who are
@@ -132,7 +136,7 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
       <br /><br />
 
       Speaking further of the resurrection: there are certain creatures in nature which have their home on earth and
-      die, transforming to a heavenly life. For instance, the butterfly: she was a caterpillar, moving on her belly
+      die, transforming to a heavenly life. For example, the butterfly: she was a caterpillar, moving on her belly
       eating the herbs of the ground. When her time came, she hardened herself into a caccoon and broke forth into a
       butterfly. Her home is no longer among the earthly, but it is in the heavens. A dragonfly is similar, except he
       lives in the water, in the depths of the water; he crawls up a leaf and becomes hard by the sun, breaking forth

@@ -17,7 +17,7 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
         your eye is bad, your whole body will be full of darkness. If then the light that is in you is darkness, how
         great is the darkness!
       </blog-reference-tooltip>
-      So just as what we eat resides in the flesh, what we see resides in the spirit; similarily, it says,
+      So just as what we eat resides in the flesh, what we see resides in the spirit. Similarily, it says,
       <blog-reference-tooltip [reference]="'Job 12:11'">
         Does not the ear test words, As the palate tastes its food?
       </blog-reference-tooltip>
@@ -26,9 +26,9 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
         The things that proceed out of the mouth come from the heart, and those defile the man.
       </blog-reference-tooltip>
       So what goes into the mouth does not defile a person, but what comes out of the mouth. If we want good to come out
-      of us, we must fill ourselves with the goodness of God through the word of faith; if we want good worked out of
+      of us, we must fill ourselves with the goodness of God through the word of Christ; if we want good worked out of
       us, we must have God work in us. Therefore, abide in God; abide in Him for life, filling up with His Word about
-      His Son, so that through His Word He would abide in us; He has given us assurance saying,
+      His Son, so that through His Word He would abide in us; He has given us assurance, saying,
       <blog-reference-tooltip [reference]="'John 15:3-5'" [isJesusWord]="true">
         Abide in Me, and I in you. As the branch cannot bear fruit of itself unless it abides in the vine, so neither
         [can] you unless you abide in Me. I am the vine, you are the branches; he who abides in Me and I in him, he
@@ -41,9 +41,9 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
       </blog-reference-tooltip>
       <br /><br />
 
-      When we eat food, it fills us up and gives us strength for a short while; likewise, God's grace is our strength,
-      our food, it is for our spirit, strengthening us now and forever. But when does food work best? When you are full
-      or when you are empty? When you are hungry a piece of bread is like a steak! So it says,
+      When we eat food, it fills us up and gives us strength for a short while; but God's grace is our strength, our
+      food, it is for our spirit, strengthening us now and forever. But when does food work best? When you are full or
+      when you are empty? When you are hungry a piece of bread is like a steak! So it says,
       <blog-reference-tooltip [reference]="'Proverbs 27:7'">
         A satisfied soul loathes the honeycomb, But to a hungry soul every bitter thing is sweet.
       </blog-reference-tooltip>
@@ -51,7 +51,7 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
       <blog-reference-tooltip [reference]="'2 Corinthians 12'" [isJesusWord]="true">
         My grace is sufficient for you, <b>for power is perfected in weakness.</b>
       </blog-reference-tooltip>
-      So it is: when we are empty or hungry, God's Word is perfected in us, but God opposes the proud or the full; for
+      So it is: when we are empty, or hungry, God's Word is perfected in us, but God opposes the proud, or the full; for
       God gives grace to the humble. When one is proud, he is full of himself, and God's grace is not useful to a proud
       soul, for he tramples over it, even though it is a honeycomb; however, if the proud empties his soul in humility,
       God's grace works well in him; a humble man is filled up, not with the air of himself, but with the grace of
@@ -78,21 +78,21 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
       raised? If we know a person by their works, or a tree by its fruit, what type of tree do you discern Jesus Christ
       resembles by His fruit, except the Tree of Life? As Moses prayed,
       <blog-reference-tooltip [reference]="'Exodus 33:13'">
-        Now therefore, I pray You, if I have found favor in Your sight, let me know Your ways that I may know You, so
-        that I may find favor in Your sight.
+        I pray You, if I have found favor in Your sight, let me know Your ways that I may know You, so that I may find
+        favor in Your sight.
       </blog-reference-tooltip>
       For he prayed he may know God by His works and find favor; and so by the fruit of Jesus Christ, that is, by His
       work on the cross, we have been saved through the knowledge of Him, our God and our Savior, who is unto us the
-      Tree of Life, which yields food imperishable to everlasting life; he who knows the fruit of the tree knows the
-      Tree and finds favor with God to life. And He is unto us the River of Living Water, which is His Spirit, which is
-      living drink that we may never thirst again. They who eat and drink the things of this world, eat and drink death;
-      but we who eat and drink Christ, eat and drink life. They who live by the things which are seen, which are wasting
-      away, likewise waste away, as we are all wasting away, for everything which is seen is perishing; but we who live
-      by Him, who is not seen, will live forever by the things which never die. While we are wasting away, we are being
+      Tree of Life, which yields food imperishable to everlasting life; he who knows the fruit knows the Tree and finds
+      favor with God to life. And He is unto us the River of Living Water, which is His Spirit, which is living drink
+      that we may never thirst again. They who eat and drink the things of this world, eat and drink death; but we who
+      eat and drink Christ, eat and drink life. They who live by the things which are seen, which are wasting away,
+      likewise waste away, as we are all wasting away, for everything which is seen is perishing; but we who live by
+      Him, who is not seen, will live forever by the things which never die. While we are wasting away, we are being
       renewed by the Spirit day by day, to be made more like Him, to be made worthy of eternal life which is to be
       revealed when He is revealed to the whole world. So therefore, seek and search for Him, the living Life, dwelling
-      above the heavens, and He will let you find Him by His grace. We who sow to the Spirit reap life, and the mind set
-      on the Spirit is life and peace; so set your minds on the things above where Christ dwells.
+      above the heavens, and He will let you find Him. We who sow to the Spirit reap life, and the mind set on the
+      Spirit is life and peace; so set your minds on the things above where Christ dwells.
       <blog-link [link]="'https://thelightof.life/edifications/edify-detail/82f4d580-3f2d-a049-d46d-6036c26062a8'"
         >(See more on the Living Bread)</blog-link
       >
@@ -101,21 +101,21 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
       For how is it that Moses fasted for 40 days and 40 nights without food nor water? He had nourishment from the
       Father, a nourishment that we know nothing about; for when we eat food in this world, we eat something that has
       died: a plant that has been plucked, an animal that has been slain, or a piece of fruit that has been harvested.
-      Everything that is cut off from its life undergoes death; afterwards, the food begins to rot and grow hairs of
-      mold, being consumed slowly within and without, since it is plucked from its life and it is not consumed by the
-      living before its time; however it doesn't perish while it is on the tree or in the ground or has the breath of
-      life, for life preserves it. So if we live for a little while by eating the death of a thing, how much more do you
-      suppose we would live by eating the life? For Jesus Christ is the true food and the true drink, He is the author
-      of life; He has given Himself as food. Everyone who eats on earth, eats death; but we who come heaven-ward for
-      food, eat life. And He gives to us the righteousness by which we who hunger are truly satisfied; as He says,
+      Everything that is cut off from its life undergoes death; then the food begins to rot and grow hairs of mold,
+      being consumed slowly within and without, since it is plucked from its life and it is not consumed by the living
+      before its time; however it doesn't perish while it is on the tree or in the ground or has the breath of life, for
+      life preserves it. So if we live for a little while by eating the death of a thing, how much more do you suppose
+      we live by eating the life? For Jesus Christ is the true food and the true drink, He is the author of life; He has
+      given Himself as food. Everyone who eats on earth, eats death; but we who come heaven-ward for food, eat life. And
+      He gives unto us the righteousness by which we who hunger are truly satisfied; as He says,
       <blog-reference-tooltip [reference]="'Matthew 5:6'" [isJesusWord]="true">
         Blessed are those who hunger and thirst for righteousness, for they shall be satisfied.
       </blog-reference-tooltip>
       And the righteousness of God is contrary to food which cannot satisfy, which says, “All a man's labor is for his
       mouth and yet the appetite is not satisfied.” (Ecclesiastes 6:7) And, "He enlarges his appetite like Sheol, And he
-      is like death, never satisfied.” (Habakkuk 2:5) So our appetites are never satisfied, but we are by God's
-      righteousness, which He feeds us through Christ. Therefore, the Spirit and the Bride says, "Come!" All come! As it
-      says,
+      is like death, never satisfied.” (Habakkuk 2:5) So our appetites are never satisfied, but we are made full by
+      God's righteousness, which He feeds us through Christ. Therefore, the Spirit and the Bride says, "Come!" All come!
+      As it says,
       <blog-reference-tooltip [reference]="'Isaiah 55:1-3'">
         Come, everyone who thirsts, come to the waters; and he who has no money, come, buy and eat! Come, buy wine and
         milk without money and without price. Why do you spend your money for that which is not bread, and your labor
@@ -125,9 +125,9 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
       </blog-reference-tooltip>
       So it says, "If a man were to give all the riches of his house for love, It would be utterly despised." (Song of
       Solomon 8:7) For God gives everlasting springs and everlasting bread free of cost, which lasts for all eternity;
-      something so precious, not all the money in the world can buy, and God gives it freely: for His grace is the free
-      gift of God. No longer are we under the bonds of futility, working for food which does not last, for our labor in
-      the Lord is not in vain! For the will of the Lord is our bread; and our work in the Lord is the work of faith.
+      something so precious, not all the money in the world can buy, and God gives it freely: for grace is a free gift
+      from God. No longer are we under the bonds of futility, working for food which does not last, for our labor in the
+      Lord is not in vain! For the will of the Lord is our bread; and our work in the Lord is the work of faith.
       Therefore, run the race of faith, believing in the Son of God; as our Lord says,
       <blog-reference-tooltip [reference]="'John 6:27-35'" [isJesusWord]="true">
         Do not work for the food which perishes, but for the food which endures to eternal life, which the Son of Man
@@ -142,7 +142,7 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
       <br /><br />
 
       See a tremendous thing: God has given us a tangible act of communion with Him in which we eat bread and drink
-      wine; here is where food and grace meet again. And we are commanded to do communion - on a set day? No. As often
+      wine; here is where food and grace meet again. And we are commanded to do communion - on a set day? No! As often
       as we like, so that we do not forget His gracious work on the cross; for we have come to know the truth through
       understanding, it would be to our shame if we forget, for forgetfulness renders knowledge void. The festivals and
       holy days prescribed by the law were commanded on set days; but these were all fulfilled in Christ. Christ Jesus
@@ -160,11 +160,11 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
       cease, For His compassions never fail. They are new every morning; Great is Your faithfulness.” (Lamentations
       3:22-23) So we rest in His kindness, and abide therein everyday, for God is good; the time of waiting for Him has
       ceased. We should fear lest we harden ourselves toward God by being ignorant of His ways, erring in the heart, and
-      departing out of the way. Remember His ways, declare His works. Remember Christ, He is the Way. This is the key to
-      remaining: remembering. And the key to abiding: not forgetting. God's grace is a gift to us, but to the Father,
+      departing out of the way. Remember His ways, declare His works. Remember Christ Jesus, He is the Way. This is the
+      key to remaining: remembering. And the key to abiding: meditation. God's grace is a gift to us, but to the Father,
       costly. He gave up His Son, He lost Him for a short while, He gained Him back forever. Do not receive God's grace
-      in vain by forgetting these wonderful truths, but treat them as precious and hold fast to them. When faced with
-      death, I will not shake; I know Him that makes the earth-quake; hold fast dearly beloved, hold fast; for in vain
+      in vain by forgetting these wonderful truths, but treat them as precious and hold fast to them. "When faced with
+      death, I will not shake; I know Him that makes the earth-quake." Hold fast dearly beloved, hold fast; for in vain
       it does not say,
       <blog-reference-tooltip [reference]="'Hebrews 12:4'">
         You have not yet resisted to bloodshed, striving against sin.

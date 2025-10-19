@@ -13,9 +13,9 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
       seared as with a hot iron, calloused and devoid of any conviction. By the message of the truth, He purified our
       conscience from dead works to serve the living God. He set us free from the law for righteousness and has made us
       right with God by the sacrifice of Jesus Christ. The law stood to condemn us: the longer we lived, the more we
-      sinned, and the greater our debt. However, through Christ Jesus, God freely forgave our ticket of debt, which is
-      our transgression, which is hostile to us, but He nailed it to the cross, having cleansed our defiled conscience
-      by the sprinkling of His blood. Through His body, all rules and regulations of the law were put to death, the
+      sinned, the greater our debt. However, through Christ Jesus, God freely forgave our ticket of debt, which is our
+      transgression, which is hostile to us, but He nailed it to the cross, having cleansed our defiled conscience by
+      the sprinkling of His blood. Through His body, all rules and regulations of the law were put to death, the
       hostility, the enmity, the pride, for Christ justifies us freely by His grace; thus "Christ is the end of the law
       for righteousness to everyone who believes.” (Romans 10:4) The law could never justify, “because by the works of
       the Law no flesh will be justified in His sight; for through the Law comes the knowledge of sin.” (Romans 3:20)
@@ -35,12 +35,13 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
       us by those who heard Him." (Hebrews 2:3) For He healed many people, not because they obeyed any law or rule, but
       because of their profession of faith, namely, they confessed He is the Seed of David, the Prophet to come; and
       with a change of law, there is also a change of temple, a change of priesthood, of sacrifice, of worship. For such
-      things are spoken concerning the new covenant: concerning the temple, it says, "Your body is a temple of the Holy
-      Spirit who is in you, whom you have from God." (1 Corinthians 6:19) Or even, "You have come to Mount Zion and to
-      the city of the living God, the heavenly Jerusalem." (Hebrews 12:22) And concerning the new high priest, it says,
-      "Christ appeared as a high priest of the good things to come." (Hebrews 9:11) And concerning the sacrifice, it
-      says, "He offered one sacrifice for sins for all time." (Hebrews 10:12) And concerning worship, it says, "God is
-      spirit, and those who worship Him must worship in spirit and truth." (John 4:24)
+      things are spoken concerning the new covenant: concerning the change of temple, it says, "Your body is a temple of
+      the Holy Spirit who is in you, whom you have from God." (1 Corinthians 6:19) Or even, "You have come to Mount Zion
+      and to the city of the living God, the heavenly Jerusalem." (Hebrews 12:22) And concerning the change of high
+      priest, it says, "Christ appeared as a high priest of the good things to come." (Hebrews 9:11) And concerning the
+      change of sacrifice, it says, "He offered one sacrifice for sins for all time." (Hebrews 10:12) And concerning the
+      change of worship, it says, "God is spirit, and those who worship Him must worship in spirit and truth." (John
+      4:24)
       <blog-link [link]="'https://thelightof.life/edifications/edify-detail/eec06cc1-2ce2-3f35-fa35-8c08aaf6c431'"
         >(See more about the law of Christ)</blog-link
       >
@@ -64,31 +65,31 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
       And it is the new which remains forever; it is the new which inherits the new heaven and the new earth. “For
       neither is circumcision anything, nor uncircumcision, but a new creation.” (Galatians 6:15) Christ Jesus takes
       away the old and sets up the new, superseding the law of God and inaugurating a law of faith; for He was saying,
-      "You have heard that it was said..." (the law of God) Then He was saying, "But I say to you..." (the law of
-      Christ) (As written in Matthew 5:17-48); and so the former is the law of God, the latter is the law of faith; the
-      former is the physical requirement, and the latter is the spiritual; for the physical comes first, then the
-      spiritual. The former cleansed the flesh, but the latter the conscience (Hebrews 9:13-14). The law was given so
-      that the disobedient would be revealed as disobedient, but Christ has revealed God: He was sent to forgive
-      transgressors of their transgressions; “For God has shut up all in disobedience so that He may show mercy to all.”
-      (Romans 11:32) He has shut up all in disobedience to the law, so that He may show mercy to us. Nevertheless,
-      although faith is exemplified, we do not reject the law of God, for faith is weightier than the law of God - if we
-      fulfill the law of faith, we fulfill the law of God - for God the Father puts a new heart and a new spirit in us,
-      so that, through the sanctifying work of the Holy Spirit, we may be presented to Him as holy and blameless before
-      His coming.
+      "You have heard that it was said." (the law of God) Then He was saying, "But I say to you." (the law of Christ)
+      (As written in Matthew 5:17-48); and so the former is the law of God, the latter is the law of faith; the former
+      is the physical requirement, and the latter is the spiritual; for the physical comes first, then the spiritual.
+      The former cleansed the flesh, but the latter the conscience (Hebrews 9:13-14). The law was given so that the
+      disobedient would be revealed as disobedient, but Christ has revealed God: He was sent to forgive transgressors of
+      their transgressions; “For God has shut up all in disobedience so that He may show mercy to all.” (Romans 11:32)
+      He has shut up all in disobedience to the law, so that He may show mercy to us in Christ. Nevertheless, although
+      faith is exemplified, we do not reject the law of God, for faith is weightier than the law of God - if we fulfill
+      the law of faith, we fulfill the law of God - for God the Father puts a new heart and a new spirit in us, so that,
+      through the sanctifying work of the Holy Spirit, we may be presented to Him as holy and blameless before His
+      coming.
       <blog-link [link]="'https://thelightof.life/edifications/edify-detail/eec06cc1-2ce2-3f35-fa35-8c08aaf6c431'"
         >(See again more about the law of Christ)</blog-link
       >
       <br /><br />
 
       So thus, we are not bound by the law of God if we follow the law of the Spirit and life, for the fruit of the
-      Spirit are all good things, and there is no law against doing good. The law acted as a guardian until the time of
-      Christ was revealed: for we are under our parent's supervision until the age of 18. But when we turn 18, we are
-      set free from our guardianship. Likewise, we have been locked up and chained under the power and supervision of
-      these elemental spiritual forces of the world until the fullness of time, that is, when God shined the light of
-      the gospel in our hearts. When we believed, we were made free; we were made new by the Spirit of God and set free
-      from the law at faith; for in the law sin has its power, and sin reigns in death. Do we then neglect the law of
-      God by faith? No! But rather, through faith we uphold the law - for faith fulfills the law of God through carrying
-      each other's burdens. Who then is the law of God for? As it says,
+      Spirit are all good things, and there is no law against good. The law acted as a guardian until the time of Christ
+      was revealed: for we are under our parent's supervision until the age of 18. But when we turn 18, we are set free
+      from our guardianship. Likewise, we have been locked up and chained under the power and supervision of these
+      elemental spiritual forces of the world until the fullness of time, that is, when God shone the light of the
+      gospel in our hearts. When we believed, we were made free; we were made new by the Spirit of God and set free from
+      the law at faith; for in the law sin has its power, and sin reigns in death. Do we then neglect the law of God by
+      faith? No! But rather, through faith we uphold the law - for faith fulfills the law of God through carrying each
+      other's burdens. Who then is the law of God for? As it says,
       <blog-reference-tooltip [reference]="'1 Timothy 1:8-11'">
         But we know that the law is good if one uses it lawfully, knowing this: that the law is not made for a righteous
         person, but for the lawless and insubordinate, for the ungodly and for sinners, for the unholy and profane, for

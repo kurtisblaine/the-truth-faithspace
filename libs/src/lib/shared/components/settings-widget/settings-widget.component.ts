@@ -27,7 +27,7 @@ export type ThemeSettings = {
   imports: [CommonModule, FormsModule, MatSelectModule, MatButtonToggleModule, MatButtonModule, MatDividerModule],
   template: `
     <h3>Settings</h3>
-    <div style="padding: 5px 0px">
+    <div style="padding: 5px 0px; display: flex; justify-content: space-evenly; align-items: center">
       <mat-label style="padding-right: 5px">Theme</mat-label>
       <mat-button-toggle-group
         aria-label="Theme Select"

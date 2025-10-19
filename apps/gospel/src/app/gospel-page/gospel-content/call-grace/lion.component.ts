@@ -9,28 +9,9 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
   imports: [CommonModule, ReferenceTooltipComponent, LinkComponent],
   template: `<ng-container *ngTemplateOutlet="theLion"></ng-container>
     <ng-template #theLion>
-      <!-- Someone may ask, "Why is a testimony like this in the Scriptures?" As it is written:
-      <blog-reference-tooltip [reference]="'Judges 14:5-9'">
-        Then Samson went down with his father and mother to Timnah, and they came to the vineyards of Timnah. And
-        behold, a young lion came toward him roaring. Then the Spirit of the Lord rushed upon him, and although he had
-        nothing in his hand, he tore the lion in pieces as one tears a young goat. But he did not tell his father or his
-        mother what he had done. Then he went down and talked with the woman, and she was right in Samson's eyes. After
-        some days he returned to take her. And he turned aside to see the carcass of the lion, and behold, there was a
-        swarm of bees in the body of the lion, and honey. He scraped it out into his hands and went on, eating as he
-        went. And he came to his father and mother and gave some to them, and they ate. But he did not tell them that he
-        had scraped the honey from the carcass of the lion.
-      </blog-reference-tooltip>
-      <blog-reference-tooltip [reference]="'Judges 14:12-14'">
-        Then Samson said to them, "Let me now propound a riddle to you; if you will indeed tell it to me within the
-        seven days of the feast, and find it out, then I will give you thirty linen wraps and thirty changes of clothes.
-        But if you are unable to tell me, then you shall give me thirty linen wraps and thirty changes of clothes." And
-        they said to him, "Propound your riddle, that we may hear it." So he said to them, "Out of the eater came
-        something to eat, And out of the strong came something sweet." But they could not tell the riddle in three days. </blog-reference-tooltip
-      ><br /><br /> -->
-
       Someone may ask, "What is the testimony of Samson and the lion doing in the Scriptures?" (Judges 14:5-9, 14:12-14)
       A lion is strong and powerful - no doubt about that. No-one certainly takes a lion into their home for their
-      children to play - no, they don't! A lion is dangerous; a lion isn't sweet; it won't let you pet it and it won't
+      children to play - no, they don't! A lion is dangerous; a lion isn't sweet; it won't let you pet it, and it won't
       give you any kisses - not without taking off some of your flesh first! In a similar way, Jesus Christ is mighty
       and powerful; He is the Son of God, with the exact likeness of God, with the name which is above every other name;
       and one of His names is the Lion from the Tribe of Judah; as it says about Him,
@@ -94,18 +75,18 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
       28:20-21)]
       <br /><br />
 
-      The latter part of the riddle in the testimony says, "Out of the eater came something to eat". For whenever a
-      sacrifice was given to the LORD, He consumed it, He consumed it with fire, for He is a consuming fire. All
-      sacrifices were burnt on the altar to God as a soothing aroma; those sacrifices were food to Him; as it says, “The
-      priest shall offer them up in smoke on the altar as food.” (Leviticus 3:16) These were offered to God, but out of
-      the Eater of sacrifices came a Sacrifice; or in the words of the riddle, "Out of the eater came something to eat."
-      For men usually give sacrifices to God, but God gave a sacrifice for the people, the sacrifice of His own Son, so
-      that we may offer righteous sacrifices to God, namely, our lives lived for Him - this is acceptable in God's
-      sight, for He has purchased us. From Christ's sacrifice comes forgiveness of sins and justification with God, the
-      seal of the Holy Spirit and the sanctification of the Spirit, and everlasting life to come. So although Jesus is
-      powerful as a lion, He also is meek and lowly as a lamb; Jesus is the Great Shepherd of the flock, and He is also
-      "the Lamb of God." Although God is the Eater of sacrifices, He doesn't need us to eat, nor does He need our
-      service; for He needs not anything from our hands, but He gives all things; as the LORD God says in the Psalms,
+      Then in the latter part of the riddle, it says, "Out of the eater came something to eat". For whenever a sacrifice
+      was given to the LORD, He consumed it, He consumed it with fire, for He is a consuming fire. All sacrifices were
+      burnt on the altar to God as a soothing aroma; those sacrifices were food to Him; as it says, “The priest shall
+      offer them up in smoke on the altar as food.” (Leviticus 3:16) These were offered to God, but out of the Eater of
+      sacrifices came a Sacrifice; or in the words of the riddle, "Out of the eater came something to eat." For men
+      usually give sacrifices to God, but God gave a sacrifice for the people, the sacrifice of His own Son, so that we
+      may offer righteous sacrifices to God, namely, our lives for Him - this is acceptable in God's sight, for He has
+      purchased us. From Christ's sacrifice comes forgiveness of sins and justification with God, the seal of the Holy
+      Spirit and the sanctification of the Spirit, and everlasting life to come. So although Jesus is powerful as a
+      lion, He also is meek and lowly as a lamb; Jesus is the Great Shepherd of the flock, and He is also the Lamb of
+      God. Although God is the Eater of sacrifices, He doesn't need us to eat, nor does He need our service; for He
+      needs not anything from our hands, but He gives all things; as the LORD God says in the Psalms,
       <blog-reference-tooltip [reference]="'Psalm 50:7-15'">
         I shall take no young bull out of your house Nor male goats out of your folds. For every beast of the forest is
         Mine, The cattle on a thousand hills. I know every bird of the mountains, And everything that moves in the field
@@ -129,9 +110,9 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
       the wind and how bones are formed in the womb of the pregnant woman, so you do not know the activity of God who
       makes all things.” (Ecclesiastes 11:5) God works all things for us and He also worked a sacrifice for us - He
       needs nothing from our hands, but He gives us all things - even justification and sanctification through Jesus
-      Christ, His Son. He created us at the first by grace; so in accordance with nature, the new life also comes by
-      grace. And so: God, the Father, is the consumer of sacrifices, and He gave a Sacrifice, which is Christ; and these
-      are eaten; as He says,
+      Christ. He created us at the first by grace; so in accordance with nature, the new life also comes by grace. And
+      so: God, the Father, is the consumer of sacrifices, and He gave a Sacrifice, which is Christ; and these are eaten;
+      as He says,
       <blog-reference-tooltip [reference]="'John 6:53'" [isJesusWord]="true">
         Truly, truly, I say to you, unless you eat the flesh of the Son of Man and drink His blood, you have no life in
         yourselves.
@@ -144,19 +125,19 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
       excuse to be slugglish or lazy, lacking behind in zeal. For He is powerful, but He became weak for our sakes;
       therefore, we ought not to see His kindness as weakness, as some do, for He is mighty in His dealing with us,
       specifically for our building up, not for our tearing down. If we neglect His cloak of righteousness for a cloak
-      of maliciousness, certainly He won't treat us any differently than heathens, would He? For He shows no partiality.
-      When I was in the military, we had drill instructors and officers. The officers were not like the drill
-      instructors, for the drill instructors screamed at us, spitting saliva and speaking crazy; they were not afraid to
-      get in our face. They would lay hands on us; often times disciplining us with intense training. But the officers
-      were kind and spoke tenderly to us. But one time, we were sitting in class, learning from an officer. We began to
-      slouch in our seats, some of us began to sleep because of the officers kindness. But then, yelling more
-      ferociously than any drill instructor we have ever heard, he shouted, "Do not take my kindness for weakness!" All
-      of us sat up straight in our seats, our spirits reviving within us; those sleeping were shocked with a jolt of
-      fear. Beforetime, he would call for readers, and there would be hesitation - by obligation, one person would stand
-      up; but now, a handful of volunteers stood up and battled for a chance to read. For we seen he was kind, but he
-      was even more powerful than a drill instructor. And as a result of the fear of Christ, it says, “Your people will
-      volunteer freely in the day of Your power; In holy array, from the womb of the dawn, Your youth are to You as the
-      dew.” (Psalms 110:2-3) Therefore, fear Him! For how can you come to Him without fear?
+      of maliciousness, certainly He won't treat us any differently than heathens. For He shows no partiality. When I
+      was in the military, we had drill instructors and officers. The officers were not like the drill instructors, for
+      the drill instructors screamed at us, spitting saliva and speaking crazy; they were not afraid to get in our face.
+      They would lay hands on us; often times disciplining us with intense training. But the officers were kind and
+      spoke tenderly to us. But one time, we were sitting in class, learning from an officer. We began to slouch in our
+      seats, some of us began to sleep because of the officers kindness. But then, yelling more ferociously than any
+      drill instructor we have ever heard, he shouted, "Do not take my kindness for weakness!" All of us sat up straight
+      in our seats, our spirits reviving within us; those sleeping were shocked with a jolt of fear. Beforetime, he
+      would call for readers, and there would be hesitation - by obligation, one person would stand up; but now, a
+      handful of volunteers stood up and battled for a chance to read. For we seen he was kind, but he was even more
+      powerful than a drill instructor. And as a result of the fear of Christ, it says, “Your people will volunteer
+      freely in the day of Your power; In holy array, from the womb of the dawn, Your youth are to You as the dew.”
+      (Psalms 110:2-3) Therefore, fear Him! For how can you come to Him without reverence?
       <br /><br />
 
       And in reference to the Tribe of Judah, Israel had twelve sons, and each son became a branch of Israel. And Jesus,
@@ -170,7 +151,7 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
       But Judah never did end up giving his life for his brother. However, now we see Jesus, and His substitution for
       his brethren that He made willingly; and we are His brothers and sisters if we do what He says - for He interceded
       and did what no-one else could do: He stepped down from heaven. Judah did not give up his life, nor was Isaac
-      sacrificed, nor was Mordecai impaled on the pole, Joseph was not slain by his brothers; but now we see Jesus
+      sacrificed, nor was Mordecai impaled on the pole, Joseph was not slain by his brothers; but now we see Jesus,
       chosen by God for the sins of the world, and thereafter live. For Reuben was firstborn of Israel, but he was
       rejected; but in regard to Judah, it says,
       <blog-reference-tooltip [reference]="'Judges 20:18'"> Judah shall go up first. </blog-reference-tooltip>
@@ -180,16 +161,19 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
       firstborn, but he was hated; the blessing was given to Jacob; as God says, “Israel is My son, My firstborn.”
       (Exodus 4:22) And Reuben was the firstborn of the unloved, yet the birth right was given to Ephriam, the firstborn
       of the firstborn of the loved; as God says, "Ephraim is My firstborn." (Jeremiah 31:9) And Jacob seeing this, that
-      the last is the first, blessed Ephraim over Manassah, the younger over the older. So now we see Jesus who is the
+      the last is the first, blessed Ephraim over Manassah, the younger over the older. So now we see Jesus, who is the
       true firstborn; He is the firstborn among many brethren, the firstborn from the dead, He is the beginning - for He
       became last by suffering death in obedience to the Father; and as a result, He was exalted as first in heaven and
-      on earth that He may be supreme in everything.
+      on earth that He may be supreme in everything. And the same to us, for
+      <blog-reference-tooltip [reference]="'Matthew 18:4'" [isJesusWord]="true">
+        Whoever then humbles himself as this child, he is the greatest in the kingdom of heaven.
+      </blog-reference-tooltip>
       <br /><br />
 
       Judah was chosen by God to be first, and he was chosen as the place where His temple would dwell; as it says, “He
       also rejected the tent of Joseph, And did not choose the tribe of Ephraim, But chose the tribe of Judah, Mount
       Zion which He loved.” (Psalms 78:67-68) As a result, the branch of Judah remained during Israel's rebellion, for
-      they were kept by God's grace, by God's promise to David, although the kings of Judah were unfaithful to the LORD
+      they were kept by God's grace, by God's promise to David; although the kings of Judah were unfaithful to the LORD
       (2 Kings 8:19, 2 Chronicles 21:7). So God by His gracious choice preserved Judah throughout the rebellion of
       Israel for David's sake whom He also picked from Judah. “In the same way then, there has also come to be at the
       present time a remnant according to God's gracious choice.” (Romans 11:5) For those from Judah represent those who
@@ -205,7 +189,7 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
         but it is because of the wickedness of these nations that the LORD your God is driving them out before you, in
         order to confirm the oath which the LORD swore to your fathers, to Abraham, Isaac and Jacob.
       </blog-reference-tooltip>
-      So God chooses us to show His purpose of grace in Christ Jesus, for the sake of the covenants of promise which He
+      So God continues to show His purpose of grace in Christ Jesus, for the sake of the covenants of promise which He
       swore on oath to keep, provided we remain humble in accordance with faith.
       <blog-link [link]="'https://thelightof.life/drawings/draw/Jesuslionlamb'"
         >(See More about Jesus through Judah and Isaac)</blog-link

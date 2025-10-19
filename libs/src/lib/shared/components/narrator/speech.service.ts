@@ -48,14 +48,16 @@ export class SpeechService implements OnDestroy {
         verticalPosition: "bottom",
       });
     }
+
     window.onbeforeunload = () => {
-      this.stop("all");
+      if (this.currentlyPlayingId.value) {
+        this.stop(this.currentlyPlayingId.value);
+      }
     };
   }
 
   ngOnDestroy(): void {
     this.stop("all");
-    this.allStates.clear();
   }
 
   init() {
@@ -103,8 +105,7 @@ export class SpeechService implements OnDestroy {
 
     this.speechSynthesis?.speak(utterance);
     utterance.onend = () => {
-      this.currentlyPlayingId.next("");
-      this.resetStates();
+      this.stop(this.currentlyPlayingId.value);
     };
 
     this.setState(componentId, SpeechStatus.Playing);

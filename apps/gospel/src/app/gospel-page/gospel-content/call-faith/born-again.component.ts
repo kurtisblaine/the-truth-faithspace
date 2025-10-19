@@ -30,12 +30,12 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
       wish to remain in the light, we must not sin; if we do sin, we confess our sins; for if we confess our sins and do
       not lie, He is faithful and just to forgive us our sins, and the blood of Jesus cleanses us from all our sins.
       Forgiveness is not just once at faith, but it is continual through faith; and this is how we are forgiven: by our
-      confession. On God's part, we are forgiven by His grace, but on our part, by remaining in the light. Know that the
-      Lord God sees the darkness as light - so how vain it is to try to hide from Him! So therefore, remain in the
-      light. Christ Jesus has been exalted to the right hand of the Father, and He no longer walks with man; however, He
-      has sent forth His Spirit; many followed Christ while He walked on earth, but today, we follow Christ by the
-      inward compulsion of the Spirit - for He lives in us who believe. For the Holy Spirit comes when we believe; as
-      the apostle says,
+      confession. For we believe God exists and sees the unseen, so we confess our sins to Him. On God's part, we are
+      forgiven by His grace, but on our part, by remaining in the light. Know that the Lord God sees the darkness as
+      light - so how vain it is to try to hide from Him! So therefore, remain in the light. Christ Jesus has been
+      exalted to the right hand of the Father, and He no longer walks with man; however, He has sent forth His Spirit;
+      many followed Christ while He walked on earth, but today, we follow Christ by the inward compulsion of the Spirit
+      - for He lives in us who believe. For the Holy Spirit comes when we believe; as the apostle says,
       <blog-reference-tooltip [reference]="'Ephesians 1:13-14'">
         And you also were included in Christ when you heard the message of truth, the Gospel of your salvation. When you
         believed, you were marked in him with a seal, the promised Holy Spirit, Who is a deposit guaranteeing our
@@ -94,7 +94,7 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
       The baptism into Christ is a baptism into His teaching - an immersion into His Word by a washing of the water of
       the Word. Through God's Word, we can repent and believe. For we believe by God's Word, and we repent by God's
       Word, for we believe in God's Son. Those who believe His Word obey His Word; and those who obey Him are born of
-      Him; as it says, "And we are witnesses of these things; and so is the Holy Spirit, whom God has given to those who
+      Him; as it says, "We are witnesses of these things; and so is the Holy Spirit, whom God has given to those who
       obey Him." (Acts 5:32) Faith is obedience; for this is the commandment of God: to believe in the Son (John 6:29).
       As John, the apostle, says, “This is His commandment, that we believe in the name of His Son Jesus Christ, and
       love one another, just as He commanded us.” (1 John 3:23) For “Whoever believes that Jesus is the Christ is born
@@ -118,20 +118,20 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
       baptism" (Acts 19:3). But when the Messiah came, men were baptized into Him; and His name is revealed as Jesus,
       "For He will save His people from their sins." (Matthew 1:21) But Jesus did not baptize anyone in water, for His
       disciples did (John 4:2). So you could say: John was the first disciple of Christ. For he was teaching that men
-      should repent and he pointed them to Christ. But when John knew the Messiah, he confessed, "Behold, the Lamb of
-      God!” (John 1:29) So there isn't much of a difference between John and a disciple, except that John first preached
-      without knowing the Messiah. And He prepared the way for His coming. For John was preaching that men might believe
-      through him; as it says of him, “He came as a witness, to testify about the Light, so that all might believe
-      through him.” (John 1:7) And Jesus praying for His disciples, said,
+      should repent and he pointed them to Christ who was to come. But when John knew the Messiah, he confessed,
+      "Behold, the Lamb of God!” (John 1:29) So there isn't much of a difference between John and a disciple, except
+      that John first preached without knowing the Messiah. And He prepared the way for His coming. For John was
+      preaching that men might believe through him; as it says of him, “He came as a witness, to testify about the
+      Light, so that all might believe through him.” (John 1:7) And Jesus praying for His disciples, said,
       <blog-reference-tooltip [reference]="'John 17:20'">
         I do not ask on behalf of these alone, but for those also who believe in Me through their word.
       </blog-reference-tooltip>
       So we see that John and a disciple of Christ preach that men might believe through them; so they are the same in
-      that way, for we point not to ourselves, but to Christ; as the apostle Paul says, “For we do not preach ourselves
-      but Christ Jesus as Lord, and ourselves as your bond-servants for Jesus' sake.” (2 Corinthians 4:5) And as John
-      also said, "He must increase, but I must decrease.” (John 3:30) And furthermore, John was sent to preach
-      repentance and a baptism in water; as it says of him, "He who sent me to baptize in water..." (John 1:33) And
-      likewise Christ's disciples are sent into the world to preach and baptize; as Jesus said,
+      that way, for we point not to ourselves, but to Christ; as the apostle Paul says, “We do not preach ourselves but
+      Christ Jesus as Lord, and ourselves as your bond-servants for Jesus' sake.” (2 Corinthians 4:5) And as John also
+      said, "He must increase, but I must decrease.” (John 3:30) And furthermore, John was sent to preach repentance and
+      a baptism in water; as it says of him, "He who sent me to baptize in water..." (John 1:33) And likewise Christ's
+      disciples are sent into the world to preach and baptize; as Jesus said,
       <blog-reference-tooltip [reference]="'Mark 16:15-16'" [isJesusWord]="true">
         Go into all the world and preach the gospel to all creation. He who has believed and has been baptized shall be
         saved; but he who has disbelieved shall be condemned.
@@ -148,12 +148,12 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
       someone that you don't know? Nevertheless, John told them to believe in Him who was to come. But when Jesus was
       revealed to Israel, they turned to Him and followed Him. So when Christ was revealed, the baptism changed from a
       baptism of repentance to a baptism of faith in Jesus. For repentance is "turning from" and faith is "turning to";
-      and no-one can ever turn to something without first turning from something. So therefore, repentance always
-      precedes faith. And both repentance and faith come from hearing the Word of Christ. For repentance is a change of
-      mind; how can anyone change their mind except through words? As food is for the belly, so words are for the mind;
-      so likewise it says of faith, “Faith comes from hearing, and hearing by the word of Christ.” (Romans 10:17) So if
-      anyone truly has faith, it is because they have first repented. And everything which is true has evidence as being
-      true. There is no such thing as faith without repentance. Or can you face two directions at once?
+      and no-one can ever "turn to" without first "turning from". So therefore, repentance precedes faith. And both
+      repentance and faith come from hearing the Word of Christ. For repentance is a change of mind; how can anyone
+      change their mind except through words? As food is for the belly, so words are for the mind; so likewise it says
+      of faith, “Faith comes from hearing, and hearing by the word of Christ.” (Romans 10:17) So if anyone truly has
+      faith, it is because they have first repented. And everything which is true has evidence as being true. There is
+      no such thing as faith without repentance. Or can you face two directions at once?
       <br /><br />
 
       No-one can turn to Christ without first turning from devils. The way of Christ and the way of devils are two
@@ -180,12 +180,12 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
       (The apostle Paul was saying such things as these too, namely that, we are a sacrifice to God: Philipians 2:17,
       Romans 12:1) And furthermore, Israel was led to cross over through water into the desert; as the apostle says,
       “All were baptized into Moses in the cloud and in the sea;” (1 Corinthians 10:2) So water is first for purifying,
-      then fire - water then the Spirit. Water is first for cleansing, then comes the Spirit for sanctifying. As the
-      Psalmist says about this: “We went through fire and through water, Yet You brought us out into a place of
+      then fire - water first then the Spirit. Water is first for cleansing, then comes the Spirit for sanctifying. As
+      the Psalmist says about this: “We went through fire and through water, Yet You brought us out into a place of
       abundance.” (Psalms 66:12) So they were led out of Egypt by the pillar of God through water; and they were led to
       wander in the wilderness by the Spirit, where they were tested. So it is, beloved: we who were formerly unclean,
       have been washed and cleansed by God's Word - and through Him, He has turned our hearts unto Himself. And we, if
-      we are being led by Him, are led into a great wilderness as nomads to be tested.
+      we are being led by Him, are led into a great wilderness as nomads for the testing of our faith.
       <br /><br />
 
       Although the Scriptures speak this way about being baptized into water and fire, it may sound quite fearful, but
@@ -209,19 +209,20 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
       <br /><br />
 
       I urge you then, by the mercies of God, to humbly accept the Word of God implanted which has the power to save.
-      Believe through me, and if you find any fault in me, I point to the faultless one - Christ Jesus - believe in Him;
-      for your sakes I have made these many writings, for I wish for you to be converted. I am not the light, but I
-      testify to the Light - for the lesser light in the darkness points to the great Light of the day. We are living in
-      the day of darkness; the day of His light is coming. I urge you then, by the mercies of God: to be reconciled to
-      God (2 Corinthians 5:20), for He has reconciled you (2 Corinthians 5:19); and come to Him for forgiveness (Acts
-      2:38), for He has forgiven you (1 Corinthians 15:3); and reckon yourself to be dead to sin (Romans 6:11), for He
-      has died for you (2 Corinthians 5:14); you were crucified with Him (Galatians 2:20), so crucify the flesh with its
-      passions and desires (Galatians 5:24); and save yourself from this wicked generation (Acts 2:40), for He has saved
-      us, not on the basis of deeds which we have done (Titus 3:5); and live for Him (2 Corinthians 5:15), for He has
-      purchased you (1 Corinthians 6:20). Draw near unto Him (James 4:8), for He has drawn near to you (1 Timothy 1:15).
-      And humble yourself (James 4:10), for He has come down from heaven (Philippians 2:5-8). And offer yourself as a
-      living sacrifice to God (Romans 12:1), for Jesus Christ was Sacrificed for you (1 Corinthians 5:7). And walk as
-      His obedient children (1 Peter 1:14), for you are born of Him (1 John 5:1).
+      Believe through me, and if you find any fault in me, I point to the faultless one - Christ Jesus - that you may
+      believe in Him; for your sakes I have made these many writings, for I wish for you to be converted. I am not the
+      light, but I testify to the Light - for the lesser light in the darkness points to the great Light of the day. We
+      are living in the day of darkness; the day of His light is coming. I urge you then, by the mercies of God: to be
+      reconciled to God (2 Corinthians 5:20), for He has reconciled you (2 Corinthians 5:19); and repent and be baptized
+      for the remission of sins (Acts 2:38), for He has forgiven you (1 Corinthians 15:3); and reckon yourself to be
+      dead to sin (Romans 6:11), for He has died for you (2 Corinthians 5:14); you were crucified with Him (Galatians
+      2:20), so crucify the flesh with its passions and desires (Galatians 5:24); and save yourself from this wicked
+      generation (Acts 2:40), for He has saved us, not on the basis of deeds which we have done (Titus 3:5); and belong
+      to Him (2 Corinthians 5:15), for He has purchased you (1 Corinthians 6:20). Draw near unto Him (James 4:8), for He
+      has drawn near to you (1 Timothy 1:15). And humble yourself (James 4:10), for He has come down from heaven
+      (Philippians 2:5-8). And offer yourself as a living sacrifice to God (Romans 12:1), for Jesus Christ was
+      Sacrificed for you (1 Corinthians 5:7). And walk as His obedient children (1 Peter 1:14), for you are born of Him
+      (1 John 5:1).
     </ng-template>`,
   styles: ``,
   changeDetection: ChangeDetectionStrategy.OnPush,

@@ -10,7 +10,7 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
   template: `<ng-container *ngTemplateOutlet="obedienceToHoliness"></ng-container>
     <ng-template #obedienceToHoliness>
       Without question: it's God's presence with us that sets us apart from the rest of the world. Or do you think it's
-      merely oil that consecrates? But what do the Scriptures say? As Moses said to God,
+      merely the oil which consecrates? But what do the Scriptures say? As Moses said to God,
       <blog-reference-tooltip [reference]="'Exodus 33:15-16'">
         How then can it be known that I have found favor in Your sight, I and Your people? Is it not by Your going with
         us, so that we, I and Your people,
@@ -40,12 +40,12 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
       </blog-reference-tooltip>
       <br /><br />
 
-      So the oil of consecration is only a symbol of the consecration which comes from God. As the apostle says, “But
-      you have an anointing from the Holy One, and you all know.” (1 John 2:20) In the law, blood was first applied to
-      the people and the objects used in worship; the blood cleansed the items and the people for worship just as water
-      cleanses physical things. Then oil is applied to those things to set them apart for ministering to the Lord. And
-      likewise, we are first cleansed by the blood, and Christ sanctifies us by His presence; He sets us apart by the
-      Holy Spirit for service; and it's God's Spirit who sanctifies. As it says,
+      So the oil of consecration is only a symbol of the consecration which comes from God. As the apostle says, “ You
+      have an anointing from the Holy One, and you all know.” (1 John 2:20) In the law, blood was first applied to the
+      people and the objects used in worship; for just as water cleanses the body, so the blood cleanses the spirit.
+      Then oil is applied to those things to set them apart for ministering to the Lord. And likewise, we are first
+      cleansed by the blood, and Christ sanctifies us by His presence; He sets us apart by the Holy Spirit for service;
+      and it's God's Spirit who sanctifies. As it says,
       <blog-reference-tooltip [reference]="'Romans 15:16'">
         So that the offering of the Gentiles may be acceptable, <b>sanctified by the Holy Spirit.</b>
       </blog-reference-tooltip>
@@ -62,8 +62,8 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
         Husbands, love your wives, just as Christ also loved the church and gave Himself up for her,
         <b>so that He might sanctify her, having cleansed her by the washing of water with the word. </b>
       </blog-reference-tooltip>
-      However, if we do not believe the Word of God, then the truth is not united in us; for without faith,
-      sanctification is impossible. As Jesus says,
+      But if we do not believe the Word of God, then the truth is not united in us; for without faith, sanctification is
+      impossible. As Jesus says,
       <blog-reference-tooltip [reference]="'Acts 26:18'" [isJesusWord]="true">
         that they may receive forgiveness of sins and an inheritance among those
         <b>who have been sanctified by faith in Me.</b>
@@ -75,12 +75,12 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
       </blog-reference-tooltip>
       But what have we come to believe in? What is the knowledge? What is the message? As it says,
       <blog-reference-tooltip [reference]="'Hebrews 13:12'">
-        Therefore Jesus also, that He might <b>sanctify</b> the people through His own blood, suffered outside the gate.
+        Jesus also, that He might <b>sanctify</b> the people through His own blood, suffered outside the gate.
       </blog-reference-tooltip>
       For “By His doing you are in Christ Jesus, who became to us wisdom from God,
       <b>and righteousness and sanctification,</b> and redemption, so that, just as it is written, "LET HIM WHO BOASTS,
       BOAST IN THE LORD.” (1 Corinthians 1:30-31) For it is the Lord's work to sanctify us; and it is our work to
-      believe the message of God.<br /><br />
+      believe.<br /><br />
 
       If we obey God, it will lead to holiness; and we will be holy like Him, for He alone is holy. Those who wish to be
       used honorably of Him must themselves be holy. Unholy talk is that which is commonly seen in the world:
@@ -89,28 +89,27 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
       you have received if you have received the Word of Truth. If we purify ourselves from the world and its filth, we
       will be set apart for holy use; as it says,
       <blog-reference-tooltip [reference]="'2 Timothy 2:21'">
-        Therefore if anyone cleanses himself from the latter (common articles), he will be a vessel for honor,
-        sanctified and useful for the Master, prepared for every good work.
+        If anyone cleanses himself from the latter (common articles), he will be a vessel for honor, sanctified and
+        useful for the Master, prepared for every good work.
       </blog-reference-tooltip>
       Obedience leads to holiness, righteousness leads to sanctification; and with holiness comes salvation. As it says,
       “Pursue peace with all men, and the sanctification without which no one will see the Lord.” (Hebrews 12:14)
       Consecration is moving from what is earthly to what is heavenly, from what is bad to what is good. We do not
-      belong to ourselves, but we belong to God. We were bought with a price. We live not to please ourselves, but God
-      who loves us. For our life does not belong to us, for everything belongs to the LORD; and how much more so now
-      that He bought us? For when we were slaves of sin, we were constantly serving sin. But now, God calls us to be
-      obedient from the heart. We ought to willingly submit ourselves to Him as bond-servants, putting our ear to the
-      awl (Exodus 21:5-6), saying, "I love my master, my wife and my children; I will not go out as a free man.” (Exodus
-      21:5) Or saying, as the Psalmist says, “My life is continually in my hand, Yet I do not forget Your law.” (Psalms
-      119:109) For we were released from our captivity to the law, and now use our freedom in Christ to serve God in
-      righteousness. For the law of God either binds the disobedient or grants freedom to the obedient. As James calls
-      the law, "The perfect law, the law of liberty." (James 1:25) But the apostle Paul calls the law, "The ministry of
-      death," (2 Corinthians 3:7) and "The ministry of condemnation." (2 Corinthians 3:9) So if we fulfill the law, we
-      live in the freedom, and rest, and life of God; but if we disobey, we lie in the depths of slavery, and labor, and
-      death in sin. However, obedience does not come from the flesh, but from the Spirit through faith in Jesus - just
-      as I have written. I wrote beforehand concerning holiness of the heart, but it works outwardly to the body as
-      well. But I ask, "What is more true: the body or the spirit?" Surely the spiritual is more true - but if anything
-      be true in spirit, it will be manifested physically too. As the apostle Paul commands in the name of the Lord
-      Jesus,
+      belong to ourselves, but we belong to God. We were bought with a price. Our life does not belong to us, for
+      everything belongs to the LORD; and how much more so now that He bought us? For when we were slaves of sin, we
+      were constantly serving sin. But now, God calls us to be obedient from the heart. We ought to willingly submit
+      ourselves to Him as bond-servants, putting our ear to the awl (Exodus 21:5-6), saying, "I love my master, my wife
+      and my children; I will not go out as a free man.” (Exodus 21:5) Or saying, as the Psalmist says, “My life is
+      continually in my hand, Yet I do not forget Your law.” (Psalms 119:109) For we were released from our captivity to
+      the law, and now use our freedom in Christ to serve God in righteousness. For the law of God either binds the
+      disobedient or grants freedom to the obedient. As James calls the law, "The perfect law, the law of liberty."
+      (James 1:25) But the apostle Paul calls the law, "The ministry of death," (2 Corinthians 3:7) and "The ministry of
+      condemnation." (2 Corinthians 3:9) So if we fulfill the law, we live in the freedom, and rest in life of God; but
+      if we disobey, we lie in the depths of slavery, toil, and death in sin. <br /><br />
+
+      I wrote beforehand concerning holiness of the heart, but it works outwardly to the body as well. But I ask, "What
+      is more true: the body or the spirit?" Surely the spiritual is more true - but if anything be true in spirit, it
+      will be manifested physically too. As the apostle Paul commands in the name of the Lord Jesus,
       <blog-reference-tooltip [reference]="'1 Thessalonians 4:3-8'">
         It is Godʼs will that you should be sanctified: that you should avoid sexual immorality; that each of you should
         learn to control your own body in a way that is holy and honorable, not in passionate lust like the pagans, who
@@ -135,10 +134,6 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
         If you keep My commandments, you will abide in My love; just as I have kept My Father's commandments and abide
         in His love.
       </blog-reference-tooltip>
-      <!-- <blog-reference-tooltip [reference]="'1 Corinthians 7:34'">
-        The woman who is unmarried, and the virgin, is concerned about the things of the Lord, that she may be holy both
-        in body and spirit
-      </blog-reference-tooltip> -->
       <blog-link [link]="'https://thelightof.life/drawings/draw/sanctification'">
         (See More on Sanctification)</blog-link
       >

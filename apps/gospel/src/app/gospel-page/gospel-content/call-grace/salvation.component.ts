@@ -10,7 +10,7 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
     <ng-template #theDoorOfEternalSalvation>
       The world was judged before by water, a massive flood; historians know that the world went through some
       catastrophic change, but their speculations vary. But the Truth is found in the Word of Truth: God repented that
-      He created man and was sorry that He created them; so He warned Noah and commanded him to build an ark; Noah's
+      He created man and He was sorry that He created them; so He warned Noah and commanded him to build an ark; Noah's
       actions testified to the people of the coming destruction: with the hammering, he preached, "Repent"; with the
       laying up of wood, "Judgement." God was going to send a flood of water! Which was something never seen before, for
       water never came from the sky, but mists came up from the ground to water the earth (Genesis 2:6). The people
@@ -44,7 +44,7 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
       of God, the new heaven and the new earth, for those who love God, which is purified not by water, but by raging
       fire? For only that which can withstand the fire endures, being made pure by refinement; and the rest which cannot
       withstand is burned up; and the city of God is said to be of pure gold. So then, if we go on living as one with
-      this world, we are surely not saved from the wrath which is to come - as it says, only those who entered into the
+      this world, we are surely not safe from the wrath which is to come - as it says, only those who entered into the
       ark were saved; and it says of our Refuge,
       <blog-reference-tooltip [reference]="'1 John 3:5-6'">
         You know that He appeared in order to take away sins; and in Him there is no sin. No one who abides in Him sins;
@@ -83,34 +83,37 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
         shaken.
       </blog-reference-tooltip>
       And so much so, Paul closes his letters with the phrase, "Grace to you and peace from God our Father and the Lord
-      Jesus Christ." For this is the result of a covenant: peace. Likewise He says, "Let your speech always be with
+      Jesus Christ." For this is the result of the covenant: peace. Likewise He says, "Let your speech always be with
       grace, seasoned with salt, so that you will know how you should respond to each person." (Colossians 4:6) And salt
       by the covenant of salt which God has made with us, one of peace: of forgiving our sins through Christ's blood, of
-      His grace so that we would be reconciled to Him in love, for He has made peace with us through His grace. But take
-      heed! I admonish you: after the flood, those who knew of God's lovingkindness and forbearance by making a covenant
-      with every living creature, and those who knew of His wrath in flooding the world with water, but sinned blatantly
-      despite knowing these things, as it was with Sodom, as it was with Gomorrah, God judged, not with water, but with
-      fire and brimstone, rainning it down from the sky - as it is with water - as a warning in these latter times of
-      the judgment of fire to those who refuse to obey the truth, living ungodly lives thereafter; He will judge them
-      with fire, namely, a lake of fire - as it is with water - and fire, namely, raining down - as it is with water -
-      and fire to drink - as it is with water. "Oh, but today we have never seen the water as fire, ever since the
-      beginning of the world these things have always been the same. The fire we can see in the heavens, but it never
+      His grace so that we would be reconciled to Him in love, for He has made peace with us through His grace.
+      <br /><br />
+
+      But take heed! I admonish you: after the flood, those who knew of God's lovingkindness and forbearance by making a
+      covenant with every living creature, and those who knew of His wrath in flooding the world with water, but sinned
+      blatantly despite knowing these things - as it was with Sodom, as it was with Gomorrah - God judged, not with
+      water, but with fire and brimstone, rainning it down from the sky - as it is with water - as a warning in these
+      latter times of the judgment of fire to those who refuse to obey the truth, living ungodly lives thereafter; He
+      will judge them with fire, a lake of fire - as it is with water - and fire, raining it down - as it is with water
+      - and fire to drink - as it is with water. "Oh, but today we have never seen the water as fire, ever since the
+      beginning of the world these things have always been the same! The fire we can see in the heavens, but it never
       comes down to the earth." But with the revelation of the grace of God comes the revelation of the wrath of God;
-      for Christ was the first to preach openly about Gehenna, and He was the first to reveal the Good News of God's
-      grace. The world as we know it is passing away and anyone found of it in the end will be found deserving judgment
-      with it; but God calls us out ahead of time, calling us to come to Christ. He wills that none should perish, but
-      all come to the knowledge of God, coming to repentance to everlasting life; and He has proved this, so much so in
-      that He has made peace with us ahead of the time through Jesus, our Savior; as the LORD declares,
+      for Christ was the first to preach openly about Gehenna; He was also the first to reveal the Good News. The world
+      as we know it is passing away and anyone found of it in the end will be found deserving judgment with it; but God
+      calls us out ahead of time, calling us to come to Christ for refuge. He wills that none should perish, but all
+      come to the knowledge of God, to repentance to everlasting life; and He has proved this, so much so in that He has
+      made peace with us ahead of the time through Jesus, our Savior; as the LORD declares,
       <blog-reference-tooltip [reference]="'Jeremiah 32:40'">
         I will make an everlasting covenant with them that I will not turn away from them, to do them good; and I will
         put the fear of Me in their hearts so that they will not turn away from Me.
       </blog-reference-tooltip>
+      And this is the fear of the LORD.
       <br /><br />
 
-      Greater is the Spirit in us than the spirit in the world; the Spirit in us who believe is the Spirit of Christ
-      Jesus, and He has overcome the world; therefore, we have strength in Christ to flee the world and its lusts and
-      pride. Those who entered into the ark floated above the destruction of the earth by water; so it will be for those
-      who enter into Christ; we will be caught up with Jesus when He returns; as it says,
+      Greater is the Spirit in us than the spirit in the world; and He has overcome the world; therefore, we have
+      strength in Christ to flee the world and its lusts and pride. Those who entered into the ark floated above the
+      destruction of the earth by water; so it will be for those who enter into Christ; we will be caught up with Jesus
+      when He returns; as it says,
       <blog-reference-tooltip [reference]="'1 Thessalonians 4:17'">
         Then we who are alive and remain will be caught up together with them in the clouds to meet the Lord in the air,
         and so we shall always be with the Lord.
@@ -124,7 +127,7 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
         life, and have it in all its fullness. I am the good shepherd. The good shepherd lays down His life for the
         sheep.
       </blog-reference-tooltip>
-      And again God spoke through the prophet Ezekiel saying,
+      And again God spoke of Christ through the prophet Ezekiel saying,
       <blog-reference-tooltip [reference]="'Ezekiel 34:11-31'">
         For thus says the Lord GOD, "Behold, I Myself will search for My sheep and seek them out. As a shepherd cares
         for his herd in the day when he is among his scattered sheep, so I will care for My sheep and will deliver them
@@ -145,7 +148,7 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
         I say to you, ask, and it will be given to you; seek, and you will find; knock, and it will be opened to you.
         For everyone who asks, receives; and he who seeks, finds; and to him who knocks, it will be opened.
       </blog-reference-tooltip>
-      For Jesus is the Way and the Door, the Shepherd and the Refuge.
+      For Jesus is the Way, the Door, and the Refuge. He is the Good Shepherd.
     </ng-template>`,
   styles: ``,
   changeDetection: ChangeDetectionStrategy.OnPush,

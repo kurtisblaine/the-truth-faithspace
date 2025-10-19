@@ -1,5 +1,5 @@
 import { CommonModule } from "@angular/common";
-import { Component, Input, OnDestroy, OnInit, ViewChild, ViewContainerRef } from "@angular/core";
+import { ChangeDetectorRef, Component, Input, OnDestroy, OnInit, ViewChild, ViewContainerRef } from "@angular/core";
 import { FormsModule } from "@angular/forms";
 import { MatButtonModule } from "@angular/material/button";
 import { MatButtonToggleModule } from "@angular/material/button-toggle";
@@ -37,7 +37,7 @@ export class NarratorComponent implements OnDestroy, OnInit {
   public isAnotherPlaying = false;
 
   @ViewChild("textContainer", { read: ViewContainerRef }) private textContainer!: ViewContainerRef;
-  constructor(public speechService: SpeechService) {}
+  constructor(public speechService: SpeechService, private changeDetectionRef: ChangeDetectorRef) {}
 
   ngOnInit(): void {
     const { id, state } = this.speechService.init();
@@ -45,6 +45,7 @@ export class NarratorComponent implements OnDestroy, OnInit {
 
     this.subscription = state.subscribe((s) => {
       this.thisLocalState = s;
+      this.changeDetectionRef.detectChanges();
     });
 
     this.playingSubscription = this.speechService.currentlyPlayingId$.subscribe((id) => {

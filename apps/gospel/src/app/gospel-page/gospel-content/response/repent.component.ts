@@ -9,23 +9,23 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
   imports: [CommonModule, ReferenceTooltipComponent, LinkComponent],
   template: `<ng-container *ngTemplateOutlet="repentance"></ng-container>
     <ng-template #repentance>
-      I know with sincere faith you will be prompted to do all good things by the new nature, without ever being told.
-      In the old nature and by that nature we commonly worked works of death, but in God by the nature of God we are led
-      to bear fruit of life; however, I write these things to you that you may know. Everyone born of God does good; and
+      I know, by your faith, you will be prompted to do all good things by the new nature, without ever being told. In
+      the old nature and by that nature we commonly worked works of death, but in God by the nature of God we are led to
+      bear fruit of life; however, I write these things to you that you may know. Everyone born of God does good; and
       anyone who does evil has not seen God at any time. Therefore I write these things. Everyone who believes asks,
       "What then should I do?" And the sincerity of your faith will prompt you to do. To prove you, I will write them
       out to test the sincerity of your faith. For these things prove our faith and make our faith known. The apostle
       Paul often gave room for sincerity to work first before obligation (2 Corinthians 8:8, Philemon 1:8-11); thus the
-      goal of the gospel is sincerity; as it says, “But the goal of our instruction is love from a pure heart and a good
+      goal of the gospel is sincerity; as it says, "The goal of our instruction is love from a pure heart and a good
       conscience and a sincere faith.” (1 Timothy 1:5) Without these being true in us, will we ever see life? But if
       they are true in us, for what reason are they true? For the sake of the love of God, surely. <br /><br />
 
       Sin is contrary to the will of God; for the will of God is good; there is no sin in God; where-ever our lives are
       not conformed to His will, it is sin; His will is for us to believe in Christ and to love our neighbor as ourself;
-      and so whatever is not from faith is sin; faith will never say, "Go rob and kill and steal." It's God's will that
-      we love one another just as Christ has loved us. When we love, we obey the commandments of God, for the entirety
-      of the law is summed up in this one command: love your neighbor as yourself. All sin is selfishness, but love is
-      not self-seeking; love is self-sacrificing, serving, and long-suffering. We know love because we know God. God is
+      and so whatever is not from faith is sin; faith will never say, "Go rob, kill, and steal." It's God's will that we
+      love one another just as Christ has loved us. When we love, we obey the commandments of God, for the entirety of
+      the law is summed up in this one command: love your neighbor as yourself. All sin is selfishness, but love is not
+      self-seeking; love is self-sacrificing, serving, and long-suffering. We know love because we know God. God is
       love. Everyone who abides in love abides in God; and love does no wrong to a neighbor; as it says about love:
       <blog-reference-tooltip [reference]="'1 Corinthians 13:4-13'">
         Love is patient and kind; love does not envy or boast; it is not arrogant or rude. It does not insist on its own
@@ -34,28 +34,27 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
       </blog-reference-tooltip>
       Therefore, we ought to love one another just as Christ loved us. And so, by faith and love we establish the law;
       as it says, “Do we then nullify the Law through faith? May it never be! On the contrary, we establish the Law.”
-      (Romans 3:31) Our faith will lead us away from worldliness and carnality, and bring us closer to the holy and
+      (Romans 3:31) Our faith will lead us away from worldliness and carnality, and bring us closer to a holy and
       righteous God; for we love Him and come to Him through Christ. The Spirit leads us away from the dead to the
       living, from the power of satan to God. Sin in full growth is death, but the fruit of righteousness is life and
-      peace. Without leaving sin, we cannot come near to the living God, for this world and God's Kingdom are on
-      opposite spectrums; in this world there is sin, but in God there is righteousness. One can't face both the south
-      and the north at the same time, can he? Nor can we face God and sin at the same time. We have one face and one
-      back; we cannot come to God without first putting our back to sin. To say otherwise is to say, "I have two faces,"
-      or to say, "God and sin are friends". This is not how you have come to learn the truth. Repentance is turning from
-      sin, believing is turning to God. We turn our back to sin to face God in faith, and He reveals His face to us.
-      Does not the earth see light while it faces the Sun? While it is not facing the Sun, it is night-time. So God's
-      face shines upon us when we face Him. Sin is set for God's wrath; so if we hold onto sin, we hold onto God's
-      wrath; even the thinking of folly is sin, as it says, “The devising of folly is sin, And the scoffer is an
-      abomination to men.” (Proverbs 24:9) So set your mind on Christ Jesus in the heavens as you have already been
-      doing; when the mind is set on the things above, so will the members of the body. Repentance means, "change of
-      mind"; and if we change our mind, the members of the body will soon likewise follow. Repentance comes from the
-      Word of God, for a change of mind happens through words. If anyone believes the Word, they have repented. But
-      anyone who says, "I am in Him", and remains in sin is a liar; they show by their actions they're not in Him. “They
-      profess to know God, but by their deeds they deny Him, being detestable and disobedient and worthless for any good
-      deed.” (Titus 1:16) Do not be deceived: actions speak louder than words. Where the mind is set so are the members
-      of the body: it is either we set our minds on earthly things, and we live carnally, or we set our minds on
-      heavenly things, and we live godly. So repentance comes by setting our mind on Christ (Romans 8:5-8, Philippians
-      4:8, Colossians 3:2).
+      peace. Without leaving sin, we cannot come near to a living God, for this world and God's Kingdom are on opposite
+      spectrums; in this world there is sin, but in God there is righteousness. One can't face both the south and the
+      north at the same time, can he? Nor can we face God and sin at the same time. We have one face and one back; we
+      cannot come to God without first putting our back to sin. To say otherwise is to say, "I have two faces," or to
+      say, "God and sin are friends". This is not how you have come to learn the truth. Repentance is turning from sin,
+      believing is turning to God. We turn our back to sin to face God in faith, and He reveals His face to us. Does not
+      the earth see light while it faces the Sun? While it is not facing the Sun, it is night-time. So God's face shines
+      upon us when we face Him. Sin is set for God's wrath; so if we hold onto sin, we hold onto God's wrath; even the
+      thinking of folly is sin; as it says, “The devising of folly is sin, And the scoffer is an abomination to men.”
+      (Proverbs 24:9) So set your mind on Christ Jesus in the heavens as you have already been doing; when the mind is
+      set on the things above, so will the members of the body. Repentance means, "change of mind"; and if we change our
+      mind, the members of the body will likewise follow. Repentance comes from the Word of God, for a change of mind
+      happens through words. If anyone believes the Word, they have repented. But anyone who says, "I am in Him", and
+      remains in sin is a liar; they show by their actions they're not in Him. “They profess to know God, but by their
+      deeds they deny Him, being detestable and disobedient and worthless for any good deed.” (Titus 1:16) Do not be
+      deceived: actions speak louder than words. Where the mind is set so are the members of the body: it is either we
+      set our minds on earthly things, and we live carnally, or we set our minds on heavenly things, and we live godly.
+      So repentance comes by setting our mind on Christ (Romans 8:5-8, Philippians 4:8, Colossians 3:2).
       <br /><br />
 
       In love there is life, but in sin there is death; to abide in sin is to abide in death; to abide in righteousness
@@ -99,7 +98,7 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
       friends; for they walk together and talk together and agree with one another. We love Him because He first loved
       us; we have not seen Him at anytime, but Jesus has revealed Him to us; “and though you have not seen Him, you love
       Him,” (1 Peter 1:8) for we have seen Him if we have believed in Him. If we love the Father, we will love His Son;
-      and if we love the Son, we will obey Him; and if we obey His commandments, we will be known by Him; and if we are
+      and if we love the Son, we will obey Him; and if we obey His commandments, we are known by Him; and if we are
       known by Him, He will never say to us,
       <blog-reference-tooltip [reference]="'Matthew 7:23'" [isJesusWord]="true">
         I never knew you. Away from Me, you evildoers!
@@ -113,13 +112,12 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
         and in your name drive out demons and in your name perform many miracles?’ Then I will tell them plainly, ‘I
         never knew you. Away from me, you evildoers!’</blog-reference-tooltip
       >
-      For it is not the one who says, "Jesus is Lord", who will be saved, but the one who confesses Him as Lord in
-      spirit and truth; as He says,
+      For the one who confesses Him in spirit and truth, he it is who will be saved; as He says,
       <blog-reference-tooltip [reference]="'Luke 6:46'" [isJesusWord]="true">
         Why do you call Me, 'Lord, Lord,' and do not do what I say?
       </blog-reference-tooltip>
       Therefore, know for certain, you must repent. Love the Lord Jesus with an undying love, and repent; do not love
-      Him in word or tongue only, but in deed and truth. How can you love the Lord while staying in your sins? He died
+      Him in word and tongue only, but in deed and truth. How can you love the Lord while staying in your sins? He died
       for your sins, and your sins were His pain. Do you love Him by hurting Him? Love Him with a sincere love, in
       repentance and obedience. Humble yourself; for He humbled Himself to death for your sake. Do not be deceived: God
       is not mocked. Each man will reap what he sows.

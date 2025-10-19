@@ -9,7 +9,7 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
   template: `<ng-container *ngTemplateOutlet="liveWorthy"></ng-container>
     <ng-template #liveWorthy>
       We have been forgiven of our sins which were a debt against us, stored up into our accounts, stored up because of
-      our transgressions under the former covenant; but now we having been reconciled to God in Jesus; the Lord has
+      our transgressions under the former covenant; but now, having been reconciled to God in Jesus, the Lord has
       credited to us a lumpsum, a positive balance to our accounts: to some He gives a talent, to others two talents,
       even to others still five talents; the credit represents the gifts of the Spirit given to us according to how He
       sees fit, according to our abilities. For we were born into this world with natural abilities, and we had no say
@@ -23,12 +23,12 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
       fruit. Only when the fruit is mature on a tree, it is harvested; and only when a man reaches a certain age, he is
       eligible for children. So only the mature in Christ can lead another to Christ; you must be first harvested to
       life to give life to others. You can only produce in others after your kind; if you're kind is a hypocrite, will
-      those that listen to you be sincere? If you are easily angered, will those who are taught by you be temperate?
-      Only if they stop listening to you first! Fruit is good for multiplying; and we bear fruit by abiding in Christ,
-      the true Vine; for our roots grow downward into Christ and produce fruit upward unto God. By His fruit in us many
-      will be edified. If you are from God, certainly as you cast seed, it will resemble you as you resemble God when it
-      comes to maturity - that is, as long as the soil is fertile and your seed is good. Therefore: abide in Him and
-      bear fruit to God!
+      those that listen to you be sincere? If you are easily angered, will those who are taught by you be temperate? Of
+      course, if they stop listening to you first! Fruit is good for multiplying; and we bear fruit by abiding in
+      Christ, the true Vine; for our roots grow downward into Christ and produce fruit upward unto God. By His fruit in
+      us many will be edified. If you are from God, certainly as you cast seed, it will resemble you as you resemble God
+      when it comes to maturity - that is, as long as the soil is fertile and your seed is good. Therefore: abide in the
+      Root and bear fruit to God!
       <br /><br />
 
       Strive to enter through the narrow gate for wide is the way that leads to destruction and many are on it. Many
@@ -43,7 +43,7 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
       kingdom of God. [Just as the apostle mentions in his letter to the Corinthians (1 Corinthians 10), and the writer
       of Hebrews also says in his letter to the believers (Hebrews 3)] So we know that these things pertain to us today
       and admonish us to not be disobedient and sinful as they were, and perished. For the way is truly narrow, and He
-      is holy whom we serve. As Jesus says,
+      is holy who we serve. As Jesus says,
       <blog-reference-tooltip [reference]="'Matthew 22:14'" [isJesusWord]="true">
         Many are called, but few are chosen.
       </blog-reference-tooltip>

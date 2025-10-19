@@ -65,9 +65,10 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
         Let us throw off everything that hinders and the sin that so easily entangles. And let us run with perseverance
         the race marked out for us, fixing our eyes on Jesus, the pioneer and perfecter of faith.
       </blog-reference-tooltip>
-      As it says, "fixing our eyes on Jesus", but Jesus is unseen, so it is, we fix our eyes on Jesus by faith; and this
-      is the race we run: the race of faith. Just as it says about Moses, “He endured, as seeing Him who is unseen.”
-      (Hebrews 11:27) For it is by faith that he seen Him who is unseen. <br /><br />
+      As it says, "fixing our eyes on Jesus", but Jesus is unseen, so it is, we fix our eyes on Jesus by faith; as it
+      says about Moses, “He endured, as seeing Him who is unseen.” (Hebrews 11:27) For it is by faith that he seen Him
+      who is unseen. And this is the race we run: the race of faith. For messengers often ran to the one who they were
+      sent; and we carry the Word of Christ.<br /><br />
 
       Disciple means "disciplined one", and we are called disciples of Christ; self-discipline is a fruit of the Holy
       Spirit, and discipline is needed for running the race. Any discipline that does not come from the Holy Spirit is
@@ -86,7 +87,7 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
         and its desire is for you, <b>but you must master it.</b>
       </blog-reference-tooltip>
       <blog-link [link]="'https://thelightof.life/assets/tract/GoodNewsOfFreedom.pdf'"
-        >(See more about True Discipline)</blog-link
+        >(See more about true discipline)</blog-link
       ><br /><br />
 
       We run the race of faith not for a perishable crown, but for an indestructible, that of life; as Paul says, "Do

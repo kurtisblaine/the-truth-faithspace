@@ -36,7 +36,7 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
         A new commandment I give to you, that you love one another: just as I have loved you, you also are to love one
         another. By this all people will know that you are my disciples, if you have love for one another.
       </blog-reference-tooltip>
-      Only through faith can we fulfill God's law; and the truth makes us free. The truth saves; as Paul says,
+      For through faith, the old becomes new. And through the truth, He makes us free. The truth saves; as Paul says,
       <blog-reference-tooltip [reference]="'1 Timothy 4:16'">
         Take heed to yourself and to the doctrine. Continue in them, for in doing this you will
         <b>save both yourself and those who hear you.</b>
@@ -49,7 +49,7 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
       reconciled us to God, restoring fellowship with Him through His earthly body; He gave unto us freely by His grace
       right standing with Himself. And we have come to receive this wonderful gift of grace through faith. And He opened
       the eyes of our mind to the Gospel of Jesus Christ, and cut away the hardness of our hearts with a circumcision
-      made not by human hands. He did this when we believed; and if He did this when we believed, how shall we
+      made not by human hands. He did this when we believed; and if when we believed, we were changed, how then shall we
       persevere? Is it not through continually observing Jesus Christ until the end of this age or death? Hence, we walk
       continually in faith, from start to finish. Faith is always; it's how we start and how we end. As Paul says, "From
       faith to faith" (Romans 1:17). And "a law of faith." (Romans 3:27) And, "The author and finisher of our faith."
@@ -96,10 +96,11 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
       And the LORD God says, “I delight in loyalty rather than sacrifice, And in the knowledge of God rather than burnt
       offerings.” (Hosea 6:6) So by the knowledge of God through the face of Jesus, we have life. For I ask, "What have
       you come to believe, except the testimony about God?" And without question, God's actions speak louder than words;
-      for in Christ, He remained silent even before His accusers, and He demonstrated His love apart from words. But
-      nevertheless, He, by His grace, even preserved for us His words. And I thank God for that! Therefore, seek the
-      knowledge of God. Or, as it says, "My people are destroyed for lack of knowledge." (Hosea 4:6) But we who have
-      believed, have been saved through the knowledge of God; as Christ says,
+      for in Christ, He remained silent until this present time so that forgiveness may be preached. Even before His
+      accusers, He demonstrated His love apart from words, for He remained silent. But nevertheless, He, by His grace,
+      even preserved for us His words. And I thank God for that! Therefore, seek the knowledge of God. Or, as it says,
+      "My people are destroyed for lack of knowledge." (Hosea 4:6) But we who have believed, have been saved through the
+      knowledge of God; as Christ says,
       <blog-reference-tooltip [reference]="'John 17:3'" [isJesusWord]="true">
         This is eternal life, that they may know You, the only true God, and Jesus Christ whom You have sent.
       </blog-reference-tooltip>

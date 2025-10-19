@@ -118,23 +118,23 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
       us where the physical and the spiritual overlap (Baptism is also like this). When we partake in communion, we
       proclaim the Lord's death until He comes; we proclaim our unity with all of God's children who partake in the same
       spiritual food and spiritual drink. We are all one in Christ - just as the one loaf is broken and consumed by many
-      who partake it; and the one loaf is inside many, just as the one Spirit is inside many; we are His Body, and His
-      Body was broken for us. Adam's bride was taken from his body, so Christ's bride is taken from His body; and we are
-      "bone of His bone and flesh of His flesh." For He died for us that we would be united to Him. The old man was
-      taken from the ground, but the new man is taken from Christ; the old man is of dust, but the new man is of God;
-      and if we are from Him, then we are of Him. If we abide in Him, we have His promise: He will abide in us. And if
-      He abides in us, we will bear much fruit, proving that we are truly His disciples (John 15:4-10). For it is not
-      our own ways we follow, it is not our own words we speak, it is not our own strength we live by. If that were so,
-      then it would be us doing the work that we may boast; but if we abide in Him, He works in us and through us; as
-      Paul said, "yet not I, but the grace of God with me." (1 Corinthians 15:10) If we follow His Way, then it's His
-      steps we follow; if we speak His Word, then it's by His Spirit in us; as it says, "The one who believes in the Son
-      of God has the testimony in himself." (1 John 5:10) We can do nothing by ourselves, but we fellowship with God who
-      works in us and with us. He will not deviate from His path to walk in our way, but if we deviate from our way to
-      follow Him, then there He is! As the prophet says, "The LORD is with you when you are with Him. And if you seek
-      Him, He will let you find Him; but if you forsake Him, He will forsake you.” (2 Chronicles 15:2) So we are not
-      only strengthened by food in the flesh, but by every Word that comes from the mouth of God: namely, by the word of
-      His grace. His grace is our strength: just as food works best when hungry, God's grace works best in weakness; we
-      are strengthened in our hearts by His grace - it's grace that matters in a graceless world. This is the key to
+      who partake; and the one loaf is inside many, just as the one Spirit is inside many; we are His Body, and His Body
+      was broken for us. Adam's bride was taken from his body, so Christ's bride is taken from Him; and we are "bone of
+      His bone and flesh of His flesh." For He died for us that we would be united to Him. The old man was taken from
+      the ground, but the new man is taken from Christ; the old man is of dust, but the new man is of God; and if we are
+      from Him, then we are of Him. If we abide in Him, we have His promise: He will abide in us. And if He abides in
+      us, we will bear much fruit, proving we are truly His disciples (John 15:4-10). For it is not our own ways we
+      follow, it is not our own words we speak, it is not our own strength we live by. If that were so, then it would be
+      us doing the work that we may boast; but if we abide in Him, He works in us and through us; as Paul said, "yet not
+      I, but the grace of God with me." (1 Corinthians 15:10) If we follow His Way, then it's His steps we follow; if we
+      speak His Word, then it's by His Spirit in us; as it says, "The one who believes in the Son of God has the
+      testimony in himself." (1 John 5:10) We can do nothing by ourselves, but we fellowship with God who works in us
+      and with us. He will not deviate from His path to walk in our way, but if we deviate from our way to follow Him,
+      then there He is! As the prophet says, "The LORD is with you when you are with Him. And if you seek Him, He will
+      let you find Him; but if you forsake Him, He will forsake you.” (2 Chronicles 15:2) So we are not only
+      strengthened by food in the flesh, but by every Word that comes from the mouth of God: namely, by the word of His
+      grace. His grace is our strength: just as food works best when hungry, God's grace works best in weakness; we are
+      strengthened in our hearts by His grace - it's grace that matters in a graceless world. This is the key to
       abiding: remaining firmly planted in the Word of truth which has the power to save, living and walking in Him. For
       if our roots grow downward into Christ, our fruit will bear upward to God. That which is underneath the soil is
       hidden for a time; what we do in secret will be manifested abroad. Remember Him; for communion is given in order
@@ -142,10 +142,10 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
       one who sleeps, who treats the Word of God with contempt by lacking in watchfulness and prayer, he becomes
       disobedient to the Holy Spirit's leading by shutting his eyes; the one who sleeps in watchfullness is careless
       about the implanted Word entrusted to Him; for instead of being watchful and guarding what is precious, he sleeps,
-      being careless and is lacking in the fear of God. The weapon God has given us against temptation is prayer; and
-      the weapon against slumber, watchfulness. Abiding is humility. Trusting in God is humbling. Faith is child-like.
-      Afflicting oneself is humiliating. The reward is Christ in you. He wants three works from us, even four to remain:
-      do nothing, afflict yourself, come, and abide. The greatest of these is abide.
+      being careless, lacking in the fear of God. The weapon God has given us against temptation is prayer; and the
+      weapon against slumber, watchfulness. Yes, abiding is humility; trusting in God is humbling. Faith is child-like;
+      and afflicting oneself is humiliating. The reward is Christ in you. He wants three works from us, and four to
+      remain: do nothing, afflict yourself, come, and abide. The greatest of these is abide.
       <br /><br />
 
       People who live under a home are sheltered by that home, for a home is a covering, a roof over the head; and we
@@ -154,15 +154,14 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
       He is our food and our drink, and He is our rest. God alone is holy; and the Seventh day being hallowed by God is
       also called a holy day of rest. So whoever enters into His rest, rests from His labors as God did from His; for
       when there is completion of work, there is rest, and when there is rest, there is perfection and holiness (Hebrews
-      4:8-11). And we have come to rest in the completed work of Christ by the sanctification of His blood; for “By this
-      will we have been sanctified through the offering of the body of Jesus Christ once for all.” (Hebrews 10:10) The
-      unclean cannot make clean; as it says, "Who can make the clean out of the unclean? No one!” (Job 14:4) "But you
-      were washed, but you were sanctified, but you were justified in the name of the Lord Jesus Christ and in the
-      Spirit of our God.” (1 Corinthians 6:9-11) And in Christ, by His completed and perfect work, we enter into His
-      rest, that we may be holy as He is holy, that we may be righteous as He is righteous, that we may have power where
-      power resides, and share in His glory. And we enter into Him, into His rest through baptism, not of the washing of
-      the flesh, but of the washing of the water of His teachings; for obedience to His commands is faith made perfect;
-      as He says,
+      4:8-11). And we have come to rest in the completed work of Christ by the sanctification of His blood; for “We have
+      been sanctified through the offering of the body of Jesus Christ once for all.” (Hebrews 10:10) The unclean cannot
+      make clean; as it says, "Who can make the clean out of the unclean? No one!” (Job 14:4) "But you were washed, but
+      you were sanctified, but you were justified in the name of the Lord Jesus Christ and in the Spirit of our God.” (1
+      Corinthians 6:9-11) And in Christ, by His completed and perfect work, we enter into His rest, that we may be holy
+      as He is holy, that we may be righteous as He is righteous, that we may have power where power resides, and share
+      in His glory. And we enter into Him, into His rest through baptism, not of the washing of the flesh, but of the
+      washing of the water of His teachings; for obedience to His commands is faith perfected; as He says,
       <blog-reference-tooltip [reference]="'John 15:10'" [isJesusWord]="true">
         If you keep My commandments, you will abide in My love; just as I have kept My Father's commandments and abide
         in His love.

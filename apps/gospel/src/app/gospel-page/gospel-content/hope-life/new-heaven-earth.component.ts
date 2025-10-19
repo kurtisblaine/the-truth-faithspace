@@ -103,7 +103,7 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
         No one, after putting his hand to the plow and looking back, is fit for the kingdom of God.
       </blog-reference-tooltip>
       We will be held to the standard of truth we have received. As an example: Elisha, the man of God, did not look
-      back when he received Elijah's cloak, did He (1 Kings 19:20-21)?
+      back when he received Elijah's cloak (1 Kings 19:20-21).
       <br /><br />
 
       Jesus is the first of the new creation and last of the old. Everything of the old is passing away and only the
@@ -119,7 +119,7 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
       and God finds fault with it; as it says, “Even the moon has no brightness And the stars are not pure in His
       sight.” (Job 25:5) And then it says, “Behold, He puts no trust in His holy ones, And the heavens are not pure in
       His sight.” (Job 15:15) We know that the earth is fallen, but even the heavens have fault, even though heaven is
-      God's abode; so God is not pleased with it; for it is too subjected with violence; as the apostle mentions the
+      God's abode; so God is not pleased with it; for it is subjected with violence; as the apostle mentions the
       <blog-reference-tooltip [reference]="'Ephesians 6:12'">
         Spiritual hosts of wickedness in the heavenly places.
       </blog-reference-tooltip>
@@ -143,9 +143,9 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
         You also, as living stones, are being built up as a spiritual house for a holy priesthood, to offer up spiritual
         sacrifices acceptable to God through Jesus Christ.
       </blog-reference-tooltip>
-      The church will be made to dwell in the new Jerusalem, where God and the Lamb will be. As it says, “The city has
-      no need of the sun or of the moon to shine on it, for the glory of God has illumined it, and its lamp is the
-      Lamb.” (Revelation 21:23) And, “I saw no temple in it, for the Lord God the Almighty and the Lamb are its temple.”
+      The church will be a dwelling in the new Jerusalem, where God and the Lamb will be. As it says, “The city has no
+      need of the sun or of the moon to shine on it, for the glory of God has illumined it, and its lamp is the Lamb.”
+      (Revelation 21:23) And, “I saw no temple in it, for the Lord God the Almighty and the Lamb are its temple.”
       (Revelation 21:22) And, “There will no longer be any curse; and the throne of God and of the Lamb will be in it,
       and His bond-servants will serve Him.” (Revelation 22:3)
       <br /><br />
@@ -155,20 +155,20 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
       city, and on the gates are written the names of the twelve tribes of the sons of Israel. And He has promised to
       give those who overcome a white stone, written on it a new name that no one knows except the one who receives it.
       I do not know for sure, but these stones could be used in the building of the wall of the new Jerusalem. For the
-      names of those who inherit eternal life are written in the Lamb's book of life, and certain names are written in
-      the architecture of the city. And God writes His name on the foreheads of His people; as it says, “They will see
-      His face, and His name will be on their foreheads.” (Revelation 22:4) Then it says,
+      names of those who inherit eternal life are written in the Lamb's book of life, and the apostle's names are
+      written in the architecture of the city. And God writes His name on the foreheads of His people; as it says, “They
+      will see His face, and His name will be on their foreheads.” (Revelation 22:4) Then it says,
       <blog-reference-tooltip [reference]="'Revelation 3:12'" [isJesusWord]="true">
         I will write on him the name of My God, and the name of the city of My God, the new Jerusalem, which comes down
         out of heaven from My God, and My new name.
       </blog-reference-tooltip>
-      Finally, I leave you with this Scripture: “The anxious longing of the creation waits eagerly for the revealing of
-      the sons of God. For the creation was subjected to futility, not willingly, but because of Him who subjected it,
-      in hope that the creation itself also will be set free from its slavery to corruption into the freedom of the
-      glory of the children of God. For we know that the whole creation groans and suffers the pains of childbirth
-      together until now. And not only this, but also we ourselves, having the first fruits of the Spirit, even we
-      ourselves groan within ourselves, waiting eagerly for our adoption as sons, the redemption of our body.” (Romans
-      8:19-23)
+      Finally, I leave you with this hopeful Scripture: “The anxious longing of the creation waits eagerly for the
+      revealing of the sons of God. For the creation was subjected to futility, not willingly, but because of Him who
+      subjected it, in hope that the creation itself also will be set free from its slavery to corruption into the
+      freedom of the glory of the children of God. For we know that the whole creation groans and suffers the pains of
+      childbirth together until now. And not only this, but also we ourselves, having the first fruits of the Spirit,
+      even we ourselves groan within ourselves, waiting eagerly for our adoption as sons, the redemption of our body.”
+      (Romans 8:19-23)
     </ng-template>`,
   styles: ``,
   changeDetection: ChangeDetectionStrategy.OnPush,

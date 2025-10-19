@@ -71,7 +71,7 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
         He [Abraham] considered that God is able to raise people even from the dead, from which he also received him
         [Isaac] back as a type.
       </blog-reference-tooltip>
-      And Abraham, being a prophet, saw this was going to happen beforehand and said things like this:
+      And Abraham, being a prophet, saw this was going to happen beforehand and said things like:
       <blog-reference-tooltip [reference]="'Genesis 22:8'"
         >God will provide for Himself the lamb for the burnt offering.</blog-reference-tooltip
       >
@@ -79,7 +79,7 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
       <blog-reference-tooltip [reference]="'Genesis 22:5'">
         Stay here with the donkey, and I and the lad will go over there; and we will worship and return to you.
       </blog-reference-tooltip>
-      And thereafter, he was looking in the future to Christ and
+      And thereafter, he was looking in the future to Christ; as it says,
       <blog-reference-tooltip [reference]="'Gensis 22:14'">
         Abraham called the name of that place The LORD Will Provide, as it is said to this day, "In the mount of the
         LORD it will be provided."
@@ -97,12 +97,11 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
 
       In another instance, Jacob, who came from Isaac, who came from Abraham, also gave up his only son, but he had many
       other sons; he had one and only son from his beloved wife Rachel: that is Benjamin. Jacob had two sons from
-      Rachel, but to him, Joseph was dead, although he was only in Egypt; for he believed Joseph was dead, but he was
-      deceived. So Jacob let Benjamin, his only beloved son, go into the hands of his brothers to save his family from
-      the famine, for they were going to Egypt to buy food. So Jacob gave up his one and only son, Benjamin, and gained
-      him back from the dead, along with another, Joseph who he received back from the dead; and likewise, the Fahter
-      God gave up His Son, Jesus, to receive Him back again from the dead, and gained many other descendents through
-      Him; as it says,
+      Rachel, but to him, Joseph was dead, although he was only in Egypt; for he believed Joseph was dead. So Jacob let
+      Benjamin, his only beloved son, go into the hands of his brothers to save his family from the famine, for they
+      were going to Egypt to buy food. So Jacob gave up his one and only son, Benjamin, and gained him back from the
+      dead, along with another, Joseph who he received back from the dead; and likewise, the Fahter God gave up His Son,
+      Jesus, to receive Him back again from the dead, and gained many other descendents through Him; as it says,
       <blog-reference-tooltip [reference]="'Isaiah 53:10'">
         If He would render Himself as a guilt offering,
         <b>He will see His offspring,</b> He will prolong His days, And the good pleasure of the LORD will prosper in
@@ -125,9 +124,9 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
         Him, having forgiven us all our transgressions.
       </blog-reference-tooltip>
       So we are made alive with Christ through faith. Furthermore, Jacob considered Joseph's two sons, Ephriam and
-      Manasseh, as his own sons; they were considered like Reuben and Simeon to him (Genesis 48:5); and likewise God
-      sent His Son into the world and gained back many more descendants through Him, even descendants among many nations
-      of the world, even to the offspring of His offspring - these are them who are begotten by the Word of Truth; as it
+      Manasseh, his own sons; they were considered like Reuben and Simeon to him (Genesis 48:5); and likewise God sent
+      His Son into the world and gained back many more descendants through Him, even descendants among many nations of
+      the world, even to the offspring of His offspring - these are them who are begotten by the Word of Truth; as it
       says,
       <blog-reference-tooltip [reference]="'Isaiah 59:21'">
         "As for Me, this is My covenant with them," says the LORD: "My Spirit which is upon you, and My words which I
@@ -146,18 +145,16 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
       Corinthians 3:18) Now, the body performs the acts of the mind, and Christ is our Head; a member that goes astray
       has lost connection with the Head; as it says,
       <blog-reference-tooltip [reference]="'Colossians 2:18-19'">
-        Let no one keep defrauding you of your prize by delighting in self-abasement and the worship of the angels,
-        taking his stand on visions he has seen, inflated without cause by his fleshly mind,
-        <b>and not holding fast to the head,</b> from whom the entire body, being supplied and held together by the
-        joints and ligaments, grows with a growth which is from God.
+        inflated without cause by his fleshly mind,
+        <b>and not holding fast to the head.</b>
       </blog-reference-tooltip>
-      So then we see our victory is won for us by Christ and we enter into this victory by setting our minds on the
-      things above, namely Christ in the heavens. For if we set our minds on spiritual things, the members of our bodies
-      will likewise conform to the message of our head. And we set our minds on our Head, that is to say, Christ. For
-      our hand does what the mind says, and our foot does what the mind says, even to every finger and every toe. So if
-      we set our mind on spiritual things, namely Christ, He will give us the strength to present our members as
-      servants to righteousness (Romans 8:5-8, Philippians 4:8, Colossians 3:2). This is the way of faith: setting our
-      minds on Jesus Christ. As it says about the mind of the flesh: "The day when you post your watchmen, Your
+      For it's either knowledge or life, as it was in the beginning. So then we see our victory is won for us by Christ;
+      we enter into this victory by setting our minds on Him. For if we set our minds on spiritual things, the members
+      of our bodies will likewise conform to the message of our head. And we set our minds on our Head, that is to say,
+      Christ. For our hand does what the mind says, and our foot does what the mind says, even to every finger and every
+      toe. So if we set our mind on spiritual things, namely Christ, He will give us the strength to present our members
+      as servants to righteousness (Romans 8:5-8, Philippians 4:8, Colossians 3:2). This is the way of faith: setting
+      our minds on Jesus Christ. As it says about the mind of the flesh: "The day when you post your watchmen, Your
       punishment will come. Then their confusion will occur.” (Micah 7:4) But then, it says about the mind of the
       Spirit: “As for me, I will watch expectantly for the LORD; I will wait for the God of my salvation. My God will
       hear me.” (Micah 7:7) For the mind set on the flesh is set on punishment and wrath, but the mind set on the Spirit
@@ -180,42 +177,49 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
       act like the father, the father says, "You are no son of mine", although in truth, the son is still a son; but
       what they are really saying is: "You were raised better; you're not acting as you've been taught," that is, you're
       not acting like your father. A son can rebel against the father and go his own way (Luke 15:11-32), but the son
-      can never stop being a son; but in such a state, the son is dead to the father, and the father to the son. We are
+      can never stop being a son; but in such a case, the son is dead to the father, and the father to the son. We are
       really sons of God; as Paul says to unbelievers, “For in Him we live and move and exist, as even some of your own
-      poets have said, 'For we also are His children.'” (Acts 17:28-29) So he affirms the truth in the saying: 'For we
-      also are His children'; but many of us, although being sons of God have turned to our own way, resembling unruly
-      beasts more than God; as it says, "God has surely tested them in order for them to see that they are but beasts."
+      poets have said, 'For we also are His children.'” (Acts 17:28-29) So he affirms the truth in the saying: 'We also
+      are His children'; but many of us, although being sons of God have turned to our own way, resembling unruly beasts
+      more than God; as it says, "God has surely tested them in order for them to see that they are but beasts."
       (Ecclesiastes 3:18) So although we are sons of God, many of us do not pattern ourselves after God, for we have not
-      seen God. Children imitate their fathers by sight: they do what they see their fathers doing. They do not need to
+      seen God. Children imitate their fathers by sight: they do what they see their father doing. They do not need to
       be told what to do, but they do what they see. Even if they are told what to do, they do not listen, for they do
       what they see. If they see the father saying and not doing, they will do likewise. So in the same way, we do what
       we see in Christ; and Christ reflects God; as it says, “No one has seen God at any time; the only begotten God who
       is in the bosom of the Father, He has explained Him.” (John 1:18) And we are made to see God through faith in
-      Jesus Christ; as it says, “For all who are being led by the Spirit of God, these are sons of God.” (Romans 8:14)
-      For children follow after their parents, namely by what they see; and we follow after Christ by faith by what we
-      see; just as Christ follows God, as Christ often said,
+      Jesus Christ; as Jesus cried out,
+      <blog-reference-tooltip [reference]="'John 12:44'" [isJesusWord]="true">
+        He who believes in Me, does not believe in Me but in Him who sent Me.
+      </blog-reference-tooltip>
+      “For all who are being led by the Spirit of God, these are sons of God.” (Romans 8:14) For children follow after
+      their parents, namely by what they see; and we follow after Christ by faith in what we see in Him; just as Christ
+      follows God, as Christ often said,
       <blog-reference-tooltip [reference]="'John 5:19'" [isJesusWord]="true"
         >Truly, truly, I say to you, the Son can do nothing of Himself, unless it is something He sees the Father doing;
         for whatever the Father does, these things the Son also does in like manner.</blog-reference-tooltip
       >
-      For the Spirit of God does the leading, and as obedient children we follow after Him; and unless we become like
-      little children we will by no means enter into the kingdom of God (Matthew 18:3).
+      For the Spirit of God does the leading, and as obedient children we follow;
+      <blog-reference-tooltip [reference]="'Matthew 18:3'" [isJesusWord]="true"
+        >Truly I say to you, unless you are converted and become like children, you will not enter the kingdom of
+        heaven.</blog-reference-tooltip
+      >
       <br /><br />
 
       But do you not know, beloved, God first rescued His firstborn Israel from Egypt by a mighty hand, but later, when
-      they hardened their necks and kicked against Him and rebelled against Him for many years, then God handed them
+      they hardened their necks and kicked against Him and rebelled against Him for many years; then God handed them
       over to the Babylonians and the Assyrians, even defiling His own temple on their account? And they were sons of
       Israel, God's chosen people, saved by grace; but they were rejected by God because they rejected Him. For they
       were constantly forgetting God, and they were closing their ears and not believing in Him. The LORD God set up
       testimonies for them and their children so that they would not forget Him; but, as it says in the Psalms, “They
-      forgot His deeds And His miracles that He had shown them.” (Psalms 78:11) And, “They quickly forgot His works;
-      They did not wait for His counsel.” (Psalms 106:13) And, “Because they did not believe in God And did not trust in
-      His salvation.” (Psalms 78:22) And as a result, “They even sacrificed their sons and their daughters to the
-      demons, And shed innocent blood, The blood of their sons and their daughters, Whom they sacrificed to the idols of
-      Canaan; And the land was polluted with the blood.” (Psalms 106:37-38) So why would we imitate the ancestors who
-      followed after devils, and not God? For Jesus is our example, and Jesus is the Way; Jesus has loved us, even more
-      than Himself. Do devils love you more than God? Of course not! Devils desire the sacrifice of devils, but God
-      desires righteous sacrifices, and He provides the Sacrifice; so therefore,
+      forgot His deeds And His miracles that He had shown them.” (Psalms 78:11) And “They quickly forgot His works; They
+      did not wait for His counsel.” (Psalms 106:13) And "They did not believe in God And did not trust in His
+      salvation.” (Psalms 78:22) And as a result, “They even sacrificed their sons and their daughters to the demons,
+      And shed innocent blood, The blood of their sons and their daughters, Whom they sacrificed to the idols of Canaan;
+      And the land was polluted with the blood.” (Psalms 106:37-38) So why would we imitate the ancestors who imitated
+      devils, and not God? For Jesus is our example, and Jesus is the Way; Jesus has loved us, even more than Himself.
+      Do devils love you more than God? Of course not! Devils desire the sacrifice of devils, but God desires righteous
+      sacrifices, and He provides the Sacrifice; so therefore,
       <blog-reference-tooltip [reference]="'1 Peter 1:14-19'">
         As obedient children, do not be conformed to the former lusts which were yours in your ignorance, but like the
         Holy One who called you, be holy yourselves also in all your behavior; because it is written, "YOU SHALL BE
@@ -227,12 +231,11 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
         >(See more about Sons and Slaves)</blog-link
       ><br /><br />
 
-      Finally: Christ gave the good testimony before Pontius Pilate even though he had power to crucify Him and also
-      power to let Him go; however Christ stood for the truth and testified to the truth - no one takes His life, but He
-      laid it down willingly. He said to the people numerous times, "I came from the Father", and "the Father and I are
-      One". And when the time came, the very hour which He came for, He confirmed His testimony, even with His own
-      blood; they tried Him, but they had nothing against Him; as prophesied by Job, who confirmed his own innocence; as
-      he says,
+      Finally: Christ gave the good testimony before Pontius Pilate even though he had power to crucify Him, and power
+      to let Him go; however Christ stood for the truth and testified to the truth - no one takes His life, but He laid
+      it down willingly. He said to the people numerous times, "I came from the Father", and "the Father and I are One".
+      And when the time came, the very hour which He came for, He confirmed His testimony, even with His own blood; they
+      tried Him, but they had nothing against Him; as prophesied by Job, who confirmed his own innocence; as he says,
       <blog-reference-tooltip [reference]="'Job 31:35-36'"
         >And the indictment which my adversary has written, surely I would carry it on my shoulder, I would bind it to
         myself like a crown.</blog-reference-tooltip
@@ -243,25 +246,24 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
       >
       And even though the accusation meant bearing the cross on His shoulder, and wearing the crown of thorns on His
       head, He went to the cross and confirmed His testimony in His own blood. This is what it means when it says, "This
-      is the one who came by water and blood. There are three that testify: the Spirit, the water, and the blood." (1
-      John 5:6-9) He was blameless, even Pilate could not find fault in Him, and he was determined to release Him; but
-      the accusation they had written against Him, Jesus did not deny, but He affirmed it as true, even though it meant
-      death. He testified not by word only, but by deed and truth: by carrying the cross and wearing the crown of
-      thorns. By the cross and the humiliation that He underwent, He confirmed to everyone what He said was true - He
-      did not deny, He confirmed. If anyone speaks lies, before the end of their life, they confess them, or if their
-      life depends on it, they would put a stop to their lies; but Christ did not shrink back even when faced with
-      death, but He testified to the truth; as Paul says, "And of Christ Jesus, who testified the good confession before
-      Pontius Pilate." (1 Timothy 6:13) It was for the end of His life that He came; and by the cross, He affirms to all
-      that He is the Son of God, confirming by His own blood; and it stands today as a witness to all, that Christ is
-      the Son of God; He transformed the cross, a device of torture, into a signal of salvation. For what was once an
-      object of horror, has become a sign and symbol of redemption: it is now hung around necks and pierced on ear
-      lobes; it is now carried on the shoulders of many who believe; it is now put on tops of buildings and set up as
-      markers for graves. Are the sons of men so sick that they put tortuous symbols on themselves? No! Rather God is so
-      good that He has turned the detestable thing into a glorious sign of redemption and salvation. No-one can do such
-      a thing, except God, who turns the corrupt into the believing, the detestable into the gracious, the abominable
-      into the saint. Christ did so, so that we would not lose heart or grow faint: therefore, believe in the Son! And
-      do not fall into the trap of worshipping a dead cross, bowing low to it; but worship the Lord your God and Savior,
-      Jesus Christ, who is living in the heavens, exalted for you. Beware of idols. Cling to God.
+      is the one who came by water and blood." (1 John 5:6-9) He was blameless, even Pilate could not find fault in Him,
+      and he was determined to release Him; but the accusation they had written against Him, Jesus did not deny, but He
+      affirmed it, even though it meant death. He testified not by word only, but by deed and truth: by carrying the
+      cross and wearing the crown of thorns. By the cross, and the humiliation that He underwent, He confirmed to
+      everyone what He said was true - He did not deny, He confirmed. If anyone speaks lies, before the end of their
+      life, they confess them, or if their life depends on it, they would put a stop to their lies; but Christ did not
+      shrink back even when faced with death, but He testified to the truth; as Paul says, "Christ Jesus, who testified
+      the good confession before Pontius Pilate." (1 Timothy 6:13) It was for the end of His life that He came; and by
+      the cross, He affirms to all that He is the Son of God, confirming by His own blood; and it stands today as a
+      witness to all, that Christ is the Son of God; He transformed the cross, a device of torture, into a signal of
+      salvation. For what was once an object of horror, has become a sign and symbol of redemption: it is now hung
+      around necks and pierced on ear lobes; it is now carried on the shoulders; it is now put on tops of buildings and
+      set up as markers for graves. Are the sons of men so sick that they put tortuous symbols on themselves? No! But
+      rather God is so good that He has turned the detestable thing into a glorious sign of redemption and salvation.
+      No-one can do such a thing, except God, who turns the corrupt into the believing, the detestable into the
+      gracious, the abominable into the saint. Christ did so, so that we would not lose heart or grow faint: therefore,
+      believe in the Son! Worship the Lord your God and Savior, Jesus Christ, who is living in the heavens, exalted for
+      you.
     </ng-template>`,
   styles: ``,
   changeDetection: ChangeDetectionStrategy.OnPush,

@@ -25,8 +25,8 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
       And He gives not because of a lump-some of money or any good work we do, lest it be contrary to the gospel of God;
       as Peter rebuked a man, saying, “May your silver perish with you, because you thought you could obtain the gift of
       God with money!” (Acts 8:20-23) So that everything would be in accordance with grace, which is in line with the
-      gospel of God by which every good thing is given by faith; for if we call upon Him, asking in prayer and believing
-      to receive, the Lord says,
+      gospel of God by which every good thing is given through faith; for if we call upon Him, asking in prayer and
+      believing to receive, the Lord says,
       <blog-reference-tooltip [reference]="'Matthew 21:22, Mark 11:24, James 1:6-8'" [isJesusWord]="true">
         All things you ask in prayer, believing, you will receive.
       </blog-reference-tooltip>
@@ -37,7 +37,7 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
       </blog-reference-tooltip>
       <br /><br />
 
-      The faith that believes God, namely that He is the Giver of all good things, says,
+      The Lord, preaching faith in God, namely that He is the Giver of all good things, says,
       <blog-reference-tooltip [reference]="'Luke 6:38'" [isJesusWord]="true">
         Give, and it will be given to you. They will pour into your lap a good measure—pressed down, shaken together,
         and running over. For by your standard of measure it will be measured to you in return.
@@ -69,7 +69,7 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
         Having the same spirit of faith, according to what is written, “I BELIEVED, THEREFORE I SPOKE,” we also believe,
         therefore we also speak.
       </blog-reference-tooltip>
-      And it says,
+      And then it says,
       <blog-reference-tooltip [reference]="'1 Peter 3:15'">
         Always be prepared to give an answer to everyone who asks you to give the reason for the hope that you have. But
         do this with gentleness and respect.
@@ -82,7 +82,7 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
       Christ pours into us His Spirit, creating in us a bubbling brook, a spring of life, whose outpouring is the
       testimony of Jesus. He planted in us His good Word, so that we would bear good fruit of righteousness which
       becomes a tree of life in those who eat; as it says, “The fruit of the righteous is a tree of life, And he who is
-      wise wins souls.” (Proverbs 11:30) We feed and give drink, having ourselves first eatten and drunken, pointing to
+      wise wins souls.” (Proverbs 11:30) We feed and give drink, having ourselves first eatten and drunk, pointing to
       Him who saves: Christ Jesus, who is the living water and the tree of life. Therefore, let us bear the name of God
       without reproach, bearing His reproach, walking blamelessly, free from hypocrisy, confessing His name in
       sincerity, and speaking of His righteous works. As Christ called us according to His grace, we call in the
@@ -118,19 +118,19 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
       and movies and games: how much more we with such a great news? When we sell a car, we do so by telling the truth:
       the sweet and the bitter about the car; otherwise, when they see the car and it is not what we made it out to be,
       they will not do business with us for the sake of our dishonesty. Likewise, we sell Christ, though Christ isn't
-      sold, but freely given to all; anyone who receives Him, it will costs them; but gain tenfold, not to mention
-      eternal life to come. By telling the truth, we show that our faith is true and living; a faith that is not living
-      is dead - a lie; in fact, a belief that has no merit in reality is a delusion. When we do not speak, when the Lord
-      puts a word on our tongue, it's stifling the Spirit; we shrink back in disbelief when we do so; and we don't love
-      our neighbor as we should. God gives us a good example of the order of events we ought to follow in regard to
-      walking and speaking in integrity: first study the Word, then obey it, then teach others. A hypocrite is an actor:
-      someone who puts on a mask to play a different part in a different scene; such a person loses his identity through
-      deception, deceiving himself in order to play a part (1 John 1:8, James 1:22, James 1:26). All actors have to
-      first deceive themselves to play a part; they lie to themselves, saying, "I am such and such." They do this so
-      that they would be convincing to others when they act. Likewise we do the same when we're not truly obeying the
-      Word of God. This is a counterfeit faith, a false bill, a drossed coin. Our heart and actions should never
-      contradict each other lest we be found a hypocrite. When we contradict, we are being hypocritical. But let us
-      follow the example of Ezra, the scribe; as it is said of him,
+      sold, but freely given to all; anyone who receives Him, it will cost them; but they will gain tenfold, not to
+      mention eternal life to come. By telling the truth, we show that our faith is true and living; a faith that is not
+      living is dead - a lie; in fact, a belief that has no merit in reality is a delusion. When we do not speak, when
+      the Lord puts a word on our tongue, it's stifling the Spirit; we shrink back in disbelief when we do so; and we
+      don't love our neighbor as we should. God gives us a good example of the order of events we ought to follow in
+      regard to walking and speaking in integrity: first study the Word, then obey it, then teach others. A hypocrite is
+      an actor: someone who puts on a mask to play a different part in a different scene; such a person loses his
+      identity through deception, deceiving himself in order to play a part (1 John 1:8, James 1:22, James 1:26). All
+      actors have to first deceive themselves to play a part; they lie to themselves, saying, "I am such and such." They
+      do this so that they would be convincing to others when they act. Likewise we do the same when we're not truly
+      obeying the Word of God. This is a counterfeit faith, a false bill, a drossed coin. Our heart and actions should
+      never contradict each other lest we be found a hypocrite. When we contradict, we are being hypocritical. But let
+      us follow the example of Ezra, the scribe; as it is said of him,
       <blog-reference-tooltip [reference]="'Ezra 7:10'">
         Ezra had set his heart to study the law of the Lord, and to do it and to teach his statutes and rules in Israel. </blog-reference-tooltip
       >And Paul, not wishing for his speech to contradict his life, says,
@@ -143,23 +143,23 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
       The one who believes the Message will come to Jesus for salvation. Salvation comes by the forgiveness of our sins;
       as it says, "To give to His people the knowledge of salvation by the forgiveness of their sins." (Luke 1:77) But
       "Without shedding of blood there is no forgiveness." (Hebrews 9:22) However Jesus is the propitiation for our
-      sins. So by going to Him through faith, we are saved, for salvation is in Him; as it says, "There is salvation in
-      no one else; for there is no other name under heaven that has been given among men by which we must be saved."
-      (Acts 4:12) Salvation is made possible by the resurrection of Jesus Christ from the dead; for how can you go to
-      Him and be saved if He is not? And what Word do we preach, but Christ risen from the dead? As it says, "And if
-      Christ be not raised, your faith is vain; you are still in your sins." (1 Corinthians 15:17) So it is through
-      faith that we abide in Him, through understanding with our hearts and turning to Him to be saved, for this is true
-      understanding; as it says, "AND UNDERSTAND WITH THEIR HEART AND RETURN, AND I WOULD HEAL THEM." (Acts 28:27)
-      Furthermore, when we come to Him, we must remain in Him. If we leave our Refuge and do not remain in Him, we've
-      left our safety, and are caught outside the city of Refuge, and still yet in danger. So by abiding in Christ, He
-      abides in us; if we confess Him, we know we abide in Him; as it says, “Whoever confesses that Jesus is the Son of
-      God, God abides in him, and he in God.” (1 John 4:15) As the psalmists says,
+      sins. So by going to Him and abiding in Him through faith, we are saved, for salvation is in Him; as it says,
+      "There is salvation in no one else; for there is no other name under heaven that has been given among men by which
+      we must be saved." (Acts 4:12) Salvation is made possible by the resurrection of Jesus Christ from the dead; for
+      how can you go to Him and be saved if He is not? And what Word do we preach, but Christ risen from the dead? As it
+      says, "And if Christ be not raised, your faith is vain; you are still in your sins." (1 Corinthians 15:17) So it
+      is through faith that we abide in Him, through understanding with our hearts and turning to Him to be saved, for
+      this is true understanding; as it says, "UNDERSTAND WITH THEIR HEART AND RETURN, AND I WOULD HEAL THEM." (Acts
+      28:27) Furthermore, when we come to Him, we must remain in Him. If we leave our Refuge and do not remain in Him,
+      we've left our safety, and are caught outside the city of Refuge, and still yet in danger. So by abiding in
+      Christ, He abides in us; if we confess Him, we know we abide in Him; as it says, “Whoever confesses that Jesus is
+      the Son of God, God abides in him, and he in God.” (1 John 4:15) As the psalmists says,
       <blog-reference-tooltip [reference]="'Psalm 73:28'">
-        But as for me, the nearness of God is my good; I have made the Lord GOD my refuge, That I may tell of all Your
+        As for me, the nearness of God is my good; I have made the Lord GOD my refuge, That I may tell of all Your
         works.
       </blog-reference-tooltip>
       For "No one can say, 'Jesus is Lord,' except by the Holy Spirit." (1 Corinthians 12:3) For He abides in us through
-      His Spirit. Therefore "If you confess with your mouth Jesus as Lord, and believe in your heart that God raised Him
+      the Spirit. Therefore "If you confess with your mouth Jesus as Lord, and believe in your heart that God raised Him
       from the dead, you will be saved;” (Romans 10:9) So the way to salvation is to come to Him for forgiveness, which
       is faith, and to abide in Him for confession, which is salvation. Therefore, come to Him and remain in Him!
     </ng-template>`,

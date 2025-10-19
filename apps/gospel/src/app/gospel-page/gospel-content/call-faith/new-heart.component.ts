@@ -28,7 +28,7 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
       of faith, it says, “For this is the love of God, that we keep His commandments; and His commandments are not
       burdensome.” (1 John 5:3) Human flesh accomplishes nothing, it never pleased God and never will. But the work that
       pleases God is faith; faith is a work of the spirit by believing in Jesus Christ. So then, where is our boasting?
-      Is it in the flesh? No! But rather our boast is in God; as it says,
+      Is it certainly not in the flesh. But rather our boast is in God; as it says,
       <blog-reference-tooltip [reference]="'Jeremiah 9:24'">
         Let him who boasts boast in this, that he understands and knows Me, that I am the LORD who practices steadfast
         love, justice, and righteousness in the earth. For in these things I delight, declares the LORD.
@@ -39,27 +39,27 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
 
       What then do we do, if we have faith within, but nothing is worked out? For our works make our faith complete.
       Faith without works is dead; it is not faith at all, but sincere faith is living, for it is doing. That which is
-      dead, does nothing; and that which is dead cannot save anyone; can a mute idol save even itself? Who but the
-      living God can raise the dead? Who can deliver but God? A sincere faith is like breathing - we do it naturally. We
-      don't have to try or toil so hard to breathe, we just do it. That's the same with sincere faith: we don't try so
-      hard, but it comes naturally. We believe and so act. So be a child in regard to faith - simply believe. What about
-      blinking? You certainly don't strive hard to blink! It happens naturally. If you want to lose weight, you can run
-      a marathon or eat nothing; which is easier? If you want to stay afloat, strive hard and kick or be at peace and
-      float; which is less stress? Even if you can exert enough strength to remain afloat for an hour, certainly you
-      cannot for a lifetime, can you? Faith is for a lifetime, but human strength is only for a moment; as it says, “For
-      His anger is but for a moment, His favor is for a lifetime; Weeping may last for the night, But a shout of joy
-      comes in the morning.” (Psalms 30:5) For the work of the flesh brings forth wrath, but those who believe obtain
-      favor with God. Those who exert strength for eternal life do not obtain life, but those who rest in Christ find
-      the mercy of God. So strive to keep your faith sincere; this is a most important thing. Do not try to make faith
-      by simulating faith with works; but rather, have authentic faith which produces works. A simulator is not actually
-      the thing it is simulating; it is only a fake, a robot. If a robot mimics a human, does that make it a human? Of
-      course not! If you simulate being a Christian by doing what Christians do, that doesn't make you a Christian;
-      that's not really faith, and that won't get you into Paradise - for the Lord sees your heart. When I was young, I
-      wanted to get out of school; I simulated a cold to trick my mom to let me stay home; certainly I was able to fool
-      her. I didn't actually have a cold, I was only simulating one: I put the tissues on my nose, I put the heat on my
-      forehead, I disfigured my face. I knew the truth and God knew the truth; but I first needed to deceive myself in
-      order to deceive my mom; I had to lie to myself before I lied to another. I can fool myself, but will simulating
-      faith fool the living God on judgment day? That is why it says,
+      dead, does nothing; and that which is dead cannot save anyone; can a mute idol save? Who but the living God can
+      raise the dead? Who can deliver but God? A sincere faith is like breathing - we do it naturally. We don't have to
+      try or toil so hard to breathe, we just do it. That's the same with sincere faith: we don't try so hard, but it
+      comes naturally. We believe and so act. So be a child in regard to faith - simply believe. What about blinking?
+      You certainly don't strive hard to blink! It happens naturally. If you want to lose weight, you can run a marathon
+      or eat nothing; which is easier? If you want to stay afloat, strive hard and kick or be at peace and float; which
+      is less stress? Even if you can exert enough strength to remain afloat for an hour, certainly you cannot for a
+      lifetime! Faith is for a lifetime, but human strength is only for a moment; as it says, “For His anger is but for
+      a moment, His favor is for a lifetime; Weeping may last for the night, But a shout of joy comes in the morning.”
+      (Psalms 30:5) For the work of the flesh brings forth wrath, but those who believe obtain favor with God. Those who
+      exert strength for eternal life do not obtain life, but those who rest in Christ find the mercy of God. So strive
+      to keep your faith sincere; this is a most important thing. Do not try to make faith by simulating faith with
+      works; but rather, have authentic faith which produces works. A simulator is not actually the thing it is
+      simulating; it is only a fake, a robot. If a robot mimics a human, does that make it a human? Of course not! If
+      you simulate being a Christian by doing what Christians do, that doesn't make you a Christian; that's not really
+      faith, and that won't get you into Paradise - for the Lord sees your heart. When I was young, I wanted to get out
+      of school; I simulated a cold to trick my mom to let me stay home; certainly I was able to fool her. I didn't
+      actually have a cold, I was only simulating one: I put the tissues on my nose, I put the heat on my forehead, I
+      disfigured my face. I knew the truth and God knew the truth; but I first needed to deceive myself in order to
+      deceive my mom; I had to lie to myself before I lied to another. I can fool myself, but will simulating faith fool
+      the living God on judgment day? That is why it says,
       <blog-reference-tooltip [reference]="'Romans 14:22'">
         The faith which you have, have as your own conviction before God.
       </blog-reference-tooltip>
@@ -67,11 +67,11 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
       graciously let you find Him; the Father will lead you to the Son, then you will naturally do the things which are
       fruits of faith. I must have faith of my own, namely that, the eternal Father was in Christ and died for me, that
       He has great love towards me in Christ; I must have my own faith in that He loved me to give me life and He loved
-      me to give me new life. With faith, I experience a change of heart: the hardness of it cut away. My life is
-      changed forever; the Lord changes me from within. Know the nature of unbelief; as it says, “The one who does not
-      believe God has made Him a liar, because he has not believed in the testimony that God has given concerning His
-      Son.” (1 John 5:10) But, "It is impossible for God to lie.” (Hebrews 6:18) However, "He who has received His
-      testimony has set his seal to this, that God is true.” (John 3:33) <br /><br />
+      me to give me new life. With faith, I experience a change of heart: the hardness cut away. My life is changed
+      forever; the Lord changes me from within. Know the nature of unbelief; as it says, “The one who does not believe
+      God has made Him a liar, because he has not believed in the testimony that God has given concerning His Son.” (1
+      John 5:10) But, "It is impossible for God to lie.” (Hebrews 6:18) "He who has received His testimony has set his
+      seal to this, that God is true.” (John 3:33) <br /><br />
 
       From the beginning of time, God hid by mystery in His Word the way to be made right with Himself, which is now
       revealed in Christ: a righteousness which is by faith. Jesus came down from heaven and healed men of their
@@ -81,7 +81,7 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
       <blog-reference-tooltip [reference]="'Mark 5:34'" [isJesusWord]="true">
         Daughter, your faith has made you well; go in peace, and be healed of your disease.
       </blog-reference-tooltip>
-      And,
+      And another time,
       <blog-reference-tooltip [reference]="'Luke 18:42'" [isJesusWord]="true">
         Recover your sight; your faith has made you well.
       </blog-reference-tooltip>

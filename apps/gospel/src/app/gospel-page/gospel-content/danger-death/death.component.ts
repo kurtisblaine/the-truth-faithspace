@@ -17,10 +17,11 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
       <blog-reference-tooltip [reference]="'Ecclesiastes 12:5'">
         For man goes to his eternal home while mourners go about in the street.
       </blog-reference-tooltip>
-      For we have this present life, but it is not ours to keep; if our life was forever, then we wouldn't die, but
-      because we die one day, we know this isn't our home; it is our temporary residence, the tent we live in; our lives
-      are entrusted to us for only a little while. So since we know we will die, we look forward to our next life, our
-      permanent home. If we reject our permanent home, we will try to make our home here on earth eternal; as it says,
+      For we have this present life, but it is not ours to keep; if our life was forever, then we wouldn't have to die,
+      but because we die one day, we know this isn't our home; it is our temporary residence, the tent we live in; our
+      lives are entrusted to us for only a little while. So since we know we will die, we look forward to our next life,
+      our permanent home. If we reject our permanent home, we will try to make our home here on earth eternal; as it
+      says,
       <blog-reference-tooltip [reference]="'Psalm 49:11'">
         Their inner thought is that their houses will last forever, Their dwelling places to all generations; They call
         their lands after their own names.
@@ -36,13 +37,13 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
       Jerusalem, Mount Zion, the new heaven and the new earth, where righteousness dwells. The present heaven and earth
       are subjected to evil and violence, but it is passing away with everything in it, as we ourselves are passing
       away. The new heaven and the new earth will never pass away; for it is an eternal home which cannot be shaken. The
-      LORD God will judge the living and the dead according to their deeds, and recompense all according to what they
-      have done in the body; as God says, “Now the end is upon you, and I will send My anger against you; I will judge
-      you according to your ways and bring all your abominations upon you.” (Ezekiel 7:3-4) So He judges us based on our
-      own works. And from the judgement, each will go to their permanent home as decreed by the judgement of God; and
-      God's judgment will be based on righteousness and justice; so who can argue with the verdict? He will reward all
-      who do good for the good done and repay harm for the harm done. But certainly, God has sown everlasting life in
-      the human heart so that we would covet life; as it says,
+      LORD God will judge both the living and the dead according to their deeds, and recompense all according to what
+      they have done in the body; as God says, “Now the end is upon you, and I will send My anger against you; I will
+      judge you according to your ways and bring all your abominations upon you.” (Ezekiel 7:3-4) So He judges us based
+      on our own works. And from the judgement, each will go to their permanent home as decreed by the judgement of God;
+      and God's judgment will be based on righteousness and justice; so who can argue with the verdict? He will reward
+      all who do good for the good done and repay harm for the harm done. But certainly, God has sown everlasting life
+      in the human heart so that we would covet life; as it says,
       <blog-reference-tooltip [reference]="'Ecclesiastes 3:11'">
         He has made everything appropriate in its time. <b>He has also set eternity in their heart</b>, yet so that man
         will not find out the work which God has done from the beginning even to the end.</blog-reference-tooltip
@@ -106,10 +107,10 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
 
       So God has given us many days of life, but there is a day of death; He has given us many days of grace, but there
       is one day of judgement. The many is not like the one; but while we live in the many, we ought to consider the
-      one. “For God will bring every act to judgment, everything which is hidden, whether it is good or evil.”
-      (Ecclesiastes 12:14) So in our days of pride, we ought to consider from where we came, and we should consider
-      where we are going. When we consider ourselves more than what we really are, we should remember we are no
-      different from beasts that perish; as it says,
+      one. For from the One, they both come. “For God will bring every act to judgment, everything which is hidden,
+      whether it is good or evil.” (Ecclesiastes 12:14) So in our days of pride, we ought to consider from where we
+      came, and we should consider where we are going. When we consider ourselves more than what we really are, we
+      should remember we are no different from beasts that perish; as it says,
       <blog-reference-tooltip [reference]="'Ecclesiastes 3:18-21'">
         I concluded that God is testing us, to show us that we are no better than animals. After all, the same fate
         awaits human beings and animals alike. One dies just like the other. They are both the same kind of creature. A
@@ -137,17 +138,17 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
       <blog-reference-tooltip [reference]="'Matthew 5:7'" [isJesusWord]="true">
         Blessed are the merciful, for they shall receive mercy.
       </blog-reference-tooltip>
-      Judgement will be based on what we have received from God, what we have done with this grace of life. But there is
-      not a single man on earth who has not soiled his garments. Haven't we all already ruined this good thing of life?
-      So if we have ruined our cards, can we take them back? Knowing where they come from, can we take them back as
-      goods bought in a store? Can we have a do-over in this life or trade our cards for someone else's? Surely God is
-      just. Wouldn't He show us the way of redemption from sin and forgiveness of sins? Does He not know that we are
-      wayward, and in need of a Shepherd? Surely one day we will return our cards to the Dealer, for our hand is only
-      for a little while. Will we be able to ask Him at that time? Certainly it will be too late for questions. For He
-      will question us and we are the ones who must answer. So shall we go all in for something that is nothing? Of
-      course not! Rather how much more shall we go all in for what is everlasting! But where is the everlasting path?
-      Where is the ancient road? Will someone show us the way of life? If there was a way, surely God would reveal it,
-      wouldn't He?
+      Judgement will be according to what we have received from God, what we have done with this grace of life;
+      judgement will be based on our works. But there is not a single man on earth who has not soiled his garments.
+      Haven't we all already ruined this good thing of life? So if we have ruined our cards, can we take them back?
+      Knowing where they come from, can we take them back as goods bought in a store? Can we have a do-over in this life
+      or trade our cards for someone else's? Surely God is just. Wouldn't He show us the way of redemption from sin and
+      forgiveness of sins? Does He not know that we are wayward, and in need of a Shepherd? Surely one day we will
+      return our cards to the Dealer, for our hand is only for a little while. Will we be able to ask Him at that time?
+      Certainly it will be too late for questions. For He will question us and we are the ones who must answer. So shall
+      we go all in for something that is nothing? Of course not! Rather how much more shall we go all in for what is
+      everlasting! But where is the everlasting path? Where is the ancient road? Will someone show us the way of life?
+      If there was a way, surely God would reveal it, wouldn't He?
       <br /><br />
 
       The world thinks the truth is hidden: in the depths of the ocean, in outer space, in the center of the earth. They
@@ -180,7 +181,7 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
       For the way of life is through the knowledge of God in the face of the Lord Jesus Christ; and He is the living
       Grace, the living Truth; He has descended to us and He has ascended; and He sends forth the Spirit of Truth; and
       He will come again with the clouds in the heavens, for He is always and forever! Every question is answered in a
-      single saying, as the apostle Paul says,
+      single saying:
       <blog-reference-tooltip [reference]="'Romans 7:25'"
         >THANK GOD! THE ANSWER IS IN JESUS CHRIST OUR LORD.</blog-reference-tooltip
       >

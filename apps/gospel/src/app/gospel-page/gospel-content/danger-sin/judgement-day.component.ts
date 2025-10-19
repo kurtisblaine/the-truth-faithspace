@@ -13,13 +13,13 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
       Sodom, when the Lord will come from the heavens; it will be like the days of Noah, when His judgement is revealed
       to the world; as the apostle Peter says,
       <blog-reference-tooltip [reference]="'2 Peter 3:3-9'">
-        For they (scoffers) deliberately overlook this fact, that the heavens existed long ago, and the earth was formed
-        out of water and through water by the word of God, and that by means of these the world that then existed was
-        deluged with water and perished. But by the same word the heavens and earth that now exist are stored up for
-        fire, being kept until the day of judgment and destruction of the ungodly.
+        The heavens existed long ago, and the earth was formed out of water and through water by the word of God, and
+        that by means of these the world that then existed was deluged with water and perished. But by the same word the
+        heavens and earth that now exist are stored up for fire, being kept until the day of judgment and destruction of
+        the ungodly.
       </blog-reference-tooltip>
-      In that day, everything done in the body will need to be accounted for. God is just; and He is just such that He
-      cannot let anyone go unpunished. Evil cannot persist, not even a single lie; as it says, “Truthful lips will be
+      In that day, everything done in the body will be accounted for. God is just; and He is just such that He cannot
+      let anyone go unpunished. Evil cannot persist, not even a single lie; as it says, “Truthful lips will be
       established forever, But a lying tongue is only for a moment.” (Proverbs 12:19) Every evil thing will be made
       right through judgment; as the LORD God says,
       <blog-reference-tooltip [reference]="'Jeremiah 46:28'"
@@ -63,7 +63,7 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
       all wickedness will be put into it's proper place and judged as wrong; and righteousness will be exalted and
       rewarded in that day. When evil is reprimanded, reproved, and rebuked, it is made good through the correction; and
       our God is a God of justice and righteousness. Right now is the time to receive correction and forgiveness, but in
-      that day, it will be a time for judgment and wrath, for condemnation or reward.
+      that day, a time for judgment and wrath, for condemnation or reward.
       <br /><br />
       <!-- <a href="https://thelightof.life/drawings/draw/re" target="_blank"
           >Differences between reprimand, reproof, and rebuke.</a
@@ -75,7 +75,7 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
       corrupts much that is good; but nevertheless, all sin has an end. Do we not bury that which is unclean? We don't
       expose our uncleanness, do we? Our bodies have waste to it; and we put that waste in dark places, for it is good
       to be not seen; we gather it together and put it into a pit and burn it with fire or cover it with dirt. And don't
-      we bury their dead? So what do you suppose God will do with the moral filth of the world when He sends forth His
+      we bury our dead? So what do you suppose God will do with the moral filth of the world when He sends forth His
       angels? Won't everything unclean be cosigned to its proper place and burned with fire? If we do these things with
       that which is unclean to our eyes, how much more will God with that which is abhorrent to His eyes? For men riot
       when justice is not upheld: when someone who is supposed to be punished gets off free, men go out and riot against
@@ -97,13 +97,13 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
       the judgment of God is revealed through the One He has appointed; He will reward those who by persistence seek
       immortality, life and peace, looking for the hope of everlasting life; “But to those who are selfishly ambitious
       and do not obey the truth, but obey unrighteousness, wrath and indignation.” (Romans 2:8) Even the righteous will
-      be scarcely saved; as it says,
+      be scarcely saved;
       <blog-reference-tooltip [reference]="'1 Peter 4:17-18'"
         >For it is time for judgment to begin at the household of God; and if it begins with us, what will be the
         outcome for those who do not obey the gospel of God? AND IF IT IS WITH DIFFICULTY THAT THE RIGHTEOUS IS SAVED,
         WHAT WILL BECOME OF THE GODLESS MAN AND THE SINNER?</blog-reference-tooltip
       >
-      Someone might say, "Stop judging me!" Or, "Only God can judge me." But if we cannot withstand the judgment of mere
+      Someone might say, "Stop judging me!" Or, "Only God can judge me." If we cannot withstand the judgment of mere
       mortals, how can we withstand the judgment of the Almighty God? Is it not a terrifying thing? As He says, “Behold,
       the day of the LORD is coming, Cruel, with fury and burning anger, To make the land a desolation; And He will
       exterminate its sinners from it. For the stars of heaven and their constellations Will not flash forth their
@@ -113,8 +113,8 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
       Therefore I will make the heavens tremble, And the earth will be shaken from its place At the fury of the LORD of
       hosts In the day of His burning anger.” (Isaiah 13:9-13)<br /><br />
 
-      So then, I ask, if we are sinful and God sees and hears everything, and He will not let anyone go unpunished, how
-      then can anyone be saved? As the Scriptures say, "Few will be saved." But how is there few? Shouldn't there be
+      So then, I ask, if we are sinful and God sees and hears everything, and He will not let anyone go unpunished, then
+      how can anyone be saved? As the Scriptures say, "Few will be saved." But how is there few? Shouldn't there be
       none? As He says,
       <blog-reference-tooltip [reference]="'Matthew 7:13,14'" [isJesusWord]="true"
         >Enter by the narrow gate. For the gate is wide and the way is easy that leads to destruction, and those who
@@ -129,8 +129,8 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
       <blog-reference-tooltip [reference]="'Isaiah 22:13'"
         >Let us eat and drink, for tomorrow we die.</blog-reference-tooltip
       >
-      Isn't the danger so evident? We're evil and God is Holy. What must we do to be saved from the wrath which is to
-      come!
+      Isn't the danger so evident? For we are evil and God is Holy. What must we do to be saved from the wrath which is
+      to come!
       <blog-reference-tooltip [reference]="'Romans 7:24'"
         >Wreched and miserable man that I am! Who will free me from this body of sin and death?</blog-reference-tooltip
       >
@@ -151,11 +151,11 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
       Jerusalem!
       <b>Behold, your king is coming to you; He is just and endowed with salvation,</b> Humble, and mounted on a donkey,
       Even on a colt, the foal of a donkey.” (Zechariah 9:9) For it is God who descended, and it is He who ascended. It
-      is He who came! For man surely cannot save himself; as He says, "Or do you have an arm like God, And can you
-      thunder with a voice like His?” (Job 40:9) If so, "Then I will also confess to you, That your own right hand can
-      save you.” (Job 40:14) So surely we need a savior; surely we need a rock. Or can wealth save us? Can we gather up
+      is He who came! For man surely cannot save himself; as He says, "Do you have an arm like God, And can you thunder
+      with a voice like His?” (Job 40:9) If so, "Then I will also confess to you, That your own right hand can save
+      you.” (Job 40:14) So surely we need a savior; surely we need a rock. Or can wealth save us? Can we gather up
       enough food for ourselves to withstand the evil day? Which gun can shoot against spirits? Or which sword can fight
-      against the unseen? Surely, even our best efforts are useless.
+      against the unseen? Surely, our best efforts are useless.
     </ng-template>`,
   styles: ``,
   changeDetection: ChangeDetectionStrategy.OnPush,

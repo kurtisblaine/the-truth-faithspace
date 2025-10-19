@@ -58,45 +58,41 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
         For we who live are always delivered to death for Jesus’ sake, that the life of Jesus also may be manifested in
         our mortal flesh.
       </blog-reference-tooltip>
-      The law was made as a fertile womb, but it brought forth children to death; a tomb is made by men to inhabit
+      The law was made as a fertile womb, but it brought forth children to death; yes, a tomb is made by men to inhabit
       death. But Christ's tomb brings forth children to life; for anyone baptized into Christ are baptized into death
-      and raised to new life. For Christ has been raised, and we are made alive to God through faith in Him. Water
-      itself does not save; water has no merit on a person's salvation. Rather, it is the spirit of baptism that has
-      merit: which is being united with Christ in His death. Therefore, after you have believed, be baptized, calling
-      upon the name of the Lord.
+      and raised to new life. For Christ has been raised, and we are made alive to God through faith in Him. Therefore,
+      after you have believed, be baptized, calling upon the name of the Lord.
       <blog-reference-tooltip [reference]="'Acts 22:16'">
         And now why are you waiting? Arise and be baptized, and wash away your sins, calling on the name of the Lord.
       </blog-reference-tooltip>
       <br /><br />
 
-      The meaning of baptism matters more than the water of baptism: for look to the man on the cross next to Jesus as
-      an example (Luke 23:39-43); the thief on the cross was baptized more than anyone of us who are baptized in water;
-      for baptism is being united with Christ in His death, and the thief on the cross was united with Him in His death
-      more so than anyone of us dipped into water! He was baptized into Him as he believed and confessed His guilt on
-      the cross; so you see, physical water does not save anyone. Similarily, there were Jews who did not ceremonially
+      Look to the man on the cross next to Jesus as an example (Luke 23:39-43); the thief on the cross was baptized more
+      than anyone of us who are baptized in water; for baptism is being united with Christ in His death, and the thief
+      on the cross was united with Christ in His death more so than anyone of us dipped into water! He was baptized into
+      Him as he believed and confessed His guilt on the cross. Similarily, there were Jews who did not ceremonially
       cleanse themselves for the Passover, and were still allowed to eat because they're hearts were sanctified by
       faith; so they are a type of those who are saved although they do not cleanse themselves according to the physical
       requirement (2 Chronicles 30:18-19). And they were pardoned by God when Hezekiah, the king at the time, prayed for
-      them. But know for sure the Scriptures command us, "Be baptized", so it would be disobedience on our part if we
-      don't. We ought to have fruit of faith before baptism. Why would anyone be baptized into Christ without any faith?
-      Why not take a bath in that case! It is Christ who saves and you are entering into salvation through Him. So don't
-      be deceived into thinking, "I don't have faith, but I'll be baptized anyway." As if it's the water that saves you;
+      them. We ought to have faith before baptism; for why would anyone be baptized into Christ without any faith? Why
+      not take a bath in that case! It is Christ who saves and you are entering into salvation through Him. So don't be
+      deceived into thinking, "I don't have faith, but I'll be baptized anyway." As if it's the water that saves you;
       instead: believe the Gospel. Nothing inanimate saves: not money, nor technology, not a home, nor a bunker, nor a
       mansion, not water, nor bread, nor wine, not parent, nor ancestor. Be sanctified; for without holiness no-one will
       see the Lord. As it says, "The day of death better than the day of birth." (Ecclesiastes 7:1) For the old must
       die, and with the death of the old comes the new; the old is temporary and passing away, but the end brings forth
-      the new, which is everlasting. We enter into the new through the death of the old.<br /><br />
+      the new, which is everlasting. We enter into the new life through the death of the old.<br /><br />
 
       God gave us tangible reminders of spiritual truths: baptism reminds us of our death and burial, bread and wine
       reminds us of the Lord's body and blood (and not to mention all the parables, they describe spiritual truths using
       physical things). Baptism is effective because of the resurrection of Christ; as Peter says, “Baptism now saves
       you through the resurrection of Jesus Christ.” (1 Peter 3:21) And so we are justified by faith in that God raised
-      Christ from the dead; as Paul says, "And believe in your heart that God <b>raised Him from the dead </b> (...) For
+      Christ from the dead; as Paul says, "Believe in your heart that God <b>raised Him from the dead. </b> (...) For
       with the heart a person believes, resulting in righteousness.” (Romans 10:9) Therefore, faith justifies because of
       the resurrection from the dead; as Paul says, "If Christ has not been raised, then our preaching is vain, your
       faith also is vain.” (1 Corinthians 15:14) Furthermore, Jesus rose from the dead - and so our guilt is removed.
       For Joseph's brothers who betrayed him had guilt as long as they believed Joseph was dead; however when he was
-      found to be alive, they didn't have guilt anymore. But afterwards they feared punishment, for love had not been
+      found to be alive, they didn't have guilt. But afterwards they did fear punishment, for love had not been
       perfected in them. [“There is no fear in love; but perfect love casts out fear, because fear involves punishment,
       and the one who fears is not perfected in love.” (1 John 4:18)] For they thought after their father died, Joseph
       would take revenge; but it was not so, as Joseph said,
@@ -107,8 +103,8 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
       Also, when the offerer in the temple sacrificed an innocent lamb, he still had guilt because the innocent lamb was
       slain on his behalf (I hope the LORD God gives you insight into all these things). So concerning baptism, if there
       is no resurrection, then baptism should cease. For John died, and we no longer see men being baptized into him.
-      But we do see men being baptized into Christ, for He lives. If there is no resurrection, why are we baptized for
-      the dead? As the apostle Paul says,
+      But we do see men being baptized into Christ, for He lives on. If there is no resurrection, why are we baptized
+      for the dead? As the apostle Paul says,
       <blog-reference-tooltip [reference]="'1 Corinthians 15:29'">
         If these things (the resurrection from the dead) are not so, what will those do who are baptized for the dead?
         If the dead are not raised at all, why are people baptized for them?

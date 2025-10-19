@@ -66,7 +66,9 @@ type VoiceAppSettings = {
         (click)="$event.stopPropagation()"
       />
     </mat-form-field>
-    <span style="padding: 5px 0px; display: block">The text-to-speech service uses an artificial voice.</span>
+    <span style="padding: 5px 0px; display: block; width: 100%"
+      >The text-to-speech service uses an artificial voice.</span
+    >
     } @else {
     <span class="error"> The text-to-speech service is not available on your device.</span>
     }
@@ -75,10 +77,12 @@ type VoiceAppSettings = {
   @use '@angular/material' as mat;
   mat-form-field {
     padding: 5px 0px;
+    width: 100%;
     @include mat.form-field-density(-3);
   }
 
   .error {
+    width: 100%;
     color: var(--mat-sys-error);
   }
   `,

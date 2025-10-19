@@ -67,7 +67,7 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
       unbeliever.” (1 Timothy 5:8)
       <br /><br />
 
-      So therefore prepare the good seed which the Lord God will give you. For your own seed is not good enough. Can
+      So therefore cast the good seed which the Lord God has given you. For your own seed is not good enough. Can
       anything be better than what God has provided? There is a bad seed which is called a lie, a false confession, a
       polluted spring. I ask: does a salesmen attempting to sell a car speak dishonestly in an ad? Maybe it's so; but
       the buyer will eventually come to see the car, and he will hate you, seeing that you lied to him; he will be angry
@@ -82,11 +82,11 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
       this way, we will be fruitful. But if we do not tell of the cost of following Christ, we lie. If we tell of the
       cost and not about the grace of Christ, we likewise lie. Christ did so that we would do; and this is obedience to
       the truth. I ask: where is grace? And where is the power to do? Is it not in Christ? How can anyone do anything
-      profitable without Christ? Therefore, we obey the truth in which we have believed. But I ask: How can anyone obey
+      profitable without Christ? Therefore, we obey the truth in which we have believed. But I ask: how can anyone obey
       what they do not believe? Christ gave Himself for us, that we would be His possession, and that we would no longer
       live for ourselves, but live for Him who bought us. He has loved us and came down from heaven to redeem us. Our
       Master loves and cares for His servants, for His servants are part of His own body; and He has made the mind of
-      His Spirit to dwell in us to remind us what to say and what to do.
+      His Spirit to dwell in us to remind us of His Word.
       <br /><br />
 
       And so our reward is based on our overcoming, on our doing; for we will be rewarded based on what we do; as the
@@ -116,9 +116,9 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
       iniquity. Therefore the LORD has recompensed me according to my righteousness, According to the cleanness of my
       hands in His eyes.” (Psalms 18:20-24) And in another place he says, “The LORD judges the peoples; Vindicate me, O
       LORD, according to my righteousness and my integrity that is in me.” (Psalms 7:8) So the reward is granted unto
-      us, not merely by what we believe, but by what we do. For just as at harvest time, the harvesters seek not for
-      leaves, but for fruit; for at the harvest, only fruit matters. And so, if we want to be rewarded by the Lord,
-      today and forever, we must be obedient to His call; as the Lord promises,
+      us, not merely by what we believe, but by what we do. For just as at harvest time, the harvesters seek not leaves,
+      but for fruit; for at the harvest, only fruit matters. And so, if we want to be rewarded by the Lord, today and
+      forever, we must be obedient to His call; as the Lord promises,
       <blog-reference-tooltip [reference]="'Mark 10:29-30'" [isJesusWord]="true">
         Truly I say to you, there is no one who has left house or brothers or sisters or mother or father or children or
         farms, for My sake and for the gospel's sake,
