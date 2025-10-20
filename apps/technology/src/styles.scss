@@ -38,6 +38,11 @@ body {
   margin: unset;
 }
 
+.mat-toolbar-row,
+.mat-toolbar-single-row {
+  padding: unset;
+}
+
 .mdc-list-item.mdc-list-item--with-three-lines .mdc-list-item__start,
 .mdc-list-item.mdc-list-item--with-two-lines .mdc-list-item__start,
 .mdc-list-item.mdc-list-item--with-one-line .mdc-list-item__start {

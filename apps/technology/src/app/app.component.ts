@@ -7,7 +7,7 @@ import { MatToolbarModule } from "@angular/material/toolbar";
 import { MatTooltipModule } from "@angular/material/tooltip";
 import { Router, RouterOutlet } from "@angular/router";
 import { FontAwesomeModule } from "@fortawesome/angular-fontawesome";
-import { faBars, faGears, faHome, faRobot } from "@fortawesome/free-solid-svg-icons";
+import { faBars, faGears, faHome, faNewspaper, faRobot } from "@fortawesome/free-solid-svg-icons";
 import { SettingsWidgetComponent, VoiceSettingsComponent } from "../../../../libs/src";
 
 @Component({
@@ -30,17 +30,11 @@ import { SettingsWidgetComponent, VoiceSettingsComponent } from "../../../../lib
     <mat-drawer-container style="width: 100%;" [hasBackdrop]="false">
       <mat-drawer style="width: 280px; position: fixed" #drawer [mode]="'side'" [autoFocus]="true">
         <mat-list>
-          <mat-list-item lines="1" (click)="goHome(); drawer.close()">
-            <fa-icon matListItemIcon [icon]="homeIcon" [size]="'lg'"></fa-icon>
-            <span matListItemTitle>Welcome</span>
-          </mat-list-item>
-          <mat-divider></mat-divider>
-
           <div mat-subheader>Posts</div>
           <mat-list-item lines="3" (click)="goItems(); drawer.close()">
-            <fa-icon matListItemIcon [icon]="itemIcon" [size]="'lg'"></fa-icon>
+            <fa-icon matListItemIcon [icon]="itemIcon"></fa-icon>
             <span matListItemTitle>Technology</span>
-            <span>shining light on the darkness of technology. </span>
+            <span>Shining light in the darkness of technology. </span>
           </mat-list-item>
         </mat-list>
       </mat-drawer>
@@ -54,7 +48,7 @@ import { SettingsWidgetComponent, VoiceSettingsComponent } from "../../../../lib
               aria-labelledby="Menu button"
               aria-label="Menu button"
             >
-              <fa-icon [icon]="icon" [size]="'lg'"></fa-icon>
+              <fa-icon [icon]="icon"></fa-icon>
             </button>
 
             <button mat-button (click)="goHome(); drawer.close()"><h1>Beware of Idols</h1></button>
@@ -63,12 +57,23 @@ import { SettingsWidgetComponent, VoiceSettingsComponent } from "../../../../lib
 
             <button
               mat-icon-button
+              (click)="goGospel()"
+              [matTooltip]="'Go to the Good News'"
+              aria-labelledby="Gospel button"
+              aria-label="Gospel button"
+              style="margin-right: 12px"
+            >
+              <fa-icon [icon]="gospelIcon"></fa-icon>
+            </button>
+
+            <button
+              mat-icon-button
               [matTooltip]="'App Settings'"
               aria-labelledby="Settings button"
               aria-label="Settings button"
               [matMenuTriggerFor]="settingsMenu"
             >
-              <fa-icon [icon]="settingsIcon" [size]="'lg'"></fa-icon>
+              <fa-icon [icon]="settingsIcon"></fa-icon>
             </button>
 
             <mat-menu #settingsMenu="matMenu">
@@ -91,13 +96,18 @@ export class AppComponent {
   public homeIcon = faHome;
   public itemIcon = faRobot;
   public settingsIcon = faGears;
+  public gospelIcon = faNewspaper;
 
-  @ViewChild(MatMenuTrigger) trigger: MatMenuTrigger;
+  @ViewChild(MatMenuTrigger) public trigger!: MatMenuTrigger;
 
   constructor(private router: Router) {}
 
   openMenu() {
     this.trigger.openMenu();
+  }
+
+  public goGospel() {
+    window.open("https://thelightof.life/truth", "_blank");
   }
 
   public goHome() {
