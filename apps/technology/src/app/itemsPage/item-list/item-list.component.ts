@@ -4,6 +4,7 @@ import { toSignal } from "@angular/core/rxjs-interop";
 import { MatButtonModule } from "@angular/material/button";
 import { MatDividerModule } from "@angular/material/divider";
 import { MatPaginatorModule, PageEvent } from "@angular/material/paginator";
+import { FontAwesomeModule } from "@fortawesome/angular-fontawesome";
 import { faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
 import { Store } from "@ngrx/store";
 import { toHTML } from "ngx-editor";
@@ -27,6 +28,7 @@ import { LinkComponent } from "../../shared/link/link.component";
     LinkComponent,
     MatPaginatorModule,
     FilterComponent,
+    FontAwesomeModule,
   ],
 })
 export class ItemListComponent {

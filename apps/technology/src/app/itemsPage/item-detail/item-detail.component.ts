@@ -28,6 +28,6 @@ export class ItemDetailComponent extends SeoBaseComponent {
     this.store.dispatch(ItemsActions.loadItems());
 
     const id = this.route.snapshot.paramMap.get("id");
-    if (id) this.item$ = this.store.select(getById(id)).pipe(tap(() => this.init()));
+    this.item$ = this.store.select(getById(id!)).pipe(tap(() => this.init()));
   }
 }

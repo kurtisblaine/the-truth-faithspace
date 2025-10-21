@@ -4,13 +4,61 @@
   <mat-card [@fadeInOut] style="margin: 15px">
     <mat-card-header style="padding: 15px 15px">
       <mat-card-title-group>
-        <mat-card-title class="primary-color">Wisdom about Technology</mat-card-title>
-        <mat-card-subtitle>
-          Not all technology is bad; see the navigation in the top left for more details.</mat-card-subtitle
-        >
+        <mat-card-title class="primary-color">Technology</mat-card-title>
+        <mat-card-subtitle> </mat-card-subtitle>
       </mat-card-title-group>
     </mat-card-header>
 
-    <mat-card-content> </mat-card-content>
+    <mat-card-content>
+      <lib-narrator [buttonStyle]="narratorStyle.Group" [text]="technology?.elementRef?.nativeElement?.innerText">
+        <ng-container *ngTemplateOutlet="technology"></ng-container>
+      </lib-narrator>
+      <ng-template #technology>
+        In many ways, we are tricked into trading reality for a fake, unknowingly taking the shadow for the substance.
+        And in the church as well: as it says, "no one is to act as your judge in regard to food or drink or in respect
+        to a festival or a new moon or a Sabbath day— things which are a mere shadow of what is to come; but the
+        substance belongs to Christ.” (Colossians 2:16-17) Likewise, men trading reality for a simulation, the real for
+        a fake, are left dissatisfied with a thing which sold itself great, but is less. “For they exchanged the truth
+        of God for a lie, and worshiped and served the creature rather than the Creator, who is blessed forever. Amen.”
+        (Romans 1:25) For although a lie manifests itself, it doesn't make it true; but it shows itself as exceedingly
+        sinful, for it attempts to promote its falsehood as true.
+        <br /><br />
+
+        For this reason, I expound technology and the truth therein, showing how technology can be modern day idolatry.
+        Not all technology is idolatry; but all technology is compromised of images. In ancient Israel, the men of Isael
+        worshipped images of calves, images of snakes, yes, and images of their neighboring nation's gods. Today
+        idolatry is not as primitive as it once was; for now idolatry shows itself in materialism, covetousness,
+        greediness, and perhaps even, technology. For everything on a display of a computer is made up of pictures,
+        snapshots, images. A video is made up of still frame shots which show at a high rate of speed, commonly refered
+        to as fps, or frames per second; typically 60 fps is the rate a monitor renders images, which are frames. This
+        is similar to how a flip book works: there are many images which change slightly as you progress throughout the
+        book; when you flip through them, the still images seem animated. <br /><br />
+
+        The idea underlying idolatry is that a dead image is seemingly more: it is living, it is a god, it is to be
+        revered - an inanimate object represented in the form of a god. If that image is smashed, would you be angered?
+        Would you be offended that your god is ruined? Are you attributing more to an object than you ought? For pagans
+        lift up their idols and dust them off and highly esteem them although they are nothing. For a Christian, we know
+        there is no god but One, whom we serve; so why would we revere an object in the form of a god? Even within the
+        church there have snuck in unbelievers who, not satisfied with faith, make up a god for themselves into a form
+        by artist's imaginations. However the law says, "The LORD spoke to you from the midst of the fire; you heard the
+        sound of words, but you saw no form—only a voice.” (Deuteronomy 4:12) For "You cannot see My face, for no man
+        can see Me and live!" (Exodus 33:20)<br /><br />
+
+        Instead of clinging to God through faith in Jesus Christ, who is the visible image of the invisible God, for “
+        though you have not seen Him, you love Him, and though you do not see Him now, but believe in Him, you greatly
+        rejoice with joy inexpressible and full of glory,” (1 Peter 1:8) for you worship Him as God through faith which
+        is apart from sight. But not satisfied with faith by hearing, their faith is by seeing, which is not faith at
+        all; for they invent statues, images, representations of the living Christ, and they stand them up in the
+        church! "Show me your faith without the works, and I will show you my faith by my works." (James 2:18) And so:
+        show me your faithlessness by your images. For faith is without sight; where there is sight, faith is made
+        impossible; but our sight is through the knowledge of the Lord Jesus Christ, so that our faith may not be blind,
+        so that we may truly see; they who profess faith through sight become blind to the faith, that they may not see
+        the light of the glory of God in the face of Jesus Christ.
+        <!-- <br /><br />
+
+          How does this pertain to technology? It is not a god that I am looking at. But oftentimes people portray
+          themselves as gods on movies, tv, and the like, through trickery and exaltation.  -->
+      </ng-template>
+    </mat-card-content>
   </mat-card>
 </div>

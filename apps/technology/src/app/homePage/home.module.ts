@@ -8,6 +8,7 @@ import { MatProgressBarModule } from "@angular/material/progress-bar";
 import { MatTooltipModule } from "@angular/material/tooltip";
 import { RouterModule, Routes } from "@angular/router";
 import { FontAwesomeModule } from "@fortawesome/angular-fontawesome";
+import { NarratorComponent } from "../../../../../libs/src";
 import { HomeComponent } from "./home.component";
 
 const routes: Routes = [
@@ -28,6 +29,7 @@ const routes: Routes = [
     ReactiveFormsModule,
     MatTooltipModule,
     MatProgressBarModule,
+    NarratorComponent,
     MatCardModule,
     RouterModule.forChild(routes),
   ],

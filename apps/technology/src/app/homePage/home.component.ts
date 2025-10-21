@@ -1,5 +1,5 @@
 import { ChangeDetectionStrategy, Component } from "@angular/core";
-import { fadeInOut } from "../../../../../libs/src";
+import { fadeInOut, NarratorStyle } from "../../../../../libs/src";
 @Component({
   selector: "app-home",
   templateUrl: "./home.component.html",
@@ -8,4 +8,6 @@ import { fadeInOut } from "../../../../../libs/src";
   changeDetection: ChangeDetectionStrategy.OnPush,
   standalone: false,
 })
-export class HomeComponent {}
+export class HomeComponent {
+  public narratorStyle = NarratorStyle;
+}
