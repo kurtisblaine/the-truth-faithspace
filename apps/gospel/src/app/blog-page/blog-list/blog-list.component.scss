@@ -14,6 +14,10 @@
   cursor: pointer;
 }
 
+lib-filter {
+  margin: 0px 15px;
+}
+
 @media (max-width: 1000px) {
   .blog-page {
     flex-direction: column;
@@ -21,5 +25,9 @@
 
   .filter-card {
     margin: unset;
+  }
+
+  lib-filter {
+    margin: 15px 0px;
   }
 }

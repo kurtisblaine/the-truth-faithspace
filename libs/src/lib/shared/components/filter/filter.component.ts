@@ -31,24 +31,28 @@ import { MatInputModule } from "@angular/material/input";
       </mat-form-field>
     </mat-card-content>
   </mat-card>`,
+  host: {
+    style: "width: 100%",
+  },
   styles: `
 .mat-mdc-card-header-text {
   width: 100%;
 }
 
 .mat-card-filter-header {
-  display: flex !important; align-items: baseline; justify-content: space-between;
+  display: flex !important;
+  align-items: baseline;
+  justify-content: space-between;
   height: 28px;
 }
 
 .filter-card {
   width: 100%;
-  margin: 15px;
 }
 
 .reset-button {
   color: var(--mat-sys-error) !important;
-    height: 28px;
+  height: 28px;
 }
 `,
   changeDetection: ChangeDetectionStrategy.OnPush,

@@ -14,7 +14,15 @@
   cursor: pointer;
 }
 
+lib-filter {
+  margin: 0px 15px;
+}
+
 @media (max-width: 1000px) {
+  lib-filter {
+    margin: 15px 0px;
+  }
+
   .study-page {
     flex-direction: column;
   }

@@ -3,7 +3,7 @@
   <lib-filter style="flex: 1 1 20%" (onChange)="searchTerm.set($event)"></lib-filter>
   }
 
-  <div style="flex: 1 1 80%">
+  <div style="flex: 1 1 80%; width: 100%">
     <div class="psalm-item" *ngFor="let psalm of pagedPsalms()">
       <div class="psalm-title primary-color">
         <blog-link [link]="'https://thelightof.life/poems/poem-detail/' + psalm.id"
