@@ -19,30 +19,25 @@
   </div>
 
   <mat-card style="flex: 1 1 80%">
-    <mat-card-content style="width: 100%; height: 100%">
+    <mat-card-content style="height: 100%">
       <ng-container *ngIf="!isAll">
         <p style="line-height: 27px; margin-right: 33px; margin-top: 0" [innerHtml]="scritpure.data.content"></p>
       </ng-container>
 
       <ng-container *ngIf="isAll">
         <cdk-virtual-scroll-viewport
-          itemSize="750"
-          autosize
-          minBufferPx="500"
-          maxBufferPx="1500"
-          class="example-viewport"
+          class="viewport"
+          [itemDynamicSizes]="dynamicSize()"
           (scrolledIndexChange)="onScrollIndexChange($event)"
         >
-          <ng-container *cdkVirtualFor="let item of items; let first = first; trackBy: trackBy">
+          <div *cdkVirtualFor="let item of items(); let first = first; trackBy: trackBy">
             <h5>{{ item.chapter }}</h5>
-            <mat-divider style="margin-right: 27px"></mat-divider>
+            <mat-divider></mat-divider>
 
             <div style="padding-top: 4px">
-              <mat-spinner *ngIf="!item.content"></mat-spinner>
-              <!-- [style.height.px]="(item.verseCount ? item.verseCount : 1) * 20" -->
-              <div style="line-height: 27px; margin-right: 33px; margin-top: 0" [innerHtml]="item.content"></div>
+              <div style="line-height: 27px; margin-top: 0" [innerHtml]="item.content | safeHtml"></div>
             </div>
-          </ng-container>
+          </div>
         </cdk-virtual-scroll-viewport>
       </ng-container>
     </mat-card-content>
