@@ -13,10 +13,6 @@ export interface BiblesState extends EntityState<Bible> {
   selectedTranslationId?: string | number;
 }
 
-export interface BiblesPartialState {
-  readonly [BIBLES_FEATURE_KEY]: BiblesState;
-}
-
 export const biblesAdapter: EntityAdapter<Bible> = createEntityAdapter<Bible>();
 
 export const initialBiblesState: BiblesState = biblesAdapter.getInitialState({

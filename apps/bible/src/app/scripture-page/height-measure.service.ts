@@ -31,7 +31,6 @@ export class ElementMeasureService {
 
     if (styles) {
       Object.keys(styles).forEach((styleKey) => {
-        console.log(styles);
         this.renderer.setStyle(element, styleKey, styles[styleKey]);
       });
     }

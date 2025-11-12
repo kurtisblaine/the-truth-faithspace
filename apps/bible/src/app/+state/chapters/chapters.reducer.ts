@@ -1,5 +1,5 @@
 import { EntityAdapter, EntityState, createEntityAdapter } from "@ngrx/entity";
-import { createFeature, createReducer, on } from "@ngrx/store";
+import { createReducer, on } from "@ngrx/store";
 import { Chapter } from "../../models/chapters";
 import { ChaptersActions } from "./chapters.actions";
 
@@ -13,7 +13,7 @@ export interface State extends EntityState<Chapter> {
 
 export const chaptersAdapter: EntityAdapter<Chapter> = createEntityAdapter<Chapter>();
 
-export const initialState = chaptersAdapter.getInitialState({
+export const initialState = chaptersAdapter.getInitialState<State>({
   loaded: false,
 });
 
@@ -36,12 +36,12 @@ export const reducer = createReducer(
   ),
   on(ChaptersActions.loadChaptersFailure, (state, { error }) => ({
     ...state,
-    error,
+    error: error.toString(),
     loaded: true,
   }))
 );
 
-export const chaptersFeature = createFeature({
-  name: CHAPTERS_FEATURE_KEY,
-  reducer,
-});
+// export const chaptersFeature = createFeature({
+//   name: CHAPTERS_FEATURE_KEY,
+//   reducer,
+// });

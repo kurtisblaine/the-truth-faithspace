@@ -30,7 +30,7 @@
           [itemDynamicSizes]="dynamicSize()"
           (scrolledIndexChange)="onScrollIndexChange($event)"
         >
-          <div *cdkVirtualFor="let item of items(); let first = first; trackBy: trackBy">
+          <div *ngFor="let item of items(); trackBy: trackBy">
             <h5>{{ item.chapter }}</h5>
             <mat-divider></mat-divider>
 

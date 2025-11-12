@@ -2,7 +2,6 @@ import { CdkVirtualScrollViewport, ScrollingModule } from "@angular/cdk/scrollin
 import { CommonModule } from "@angular/common";
 import {
   AfterViewInit,
-  ChangeDetectorRef,
   Component,
   computed,
   OnDestroy,
@@ -72,8 +71,7 @@ export class ScripturePageComponent implements OnInit, OnDestroy, AfterViewInit 
     private store: Store,
     private router: Router,
     private bibleApi: BibleApiService,
-    private measureService: ElementMeasureService,
-    private changeDetectorRef: ChangeDetectorRef
+    private measureService: ElementMeasureService
   ) {}
 
   public scripture$!: Observable<Scripture>;
@@ -143,12 +141,7 @@ export class ScripturePageComponent implements OnInit, OnDestroy, AfterViewInit 
           .subscribe((data: DynamicScripture[]) => {
             if (data.some((r) => r.refresh)) {
               const dataToRefresh = data.filter((r) => r.refresh);
-              this.items.update((currentItems) => [...currentItems, ...dataToRefresh]);
-
-              //TODO - fix why this isn't updating!
-              // this.cdkVirtualScrollViewport.checkViewportSize();
-              // this.changeDetectorRef.detectChanges();
-              // (this.cdkVirtualScrollViewport as any)._changeDetectorRef.detectChanges();
+              this.items.update((currentItems) => [...currentItems, ...dataToRefresh] as DynamicScripture[]);
             }
           });
       });
