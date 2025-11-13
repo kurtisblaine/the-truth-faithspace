@@ -141,7 +141,9 @@ export class ScripturePageComponent implements OnInit, OnDestroy, AfterViewInit 
           .subscribe((data: DynamicScripture[]) => {
             if (data.some((r) => r.refresh)) {
               const dataToRefresh = data.filter((r) => r.refresh);
-              this.items.update((currentItems) => [...currentItems, ...dataToRefresh] as DynamicScripture[]);
+              this.items.update((currentItems) => [
+                ...new Set([...currentItems, ...dataToRefresh] as DynamicScripture[]),
+              ]);
             }
           });
       });
@@ -152,6 +154,8 @@ export class ScripturePageComponent implements OnInit, OnDestroy, AfterViewInit 
   }
 
   ngAfterViewInit(): void {
+    if (!this.cdkVirtualScrollViewport) return;
+
     const { width } = this.cdkVirtualScrollViewport.elementRef.nativeElement.getBoundingClientRect();
     if (width) this.viewportWidth.set(width);
 
@@ -197,6 +201,7 @@ export class ScripturePageComponent implements OnInit, OnDestroy, AfterViewInit 
       return totalHeight;
     }, 0);
 
+    // console.log(scrollHeight, totalHeight);
     if (scrollHeight >= totalHeight) {
       return this.dynamicSize().length;
     }

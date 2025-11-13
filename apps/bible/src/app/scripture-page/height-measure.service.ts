@@ -20,8 +20,7 @@ export class ElementMeasureService {
    */
   measureElementHeight(tagName: string, content: string, styles?: { [key: string]: string }): number {
     const element = this.renderer.createElement(tagName);
-    const trustworthyHtml = this.sanitizer.bypassSecurityTrustHtml(content);
-    this.renderer.setProperty(element, "innerHTML", trustworthyHtml);
+    this.renderer.setProperty(element, "innerHTML", content);
 
     this.renderer.setStyle(element, "position", "absolute");
     this.renderer.setStyle(element, "left", "-9999px");
@@ -37,12 +36,9 @@ export class ElementMeasureService {
 
     this.renderer.appendChild(document.body, element);
 
-    let { height } = element.getBoundingClientRect();
-    if (element.innerHTML.startsWith("SafeValue")) {
-      height = height - 27 * 2;
-    }
-
+    const { height } = element.getBoundingClientRect();
     this.renderer.removeChild(document.body, element);
+
     return height;
   }
 }

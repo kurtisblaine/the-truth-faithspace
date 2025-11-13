@@ -5,8 +5,9 @@
 </div>
 
 <div
-  style="display: flex; flex-direction: row; width: 95%; align-self: center"
+  style="display: flex; flex-direction: row; align-self: center; justify-self: center"
   *ngIf="scripture$ | async; let scritpure"
+  [ngStyle]="{ width: isAll ? '100%' : '90%' }"
 >
   <div
     class="arrow-button"
@@ -21,7 +22,10 @@
   <mat-card style="flex: 1 1 80%">
     <mat-card-content style="height: 100%">
       <ng-container *ngIf="!isAll">
-        <p style="line-height: 27px; margin-right: 33px; margin-top: 0" [innerHtml]="scritpure.data.content"></p>
+        <p
+          style="line-height: 27px; margin-right: 33px; margin-top: 0"
+          [innerHtml]="scritpure.data.content | safeHtml"
+        ></p>
       </ng-container>
 
       <ng-container *ngIf="isAll">
