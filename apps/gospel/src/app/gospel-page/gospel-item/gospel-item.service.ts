@@ -9,6 +9,7 @@ import { BronzeSerpentComponent } from "../gospel-content/call-grace/bronze-serp
 import { FoodDrinkComponent } from "../gospel-content/call-grace/food-drink.component";
 import { LambComponent } from "../gospel-content/call-grace/lamb.component";
 import { LionComponent } from "../gospel-content/call-grace/lion.component";
+import { RockComponent } from "../gospel-content/call-grace/rock.component";
 import { SalvationComponent } from "../gospel-content/call-grace/salvation.component";
 import { ScapegoatComponent } from "../gospel-content/call-grace/scapegoat.component";
 import { ServantComponent } from "../gospel-content/call-grace/servant.component";
@@ -66,6 +67,7 @@ export class GospelItemService implements OnDestroy {
     this.components.set("theScapegoat", ScapegoatComponent);
     this.components.set("theTrueFoodAndTheTrueDrink", FoodDrinkComponent);
     this.components.set("theDoorOfEternalSalvation", SalvationComponent);
+    this.components.set("theRockOfOurSalvation", RockComponent);
     this.components.set("theSonOfGod", SonComponent);
 
     //THE CALL - FAITH
