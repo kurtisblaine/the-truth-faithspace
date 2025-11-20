@@ -105,7 +105,11 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
       disobedient or grants freedom to the obedient. As James calls the law, "The perfect law, the law of liberty."
       (James 1:25) But the apostle Paul calls the law, "The ministry of death," (2 Corinthians 3:7) and "The ministry of
       condemnation." (2 Corinthians 3:9) So if we fulfill the law, we live in the freedom, and rest in life of God; but
-      if we disobey, we lie in the depths of slavery, toil, and death in sin. <br /><br />
+      if we disobey, we lie in the depths of slavery, toil, and death in sin.
+      <blog-link [link]="'https://thelightof.life/edifications/edify-detail/ccb334ab-3719-49b4-a690-1416ad4d1265'">
+        (See More on Submission to Authority)</blog-link
+      >
+      <br /><br />
 
       I wrote beforehand concerning holiness of the heart, but it works outwardly to the body as well. But I ask, "What
       is more true: the body or the spirit?" Surely the spiritual is more true - but if anything be true in spirit, it
