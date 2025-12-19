@@ -30,7 +30,7 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
       </blog-reference-tooltip>
       And they said to Isaac,
       <blog-reference-tooltip [reference]="'Genesis 26:28'">
-        We have certainly seen that the LORD is with you.
+        We have certainly seen that the LORD is with you,
       </blog-reference-tooltip>
       And they sought covenants of peace with them, and the patriarchs did not deny them. So it is: God alone is holy;
       and He alone sanctifies. He alone is God, and He calls us to godliness. So therefore,

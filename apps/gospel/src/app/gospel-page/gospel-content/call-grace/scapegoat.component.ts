@@ -54,7 +54,7 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
         For while we were still helpless, at the right time Christ died for the ungodly.
       </blog-reference-tooltip>
       For God has cast away our sins to a remote place in Christ Jesus; as the Psalmist says,
-      <blog-reference-tooltip [reference]="'Psalm 103:10-13'">
+      <blog-reference-tooltip [reference]="'Psalms 103:10-13'">
         <b>As far as the east is from the west</b>, So far has He removed our transgressions from us.
       </blog-reference-tooltip>
       And it says,
@@ -129,14 +129,14 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
       but let us walk uprightly being freed from our burden; do not be loaded down by guilt; who do we hurt by not
       confessing? I bring about by way of reminder, the Psalmist, who had great anguish because he did not confess his
       iniquity; as he says,
-      <blog-reference-tooltip [reference]="'Psalm 32:3-5'">
+      <blog-reference-tooltip [reference]="'Psalms 32:3-5'">
         When I kept silent [about my sin,] my body wasted away Through my groaning all day long. For day and night Your
         hand was heavy upon me; My vitality was drained away [as] with the fever heat of summer. Selah. I acknowledged
         my sin to You, And my iniquity I did not hide; I said, "I will confess my transgressions to the LORD"; And You
         forgave the guilt of my sin.
       </blog-reference-tooltip>
       And he says in another place,
-      <blog-reference-tooltip [reference]="'Psalm 38:1-22'">
+      <blog-reference-tooltip [reference]="'Psalms 38:1-22'">
         O LORD, rebuke me not in Your wrath, And chasten me not in Your burning anger. For Your arrows have sunk deep
         into me, And Your hand has pressed down on me. There is no soundness in my flesh because of Your indignation;
         There is no health in my bones because of my sin. For my iniquities are gone over my head; As a heavy burden

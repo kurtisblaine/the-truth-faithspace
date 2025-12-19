@@ -108,7 +108,7 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
       will prove that He is not weak, for to us who believe, the cross is the power of God unto salvation, but to His
       enemies who refuse to believe, who delight in wickedness, His power is unto them for destruction. For everyone who
       wars against God destroys his own soul; for
-      <blog-reference-tooltip [reference]="'Psalm 90:11'">
+      <blog-reference-tooltip [reference]="'Psalms 90:11'">
         Who knows the power of Your anger? For as the fear of You, so is Your wrath.
       </blog-reference-tooltip>
       But yet the vastness of the mercy and lovingkindness of Him - which is beyond the heights of the heavens - for He
@@ -143,7 +143,7 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
       oath of life; and even yet, the people who ate meat with the blood, which is contrary to the law of Moses
       (Leviticus 17:12-14), were not cut off (1 Samuel 14:32-34). And even though Saul sinned by making these foolish
       oaths and the people sinned by eating with the blood, it was Jonathan who was determined by lot, which is
-      determined by God, to have sinned, and the rest were free'd; even though Jonathan did no wrong, only he ate a
+      determined by God, to have sinned, and the rest were freed; even though Jonathan did no wrong, only he ate a
       little bit of honey; despite these things, and despite the fact that Jonathan worked with God to bring about a
       great deliverance for Israel that day, he was still chosen by lot to die; but still yet, he lived thereafter; as
       it says about him,
@@ -311,11 +311,11 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
 
       The Father God has testified to us in many ways concerning His Son; we may believe man's testimony, but how much
       more ought we to believe the testimony of God concerning His Son? The Psalms and the prophets which speak of
-      Christ's sufferings are many (Isaiah 53, Psalm 22, Psalm 35, Psalm 89); and the Scriptures of His betrayal are
-      likewise (Psalm 109, Psalm 69, Psalm 41, Psalm 55); for it was according to God's predetermined plan that Christ
-      would suffer for us, and there-after be exalted. And time would fail if I began to tell about Joseph, who was
-      betrayed by his brethren, and exalted to Pharaoh's right hand; or Job, who was righteous and yet smitten by God,
-      but he was restored twofold; or Samson, who was mocked by a great assembly of his enemies, and in his death,
+      Christ's sufferings are many (Isaiah 53, Psalms 22, Psalms 35, Psalms 89); and the Scriptures of His betrayal are
+      likewise (Psalms 109, Psalms 69, Psalms 41, Psalms 55); for it was according to God's predetermined plan that
+      Christ would suffer for us, and there-after be exalted. And time would fail if I began to tell about Joseph, who
+      was betrayed by his brethren, and exalted to Pharaoh's right hand; or Job, who was righteous and yet smitten by
+      God, but he was restored twofold; or Samson, who was mocked by a great assembly of his enemies, and in his death,
       killed many of his enemies; or Mordecai, who was predetermined to die on a stake, but he was exalted second
       highest in all of Persia; or the prophets, who being sent by God, being disregarded, being rejected by their own,
       beaten and some killed, but obtained a better hope and a better resurrection. Among these, there are many other

@@ -11,12 +11,12 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
       In Christ Jesus we have been forgiven of our sins, the debt that was in our account which testified against us,
       stored up under the former covenant when we walked according to the flesh; we were by nature children of wrath,
       born in trouble and for trouble; but now, having been cleared, God credits into our accounts gifts of the Spirit
-      so that we would profit, being profitable through wisdom unto salvation, through the knowledge of the will of the
-      Lord. The stewardship we have is to build up and to edify the church, and also bartering, trading and winning
-      more, sharpening and being sharpened. Paul, being a master builder, never built on another man's foundation, but
-      laid his own so that he may know for sure what kind the foundation is. Let us beware that we not build on any
-      foundation other than the one that has been already laid: Jesus Christ, the Rock of our salvation, the firm
-      foundation, and the Chief cornerstone. As it says,
+      so that we would profit, being profitable through wisdom unto salvation through the knowledge of the will of the
+      Lord. And this is the stewardship we have: to build up and to edify the church, and also bartering, trading and
+      winning more, sharpening and being sharpened. Paul, being a master builder, never built on another man's
+      foundation, but laid his own so that he may know for sure what kind the foundation is. Let us beware that we not
+      build on any foundation other than the one that has been already laid: Jesus Christ, the Rock of our salvation,
+      the firm foundation, and the Chief cornerstone. As it says,
       <blog-reference-tooltip [reference]="'1 Corinthians 3:12-15'">
         If anyone builds on this foundation using gold, silver, costly stones, wood, hay or straw, their work will be
         shown for what it is, because the Day will bring it to light. It will be revealed with fire, and the fire will
@@ -70,7 +70,7 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
       So therefore cast the good seed which the Lord God has given you. For your own seed is not good enough. Can
       anything be better than what God has provided? There is a bad seed which is called a lie, a false confession, a
       polluted spring. I ask: does a salesmen attempting to sell a car speak dishonestly in an ad? Maybe it's so; but
-      the buyer will eventually come to see the car, and he will hate you, seeing that you lied to him; he will be angry
+      the buyer will eventually come to see the car, and he will hate you, because you lied to him; he will be angry
       with you because you wasted his time. He will not believe anything you say afterwards, even though you make many
       promises; he will scrutinize your company; He will think badly of all car salesmen because of you. He will say to
       himself, "Those car salesmen are no good! That company is dishonest, I can't trust any of them." Therefore, we

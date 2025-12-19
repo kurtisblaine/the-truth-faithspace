@@ -154,7 +154,7 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
       we've left our safety, and are caught outside the city of Refuge, and still yet in danger. So by abiding in
       Christ, He abides in us; if we confess Him, we know we abide in Him; as it says, “Whoever confesses that Jesus is
       the Son of God, God abides in him, and he in God.” (1 John 4:15) As the psalmists says,
-      <blog-reference-tooltip [reference]="'Psalm 73:28'">
+      <blog-reference-tooltip [reference]="'Psalms 73:28'">
         As for me, the nearness of God is my good; I have made the Lord GOD my refuge, That I may tell of all Your
         works.
       </blog-reference-tooltip>

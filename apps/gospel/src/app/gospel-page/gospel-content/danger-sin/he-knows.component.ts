@@ -21,7 +21,7 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
       unless we know His Words, which are His revealed thoughts. The heart of us is deceitfully wicked - who can
       understand it? Will it not even trick us saying, "I can understand myself"? Our hearts are constantly flattering
       ourselves; as it says,
-      <blog-reference-tooltip [reference]="'Psalm 36:2'">
+      <blog-reference-tooltip [reference]="'Psalms 36:2'">
         Transgression speaks to the ungodly within his heart; There is no fear of God before his eyes. For it flatters
         him in his own eyes concerning the discovery of his iniquity and the hatred of it.
       </blog-reference-tooltip>
@@ -74,17 +74,17 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
       <br /><br />
 
       Is there any place on earth that you can hide from God? Is there any place where He isn't? If we make our hiding
-      place in the depths of the earth, He is there; if we make our home in the west, even in the east, He is there.
+      place in the depths of the earth, He is there; if we make our home in the West, even in the East, He is there.
       Does He not fill all things everywhere? Aren't His eyes everywhere? He is Creator of every eye of every beast, of
       every man and of every angel. When you think you're alone, looking out through your eyes, He is there. As you are
       reading this - behold! His mighty Cherubim are under His throne; they are covered with eyes on their wings, inside
-      and out. God sends His angels out and calls them "Watchers", for they watch. He sees all, but He is not seen by
+      and out. God sends His angels out and calls them "Watchers," for they watch. He sees all, but He is not seen by
       any. Yet it says of Him, “Your eyes are too pure to approve evil, And You can not look on wickedness with favor.”
       (Habakkuk 1:13) For God seen what was happening below on Mount Sinai while His people were building a golden calf
       and worshiping it; He seen before Moses ever did, He seen before Moses even heard the sound of a party in the
-      camp. God seen where Jonah went to get away from Him. He seen Saul hiding among the baggage. He hears the cries of
+      camp. God seen where Jonah went to get away from Him. He saw Saul hiding among the baggage. He hears the cries of
       the humble on earth, and He Himself is the Avenger; He seeks for those who seek Him.
-      <blog-reference-tooltip [reference]="'Psalm 94:9-11'"
+      <blog-reference-tooltip [reference]="'Psalms 94:9-11'"
         >He who planted the ear, does he not hear? He who formed the eye, does he not see? He who disciplines the
         nations, does he not rebuke? He who teaches man knowledge — the LORD — knows the thoughts of man, that they are
         but a breath.</blog-reference-tooltip

@@ -98,8 +98,8 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
       (Romans 8:18)
       <br /><br />
 
-      So this walk in life is spoken of in many ways; as it says, "walk in the Spirit", "walk in love", "walk by faith",
-      "walk in the light", and "walk in the truth". If we walk in the Spirit we have no obligation to the flesh,
+      So this walk in life is spoken of in many ways; as it says, "Walk in the Spirit," "Walk in love," "Walk by faith,"
+      "Walk in the light," and "Walk in the truth". If we walk in the Spirit we have no obligation to the flesh,
       gratifying its lusts and desires; but these both, the flesh and the Spirit, are contrary to one another; they are
       constantly waging war within us, so that we are not free to carry out our good intentions. But we must rule over
       the flesh and subdue it, making it work for us; as it says in one place,

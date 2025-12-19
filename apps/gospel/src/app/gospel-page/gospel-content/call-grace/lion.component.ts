@@ -87,7 +87,7 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
       lion, He also is meek and lowly as a lamb; Jesus is the Great Shepherd of the flock, and He is also the Lamb of
       God. Although God is the Eater of sacrifices, He doesn't need us to eat, nor does He need our service; for He
       needs not anything from our hands, but He gives all things; as the LORD God says in the Psalms,
-      <blog-reference-tooltip [reference]="'Psalm 50:7-15'">
+      <blog-reference-tooltip [reference]="'Psalms 50:7-15'">
         I shall take no young bull out of your house Nor male goats out of your folds. For every beast of the forest is
         Mine, The cattle on a thousand hills. I know every bird of the mountains, And everything that moves in the field
         is Mine.

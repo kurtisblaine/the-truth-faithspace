@@ -31,7 +31,7 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
       freeing them who were held captive by satan, was sent by God to be Judge, to be a Deliverer; but at the end of His
       life, He was betrayed by Judas, His beloved disciple, and He was turned over to the Gentiles for mockery; just as
       it was written in the prophet's Psalm,
-      <blog-reference-tooltip [reference]="'Psalm 41:9'">
+      <blog-reference-tooltip [reference]="'Psalms 41:9'">
         Even my close friend in whom I trusted, Who ate my bread, Has lifted up his heel against me.
       </blog-reference-tooltip>
       For He was cut off from His head: God; for on the cross He said,

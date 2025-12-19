@@ -105,7 +105,7 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
       enemy. Just as a man in the time of war after being defeated flees back to his stronghold, so Christ is our safety
       from our enemies, from the powers of wickedness, from the wolves - whose power is in their mouth, that is, in
       their lies. As it says,
-      <blog-reference-tooltip [reference]="'Psalm 34:22'">
+      <blog-reference-tooltip [reference]="'Psalms 34:22'">
         And none of those who take refuge in Him will be condemned.
       </blog-reference-tooltip>
       And,
@@ -122,22 +122,22 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
       </blog-reference-tooltip>
       For just as a hen gathers her chicks under her wings, so the shelter of the Most High is a protection against the
       striking of the sun under the shadow of His wing; as it says,
-      <blog-reference-tooltip [reference]="'Psalm 121:5-8'">
+      <blog-reference-tooltip [reference]="'Psalms 121:5-8'">
         The sun will not smite you by day, nor the moon by night. The LORD will protect you from all evil; He will keep
         your soul.
       </blog-reference-tooltip>
       For when the seasons change and the trees lose foliage, the grass withers and dies, but the Rock remains unchanged
       forever; as it says,
-      <blog-reference-tooltip [reference]="'Psalm 125:1'">
+      <blog-reference-tooltip [reference]="'Psalms 125:1'">
         Those who trust in the LORD are as Mount Zion, which cannot be moved but abides forever.
       </blog-reference-tooltip>
       And,
-      <blog-reference-tooltip [reference]="'Psalm 118:8-9'">
+      <blog-reference-tooltip [reference]="'Psalms 118:8-9'">
         It is better to take refuge in the LORD than to trust in man. It is better to take refuge in the LORD than to
         trust in princes.
       </blog-reference-tooltip>
       Or again,
-      <blog-reference-tooltip [reference]="'Psalm 146:3-6'">
+      <blog-reference-tooltip [reference]="'Psalms 146:3-6'">
         Do not trust in princes, in mortal man, in whom there is no salvation.
       </blog-reference-tooltip>
       For, "There is salvation in no one else; for there is no other name under heaven that has been given among men by

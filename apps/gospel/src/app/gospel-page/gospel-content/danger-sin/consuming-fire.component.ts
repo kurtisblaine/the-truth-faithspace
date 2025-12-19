@@ -9,7 +9,7 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
   template: `<ng-container *ngTemplateOutlet="aConsumingFire"></ng-container>
     <ng-template #aConsumingFire>
       We are in a great debt, and God's anger burns against sin, for it corrupts what He has created; as it says,
-      <blog-reference-tooltip [reference]="'Psalm 7:11'">
+      <blog-reference-tooltip [reference]="'Psalms 7:11'">
         God is a just judge, And God is angry with the wicked every day.
       </blog-reference-tooltip>
       And

@@ -112,7 +112,7 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
       So therefore, baptism is effective because of the resurrection. And He is Lord; “For to this end Christ died and
       lived again, that He might be Lord both of the dead and of the living.” (Romans 14:9) Many people have gods made
       of wood and stone, but we, a living God, Jesus Christ, who needs not anything from our hands, but gives us all
-      things, even His life, that we may live by Him. If He had not been raised, how are we any different than those who
+      things, even His life, that we may live by Him. If He had not been raised, how are we any different from those who
       worship mute idols? “Do not be deceived: "Bad company corrupts good morals." Become sober-minded as you ought, and
       stop sinning.” (1 Corinthians 15:33-34) For Jesus Christ is Lord and alive from the dead; He lives forevermore.
     </ng-template>`,

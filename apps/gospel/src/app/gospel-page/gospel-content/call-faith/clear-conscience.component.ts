@@ -17,7 +17,7 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
       transgression, which is hostile to us, but He nailed it to the cross, having cleansed our defiled conscience by
       the sprinkling of His blood. Through His body, all rules and regulations of the law were put to death, the
       hostility, the enmity, the pride, for Christ justifies us freely by His grace; thus "Christ is the end of the law
-      for righteousness to everyone who believes.” (Romans 10:4) The law could never justify, “because by the works of
+      for righteousness to everyone who believes.” (Romans 10:4) The law could never justify, “Because by the works of
       the Law no flesh will be justified in His sight; for through the Law comes the knowledge of sin.” (Romans 3:20)
       Albeit the law was given by God, and the law is just and holy and good, it could never accomplish righteousness in
       us who are in the flesh; so if the law could never justify, since it was weakened by the human flesh, then how
@@ -114,13 +114,13 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
       Therefore, since we who follow the Spirit are free from the law of God (and where there is an absence of law, no
       transgression is counted; for sin is only counted when there is law), we can serve God in the freedom of grace. We
       have died to the law when we were united in the death of Jesus Christ through faith, into a baptism of faith; and
-      those who have died are free'd from the law (Romans 7:1-6; Galatians 2:19-20; Philippians 3:7-11; Ephesians
+      those who have died are freed from the law (Romans 7:1-6; Galatians 2:19-20; Philippians 3:7-11; Ephesians
       2:14-16). Christ died for us so that we wouldn't have to taste death ourselves; He died that we may be reconciled
       to the Father by faith, apart from the law; for the law chained us and we could never keep it. So we are no longer
       under law, but grace; and sin is no longer our master, but Christ. If we sin, we offer ourselves as obedient
       servants to it, and get entangled once again in slavery - and the last state becomes worse than the first. Christ
       has set us free so we would be free. Therefore, deny the earthly within you! Daily strive to maintain a clear
-      conscience before God and man; for from the conscience we have not been free'd - for the law of God is written on
+      conscience before God and man; for from the conscience we have not been freed - for the law of God is written on
       our heart. Look heavenward to Jesus Christ who cleansed us from our defilement, and you will fulfill the righteous
       requirement of the law through love: set your mind on Him; for if the mind is set, then the members which are
       governed by the mind are likewise. Faith and a clear conscience go hand-in-hand, for they are friends - do not

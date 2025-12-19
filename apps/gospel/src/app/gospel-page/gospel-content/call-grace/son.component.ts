@@ -56,7 +56,7 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
         not command or decree, nor did it come into My mind.</blog-reference-tooltip
       >
       So such thoughts do not come from God; all such thoughts come from the enemy, for God is good, and nothing evil
-      ever crosses His mind. So although the command to offer Isaac on the alter came from God, the thought couldn't
+      ever crosses His mind. So although the command to offer Isaac on the altar came from God, the thought couldn't
       have come from God; but when Abraham offered His son Isaac on the altar, God used it to test Abraham and point to
       Christ Jesus to come; as God promised,
       <blog-reference-tooltip [reference]="'Genesis 22:18'">
@@ -127,12 +127,9 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
       Manasseh, his own sons; they were considered like Reuben and Simeon to him (Genesis 48:5); and likewise God sent
       His Son into the world and gained back many more descendants through Him, even descendants among many nations of
       the world, even to the offspring of His offspring - these are them who are begotten by the Word of Truth; as it
-      says,
-      <blog-reference-tooltip [reference]="'Isaiah 59:21'">
-        "As for Me, this is My covenant with them," says the LORD: "My Spirit which is upon you, and My words which I
-        have put in your mouth shall not depart from your mouth, nor from the mouth of your offspring, nor from the
-        mouth of your offspring's offspring," says the LORD, "from now and forever".
-      </blog-reference-tooltip>
+      says, "As for Me, this is My covenant with them," says the LORD: "My Spirit which is upon you, and My words which
+      I have put in your mouth shall not depart from your mouth, nor from the mouth of your offspring, nor from the
+      mouth of your offspring's offspring," says the LORD, "from now and forever". (Isaiah 59:21)
       <blog-link [link]="'https://thelightof.life/drawings/draw/Jesuslionlamb'"
         >(See more about Benjamin and Isaac)</blog-link
       ><br /><br />

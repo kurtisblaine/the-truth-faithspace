@@ -16,11 +16,11 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
         swift to shed blood; in their paths are ruin and misery, and the way of peace they have not known. There is no
         fear of God before their eyes.</blog-reference-tooltip
       >
-      (And many other such testimonies as these: Isaiah 59:1-13, Isaiah 64:6-7, Psalm 5:9, Psalm 53:1-3, Psalm 36:1-4,
-      Micah 7:2-3, Ezekiel 22:6-12) And even if we were to decide to do better today, we couldn't cover our past faults;
-      and even if we declared, "I will change", it would only take us as far as our human strength will go; and aren't
-      we becoming weaker and weaker day by day? For the weakness of death is at work in all of us. Besides, if our
-      nature is evil, how can we reform ourselves? Wouldn't trying make us even worse? Can a dirty rag cleanse? Can
+      (And many other such testimonies as these: Isaiah 59:1-13, Isaiah 64:6-7, Psalms 5:9,Psalmsm 53:1-3Psalmslm
+      36:1-4, Micah 7:2-3, Ezekiel 22:6-12) And even if we were to decide to do better today, we couldn't cover our past
+      faults; and even if we declared, "I will change", it would only take us as far as our human strength will go; and
+      aren't we becoming weaker and weaker day by day? For the weakness of death is at work in all of us. Besides, if
+      our nature is evil, how can we reform ourselves? Wouldn't trying make us even worse? Can a dirty rag cleanse? Can
       filthy water make someone clean? What we need does not come from ourselves, nor is it within ourselves; as it
       says, “I know, O LORD, that a man's way is not in himself, Nor is it in a man who walks to direct his steps.”
       (Jeremiah 10:23) We know a lot about a thing by looking to its beginning: how do we measure up in the beginning?
@@ -91,7 +91,7 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
 
       If anyone claims they are not sinful, they show how utterly sinful sin really is, for they lie in regard to an
       obvious fact; as David said in the Psalm,
-      <blog-reference-tooltip [reference]="'Psalm 51:5-7'">
+      <blog-reference-tooltip [reference]="'Psalms 51:5-7'">
         Surely I was sinful at birth, sinful from the time my mother conceived me. Surely you desire truth in the inner
         parts; you teach me wisdom in the inmost place. Cleanse me with hyssop, and I will be clean; wash me, and I will
         be whiter than snow.
@@ -159,7 +159,7 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
         corrupt, man, who drinks iniquity like water!
       </blog-reference-tooltip>
       And then it says,
-      <blog-reference-tooltip [reference]="'Psalm 130:4-5'">
+      <blog-reference-tooltip [reference]="'Psalms 130:4-5'">
         If You, LORD, should mark iniquities, O Lord, who could stand? But there is forgiveness with You, That You may
         be feared.
       </blog-reference-tooltip>

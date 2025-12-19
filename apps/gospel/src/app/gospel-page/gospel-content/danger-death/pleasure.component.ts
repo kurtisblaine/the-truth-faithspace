@@ -100,7 +100,7 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
         sun.
       </blog-reference-tooltip>
       As Solomon said, "My heart still guiding me with wisdom", for wisdom guided him into all these things; and he
-      spoke all these things so that we would not have to pierce ourselves with these same sorrows. Solomon's words are
+      spoke all these things so that we would not need to pierce ourselves with these same sorrows. Solomon's words are
       surely insightful. Wisdom originates from God; but every sinful habit originates with lust; and lust entices the
       eyes. As he says, "And whatever my eyes desired I did not keep from them." All sin begins here. And the end: as it
       says, "Behold, all was vanity and a striving after wind." So by the things of this world, no man will be
@@ -110,7 +110,7 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
       desire through pictures! It is satisfying while on it, but afterwards it's like waking from a sleep. We live in an
       age where media screens are everywhere: it started with televisions in the living room, then escalated to monitors
       in the pocket. Surely these feed our eyes. This is what I meant when I said, "We are led by the hand of this
-      world", for who creates advertisements? Who makes ready the fulfillment of our lusts? But still, the desire
+      world," for who creates advertisements? Who makes ready the fulfillment of our lusts? But still, the desire
       belongs to us, and we will be the ones who suffer for indulging it. We should not long for the things of the
       world, but the One who gives all good things is God.
       <br /><br />
@@ -131,10 +131,10 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
       see; and these images, which are from imaginations, entice lustful desire in those who see them. For why would
       someone make an image unless it is to be gazed at? (Covetousness is called idolatry; and covetousness is lust. And
       covetousness is condemned by the law.) And without question: lust pertains to the eyes. The natural use is better
-      than the unnatural, the real is better than the copy, good is better than evil; even if, in the meanwhile, you
+      than the unnatural, the real is better than the copy, good is better than evil; even if, in the meantime, you
       think, "Ah! Yet it feels so good!" In the end you will not be saying that! Everything we sow, we will also reap. A
       person does not sow an apple and get an orange tree, does he? Neither does a person breed pigs and get cows. So
-      why do you think, "I will sow corruption and get life"? Lust sowed reaps corruption; righteousness sowed reaps
+      why do you think, "I will sow corruption and get life?" Lust sowed reaps corruption; righteousness sowed reaps
       blessing; and lust conceived gives birth to sin. All sin is dysfunctional; and a dysfunction is useless. And that
       which is useless is put into a pit and awaits burning. A new sofa becomes fettered, a new car becomes a tin of
       rust, even our bodies are becoming old and gray and worn out: it will be soon in the grave. Evil will inherit evil

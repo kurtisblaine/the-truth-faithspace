@@ -52,8 +52,9 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
       made not by human hands. He did this when we believed; and if when we believed, we were changed, how then shall we
       persevere? Is it not through continually observing Jesus Christ until the end of this age or death? Hence, we walk
       continually in faith, from start to finish. Faith is always; it's how we start and how we end. As Paul says, "From
-      faith to faith" (Romans 1:17). And "a law of faith." (Romans 3:27) And, "The author and finisher of our faith."
-      For Christ is the First and the Last, the Beginning and the End. As He said,
+      faith to faith" (Romans 1:17). And he says, "A law of faith," (Romans 3:27) and speaking of Jesus, he says He is
+      "The author and finisher of our faith." For Christ is the First and the Last, the Beginning and the End. As He
+      said,
       <blog-reference-tooltip [reference]="'John 14:1'" [isJesusWord]="true">
         Do not let your heart be troubled; believe in God, believe also in Me.
       </blog-reference-tooltip>

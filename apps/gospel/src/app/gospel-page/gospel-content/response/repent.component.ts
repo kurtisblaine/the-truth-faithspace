@@ -18,15 +18,16 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
       Paul often gave room for sincerity to work first before obligation (2 Corinthians 8:8, Philemon 1:8-11); thus the
       goal of the gospel is sincerity; as it says, "The goal of our instruction is love from a pure heart and a good
       conscience and a sincere faith.” (1 Timothy 1:5) Without these being true in us, will we ever see life? But if
-      they are true in us, for what reason are they true? For the sake of the love of God, surely. <br /><br />
+      they are true in us, for what reason are they true? Is it not because of the love of God? <br /><br />
 
       Sin is contrary to the will of God; for the will of God is good; there is no sin in God; where-ever our lives are
-      not conformed to His will, it is sin; His will is for us to believe in Christ and to love our neighbor as ourself;
-      and so whatever is not from faith is sin; faith will never say, "Go rob, kill, and steal." It's God's will that we
-      love one another just as Christ has loved us. When we love, we obey the commandments of God, for the entirety of
-      the law is summed up in this one command: love your neighbor as yourself. All sin is selfishness, but love is not
-      self-seeking; love is self-sacrificing, serving, and long-suffering. We know love because we know God. God is
-      love. Everyone who abides in love abides in God; and love does no wrong to a neighbor; as it says about love:
+      not conformed to His will, it is sin; His will is for us to believe in Christ and to love our neighbor as
+      ourselves; and so whatever is not from faith is sin; faith will never say, "Go rob, kill, and steal." It's God's
+      will that we love one another just as Christ has loved us. When we love, we obey the commandments of God, for the
+      entirety of the law is summed up in this one command: love your neighbor as yourself. All sin is selfishness, but
+      love is not self-seeking; love is self-sacrificing, serving, and long-suffering. We know love because we know God.
+      God is love. Everyone who abides in love abides in God; and love does no wrong to a neighbor; as it says about
+      love:
       <blog-reference-tooltip [reference]="'1 Corinthians 13:4-13'">
         Love is patient and kind; love does not envy or boast; it is not arrogant or rude. It does not insist on its own
         way; it is not irritable or resentful; it does not rejoice at wrongdoing, but rejoices with the truth. Love
@@ -47,9 +48,9 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
       upon us when we face Him. Sin is set for God's wrath; so if we hold onto sin, we hold onto God's wrath; even the
       thinking of folly is sin; as it says, “The devising of folly is sin, And the scoffer is an abomination to men.”
       (Proverbs 24:9) So set your mind on Christ Jesus in the heavens as you have already been doing; when the mind is
-      set on the things above, so will the members of the body. Repentance means, "change of mind"; and if we change our
+      set on the things above, so will the members of the body. Repentance means, "Change of mind"; and if we change our
       mind, the members of the body will likewise follow. Repentance comes from the Word of God, for a change of mind
-      happens through words. If anyone believes the Word, they have repented. But anyone who says, "I am in Him", and
+      happens through words. If anyone believes the Word, they have repented. But anyone who says, "I am in Him," and
       remains in sin is a liar; they show by their actions they're not in Him. “They profess to know God, but by their
       deeds they deny Him, being detestable and disobedient and worthless for any good deed.” (Titus 1:16) Do not be
       deceived: actions speak louder than words. Where the mind is set so are the members of the body: it is either we

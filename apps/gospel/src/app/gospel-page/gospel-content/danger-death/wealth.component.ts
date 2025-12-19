@@ -71,7 +71,7 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
 
       Everything we think we have, we don't have: we leave it to someone who comes after us; we leave it to him who did
       not work nor toil for it. So what do any of us really own? But rather it says,
-      <blog-reference-tooltip [reference]="'Psalm 24:1'">
+      <blog-reference-tooltip [reference]="'Psalms 24:1'">
         The earth is the LORD's and the fullness thereof, the world and those who dwell therein.
       </blog-reference-tooltip>
       Are these things according to word only? Aren't they also according to experience? Or are we making things up? Ask
@@ -82,7 +82,7 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
       their gold will become an abhorrent thing; their silver and their gold will not be able to deliver them in the day
       of the wrath of the LORD.” (Ezekiel 7:19) For not all silver and gold and costly stones can forgive even a single
       sin; as it says,
-      <blog-reference-tooltip [reference]="'Psalm 49:7-9'">
+      <blog-reference-tooltip [reference]="'Psalms 49:7-9'">
         No man can by any means redeem his brother Or give to God a ransom for him — For the redemption of his soul is
         costly, And he should cease trying forever — That he should live on eternally, That he should not undergo decay.
       </blog-reference-tooltip>

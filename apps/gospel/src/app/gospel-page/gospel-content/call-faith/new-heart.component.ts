@@ -59,7 +59,7 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
       actually have a cold, I was only simulating one: I put the tissues on my nose, I put the heat on my forehead, I
       disfigured my face. I knew the truth and God knew the truth; but I first needed to deceive myself in order to
       deceive my mom; I had to lie to myself before I lied to another. I can fool myself, but will simulating faith fool
-      the living God on judgment day? That is why it says,
+      the living God on Judgment Day? That is why it says,
       <blog-reference-tooltip [reference]="'Romans 14:22'">
         The faith which you have, have as your own conviction before God.
       </blog-reference-tooltip>

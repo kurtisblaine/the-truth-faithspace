@@ -22,7 +22,7 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
       lives are entrusted to us for only a little while. So since we know we will die, we look forward to our next life,
       our permanent home. If we reject our permanent home, we will try to make our home here on earth eternal; as it
       says,
-      <blog-reference-tooltip [reference]="'Psalm 49:11'">
+      <blog-reference-tooltip [reference]="'Psalms 49:11'">
         Their inner thought is that their houses will last forever, Their dwelling places to all generations; They call
         their lands after their own names.
       </blog-reference-tooltip>
@@ -90,13 +90,13 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
         begetting?’ or to a woman, ‘With what are you in labor?’</blog-reference-tooltip
       >
       But rather this is the righteous response:
-      <blog-reference-tooltip [reference]="'Psalm 39:4-6'">
+      <blog-reference-tooltip [reference]="'Psalms 39:4-6'">
         LORD, make me to know my end And what is the extent of my days; Let me know how transient I am. Behold, You have
         made my days as handbreadths, And my lifetime as nothing in Your sight; Surely every man at his best is a mere
         breath.
       </blog-reference-tooltip>
       And it says,
-      <blog-reference-tooltip [reference]="'Psalm 90:12'">
+      <blog-reference-tooltip [reference]="'Psalms 90:12'">
         Teach us to number our days, that we may present to You a heart of wisdom.
       </blog-reference-tooltip>
       So therefore "Whatever your hand finds to do, do it with your might, for there is no work or thought or knowledge
@@ -171,7 +171,7 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
       come near Him by their own self-will or effort, so that no-one will be able to boast in His Presence; but rather,
       through the word of faith, through the word of truth, which says,
       <blog-reference-tooltip [reference]="'Romans 10:8-13'"
-        >"The word is near you, in your mouth and in your heart” (that is, the word of faith that we proclaim); because,
+        >The word is near you, in your mouth and in your heart (that is, the word of faith that we proclaim); because,
         if you confess with your mouth that Jesus is Lord and believe in your heart that God raised him from the dead,
         you will be saved. For with the heart one believes and is justified, and with the mouth one confesses and is
         saved. It is just as the Scripture says: “Anyone who believes in Him will never be put to shame.” For there is

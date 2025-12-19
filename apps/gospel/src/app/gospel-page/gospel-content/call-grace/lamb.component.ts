@@ -154,10 +154,10 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
         Has the LORD as much delight in burnt offerings and sacrifices As in obeying the voice of the LORD? Behold, to
         obey is better than sacrifice, And to heed than the fat of rams.
       </blog-reference-tooltip>
-      (And there are many other such things written in the Scriptures as these: Hosea 6:6, Micah 6:7-8, Psalm 40:6-8,
-      Jeremiah 7:21-23, Psalm 50:8-15, Psalm 51:16-17) Christ is the Sacrifice; God desires not a sacrifice, but He gave
-      the Sacrifice. And the sacrifices of man are loyalty and obedience, the knowledge of God, giving heed to His Word,
-      doing loving-kindness and justice, and walking humbly with God; with these things God will not despise.
+      (And there are many other such things written in the Scriptures as these: Hosea 6:6, Micah 6:7-8, Psalms 40:6-8,
+      Jeremiah 7:21-23, Psalms 50:8-15, Psalms 51:16-17) Christ is the Sacrifice; God desires not a sacrifice, but He
+      gave the Sacrifice. And the sacrifices of man are loyalty and obedience, the knowledge of God, giving heed to His
+      Word, doing loving-kindness and justice, and walking humbly with God; with these things God will not despise.
     </ng-template>`,
   styles: ``,
   changeDetection: ChangeDetectionStrategy.OnPush,
