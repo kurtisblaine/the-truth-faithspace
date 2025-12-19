@@ -80,7 +80,7 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
         Stay here with the donkey, and I and the lad will go over there; and we will worship and return to you.
       </blog-reference-tooltip>
       And thereafter, he was looking in the future to Christ; as it says,
-      <blog-reference-tooltip [reference]="'Gensis 22:14'">
+      <blog-reference-tooltip [reference]="'Genesis 22:14'">
         Abraham called the name of that place The LORD Will Provide, as it is said to this day, "In the mount of the
         LORD it will be provided."
       </blog-reference-tooltip>
@@ -100,8 +100,8 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
       Rachel, but to him, Joseph was dead, although he was only in Egypt; for he believed Joseph was dead. So Jacob let
       Benjamin, his only beloved son, go into the hands of his brothers to save his family from the famine, for they
       were going to Egypt to buy food. So Jacob gave up his one and only son, Benjamin, and gained him back from the
-      dead, along with another, Joseph who he received back from the dead; and likewise, the Fahter God gave up His Son,
-      Jesus, to receive Him back again from the dead, and gained many other descendents through Him; as it says,
+      dead, along with another, Joseph who he received back from the dead; and likewise, the Father God gave up His Son,
+      Jesus, to receive Him back again from the dead, and gained many other descendants through Him; as it says,
       <blog-reference-tooltip [reference]="'Isaiah 53:10'">
         If He would render Himself as a guilt offering,
         <b>He will see His offspring,</b> He will prolong His days, And the good pleasure of the LORD will prosper in
@@ -123,7 +123,7 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
         When you were dead in your transgressions and the uncircumcision of your flesh, He made you alive together with
         Him, having forgiven us all our transgressions.
       </blog-reference-tooltip>
-      So we are made alive with Christ through faith. Furthermore, Jacob considered Joseph's two sons, Ephriam and
+      So we are made alive with Christ through faith. Furthermore, Jacob considered Joseph's two sons, Ephraim and
       Manasseh, his own sons; they were considered like Reuben and Simeon to him (Genesis 48:5); and likewise God sent
       His Son into the world and gained back many more descendants through Him, even descendants among many nations of
       the world, even to the offspring of His offspring - these are them who are begotten by the Word of Truth; as it

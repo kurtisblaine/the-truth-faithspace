@@ -65,15 +65,15 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
       are all works of the Spirit, a work of faith. When our hearts are pure, we will produce good fruits. When the
       inside is clean, then the outside will be clean too (Matthew 23:26). <br /><br />
 
-      The rationale for every command is Jesus Christ. The apostles gave commands in their letters, oftentime with three
-      things: a prohibition, a remedy, and a rationale. The prohibition is what we should not do, the remedy is what we
-      should do instead, and the rationale is the reason why. The reason why for every command is Christ; and this is
-      also the way of faith: everything brings us back to Christ, for He is the Way. So whatever you do to others, you
-      do unto yourself (2 Corinthians 5:10); and whatever you do to the least of these, you do unto Christ (Matthew
-      25:31-46); if you sin against a brother, you sin against Him (1 Corinthians 8:12). If you do evil, you will reap
-      it (Colossians 3:25); if you do good, God will repay it (Ephesians 6:8). So then why not do good? If you do good
-      unto others, it will come back unto you. Not only one person is benefited, but two - he and you! And God is
-      glorified. Jesus is the example for us to follow; so as obedient children, imitate Him and learn from Him. We
+      The rationale for every command is Jesus Christ. The apostles gave commands in their letters, oftentimes with
+      three things: a prohibition, a remedy, and a rationale. The prohibition is what we should not do, the remedy is
+      what we should do instead, and the rationale is the reason why. The reason why for every command is Christ; and
+      this is also the way of faith: everything brings us back to Christ, for He is the Way. So whatever you do to
+      others, you do unto yourself (2 Corinthians 5:10); and whatever you do to the least of these, you do unto Christ
+      (Matthew 25:31-46); if you sin against a brother, you sin against Him (1 Corinthians 8:12). If you do evil, you
+      will reap it (Colossians 3:25); if you do good, God will repay it (Ephesians 6:8). So then why not do good? If you
+      do good unto others, it will come back unto you. Not only one person is benefited, but two - he and you! And God
+      is glorified. Jesus is the example for us to follow; so as obedient children, imitate Him and learn from Him. We
       shouldn't be led astray by mere human commands, which have to be sure an appearance of wisdom in promoting severe
       treatment of the body and asceticism, but are of no use in stopping the indulgence of the flesh (Colossians 2:23);
       these are not the way, but a dead end.

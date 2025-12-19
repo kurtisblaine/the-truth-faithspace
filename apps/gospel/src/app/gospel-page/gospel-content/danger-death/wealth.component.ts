@@ -11,11 +11,11 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
       There was a man who went into a pub with everything he owned. He sat down at the table to gamble. At first, he
       bets only a little of what he has. He rolls the dice and a miracle happens! All the dice line up. The man yells,
       "Today is my lucky day. I will bet more next time!" So he rolls again, but this time with more on the table. A
-      miracle happens again! All the dice line up. The man continues this over and over and everytime he wins; then
+      miracle happens again! All the dice line up. The man continues this over and over and every time he wins; then
       eventually, everything he owns is on the table, even the shirt off his back. He thought to himself, "Surely I have
       rolled these dice over and over and they haven't failed me yet." However, the dealer seen the man and thought to
       himself, "You fool! One day these dice will not line up and everything you own will be mine, for I have worked a
-      long time in this pub and I see it everytime: the dice will one day not line up, and everything you own will be
+      long time in this pub and I see it every time: the dice will one day not line up, and everything you own will be
       mine." Sure enough, what the dealer said came true and the day came, and everything on the table was taken from
       him. And because the man didn't have enough money for even a beer, he was cast out of the pub into darkness where
       he wept because everything he owned was gone. And so it is with every man who trusts in this life and loves his

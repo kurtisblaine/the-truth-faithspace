@@ -82,7 +82,7 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
       <blog-reference-tooltip [reference]="'John 3:19'">
         The light is come into the world, and men loved darkness rather than the light: for their works were evil.
       </blog-reference-tooltip>
-      There is no sacrifice for willful sins, but a fearful looking for of judgment and firey indignation which will
+      There is no sacrifice for willful sins, but a fearful looking for of judgment and fiery indignation which will
       consume the adversaries of God (Hebrews 10:26-30). So take heed! That which is powerless shall not master over
       you, for you are no longer under law, but under grace. Sin can only be our master if we willingly submit to it;
       but rather, obey righteousness, obey Christ. Test yourselves. Do you love the light of life? For Christ gives us
@@ -141,7 +141,7 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
         Do not trust in princes, in mortal man, in whom there is no salvation.
       </blog-reference-tooltip>
       For, "There is salvation in no one else; for there is no other name under heaven that has been given among men by
-      which we must be saved." (Acts 4:12) For He is our defense, our shield, our shelter against the firey darts of the
+      which we must be saved." (Acts 4:12) For He is our defense, our shield, our shelter against the fiery darts of the
       enemy; He is the protector of our lives, the tower of eternal salvation. He girds us with the whole armor of
       Himself so that we would withstand the enemy in the day of evil; He is a refuge of salvation to everyone who flees
       to Him. He is our Defense and our Offense, our weapon for battle, that we may take up the Word of Him, that we may

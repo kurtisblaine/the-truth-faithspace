@@ -54,7 +54,7 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
       </blog-reference-tooltip>
       So the tomb which was supposed to inhabit death, brought forth life; and so through the way of death, life is
       established; as Paul says,
-      <blog-reference-tooltip [reference]="'2 Corinthains 4:11'">
+      <blog-reference-tooltip [reference]="'2 Corinthians 4:11'">
         For we who live are always delivered to death for Jesus’ sake, that the life of Jesus also may be manifested in
         our mortal flesh.
       </blog-reference-tooltip>
@@ -70,7 +70,7 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
       Look to the man on the cross next to Jesus as an example (Luke 23:39-43); the thief on the cross was baptized more
       than anyone of us who are baptized in water; for baptism is being united with Christ in His death, and the thief
       on the cross was united with Christ in His death more so than anyone of us dipped into water! He was baptized into
-      Him as he believed and confessed His guilt on the cross. Similarily, there were Jews who did not ceremonially
+      Him as he believed and confessed His guilt on the cross. Similarly, there were Jews who did not ceremonially
       cleanse themselves for the Passover, and were still allowed to eat because they're hearts were sanctified by
       faith; so they are a type of those who are saved although they do not cleanse themselves according to the physical
       requirement (2 Chronicles 30:18-19). And they were pardoned by God when Hezekiah, the king at the time, prayed for

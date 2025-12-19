@@ -60,7 +60,7 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
       in the dust, awake and shout for joy, For your dew is as the dew of the dawn, And the earth will give birth to the
       departed spirits.” (Isaiah 26:19) So God will cause both the righteous and the wicked to rise, but only the
       righteous will arise to life. For all evil and all lies will be made right, and it is made right through judgment;
-      all wickedness will be put into it's proper place and judged as wrong; and righteousness will be exalted and
+      all wickedness will be put into its proper place and judged as wrong; and righteousness will be exalted and
       rewarded in that day. When evil is reprimanded, reproved, and rebuked, it is made good through the correction; and
       our God is a God of justice and righteousness. Right now is the time to receive correction and forgiveness, but in
       that day, a time for judgment and wrath, for condemnation or reward.
@@ -71,7 +71,7 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
 
       Judgement is not merely in word, but in action too; the result of judgment is either condemnation or praise; to
       compress the lips is to allow evil to pass, to allow injustice to persist; but God will reveal His righteous
-      judgement in that day. If sin goes uncorrected, it is allowed to live a little longer; in it's persistence, it
+      judgement in that day. If sin goes uncorrected, it is allowed to live a little longer; in its persistence, it
       corrupts much that is good; but nevertheless, all sin has an end. Do we not bury that which is unclean? We don't
       expose our uncleanness, do we? Our bodies have waste to it; and we put that waste in dark places, for it is good
       to be not seen; we gather it together and put it into a pit and burn it with fire or cover it with dirt. And don't

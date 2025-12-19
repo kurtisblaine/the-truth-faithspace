@@ -122,7 +122,7 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
       ><br /><br />
 
       Although God is greatly kind towards us in Christ, we do not neglect the fear of Him; His kindness is not an
-      excuse to be slugglish or lazy, lacking behind in zeal. For He is powerful, but He became weak for our sakes;
+      excuse to be sluggish or lazy, lacking behind in zeal. For He is powerful, but He became weak for our sakes;
       therefore, we ought not to see His kindness as weakness, as some do, for He is mighty in His dealing with us,
       specifically for our building up, not for our tearing down. If we neglect His cloak of righteousness for a cloak
       of maliciousness, certainly He won't treat us any differently than heathens. For He shows no partiality. When I
@@ -159,9 +159,9 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
       was chosen as first by the LORD. So in this, there has not been a true firstborn to receive the right as
       firstborn; for Reuben was rejected, but the blessing was given to another. Just as it was with Esau, who was the
       firstborn, but he was hated; the blessing was given to Jacob; as God says, “Israel is My son, My firstborn.”
-      (Exodus 4:22) And Reuben was the firstborn of the unloved, yet the birth right was given to Ephriam, the firstborn
+      (Exodus 4:22) And Reuben was the firstborn of the unloved, yet the birth right was given to Ephraim, the firstborn
       of the firstborn of the loved; as God says, "Ephraim is My firstborn." (Jeremiah 31:9) And Jacob seeing this, that
-      the last is the first, blessed Ephraim over Manassah, the younger over the older. So now we see Jesus, who is the
+      the last is the first, blessed Ephraim over Manasseh, the younger over the older. So now we see Jesus, who is the
       true firstborn; He is the firstborn among many brethren, the firstborn from the dead, He is the beginning - for He
       became last by suffering death in obedience to the Father; and as a result, He was exalted as first in heaven and
       on earth that He may be supreme in everything. And the same to us, for

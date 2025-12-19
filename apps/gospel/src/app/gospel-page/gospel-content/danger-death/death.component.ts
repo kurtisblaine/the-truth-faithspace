@@ -9,8 +9,8 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
   template: `<ng-container *ngTemplateOutlet="theDayOfDeath"></ng-container>
     <ng-template #theDayOfDeath>
       There was a man who lived in a tent. All his days were spent in agony because his tent was not comfortable; for
-      the flies bit, the sun beamed, and the moon striked. Nevertheless, he hoped forward to his permanent home which
-      was far away in a distant land being prepared for him. Night and day he longed for it and thought about it, even
+      the flies bit, the sun beamed, and the moon stuck. Nevertheless, he hoped forward to his permanent home which was
+      far away in a distant land being prepared for him. Night and day he longed for it and thought about it, even
       dreaming of it in his sleep. After many years, his home was ready; at the perfect time he went away to his home in
       which he hoped for. The tent was destroyed, the man went to his home, and he rejoiced and spent the rest of his
       days in it forever more. As it says,
@@ -160,12 +160,12 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
       constantly blasphemed? Yes, we all know Him, but we choose not to honor Him as God. And whose symbol is the cross,
       which is put on buildings, hung around necks, pierced on the skin, and marked on grave stones? Did we forget that
       it was once a device of death? (For Jesus was put on that cross, turning what the enemy meant for evil into good.)
-      Whose coming split our calender in half? Or who makes a week seven days? Who is it that hallows the seventh day?
+      Whose coming split our calendar in half? Or who makes a week seven days? Who is it that hallows the seventh day?
       The same writings that declare a seven day week and a restful day on the seventh, tells of Him; the same writings
       that quote wisdom, that we have all come to agree upon, even quoting it without knowing its original source, also
       speak of the truth. Who is it that lived a great while ago, but yet died, and is proclaimed as resurrected from
       the dead? That which once was a sect, a heresy, a false teaching, which was fought against, has now become
-      world-wide good news. For who can fight against God and succeed? If this thing were not of God, it wouldn't have
+      world-wide good news. For who can fight against God and succeed? If this thing is not of God, it wouldn't have
       withstood. And yet we shoot rockets into the heavens to reach God, just as they tried in times past at the Tower
       of Babel, by their own might to make a name for themselves, but they failed; for God sees to it that no-one can
       come near Him by their own self-will or effort, so that no-one will be able to boast in His Presence; but rather,

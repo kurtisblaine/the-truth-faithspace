@@ -43,7 +43,7 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
         <b>for consider what great things He has done for you.</b>
       </blog-reference-tooltip>
       Today, we have the Lord's Supper or Communion to remember what Jesus has done for us on the cross, breaking His
-      body and pouring out His life for us; this is not given on a set day, but anyday we like - that we may meditate
+      body and pouring out His life for us; this is not given on a set day, but any day we like - that we may meditate
       upon the Lord and His work for us. These Psalms show us the importance of not forgetting what we heard at first. I
       charge you in the Lord to read the Book of Hebrews which calls all believers to hold fast the confession and the
       hope of Christ, persevering in the Lord until the end. Also read the Psalms of Asaph. We remember the Lord and

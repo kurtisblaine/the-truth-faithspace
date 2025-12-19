@@ -176,7 +176,7 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
       preserved the testimonies of the apostles who seen the risen Lord firsthand. So although when we come to love
       Christ, we also come to hate ourselves because of our many sins, namely what they have done to Christ; but we find
       power in that Christ is alive from the dead, seated at the right hand of Power on High, and that it was according
-      to God's good plan for Jesus to die for us. Even if our eyes may be veiled for a time, they become unvieled when
+      to God's good plan for Jesus to die for us. Even if our eyes may be veiled for a time, they become unveiled when
       we turn to the Lord. Therefore, unveil your eyes by turning to Him and see that your Brother is now alive, second
       in command, mediator between us and God, that He is very much alive and your guilt has been removed; for Joseph's
       brothers had guilt as long as they thought Joseph was dead, but the moment they seen Joseph alive, their guilt was

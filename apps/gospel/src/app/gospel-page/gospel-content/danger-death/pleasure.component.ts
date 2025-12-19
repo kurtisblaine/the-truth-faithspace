@@ -62,12 +62,12 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
       <br /><br />
 
       And who is exempt from this? None of us. We are all under the power of sin. Which of us does not stoop to
-      deficate? Who is born without a mother? We are led by the hand of this world into a cycle of dependence upon
+      defecate? Who is born without a mother? We are led by the hand of this world into a cycle of dependence upon
       material things; we think we need these things to keep us in check; we say, "I don't feel normal without them." I
       testify about myself that I've been chained by many sins and pleasures and vices for many years of my life, and
       looking back, surely it was not life. Whatever a person is overcome by, that he is also enslaved. And how weak are
-      we when something inaminate enslaves us! "I serve this and that, and I can't stop!" Whatever we offer ourselves to
-      as obedient servants, by that, we are enslaved. And I was enslaved to everything a man could be enslaved by: food,
+      we when something inanimate enslaves us! "I serve this and that, and I can't stop!" Whatever we offer ourselves to
+      as obedient servants, to that, we are enslaved. And I was enslaved to everything a man could be enslaved by: food,
       alcohol, drugs, money, sex, and many other things. These things were not alive, but somehow I was enslaved to them
       as if they were; they are not gods at all, so why should I serve them? I must do for them, but what are they doing
       for me? I wouldn't call myself a man, for I can't get out. I want out, but I can't escape; I am surely in a prison

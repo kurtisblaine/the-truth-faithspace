@@ -10,19 +10,19 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
   template: `<ng-container *ngTemplateOutlet="theRaceOfFaith"></ng-container>
     <ng-template #theRaceOfFaith>
       The map is God's Word, the runner's shoes is the Gospel of peace, the destination is heavenward, the prize is
-      eternal life. And how we start is how we end: from faith to faith; this is no triathalon, where a man starts on
-      his feet and ends up on a bike, and then in the sea - no! As the apostle Paul says, “Are you so foolish? Having
-      begun by the Spirit, are you now being perfected by the flesh?” (Galatians 3:3) And then he says, "You were
-      running a good race. Who cut in on you to keep you from obeying the truth?" (Galatians 5:7) And concerning the
-      Gospel he says, 'For in it the righteousness of God is revealed from faith to faith; as it is written, "BUT THE
-      RIGHTEOUS man SHALL LIVE BY FAITH.'” (Romans 1:17) So it is: we start by faith and end by faith, from start to
-      finish, it is by faith in the Son of God who loves us. For everything we do stems from the root; if the branches
-      bear fruit, it is because of the root; for, "It is not you who supports the root, but the root supports you.”
-      (Romans 11:18) You are only a branch; we are being supported by the foundation, that is to say, Christ - we cannot
-      stand without. For Christ makes us to stand and to walk uprightly, so when He makes our paths straight - run! The
-      world wants to draw us away from Christ to be busy and rushing in the world; but where are we rushing to? Out of
-      the context of a race, we are running in vain, rushing to our death; and what's more vain than death? Do not run
-      in vain; as Pauls says,
+      eternal life. And how we start is how we end: from faith to faith; this is no triathlon, where a man starts on his
+      feet and ends up on a bike, and then in the sea - no! As the apostle Paul says, “Are you so foolish? Having begun
+      by the Spirit, are you now being perfected by the flesh?” (Galatians 3:3) And then he says, "You were running a
+      good race. Who cut in on you to keep you from obeying the truth?" (Galatians 5:7) And concerning the Gospel he
+      says, 'For in it the righteousness of God is revealed from faith to faith; as it is written, "BUT THE RIGHTEOUS
+      man SHALL LIVE BY FAITH.'” (Romans 1:17) So it is: we start by faith and end by faith, from start to finish, it is
+      by faith in the Son of God who loves us. For everything we do stems from the root; if the branches bear fruit, it
+      is because of the root; for, "It is not you who supports the root, but the root supports you.” (Romans 11:18) You
+      are only a branch; we are being supported by the foundation, that is to say, Christ - we cannot stand without. For
+      Christ makes us to stand and to walk uprightly, so when He makes our paths straight - run! The world wants to draw
+      us away from Christ to be busy and rushing in the world; but where are we rushing to? Out of the context of a
+      race, we are running in vain, rushing to our death; and what's more vain than death? Do not run in vain; as Pauls
+      says,
       <blog-reference-tooltip [reference]="'Galatians 2:2'">
         I wanted to be sure I was not running and had not been running my race in vain.
       </blog-reference-tooltip>

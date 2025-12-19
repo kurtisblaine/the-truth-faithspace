@@ -8,8 +8,7 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
   imports: [CommonModule, ReferenceTooltipComponent],
   template: `<ng-container *ngTemplateOutlet="theSinNature"></ng-container>
     <ng-template #theSinNature>
-      We have all fallen short of the glory of God; we have missed the mark; as it is
-      written,
+      We have all fallen short of the glory of God; we have missed the mark; as it is written,
       <blog-reference-tooltip [reference]="'Romans 3:10-18'"
         >None is righteous, no, not one; no one understands; no one seeks for God. All have turned aside; together they
         have become worthless; no one does good, not even one. Their throat is an open grave; they use their tongues to
@@ -97,8 +96,8 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
         parts; you teach me wisdom in the inmost place. Cleanse me with hyssop, and I will be clean; wash me, and I will
         be whiter than snow.
       </blog-reference-tooltip>
-      And if that comes from King David, a man after God's own heart, how much more does it apply to us? But he cries out
-      to God, "Cleanse me with hyssop and I will be clean; wash me, and I will be whiter than snow." For we must be
+      And if that comes from King David, a man after God's own heart, how much more does it apply to us? But he cries
+      out to God, "Cleanse me with hyssop and I will be clean; wash me, and I will be whiter than snow." For we must be
       washed by God for cleansing; we cannot cleanse ourselves. For we are filthy, how can we cleanse ourselves? As it
       says, "Who can make the clean out of the unclean? No one!” (Job 14:4) "'So is this people. And so is this nation
       before Me,' declares the LORD, 'and so is every work of their hands; and what they offer there is unclean.”
@@ -126,12 +125,12 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
       all creation, for everything wastes away because of it. When people think about sin, they think about an instance
       of disobedience; which is true, but it's also a power and a nature and a law. It's what causes us to be weak, it's
       what causes our muscles to ache with agony, it's what causes everything to decay and wear out. We see what sin
-      looks like by seeing death: it's gross, repugnant, a horrid stench, defiling anything it touches, corrupting
-      much that is good. God shows us a tangible result of sin: death. If sin looks like this to our eyes, how much
-      worse is it in the eyes of a holy and living God? And it's living within us! It's a cancer that does not submit to
-      the control of the body - it spreads uncontrollably. It is without law; it does not obey anyone; it's a hazard.
-      This thing which is causing death within us needs to be put to death, for it is killing us. It masters over us and
-      never submits to our will; it enslaves us, making us its master; we follow behind sin in bonds; it is hostile
+      looks like by seeing death: it's gross, repugnant, a horrid stench, defiling anything it touches, corrupting much
+      that is good. God shows us a tangible result of sin: death. If sin looks like this to our eyes, how much worse is
+      it in the eyes of a holy and living God? And it's living within us! It's a cancer that does not submit to the
+      control of the body - it spreads uncontrollably. It is without law; it does not obey anyone; it's a hazard. This
+      thing which is causing death within us needs to be put to death, for it is killing us. It masters over us and
+      never submits to our will; it enslaves us, making us its servant; we follow behind sin in bonds; it is hostile
       towards God; it's acts are prompts of war against God, provoking Him to anger; all it's thoughts: wicked; it girds
       up it's loins to haste after evil; it never submitted to the law of God, for it is not able to - and will never be
       able to. It does not submit to our direction; it is an unruly animal within us. But surely, the desire to do good
@@ -190,7 +189,7 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
         (the Pharisees) who devour widows' houses, and for appearance's sake offer long prayers; these will receive
         greater condemnation.
       </blog-reference-tooltip>
-      For they sought to deceive, appearing righteous before men, but God knew their hearts. So we should quit trying to
+      For they sought to deceive, appearing righteous before men, but God knew their heart. So we should quit trying to
       justify ourselves with our mouths. For we certainly cannot justify ourselves with our words, can we? As it says,
       “When there are many words, transgression is unavoidable, But he who restrains his lips is wise.” (Proverbs 10:19)
       "For though I were right, I could not answer; I would have to implore the mercy of my judge.” (Job 9:15) The cloak

@@ -56,11 +56,11 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
       around me will be night,' Even the darkness is not dark to You, And the night is as bright as the day. Darkness
       and light are alike to You.” (Psalms 139:11-12) “Your eyes have seen my unformed substance; And in Your book were
       all written The days that were ordained for me, When as yet there was not one of them.” (Psalms 139:16) So our
-      thoughts are on display; they are put on the big screen! You're secret thoughts proclaimed abroad, publicised for
+      thoughts are on display; they are put on the big screen! Your secret thoughts proclaimed abroad, publicized for
       all to see - the things you think, on public display! You're afraid of a camera, which can only see in the light;
       if it's dark, you must first shine a light to capture a shot. A camera can only see the outside of a man - if you
       want to see the inside, you must swallow it. From afar, what is it? Up close, what could it be? But it is not so
-      with they eyes of the Father: darkness is as light to Him, darkness and the light are the same. He who created the
+      with the eyes of the Father: darkness is as light to Him, darkness and the light are the same. He who created the
       outside, made the inside as well. He is near, yet He is far away; He is seated in the heights and nothing escapes
       His notice. When you want to get a shot of the city, you must go high - but who is higher than the Most High? What
       is outside of His panorama? What can He not zoom into? A hair falling from the head, He sees; all the stars in the
@@ -77,13 +77,13 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
       place in the depths of the earth, He is there; if we make our home in the west, even in the east, He is there.
       Does He not fill all things everywhere? Aren't His eyes everywhere? He is Creator of every eye of every beast, of
       every man and of every angel. When you think you're alone, looking out through your eyes, He is there. As you are
-      reading this - behold! His mighty Cheribum are under His throne; they are covered with eyes on their wings, inside
+      reading this - behold! His mighty Cherubim are under His throne; they are covered with eyes on their wings, inside
       and out. God sends His angels out and calls them "Watchers", for they watch. He sees all, but He is not seen by
       any. Yet it says of Him, “Your eyes are too pure to approve evil, And You can not look on wickedness with favor.”
       (Habakkuk 1:13) For God seen what was happening below on Mount Sinai while His people were building a golden calf
       and worshiping it; He seen before Moses ever did, He seen before Moses even heard the sound of a party in the
       camp. God seen where Jonah went to get away from Him. He seen Saul hiding among the baggage. He hears the cries of
-      the humble on earth, and He Himself is their Avenger; He seeks for those who seek Him.
+      the humble on earth, and He Himself is the Avenger; He seeks for those who seek Him.
       <blog-reference-tooltip [reference]="'Psalm 94:9-11'"
         >He who planted the ear, does he not hear? He who formed the eye, does he not see? He who disciplines the
         nations, does he not rebuke? He who teaches man knowledge — the LORD — knows the thoughts of man, that they are

@@ -92,7 +92,7 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
       But take heed! I admonish you: after the flood, those who knew of God's lovingkindness and forbearance by making a
       covenant with every living creature, and those who knew of His wrath in flooding the world with water, but sinned
       blatantly despite knowing these things - as it was with Sodom, as it was with Gomorrah - God judged, not with
-      water, but with fire and brimstone, rainning it down from the sky - as it is with water - as a warning in these
+      water, but with fire and brimstone, raining it down from the sky - as it is with water - as a warning in these
       latter times of the judgment of fire to those who refuse to obey the truth, living ungodly lives thereafter; He
       will judge them with fire, a lake of fire - as it is with water - and fire, raining it down - as it is with water
       - and fire to drink - as it is with water. "Oh, but today we have never seen the water as fire, ever since the

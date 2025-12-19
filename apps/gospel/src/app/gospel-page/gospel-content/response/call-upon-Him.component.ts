@@ -11,7 +11,7 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
     <ng-template #callUponTheLord>
       Jeremiah says, “Pour out Your wrath on the nations that do not know You And on the families that do not call Your
       name.” (Jeremiah 10:25) For wrath is against the unbelieving who do not call, but salvation is for the believing
-      who by the knowledge of God call. For everything we have, we obtain from the Lord by grace, so much so even our
+      who, by the knowledge of God, call. For everything we have, we obtain from the Lord by grace, so much so even our
       earthly lives were given to us by God as a gift. Or did you work so hard to create yourself? And it is the same
       with the heavenly life: it is given to us from heaven; as John says, "A man can receive nothing unless it has been
       given him from heaven.” (John 3:27) And as Paul was saying, "What do you have that you did not receive? And if you
@@ -82,8 +82,8 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
       Christ pours into us His Spirit, creating in us a bubbling brook, a spring of life, whose outpouring is the
       testimony of Jesus. He planted in us His good Word, so that we would bear good fruit of righteousness which
       becomes a tree of life in those who eat; as it says, “The fruit of the righteous is a tree of life, And he who is
-      wise wins souls.” (Proverbs 11:30) We feed and give drink, having ourselves first eatten and drunk, pointing to
-      Him who saves: Christ Jesus, who is the living water and the tree of life. Therefore, let us bear the name of God
+      wise wins souls.” (Proverbs 11:30) We feed and give drink, having ourselves first eaten and drunk, pointing to Him
+      who saves: Christ Jesus, who is the living water and the tree of life. Therefore, let us bear the name of God
       without reproach, bearing His reproach, walking blamelessly, free from hypocrisy, confessing His name in
       sincerity, and speaking of His righteous works. As Christ called us according to His grace, we call in the
       streets, in the byways, in the highways; for wisdom calls out in the streets (Proverbs 1:20-23, Proverbs 9:3-6).
@@ -106,7 +106,7 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
       who confess, and live as "Jesus is Lord" that are saved; ["Why do you call Me Lord and not do what I say?" (Luke
       6:46) and "Not everyone who says to Me "Lord, Lord" will enter." (Matthew 7:21)] Know for certain salvation lives
       here: obey and confess Christ! For we have been justified by His blood and we are saved by His life; therefore,
-      confess Him publically, uncover your head and circumcise your heart. See the thirsty land and give drink; do not
+      confess Him publicly, uncover your head and circumcise your heart. See the thirsty land and give drink; do not
       withhold your bread, nor your water from the poor; open up your lid and pour from your vessel. See the fruit of
       your labors and rejoice; and see salvation at work within you and others.
       <blog-link [link]="'https://thelightof.life/drawings/draw/justificationandsalvation'"
@@ -134,7 +134,7 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
       <blog-reference-tooltip [reference]="'Ezra 7:10'">
         Ezra had set his heart to study the law of the Lord, and to do it and to teach his statutes and rules in Israel. </blog-reference-tooltip
       >And Paul, not wishing for his speech to contradict his life, says,
-      <blog-reference-tooltip [reference]="'2 Corinthains 12:6'">
+      <blog-reference-tooltip [reference]="'2 Corinthians 12:6'">
         For if I do wish to boast I will not be foolish, for I will be speaking the truth; but I refrain, so that no one
         will credit me with more than he sees in me or hears from me.
       </blog-reference-tooltip>

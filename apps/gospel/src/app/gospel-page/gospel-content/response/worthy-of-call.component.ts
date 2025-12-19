@@ -22,7 +22,7 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
       fruitful and multiply," (Genesis 1:22) and so we also are fruitful by multiplying with the same seed-bearing
       fruit. Only when the fruit is mature on a tree, it is harvested; and only when a man reaches a certain age, he is
       eligible for children. So only the mature in Christ can lead another to Christ; you must be first harvested to
-      life to give life to others. You can only produce in others after your kind; if you're kind is a hypocrite, will
+      life to give life to others. You can only produce in others after your own kind; if your kind is a hypocrite, will
       those that listen to you be sincere? If you are easily angered, will those who are taught by you be temperate? Of
       course, if they stop listening to you first! Fruit is good for multiplying; and we bear fruit by abiding in
       Christ, the true Vine; for our roots grow downward into Christ and produce fruit upward unto God. By His fruit in

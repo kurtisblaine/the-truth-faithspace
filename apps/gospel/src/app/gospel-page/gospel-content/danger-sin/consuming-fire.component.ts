@@ -38,7 +38,7 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
       the iniquity of the [false] prophet will be.” (Ezekiel 14:10) So the judgement is the same for both, the false
       leader and the follower; and all sin must be punished. For God is just, He cannot let sin go unpunished. But you
       still might say, "Sin in me causes me to do wrong, but I myself want to do good. How is God just in punishing me?"
-      Sin is inseperable from the sinner; we are the ones to allow sin, inclining our hearts toward sin rather than to
+      Sin is inseparable from the sinner; we are the ones to allow sin, inclining our hearts toward sin rather than to
       God, being led astray by our sinful desires; and we error out of the way. But yet,
       <blog-reference-tooltip [reference]="'Proverbs 24:12'">
         If you say, "See, we did not know this," Does He not consider it who weighs the hearts? And does He not know it
@@ -113,10 +113,10 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
       <br /><br />
 
       For God is not taught good, He is Good; God is not taught love, He is Love; God is not taught anything, for He
-      knows all things and all things come into being by Him. He is served by no-one, as if He needed anything; He gives
-      life and breath to all. He has power and authority; and He does what He pleases, yet He chooses good. He is Good,
-      and outside of Him there is no goodness at all; and in Him there is the fullness of all goodness. Love abounds in
-      Him, for He alone is Love. With love is jealousy; and God's jealousy is a fire; as it says,
+      knows all things and all things come into being through Him. He is served by no-one, as if He needed anything; He
+      gives life and breath to all. He has power and authority; and He does what He pleases, yet He chooses good. He is
+      Good, and outside of Him there is no goodness at all; and in Him there is the fullness of all goodness. Love
+      abounds in Him, for He alone is Love. With love is jealousy; and God's jealousy is a fire; as it says,
       <blog-reference-tooltip [reference]="'Exodus 34:14'">
         You shall worship no other god, for the LORD, whose name is Jealous, is a jealous God.
       </blog-reference-tooltip>
@@ -171,7 +171,7 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
       <blog-reference-tooltip [reference]="'Revelation 3:19'" [isJesusWord]="true">
         Those whom I love, I reprove and discipline; therefore be zealous and repent.
       </blog-reference-tooltip>
-      Similarily, one who loves children will hate abortion; and a man who loves truth hates lies. And the LORD God is
+      Similarly, one who loves children will hate abortion; and a man who loves truth hates lies. And the LORD God is
       Jealous; if we put anything else first in our lives above Him: then tremble. Is anything greater than Him? Even if
       we esteem something highly, isn't He higher still? “Or do we provoke the Lord to jealousy? We are not stronger
       than He, are we?” (1 Corinthians 10:22) For He is the creator of all things. Aren't all things given from His

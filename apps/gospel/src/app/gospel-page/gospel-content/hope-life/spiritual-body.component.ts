@@ -71,7 +71,7 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
       And,
       <blog-reference-tooltip [reference]="'Philippians 3:20-21'">
         For our citizenship is in heaven, from which also we eagerly wait for a Savior, the Lord Jesus Christ; who will
-        transform the body of our humble state into comformity with the body of His glory, by the exertion of the power
+        transform the body of our humble state into conformity with the body of His glory, by the exertion of the power
         that He has even to subject all things to Himself.
       </blog-reference-tooltip>
       <br /><br />
@@ -116,7 +116,7 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
         many to righteousness, like the stars forever and ever.
       </blog-reference-tooltip>
       God put these heavenly bodies in the sky which differ in glory, showing unto us the future glory of the heavenly
-      life. For heavenly things hang in the sky of heaven or fly in the heavens. Even the cheribum under God's throne
+      life. For heavenly things hang in the sky of heaven or fly in the heavens. Even the cherubim under God's throne
       have wings for flying, and these are spiritual beings. I am not saying all angels have wings to fly, but they do
       inhabit the heavens. And God shows us examples of these on earth, for God has created creatures which fly through
       the heavens, showing unto us how spirits operate in the unseen world. For earthly bodies walk on the ground, for
@@ -136,7 +136,7 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
       <br /><br />
 
       Speaking further of the resurrection: there are certain creatures in nature which have their home on earth and
-      die, transforming to a heavenly life. For example, the butterfly: she was a caterpillar, moving on her belly
+      die, transforming to a heavenly life. For example, the butterfly: she was a caterpillar, moving on her belly,
       eating the herbs of the ground. When her time came, she hardened herself into a caccoon and broke forth into a
       butterfly. Her home is no longer among the earthly, but it is in the heavens. A dragonfly is similar, except he
       lives in the water, in the depths of the water; he crawls up a leaf and becomes hard by the sun, breaking forth

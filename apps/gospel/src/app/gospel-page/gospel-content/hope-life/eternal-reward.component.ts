@@ -44,7 +44,7 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
       charge of the nations (Matthew 25:14-30). For this is good stewardship. So take good care of what He has entrusted
       to you. In order to be profitable, you must "gamble". For those who play the slot machine spend some in order to
       win more. No-one plays to lose, but they play to win. I say, "Gamble" because not all machines are winners. You
-      don't hit the jackpot everytime, do you? Is all soil good and fertile? Of course not! And if the soil is bad, the
+      don't hit the jackpot every time, do you? Is all soil good and fertile? Of course not! And if the soil is bad, the
       seed casted on the soil is wasted, although there is nothing wrong with the seed. Likewise, if we don't profit,
       the money is wasted; but if it produces a yield, we have hit the jackpot! A single coin can produce hundreds of
       dollar bills; a single seed can produce a hundred times at harvest. Do we know beforehand whether the soil is

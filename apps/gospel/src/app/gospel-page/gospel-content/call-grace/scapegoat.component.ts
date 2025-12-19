@@ -64,7 +64,7 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
       </blog-reference-tooltip>
       For Jesus is the Scapegoat; He took upon Himself our blame as an offering for guilt; so we are not made to bear
       our guilt ourselves; just as the prophet Isaiah, foreseeing by the Spirit of God, said,
-      <blog-reference-tooltip [reference]="'Isaha 53:10'">
+      <blog-reference-tooltip [reference]="'Isaiah 53:10'">
         If He would render Himself as a guilt offering, He will see His offspring, He will prolong His days, And the
         good pleasure of the LORD will prosper in His hand.
       </blog-reference-tooltip>
@@ -114,7 +114,7 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
       Lord, the Spirit.” (2 Corinthians 3:18) In Christ or without, no-one can be declared righteous by the law, for the
       law declares everyone as sinners; but in Christ, even apart from the law, He makes many righteous through faith by
       His obedient act, for by His righteousness do we know what is right. What is it then, are we righteous sinners? Of
-      course not! The law gives sin it's power, but Christ justifies us apart from the law, therefore sin has lost its
+      course not! The law gives sin its power, but Christ justifies us apart from the law, therefore sin has lost its
       strength; as the apostle proclaims, "The power of sin is the law; but thanks to God, which giveth us the victory
       through our Lord Jesus Christ." (1 Corinthians 15:56-57) So while we abide in the grace of God, which is through
       faith, we have no obligation to serve sin which has been rendered powerless by the cross; we have been set free

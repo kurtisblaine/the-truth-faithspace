@@ -21,7 +21,7 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
       eat; for we leave the fruit of our labors to another who comes after us. As it is written, “We have brought
       nothing into the world, so we cannot take anything out of it either.” (1 Timothy 6:7) The things we do now will
       not matter years from now, it will become old and outdated. In the future, people will look back and say, "Who
-      were they?" As it is today, for we presently do not care who were in the past; and it will be the same in the
+      were they?" As it is today, for we presently do not care who lived in the past; and it will be the same in the
       future: they will not care for us; even if we think, "I do care," what does our boasting accomplish? No-one can
       bring back a day which has been spent. We are constantly striving in labor, yet we don't receive our due wages; he
       who does little work, harvests much, and we are dumb-founded; we do much work for little harvest; we work hard for
@@ -50,7 +50,7 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
       their pride is but labor and sorrow; For soon it is gone and we fly away.” (Psalms 90:9-10) We chase after things
       we think will satisfy us, but we catch them and see that they are empty; we are chasing after the wind; as it
       says, “For they sow the wind And they reap the whirlwind. The standing grain has no heads; It yields no grain.
-      Should it yield, strangers would swallow it up.” (Hosea 8:7) We are born into a miserable existance! So are we
+      Should it yield, strangers would swallow it up.” (Hosea 8:7) We are born into a miserable existence! So are we
       even better off than the animals? For they come in futility and they leave in futility just as it is with us; as
       it says,
       <blog-reference-tooltip [reference]="'Ecclesiastes 3:19'">

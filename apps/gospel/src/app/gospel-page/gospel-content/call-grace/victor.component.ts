@@ -39,7 +39,7 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
         MY GOD, MY GOD, WHY HAVE YOU FORSAKEN ME?
       </blog-reference-tooltip>
       And He was crucified; He was made a public spectacle of by the Romans; they called a legion of soldiers to
-      formation and mocked Him publically and beat Him; then they lifted Him up for all to see; and the written charge
+      formation and mocked Him publicly and beat Him; then they lifted Him up for all to see; and the written charge
       they had against Him: "JESUS, KING OF THE JEWS". But it was in Jesus' death that He disarmed more of the enemies
       of the rulers and principalities of this world than He did in His life; for He defeated them and rendered them
       powerless through the cross. For the power of a lion is in its mouth, for it has sharp and powerful teeth;
@@ -51,7 +51,7 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
       So while the rulers of this world thought they were destroying Him, they were being destroyed; and while they were
       mocking Him, they were being mocked; and while they put Him on display, they were put on display. For when the
       rulers of this world made a public display of Him, He made a public display of them; as the apostle Paul says,
-      <blog-reference-tooltip [reference]="'Colosians 2:13-14'">
+      <blog-reference-tooltip [reference]="'Colossians 2:13-14'">
         When He had disarmed the rulers and authorities, <b>He made a public display of them</b>, having triumphed over
         them through the cross.
       </blog-reference-tooltip>
@@ -105,7 +105,7 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
       </blog-reference-tooltip>
       If the rulers of this world would have known what they were doing, they would not have crucified the Lord of glory
       - but their minds were darkened. The rulers wanted for themselves the inheritance, the kingdom of Israel (as with
-      the parable of the vinyard written about in Matthew 21:33-46); so they sought to kill Him, but by the cross,
+      the parable of the vineyard written about in Matthew 21:33-46); so they sought to kill Him, but by the cross,
       Christ suffered only a wound to His heel, and satan to his head (for we wrestle not against flesh and blood). For
       Christ did not remain in the grave forever, only three days; and the judgment upon the ruler of this world has
       been pronounced and has been executed. For who was defeated by the cross? If satan was judged at the fall, and was
@@ -121,7 +121,7 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
       >
       So it was the devil who was defeated by the cross. The devil's final end is decreed in the Book. Thus the glory
       and honor which the enemy wanted for himself went to Christ Jesus - the King of Kings and the Lord of Lords! The
-      jugement which the enemy intended for Christ was poured out upon his own head; as Jesus said,
+      judgement which the enemy intended for Christ was poured out upon his own head; as Jesus said,
       <blog-reference-tooltip [reference]="'John 12:31-32'" [isJesusWord]="true">
         Now judgment is upon this world; now the ruler of this world will be cast out. And I, if I am lifted up from the
         earth, will draw all men to Myself.

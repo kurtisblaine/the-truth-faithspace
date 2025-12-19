@@ -44,7 +44,7 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
       and we consume His Word through faith. We eat the Word of the Lord and drink the Spirit of God, which is truly
       abiding; if we are living in Him, we are where He is; and He is seated in the heavenly places; as Paul says,
       "Seated with Him in the heavenly places in Christ Jesus." (Ephesians 2:6) Our life comes from Him and in Him we
-      remain in the life; this is how we find true life, for it's found in the Author of life; as it says, “And the
+      remain in the life; this is how we find true life, for it is found in the Author of life; as it says, “And the
       testimony is this, that God has given us eternal life, and this life is in His Son. He who has the Son has the
       life; he who does not have the Son of God does not have the life.” (1 John 5:11-12) And in Him there is no sin; as
       it says, “You know that He appeared in order to take away sins; and in Him there is no sin. No one who abides in
@@ -140,7 +140,7 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
       hidden for a time; what we do in secret will be manifested abroad. Remember Him; for communion is given in order
       for us to remember Christ. Abide in His love. The Holy Spirit will bring all things into our remembrance; but the
       one who sleeps, who treats the Word of God with contempt by lacking in watchfulness and prayer, he becomes
-      disobedient to the Holy Spirit's leading by shutting his eyes; the one who sleeps in watchfullness is careless
+      disobedient to the Holy Spirit's leading by shutting his eyes; the one who sleeps in watchfulness is careless
       about the implanted Word entrusted to Him; for instead of being watchful and guarding what is precious, he sleeps,
       being careless, lacking in the fear of God. The weapon God has given us against temptation is prayer; and the
       weapon against slumber, watchfulness. Yes, abiding is humility; trusting in God is humbling. Faith is child-like;

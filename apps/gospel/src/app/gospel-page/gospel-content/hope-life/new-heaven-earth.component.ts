@@ -93,7 +93,7 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
       </blog-reference-tooltip>
       Everything sown by the world prevents fruit for the kingdom: for they are thorns. This is the world whose will is
       contrary to the will of God. Whose spirit says, "Keep your opinions to yourself," and "Faith is good, only if it's
-      kept in your bosom," and "Do not deviate from the rest of us!" But we ought to die to the world and it's passions
+      kept in your bosom," and "Do not deviate from the rest of us!" But we ought to die to the world and its passions
       and lusts to serve God in truth. Forsake the world.
       <blog-reference-tooltip [reference]="'Luke 17:32'" [isJesusWord]="true"
         >Remember Lot's wife. </blog-reference-tooltip

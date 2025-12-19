@@ -11,11 +11,11 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
     <ng-template #theServantOfGod>
       Jesus came into the world to do the will of God; God's will was that He would go to the cross to justify many by
       His blood. He was buried in a tomb for three days, God rose Him up from the dead on the third day, for it was the
-      will of man to put Him to death, but it was God's will to raise Him from the grave. He appeared to many of His
-      disciples, over 500 of them, showing unto them many signs and proofs that He was alive from the dead. Afterwards,
-      He ascended to heaven to the Father's right hand where He is now exalted above every dominion and power and ruler
-      and principality. He will return on the last day to reign and rule with His holy people until His enemies are made
-      a footstool for His feet; His kingdom is everlasting and His rule is eternal. <br /><br />
+      will of man to put Him to death, but it was God's will to raise Him from the grave. He appeared to His disciples,
+      over 500 of them, showing unto them many signs and proofs that He was alive from the dead. Afterwards, He ascended
+      to heaven to the Father's right hand where He is now exalted above every dominion and power and ruler and
+      principality. He will return on the last day to reign and rule with His holy people until His enemies are made a
+      footstool for His feet; His kingdom is everlasting and His rule is eternal. <br /><br />
 
       So when we were deserving of punishment and wrath, God sent forth His Son, born of a woman, having appeared in the
       likeness of human flesh, He came to put to death sin in the flesh. He died for sin, but not His own as with a
@@ -112,10 +112,10 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
         Who knows the power of Your anger? For as the fear of You, so is Your wrath.
       </blog-reference-tooltip>
       But yet the vastness of the mercy and lovingkindness of Him - which is beyond the heights of the heavens - for He
-      is patient and longsuffering and forebearing, wishing for all to come to the saving knowledge of the truth; He is
+      is patient and long suffering and forbearing, wishing for all to come to the saving knowledge of the truth; He is
       merciful to all; and especially merciful to us who believe. Through the enemies of the cross, He shows forth more
       and more of His mercy to the objects of His mercy; for through His enemies, He exemplifies the riches of His mercy
-      even more so; for He is long suffering and forebearing even towards the unbelieving and ungrateful. For mercy
+      even more so; for He is long suffering and forbearing even towards the unbelieving and ungrateful. For mercy
       triumphs over judgment; and God has shown us mercy through the judgment of our sins through Another - His own Son;
       and who is worthy of such a thing? We who have been chosen for mercy have received mercy, the forgiveness of our
       sins, and will receive mercy from God on that great and terrible day; for mercy is shown to those who are
@@ -273,7 +273,7 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
       Surely sin has been rendered powerless through the cross, but you have yielded to it; you have offered yourself as
       an obedient servant to serve sin: you have sold yourself to it. But Christ has bought you, and you belong to Him.
       Therefore, offer yourself as a slave to righteousness, a bondslave of Christ. So if you obey sin, offering
-      yourself as a slave to it, then watch out! In it's growth: death. But Christ Jesus came to set us free from the
+      yourself as a slave to it, then watch out! In its growth: death. But Christ Jesus came to set us free from the
       power of sin and death, so that we would not be conformed to our old way of thinking, but that we would be made
       new through the renewing of our mind by the Holy Spirit. Christ has nullified the power of sin, stripping it of
       its power, for sin has its power through the law, but He justifies us apart from the law by grace - this

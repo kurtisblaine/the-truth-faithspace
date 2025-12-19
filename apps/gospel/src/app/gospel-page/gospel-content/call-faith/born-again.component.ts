@@ -46,7 +46,7 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
 
       If we are born of God, we do not need to be taught the truth because the Holy Spirit testifies to us what is true,
       for He is the Spirit of Truth; so we may instinctively know the difference between truth and lies because of the
-      annointing we have received from Him. In His grace, He has also given to us teachers and evangelists and prophets
+      anointing we have received from Him. In His grace, He has also given to us teachers and evangelists and prophets
       and apostles. Know for certain: He will cause us to obey the truth. The Holy Spirit will lead us out of the world
       to be a set apart vessel for God's service. To say the same thing in another way: the Holy Spirit makes us holy.
       Do not be deceived, but test the spirits to see if they come from God. There is one Spirit and one Gospel; if you
@@ -177,7 +177,7 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
       <blog-reference-tooltip [reference]="'Mark 9:49'" [isJesusWord]="true">
         For everyone shall be salted with fire, and every sacrifice shall be salted with salt.
       </blog-reference-tooltip>
-      (The apostle Paul was saying such things as these too, namely that, we are a sacrifice to God: Philipians 2:17,
+      (The apostle Paul was saying such things as these too, namely that, we are a sacrifice to God: Philippians 2:17,
       Romans 12:1) And furthermore, Israel was led to cross over through water into the desert; as the apostle says,
       “All were baptized into Moses in the cloud and in the sea;” (1 Corinthians 10:2) So water is first for purifying,
       then fire - water first then the Spirit. Water is first for cleansing, then comes the Spirit for sanctifying. As

@@ -145,7 +145,7 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
         so that your fasting will not be noticed by men, but by your Father who is in secret; and your Father who sees
         what is done in secret will reward you.
       </blog-reference-tooltip>
-      For the hidden is seen, so we strive to please God rather than men; similarily, a virgin keeps herself pure, and
+      For the hidden is seen, so we strive to please God rather than men; similarly, a virgin keeps herself pure, and
       her beauty is maintained for the sake of her husband; her beauty is hidden from all men, but it is revealed only
       to her lover. She sees her own beauty, but she belongs to her husband, and her husband belongs to her.
       <br /><br />
@@ -164,7 +164,7 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
       doing the will of God from the heart. Therefore strive to be like king David, a true descendant of him,
       maintaining a pure heart before God. We all know David is a man of God. But how so? According to stature or
       appearance? No! But rather according to the heart, revealed by the testimony of God who knows the heart. When the
-      heart is pure, what comes from the heart is pure too. For everything a man does and says comes from his heart.
+      heart is pure, what comes from the heart is pure as well. For everything a man does and says comes from his heart.
       Faith pertains to the heart. And this is how you fulfill the law of Christ: maintaining a pure heart before God
       and working out your faith. For it is possible to hide light within, and we can hide words within; but we are
       commanded to work out what God works in us. “Do not quench the Spirit;” (1 Thessalonians 5:19) For the law of God

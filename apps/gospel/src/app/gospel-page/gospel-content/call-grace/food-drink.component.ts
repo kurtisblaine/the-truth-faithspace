@@ -17,7 +17,7 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
         your eye is bad, your whole body will be full of darkness. If then the light that is in you is darkness, how
         great is the darkness!
       </blog-reference-tooltip>
-      So just as what we eat resides in the flesh, what we see resides in the spirit. Similarily, it says,
+      So just as what we eat resides in the flesh, what we see resides in the spirit. Similarly, it says,
       <blog-reference-tooltip [reference]="'Job 12:11'">
         Does not the ear test words, As the palate tastes its food?
       </blog-reference-tooltip>
@@ -47,7 +47,7 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
       <blog-reference-tooltip [reference]="'Proverbs 27:7'">
         A satisfied soul loathes the honeycomb, But to a hungry soul every bitter thing is sweet.
       </blog-reference-tooltip>
-      And similarily the Spirit of Christ said to Paul,
+      And similarly the Spirit of Christ said to Paul,
       <blog-reference-tooltip [reference]="'2 Corinthians 12'" [isJesusWord]="true">
         My grace is sufficient for you, <b>for power is perfected in weakness.</b>
       </blog-reference-tooltip>
