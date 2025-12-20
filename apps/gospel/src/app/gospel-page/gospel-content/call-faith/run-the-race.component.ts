@@ -65,12 +65,12 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
         Let us throw off everything that hinders and the sin that so easily entangles. And let us run with perseverance
         the race marked out for us, fixing our eyes on Jesus, the pioneer and perfecter of faith.
       </blog-reference-tooltip>
-      As it says, "fixing our eyes on Jesus", but Jesus is unseen, so it is, we fix our eyes on Jesus by faith; as it
+      As it says, "Fixing our eyes on Jesus", but Jesus is unseen, so it is, we fix our eyes on Jesus by faith; as it
       says about Moses, “He endured, as seeing Him who is unseen.” (Hebrews 11:27) For it is by faith that he seen Him
       who is unseen. And this is the race we run: the race of faith. For messengers often ran to the one who they were
       sent; and we carry the Word of Christ.<br /><br />
 
-      Disciple means "disciplined one", and we are called disciples of Christ; self-discipline is a fruit of the Holy
+      Disciple means "disciplined one," and we are called disciples of Christ; self-discipline is a fruit of the Holy
       Spirit, and discipline is needed for running the race. Any discipline that does not come from the Holy Spirit is
       not truly self-discipline. When I was in the military, they told me I would have self-discipline, but what I found
       was the military disciplined me, and my discipline did not come from myself; therefore, it was not

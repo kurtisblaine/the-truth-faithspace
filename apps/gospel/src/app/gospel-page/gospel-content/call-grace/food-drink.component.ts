@@ -149,23 +149,20 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
       has set up another day under the new Covenant which is "as often as you like"; so it is not on a certain day, like
       the law, but as often as we like. For the law given by Moses was binding by compulsion, but the law of Christ is
       set forth - not as binding, but freeing - in free willingness, that we may serve Him with a willing heart. For the
-      apostles called themselves "bond-servants", meaning willing servants of Jesus Christ. The holy days in the law
+      apostles called themselves "bond-servants," meaning willing servants of Jesus Christ. The holy days in the law
       offered as reminders at the anniversary of the event, but communion is not given on a set day, but any day;
-      likewise it says, "Today if you hear His voice..." (Hebrews 3:15) And it says,
-      <blog-reference-tooltip [reference]="'2 Corinthians 6:2'">
-        "AT THE ACCEPTABLE TIME I LISTENED TO YOU, AND ON THE DAY OF SALVATION I HELPED YOU." Behold, now is "THE
-        ACCEPTABLE TIME," behold, now is "THE DAY OF SALVATION."
-      </blog-reference-tooltip>
-      For His favor is open for us everyday to abide in; as the lamenter says, “The LORD'S lovingkindnesses indeed never
-      cease, For His compassions never fail. They are new every morning; Great is Your faithfulness.” (Lamentations
-      3:22-23) So we rest in His kindness, and abide therein everyday, for God is good; the time of waiting for Him has
-      ceased. We should fear lest we harden ourselves toward God by being ignorant of His ways, erring in the heart, and
-      departing out of the way. Remember His ways, declare His works. Remember Christ Jesus, He is the Way. This is the
-      key to remaining: remembering. And the key to abiding: meditation. God's grace is a gift to us, but to the Father,
-      costly. He gave up His Son, He lost Him for a short while, He gained Him back forever. Do not receive God's grace
-      in vain by forgetting these wonderful truths, but treat them as precious and hold fast to them. "When faced with
-      death, I will not shake; I know Him that makes the earth-quake." Hold fast dearly beloved, hold fast; for in vain
-      it does not say,
+      likewise it says, "Today if you hear His voice..." (Hebrews 3:15) And it says, "AT THE ACCEPTABLE TIME I LISTENED
+      TO YOU, AND ON THE DAY OF SALVATION I HELPED YOU." Behold, now is "THE ACCEPTABLE TIME," behold, now is "THE DAY
+      OF SALVATION." (2 Corinthians 6:2) For His favor is open for us everyday to abide in; as the lamenter says, “The
+      LORD'S lovingkindnesses indeed never cease, For His compassions never fail. They are new every morning; Great is
+      Your faithfulness.” (Lamentations 3:22-23) So we rest in His kindness, and abide therein everyday, for God is
+      good; the time of waiting for Him has ceased. We should fear lest we harden ourselves toward God by being ignorant
+      of His ways, erring in the heart, and departing out of the way. Remember His ways, declare His works. Remember
+      Christ Jesus, He is the Way. This is the key to remaining: remembering. And the key to abiding: meditation. God's
+      grace is a gift to us, but to the Father, costly. He gave up His Son, He lost Him for a short while, He gained Him
+      back forever. Do not receive God's grace in vain by forgetting these wonderful truths, but treat them as precious
+      and hold fast to them. "When faced with death, I will not shake; I know Him that makes the earth-quake." Hold fast
+      dearly beloved, hold fast; for in vain it does not say,
       <blog-reference-tooltip [reference]="'Hebrews 12:4'">
         You have not yet resisted to bloodshed, striving against sin.
       </blog-reference-tooltip>

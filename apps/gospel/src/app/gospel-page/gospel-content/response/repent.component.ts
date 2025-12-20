@@ -39,8 +39,8 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
       righteous God; for we love Him and come to Him through Christ. The Spirit leads us away from the dead to the
       living, from the power of satan to God. Sin in full growth is death, but the fruit of righteousness is life and
       peace. Without leaving sin, we cannot come near to a living God, for this world and God's Kingdom are on opposite
-      spectrums; in this world there is sin, but in God there is righteousness. One can't face both the south and the
-      north at the same time, can he? Nor can we face God and sin at the same time. We have one face and one back; we
+      spectrums; in this world there is sin, but in God there is righteousness. One can't face both the South and the
+      North at the same time, can he? Nor can we face God and sin at the same time. We have one face and one back; we
       cannot come to God without first putting our back to sin. To say otherwise is to say, "I have two faces," or to
       say, "God and sin are friends". This is not how you have come to learn the truth. Repentance is turning from sin,
       believing is turning to God. We turn our back to sin to face God in faith, and He reveals His face to us. Does not

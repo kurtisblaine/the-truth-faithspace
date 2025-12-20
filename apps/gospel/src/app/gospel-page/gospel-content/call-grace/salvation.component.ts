@@ -55,7 +55,7 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
         >Come out of her, my people, lest you share in her sins, and lest you receive of her
         plagues.</blog-reference-tooltip
       >
-      As it says, "Come out of her", which is this world; we come out of the world through repentance, and come to
+      As it says, "Come out of her," which is this world; we come out of the world through repentance, and come to
       Christ through faith, and remain in Him through perseverence.<br /><br />
 
       After the great flood, God made a covenant with Noah; as God says,

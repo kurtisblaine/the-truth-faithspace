@@ -171,7 +171,7 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
       on the day of Salvation, and we are to watch ourselves constantly in many watchings and prayer. We really are sons
       of God if we have believed, and true sons pattern themselves after the Father, and by this we may know that we
       believe; because we have been begotten of God by the eternal Word of truth when we believed. When a son does not
-      act like the father, the father says, "You are no son of mine", although in truth, the son is still a son; but
+      act like the father, the father says, "You are no son of mine," although in truth, the son is still a son; but
       what they are really saying is: "You were raised better; you're not acting as you've been taught," that is, you're
       not acting like your father. A son can rebel against the father and go his own way (Luke 15:11-32), but the son
       can never stop being a son; but in such a case, the son is dead to the father, and the father to the son. We are
