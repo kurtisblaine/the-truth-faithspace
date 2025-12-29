@@ -216,11 +216,6 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
       faith is sight by hearing, seeing Him with the eye of our understanding. All who see Him through faith will live
       and not die, but the one who sees Him naturally dies. Thus we see why faith is necessary: because He is Holy. But
       through this faith, we are washed, we are sanctified, and we are justified. And this faith is in God.
-      <!-- <br /><br />
-
-        (If these things are review to you because you're a believer, feel free to go to
-        <a style="cursor: pointer" (click)="toAnchor('call-grace')">THE CALL - GRACE</a>
-        portion of the Gospel. There are many edifying things there that will help you in the faith.) -->
     </ng-template>`,
   styles: ``,
   changeDetection: ChangeDetectionStrategy.OnPush,

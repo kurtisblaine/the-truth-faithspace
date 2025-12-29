@@ -52,13 +52,13 @@ export class GospelItemService implements OnDestroy {
     this.components.set("aConsumingFire", ConsumingFireComponent);
     this.components.set("theDayOfJudgement", JudgementDayComponent);
 
-    //THE DANGER - DEATH
+    //THE FUTILTY - DEATH
     this.components.set("theLoveOfPleasure", PleasureComponent);
     this.components.set("workAndToil", ToilComponent);
     this.components.set("theLoveOfWealth", WealthComponent);
     this.components.set("theDayOfDeath", DeathComponent);
 
-    //THE CALL - GRACE
+    //THE SAFETY - GRACE
     this.components.set("theServantOfGod", ServantComponent);
     this.components.set("theBronzeSerpent", BronzeSerpentComponent);
     this.components.set("theVictor", VictorComponent);
@@ -77,7 +77,7 @@ export class GospelItemService implements OnDestroy {
     this.components.set("aNewHeart", NewHeartComponent);
     this.components.set("bornAgain", BornAgainComponent);
 
-    //THE RESPONSE
+    //OUR RESPONSE
     this.components.set("repentance", RepentComponent);
     this.components.set("baptism", BaptismComponent);
     this.components.set("believeInGod", BelieveInGodComponent);

@@ -172,11 +172,6 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
         I know that there is nothing better for them than to rejoice and to do good in one's lifetime; moreover, that
         every man who eats and drinks sees good in all his labor - it is the gift of God.
       </blog-reference-tooltip>
-      <!-- <br /><br />
-
-        (If these things are review to you because you're already a believer, feel free to go to
-        <a style="cursor: pointer" (click)="toAnchor('call-grace')">THE CALL - GRACE</a>
-        portion of the Gospel. There are many edifying things there that will help encourage you in the faith.) -->
     </ng-template>`,
   styles: ``,
   changeDetection: ChangeDetectionStrategy.OnPush,
