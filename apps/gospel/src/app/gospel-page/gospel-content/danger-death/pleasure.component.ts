@@ -8,27 +8,26 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
   imports: [CommonModule, ReferenceTooltipComponent],
   template: `<ng-container *ngTemplateOutlet="theLoveOfPleasure"></ng-container>
     <ng-template #theLoveOfPleasure>
-      I will speak further on the futility of things: for Alcohol and food, which are wholesome in themselves, which are
-      given to us by God for our enjoyment, but are often perverted into drunkenness and gluttony, and drugs, which are
-      often used for an escape from reality, which are a false refuge, which are often corrupted for one's own enjoyment
-      rather than medicine, and the excessive love of pleasure, which is dissipation, which is folly and waste, and any
-      other corrupt desire which come from our lust, which wages war against our soul, these will never sustain us -
-      they only mask our deeply rooted issues for a little while and make life bearable for a short time. They come
-      quickly and vanish quickly, for the same way they come, the same way they go. Is life so terrible that we need
-      these? We all have our share in these during some time in our life. But where is the light of life? For the way we
-      feel, living in such things, surely it is not life. We are calloused, without feeling, so we have given ourselves
-      over to sensuality, to the practice of every kind of impurity with greediness, for that is what we can feel; we
-      are hardened by the unbelief of the world, and stimulated by the lust which is in the world. Isn't life supposed
-      to be good? Isn't death bad? Yet our lives are not joyous, but they are like death. We don't know what life truly
-      is - if we seen it walk by, we would say, "What was that?" Living for pleasure is not life; our trouble may be
-      gone for a moment, but it is not gone forever; living for pleasure is like hitting the snooze button on an alarm
-      clock - we may feel better now, but we will have to deal with our problems later, but they has gotten worse. Even
-      if we feel satisfied or fulfilled with these things, it is never enough; we are feeding a beast within us, the
-      more we feed it, the bigger it gets; and the bigger it gets, the more we must feed it; it is never satisfied; we
-      are the ones who make it stronger, and we are subdued by it. A dog growls when its not fed, how much more sin
-      living within us which is a hound from hell? And sin is deathly, living in the sons of men; we are living, but sin
-      is working death within us. We want to flee, but it's inside of us; we cover our eyes, but it lives in the
-      darkness.<br /><br />
+      Alcohol and food, which are wholesome in themselves, which are given to us by God for our enjoyment, but are often
+      perverted into drunkenness and gluttony, and drugs, which are often used for an escape from reality, which are a
+      false refuge, which are often corrupted for one's own enjoyment rather than medicine, and the excessive love of
+      pleasure, which is dissipation, which is folly and waste, and any other corrupt desire which come from our lust,
+      which wages war against our soul, these will never sustain us - they only mask our deeply rooted issues for a
+      little while and make life bearable for a short time. They come quickly and vanish quickly, for the same way they
+      come, the same way they go. Is life so terrible that we need these? We all have our share in these during some
+      time in our life. But where is the light of life? For the way we feel, living in such things, surely it is not
+      life. We are calloused, without feeling, so we have given ourselves over to sensuality, to the practice of every
+      kind of impurity with greediness, for that is what we can feel; we are hardened by the unbelief of the world, and
+      stimulated by the lust which is in the world. Isn't life supposed to be good? Isn't death bad? Yet our lives are
+      not joyous, but they are like death. We don't know what life truly is - if we seen it walk by, we would say, "What
+      was that?" Living for pleasure is not life; our trouble may be gone for a moment, but it is not gone forever;
+      living for pleasure is like hitting the snooze button on an alarm clock - we may feel better now, but we will have
+      to deal with our problems later, but they has gotten worse. Even if we feel satisfied or fulfilled with these
+      things, it is never enough; we are feeding a beast within us, the more we feed it, the bigger it gets; and the
+      bigger it gets, the more we must feed it; it is never satisfied; we are the ones who make it stronger, and we are
+      subdued by it. A dog growls when its not fed, how much more sin living within us which is a hound from hell? And
+      sin is deathly, living in the sons of men; we are living, but sin is working death within us. We want to flee, but
+      it's inside of us; we cover our eyes, but it lives in the darkness.<br /><br />
 
       <!-- <a href="https://thelightof.life/insight-detail/cd57c552-146a-8c5a-7bd2-d1314e9a4793" target="_blank"
           >See more about the nature of sin here.</a

@@ -76,7 +76,7 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
         discharge in the time of war, and evil will not deliver those who practice it.
       </blog-reference-tooltip>
       <blog-reference-tooltip [reference]="'Ecclesiastes 9:12'">
-        Moreover, man does not know his time: like fish caught in a trecherous net and birds trapped in a snare, so the
+        Moreover, man does not know his time: like fish caught in a treacherous net and birds trapped in a snare, so the
         sons of men are ensnared at an evil time when it suddenly falls on them.
       </blog-reference-tooltip>
       <br /><br />
