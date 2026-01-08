@@ -11,12 +11,9 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
       We have all fallen short of the glory of God; we have missed the mark; as it is written,
       <blog-reference-tooltip [reference]="'Romans 3:10-18'"
         >None is righteous, no, not one; no one understands; no one seeks for God. All have turned aside; together they
-        have become worthless; no one does good, not even one. Their throat is an open grave; they use their tongues to
-        deceive. The venom of asps is under their lips. Their mouth is full of curses and bitterness. Their feet are
-        swift to shed blood; in their paths are ruin and misery, and the way of peace they have not known. There is no
-        fear of God before their eyes.</blog-reference-tooltip
+        have become worthless; no one does good, not even one.</blog-reference-tooltip
       >
-      (And many other such testimonies as these: Isaiah 59:1-13, Isaiah 64:6-7, Psalms 5:9,Psalmsm 53:1-3Psalmslm
+      (And many other such testimonies as these: Isaiah 59:1-13, Isaiah 64:6-7, Psalms 5:9, Psalms 53:1-3; Psalms
       36:1-4, Micah 7:2-3, Ezekiel 22:6-12) And even if we were to decide to do better today, we couldn't cover our past
       faults; and even if we declared, "I will change", it would only take us as far as our human strength will go; and
       aren't we becoming weaker and weaker day by day? For the weakness of death is at work in all of us. Besides, if
