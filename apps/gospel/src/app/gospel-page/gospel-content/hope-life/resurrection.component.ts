@@ -30,17 +30,19 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
         perform its will and prosper.
       </blog-reference-tooltip>
       These things are spoken about in further detail by the apostle Paul in the letter to the Thessalonians (2
-      Thessalonians 2:3-12). So we cannot stop these things from occurring, for they are ordained to occur; and we, as
-      God's saints, are destined for affliction; as the apostle affirms, see to it that “no one would be disturbed by
-      these afflictions; for you yourselves know that we have been destined for this.” (1 Thessalonians 3:3) This
-      affliction does not come from God, but from the spiritual rulers of wickedness, whose ruler is the evil one. “But
-      the Lord is faithful, and He will strengthen and protect you from the evil one.” (2 Thessalonians 3:3) For “God
-      has not destined us for wrath, but for obtaining salvation through our Lord Jesus Christ, who died for us, so that
-      whether we are awake or asleep, we will live together with Him.” (1 Thessalonians 5:9-10) The wrath of the devil
-      is great, but his time is short; as it says, "Woe to the earth and the sea, because the devil has come down to
-      you, having great wrath, knowing that he has only a short time." (Revelation 12:12) And the works of devils and
-      antichrists are already at work in the world; as it says, “For the mystery of lawlessness is already at work.” (2
-      Thessalonians 2:7) Then it says,
+      Thessalonians 2:3-12). <br /><br />
+
+      So we cannot stop these things from occurring, for they are ordained to occur; and we, as God's saints, are
+      destined for affliction; as the apostle affirms, see to it that “no one would be disturbed by these afflictions;
+      for you yourselves know that we have been destined for this.” (1 Thessalonians 3:3) This affliction does not come
+      from God, but from the spiritual rulers of wickedness, whose ruler is the evil one. “But the Lord is faithful, and
+      He will strengthen and protect you from the evil one.” (2 Thessalonians 3:3) For “God has not destined us for
+      wrath, but for obtaining salvation through our Lord Jesus Christ, who died for us, so that whether we are awake or
+      asleep, we will live together with Him.” (1 Thessalonians 5:9-10) The wrath of the devil is great, but his time is
+      short; as it says, "Woe to the earth and the sea, because the devil has come down to you, having great wrath,
+      knowing that he has only a short time." (Revelation 12:12) And the works of devils and antichrists are already at
+      work in the world; as it says, “For the mystery of lawlessness is already at work.” (2 Thessalonians 2:7) Then it
+      says,
       <blog-reference-tooltip [reference]="'1 John 2:18'">
         It is the last hour, and just as you have heard that antichrist is coming, even now many antichrists have
         arisen, by which we know that it is the last hour.

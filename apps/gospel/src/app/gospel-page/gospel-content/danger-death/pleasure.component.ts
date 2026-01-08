@@ -129,16 +129,19 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
       imagination, making it visible for you to see; for it is what they want you to see and what they don't want you to
       see; and these images, which are from imaginations, entice lustful desire in those who see them. For why would
       someone make an image unless it is to be gazed at? (Covetousness is called idolatry; and covetousness is lust. And
-      covetousness is condemned by the law.) And without question: lust pertains to the eyes. The natural use is better
-      than the unnatural, the real is better than the copy, good is better than evil; even if, in the meantime, you
-      think, "Ah! Yet it feels so good!" In the end you will not be saying that! Everything we sow, we will also reap. A
-      person does not sow an apple and get an orange tree, does he? Neither does a person breed pigs and get cows. So
-      why do you think, "I will sow corruption and get life?" Lust sowed reaps corruption; righteousness sowed reaps
-      blessing; and lust conceived gives birth to sin. All sin is dysfunctional; and a dysfunction is useless. And that
-      which is useless is put into a pit and awaits burning. A new sofa becomes fettered, a new car becomes a tin of
-      rust, even our bodies are becoming old and gray and worn out: it will be soon in the grave. Evil will inherit evil
-      and goodness will inherit goodness in the end. This is true, even if in the meantime we see the wicked prospering
-      and the righteous suffering; as wisdom says,
+      covetousness is condemned by the law.)
+      <br /><br />
+
+      And without question: lust pertains to the eyes. The natural use is better than the unnatural, the real is better
+      than the copy, good is better than evil; even if, in the meantime, you think, "Ah! Yet it feels so good!" In the
+      end you will not be saying that! Everything we sow, we will also reap. A person does not sow an apple and get an
+      orange tree, does he? Neither does a person breed pigs and get cows. So why do you think, "I will sow corruption
+      and get life?" Lust sowed reaps corruption; righteousness sowed reaps blessing; and lust conceived gives birth to
+      sin. All sin is dysfunctional; and a dysfunction is useless. And that which is useless is put into a pit and
+      awaits burning. A new sofa becomes fettered, a new car becomes a tin of rust, even our bodies are becoming old and
+      gray and worn out: it will be soon in the grave. Evil will inherit evil and goodness will inherit goodness in the
+      end. This is true, even if in the meantime we see the wicked prospering and the righteous suffering; as wisdom
+      says,
       <blog-reference-tooltip [reference]="'Ecclesiastes 7:15'">
         I have seen everything during my lifetime of futility; there is a righteous man who perishes in his
         righteousness and there is a wicked man who prolongs his life in his wickedness.

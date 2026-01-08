@@ -28,24 +28,23 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
         Then He said, “Write this down, for these words are faithful and true.”
       </blog-reference-tooltip>
       For the present world is predominantly evil, for the world belongs to satan, but the world to come belongs to the
-      Father God and the Lord Jesus Christ. Just as God did away with the ancient world with a flood, and thereafter
-      only righteous Noah and his family survived, so it be after His coming. God will preserve the righteous and they
-      will inherit the new earth. Just as Noah went into the ark and came out of the ark, and the world was as new, for
-      it was washed with water, so it will be after His coming burns the heavens and earth; it will be totally refined
-      by fire. The present earth underwent a flood and wiped away the wicked, but Noah was caught up, floating above the
-      water in the ark, and only Noah and his family were saved; and thereafter, only the righteous were on the earth at
-      that time; although only for a short while, for sin began to reign quickly thereafter. The world was made new
-      after the flood and Noah inherited it, but it was only washed with water. This is a picture of the end, but the
-      end will come with fire; but the end will be replaced by a better beginning, that is, a beginning which has no
-      end. As the LORD God says,
+      Father God and the Lord Jesus Christ. <br /><br />
+
+      Just as God did away with the ancient world with a flood, and thereafter only righteous Noah and his family
+      survived, so it be after His coming. God will preserve the righteous and they will inherit the new earth. Just as
+      Noah went into the ark and came out of the ark, and the world was as new, for it was washed with water, so it will
+      be after His coming burns the heavens and earth; it will be totally refined by fire. The present earth underwent a
+      flood and wiped away the wicked, but Noah was caught up, floating above the water in the ark, and only Noah and
+      his family were saved; and thereafter, only the righteous were on the earth at that time; although only for a
+      short while, for sin began to reign quickly thereafter. The world was made new after the flood and Noah inherited
+      it, but it was only washed with water. This is a picture of the end, but the end will come with fire; but the end
+      will be replaced by a better beginning, that is, a beginning which has no end. As the LORD God says,
       <blog-reference-tooltip [reference]="'Isaiah 65:17-19'">
         For behold, I will create new heavens and a new earth. The former things will not be remembered, nor will they
         come to mind. But be glad and rejoice forever in what I create; for I will create Jerusalem to be a joy and its
         people to be a delight. I will rejoice in Jerusalem and take delight in My people. The sounds of weeping and
         crying will no longer be heard in her.
       </blog-reference-tooltip>
-      <br /><br />
-
       But before the coming of these things, the saints will reign with Christ for one thousand years until His enemies
       are made a footstool for His feet. So thus, by the things which happened in the past we can see the future, for
       the ways of God do not change; as it says,

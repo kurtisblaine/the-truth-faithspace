@@ -29,21 +29,23 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
       But who of us can prevent the day of our death? No one! Everyone will go to an eternal dwelling, whether good or
       bad, as decreed by God. In the state we finish, it will determine where we spend eternity. The time in the tent is
       a time of testing, and we always have two choices: good or evil. If there were only one choice, we wouldn't have
-      free will, since we would be forced into choosing the only choice, but there are two choices. We will reap what we
-      sow, we gain what we have put in, we will be recompensed according to what we have done in our body. There is life
-      after life, which is eternal, and there is death after death, which is the second death; the second death is hell,
-      the lake of fire, a fire that is not quenched, for the wood is not consumed. Anyone whose name is not written in
-      the Book of Life will die the second death in eternal shame and torment. Paradise is the Kingdom of God, the new
-      Jerusalem, Mount Zion, the new heaven and the new earth, where righteousness dwells. The present heaven and earth
-      are subjected to evil and violence, but it is passing away with everything in it, as we ourselves are passing
-      away. The new heaven and the new earth will never pass away; for it is an eternal home which cannot be shaken. The
-      LORD God will judge both the living and the dead according to their deeds, and recompense all according to what
-      they have done in the body; as God says, “Now the end is upon you, and I will send My anger against you; I will
-      judge you according to your ways and bring all your abominations upon you.” (Ezekiel 7:3-4) So He judges us based
-      on our own works. And from the judgement, each will go to their permanent home as decreed by the judgement of God;
-      and God's judgment will be based on righteousness and justice; so who can argue with the verdict? He will reward
-      all who do good for the good done and repay harm for the harm done. But certainly, God has sown everlasting life
-      in the human heart so that we would covet life; as it says,
+      free will, since we would be forced into choosing the only choice, but there are two choices.
+      <br /><br />
+
+      We will reap what we sow, we gain what we have put in, we will be recompensed according to what we have done in
+      our body. There is life after life, which is eternal, and there is death after death, which is the second death;
+      the second death is hell, the lake of fire, a fire that is not quenched, for the wood is not consumed. Anyone
+      whose name is not written in the Book of Life will die the second death in eternal shame and torment. Paradise is
+      the Kingdom of God, the new Jerusalem, Mount Zion, the new heaven and the new earth, where righteousness dwells.
+      The present heaven and earth are subjected to evil and violence, but it is passing away with everything in it, as
+      we ourselves are passing away. The new heaven and the new earth will never pass away; for it is an eternal home
+      which cannot be shaken. The LORD God will judge both the living and the dead according to their deeds, and
+      recompense all according to what they have done in the body; as God says, “Now the end is upon you, and I will
+      send My anger against you; I will judge you according to your ways and bring all your abominations upon you.”
+      (Ezekiel 7:3-4) So He judges us based on our own works. And from the judgement, each will go to their permanent
+      home as decreed by the judgement of God; and God's judgment will be based on righteousness and justice; so who can
+      argue with the verdict? He will reward all who do good for the good done and repay harm for the harm done. But
+      certainly, God has sown everlasting life in the human heart so that we would covet life; as it says,
       <blog-reference-tooltip [reference]="'Ecclesiastes 3:11'">
         He has made everything appropriate in its time. <b>He has also set eternity in their heart</b>, yet so that man
         will not find out the work which God has done from the beginning even to the end.</blog-reference-tooltip
@@ -125,6 +127,8 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
         wise?" So I said to myself, "This too is vanity." For there is no lasting remembrance of the wise man as with
         the fool, inasmuch as in the coming days all will be forgotten. And how the wise man and the fool alike die!
       </blog-reference-tooltip>
+      <br /><br />
+
       And because of these things, the Psalmist says, “Surely in vain I have kept my heart pure And washed my hands in
       innocence; For I have been stricken all day long And chastened every morning.” (Psalms 73:13-14) And about the
       wicked he says, “There are no pains in their death, And their body is fat. They are not in trouble as other men,

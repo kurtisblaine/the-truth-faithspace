@@ -134,7 +134,7 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
       which is in Christ Jesus our Lord.” (Romans 8:39)
       <br /><br />
 
-      Beforetime I said, "sin might lose its power in us who believe," and this is what I mean. I will use an allegory
+      Beforetime I said, "Sin might lose its power in us who believe," and this is what I mean. I will use an allegory
       to explain this: Jonathan, the son of Saul, became accursed by his father when he ate some honey which was against
       his father's oath (1 Samuel 14:24-45); for his father Saul made a foolish oath that no-one should eat until he had
       vengeance on his enemies. So Saul, in his zeal for his oath, sought to put even his own son to death for the sake

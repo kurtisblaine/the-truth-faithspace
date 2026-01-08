@@ -157,7 +157,7 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
       </blog-reference-tooltip>
       <blog-link [link]="'https://thelightof.life/edifications/edify-detail/eba900e6-909b-1873-e0a3-ef2d8fcc13ed'"
         >(See more about Confessing)</blog-link
-      >
+      ><br /><br />
 
       The Lord Jesus is one, and what He did was for many; and the scapegoat for Israel was one goat, but was for the
       whole nation of Israel. And likewise the LORD God, Most High, was pleased with one man, Noah, the man of

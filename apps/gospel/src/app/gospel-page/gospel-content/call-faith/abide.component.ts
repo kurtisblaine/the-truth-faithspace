@@ -38,8 +38,9 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
       sweetness of wisdom; as it says,
       <blog-reference-tooltip [reference]="'Proverbs 24:13-14'">
         My son, eat honey, for it is good, Yes, the honey from the comb is sweet to your taste; Know that wisdom is thus
-        for your soul; If you find it, then there will be a future, And your hope will not be cut off.
-      </blog-reference-tooltip>
+        for your soul; If you find it, then there will be a future, And your hope will not be cut off. </blog-reference-tooltip
+      ><br /><br />
+
       The Word of God is our food; we do not live by bread alone, but by every word that comes from the mouth of God;
       and we consume His Word through faith. We eat the Word of the Lord and drink the Spirit of God, which is truly
       abiding; if we are living in Him, we are where He is; and He is seated in the heavenly places; as Paul says,

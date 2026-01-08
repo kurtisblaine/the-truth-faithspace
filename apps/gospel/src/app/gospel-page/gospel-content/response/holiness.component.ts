@@ -107,7 +107,7 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
       condemnation." (2 Corinthians 3:9) So if we fulfill the law, we live in the freedom, and rest in life of God; but
       if we disobey, we lie in the depths of slavery, toil, and death in sin.
       <blog-link [link]="'https://thelightof.life/edifications/edify-detail/ccb334ab-3719-49b4-a690-1416ad4d1265'">
-        (See More on Submission to Authority)</blog-link
+        (See more on Submission to Authority)</blog-link
       >
       <br /><br />
 
@@ -139,7 +139,7 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
         in His love.
       </blog-reference-tooltip>
       <blog-link [link]="'https://thelightof.life/drawings/draw/sanctification'">
-        (See More on Sanctification)</blog-link
+        (See more on Sanctification)</blog-link
       >
     </ng-template>`,
   styles: ``,
