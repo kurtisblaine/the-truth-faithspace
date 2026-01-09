@@ -4,6 +4,7 @@ import { MatButtonModule } from "@angular/material/button";
 import { MatTooltipModule } from "@angular/material/tooltip";
 import { FontAwesomeModule } from "@fortawesome/angular-fontawesome";
 import {
+  faAmazon,
   faDiscord,
   faFacebook,
   faGithub,
@@ -37,7 +38,17 @@ import {
     >
       <fa-icon [size]="'xl'" [icon]="youtubeIcon"></fa-icon>
     </a>
-    } @if(githubLink()){
+    } @if(amazonLink()){
+    <a
+      mat-mini-fab
+      [href]="amazonLink()"
+      [matTooltip]="'Amazon'"
+      aria-labelledby="Amazon Link"
+      aria-label="Amazon Link"
+    >
+      <fa-icon [size]="'xl'" [icon]="amazonIcon"></fa-icon>
+    </a>
+    }@if(githubLink()){
     <a
       mat-mini-fab
       [href]="githubLink()"
@@ -107,6 +118,7 @@ export class ShareComponent {
   redditIcon = faReddit;
   soundCloudIcon = faSoundcloud;
   slackIcon = faSlack;
+  amazonIcon = faAmazon;
 
   facebookLink = input<string>();
   discordLink = input<string>();
@@ -116,4 +128,5 @@ export class ShareComponent {
   redditLink = input<string>();
   soundCloudLink = input<string>();
   slackLink = input<string>();
+  amazonLink = input<string>();
 }
