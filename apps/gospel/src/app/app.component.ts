@@ -125,7 +125,7 @@ export class AppComponent implements OnInit {
   }
 
   public openBible() {
-    window.open("https://the-truth-from-the-beginning.web.app/", "_blank");
+    window.open("https://thewordof.life", "_blank");
   }
 
   public goHome() {
