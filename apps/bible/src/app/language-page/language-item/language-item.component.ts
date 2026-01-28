@@ -9,6 +9,7 @@ import { flatMap } from "lodash-es";
 import { TooltipDirective } from "shared";
 import { selectLanguage } from "../../+state/bibles/bibles.actions";
 import { Bible, ScriptDirection, SortedBibles } from "../../models/bibles";
+import { StepperStateService } from "../../stepperState.service";
 
 @Component({
   selector: "app-language-item",
@@ -19,7 +20,7 @@ import { Bible, ScriptDirection, SortedBibles } from "../../models/bibles";
 })
 export class LanguageItemComponent {
   @Input() public item: SortedBibles;
-  constructor(private store: Store, private router: Router) {}
+  constructor(private store: Store, private router: Router, private stepper: StepperStateService) {}
 
   public rtl: ScriptDirection = "RTL";
 
@@ -36,7 +37,9 @@ export class LanguageItemComponent {
   }
 
   public showBibles(bibles: Bible[]) {
+    this.stepper.goToNextStep();
     this.store.dispatch(selectLanguage({ bible: bibles[0] }));
+
     this.router.navigateByUrl("tongue/" + bibles[0].language.name);
   }
 }

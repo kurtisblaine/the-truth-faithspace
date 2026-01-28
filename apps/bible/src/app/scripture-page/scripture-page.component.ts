@@ -32,7 +32,6 @@ import {
 import { SafeHtmlPipe } from "shared";
 import { BibleApiService } from "../+state/bible-api.service";
 import { BooksActions } from "../+state/books/books.actions";
-import { selectEntity } from "../+state/books/books.selectors";
 import { ChaptersActions } from "../+state/chapters/chapters.actions";
 import { selectChapterEntity, selectChaptersCount } from "../+state/chapters/chapters.selectors";
 import { Scripture } from "../models/scripture";
@@ -65,8 +64,6 @@ export class ScripturePageComponent implements OnInit, OnDestroy, AfterViewInit 
   @ViewChild(CdkVirtualScrollViewport)
   private cdkVirtualScrollViewport!: CdkVirtualScrollViewport;
 
-  public selectedBook$!: Observable<string>;
-
   constructor(
     private store: Store,
     private router: Router,
@@ -79,7 +76,7 @@ export class ScripturePageComponent implements OnInit, OnDestroy, AfterViewInit 
   public chapter$!: Observable<string>;
   public chapterCount!: number;
   public isAll!: boolean;
-  public activeChapter!: string;
+
   public subscription!: Subscription;
   public dataSubscription!: Subscription;
   public scrollSubscription!: Subscription;
@@ -117,8 +114,6 @@ export class ScripturePageComponent implements OnInit, OnDestroy, AfterViewInit 
     this.scripture$ = this.bibleApi.getScripture(this.bibleId, this.chapterId);
     this.chapter$ = this.store.select(selectChapterEntity).pipe(map((r) => r.number));
 
-    this.selectedBook$ = this.store.select(selectEntity).pipe(map((r) => r.name));
-
     if (this.isAll) {
       this.subscription = this.store.select(selectChaptersCount).subscribe((total) => {
         this.chapterCount = total;
@@ -148,7 +143,6 @@ export class ScripturePageComponent implements OnInit, OnDestroy, AfterViewInit 
           });
       });
     } else {
-      this.activeChapter = this.chapterId.split(".").pop();
       this.bibleApi.getScripture(this.bibleId, `${this.bookId}.${this.chapterId}`);
     }
   }

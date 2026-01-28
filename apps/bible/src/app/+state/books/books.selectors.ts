@@ -17,3 +17,7 @@ export const selectSelectedId = createSelector(selectBooksState, (state: fromBoo
 export const selectEntity = createSelector(selectAllBooks, selectSelectedId, (entities, selectedId) =>
   selectedId ? entities.find((e) => e.id == selectedId) : undefined
 );
+
+export const selectCurrentBook = createSelector(selectAllBooks, selectSelectedId, (entities, selectedId) =>
+  selectedId ? entities.find((e) => e.id == selectedId) : undefined
+);

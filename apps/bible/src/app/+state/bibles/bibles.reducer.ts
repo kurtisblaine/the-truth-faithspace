@@ -23,7 +23,7 @@ export const reducer = createReducer(
   initialBiblesState,
   on(BiblesActions.selectLanguage, (state, { bible }) => ({
     ...state,
-    selectedId: bible.language.id,
+    selectedId: bible.language.name,
   })),
   on(BiblesActions.selectTranslation, (state, { bible }) => ({
     ...state,

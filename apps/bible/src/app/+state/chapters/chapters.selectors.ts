@@ -24,3 +24,10 @@ export const selectSelectedId = createSelector(selectChaptersState, (state: from
 export const selectChapterEntity = createSelector(selectAllChapters, selectSelectedId, (entities, selectedId) =>
   selectedId ? entities.find((e) => e.id == selectedId) : undefined
 );
+
+export const selectChapter = createSelector(selectSelectedId, (selectedId) => {
+  if (selectedId === "all") return "All";
+
+  const chapter = selectedId ? selectedId.toString().split(".").pop() : "";
+  return chapter.charAt(0).toUpperCase() + chapter.slice(1);
+});

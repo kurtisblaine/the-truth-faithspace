@@ -8,6 +8,7 @@ import { TooltipDirective } from "shared";
 import { selectTranslation } from "../+state/bibles/bibles.actions";
 import { getBibleByLanguageName } from "../+state/bibles/bibles.selectors";
 import { Bible } from "../models/bibles";
+import { StepperStateService } from "../stepperState.service";
 
 @Component({
   selector: "app-bible-page",
@@ -21,13 +22,14 @@ export class BiblePageComponent implements OnInit {
   public selectedBiblesByLanguage$!: Observable<Bible[]>;
   public selectedLanguage$!: Observable<string>;
 
-  constructor(private store: Store, private router: Router) {}
+  constructor(private store: Store, private router: Router, private stepperService: StepperStateService) {}
 
   ngOnInit(): void {
     this.selectedBiblesByLanguage$ = this.store.select(getBibleByLanguageName(this.languageName));
   }
 
   public readBook(bible: Bible) {
+    this.stepperService.goToNextStep();
     this.store.dispatch(selectTranslation({ bible: bible }));
 
     this.router.navigateByUrl("tongue/" + this.languageName + "/bible/" + bible.id);

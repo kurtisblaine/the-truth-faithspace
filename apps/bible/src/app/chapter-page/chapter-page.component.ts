@@ -5,10 +5,10 @@ import { MatSnackBar, MatSnackBarModule } from "@angular/material/snack-bar";
 import { Router } from "@angular/router";
 import { Store } from "@ngrx/store";
 import { Observable, map } from "rxjs";
-import { selectEntity } from "../+state/books/books.selectors";
 import { ChaptersActions } from "../+state/chapters/chapters.actions";
 import { selectAllChapters, selectChaptersError, selectChaptersLoaded } from "../+state/chapters/chapters.selectors";
 import { Chapter } from "../models/chapters";
+import { StepperStateService } from "../stepperState.service";
 import { ChapterItemComponent } from "./chapter-item/chapter-item.component";
 
 @Component({
@@ -26,10 +26,14 @@ export class ChapterPageComponent {
   public chapters$!: Observable<Chapter[]>;
   public isLoading$!: Observable<boolean>;
   public isLoaded$!: Observable<boolean>;
-  public selectedBook$!: Observable<string>;
   public allChapter!: Chapter;
 
-  constructor(private store: Store, private router: Router, private _snackBar: MatSnackBar) {}
+  constructor(
+    private store: Store,
+    private router: Router,
+    private _snackBar: MatSnackBar,
+    private stepperService: StepperStateService
+  ) {}
 
   ngOnInit() {
     this.allChapter = { number: "all", bibleId: this.bibleId, bookId: this.bookId, id: "all" } as Chapter;
@@ -38,7 +42,6 @@ export class ChapterPageComponent {
     // this.store.dispatch(BooksActions.selectBook({ id: this.bookId }));
 
     this.chapters$ = this.store.select(selectAllChapters);
-    this.selectedBook$ = this.store.select(selectEntity).pipe(map((r) => r.name));
 
     this.isLoading$ = this.store.select(selectChaptersLoaded).pipe(map((r) => !r));
     this.isLoaded$ = this.store.select(selectChaptersLoaded);
@@ -57,6 +60,7 @@ export class ChapterPageComponent {
   }
 
   getScripture(chapter: Chapter) {
+    this.stepperService.goToNextStep();
     this.store.dispatch(ChaptersActions.selectChapter({ id: chapter.id }));
 
     this.router.navigateByUrl(

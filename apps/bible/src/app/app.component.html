@@ -1,3 +1,61 @@
-<div style="padding: 15px">
-  <router-outlet></router-outlet>
+<div style="display: flex; flex-direction: column">
+  <mat-stepper
+    linear
+    #stepper
+    class="stepper"
+    (selectionChange)="onSelectionChange($event)"
+    [orientation]="stepperOrientation$ | async"
+  >
+    <mat-step state="tonguesIcon">
+      <ng-template matStepLabel>
+        Select Tongue
+        <div>{{ selectedLanguage$ | async }}</div>
+      </ng-template>
+    </mat-step>
+    <mat-step state="biblesIcon">
+      <ng-template matStepLabel
+        >Select Bible
+        <div>{{ selectedTranslation$ | async }}</div>
+      </ng-template>
+    </mat-step>
+    <mat-step state="booksIcon">
+      <ng-template matStepLabel
+        >Select Book
+        <div>{{ selectedBook$ | async }}</div>
+      </ng-template>
+    </mat-step>
+    <mat-step state="chaptersIcon">
+      <ng-template matStepLabel
+        >Select Chapter
+        <div>{{ selectedChapter$ | async }}</div>
+      </ng-template>
+    </mat-step>
+    <mat-step state="readIcon">
+      <ng-template matStepLabel>Read</ng-template>
+    </mat-step>
+
+    <ng-template matStepperIcon="tonguesIcon">
+      <mat-icon>language</mat-icon>
+    </ng-template>
+
+    <ng-template matStepperIcon="biblesIcon">
+      <mat-icon>my_library_books</mat-icon>
+    </ng-template>
+
+    <ng-template matStepperIcon="booksIcon">
+      <mat-icon>collections_bookmark</mat-icon>
+    </ng-template>
+
+    <ng-template matStepperIcon="chaptersIcon">
+      <mat-icon>bookmark</mat-icon>
+    </ng-template>
+
+    <ng-template matStepperIcon="readIcon">
+      <mat-icon>menu_book</mat-icon>
+    </ng-template>
+  </mat-stepper>
+
+  <div style="padding: 30px">
+    <router-outlet></router-outlet>
+  </div>
 </div>

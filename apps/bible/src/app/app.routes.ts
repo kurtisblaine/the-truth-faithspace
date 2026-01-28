@@ -16,7 +16,7 @@ export const appRoutes: Route[] = [
     component: BookPageComponent,
   },
   {
-    path: "tongue/:languageName/bible/:bibleId/book/:bookId/chapter",
+    path: "tongue/:languageName/bible/:bibleId/book/:bookId",
     component: ChapterPageComponent,
   },
   {

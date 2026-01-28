@@ -7,10 +7,10 @@ import { Router } from "@angular/router";
 import { Store } from "@ngrx/store";
 import { Observable, map } from "rxjs";
 import { TooltipDirective } from "shared";
-import { selectTranslationEntity } from "../+state/bibles/bibles.selectors";
 import { BooksActions } from "../+state/books/books.actions";
 import { selectAllBooks, selectBooksError, selectBooksLoaded } from "../+state/books/books.selectors";
 import { Book } from "../models/books";
+import { StepperStateService } from "../stepperState.service";
 
 @Component({
   selector: "app-book-page",
@@ -27,14 +27,18 @@ export class BookPageComponent implements OnInit {
   public isLoading$!: Observable<boolean>;
   public translation$!: Observable<string>;
 
-  constructor(private store: Store, private router: Router, private _snackBar: MatSnackBar) {}
+  constructor(
+    private store: Store,
+    private router: Router,
+    private _snackBar: MatSnackBar,
+    private stepperService: StepperStateService
+  ) {}
 
   ngOnInit() {
     this.store.dispatch(BooksActions.loadBooks({ id: this.bibleId }));
 
     this.books$ = this.store.select(selectAllBooks);
     this.isLoading$ = this.store.select(selectBooksLoaded).pipe(map((r) => !r));
-    this.translation$ = this.store.select(selectTranslationEntity).pipe(map((r) => r.name));
 
     this.store.select(selectBooksError).subscribe((error) => {
       if (error) {
@@ -50,8 +54,9 @@ export class BookPageComponent implements OnInit {
   }
 
   getChapters(book: Book) {
+    this.stepperService.goToNextStep();
     this.store.dispatch(BooksActions.selectBook({ id: book.id }));
 
-    this.router.navigateByUrl(`tongue/${this.languageName}/bible/${this.bibleId}/book/${book.id}/chapter`);
+    this.router.navigateByUrl(`tongue/${this.languageName}/bible/${this.bibleId}/book/${book.id}`);
   }
 }
