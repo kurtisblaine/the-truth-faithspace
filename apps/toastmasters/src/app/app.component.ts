@@ -58,7 +58,7 @@ export class AppComponent {
   }
 
   public goBlog() {
-    this.router.navigateByUrl("blog").then(() => {});
+    this.router.navigateByUrl("blogs").then(() => {});
   }
 
   public save(settings: ThemeSettings) {

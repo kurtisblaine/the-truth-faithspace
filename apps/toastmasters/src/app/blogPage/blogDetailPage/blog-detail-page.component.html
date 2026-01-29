@@ -1,0 +1,16 @@
+<mat-card style="margin: 15px" *ngIf="item$ | async as item">
+  <mat-card-header>
+    <mat-card-title-group>
+      <mat-card-title>
+        <h3 class="item-title primary-color" #seoTitle>{{ item?.title }}</h3>
+      </mat-card-title>
+      <mat-card-subtitle>
+        <div #seoCaption>{{ item?.date | date: "short" }}</div>
+      </mat-card-subtitle>
+    </mat-card-title-group>
+  </mat-card-header>
+
+  <mat-card-content>
+    <lib-readonly-text-editor [html]="item?.json?.toString()" [showReadMore]="false"></lib-readonly-text-editor>
+  </mat-card-content>
+</mat-card>

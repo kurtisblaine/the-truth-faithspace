@@ -3,6 +3,7 @@ import { AboutPageComponent } from "./aboutPage/about-page.component";
 import { LocationPageComponent } from "./aboutPage/locationPage/location-page.component";
 import { MembershipPageComponent } from "./aboutPage/membershipPage/membership-page.component";
 import { BlogPageComponent } from "./blogPage/blog-page.component";
+import { ItemDetailComponent } from "./blogPage/blogDetailPage/blog-detail-page.component";
 import { ContactPageComponent } from "./contactPage/contact-page.component";
 import { HomePageComponent } from "./homePage/home-page.component";
 
@@ -35,9 +36,16 @@ export const appRoutes: Route[] = [
     ],
   },
   {
-    path: "blog",
+    path: "blogs",
     loadComponent: () => BlogPageComponent,
     title: "Blog | Toastmasters",
+    children: [
+      {
+        path: "blog-detail/:id",
+        loadComponent: () => ItemDetailComponent,
+        title: "Blog Detail | Toastmasters",
+      },
+    ],
   },
   { path: "**", redirectTo: "", pathMatch: "full" },
 ];

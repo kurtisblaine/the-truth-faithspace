@@ -1,6 +1,7 @@
 import { provideHttpClient } from "@angular/common/http";
-import { ApplicationConfig, provideZonelessChangeDetection } from "@angular/core";
+import { ApplicationConfig, isDevMode, provideZonelessChangeDetection } from "@angular/core";
 import { initializeApp, provideFirebaseApp } from "@angular/fire/app";
+import { getFirestore, provideFirestore } from "@angular/fire/firestore";
 import { provideClientHydration, withEventReplay, withIncrementalHydration } from "@angular/platform-browser";
 import { provideAnimations } from "@angular/platform-browser/animations";
 import {
@@ -11,6 +12,11 @@ import {
   withPreloading,
   withRouterConfig,
 } from "@angular/router";
+import { provideEffects } from "@ngrx/effects";
+import { provideState, provideStore } from "@ngrx/store";
+import { provideStoreDevtools } from "@ngrx/store-devtools";
+import { ItemsEffects } from "./+state/items/items.effects";
+import * as fromItems from "./+state/items/items.reducer";
 import { appRoutes } from "./app.routes";
 
 const firebaseConfig = {
@@ -26,7 +32,12 @@ const firebaseConfig = {
 
 export const appConfig: ApplicationConfig = {
   providers: [
+    provideStore(),
+    provideEffects(ItemsEffects),
+    provideState(fromItems.itemsFeatureKey, fromItems.reducer),
+    provideStoreDevtools({ logOnly: !isDevMode(), maxAge: 25 }),
     provideFirebaseApp(() => initializeApp(firebaseConfig)),
+    provideFirestore(() => getFirestore()),
     provideRouter(
       appRoutes,
       withRouterConfig({
