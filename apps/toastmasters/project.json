@@ -1,0 +1,84 @@
+{
+  "name": "toastmasters",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "projectType": "application",
+  "prefix": "app",
+  "sourceRoot": "apps/toastmasters/src",
+  "tags": [],
+  "targets": {
+    "build": {
+      "executor": "@angular-devkit/build-angular:application",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "apps/toastmasters/public",
+        "index": "apps/toastmasters/src/index.html",
+        "browser": "apps/toastmasters/src/main.ts",
+        "tsConfig": "apps/toastmasters/tsconfig.app.json",
+        "inlineStyleLanguage": "scss",
+        "namedChunks": true,
+        "assets": [
+          "apps/toastmasters/src/favicon.ico",
+          "apps/toastmasters/src/assets",
+          "apps/toastmasters/src/robots.txt"
+        ],
+        "styles": ["apps/toastmasters/src/styles.scss"],
+        "scripts": [],
+        "server": "apps/toastmasters/src/main.server.ts",
+        "outputMode": "static"
+      },
+      "configurations": {
+        "production": {
+          "budgets": [
+            {
+              "type": "initial",
+              "maximumWarning": "2mb",
+              "maximumError": "5mb"
+            },
+            {
+              "type": "anyComponentStyle",
+              "maximumWarning": "6kb",
+              "maximumError": "10kb"
+            }
+          ],
+          "outputHashing": "all"
+        },
+        "development": {
+          "optimization": false,
+          "extractLicenses": false,
+          "sourceMap": true
+        }
+      },
+      "defaultConfiguration": "production"
+    },
+    "serve": {
+      "executor": "@angular-devkit/build-angular:dev-server",
+      "configurations": {
+        "production": {
+          "buildTarget": "toastmasters:build:production"
+        },
+        "development": {
+          "buildTarget": "toastmasters:build:development"
+        }
+      },
+      "defaultConfiguration": "development",
+      "continuous": true
+    },
+    "extract-i18n": {
+      "executor": "@angular-devkit/build-angular:extract-i18n",
+      "options": {
+        "buildTarget": "toastmasters:build"
+      }
+    },
+    "lint": {
+      "executor": "@nx/eslint:lint"
+    },
+    "serve-static": {
+      "executor": "@nx/web:file-server",
+      "options": {
+        "buildTarget": "toastmasters:build",
+        "staticFilePath": "dist/apps/toastmasters/browser",
+        "spa": true
+      }
+    }
+  }
+}
