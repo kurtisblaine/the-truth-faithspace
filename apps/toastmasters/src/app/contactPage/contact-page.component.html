@@ -1,0 +1,18 @@
+<mat-card style="margin: 20px">
+  <mat-card-header>
+    <mat-card-title-group>
+      <mat-card-title> <h3 class="primary-color" style="margin-top: 7px">Contact</h3> </mat-card-title>
+      <mat-card-subtitle style="margin-bottom: 7px"
+        ><span>Fill out the form to attend our events</span></mat-card-subtitle
+      >
+    </mat-card-title-group>
+  </mat-card-header>
+
+  <mat-card-content>
+    <lib-contact-form
+      formSpreeApi="https://formspree.io/f/todo"
+      [isMessageRequired]="false"
+      onSubmitMessage="'Thank you for contacting us, we will get in touch with you as soon as possible.'"
+    ></lib-contact-form>
+  </mat-card-content>
+</mat-card>

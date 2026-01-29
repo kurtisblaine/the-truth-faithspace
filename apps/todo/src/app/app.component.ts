@@ -1,5 +1,6 @@
 import { Component } from "@angular/core";
 import { MatButtonModule } from "@angular/material/button";
+import { MatDividerModule } from "@angular/material/divider";
 import { MatListModule } from "@angular/material/list";
 import { MatMenuModule } from "@angular/material/menu";
 import { MatToolbarModule } from "@angular/material/toolbar";
@@ -7,7 +8,7 @@ import { MatTooltipModule } from "@angular/material/tooltip";
 import { Router, RouterModule, RouterOutlet } from "@angular/router";
 import { FontAwesomeModule } from "@fortawesome/angular-fontawesome";
 import { faBars, faGears } from "@fortawesome/free-solid-svg-icons";
-import { SettingsWidgetComponent, ThemeSettings } from "shared";
+import { SettingsWidgetComponent, ShareComponent, ThemeSettings } from "shared";
 
 @Component({
   imports: [
@@ -20,6 +21,8 @@ import { SettingsWidgetComponent, ThemeSettings } from "shared";
     MatTooltipModule,
     SettingsWidgetComponent,
     MatMenuModule,
+    ShareComponent,
+    MatDividerModule,
   ],
   selector: "app-root",
   templateUrl: "./app.component.html",
@@ -36,6 +39,10 @@ export class AppComponent {
 
   public goHome() {
     this.router.navigateByUrl("").then(() => {});
+  }
+
+  public goContact() {
+    this.router.navigateByUrl("contact").then(() => {});
   }
 
   public save(settings: ThemeSettings) {

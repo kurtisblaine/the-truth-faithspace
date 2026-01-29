@@ -33,6 +33,10 @@ import { ContactService } from "./contact.service";
 })
 export class ContactFormComponent implements OnInit {
   public formSpreeApi = input.required<string>();
+  public isMessageRequired = input<boolean>(true);
+  public onSubmitMessage = input<string>(
+    "Thank you for emailing me! God willing, I will get back to you as soon as possible."
+  );
 
   public formData!: FormGroup;
 
@@ -45,14 +49,14 @@ export class ContactFormComponent implements OnInit {
     this.formData = this.builder.group({
       Fullname: new FormControl("", [Validators.required]),
       Email: new FormControl("", [emailValidators]),
-      Comment: new FormControl("", [Validators.required]),
+      Comment: new FormControl("", this.isMessageRequired() ? [Validators.required] : []),
     });
   }
 
   public onSubmit(formData: FormGroup) {
     console.log(formData);
     this.contact.postMessage(formData).subscribe((response) => {
-      this.snackBar.open("Thank you for emailing me! God willing, I will get back to you as soon as possible.", "", {
+      this.snackBar.open(this.onSubmitMessage(), "", {
         duration: 10000,
       });
 

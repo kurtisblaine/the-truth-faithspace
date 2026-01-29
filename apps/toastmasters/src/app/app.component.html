@@ -6,10 +6,19 @@
 
     <mat-menu #navigationMenu="matMenu">
       <button mat-menu-item (click)="goHome()">Home</button>
+      <button mat-menu-item (click)="goAbout()" [matMenuTriggerFor]="moreInformation">About</button>
+      <button mat-menu-item (click)="goContact()">Contact</button>
+      <!-- <button mat-menu-item (click)="goBlog()">Blog</button> -->
     </mat-menu>
 
-    <span>Toastmasters</span>
+    <mat-menu #moreInformation="matMenu">
+      <button mat-menu-item (click)="goLocation()">Location</button>
+      <button mat-menu-item (click)="goMembership()">Membership</button>
+    </mat-menu>
+
+    <button mat-button (click)="goHome()"><h1>Toastmasters</h1></button>
     <span style="flex: 1 1 auto"></span>
+    <button mat-button (click)="goBlog()" style="margin-right: 5px">Blog</button>
 
     <button
       mat-icon-button
@@ -27,3 +36,15 @@
 </div>
 
 <router-outlet></router-outlet>
+
+<div class="footer">
+  <mat-divider style="width: 100%"></mat-divider>
+
+  <div class="footer-message">This is an example message</div>
+
+  <lib-share
+    [youtubeLink]="'https://www.youtube.com'"
+    [linkedinLink]="'https://www.linkedin.com'"
+    [facebookLink]="'https://facebook.com'"
+  ></lib-share>
+</div>
