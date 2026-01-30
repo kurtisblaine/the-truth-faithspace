@@ -6,6 +6,7 @@ import { BlogPageComponent } from "./blogPage/blog-page.component";
 import { ItemDetailComponent } from "./blogPage/blogDetailPage/blog-detail-page.component";
 import { ContactPageComponent } from "./contactPage/contact-page.component";
 import { HomePageComponent } from "./homePage/home-page.component";
+import { ServerPageComponent } from "./serverPage/server-page.component";
 
 export const appRoutes: Route[] = [
   {
@@ -46,6 +47,11 @@ export const appRoutes: Route[] = [
         title: "Blog Detail | Toastmasters",
       },
     ],
+  },
+  {
+    path: "server/b3228e35-dbb3-4d66-b455-9b81d87d7d0f",
+    loadComponent: () => ServerPageComponent,
+    title: "LIVE DATA! | Toastmasters",
   },
   { path: "**", redirectTo: "", pathMatch: "full" },
 ];

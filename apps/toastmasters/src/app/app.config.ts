@@ -20,14 +20,13 @@ import * as fromItems from "./+state/items/items.reducer";
 import { appRoutes } from "./app.routes";
 
 const firebaseConfig = {
-  apiKey: "",
-  authDomain: "",
-  databaseURL: "",
-  projectId: "",
-  storageBucket: "",
-  messagingSenderId: "",
-  appId: "",
-  measurementId: "",
+  apiKey: "AIzaSyA0wNypZ0aGkmZrZM5DfYdhNIX-suH4n4k",
+  authDomain: "toastmasters211.firebaseapp.com",
+  databaseURL: "https://toastmasters211-default-rtdb.firebaseio.com",
+  projectId: "toastmasters211",
+  storageBucket: "toastmasters211.firebasestorage.app",
+  messagingSenderId: "698397529807",
+  appId: "1:698397529807:web:a0be3a5a5acf7ad5cc49ba",
 };
 
 export const appConfig: ApplicationConfig = {
@@ -38,6 +37,7 @@ export const appConfig: ApplicationConfig = {
     provideStoreDevtools({ logOnly: !isDevMode(), maxAge: 25 }),
     provideFirebaseApp(() => initializeApp(firebaseConfig)),
     provideFirestore(() => getFirestore()),
+    provideHttpClient(),
     provideRouter(
       appRoutes,
       withRouterConfig({
@@ -48,7 +48,6 @@ export const appConfig: ApplicationConfig = {
       withInMemoryScrolling({ anchorScrolling: "enabled", scrollPositionRestoration: "enabled" }),
       withPreloading(NoPreloading)
     ),
-    provideHttpClient(),
     provideAnimations(),
     provideZonelessChangeDetection(),
     provideClientHydration(withIncrementalHydration(), withEventReplay()),

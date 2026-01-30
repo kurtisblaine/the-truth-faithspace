@@ -12,7 +12,7 @@ import { MatInputModule } from "@angular/material/input";
   template: `<mat-card class="filter-card">
     <mat-card-header style="margin-bottom: 15px">
       <mat-card-title class="mat-card-filter-header">
-        <span class="primary"> Filter</span>
+        <span class="primary primary-color"> Filter</span>
         <button class="reset-button" mat-button *ngIf="searchTerm" (click)="onChange.emit(''); searchTerm = ''">
           RESET
         </button>

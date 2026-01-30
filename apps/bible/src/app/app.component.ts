@@ -1,5 +1,10 @@
 import { BreakpointObserver } from "@angular/cdk/layout";
-import { STEPPER_GLOBAL_OPTIONS, StepperOrientation, StepperSelectionEvent } from "@angular/cdk/stepper";
+import {
+  STEPPER_GLOBAL_OPTIONS,
+  StepperOptions,
+  StepperOrientation,
+  StepperSelectionEvent,
+} from "@angular/cdk/stepper";
 import { CommonModule } from "@angular/common";
 import { AfterViewInit, Component, OnInit, ViewChild } from "@angular/core";
 import { FormsModule, ReactiveFormsModule } from "@angular/forms";
@@ -28,7 +33,7 @@ import { StepperStateService } from "./stepperState.service";
   providers: [
     {
       provide: STEPPER_GLOBAL_OPTIONS,
-      useValue: { showError: true },
+      useValue: { showError: true, displayDefaultIndicatorType: false } as StepperOptions,
     },
   ],
   templateUrl: "./app.component.html",

@@ -8,7 +8,6 @@
       <button mat-menu-item (click)="goHome()">Home</button>
       <button mat-menu-item (click)="goAbout()" [matMenuTriggerFor]="moreInformation">About</button>
       <button mat-menu-item (click)="goContact()">Contact</button>
-      <!-- <button mat-menu-item (click)="goBlog()">Blog</button> -->
     </mat-menu>
 
     <mat-menu #moreInformation="matMenu">
@@ -18,7 +17,7 @@
 
     <button mat-button (click)="goHome()"><h1>Toastmasters</h1></button>
     <span style="flex: 1 1 auto"></span>
-    <button mat-button (click)="goBlog()" style="margin-right: 5px">Blog</button>
+    <button mat-button (click)="goBlog()" style="margin-right: 5px">News</button>
 
     <button
       mat-icon-button
@@ -40,7 +39,7 @@
 <div class="footer">
   <mat-divider style="width: 100%"></mat-divider>
 
-  <div class="footer-message">This is an example message</div>
+  <div class="footer-message">This is an example footer message</div>
 
   <lib-share
     [youtubeLink]="'https://www.youtube.com'"

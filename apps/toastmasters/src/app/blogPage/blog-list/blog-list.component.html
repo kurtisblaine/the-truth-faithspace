@@ -6,7 +6,7 @@
   <div style="flex: 1 1 80%">
     <div class="item-item" *ngFor="let item of pagedItems()">
       <div class="item-title primary-color">
-        <lib-link [link]="'https://localhost:4200/items/item-detail/' + item.id">
+        <lib-link [link]="'http://localhost:4200/blogs/blog-detail/' + item.id">
           {{ item.title }}
           <fa-icon [icon]="faLink" style="padding-left: 2px"></fa-icon>
         </lib-link>
@@ -15,11 +15,11 @@
 
       @if(update) {
       <button mat-flat-button (click)="doUpdate(item)">Update</button>
-      <lib-text-editor [document]="item?.json" (editorChanged)="item.json = $event"></lib-text-editor>
+      <lib-text-editor [document]="item?.json" (editorChanged)="updatedJson = $event"></lib-text-editor>
       } @else {
       <lib-readonly-text-editor
         [html]="item?.json?.toString()"
-        [link]="'https://localhost:4200/items/item-detail/' + item.id"
+        [link]="'http://localhost:4200/blogs/blog-detail/' + item.id"
       ></lib-readonly-text-editor>
       }
 

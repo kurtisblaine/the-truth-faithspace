@@ -1,4 +1,4 @@
-import { ChangeDetectionStrategy, Component } from "@angular/core";
+import { ChangeDetectionStrategy, Component, OnInit } from "@angular/core";
 import { ActivatedRoute } from "@angular/router";
 import { Store } from "@ngrx/store";
 import { Observable, tap } from "rxjs";
@@ -14,7 +14,7 @@ import { SeoBaseComponent } from "../../shared/seo-base/seo-base.component";
   changeDetection: ChangeDetectionStrategy.OnPush,
   standalone: false,
 })
-export class ItemDetailComponent extends SeoBaseComponent {
+export class ItemDetailComponent extends SeoBaseComponent implements OnInit {
   public item$!: Observable<ItemEntity | undefined>;
 
   protected override keywords: string =

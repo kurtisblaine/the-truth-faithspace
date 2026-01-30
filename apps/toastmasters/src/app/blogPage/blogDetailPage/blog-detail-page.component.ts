@@ -1,5 +1,5 @@
 import { DatePipe } from "@angular/common";
-import { ChangeDetectionStrategy, Component } from "@angular/core";
+import { ChangeDetectionStrategy, Component, OnInit } from "@angular/core";
 import { MatCardModule } from "@angular/material/card";
 import { ActivatedRoute } from "@angular/router";
 import { Store } from "@ngrx/store";
@@ -16,7 +16,7 @@ import { getById } from "../../+state/items/items.selectors";
   changeDetection: ChangeDetectionStrategy.OnPush,
   imports: [MatCardModule, DatePipe, ReadonlyTextEditorComponent],
 })
-export class ItemDetailComponent extends SeoBaseComponent {
+export class ItemDetailComponent extends SeoBaseComponent implements OnInit {
   public item$!: Observable<ItemEntity | undefined>;
 
   constructor(private store: Store, private route: ActivatedRoute) {

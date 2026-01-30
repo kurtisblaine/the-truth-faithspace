@@ -1,9 +1,10 @@
 import { CommonModule } from "@angular/common";
-import { Component } from "@angular/core";
+import { Component, OnInit } from "@angular/core";
 import { MatProgressSpinnerModule } from "@angular/material/progress-spinner";
 import { Router, RouterModule } from "@angular/router";
 import { Store } from "@ngrx/store";
 import { Observable, map } from "rxjs";
+import { SeoBaseComponent } from "shared";
 import { ItemsActions } from "../+state/items/items.actions";
 import { ItemEntity } from "../+state/items/items.reducer";
 import { selectAllItems, selectItemsLoaded } from "../+state/items/items.selectors";
@@ -15,10 +16,13 @@ import { ItemListComponent } from "./blog-list/blog-list.component";
   templateUrl: "./blog-page.component.html",
   styleUrl: "./blog-page.component.scss",
 })
-export class BlogPageComponent {
+export class BlogPageComponent extends SeoBaseComponent implements OnInit {
   public items$!: Observable<ItemEntity[]>;
   public isLoading$!: Observable<boolean>;
-  constructor(private store: Store, private router: Router) {}
+
+  constructor(private store: Store, private router: Router) {
+    super();
+  }
 
   public ngOnInit() {
     this.store.dispatch(ItemsActions.loadItems());

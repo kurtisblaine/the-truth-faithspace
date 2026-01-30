@@ -1,6 +1,6 @@
 import { Component } from "@angular/core";
 import { MatCardModule } from "@angular/material/card";
-import { ContactFormComponent } from "shared";
+import { ContactFormComponent, SeoBaseComponent } from "shared";
 
 @Component({
   selector: "app-contact-page",
@@ -8,4 +8,4 @@ import { ContactFormComponent } from "shared";
   templateUrl: "./contact-page.component.html",
   styleUrl: "./contact-page.component.scss",
 })
-export class ContactPageComponent {}
+export class ContactPageComponent extends SeoBaseComponent {}

@@ -1,5 +1,51 @@
+.header {
+  position: fixed !important; //override the toolbar in app.component
+}
+
+.card-section {
+  background-color: var(--mat-sys-primary);
+  display: flex;
+  justify-content: space-evenly;
+  min-height: 50vh;
+}
+
+.custom-card {
+  margin: 15px;
+  min-width: 25vw;
+  width: 45vw;
+}
+
+.header-title {
+  letter-spacing: 5px;
+}
+
+.header-pane {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+}
+
+.header-pane,
 .home-image {
   height: 100vh;
+}
+
+.header-caption {
+  letter-spacing: 4px;
+  margin-bottom: 10px;
+  color: black;
+}
+
+.header-title,
+.header-pane,
+.header-caption {
+  z-index: 1;
+}
+
+.home-image {
   position: relative;
   background-position: center;
   background-size: cover;

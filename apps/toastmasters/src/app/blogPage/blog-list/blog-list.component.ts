@@ -36,7 +36,7 @@ export class ItemListComponent {
   public items!: Signal<ItemEntity[] | undefined>;
   public pagedItems!: Signal<ItemEntity[]>;
   public total!: Signal<number>;
-  public updatedJson!: string | object;
+  public updatedJson: string | object;
 
   public searchTerm = signal<string>("");
   public properties: string[] = ["title", "json"];

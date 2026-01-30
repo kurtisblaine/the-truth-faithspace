@@ -1,5 +1,43 @@
 <div class="home-image" style="background-position: top">
   <img fill style="object-position: top" [ngSrc]="'../../assets/logo.webp'" alt="" priority />
+
+  <div class="header-pane">
+    <h1 class="header-title primary-color" [@slideInFromRight]>TOASTMASTERS</h1>
+    <h2 class="header-caption" [@slideInFromLeft]>Text from the Left</h2>
+    <h3 class="header-caption" [@slideInFromLeft]>Text from the Right</h3>
+  </div>
+</div>
+
+<div class="card-section" #cardSection>
+  @defer (on viewport(cardSection)) {
+  <mat-card class="custom-card" [@slideInFromLeft]>
+    <mat-card-header>
+      <mat-card-title-group>
+        <mat-card-title>
+          <h3>Card Title</h3>
+        </mat-card-title>
+        <mat-card-subtitle><h4>Card Subtitle</h4></mat-card-subtitle>
+      </mat-card-title-group>
+    </mat-card-header>
+
+    <mat-card-content>
+      <span> Example content text. </span>
+    </mat-card-content>
+  </mat-card>
+
+  <mat-card class="custom-card" [@slideInFromRight]>
+    <mat-card-header>
+      <mat-card-title-group>
+        <mat-card-title>
+          <h3>Example Title</h3>
+        </mat-card-title>
+        <mat-card-subtitle></mat-card-subtitle>
+      </mat-card-title-group>
+    </mat-card-header>
+
+    <mat-card-content> Example Text. </mat-card-content>
+  </mat-card>
+  }
 </div>
 
 <p>home-page works!</p>
