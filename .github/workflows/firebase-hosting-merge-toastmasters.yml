@@ -13,7 +13,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - run: npm install --force && npx build toastmasters --prod --output-path apps/toastmasters/public
+      - run: npm install --force && npx nx build toastmasters --prod --output-path apps/toastmasters/public
       - uses: FirebaseExtended/action-hosting-deploy@v0
         with:
           repoToken: ${{ secrets.GITHUB_TOKEN }}
