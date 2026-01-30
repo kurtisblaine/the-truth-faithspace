@@ -28,6 +28,7 @@ export class SafeHtmlPipe implements PipeTransform {
 export class ReadonlyTextEditorComponent {
   public html = input.required<string>();
   public showReadMore = input<boolean>(true);
+  public showAudioReader = input<boolean>(true);
   public link = input<string>();
 
   public narratorStyle = NarratorStyle;

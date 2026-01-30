@@ -1,4 +1,4 @@
-import { provideHttpClient } from "@angular/common/http";
+import { provideHttpClient, withFetch } from "@angular/common/http";
 import { ApplicationConfig, isDevMode, provideZonelessChangeDetection } from "@angular/core";
 import { initializeApp, provideFirebaseApp } from "@angular/fire/app";
 import { getFirestore, provideFirestore } from "@angular/fire/firestore";
@@ -37,7 +37,7 @@ export const appConfig: ApplicationConfig = {
     provideStoreDevtools({ logOnly: !isDevMode(), maxAge: 25 }),
     provideFirebaseApp(() => initializeApp(firebaseConfig)),
     provideFirestore(() => getFirestore()),
-    provideHttpClient(),
+    provideHttpClient(withFetch()),
     provideRouter(
       appRoutes,
       withRouterConfig({

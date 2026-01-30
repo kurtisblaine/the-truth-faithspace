@@ -1,4 +1,4 @@
-import { Component } from "@angular/core";
+import { afterNextRender, Component, signal } from "@angular/core";
 import { MatButtonModule } from "@angular/material/button";
 import { MatDividerModule } from "@angular/material/divider";
 import { MatListModule } from "@angular/material/list";
@@ -8,6 +8,7 @@ import { MatTooltipModule } from "@angular/material/tooltip";
 import { Router, RouterModule, RouterOutlet } from "@angular/router";
 import { FontAwesomeModule } from "@fortawesome/angular-fontawesome";
 import { faBars, faGears } from "@fortawesome/free-solid-svg-icons";
+import { DeviceDetectorService } from "ngx-device-detector";
 import { SettingsWidgetComponent, ShareComponent, ThemeSettings } from "shared";
 
 @Component({
@@ -35,14 +36,16 @@ export class AppComponent {
   public menuIcon = faBars;
   public settingsIcon = faGears;
 
-  constructor(private router: Router) {}
+  public isMobile = signal(false);
+
+  constructor(private router: Router, private deviceDetector: DeviceDetectorService) {
+    afterNextRender(() => {
+      this.isMobile.set(this.deviceDetector.isMobile());
+    });
+  }
 
   public goHome() {
     this.router.navigateByUrl("").then(() => {});
-  }
-
-  public goAbout() {
-    this.router.navigateByUrl("about").then(() => {});
   }
 
   public goLocation() {

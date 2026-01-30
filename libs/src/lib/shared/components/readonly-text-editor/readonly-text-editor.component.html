@@ -1,4 +1,4 @@
-@if (!showReadMore()) {
+@if (!showReadMore() && showAudioReader()) {
 <lib-narrator [buttonStyle]="narratorStyle.Group" [text]="readonlyHtml?.innerText ?? ''"> </lib-narrator>
 }
 

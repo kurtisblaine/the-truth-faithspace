@@ -1,23 +1,28 @@
 <div class="header">
   <mat-toolbar>
+    @if(isMobile()) {
     <button mat-icon-button aria-labelledby="Menu button" aria-label="Menu button" [matMenuTriggerFor]="navigationMenu">
       <fa-icon [icon]="menuIcon"></fa-icon>
     </button>
 
     <mat-menu #navigationMenu="matMenu">
       <button mat-menu-item (click)="goHome()">Home</button>
-      <button mat-menu-item (click)="goAbout()" [matMenuTriggerFor]="moreInformation">About</button>
+      <button mat-menu-item [matMenuTriggerFor]="moreInformation">About</button>
       <button mat-menu-item (click)="goContact()">Contact</button>
     </mat-menu>
+    } @else {
+    <button mat-button (click)="goHome()"><h1>Toastmasters</h1></button>
+    <button mat-button [matMenuTriggerFor]="moreInformation">About</button>
+    <button mat-button (click)="goContact()">Contact</button>
+    }
+
+    <span style="flex: 1 1 auto"></span>
+    <button mat-button (click)="goBlog()" style="margin-right: 5px">News</button>
 
     <mat-menu #moreInformation="matMenu">
       <button mat-menu-item (click)="goLocation()">Location</button>
       <button mat-menu-item (click)="goMembership()">Membership</button>
     </mat-menu>
-
-    <button mat-button (click)="goHome()"><h1>Toastmasters</h1></button>
-    <span style="flex: 1 1 auto"></span>
-    <button mat-button (click)="goBlog()" style="margin-right: 5px">News</button>
 
     <button
       mat-icon-button

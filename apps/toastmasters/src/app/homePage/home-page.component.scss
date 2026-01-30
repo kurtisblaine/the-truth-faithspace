@@ -2,6 +2,11 @@
   position: fixed !important; //override the toolbar in app.component
 }
 
+.location-section {
+  display: flex;
+  min-height: 30vh;
+}
+
 .card-section {
   background-color: var(--mat-sys-primary);
   display: flex;

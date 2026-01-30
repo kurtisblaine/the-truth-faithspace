@@ -1,5 +1,5 @@
 <div class="home-image" style="background-position: top">
-  <img fill style="object-position: top" [ngSrc]="'../../assets/logo.webp'" alt="" priority />
+  <img fill style="object-position: top" [ngSrc]="'../../assets/auditorium.jpg'" alt="" priority />
 
   <div class="header-pane">
     <h1 class="header-title primary-color" [@slideInFromRight]>TOASTMASTERS</h1>
@@ -8,35 +8,40 @@
   </div>
 </div>
 
+<div class="location-section" #locationSection>
+  <lib-link [link]="'http://localhost:4200/about/location'" [shouldOpenNewPage]="false"
+    ><h2>230 S Minnesota Ave</h2></lib-link
+  >
+</div>
+
 <div class="card-section" #cardSection>
   @defer (on viewport(cardSection)) {
   <mat-card class="custom-card" [@slideInFromLeft]>
     <mat-card-header>
       <mat-card-title-group>
         <mat-card-title>
-          <h3>Card Title</h3>
+          <h3>Membership</h3>
         </mat-card-title>
-        <mat-card-subtitle><h4>Card Subtitle</h4></mat-card-subtitle>
+        <mat-card-subtitle><h4>Membership Info Subtitle Example...</h4></mat-card-subtitle>
       </mat-card-title-group>
     </mat-card-header>
 
     <mat-card-content>
-      <span> Example content text. </span>
+      <span> Membership Information... </span>
     </mat-card-content>
   </mat-card>
 
-  <mat-card class="custom-card" [@slideInFromRight]>
-    <mat-card-header>
-      <mat-card-title-group>
-        <mat-card-title>
-          <h3>Example Title</h3>
-        </mat-card-title>
-        <mat-card-subtitle></mat-card-subtitle>
-      </mat-card-title-group>
-    </mat-card-header>
+  <div class="home-image" style="background-position: top">
+    <img fill style="object-position: top" [ngSrc]="'../../assets/test.jpg'" alt="" priority [@slideInFromRight] />
 
-    <mat-card-content> Example Text. </mat-card-content>
-  </mat-card>
+    <div class="header-pane">
+      <h1 class="header-title primary-color" [@slideInFromRight]>TOASTMASTERS</h1>
+      <h2 class="header-caption" [@slideInFromLeft]>
+        <a matButton="elevated" href="http://localhost:4200/about/membership">More Information</a>
+      </h2>
+    </div>
+  </div>
+
   }
 </div>
 
