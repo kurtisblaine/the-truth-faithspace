@@ -7,7 +7,7 @@ import { MatToolbarModule } from "@angular/material/toolbar";
 import { MatTooltipModule } from "@angular/material/tooltip";
 import { Router, RouterModule, RouterOutlet } from "@angular/router";
 import { FontAwesomeModule } from "@fortawesome/angular-fontawesome";
-import { faBars, faGears } from "@fortawesome/free-solid-svg-icons";
+import { faBars, faEnvelope, faGears, faPhone } from "@fortawesome/free-solid-svg-icons";
 import { DeviceDetectorService } from "ngx-device-detector";
 import { SettingsWidgetComponent, ShareComponent, ThemeSettings } from "shared";
 
@@ -35,6 +35,8 @@ export class AppComponent {
 
   public menuIcon = faBars;
   public settingsIcon = faGears;
+  public phoneIcon = faPhone;
+  public emailIcon = faEnvelope;
 
   public isMobile = signal(false);
 

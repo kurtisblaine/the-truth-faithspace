@@ -2,47 +2,54 @@
   <img fill style="object-position: top" [ngSrc]="'../../assets/auditorium.jpg'" alt="" priority />
 
   <div class="header-pane">
-    <h1 class="header-title primary-color" [@slideInFromRight]>TOASTMASTERS</h1>
+    <h1 class="header-title fixed-primary-color" [@slideInFromRight]>TOASTMASTERS</h1>
     <h2 class="header-caption" [@slideInFromLeft]>Text from the Left</h2>
-    <h3 class="header-caption" [@slideInFromLeft]>Text from the Right</h3>
+    <h3 class="header-caption" [@slideInFromLeft]>Text from the Left</h3>
   </div>
 </div>
 
-<div class="location-section" #locationSection>
-  <lib-link [link]="'http://localhost:4200/about/location'" [shouldOpenNewPage]="false"
-    ><h2>230 S Minnesota Ave</h2></lib-link
-  >
-</div>
-
-<div class="card-section" #cardSection>
-  @defer (on viewport(cardSection)) {
-  <mat-card class="custom-card" [@slideInFromLeft]>
-    <mat-card-header>
-      <mat-card-title-group>
-        <mat-card-title>
-          <h3>Membership</h3>
-        </mat-card-title>
-        <mat-card-subtitle><h4>Membership Info Subtitle Example...</h4></mat-card-subtitle>
-      </mat-card-title-group>
-    </mat-card-header>
-
-    <mat-card-content>
-      <span> Membership Information... </span>
-    </mat-card-content>
-  </mat-card>
-
-  <div class="home-image" style="background-position: top">
-    <img fill style="object-position: top" [ngSrc]="'../../assets/test.jpg'" alt="" priority [@slideInFromRight] />
-
-    <div class="header-pane">
-      <h1 class="header-title primary-color" [@slideInFromRight]>TOASTMASTERS</h1>
-      <h2 class="header-caption" [@slideInFromLeft]>
-        <a matButton="elevated" href="http://localhost:4200/about/membership">More Information</a>
-      </h2>
+<div class="hero-details" #placeDetails>
+  @defer (on viewport(placeDetails)) {
+  <div class="detail-card" (click)="navigateToLocationPage()" [@slideInFromRight] matRipple>
+    <div class="detail-header">
+      <div class="detail-icon">
+        <button mat-icon-button>
+          <fa-icon [icon]="calendarIcon"></fa-icon>
+        </button>
+      </div>
+      <div class="detail-info">
+        <div class="detail-label">Date</div>
+        <div class="detail-value">December 31, 2025</div>
+      </div>
     </div>
   </div>
 
+  <div class="detail-card" (click)="navigateToLocationPage()" [@slideInFromLeft] matRipple>
+    <div class="detail-header">
+      <div class="detail-icon">
+        <button mat-icon-button>
+          <fa-icon [icon]="timeIcon"></fa-icon>
+        </button>
+      </div>
+      <div class="detail-info">
+        <div class="detail-label">Time</div>
+        <div class="detail-value">5:00 PM - 10:00 PM</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="detail-card" (click)="navigateToLocationPage()" [@slideInFromRight] matRipple>
+    <div class="detail-header">
+      <div class="detail-icon">
+        <button mat-icon-button>
+          <fa-icon [icon]="locationIcon"></fa-icon>
+        </button>
+      </div>
+      <div class="detail-info">
+        <div class="detail-label">Location</div>
+        <div class="detail-value">Grand Ballroom</div>
+      </div>
+    </div>
+  </div>
   }
 </div>
-
-<p>home-page works!</p>

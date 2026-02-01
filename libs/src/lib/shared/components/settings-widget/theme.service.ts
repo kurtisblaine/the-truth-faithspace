@@ -12,5 +12,6 @@ export class ThemeService {
 
   public setTheme(theme: "light" | "dark") {
     this.renderer.setStyle(document.body, "color-scheme", theme);
+    this.renderer.setAttribute(document.body, "color-scheme", theme);
   }
 }

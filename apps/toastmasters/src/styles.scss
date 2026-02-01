@@ -29,11 +29,15 @@ body {
 
 a {
   text-decoration: underline;
-  color: var(--mat-sys-primary);
+  color: var(--mat-sys-on-primary-fixed-variant);
 }
 
 .primary-color {
   color: var(--mat-sys-primary);
+}
+
+.fixed-primary-color {
+  color: var(--mat-sys-on-primary-fixed-variant);
 }
 
 .error {

@@ -39,12 +39,30 @@
   </mat-toolbar>
 </div>
 
-<router-outlet></router-outlet>
+<div style="display: block; min-height: 100vh">
+  <router-outlet></router-outlet>
+</div>
 
 <div class="footer">
   <mat-divider style="width: 100%"></mat-divider>
 
   <div class="footer-message">This is an example footer message</div>
+
+  <div class="footer-message">
+    <div>
+      <a href="tel:+16054965690" class="phone-number-link">
+        <fa-icon [icon]="phoneIcon"></fa-icon>
+        +1 (605) 496-5690
+      </a>
+    </div>
+
+    <div>
+      <a href="mail:toastmasterssot@gmail.com" class="phone-number-link">
+        <fa-icon [icon]="emailIcon"></fa-icon>
+        toastmasterssot&#64;gmail.com
+      </a>
+    </div>
+  </div>
 
   <lib-share
     [youtubeLink]="'https://www.youtube.com'"
