@@ -1,3 +1,94 @@
 :host {
   display: block;
 }
+
+.container {
+  position: relative;
+  z-index: 1;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.invitation-section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.invitation-section > * {
+  flex: 1 1 50%;
+}
+
+@media (min-width: 1000px) {
+  .invitation-section::after {
+    content: "";
+    position: absolute;
+    right: 50%;
+    top: 10%;
+    width: 1px;
+    height: 80%;
+    background: linear-gradient(to bottom, transparent, black 20%, black 80%, transparent);
+  }
+}
+
+@media (max-width: 1000px) {
+  .invitation-section {
+    flex-direction: column;
+  }
+
+  .container {
+    padding: 15px 0px;
+  }
+}
+
+.invite-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 40px;
+}
+
+.invite-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(---mat-sys-background);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 24px;
+}
+
+.invite-badge::before {
+  content: "";
+  width: 40px;
+  height: 2px;
+  background: black;
+}
+
+.invite-title {
+  font-family: "Outfit", sans-serif;
+  font-size: 6.5rem;
+  font-weight: 200;
+  color: var(---mat-sys-background);
+  line-height: 0.95;
+  margin-bottom: 32px;
+  letter-spacing: -4px;
+}
+
+.invite-title strong {
+  font-weight: 600;
+  display: block;
+  color: var(--mat-sys-on-primary-fixed-variant);
+}
+
+.invite-description {
+  font-size: 1.25rem;
+  font-weight: 300;
+  color: var(---mat-sys-background);
+  line-height: 1.8;
+  max-width: 480px;
+  margin-bottom: 40px;
+}

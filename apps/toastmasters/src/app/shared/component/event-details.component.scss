@@ -1,0 +1,113 @@
+.mat-mdc-icon-button {
+  width: unset;
+  height: unset;
+}
+
+.event-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 24px;
+  padding: 40px;
+  min-height: 85vh;
+}
+
+.detail-card {
+  background: var(--mat-sys-surface);
+  padding: 40px;
+  border-radius: 0;
+  border-left: 4px solid var(--mat-sys-on-primary-fixed-variant);
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.04);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.detail-card::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 120px;
+  height: 100%;
+  background: linear-gradient(135deg, transparent 0%, var(--mat-sys-on-primary-fixed-variant) 100%);
+  opacity: 0.15;
+  transform: skewX(-15deg) translateX(40px);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.detail-card:hover::after {
+  transform: skewX(-15deg) translateX(30px);
+  opacity: 0.22;
+}
+
+.detail-card:hover {
+  transform: translateX(-8px);
+  box-shadow: 0 8px 32px rgba(149, 124, 98, 0.15);
+  border-left-width: 8px;
+}
+
+[color-scheme="dark"] .detail-card {
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.2);
+}
+
+[color-scheme="dark"] .detail-card::after {
+  opacity: 0.12;
+}
+
+[color-scheme="dark"] .detail-card:hover {
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
+
+[color-scheme="dark"] .detail-card:hover::after {
+  opacity: 0.16;
+}
+
+.detail-header {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  margin-bottom: 16px;
+  position: relative;
+  z-index: 1;
+}
+
+.detail-icon {
+  width: 64px;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, var(--mat-sys-on-primary-fixed-variant), white);
+  border-radius: 16px;
+  flex-shrink: 0;
+}
+
+.detail-icon svg {
+  width: 32px;
+  height: 32px;
+  stroke: white;
+  stroke-width: 2;
+}
+
+.detail-info {
+  flex: 1;
+}
+
+.detail-label {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--mat-sys-on-surface);
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  margin-bottom: 6px;
+}
+
+.detail-value {
+  font-family: "Outfit", sans-serif;
+  font-size: 1.75rem;
+  font-weight: 300;
+  color: var(--mat-sys-on-surface);
+  letter-spacing: -0.5px;
+}
