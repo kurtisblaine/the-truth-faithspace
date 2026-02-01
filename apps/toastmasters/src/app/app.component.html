@@ -12,7 +12,10 @@
     </mat-menu>
     } @else {
     <button mat-button (click)="goHome()"><h1>Toastmasters</h1></button>
-    <button mat-button [matMenuTriggerFor]="moreInformation">About</button>
+    <button mat-button [matMenuTriggerFor]="moreInformation">
+      <span> About </span>
+      <fa-icon [icon]="downArrowIcon"></fa-icon>
+    </button>
     <button mat-button (click)="goContact()">Contact</button>
     }
 
@@ -43,9 +46,9 @@
   <router-outlet></router-outlet>
 </div>
 
-<div class="footer">
-  <mat-divider style="width: 100%"></mat-divider>
+<mat-divider style="width: 100%"></mat-divider>
 
+<div class="footer">
   <div class="footer-message">This is an example footer message</div>
 
   <div class="footer-message">

@@ -2,17 +2,61 @@
   position: fixed !important; //override the toolbar in app.component
 }
 
+.header-title {
+  letter-spacing: 5px;
+}
+
+.header-pane {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+}
+
+.header-pane,
+.home-image {
+  height: 100vh;
+}
+
+.header-caption {
+  letter-spacing: 4px;
+  margin-bottom: 10px;
+  color: black;
+}
+
+.header-title,
+.header-pane,
+.header-caption {
+  z-index: 1;
+}
+
+.home-image {
+  position: relative;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
+  align-content: end;
+
+  box-shadow: inset 0 0 0 100vmax rgba(0, 0, 0, 0.1);
+}
+
 //start
 .mat-mdc-icon-button {
   width: unset;
   height: unset;
 }
 
-.hero-details {
+.event-details {
   display: flex;
   flex-direction: column;
+  justify-content: space-around;
   gap: 24px;
   padding: 40px;
+  min-height: 85vh;
 }
 
 .detail-card {
@@ -43,14 +87,6 @@
 .detail-card:hover::after {
   transform: skewX(-15deg) translateX(30px);
   opacity: 0.22;
-}
-
-.detail-card:nth-child(2) {
-  margin-left: 60px;
-}
-
-.detail-card:nth-child(3) {
-  margin-left: 120px;
 }
 
 .detail-card:hover {
@@ -123,63 +159,3 @@
   letter-spacing: -0.5px;
 }
 //end
-
-.location-section {
-  display: flex;
-  min-height: 30vh;
-}
-
-.card-section {
-  background-color: var(--mat-sys-primary);
-  display: flex;
-  justify-content: space-evenly;
-  min-height: 50vh;
-}
-
-.custom-card {
-  margin: 15px;
-  min-width: 25vw;
-  width: 45vw;
-}
-
-.header-title {
-  letter-spacing: 5px;
-}
-
-.header-pane {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  color: #fff;
-}
-
-.header-pane,
-.home-image {
-  height: 100vh;
-}
-
-.header-caption {
-  letter-spacing: 4px;
-  margin-bottom: 10px;
-  color: black;
-}
-
-.header-title,
-.header-pane,
-.header-caption {
-  z-index: 1;
-}
-
-.home-image {
-  position: relative;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-
-  align-content: end;
-
-  box-shadow: inset 0 0 0 100vmax rgba(0, 0, 0, 0.1);
-}
