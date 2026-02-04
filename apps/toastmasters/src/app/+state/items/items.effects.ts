@@ -2,6 +2,7 @@ import { Injectable, Injector, runInInjectionContext } from "@angular/core";
 import {
   collection,
   collectionData,
+  deleteDoc,
   doc,
   DocumentData,
   DocumentReference,
@@ -48,6 +49,27 @@ export class ItemsEffects {
       ),
       map((document) =>
         ItemsActions.createItemSuccess({
+          item: document,
+        })
+      )
+    )
+  );
+
+  public deleteItem$ = createEffect(() =>
+    this.actions$.pipe(
+      ofType(ItemsActions.deleteItem),
+      mergeMap(({ item }) =>
+        runInInjectionContext(this.injector, () => {
+          const collection = doc(
+            this.database,
+            `item/${item.collectionId ? item.collectionId : item.id}`
+          ) as DocumentReference<ItemEntity>;
+          const doc$ = from(deleteDoc<ItemEntity, DocumentData>(collection));
+          return doc$.pipe(map(() => item));
+        })
+      ),
+      map((document) =>
+        ItemsActions.deleteItemSuccess({
           item: document,
         })
       )

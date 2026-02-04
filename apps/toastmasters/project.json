@@ -19,7 +19,12 @@
         "assets": [
           "apps/toastmasters/src/favicon.ico",
           "apps/toastmasters/src/assets",
-          "apps/toastmasters/src/robots.txt"
+          "apps/toastmasters/src/robots.txt",
+          {
+            "glob": "**/*",
+            "input": "node_modules/leaflet/dist/images/",
+            "output": "./assets/"
+          }
         ],
         "styles": [
           "apps/toastmasters/src/styles.scss",

@@ -3,8 +3,8 @@ import { Component, OnInit } from "@angular/core";
 import { MatProgressSpinnerModule } from "@angular/material/progress-spinner";
 import { Router, RouterModule } from "@angular/router";
 import { Store } from "@ngrx/store";
-import { Observable, map } from "rxjs";
-import { SeoBaseComponent } from "shared";
+import { map, Observable } from "rxjs";
+import { fadeInOut, SeoBaseComponent, slideInFromLeft, slideInFromRight } from "shared";
 import { ItemsActions } from "../+state/items/items.actions";
 import { ItemEntity } from "../+state/items/items.reducer";
 import { selectAllItems, selectItemsLoaded } from "../+state/items/items.selectors";
@@ -13,6 +13,7 @@ import { ItemListComponent } from "./blog-list/blog-list.component";
 @Component({
   selector: "app-blog-page",
   imports: [ItemListComponent, MatProgressSpinnerModule, RouterModule, CommonModule],
+  animations: [slideInFromRight, slideInFromLeft, fadeInOut],
   templateUrl: "./blog-page.component.html",
   styleUrl: "./blog-page.component.scss",
 })

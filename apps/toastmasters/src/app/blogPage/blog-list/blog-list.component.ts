@@ -1,8 +1,11 @@
 import { CommonModule } from "@angular/common";
 import { ChangeDetectionStrategy, Component, computed, effect, Input, Signal, signal } from "@angular/core";
 import { toSignal } from "@angular/core/rxjs-interop";
+import { FormsModule } from "@angular/forms";
 import { MatButtonModule } from "@angular/material/button";
 import { MatDividerModule } from "@angular/material/divider";
+import { MatFormFieldModule } from "@angular/material/form-field";
+import { MatInputModule } from "@angular/material/input";
 import { MatPaginatorModule, PageEvent } from "@angular/material/paginator";
 import { FontAwesomeModule } from "@fortawesome/angular-fontawesome";
 import { faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
@@ -28,10 +31,14 @@ import { selectAllItems } from "../../+state/items/items.selectors";
     MatPaginatorModule,
     FilterComponent,
     FontAwesomeModule,
+    MatInputModule,
+    MatFormFieldModule,
+    FormsModule,
   ],
 })
 export class ItemListComponent {
   @Input() public update = false;
+  @Input() public delete = false;
 
   public items!: Signal<ItemEntity[] | undefined>;
   public pagedItems!: Signal<ItemEntity[]>;
@@ -84,10 +91,18 @@ export class ItemListComponent {
   }
 
   public doUpdate(item: ItemEntity) {
-    item = { ...item, json: toHTML(this.updatedJson as object) };
+    item = { ...item, json: toHTML(this.updatedJson as object), title: item.title };
 
     this.store.dispatch(
       ItemsActions.createItem({
+        item,
+      })
+    );
+  }
+
+  public doDelete(item: ItemEntity) {
+    this.store.dispatch(
+      ItemsActions.deleteItem({
         item,
       })
     );

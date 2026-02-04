@@ -20,6 +20,7 @@
   <div #teamSubHeader>
     @defer (on viewport(teamSubHeader)) {
     <p [@slideInFromLeft]>Come attend an event</p>
+    <button [@slideInFromLeft] mat-flat-button (click)="navigateToLocationPage()">MORE DETAILS</button>
     }
   </div>
 
@@ -28,4 +29,19 @@
 
 <mat-divider></mat-divider>
 
-<app-member-details></app-member-details>
+<div class="w3-container w3-padding-64 w3-center" id="team">
+  <div #teamHeader>
+    @defer (on viewport(teamHeader)) {
+    <h2 [@slideInFromRight]>TEAM</h2>
+    }
+  </div>
+
+  <div #teamSubHeader>
+    @defer (on viewport(teamSubHeader)) {
+    <p [@slideInFromLeft]>Our current members</p>
+    <button [@slideInFromLeft] mat-flat-button (click)="navigateToMembershipPage()">MORE DETAILS</button>
+    }
+  </div>
+
+  <app-member-details></app-member-details>
+</div>

@@ -8,5 +8,7 @@ export const ItemsActions = createActionGroup({
     "Load Items Success": props<{ item: ItemEntity[] }>(),
     "Create Item": props<{ item: ItemEntity }>(),
     "Create Item Success": props<{ item: ItemEntity }>(),
+    "Delete Item": props<{ item: ItemEntity }>(),
+    "Delete Item Success": props<{ item: ItemEntity }>(),
   },
 });

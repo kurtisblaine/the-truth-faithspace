@@ -6,14 +6,23 @@
   <div style="flex: 1 1 80%">
     <div class="item-item" *ngFor="let item of pagedItems()">
       <div class="item-title fixed-primary-color">
+        @if(update) {
+        <mat-form-field appearance="outline" subscriptSizing="dynamic">
+          <mat-label>Title</mat-label>
+          <input matInput [(ngModel)]="item.title" (click)="$event.stopPropagation()" />
+        </mat-form-field>
+        } @else {
         <lib-link [link]="'http://localhost:4200/blogs/blog-detail/' + item.id">
           {{ item.title }}
           <fa-icon [icon]="faLink" style="padding-left: 2px"></fa-icon>
         </lib-link>
+        }
       </div>
       <div>{{ item.date | date: "short" }}</div>
 
-      @if(update) {
+      @if(delete) {
+      <button mat-flat-button (click)="doDelete(item)">Delete</button>
+      } @if(update) {
       <button mat-flat-button (click)="doUpdate(item)">Update</button>
       <lib-text-editor [document]="item?.json" (editorChanged)="updatedJson = $event"></lib-text-editor>
       } @else {

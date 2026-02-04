@@ -8,11 +8,14 @@ export class MapService {
   private map!: Map;
   private markers: Marker[];
 
+  private readonly siouxFallsLatLong = [43.545956, -96.731285];
+
   constructor(@Inject(PLATFORM_ID) private platformId: Object) {
     if (isPlatformBrowser(this.platformId)) {
       import("leaflet").then((leaflet) => {
         this.leaflet = leaflet;
         this.init();
+        this.changeIconDirectory();
         this.centerMap();
       });
     }
@@ -20,9 +23,27 @@ export class MapService {
 
   private init(id = "map") {
     const baseMapURl = "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png";
-    this.markers = [this.leaflet.marker([43.545956, -96.731285])];
+    this.markers = [this.leaflet.marker(this.siouxFallsLatLong)];
     this.map = this.leaflet.map(id);
+    this.leaflet.marker(this.siouxFallsLatLong).addTo(this.map);
     this.leaflet.tileLayer(baseMapURl).addTo(this.map);
+  }
+
+  private changeIconDirectory() {
+    const iconRetinaUrl = "assets/marker-icon-2x.png";
+    const iconUrl = "assets/marker-icon.png";
+    const shadowUrl = "assets/marker-shadow.png";
+    const iconDefault = this.leaflet.icon({
+      iconRetinaUrl,
+      iconUrl,
+      shadowUrl,
+      iconSize: [25, 41],
+      iconAnchor: [12, 41],
+      popupAnchor: [1, -34],
+      tooltipAnchor: [16, -28],
+      shadowSize: [41, 41],
+    });
+    this.leaflet.Marker.prototype.options.icon = iconDefault;
   }
 
   private centerMap() {

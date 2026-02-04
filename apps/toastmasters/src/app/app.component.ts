@@ -50,7 +50,7 @@ export class AppComponent implements OnDestroy {
       this.isMobile.set(this.deviceDetector.isMobile());
 
       this.subscription = this.router.events.pipe(filter((event) => event instanceof NavigationEnd)).subscribe(() => {
-        window.scrollTo(0, 0);
+        window.document.body.scrollTo(0, 0);
       });
     });
   }

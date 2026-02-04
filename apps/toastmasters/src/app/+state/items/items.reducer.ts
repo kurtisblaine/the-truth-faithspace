@@ -33,7 +33,9 @@ export const reducer = createReducer(
   on(ItemsActions.loadItems, (state) => itemAdapter.removeAll({ ...state, loaded: false })),
   on(ItemsActions.loadItemsSuccess, (state, { item }) => itemAdapter.setAll(item, { ...state, loaded: true })),
   on(ItemsActions.createItem, (state) => state),
-  on(ItemsActions.createItemSuccess, (state, { item }) => itemAdapter.setOne(item, state))
+  on(ItemsActions.createItemSuccess, (state, { item }) => itemAdapter.setOne(item, state)),
+  on(ItemsActions.deleteItem, (state) => state),
+  on(ItemsActions.deleteItemSuccess, (state, { item }) => itemAdapter.removeOne(item.collectionId, state))
 );
 
 export const itemsFeature = createFeature({

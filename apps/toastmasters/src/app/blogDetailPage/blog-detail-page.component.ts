@@ -4,7 +4,7 @@ import { MatCardModule } from "@angular/material/card";
 import { ActivatedRoute } from "@angular/router";
 import { Store } from "@ngrx/store";
 import { Observable, tap } from "rxjs";
-import { ReadonlyTextEditorComponent, SeoBaseComponent } from "shared";
+import { fadeInOut, ReadonlyTextEditorComponent, SeoBaseComponent } from "shared";
 import { ItemsActions } from "../+state/items/items.actions";
 import { ItemEntity } from "../+state/items/items.reducer";
 import { getById } from "../+state/items/items.selectors";
@@ -14,6 +14,7 @@ import { getById } from "../+state/items/items.selectors";
   templateUrl: "./blog-detail-page.component.html",
   styleUrl: "./blog-detail-page.component.scss",
   changeDetection: ChangeDetectionStrategy.OnPush,
+  animations: [fadeInOut],
   imports: [MatCardModule, DatePipe, ReadonlyTextEditorComponent, CommonModule],
 })
 export class ItemDetailComponent extends SeoBaseComponent implements OnInit {

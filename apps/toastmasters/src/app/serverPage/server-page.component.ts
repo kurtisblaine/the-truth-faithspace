@@ -16,6 +16,7 @@ import { v4 } from "uuid";
 import { ItemsActions } from "../+state/items/items.actions";
 import { ItemEntity } from "../+state/items/items.reducer";
 import { ItemListComponent } from "../blogPage/blog-list/blog-list.component";
+
 @Component({
   selector: "app-server-page",
   changeDetection: ChangeDetectionStrategy.OnPush,
@@ -36,7 +37,7 @@ import { ItemListComponent } from "../blogPage/blog-list/blog-list.component";
           <mat-panel-title> Items </mat-panel-title>
         </mat-expansion-panel-header>
         <ng-template matExpansionPanelContent>
-          <app-item-list [update]="true"></app-item-list>
+          <app-item-list [update]="true" [delete]="true"></app-item-list>
         </ng-template> </mat-expansion-panel
     ></mat-accordion>`,
   styles: ``,
