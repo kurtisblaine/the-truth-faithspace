@@ -1,0 +1,37 @@
+<div class="w3-container w3-padding-64 w3-center" id="team">
+  <div #teamHeader>
+    @defer (on viewport(teamHeader)) {
+    <h2 [@slideInFromRight]>TEAM</h2>
+    }
+  </div>
+
+  <div #teamSubHeader>
+    @defer (on viewport(teamSubHeader)) {
+    <p [@slideInFromLeft]>Our current members</p>
+    }
+  </div>
+
+  <div #membersRow class="members-row">
+    <br />
+
+    @defer (on viewport(membersRow)) {
+    <div class="w3-quarter" [@fadeInOut] (click)="navigateToMembershipPage()" matRipple>
+      <img src="/assets/toastmasters.webp" alt="Boss" style="width: 45%" class="w3-circle w3-hover-opacity" />
+      <h3>Rebecca Flex</h3>
+      <p>Support</p>
+    </div>
+
+    <div class="w3-quarter" [@fadeInOut] (click)="navigateToMembershipPage()" matRipple>
+      <img src="/assets/toastmasters.webp" alt="Boss" style="width: 45%" class="w3-circle w3-hover-opacity" />
+      <h3>Jan Ringo</h3>
+      <p>Boss man</p>
+    </div>
+
+    <div class="w3-quarter" [@fadeInOut] (click)="navigateToMembershipPage()" matRipple>
+      <img src="/assets/toastmasters.webp" alt="Boss" style="width: 45%" class="w3-circle w3-hover-opacity" />
+      <h3>Kai Ringo</h3>
+      <p>Fixer</p>
+    </div>
+    }
+  </div>
+</div>

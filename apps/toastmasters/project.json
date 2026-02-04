@@ -21,7 +21,7 @@
           "apps/toastmasters/src/assets",
           "apps/toastmasters/src/robots.txt"
         ],
-        "styles": ["apps/toastmasters/src/styles.scss"],
+        "styles": ["apps/toastmasters/src/styles.scss", "node_modules/leaflet/dist/leaflet.css"],
         "scripts": [],
         "server": "apps/toastmasters/src/main.server.ts",
         "outputMode": "static"

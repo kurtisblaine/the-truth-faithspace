@@ -8,13 +8,12 @@
   flex-direction: column;
   justify-content: space-around;
   gap: 24px;
-  padding: 40px;
-  min-height: 85vh;
+  padding: 0px 30px;
 }
 
 .detail-card {
   background: var(--mat-sys-surface);
-  padding: 40px;
+  padding: 20px;
   border-radius: 0;
   border-left: 4px solid var(--mat-sys-on-primary-fixed-variant);
   box-shadow: 0 4px 24px rgba(0, 0, 0, 0.04);
@@ -68,7 +67,7 @@
   display: flex;
   align-items: center;
   gap: 24px;
-  margin-bottom: 16px;
+  // margin-bottom: 16px;
   position: relative;
   z-index: 1;
 }

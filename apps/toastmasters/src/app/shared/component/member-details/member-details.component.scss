@@ -1,0 +1,15 @@
+.members-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+@media (max-width: 500px) {
+  .members-row {
+    flex-direction: column;
+  }
+}
+
+.w3-quarter {
+  cursor: pointer;
+}

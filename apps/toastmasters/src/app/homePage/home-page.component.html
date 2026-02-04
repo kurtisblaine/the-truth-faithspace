@@ -1,5 +1,5 @@
 <div class="home-image" style="background-position: top">
-  <img fill style="object-position: top" [ngSrc]="'../../assets/auditorium.jpg'" alt="" priority />
+  <img fill style="object-position: top" [ngSrc]="'../../assets/toastmasterz.webp'" alt="" priority />
 
   <div class="header-pane">
     <h1 class="header-title fixed-primary-color" [@slideInFromRight]>TOASTMASTERS</h1>
@@ -8,4 +8,24 @@
   </div>
 </div>
 
-<app-event-details></app-event-details>
+<mat-divider></mat-divider>
+
+<div class="w3-container w3-padding-64 w3-center">
+  <div #eventHeader>
+    @defer (on viewport(eventHeader)) {
+    <h2 [@slideInFromRight]>EVENTS</h2>
+    }
+  </div>
+
+  <div #teamSubHeader>
+    @defer (on viewport(teamSubHeader)) {
+    <p [@slideInFromLeft]>Come attend an event</p>
+    }
+  </div>
+
+  <app-event-details></app-event-details>
+</div>
+
+<mat-divider></mat-divider>
+
+<app-member-details></app-member-details>

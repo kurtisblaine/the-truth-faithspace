@@ -34,6 +34,7 @@ import { ContactService } from "./contact.service";
 export class ContactFormComponent implements OnInit {
   public formSpreeApi = input.required<string>();
   public isMessageRequired = input<boolean>(true);
+  public showMessage = input<boolean>(true);
   public onSubmitMessage = input<string>(
     "Thank you for emailing me! God willing, I will get back to you as soon as possible."
   );

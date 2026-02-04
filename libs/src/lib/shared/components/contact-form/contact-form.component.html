@@ -28,10 +28,12 @@
       formControlName="Fullname"
     />
   </mat-form-field>
+  @if(showMessage()) {
   <mat-form-field>
     <mat-label for="comment">Message</mat-label>
     <textarea matInput class="form-control" formControlName="Comment" name="Comment"></textarea>
   </mat-form-field>
+  }
 
   <button
     mat-raised-button

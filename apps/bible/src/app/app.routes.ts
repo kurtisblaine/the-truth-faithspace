@@ -10,20 +10,24 @@ export const appRoutes: Route[] = [
   {
     path: "tongue/:languageName",
     component: BiblePageComponent,
+    title: "The Word of Life | Bibles",
   },
   {
     path: "tongue/:languageName/bible/:bibleId",
     component: BookPageComponent,
+    title: "The Word of Life | Books",
   },
   {
     path: "tongue/:languageName/bible/:bibleId/book/:bookId",
     component: ChapterPageComponent,
+    title: "The Word of Life | Chapters",
   },
   {
     path: "tongue/:languageName/bible/:bibleId/book/:bookId/chapter/:chapterId",
     component: ScripturePageComponent,
+    title: "The Word of Life | Read",
   },
-  { path: "", component: LanguagePageComponent },
+  { path: "", component: LanguagePageComponent, title: "The Word of Life | Tongues" },
   { path: "**", redirectTo: "", pathMatch: "full" },
 ];
 

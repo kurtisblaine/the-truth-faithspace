@@ -1,13 +1,21 @@
-import { Component, ViewEncapsulation } from "@angular/core";
-import { fadeInOut } from "shared";
-import { EventDetailsComponent } from "../shared/component/event-details.component";
+import { AfterViewInit, Component } from "@angular/core";
+import { MatDividerModule } from "@angular/material/divider";
+import { fadeInOut, slideInFromLeft, slideInFromRight } from "shared";
+import { EventDetailsComponent } from "../shared/component/event-details/event-details.component";
+import { MapService } from "./map.service";
 
 @Component({
   selector: "app-location-page",
-  imports: [EventDetailsComponent],
+  imports: [EventDetailsComponent, MatDividerModule],
   templateUrl: "./location-page.component.html",
   styleUrl: "./location-page.component.scss",
-  encapsulation: ViewEncapsulation.None,
-  animations: [fadeInOut],
+  animations: [fadeInOut, slideInFromLeft, slideInFromRight],
+  providers: [MapService],
 })
-export class LocationPageComponent {}
+export class LocationPageComponent implements AfterViewInit {
+  constructor(private mapService: MapService) {}
+
+  ngOnInit() {}
+
+  ngAfterViewInit() {}
+}

@@ -1,5 +1,5 @@
-<div class="container">
-  <section class="invitation-section" @fadeInOut>
+<div class="w3-container w3-padding-64" style="min-height: 85vh">
+  <section class="invitation-section" [@fadeInOut]>
     <div class="invite-content">
       <div class="invite-badge">Event Invitation</div>
       <h1 class="invite-title">You're <strong>Invited</strong></h1>
@@ -9,6 +9,28 @@
       </p>
     </div>
 
+    <mat-divider [vertical]="true" class="vertical-divider"></mat-divider>
+
     <app-event-details></app-event-details>
   </section>
+</div>
+
+<mat-divider></mat-divider>
+
+<div class="w3-container w3-padding-64 w3-center">
+  <div #eventHeader>
+    @defer (on viewport(eventHeader)) {
+    <h2 [@slideInFromRight]>MAP</h2>
+    }
+  </div>
+
+  <div #teamSubHeader>
+    @defer (on viewport(teamSubHeader)) {
+    <p [@slideInFromLeft]>Attend an event in Sioux Falls, South Dakota</p>
+    }
+  </div>
+
+  <div class="map-container">
+    <div id="map" style="height: 500px; width: 85vw"></div>
+  </div>
 </div>

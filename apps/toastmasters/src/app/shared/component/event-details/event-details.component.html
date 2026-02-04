@@ -8,7 +8,7 @@
             <fa-icon [icon]="calendarIcon"></fa-icon>
           </button>
         </div>
-        <div class="detail-info">
+        <div class="detail-info" style="text-align: left">
           <div class="detail-label">Date</div>
           <div class="detail-value">December 31, 2025</div>
         </div>
@@ -17,7 +17,7 @@
     }
   </div>
 
-  <div #timeCard style="margin-left: 50px">
+  <div #timeCard style="margin-left: 25px">
     @defer (on viewport(timeCard)) {
     <div class="detail-card" (click)="navigateToLocationPage()" [@slideInFromLeft] matRipple>
       <div class="detail-header">
@@ -26,7 +26,7 @@
             <fa-icon [icon]="timeIcon"></fa-icon>
           </button>
         </div>
-        <div class="detail-info">
+        <div class="detail-info" style="text-align: left">
           <div class="detail-label">Time</div>
           <div class="detail-value">5:00 PM - 10:00 PM</div>
         </div>
@@ -35,7 +35,7 @@
     }
   </div>
 
-  <div #locationCard style="margin-left: 100px">
+  <div #locationCard style="margin-left: 50px">
     @defer (on viewport(locationCard)) {
     <div class="detail-card" (click)="navigateToLocationPage()" [@slideInFromRight] matRipple>
       <div class="detail-header">
@@ -44,7 +44,7 @@
             <fa-icon [icon]="locationIcon"></fa-icon>
           </button>
         </div>
-        <div class="detail-info">
+        <div class="detail-info" style="text-align: left">
           <div class="detail-label">Location</div>
           <div class="detail-value">Grand Ballroom</div>
         </div>

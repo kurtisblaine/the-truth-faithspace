@@ -1,1 +1,24 @@
-<p>membership-page works!</p>
+<app-member-details></app-member-details>
+
+<mat-divider></mat-divider>
+
+<div class="w3-container w3-padding-64 w3-center">
+  <div #eventHeader>
+    @defer (on viewport(eventHeader)) {
+    <h2 [@slideInFromRight]>JOIN</h2>
+    }
+  </div>
+
+  <div #teamSubHeader>
+    @defer (on viewport(teamSubHeader)) {
+    <p [@slideInFromLeft]>Attend as a guest</p>
+    }
+  </div>
+
+  <lib-contact-form
+    formSpreeApi="https://formspree.io/f/todo"
+    [isMessageRequired]="false"
+    [showMessage]="false"
+    [onSubmitMessage]="'Thank you for showing interest in attending an event. We will get in touch with you shortly.'"
+  ></lib-contact-form>
+</div>

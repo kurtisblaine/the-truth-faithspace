@@ -1,3 +1,4 @@
+import { NgOptimizedImage } from "@angular/common";
 import { afterNextRender, Component, signal } from "@angular/core";
 import { MatButtonModule } from "@angular/material/button";
 import { MatDividerModule } from "@angular/material/divider";
@@ -23,6 +24,7 @@ import { SettingsWidgetComponent, ShareComponent, ThemeSettings } from "shared";
     SettingsWidgetComponent,
     MatMenuModule,
     ShareComponent,
+    NgOptimizedImage,
     MatDividerModule,
   ],
   selector: "app-root",

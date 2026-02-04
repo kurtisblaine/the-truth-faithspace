@@ -49,18 +49,19 @@
 <mat-divider style="width: 100%"></mat-divider>
 
 <div class="footer">
-  <div class="footer-message">This is an example footer message</div>
+  <div class="footer-image" style="background-position: top">
+    <img fill style="object-position: top; object-fit: contain" [ngSrc]="'/assets/toastmasters.webp'" alt="" priority />
+  </div>
 
   <div class="footer-message">
-    <div>
-      <a href="tel:+16054965690" class="phone-number-link">
+    <div>Contact us</div>
+    <div class="contact-info-container">
+      <a href="tel:+16054965690">
         <fa-icon [icon]="phoneIcon"></fa-icon>
         +1 (605) 496-5690
       </a>
-    </div>
 
-    <div>
-      <a href="mail:toastmasterssot@gmail.com" class="phone-number-link">
+      <a href="mailto:toastmasterssot@gmail.com">
         <fa-icon [icon]="emailIcon"></fa-icon>
         toastmasterssot&#64;gmail.com
       </a>

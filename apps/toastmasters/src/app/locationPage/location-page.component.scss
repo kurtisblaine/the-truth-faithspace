@@ -2,43 +2,31 @@
   display: block;
 }
 
-.container {
-  position: relative;
-  z-index: 1;
-  margin: 0 auto;
-  padding: 0;
-}
-
 .invitation-section {
   display: flex;
   flex-direction: row;
   align-items: center;
-  min-height: 100vh;
 }
 
 .invitation-section > * {
   flex: 1 1 50%;
 }
 
-@media (min-width: 1000px) {
-  .invitation-section::after {
-    content: "";
-    position: absolute;
-    right: 50%;
-    top: 10%;
-    width: 1px;
-    height: 80%;
-    background: linear-gradient(to bottom, transparent, black 20%, black 80%, transparent);
+.vertical-divider {
+  position: absolute;
+  right: 50%;
+  height: 80%;
+}
+
+@media (max-width: 1000px) {
+  .vertical-divider {
+    display: none;
   }
 }
 
 @media (max-width: 1000px) {
   .invitation-section {
     flex-direction: column;
-  }
-
-  .container {
-    padding: 15px 0px;
   }
 }
 
@@ -91,4 +79,10 @@
   line-height: 1.8;
   max-width: 480px;
   margin-bottom: 40px;
+}
+
+.map-container {
+  display: flex;
+  justify-content: center;
+  padding: 0px 20px;
 }

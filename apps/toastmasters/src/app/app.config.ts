@@ -42,10 +42,9 @@ export const appConfig: ApplicationConfig = {
       appRoutes,
       withRouterConfig({
         onSameUrlNavigation: "reload",
-        paramsInheritanceStrategy: "always",
       }),
       withComponentInputBinding(),
-      withInMemoryScrolling({ anchorScrolling: "enabled", scrollPositionRestoration: "enabled" }),
+      withInMemoryScrolling({ anchorScrolling: "enabled", scrollPositionRestoration: "top" }),
       withPreloading(NoPreloading)
     ),
     provideAnimations(),
