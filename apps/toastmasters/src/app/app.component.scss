@@ -25,12 +25,13 @@
 .footer-image {
   justify-self: center;
   position: inherit;
-  height: 12vh;
-  width: 12vw;
+  height: 70px;
+  width: 70px;
   padding: 0px !important;
 }
 
 .contact-info-container {
   display: flex;
   flex-direction: column;
+  width: max-content;
 }

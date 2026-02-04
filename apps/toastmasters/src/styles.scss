@@ -28,7 +28,7 @@ body {
 }
 
 a {
-  text-decoration: underline;
+  text-decoration: underline !important;
   color: var(--mat-sys-on-primary-fixed-variant);
 }
 

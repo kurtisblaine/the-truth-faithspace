@@ -1,15 +1,16 @@
 import { NgOptimizedImage } from "@angular/common";
-import { afterNextRender, Component, signal } from "@angular/core";
+import { afterNextRender, Component, OnDestroy, signal } from "@angular/core";
 import { MatButtonModule } from "@angular/material/button";
 import { MatDividerModule } from "@angular/material/divider";
 import { MatListModule } from "@angular/material/list";
 import { MatMenuModule } from "@angular/material/menu";
 import { MatToolbarModule } from "@angular/material/toolbar";
 import { MatTooltipModule } from "@angular/material/tooltip";
-import { Router, RouterModule, RouterOutlet } from "@angular/router";
+import { NavigationEnd, Router, RouterModule, RouterOutlet } from "@angular/router";
 import { FontAwesomeModule } from "@fortawesome/angular-fontawesome";
 import { faBars, faCaretDown, faEnvelope, faGears, faPhone } from "@fortawesome/free-solid-svg-icons";
 import { DeviceDetectorService } from "ngx-device-detector";
+import { filter, Subscription } from "rxjs";
 import { SettingsWidgetComponent, ShareComponent, ThemeSettings } from "shared";
 
 @Component({
@@ -31,7 +32,7 @@ import { SettingsWidgetComponent, ShareComponent, ThemeSettings } from "shared";
   templateUrl: "./app.component.html",
   styleUrl: "./app.component.scss",
 })
-export class AppComponent {
+export class AppComponent implements OnDestroy {
   public title = "Toastmasters";
   public storageName = "ToastMastersAppSettings";
 
@@ -42,11 +43,20 @@ export class AppComponent {
   public downArrowIcon = faCaretDown;
 
   public isMobile = signal(false);
+  private subscription: Subscription;
 
   constructor(private router: Router, private deviceDetector: DeviceDetectorService) {
     afterNextRender(() => {
       this.isMobile.set(this.deviceDetector.isMobile());
+
+      this.subscription = this.router.events.pipe(filter((event) => event instanceof NavigationEnd)).subscribe(() => {
+        window.scrollTo(0, 0);
+      });
     });
+  }
+
+  public ngOnDestroy() {
+    this.subscription?.unsubscribe();
   }
 
   public goHome() {

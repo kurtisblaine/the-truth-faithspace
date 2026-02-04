@@ -6,6 +6,8 @@
   display: flex;
   flex-direction: row;
   align-items: center;
+  height: 80vh;
+  gap: 30px;
 }
 
 .invitation-section > * {
@@ -13,14 +15,17 @@
 }
 
 .vertical-divider {
-  position: absolute;
-  right: 50%;
   height: 80%;
+  flex: unset !important;
 }
 
 @media (max-width: 1000px) {
   .vertical-divider {
     display: none;
+  }
+
+  .invitation-section {
+    height: unset !important;
   }
 }
 
@@ -84,5 +89,6 @@
 .map-container {
   display: flex;
   justify-content: center;
-  padding: 0px 20px;
+  padding: 0px 30px;
+  padding-top: 7px;
 }

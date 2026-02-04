@@ -12,8 +12,6 @@
   </div>
 
   <div #membersRow class="members-row">
-    <br />
-
     @defer (on viewport(membersRow)) {
     <div class="w3-quarter" [@fadeInOut] (click)="navigateToMembershipPage()" matRipple>
       <img src="/assets/toastmasters.webp" alt="Boss" style="width: 45%" class="w3-circle w3-hover-opacity" />
