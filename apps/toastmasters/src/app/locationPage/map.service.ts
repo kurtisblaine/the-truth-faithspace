@@ -1,5 +1,4 @@
-import { isPlatformBrowser } from "@angular/common";
-import { Inject, Injectable, PLATFORM_ID } from "@angular/core";
+import { afterNextRender, Injectable } from "@angular/core";
 import { Map, Marker } from "leaflet";
 
 @Injectable()
@@ -10,15 +9,20 @@ export class MapService {
 
   private readonly siouxFallsLatLong = [43.545956, -96.731285];
 
-  constructor(@Inject(PLATFORM_ID) private platformId: Object) {
-    if (isPlatformBrowser(this.platformId)) {
+  constructor() {
+    afterNextRender(() => {
       import("leaflet").then((leaflet) => {
-        this.leaflet = leaflet;
+        if (leaflet?.default) {
+          this.leaflet = leaflet.default;
+        } else {
+          this.leaflet = leaflet;
+        }
+
         this.init();
         this.changeIconDirectory();
         this.centerMap();
       });
-    }
+    });
   }
 
   private init(id = "map") {
