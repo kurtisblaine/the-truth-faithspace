@@ -11,6 +11,7 @@ import { FontAwesomeModule } from "@fortawesome/angular-fontawesome";
 import { faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
 import { Store } from "@ngrx/store";
 import { toHTML } from "ngx-editor";
+import { map } from "rxjs";
 import { FilterComponent, LinkComponent, ReadonlyTextEditorComponent, TextEditorComponent } from "shared";
 import { ItemsActions } from "../../+state/items/items.actions";
 import { ItemEntity } from "../../+state/items/items.reducer";
@@ -53,7 +54,7 @@ export class ItemListComponent {
   public faLink = faArrowUpRightFromSquare;
 
   constructor(private store: Store) {
-    this.items = toSignal(this.store.select(selectAllItems));
+    this.items = toSignal(this.store.select(selectAllItems).pipe(map((items) => items.map((item) => ({ ...item })))));
 
     this.pagedItems = computed(() => {
       const filter = this.searchTerm().toLowerCase();

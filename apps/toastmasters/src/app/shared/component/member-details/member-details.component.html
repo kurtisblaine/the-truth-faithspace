@@ -1,18 +1,18 @@
 <div #membersRow class="members-row">
   @defer (on viewport(membersRow)) {
-  <div class="w3-quarter" [@fadeInOut] (click)="navigateToMembershipPage()" matRipple>
+  <div class="w3-quarter" [@slideInFromBottom] (click)="navigateToMembershipPage()" matRipple>
     <img src="/assets/toastmasters.webp" alt="Boss" style="width: 45%" class="w3-circle w3-hover-opacity" />
     <h3>Rebecca Flex</h3>
     <p>Support</p>
   </div>
 
-  <div class="w3-quarter" [@fadeInOut] (click)="navigateToMembershipPage()" matRipple>
+  <div class="w3-quarter" [@slideInFromTop] (click)="navigateToMembershipPage()" matRipple>
     <img src="/assets/toastmasters.webp" alt="Boss" style="width: 45%" class="w3-circle w3-hover-opacity" />
     <h3>Jan Ringo</h3>
     <p>Boss man</p>
   </div>
 
-  <div class="w3-quarter" [@fadeInOut] (click)="navigateToMembershipPage()" matRipple>
+  <div class="w3-quarter" [@slideInFromBottom] (click)="navigateToMembershipPage()" matRipple>
     <img src="/assets/toastmasters.webp" alt="Boss" style="width: 45%" class="w3-circle w3-hover-opacity" />
     <h3>Kai Ringo</h3>
     <p>Fixer</p>
