@@ -6,18 +6,17 @@
     </button>
 
     <mat-menu #navigationMenu="matMenu">
-      <button mat-menu-item (click)="goHome()">Home</button>
       <button mat-menu-item [matMenuTriggerFor]="moreInformation">About</button>
       <button mat-menu-item (click)="goContact()">Contact</button>
     </mat-menu>
     } @else {
-    <button mat-button (click)="goHome()"><h1>Toastmasters</h1></button>
     <button mat-button [matMenuTriggerFor]="moreInformation">
       <span> About </span>
       <fa-icon [icon]="downArrowIcon"></fa-icon>
     </button>
     <button mat-button (click)="goContact()">Contact</button>
     }
+    <button mat-button (click)="goHome()"><h1>Toastmasters</h1></button>
 
     <span style="flex: 1 1 auto"></span>
     <button mat-button (click)="goBlog()" style="margin-right: 5px">News</button>
@@ -56,12 +55,12 @@
   <div class="footer-message">
     <div>Example footer message.</div>
     <div class="contact-info-container">
-      <a href="tel:+16054965690" class="fixed-primary-color">
+      <a href="tel:+16054965690" class="primary-color">
         <fa-icon [icon]="phoneIcon"></fa-icon>
         +1 (605) 496-5690
       </a>
 
-      <a href="mailto:toastmasterssot@gmail.com" class="fixed-primary-color">
+      <a href="mailto:toastmasterssot@gmail.com" class="primary-color">
         <fa-icon [icon]="emailIcon"></fa-icon>
         toastmasterssot&#64;gmail.com
       </a>
