@@ -4,19 +4,20 @@
     <button mat-icon-button aria-labelledby="Menu button" aria-label="Menu button" [matMenuTriggerFor]="navigationMenu">
       <fa-icon [icon]="menuIcon"></fa-icon>
     </button>
+    <button mat-button (click)="goHome()"><h1>Toastmasters</h1></button>
 
     <mat-menu #navigationMenu="matMenu">
       <button mat-menu-item [matMenuTriggerFor]="moreInformation">About</button>
       <button mat-menu-item (click)="goContact()">Contact</button>
     </mat-menu>
     } @else {
+    <button mat-button (click)="goHome()"><h1>Toastmasters</h1></button>
     <button mat-button [matMenuTriggerFor]="moreInformation">
       <span> About </span>
       <fa-icon [icon]="downArrowIcon"></fa-icon>
     </button>
     <button mat-button (click)="goContact()">Contact</button>
     }
-    <button mat-button (click)="goHome()"><h1>Toastmasters</h1></button>
 
     <span style="flex: 1 1 auto"></span>
     <button mat-button (click)="goBlog()" style="margin-right: 5px">News</button>

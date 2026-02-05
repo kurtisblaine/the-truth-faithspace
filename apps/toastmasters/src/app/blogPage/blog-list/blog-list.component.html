@@ -3,7 +3,7 @@
   <lib-filter style="flex: 1 1 20%" (onChange)="searchTerm.set($event)"></lib-filter>
   }
 
-  <div style="flex: 1 1 80%">
+  <div style="flex: 1 1 80%; width: 100%">
     <div class="item-item" *ngFor="let item of pagedItems()">
       <div class="item-title primary-color">
         @if(update) {
