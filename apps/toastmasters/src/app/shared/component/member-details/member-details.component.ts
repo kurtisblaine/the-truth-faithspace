@@ -2,12 +2,12 @@ import { CommonModule } from "@angular/common";
 import { Component } from "@angular/core";
 import { MatRippleModule } from "@angular/material/core";
 import { Router } from "@angular/router";
-import { fadeInOut, slideInFromBottom, slideInFromTop } from "shared";
+import { fadeInOut, slideInFromBottom } from "shared";
 
 @Component({
   selector: "app-member-details",
   imports: [CommonModule, MatRippleModule],
-  animations: [fadeInOut, slideInFromTop, slideInFromBottom],
+  animations: [fadeInOut, slideInFromBottom],
   templateUrl: "./member-details.component.html",
   styleUrl: "./member-details.component.scss",
 })
