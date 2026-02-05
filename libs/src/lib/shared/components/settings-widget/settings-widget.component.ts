@@ -69,7 +69,11 @@ export class SettingsWidgetComponent implements OnInit {
   constructor(@Inject(PLATFORM_ID) private platformId: object) {
     afterNextRender(() => {
       const storedSettings = localStorage.getItem(this.storageName());
-      if (storedSettings) {
+      const prefersDark = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+      if (prefersDark) {
+        this.settings.set({ theme: "dark" } as ThemeSettings);
+        this.themeService.setTheme(this.settings().theme);
+      } else if (storedSettings) {
         this.settings.set(JSON.parse(storedSettings) as ThemeSettings);
         this.themeService.setTheme(this.settings().theme);
       }
