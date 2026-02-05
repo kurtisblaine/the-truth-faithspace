@@ -17,8 +17,8 @@
     }
   </div>
 
-  <div #teamSubHeader>
-    @defer (on viewport(teamSubHeader)) {
+  <div #eventSubHeader>
+    @defer (on viewport(eventSubHeader)) {
     <p [@slideInFromLeft]>Come attend an event</p>
     <button [@slideInFromLeft] mat-flat-button (click)="navigateToLocationPage()">MORE DETAILS</button>
     }
