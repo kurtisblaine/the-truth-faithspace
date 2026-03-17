@@ -19,7 +19,8 @@
       "**/.DS_Store": true,
       "**/Thumbs.db": true
     },
-    "angular.forceStrictTemplates": true
+    "angular.forceStrictTemplates": true,
+    "sarif-viewer.connectToGithubCodeScanning": "off"
   },
   "extensions": {
     "recommendations": ["angular.ng-template"]

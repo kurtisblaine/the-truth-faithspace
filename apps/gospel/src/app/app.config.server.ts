@@ -1,6 +1,6 @@
 import { ApplicationConfig, inject, mergeApplicationConfig } from "@angular/core";
 import { collection, collectionData, Firestore } from "@angular/fire/firestore";
-import { provideServerRendering, RenderMode, ServerRoute, withRoutes } from "@angular/ssr";
+import { PrerenderFallback, provideServerRendering, RenderMode, ServerRoute, withRoutes } from "@angular/ssr";
 import { firstValueFrom } from "rxjs";
 import { appConfig } from "./app.config";
 import { DataService } from "./draw-page/data.service";
@@ -34,6 +34,7 @@ const serverRoutes: ServerRoute[] = [
 
       return await firstValueFrom(collectionData$);
     },
+    fallback: PrerenderFallback.Server,
   },
   {
     path: "studies/study-detail/:id",
