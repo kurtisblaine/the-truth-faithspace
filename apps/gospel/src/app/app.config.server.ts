@@ -34,7 +34,7 @@ const serverRoutes: ServerRoute[] = [
 
       return await firstValueFrom(collectionData$);
     },
-    fallback: PrerenderFallback.Server,
+    fallback: PrerenderFallback.Client,
   },
   {
     path: "studies/study-detail/:id",
