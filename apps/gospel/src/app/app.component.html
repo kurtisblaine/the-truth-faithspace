@@ -124,6 +124,7 @@
         <mat-menu #settingsMenu="matMenu">
           <lib-settings-widget storageName="gospelAppSettings" (onSave)="voiceSettings.save($event)">
             <lib-voice-settings storageName="gospelAppSettings" #voiceSettings></lib-voice-settings>
+            <lib-auth-settings (onLogOut)="navigateToServer()" (onLogIn)="navigateToServer()"></lib-auth-settings>
           </lib-settings-widget>
         </mat-menu>
       </mat-toolbar>

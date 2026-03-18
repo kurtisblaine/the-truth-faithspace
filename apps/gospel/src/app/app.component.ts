@@ -28,7 +28,7 @@ import { MatToolbarModule } from "@angular/material/toolbar";
 import { MatTooltipModule } from "@angular/material/tooltip";
 import { DeviceDetectorService } from "ngx-device-detector";
 import { BehaviorSubject, fromEvent, map, Observable } from "rxjs";
-import { LibFaIconComponent, SettingsWidgetComponent, VoiceSettingsComponent } from "shared";
+import { AuthSettingsComponent, LibFaIconComponent, SettingsWidgetComponent, VoiceSettingsComponent } from "shared";
 @Component({
   selector: "blog-root",
   templateUrl: "./app.component.html",
@@ -45,6 +45,7 @@ import { LibFaIconComponent, SettingsWidgetComponent, VoiceSettingsComponent } f
     LibFaIconComponent,
     SettingsWidgetComponent,
     VoiceSettingsComponent,
+    AuthSettingsComponent,
     CommonModule,
   ],
 })
@@ -99,6 +100,10 @@ export class AppComponent implements OnInit {
   }
 
   public ngOnInit() {}
+
+  navigateToServer() {
+    this.router.navigateByUrl("server");
+  }
 
   openMenu() {
     this.trigger.openMenu();

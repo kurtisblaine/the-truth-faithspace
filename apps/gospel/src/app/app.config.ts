@@ -3,6 +3,7 @@ import { ApplicationConfig, provideZonelessChangeDetection } from "@angular/core
 import { provideCloudinaryLoader } from "@angular/common";
 import { provideHttpClient } from "@angular/common/http";
 import { initializeApp, provideFirebaseApp } from "@angular/fire/app";
+import { getAuth, provideAuth } from "@angular/fire/auth";
 import { getFirestore, provideFirestore } from "@angular/fire/firestore";
 import { provideClientHydration, withEventReplay, withIncrementalHydration } from "@angular/platform-browser";
 import { provideAnimations } from "@angular/platform-browser/animations";
@@ -87,6 +88,7 @@ export const appConfig: ApplicationConfig = {
   providers: [
     provideFirebaseApp(() => initializeApp(firebaseConfig)),
     provideFirestore(() => getFirestore()),
+    provideAuth(() => getAuth()),
     provideEffects(effects),
     provideStoreDevtools(),
     provideStore(reducers, { metaReducers }),
