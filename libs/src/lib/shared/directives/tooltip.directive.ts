@@ -55,6 +55,10 @@ export class TooltipDirective implements OnInit, OnDestroy {
     this.overlayRef.detach();
   }
 
+  @HostListener("click") public onClick() {
+    this.overlayRef.detach();
+  }
+
   constructor(
     private overlayPositionBuilder: OverlayPositionBuilder,
     private elementRef: ElementRef,

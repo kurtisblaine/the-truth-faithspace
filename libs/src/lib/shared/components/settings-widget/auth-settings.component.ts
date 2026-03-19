@@ -11,7 +11,9 @@ import { AuthService } from "./auth.service";
   template: `
     <div style="display: flex; padding: 5px 0px">
       @if(userName) {
-      <button matButton libTooltip="{{ userName }}" class="user-name">{{ userName }}</button>
+      <p class="user-name primary" libTooltip="{{ userName }}" (click)="onLogin()">
+        {{ userName }}
+      </p>
       <button matButton="outlined" (click)="onLogout()">Logout</button>
       } @else {
       <button style="flex: 1 1 100%" matButton="outlined" (click)="onLogin()">Login</button>
@@ -20,6 +22,7 @@ import { AuthService } from "./auth.service";
   `,
   styles: `.user-name {
     align-content: center;
+    cursor: pointer;
     padding-right: 5px;
   }`,
 })
