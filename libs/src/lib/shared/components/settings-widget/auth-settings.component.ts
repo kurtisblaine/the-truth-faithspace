@@ -11,7 +11,7 @@ import { AuthService } from "./auth.service";
   template: `
     <div style="display: flex; padding: 5px 0px">
       @if(userName) {
-      <p class="user-name primary" libTooltip="{{ userName }}" (click)="onLogin()">
+      <p class="user-name primary primary-color" libTooltip="{{ userName }}" (click)="onLogin()">
         {{ userName }}
       </p>
       <button matButton="outlined" (click)="onLogout()">Logout</button>

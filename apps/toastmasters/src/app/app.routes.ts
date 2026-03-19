@@ -5,6 +5,7 @@ import { BlogPageComponent } from "./blogPage/blog-page.component";
 import { ContactPageComponent } from "./contactPage/contact-page.component";
 import { HomePageComponent } from "./homePage/home-page.component";
 import { LocationPageComponent } from "./locationPage/location-page.component";
+import { LoginPageComponent } from "./loginPage/login-page.component";
 import { MembershipPageComponent } from "./membershipPage/membership-page.component";
 import { ServerPageComponent } from "./serverPage/server-page.component";
 
@@ -43,6 +44,11 @@ export const appRoutes: Route[] = [
     path: "blogs/blog-detail/:id",
     loadComponent: () => ItemDetailComponent,
     title: "Blog Detail | Toastmasters",
+  },
+  {
+    path: "server",
+    loadComponent: () => LoginPageComponent,
+    title: "Server | Toastmasters",
   },
   {
     path: "server/b3228e35-dbb3-4d66-b455-9b81d87d7d0f",

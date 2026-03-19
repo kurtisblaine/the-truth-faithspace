@@ -11,7 +11,7 @@ import { FontAwesomeModule } from "@fortawesome/angular-fontawesome";
 import { faBars, faCaretDown, faEnvelope, faGears, faPhone } from "@fortawesome/free-solid-svg-icons";
 import { DeviceDetectorService } from "ngx-device-detector";
 import { filter, Subscription } from "rxjs";
-import { SettingsWidgetComponent, ShareComponent, ThemeSettings } from "shared";
+import { AuthSettingsComponent, SettingsWidgetComponent, ShareComponent, ThemeSettings } from "shared";
 
 @Component({
   imports: [
@@ -23,6 +23,7 @@ import { SettingsWidgetComponent, ShareComponent, ThemeSettings } from "shared";
     MatListModule,
     MatTooltipModule,
     SettingsWidgetComponent,
+    AuthSettingsComponent,
     MatMenuModule,
     ShareComponent,
     NgOptimizedImage,
@@ -57,6 +58,10 @@ export class AppComponent implements OnDestroy {
 
   public ngOnDestroy() {
     this.subscription?.unsubscribe();
+  }
+
+  navigateToServer() {
+    this.router.navigateByUrl("server");
   }
 
   public goHome() {
