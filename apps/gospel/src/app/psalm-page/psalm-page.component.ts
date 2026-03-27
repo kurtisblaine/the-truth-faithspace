@@ -1,7 +1,7 @@
 import { ChangeDetectionStrategy, Component, OnInit } from "@angular/core";
 import { Store } from "@ngrx/store";
 import { Observable, map } from "rxjs";
-import { SeoBaseComponent } from "../shared/components/seo-base/seo-base.component";
+import { SeoBaseComponent } from "shared";
 import { loadPsalms } from "../state/psalm/psalm.actions";
 import { getPsalmLoaded } from "../state/psalm/psalm.selectors";
 

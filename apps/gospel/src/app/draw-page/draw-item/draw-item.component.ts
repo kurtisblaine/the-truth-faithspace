@@ -1,6 +1,6 @@
 import { isPlatformBrowser } from "@angular/common";
 import { Component, Inject, Input, OnInit, PLATFORM_ID } from "@angular/core";
-import { SeoBaseComponent } from "../../shared/components/seo-base/seo-base.component";
+import { SeoBaseComponent } from "shared";
 import { DataService } from "../data.service";
 import { Image } from "../draw-page.component";
 

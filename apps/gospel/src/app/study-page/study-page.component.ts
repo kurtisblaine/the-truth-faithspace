@@ -1,7 +1,7 @@
 import { ChangeDetectionStrategy, Component, OnInit } from "@angular/core";
 import { Store } from "@ngrx/store";
 import { map, Observable } from "rxjs";
-import { SeoBaseComponent } from "../shared/components/seo-base/seo-base.component";
+import { SeoBaseComponent } from "shared";
 import { StudyActions } from "../state/study/study.actions";
 import { getStudyLoaded } from "../state/study/study.selectors";
 

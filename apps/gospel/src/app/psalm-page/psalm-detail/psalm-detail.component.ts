@@ -2,7 +2,7 @@ import { Component, OnInit } from "@angular/core";
 import { ActivatedRoute } from "@angular/router";
 import { Store } from "@ngrx/store";
 import { Observable, tap } from "rxjs";
-import { SeoBaseComponent } from "../../shared/components/seo-base/seo-base.component";
+import { SeoBaseComponent } from "shared";
 import { loadPsalms } from "../../state/psalm/psalm.actions";
 import { PsalmEntity } from "../../state/psalm/psalm.models";
 import { getById } from "../../state/psalm/psalm.selectors";

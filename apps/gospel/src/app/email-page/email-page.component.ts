@@ -1,5 +1,5 @@
 import { Component } from "@angular/core";
-import { SeoBaseComponent } from "../shared/components/seo-base/seo-base.component";
+import { SeoBaseComponent } from "shared";
 
 @Component({
   selector: "blog-email-page",

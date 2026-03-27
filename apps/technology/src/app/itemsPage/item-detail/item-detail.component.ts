@@ -5,7 +5,7 @@ import { Observable, tap } from "rxjs";
 import { ItemsActions } from "../../+state/items/items.actions";
 import { ItemEntity } from "../../+state/items/items.reducer";
 import { getById } from "../../+state/items/items.selectors";
-import { SeoBaseComponent } from "../../shared/seo-base/seo-base.component";
+import { SeoBaseComponent } from "../../../../../../libs/src";
 
 @Component({
   selector: "app-item-detail",

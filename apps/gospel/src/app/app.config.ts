@@ -18,6 +18,7 @@ import {
 import { provideEffects } from "@ngrx/effects";
 import { provideStore } from "@ngrx/store";
 import { provideStoreDevtools } from "@ngrx/store-devtools";
+import { APP_POSTFIX } from "shared";
 import { routes } from "./app.routes";
 import { effects, metaReducers, reducers } from "./state/state.config";
 
@@ -54,5 +55,6 @@ export const appConfig: ApplicationConfig = {
     provideZonelessChangeDetection(),
     provideCloudinaryLoader("https://res.cloudinary.com/dffihsa2y/"),
     provideAnimations(),
+    { provide: APP_POSTFIX, useValue: " | The Good News" },
   ],
 };

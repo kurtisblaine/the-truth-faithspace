@@ -2,7 +2,7 @@ import { Component, OnInit } from "@angular/core";
 import { ActivatedRoute } from "@angular/router";
 import { Store } from "@ngrx/store";
 import { Observable, tap } from "rxjs";
-import { SeoBaseComponent } from "../../shared/components/seo-base/seo-base.component";
+import { SeoBaseComponent } from "shared";
 import { InsightEntity } from "../../state/insight/insight.models";
 import { loadInsights } from "../../state/insight/insights.actions";
 import { getById } from "../../state/insight/insights.selectors";

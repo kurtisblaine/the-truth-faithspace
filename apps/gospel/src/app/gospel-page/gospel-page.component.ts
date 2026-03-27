@@ -14,7 +14,7 @@ import { ActivatedRoute } from "@angular/router";
 import { fullpageApi, fullpageOptions, Item, Trigger } from "fullpage.js/dist/fullpage.extensions.min";
 import { DeviceDetectorService } from "ngx-device-detector";
 import { distinctUntilChanged, filter, Subscription } from "rxjs";
-import { SeoBaseComponent } from "../shared/components/seo-base/seo-base.component";
+import { SeoBaseComponent } from "shared";
 
 type TItem = { isActive: boolean } & Item;
 
@@ -66,12 +66,14 @@ export class GospelPageComponent extends SeoBaseComponent implements OnInit, Aft
     private deviceDetector: DeviceDetectorService,
     @Inject(PLATFORM_ID) private platformId: object
   ) {
-    super("https://thelightof.life/truth");
+    super();
 
     afterNextRender(() => this.isMobile.set(this.deviceDetector.isMobile()));
   }
 
-  ngOnInit() {}
+  ngOnInit() {
+    super.init({ canonicalUrl: "https://thelightof.life/truth" });
+  }
 
   ngOnDestroy() {
     this.routeSubscription?.unsubscribe();

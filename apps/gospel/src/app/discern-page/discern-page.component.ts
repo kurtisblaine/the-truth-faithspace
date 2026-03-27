@@ -1,7 +1,7 @@
 import { Component, OnInit } from "@angular/core";
 import { Store } from "@ngrx/store";
 import { Observable, map } from "rxjs";
-import { SeoBaseComponent } from "../shared/components/seo-base/seo-base.component";
+import { SeoBaseComponent } from "shared";
 import { loadDiscernments } from "../state/discern/discern.actions";
 import { getDiscernLoaded } from "../state/discern/discern.selectors";
 

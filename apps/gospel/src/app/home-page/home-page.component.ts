@@ -1,6 +1,5 @@
 import { Component, OnInit } from "@angular/core";
-import { NarratorStyle } from "shared";
-import { SeoBaseComponent } from "../shared/components/seo-base/seo-base.component";
+import { NarratorStyle, SeoBaseComponent } from "shared";
 
 @Component({
   selector: "blog-home-page",

@@ -2,7 +2,7 @@ import { Component, OnInit } from "@angular/core";
 import { ActivatedRoute } from "@angular/router";
 import { Store } from "@ngrx/store";
 import { Observable, tap } from "rxjs";
-import { SeoBaseComponent } from "../../shared/components/seo-base/seo-base.component";
+import { SeoBaseComponent } from "shared";
 import { loadDiscernments } from "../../state/discern/discern.actions";
 import { DiscernEntity } from "../../state/discern/discern.models";
 import { getById } from "../../state/discern/discern.selectors";

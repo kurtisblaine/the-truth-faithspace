@@ -1,5 +1,5 @@
 import { Component } from "@angular/core";
-import { SeoBaseComponent } from "../shared/components/seo-base/seo-base.component";
+import { SeoBaseComponent } from "shared";
 import { WindowService } from "../shared/service/window.service";
 
 @Component({

@@ -2,7 +2,7 @@ import { ChangeDetectionStrategy, Component, OnInit } from "@angular/core";
 import { ActivatedRoute } from "@angular/router";
 import { Store } from "@ngrx/store";
 import { Observable, tap } from "rxjs";
-import { SeoBaseComponent } from "../../shared/components/seo-base/seo-base.component";
+import { SeoBaseComponent } from "shared";
 import { StudyActions } from "../../state/study/study.actions";
 import { StudyEntity } from "../../state/study/study.model";
 import { getById } from "../../state/study/study.selectors";
