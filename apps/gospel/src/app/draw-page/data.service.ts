@@ -15,9 +15,12 @@ export class DataService {
       name: "The Gospel",
       description: `Even though a believer is saved, as he sits with Christ in heavenly places,
        we must walk in the Spirit and sow to the Spirit and stand against the wiles of the enemy;
-       and endurance until the end, holding fast to the Gospel which we first came to believe.
-       I will call to remembrance seasoned vets in the Lord the scripture of Ezekiel 16: what God has done for us isn't because we're so great,
-       but because we were so helpless; God's grace had nothing to do with us, He gave us love unmerited, so if we boast, we boast in Christ.`,
+       and endure until the end, holding fast to the Gospel which we first came to believe.
+       I will call to remembrance, you seasoned vets in the Lord, the scripture of Ezekiel 16:
+       what God has done for us isn't because we're so great, but because we were so helpless;
+       God's grace had nothing to do with us, He gave us love unmerited;
+       so if we boast, we boast in Christ, in His great riches and mercy which He has for us.
+       We are His workmanship, made useful to the Master through His working in us, and we enter into His rest by faith.`,
       footer: "Jesus has done everything for us, and we are His work, we enter into His rest...",
       originUrl: "v1711590205/teach/gospel_cxqott.webp",
       fileName: "gospel.webp",
@@ -26,12 +29,13 @@ export class DataService {
     this.images.push({
       id: 0,
       name: "Covenant Promise",
-      description: `The promise is available to everyone that is what I mean by putting 'unconditional' on the top.
-        The fulfillment of the promise is in Christ - He is the Yes and Amen to everyone of God's promises.
-        Through the oath given by God, we enter into covenant with Him as it was with Abraham.
-        The promise is the foundation of the covenant - without the proimse, there is no covenant.
-        Believe the promise and enter into covenant with God; this is the entrance into the new covenant and the terms of the covenant - our faith.
-        Christ died - and what's more? He lives on!`,
+      description: `The promise is available to everyone - this is what I mean by putting 'unconditional' on the top.
+        The fulfillment of the promise is Christ Jesus - He is the Yes and Amen to everyone of God's promises.
+        Through the oath given by God, we enter into covenant with Him through faith as it was with our father Abraham.
+        The promise is the foundation of the covenant - for it is a covenant promise - so without the proimse, there is no covenant.
+        Believe the promise and enter into covenant with God, for when a promise is given, what is left except to believe?
+        This is the entrance into the new covenant and the terms of the covenant - our faith.
+        Christ died - and what's more? He lives on! And you overcome by your faith in Him.`,
       footer: "The promise, then the covenant founded on the promise...",
       originUrl: "v1711590185/teach/covenantpromise_lq6374.webp",
       fileName: "covenantpromise.webp",
@@ -40,8 +44,12 @@ export class DataService {
     this.images.push({
       id: 1,
       name: "Being a child of the Day",
-      description: `The Lord will come as thief to those in the night, but Lord and Savior, bringing salvation, to those who are of the day,
-       watching in prayer for His coming and against the enemy of darkness.`,
+      description: `The Lord will come as thief to those in the night;
+      but Lord and Savior, bringing salvation, to those who are of the day, to those who are watching in prayer for His coming, and standing against the wiles of the enemy of darkness.
+      Stand firm against him! Watch in prayer as a watchman on the wall with the eyes of your head - watch.
+      Take diligent care of your heart, for from it flow the issues of life - yes, every defiling thing comes from the heart!
+      Make sure your light is truly light; "If the light in you is darkness, how great the darkness!"
+      Remain in the light, making confession of your sins and affirming the Lord sees and knows everything - nothing is hidden from His sight.`,
       footer: "Be of the Day, a child of the Light, servants of the Lord...",
       fileName: "daynight.webp",
       originUrl: "v1711590187/teach/daynight_yob9oh.webp",
@@ -50,10 +58,12 @@ export class DataService {
     this.images.push({
       id: 2,
       name: "Fear of the Lord",
-      description: `This is wisdom.
-      To perfect wisdom: continue to fear the LORD. In God's wisdom, He proclaims this is the wisest thing for us to do.
-      Ruminate, you clean ones, on the fear of the LORD. He is, was, and is yet to come. When He comes, He will render to each one according to his works and He judges impartially.
-      The Word of the LORD is life. He is True. All who believe in Him set their seal to this: God is true. Let every man be a liar and God be true.`,
+      description: `This is wisdom. To perfect wisdom: continue to fear the LORD.
+      In God's wisdom, He proclaims this is the wisest thing for us to do: fear Him.
+      Ruminate, you clean ones, on the fear of the LORD. He is, was, and is yet to come.
+      When He comes, He will render to each one according to his works, and He judges impartially.
+      The Word of the LORD is life. He is True. All who believe in Him set their seal to this: God is true.
+      Let every man be a liar. The one who does not believe, does not fear; the one who believes, fears.`,
       footer: "The fear of the Lord produces humility and a righteous hatred...",
       fileName: "fearLord.webp",
       originUrl: "v1711590197/teach/fearLord_znqj9t.webp",
@@ -62,8 +72,14 @@ export class DataService {
     this.images.push({
       id: 4,
       name: "Reproach, Reprove, Rebuke, Reprimand",
-      description: `The prefix 'Re' means going back; this would mean going back to the truth and constantly remembering it.
-       Discipline is the way to life; a fool doesn't listen to wise concil, but the wise take heed.`,
+      description: `The prefix 'Re' means going back;
+      this would mean going back to the truth and constantly remembering it.
+      REmembering is to REcall the things that have happened previously.
+      The signs, the feasts, the festivals, the sabbaths, the bow in the sky, the trumpet blasts - remember.
+      "REmember from where you have fallen and REpent and do the deeds you did at first." (Revelation 2:5)
+      Discipline is the way to life; a fool doesn't listen to wise concil, but the wise fear and take heed.
+      A fool goes on his way and pays no attention to the Word; his ignorance is blissful only for a short time;
+      and when it is too late, there will be no going back.`,
       footer: "Differences between all the 're' words and understanding the prefix...",
       originUrl: "v1711590232/teach/re_g8fwmi.webp",
       fileName: "re.webp",
@@ -72,9 +88,13 @@ export class DataService {
     this.images.push({
       id: 5,
       name: "Sanctification Explained",
-      description: `Going from what is earthly (south, or below) to what is heavenly (north, or above);
-      from what is wrong (left, west) to the right (right, or east) being sanctified.
-      Going from what is made with human hands, to that which is made not with hands; Going from what pleases men, to what pleases God.`,
+      description: `Sanctification: going from what is earthly (south, or below) to what is heavenly (north, or above);
+      from what is wrong (left, west) to the right (right, or east) being sanctified;
+      going from what is made with human hands, to that which is made without hands;
+      from what pleases men, to what pleases God, from doing what is right in your own eyes, to what is right in God's eyes.
+      Sanctification comes by the truth; "Sanctify them in the truth; Your word is truth.” (John 17:17)
+      So sanctification is God's work: only believe. On the sabbath, the men rested and the priests worked and were guiltless;
+      "You shall surely observe My sabbaths; for this is a sign between Me and you throughout your generations, that you may know that I am the LORD who sanctifies you.” (Exodus 31:13)`,
       footer: "Moving away from earthly things to heavenly things...",
       fileName: "sanctification.webp",
       originUrl: "v1711590244/teach/sanctification_jjdelm.webp",
@@ -84,7 +104,12 @@ export class DataService {
       id: 49,
       name: "Justification and Salvation",
       description: `Just as the body without the spirit is dead, so faith without works is dead.
-      Only living faith will save you, made possible only because of the Living Sacrifice of Christ. How beautiful this truth is!`,
+      Only living faith will save you, made possible because of the Living Sacrifice of Christ. How beautiful this truth is!
+      You must be made right before you can ever do right; justification proceeds sanctification. Jesus Christ justifies us through the sacrifice of Himself;
+      and if justification comes from His death, how much more will we be sanctified (and saved) by His life?
+      If by His weakness we were justified, how much more will we be saved by His strength?
+      If He loved us in His death, how much more in His resurrected life?
+      If justification comes by faith, how much more sanctification? The new covenant: faith in Jesus Christ.`,
       footer: "Justified by Christ, Faith that saves...",
       fileName: "justificationandsalvation.webp",
       originUrl: "v1721004824/teach/justificationandsalvation_d1flk5.webp",
@@ -93,8 +118,12 @@ export class DataService {
     this.images.push({
       id: 50,
       name: "Biblical Separation",
-      description: `Discerning between the clean and the unclean, separating from men who act like unclean animals.
-      Be separate from them, lest they corrupt you.`,
+      description: `Discerning between the clean and the unclean, and separating from men who act like unclean animals.
+      Be separate from them, lest they corrupt you and damn you. As Jesus said, "Let the dead go bury their dead."
+      So their carcasses are defiling. What fellowship does life have with death? Light with darkness?
+      Jesus Christ is the life; He spent three days among the dead, so you would part ways with sin and death.
+      "Draw near unto God and He will draw near unto you; cleanse your hands you sinners and purify your hearts you double minded."
+      For the closer we draw near to God, the further away our former companions will appear.`,
       footer: "When to separate from believers and unbelievers...",
       fileName: "biblicalseparation.webp",
       originUrl: "v1721004824/teach/biblicalseparation_e1udhr.webp",
@@ -103,9 +132,12 @@ export class DataService {
     this.images.push({
       id: 51,
       name: "Israel Marching Order",
-      description: `The same it is today, we are led by the Spirit of God.
-      All the tribes followed the pillar of cloud by day and the pillar of fire by night.
-      Isarel was the first church and an example to us in these latter days (1 Corinthians 10).`,
+      description: `The same as it is today, we are led by the Spirit of God.
+      All the tribes followed the pillar of cloud by day and the pillar of fire by night; the angel of the Lord was in the cloud.
+      Isarel was the first church in the wilderness and an example to us in these latter days (1 Corinthians 10):
+      they were all baptized in the cloud and in the sea, they ate the same spiritual bread and drank the same spiritual drink;
+      how are we any different? They were led by Moses out of bondage; we are led out by Christ, the Prophet like Moses.
+      They were commanded to walk orderly, in step, covered and aligned. Are our marching orders any different?`,
       footer: "How the hosts of the LORD were sent out...",
       fileName: "israelcamp.webp",
       originUrl: "v1721004824/teach/israelcamp_mrnxqw.webp",
@@ -114,11 +146,8 @@ export class DataService {
     this.images.push({
       id: 6,
       name: "Sin, Righteousness, Judgement",
-      description: `When we believe in Christ, our sins are forgiven by grace;
-        however, it's not a means to continue on sinning deliberately while claiming grace.
-        That would get us into the realm of unforgivable sins which are not covered by the Blood of Christ.
-        We are made right by God because of our faith in Jesus. God was not unjust when He justified us through Christ;
-        His sacrifice is sufficient for us in order to draw us near to God.`,
+      description: `If we sin, it is because we have not faith; if we do what is right, it is because we believe.
+      `,
       footer: "Elaborating John 16: 8-11...",
       fileName: "john16.webp",
       originUrl: "v1711590220/teach/john16_bgxtfk.webp",
@@ -155,8 +184,10 @@ export class DataService {
     this.images.push({
       id: 20,
       name: "The Lion & the Lamb",
-      description: `Abraham gave his one and only son, Isaac, as a sacrifice; and Jacob gave up his one and only son Benjamin as a sacrifice.
-      These represent Jesus, who God gave up for the sins of the world, because of His great love for us, giving up His beloved Son whom He loves.`,
+      description: `Abraham gave his one and only son, Isaac, as a sacrifice; and Jacob gave up his one and only son Benjamin, from his beloved Rachel, to go to Egypt.
+      These represent Jesus, who God gave up for the sins of the world, because of His great love for us, giving up His beloved Son whom He loves.
+      Abraham gained back his son Isaac, and Jacob gained back his son Benjamin - not to mention he received back Joseph from the dead!
+      Without question these point to Jesus' resurrection from the dead after being handed over to death for our sins; God raised Him back from the dead.`,
       footer: "Similarities between Isaac and Benjamin prophesying about Jesus...",
       fileName: "Jesuslionlamb.webp",
       originUrl: "v1711590217/teach/Jesuslionlamb_y91dzk.webp",
@@ -195,7 +226,11 @@ export class DataService {
     this.images.push({
       id: 25,
       name: "Run the Race of Faith",
-      description: `The race is from start to finish by faith. We race for the eternal crown of life.`,
+      description: `The race is from start to finish by faith. We race for the eternal crown of life.
+      In the days before instant messaging, runners were sent out to run with a message; they ran to bring a word to the king or to whomever it may concern.
+      So today, we are called to run the race of faith, bearing the good news in our bosom and proclaiming to every creature under the sun.
+      All men everywhere have the universal right to the gospel; whether they accept it or reject it, let it be on them, but your hands be clean.
+      Bear the good news, for good men bring the good news!`,
       footer: "To live the life of faith, is to be like an athlete, running a race...",
       fileName: "runtherace.webp",
       originUrl: "v1711590238/teach/runtherace_pnfqmo.webp",
@@ -264,7 +299,8 @@ export class DataService {
       name: "The Word of Life",
       description: `We have no life unless we abide in Christ. He is so great and merciful, making Himself available to us all by faith.
       How we can do utterly nothing of value apart from God. If we wish to have fruit, we must be in God.
-      Even the Son said, 'Why do you call Me good? Only God is good'. Our righteousness comes from what we see our Father doing in Christ.`,
+      Even the Son said, 'Why do you call Me good? Only God is good'. Our righteousness comes from what we see our Father doing in Christ.
+      Our righteousness comes from knowing the Lord Jesus and the Father God. Jesus, the Christ, has revealed Him to us.`,
       footer: "These are words of spirit & truth from the Word of Life...",
       fileName: "theWordofLife.webp",
       originUrl: "v1712630408/teach/theWordofLife_qtalbz.webp",
@@ -394,10 +430,10 @@ export class DataService {
 
     this.images.push({
       id: 21,
-      name: "The Day of Judgement",
+      name: "The Day of Judgement for the Righteous and the Sinner",
       description: `Before each judgment are a series of events: a gathering of nations, thrones setup, dead raised or the sleep raised, and finally, judgment.
       In the study of the book of Revelation, you will see this in common between both judgements of the righteous and the wicked.
-      There are two judgements just as there are two resurrections.`,
+      There are two judgements just as there are two resurrections. Blessed are those who take part in the first resurrection, for the second death holds no power over them!`,
       footer: "Two judgements of the righteous and the wicked, two resurrections...",
       fileName: "judgementday.webp",
       originUrl: "v1711590223/teach/judgementday_pfgryw.webp",
