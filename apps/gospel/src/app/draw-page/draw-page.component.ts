@@ -19,6 +19,8 @@ export class Image {
   standalone: false,
 })
 export class DrawPageComponent implements OnInit {
+  private readonly metaDescription =
+    "Drawings to help visualize important topics, to help compare things that are alike and contrast things that are not.";
   public images: Image[] = [];
   public faLink = faArrowUpRightFromSquare;
 
@@ -27,9 +29,9 @@ export class DrawPageComponent implements OnInit {
   ngOnInit(): void {
     this.meta.updateTag({
       name: "description",
-      content:
-        "Drawings to help visualize important topics, to help compare things that are alike and contrast things that are not.",
+      content: this.metaDescription,
     });
+
     this.images = this.dataService.init();
   }
 }
