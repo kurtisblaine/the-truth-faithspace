@@ -1,4 +1,5 @@
 import { Component, OnInit } from "@angular/core";
+import { Meta } from "@angular/platform-browser";
 import { faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
 import { DataService } from "./data.service";
 export class Image {
@@ -21,9 +22,14 @@ export class DrawPageComponent implements OnInit {
   public images: Image[] = [];
   public faLink = faArrowUpRightFromSquare;
 
-  constructor(private dataService: DataService) {}
+  constructor(private dataService: DataService, private meta: Meta) {}
 
   ngOnInit(): void {
+    this.meta.updateTag({
+      name: "description",
+      content:
+        "Drawings to help visualize important topics, to help compare things that are alike and contrast things that are not.",
+    });
     this.images = this.dataService.init();
   }
 }

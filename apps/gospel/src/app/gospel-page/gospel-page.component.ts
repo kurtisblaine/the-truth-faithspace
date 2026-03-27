@@ -14,7 +14,7 @@ import { ActivatedRoute } from "@angular/router";
 import { fullpageApi, fullpageOptions, Item, Trigger } from "fullpage.js/dist/fullpage.extensions.min";
 import { DeviceDetectorService } from "ngx-device-detector";
 import { distinctUntilChanged, filter, Subscription } from "rxjs";
-import { SeoBaseComponent } from "shared";
+import { CanonicalService } from "shared";
 
 type TItem = { isActive: boolean } & Item;
 
@@ -25,7 +25,7 @@ type TItem = { isActive: boolean } & Item;
   styleUrl: "./gospel-page.component.scss",
   encapsulation: ViewEncapsulation.None,
 })
-export class GospelPageComponent extends SeoBaseComponent implements OnInit, AfterViewInit, OnDestroy {
+export class GospelPageComponent implements OnInit, AfterViewInit, OnDestroy {
   public fullpageConfig: fullpageOptions = {
     licenseKey: "GM477-9I82I-1L8K9-194JK-TJUVR",
 
@@ -56,30 +56,27 @@ export class GospelPageComponent extends SeoBaseComponent implements OnInit, Aft
   public isMobile = signal(true);
 
   public fullpageApi: fullpageApi;
-  protected override keywords: string = "gospel, faith, righteous, live, kingdom, Jesus, revealed, truth";
-
   private routeSubscription: Subscription;
 
   constructor(
     private route: ActivatedRoute,
     private location: Location,
     private deviceDetector: DeviceDetectorService,
+    private canonicalService: CanonicalService,
     @Inject(PLATFORM_ID) private platformId: object
   ) {
-    super();
-
     afterNextRender(() => this.isMobile.set(this.deviceDetector.isMobile()));
   }
 
   ngOnInit() {
-    super.init({ canonicalUrl: "https://thelightof.life/truth" });
+    this.canonicalService.createCanonicalUrl("https://thelightof.life/truth");
   }
 
   ngOnDestroy() {
     this.routeSubscription?.unsubscribe();
   }
 
-  override ngAfterViewInit(): void {
+  ngAfterViewInit(): void {
     this.routeSubscription = this.route.fragment
       .pipe(
         filter((fragment) => !!fragment),
