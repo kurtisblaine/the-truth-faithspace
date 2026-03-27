@@ -53,7 +53,7 @@ export class AppComponent implements OnInit {
   @ViewChild("toTop") public toTopElement: ElementRef;
   @ViewChild(MatMenuTrigger) trigger: MatMenuTrigger;
 
-  public title = "The Good News of the Kingdom | The Gospel of Grace and Truth";
+  public title = "The Good News of the Kingdom";
   public icon = faBars;
   public homeIcon = faInfoCircle;
   public blogIcon = faDumbbell;

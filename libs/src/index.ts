@@ -4,6 +4,8 @@ export * from "./lib/shared/directives/tooltip.directive";
 
 export * from "./lib/shared/guards/auth.guard";
 
+export * from "./lib/shared/services/canonical.service";
+
 export * from "./lib/shared/components/contact-form/contact.service";
 export * from "./lib/shared/components/narrator/speech.service";
 export * from "./lib/shared/components/settings-widget/auth.service";
