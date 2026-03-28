@@ -85,14 +85,6 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
       of his sins? Let us examine and probe our ways, And let us return to the LORD.” (Lamentations 3:37-40)
       <br /><br />
 
-      <!-- <a href="https://thelightof.life/drawings/draw/fearLord" target="_blank"
-          >There is a healthy fear of the Lord, and an unhealthy fear.</a
-        ><br /><br />
-
-        <a href="https://thelightof.life/study-detail/2989017f-1078-1b40-a639-7ecdb98078af" target="_blank"
-          >How to understand the fear of the LORD.</a
-        > -->
-
       The LORD God is the First and the Last; He has no beginning nor end; but He is the Beginning and the End; He lives
       from everlasting to everlasting; all things He has created. He alone has power to take up the sword and destroy,
       yet He gives life and relents in destruction; He is patient with the wicked everyday. He sets all things upright

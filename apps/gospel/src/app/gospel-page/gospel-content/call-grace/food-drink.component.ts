@@ -1,6 +1,6 @@
 import { CommonModule } from "@angular/common";
 import { ChangeDetectionStrategy, Component } from "@angular/core";
-import { LinkComponent } from "../../../shared/components/link-redirect/link.component";
+import { LinkComponent } from "shared";
 import { ReferenceTooltipComponent } from "../../../shared/components/reference-tooltip/reference-tooltip.component";
 import { GospelContentBaseComponent } from "../gospel-content.base.component";
 
@@ -93,8 +93,8 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
       revealed when He is revealed to the whole world. So therefore, seek and search for Him, the living Life, dwelling
       above the heavens, and He will let you find Him. We who sow to the Spirit reap life, and the mind set on the
       Spirit is life and peace; so set your minds on the things above where Christ dwells.
-      <blog-link [link]="'https://thelightof.life/edifications/edify-detail/82f4d580-3f2d-a049-d46d-6036c26062a8'"
-        >(See more on the Living Bread)</blog-link
+      <lib-link [link]="baseUrl + '/edifications/edify-detail/82f4d580-3f2d-a049-d46d-6036c26062a8'"
+        >(See more on the Living Bread)</lib-link
       >
       <br /><br />
 
@@ -136,8 +136,8 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
         the world. (...) I am the bread of life; he who comes to Me will not hunger, and he who believes in Me will
         never thirst.
       </blog-reference-tooltip>
-      <blog-link [link]="'https://thelightof.life/edifications/edify-detail/7666deae-3d71-86fe-0d07-0f3a29a99599'"
-        >(See more on Christ as Food)</blog-link
+      <lib-link [link]="baseUrl + '/edifications/edify-detail/7666deae-3d71-86fe-0d07-0f3a29a99599'"
+        >(See more on Christ as Food)</lib-link
       >
       <br /><br />
 

@@ -1,6 +1,6 @@
 import { CommonModule } from "@angular/common";
 import { ChangeDetectionStrategy, Component } from "@angular/core";
-import { LinkComponent } from "../../../shared/components/link-redirect/link.component";
+import { LinkComponent } from "shared";
 import { ReferenceTooltipComponent } from "../../../shared/components/reference-tooltip/reference-tooltip.component";
 import { GospelContentBaseComponent } from "../gospel-content.base.component";
 
@@ -68,8 +68,8 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
       you do something for them: stand them up, feed them, dust them off, but they are no gods at all; but the one and
       only God does on our behalf, waging war for us and defeating our foes. He defeated them through the cross, and we
       enter into His victory through faith.
-      <blog-link [link]="'https://thelightof.life/edifications/edify-detail/cff547c6-c5b8-3479-7472-f065fed444f5'"
-        >(See more about Righteous Warfare)</blog-link
+      <lib-link [link]="baseUrl + '/edifications/edify-detail/cff547c6-c5b8-3479-7472-f065fed444f5'"
+        >(See more about Righteous Warfare)</lib-link
       >
       <br /><br />
 
@@ -130,8 +130,8 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
       against him with the Sword of the Word of God; your defense of armor is from the Lord, and your offensive weapon
       is from the Lord; and you, O warrior in the kingdom of God - fight! For He has fought for us. He gives us the law
       of the Spirit and life that we may defend ourselves against the law of sin and death.
-      <blog-link [link]="'https://thelightof.life/edifications/edify-detail/52314b0f-bfbb-2b2b-6393-c8e3dcef2a2e'"
-        >(See more about the Two Laws Waging War)</blog-link
+      <lib-link [link]="baseUrl + '/edifications/edify-detail/52314b0f-bfbb-2b2b-6393-c8e3dcef2a2e'"
+        >(See more about the Two Laws Waging War)</lib-link
       >
       <blog-reference-tooltip [reference]="'Romans 8:35-37'">
         Does it mean he no longer loves us if we have trouble or calamity, or are persecuted, or hungry, or destitute,
@@ -139,8 +139,8 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
         being slaughtered like sheep.") No, despite all these things,
         <b>overwhelming victory is ours through Christ, who loved us.</b>
       </blog-reference-tooltip>
-      <blog-link [link]="'https://thelightof.life/edifications/edify-detail/69f8db0f-ef45-212e-beb9-2a7dcea600a4'"
-        >(See more about Mordecai)</blog-link
+      <lib-link [link]="baseUrl + '/edifications/edify-detail/69f8db0f-ef45-212e-beb9-2a7dcea600a4'"
+        >(See more about Mordecai)</lib-link
       >
     </ng-template>`,
   styles: ``,

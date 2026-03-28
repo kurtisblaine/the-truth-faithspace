@@ -4,8 +4,7 @@ import { MatGridListModule } from "@angular/material/grid-list";
 import { MatTooltipModule } from "@angular/material/tooltip";
 import { RouterModule, Routes } from "@angular/router";
 import { PinchZoomComponent } from "@meddv/ngx-pinch-zoom";
-import { LibFaIconComponent } from "shared";
-import { LinkComponent } from "../shared/components/link-redirect/link.component";
+import { LibFaIconComponent, LinkComponent } from "shared";
 import { DrawItemComponent } from "./draw-item/draw-item.component";
 import { DrawPageComponent } from "./draw-page.component";
 

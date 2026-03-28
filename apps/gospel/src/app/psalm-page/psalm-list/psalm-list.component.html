@@ -6,10 +6,10 @@
   <div style="flex: 1 1 80%; width: 100%">
     <div class="psalm-item" *ngFor="let psalm of pagedPsalms()">
       <div class="psalm-title primary-color">
-        <blog-link [link]="'https://thelightof.life/poems/poem-detail/' + psalm.id"
+        <lib-link [link]="baseUrl + '/poems/poem-detail/' + psalm.id"
           >{{ psalm.title }}
           <lib-fa-icon [icon]="faLink" style="padding-left: 2px"></lib-fa-icon>
-        </blog-link>
+        </lib-link>
       </div>
       <div>{{ psalm.date | date: "short" }}</div>
 
@@ -19,7 +19,7 @@
       } @else {
       <lib-readonly-text-editor
         [html]="psalm?.json?.toString()"
-        [link]="'https://thelightof.life/poems/poem-detail/' + psalm.id"
+        [link]="baseUrl + '/poems/poem-detail/' + psalm.id"
       ></lib-readonly-text-editor>
       }
 

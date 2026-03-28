@@ -1,6 +1,6 @@
 import { CommonModule } from "@angular/common";
 import { ChangeDetectionStrategy, Component } from "@angular/core";
-import { LinkComponent } from "../../../shared/components/link-redirect/link.component";
+import { LinkComponent } from "shared";
 import { ReferenceTooltipComponent } from "../../../shared/components/reference-tooltip/reference-tooltip.component";
 import { GospelContentBaseComponent } from "../gospel-content.base.component";
 
@@ -106,8 +106,8 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
       (James 1:25) But the apostle Paul calls the law, "The ministry of death," (2 Corinthians 3:7) and "The ministry of
       condemnation." (2 Corinthians 3:9) So if we fulfill the law, we live in the freedom, and rest in life of God; but
       if we disobey, we lie in the depths of slavery, toil, and death in sin.
-      <blog-link [link]="'https://thelightof.life/edifications/edify-detail/ccb334ab-3719-49b4-a690-1416ad4d1265'">
-        (See more on Submission to Authority)</blog-link
+      <lib-link [link]="baseUrl + '/edifications/edify-detail/ccb334ab-3719-49b4-a690-1416ad4d1265'">
+        (See more on Submission to Authority)</lib-link
       >
       <br /><br />
 
@@ -138,9 +138,7 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
         If you keep My commandments, you will abide in My love; just as I have kept My Father's commandments and abide
         in His love.
       </blog-reference-tooltip>
-      <blog-link [link]="'https://thelightof.life/drawings/draw/sanctification'">
-        (See more on Sanctification)</blog-link
-      >
+      <lib-link [link]="baseUrl + '/drawings/draw/sanctification'"> (See more on Sanctification)</lib-link>
     </ng-template>`,
   styles: ``,
   changeDetection: ChangeDetectionStrategy.OnPush,

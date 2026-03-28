@@ -2,9 +2,9 @@
   <mat-card-header>
     <mat-card-title-group style="justify-content: center">
       <mat-card-title class="headers">
-        <a [href]="`https://thelightof.life/truth/truthful-item/${page()}`" target="_blank">
+        <lib-link [link]="`${baseUrl}/truth/truthful-item/${page()}`">
           <ng-content select=".headers"></ng-content>
-        </a>
+        </lib-link>
       </mat-card-title>
       <mat-card-subtitle>
         <lib-narrator [text]="paragraphContent?.innerText" [buttonStyle]="narratorStyle.Fab"> </lib-narrator>

@@ -1,16 +1,22 @@
+import { CommonModule } from "@angular/common";
 import { ChangeDetectionStrategy, Component, Input } from "@angular/core";
 
 @Component({
   selector: "lib-link",
-  template: ` <a href="{{ link }}" [target]="getTarget()"><ng-content></ng-content></a> `,
+  template: `
+    <a href="{{ link }}" [target]="getTarget()" [ngStyle]="{ 'text-decoration': isNewPage ? 'underline' : 'none' }">
+      <ng-content></ng-content>
+    </a>
+  `,
   styles: ``,
+  imports: [CommonModule],
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class LinkComponent {
   @Input() public link!: string;
-  @Input() public shouldOpenNewPage = true;
+  @Input() public isNewPage = true;
 
   getTarget(): string {
-    return this.shouldOpenNewPage ? "_blank" : "_self";
+    return this.isNewPage ? "_blank" : "_self";
   }
 }

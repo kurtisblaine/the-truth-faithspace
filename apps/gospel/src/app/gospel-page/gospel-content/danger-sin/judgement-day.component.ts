@@ -65,9 +65,6 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
       our God is a God of justice and righteousness. Right now is the time to receive correction and forgiveness, but in
       that day, a time for judgment and wrath, for condemnation or reward.
       <br /><br />
-      <!-- <a href="https://thelightof.life/drawings/draw/re" target="_blank"
-          >Differences between reprimand, reproof, and rebuke.</a
-        ><br /><br /> -->
 
       Judgement is not merely in word, but in action too; the result of judgment is either condemnation or praise; to
       compress the lips is to allow evil to pass, to allow injustice to persist; but God will reveal His righteous

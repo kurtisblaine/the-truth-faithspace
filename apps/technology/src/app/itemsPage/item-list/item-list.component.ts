@@ -11,8 +11,12 @@ import { toHTML } from "ngx-editor";
 import { ItemsActions } from "../../+state/items/items.actions";
 import { ItemEntity } from "../../+state/items/items.reducer";
 import { selectAllItems } from "../../+state/items/items.selectors";
-import { FilterComponent, ReadonlyTextEditorComponent, TextEditorComponent } from "../../../../../../libs/src";
-import { LinkComponent } from "../../shared/link/link.component";
+import {
+  FilterComponent,
+  LinkComponent,
+  ReadonlyTextEditorComponent,
+  TextEditorComponent,
+} from "../../../../../../libs/src";
 
 @Component({
   selector: "app-item-list",

@@ -1,6 +1,6 @@
 import { Component, OnInit } from "@angular/core";
-import { Meta } from "@angular/platform-browser";
 import { faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
+import { SeoBaseComponent } from "shared";
 import { DataService } from "./data.service";
 export class Image {
   id: number;
@@ -18,19 +18,20 @@ export class Image {
   styleUrls: ["./draw-page.component.scss"],
   standalone: false,
 })
-export class DrawPageComponent implements OnInit {
+export class DrawPageComponent extends SeoBaseComponent implements OnInit {
   private readonly metaDescription =
     "Drawings to help visualize important topics, to help compare things that are alike and contrast things that are not.";
+
   public images: Image[] = [];
   public faLink = faArrowUpRightFromSquare;
 
-  constructor(private dataService: DataService, private meta: Meta) {}
+  constructor(private dataService: DataService) {
+    super();
+  }
 
   ngOnInit(): void {
-    this.meta.updateTag({
-      name: "description",
-      content: this.metaDescription,
-    });
+    this.setTitle("Drawings");
+    this.setDescription(this.metaDescription);
 
     this.images = this.dataService.init();
   }

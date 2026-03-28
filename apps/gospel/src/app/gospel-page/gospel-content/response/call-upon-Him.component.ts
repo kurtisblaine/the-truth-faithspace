@@ -1,6 +1,6 @@
 import { CommonModule } from "@angular/common";
 import { ChangeDetectionStrategy, Component } from "@angular/core";
-import { LinkComponent } from "../../../shared/components/link-redirect/link.component";
+import { LinkComponent } from "shared";
 import { ReferenceTooltipComponent } from "../../../shared/components/reference-tooltip/reference-tooltip.component";
 import { GospelContentBaseComponent } from "../gospel-content.base.component";
 
@@ -109,9 +109,9 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
       confess Him publicly, uncover your head and circumcise your heart. See the thirsty land and give drink; do not
       withhold your bread, nor your water from the poor; open up your lid and pour from your vessel. See the fruit of
       your labors and rejoice; and see salvation at work within you and others.
-      <blog-link [link]="'https://thelightof.life/drawings/draw/justificationandsalvation'"
+      <lib-link [link]="baseUrl + '/drawings/draw/justificationandsalvation'"
         >(See more on Justification and Salvation)
-      </blog-link>
+      </lib-link>
       <br /><br />
 
       Be ready and looking forward to give reason for your hope in Christ. The world always tells about places to eat

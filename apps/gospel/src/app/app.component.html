@@ -1,55 +1,75 @@
 <mat-drawer-container style="width: 100%; height: 100%" [hasBackdrop]="false">
   <mat-drawer style="width: 280px; position: fixed" #drawer [mode]="'side'" [autoFocus]="true">
     <mat-list>
-      <mat-list-item lines="3" (click)="goHome(); drawer.close()">
-        <lib-fa-icon matListItemIcon [icon]="homeIcon"></lib-fa-icon>
-        <span matListItemTitle>About</span>
-        <span>My testimony & a message of encouragement.</span>
-      </mat-list-item>
-      <mat-list-item lines="3" (click)="goEmail(); drawer.close()">
-        <lib-fa-icon matListItemIcon [icon]="mailIcon"></lib-fa-icon>
-        <span matListItemTitle>Contact</span>
-        <span>If you're encouraged, please leave a message.</span>
-      </mat-list-item>
+      <lib-link [link]="`${baseUrl}/home`" [isNewPage]="false">
+        <mat-list-item lines="3" (click)="drawer.close()">
+          <lib-fa-icon matListItemIcon [icon]="homeIcon"></lib-fa-icon>
+          <span matListItemTitle>About</span>
+          <span>My testimony & a message of encouragement.</span>
+        </mat-list-item>
+      </lib-link>
+
+      <lib-link [link]="`${baseUrl}/email`" [isNewPage]="false">
+        <mat-list-item lines="3" (click)="drawer.close()">
+          <lib-fa-icon matListItemIcon [icon]="mailIcon"></lib-fa-icon>
+          <span matListItemTitle>Contact</span>
+          <span>If you're encouraged, please leave a message.</span>
+        </mat-list-item>
+      </lib-link>
 
       <div mat-subheader>Posts</div>
-      <mat-list-item lines="3" (click)="goDiscern(); drawer.close()">
-        <lib-fa-icon matListItemIcon [icon]="discernIcon"></lib-fa-icon>
-        <span matListItemTitle>Discernments</span>
-        <span>Understanding different kinds of spirits & gospels.</span>
-      </mat-list-item>
-      <mat-list-item lines="3" (click)="goBlog(); drawer.close()">
-        <lib-fa-icon matListItemIcon [icon]="blogIcon"></lib-fa-icon>
-        <span matListItemTitle>Edifications</span>
-        <span>Scriptures knit together for encouraging.</span>
-      </mat-list-item>
-      <mat-list-item lines="3" (click)="goInsight(); drawer.close()">
-        <lib-fa-icon matListItemIcon [icon]="insightIcon"></lib-fa-icon>
-        <span matListItemTitle>Insights</span>
-        <span>Things understood from experience and nature.</span>
-      </mat-list-item>
-      <mat-list-item lines="3" (click)="goPsalm(); drawer.close()">
-        <lib-fa-icon matListItemIcon [icon]="psalmIcon"></lib-fa-icon>
-        <span matListItemTitle>Poems</span>
-        <span>Magnifying the Lord with poetry and song. </span>
-      </mat-list-item>
-      <mat-list-item lines="3" (click)="goStudies(); drawer.close()">
-        <lib-fa-icon matListItemIcon [icon]="studyIcon"></lib-fa-icon>
-        <span matListItemTitle>Studies</span>
-        <span>Grouping scripture for a complete understanding. </span>
-      </mat-list-item>
+      <lib-link [link]="`${baseUrl}/discernments`" [isNewPage]="false">
+        <mat-list-item lines="3" (click)="drawer.close()">
+          <lib-fa-icon matListItemIcon [icon]="discernIcon"></lib-fa-icon>
+          <span matListItemTitle>Discernments</span>
+          <span>Understanding different kinds of spirits & gospels.</span>
+        </mat-list-item>
+      </lib-link>
+      <lib-link [link]="`${baseUrl}/edifications`" [isNewPage]="false">
+        <mat-list-item lines="3" (click)="drawer.close()">
+          <lib-fa-icon matListItemIcon [icon]="blogIcon"></lib-fa-icon>
+          <span matListItemTitle>Edifications</span>
+          <span>Scriptures knit together for encouraging.</span>
+        </mat-list-item>
+      </lib-link>
+
+      <lib-link [link]="`${baseUrl}/insights`" [isNewPage]="false">
+        <mat-list-item lines="3" (click)="drawer.close()">
+          <lib-fa-icon matListItemIcon [icon]="insightIcon"></lib-fa-icon>
+          <span matListItemTitle>Insights</span>
+          <span>Things understood from experience and nature.</span>
+        </mat-list-item>
+      </lib-link>
+      <lib-link [link]="`${baseUrl}/poems`" [isNewPage]="false">
+        <mat-list-item lines="3" (click)="drawer.close()">
+          <lib-fa-icon matListItemIcon [icon]="psalmIcon"></lib-fa-icon>
+          <span matListItemTitle>Poems</span>
+          <span>Magnifying the Lord with poetry and song. </span>
+        </mat-list-item>
+      </lib-link>
+      <lib-link [link]="`${baseUrl}/studies`" [isNewPage]="false">
+        <mat-list-item lines="3" (click)="drawer.close()">
+          <lib-fa-icon matListItemIcon [icon]="studyIcon"></lib-fa-icon>
+          <span matListItemTitle>Studies</span>
+          <span>Grouping scripture for a complete understanding. </span>
+        </mat-list-item>
+      </lib-link>
 
       <div mat-subheader>Pictures</div>
-      <mat-list-item lines="3" (click)="goDrawings(); drawer.close()">
-        <lib-fa-icon matListItemIcon [icon]="drawingIcon"></lib-fa-icon>
-        <span matListItemTitle>Drawings</span>
-        <span>Contrast spiritual truths in a simple way.</span>
-      </mat-list-item>
-      <mat-list-item lines="3" (click)="goTracts(); drawer.close()">
-        <lib-fa-icon matListItemIcon [icon]="tractIcon"></lib-fa-icon>
-        <span matListItemTitle>Tracts</span>
-        <span>Tracts to communicate truth in a quick & effective way.</span>
-      </mat-list-item>
+      <lib-link [link]="`${baseUrl}/drawings`" [isNewPage]="false">
+        <mat-list-item lines="3" (click)="drawer.close()">
+          <lib-fa-icon matListItemIcon [icon]="drawingIcon"></lib-fa-icon>
+          <span matListItemTitle>Drawings</span>
+          <span>Contrast spiritual truths in a simple way.</span>
+        </mat-list-item>
+      </lib-link>
+      <lib-link [link]="`${baseUrl}/tracts`" [isNewPage]="false">
+        <mat-list-item lines="3" (click)="drawer.close()">
+          <lib-fa-icon matListItemIcon [icon]="tractIcon"></lib-fa-icon>
+          <span matListItemTitle>Tracts</span>
+          <span>Tracts to communicate truth in a quick & effective way.</span>
+        </mat-list-item>
+      </lib-link>
     </mat-list>
   </mat-drawer>
   <mat-drawer-content>
@@ -77,41 +97,65 @@
         </button>
 
         <mat-menu #menu="matMenu">
-          <button mat-menu-item (click)="goHome()">About</button>
-          <button mat-menu-item (click)="goEmail()">Contact</button>
+          <lib-link [link]="`${baseUrl}/home`" [isNewPage]="false">
+            <button mat-menu-item>About</button>
+          </lib-link>
+          <lib-link [link]="`${baseUrl}/email`" [isNewPage]="false">
+            <button mat-menu-item>Contact</button>
+          </lib-link>
           <mat-divider></mat-divider>
-          <button mat-menu-item (click)="goDiscern()">Discernments</button>
-          <button mat-menu-item (click)="goBlog()">Edifications</button>
-          <button mat-menu-item (click)="goInsight()">Insights</button>
-          <button mat-menu-item (click)="goPsalm()">Poems</button>
-          <button mat-menu-item (click)="goStudies()">Studies</button>
+          <lib-link [link]="`${baseUrl}/discernments`" [isNewPage]="false">
+            <button mat-menu-item>Discernments</button>
+          </lib-link>
+          <lib-link [link]="`${baseUrl}/edifications`" [isNewPage]="false">
+            <button mat-menu-item>Edifications</button>
+          </lib-link>
+          <lib-link [link]="`${baseUrl}/insights`" [isNewPage]="false">
+            <button mat-menu-item>Insights</button>
+          </lib-link>
+          <lib-link [link]="`${baseUrl}/poems`" [isNewPage]="false">
+            <button mat-menu-item>Poems</button>
+          </lib-link>
+          <lib-link [link]="`${baseUrl}/studies`" [isNewPage]="false">
+            <button mat-menu-item>Studies</button>
+          </lib-link>
           <mat-divider></mat-divider>
-          <button mat-menu-item (click)="goDrawings()">Drawings</button>
-          <button mat-menu-item (click)="goTracts()">Tracts</button>
+          <lib-link [link]="`${baseUrl}/drawings`" [isNewPage]="false">
+            <button mat-menu-item>Drawings</button>
+          </lib-link>
+          <lib-link [link]="`${baseUrl}/tracts`" [isNewPage]="false">
+            <button mat-menu-item>Tracts</button>
+          </lib-link>
         </mat-menu>
 
-        <button mat-button (click)="goGospel(); drawer.close()"><h1>The Good News</h1></button>
+        <lib-link [link]="`${baseUrl}/truth`" [isNewPage]="false">
+          <button mat-button (click)="drawer.close()"><h1>The Good News</h1></button>
+        </lib-link>
         <span style="flex: 1 1 auto"></span>
 
-        <button
-          mat-icon-button
-          (click)="goGospel()"
-          [matTooltip]="'Go to the Good News'"
-          aria-labelledby="Gospel button"
-          aria-label="Gospel button"
-        >
-          <lib-fa-icon [icon]="gospelIcon"></lib-fa-icon>
-        </button>
-        <button
-          mat-icon-button
-          (click)="openBible()"
-          [matTooltip]="'Open the Bible'"
-          style="margin-right: 12px"
-          aria-labelledby="Bible button"
-          aria-label="Bible button"
-        >
-          <lib-fa-icon [icon]="bookIcon"></lib-fa-icon>
-        </button>
+        <lib-link [link]="`${baseUrl}/truth`" [isNewPage]="false">
+          <button
+            mat-icon-button
+            [matTooltip]="'Go to the Good News'"
+            aria-labelledby="Gospel button"
+            aria-label="Gospel button"
+          >
+            <lib-fa-icon [icon]="gospelIcon"></lib-fa-icon>
+          </button>
+        </lib-link>
+
+        <lib-link [link]="'https://thewordof.life'">
+          <button
+            mat-icon-button
+            [matTooltip]="'Open the Bible'"
+            style="margin-right: 12px"
+            aria-labelledby="Bible button"
+            aria-label="Bible button"
+          >
+            <lib-fa-icon [icon]="bookIcon"></lib-fa-icon>
+          </button>
+        </lib-link>
+
         <button
           mat-icon-button
           [matTooltip]="'App Settings'"

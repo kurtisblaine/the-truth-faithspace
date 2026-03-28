@@ -1,6 +1,6 @@
 import { CommonModule } from "@angular/common";
 import { ChangeDetectionStrategy, Component } from "@angular/core";
-import { LinkComponent } from "../../../shared/components/link-redirect/link.component";
+import { LinkComponent } from "shared";
 import { ReferenceTooltipComponent } from "../../../shared/components/reference-tooltip/reference-tooltip.component";
 import { GospelContentBaseComponent } from "../gospel-content.base.component";
 
@@ -117,8 +117,8 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
         Truly, truly, I say to you, unless you eat the flesh of the Son of Man and drink His blood, you have no life in
         yourselves.
       </blog-reference-tooltip>
-      <blog-link [link]="'https://thelightof.life/edifications/edify-detail/7666deae-3d71-86fe-0d07-0f3a29a99599'"
-        >(See more about the Riddle)</blog-link
+      <lib-link [link]="baseUrl + '/edifications/edify-detail/7666deae-3d71-86fe-0d07-0f3a29a99599'"
+        >(See more about the Riddle)</lib-link
       ><br /><br />
 
       Although God is greatly kind towards us in Christ, we do not neglect the fear of Him; His kindness is not an
@@ -191,8 +191,8 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
       </blog-reference-tooltip>
       So God continues to show His purpose of grace in Christ Jesus, for the sake of the covenants of promise which He
       swore on oath to keep, provided we remain humble in accordance with faith.
-      <blog-link [link]="'https://thelightof.life/drawings/draw/Jesuslionlamb'"
-        >(See more about Jesus through Judah and Isaac)</blog-link
+      <lib-link [link]="baseUrl + '/drawings/draw/Jesuslionlamb'"
+        >(See more about Jesus through Judah and Isaac)</lib-link
       >
     </ng-template>`,
   styles: ``,

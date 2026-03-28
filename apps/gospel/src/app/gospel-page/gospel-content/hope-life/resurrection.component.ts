@@ -1,6 +1,6 @@
 import { CommonModule } from "@angular/common";
 import { ChangeDetectionStrategy, Component } from "@angular/core";
-import { LinkComponent } from "../../../shared/components/link-redirect/link.component";
+import { LinkComponent } from "shared";
 import { ReferenceTooltipComponent } from "../../../shared/components/reference-tooltip/reference-tooltip.component";
 import { GospelContentBaseComponent } from "../gospel-content.base.component";
 
@@ -97,8 +97,8 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
       For the death He died was to sin, and in His death He suffered for us; “For <b>If</b> we have become united with
       Him in the likeness of His death, certainly we shall also be in the likeness of His resurrection.” (Romans 6:5)
       And "<b>If</b> by the Spirit you are putting to death the deeds of the body, you will live.” (Romans 8:13)
-      <blog-link [link]="'https://thelightof.life/drawings/draw/repentandbelieve'"
-        >(See more about the work of Christ and our work of faith)</blog-link
+      <lib-link [link]="baseUrl + '/drawings/draw/repentandbelieve'"
+        >(See more about the work of Christ and our work of faith)</lib-link
       >
       <br /><br />
 
@@ -178,9 +178,7 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
       but rather as we wait eagerly for it from above, we do so patiently. And as for the Day of the Lord, it will be
       day unto us who are children of the day, but night to those who walk in darkness (1 Thessalonians 5:1-11). So
       therefore, be on the alert! His coming is as a thief in the night. So watch and pray (Luke 21:36).
-      <blog-link [link]="'https://thelightof.life/drawings/draw/daynight'"
-        >(See more about the Children of the Light)</blog-link
-      >
+      <lib-link [link]="baseUrl + '/drawings/draw/daynight'">(See more about the Children of the Light)</lib-link>
     </ng-template>`,
   styles: ``,
   changeDetection: ChangeDetectionStrategy.OnPush,

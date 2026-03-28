@@ -14,7 +14,7 @@ import { ActivatedRoute } from "@angular/router";
 import { fullpageApi, fullpageOptions, Item, Trigger } from "fullpage.js/dist/fullpage.extensions.min";
 import { DeviceDetectorService } from "ngx-device-detector";
 import { distinctUntilChanged, filter, Subscription } from "rxjs";
-import { CanonicalService } from "shared";
+import { SeoBaseComponent } from "shared";
 
 type TItem = { isActive: boolean } & Item;
 
@@ -25,7 +25,7 @@ type TItem = { isActive: boolean } & Item;
   styleUrl: "./gospel-page.component.scss",
   encapsulation: ViewEncapsulation.None,
 })
-export class GospelPageComponent implements OnInit, AfterViewInit, OnDestroy {
+export class GospelPageComponent extends SeoBaseComponent implements OnInit, AfterViewInit, OnDestroy {
   public fullpageConfig: fullpageOptions = {
     licenseKey: "GM477-9I82I-1L8K9-194JK-TJUVR",
 
@@ -62,21 +62,22 @@ export class GospelPageComponent implements OnInit, AfterViewInit, OnDestroy {
     private route: ActivatedRoute,
     private location: Location,
     private deviceDetector: DeviceDetectorService,
-    private canonicalService: CanonicalService,
     @Inject(PLATFORM_ID) private platformId: object
   ) {
+    super();
     afterNextRender(() => this.isMobile.set(this.deviceDetector.isMobile()));
   }
 
   ngOnInit() {
-    this.canonicalService.createCanonicalUrl("https://thelightof.life/truth");
+    this.setTitle("The Good News of the Kingdom");
+    this.setCanonical("https://thelightof.life/truth");
   }
 
   ngOnDestroy() {
     this.routeSubscription?.unsubscribe();
   }
 
-  ngAfterViewInit(): void {
+  override ngAfterViewInit(): void {
     this.routeSubscription = this.route.fragment
       .pipe(
         filter((fragment) => !!fragment),
@@ -86,6 +87,8 @@ export class GospelPageComponent implements OnInit, AfterViewInit, OnDestroy {
         const [sectionId, slideId] = fragment.split("/");
         this.toAnchor(sectionId, slideId);
       });
+
+    super.ngAfterViewInit();
   }
 
   public toAnchor(sectionId: string, slideId: string = "") {

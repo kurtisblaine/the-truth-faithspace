@@ -6,10 +6,10 @@
   <div style="flex: 1 1 80%">
     <div class="insight-item" *ngFor="let insight of pagedInsights()">
       <div class="insight-title primary-color">
-        <blog-link [link]="'https://thelightof.life/insights/insight-detail/' + insight.id"
+        <lib-link [link]="baseUrl + '/insights/insight-detail/' + insight.id"
           >{{ insight.title }}
           <lib-fa-icon [icon]="faLink" style="padding-left: 2px"></lib-fa-icon>
-        </blog-link>
+        </lib-link>
       </div>
       <div>{{ insight.date | date: "short" }}</div>
 
@@ -19,7 +19,7 @@
       } @else {
       <lib-readonly-text-editor
         [html]="insight?.json?.toString()"
-        [link]="'https://thelightof.life/insights/insight-detail/' + insight.id"
+        [link]="baseUrl + '/insights/insight-detail/' + insight.id"
       ></lib-readonly-text-editor>
       }
 

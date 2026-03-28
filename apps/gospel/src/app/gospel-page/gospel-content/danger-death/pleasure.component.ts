@@ -29,10 +29,6 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
       sin is deathly, living in the sons of men; we are living, but sin is working death within us. We want to flee, but
       it's inside of us; we cover our eyes, but it lives in the darkness.<br /><br />
 
-      <!-- <a href="https://thelightof.life/insight-detail/cd57c552-146a-8c5a-7bd2-d1314e9a4793" target="_blank"
-          >See more about the nature of sin here.</a
-        ><br /><br /> -->
-
       It is written, "He enlarges his appetite like Sheol, And he is like death, never satisfied.” (Habakkuk 2:5) And
       like death we are constantly seeking food - and we are not content; like Sheol we are always seeking drink, and we
       are not quenched; we eat and we are hungry again later; we drink and we are thirsty again; as it says,

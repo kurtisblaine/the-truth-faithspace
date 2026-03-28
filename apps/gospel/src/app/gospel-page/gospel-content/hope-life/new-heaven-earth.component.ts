@@ -1,6 +1,6 @@
 import { CommonModule } from "@angular/common";
 import { ChangeDetectionStrategy, Component } from "@angular/core";
-import { LinkComponent } from "../../../shared/components/link-redirect/link.component";
+import { LinkComponent } from "shared";
 import { ReferenceTooltipComponent } from "../../../shared/components/reference-tooltip/reference-tooltip.component";
 import { GospelContentBaseComponent } from "../gospel-content.base.component";
 
@@ -64,8 +64,8 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
         were selling, they were planting, they were building; but on the day that Lot went out from Sodom it rained fire
         and brimstone from heaven and destroyed them all.
       </blog-reference-tooltip>
-      <blog-link [link]="'https://thelightof.life/edifications/edify-detail/9a7773b4-01b5-ede3-0a07-218b0a4b42d6'"
-        >(See more on the Snare of His Coming)</blog-link
+      <lib-link [link]="baseUrl + '/edifications/edify-detail/9a7773b4-01b5-ede3-0a07-218b0a4b42d6'"
+        >(See more on the Snare of His Coming)</lib-link
       >
       <br /><br />
 

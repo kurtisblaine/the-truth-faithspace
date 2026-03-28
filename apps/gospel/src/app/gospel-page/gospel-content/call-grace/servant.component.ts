@@ -1,6 +1,6 @@
 import { CommonModule } from "@angular/common";
 import { ChangeDetectionStrategy, Component } from "@angular/core";
-import { LinkComponent } from "../../../shared/components/link-redirect/link.component";
+import { LinkComponent } from "shared";
 import { ReferenceTooltipComponent } from "../../../shared/components/reference-tooltip/reference-tooltip.component";
 import { GospelContentBaseComponent } from "../gospel-content.base.component";
 
@@ -180,8 +180,8 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
       determined beforehand what Christ was to do. Thanks be to God who releases us from the power of sin and death in
       Christ Jesus, our Lord! So since He died for us, we consider ourselves to be dead to sin, having died to the law,
       for sin has its power in the law.
-      <blog-link [link]="'https://thelightof.life/edifications/edify-detail/5877cee0-b83a-28b6-2a3e-bd6b98c3e687'"
-        >(See more about Jonathan)</blog-link
+      <lib-link [link]="baseUrl + '/edifications/edify-detail/5877cee0-b83a-28b6-2a3e-bd6b98c3e687'"
+        >(See more about Jonathan)</lib-link
       >
       <br /><br />
 
@@ -325,15 +325,6 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
       </blog-reference-tooltip>
       And he said this to men who lived long after Jesus' crucifixion. For the eyes which he speaks about are the eyes
       of faith.
-      <!-- <br /><br /> -->
-
-      <!-- <a style="color: blue" href="https://thelightof.life/drawings/draw/grace&truth" target="_blank"
-          >The difference between the law and grace.</a
-        ><br /><br />
-
-        <a style="color: blue" href="https://thelightof.life/drawings/draw/TrueWorship" target="_blank"
-          >And the difference between true worship (by grace) and false worship (by the law).</a
-        > -->
     </ng-template>`,
   styles: ``,
   changeDetection: ChangeDetectionStrategy.OnPush,

@@ -8,7 +8,6 @@ export const routes: Routes = [
   },
   {
     path: "truth",
-    title: "The Good News of the Kingdom", //we don't use the seo-base component for this.
     loadChildren: () => import("./gospel-page/gospel-page.module").then((m) => m.GospelPageModule),
   },
   {
@@ -37,7 +36,6 @@ export const routes: Routes = [
   },
   {
     path: "drawings",
-    title: "Drawings | The Good News", //we don't use the seo-base component for this.
     loadChildren: () => import("./draw-page/draw-page.module").then((m) => m.DrawPageModule),
   },
   {

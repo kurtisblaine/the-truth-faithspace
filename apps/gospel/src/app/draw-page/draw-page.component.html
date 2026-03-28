@@ -1,10 +1,10 @@
 <mat-grid-list cols="5" rowHeight="1.1:2" gutterSize="5">
   <mat-grid-tile *ngFor="let image of this.images">
     <mat-grid-tile-header style="text-decoration: underline; cursor: pointer">
-      <blog-link [link]="'https://thelightof.life/drawings/draw/' + image.fileName.split('.')[0]"
+      <lib-link [link]="baseUrl + '/drawings/draw/' + image.fileName.split('.')[0]"
         >{{ image.name }}
         <lib-fa-icon [icon]="faLink" style="padding-left: 2px"></lib-fa-icon>
-      </blog-link>
+      </lib-link>
     </mat-grid-tile-header>
     <mat-grid-tile-footer>{{ image.footer }}</mat-grid-tile-footer>
     <div>

@@ -1,6 +1,6 @@
 import { CommonModule } from "@angular/common";
 import { ChangeDetectionStrategy, Component } from "@angular/core";
-import { LinkComponent } from "../../../shared/components/link-redirect/link.component";
+import { LinkComponent } from "shared";
 import { ReferenceTooltipComponent } from "../../../shared/components/reference-tooltip/reference-tooltip.component";
 import { GospelContentBaseComponent } from "../gospel-content.base.component";
 
@@ -136,8 +136,8 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
       <blog-reference-tooltip [reference]="'John 20:29'" [isJesusWord]="true">
         Blessed are those who have not seen and yet have believed.</blog-reference-tooltip
       >
-      <blog-link [link]="'https://thelightof.life/edifications/edify-detail/156e9f30-db77-2664-f613-9d02a030135f'"
-        >(See more about Spiritual Sight)</blog-link
+      <lib-link [link]="baseUrl + '/edifications/edify-detail/156e9f30-db77-2664-f613-9d02a030135f'"
+        >(See more about Spiritual Sight)</lib-link
       >
       <br /><br />
 
@@ -184,8 +184,8 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
       of your transgressions that He bore, but He even intercedes on your behalf before the Father. So prove yourself
       innocent in the matter by fleeing to Christ for refuge in the heavenly places where He is now seated, setting your
       mind on the things above, not on the things below.
-      <blog-link [link]="'https://thelightof.life/edifications/edify-detail/75eaed82-3d6f-4dc0-85aa-b0606a108c63'"
-        >(See more about Joseph)</blog-link
+      <lib-link [link]="baseUrl + '/edifications/edify-detail/75eaed82-3d6f-4dc0-85aa-b0606a108c63'"
+        >(See more about Joseph)</lib-link
       >
     </ng-template>`,
   styles: ``,

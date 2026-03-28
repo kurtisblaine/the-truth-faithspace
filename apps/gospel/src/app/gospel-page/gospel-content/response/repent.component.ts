@@ -1,6 +1,6 @@
 import { CommonModule } from "@angular/common";
 import { ChangeDetectionStrategy, Component } from "@angular/core";
-import { LinkComponent } from "../../../shared/components/link-redirect/link.component";
+import { LinkComponent } from "shared";
 import { ReferenceTooltipComponent } from "../../../shared/components/reference-tooltip/reference-tooltip.component";
 import { GospelContentBaseComponent } from "../gospel-content.base.component";
 
@@ -130,9 +130,9 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
       examples in the Scriptures, how men repented (Luke 3:10-14; Luke 19:8; Acts 19:18-19). We all know the sin in our
       lives. So I charge you to read the epistles of the apostles; for they show to us what it means to obey the truth.
       Thanks be to God who grants unto us repentance through the knowledge of the truth.
-      <blog-link [link]="'https://thelightof.life/edifications/edify-detail/220a13ba-239c-7637-61e4-196fc85a62ce'"
+      <lib-link [link]="baseUrl + '/edifications/edify-detail/220a13ba-239c-7637-61e4-196fc85a62ce'"
         >(See more on Repentance)
-      </blog-link>
+      </lib-link>
     </ng-template>`,
   styles: ``,
   changeDetection: ChangeDetectionStrategy.OnPush,

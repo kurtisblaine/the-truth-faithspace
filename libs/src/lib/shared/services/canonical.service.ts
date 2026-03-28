@@ -10,18 +10,17 @@ export class CanonicalService {
     this.renderer = rendererFactory.createRenderer(null, null);
   }
 
-  createCanonicalUrl(url: string): void {
-    const link = this.renderer.createElement("link");
-    link.setAttribute("rel", "canonical");
-    // Ensure the URL is absolute and clean of dynamic parameters
-    link.setAttribute("href", url);
-
+  createOrSetCanonicalUrl(url: string): void {
     const head = this.document.head;
     const existingLink = head.querySelector('link[rel="canonical"]');
 
     if (existingLink) {
       this.renderer.setAttribute(existingLink, "href", url);
     } else {
+      const link = this.renderer.createElement("link");
+      link.setAttribute("rel", "canonical");
+      link.setAttribute("href", url);
+
       this.renderer.appendChild(head, link);
     }
   }

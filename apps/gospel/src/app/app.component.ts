@@ -28,7 +28,14 @@ import { MatToolbarModule } from "@angular/material/toolbar";
 import { MatTooltipModule } from "@angular/material/tooltip";
 import { DeviceDetectorService } from "ngx-device-detector";
 import { BehaviorSubject, fromEvent, map, Observable } from "rxjs";
-import { AuthSettingsComponent, LibFaIconComponent, SettingsWidgetComponent, VoiceSettingsComponent } from "shared";
+import {
+  AuthSettingsComponent,
+  LibFaIconComponent,
+  LinkComponent,
+  SeoBaseComponent,
+  SettingsWidgetComponent,
+  VoiceSettingsComponent,
+} from "shared";
 @Component({
   selector: "blog-root",
   templateUrl: "./app.component.html",
@@ -47,13 +54,13 @@ import { AuthSettingsComponent, LibFaIconComponent, SettingsWidgetComponent, Voi
     VoiceSettingsComponent,
     AuthSettingsComponent,
     CommonModule,
+    LinkComponent,
   ],
 })
-export class AppComponent implements OnInit {
+export class AppComponent extends SeoBaseComponent implements OnInit {
   @ViewChild("toTop") public toTopElement: ElementRef;
   @ViewChild(MatMenuTrigger) trigger: MatMenuTrigger;
 
-  public title = "The Good News of the Kingdom";
   public icon = faBars;
   public homeIcon = faInfoCircle;
   public blogIcon = faDumbbell;
@@ -77,6 +84,8 @@ export class AppComponent implements OnInit {
   public scrollTimeout!: any;
 
   constructor(private router: Router, private deviceDetector: DeviceDetectorService) {
+    super();
+
     afterNextRender(() => {
       this.isMobile.set(this.deviceDetector.isMobile());
 
@@ -127,75 +136,5 @@ export class AppComponent implements OnInit {
         onSameUrlNavigation: "ignore",
       });
     }
-  }
-
-  public openBible() {
-    window.open("https://thewordof.life", "_blank");
-  }
-
-  public goHome() {
-    this.router.navigateByUrl("home").then(() => {
-      this.emitScrollEvent();
-    });
-  }
-
-  public goGospel() {
-    this.router.navigateByUrl("truth").then(() => {
-      this.emitScrollEvent();
-    });
-  }
-
-  public goStudies() {
-    this.router.navigateByUrl("studies").then(() => {
-      this.emitScrollEvent();
-    });
-  }
-
-  public goInsight() {
-    this.router.navigateByUrl("insights").then(() => {
-      this.emitScrollEvent();
-    });
-  }
-
-  public goDrawings() {
-    this.router.navigateByUrl("drawings").then(() => {
-      this.emitScrollEvent();
-    });
-  }
-
-  public goDiscern() {
-    this.router.navigateByUrl("discernments").then(() => {
-      this.emitScrollEvent();
-    });
-  }
-
-  public goBlog() {
-    this.router.navigateByUrl("edifications").then(() => {
-      this.emitScrollEvent();
-    });
-  }
-
-  public goPsalm() {
-    this.router.navigateByUrl("poems").then(() => {
-      this.emitScrollEvent();
-    });
-  }
-
-  public goEmail() {
-    this.router.navigateByUrl("email").then(() => {
-      this.emitScrollEvent();
-    });
-  }
-
-  public goTracts() {
-    this.router.navigateByUrl("tracts").then(() => {
-      this.emitScrollEvent();
-    });
-  }
-
-  public goResources() {
-    this.router.navigateByUrl("resources").then(() => {
-      this.emitScrollEvent();
-    });
   }
 }

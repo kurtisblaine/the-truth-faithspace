@@ -1,6 +1,6 @@
 import { CommonModule } from "@angular/common";
 import { ChangeDetectionStrategy, Component } from "@angular/core";
-import { LinkComponent } from "../../../shared/components/link-redirect/link.component";
+import { LinkComponent } from "shared";
 import { ReferenceTooltipComponent } from "../../../shared/components/reference-tooltip/reference-tooltip.component";
 import { GospelContentBaseComponent } from "../gospel-content.base.component";
 
@@ -155,8 +155,8 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
         me, because I follow what is good. Do not forsake me, O LORD; O my God, do not be far from me! Make haste to
         help me, O Lord, my salvation!
       </blog-reference-tooltip>
-      <blog-link [link]="'https://thelightof.life/edifications/edify-detail/eba900e6-909b-1873-e0a3-ef2d8fcc13ed'"
-        >(See more about Confessing)</blog-link
+      <lib-link [link]="baseUrl + '/edifications/edify-detail/eba900e6-909b-1873-e0a3-ef2d8fcc13ed'"
+        >(See more about Confessing)</lib-link
       ><br /><br />
 
       The Lord Jesus is one, and what He did was for many; and the scapegoat for Israel was one goat, but was for the

@@ -10,15 +10,14 @@ import { GospelItemService } from "./gospel-item.service";
   standalone: false,
 })
 export class GospelItemComponent extends SeoBaseComponent implements OnDestroy {
-  protected override keywords: string = "Jesus, Gospel, Truth, Light, Peace, Hope, Love, Messiah, Good News";
   private readonly metaCaptionLimit = 150;
 
   public page = input<string>();
 
   public narratorStyle = NarratorStyle;
 
-  @ViewChild("textContainer", { read: ViewContainerRef }) private textContainer!: ViewContainerRef;
-  @ViewChild("content", { read: ViewContainerRef }) private content!: ViewContainerRef;
+  @ViewChild("textContainer", { read: ViewContainerRef, static: false }) private textContainer!: ViewContainerRef;
+  @ViewChild("content", { read: ViewContainerRef, static: false }) private content!: ViewContainerRef;
 
   constructor(private gospelItemService: GospelItemService) {
     super();
@@ -27,10 +26,13 @@ export class GospelItemComponent extends SeoBaseComponent implements OnDestroy {
   override ngAfterViewInit(): void {
     const components = this.gospelItemService.init();
     const gospelItemComponent = components.get(this.page());
-    this.textContainer.createComponent(gospelItemComponent);
+    const component = this.textContainer.createComponent(gospelItemComponent);
+    this.keywords = component.instance.keywords;
+
+    super.ngAfterViewInit();
 
     const innerText = (this.content?.element?.nativeElement as HTMLElement)?.innerText;
-    this.init({ captionOverride: innerText?.substring(0, this.metaCaptionLimit - 3) + "..." });
+    this.setDescription(innerText?.substring(0, this.metaCaptionLimit - 3) + "...");
   }
 
   ngOnDestroy(): void {

@@ -1,5 +1,5 @@
 import { CommonModule } from "@angular/common";
-import { Component, computed, effect, Input, OnInit, signal, Signal } from "@angular/core";
+import { Component, computed, effect, inject, Input, OnInit, signal, Signal } from "@angular/core";
 import { toSignal } from "@angular/core/rxjs-interop";
 import { MatButtonModule } from "@angular/material/button";
 import { MatDividerModule } from "@angular/material/divider";
@@ -7,8 +7,14 @@ import { MatPaginatorModule, PageEvent } from "@angular/material/paginator";
 import { faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
 import { Store } from "@ngrx/store";
 import { toHTML } from "ngx-editor";
-import { FilterComponent, LibFaIconComponent, ReadonlyTextEditorComponent, TextEditorComponent } from "shared";
-import { LinkComponent } from "../../shared/components/link-redirect/link.component";
+import {
+  BASE_URL,
+  FilterComponent,
+  LibFaIconComponent,
+  LinkComponent,
+  ReadonlyTextEditorComponent,
+  TextEditorComponent,
+} from "shared";
 import { InsightEntity } from "../../state/insight/insight.models";
 import { createInsight } from "../../state/insight/insights.actions";
 import { getAllInsight } from "../../state/insight/insights.selectors";
@@ -36,6 +42,8 @@ export class InsightListComponent implements OnInit {
   public pagedInsights!: Signal<InsightEntity[]>;
   public total!: Signal<number>;
   public updatedJson: string | object;
+
+  public baseUrl = inject(BASE_URL);
 
   public searchTerm = signal<string>("");
   public properties: string[] = ["title", "json"];
