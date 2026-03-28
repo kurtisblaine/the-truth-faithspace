@@ -11,7 +11,7 @@ export class DataService {
     if (this.images.length) return this.images;
 
     this.images.push({
-      id: 3,
+      id: "the-gospel",
       name: "The Gospel",
       description: `Even though a believer is saved, as he sits with Christ in heavenly places,
        we must walk in the Spirit and sow to the Spirit and stand against the wiles of the enemy;
@@ -27,8 +27,8 @@ export class DataService {
     });
 
     this.images.push({
-      id: 0,
-      name: "Covenant Promise",
+      id: "the-covenant-promise",
+      name: "The Covenant Promise",
       description: `The promise is available to everyone - this is what I mean by putting 'unconditional' on the top.
         The fulfillment of the promise is Christ Jesus - He is the Yes and Amen to everyone of God's promises.
         Through the oath given by God, we enter into covenant with Him through faith as it was with our father Abraham.
@@ -42,8 +42,8 @@ export class DataService {
     });
 
     this.images.push({
-      id: 1,
-      name: "Being a child of the Day",
+      id: "the-children-of-light",
+      name: "The Children of the Day & Night",
       description: `The Lord will come as thief to those in the night;
       but Lord and Savior, bringing salvation, to those who are of the day, to those who are watching in prayer for His coming, and standing against the wiles of the enemy of darkness.
       Stand firm against him! Watch in prayer as a watchman on the wall with the eyes of your head - watch.
@@ -56,8 +56,8 @@ export class DataService {
     });
 
     this.images.push({
-      id: 2,
-      name: "Fear of the Lord",
+      id: "the-fear-of-the-lord",
+      name: "The Fear of the Lord",
       description: `This is wisdom. To perfect wisdom: continue to fear the LORD.
       In God's wisdom, He proclaims this is the wisest thing for us to do: fear Him.
       Ruminate, you clean ones, on the fear of the LORD. He is, was, and is yet to come.
@@ -70,8 +70,8 @@ export class DataService {
     });
 
     this.images.push({
-      id: 4,
-      name: "Reproach, Reprove, Rebuke, Reprimand",
+      id: "re-prefix",
+      name: "Reproach, Reproof, Rebuke, Reprimand",
       description: `The prefix 'Re' means going back;
       this would mean going back to the truth and constantly remembering it.
       REmembering is to REcall the things that have happened previously.
@@ -86,8 +86,8 @@ export class DataService {
     });
 
     this.images.push({
-      id: 5,
-      name: "Sanctification Explained",
+      id: "sanctification-defined",
+      name: "Sanctification Defined",
       description: `Sanctification: going from what is earthly (south, or below) to what is heavenly (north, or above);
       from what is wrong (left, west) to the right (right, or east) being sanctified;
       going from what is made with human hands, to that which is made without hands;
@@ -101,7 +101,7 @@ export class DataService {
     });
 
     this.images.push({
-      id: 49,
+      id: "justification-salvation",
       name: "Justification and Salvation",
       description: `Just as the body without the spirit is dead, so faith without works is dead.
       Only living faith will save you, made possible because of the Living Sacrifice of Christ. How beautiful this truth is!
@@ -116,7 +116,7 @@ export class DataService {
     });
 
     this.images.push({
-      id: 50,
+      id: "biblical-separation",
       name: "Biblical Separation",
       description: `Discerning between the clean and the unclean, and separating from men who act like unclean animals.
       Be separate from them, lest they corrupt you and damn you. As Jesus said, "Let the dead go bury their dead."
@@ -130,8 +130,8 @@ export class DataService {
     });
 
     this.images.push({
-      id: 51,
-      name: "Israel Marching Order",
+      id: "israels-marching-orders",
+      name: "Israel's Marching Orders",
       description: `The same as it is today, we are led by the Spirit of God.
       All the tribes followed the pillar of cloud by day and the pillar of fire by night; the angel of the Lord was in the cloud.
       Isarel was the first church in the wilderness and an example to us in these latter days (1 Corinthians 10):
@@ -144,7 +144,7 @@ export class DataService {
     });
 
     this.images.push({
-      id: 6,
+      id: "john-16",
       name: "Sin, Righteousness, Judgement",
       description: `If we sin, it is because we have not faith; if we do what is right, it is because we believe.
       `,
@@ -169,7 +169,7 @@ export class DataService {
     // });
 
     this.images.push({
-      id: 8,
+      id: "the-altar-of-christ",
       name: "The Altar of Christ",
       description: `We were crucified with Christ and made right with God through Him when He died on the cross on our behalf, believing in the message of grace;
       therefore, by sanctification we pick up our altar or cross and follow Him, just as Isaac did when he subjected himself to his father;
@@ -182,7 +182,7 @@ export class DataService {
     });
 
     this.images.push({
-      id: 20,
+      id: "the-lion-the-lamb",
       name: "The Lion & the Lamb",
       description: `Abraham gave his one and only son, Isaac, as a sacrifice; and Jacob gave up his one and only son Benjamin, from his beloved Rachel, to go to Egypt.
       These represent Jesus, who God gave up for the sins of the world, because of His great love for us, giving up His beloved Son whom He loves.
@@ -211,7 +211,7 @@ export class DataService {
     // });
 
     this.images.push({
-      id: 24,
+      id: "repent-and-believe",
       name: "Repent & Believe",
       description: `Repentance is salvation. How can one be saved unless they repent of dead works?
       Are they not what we need saving from? Do not be deceived:
@@ -224,7 +224,7 @@ export class DataService {
     });
 
     this.images.push({
-      id: 25,
+      id: "run-the-race",
       name: "Run the Race of Faith",
       description: `The race is from start to finish by faith. We race for the eternal crown of life.
       In the days before instant messaging, runners were sent out to run with a message; they ran to bring a word to the king or to whomever it may concern.
@@ -237,7 +237,7 @@ export class DataService {
     });
 
     this.images.push({
-      id: 38,
+      id: "grace-and-truth",
       name: "Grace and Truth",
       description: `The law is physical; the Gospel is spiritual. Greater is the Spirit than the flesh.
       Through the law comes a knowledge of sin; but through grace and truth come the knowledge of God.
@@ -249,8 +249,8 @@ export class DataService {
     });
 
     this.images.push({
-      id: 41,
-      name: "Worship the Father in spirit and truth",
+      id: "spiritual-worship",
+      name: "Spiritual Worship",
       description: `The law gives power to pride and sin; it empowers sin within us. Through the law comes a false sense of worship.
       However, through the Spirit, can we ever worship the Father as He intended us to: in spirit and truth.
       We attribute proper worth to God who makes the temple holy rather than the temple itself. The law honors the temple more than God who sanctifies the temple.
@@ -261,7 +261,7 @@ export class DataService {
     });
 
     this.images.push({
-      id: 10,
+      id: "born-of-water-and-fire",
       name: "You must be Born again of Water and Fire",
       description: `The baptism of water is that of repentance. John the Baptist was the first apostle sent by God to proclaim water baptism, confession of sin and
       repentance thereof. He preached that we should believe in the One to come after him. The 12 were sent by God baptizing and making disciples after witnessing Him.
@@ -282,7 +282,7 @@ export class DataService {
     });
 
     this.images.push({
-      id: 11,
+      id: "building-on-the-rock",
       name: "Building on the Rock",
       description: `In the end, we will not be judged based on our faith, but by our actions. Our faith and actions work together.
       What good is it, to say we have faith but have no works. Can that faith help another or even save ourselves?
@@ -295,7 +295,7 @@ export class DataService {
     });
 
     this.images.push({
-      id: 46,
+      id: "the-word-of-life",
       name: "The Word of Life",
       description: `We have no life unless we abide in Christ. He is so great and merciful, making Himself available to us all by faith.
       How we can do utterly nothing of value apart from God. If we wish to have fruit, we must be in God.
@@ -307,7 +307,7 @@ export class DataService {
     });
 
     this.images.push({
-      id: 47,
+      id: "father-son-church",
       name: "The Father & the Son, the Son & the Church",
       description: `How the Father is to the Son, the Son is to His Church. The Son is the Mediater between us and God.
       He obeyed God perfectly. What the Father commanded of the Son, so the Son commands us.
@@ -320,7 +320,7 @@ export class DataService {
     });
 
     this.images.push({
-      id: 48,
+      id: "new-wine-new-wineskins",
       name: "New Wine & Wineskins",
       description: `Ah! I am like a wineskin ready to burst! The law says, "Speak not", but the Spirit says, "Speak".
       The Holy Spirit bubbles up within us - let it come from out of us! The Father has given us the mind of Christ to speak His word.
@@ -344,7 +344,7 @@ export class DataService {
     // });
 
     this.images.push({
-      id: 13,
+      id: "the-day-of-the-lord",
       name: "The Day of the Lord",
       description: `Of the day, we are sober, in our right mind and attentive, watchful in prayer. Those of the night are drunk, out of their right mind, unaware and foolish.
       The day of the Lord will come as a thief in the night: to those in the Day, who are watchful waiting for Him, it will be day; otherwise, it will be night to the others.
@@ -358,8 +358,8 @@ export class DataService {
     });
 
     this.images.push({
-      id: 14,
-      name: "Our union with Christ: past, present, and future",
+      id: "union-with-christ",
+      name: "Union with Christ: Past, Present, and Future",
       description: `We have died with Christ, crucified with Him, pinning our desires and intents of our wicked heart to the cross, putting to death our sinful nature.
       By God's gift, we have received through faith in Christ new life, having been crucified with Him and baptized in His death, buried with Him for the forgiveness of sins.
       These things are referring to the past, if we have believed they are our past. Our present life is living in death!
@@ -375,7 +375,7 @@ export class DataService {
     });
 
     this.images.push({
-      id: 15,
+      id: "the-spiritual-doctor",
       name: "The Spiritual Doctor",
       description: `Jesus is the Doctor, healing people by grace through faith in His name - yes, even the blind were healed, having not seen Him but only heard Him.
       That means you too, without seeing Him, can believe He is Him and be healed. He fixes our hearts, heals our bodies, and saves our souls from damnation: a total salvation.
@@ -390,7 +390,7 @@ export class DataService {
     });
 
     this.images.push({
-      id: 16,
+      id: "the-first-the-last",
       name: "Jesus, the First & the Last",
       description: `The Lord Jesus has no beginning or end, but He is the Beginning and End. He was last on earth, and the Father exalted Him as first of all.
       He is the eldest, yet He is the firstborn, for He existed from the beginning. He is the complete Word: the Alpha and the Omega.`,
@@ -409,8 +409,8 @@ export class DataService {
     // });
 
     this.images.push({
-      id: 18,
-      name: "The Harvest",
+      id: "the-harvest",
+      name: "The Harvest in the End",
       description: `Jesus is the first to rise from the dead as first fruits to God. At the fullness of the feast of trumpets, all the godly saints will rise from the dead.`,
       footer: "All things created by Him and for Him (see the First & Last teaching)...",
       fileName: "harvest.webp",
@@ -418,7 +418,7 @@ export class DataService {
     });
 
     this.images.push({
-      id: 19,
+      id: "israelite-camp",
       name: "Israelite Camp",
       description: `The materials which are most rare represent holiness, just as gold is more rare than silver.
       The Spirit of the Lord shows us that anyone who builds a house for the Lord, must do so through His wisdom.
@@ -429,8 +429,8 @@ export class DataService {
     });
 
     this.images.push({
-      id: 21,
-      name: "The Day of Judgement for the Righteous and the Sinner",
+      id: "impartial-judgement",
+      name: "The Day of Judgement: Impartial Judgement",
       description: `Before each judgment are a series of events: a gathering of nations, thrones setup, dead raised or the sleep raised, and finally, judgment.
       In the study of the book of Revelation, you will see this in common between both judgements of the righteous and the wicked.
       There are two judgements just as there are two resurrections. Blessed are those who take part in the first resurrection, for the second death holds no power over them!`,
@@ -440,8 +440,8 @@ export class DataService {
     });
 
     this.images.push({
-      id: 22,
-      name: "The Land of Inhabitation",
+      id: "the-four-soils",
+      name: "The Four Soils",
       description: `There are four soils the Lord spoke about; there are also four different lands Israel were in.
       There is one soil which is good soil and fruitful: this represents the land of promise.
       The other three soils were unfruitful, same with the three lands Israel were in throughout history.
@@ -453,7 +453,7 @@ export class DataService {
     });
 
     this.images.push({
-      id: 23,
+      id: "one-god",
       name: "One God",
       description: `There is one God and one Mediator between God and man: Christ Jesus.`,
       footer: "One God all in all...",
@@ -462,8 +462,8 @@ export class DataService {
     });
 
     this.images.push({
-      id: 26,
-      name: "Steps to Eternal Life just like Planting",
+      id: "eternal-life",
+      name: "Eternal Life: Cultivation",
       description: `Cultivating the soil and planting seeds would be repentance and confession of sins and being baptized in water.
       The miracle of God is passing through death and yet remaining alive like Israel passing through the Red Sea.
       Jesus mentioned, "Baptized with Spirit and Fire..." This is the harvesting to eternal life and suffering.`,
@@ -473,8 +473,8 @@ export class DataService {
     });
 
     this.images.push({
-      id: 27,
-      name: "Trustworthy Sayings & Solemnly Commands",
+      id: "sayings-and-commands",
+      name: "Trustworthy Sayings & Solemn Commands",
       description: `There are trustworthy saying Paul gave Timothy and Titus; also there are commands he charged them with.`,
       footer: "In the personal letters to Titus and Timothy, Paul gives sayings and commands...",
       fileName: "sayingsandcommands.webp",
@@ -482,8 +482,8 @@ export class DataService {
     });
 
     this.images.push({
-      id: 28,
-      name: "Natures, Kingdoms and Wills",
+      id: "opposing-wills",
+      name: "Opposing Wills",
       description: `We are in the middle of two conflicting wills: who's will will we conform to?
       Satan's will is a lie, which result is in sin, to death; God's will is obedience unto righteousness, which results in holiness, to eternal life.
       We should chose eternal life. If we hate ourselves, we will continue to please ourselves in sin.
@@ -494,7 +494,7 @@ export class DataService {
     });
 
     this.images.push({
-      id: 29,
+      id: "slaves-or-sons",
       name: "Slaves to Sin or Sons to Righteousness",
       description: `Jews are born of God by faith and Gentiles through faith. This distinction is made for a reason.
       Sons are those who are born of the Father; a slave is one who is not born of Him, but is put to forced labor.
@@ -504,12 +504,12 @@ export class DataService {
       We are made sons of God by faith in the son of God: Jesus Christ.`,
       footer:
         "We either get what we deserve by our works or what we don't, by God's grace, through our faith in Christ...",
-      originUrl: "v1711590253/teach/slavesvssons_g5zfi7.webp",
+      originUrl: "v1711590253/teach/repentandbelieve_g5zfi7.webp",
       fileName: "slavesvssons.webp",
     });
 
     this.images.push({
-      id: 30,
+      id: "our-jobs",
       name: "Our Jobs: Soldier, Athlete, Farmer, & Fishermen",
       description: `We learn things by the things we know. You know at least one of these things.
       How blessed is this truth! May the Holy Spirit shine light into these things for you.`,
@@ -519,7 +519,7 @@ export class DataService {
     });
 
     this.images.push({
-      id: 31,
+      id: "the-place-of-meeting",
       name: "The Place of Meeting: Tabernacle",
       description: `The inner sancturary is where God abodes. This corresponds to our heart.
       We are the temple of the living God: our body and also, all members of the Body collectively.
@@ -532,7 +532,7 @@ export class DataService {
     });
 
     this.images.push({
-      id: 32,
+      id: "tester-of-metals",
       name: "Tester of Metals",
       description: `It is a blessing to be tried by a prophet of God in this day.
       If we cannot withstand his judgment, how can we withstand the All Mighty Judge when we stand before Him?
@@ -544,7 +544,7 @@ export class DataService {
     });
 
     this.images.push({
-      id: 33,
+      id: "the-church",
       name: "The Church",
       description: `A type of Jesus Christ and the Church. The woman's head is Adam, that means she is the body.
       Christ is our head, that means we are the Body: the church.
@@ -555,8 +555,8 @@ export class DataService {
     });
 
     this.images.push({
-      id: 34,
-      name: "The law of Liberty",
+      id: "the-law-of-liberty",
+      name: "The Law of Liberty",
       description: `The law of God is used correctly and incorrectly. For one, it is for the godless.
       It is there to convict. It is there to show us sin. It is there as a guardian for us (until the way of Christ is revealed).
       It is not a means to righteousness. It is not given for us to strict obedience to it, as the Parisees, while neglecting the inward heart of the matter.
@@ -567,7 +567,7 @@ export class DataService {
     });
 
     this.images.push({
-      id: 35,
+      id: "the-way",
       name: "The Way of the Spirit: Walk and Run",
       description: `Whatever we set our minds on, is that which we will walk in. First the head, then the body.
       We must set our minds on the things above! This is the way of the Spirit.
@@ -579,7 +579,7 @@ export class DataService {
     });
 
     this.images.push({
-      id: 36,
+      id: "thieves-bandits",
       name: "Thieves and Bandits",
       description: `Ah my favorite! I love this! Thieves are the hypocrites! Bandits are they who acknowledge they're sinners.
       The bandit sins outwardly, he is the one Christ has come for! He comes for they who know they are sinners.
@@ -591,7 +591,7 @@ export class DataService {
     });
 
     this.images.push({
-      id: 37,
+      id: "detest-delight",
       name: "Detests vs Delights",
       description: `All falsehood the Lord God hates. Hypocrisy: sacrifices offered with an impure heart.
       He loves truth and mercy and humility. He looks at the heart; and He sees the heart is decietfully wicked always.`,
@@ -601,7 +601,7 @@ export class DataService {
     });
 
     this.images.push({
-      id: 39,
+      id: "the-father-son-spirit",
       name: "The Father and the Son and the Holy Spirit",
       description: `The Father and the Son and the Spirit are equal. Many great men came from God: Samson, John the Baptist, Moses, David, etc.
       They all exemplify an attribute of Christ and prophesy with their lives and word to Christ; but they all stumbled in some way.
@@ -613,7 +613,7 @@ export class DataService {
     });
 
     this.images.push({
-      id: 40,
+      id: "the-father-the-son",
       name: "The Father and the Son",
       description: `A contrast between the Father and the Son. "Like Father like son", is a proverb we know well of.
       Jesus Christ is the perfect Son, doing everything the Father told Him to do and say. He is our Mediator between us and God.
@@ -625,8 +625,8 @@ export class DataService {
     });
 
     this.images.push({
-      id: 42,
-      name: "Will NOT inherit the Kingdom of God (verses)",
+      id: "not-inherit-the-kingdom-verse",
+      name: "Will Not inherit the Kingdom of God (verses)",
       description: `Test yourself to see if any of these apply to you. Only the new creation can inherit the new heaven and the new earth.
       Unless you receive the kingdom like a little child you will by no means enter into the kingdom of heaven.`,
       footer: "It is clear, these will not inherit the Kingdom of heaven...",
@@ -635,8 +635,8 @@ export class DataService {
     });
 
     this.images.push({
-      id: 43,
-      name: "Will inherit the Kingdom of God (verses)",
+      id: "inherit-the-kingdom-verse",
+      name: "Will Inherit the Kingdom of God (verses)",
       description: `Only the new creation will inherit all these things.
       Those who are sons of God have been given the Spirit of the Son; and if we be sons, we also be hiers of the kingdom.
       All things belong to us in Christ, and we belong to Christ, and Christ belongs to God.`,
@@ -646,8 +646,8 @@ export class DataService {
     });
 
     this.images.push({
-      id: 44,
-      name: "Will inherit the Kingdom of God (grouping)",
+      id: "inherit-the-kingdom",
+      name: "Will Inherit the Kingdom of God (grouping)",
       description: `Oh, the purity of the gospel! Being content is thankfulness, purity is speaking truth, and morality is the righteousness by faith.
       What does God ask from us, but what He does for us? He makes us thankful for His grace, He saves us by His truth, and He makes us righteous by faith in Him!
       Oh, how perfect and beautiful is the Lord, my God!`,
@@ -657,8 +657,8 @@ export class DataService {
     });
 
     this.images.push({
-      id: 45,
-      name: "Will not inherit the Kingdom of God (grouping)",
+      id: "not-inherit-the-kingdom",
+      name: "Will not Inherit the Kingdom of God (grouping)",
       description: `Covetousness results from being unthankful, desiring and lusting after other's possessions.
       Impurity comes from falsehood, for from the mouth comes defilement. And, sin comes from not believing in Christ.
       Believe in God, loved ones.`,

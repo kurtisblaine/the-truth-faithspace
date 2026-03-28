@@ -135,7 +135,7 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
       If you keep My commandments, you will abide in My love; just as I have kept My Father's commandments and abide in
       His love.
     </blog-reference-tooltip>
-    <lib-link [link]="baseUrl + '/drawings/draw/sanctification'"> (See more on Sanctification)</lib-link>
+    <lib-link [link]="baseUrl + '/drawings/draw/sanctification-defined'"> (See more on Sanctification)</lib-link>
   </div>`,
   styles: ``,
   changeDetection: ChangeDetectionStrategy.OnPush,

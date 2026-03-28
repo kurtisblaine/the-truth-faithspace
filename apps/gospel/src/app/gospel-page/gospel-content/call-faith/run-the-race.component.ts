@@ -43,7 +43,7 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
     Jesus Christ, we run to life eternal. So run! And to win! The race of faith is the good fight; for we fight with
     words of truth told by the Spirit, who is our Sword, with words seasoned with salt, preserving the truth of God's
     grace.
-    <lib-link [link]="baseUrl + '/drawings/draw/runtherace'">(See more about the Race of Faith)</lib-link><br /><br />
+    <lib-link [link]="baseUrl + '/drawings/draw/run-the-race'">(See more about the Race of Faith)</lib-link><br /><br />
 
     No one runs a race for a prize without first training, and they who run, certainly run to win; they strip off every
     weight that slows them down; they do so for the prize; they learn the rules and know exactly what they can and

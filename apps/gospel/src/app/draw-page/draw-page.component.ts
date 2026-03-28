@@ -3,7 +3,7 @@ import { faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
 import { SeoBaseComponent } from "shared";
 import { DataService } from "./data.service";
 export class Image {
-  id: number;
+  id: string;
   name?: string;
   description: string;
   footer: string;

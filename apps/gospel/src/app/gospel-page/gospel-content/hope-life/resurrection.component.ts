@@ -96,7 +96,7 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
       >If</b
     >
     by the Spirit you are putting to death the deeds of the body, you will live.” (Romans 8:13)
-    <lib-link [link]="baseUrl + '/drawings/draw/repentandbelieve'"
+    <lib-link [link]="baseUrl + '/drawings/draw/repent-and-believe'"
       >(See more about the work of Christ and our work of faith)</lib-link
     >
     <br /><br />
@@ -176,7 +176,9 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
     wait eagerly for it from above, we do so patiently. And as for the Day of the Lord, it will be day unto us who are
     children of the day, but night to those who walk in darkness (1 Thessalonians 5:1-11). So therefore, be on the
     alert! His coming is as a thief in the night. So watch and pray (Luke 21:36).
-    <lib-link [link]="baseUrl + '/drawings/draw/daynight'">(See more about the Children of the Light)</lib-link>
+    <lib-link [link]="baseUrl + '/drawings/draw/the-children-of-light'"
+      >(See more about the Children of the Light)</lib-link
+    >
   </div>`,
   styles: ``,
   changeDetection: ChangeDetectionStrategy.OnPush,

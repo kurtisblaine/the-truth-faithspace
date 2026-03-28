@@ -107,7 +107,7 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
     confess Him publicly, uncover your head and circumcise your heart. See the thirsty land and give drink; do not
     withhold your bread, nor your water from the poor; open up your lid and pour from your vessel. See the fruit of your
     labors and rejoice; and see salvation at work within you and others.
-    <lib-link [link]="baseUrl + '/drawings/draw/justificationandsalvation'"
+    <lib-link [link]="baseUrl + '/drawings/draw/justification-salvation'"
       >(See more on Justification and Salvation)
     </lib-link>
     <br /><br />

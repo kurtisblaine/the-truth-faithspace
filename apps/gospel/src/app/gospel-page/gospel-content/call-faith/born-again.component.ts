@@ -40,7 +40,7 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
       believed, you were marked in him with a seal, the promised Holy Spirit, Who is a deposit guaranteeing our
       inheritance until the redemption of those who are God’s possession—to the praise of His glory.
     </blog-reference-tooltip>
-    <lib-link [link]="baseUrl + '/drawings/draw/john16'">(See more on John 16)</lib-link>
+    <lib-link [link]="baseUrl + '/drawings/draw/john-16'">(See more on John 16)</lib-link>
     <br /><br />
 
     If we are born of God, we do not need to be taught the truth because the Holy Spirit testifies to us what is true,
@@ -201,7 +201,7 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
       For by one Spirit we were all baptized into one body, whether Jews or Greeks, whether slaves or free persons, and
       <b>all were made to drink one Spirit.</b>
     </blog-reference-tooltip>
-    <lib-link [link]="baseUrl + '/drawings/draw/baptismwaterandfire'">(See more on Baptisms)</lib-link>
+    <lib-link [link]="baseUrl + '/drawings/draw/born-of-water-and-fire'">(See more on Baptisms)</lib-link>
     <br /><br />
 
     I urge you then, by the mercies of God, to humbly accept the Word of God implanted which has the power to save.

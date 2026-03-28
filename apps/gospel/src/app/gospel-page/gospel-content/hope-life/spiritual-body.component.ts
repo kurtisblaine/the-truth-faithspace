@@ -127,7 +127,7 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
       In your bedchamber do not curse a king, and in your sleeping rooms do not curse a rich man, for a bird of the
       heavens will carry the sound and the winged creature will make the matter known.
     </blog-reference-tooltip>
-    <lib-link [link]="baseUrl + '/drawings/draw/judgementday'">(See more about the Two Resurrections)</lib-link>
+    <lib-link [link]="baseUrl + '/drawings/draw/impartial-judgement'">(See more about the Two Resurrections)</lib-link>
     <br /><br />
 
     Speaking further of the resurrection: there are certain creatures in nature which have their home on earth and die,

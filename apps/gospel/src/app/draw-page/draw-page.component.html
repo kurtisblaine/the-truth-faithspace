@@ -1,7 +1,7 @@
 <mat-grid-list cols="5" rowHeight="1.1:2" gutterSize="5">
   <mat-grid-tile *ngFor="let image of this.images">
     <mat-grid-tile-header style="text-decoration: underline; cursor: pointer">
-      <lib-link [link]="baseUrl + '/drawings/draw/' + image.fileName.split('.')[0]"
+      <lib-link [link]="baseUrl + '/drawings/draw/' + image.id"
         >{{ image.name }}
         <lib-fa-icon [icon]="faLink" style="padding-left: 2px"></lib-fa-icon>
       </lib-link>

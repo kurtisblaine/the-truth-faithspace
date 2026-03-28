@@ -11,8 +11,7 @@ import { Image } from "../draw-page.component";
   standalone: false,
 })
 export class DrawItemComponent extends SeoBaseComponent implements OnInit {
-  // eslint-disable-next-line @angular-eslint/no-input-rename
-  @Input("id") public fileName: string;
+  @Input() public id: string;
 
   protected override keywords: string = "study, draw, Jesus, hope, life, faith, truth, love, Christ, Messiah";
 
@@ -28,6 +27,6 @@ export class DrawItemComponent extends SeoBaseComponent implements OnInit {
 
   ngOnInit(): void {
     const images = this.dataService.init();
-    this.selectedImage = images.find((i) => i.fileName === this.fileName + ".webp");
+    this.selectedImage = images.find((i) => i.id === this.id);
   }
 }

@@ -129,7 +129,7 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
     "As for Me, this is My covenant with them," says the LORD: "My Spirit which is upon you, and My words which I have
     put in your mouth shall not depart from your mouth, nor from the mouth of your offspring, nor from the mouth of your
     offspring's offspring," says the LORD, "from now and forever". (Isaiah 59:21)
-    <lib-link [link]="baseUrl + '/drawings/draw/Jesuslionlamb'">(See more about Benjamin and Isaac)</lib-link
+    <lib-link [link]="baseUrl + '/drawings/draw/the-lion-the-lamb'">(See more about Benjamin and Isaac)</lib-link
     ><br /><br />
 
     The Father grafts us, even Gentiles, into God's household, the body of Christ, through faith in Jesus; He makes us
@@ -154,7 +154,7 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
     I will watch expectantly for the LORD; I will wait for the God of my salvation. My God will hear me.” (Micah 7:7)
     For the mind set on the flesh is set on punishment and wrath, but the mind set on the Spirit is set on the LORD, the
     God of salvation.
-    <lib-link [link]="baseUrl + '/drawings/draw/Father&Son'"
+    <lib-link [link]="baseUrl + '/drawings/draw/father-son-church'"
       >(See more about the Father and the Son, the Son and the Church)</lib-link
     ><br /><br />
 
@@ -221,7 +221,8 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
       yourselves in fear during the time of your stay on earth; knowing that you were not redeemed with perishable
       things like silver or gold from your futile way of life inherited from your forefathers, but with precious blood,
       as of a lamb unblemished and spotless, the blood of Christ. </blog-reference-tooltip
-    ><lib-link [link]="baseUrl + '/drawings/draw/slavesvssons'">(See more about Sons and Slaves)</lib-link><br /><br />
+    ><lib-link [link]="baseUrl + '/drawings/draw/slaves-or-sons'">(See more about Sons and Slaves)</lib-link
+    ><br /><br />
 
     Finally: Christ gave the good testimony before Pontius Pilate even though he had power to crucify Him, and power to
     let Him go; however Christ stood for the truth and testified to the truth - no one takes His life, but He laid it

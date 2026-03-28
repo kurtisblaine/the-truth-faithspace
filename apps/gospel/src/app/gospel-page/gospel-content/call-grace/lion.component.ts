@@ -186,7 +186,7 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
     </blog-reference-tooltip>
     So God continues to show His purpose of grace in Christ Jesus, for the sake of the covenants of promise which He
     swore on oath to keep, provided we remain humble in accordance with faith.
-    <lib-link [link]="baseUrl + '/drawings/draw/Jesuslionlamb'"
+    <lib-link [link]="baseUrl + '/drawings/draw/the-lion-the-lamb'"
       >(See more about Jesus through Judah and Isaac)</lib-link
     >
   </div>`,
