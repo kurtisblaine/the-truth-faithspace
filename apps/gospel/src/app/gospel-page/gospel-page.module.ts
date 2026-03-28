@@ -9,7 +9,7 @@ import { RouterModule, Routes } from "@angular/router";
 import { NarratorComponent, ShareComponent } from "shared";
 import { ReferenceTooltipComponent } from "../shared/components/reference-tooltip/reference-tooltip.component";
 import { FullpageDirective } from "../shared/directives/fullpage.directive";
-import { CamelToTitlePipe } from "../shared/pipes/camel-title.pipe";
+import { DashToTitlePipe } from "../shared/pipes/dash-title.pipe";
 import { CallFaithModule } from "./gospel-content/call-faith/call-faith.module";
 import { CallGraceModule } from "./gospel-content/call-grace/call-grace.module";
 import { DangerDeathModule } from "./gospel-content/danger-death/danger-death.module";
@@ -53,7 +53,7 @@ const routes: Routes = [
     NgOptimizedImage,
     FullpageDirective,
     GospelSectionComponent,
-    CamelToTitlePipe,
+    DashToTitlePipe,
   ],
   providers: [],
 })

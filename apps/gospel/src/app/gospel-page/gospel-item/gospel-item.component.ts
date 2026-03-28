@@ -26,13 +26,17 @@ export class GospelItemComponent extends SeoBaseComponent implements OnDestroy {
   override ngAfterViewInit(): void {
     const components = this.gospelItemService.init();
     const gospelItemComponent = components.get(this.page());
+
     const component = this.textContainer.createComponent(gospelItemComponent);
-    this.keywords = component.instance.keywords;
+    this.setKeywords(component.instance.keywords);
+    if (component.instance.description) {
+      this.setDescription(component.instance.description);
+    } else {
+      const innerText = (this.content?.element?.nativeElement as HTMLElement)?.innerText;
+      this.setDescription(innerText?.substring(0, this.metaCaptionLimit - 3) + "...");
+    }
 
     super.ngAfterViewInit();
-
-    const innerText = (this.content?.element?.nativeElement as HTMLElement)?.innerText;
-    this.setDescription(innerText?.substring(0, this.metaCaptionLimit - 3) + "...");
   }
 
   ngOnDestroy(): void {

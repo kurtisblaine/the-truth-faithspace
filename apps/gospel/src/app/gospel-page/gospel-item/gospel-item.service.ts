@@ -47,51 +47,51 @@ export class GospelItemService implements OnDestroy {
     if (this.components.size) return this.components;
 
     //THE DANGER - SIN
-    this.components.set("theSinNature", SinNatureComponent);
-    this.components.set("GodKnows", HeKnowsComponent);
-    this.components.set("aConsumingFire", ConsumingFireComponent);
-    this.components.set("theDayOfJudgement", JudgementDayComponent);
+    this.components.set("the-sin-nature", SinNatureComponent);
+    this.components.set("god-knows", HeKnowsComponent);
+    this.components.set("a-consuming-fire", ConsumingFireComponent);
+    this.components.set("the-day-of-judgement", JudgementDayComponent);
 
     //THE FUTILTY - DEATH
-    this.components.set("theLoveOfPleasure", PleasureComponent);
-    this.components.set("workAndToil", ToilComponent);
-    this.components.set("theLoveOfWealth", WealthComponent);
-    this.components.set("theDayOfDeath", DeathComponent);
+    this.components.set("the-love-of-pleasure", PleasureComponent);
+    this.components.set("work-and-toil", ToilComponent);
+    this.components.set("the-love-of-wealth", WealthComponent);
+    this.components.set("the-day-of-death", DeathComponent);
 
     //THE SAFETY - GRACE
-    this.components.set("theServantOfGod", ServantComponent);
-    this.components.set("theBronzeSerpent", BronzeSerpentComponent);
-    this.components.set("theVictor", VictorComponent);
-    this.components.set("theLambOfGod", LambComponent);
-    this.components.set("theLion", LionComponent);
-    this.components.set("theScapegoat", ScapegoatComponent);
-    this.components.set("theTrueFoodAndTheTrueDrink", FoodDrinkComponent);
-    this.components.set("theDoorOfEternalSalvation", SalvationComponent);
-    this.components.set("theRockOfOurSalvation", RockComponent);
-    this.components.set("theSonOfGod", SonComponent);
+    this.components.set("the-servant-of-god", ServantComponent);
+    this.components.set("the-bronze-serpent", BronzeSerpentComponent);
+    this.components.set("the-victor", VictorComponent);
+    this.components.set("the-lamb-of-god", LambComponent);
+    this.components.set("the-lion-of-judah", LionComponent);
+    this.components.set("the-scapegoat", ScapegoatComponent);
+    this.components.set("the-true-food-and-the-true-drink", FoodDrinkComponent);
+    this.components.set("the-door-of-eternal-salvation", SalvationComponent);
+    this.components.set("the-rock-of-our-salvation", RockComponent);
+    this.components.set("the-son-of-god", SonComponent);
 
     //THE CALL - FAITH
-    this.components.set("theRaceOfFaith", RunTheRaceComponent);
-    this.components.set("aClearConscience", ClearConscienceComponent);
-    this.components.set("abideInHim", AbideComponent);
-    this.components.set("aNewHeart", NewHeartComponent);
-    this.components.set("bornAgain", BornAgainComponent);
+    this.components.set("the-race-of-faith", RunTheRaceComponent);
+    this.components.set("a-clear-conscience", ClearConscienceComponent);
+    this.components.set("abide-in-him", AbideComponent);
+    this.components.set("a-new-heart", NewHeartComponent);
+    this.components.set("born-again", BornAgainComponent);
 
     //OUR RESPONSE
-    this.components.set("repentance", RepentComponent);
-    this.components.set("baptism", BaptismComponent);
-    this.components.set("believeInGod", BelieveInGodComponent);
-    this.components.set("obedienceToHoliness", HolinessComponent);
-    this.components.set("liveWorthy", WorthyOfCallComponent);
-    this.components.set("perseveranceByRememberance", PersevereComponent);
-    this.components.set("callUponTheLord", CallUponHimComponent);
+    this.components.set("repentance-toward-god", RepentComponent);
+    this.components.set("buried-in-baptism", BaptismComponent);
+    this.components.set("believe-in-god", BelieveInGodComponent);
+    this.components.set("obedience-to-holiness", HolinessComponent);
+    this.components.set("live-worthy", WorthyOfCallComponent);
+    this.components.set("perseverance-by-rememberance", PersevereComponent);
+    this.components.set("call-upon-the-lord", CallUponHimComponent);
 
     //THE DAY OF THE LORD - HOPE
-    this.components.set("theResurrectionOfLife", ResurrectionComponent);
-    this.components.set("newSpiritualBodies", SpiritualBodyComponent);
-    this.components.set("eternalReward", EternalRewardComponent);
-    this.components.set("everlastingLife", EverlastingLifeComponent);
-    this.components.set("theNewHeavenAndTheNewEarth", NewHeavenEarthComponent);
+    this.components.set("the-resurrection-of-life", ResurrectionComponent);
+    this.components.set("new-spiritual-bodies", SpiritualBodyComponent);
+    this.components.set("eternal-reward", EternalRewardComponent);
+    this.components.set("everlasting-life", EverlastingLifeComponent);
+    this.components.set("the-new-heaven-and-the-new-earth", NewHeavenEarthComponent);
     return this.components;
   }
 
