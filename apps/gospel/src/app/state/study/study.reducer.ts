@@ -12,6 +12,7 @@ export interface State extends EntityState<StudyEntity> {
 }
 
 export const studyAdapter: EntityAdapter<StudyEntity> = createEntityAdapter<StudyEntity>({
+  selectId: (entity: StudyEntity) => entity.url,
   sortComparer: (a: StudyEntity, b: StudyEntity) => Number.parseInt(b.date) - Number.parseInt(a.date),
 });
 

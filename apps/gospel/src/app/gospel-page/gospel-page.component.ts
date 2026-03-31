@@ -64,7 +64,11 @@ export class GospelPageComponent extends SeoBaseComponent implements OnInit, Aft
     private deviceDetector: DeviceDetectorService,
     @Inject(PLATFORM_ID) private platformId: object
   ) {
-    super({ canonicalUrl: "https://thelightof.life/truth", title: "The Good News of the Kingdom" });
+    super({
+      canonicalUrl: "https://thelightof.life/truth",
+      title: "The Good News of the Kingdom",
+      shouldPostfix: false,
+    });
     afterNextRender(() => this.isMobile.set(this.deviceDetector.isMobile()));
   }
 

@@ -40,8 +40,8 @@ export const appConfig: ApplicationConfig = {
     provideFirestore(() => getFirestore()),
     provideAuth(() => getAuth()),
     provideEffects(effects),
-    provideStoreDevtools(),
     provideStore(reducers, { metaReducers }),
+    provideStoreDevtools({}),
     provideRouter(
       routes,
       withRouterConfig({

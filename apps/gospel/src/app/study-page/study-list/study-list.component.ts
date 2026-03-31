@@ -102,7 +102,7 @@ export class StudyListComponent implements OnInit {
   }
 
   public doUpdate(study: StudyEntity) {
-    study = { ...study, json: toHTML(this.updatedJson as object) };
+    study = { ...study, id: study.id, json: toHTML(this.updatedJson as object) };
 
     this.store.dispatch(
       StudyActions.createStudy({

@@ -13,6 +13,7 @@ export interface State extends EntityState<BlogEntity> {
 }
 
 export const blogAdapter: EntityAdapter<BlogEntity> = createEntityAdapter<BlogEntity>({
+  selectId: (entity: BlogEntity) => entity.url,
   sortComparer: (a: BlogEntity, b: BlogEntity) => Number.parseInt(b.date) - Number.parseInt(a.date),
 });
 

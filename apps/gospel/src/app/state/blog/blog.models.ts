@@ -1,7 +1,8 @@
-export interface BlogEntity {
+export class BlogEntity {
   collectionId?: string;
-  id: string | number; // Primary ID
   json: string | object;
   title: string;
   date: string;
+  url?: string;
+  id: number | string;
 }

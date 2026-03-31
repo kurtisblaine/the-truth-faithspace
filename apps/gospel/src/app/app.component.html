@@ -9,7 +9,7 @@
         </mat-list-item>
       </lib-link>
 
-      <lib-link [link]="`${baseUrl}/email`" [isNewPage]="false">
+      <lib-link [link]="`${baseUrl}/contact`" [isNewPage]="false">
         <mat-list-item lines="3" (click)="drawer.close()">
           <lib-fa-icon matListItemIcon [icon]="mailIcon"></lib-fa-icon>
           <span matListItemTitle>Contact</span>
@@ -100,7 +100,7 @@
           <lib-link [link]="`${baseUrl}/home`" [isNewPage]="false">
             <button mat-menu-item>About</button>
           </lib-link>
-          <lib-link [link]="`${baseUrl}/email`" [isNewPage]="false">
+          <lib-link [link]="`${baseUrl}/contact`" [isNewPage]="false">
             <button mat-menu-item>Contact</button>
           </lib-link>
           <mat-divider></mat-divider>

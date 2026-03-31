@@ -12,6 +12,7 @@ export interface State extends EntityState<PsalmEntity> {
 }
 
 export const psalmAdapter: EntityAdapter<PsalmEntity> = createEntityAdapter<PsalmEntity>({
+  selectId: (entity: PsalmEntity) => entity.url,
   sortComparer: (a: PsalmEntity, b: PsalmEntity) => Number.parseInt(b.date) - Number.parseInt(a.date),
 });
 

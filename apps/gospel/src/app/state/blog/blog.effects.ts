@@ -11,6 +11,7 @@ import {
 import { Actions, createEffect, ofType } from "@ngrx/effects";
 import { from, map, mapTo, mergeMap } from "rxjs";
 
+import { toKebabCase } from "../state.config";
 import * as BlogActions from "./blog.actions";
 import { BlogEntity } from "./blog.models";
 
@@ -27,7 +28,7 @@ export class BlogEffects {
       ),
       map((data) =>
         BlogActions.loadBlogsSuccess({
-          blog: data as BlogEntity[],
+          blog: (data as BlogEntity[]).map((d) => ({ ...d, url: toKebabCase(d.title) })),
         })
       )
     )

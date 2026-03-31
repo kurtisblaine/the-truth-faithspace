@@ -8,6 +8,7 @@ import { createDiscern, loadDiscernments } from "../state/discern/discern.action
 import { createInsight, loadInsights } from "../state/insight/insights.actions";
 import { createPsalm, loadPsalms } from "../state/psalm/psalm.actions";
 import { PsalmEntity } from "../state/psalm/psalm.models";
+import { toKebabCase } from "../state/state.config";
 import { StudyActions } from "../state/study/study.actions";
 @Component({
   selector: "blog-server-page",
@@ -49,6 +50,7 @@ export class ServerPageComponent implements OnInit {
       createDiscern({
         discern: {
           title: this.title,
+          url: toKebabCase(this.title),
           json: toHTML(this._document),
           date: Date.now().toString(),
           id: v4().toString(),
@@ -64,6 +66,7 @@ export class ServerPageComponent implements OnInit {
       createPsalm({
         psalm: {
           title: this.title,
+          url: toKebabCase(this.title),
           json: toHTML(this._document),
           date: Date.now().toString(),
           id: v4().toString(),
@@ -79,6 +82,7 @@ export class ServerPageComponent implements OnInit {
       createBlog({
         blog: {
           title: this.title,
+          url: toKebabCase(this.title),
           json: toHTML(this._document),
           date: Date.now().toString(),
           id: v4().toString(),
@@ -94,6 +98,7 @@ export class ServerPageComponent implements OnInit {
       createInsight({
         insight: {
           title: this.title,
+          url: toKebabCase(this.title),
           json: toHTML(this._document),
           date: Date.now().toString(),
           id: v4().toString(),

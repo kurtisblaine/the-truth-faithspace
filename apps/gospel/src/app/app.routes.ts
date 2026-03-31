@@ -23,7 +23,7 @@ export const routes: Routes = [
     loadChildren: () => import("./insight-page/insight-page.module").then((m) => m.InsightPageModule),
   },
   {
-    path: "email",
+    path: "contact",
     loadChildren: () => import("./email-page/email-page.module").then((m) => m.EmailPageModule),
   },
   {

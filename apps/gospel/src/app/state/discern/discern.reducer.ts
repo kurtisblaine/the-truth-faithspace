@@ -12,6 +12,7 @@ export interface State extends EntityState<DiscernEntity> {
 }
 
 export const discernAdapter: EntityAdapter<DiscernEntity> = createEntityAdapter<DiscernEntity>({
+  selectId: (entity: DiscernEntity) => entity.url,
   sortComparer: (a: DiscernEntity, b: DiscernEntity) => Number.parseInt(b.date) - Number.parseInt(a.date),
 });
 

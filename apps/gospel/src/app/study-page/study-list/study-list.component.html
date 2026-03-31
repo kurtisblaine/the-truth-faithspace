@@ -6,7 +6,7 @@
   <div style="flex: 1 1 80%">
     <div class="study-item" *ngFor="let study of pagedStudies()">
       <div class="study-title primary-color">
-        <lib-link [link]="baseUrl + '/studies/study-detail/' + study.id"
+        <lib-link [link]="baseUrl + '/studies/study-detail/' + study.url"
           >{{ study.title }}
           <lib-fa-icon [icon]="faLink" style="padding-left: 2px"></lib-fa-icon>
         </lib-link>
@@ -19,7 +19,7 @@
       } @else {
       <lib-readonly-text-editor
         [html]="study?.json?.toString()"
-        [link]="baseUrl + '/studies/study-detail/' + study.id"
+        [link]="baseUrl + '/studies/study-detail/' + study.url"
       ></lib-readonly-text-editor>
       }
 

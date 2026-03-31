@@ -74,6 +74,44 @@ export const transferStateMetaReducer = (reducer) => {
   }
 };
 
+export const toKebabCase = (value: string) => value.trim().toLowerCase().replace(/\s+/g, "-");
+
+export const fromKebabCase = (value: string) => value.replace(/-/g, " ");
+
+// return spacedValue.replace(/\b\w/g, (s) => s.toUpperCase());
+
+// const convertItemsToKebabCase = (items: any[]) => items.map((item) => ({ ...item, url: toKebabCase(item.title) }));
+
+// export function titleTransformerMetaReducer(reducer: ActionReducer<any>): ActionReducer<any> {
+//   return (state, action) => {
+//     debugger;
+//     switch (action.type) {
+//       case StudyActions.loadStudiesSuccess.type:
+//         const studiesAction = action as ReturnType<typeof StudyActions.loadStudiesSuccess>;
+//         studiesAction.study = convertItemsToKebabCase(studiesAction?.study);
+//         return reducer(state, studiesAction);
+//       case loadBlogsSuccess.type:
+//         const blogActions = action as ReturnType<typeof loadBlogsSuccess>;
+//         blogActions.blog = convertItemsToKebabCase(blogActions.blog);
+//         return reducer(state, blogActions);
+//       case loadDiscernmentsSuccess.type:
+//         const discernmentActions = action as ReturnType<typeof loadDiscernmentsSuccess>;
+//         discernmentActions.discern = convertItemsToKebabCase(discernmentActions.discern);
+//         return reducer(state, discernmentActions);
+//       case loadPsalmsSuccess.type:
+//         const psalmAction = action as ReturnType<typeof loadPsalmsSuccess>;
+//         psalmAction.psalm = convertItemsToKebabCase(psalmAction.psalm);
+//         return reducer(state, psalmAction);
+//       case loadInsightsSuccess.type:
+//         const insightAction = action as ReturnType<typeof loadInsightsSuccess>;
+//         insightAction.insight = convertItemsToKebabCase(insightAction.insight);
+//         return reducer(state, insightAction);
+//       default:
+//         return reducer(state, action);
+//     }
+//   };
+// }
+
 export const metaReducers: MetaReducer<AppState>[] = !environment.production
   ? [transferStateMetaReducer]
   : [transferStateMetaReducer];

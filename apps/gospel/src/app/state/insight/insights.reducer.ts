@@ -12,6 +12,7 @@ export interface State extends EntityState<InsightEntity> {
 }
 
 export const insightAdapter: EntityAdapter<InsightEntity> = createEntityAdapter<InsightEntity>({
+  selectId: (entity: InsightEntity) => entity.url,
   sortComparer: (a: InsightEntity, b: InsightEntity) => Number.parseInt(b.date) - Number.parseInt(a.date),
 });
 

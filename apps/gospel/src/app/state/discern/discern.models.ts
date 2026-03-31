@@ -1,7 +1,8 @@
-export interface DiscernEntity {
+export class DiscernEntity {
   collectionId?: string;
-  id: string | number; // Primary ID
   json: object | string;
   title: string;
   date: string;
+  url?: string;
+  id: number | string;
 }

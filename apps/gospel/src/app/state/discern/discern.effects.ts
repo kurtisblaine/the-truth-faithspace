@@ -11,6 +11,7 @@ import {
 import { Actions, createEffect, ofType } from "@ngrx/effects";
 import { from, map, mapTo, mergeMap } from "rxjs";
 
+import { toKebabCase } from "../state.config";
 import * as DiscernActions from "./discern.actions";
 import { DiscernEntity } from "./discern.models";
 
@@ -27,7 +28,7 @@ export class DiscernmentsEffects {
       ),
       map((data) =>
         DiscernActions.loadDiscernmentsSuccess({
-          discern: data as DiscernEntity[],
+          discern: (data as DiscernEntity[]).map((d) => ({ ...d, url: toKebabCase(d.title) })),
         })
       )
     )

@@ -1,7 +1,6 @@
 import { createFeatureSelector, createSelector } from "@ngrx/store";
 import { BLOG_FEATURE_KEY, State, blogAdapter } from "./blog.reducer";
 
-// Lookup the 'Blog' feature state managed by NgRx
 export const getBlogState = createFeatureSelector<State>(BLOG_FEATURE_KEY);
 
 const { selectAll, selectEntities } = blogAdapter.getSelectors();

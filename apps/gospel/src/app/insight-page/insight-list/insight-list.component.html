@@ -6,7 +6,7 @@
   <div style="flex: 1 1 80%">
     <div class="insight-item" *ngFor="let insight of pagedInsights()">
       <div class="insight-title primary-color">
-        <lib-link [link]="baseUrl + '/insights/insight-detail/' + insight.id"
+        <lib-link [link]="baseUrl + '/insights/insight-detail/' + insight.url"
           >{{ insight.title }}
           <lib-fa-icon [icon]="faLink" style="padding-left: 2px"></lib-fa-icon>
         </lib-link>
@@ -19,7 +19,7 @@
       } @else {
       <lib-readonly-text-editor
         [html]="insight?.json?.toString()"
-        [link]="baseUrl + '/insights/insight-detail/' + insight.id"
+        [link]="baseUrl + '/insights/insight-detail/' + insight.url"
       ></lib-readonly-text-editor>
       }
 

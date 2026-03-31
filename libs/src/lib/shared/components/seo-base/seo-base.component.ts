@@ -27,6 +27,8 @@ export class SeoTitleDirective {
 export class SeoOptions {
   canonicalUrl?: string;
   title?: string;
+  description?: string;
+  shouldPostfix?: boolean;
 }
 
 export const APP_POSTFIX = new InjectionToken<string>("APP_POSTFIX", {
@@ -74,7 +76,8 @@ export class SeoBaseComponent implements AfterViewInit {
       }
 
       if (options?.title) {
-        this.setTitle(options.title);
+        const shouldPrefix = options?.shouldPostfix ?? true;
+        this.setTitle(shouldPrefix ? options.title + this._appPostfix : options.title);
       }
     });
   }
@@ -87,7 +90,7 @@ export class SeoBaseComponent implements AfterViewInit {
     if (this.seoTitle?.nativeElement && this.seoTitle?.nativeElement?.innerText && !this._options?.title) {
       this.setTitle(this.seoTitle?.nativeElement?.innerText + this._appPostfix);
     }
-    if (this.seoCaption?.nativeElement && this.seoCaption?.nativeElement?.innerText) {
+    if (this.seoCaption?.nativeElement && this.seoCaption?.nativeElement?.innerText && !this._options?.description) {
       this.setDescription(this.seoCaption?.nativeElement?.innerText);
     }
     if (this.keywords) {
@@ -95,7 +98,7 @@ export class SeoBaseComponent implements AfterViewInit {
     }
   }
 
-  setCanonical(canonicalUrl: string) {
+  private setCanonical(canonicalUrl: string) {
     this._canonicalService.createOrSetCanonicalUrl(canonicalUrl ?? "");
   }
 
@@ -107,7 +110,7 @@ export class SeoBaseComponent implements AfterViewInit {
     this._meta.updateTag({ name: "description", content: description });
   }
 
-  setTitle(title: string) {
+  private setTitle(title: string) {
     this._title.setTitle(title);
   }
 }

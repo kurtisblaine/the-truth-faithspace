@@ -19,20 +19,18 @@ export class Image {
   standalone: false,
 })
 export class DrawPageComponent extends SeoBaseComponent implements OnInit {
-  private readonly metaDescription =
-    "Drawings to help visualize important topics, to help compare things that are alike and contrast things that are not.";
-
   public images: Image[] = [];
   public faLink = faArrowUpRightFromSquare;
 
   constructor(private dataService: DataService) {
-    super();
+    super({
+      title: "Drawings",
+      description:
+        "Drawings to help visualize important topics, to help compare things that are alike and contrast things that are not.",
+    });
   }
 
   ngOnInit(): void {
-    this.setTitle("Drawings");
-    this.setDescription(this.metaDescription);
-
     this.images = this.dataService.init();
   }
 }

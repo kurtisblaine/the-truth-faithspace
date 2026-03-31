@@ -9,4 +9,8 @@ import { SeoBaseComponent } from "shared";
 })
 export class EmailPageComponent extends SeoBaseComponent {
   protected override keywords: string = "contact, email, phone, help, kurtis, waldner";
+
+  constructor() {
+    super();
+  }
 }

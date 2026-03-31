@@ -11,6 +11,7 @@ import {
 import { Actions, createEffect, ofType } from "@ngrx/effects";
 import { from, map, mapTo, mergeMap } from "rxjs";
 
+import { toKebabCase } from "../state.config";
 import { InsightEntity } from "./insight.models";
 import * as InsightActions from "./insights.actions";
 
@@ -27,7 +28,7 @@ export class InsightsEffects {
       ),
       map((data) =>
         InsightActions.loadInsightsSuccess({
-          insight: data as InsightEntity[],
+          insight: (data as InsightEntity[]).map((d) => ({ ...d, url: toKebabCase(d.title) })),
         })
       )
     )

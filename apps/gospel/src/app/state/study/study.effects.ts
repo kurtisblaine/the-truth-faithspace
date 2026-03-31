@@ -10,6 +10,7 @@ import {
 } from "@angular/fire/firestore";
 import { Actions, createEffect, ofType } from "@ngrx/effects";
 import { from, map, mapTo, mergeMap } from "rxjs";
+import { toKebabCase } from "../state.config";
 import { StudyActions } from "./study.actions";
 import { StudyEntity } from "./study.model";
 
@@ -26,7 +27,7 @@ export class StudyEffects {
       ),
       map((data) => {
         return StudyActions.loadStudiesSuccess({
-          study: data as StudyEntity[],
+          study: (data as StudyEntity[]).map((d) => ({ ...d, url: toKebabCase(d.title) })),
         });
       })
     )

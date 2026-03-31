@@ -6,7 +6,7 @@
   <div style="flex: 1 1 80%">
     <div class="blog-item" *ngFor="let blog of pagedBlogs()">
       <div class="blog-title primary-color">
-        <lib-link [link]="baseUrl + '/edifications/edify-detail/' + blog.id"
+        <lib-link [link]="baseUrl + '/edifications/edify-detail/' + blog.url"
           >{{ blog.title }}
           <lib-fa-icon [icon]="faLink" style="padding-left: 2px"></lib-fa-icon>
         </lib-link>
@@ -19,7 +19,7 @@
       } @else {
       <lib-readonly-text-editor
         [html]="blog?.json?.toString()"
-        [link]="baseUrl + '/edifications/edify-detail/' + blog.id"
+        [link]="baseUrl + '/edifications/edify-detail/' + blog.url"
       ></lib-readonly-text-editor>
       }
 

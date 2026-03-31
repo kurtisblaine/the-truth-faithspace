@@ -10,6 +10,7 @@ import {
 } from "@angular/fire/firestore";
 import { Actions, createEffect, ofType } from "@ngrx/effects";
 import { from, map, mapTo, mergeMap } from "rxjs";
+import { toKebabCase } from "../state.config";
 import * as PsalmActions from "./psalm.actions";
 import { PsalmEntity } from "./psalm.models";
 
@@ -26,7 +27,7 @@ export class PsalmEffects {
       ),
       map((data) => {
         return PsalmActions.loadPsalmsSuccess({
-          psalm: data as PsalmEntity[],
+          psalm: (data as PsalmEntity[]).map((d) => ({ ...d, url: toKebabCase(d.title) })),
         });
       })
     )

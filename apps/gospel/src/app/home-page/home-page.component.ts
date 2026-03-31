@@ -11,5 +11,9 @@ export default class HomePageComponent extends SeoBaseComponent implements OnIni
   public narratorStyle = NarratorStyle;
   protected override keywords: string = "testimony, believe, faith, Jesus, Word, change, repentance";
 
+  constructor() {
+    super();
+  }
+
   ngOnInit() {}
 }

@@ -6,7 +6,7 @@
   <div style="flex: 1 1 80%">
     <div class="discern-item" *ngFor="let discern of pagedDiscernments()">
       <div class="discern-title primary-color">
-        <lib-link [link]="baseUrl + '/discernments/discernment-detail/' + discern.id"
+        <lib-link [link]="baseUrl + '/discernments/discernment-detail/' + discern.url"
           >{{ discern.title }}
           <lib-fa-icon [icon]="faLink" style="padding-left: 2px"></lib-fa-icon>
         </lib-link>
@@ -19,7 +19,7 @@
       } @else {
       <lib-readonly-text-editor
         [html]="discern?.json?.toString()"
-        [link]="baseUrl + '/discernments/discernment-detail/' + discern.id"
+        [link]="baseUrl + '/discernments/discernment-detail/' + discern.url"
       ></lib-readonly-text-editor>
       }
 
