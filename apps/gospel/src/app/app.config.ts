@@ -1,7 +1,7 @@
 import { ApplicationConfig, provideZonelessChangeDetection } from "@angular/core";
 
 import { provideCloudinaryLoader } from "@angular/common";
-import { provideHttpClient } from "@angular/common/http";
+import { provideHttpClient, withFetch } from "@angular/common/http";
 import { initializeApp, provideFirebaseApp } from "@angular/fire/app";
 import { getAuth, provideAuth } from "@angular/fire/auth";
 import { getFirestore, provideFirestore } from "@angular/fire/firestore";
@@ -51,7 +51,7 @@ export const appConfig: ApplicationConfig = {
       withInMemoryScrolling({ anchorScrolling: "enabled", scrollPositionRestoration: "enabled" }),
       withPreloading(NoPreloading)
     ),
-    provideHttpClient(),
+    provideHttpClient(withFetch()),
     provideClientHydration(withIncrementalHydration(), withEventReplay()),
     provideZonelessChangeDetection(),
     provideCloudinaryLoader("https://res.cloudinary.com/dffihsa2y/"),
