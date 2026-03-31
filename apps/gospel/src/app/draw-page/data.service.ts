@@ -147,6 +147,8 @@ export class DataService {
       id: "john-16",
       name: "Sin, Righteousness, Judgement",
       description: `If we sin, it is because we have not faith; if we do what is right, it is because we believe.
+      “Commit your way to the LORD, Trust also in Him, and He will do it.
+       He will bring forth your righteousness as the light And your judgment as the noonday.” (Psalms 37:5-6)
       `,
       footer: "Elaborating John 16: 8-11...",
       fileName: "john16.webp",

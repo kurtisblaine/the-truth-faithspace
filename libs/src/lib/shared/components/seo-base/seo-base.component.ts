@@ -1,5 +1,6 @@
 import { CommonModule } from "@angular/common";
 import {
+  afterNextRender,
   AfterViewInit,
   ChangeDetectionStrategy,
   Component,
@@ -10,6 +11,7 @@ import {
   ViewChild,
 } from "@angular/core";
 import { Meta, Title } from "@angular/platform-browser";
+import { Router } from "@angular/router";
 import { CanonicalService } from "shared";
 
 @Directive({ selector: "[seoCaption]" })
@@ -24,6 +26,7 @@ export class SeoTitleDirective {
 
 export class SeoOptions {
   canonicalUrl?: string;
+  title?: string;
 }
 
 export const APP_POSTFIX = new InjectionToken<string>("APP_POSTFIX", {
@@ -44,11 +47,14 @@ export const BASE_URL = new InjectionToken<string>("BASE_URL", {
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class SeoBaseComponent implements AfterViewInit {
-  private canonicalService = inject(CanonicalService);
-  private meta = inject(Meta);
-  private title = inject(Title);
-  private appPostfix = inject(APP_POSTFIX);
+  private _canonicalService = inject(CanonicalService);
+  private _meta = inject(Meta);
+  private _title = inject(Title);
+  private _router = inject(Router);
 
+  private _options!: SeoOptions;
+
+  private _appPostfix = inject(APP_POSTFIX);
   public baseUrl = inject(BASE_URL);
 
   @ViewChild("seoCaption", { read: ElementRef, static: false }) private seoCaption!: ElementRef;
@@ -56,17 +62,30 @@ export class SeoBaseComponent implements AfterViewInit {
 
   protected keywords!: string;
 
-  constructor() {}
+  constructor(options: SeoOptions = {}) {
+    this._options = options;
+
+    afterNextRender(() => {
+      if (options?.canonicalUrl) {
+        this.setCanonical(options.canonicalUrl);
+      } else {
+        const canonicalUrl = document.location.origin + this._router.url;
+        this.setCanonical(canonicalUrl);
+      }
+
+      if (options?.title) {
+        this.setTitle(options.title);
+      }
+    });
+  }
 
   ngAfterViewInit(): void {
     this.init();
   }
 
-  init(options: SeoOptions = {}) {
-    this.setCanonical(options?.canonicalUrl ?? "");
-
-    if (this.seoTitle?.nativeElement && this.seoTitle?.nativeElement?.innerText) {
-      this.setTitle(this.seoTitle?.nativeElement?.innerText + this.appPostfix);
+  init() {
+    if (this.seoTitle?.nativeElement && this.seoTitle?.nativeElement?.innerText && !this._options?.title) {
+      this.setTitle(this.seoTitle?.nativeElement?.innerText + this._appPostfix);
     }
     if (this.seoCaption?.nativeElement && this.seoCaption?.nativeElement?.innerText) {
       this.setDescription(this.seoCaption?.nativeElement?.innerText);
@@ -77,18 +96,18 @@ export class SeoBaseComponent implements AfterViewInit {
   }
 
   setCanonical(canonicalUrl: string) {
-    this.canonicalService.createOrSetCanonicalUrl(canonicalUrl ?? "");
+    this._canonicalService.createOrSetCanonicalUrl(canonicalUrl ?? "");
   }
 
   setKeywords(keywords: string) {
-    this.meta.updateTag({ name: "keywords", content: keywords });
+    this._meta.updateTag({ name: "keywords", content: keywords });
   }
 
   setDescription(description: string) {
-    this.meta.updateTag({ name: "description", content: description });
+    this._meta.updateTag({ name: "description", content: description });
   }
 
   setTitle(title: string) {
-    this.title.setTitle(title);
+    this._title.setTitle(title);
   }
 }
