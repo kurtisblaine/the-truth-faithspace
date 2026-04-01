@@ -1,10 +1,16 @@
 import { ApplicationConfig, inject, mergeApplicationConfig } from "@angular/core";
 import { collection, collectionData, Firestore } from "@angular/fire/firestore";
-import { PrerenderFallback, provideServerRendering, RenderMode, ServerRoute, withRoutes } from "@angular/ssr";
-import { firstValueFrom } from "rxjs";
+import { provideServerRendering, RenderMode, ServerRoute, withRoutes } from "@angular/ssr";
+import { firstValueFrom, map } from "rxjs";
 import { appConfig } from "./app.config";
 import { DataService } from "./draw-page/data.service";
 import { GospelItemService } from "./gospel-page/gospel-item/gospel-item.service";
+import { BlogEntity } from "./state/blog/blog.models";
+import { DiscernEntity } from "./state/discern/discern.models";
+import { InsightEntity } from "./state/insight/insight.models";
+import { PsalmEntity } from "./state/psalm/psalm.models";
+import { toKebabCase } from "./state/state.config";
+import { StudyEntity } from "./state/study/study.model";
 
 const serverRoutes: ServerRoute[] = [
   {
@@ -18,7 +24,9 @@ const serverRoutes: ServerRoute[] = [
       const firebase = inject(Firestore);
 
       const collectionRef = collection(firebase, "blog");
-      const collectionData$ = collectionData(collectionRef, { idField: "collectionId" });
+      const collectionData$ = collectionData(collectionRef, { idField: "collectionId" }).pipe(
+        map((data) => data.map((d: BlogEntity) => ({ id: toKebabCase(d.title) })))
+      );
 
       return await firstValueFrom(collectionData$);
     },
@@ -30,11 +38,12 @@ const serverRoutes: ServerRoute[] = [
       const firebase = inject(Firestore);
 
       const collectionRef = collection(firebase, "discern");
-      const collectionData$ = collectionData(collectionRef, { idField: "collectionId" });
+      const collectionData$ = collectionData(collectionRef, { idField: "collectionId" }).pipe(
+        map((data) => data.map((d: DiscernEntity) => ({ id: toKebabCase(d.title) })))
+      );
 
       return await firstValueFrom(collectionData$);
     },
-    fallback: PrerenderFallback.Client,
   },
   {
     path: "studies/study-detail/:id",
@@ -43,7 +52,9 @@ const serverRoutes: ServerRoute[] = [
       const firebase = inject(Firestore);
 
       const collectionRef = collection(firebase, "study");
-      const collectionData$ = collectionData(collectionRef, { idField: "collectionId" });
+      const collectionData$ = collectionData(collectionRef, { idField: "collectionId" }).pipe(
+        map((data) => data.map((d: StudyEntity) => ({ id: toKebabCase(d.title) })))
+      );
 
       return await firstValueFrom(collectionData$);
     },
@@ -55,7 +66,9 @@ const serverRoutes: ServerRoute[] = [
       const firebase = inject(Firestore);
 
       const collectionRef = collection(firebase, "proverb");
-      const collectionData$ = collectionData(collectionRef, { idField: "collectionId" });
+      const collectionData$ = collectionData(collectionRef, { idField: "collectionId" }).pipe(
+        map((data) => data.map((d: InsightEntity) => ({ id: toKebabCase(d.title) })))
+      );
 
       return await firstValueFrom(collectionData$);
     },
@@ -67,7 +80,9 @@ const serverRoutes: ServerRoute[] = [
       const firebase = inject(Firestore);
 
       const collectionRef = collection(firebase, "psalm");
-      const collectionData$ = collectionData(collectionRef, { idField: "collectionId" });
+      const collectionData$ = collectionData(collectionRef, { idField: "collectionId" }).pipe(
+        map((data) => data.map((d: PsalmEntity) => ({ id: toKebabCase(d.title) })))
+      );
 
       return await firstValueFrom(collectionData$);
     },
@@ -79,7 +94,7 @@ const serverRoutes: ServerRoute[] = [
       const dataService = inject(DataService);
       const images = dataService.init();
 
-      return images.map((image) => ({ id: image.fileName.split(".")[0] }));
+      return images.map((image) => ({ id: image.id }));
     },
   },
   {

@@ -1,4 +1,4 @@
-import { ApplicationConfig, provideZonelessChangeDetection } from "@angular/core";
+import { ApplicationConfig, isDevMode, provideZonelessChangeDetection } from "@angular/core";
 
 import { provideCloudinaryLoader } from "@angular/common";
 import { provideHttpClient, withFetch } from "@angular/common/http";
@@ -41,7 +41,7 @@ export const appConfig: ApplicationConfig = {
     provideAuth(() => getAuth()),
     provideEffects(effects),
     provideStore(reducers, { metaReducers }),
-    provideStoreDevtools({}),
+    provideStoreDevtools({ logOnly: !isDevMode(), autoPause: true }),
     provideRouter(
       routes,
       withRouterConfig({
