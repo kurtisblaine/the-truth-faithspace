@@ -136,5 +136,5 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class RepentComponent extends GospelContentBaseComponent {
-  override name: string = "repentance";
+  override name: string = "repentance-toward-god";
 }

@@ -174,5 +174,7 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class FoodDrinkComponent extends GospelContentBaseComponent {
-  override name: string = "the-true-food-and-the-true-drink";
+  override name: string = "the-true-food";
+  public override description: string =
+    "Jesus Christ is the true food, the spiritual food, which we eat and never die; He is the Manna from heaven, the living bread; His flesh is true food and His blood is true drink.";
 }

@@ -9,21 +9,21 @@
       priority
     />
 
-    <h2 class="header-title" style="text-transform: uppercase">The Good News of the Kingdom</h2>
+    <h2 class="header-title" style="text-transform: uppercase">The Good News of the Kingdom of God</h2>
 
     @if(!isMobile()){
-    <blog-reference-tooltip
+    <!-- <blog-reference-tooltip
       style="display: block"
       class="header-caption"
       [padding]="'0px 100px'"
       [reference]="'Romans 1:16-19'"
     >
-      For I am not ashamed of the gospel, for it is the power of God for salvation to everyone who believes, to the Jew
+      I am not ashamed of the gospel, for it is the power of God for salvation to everyone who believes, to the Jew
       first and also to the Greek. For in it the righteousness of God is revealed from faith to faith; as it is written,
       "BUT THE RIGHTEOUS SHALL LIVE BY FAITH." For the wrath of God is revealed from heaven against all ungodliness and
       unrighteousness of men who suppress the truth in unrighteousness, because that which is known about God is evident
       within them; for God made it evident to them.
-    </blog-reference-tooltip>
+    </blog-reference-tooltip> -->
 
     <mat-accordion class="menu" style="text-transform: unset">
       <mat-expansion-panel class="custom-panel error" hideToggle>
@@ -35,7 +35,7 @@
         <ng-template matExpansionPanelContent>
           <button mat-button (click)="toAnchor('the-danger', 'the-sin-nature')">The Sin Nature</button>
           <button mat-button (click)="toAnchor('the-danger', 'god-knows')">God Knows</button>
-          <button mat-button (click)="toAnchor('the-danger', 'a-consuming-fire')">God Is A Consuming Fire</button>
+          <button mat-button (click)="toAnchor('the-danger', 'a-consuming-fire')">A Consuming Fire</button>
           <button mat-button (click)="toAnchor('the-danger', 'the-day-of-judgement')">The Day Of Judgement</button>
         </ng-template>
       </mat-expansion-panel>
@@ -67,15 +67,9 @@
           <button mat-button (click)="toAnchor('the-safety', 'the-lamb-of-god')">The Lamb Of God</button>
           <button mat-button (click)="toAnchor('the-safety', 'the-lion-of-judah')">The Lion of Judah</button>
           <button mat-button (click)="toAnchor('the-safety', 'the-scapegoat')">The Scapegoat</button>
-          <button mat-button (click)="toAnchor('the-safety', 'the-true-food-and-the-true-drink')">
-            The True Food And The True Drink
-          </button>
-          <button mat-button (click)="toAnchor('the-safety', 'the-door-of-eternal-salvation')">
-            The Door Of Eternal Salvation
-          </button>
-          <button mat-button (click)="toAnchor('the-safety', 'the-rock-of-our-salvation')">
-            The Rock Of Our Salvation
-          </button>
+          <button mat-button (click)="toAnchor('the-safety', 'the-true-food')">The True Food</button>
+          <button mat-button (click)="toAnchor('the-safety', 'the-door-of-salvation')">The Door of Salvation</button>
+          <button mat-button (click)="toAnchor('the-safety', 'the-rock-of-salvation')">The Rock Of Salvation</button>
           <button mat-button (click)="toAnchor('the-safety', 'the-son-of-god')">The Son Of God</button>
         </ng-template>
       </mat-expansion-panel>
@@ -89,7 +83,7 @@
         <ng-template matExpansionPanelContent>
           <button mat-button (click)="toAnchor('the-call', 'the-race-of-faith')">The Race Of Faith</button>
           <button mat-button (click)="toAnchor('the-call', 'a-clear-conscience')">A Clear Conscience</button>
-          <button mat-button (click)="toAnchor('the-call', 'abide-in-him')">Abide In Him</button>
+          <button mat-button (click)="toAnchor('the-call', 'abide-in-jesus')">Abide In Jesus</button>
           <button mat-button (click)="toAnchor('the-call', 'a-new-heart')">A New Heart</button>
           <button mat-button (click)="toAnchor('the-call', 'born-again')">Born Again</button>
         </ng-template>
@@ -107,8 +101,8 @@
           <button mat-button (click)="toAnchor('our-response', 'believe-in-god')">Believe In God</button>
           <button mat-button (click)="toAnchor('our-response', 'obedience-to-holiness')">Obedience To Holiness</button>
           <button mat-button (click)="toAnchor('our-response', 'live-worthy')">Live Worthy</button>
-          <button mat-button (click)="toAnchor('our-response', 'perseverance-by-rememberance')">
-            Perseverance By Remembrance
+          <button mat-button (click)="toAnchor('our-response', 'persevere-by-rememberance')">
+            Persevere By Remembrance
           </button>
           <button mat-button (click)="toAnchor('our-response', 'call-upon-the-lord')">Call Upon The Lord</button>
         </ng-template>
@@ -121,17 +115,15 @@
           </mat-panel-title>
         </mat-expansion-panel-header>
         <ng-template matExpansionPanelContent>
-          <button mat-button (click)="toAnchor('the-day-of-the-lord', 'the-resurrection-of-life')">
-            The Resurrection Of Life
+          <button mat-button (click)="toAnchor('the-day-of-the-lord', 'resurrection-of-life')">
+            Resurrection Of Life
           </button>
           <button mat-button (click)="toAnchor('the-day-of-the-lord', 'new-spiritual-bodies')">
             New Spiritual Bodies
           </button>
           <button mat-button (click)="toAnchor('the-day-of-the-lord', 'eternal-reward')">Eternal Reward</button>
           <button mat-button (click)="toAnchor('the-day-of-the-lord', 'everlasting-life')">Everlasting Life</button>
-          <button mat-button (click)="toAnchor('the-day-of-the-lord', 'the-new-heaven-and-the-new-earth')">
-            The New Heaven And The New Earth
-          </button>
+          <button mat-button (click)="toAnchor('the-day-of-the-lord', 'the-new-heaven')">The New Heaven</button>
         </ng-template>
       </mat-expansion-panel>
     </mat-accordion>
@@ -151,7 +143,7 @@
       <h3 class="header-title">THE DANGER - SIN</h3>
       <button mat-button (click)="toAnchor('the-danger', 'the-sin-nature')">The Sin Nature</button>
       <button mat-button (click)="toAnchor('the-danger', 'god-knows')">God Knows</button>
-      <button mat-button (click)="toAnchor('the-danger', 'a-consuming-fire')">God Is A Consuming Fire</button>
+      <button mat-button (click)="toAnchor('the-danger', 'a-consuming-fire')">A Consuming Fire</button>
       <button mat-button (click)="toAnchor('the-danger', 'the-day-of-judgement')">The Day Of Judgement</button>
     </div>
 
@@ -162,7 +154,6 @@
       [isLightMode]="false"
       [isFloater]="true"
     >
-      <h3 class="headers">The Sin Nature</h3>
       <div class="paragraphs">
         <blog-sin-nature #theSinNature></blog-sin-nature>
       </div>
@@ -175,7 +166,6 @@
       [isLightMode]="false"
       [isFloater]="true"
     >
-      <h3 class="headers">God Knows</h3>
       <div class="paragraphs">
         <blog-he-knows #GodKnows></blog-he-knows>
       </div>
@@ -188,7 +178,6 @@
       [isLightMode]="false"
       [isFloater]="true"
     >
-      <h3 class="headers">God Is A Consuming Fire</h3>
       <div class="paragraphs">
         <gospel-consuming-fire #aConsumingFire></gospel-consuming-fire>
       </div>
@@ -201,7 +190,6 @@
       [isLightMode]="false"
       [isFloater]="true"
     >
-      <h3 class="headers">The Day Of Judgement</h3>
       <div class="paragraphs">
         <gospel-judgement-day #theDayOfJudgement></gospel-judgement-day>
       </div>
@@ -233,7 +221,6 @@
       [isLightMode]="false"
       [isFloater]="true"
     >
-      <h3 class="headers">The Love Of Pleasure</h3>
       <div class="paragraphs">
         <gospel-pleasure #loveOfPleasure></gospel-pleasure>
       </div>
@@ -246,7 +233,6 @@
       [isLightMode]="false"
       [isFloater]="true"
     >
-      <h3 class="headers">Work And Toil</h3>
       <div class="paragraphs">
         <gospel-toil #workAndToil></gospel-toil>
       </div>
@@ -259,7 +245,6 @@
       [isLightMode]="false"
       [isFloater]="true"
     >
-      <h3 class="headers">The Love Of Wealth</h3>
       <div class="paragraphs">
         <gospel-wealth #theLoveOfWealth></gospel-wealth>
       </div>
@@ -272,7 +257,6 @@
       [isLightMode]="false"
       [isFloater]="true"
     >
-      <h3 class="headers">The Day Of Death</h3>
       <div class="paragraphs">
         <gospel-death #theDayOfDeath></gospel-death>
       </div>
@@ -297,15 +281,9 @@
       <button mat-button (click)="toAnchor('the-safety', 'the-lamb-of-god')">The Lamb Of God</button>
       <button mat-button (click)="toAnchor('the-safety', 'the-lion-of-judah')">The Lion of Judah</button>
       <button mat-button (click)="toAnchor('the-safety', 'the-scapegoat')">The Scapegoat</button>
-      <button mat-button (click)="toAnchor('the-safety', 'the-true-food-and-the-true-drink')">
-        The True Food And The True Drink
-      </button>
-      <button mat-button (click)="toAnchor('the-safety', 'the-door-of-eternal-salvation')">
-        The Door Of Eternal Salvation
-      </button>
-      <button mat-button (click)="toAnchor('the-safety', 'the-rock-of-our-salvation')">
-        The Rock Of Our Salvation
-      </button>
+      <button mat-button (click)="toAnchor('the-safety', 'the-true-food')">The True Food</button>
+      <button mat-button (click)="toAnchor('the-safety', 'the-door-of-salvation')">The Door of Salvation</button>
+      <button mat-button (click)="toAnchor('the-safety', 'the-rock-of-salvation')">The Rock Of Salvation</button>
       <button mat-button (click)="toAnchor('the-safety', 'the-son-of-god')">The Son Of God</button>
     </div>
 
@@ -316,7 +294,6 @@
       [isLightMode]="true"
       [isFloater]="true"
     >
-      <h3 class="headers">The Servant Of God</h3>
       <div class="paragraphs">
         <gospel-servant #theServantOfGod></gospel-servant>
       </div>
@@ -329,7 +306,6 @@
       [isLightMode]="true"
       [isFloater]="true"
     >
-      <h3 class="headers">The Bronze Serpent</h3>
       <div class="paragraphs">
         <gospel-bronze-serpent #theBronzeSerpent></gospel-bronze-serpent>
       </div>
@@ -342,7 +318,6 @@
       [isLightMode]="true"
       [isFloater]="true"
     >
-      <h3 class="headers">The Victor</h3>
       <div class="paragraphs">
         <gospel-victor #theVictor></gospel-victor>
       </div>
@@ -355,7 +330,6 @@
       [isLightMode]="true"
       [isFloater]="true"
     >
-      <h3 class="headers">The Lamb Of God</h3>
       <div class="paragraphs">
         <gospel-lamb #theLambOfGod></gospel-lamb>
       </div>
@@ -368,7 +342,6 @@
       [isLightMode]="true"
       [isFloater]="true"
     >
-      <h3 class="headers">The Lion of Judah</h3>
       <div class="paragraphs">
         <gospel-lion #theLionOfJudah></gospel-lion>
       </div>
@@ -381,7 +354,6 @@
       [isLightMode]="true"
       [isFloater]="true"
     >
-      <h3 class="headers">The Scapegoat</h3>
       <div class="paragraphs">
         <gospel-scapegoat #theScapegoat></gospel-scapegoat>
       </div>
@@ -389,12 +361,11 @@
 
     <blog-gospel-section
       [page]="theTrueFoodAndTheTrueDrink.name"
-      data-anchor="the-true-food-and-the-true-drink"
+      data-anchor="the-true-food"
       class="slide"
       [isLightMode]="true"
       [isFloater]="true"
     >
-      <h3 class="headers">The True Food And The True Drink</h3>
       <div class="paragraphs">
         <gospel-food-drink #theTrueFoodAndTheTrueDrink></gospel-food-drink>
       </div>
@@ -402,12 +373,11 @@
 
     <blog-gospel-section
       [page]="theDoorOfEternalSalvation.name"
-      data-anchor="the-door-of-eternal-salvation"
+      data-anchor="the-door-of-salvation"
       class="slide"
       [isLightMode]="true"
       [isFloater]="true"
     >
-      <h3 class="headers">The Door Of Eternal Salvation</h3>
       <div class="paragraphs">
         <gospel-salvation #theDoorOfEternalSalvation></gospel-salvation>
       </div>
@@ -415,12 +385,11 @@
 
     <blog-gospel-section
       [page]="theRockOfOurSalvation.name"
-      data-anchor="the-rock-of-our-salvation"
+      data-anchor="the-rock-of-salvation"
       class="slide"
       [isLightMode]="true"
       [isFloater]="true"
     >
-      <h3 class="headers">The Rock Of Our Salvation</h3>
       <div class="paragraphs">
         <gospel-rock #theRockOfOurSalvation></gospel-rock>
       </div>
@@ -433,7 +402,6 @@
       [isLightMode]="true"
       [isFloater]="true"
     >
-      <h3 class="headers">The Son Of God</h3>
       <div class="paragraphs">
         <gospel-son #theSonOfGod></gospel-son>
       </div>
@@ -454,7 +422,7 @@
       <h3 class="header-title">THE CALL - FAITH</h3>
       <button mat-button (click)="toAnchor('the-call', 'the-race-of-faith')">The Race Of Faith</button>
       <button mat-button (click)="toAnchor('the-call', 'a-clear-conscience')">A Clear Conscience</button>
-      <button mat-button (click)="toAnchor('the-call', 'abide-in-him')">Abide In Him</button>
+      <button mat-button (click)="toAnchor('the-call', 'abide-in-jesus')">Abide In Jesus</button>
       <button mat-button (click)="toAnchor('the-call', 'a-new-heart')">A New Heart</button>
       <button mat-button (click)="toAnchor('the-call', 'born-again')">Born Again</button>
     </div>
@@ -466,7 +434,6 @@
       [isLightMode]="true"
       [isFloater]="true"
     >
-      <h3 class="headers">The Race Of Faith</h3>
       <div class="paragraphs">
         <gospel-run-the-race #theRaceOfFaith></gospel-run-the-race>
       </div>
@@ -479,7 +446,6 @@
       [isLightMode]="true"
       [isFloater]="true"
     >
-      <h3 class="headers">A Clear Conscience</h3>
       <div class="paragraphs">
         <gospel-clear-conscience #aClearConscience></gospel-clear-conscience>
       </div>
@@ -487,12 +453,11 @@
 
     <blog-gospel-section
       [page]="abideInHim.name"
-      data-anchor="abide-in-him"
+      data-anchor="abide-in-jesus"
       class="slide"
       [isLightMode]="true"
       [isFloater]="true"
     >
-      <h3 class="headers">Abide In Him</h3>
       <div class="paragraphs">
         <gospel-abide #abideInHim></gospel-abide>
       </div>
@@ -505,7 +470,6 @@
       [isLightMode]="true"
       [isFloater]="true"
     >
-      <h3 class="headers">A New Heart</h3>
       <div class="paragraphs">
         <gospel-new-heart #aNewHeart></gospel-new-heart>
       </div>
@@ -518,7 +482,6 @@
       [isLightMode]="true"
       [isFloater]="true"
     >
-      <h3 class="headers">Born again</h3>
       <div class="paragraphs">
         <gospel-born-again #bornAgain></gospel-born-again>
       </div>
@@ -537,15 +500,13 @@
 
     <div class="slide">
       <h3 class="header-title">OUR RESPONSE</h3>
-      <button mat-button (click)="toAnchor('our-response', 'repentance')">Repentance Toward God</button>
-      <button mat-button (click)="toAnchor('our-response', 'baptism')">Buried In Baptism</button>
+      <button mat-button (click)="toAnchor('our-response', 'repentance-toward-god')">Repentance Toward God</button>
+      <button mat-button (click)="toAnchor('our-response', 'buried-in-baptism')">Buried In Baptism</button>
       <button mat-button (click)="toAnchor('our-response', 'believe-in-god')">Believe In God</button>
-      <button mat-button (click)="toAnchor('our-response', 'perseveranceByRememberanceoliness')">
-        Obedience To Holiness
-      </button>
+      <button mat-button (click)="toAnchor('our-response', 'obedience-to-holiness')">Obedience To Holiness</button>
       <button mat-button (click)="toAnchor('our-response', 'live-worthy')">Live Worthy</button>
-      <button mat-button (click)="toAnchor('our-response', 'perseverance-by-rememberance')">
-        Perseverance By Remembrance
+      <button mat-button (click)="toAnchor('our-response', 'persevere-by-rememberance')">
+        Persevere By Remembrance
       </button>
       <button mat-button (click)="toAnchor('our-response', 'call-upon-the-lord')">Call Upon The Lord</button>
     </div>
@@ -557,7 +518,6 @@
       [isLightMode]="true"
       [isFloater]="true"
     >
-      <h3 class="headers">Repentence Toward God</h3>
       <div class="paragraphs">
         <gospel-repent #repentanceTowardGod></gospel-repent>
       </div>
@@ -570,7 +530,6 @@
       [isLightMode]="true"
       [isFloater]="true"
     >
-      <h3 class="headers">Buried In Baptism</h3>
       <div class="paragraphs">
         <gospel-baptism #buriedInBaptism></gospel-baptism>
       </div>
@@ -583,7 +542,6 @@
       [isLightMode]="true"
       [isFloater]="true"
     >
-      <h3 class="headers">Believe In God</h3>
       <div class="paragraphs">
         <gospel-believe-in-god #believeInGod></gospel-believe-in-god>
       </div>
@@ -596,7 +554,6 @@
       [isLightMode]="true"
       [isFloater]="true"
     >
-      <h3 class="headers">Obedience To Holiness</h3>
       <div class="paragraphs">
         <gospel-holiness #obedienceToHoliness></gospel-holiness>
       </div>
@@ -609,7 +566,6 @@
       [isLightMode]="true"
       [isFloater]="true"
     >
-      <h3 class="headers">Live Worthy</h3>
       <div class="paragraphs">
         <gospel-worthy-of-call #liveWorthy></gospel-worthy-of-call>
       </div>
@@ -617,12 +573,11 @@
 
     <blog-gospel-section
       [page]="perseveranceByRememberance.name"
-      data-anchor="perseverance-by-rememberance"
+      data-anchor="persevere-by-rememberance"
       class="slide"
       [isLightMode]="true"
       [isFloater]="true"
     >
-      <h3 class="headers">Perseverance By Remembrance</h3>
       <div class="paragraphs">
         <gospel-persevere #perseveranceByRememberance></gospel-persevere>
       </div>
@@ -635,7 +590,6 @@
       [isLightMode]="true"
       [isFloater]="true"
     >
-      <h3 class="headers">Call Upon The Lord</h3>
       <div class="paragraphs">
         <gospel-call-upon-him #callUponTheLord></gospel-call-upon-him>
       </div>
@@ -654,25 +608,20 @@
 
     <div class="slide">
       <h3 class="header-title">THE DAY OF THE LORD - HOPE</h3>
-      <button mat-button (click)="toAnchor('the-day-of-the-lord', 'the-resurrection-of-life')">
-        The Resurrection Of Life
-      </button>
+      <button mat-button (click)="toAnchor('the-day-of-the-lord', 'resurrection-of-life')">Resurrection Of Life</button>
       <button mat-button (click)="toAnchor('the-day-of-the-lord', 'new-spiritual-bodies')">New Spiritual Bodies</button>
       <button mat-button (click)="toAnchor('the-day-of-the-lord', 'eternal-reward')">Eternal Reward</button>
       <button mat-button (click)="toAnchor('the-day-of-the-lord', 'everlasting-life')">Everlasting Life</button>
-      <button mat-button (click)="toAnchor('the-day-of-the-lord', 'the-new-heaven-and-the-new-earth')">
-        The New Heaven And The New Earth
-      </button>
+      <button mat-button (click)="toAnchor('the-day-of-the-lord', 'the-new-heaven')">The New Heaven</button>
     </div>
 
     <blog-gospel-section
       [page]="theResurrectionOfLife.name"
-      data-anchor="the-resurrection-of-life"
+      data-anchor="resurrection-of-life"
       class="slide"
       [isLightMode]="true"
       [isFloater]="true"
     >
-      <h3 class="headers">The Resurrection Of Life</h3>
       <div class="paragraphs">
         <gospel-resurrection #theResurrectionOfLife></gospel-resurrection>
       </div>
@@ -685,7 +634,6 @@
       [isLightMode]="true"
       [isFloater]="true"
     >
-      <h3 class="headers">New Spiritual Bodies</h3>
       <div class="paragraphs">
         <gospel-spiritual-body #newSpiritualBodies></gospel-spiritual-body>
       </div>
@@ -698,7 +646,6 @@
       [isLightMode]="true"
       [isFloater]="true"
     >
-      <h3 class="headers">Eternal Reward</h3>
       <div class="paragraphs">
         <gospel-eternal-reward #eternalReward></gospel-eternal-reward>
       </div>
@@ -711,7 +658,6 @@
       [isLightMode]="true"
       [isFloater]="true"
     >
-      <h3 class="headers">Everlasting Life</h3>
       <div class="paragraphs">
         <gospel-everlasting-life #everlastingLife></gospel-everlasting-life>
       </div>
@@ -719,12 +665,11 @@
 
     <blog-gospel-section
       [page]="theNewHeavenAndTheNewEarth.name"
-      data-anchor="the-new-heaven-and-the-new-earth"
+      data-anchor="the-new-heaven"
       class="slide"
       [isLightMode]="true"
       [isFloater]="true"
     >
-      <h3 class="headers">The New Heaven And The New Earth</h3>
       <div class="paragraphs">
         <gospel-new-heaven-earth #theNewHeavenAndTheNewEarth></gospel-new-heaven-earth>
       </div>

@@ -171,5 +171,5 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class NewHeavenEarthComponent extends GospelContentBaseComponent {
-  override name: string = "the-new-heaven-and-the-new-earth";
+  override name: string = "the-new-heaven";
 }

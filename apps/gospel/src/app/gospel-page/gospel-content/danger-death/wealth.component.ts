@@ -184,4 +184,5 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
 })
 export class WealthComponent extends GospelContentBaseComponent {
   override name: string = "the-love-of-wealth";
+  public override description: string = "";
 }

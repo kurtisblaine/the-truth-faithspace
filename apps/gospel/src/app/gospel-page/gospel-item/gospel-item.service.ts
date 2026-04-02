@@ -65,15 +65,15 @@ export class GospelItemService implements OnDestroy {
     this.components.set("the-lamb-of-god", LambComponent);
     this.components.set("the-lion-of-judah", LionComponent);
     this.components.set("the-scapegoat", ScapegoatComponent);
-    this.components.set("the-true-food-and-the-true-drink", FoodDrinkComponent);
-    this.components.set("the-door-of-eternal-salvation", SalvationComponent);
-    this.components.set("the-rock-of-our-salvation", RockComponent);
+    this.components.set("the-true-food", FoodDrinkComponent);
+    this.components.set("the-door-of-salvation", SalvationComponent);
+    this.components.set("the-rock-of-salvation", RockComponent);
     this.components.set("the-son-of-god", SonComponent);
 
     //THE CALL - FAITH
     this.components.set("the-race-of-faith", RunTheRaceComponent);
     this.components.set("a-clear-conscience", ClearConscienceComponent);
-    this.components.set("abide-in-him", AbideComponent);
+    this.components.set("abide-in-jesus", AbideComponent);
     this.components.set("a-new-heart", NewHeartComponent);
     this.components.set("born-again", BornAgainComponent);
 
@@ -83,15 +83,15 @@ export class GospelItemService implements OnDestroy {
     this.components.set("believe-in-god", BelieveInGodComponent);
     this.components.set("obedience-to-holiness", HolinessComponent);
     this.components.set("live-worthy", WorthyOfCallComponent);
-    this.components.set("perseverance-by-rememberance", PersevereComponent);
+    this.components.set("persevere-by-rememberance", PersevereComponent);
     this.components.set("call-upon-the-lord", CallUponHimComponent);
 
     //THE DAY OF THE LORD - HOPE
-    this.components.set("the-resurrection-of-life", ResurrectionComponent);
+    this.components.set("resurrection-of-life", ResurrectionComponent);
     this.components.set("new-spiritual-bodies", SpiritualBodyComponent);
     this.components.set("eternal-reward", EternalRewardComponent);
     this.components.set("everlasting-life", EverlastingLifeComponent);
-    this.components.set("the-new-heaven-and-the-new-earth", NewHeavenEarthComponent);
+    this.components.set("the-new-heaven", NewHeavenEarthComponent);
     return this.components;
   }
 

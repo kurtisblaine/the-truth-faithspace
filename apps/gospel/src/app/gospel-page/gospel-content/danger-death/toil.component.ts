@@ -143,4 +143,6 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
 })
 export class ToilComponent extends GospelContentBaseComponent {
   override name: string = "work-and-toil";
+  public override description: string =
+    "We work and toil and rest to do it all over again the next day; God has dealt a tragic existence to the human race. We work for envy, and sweat for nothing; we work hard and gather for ourselves and leave the fruit of our labors to another to enjoy. ";
 }

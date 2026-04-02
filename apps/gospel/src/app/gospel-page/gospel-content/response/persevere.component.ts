@@ -129,5 +129,5 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class PersevereComponent extends GospelContentBaseComponent {
-  override name: string = "perseverance-by-rememberance";
+  override name: string = "persevere-by-rememberance";
 }

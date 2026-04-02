@@ -1,6 +1,5 @@
 import { CommonModule } from "@angular/common";
 import {
-  afterNextRender,
   AfterViewInit,
   ChangeDetectionStrategy,
   Component,
@@ -59,27 +58,25 @@ export class SeoBaseComponent implements AfterViewInit {
   private _appPostfix = inject(APP_POSTFIX);
   public baseUrl = inject(BASE_URL);
 
-  @ViewChild("seoCaption", { read: ElementRef, static: false }) private seoCaption!: ElementRef;
-  @ViewChild("seoTitle", { read: ElementRef, static: false }) private seoTitle!: ElementRef;
+  @ViewChild("seoCaption", { read: ElementRef, static: false }) private seoCaption!: ElementRef; //120-158 characters
+  @ViewChild("seoTitle", { read: ElementRef, static: false }) private seoTitle!: ElementRef; //50-60 characters
 
   protected keywords!: string;
 
   constructor(options: SeoOptions = {}) {
     this._options = options;
 
-    afterNextRender(() => {
-      if (options?.canonicalUrl) {
-        this.setCanonical(options.canonicalUrl);
-      } else {
-        const canonicalUrl = document.location.origin + this._router.url;
-        this.setCanonical(canonicalUrl);
-      }
+    if (options?.canonicalUrl) {
+      this.setCanonical(options.canonicalUrl);
+    } else {
+      const canonicalUrl = this.baseUrl + this._router.url;
+      this.setCanonical(canonicalUrl);
+    }
 
-      if (options?.title) {
-        const shouldPrefix = options?.shouldPostfix ?? true;
-        this.setTitle(shouldPrefix ? options.title + this._appPostfix : options.title);
-      }
-    });
+    if (options?.title) {
+      const shouldPrefix = options?.shouldPostfix ?? true;
+      this.setTitle(shouldPrefix ? options.title + this._appPostfix : options.title);
+    }
   }
 
   ngAfterViewInit(): void {

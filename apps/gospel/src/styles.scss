@@ -37,6 +37,7 @@ html {
         plain-family: sans-serif,
         brand-family: sans-serif,
       ),
+      density: 0,
     )
   );
 }
@@ -56,6 +57,28 @@ html {
       active-indicator-color: #00458f,
     )
   );
+}
+
+.mat-typography h1,
+.mat-typography h2,
+.mat-typography h3 {
+  margin-top: 8px;
+  margin-bottom: 16px;
+}
+
+.mat-typography h1 {
+  font-size: 30px;
+  font-weight: 650;
+}
+
+.mat-typography h2 {
+  font-size: 26px;
+  font-weight: 550;
+}
+
+.mat-typography h3 {
+  font-size: 22px;
+  font-weight: 450;
 }
 
 .mat-mdc-paginator-container {
@@ -78,13 +101,6 @@ html {
 .mat-caption {
   font-size: 14px;
   padding: 7px;
-}
-
-.mat-typography h3 {
-  font-size: 22px;
-  font-weight: 450;
-  margin-top: 0;
-  margin-bottom: 12px;
 }
 
 body {

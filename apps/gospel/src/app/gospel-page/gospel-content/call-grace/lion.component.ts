@@ -195,4 +195,6 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
 })
 export class LionComponent extends GospelContentBaseComponent {
   override name: string = "the-lion-of-judah";
+  public override description: string =
+    "Jesus Christ is a roaring lion from the tribe of Judah, a fierce warrior with the heart of a lion; He faced the religious leaders at the time and battled against them with the sword of His mouth.";
 }

@@ -159,5 +159,7 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class RockComponent extends GospelContentBaseComponent {
-  override name: string = "the-rock-of-our-salvation";
+  override name: string = "the-rock-of-salvation";
+  public override description: string =
+    "Jesus Christ is the Rock of our Salvation, our Refuge, our Stronghold, and Fortress; He is who David, the psalmists, wrote about when He fled from Saul in the wilderness, when he made his home in the rocks.";
 }

@@ -2,12 +2,13 @@ import { AfterViewInit, ChangeDetectorRef, Component, inject, input, Input } fro
 import { MatCardModule } from "@angular/material/card";
 import { MatProgressSpinnerModule } from "@angular/material/progress-spinner";
 import { BASE_URL, LinkComponent, NarratorComponent, NarratorStyle } from "shared";
+import { DashToTitlePipe } from "../../shared/pipes/dash-title.pipe";
 
 @Component({
   selector: "blog-gospel-section",
   templateUrl: "./gospel-section.component.html",
   styleUrl: "./gospel-section.component.scss",
-  imports: [MatCardModule, MatProgressSpinnerModule, NarratorComponent, LinkComponent],
+  imports: [MatCardModule, MatProgressSpinnerModule, NarratorComponent, LinkComponent, DashToTitlePipe],
 })
 export class GospelSectionComponent implements AfterViewInit {
   @Input() public isLightMode = true;

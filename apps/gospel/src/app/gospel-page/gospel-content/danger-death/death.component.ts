@@ -193,4 +193,6 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
 })
 export class DeathComponent extends GospelContentBaseComponent {
   override name: string = "the-day-of-death";
+  public override description: string =
+    "The day of death is a terror to all; it is not known by any, it shows no partiality to anyone - both the wicked and the righteous die alike. If we are punished in our lifetime for our sins, how much more after death? For these reasons, death is a terrible grief; it came about through one man's sin.";
 }

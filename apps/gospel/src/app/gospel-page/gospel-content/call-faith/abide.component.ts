@@ -179,5 +179,6 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class AbideComponent extends GospelContentBaseComponent {
-  override name: string = "abide-in-him";
+  override name: string = "abide-in-jesus";
+  public override description: string = "Learn how to abide in Jesus and be safe from the wrath to come.";
 }

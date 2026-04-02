@@ -184,5 +184,5 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class ResurrectionComponent extends GospelContentBaseComponent {
-  override name: string = "the-resurrection-of-life";
+  override name: string = "resurrection-of-life";
 }

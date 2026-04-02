@@ -118,5 +118,5 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class BaptismComponent extends GospelContentBaseComponent {
-  override name: string = "baptism";
+  override name: string = "buried-in-baptism";
 }

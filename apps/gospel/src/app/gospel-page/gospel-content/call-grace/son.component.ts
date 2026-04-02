@@ -260,4 +260,6 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
 })
 export class SonComponent extends GospelContentBaseComponent {
   override name: string = "the-son-of-god";
+  public override description: string =
+    "Jesus Christ is the Son of God, the Son of the King; He is equal with the Father God and He came to show us what the Father is like; no-one has seen God at anytime, but the one and only Son has revealed Him unto us.";
 }

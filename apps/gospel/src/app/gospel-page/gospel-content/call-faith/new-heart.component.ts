@@ -114,4 +114,6 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
 })
 export class NewHeartComponent extends GospelContentBaseComponent {
   override name: string = "a-new-heart";
+  public override description: string =
+    "The new heart comes through the inward working of God through faith in Jesus Christ; He makes our heart of stone into a heart of flesh.";
 }

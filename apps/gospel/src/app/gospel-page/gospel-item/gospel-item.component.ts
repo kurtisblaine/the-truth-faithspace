@@ -1,4 +1,12 @@
-import { ChangeDetectionStrategy, Component, input, OnDestroy, ViewChild, ViewContainerRef } from "@angular/core";
+import {
+  ChangeDetectionStrategy,
+  Component,
+  input,
+  OnDestroy,
+  signal,
+  ViewChild,
+  ViewContainerRef,
+} from "@angular/core";
 import { NarratorStyle, SeoBaseComponent } from "shared";
 import { GospelItemService } from "./gospel-item.service";
 
@@ -10,14 +18,12 @@ import { GospelItemService } from "./gospel-item.service";
   standalone: false,
 })
 export class GospelItemComponent extends SeoBaseComponent implements OnDestroy {
-  private readonly metaCaptionLimit = 150;
+  public page = input<string>(); //comes from url
 
-  public page = input<string>();
-
+  public description = signal("");
   public narratorStyle = NarratorStyle;
 
   @ViewChild("textContainer", { read: ViewContainerRef, static: false }) private textContainer!: ViewContainerRef;
-  @ViewChild("content", { read: ViewContainerRef, static: false }) private content!: ViewContainerRef;
 
   constructor(private gospelItemService: GospelItemService) {
     super();
@@ -28,12 +34,11 @@ export class GospelItemComponent extends SeoBaseComponent implements OnDestroy {
     const gospelItemComponent = components.get(this.page());
 
     const component = this.textContainer.createComponent(gospelItemComponent);
-    this.setKeywords(component.instance.keywords);
-    if (component.instance.description) {
-      this.setDescription(component.instance.description);
-    } else {
-      const innerText = (this.content?.element?.nativeElement as HTMLElement)?.innerText;
-      this.setDescription(innerText?.substring(0, this.metaCaptionLimit - 3) + "...");
+    if (component.instance?.keywords) {
+      this.setKeywords(component.instance.keywords);
+    }
+    if (component.instance?.description) {
+      this.description.set(component.instance.description);
     }
 
     super.ngAfterViewInit();

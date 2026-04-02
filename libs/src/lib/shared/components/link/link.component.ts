@@ -4,7 +4,12 @@ import { ChangeDetectionStrategy, Component, Input } from "@angular/core";
 @Component({
   selector: "lib-link",
   template: `
-    <a href="{{ link }}" [target]="getTarget()" [ngStyle]="{ 'text-decoration': isNewPage ? 'underline' : 'none' }">
+    <a
+      href="{{ link }}"
+      [target]="getTarget()"
+      rel="noopener"
+      [ngStyle]="{ 'text-decoration': isNewPage ? 'underline' : 'none' }"
+    >
       <ng-content></ng-content>
     </a>
   `,

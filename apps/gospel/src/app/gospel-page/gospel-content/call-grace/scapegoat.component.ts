@@ -200,4 +200,6 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
 })
 export class ScapegoatComponent extends GospelContentBaseComponent {
   override name: string = "the-scapegoat";
+  public override description: string =
+    "Jesus Christ is the Scapegoat, the one who takes the blame for our sins and carries them off to a remote place; as far as the east is from the west, He lifts away our sins from us.";
 }

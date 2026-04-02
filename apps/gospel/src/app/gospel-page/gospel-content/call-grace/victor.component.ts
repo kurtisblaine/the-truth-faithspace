@@ -146,4 +146,6 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
 })
 export class VictorComponent extends GospelContentBaseComponent {
   override name: string = "the-victor";
+  public override description: string =
+    "Jesus Christ is the Victor who overcame the world; He overcame the world through His defeat, by His own blood which was shed for us; He loved us to die for us that we may enter into His glory. All who believe in Him have this hope in them.";
 }

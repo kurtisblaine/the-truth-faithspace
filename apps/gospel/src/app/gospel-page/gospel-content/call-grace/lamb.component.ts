@@ -161,4 +161,6 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
 })
 export class LambComponent extends GospelContentBaseComponent {
   override name: string = "the-lamb-of-god";
+  public override description: string =
+    "Jesus is the Lamb of God who takes away the sins of the world; He came to make atonement for sin, the propitiation for our sins at the appointed time.";
 }

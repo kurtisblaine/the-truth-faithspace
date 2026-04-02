@@ -2,8 +2,11 @@
   <mat-card-header>
     <mat-card-title-group>
       <mat-card-title #seoTitle>
-        <h3 class="blog-title primary-color">{{ page() | dashToTitle }}</h3>
+        <h2 class="blog-title primary-color">{{ page() | dashToTitle }}</h2>
       </mat-card-title>
+      <mat-card-subtitle #seoCaption>
+        {{ description() }}
+      </mat-card-subtitle>
       <mat-card-subtitle>
         <lib-narrator [buttonStyle]="narratorStyle.Group" [text]="content?.innerText ?? ''"> </lib-narrator>
       </mat-card-subtitle>

@@ -81,7 +81,7 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
       If you do well, will not your countenance be lifted up? And if you do not do well, sin is crouching at the door;
       and its desire is for you, <b>but you must master it.</b>
     </blog-reference-tooltip>
-    <lib-link [link]="baseUrl + '/assets/tract/GoodNewsOfFreedom.pdf'">(See more about true discipline)</lib-link
+    <lib-link [link]="baseUrl + '/assets/tracts/good-news-of-freedom.pdf'">(See more about true discipline)</lib-link
     ><br /><br />
 
     We run the race of faith not for a perishable crown, but for an indestructible, that of life; as Paul says, "Do you
@@ -132,4 +132,6 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
 })
 export class RunTheRaceComponent extends GospelContentBaseComponent {
   override name: string = "the-race-of-faith";
+  public override description: string =
+    "A runner trains for the race and runs; we are runners, running the race of faith, passing on the Word of the Gospel to every creature.";
 }
