@@ -61,7 +61,8 @@ html {
 
 .mat-typography h1,
 .mat-typography h2,
-.mat-typography h3 {
+.mat-typography h3,
+.mat-typography h4 {
   margin-top: 8px;
   margin-bottom: 16px;
 }
@@ -81,12 +82,13 @@ html {
   font-weight: 450;
 }
 
-.mat-mdc-paginator-container {
-  justify-content: flex-start !important;
+.mat-typography h4 {
+  font-size: 18px;
+  font-weight: 350;
 }
 
-.mat-expansion-panel-body > button {
-  text-decoration: underline !important;
+.mat-mdc-paginator-container {
+  justify-content: flex-start !important;
 }
 
 .gospel-body {
@@ -96,6 +98,15 @@ html {
 
 .primary {
   color: var(--mat-sys-primary);
+}
+
+.fixed-primary-color {
+  background-color: var(--mat-sys-on-primary-fixed-variant) !important;
+  color: white !important;
+}
+
+.warn {
+  color: var(--mat-sys-error) !important;
 }
 
 .mat-caption {

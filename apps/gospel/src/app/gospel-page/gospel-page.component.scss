@@ -13,10 +13,6 @@
   position: relative;
 }
 
-.error {
-  color: var(--mat-sys-error);
-}
-
 .footer {
   padding: 15px;
   color: var(--mat-sys-on-background) !important;
@@ -40,28 +36,61 @@
   height: 100vh;
 }
 
+.mat-filled-button,
+.mat-elevated-button {
+  margin-bottom: 20px;
+}
+
+.dark-mode {
+  color-scheme: dark;
+}
+
+.light-mode {
+  color-scheme: light;
+}
+
+.header-button {
+  cursor: default !important;
+  margin-bottom: 16px;
+  padding: 30px;
+}
+
+mat-panel-title > button[matButton="elevated"],
+.mat-expansion-panel-header {
+  width: 100%;
+  max-width: 225px;
+}
+
 .header-title {
-  letter-spacing: 5px;
-  color: white;
-  text-align: center;
+  letter-spacing: 3px;
+  margin: unset !important;
 }
 
-.header-caption {
-  letter-spacing: 4px;
-  margin-bottom: 10px;
-  color: white;
+.section-button-group {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 12px;
 }
 
-.slide > button {
-  text-decoration: underline;
-  width: 50%;
-  font-size: 16px;
-  color: white !important;
+.wedding-feast-image,
+.bush-image {
+  object-position: top;
 }
 
-.custom-panel button {
-  font-size: 16px;
-  color: white !important;
+@media (max-width: 800px) {
+  .section-button-group {
+    flex-direction: column;
+  }
+
+  .wedding-feast-image,
+  .bush-image {
+    object-position: left;
+  }
+}
+
+.mat-tonal-button {
+  margin: 2px;
 }
 
 .menu > .custom-panel {

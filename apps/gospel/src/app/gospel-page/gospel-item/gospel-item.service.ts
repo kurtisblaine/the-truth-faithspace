@@ -46,7 +46,7 @@ export class GospelItemService implements OnDestroy {
   init() {
     if (this.components.size) return this.components;
 
-    //THE DANGER - SIN
+    //The Danger - Sin
     this.components.set("the-sin-nature", SinNatureComponent);
     this.components.set("god-knows", HeKnowsComponent);
     this.components.set("a-consuming-fire", ConsumingFireComponent);
@@ -58,7 +58,7 @@ export class GospelItemService implements OnDestroy {
     this.components.set("the-love-of-wealth", WealthComponent);
     this.components.set("the-day-of-death", DeathComponent);
 
-    //THE SAFETY - GRACE
+    //The Safety - Grace
     this.components.set("the-servant-of-god", ServantComponent);
     this.components.set("the-bronze-serpent", BronzeSerpentComponent);
     this.components.set("the-victor", VictorComponent);
@@ -70,14 +70,14 @@ export class GospelItemService implements OnDestroy {
     this.components.set("the-rock-of-salvation", RockComponent);
     this.components.set("the-son-of-god", SonComponent);
 
-    //THE CALL - FAITH
+    //The Call - Faith
     this.components.set("the-race-of-faith", RunTheRaceComponent);
     this.components.set("a-clear-conscience", ClearConscienceComponent);
     this.components.set("abide-in-jesus", AbideComponent);
     this.components.set("a-new-heart", NewHeartComponent);
     this.components.set("born-again", BornAgainComponent);
 
-    //OUR RESPONSE
+    //Our Response
     this.components.set("repentance-toward-god", RepentComponent);
     this.components.set("buried-in-baptism", BaptismComponent);
     this.components.set("believe-in-god", BelieveInGodComponent);
@@ -86,7 +86,7 @@ export class GospelItemService implements OnDestroy {
     this.components.set("persevere-by-rememberance", PersevereComponent);
     this.components.set("call-upon-the-lord", CallUponHimComponent);
 
-    //THE DAY OF THE LORD - HOPE
+    //The Day of the Lord - Hope
     this.components.set("resurrection-of-life", ResurrectionComponent);
     this.components.set("new-spiritual-bodies", SpiritualBodyComponent);
     this.components.set("eternal-reward", EternalRewardComponent);
