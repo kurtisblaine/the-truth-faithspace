@@ -58,7 +58,8 @@
 mat-panel-title > button[matButton="elevated"],
 .mat-expansion-panel-header {
   width: 100%;
-  max-width: 225px;
+  max-width: 250px;
+  font-size: medium;
 }
 
 .header-title {
@@ -87,6 +88,11 @@ mat-panel-title > button[matButton="elevated"],
   .bush-image {
     object-position: left;
   }
+}
+
+.mat-content.mat-content-hide-toggle,
+.mat-expansion-panel-header-title {
+  margin-right: unset !important;
 }
 
 .mat-tonal-button {

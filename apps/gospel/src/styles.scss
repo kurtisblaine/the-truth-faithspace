@@ -43,21 +43,41 @@ html {
 }
 
 html {
-  @include mat.fab-overrides(
-    (
-      small-container-color: #00458f,
-      container-color: #00458f,
-      small-foreground-color: white,
-      foreground-color: white,
-    )
-  );
+  .red-theme-light-mode {
+    color-scheme: light;
+    @include mat.theme(
+      (
+        color: mat.$red-palette,
+      )
+    );
+  }
 
-  @include mat.progress-spinner-overrides(
-    (
-      active-indicator-color: #00458f,
-    )
-  );
+  .red-theme-dark-mode {
+    color-scheme: dark;
+    @include mat.theme(
+      (
+        color: mat.$red-palette,
+      )
+    );
+  }
 }
+
+// html {
+//   @include mat.fab-overrides(
+//     (
+//       small-container-color: #00458f,
+//       container-color: #00458f,
+//       small-foreground-color: white,
+//       foreground-color: white,
+//     )
+//   );
+
+//   @include mat.progress-spinner-overrides(
+//     (
+//       active-indicator-color: #00458f,
+//     )
+//   );
+// }
 
 .mat-typography h1,
 .mat-typography h2,
@@ -103,10 +123,6 @@ html {
 .fixed-primary-color {
   background-color: var(--mat-sys-on-primary-fixed-variant) !important;
   color: white !important;
-}
-
-.warn {
-  color: var(--mat-sys-error) !important;
 }
 
 .mat-caption {
