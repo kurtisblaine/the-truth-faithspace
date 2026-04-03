@@ -62,7 +62,7 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
       were selling, they were planting, they were building; but on the day that Lot went out from Sodom it rained fire
       and brimstone from heaven and destroyed them all.
     </blog-reference-tooltip>
-    <lib-link [link]="baseUrl + '/edifications/edify-detail/9a7773b4-01b5-ede3-0a07-218b0a4b42d6'"
+    <lib-link [link]="baseUrl + '/edifications/edify-detail/deceitfulness-of-sin'"
       >(See more on the Snare of His Coming)</lib-link
     >
     <br /><br />

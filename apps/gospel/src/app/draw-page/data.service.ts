@@ -21,7 +21,7 @@ export class DataService {
        God's grace had nothing to do with us, He gave us love unmerited;
        so if we boast, we boast in Christ, in His great riches and mercy which He has for us.
        We are His workmanship, made useful to the Master through His working in us, and we enter into His rest by faith.`,
-      footer: "Jesus has done everything for us, and we are His work, we enter into His rest...",
+      footer: "Jesus has done everything for us, and we are His work...",
       originUrl: "v1711590205/teach/gospel_cxqott.webp",
       fileName: "gospel.webp",
     });
@@ -36,14 +36,14 @@ export class DataService {
         Believe the promise and enter into covenant with God, for when a promise is given, what is left except to believe?
         This is the entrance into the new covenant and the terms of the covenant - our faith.
         Christ died - and what's more? He lives on! And you overcome by your faith in Him.`,
-      footer: "The promise, then the covenant founded on the promise...",
+      footer: "The promise, and the covenant founded on the promise...",
       originUrl: "v1711590185/teach/covenantpromise_lq6374.webp",
       fileName: "covenantpromise.webp",
     });
 
     this.images.push({
       id: "the-children-of-light",
-      name: "The Children of the Day & Night",
+      name: "The Children of the Day",
       description: `The Lord will come as thief to those in the night;
       but Lord and Savior, bringing salvation, to those who are of the day, to those who are watching in prayer for His coming, and standing against the wiles of the enemy of darkness.
       Stand firm against him! Watch in prayer as a watchman on the wall with the eyes of your head - watch.
@@ -71,7 +71,7 @@ export class DataService {
 
     this.images.push({
       id: "re-prefix",
-      name: "Reproach, Reproof, Rebuke, Reprimand",
+      name: "The Re Prefix",
       description: `The prefix 'Re' means going back;
       this would mean going back to the truth and constantly remembering it.
       REmembering is to REcall the things that have happened previously.
@@ -80,7 +80,7 @@ export class DataService {
       Discipline is the way to life; a fool doesn't listen to wise concil, but the wise fear and take heed.
       A fool goes on his way and pays no attention to the Word; his ignorance is blissful only for a short time;
       and when it is too late, there will be no going back.`,
-      footer: "Differences between all the 're' words and understanding the prefix...",
+      footer: "Differences between these...",
       originUrl: "v1711590232/teach/re_g8fwmi.webp",
       fileName: "re.webp",
     });
@@ -145,10 +145,11 @@ export class DataService {
 
     this.images.push({
       id: "john-16",
-      name: "Sin, Righteousness, Judgement",
-      description: `If we sin, it is because we have not faith; if we do what is right, it is because we believe.
+      name: "John 16",
+      description: `If we sin, it is because we have no faith; if we do what is right, it is because we believe.
       “Commit your way to the LORD, Trust also in Him, and He will do it.
        He will bring forth your righteousness as the light And your judgment as the noonday.” (Psalms 37:5-6)
+       Wait on the Lord Jesus and He will grant you righteousness through faith in Him.
       `,
       footer: "Elaborating John 16: 8-11...",
       fileName: "john16.webp",
@@ -173,24 +174,22 @@ export class DataService {
     this.images.push({
       id: "the-altar-of-christ",
       name: "The Altar of Christ",
-      description: `We were crucified with Christ and made right with God through Him when He died on the cross on our behalf, believing in the message of grace;
-      therefore, by sanctification we pick up our altar or cross and follow Him, just as Isaac did when he subjected himself to his father;
-      he was spared of his life and is today an example of a living sacrifice as Christ is the Lamb who was slain found standing and living (Rev 5:6).
-      Here refers to the body and mind of the flesh which we have deliverance from in Christ through His death and working on the cross.`,
-      footer:
-        "Death must be worked out in the body and soul of the flesh. Many know about the body of the flesh. What about the mind of flesh? ...",
+      description: `We were crucified with Christ and made right with God through Him when He died on the cross on our behalf;
+      therefore, by sanctification we pick up our cross and follow Him, just as Isaac did when he subjected himself to his father;
+      he was spared of his life and is today an example of a living sacrifice.`,
+      footer: "Die to the flesh and its passions...",
       fileName: "alterofGod.webp",
       originUrl: "v1711590174/teach/armorofGod_h3blcr.webp",
     });
 
     this.images.push({
       id: "the-lion-the-lamb",
-      name: "The Lion & the Lamb",
+      name: "The Lion and the Lamb",
       description: `Abraham gave his one and only son, Isaac, as a sacrifice; and Jacob gave up his one and only son Benjamin, from his beloved Rachel, to go to Egypt.
-      These represent Jesus, who God gave up for the sins of the world, because of His great love for us, giving up His beloved Son whom He loves.
-      Abraham gained back his son Isaac, and Jacob gained back his son Benjamin - not to mention he received back Joseph from the dead!
-      Without question these point to Jesus' resurrection from the dead after being handed over to death for our sins; God raised Him back from the dead.`,
-      footer: "Similarities between Isaac and Benjamin prophesying about Jesus...",
+      These represent Jesus, who God gave up for the sins of the world, because of His great love for us, giving up His beloved Son.
+      Abraham gained back his son Isaac, and Jacob gained back his son Benjamin - not to mention he received Joseph back from the dead!
+      And Jesus, God raised Him back from the dead.`,
+      footer: "Similarities between Isaac and Benjamin...",
       fileName: "Jesuslionlamb.webp",
       originUrl: "v1711590217/teach/Jesuslionlamb_y91dzk.webp",
     });
@@ -214,13 +213,12 @@ export class DataService {
 
     this.images.push({
       id: "repent-and-believe",
-      name: "Repent & Believe",
-      description: `Repentance is salvation. How can one be saved unless they repent of dead works?
-      Are they not what we need saving from? Do not be deceived:
-      God forgives us through Christ and He died for us and nullified the power of sin, since we are made right through faith in Jesus Christ.
-      Christ saves: Come to the knowledge of Him and be set free from sin through the Truth.
-      Unless you believe Jesus is He, you will die in your sins. Jesus is Lord and the Powerful one able to save.`,
-      footer: "The response to the Gospel to all who have heard and believed unto new life...",
+      name: "Repent and Believe",
+      description: `Repentance is salvation. How can one be safe unless they repent of dead works?
+      Is not wrath against sin? Are they not what we need saving from?
+      Christ saves: therefore, come to the knowledge of Him and be set free from sin through the truth.
+      Unless you believe Jesus is He, you will die in your sins. Jesus is Lord and the Powerful one, able to save.`,
+      footer: "The response to the Gospel: repent and believe...",
       fileName: "repentandbelieve.webp",
       originUrl: "v1711590234/teach/repentandbelieve_nq987c.webp",
     });
@@ -229,11 +227,12 @@ export class DataService {
       id: "run-the-race",
       name: "Run the Race of Faith",
       description: `The race is from start to finish by faith. We race for the eternal crown of life.
-      In the days before instant messaging, runners were sent out to run with a message; they ran to bring a word to the king or to whomever it may concern.
+      In the days before instant messaging, runners were sent out to run with a message;
+      they ran to bring a word to the king or to whomever it may concern.
       So today, we are called to run the race of faith, bearing the good news in our bosom and proclaiming to every creature under the sun.
       All men everywhere have the universal right to the gospel; whether they accept it or reject it, let it be on them, but your hands be clean.
-      Bear the good news, for good men bring the good news!`,
-      footer: "To live the life of faith, is to be like an athlete, running a race...",
+      Bear the good news! Good men bring good news!`,
+      footer: "The life of faith is running...",
       fileName: "runtherace.webp",
       originUrl: "v1711590238/teach/runtherace_pnfqmo.webp",
     });
@@ -241,11 +240,11 @@ export class DataService {
     this.images.push({
       id: "grace-and-truth",
       name: "Grace and Truth",
-      description: `The law is physical; the Gospel is spiritual. Greater is the Spirit than the flesh.
+      description: `The law is physical; the Gospel is spiritual; and greater is the Spirit than the flesh.
       Through the law comes a knowledge of sin; but through grace and truth come the knowledge of God.
-      We have a choice which tree we are to eat from. God has restored to us one command: believe.
-      Enter into covenant with God through His oath.`,
-      footer: "The law revealed the coinscience through the written code, grace & truth revealed in Christ...",
+      We have a choice: which tree to eat from. God has restored to us one command: believe.
+      Enter into covenant with God through His oath of promise, fulfilled by Jesus Christ.`,
+      footer: "The law revealed the coinscience, Christ revealed grace & truth...",
       fileName: "grace&truth.webp",
       originUrl: "v1711735327/teach/grace_truth_loj0u0.webp",
     });
@@ -253,32 +252,29 @@ export class DataService {
     this.images.push({
       id: "spiritual-worship",
       name: "Spiritual Worship",
-      description: `The law gives power to pride and sin; it empowers sin within us. Through the law comes a false sense of worship.
-      However, through the Spirit, can we ever worship the Father as He intended us to: in spirit and truth.
-      We attribute proper worth to God who makes the temple holy rather than the temple itself. The law honors the temple more than God who sanctifies the temple.
-      Everything about the law is physical; however, the Spirit trumps over the flesh. Our bodies are the temples where the Holy Spirit resides.`,
-      footer: "How the world worships God in the ways He does not desire, but how we're called to worship...",
+      description: `The law gives power to pride and sin; it empowers sin within us;
+      so through the law comes a false sense of worship.
+      But through the Spirit, we can worship the Father as He intended: in spirit and truth.
+      Then we can attribute proper worth to God who makes the temple holy rather than the temple itself.
+      The law honors the temple more than God who sanctifies the temple;
+      everything about the law is physical; however, the Spirit trumps over the flesh;
+      and our bodies are the temples where the Holy Spirit resides.`,
+      footer: "How the world worships God, and how we're called to worship...",
       fileName: "TrueWorship.webp",
       originUrl: "v1711735327/teach/TrueWorship_prs84a.webp",
     });
 
     this.images.push({
       id: "born-of-water-and-fire",
-      name: "You must be Born again of Water and Fire",
-      description: `The baptism of water is that of repentance. John the Baptist was the first apostle sent by God to proclaim water baptism, confession of sin and
-      repentance thereof. He preached that we should believe in the One to come after him. The 12 were sent by God baptizing and making disciples after witnessing Him.
-      There is another baptism of fire which is of the Spirit and includes tribulation and refining from impurities. Jesus is the One Who baptized in the Spirit.
-      We are saved (1 Peter 3:21) through water as Noah and his family were saved through the deluge. In the future when the world is judged by fire,
-      we will be caught up in the heavens and will not perish along with the rest of the world. The main point of baptism in water is an appeal to God for a good conscience.
-      Our conscience has been defiled and corrupted from this world and it's necessary to appeal to God for a cleansed one through Christ's sacrifice.
-      Baptism is burial; burial with Christ. No-one qualifies for burial unless they are first dead; likewise, we must first be dead to sin, confessing and repenting of sin
-      to qualify for baptism. This comes through faith in the message. The Holy Spirit is given to those who have believed in God's Son and obey Him.
-      The cloud by day and fire by night that lead the Israelites out of Egypt is the Holy Spirit -- again, Spirit (wind) and Fire.
-      They followed the pillar, as we follow the Spirit. They were baptized as followers of Moses through the red sea, as we are of Christ.
-      They ate the same spiritual manna, just as we eat of the same sacrifice that those who worked at the Tabernacle had no right to eat -- Christ's flesh.
-      And we drink of the same Spirit (1 Cor 12:13) as they did in the wilderness which was the Rock, or Christ, Who traveled with them.
-`,
-      footer: "You must be born again of Water and Spirit (John 3)...",
+      name: "You must be Born of Water and Fire",
+      description: `The baptism of water is a baptism of repentance.
+      John the Baptist was the first apostle sent by God to proclaim water baptism, confession of sin and
+      repentance. He preached that men should believe in the One to come after him.
+      The twelve were sent by God baptizing and making disciples after Him.
+      Yet there is another baptism, a baptism of fire and of the Spirit; and it includes tribulation and refining from impurities.
+      Jesus is the One Who baptized in the Spirit. We are saved (1 Peter 3:21) through water as Noah and his family were saved through the deluge.
+      In the future when the world is judged by fire, we will be caught up in the heavens and will not perish along with the rest of the world.`,
+      footer: "You must be born again of Water and Spirit...",
       originUrl: "v1711590176/teach/baptismwaterandfire_z41pny.webp",
       fileName: "baptismwaterandfire.webp",
     });
@@ -286,12 +282,12 @@ export class DataService {
     this.images.push({
       id: "building-on-the-rock",
       name: "Building on the Rock",
-      description: `In the end, we will not be judged based on our faith, but by our actions. Our faith and actions work together.
+      description: `In the end, we will not be judged on our faith, but by our actions. Our faith and actions work together.
       What good is it, to say we have faith but have no works. Can that faith help another or even save ourselves?
-      No! Such a faith has no merit in reality and it is a delusion, but a faith that lives and moves and has it's being in reality is good and can save if we hold fast.
-      We build our house upon the rock, if when things are good, we obey the Gospel of God: how can we stand when calamity comes if we don't even obey when things are good?
-      Jesus Christ is the Rock. We believe in Him and also follow after Him: following Him is doing the things He did when He was on earth - He is the Example, He is the Way.`,
-      footer: "How do you know if you're well built, only by testing...",
+      Such a faith has no merit in reality and is delusional; but a faith that lives and moves and has it's being in reality is good and can save.
+      We build our house upon the rock, which is obedience: how can we stand when calamity comes if we don't obey when things are good?
+      Jesus Christ is the Rock. We believe in Him and also follow after Him: He is the Example and He is the Way.`,
+      footer: "Our building will be tested...",
       fileName: "buildingontheRock.webp",
       originUrl: "v1711590180/teach/buildingontheRock_mxzsvs.webp",
     });
@@ -299,18 +295,19 @@ export class DataService {
     this.images.push({
       id: "the-word-of-life",
       name: "The Word of Life",
-      description: `We have no life unless we abide in Christ. He is so great and merciful, making Himself available to us all by faith.
-      How we can do utterly nothing of value apart from God. If we wish to have fruit, we must be in God.
-      Even the Son said, 'Why do you call Me good? Only God is good'. Our righteousness comes from what we see our Father doing in Christ.
-      Our righteousness comes from knowing the Lord Jesus and the Father God. Jesus, the Christ, has revealed Him to us.`,
-      footer: "These are words of spirit & truth from the Word of Life...",
+      description: `We have no life unless we abide in Christ. He is so great and merciful, making Himself available to us by faith.
+      We can do utterly nothing of value apart from God. If we wish to have fruit, we must be in God.
+      Even the Son said, 'Why do you call Me good? Only God is good'. Our righteousness comes from what perceive our Father does in Christ.
+      Our righteousness comes from knowing the Lord Jesus and the Father God. And Jesus Christ has revealed Him to us.`,
+      footer: "Jesus is the Word of Life...",
       fileName: "theWordofLife.webp",
       originUrl: "v1712630408/teach/theWordofLife_qtalbz.webp",
     });
 
+    //TODO
     this.images.push({
       id: "father-son-church",
-      name: "The Father & the Son, the Son & the Church",
+      name: "The Father and the Son, the Son and the Church",
       description: `How the Father is to the Son, the Son is to His Church. The Son is the Mediater between us and God.
       He obeyed God perfectly. What the Father commanded of the Son, so the Son commands us.
       There is one who plans and another who executes, even as it is in football: the coaches make the game plan and the players execute.

@@ -40,7 +40,7 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
     "Christ appeared as a high priest of the good things to come." (Hebrews 9:11) And concerning the change of
     sacrifice, it says, "He offered one sacrifice for sins for all time." (Hebrews 10:12) And concerning the change of
     worship, it says, "God is spirit, and those who worship Him must worship in spirit and truth." (John 4:24)
-    <lib-link [link]="baseUrl + '/edifications/edify-detail/eec06cc1-2ce2-3f35-fa35-8c08aaf6c431'"
+    <lib-link [link]="baseUrl + '/edifications/edify-detail/the-law-of-christ'"
       >(See more about the law of Christ)</lib-link
     >
     <br /><br />
@@ -73,7 +73,7 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
     do not reject the law of God, for faith is weightier than the law of God - if we fulfill the law of faith, we
     fulfill the law of God - for God the Father puts a new heart and a new spirit in us, so that, through the
     sanctifying work of the Holy Spirit, we may be presented to Him as holy and blameless before His coming.
-    <lib-link [link]="baseUrl + '/edifications/edify-detail/eec06cc1-2ce2-3f35-fa35-8c08aaf6c431'"
+    <lib-link [link]="baseUrl + '/edifications/edify-detail/the-law-of-christ'"
       >(See again more about the law of Christ)</lib-link
     >
     <br /><br />
@@ -167,7 +167,7 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
     God works in us. “Do not quench the Spirit;” (1 Thessalonians 5:19) For the law of God pertains to the flesh and the
     law of Christ pertains to the heart; the heart is greater than the flesh; if you are made new in the heart, you will
     obey in the flesh as well.
-    <lib-link [link]="baseUrl + '/discernments/discernment-detail/2cb3f25e-cc6d-8533-b2e7-b18890410091'"
+    <lib-link [link]="baseUrl + '/discernments/discernment-detail/for-the-pure-gospel'"
       >(See more about the Stumbling Block of Lawlessness)</lib-link
     >
   </div>`,

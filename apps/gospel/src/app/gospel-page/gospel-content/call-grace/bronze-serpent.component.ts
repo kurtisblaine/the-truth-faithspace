@@ -134,7 +134,7 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
     <blog-reference-tooltip [reference]="'John 20:29'" [isJesusWord]="true">
       Blessed are those who have not seen and yet have believed.</blog-reference-tooltip
     >
-    <lib-link [link]="baseUrl + '/edifications/edify-detail/156e9f30-db77-2664-f613-9d02a030135f'"
+    <lib-link [link]="baseUrl + '/edifications/edify-detail/spiritual-sight'"
       >(See more about Spiritual Sight)</lib-link
     >
     <br /><br />
@@ -181,7 +181,7 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
     He bore, but He even intercedes on your behalf before the Father. So prove yourself innocent in the matter by
     fleeing to Christ for refuge in the heavenly places where He is now seated, setting your mind on the things above,
     not on the things below.
-    <lib-link [link]="baseUrl + '/edifications/edify-detail/75eaed82-3d6f-4dc0-85aa-b0606a108c63'"
+    <lib-link [link]="baseUrl + '/edifications/edify-detail/joseph-the-type-of-christ'"
       >(See more about Joseph)</lib-link
     >
   </div>`,

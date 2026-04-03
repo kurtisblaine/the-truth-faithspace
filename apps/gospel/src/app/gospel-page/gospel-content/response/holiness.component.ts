@@ -103,7 +103,7 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
     calls the law, "The ministry of death," (2 Corinthians 3:7) and "The ministry of condemnation." (2 Corinthians 3:9)
     So if we fulfill the law, we live in the freedom, and rest in life of God; but if we disobey, we lie in the depths
     of slavery, toil, and death in sin.
-    <lib-link [link]="baseUrl + '/edifications/edify-detail/ccb334ab-3719-49b4-a690-1416ad4d1265'">
+    <lib-link [link]="baseUrl + '/edifications/edify-detail/submission-to-authority'">
       (See more on Submission to Authority)</lib-link
     >
     <br /><br />

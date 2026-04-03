@@ -112,8 +112,7 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
       Truly, truly, I say to you, unless you eat the flesh of the Son of Man and drink His blood, you have no life in
       yourselves.
     </blog-reference-tooltip>
-    <lib-link [link]="baseUrl + '/edifications/edify-detail/7666deae-3d71-86fe-0d07-0f3a29a99599'"
-      >(See more about the Riddle)</lib-link
+    <lib-link [link]="baseUrl + '/edifications/edify-detail/eat-the-son-of-man'">(See more about the Riddle)</lib-link
     ><br /><br />
 
     Although God is greatly kind towards us in Christ, we do not neglect the fear of Him; His kindness is not an excuse

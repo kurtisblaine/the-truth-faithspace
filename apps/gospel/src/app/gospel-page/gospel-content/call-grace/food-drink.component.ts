@@ -92,9 +92,7 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
     whole world. So therefore, seek and search for Him, the living Life, dwelling above the heavens, and He will let you
     find Him. We who sow to the Spirit reap life, and the mind set on the Spirit is life and peace; so set your minds on
     the things above where Christ dwells.
-    <lib-link [link]="baseUrl + '/edifications/edify-detail/82f4d580-3f2d-a049-d46d-6036c26062a8'"
-      >(See more on the Living Bread)</lib-link
-    >
+    <lib-link [link]="baseUrl + '/edifications/edify-detail/spiritual-food'">(See more on the Living Bread)</lib-link>
     <br /><br />
 
     For how is it that Moses fasted for 40 days and 40 nights without food nor water? He had nourishment from the
@@ -134,9 +132,7 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
       whom He has sent. (...) For the bread of God is that which comes down out of heaven, and gives life to the world.
       (...) I am the bread of life; he who comes to Me will not hunger, and he who believes in Me will never thirst.
     </blog-reference-tooltip>
-    <lib-link [link]="baseUrl + '/edifications/edify-detail/7666deae-3d71-86fe-0d07-0f3a29a99599'"
-      >(See more on Christ as Food)</lib-link
-    >
+    <lib-link [link]="baseUrl + '/edifications/edify-detail/eat-the-son-of-man'">(See more on Christ as Food)</lib-link>
     <br /><br />
 
     See a tremendous thing: God has given us a tangible act of communion with Him in which we eat bread and drink wine;

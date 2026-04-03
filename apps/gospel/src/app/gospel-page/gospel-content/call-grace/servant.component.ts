@@ -177,9 +177,7 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
     determined beforehand what Christ was to do. Thanks be to God who releases us from the power of sin and death in
     Christ Jesus, our Lord! So since He died for us, we consider ourselves to be dead to sin, having died to the law,
     for sin has its power in the law.
-    <lib-link [link]="baseUrl + '/edifications/edify-detail/5877cee0-b83a-28b6-2a3e-bd6b98c3e687'"
-      >(See more about Jonathan)</lib-link
-    >
+    <lib-link [link]="baseUrl + '/edifications/edify-detail/once-for-all'">(See more about Jonathan)</lib-link>
     <br /><br />
 
     Our Lord disarmed the rulers and authorities through the cross, for they have their power in the law, for in the law

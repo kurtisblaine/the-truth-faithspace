@@ -67,7 +67,7 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
     stand them up, feed them, dust them off, but they are no gods at all; but the one and only God does on our behalf,
     waging war for us and defeating our foes. He defeated them through the cross, and we enter into His victory through
     faith.
-    <lib-link [link]="baseUrl + '/edifications/edify-detail/cff547c6-c5b8-3479-7472-f065fed444f5'"
+    <lib-link [link]="baseUrl + '/edifications/edify-detail/the-righteous-war'"
       >(See more about Righteous Warfare)</lib-link
     >
     <br /><br />
@@ -128,7 +128,7 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
     against him with the Sword of the Word of God; your defense of armor is from the Lord, and your offensive weapon is
     from the Lord; and you, O warrior in the kingdom of God - fight! For He has fought for us. He gives us the law of
     the Spirit and life that we may defend ourselves against the law of sin and death.
-    <lib-link [link]="baseUrl + '/edifications/edify-detail/52314b0f-bfbb-2b2b-6393-c8e3dcef2a2e'"
+    <lib-link [link]="baseUrl + '/edifications/edify-detail/two-laws-waging-war'"
       >(See more about the Two Laws Waging War)</lib-link
     >
     <blog-reference-tooltip [reference]="'Romans 8:35-37'">
@@ -137,7 +137,7 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
       slaughtered like sheep.") No, despite all these things,
       <b>overwhelming victory is ours through Christ, who loved us.</b>
     </blog-reference-tooltip>
-    <lib-link [link]="baseUrl + '/edifications/edify-detail/69f8db0f-ef45-212e-beb9-2a7dcea600a4'"
+    <lib-link [link]="baseUrl + '/edifications/edify-detail/jesus-the-book-of-ester'"
       >(See more about Mordecai)</lib-link
     >
   </div>`,

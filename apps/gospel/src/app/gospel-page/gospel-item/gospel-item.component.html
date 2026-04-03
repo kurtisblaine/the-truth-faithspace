@@ -5,7 +5,9 @@
         <h2 class="blog-title primary-color">{{ page() | dashToTitle }}</h2>
       </mat-card-title>
       <mat-card-subtitle>
-        {{ description() }}
+        <div class="mat-caption">
+          {{ description() }}
+        </div>
       </mat-card-subtitle>
       <mat-card-subtitle>
         <lib-narrator [buttonStyle]="narratorStyle.Group" [text]="content?.innerText ?? ''"> </lib-narrator>

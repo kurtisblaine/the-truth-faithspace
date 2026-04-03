@@ -1,89 +1,91 @@
-<router-outlet></router-outlet>
+<div style="margin: 0px 17px">
+  <router-outlet></router-outlet>
 
-<h3 style="padding: 15px 15px 0px" class="primary-color" #seoTitle>Tracts</h3>
-<div style="padding-bottom: 15px" class="mat-caption" style="margin: 0px 17px" #seoCaption>
-  Using bookmarks as tracts has a two-fold purpose: it points to the Word of God for truth and gives the Gospel,
-  offering a continual reminder of the Good News. Contact me if you would like any of these and I can provide them for
-  you. I hope this helps even with creating your own tracts. Secondly, I like using cards because people can put them in
-  their wallet; but the best place for all these things is in the heart, meditating and ruminating on them day and
-  night: the paper fades as a flower passes away, but the Word of God remains forever.
-</div>
+  <h2 class="primary-color" #seoTitle>Tracts</h2>
+  <div class="mat-caption" #seoCaption>
+    Using bookmarks as tracts has a two-fold purpose: it points to the Word of God for truth and gives the Gospel,
+    offering a continual reminder of the Good News. Contact me if you would like any of these and I can provide them for
+    you. I hope this helps even with creating your own tracts. Secondly, I like using cards because people can put them
+    in their wallet; but the best place for all these things is in the heart, meditating and ruminating on them day and
+    night: the paper fades as a flower passes away, but the Word of God remains forever.
+  </div>
 
-<mat-selection-list role="list" [multiple]="false" hideSingleSelectionIndicator>
-  <mat-list-option lines="2" disableRipple="true">
-    <img
-      matListItemAvatar
-      class="product-image"
-      [ngSrc]="'v1711590013/img/audioplayer-min_litzdj.webp'"
-      [alt]="'Bible Audio Player'"
-      fill
-    />
-    <span matListItemTitle>Bible Audio Player</span>
-    <span matListItemLine>The New Testament (ESV or KJV)</span>
-  </mat-list-option>
-  <lib-link [link]="`${baseUrl}/assets/tracts/the-good-news-of-the-kingdom-of-god.pdf`">
-    <mat-list-option lines="2" role="listitem">
-      <span matListItemTitle>The Good News of the Kingdom of God</span>
-      <span matListItemLine>Book</span></mat-list-option
-    >
-  </lib-link>
-  <lib-link [link]="`${baseUrl}/assets/tracts/soft-gospel-card.pdf`">
-    <mat-list-option lines="2" role="listitem"
-      ><span matListItemTitle>The Good News </span> <span matListItemLine>Soft Business Card</span></mat-list-option
-    >
-  </lib-link>
-  <lib-link [link]="`${baseUrl}/assets/tracts/plastic-gospel-card.pdf`">
-    <mat-list-option lines="2" role="listitem">
-      <span matListItemTitle>The Good News </span> <span matListItemLine>Plastic Business Card</span></mat-list-option
-    >
-  </lib-link>
-  <lib-link [link]="`${baseUrl}/assets/tracts/beware-of-burgers.pdf`">
-    <mat-list-option lines="2" role="listitem">
-      <span matListItemTitle>Beware of Fast Food </span> <span matListItemLine>Bookmark</span></mat-list-option
-    >
-  </lib-link>
-  <lib-link [link]="`${baseUrl}/assets/tracts/beware-of-images.pdf`">
-    <mat-list-option lines="2" role="listitem">
-      <span matListItemTitle>Watch Yourselves, Idols </span> <span matListItemLine>Bookmark</span></mat-list-option
-    >
-  </lib-link>
-  <lib-link [link]="`${baseUrl}/assets/tracts/unfailing-love-of-god.pdf`">
-    <mat-list-option lines="2" role="listitem">
-      <span matListItemTitle>The Unfailing Love of God </span>
-      <span matListItemLine>Bookmark</span></mat-list-option
-    >
-  </lib-link>
-  <lib-link [link]="`${baseUrl}/assets/tracts/faithful-love-of-god.pdf`">
-    <mat-list-option lines="2" role="listitem">
-      <span matListItemTitle>The Faithful Love of God </span> <span matListItemLine>Bookmark</span></mat-list-option
-    >
-  </lib-link>
-  <lib-link [link]="`${baseUrl}/assets/tracts/the-promised-gift-of-god.pdf`">
-    <mat-list-option lines="2" role="listitem">
-      <span matListItemTitle>The Promised Gift from God </span> <span matListItemLine>Bookmark</span></mat-list-option
-    >
-  </lib-link>
-  <lib-link [link]="`${baseUrl}/assets/tracts/the-good-news-of-grace-and-truth.pdf`">
-    <mat-list-option lines="2" role="listitem">
-      <span matListItemTitle>The Good News of Grace and Truth </span>
-      <span matListItemLine>Bookmark</span></mat-list-option
-    >
-  </lib-link>
-  <lib-link [link]="`${baseUrl}/assets/tracts/good-news-of-freedom.pdf`">
-    <mat-list-option lines="2" role="listitem">
-      <span matListItemTitle>The Good News of Freedom </span> <span matListItemLine>Bookmark</span></mat-list-option
-    >
-  </lib-link>
-  <lib-link [link]="`${baseUrl}/assets/tracts/good-news-of-justice.pdf`">
-    <mat-list-option lines="2" role="listitem">
-      <span matListItemTitle>The Good News of Justice </span>
-      <span matListItemLine>Bookmark</span></mat-list-option
-    >
-  </lib-link>
-  <lib-link [link]="`${baseUrl}/assets/tracts/gospel-of-faith.pdf`">
-    <mat-list-option lines="2" role="listitem">
-      <span matListItemTitle>The Gospel of Faith </span>
-      <span matListItemLine>Bookmark</span>
+  <mat-selection-list role="list" [multiple]="false" hideSingleSelectionIndicator>
+    <mat-list-option lines="2" disableRipple="true">
+      <img
+        matListItemAvatar
+        class="product-image"
+        [ngSrc]="'v1711590013/img/audioplayer-min_litzdj.webp'"
+        [alt]="'Bible Audio Player'"
+        fill
+      />
+      <span matListItemTitle>Bible Audio Player</span>
+      <span matListItemLine>The New Testament (ESV or KJV)</span>
     </mat-list-option>
-  </lib-link>
-</mat-selection-list>
+    <lib-link [link]="`${baseUrl}/assets/tracts/the-good-news-of-the-kingdom-of-god.pdf`">
+      <mat-list-option lines="2" role="listitem">
+        <span matListItemTitle>The Good News of the Kingdom of God</span>
+        <span matListItemLine>Book</span></mat-list-option
+      >
+    </lib-link>
+    <lib-link [link]="`${baseUrl}/assets/tracts/soft-gospel-card.pdf`">
+      <mat-list-option lines="2" role="listitem"
+        ><span matListItemTitle>The Good News </span> <span matListItemLine>Soft Business Card</span></mat-list-option
+      >
+    </lib-link>
+    <lib-link [link]="`${baseUrl}/assets/tracts/plastic-gospel-card.pdf`">
+      <mat-list-option lines="2" role="listitem">
+        <span matListItemTitle>The Good News </span> <span matListItemLine>Plastic Business Card</span></mat-list-option
+      >
+    </lib-link>
+    <lib-link [link]="`${baseUrl}/assets/tracts/beware-of-burgers.pdf`">
+      <mat-list-option lines="2" role="listitem">
+        <span matListItemTitle>Beware of Fast Food </span> <span matListItemLine>Bookmark</span></mat-list-option
+      >
+    </lib-link>
+    <lib-link [link]="`${baseUrl}/assets/tracts/beware-of-images.pdf`">
+      <mat-list-option lines="2" role="listitem">
+        <span matListItemTitle>Watch Yourselves, Idols </span> <span matListItemLine>Bookmark</span></mat-list-option
+      >
+    </lib-link>
+    <lib-link [link]="`${baseUrl}/assets/tracts/unfailing-love-of-god.pdf`">
+      <mat-list-option lines="2" role="listitem">
+        <span matListItemTitle>The Unfailing Love of God </span>
+        <span matListItemLine>Bookmark</span></mat-list-option
+      >
+    </lib-link>
+    <lib-link [link]="`${baseUrl}/assets/tracts/faithful-love-of-god.pdf`">
+      <mat-list-option lines="2" role="listitem">
+        <span matListItemTitle>The Faithful Love of God </span> <span matListItemLine>Bookmark</span></mat-list-option
+      >
+    </lib-link>
+    <lib-link [link]="`${baseUrl}/assets/tracts/the-promised-gift-of-god.pdf`">
+      <mat-list-option lines="2" role="listitem">
+        <span matListItemTitle>The Promised Gift from God </span> <span matListItemLine>Bookmark</span></mat-list-option
+      >
+    </lib-link>
+    <lib-link [link]="`${baseUrl}/assets/tracts/the-good-news-of-grace-and-truth.pdf`">
+      <mat-list-option lines="2" role="listitem">
+        <span matListItemTitle>The Good News of Grace and Truth </span>
+        <span matListItemLine>Bookmark</span></mat-list-option
+      >
+    </lib-link>
+    <lib-link [link]="`${baseUrl}/assets/tracts/good-news-of-freedom.pdf`">
+      <mat-list-option lines="2" role="listitem">
+        <span matListItemTitle>The Good News of Freedom </span> <span matListItemLine>Bookmark</span></mat-list-option
+      >
+    </lib-link>
+    <lib-link [link]="`${baseUrl}/assets/tracts/good-news-of-justice.pdf`">
+      <mat-list-option lines="2" role="listitem">
+        <span matListItemTitle>The Good News of Justice </span>
+        <span matListItemLine>Bookmark</span></mat-list-option
+      >
+    </lib-link>
+    <lib-link [link]="`${baseUrl}/assets/tracts/gospel-of-faith.pdf`">
+      <mat-list-option lines="2" role="listitem">
+        <span matListItemTitle>The Gospel of Faith </span>
+        <span matListItemLine>Bookmark</span>
+      </mat-list-option>
+    </lib-link>
+  </mat-selection-list>
+</div>
