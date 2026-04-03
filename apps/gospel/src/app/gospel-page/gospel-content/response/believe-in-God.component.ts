@@ -115,4 +115,6 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
 })
 export class BelieveInGodComponent extends GospelContentBaseComponent {
   override name: string = "believe-in-god";
+  public override description: string =
+    "Believe in God, for He has given you great reason to; consider what great works He has done for you! Meditate on Jesus Christ, setting your eyes on Him in the heavens.";
 }

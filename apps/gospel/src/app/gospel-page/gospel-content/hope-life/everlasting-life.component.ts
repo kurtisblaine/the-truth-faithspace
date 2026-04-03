@@ -162,4 +162,6 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
 })
 export class EverlastingLifeComponent extends GospelContentBaseComponent {
   override name: string = "everlasting-life";
+  public override description: string =
+    "God will grant eternal life to the faithfully obedient who die to their earthly lives in this world and live for the everlasting life to come.";
 }

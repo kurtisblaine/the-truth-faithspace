@@ -37,8 +37,10 @@ export class GospelItemComponent extends SeoBaseComponent implements OnDestroy {
     if (component.instance?.keywords) {
       this.setKeywords(component.instance.keywords);
     }
+
     if (component.instance?.description) {
       this.description.set(component.instance.description);
+      this.setDescription(component.instance.description);
     }
 
     super.ngAfterViewInit();

@@ -177,5 +177,5 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
 export class ClearConscienceComponent extends GospelContentBaseComponent {
   override name: string = "a-clear-conscience";
   public override description: string =
-    "David was the first to have a pure heart and a clear conscience; he was also a man after God's own heart. Neglect not faith and a pure conscience.";
+    "David was first to have a pure heart and a clear conscience before God; he was also a man after God's own heart. We are his children if we neglect not faith and a pure conscience.";
 }

@@ -156,4 +156,6 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
 })
 export class JudgementDayComponent extends GospelContentBaseComponent {
   override name: string = "the-day-of-judgement";
+  public override description: string =
+    "The day of the Lord is the day of judgement: a terrible and fearful night for the children of darkness. But the light of day for the children of light.";
 }

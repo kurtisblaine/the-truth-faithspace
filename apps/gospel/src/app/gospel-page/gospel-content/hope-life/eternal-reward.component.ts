@@ -131,4 +131,6 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
 })
 export class EternalRewardComponent extends GospelContentBaseComponent {
   override name: string = "eternal-reward";
+  public override description: string =
+    "There is an eternal reward in the heavens, kept for the faithful, where the moth cannot corrupt and the thief cannot break in to steal.";
 }

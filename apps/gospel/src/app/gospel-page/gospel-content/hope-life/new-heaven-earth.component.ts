@@ -172,4 +172,6 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
 })
 export class NewHeavenEarthComponent extends GospelContentBaseComponent {
   override name: string = "the-new-heaven";
+  public override description: string =
+    "There will be a new heaven and a new earth where the new Jerusalem will dwell; the glory of God will illuminate it and the Lamb will be the lamp.";
 }

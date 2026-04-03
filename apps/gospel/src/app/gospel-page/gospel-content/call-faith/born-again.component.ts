@@ -225,5 +225,5 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
 export class BornAgainComponent extends GospelContentBaseComponent {
   override name: string = "born-again";
   public override description: string =
-    "See various scriptures how the new birth comes from our faith in Jesus Christ.";
+    "You must be born again to enter into the kingdom of heaven; for only the imperishable can inherit the imperishable.";
 }

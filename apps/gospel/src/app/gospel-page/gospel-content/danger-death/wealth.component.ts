@@ -184,5 +184,6 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
 })
 export class WealthComponent extends GospelContentBaseComponent {
   override name: string = "the-love-of-wealth";
-  public override description: string = "";
+  public override description: string =
+    "The love of wealth is the root of all kinds of evil; a useless toil which no one has found satisfaction. We've taken nothing into this world and we'll take nothing out.";
 }

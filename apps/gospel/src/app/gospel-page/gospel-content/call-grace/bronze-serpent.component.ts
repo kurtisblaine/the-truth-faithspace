@@ -191,5 +191,5 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
 export class BronzeSerpentComponent extends GospelContentBaseComponent {
   override name: string = "the-bronze-serpent";
   public override description: string =
-    "The bronze serpent that Moses lifted up in the wilderness is a type and a shadow of Jesus Christ to come; we look upon Him and Him crucified for life from death.";
+    "The bronze serpent that Moses lifted up in the wilderness is a type and a shadow of Jesus Christ to come; we look upon Him crucified for life from death.";
 }

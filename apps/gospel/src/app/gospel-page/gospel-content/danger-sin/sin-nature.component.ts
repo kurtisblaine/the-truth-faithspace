@@ -207,6 +207,8 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
 })
 export class SinNatureComponent extends GospelContentBaseComponent {
   override name = "the-sin-nature";
+  public override description: string =
+    "We are all sinners, there is none that is good; we are all born into sin, and we are sold as slaves to our sin nature.";
   override keywords =
     "Sin Nature, glory of God, righteousness, Romans 3:10-18, Isaiah 59:1-13, Isaiah 64:6-7, Psalms 5:9, Psalms 53:1-3, Psalms 36:1-4, Micah 7:2-3, Ezekiel 22:6-12, human condition, worthlessness, inability to seek God.";
 }

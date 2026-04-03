@@ -173,5 +173,5 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
 export class PleasureComponent extends GospelContentBaseComponent {
   override name: string = "the-love-of-pleasure";
   public override description: string =
-    "The love of pleasure is futile because we are never satisfied; we see many things and we're not content, we hear many things and we're not happy. We are slaves of our flesh, the desires within us that wage war against our soul.";
+    "The love of pleasure will never fill our void; it leaves us more hungry in the end, and a slave to its fleeting pleasure.";
 }

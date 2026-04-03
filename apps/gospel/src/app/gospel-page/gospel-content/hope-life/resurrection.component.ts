@@ -185,4 +185,6 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
 })
 export class ResurrectionComponent extends GospelContentBaseComponent {
   override name: string = "resurrection-of-life";
+  public override description: string =
+    "There will be two resurrections: the resurrection of life and the resurrection to death. Blessed and holy is the one who takes part in the first resurrection!";
 }

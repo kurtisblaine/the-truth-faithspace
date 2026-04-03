@@ -77,6 +77,10 @@ export class SeoBaseComponent implements AfterViewInit {
       const shouldPrefix = options?.shouldPostfix ?? true;
       this.setTitle(shouldPrefix ? options.title + this._appPostfix : options.title);
     }
+
+    if (options?.description) {
+      this.setDescription(options.description);
+    }
   }
 
   ngAfterViewInit(): void {

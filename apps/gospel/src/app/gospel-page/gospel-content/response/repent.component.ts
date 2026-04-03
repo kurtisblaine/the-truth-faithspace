@@ -137,4 +137,6 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
 })
 export class RepentComponent extends GospelContentBaseComponent {
   override name: string = "repentance-toward-god";
+  public override description: string =
+    "The fruitless works of darkness are worthy to turn from; therefore, we proclaim repentance toward God and faith in Jesus Christ for life from the dead.";
 }

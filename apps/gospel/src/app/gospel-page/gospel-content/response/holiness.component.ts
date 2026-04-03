@@ -142,4 +142,6 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
 })
 export class HolinessComponent extends GospelContentBaseComponent {
   override name: string = "obedience-to-holiness";
+  public override description: string =
+    "Listen to the voice of the Lord! This is obedience; and obedience leads to holiness and holiness to eternal life. Eat the fruit of your ways and be satisfied.";
 }

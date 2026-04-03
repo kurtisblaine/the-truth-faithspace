@@ -165,4 +165,6 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
 })
 export class CallUponHimComponent extends GospelContentBaseComponent {
   override name: string = "call-upon-the-lord";
+  public override description: string =
+    "Call upon the Lord! Everyone who calls upon the name of the Lord will be saved. Ask and receive from the Lord Jesus. He delights to give to His children.";
 }

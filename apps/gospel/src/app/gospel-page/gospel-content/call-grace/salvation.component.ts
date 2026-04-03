@@ -151,5 +151,5 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
 export class SalvationComponent extends GospelContentBaseComponent {
   override name: string = "the-door-of-salvation";
   public override description: string =
-    "Jesus Christ is the door of salvation; He allows whom He wills to enter for safety, and He leads them out into a wide place. His sheep abide in Him, and He is the Good Shepherd.";
+    "Jesus Christ is the door of salvation; He allows whom He wills to enter for safety, and He leads them out into a wide place. His sheep abide in Him, for He is the Good Shepherd.";
 }

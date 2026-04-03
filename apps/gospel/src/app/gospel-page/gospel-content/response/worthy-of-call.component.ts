@@ -159,4 +159,6 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
 })
 export class WorthyOfCallComponent extends GospelContentBaseComponent {
   override name: string = "live-worthy";
+  public override description: string =
+    "Live worthy of the heavenly calling of Jesus Christ; and do not offer yourselves as servants to sin, but instead, submit yourselves as servants of righteousness.";
 }

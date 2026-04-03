@@ -156,4 +156,6 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
 })
 export class SpiritualBodyComponent extends GospelContentBaseComponent {
   override name: string = "new-spiritual-bodies";
+  public override description: string =
+    "After the tent of our body is taken down, God wil give an eternal temple for us with everlasting glory: new spiritual bodies.";
 }

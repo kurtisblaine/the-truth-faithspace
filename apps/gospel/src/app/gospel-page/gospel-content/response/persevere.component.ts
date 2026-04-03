@@ -130,4 +130,6 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
 })
 export class PersevereComponent extends GospelContentBaseComponent {
   override name: string = "persevere-by-rememberance";
+  public override description: string =
+    "The knowledge of the Lord Jesus is salvation; therefore, we must persevere by rememberance, considering what Jesus did for us on the cross.";
 }

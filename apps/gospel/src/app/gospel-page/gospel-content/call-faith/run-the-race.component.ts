@@ -133,5 +133,5 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
 export class RunTheRaceComponent extends GospelContentBaseComponent {
   override name: string = "the-race-of-faith";
   public override description: string =
-    "A runner trains for the race and runs; we are runners, running the race of faith, passing on the Word of the Gospel to every creature.";
+    "Messengers in former times were runners; and we are runners, running the race of faith, telling the Word of the Gospel to every creature.";
 }

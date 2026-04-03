@@ -151,4 +151,6 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
 })
 export class HeKnowsComponent extends GospelContentBaseComponent {
   override name: string = "god-knows";
+  public override description: string =
+    "The Lord God is living, and He sees and hears all things, for He is the Creator of the hearing ear and seeing eye. He knows all things.";
 }

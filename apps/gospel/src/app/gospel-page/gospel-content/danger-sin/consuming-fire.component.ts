@@ -211,4 +211,6 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
 })
 export class ConsumingFireComponent extends GospelContentBaseComponent {
   override name: string = "a-consuming-fire";
+  public override description: string =
+    "There is nothing in earth which compares to God, except one: a consuming fire; and His very name is Jealous, for He jealously longs for the spirit He caused to dwell in us.";
 }

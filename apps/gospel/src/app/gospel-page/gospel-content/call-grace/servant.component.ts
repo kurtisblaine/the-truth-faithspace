@@ -327,5 +327,5 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
 export class ServantComponent extends GospelContentBaseComponent {
   override name: string = "the-servant-of-god";
   public override description: string =
-    "Jesus Christ is the perfect servant of God, doing everything the Father wills; and He never sinned and no wrong was ever found in Him. He came to do the Father's will and speak His Words faithfully.";
+    "Jesus Christ is the perfect servant of God, doing everything the Father wills; He never sinned and no wrong was ever found in Him. He came to do the Father's will and speak His Words faithfully.";
 }

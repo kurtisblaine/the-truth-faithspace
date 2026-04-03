@@ -119,4 +119,6 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
 })
 export class BaptismComponent extends GospelContentBaseComponent {
   override name: string = "buried-in-baptism";
+  public override description: string =
+    "Repent and be baptized for the forgiveness of sins; we were buried with Him in baptism unto death and raised with Him through faith in Jesus Christ.";
 }

@@ -180,5 +180,6 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
 })
 export class AbideComponent extends GospelContentBaseComponent {
   override name: string = "abide-in-jesus";
-  public override description: string = "Learn how to abide in Jesus and be safe from the wrath to come.";
+  public override description: string =
+    "Abide in Jesus Christ and be safe from the wrath to come. He is the Rock of refuge, the city of refuge for saftey from bloodguildiness.";
 }
