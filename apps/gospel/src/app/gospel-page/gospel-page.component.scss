@@ -80,10 +80,6 @@ mat-panel-title > button[matButton="elevated"],
 }
 
 @media (max-width: 800px) {
-  .section-button-group {
-    flex-direction: column;
-  }
-
   .wedding-feast-image,
   .bush-image {
     object-position: left;

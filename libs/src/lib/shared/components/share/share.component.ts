@@ -18,91 +18,93 @@ import {
   selector: "lib-share",
   imports: [CommonModule, MatButtonModule, FontAwesomeModule, MatTooltipModule],
   template: `
-    @if(facebookLink()){
-    <a
-      mat-mini-fab
-      [href]="facebookLink()"
-      [matTooltip]="'Facebook'"
-      aria-labelledby="Facebook Link"
-      aria-label="Facebook Link"
-    >
-      <fa-icon [size]="'xl'" [icon]="facebookIcon"></fa-icon>
-    </a>
-    } @if(youtubeLink()){
-    <a
-      mat-mini-fab
-      [href]="youtubeLink()"
-      [matTooltip]="'Youtube'"
-      aria-labelledby="Youtube Link"
-      aria-label="Youtube Link"
-    >
-      <fa-icon [size]="'xl'" [icon]="youtubeIcon"></fa-icon>
-    </a>
-    } @if(amazonLink()){
-    <a
-      mat-mini-fab
-      [href]="amazonLink()"
-      [matTooltip]="'Amazon'"
-      aria-labelledby="Amazon Link"
-      aria-label="Amazon Link"
-    >
-      <fa-icon [size]="'xl'" [icon]="amazonIcon"></fa-icon>
-    </a>
-    }@if(githubLink()){
-    <a
-      mat-mini-fab
-      [href]="githubLink()"
-      [matTooltip]="'Github'"
-      aria-labelledby="Github Link"
-      aria-label="Github Link"
-    >
-      <fa-icon [size]="'xl'" [icon]="githubIcon"></fa-icon>
-    </a>
-    } @if(linkedinLink()){
-    <a
-      mat-mini-fab
-      [href]="linkedinLink()"
-      [matTooltip]="'LinkedIn'"
-      aria-labelledby="LinkedIn Link"
-      aria-label="LinkedIn Link"
-    >
-      <fa-icon [size]="'xl'" [icon]="linkedinIcon"></fa-icon>
-    </a>
-    } @if(soundCloudLink()){
-    <a
-      mat-mini-fab
-      [href]="soundCloudLink()"
-      [matTooltip]="'Sound Cloud'"
-      aria-labelledby="Sound Cloud Link"
-      aria-label="Sound Cloud Link"
-    >
-      <fa-icon [size]="'xl'" [icon]="soundCloudIcon"></fa-icon>
-    </a>
-    }@if(redditLink()){
-    <a
-      mat-mini-fab
-      [href]="redditLink()"
-      [matTooltip]="'Reddit'"
-      aria-labelledby="Reddit Link"
-      aria-label="Reddit Link"
-    >
-      <fa-icon [size]="'xl'" [icon]="redditIcon"></fa-icon>
-    </a>
-    } @if(discordLink()){
-    <a
-      mat-mini-fab
-      [href]="discordLink()"
-      [matTooltip]="'Discord'"
-      aria-labelledby="Discord Link"
-      aria-label="Discord Link"
-    >
-      <fa-icon [size]="'xl'" [icon]="discordIcon"></fa-icon>
-    </a>
-    }@if(slackLink()){
-    <a mat-mini-fab [href]="slackLink()" [matTooltip]="'Slack'" aria-labelledby="Slack Link" aria-label="Slack Link">
-      <fa-icon [size]="'xl'" [icon]="slackIcon"></fa-icon>
-    </a>
-    }
+    <div style="display: flex; flex-wrap: wrap; justify-content: center">
+      @if(facebookLink()){
+      <a
+        mat-mini-fab
+        [href]="facebookLink()"
+        [matTooltip]="'Facebook'"
+        aria-labelledby="Facebook Link"
+        aria-label="Facebook Link"
+      >
+        <fa-icon [size]="'xl'" [icon]="facebookIcon"></fa-icon>
+      </a>
+      } @if(youtubeLink()){
+      <a
+        mat-mini-fab
+        [href]="youtubeLink()"
+        [matTooltip]="'Youtube'"
+        aria-labelledby="Youtube Link"
+        aria-label="Youtube Link"
+      >
+        <fa-icon [size]="'xl'" [icon]="youtubeIcon"></fa-icon>
+      </a>
+      } @if(amazonLink()){
+      <a
+        mat-mini-fab
+        [href]="amazonLink()"
+        [matTooltip]="'Amazon'"
+        aria-labelledby="Amazon Link"
+        aria-label="Amazon Link"
+      >
+        <fa-icon [size]="'xl'" [icon]="amazonIcon"></fa-icon>
+      </a>
+      }@if(githubLink()){
+      <a
+        mat-mini-fab
+        [href]="githubLink()"
+        [matTooltip]="'Github'"
+        aria-labelledby="Github Link"
+        aria-label="Github Link"
+      >
+        <fa-icon [size]="'xl'" [icon]="githubIcon"></fa-icon>
+      </a>
+      } @if(linkedinLink()){
+      <a
+        mat-mini-fab
+        [href]="linkedinLink()"
+        [matTooltip]="'LinkedIn'"
+        aria-labelledby="LinkedIn Link"
+        aria-label="LinkedIn Link"
+      >
+        <fa-icon [size]="'xl'" [icon]="linkedinIcon"></fa-icon>
+      </a>
+      } @if(soundCloudLink()){
+      <a
+        mat-mini-fab
+        [href]="soundCloudLink()"
+        [matTooltip]="'Sound Cloud'"
+        aria-labelledby="Sound Cloud Link"
+        aria-label="Sound Cloud Link"
+      >
+        <fa-icon [size]="'xl'" [icon]="soundCloudIcon"></fa-icon>
+      </a>
+      }@if(redditLink()){
+      <a
+        mat-mini-fab
+        [href]="redditLink()"
+        [matTooltip]="'Reddit'"
+        aria-labelledby="Reddit Link"
+        aria-label="Reddit Link"
+      >
+        <fa-icon [size]="'xl'" [icon]="redditIcon"></fa-icon>
+      </a>
+      } @if(discordLink()){
+      <a
+        mat-mini-fab
+        [href]="discordLink()"
+        [matTooltip]="'Discord'"
+        aria-labelledby="Discord Link"
+        aria-label="Discord Link"
+      >
+        <fa-icon [size]="'xl'" [icon]="discordIcon"></fa-icon>
+      </a>
+      }@if(slackLink()){
+      <a mat-mini-fab [href]="slackLink()" [matTooltip]="'Slack'" aria-labelledby="Slack Link" aria-label="Slack Link">
+        <fa-icon [size]="'xl'" [icon]="slackIcon"></fa-icon>
+      </a>
+      }
+    </div>
   `,
   styles: `a[mat-mini-fab] {
     margin: 0px 10px
