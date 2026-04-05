@@ -1,14 +1,21 @@
-<mat-grid-list cols="5" rowHeight="1.1:2" gutterSize="5">
-  <mat-grid-tile *ngFor="let image of this.images">
-    <mat-grid-tile-header style="text-decoration: underline; cursor: pointer">
-      <lib-link [link]="baseUrl + '/drawings/draw/' + image.id"
-        >{{ image.name }}
-        <lib-fa-icon [icon]="faLink" style="padding-left: 2px"></lib-fa-icon>
-      </lib-link>
-    </mat-grid-tile-header>
-    <mat-grid-tile-footer>{{ image.footer }}</mat-grid-tile-footer>
-    <div>
-      <img [ngSrc]="image.originUrl" alt="" fill style="object-fit: contain" />
-    </div>
-  </mat-grid-tile>
-</mat-grid-list>
+<div class="container-form" style="margin: 0px 17px">
+  <h2 #seoTitle>Drawings</h2>
+  <div class="mat-caption" #seoCaption>
+    Pictures to help visualize important topics, to help compare things that are alike and contrast things that are not.
+  </div>
+
+  <mat-grid-list cols="5" rowHeight="1.1:2" gutterSize="5" style="padding-top: 8px">
+    <mat-grid-tile *ngFor="let image of this.images">
+      <mat-grid-tile-header style="text-decoration: underline; cursor: pointer">
+        <lib-link [link]="baseUrl + '/drawings/draw/' + image.id"
+          >{{ image.name }}
+          <lib-fa-icon [icon]="faLink" style="padding-left: 2px"></lib-fa-icon>
+        </lib-link>
+      </mat-grid-tile-header>
+      <mat-grid-tile-footer>{{ image.footer }}</mat-grid-tile-footer>
+      <div>
+        <img [ngSrc]="image.originUrl" [alt]="image.name" fill style="object-fit: contain" />
+      </div>
+    </mat-grid-tile>
+  </mat-grid-list>
+</div>

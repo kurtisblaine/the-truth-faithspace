@@ -23,11 +23,7 @@ export class DrawPageComponent extends SeoBaseComponent implements OnInit {
   public faLink = faArrowUpRightFromSquare;
 
   constructor(private dataService: DataService) {
-    super({
-      title: "Drawings",
-      description:
-        "Drawings to help visualize important topics, to help compare things that are alike and contrast things that are not.",
-    });
+    super();
   }
 
   ngOnInit(): void {

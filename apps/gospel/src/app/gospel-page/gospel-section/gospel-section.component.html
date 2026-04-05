@@ -1,9 +1,9 @@
 <mat-card class="card" [class]="{ 'section-light': isLightMode, 'section-dark': !isLightMode, floater: isFloater }">
   <mat-card-header>
     <mat-card-title-group style="justify-content: center">
-      <mat-card-title class="headers">
+      <mat-card-title>
         <lib-link [link]="`${baseUrl}/truth/truthful-item/${page()}`">
-          <h2 class="headers">{{ page() | dashToTitle }}</h2>
+          <h3 class="headers">{{ page() | dashToTitle }}</h3>
         </lib-link>
       </mat-card-title>
       <mat-card-subtitle>

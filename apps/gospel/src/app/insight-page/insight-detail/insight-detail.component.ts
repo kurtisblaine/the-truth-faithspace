@@ -26,13 +26,6 @@ export class InsightDetailComponent extends SeoBaseComponent implements OnInit {
     this.store.dispatch(loadInsights());
 
     const id = this.route.snapshot.paramMap.get("id");
-    this.blog$ = this.store.select(getById(id)).pipe(
-      tap((item) => {
-        this.setTitle(item.title);
-        this.setDescription(
-          `${item.date}: Christian scripture and writing for insight on the following topic, '${item.title}'.`
-        );
-      })
-    );
+    this.blog$ = this.store.select(getById(id)).pipe(tap(() => this.init()));
   }
 }
