@@ -64,23 +64,7 @@ export class SeoBaseComponent implements AfterViewInit {
   protected keywords!: string;
 
   constructor(options: SeoOptions = {}) {
-    this._options = options;
-
-    if (options?.canonicalUrl) {
-      this.setCanonical(options.canonicalUrl);
-    } else {
-      const canonicalUrl = this.baseUrl + this._router.url;
-      this.setCanonical(canonicalUrl);
-    }
-
-    if (options?.title) {
-      const shouldPrefix = options?.shouldPostfix ?? true;
-      this.setTitle(shouldPrefix ? options.title + this._appPostfix : options.title);
-    }
-
-    if (options?.description) {
-      this.setDescription(options.description);
-    }
+    this._setOptions(options);
   }
 
   ngAfterViewInit(): void {
@@ -103,6 +87,26 @@ export class SeoBaseComponent implements AfterViewInit {
     this._canonicalService.createOrSetCanonicalUrl(canonicalUrl ?? "");
   }
 
+  private _setOptions(options: SeoOptions) {
+    this._options = options;
+
+    if (options?.canonicalUrl) {
+      this.setCanonical(options.canonicalUrl);
+    } else {
+      const canonicalUrl = this.baseUrl + this._router.url;
+      this.setCanonical(canonicalUrl);
+    }
+
+    if (options?.title) {
+      const shouldPrefix = options?.shouldPostfix ?? true;
+      this.setTitle(shouldPrefix ? options.title + this._appPostfix : options.title);
+    }
+
+    if (options?.description) {
+      this.setDescription(options.description);
+    }
+  }
+
   setKeywords(keywords: string) {
     this._meta.updateTag({ name: "keywords", content: keywords });
   }
@@ -111,7 +115,7 @@ export class SeoBaseComponent implements AfterViewInit {
     this._meta.updateTag({ name: "description", content: description });
   }
 
-  private setTitle(title: string) {
+  setTitle(title: string) {
     this._title.setTitle(title);
   }
 }
