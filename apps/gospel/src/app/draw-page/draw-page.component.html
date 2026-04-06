@@ -4,7 +4,7 @@
     Pictures to help visualize important topics, to help compare things that are alike and contrast things that are not.
   </div>
 
-  <mat-grid-list cols="5" rowHeight="1.1:2" gutterSize="5" style="padding-top: 8px">
+  <mat-grid-list [cols]="columns" rowHeight="1.1:2" gutterSize="5" style="padding-top: 8px">
     <mat-grid-tile *ngFor="let image of this.images">
       <mat-grid-tile-header style="text-decoration: underline; cursor: pointer">
         <lib-link [link]="baseUrl + '/drawings/draw/' + image.id"
