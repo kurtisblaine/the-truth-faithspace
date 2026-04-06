@@ -1,6 +1,6 @@
 import { ApplicationConfig, isDevMode, provideZonelessChangeDetection } from "@angular/core";
 
-import { provideCloudinaryLoader } from "@angular/common";
+import { DatePipe, provideCloudinaryLoader } from "@angular/common";
 import { provideHttpClient, withFetch } from "@angular/common/http";
 import { initializeApp, provideFirebaseApp } from "@angular/fire/app";
 import { getAuth, provideAuth } from "@angular/fire/auth";
@@ -58,5 +58,6 @@ export const appConfig: ApplicationConfig = {
     provideAnimations(),
     { provide: APP_POSTFIX, useValue: " | The Good News" },
     { provide: BASE_URL, useValue: environment.baseUrl },
+    DatePipe,
   ],
 };

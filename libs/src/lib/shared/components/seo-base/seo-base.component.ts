@@ -99,7 +99,7 @@ export class SeoBaseComponent implements AfterViewInit {
 
     if (options?.title) {
       const shouldPrefix = options?.shouldPostfix ?? true;
-      this.setTitle(shouldPrefix ? options.title + this._appPostfix : options.title);
+      this.setTitle(options.title, shouldPrefix);
     }
 
     if (options?.description) {
@@ -115,7 +115,7 @@ export class SeoBaseComponent implements AfterViewInit {
     this._meta.updateTag({ name: "description", content: description });
   }
 
-  setTitle(title: string) {
-    this._title.setTitle(title);
+  setTitle(title: string, shouldPrefix: boolean = true) {
+    this._title.setTitle(shouldPrefix ? title + this._appPostfix : title);
   }
 }
