@@ -1,16 +1,16 @@
-<mat-card style="margin: 15px" *ngIf="blog$ | async as blog">
+<mat-card style="margin: 15px">
   <mat-card-header>
     <mat-card-title-group>
-      <mat-card-title #seoTitle>
-        <h2 class="study-title primary-color">{{ blog?.title }}</h2>
+      <mat-card-title>
+        <h2 class="study-title primary-color">{{ blog()?.title }}</h2>
       </mat-card-title>
-      <mat-card-subtitle #seoCaption>
-        <div>{{ blog?.date | date: "short" }}</div>
+      <mat-card-subtitle>
+        <div>{{ blog()?.date | date: "short" }}</div>
       </mat-card-subtitle>
     </mat-card-title-group>
   </mat-card-header>
 
   <mat-card-content>
-    <lib-readonly-text-editor [html]="blog?.json?.toString()" [showReadMore]="false"></lib-readonly-text-editor>
+    <lib-readonly-text-editor [html]="blog()?.json?.toString()" [showReadMore]="false"></lib-readonly-text-editor>
   </mat-card-content>
 </mat-card>

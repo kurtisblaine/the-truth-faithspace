@@ -1,7 +1,7 @@
-import { Component, OnInit } from "@angular/core";
+import { DatePipe } from "@angular/common";
+import { Component, effect, OnInit, Signal } from "@angular/core";
 import { ActivatedRoute } from "@angular/router";
 import { Store } from "@ngrx/store";
-import { Observable, tap } from "rxjs";
 import { SeoBaseComponent } from "shared";
 import { loadBlogs } from "../../state/blog/blog.actions";
 import { BlogEntity } from "../../state/blog/blog.models";
@@ -14,18 +14,26 @@ import { getById } from "../../state/blog/blog.selectors";
   standalone: false,
 })
 export class BlogDetailComponent extends SeoBaseComponent implements OnInit {
-  public blog$: Observable<BlogEntity>;
+  public blog: Signal<BlogEntity>;
 
   protected override keywords: string = "blog, detail, edify, Jesus, truth, love, peace, hope, rejoice";
 
-  constructor(private store: Store, private route: ActivatedRoute) {
+  constructor(private store: Store, private route: ActivatedRoute, private datePipe: DatePipe) {
     super();
+
+    effect(() => {
+      if (!this.blog()?.id) return;
+
+      this.setTitle(this.blog().title);
+      const date = this.datePipe.transform(this.blog().date);
+      this.setDescription(`${date}: ${this.blog().title}. A Christian's edification on the following topic.`);
+    });
   }
 
   ngOnInit(): void {
     this.store.dispatch(loadBlogs());
 
     const id = this.route.snapshot.paramMap.get("id");
-    this.blog$ = this.store.select(getById(id)).pipe(tap(() => this.init()));
+    this.blog = this.store.selectSignal(getById(id));
   }
 }
