@@ -73,7 +73,7 @@ export class SeoBaseComponent implements AfterViewInit {
 
   init() {
     if (this.seoTitle?.nativeElement && this.seoTitle?.nativeElement?.innerText && !this._options?.title) {
-      this.setTitle(this.seoTitle?.nativeElement?.innerText + this._appPostfix);
+      this.setTitle(this.seoTitle?.nativeElement?.innerText);
     }
     if (this.seoCaption?.nativeElement && this.seoCaption?.nativeElement?.innerText && !this._options?.description) {
       this.setDescription(this.seoCaption?.nativeElement?.innerText);
