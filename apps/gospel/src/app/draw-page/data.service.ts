@@ -20,7 +20,7 @@ export class DataService {
        God's grace had nothing to do with us, He gave us love unmerited; so if we boast, we boast in Christ, in His great riches and mercy which He has for us.
        We are His workmanship, made useful to the Master through His working in us, and we enter into His rest by faith.`,
       footer: "Jesus has done everything for us, and we are His work...",
-      originUrl: "v1711590205/teach/gospel_cxqott.webp",
+      originUrl: "q_auto/f_auto/v1711590205/teach/gospel_cxqott.webp",
       fileName: "gospel.webp",
     });
 
@@ -35,7 +35,7 @@ export class DataService {
         This is the entrance into the new covenant and the terms of the covenant - our faith.
         Christ died - and what's more? He lives on! And you overcome by your faith in Him.`,
       footer: "The promise, and the covenant founded on the promise...",
-      originUrl: "v1711590185/teach/covenantpromise_lq6374.webp",
+      originUrl: "q_auto/f_auto/v1711590185/teach/covenantpromise_lq6374.webp",
       fileName: "covenantpromise.webp",
     });
 
@@ -50,7 +50,7 @@ export class DataService {
       Remain in the light, as children of the day, making confession of your sins and affirming the Lord sees and knows everything - nothing is hidden from His sight.`,
       footer: "Be a child of the Day, servants of the Lord...",
       fileName: "daynight.webp",
-      originUrl: "v1711590187/teach/daynight_yob9oh.webp",
+      originUrl: "q_auto/f_auto/v1711590187/teach/daynight_yob9oh.webp",
     });
 
     this.images.push({
@@ -64,7 +64,7 @@ export class DataService {
       Let every man be a liar. The one who does not believe, does not fear; the one who believes, fears.`,
       footer: "The fear of the Lord produces humility and a righteous hatred...",
       fileName: "fearLord.webp",
-      originUrl: "v1711590197/teach/fearLord_znqj9t.webp",
+      originUrl: "q_auto/f_auto/v1711590197/teach/fearLord_znqj9t.webp",
     });
 
     this.images.push({
@@ -79,7 +79,7 @@ export class DataService {
       A fool goes on his way and pays no attention to the Word; his ignorance is blissful only for a short time;
       and when it is too late, there will be no going back.`,
       footer: "Differences between these...",
-      originUrl: "v1711590232/teach/re_g8fwmi.webp",
+      originUrl: "q_auto/f_auto/v1711590232/teach/re_g8fwmi.webp",
       fileName: "re.webp",
     });
 
@@ -95,7 +95,7 @@ export class DataService {
       "You shall surely observe My sabbaths; for this is a sign between Me and you throughout your generations, that you may know that I am the LORD who sanctifies you.” (Exodus 31:13)`,
       footer: "Moving away from earthly things to heavenly things...",
       fileName: "sanctification.webp",
-      originUrl: "v1711590244/teach/sanctification_jjdelm.webp",
+      originUrl: "q_auto/f_auto/v1711590244/teach/sanctification_jjdelm.webp",
     });
 
     this.images.push({
@@ -110,7 +110,7 @@ export class DataService {
       If justification comes by faith, how much more sanctification? The new covenant: faith in Jesus Christ.`,
       footer: "Justified by Christ, Faith that saves...",
       fileName: "justificationandsalvation.webp",
-      originUrl: "v1721004824/teach/justificationandsalvation_d1flk5.webp",
+      originUrl: "q_auto/f_auto/v1721004824/teach/justificationandsalvation_d1flk5.webp",
     });
 
     this.images.push({
@@ -125,7 +125,7 @@ export class DataService {
       For the closer we draw near to God, the further away our former companions will appear.`,
       footer: "When to separate from believers and unbelievers...",
       fileName: "biblicalseparation.webp",
-      originUrl: "v1721004824/teach/biblicalseparation_e1udhr.webp",
+      originUrl: "q_auto/f_auto/v1721004824/teach/biblicalseparation_e1udhr.webp",
     });
 
     this.images.push({
@@ -139,7 +139,7 @@ export class DataService {
       They were commanded to walk orderly, in step, covered and aligned. Are our marching orders any different?`,
       footer: "How the hosts of the LORD were sent out...",
       fileName: "israelcamp.webp",
-      originUrl: "v1721004824/teach/israelcamp_mrnxqw.webp",
+      originUrl: "q_auto/f_auto/v1721004824/teach/israelcamp_mrnxqw.webp",
     });
 
     this.images.push({
@@ -154,19 +154,19 @@ export class DataService {
       `,
       footer: "Elaborating John 16: 8-11...",
       fileName: "john16.webp",
-      originUrl: "v1711590220/teach/john16_bgxtfk.webp",
+      originUrl: "q_auto/f_auto/v1711590220/teach/john16_bgxtfk.webp",
     });
 
     this.images.push({
       id: "earthly-and-heavenly-man",
-      name: "Earthly man and Heavenly Man",
+      name: "Earthly Man and Heavenly Man",
       description: `This is the most beautiful and unique archetype of Christ; it is unique because Adam is an antitype of Christ!
       Through adam's one act of disobedience all have been made sinners and death reigned throughout all mankind.
       Through another Man and His one act of obedience and righteousness, He made right.
       Through Christ, all will be made alive, the living and the dead, at the resurrection in the last day.
       There is a resurrection of the living, those who have fallen asleep in Christ, and a resurrection of the dead.`,
-      footer: "The Scriptures...",
-      originUrl: "v1711590170/teach/adamvsJesus_v7kc6a.webp",
+      footer: "Adam as an antitype...",
+      originUrl: "q_auto/f_auto/v1711590170/teach/adamvsJesus_v7kc6a.webp",
       fileName: "adamvsJesus.webp",
     });
 
@@ -180,7 +180,7 @@ export class DataService {
       therefore, we are living sacrifices to God, and likewise pick up our cross, following Him.`,
       footer: "Die to the flesh and its passions...",
       fileName: "alterofGod.webp",
-      originUrl: "v1711590174/teach/armorofGod_h3blcr.webp",
+      originUrl: "q_auto/f_auto/v1711590174/teach/armorofGod_h3blcr.webp",
     });
 
     this.images.push({
@@ -193,25 +193,22 @@ export class DataService {
       And Jesus, God raised Him from the dead; He is the lion from the tribe of Judah and the Lamb of God who takes away the sin of the world.`,
       footer: "Similarities between Isaac and Benjamin...",
       fileName: "Jesuslionlamb.webp",
-      originUrl: "v1711590217/teach/Jesuslionlamb_y91dzk.webp",
+      originUrl: "q_auto/f_auto/v1711590217/teach/Jesuslionlamb_y91dzk.webp",
     });
 
-    // this.images.push({
-    //   id: 9,
-    //   name: "The Armor of God",
-    //   description: `When David went to go fight Goliath, he was given armor by Saul which did not fit him, Saul was too big and David was smaller than Saul.
-    //   Anyway, David had armor on which was from God, an armor that is fitting for a man of God. The armor is for protection. What good are we if we are hurt in battle?
-    //   Can we fight from the hospital bed? The war has been won by Christ on the cross, and we join into his victory through faith. This is all seen in the book of Colossians.
-    //   Christ's victory is absolute, but we may be defeated. Why? Because we have not been perfected by our faith in the grace of God. We STAND on victory ground;
-    //   we first most need to fight to conquer the land that God has promised us -- the battle of faith, the good fight (1 Tim 6:12).
-    //   In the book of Joshua, the Israelites had to go into the land and defeat the enemy. God promised them, He would fight for them.
-    //   They needed to put their faith to action and go. God will not let anyone of us down who put their trust in Him.`,
-    //   footer:
-    //     "The Armor given to us by God, which is fitting for a Christian, unlike the armor Saul gave to David...",
-    //   originUrl: "v1711590174/teach/armorofGod_h3blcr.webp",
-    //   fileName: "armorofGod.webp",
-
-    // });
+    this.images.push({
+      id: "the-armor-of-god",
+      name: "The Armor of God",
+      description: `When David went to go fight Goliath, he was given armor by Saul which did not fit him;
+      however David had armor which was from God, an armor that is fitting for a man of God.
+      Armor is for protection. What good is armor if we're hurt in battle?
+      The war has been won by Christ on the cross, and we join into his victory through faith.
+      Christ's victory is absolute; we STAND on victory ground; our fight is to claim the land God has promised us;
+      and God has promised, He will fight for us and subdue our enemies before us.`,
+      footer: "Put on the whole armor of God...",
+      originUrl: "q_auto/f_auto/v1711590174/teach/armorofGod_h3blcr.webp",
+      fileName: "armorofGod.webp",
+    });
 
     this.images.push({
       id: "repent-and-believe",
@@ -225,7 +222,7 @@ export class DataService {
       Repent and Believe.`,
       footer: "The response to the Gospel: repent and believe...",
       fileName: "repentandbelieve.webp",
-      originUrl: "v1711590234/teach/repentandbelieve_nq987c.webp",
+      originUrl: "q_auto/f_auto/v1711590234/teach/repentandbelieve_nq987c.webp",
     });
 
     this.images.push({
@@ -239,7 +236,7 @@ export class DataService {
       Bear the good news! Good men bring good news!`,
       footer: "The life of faith is running...",
       fileName: "runtherace.webp",
-      originUrl: "v1711590238/teach/runtherace_pnfqmo.webp",
+      originUrl: "q_auto/f_auto/v1711590238/teach/runtherace_pnfqmo.webp",
     });
 
     this.images.push({
@@ -253,7 +250,7 @@ export class DataService {
       The law reveals our conscience, but Christ, full of grace and truth, reveals the invisible God.`,
       footer: "The law revealed the conscience, Christ revealed grace...",
       fileName: "grace&truth.webp",
-      originUrl: "v1711735327/teach/grace_truth_loj0u0.webp",
+      originUrl: "q_auto/f_auto/v1711735327/teach/grace_truth_loj0u0.webp",
     });
 
     this.images.push({
@@ -269,7 +266,7 @@ export class DataService {
       and our bodies are the temples where the Holy Spirit resides.`,
       footer: "How we're called to worship...",
       fileName: "TrueWorship.webp",
-      originUrl: "v1711735327/teach/TrueWorship_prs84a.webp",
+      originUrl: "q_auto/f_auto/v1711735327/teach/TrueWorship_prs84a.webp",
     });
 
     this.images.push({
@@ -285,7 +282,7 @@ export class DataService {
       In the future when the world is judged by fire, we will be caught up in the heavens and will not perish along with the rest of the world.
       So we are saved through water and fire, we are saved from the flood of the nations and the fire of judgement.`,
       footer: "You must be born again of Water and Spirit...",
-      originUrl: "v1711590176/teach/baptismwaterandfire_z41pny.webp",
+      originUrl: "q_auto/f_auto/v1711590176/teach/baptismwaterandfire_z41pny.webp",
       fileName: "baptismwaterandfire.webp",
     });
 
@@ -300,7 +297,7 @@ export class DataService {
       Therefore, we build on the Rock.`,
       footer: "Our building will be tested...",
       fileName: "buildingontheRock.webp",
-      originUrl: "v1711590180/teach/buildingontheRock_mxzsvs.webp",
+      originUrl: "q_auto/f_auto/v1711590180/teach/buildingontheRock_mxzsvs.webp",
     });
 
     this.images.push({
@@ -314,7 +311,7 @@ export class DataService {
       His Word is bitter, just as death is bitter, to those who do not obey Him. He shows Himself devious to the devious, but pure to the pure.`,
       footer: "Jesus is the Word of Life...",
       fileName: "theWordofLife.webp",
-      originUrl: "v1712630408/teach/theWordofLife_qtalbz.webp",
+      originUrl: "q_auto/f_auto/v1712630408/teach/theWordofLife_qtalbz.webp",
     });
 
     this.images.push({
@@ -328,7 +325,7 @@ export class DataService {
       What the Father promises the Son, the Son promises the Church.`,
       footer: "As the Father relates to the Son...",
       fileName: "Father&Son.webp",
-      originUrl: "v1712630408/teach/Father_Son_lbtri6.webp",
+      originUrl: "q_auto/f_auto/v1712630408/teach/Father_Son_lbtri6.webp",
     });
 
     this.images.push({
@@ -345,20 +342,22 @@ export class DataService {
       Drink the new wine and forget your sins, for you have been given new wineskins.`,
       footer: "The new wine in the new wineskins...",
       fileName: "wineskins.webp",
-      originUrl: "v1712630408/teach/wineskins_nkx8o9.webp",
+      originUrl: "q_auto/f_auto/v1712630408/teach/wineskins_nkx8o9.webp",
     });
 
-    // this.images.push({
-    //   name: "Tabernacle Courtyard",
-    //   description: `Everything in the tabernacle has a covering: the altar has the meat, the wash basin has water,
-    //   the gold altar has incense, the table has bread, the lampstand has lamps with oil, the Ark of Testimony has it's covering of atonement.
-    //   The item is static and it's covering is dynamic; even yet, the item is dynamic in a sense it has poles inserted.
-    //   Even the Tent of Meeting itself has a covering: the only exception would be the courtyard, it has no covering.
-    //   We also have a covering: Christ. He is the atonement, bread, water, light, sacrifice, and incense. We follow Him, doing everything He did.`,
-    //   footer: "All items in the Tabernacle have a covering...",
-    //   originUrl: "v1711590183/teach/courtyard_atzssw.webp",
-    //   fileName: "courtyard.webp",
-    // });
+    this.images.push({
+      id: "tabernacle-courtyard",
+      name: "Tabernacle Courtyard",
+      description: `Everything in the tabernacle had a covering: the altar had the meat, the wash basin had water,
+      the gold altar had incense, the table had bread, the lampstand had lamps with oil; the Ark of Testimony had it's covering of atonement.
+      The Tent of Meeting had a covering; only the courtyard had no covering.
+      And we have a covering: Christ Jesus.
+      He is the atonement, the bread and water of life, the light of our darkness, and the incense of our prayers.
+      And we are the temple of the living God, offering spiritual sacrifices to God through Christ.`,
+      footer: "All items in the Tent had a covering...",
+      originUrl: "q_auto/f_auto/v1711590183/teach/courtyard_atzssw.webp",
+      fileName: "courtyard.webp",
+    });
 
     this.images.push({
       id: "the-day-of-the-lord",
@@ -374,7 +373,7 @@ export class DataService {
       this so called wisdom is folly. Rather be ready, clothed and watching for Him.`,
       footer: "The day of the Lord like a thief...",
       fileName: "dayoftheLord.webp",
-      originUrl: "v1711590189/teach/dayoftheLord_a7yocn.webp",
+      originUrl: "q_auto/f_auto/v1711590189/teach/dayoftheLord_a7yocn.webp",
     });
 
     this.images.push({
@@ -390,7 +389,7 @@ export class DataService {
       `,
       footer: "Death must work in us, so we might live...",
       fileName: "deathandlife.webp",
-      originUrl: "v1711590191/teach/deathandlife_gcfidy.webp",
+      originUrl: "q_auto/f_auto/v1711590191/teach/deathandlife_gcfidy.webp",
     });
 
     this.images.push({
@@ -407,7 +406,7 @@ export class DataService {
       but Jesus completely cuts them away in us for the love of us. Jesus said, "I have called not the righteous but sinners to repentance."
       And, "Healthy people don't need a doctor, but the sick".`,
       footer: "Healthy people do not need a doctor, the sick do...",
-      originUrl: "v1711590194/teach/doctors_gtvq2g.webp",
+      originUrl: "q_auto/f_auto/v1711590194/teach/doctors_gtvq2g.webp",
       fileName: "doctors.webp",
     });
 
@@ -423,17 +422,21 @@ export class DataService {
       Whatever we do unto the least of these, we do unto Him; He was with God in the beginning, but humbled Himself as a servant.`,
       footer: "Jesus was last but now first...",
       fileName: "firstandlast.webp",
-      originUrl: "v1711590199/teach/firstandlast_qvzmdt.webp",
+      originUrl: "q_auto/f_auto/v1711590199/teach/firstandlast_qvzmdt.webp",
     });
 
-    // this.images.push({
-    //   name: "The Flesh: lust & pride",
-    //   description: ``,
-    //   footer:
-    //     "There is sin of the flesh & also of the soul, which contains the mind...",
-    //   fileName: "flesh.webp",
-    //   originUrl: "v1711590202/teach/flesh_izazns.webp",
-    // });
+    this.images.push({
+      name: "The Flesh: Pride and Lust",
+      id: "pride-and-lust",
+      description: `All sins of the flesh pertain to lust and pride.
+      Lust is coveteousness, desiring things which are seen; the remedy for this disease is faith, believing in Him who is unseen.
+      Pride is selfishness, glorying in one's self of achievement; the remedy for this sickness is Jesus Christ.
+      He did not consider Himself equal with God, but took on the form of a servant and appeared in the likeness of man.
+      And He humbled Himself to death, even death on a cross; and for this reason God highly exulted Him.`,
+      footer: "Flesh of the mind and eyes...",
+      fileName: "flesh.webp",
+      originUrl: "q_auto/f_auto/v1711590202/teach/flesh_izazns.webp",
+    });
 
     this.images.push({
       id: "the-harvest-in-the-end",
@@ -445,7 +448,7 @@ export class DataService {
       and points to Jesus Christ who is the firstfruits of the harvest - the first to rise from the dead.`,
       footer: "All things created by Him and for Him...",
       fileName: "harvest.webp",
-      originUrl: "v1711590208/teach/harvest_tncb4h.webp",
+      originUrl: "q_auto/f_auto/v1711590208/teach/harvest_tncb4h.webp",
     });
 
     this.images.push({
@@ -459,7 +462,7 @@ export class DataService {
       Solomon, who was filled with wisdom, built the temple of the Lord; and Bazadel and Oholiab were filled with the Spirit to build the Tabernacle.`,
       footer: "Parables through the creation of the Tabernacle...",
       fileName: "israelitecamp.webp",
-      originUrl: "v1711590211/teach/israelitecamp_iuepsc.webp",
+      originUrl: "q_auto/f_auto/v1711590211/teach/israelitecamp_iuepsc.webp",
     });
 
     this.images.push({
@@ -471,7 +474,7 @@ export class DataService {
       In our flesh our eyes will see Him, we will awake and see the Lord.`,
       footer: "Two resurrections...",
       fileName: "judgementday.webp",
-      originUrl: "v1711590223/teach/judgementday_pfgryw.webp",
+      originUrl: "q_auto/f_auto/v1711590223/teach/judgementday_pfgryw.webp",
     });
 
     this.images.push({
@@ -484,7 +487,7 @@ export class DataService {
       I would consider the land of bondage and slavery, Egypt, the rocky soil, where the birds ate up the seed, since oppression comes from the evil one.`,
       footer: "Which soil are you...",
       fileName: "land.webp",
-      originUrl: "v1711590225/teach/land_wvithb.webp",
+      originUrl: "q_auto/f_auto/v1711590225/teach/land_wvithb.webp",
     });
 
     this.images.push({
@@ -497,7 +500,7 @@ export class DataService {
       There is One God; the Spirit teaches us all things pertaining to Christ; and whoever is taught by the Father comes to Jesus.`,
       footer: "One God all in all...",
       fileName: "oneGod.webp",
-      originUrl: "v1711590229/teach/oneGod_vv0hh8.webp",
+      originUrl: "q_auto/f_auto/v1711590229/teach/oneGod_vv0hh8.webp",
     });
 
     this.images.push({
@@ -511,7 +514,7 @@ export class DataService {
       Jesus baptizes in the Spirit; the apostles also laid hands.`,
       footer: "The seed is the Word of God...",
       fileName: "salvation.webp",
-      originUrl: "v1711590242/teach/salvation_piunap.webp",
+      originUrl: "q_auto/f_auto/v1711590242/teach/salvation_piunap.webp",
     });
 
     this.images.push({
@@ -524,7 +527,7 @@ export class DataService {
       These men were committed with a trust, for they were deemed trustworthy. So they were given trustworthy sayings.`,
       footer: "Paul's sayings and commands...",
       fileName: "sayingsandcommands.webp",
-      originUrl: "v1711590247/teach/sayingsandcommands_xuhgyh.webp",
+      originUrl: "q_auto/f_auto/v1711590247/teach/sayingsandcommands_xuhgyh.webp",
     });
 
     this.images.push({
@@ -537,7 +540,7 @@ export class DataService {
       Cross over into new life through Jesus Christ. Beleive His Word and reject the voice of the world, whose ruler is satan, the liar.`,
       footer: "We are in the middle of a battle...",
       fileName: "sinvswillofGod.webp",
-      originUrl: "v1711590252/teach/sinvswillofGod_qwzj8a.webp",
+      originUrl: "q_auto/f_auto/v1711590252/teach/sinvswillofGod_qwzj8a.webp",
     });
 
     this.images.push({
@@ -550,7 +553,7 @@ export class DataService {
       Just as we have obtained our natural birth by not doing anything for it, so it is with our spiritual birth.
       We are made sons of God by faith in Jesus Christ.`,
       footer: "We either get what we deserve or what we don't...",
-      originUrl: "v1711590253/teach/slavesvssons_g5zfi7.webp",
+      originUrl: "q_auto/f_auto/v1711590253/teach/slavesvssons_g5zfi7.webp",
       fileName: "slavesvssons.webp",
     });
 
@@ -565,7 +568,7 @@ export class DataService {
       The athlete competes according to the rules.
       Let God's Spirit show you the meaning of these things so that you may be wise in your labors.`,
       footer: "You are soldiers of Christ Jesus...",
-      originUrl: "v1711590258/teach/soldierathletefarmerfishermen_ebpnk9.webp",
+      originUrl: "q_auto/f_auto/v1711590258/teach/soldierathletefarmerfishermen_ebpnk9.webp",
       fileName: "soldierathletefarmerfishermen.webp",
     });
 
@@ -580,7 +583,7 @@ export class DataService {
       These bodies of ours are temporary. Our tent will be taken down.
       Our tabernacle is only for a short time, but we look forward to a temple with foundations on the rock.`,
       footer: "We have fellowship with God in the place of meeting...",
-      originUrl: "v1711590262/teach/Tabernacle_bdapzh.webp",
+      originUrl: "q_auto/f_auto/v1711590262/teach/Tabernacle_bdapzh.webp",
       fileName: "Tabernacle.webp",
     });
 
@@ -593,7 +596,7 @@ export class DataService {
       They come to test the quality of us: they do so, so that we wouldn't be ultimately judged in the end with everlasting fire.
       It's is better to be tested now and survive, than to be tested then and be burned up.`,
       footer: "We will all be salted with salt...",
-      originUrl: "v1711590265/teach/testerofmetals_dazuwl.webp",
+      originUrl: "q_auto/f_auto/v1711590265/teach/testerofmetals_dazuwl.webp",
       fileName: "testerofmetals.webp",
     });
 
@@ -608,7 +611,7 @@ export class DataService {
       He cares for us. The head is a symbol for authority, and the body is under the head.`,
       footer: "We are one with Christ as Eve was one with Adam...",
       fileName: "thechurch.webp",
-      originUrl: "v1711590268/teach/thechurch_n6uhvl.webp",
+      originUrl: "q_auto/f_auto/v1711590268/teach/thechurch_n6uhvl.webp",
     });
 
     this.images.push({
@@ -623,7 +626,7 @@ export class DataService {
       If we follow the Spirit, we obey the law; this is only possible through Jesus Christ and the new creation.`,
       footer: "Those who do right have no fear...",
       fileName: "theLaw.webp",
-      originUrl: "v1711590271/teach/theLaw_xtsiev.webp",
+      originUrl: "q_auto/f_auto/v1711590271/teach/theLaw_xtsiev.webp",
     });
 
     this.images.push({
@@ -638,7 +641,7 @@ export class DataService {
       `,
       footer: "What do we haste after...",
       fileName: "theway.webp",
-      originUrl: "v1711590274/teach/theway_hywb5a.webp",
+      originUrl: "q_auto/f_auto/v1711590274/teach/theway_hywb5a.webp",
     });
 
     this.images.push({
@@ -652,7 +655,7 @@ export class DataService {
       A thief only feels shame when he gets caught; a bandit wears his shame on the face and he primed for Christ Jesus.`,
       footer: "Some wear their sin on the inside and others on the outside...",
       fileName: "thievesbandits.webp",
-      originUrl: "v1711590277/teach/thievesbandits_ybigmc.webp",
+      originUrl: "q_auto/f_auto/v1711590277/teach/thievesbandits_ybigmc.webp",
     });
 
     this.images.push({
@@ -665,7 +668,7 @@ export class DataService {
       What is man that He should honor us? He is just; He hates injustice. Even scales are His delight.`,
       footer: "What the Most High detests and delights...",
       fileName: "detestvsdelight.webp",
-      originUrl: "v1711735328/teach/detestvsdelight_h4xby0.webp",
+      originUrl: "q_auto/f_auto/v1711735328/teach/detestvsdelight_h4xby0.webp",
     });
 
     this.images.push({
@@ -678,7 +681,7 @@ export class DataService {
       No man has seen Him at anytime except the Son who has revealed Him to us.`,
       footer: "Revelation about the Father, Son, and the Spirit...",
       fileName: "theFatherSonSpirit.webp",
-      originUrl: "v1711735327/teach/theFatherSonSpirit_cv11oq.webp",
+      originUrl: "q_auto/f_auto/v1711735327/teach/theFatherSonSpirit_cv11oq.webp",
     });
 
     this.images.push({
@@ -691,7 +694,7 @@ export class DataService {
       We ask and receive because we ask in His name, because we love Him and obey His commandments.`,
       footer: "Scripture gathering of the Father and the Son...",
       fileName: "theFather&theSon.webp",
-      originUrl: "v1711735329/teach/theFather_theSon_d2ax76.webp",
+      originUrl: "q_auto/f_auto/v1711735329/teach/theFather_theSon_d2ax76.webp",
     });
 
     this.images.push({
@@ -704,7 +707,7 @@ export class DataService {
       unless your righteousness surpass the Pharisees you will by no means enter.`,
       footer: "These will not inherit the Kingdom...",
       fileName: "willnotinherit.webp",
-      originUrl: "v1711735327/teach/willnotinherit_n0mujj.webp",
+      originUrl: "q_auto/f_auto/v1711735327/teach/willnotinherit_n0mujj.webp",
     });
 
     this.images.push({
@@ -717,7 +720,7 @@ export class DataService {
       Our faith calls us to be holy; the holy in body and spirit do these things.`,
       footer: "These will inherit the Kingdom...",
       fileName: "willinheritverses.webp",
-      originUrl: "v1711735327/teach/willnotinheritverses_vzafs5.webp",
+      originUrl: "q_auto/f_auto/v1711735327/teach/willnotinheritverses_vzafs5.webp",
     });
 
     this.images.push({
@@ -730,7 +733,7 @@ export class DataService {
       Confess Him among the gentiles, and speak truth in love to your neighbor.`,
       footer: "These will inherit the Kingdom...",
       fileName: "willinheritbucket.webp",
-      originUrl: "v1711735327/teach/willinheritbucket_fx9boh.webp",
+      originUrl: "q_auto/f_auto/v1711735327/teach/willinheritbucket_fx9boh.webp",
     });
 
     this.images.push({
@@ -742,7 +745,7 @@ export class DataService {
       And sin comes from not believing in Christ. Believe in God, loved ones. If we believe in Him, we will not sin.`,
       footer: "These will not inherit the Kingdom...",
       fileName: "willnotinheritbucket.webp",
-      originUrl: "v1712630408/teach/willnotinheritbucket_l3vyi1.webp",
+      originUrl: "q_auto/f_auto/v1712630408/teach/willnotinheritbucket_l3vyi1.webp",
     });
 
     return this.images.sort((a, b) => {
