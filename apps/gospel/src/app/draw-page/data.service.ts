@@ -157,20 +157,18 @@ export class DataService {
       originUrl: "v1711590220/teach/john16_bgxtfk.webp",
     });
 
-    // this.images.push({
-    //   id: 7,
-    //   name: "Earthly man and Heavenly Man",
-    //   description: `This is the most beautiful and unique archetype of Christ; it is unique because Adam is an antitype of Christ!
-    //   Through adam's one act of disobedience all have been made sinners and death reigned throughout all mankind. Through another Man
-    //   and His one act of obedience and righteousness, has made right many who are chosen according to their conduct even in the midst of fiery tribulation.
-    //   There is something not outlined on this drawing: through Christ, all will be made alive, the living and the dead, at the resurrection of the dead in the last day.
-    //   There is a resurrection of the living, those who have fallen asleep in Christ; those will rise to everlasting life.`,
-    //   footer:
-    //     "The Scriptures referenced here are Romans 5: 12-21; 1 Corinthians 15:20-22; 1 Corinthians 15:45-49...",
-    //   originUrl: "v1711590170/teach/adamvsJesus_v7kc6a.webp",
-    //   fileName: "adamvsJesus.webp",
-
-    // });
+    this.images.push({
+      id: "earthly-and-heavenly-man",
+      name: "Earthly man and Heavenly Man",
+      description: `This is the most beautiful and unique archetype of Christ; it is unique because Adam is an antitype of Christ!
+      Through adam's one act of disobedience all have been made sinners and death reigned throughout all mankind.
+      Through another Man and His one act of obedience and righteousness, He made right.
+      Through Christ, all will be made alive, the living and the dead, at the resurrection in the last day.
+      There is a resurrection of the living, those who have fallen asleep in Christ, and a resurrection of the dead.`,
+      footer: "The Scriptures...",
+      originUrl: "v1711590170/teach/adamvsJesus_v7kc6a.webp",
+      fileName: "adamvsJesus.webp",
+    });
 
     this.images.push({
       id: "the-altar-of-christ",
@@ -253,7 +251,7 @@ export class DataService {
       Enter into covenant with God through His oath of promise, fulfilled by Jesus Christ.
       He was gracious to promise with His mouth and strong enough to perform with His hand.
       The law reveals our conscience, but Christ, full of grace and truth, reveals the invisible God.`,
-      footer: "The law revealed the conscience, Christ revealed grace & truth...",
+      footer: "The law revealed the conscience, Christ revealed grace...",
       fileName: "grace&truth.webp",
       originUrl: "v1711735327/teach/grace_truth_loj0u0.webp",
     });
@@ -493,7 +491,10 @@ export class DataService {
       id: "one-god",
       name: "One God",
       description: `There is one God and one Mediator between God and man: Christ Jesus.
-      `,
+      The Father is greater than the Son, but the Son is equal to the Father, for there is one Spirit.
+      Our fellowship is with the Father and the Son. By the will of the Father, He has caused us to be born again unto a living hope.
+      He made us to be born again when He sent His Spirit flooding into our hearts when we heard the Word of Truth.
+      There is One God; the Spirit teaches us all things pertaining to Christ; and whoever is taught by the Father comes to Jesus.`,
       footer: "One God all in all...",
       fileName: "oneGod.webp",
       originUrl: "v1711590229/teach/oneGod_vv0hh8.webp",
@@ -502,19 +503,26 @@ export class DataService {
     this.images.push({
       id: "eternal-life",
       name: "Eternal Life: Cultivation",
-      description: `Cultivating the soil and planting seeds would be repentance and confession of sins and being baptized in water.
-      The miracle of God is passing through death and yet remaining alive like Israel passing through the Red Sea.
-      Jesus mentioned, "Baptized with Spirit and Fire..." This is the harvesting to eternal life and suffering.`,
-      footer: "The seed must first be planted on fertile soil then by a miracle of God...",
+      description: `Cultivating the soil is the ministry of repentance, for the hardened ground is broken up when one confesses his sins.
+      And planting the seed is the word of faith, the good news of the Kingdom.
+      This is what it means to be born of water, to repent and be baptized; this was the ministry of John and the apostles.
+      The miracle of God is passing through death and yet remaining alive - just as Israel passing through the Red Sea.
+      Jesus mentioned, "Baptized with Spirit and Fire..." This is the harvesting to eternal life and suffering is threshing.
+      Jesus baptizes in the Spirit; the apostles also laid hands.`,
+      footer: "The seed is the Word of God...",
       fileName: "salvation.webp",
       originUrl: "v1711590242/teach/salvation_piunap.webp",
     });
 
     this.images.push({
       id: "sayings-and-commands",
-      name: "Trustworthy Sayings & Solemn Commands",
-      description: `There are trustworthy saying Paul gave Timothy and Titus; also there are commands he charged them with.`,
-      footer: "In the personal letters to Titus and Timothy, Paul gives sayings and commands...",
+      name: "Trustworthy Sayings and Solemn Commands",
+      description: `There are trustworthy sayings Paul gave Timothy and Titus; there are also commands he charged them with.
+      We are all not called to the office of Timothy or Titus, but there are many trustworthy things here.
+      He commanded them to speak these things to the church; and we are the church.
+      So we ought to heed these things and look deeply into them, holding fast to them until the end.
+      These men were committed with a trust, for they were deemed trustworthy. So they were given trustworthy sayings.`,
+      footer: "Paul's sayings and commands...",
       fileName: "sayingsandcommands.webp",
       originUrl: "v1711590247/teach/sayingsandcommands_xuhgyh.webp",
     });
@@ -522,11 +530,12 @@ export class DataService {
     this.images.push({
       id: "opposing-wills",
       name: "Opposing Wills",
-      description: `We are in the middle of two conflicting wills: who's will will we conform to?
-      Satan's will is a lie, which result is in sin, to death; God's will is obedience unto righteousness, which results in holiness, to eternal life.
-      We should chose eternal life. If we hate ourselves, we will continue to please ourselves in sin.
-      We're all born into sin through Adam; but in Christ, we've been made new. Cross over into life through Jesus Christ.`,
-      footer: "We are in the middle of a battle of two opposite wills, natures, and kingdoms...",
+      description: `We are in the middle of two conflicting wills: who's desire do we do?
+      Satan's will is a lie, which result in sin unto death; God's will is obedience unto righteousness, which results in holiness, whose end is eternal life.
+      We should choose eternal life. If we hate ourselves, we will continue to please ourselves with our sin.
+      We're all born into sin through Adam, but in Christ, we've been made new through the Word of the testimony.
+      Cross over into new life through Jesus Christ. Beleive His Word and reject the voice of the world, whose ruler is satan, the liar.`,
+      footer: "We are in the middle of a battle...",
       fileName: "sinvswillofGod.webp",
       originUrl: "v1711590252/teach/sinvswillofGod_qwzj8a.webp",
     });
@@ -534,24 +543,28 @@ export class DataService {
     this.images.push({
       id: "slaves-or-sons",
       name: "Slaves to Sin or Sons to Righteousness",
-      description: `Jews are born of God by faith and Gentiles through faith. This distinction is made for a reason.
-      Sons are those who are born of the Father; a slave is one who is not born of Him, but is put to forced labor.
-      These who are slaves think they must work for God's approval; with this mindset, there is always sin.
-      We cannot always do what we're supposed to. A son is one through grace by faith.
-      Just as we have obtained our natural birth by not doing, so it is with our spiritual birth.
-      We are made sons of God by faith in the son of God: Jesus Christ.`,
-      footer:
-        "We either get what we deserve by our works or what we don't, by God's grace, through our faith in Christ...",
+      description: `Sons are those who are born of the Father; a slave is one who is not born of Him, but is put to forced labor.
+      These who are slaves think they must work for God's approval; with this mindset, there is always sin, for the motive is wrong.
+      Besides we do not always do what we're supposed to. A son is one who through grace is born into the household.
+      You are born of Him if you have believed the Gospel.
+      Just as we have obtained our natural birth by not doing anything for it, so it is with our spiritual birth.
+      We are made sons of God by faith in Jesus Christ.`,
+      footer: "We either get what we deserve or what we don't...",
       originUrl: "v1711590253/teach/slavesvssons_g5zfi7.webp",
       fileName: "slavesvssons.webp",
     });
 
     this.images.push({
       id: "our-jobs",
-      name: "Our Jobs: Soldier, Athlete, Farmer, & Fishermen",
+      name: "Our Job: Soldier, Athlete, Farmer, Fishermen",
       description: `We learn things by the things we know. You know at least one of these things.
-      How blessed is this truth! May the Holy Spirit shine light into these things for you.`,
-      footer: "If you've always wanted to be in the military, now you can as soldiers of Christ Jesus...",
+      How blessed is this truth! God uses these symbols of everyday life to show us how ministry is.
+      The farmer sows and reaps, he is first to eat the fruit of his labors.
+      The soldiers stays separate from civilian life.
+      The fisherman waits patiently for a catch.
+      The athlete competes according to the rules.
+      Let God's Spirit show you the meaning of these things so that you may be wise in your labors.`,
+      footer: "You are soldiers of Christ Jesus...",
       originUrl: "v1711590258/teach/soldierathletefarmerfishermen_ebpnk9.webp",
       fileName: "soldierathletefarmerfishermen.webp",
     });
@@ -559,12 +572,14 @@ export class DataService {
     this.images.push({
       id: "the-place-of-meeting",
       name: "The Place of Meeting: Tabernacle",
-      description: `The inner sancturary is where God abodes. This corresponds to our heart.
-      We are the temple of the living God: our body and also, all members of the Body collectively.
-      God's temple is holy. So should we be. The law is written on our hearts, just as the tablets are in the ark.
-      These bodies of ours are temporary. Our tent will be taken down. This represents all the poles that were inserted in the items.
-      See drawing for more on these things...`,
-      footer: "We have fellowship with God in the place of meeting, we abide in Him and He in us...",
+      description: `The inner sancturary is where God abides.
+      We are the temple of the living God: our body are temples.
+      And all the members of the church body collectively are the temple.
+      God's temple is holy. The law is written on our heart, just as the tablets of the covenant are in the ark.
+      The ark represents our innermost being, our heart.
+      These bodies of ours are temporary. Our tent will be taken down.
+      Our tabernacle is only for a short time, but we look forward to a temple with foundations on the rock.`,
+      footer: "We have fellowship with God in the place of meeting...",
       originUrl: "v1711590262/teach/Tabernacle_bdapzh.webp",
       fileName: "Tabernacle.webp",
     });
@@ -572,21 +587,25 @@ export class DataService {
     this.images.push({
       id: "tester-of-metals",
       name: "Tester of Metals",
-      description: `It is a blessing to be tried by a prophet of God in this day.
-      If we cannot withstand his judgment, how can we withstand the All Mighty Judge when we stand before Him?
+      description: `It is a blessing to be rebuked; the wise listen to correction, but a mocker pays no attention.
+      If we cannot withstand the judgment of the wise, how can we withstand the All Mighty Judge when we stand before Him?
       This is God's grace for us. We should repent and do as the prophet Jeremiah says and all the other prophets.
-      They come to test the quality of us: they do so, so that we wouldn't be ultimately judged in the end with everlasting fire.`,
-      footer: "There is tribulation and fire we will all be salted with just as a sacrifice is, will we overcome...",
+      They come to test the quality of us: they do so, so that we wouldn't be ultimately judged in the end with everlasting fire.
+      It's is better to be tested now and survive, than to be tested then and be burned up.`,
+      footer: "We will all be salted with salt...",
       originUrl: "v1711590265/teach/testerofmetals_dazuwl.webp",
       fileName: "testerofmetals.webp",
     });
 
     this.images.push({
-      id: "the-church",
-      name: "The Church",
-      description: `A type of Jesus Christ and the Church. The woman's head is Adam, that means she is the body.
-      Christ is our head, that means we are the Body: the church.
-      We, the church, are brought forth out of Christ's broken body as His body; just as Eve was created out of Adam's body and is his body.`,
+      id: "marriage-type-of-church",
+      name: "Marriage: a Type of the Church",
+      description: `The woman's head is man, and she is his body.
+      Christ is our head, that means we are His body: the church.
+      The church is brought forth out of Christ's body just as Eve was created out of Adam's body.
+      Adam's body was broken for his wife; and she is subject to her husband just as the church is to Christ.
+      Whoever doesn't care for his body hates his own flesh; Christ loved us and gave up His life for us.
+      He cares for us. The head is a symbol for authority, and the body is under the head.`,
       footer: "We are one with Christ as Eve was one with Adam...",
       fileName: "thechurch.webp",
       originUrl: "v1711590268/teach/thechurch_n6uhvl.webp",
@@ -595,11 +614,14 @@ export class DataService {
     this.images.push({
       id: "the-law-of-liberty",
       name: "The Law of Liberty",
-      description: `The law of God is used correctly and incorrectly. For one, it is for the godless.
-      It is there to convict. It is there to show us sin. It is there as a guardian for us (until the way of Christ is revealed).
-      It is not a means to righteousness. It is not given for us to strict obedience to it, as the Parisees, while neglecting the inward heart of the matter.
-      Surely, we obey the law, but only can we through Jesus Christ and the new creation.`,
-      footer: "Those who do what is right have no need to fear the authorities...",
+      description: `The law of God can be used correctly or incorrectly. For one, it is for the godless.
+      It is there to convict to the sinner of his way.
+      It is there to show us sin. It was there for us as a guardian until the way of Christ was revealed.
+      It is not a means to righteousness. It is not given for us for strict obedience, for works to righteousness.
+      The disobedient have fear of punishment; but the righteous are at peace.
+      The law is not for the righteous, but for the sinner.
+      If we follow the Spirit, we obey the law; this is only possible through Jesus Christ and the new creation.`,
+      footer: "Those who do right have no fear...",
       fileName: "theLaw.webp",
       originUrl: "v1711590271/teach/theLaw_xtsiev.webp",
     });
@@ -607,11 +629,14 @@ export class DataService {
     this.images.push({
       id: "the-way",
       name: "The Way of the Spirit: Walk and Run",
-      description: `Whatever we set our minds on, is that which we will walk in. First the head, then the body.
-      We must set our minds on the things above! This is the way of the Spirit.
-      Setting our minds on earthly things, we will surely follow earthly things, living according to the flesh.
-      Walking is living step by step, running is the same thing, but with eagarness.`,
-      footer: "What are we rushing for will reveal what we are eagar for...",
+      description: `If we set our minds on earthly things, we will surely follow earthly things, living according to the flesh.
+      Walking is living step by step, running is the same thing, but with eagerness.
+      We always follow who came before us; the way before us is an example.
+      As children we follow the examples we see; and as children we walk after our parents.
+      We, as children of God, walk after Jesus Christ, following His example;
+      we pattern after His life, imitating Him as diligent children of God.
+      `,
+      footer: "What do we haste after...",
       fileName: "theway.webp",
       originUrl: "v1711590274/teach/theway_hywb5a.webp",
     });
@@ -620,10 +645,12 @@ export class DataService {
       id: "thieves-bandits",
       name: "Thieves and Bandits",
       description: `Ah my favorite! I love this! Thieves are the hypocrites! Bandits are they who acknowledge they're sinners.
-      The bandit sins outwardly, he is the one Christ has come for! He comes for they who know they are sinners.
-      They who think they are righteous are hypocrites: inwardly defiled and outwardly clean. He rebuked them sharply. Evil is evil, but it is better to be a bandit than a thief.
-      A thief only feels shame when he gets caught! Be a bandit, and be primed for Christ Jesus!`,
-      footer: "Some wear their sin on the inside and others on the outside, yet all are with sin...",
+      The bandit sins outwardly, he is the one Christ came for! He comes for they who know they are sinners.
+      They who think they are righteous, they are the hypocrites.
+      They are inwardly defiled and outwardly clean; they are clean in their own eyes, but God looks at the heart.
+      Jesus rebuked the hypocrites sharply. Evil is evil, but it is better to be a bandit than a thief!
+      A thief only feels shame when he gets caught; a bandit wears his shame on the face and he primed for Christ Jesus.`,
+      footer: "Some wear their sin on the inside and others on the outside...",
       fileName: "thievesbandits.webp",
       originUrl: "v1711590277/teach/thievesbandits_ybigmc.webp",
     });
@@ -631,9 +658,12 @@ export class DataService {
     this.images.push({
       id: "detest-delight",
       name: "Detests vs Delights",
-      description: `All falsehood the Lord God hates. Hypocrisy: sacrifices offered with an impure heart.
-      He loves truth and mercy and humility. He looks at the heart; and He sees the heart is decietfully wicked always.`,
-      footer: "What the Most High detests and what is a delight to Him...",
+      description: `All falsehood the Lord God hates. Hypocrisy. Sacrifices offered with an impure heart.
+      He loves truth and mercy and humility. He looks at the heart, and sees the heart is decietfully wicked always.
+      He abhors evil, but He is love. He has not desired a sacrifice for sin, but has given a Sacrifice for our sins.
+      Men pay sacrifices to God, without question, but who has heard of God giving a sacrifice for man?
+      What is man that He should honor us? He is just; He hates injustice. Even scales are His delight.`,
+      footer: "What the Most High detests and delights...",
       fileName: "detestvsdelight.webp",
       originUrl: "v1711735328/teach/detestvsdelight_h4xby0.webp",
     });
@@ -641,11 +671,12 @@ export class DataService {
     this.images.push({
       id: "the-father-son-spirit",
       name: "The Father and the Son and the Holy Spirit",
-      description: `The Father and the Son and the Spirit are equal. Many great men came from God: Samson, John the Baptist, Moses, David, etc.
-      They all exemplify an attribute of Christ and prophesy with their lives and word to Christ; but they all stumbled in some way.
-      How much greater is Christ Jesus, who is the accumluation of all these attributes of all these men, having given them their lives and character, who is also without sin.
-      How great is He! How much greater is He whom He testified to, "For the Father is greater than I" who no man has seen at anytime except the Son who has revealed Him to us.`,
-      footer: "Revelation about the Father, Son, and the Spirit.. how we worship one God.",
+      description: `The Father and the Son and the Spirit are equal. Many great men came from God: Samson, John the Baptist, Moses, David, and many others.
+      They all exemplify an attribute of Christ and prophecy with their lives to Christ, but they all stumbled in some way.
+      How much greater is Christ Jesus? He is the sum of all the goodly attributes of all these men, having given them their lives and character, who is also without sin.
+      And how much greater is Him whom He testified to, saying, "For the Father is greater than I".
+      No man has seen Him at anytime except the Son who has revealed Him to us.`,
+      footer: "Revelation about the Father, Son, and the Spirit...",
       fileName: "theFatherSonSpirit.webp",
       originUrl: "v1711735327/teach/theFatherSonSpirit_cv11oq.webp",
     });
@@ -654,9 +685,10 @@ export class DataService {
       id: "the-father-the-son",
       name: "The Father and the Son",
       description: `A contrast between the Father and the Son. "Like Father like son", is a proverb we know well of.
-      Jesus Christ is the perfect Son, doing everything the Father told Him to do and say. He is our Mediator between us and God.
-      We can only come to the Father through Him; any other way will not work. Only through Christ do we have access to the Father.
-      Our prayers are to the Father.`,
+      Jesus Christ is the perfect Son, doing everything the Father told Him to do and say. He is the Mediator between us and God.
+      We can only come to the Father through Him; and no other way will work. Only through Christ do we have access to the Father.
+      Our prayers are to the Father, through the Spirit, the Spirit of the Son, in the name of Jesus.
+      We ask and receive because we ask in His name, because we love Him and obey His commandments.`,
       footer: "Scripture gathering of the Father and the Son...",
       fileName: "theFather&theSon.webp",
       originUrl: "v1711735329/teach/theFather_theSon_d2ax76.webp",
@@ -668,7 +700,8 @@ export class DataService {
       description: `Test yourself to see if any of these apply to you. Only the new creation can inherit the new heaven and the new earth.
       Unless you receive the kingdom like a little child you will by no means enter into it.
       We ought to prove ourselves worthy, picking up our cross and following Him; we ought to love the Lord with an undying love.
-      `,
+      Consider what great things He has done for you. No one who practices lawlessness will enter the kingdom;
+      unless your righteousness surpass the Pharisees you will by no means enter.`,
       footer: "These will not inherit the Kingdom...",
       fileName: "willnotinherit.webp",
       originUrl: "v1711735327/teach/willnotinherit_n0mujj.webp",
@@ -682,7 +715,7 @@ export class DataService {
       All things belong to us in Christ, and we belong to Christ, and Christ belongs to God.
       Corruption cannot inherit incorruption; therefore, we must be born again. We are born again through the Word of Truth.
       Our faith calls us to be holy; the holy in body and spirit do these things.`,
-      footer: "These WILL inherit the Kingdom...",
+      footer: "These will inherit the Kingdom...",
       fileName: "willinheritverses.webp",
       originUrl: "v1711735327/teach/willnotinheritverses_vzafs5.webp",
     });
@@ -695,7 +728,7 @@ export class DataService {
       He makes us thankful for His grace, He saves us by His truth, and He makes us righteous by faith in Him!
       Oh, how perfect and beautiful is the Lord, my God! How righteous and holy is He! Give thanks to the Lord for His thankfulness! Sing His praise!
       Confess Him among the gentiles, and speak truth in love to your neighbor.`,
-      footer: "These WILL inherit the Kingdom...",
+      footer: "These will inherit the Kingdom...",
       fileName: "willinheritbucket.webp",
       originUrl: "v1711735327/teach/willinheritbucket_fx9boh.webp",
     });
@@ -707,7 +740,7 @@ export class DataService {
       All coveteousness is idolatry, a worshipper of the things of this world. No idolaters will inherit the kingdom of God.
       And impurity comes from falsehood, from the mouth comes this defilement; everything spoken comes from the heart, and from it come the issues of life.
       And sin comes from not believing in Christ. Believe in God, loved ones. If we believe in Him, we will not sin.`,
-      footer: "These WILL NOT inherit the Kingdom...",
+      footer: "These will not inherit the Kingdom...",
       fileName: "willnotinheritbucket.webp",
       originUrl: "v1712630408/teach/willnotinheritbucket_l3vyi1.webp",
     });
