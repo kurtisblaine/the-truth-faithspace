@@ -56,9 +56,10 @@ export class StudyListComponent implements OnInit {
 
   public baseUrl = inject(BASE_URL);
 
+  public initialPageSize = 5;
   public searchTerm = signal<string>("");
   public properties: string[] = ["title", "json"];
-  public pageSize = signal(5);
+  public pageSize = signal(this.initialPageSize);
   public pageIndex = signal(0);
 
   public faLink = faArrowUpRightFromSquare;
