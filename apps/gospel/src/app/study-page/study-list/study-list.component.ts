@@ -1,4 +1,4 @@
-import { CommonModule } from "@angular/common";
+import { CommonModule, isPlatformServer } from "@angular/common";
 import {
   ChangeDetectionStrategy,
   Component,
@@ -7,6 +7,7 @@ import {
   inject,
   Input,
   OnInit,
+  PLATFORM_ID,
   signal,
   Signal,
 } from "@angular/core";
@@ -55,6 +56,10 @@ export class StudyListComponent implements OnInit {
   public updatedJson: string | object;
 
   public baseUrl = inject(BASE_URL);
+  public platformId = inject(PLATFORM_ID);
+  get isServer() {
+    return isPlatformServer(this.platformId);
+  }
 
   public initialPageSize = 5;
   public searchTerm = signal<string>("");
@@ -95,7 +100,11 @@ export class StudyListComponent implements OnInit {
     });
   }
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    if (this.isServer) {
+      this.onPageChange({ pageIndex: 0, pageSize: this.total(), length: 0 });
+    }
+  }
 
   onPageChange(event?: PageEvent): void {
     this.pageIndex.set(event.pageIndex);

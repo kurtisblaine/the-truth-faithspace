@@ -1,5 +1,5 @@
-import { CommonModule } from "@angular/common";
-import { Component, computed, effect, inject, Input, OnInit, signal, Signal } from "@angular/core";
+import { CommonModule, isPlatformServer } from "@angular/common";
+import { Component, computed, effect, inject, Input, OnInit, PLATFORM_ID, signal, Signal } from "@angular/core";
 import { toSignal } from "@angular/core/rxjs-interop";
 import { MatButtonModule } from "@angular/material/button";
 import { MatDividerModule } from "@angular/material/divider";
@@ -44,6 +44,10 @@ export class DiscernListComponent implements OnInit {
   public updatedJson: string | object;
 
   public baseUrl = inject(BASE_URL);
+  public platformId = inject(PLATFORM_ID);
+  get isServer() {
+    return isPlatformServer(this.platformId);
+  }
 
   public initialPageSize = 5;
   public searchTerm = signal<string>("");
@@ -84,7 +88,11 @@ export class DiscernListComponent implements OnInit {
     });
   }
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    if (this.isServer) {
+      this.onPageChange({ pageIndex: 0, pageSize: this.total(), length: 0 });
+    }
+  }
 
   onPageChange(event?: PageEvent): void {
     this.pageIndex.set(event.pageIndex);

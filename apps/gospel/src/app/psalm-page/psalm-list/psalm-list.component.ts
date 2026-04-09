@@ -1,4 +1,4 @@
-import { CommonModule } from "@angular/common";
+import { CommonModule, isPlatformServer } from "@angular/common";
 import {
   ChangeDetectionStrategy,
   Component,
@@ -7,13 +7,15 @@ import {
   inject,
   Input,
   OnInit,
+  PLATFORM_ID,
   signal,
   Signal,
+  ViewChild,
 } from "@angular/core";
 import { toSignal } from "@angular/core/rxjs-interop";
 import { MatButtonModule } from "@angular/material/button";
 import { MatDividerModule } from "@angular/material/divider";
-import { MatPaginatorModule, PageEvent } from "@angular/material/paginator";
+import { MatPaginator, MatPaginatorModule, PageEvent } from "@angular/material/paginator";
 import { faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
 import { Store } from "@ngrx/store";
 import { toHTML } from "ngx-editor";
@@ -47,6 +49,7 @@ import { getAllPsalm } from "../../state/psalm/psalm.selectors";
 })
 export class PsalmListComponent implements OnInit {
   @Input() public update = false;
+  @ViewChild("paginator", { read: MatPaginator }) public paginator: MatPaginator;
 
   public psalms!: Signal<PsalmEntity[]>;
   public pagedPsalms!: Signal<PsalmEntity[]>;
@@ -54,6 +57,10 @@ export class PsalmListComponent implements OnInit {
   public updatedJson: string | object;
 
   public baseUrl = inject(BASE_URL);
+  public platformId = inject(PLATFORM_ID);
+  get isServer() {
+    return isPlatformServer(this.platformId);
+  }
 
   public initialPageSize = 5;
   public searchTerm = signal<string>("");
@@ -94,7 +101,11 @@ export class PsalmListComponent implements OnInit {
     });
   }
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    if (this.isServer) {
+      this.onPageChange({ pageIndex: 0, pageSize: this.total(), length: 0 });
+    }
+  }
 
   onPageChange(event?: PageEvent): void {
     this.pageIndex.set(event.pageIndex);
