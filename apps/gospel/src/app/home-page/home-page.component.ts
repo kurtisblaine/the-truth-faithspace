@@ -12,7 +12,7 @@ export default class HomePageComponent extends SeoBaseComponent implements OnIni
   protected override keywords: string = "testimony, believe, faith, Jesus, Word, change, repentance";
 
   constructor() {
-    super();
+    super({ description: "TODO" });
   }
 
   ngOnInit() {}
