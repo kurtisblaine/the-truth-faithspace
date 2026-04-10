@@ -171,7 +171,8 @@ export class DataService {
       Through another Man, Jesus Christ, and His one act of obedience, righteousness to many who believe.
       Through Adam, all died, but through Christ, all will be made alive, the living and the dead, at the resurrection in the last day.
       There is a resurrection of the living, those who have fallen asleep in Christ, and a resurrection of the dead.
-      It was God's good plan from the beginning that Jesus would be the salvation of the world.`,
+      It was God's good plan from the beginning that Jesus would be the salvation of the world;
+      He spoke and said, "He will strike your head, and you will bruise His heel."`,
       footer: "Adam as an antitype...",
       originUrl: "q_auto/f_auto/v1711590170/teach/adamvsJesus_v7kc6a.webp",
       fileName: "adamvsJesus.webp",
@@ -213,9 +214,10 @@ export class DataService {
       however David had armor which was from God, an armor that is fitting for a man of God.
       Armor is for protection; what good is armor if we're hurt in battle?
       The war has been won by Christ on the cross, and we join into his victory through faith.
-      Christ's victory is absolute: we stand on victory ground; our fight is to claim the land God has promised us;
+      Christ's victory is absolute: we stand on victory ground. Our fight is to claim the land God has promised us;
       and God has promised, He will fight for us and subdue our enemies before us.
-      Therefore, we have a strong confidence to go out and conquer the land which the enemy inhabits.`,
+      Therefore, we have strong confidence to go out and conquer the land which the enemy inhabits;
+      for the LORD fights our battles and victory is with the LORD.`,
       footer: "Put on the whole armor of God...",
       originUrl: "q_auto/f_auto/v1711590174/teach/armorofGod_h3blcr.webp",
       fileName: "armorofGod.webp",
@@ -226,6 +228,7 @@ export class DataService {
       name: "Repent and Believe",
       description: `Repentance is turning away from our previous way, and believing is turning to God.
       No-one can believe without first repenting; no-one can turn to Christ without first turning away from evil.
+      We have one face and one back; if we face the Lord, our back is against every ungodly way.
       Faith is salvation. Repentance does no good unless you turn to Christ.
       How can one have life unless they repent of deathly works? Is not wrath against sin?
       Is that not what we need saving from?
@@ -257,10 +260,11 @@ export class DataService {
     this.images.push({
       id: "grace-and-truth",
       name: "Grace and Truth",
-      description: `The law is physical, the Gospel is spiritual; greater is the Spirit than the flesh.
+      description: `The law is physical, the Gospel is spiritual; and greater is the Spirit than the flesh.
       Through the law comes a knowledge of sin, but through grace and truth comes the knowledge of God.
       We have a choice: which tree to eat from. God has restored to us one command: believe.
-      Enter into covenant with God through His oath of promise fulfilled by Jesus Christ.
+      Enter into covenant with God through His oath of promise fulfilled by Jesus Christ;
+      He fulfilled the oaths God made to the patriarchs, to David, and through the prophets.
       He was gracious to promise with His mouth and strong enough to perform with His hand.
       The law reveals our conscience, and Christ, full of grace and truth, reveals the invisible God.
       First was the ministry of sin and death, then the ministry of righteousness and life.
@@ -373,7 +377,8 @@ export class DataService {
       Likewise, we have a covering: Christ Jesus.
       He is the atonement, the bread and water of life, the light of our darkness, and the incense of our prayers.
       And we are the temple of the living God, offering spiritual sacrifices to God through Christ.
-      He makes us acceptable to God through His sacrifice; we have faith in Him because we have believed.`,
+      He is your head, nourishing the body making it to grow as it ought to grow;
+      He makes it to mature into perfect form, complete and at rest in holiness.`,
       footer: "All items in the Tent had a covering...",
       originUrl: "q_auto/f_auto/v1711590183/teach/courtyard_atzssw.webp",
       fileName: "courtyard.webp",
@@ -466,12 +471,13 @@ export class DataService {
       id: "the-harvest-in-the-end",
       name: "The Harvest in the End",
       description: `Jesus is the first to rise from the dead as first fruits to God.
-      Just as God makes the crop grow, He shows us how the resurrection occurs. First the seed in the soil dies,
-      then it springs up in a new kind of glory, which was not like the last.
+      Just as God makes the crop grow, He shows us how the resurrection will occur in the end.
+      First the seed in the soil dies, then it springs up in a new kind of glory, which was not like the last.
       It is planted in the ground and dies, then sprouts up with new life.
-      The crop brought before the LORD at the Festival of Firstfruits symbolizes this
-      and points to Jesus Christ who is the firstfruits of the harvest - the first to rise from the dead.
-      It is appointed for men to die once, then comes the judgement.`,
+      The crop brought before the LORD at the Festival of Firstfruits symbolizes this;
+      it points to Jesus Christ who is the firstfruits of the harvest, the first to rise from the dead.
+      It is appointed for men to die once, then comes the judgement;
+      just as Christ was offered once to bear the sins of many.`,
       footer: "All things created by Him and for Him...",
       fileName: "harvest.webp",
       originUrl: "q_auto/f_auto/v1711590208/teach/harvest_tncb4h.webp",
@@ -502,7 +508,8 @@ export class DataService {
       description: `Before each judgment are a series of events: a gathering of nations, thrones setup, and the dead are raised (or those who have fallen asleep in the Lord),
       and finally, judgment. In the Revelation given to John, you will see these things in common between both judgements of the righteous and the wicked.
       There are two judgements just as there are two resurrections. Blessed are those who take part in the first resurrection, for the second death holds no power over them!
-      In our flesh our eyes will see Him, we will awake and see the Lord. There is great hope for the righteous, but the wicked will be blotted out.`,
+      In our flesh our eyes will see Him, we will awake and see the Lord. There is great hope for the righteous, but the wicked, their names will be blotted out.
+      Knowing the good we have in the Lord, we ought to strive for the right way.`,
       footer: "Two resurrections...",
       fileName: "judgementday.webp",
       originUrl: "q_auto/f_auto/v1711590223/teach/judgementday_pfgryw.webp",
@@ -513,11 +520,12 @@ export class DataService {
       name: "The Four Soils",
       description: `There are four soils the Lord spoke about;
       there are also four different soils the nation of Israel were in.
-      There is one soil which is good soil and fruitful: this represents the land of promise, Canaan.
+      There is one soil which is good soil and fruitful: this represents the land of promise, Canaan, a land flowing with milk and honey.
       The other three soils were unfruitful; Israel dwelt in three other lands throughout history.
-      The wilderness represents the seed that was scorched and had no root, for the wilderness is hot, without water.
-      The land of Exile represents the seed choked out by thorns, for the thorns represent the world, Babylon.
-      And the land of bondage and slavery, Egypt, is the rocky soil, where the birds ate up the seed, since oppression comes from the evil one.`,
+      The wilderness represents the seed that was scorched and had no root, for the wilderness is hot, without water, and desolate.
+      The land of Exile represents the seed choked out by thorns, for the thorns represent the world, Babylon, which Israel went into exile.
+      And the land of bondage and slavery, Egypt, is the rocky soil, where the birds ate up the seed, since oppression comes from the evil one.
+      We ought to ask ourselves, which land are we dwelling in currently? Believe the promise and occupy the good land.`,
       footer: "Which soil are you...",
       fileName: "land.webp",
       originUrl: "q_auto/f_auto/v1711590225/teach/land_wvithb.webp",
@@ -527,12 +535,14 @@ export class DataService {
       id: "one-god",
       name: "One God",
       description: `There is one God and one Mediator between God and man: Christ Jesus.
-      The Father is greater than the Son, but the Son is equal to the Father, for there is one Spirit.
-      Our fellowship is with the Father and the Son.
+      The Father is greater than the Son, but the Son is equal to the Father, for there is one Spirit;
+      He is the Spirit of the Father and the Spirit of the Son;
+      and our fellowship is with the Father and the Son.
       By the will of the Father, He has caused us to be born again unto a living hope.
-      He made us to be born again; He sent His Spirit to fill our hearts with the love of God when we heard the Word of Truth.
-      There is One God; the Spirit teaches us all things pertaining to Christ;
-      and whoever is taught by the Father comes to Jesus and He gives them eternal life.`,
+      He made us to be born again when He sent His Spirit into our hearts, filling us with the love of God;
+      this occurred when we heard the Word of Truth and believed.
+      There is One God; and the Spirit teaches us all things pertaining to Christ;
+      whoever is taught by the Father comes to Jesus and He gives them eternal life.`,
       footer: "One God all in all...",
       fileName: "oneGod.webp",
       originUrl: "q_auto/f_auto/v1711590229/teach/oneGod_vv0hh8.webp",
@@ -563,7 +573,8 @@ export class DataService {
       He commanded them to speak these things to the church; and we are the church, so we should listen to these things.
       We ought to heed these things and look deeply into them, holding fast to them until the end.
       These men were committed with a trust, for they were deemed trustworthy; so they were given trustworthy sayings.
-      We ought to esteem highly men as these who humbly served the Lord.`,
+      We ought to esteem highly men as these who humbly served the Lord;
+      for they serve the Lord for our sakes that we may partake in the promise of God.`,
       footer: "Paul's sayings and commands...",
       fileName: "sayingsandcommands.webp",
       originUrl: "q_auto/f_auto/v1711590247/teach/sayingsandcommands_xuhgyh.webp",
@@ -572,15 +583,16 @@ export class DataService {
     this.images.push({
       id: "opposing-wills",
       name: "Opposing Wills",
-      description: `We are in the middle of two conflicting wills: who's desire do we do?
+      description: `We are in the middle of two conflicting wills: who's desire will we do?
       Satan's will is a lie, which results in sin unto death;
-      God's will is obedience unto righteousness, the result in holiness, whose end is eternal life.
+      God's will is obedience unto righteousness, and the result is holiness, whose end is eternal life.
       We should chose eternal life; we should chose the Lord.
-      If we hate ourselves, we will continue to please ourselves with our sin;
+      If we hate ourselves, we will continue to please ourselves in the moment with our sin;
       we will reap what we sow, just as nature and God and truth says.
       We're all born into sin through Adam, but in Christ, we've been made new through the Word of the testimony.
       Cross over into new life through Jesus Christ.
-      Beleive His Word and reject the voice of the world, whose ruler is satan, the liar.`,
+      Beleive in His Word and reject the voice of the world, whose ruler is satan, the liar;
+      "Through the cross, I've lost intrest in the world and the world in me."`,
       footer: "We are in the middle of a battle...",
       fileName: "sinvswillofGod.webp",
       originUrl: "q_auto/f_auto/v1711590252/teach/sinvswillofGod_qwzj8a.webp",
@@ -624,8 +636,10 @@ export class DataService {
       We are the temple of the living God: our body are temples.
       And all the members of the church are collectively the temple of God.
       God's temple is holy; whoever destroys God's temple, He will destroy.
-      The law is written on the believer's heart, just as the tablets of the covenant were in the ark of the covenant.
-      The ark represents our innermost being. These bodies of ours are temporary; our tent will be taken down.
+      The law is written on the believer's heart;
+      and the tablets of the covenant were in the ark of the covenant in the inner sancturary.
+      The ark represents our innermost being, our heart.
+      These bodies of ours are temporary; our tent will be taken down.
       Our tabernacle is only for a short time, but we look forward to a temple with its foundation on the rock, our new spiritual bodies.`,
       footer: "We have fellowship with God in the place of meeting...",
       originUrl: "q_auto/f_auto/v1711590262/teach/Tabernacle_bdapzh.webp",
@@ -716,12 +730,15 @@ export class DataService {
     this.images.push({
       id: "detest-delight",
       name: "Detests vs Delights",
-      description: `All falsehood the Lord God hates. Hypocrisy. Sacrifices offered with an impure heart.
-      He loves truth and mercy and humility. He looks at the heart, and judges according the thoughts and the desires of the heart.
+      description: `All falsehood the Lord God hates. Hypocrisy.
+      Sacrifices offered with an impure heart. Abomination.
+      He loves truth and mercy and humility.
+      He looks at the heart, and judges according the thoughts and the desires of the heart.
       He abhors evil, but He is love. He has not desired a sacrifice for sin, but has given a Sacrifice for our sins.
-      Men pay sacrifices to God, without question, but who has ever heard of God giving a sacrifice for man?
+      Men pay sacrifices to God, without question; however who has ever heard of God giving a sacrifice for man?
       What is man that He should honor us? What is humankind that He should look upon us?
-      He is just; He hates injustice. Even scales are His delight.`,
+      He is just; He hates injustice. Even scales are His delight.
+      There are six abominations to the Lord, seven which He hates.`,
       footer: "What the Most High detests and delights...",
       fileName: "detestvsdelight.webp",
       originUrl: "q_auto/f_auto/v1711735328/teach/detestvsdelight_h4xby0.webp",
@@ -782,12 +799,13 @@ export class DataService {
       name: "Will Inherit the Kingdom (verses)",
       description: `Only the new creation will inherit the kingdom of heaven.
       Those who are sons of God have been given the Spirit of the Son;
-      and if we are sons, we also are hiers of the kingdom of the Father.
-      All things belong to us in Christ Jesus; and we belong to Christ, and Christ belongs to God.
+      and if we are sons, then we also are hiers of the kingdom of the Father.
+      All things belong to us; and we belong to Christ, and Christ belongs to God.
       Corruption cannot inherit incorruption, therefore, we must be born again.
-      We are born again through the Word of Truth.
+      And we are born again through the Word of Truth.
       Our faith is most holy to make us holy in body and spirit;
-      for from faith in the Lord comes our sanctification.`,
+      and from faith in the Lord comes our sanctification unto holiness;
+      and if we are holy, we will inherit the kingdom of heaven; "Without holiness no one will see the Lord"`,
       footer: "These will inherit the Kingdom...",
       fileName: "willinheritverses.webp",
       originUrl: "q_auto/f_auto/v1711735327/teach/willnotinheritverses_vzafs5.webp",
@@ -798,12 +816,13 @@ export class DataService {
       name: "Will Inherit the Kingdom (grouping)",
       description: `Oh, the purity of the gospel!
       Being content is thankfulness, purity is speaking truth, and morality is the righteousness by faith.
-      What does God ask from us, but what He does for us?
-      He makes us thankful for His grace, He saves us by His truth, and He makes us righteous by faith in Him!
+      What does God ask from us, but what He already has done for us?
+      He makes us thankful for His grace, He saves us by His truth, and He makes us righteous through faith in Him!
       Oh, how perfect and beautiful is the Lord, my God! How righteous and holy is He!
       Give thanks to the Lord for His thankfulness! Sing songs of His praise!
       Confess Him among the gentiles, and speak truth in love to your neighbor.
-      Hide not salvation from the great congregation, conceal not God's great works from the gentiles.`,
+      Hide not salvation from the great congregation, conceal not God's great works from the gentiles.
+      The reason for every command is Jesus Christ; He is the reason why.`,
       footer: "These will inherit the Kingdom...",
       fileName: "willinheritbucket.webp",
       originUrl: "q_auto/f_auto/v1711735327/teach/willinheritbucket_fx9boh.webp",
@@ -813,10 +832,12 @@ export class DataService {
       id: "not-inherit-the-kingdom",
       name: "Will not Inherit the Kingdom (grouping)",
       description: `Covetousness comes from unthankfulness, such a one desires and lusts after another's possessions.
-      All coveteousness is idolatry, a worshipper of the things of this world. No idolaters will inherit the kingdom of God.
-      And impurity comes from falsehood, from the mouth comes this defilement;
+      All coveteousness is idolatry, a worshipper of the things of this world; and no idolaters will inherit the kingdom of God.
+      Impurity comes from falsehood, from the mouth comes this defilement;
       everything spoken comes from the heart, and from it flow the issues of life.
-      Issues are defiling, as the law says. And sin comes from not believing in Christ.
+      Issues are defiling, as the law says;
+      and Jesus spoke likewise, "All these evil things proceed from within and defile the man." (Mark 7:23).
+      And sin comes from not believing in Christ.
       Believe in God, loved ones. If we believe in Him, we will not sin.
       No one who has seen Him sins.`,
       footer: "These will not inherit the Kingdom...",
