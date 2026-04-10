@@ -386,7 +386,7 @@ export class DataService {
 
     this.images.push({
       id: "the-day-of-the-lord",
-      name: "The Day of the Lord",
+      name: "A Thief in the Night",
       description: `If we are of the day, we are sober, in our right mind and attentive, watchful in prayer.
       Those of the night are drunk, out of their right mind, unaware and foolish.
       The day of the Lord will come as a thief to those who are of the night;
