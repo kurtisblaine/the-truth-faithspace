@@ -616,14 +616,15 @@ export class DataService {
     this.images.push({
       id: "our-jobs",
       name: "Our Job: Soldier, Athlete, Farmer, Fishermen",
-      description: `We learn things by the things we know. You know at least one of these things: soldier, athlete, farmer, fisherman.
+      description: `We learn things by the things we know.
+      You know and experience at least one of these things: soldier, athlete, farmer, fisherman.
       How blessed is this truth! God uses these symbols of everyday life to show us how ministry is.
       The farmer sows and reaps, he is first to eat the fruit of his labors.
       The soldiers stays separate from civilian life.
-      The fisherman waits patiently for a catch.
+      The fisherman waits patiently for a catch and brings fish into his net.
       The athlete competes according to the rules.
       Let God's Spirit show you the meaning of these things so that you may be wise in your labors.
-      Let the Lord guide you in the way which leads to everlasting life.`,
+      Let the Lord guide you in the way which leads to everlasting life, both for yourself and your hearers.`,
       footer: "You are soldiers of Christ Jesus...",
       originUrl: "q_auto/f_auto/v1711590258/teach/soldierathletefarmerfishermen_ebpnk9.webp",
       fileName: "soldierathletefarmerfishermen.webp",
@@ -633,14 +634,14 @@ export class DataService {
       id: "the-place-of-meeting",
       name: "The Place of Meeting: Tabernacle",
       description: `The inner sancturary is where God abides.
-      We are the temple of the living God: our body are temples.
-      And all the members of the church are collectively the temple of God.
+      And our bodies are temples of the living God;
+      and all the members of the church are collectively the temple of God.
       God's temple is holy; whoever destroys God's temple, He will destroy.
       The law is written on the believer's heart;
       and the tablets of the covenant were in the ark of the covenant in the inner sancturary.
-      The ark represents our innermost being, our heart.
-      These bodies of ours are temporary; our tent will be taken down.
-      Our tabernacle is only for a short time, but we look forward to a temple with its foundation on the rock, our new spiritual bodies.`,
+      The ark represents our innermost being, the heart.
+      These bodies of ours are temporary; our tent will be taken down one day.
+      But our tabernacle is only for a short time, but we look forward to a temple with its foundation on the rock, our new spiritual bodies.`,
       footer: "We have fellowship with God in the place of meeting...",
       originUrl: "q_auto/f_auto/v1711590262/teach/Tabernacle_bdapzh.webp",
       fileName: "Tabernacle.webp",
@@ -737,7 +738,7 @@ export class DataService {
       He abhors evil, but He is love. He has not desired a sacrifice for sin, but has given a Sacrifice for our sins.
       Men pay sacrifices to God, without question; however who has ever heard of God giving a sacrifice for man?
       What is man that He should honor us? What is humankind that He should look upon us?
-      He is just; He hates injustice. Even scales are His delight.
+      He is just; He hates injustice. Even scales are His delight; a false weight is an abomination.
       There are six abominations to the Lord, seven which He hates.`,
       footer: "What the Most High detests and delights...",
       fileName: "detestvsdelight.webp",
@@ -831,7 +832,7 @@ export class DataService {
     this.images.push({
       id: "not-inherit-the-kingdom",
       name: "Will not Inherit the Kingdom (grouping)",
-      description: `Covetousness comes from unthankfulness, such a one desires and lusts after another's possessions.
+      description: `Covetousness comes from unthankfulness, a coveteous person desires and lusts after another's possessions.
       All coveteousness is idolatry, a worshipper of the things of this world; and no idolaters will inherit the kingdom of God.
       Impurity comes from falsehood, from the mouth comes this defilement;
       everything spoken comes from the heart, and from it flow the issues of life.
@@ -839,7 +840,7 @@ export class DataService {
       and Jesus spoke likewise, "All these evil things proceed from within and defile the man." (Mark 7:23).
       And sin comes from not believing in Christ.
       Believe in God, loved ones. If we believe in Him, we will not sin.
-      No one who has seen Him sins.`,
+      No one who has seen Him sins; if we abide in Him we will not sin, for in Him is no sin.`,
       footer: "These will not inherit the Kingdom...",
       fileName: "willnotinheritbucket.webp",
       originUrl: "q_auto/f_auto/v1712630408/teach/willnotinheritbucket_l3vyi1.webp",
