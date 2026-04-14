@@ -37,61 +37,72 @@ import { PersevereComponent } from "../gospel-content/response/persevere.compone
 import { RepentComponent } from "../gospel-content/response/repent.component";
 import { WorthyOfCallComponent } from "../gospel-content/response/worthy-of-call.component";
 
+type ComponentMetaData = {
+  component: ComponentType<GospelContentBaseComponent>;
+  section: string;
+};
+
 @Injectable({
   providedIn: "root",
 })
 export class GospelItemService implements OnDestroy {
-  private components = new Map<string, ComponentType<GospelContentBaseComponent>>();
+  private components = new Map<string, ComponentMetaData>();
 
   init() {
     if (this.components.size) return this.components;
 
-    //The Danger - Sin
-    this.components.set("the-sin-nature", SinNatureComponent);
-    this.components.set("god-knows", HeKnowsComponent);
-    this.components.set("a-consuming-fire", ConsumingFireComponent);
-    this.components.set("the-day-of-judgement", JudgementDayComponent);
+    this.components.set("the-sin-nature", { component: SinNatureComponent, section: "The Danger - Sin" });
+    this.components.set("god-knows", { component: HeKnowsComponent, section: "The Danger - Sin" });
+    this.components.set("a-consuming-fire", { component: ConsumingFireComponent, section: "The Danger - Sin" });
+    this.components.set("the-day-of-judgement", { component: JudgementDayComponent, section: "The Danger - Sin" });
 
-    //THE FUTILTY - DEATH
-    this.components.set("the-love-of-pleasure", PleasureComponent);
-    this.components.set("work-and-toil", ToilComponent);
-    this.components.set("the-love-of-wealth", WealthComponent);
-    this.components.set("the-day-of-death", DeathComponent);
+    this.components.set("the-love-of-pleasure", { component: PleasureComponent, section: "The Futility - Death" });
+    this.components.set("work-and-toil", { component: ToilComponent, section: "The Futility - Death" });
+    this.components.set("the-love-of-wealth", { component: WealthComponent, section: "The Futility - Death" });
+    this.components.set("the-day-of-death", { component: DeathComponent, section: "The Futility - Death" });
 
-    //The Safety - Grace
-    this.components.set("the-servant-of-god", ServantComponent);
-    this.components.set("the-bronze-serpent", BronzeSerpentComponent);
-    this.components.set("the-victor", VictorComponent);
-    this.components.set("the-lamb-of-god", LambComponent);
-    this.components.set("the-lion-of-judah", LionComponent);
-    this.components.set("the-scapegoat", ScapegoatComponent);
-    this.components.set("the-true-food", FoodDrinkComponent);
-    this.components.set("the-door-of-salvation", SalvationComponent);
-    this.components.set("the-rock-of-salvation", RockComponent);
-    this.components.set("the-son-of-god", SonComponent);
+    this.components.set("the-servant-of-god", { component: ServantComponent, section: "The Safety - Grace" });
+    this.components.set("the-bronze-serpent", { component: BronzeSerpentComponent, section: "The Safety - Grace" });
+    this.components.set("the-victor", { component: VictorComponent, section: "The Safety - Grace" });
+    this.components.set("the-lamb-of-god", { component: LambComponent, section: "The Safety - Grace" });
+    this.components.set("the-lion-of-judah", { component: LionComponent, section: "The Safety - Grace" });
+    this.components.set("the-scapegoat", { component: ScapegoatComponent, section: "The Safety - Grace" });
+    this.components.set("the-true-food", { component: FoodDrinkComponent, section: "The Safety - Grace" });
+    this.components.set("the-door-of-salvation", { component: SalvationComponent, section: "The Safety - Grace" });
+    this.components.set("the-rock-of-salvation", { component: RockComponent, section: "The Safety - Grace" });
+    this.components.set("the-son-of-god", { component: SonComponent, section: "The Safety - Grace" });
 
-    //The Call - Faith
-    this.components.set("the-race-of-faith", RunTheRaceComponent);
-    this.components.set("a-clear-conscience", ClearConscienceComponent);
-    this.components.set("abide-in-jesus", AbideComponent);
-    this.components.set("a-new-heart", NewHeartComponent);
-    this.components.set("born-again", BornAgainComponent);
+    this.components.set("the-race-of-faith", { component: RunTheRaceComponent, section: "The Call - Faith" });
+    this.components.set("a-clear-conscience", { component: ClearConscienceComponent, section: "The Call - Faith" });
+    this.components.set("abide-in-jesus", { component: AbideComponent, section: "The Call - Faith" });
+    this.components.set("a-new-heart", { component: NewHeartComponent, section: "The Call - Faith" });
+    this.components.set("born-again", { component: BornAgainComponent, section: "The Call - Faith" });
 
-    //Our Response
-    this.components.set("repentance-toward-god", RepentComponent);
-    this.components.set("buried-in-baptism", BaptismComponent);
-    this.components.set("believe-in-god", BelieveInGodComponent);
-    this.components.set("obedience-to-holiness", HolinessComponent);
-    this.components.set("live-worthy", WorthyOfCallComponent);
-    this.components.set("persevere-by-rememberance", PersevereComponent);
-    this.components.set("call-upon-the-lord", CallUponHimComponent);
+    this.components.set("repentance-toward-god", { component: RepentComponent, section: "Our Response" });
+    this.components.set("buried-in-baptism", { component: BaptismComponent, section: "Our Response" });
+    this.components.set("believe-in-god", { component: BelieveInGodComponent, section: "Our Response" });
+    this.components.set("obedience-to-holiness", { component: HolinessComponent, section: "Our Response" });
+    this.components.set("live-worthy", { component: WorthyOfCallComponent, section: "Our Response" });
+    this.components.set("persevere-by-rememberance", { component: PersevereComponent, section: "Our Response" });
+    this.components.set("call-upon-the-lord", { component: CallUponHimComponent, section: "Our Response" });
 
-    //The Day of the Lord - Hope
-    this.components.set("resurrection-of-life", ResurrectionComponent);
-    this.components.set("new-spiritual-bodies", SpiritualBodyComponent);
-    this.components.set("eternal-reward", EternalRewardComponent);
-    this.components.set("everlasting-life", EverlastingLifeComponent);
-    this.components.set("the-new-heaven", NewHeavenEarthComponent);
+    this.components.set("resurrection-of-life", {
+      component: ResurrectionComponent,
+      section: "The Day of the Lord - Hope",
+    });
+    this.components.set("new-spiritual-bodies", {
+      component: SpiritualBodyComponent,
+      section: "The Day of the Lord - Hope",
+    });
+    this.components.set("eternal-reward", { component: EternalRewardComponent, section: "The Day of the Lord - Hope" });
+    this.components.set("everlasting-life", {
+      component: EverlastingLifeComponent,
+      section: "The Day of the Lord - Hope",
+    });
+    this.components.set("the-new-heaven", {
+      component: NewHeavenEarthComponent,
+      section: "The Day of the Lord - Hope",
+    });
     return this.components;
   }
 

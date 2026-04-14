@@ -88,6 +88,10 @@ export class SeoBaseComponent implements AfterViewInit {
     }
   }
 
+  setOptions(options: SeoOptions = {}) {
+    this._options = options;
+  }
+
   private setCanonical(canonicalUrl: string) {
     this._canonicalService.createOrSetCanonicalUrl(canonicalUrl ?? "");
   }
@@ -103,8 +107,8 @@ export class SeoBaseComponent implements AfterViewInit {
     }
 
     if (options?.title) {
-      const shouldPrefix = options?.shouldPostfix ?? true;
-      this.setTitle(options.title, shouldPrefix);
+      const shouldPostfix = options?.shouldPostfix ?? true;
+      this.setTitle(options.title, shouldPostfix);
     }
 
     if (options?.description) {

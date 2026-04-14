@@ -21,6 +21,7 @@ export class GospelItemComponent extends SeoBaseComponent implements OnDestroy {
   public page = input<string>(); //comes from url
 
   public description = signal("");
+  public section = signal("");
   public narratorStyle = NarratorStyle;
 
   @ViewChild("textContainer", { read: ViewContainerRef, static: false }) private textContainer!: ViewContainerRef;
@@ -31,8 +32,10 @@ export class GospelItemComponent extends SeoBaseComponent implements OnDestroy {
 
   override ngAfterViewInit(): void {
     const components = this.gospelItemService.init();
-    const gospelItemComponent = components.get(this.page());
+    const gospelItemMap = components.get(this.page());
+    this.section.set(gospelItemMap.section);
 
+    const gospelItemComponent = gospelItemMap.component;
     const component = this.textContainer.createComponent(gospelItemComponent);
     if (component.instance?.keywords) {
       this.setKeywords(component.instance.keywords);
@@ -42,6 +45,8 @@ export class GospelItemComponent extends SeoBaseComponent implements OnDestroy {
       this.description.set(component.instance.description);
       this.setDescription(component.instance.description);
     }
+
+    super.setOptions({ shouldPostfix: false, customPostfix: ` | ${gospelItemMap.section}` });
 
     super.ngAfterViewInit();
   }

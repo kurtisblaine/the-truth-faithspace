@@ -2,3 +2,15 @@
   display: block;
   padding: 14px;
 }
+
+.readonly-editor {
+  background: #fff;
+  color: #000;
+  background-clip: padding-box;
+  border-radius: 4px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  position: relative;
+  padding: 8px;
+  font-family: sans-serif;
+  line-height: 24px;
+}
