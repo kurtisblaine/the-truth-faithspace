@@ -6,6 +6,7 @@ import { MatDividerModule } from "@angular/material/divider";
 import { MatProgressSpinnerModule } from "@angular/material/progress-spinner";
 import { RouterModule, Routes } from "@angular/router";
 import { ReadonlyTextEditorComponent } from "shared";
+import { PageHeaderComponent } from "../shared/components/page-header.component";
 import { PsalmDetailComponent } from "./psalm-detail/psalm-detail.component";
 import { PsalmListComponent } from "./psalm-list/psalm-list.component";
 import { PsalmPageComponent } from "./psalm-page.component";
@@ -29,6 +30,7 @@ const routes: Routes = [
     MatButtonModule,
     MatCardModule,
     ReadonlyTextEditorComponent,
+    PageHeaderComponent,
   ],
   exports: [],
 })

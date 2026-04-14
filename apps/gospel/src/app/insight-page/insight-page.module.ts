@@ -6,6 +6,7 @@ import { MatDividerModule } from "@angular/material/divider";
 import { MatProgressSpinnerModule } from "@angular/material/progress-spinner";
 import { RouterModule, Routes } from "@angular/router";
 import { ReadonlyTextEditorComponent } from "shared";
+import { PageHeaderComponent } from "../shared/components/page-header.component";
 import { InsightDetailComponent } from "./insight-detail/insight-detail.component";
 import { InsightListComponent } from "./insight-list/insight-list.component";
 import { InsightPageComponent } from "./insight-page.component";
@@ -26,6 +27,7 @@ const routes: Routes = [
     MatButtonModule,
     MatProgressSpinnerModule,
     MatCardModule,
+    PageHeaderComponent,
     ReadonlyTextEditorComponent,
   ],
 })

@@ -5,6 +5,7 @@ import { MatTooltipModule } from "@angular/material/tooltip";
 import { RouterModule, Routes } from "@angular/router";
 import { PinchZoomComponent } from "@meddv/ngx-pinch-zoom";
 import { LibFaIconComponent, LinkComponent } from "shared";
+import { PageHeaderComponent } from "../shared/components/page-header.component";
 import { DrawItemComponent } from "./draw-item/draw-item.component";
 import { DrawPageComponent } from "./draw-page.component";
 
@@ -30,6 +31,7 @@ const routes: Routes = [
     LibFaIconComponent,
     NgOptimizedImage,
     LinkComponent,
+    PageHeaderComponent,
   ],
 })
 export class DrawPageModule {}

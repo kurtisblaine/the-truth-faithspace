@@ -7,6 +7,7 @@ import { MatProgressSpinnerModule } from "@angular/material/progress-spinner";
 import { MatToolbarModule } from "@angular/material/toolbar";
 import { RouterModule, Routes } from "@angular/router";
 import { NarratorComponent, ShareComponent } from "shared";
+import { PageHeaderComponent } from "../shared/components/page-header.component";
 import { ReferenceTooltipComponent } from "../shared/components/reference-tooltip/reference-tooltip.component";
 import { FullpageDirective } from "../shared/directives/fullpage.directive";
 import { DashToTitlePipe } from "../shared/pipes/dash-title.pipe";
@@ -54,6 +55,7 @@ const routes: Routes = [
     FullpageDirective,
     GospelSectionComponent,
     DashToTitlePipe,
+    PageHeaderComponent,
   ],
   providers: [],
 })

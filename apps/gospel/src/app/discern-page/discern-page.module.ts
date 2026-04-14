@@ -6,6 +6,7 @@ import { MatDividerModule } from "@angular/material/divider";
 import { MatProgressSpinnerModule } from "@angular/material/progress-spinner";
 import { RouterModule, Routes } from "@angular/router";
 import { ReadonlyTextEditorComponent } from "shared";
+import { PageHeaderComponent } from "../shared/components/page-header.component";
 import { DiscernDetailComponent } from "./discern-detail/discern-detail.component";
 import { DiscernListComponent } from "./discern-list/discern-list.component";
 import { DiscernPageComponent } from "./discern-page.component";
@@ -26,6 +27,7 @@ const routes: Routes = [
     MatProgressSpinnerModule,
     MatButtonModule,
     MatCardModule,
+    PageHeaderComponent,
     ReadonlyTextEditorComponent,
   ],
 })
