@@ -634,14 +634,13 @@ export class DataService {
       id: "the-place-of-meeting",
       name: "The Place of Meeting: Tabernacle",
       description: `The inner sancturary is where God abides.
-      And our bodies are temples of the living God;
-      and all the members of the church are collectively the temple of God.
-      God's temple is holy; whoever destroys God's temple, He will destroy.
-      The law is written on the believer's heart;
-      and the tablets of the covenant were in the ark of the covenant in the inner sancturary.
-      The ark represents our innermost being, the heart.
+      And our bodies are temples of the living God, symbolic of the tabernacle of the LORD.
+      All the members of the church are collectively the temple of God, the body of Christ.
+      And God's temple is holy; whoever destroys God's temple, He will destroy.
+      The law is written on the believer's heart, just as the tablets of the covenant were in the ark of the covenant in the inner sancturary.
+      So the ark represents our innermost being, the heart.
       These bodies of ours are temporary; our tent will be taken down one day.
-      But our tabernacle is only for a short time, but we look forward to a temple with its foundation on the rock, our new spiritual bodies.`,
+      Even though our tabernacle is only for a short time, we look forward to a temple with its foundation on the rock, our new spiritual bodies.`,
       footer: "We have fellowship with God in the place of meeting...",
       originUrl: "q_auto/f_auto/v1711590262/teach/Tabernacle_bdapzh.webp",
       fileName: "Tabernacle.webp",
