@@ -28,6 +28,7 @@ export class SeoOptions {
   title?: string;
   description?: string;
   shouldPostfix?: boolean;
+  customPostfix?: string;
 }
 
 export const APP_POSTFIX = new InjectionToken<string>("APP_POSTFIX", {
@@ -73,7 +74,11 @@ export class SeoBaseComponent implements AfterViewInit {
 
   init() {
     if (this.seoTitle?.nativeElement && this.seoTitle?.nativeElement?.innerText && !this._options?.title) {
-      this.setTitle(this.seoTitle?.nativeElement?.innerText);
+      this.setTitle(
+        this.seoTitle?.nativeElement?.innerText,
+        this._options?.shouldPostfix,
+        this._options?.customPostfix
+      );
     }
     if (this.seoCaption?.nativeElement && this.seoCaption?.nativeElement?.innerText && !this._options?.description) {
       this.setDescription(this.seoCaption?.nativeElement?.innerText);
@@ -115,7 +120,7 @@ export class SeoBaseComponent implements AfterViewInit {
     this._meta.updateTag({ name: "description", content: description });
   }
 
-  setTitle(title: string, shouldPrefix: boolean = true) {
-    this._title.setTitle(shouldPrefix ? title + this._appPostfix : title);
+  setTitle(title: string, shouldPostfix: boolean = true, customPostfix: string = "") {
+    this._title.setTitle(shouldPostfix ? title + this._appPostfix : customPostfix ? title + customPostfix : title);
   }
 }

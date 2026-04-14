@@ -24,7 +24,7 @@ export class BlogDetailComponent extends SeoBaseComponent implements OnInit {
     effect(() => {
       if (!this.blog()?.id) return;
 
-      this.setTitle(this.blog().title);
+      this.setTitle(this.blog().title, false, " | Edification");
       const date = this.datePipe.transform(this.blog().date);
       this.setDescription(`${date}: ${this.blog().title}. A Christian's edification on the following topic.`);
     });

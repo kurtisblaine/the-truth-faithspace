@@ -24,7 +24,7 @@ export class PsalmDetailComponent extends SeoBaseComponent implements OnInit {
     effect(() => {
       if (!this.blog()?.id) return;
 
-      this.setTitle(this.blog().title);
+      this.setTitle(this.blog().title, false, " | Poem");
       const date = this.datePipe.transform(this.blog().date);
       this.setDescription(`${date}: ${this.blog().title}. A Christian's psalm on the following topic.`);
     });

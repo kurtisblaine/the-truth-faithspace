@@ -25,7 +25,7 @@ export class DiscernDetailComponent extends SeoBaseComponent implements OnInit {
     effect(() => {
       if (!this.blog()?.id) return;
 
-      this.setTitle(this.blog().title);
+      this.setTitle(this.blog().title, false, " | Discernment");
       const date = this.datePipe.transform(this.blog().date);
       this.setDescription(`${date}: ${this.blog().title}. A Christian's discernment on the following topic.`);
     });

@@ -24,7 +24,7 @@ export class InsightDetailComponent extends SeoBaseComponent implements OnInit {
     effect(() => {
       if (!this.blog()?.id) return;
 
-      this.setTitle(this.blog().title);
+      this.setTitle(this.blog().title, false, " | Insight");
       const date = this.datePipe.transform(this.blog().date);
       this.setDescription(`${date}: ${this.blog().title}. A Christian's insight on the following topic.`);
     });

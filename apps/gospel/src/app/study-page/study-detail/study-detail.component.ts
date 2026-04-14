@@ -22,7 +22,7 @@ export class StudyDetailComponent extends SeoBaseComponent implements OnInit {
     effect(() => {
       if (!this.blog()?.id) return;
 
-      this.setTitle(this.blog().title);
+      this.setTitle(this.blog().title, false, " | Study");
       const date = this.datePipe.transform(this.blog().date);
       this.setDescription(`${date}: ${this.blog().title}. A Christian's study on the following topic.`);
     });

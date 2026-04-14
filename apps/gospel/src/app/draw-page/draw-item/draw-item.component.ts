@@ -16,7 +16,7 @@ export class DrawItemComponent extends SeoBaseComponent implements OnInit {
   protected override keywords: string = "study, draw, Jesus, hope, life, faith, truth, love, Christ, Messiah";
 
   constructor(private dataService: DataService, @Inject(PLATFORM_ID) private platformId: object) {
-    super();
+    super({ shouldPostfix: false, customPostfix: " | Drawing" });
   }
 
   get isPlatformBrowser() {
