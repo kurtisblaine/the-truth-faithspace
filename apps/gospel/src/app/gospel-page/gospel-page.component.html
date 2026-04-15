@@ -9,11 +9,20 @@
       priority
     />
 
-    <button matButton="filled" disableRipple class="header-button fixed-primary-color">
+    <button matButton="filled" [matMenuTriggerFor]="gospelMenu" class="header-button fixed-primary-color">
       <h1 class="header-title">The Good News of the Kingdom of God</h1>
     </button>
-    @if(!isMobile()){
-    <mat-accordion class="menu" style="margin-top: 12px">
+
+    <mat-menu #gospelMenu="matMenu">
+      <button mat-menu-item (click)="toAnchor('the-danger')">The Danger - Sin</button>
+      <button mat-menu-item (click)="toAnchor('the-futility')">The Futilitiy - Death</button>
+      <button mat-menu-item (click)="toAnchor('the-safety')">The Safety - Grace</button>
+      <button mat-menu-item (click)="toAnchor('the-call')">The Call - Faith</button>
+      <button mat-menu-item (click)="toAnchor('our-response')">Our Response</button>
+      <button mat-menu-item (click)="toAnchor('the-day-of-the-lord')">The Day of the Lord - Hope</button>
+    </mat-menu>
+
+    <mat-accordion class="accordion-menu" style="margin-top: 12px">
       <mat-expansion-panel class="custom-panel red-theme-dark-mode" hideToggle>
         <mat-expansion-panel-header>
           <mat-panel-title>
@@ -57,11 +66,11 @@
           <button matButton="tonal" (click)="toAnchor('the-safety', 'the-bronze-serpent')">The Bronze Serpent</button>
           <button matButton="tonal" (click)="toAnchor('the-safety', 'the-victor')">The Victor</button>
           <button matButton="tonal" (click)="toAnchor('the-safety', 'the-lamb-of-god')">The Lamb Of God</button>
-          <button matButton="tonal" (click)="toAnchor('the-safety', 'the-lion-of-judah')">The Lion of Judah</button>
+          <button matButton="tonal" (click)="toAnchor('the-safety', 'the-lion-of-judah')">The Lion Of Judah</button>
           <button matButton="tonal" (click)="toAnchor('the-safety', 'the-scapegoat')">The Scapegoat</button>
           <button matButton="tonal" (click)="toAnchor('the-safety', 'the-true-food')">The True Food</button>
           <button matButton="tonal" (click)="toAnchor('the-safety', 'the-door-of-salvation')">
-            The Door of Salvation
+            The Door Of Salvation
           </button>
           <button matButton="tonal" (click)="toAnchor('the-safety', 'the-rock-of-salvation')">
             The Rock Of Salvation
@@ -129,7 +138,6 @@
         </ng-template>
       </mat-expansion-panel>
     </mat-accordion>
-    }
   </div>
 
   <!-- #region The Danger - Sin -->
@@ -142,8 +150,8 @@
     />
 
     <div class="slide">
-      <button matButton="elevated" disableRipple class="header-button dark-mode">
-        <h3 class="header-title">The Danger - Sin</h3>
+      <button matButton="elevated" [matMenuTriggerFor]="gospelMenu" class="header-button dark-mode">
+        <h2 class="header-title">The Danger - Sin</h2>
       </button>
       <div class="section-button-group">
         <button matButton="tonal" (click)="toAnchor('the-danger', 'the-sin-nature')">The Sin Nature</button>
@@ -213,8 +221,8 @@
     />
 
     <div class="slide">
-      <button matButton="elevated" disableRipple class="header-button dark-mode">
-        <h3 class="header-title">The Futility - Death</h3>
+      <button matButton="elevated" [matMenuTriggerFor]="gospelMenu" class="header-button dark-mode">
+        <h2 class="header-title">The Futility - Death</h2>
       </button>
       <div class="section-button-group">
         <button matButton="tonal" (click)="toAnchor('the-futility', 'the-love-of-pleasure')">
@@ -286,8 +294,8 @@
     />
 
     <div class="slide">
-      <button matButton="elevated" disableRipple class="header-button">
-        <h3 class="header-title">The Safety - Grace</h3>
+      <button matButton="elevated" [matMenuTriggerFor]="gospelMenu" class="header-button">
+        <h2 class="header-title">The Safety - Grace</h2>
       </button>
       <div class="section-button-group">
         <button matButton="tonal" (click)="toAnchor('the-safety', 'the-servant-of-god')">The Servant Of God</button>
@@ -440,8 +448,8 @@
     />
 
     <div class="slide">
-      <button matButton="elevated" disableRipple class="header-button">
-        <h3 class="header-title">The Call - Faith</h3>
+      <button matButton="elevated" [matMenuTriggerFor]="gospelMenu" class="header-button">
+        <h2 class="header-title">The Call - Faith</h2>
       </button>
       <div class="section-button-group">
         <button matButton="tonal" (click)="toAnchor('the-call', 'the-race-of-faith')">The Race Of Faith</button>
@@ -525,8 +533,8 @@
     />
 
     <div class="slide">
-      <button matButton="elevated" disableRipple class="header-button">
-        <h3 class="header-title">Our Response</h3>
+      <button matButton="elevated" [matMenuTriggerFor]="gospelMenu" class="header-button">
+        <h2 class="header-title">Our Response</h2>
       </button>
       <div class="section-button-group">
         <button matButton="tonal" (click)="toAnchor('our-response', 'repentance-toward-god')">
@@ -641,8 +649,8 @@
     />
 
     <div class="slide">
-      <button matButton="elevated" disableRipple class="header-button">
-        <h3 class="header-title">The Day of the Lord - Hope</h3>
+      <button matButton="elevated" [matMenuTriggerFor]="gospelMenu" class="header-button">
+        <h2 class="header-title">The Day of the Lord - Hope</h2>
       </button>
       <div class="section-button-group">
         <button matButton="tonal" (click)="toAnchor('the-day-of-the-lord', 'resurrection-of-life')">
@@ -723,7 +731,7 @@
 
   <!-- #region FOOTER -->
   <div class="section fp-auto-height footer" data-anchor="social" data-tooltip="Social">
-    <h3>SOCIAL</h3>
+    <h2>SOCIAL</h2>
 
     <lib-share
       [githubLink]="'https://github.com/kurtisblaine'"

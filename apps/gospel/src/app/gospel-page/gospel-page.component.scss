@@ -50,7 +50,6 @@
 }
 
 .header-button {
-  cursor: default !important;
   margin-bottom: 16px;
   padding: 30px;
 }
@@ -95,7 +94,13 @@ mat-panel-title > button[matButton="elevated"],
   margin: 2px;
 }
 
-.menu > .custom-panel {
+@media (max-height: 600px) {
+  .accordion-menu {
+    display: none;
+  }
+}
+
+.accordion-menu > .custom-panel {
   background: transparent;
   box-shadow: none !important;
   margin: 0;

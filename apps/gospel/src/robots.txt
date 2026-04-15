@@ -1,9 +1,3 @@
 User-agent: *
 Disallow:
-Sitemap: https://thelightof.life/assets/sitemaps/truth.xml
-Sitemap: https://thelightof.life/assets/sitemaps/drawings.xml
-Sitemap: https://thelightof.life/assets/sitemaps/poems.xml
-Sitemap: https://thelightof.life/assets/sitemaps/insights.xml
-Sitemap: https://thelightof.life/assets/sitemaps/studies.xml
-Sitemap: https://thelightof.life/assets/sitemaps/edifications.xml
-Sitemap: https://thelightof.life/assets/sitemaps/discernments.xml
+Sitemap: https://thelightof.life/assets/sitemaps/sitemap.xml
