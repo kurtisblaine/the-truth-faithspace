@@ -66,7 +66,7 @@ export class GospelPageComponent extends SeoBaseComponent implements OnInit, Aft
   ) {
     super({
       canonicalUrl: "https://thelightof.life/truth",
-      title: "The Good News of the Kingdom of God",
+      title: "The Good News",
       description:
         "The Good News of the eternal God, creator of heaven & earth with every living thing, He revealed His glory in His Son, Jesus Christ, full of grace & truth.",
       shouldPostfix: false,
