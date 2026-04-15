@@ -63,6 +63,14 @@
           "buildTarget": "gospel:build:development"
         }
       },
+      "options": {
+        "headers": {
+          "Content-Security-Policy": "style-src 'self' 'unsafe-inline';",
+          "X-Frame-Options": "SAMEORIGIN",
+          "X-Content-Type-Options": "nosniff",
+          "Referrer-Policy": "strict-origin-when-cross-origin"
+        }
+      },
       "defaultConfiguration": "development",
       "continuous": true
     },
