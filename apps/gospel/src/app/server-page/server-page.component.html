@@ -14,7 +14,7 @@
 </div>
 
 <mat-accordion class="example-headers-align" multi>
-  <mat-expansion-panel>
+  <mat-expansion-panel (opened)="loadBlogs()">
     <mat-expansion-panel-header>
       <mat-panel-title>
         <h4 style="padding: 15px 15px 0px" class="primary-color">Edifications</h4>
@@ -25,7 +25,7 @@
     </ng-template>
   </mat-expansion-panel>
 
-  <mat-expansion-panel>
+  <mat-expansion-panel (opened)="loadDiscernments()">
     <mat-expansion-panel-header>
       <mat-panel-title>
         <h4 style="padding: 15px 15px 0px" class="primary-color">Discernments</h4>
@@ -36,7 +36,7 @@
     </ng-template>
   </mat-expansion-panel>
 
-  <mat-expansion-panel>
+  <mat-expansion-panel (opened)="loadInsights()">
     <mat-expansion-panel-header>
       <mat-panel-title>
         <h4 style="padding: 15px 15px 0px" class="primary-color">Insights</h4>
@@ -47,7 +47,7 @@
     </ng-template>
   </mat-expansion-panel>
 
-  <mat-expansion-panel>
+  <mat-expansion-panel (opened)="loadPsalms()">
     <mat-expansion-panel-header>
       <mat-panel-title>
         <h4 style="padding: 15px 15px 0px" class="primary-color">Poems</h4>
@@ -58,7 +58,7 @@
     </ng-template>
   </mat-expansion-panel>
 
-  <mat-expansion-panel>
+  <mat-expansion-panel (opened)="loadStudies()">
     <mat-expansion-panel-header>
       <mat-panel-title>
         <h4 style="padding: 15px 15px 0px" class="primary-color">Studies</h4>

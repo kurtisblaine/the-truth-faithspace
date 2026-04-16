@@ -22,12 +22,26 @@ export class ServerPageComponent implements OnInit {
 
   constructor(private store: Store, private router: Router) {}
 
-  ngOnInit(): void {
+  ngOnInit(): void {}
+
+  public loadPsalms() {
     this.store.dispatch(loadPsalms());
+  }
+
+  public loadInsights() {
     this.store.dispatch(loadInsights());
-    this.store.dispatch(loadBlogs());
+  }
+
+  public loadDiscernments() {
     this.store.dispatch(loadDiscernments());
+  }
+
+  public loadStudies() {
     this.store.dispatch(StudyActions.loadStudies());
+  }
+
+  public loadBlogs() {
+    this.store.dispatch(loadBlogs());
   }
 
   public saveStudy() {
