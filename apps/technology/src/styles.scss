@@ -21,11 +21,32 @@ html {
   padding: 7px;
 }
 
+.mat-typography h1,
+.mat-typography h2,
+.mat-typography h3,
+.mat-typography h4 {
+  margin-top: 4px;
+  margin-bottom: 8px;
+}
+
+.mat-typography h1 {
+  font-size: 28px;
+  font-weight: 500;
+}
+
+.mat-typography h2 {
+  font-size: 24px;
+  font-weight: 400;
+}
+
 .mat-typography h3 {
-  font-size: 22px;
-  font-weight: 450;
-  margin-top: 0;
-  margin-bottom: 12px;
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.mat-typography h4 {
+  font-size: 18px;
+  font-weight: 200;
 }
 
 body {

@@ -4,35 +4,6 @@
   "projectType": "application",
   "sourceRoot": "apps/technology/src",
   "prefix": "app",
-  "generators": {
-    "@schematics/angular:component": {
-      "inlineTemplate": true,
-      "inlineStyle": true,
-      "style": "scss",
-      "skipTests": true
-    },
-    "@schematics/angular:class": {
-      "skipTests": true
-    },
-    "@schematics/angular:directive": {
-      "skipTests": true
-    },
-    "@schematics/angular:guard": {
-      "skipTests": true
-    },
-    "@schematics/angular:interceptor": {
-      "skipTests": true
-    },
-    "@schematics/angular:pipe": {
-      "skipTests": true
-    },
-    "@schematics/angular:resolver": {
-      "skipTests": true
-    },
-    "@schematics/angular:service": {
-      "skipTests": true
-    }
-  },
   "targets": {
     "build": {
       "executor": "@angular-devkit/build-angular:application",
@@ -65,6 +36,12 @@
             }
           ],
           "outputHashing": "all",
+          "fileReplacements": [
+            {
+              "replace": "apps/technology/src/environments/environment.ts",
+              "with": "apps/technology/src/environments/environment.prod.ts"
+            }
+          ],
           "namedChunks": true
         },
         "development": {
@@ -73,8 +50,7 @@
           "sourceMap": true,
           "namedChunks": true
         }
-      },
-      "defaultConfiguration": "production"
+      }
     },
     "serve": {
       "executor": "@angular-devkit/build-angular:dev-server",
@@ -86,11 +62,15 @@
           "buildTarget": "technology:build:development"
         }
       },
-      "defaultConfiguration": "development",
-      "continuous": true
-    },
-    "extract-i18n": {
-      "executor": "@angular-devkit/build-angular:extract-i18n"
+      "options": {
+        "headers": {
+          "Content-Security-Policy": "style-src 'self' 'unsafe-inline';",
+          "X-Frame-Options": "SAMEORIGIN",
+          "X-Content-Type-Options": "nosniff",
+          "Referrer-Policy": "strict-origin-when-cross-origin"
+        }
+      },
+      "defaultConfiguration": "development"
     }
   }
 }

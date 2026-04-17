@@ -13,6 +13,7 @@ import { from, map, mergeMap } from "rxjs";
 
 import { ItemsActions } from "./items.actions";
 import { ItemEntity } from "./items.reducer";
+export const toKebabCase = (value: string) => value.trim().toLowerCase().replace(/\s+/g, "-");
 
 @Injectable()
 export class ItemsEffects {
@@ -27,7 +28,7 @@ export class ItemsEffects {
       ),
       map((data) =>
         ItemsActions.loadItemsSuccess({
-          item: data as ItemEntity[],
+          item: (data as ItemEntity[]).map((d) => ({ ...d, url: toKebabCase(d.title) })),
         })
       )
     )

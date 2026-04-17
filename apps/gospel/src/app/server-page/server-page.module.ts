@@ -12,7 +12,7 @@ import { DiscernListComponent } from "../discern-page/discern-list/discern-list.
 import { InsightListComponent } from "../insight-page/insight-list/insight-list.component";
 import { PsalmListComponent } from "../psalm-page/psalm-list/psalm-list.component";
 import { StudyListComponent } from "../study-page/study-list/study-list.component";
-import { LoginComponent } from "./login.component";
+import { LoginComponent } from "./login/login.component";
 import { ServerPageComponent } from "./server-page.component";
 
 const routes: Routes = [

@@ -18,6 +18,7 @@ import { MatSnackBar, MatSnackBarModule } from "@angular/material/snack-bar";
 import { Router } from "@angular/router";
 import { Subscription } from "rxjs";
 import { AuthService } from "shared";
+import { PageHeaderComponent } from "../../shared/components/page-header.component";
 
 @Component({
   selector: "gospel-login",
@@ -30,6 +31,7 @@ import { AuthService } from "shared";
     MatFormFieldModule,
     MatInputModule,
     MatCardModule,
+    PageHeaderComponent,
   ],
   templateUrl: "./login.component.html",
   styleUrl: "./login.component.scss",

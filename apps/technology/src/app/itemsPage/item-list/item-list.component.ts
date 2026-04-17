@@ -1,5 +1,15 @@
-import { CommonModule } from "@angular/common";
-import { ChangeDetectionStrategy, Component, computed, effect, Input, Signal, signal } from "@angular/core";
+import { CommonModule, isPlatformServer } from "@angular/common";
+import {
+  ChangeDetectionStrategy,
+  Component,
+  computed,
+  effect,
+  inject,
+  Input,
+  PLATFORM_ID,
+  Signal,
+  signal,
+} from "@angular/core";
 import { toSignal } from "@angular/core/rxjs-interop";
 import { MatButtonModule } from "@angular/material/button";
 import { MatDividerModule } from "@angular/material/divider";
@@ -12,6 +22,7 @@ import { ItemsActions } from "../../+state/items/items.actions";
 import { ItemEntity } from "../../+state/items/items.reducer";
 import { selectAllItems } from "../../+state/items/items.selectors";
 import {
+  BASE_URL,
   FilterComponent,
   LinkComponent,
   ReadonlyTextEditorComponent,
@@ -43,10 +54,17 @@ export class ItemListComponent {
   public total!: Signal<number>;
   public updatedJson!: string | object;
 
+  public initialPageSize = 5;
   public searchTerm = signal<string>("");
   public properties: string[] = ["title", "json"];
-  public pageSize = signal(5);
+  public pageSize = signal(this.initialPageSize);
   public pageIndex = signal(0);
+
+  public baseUrl = inject(BASE_URL);
+  public platformId = inject(PLATFORM_ID);
+  get isServer() {
+    return isPlatformServer(this.platformId);
+  }
 
   public faLink = faArrowUpRightFromSquare;
 
@@ -81,7 +99,11 @@ export class ItemListComponent {
     });
   }
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    if (this.isServer) {
+      this.onPageChange({ pageIndex: 0, pageSize: this.total(), length: 0 });
+    }
+  }
 
   onPageChange(event?: PageEvent): void {
     this.pageIndex.set(event!.pageIndex);

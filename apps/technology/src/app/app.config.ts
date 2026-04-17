@@ -8,14 +8,18 @@ import {
   withRouterConfig,
 } from "@angular/router";
 
+import { DatePipe } from "@angular/common";
 import { provideHttpClient } from "@angular/common/http";
 import { initializeApp, provideFirebaseApp } from "@angular/fire/app";
+import { getAuth, provideAuth } from "@angular/fire/auth";
 import { getFirestore, provideFirestore } from "@angular/fire/firestore";
 import { MAT_RIPPLE_GLOBAL_OPTIONS, RippleGlobalOptions } from "@angular/material/core";
 import { provideAnimations } from "@angular/platform-browser/animations";
 import { provideEffects } from "@ngrx/effects";
 import { provideState, provideStore } from "@ngrx/store";
 import { provideStoreDevtools } from "@ngrx/store-devtools";
+import { APP_POSTFIX, BASE_URL } from "../../../../libs/src";
+import { environment } from "../environments/environment";
 import { ItemsEffects } from "./+state/items/items.effects";
 import * as fromItems from "./+state/items/items.reducer";
 import { routes } from "./app.routes";
@@ -48,6 +52,7 @@ export const appConfig: ApplicationConfig = {
     ),
     provideFirebaseApp(() => initializeApp(firebaseConfig)),
     provideFirestore(() => getFirestore()),
+    provideAuth(() => getAuth()),
     provideHttpClient(),
     provideAnimations(),
     provideZonelessChangeDetection(),
@@ -60,5 +65,8 @@ export const appConfig: ApplicationConfig = {
         },
       } as RippleGlobalOptions,
     },
+    { provide: APP_POSTFIX, useValue: " | Beware of Idols" },
+    { provide: BASE_URL, useValue: environment.baseUrl },
+    DatePipe,
   ],
 };

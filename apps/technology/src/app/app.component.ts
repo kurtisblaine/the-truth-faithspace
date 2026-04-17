@@ -8,7 +8,13 @@ import { MatTooltipModule } from "@angular/material/tooltip";
 import { Router, RouterOutlet } from "@angular/router";
 import { FontAwesomeModule } from "@fortawesome/angular-fontawesome";
 import { faBars, faGears, faHome, faNewspaper, faRobot } from "@fortawesome/free-solid-svg-icons";
-import { SettingsWidgetComponent, VoiceSettingsComponent } from "../../../../libs/src";
+import {
+  AuthSettingsComponent,
+  LinkComponent,
+  SeoBaseComponent,
+  SettingsWidgetComponent,
+  VoiceSettingsComponent,
+} from "../../../../libs/src";
 
 @Component({
   selector: "app-root",
@@ -24,6 +30,8 @@ import { SettingsWidgetComponent, VoiceSettingsComponent } from "../../../../lib
     MatMenuModule,
     SettingsWidgetComponent,
     VoiceSettingsComponent,
+    LinkComponent,
+    AuthSettingsComponent,
   ],
 
   template: `
@@ -31,11 +39,13 @@ import { SettingsWidgetComponent, VoiceSettingsComponent } from "../../../../lib
       <mat-drawer style="width: 280px; position: fixed" #drawer [mode]="'side'" [autoFocus]="true">
         <mat-list>
           <div mat-subheader>Posts</div>
-          <mat-list-item lines="3" (click)="goItems(); drawer.close()">
-            <fa-icon matListItemIcon [icon]="itemIcon"></fa-icon>
-            <span matListItemTitle>Technology</span>
-            <span>Shining light in the darkness of technology. </span>
-          </mat-list-item>
+          <lib-link [link]="baseUrl + '/items'" [isNewPage]="false">
+            <mat-list-item lines="3" (click)="drawer.close()">
+              <fa-icon matListItemIcon [icon]="itemIcon"></fa-icon>
+              <span matListItemTitle>Technology</span>
+              <span>Shining light in the darkness of technology. </span>
+            </mat-list-item>
+          </lib-link>
         </mat-list>
       </mat-drawer>
       <mat-drawer-content>
@@ -51,20 +61,22 @@ import { SettingsWidgetComponent, VoiceSettingsComponent } from "../../../../lib
               <fa-icon [icon]="icon"></fa-icon>
             </button>
 
-            <button mat-button (click)="goHome(); drawer.close()"><h1>Beware of Idols</h1></button>
-
+            <lib-link [link]="baseUrl" [isNewPage]="false">
+              <button mat-button (click)="drawer.close()"><div style="font-size: 20px">Beware of Idols</div></button>
+            </lib-link>
             <span style="flex: 1 1 auto"></span>
 
-            <button
-              mat-icon-button
-              (click)="goGospel()"
-              [matTooltip]="'Go to the Good News'"
-              aria-labelledby="Gospel button"
-              aria-label="Gospel button"
-              style="margin-right: 12px"
-            >
-              <fa-icon [icon]="gospelIcon"></fa-icon>
-            </button>
+            <lib-link [link]="'https://thelightof.life/truth'">
+              <button
+                mat-icon-button
+                [matTooltip]="'Go to the Good News'"
+                aria-labelledby="Gospel button"
+                aria-label="Gospel button"
+                style="margin-right: 12px"
+              >
+                <fa-icon [icon]="gospelIcon"></fa-icon>
+              </button>
+            </lib-link>
 
             <button
               mat-icon-button
@@ -79,6 +91,7 @@ import { SettingsWidgetComponent, VoiceSettingsComponent } from "../../../../lib
             <mat-menu #settingsMenu="matMenu">
               <lib-settings-widget storageName="technologyAppSettings" (onSave)="voiceSettings.save($event)">
                 <lib-voice-settings storageName="technologyAppSettings" #voiceSettings></lib-voice-settings>
+                <lib-auth-settings (onLogOut)="navigateToServer()" (onLogIn)="navigateToServer()"></lib-auth-settings>
               </lib-settings-widget>
             </mat-menu>
           </mat-toolbar>
@@ -90,7 +103,7 @@ import { SettingsWidgetComponent, VoiceSettingsComponent } from "../../../../lib
   `,
   styleUrl: "./app.component.scss",
 })
-export class AppComponent {
+export class AppComponent extends SeoBaseComponent {
   public title = "Beware of Idols";
   public icon = faBars;
   public homeIcon = faHome;
@@ -100,21 +113,15 @@ export class AppComponent {
 
   @ViewChild(MatMenuTrigger) public trigger!: MatMenuTrigger;
 
-  constructor(private router: Router) {}
+  constructor(private router: Router) {
+    super();
+  }
 
   openMenu() {
     this.trigger.openMenu();
   }
 
-  public goGospel() {
-    window.open("https://thelightof.life/truth", "_blank");
-  }
-
-  public goHome() {
-    this.router.navigateByUrl("").then(() => {});
-  }
-
-  public goItems() {
-    this.router.navigateByUrl("items").then(() => {});
+  navigateToServer() {
+    this.router.navigateByUrl("server");
   }
 }

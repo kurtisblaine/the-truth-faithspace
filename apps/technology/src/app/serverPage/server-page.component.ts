@@ -9,7 +9,6 @@ import { ItemEntity } from "../+state/items/items.reducer";
   selector: "app-server-page",
   changeDetection: ChangeDetectionStrategy.OnPush,
   standalone: false,
-
   template: `<button mat-flat-button (click)="saveItems()">Post Item</button>
 
     <div style="display: flex; flex-direction: column; margin: 10px">
@@ -42,11 +41,14 @@ export class ServerPageComponent {
     this.store.dispatch(ItemsActions.loadItems());
   }
 
+  toKebabCase = (value: string) => value.trim().toLowerCase().replace(/\s+/g, "-");
+
   public saveItems() {
     this.store.dispatch(
       ItemsActions.createItem({
         item: {
           title: this.title,
+          url: this.toKebabCase(this.title),
           json: toHTML(this._document),
           date: Date.now().toString(),
           id: v4().toString(),

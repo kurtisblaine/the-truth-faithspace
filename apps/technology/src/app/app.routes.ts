@@ -7,10 +7,12 @@ export const routes: Routes = [
   },
   {
     path: "server",
+    title: "Server | Beware of Idols",
     loadChildren: () => import("./serverPage/server-page.module").then((m) => m.ServerModule),
   },
   {
     path: "items",
     loadChildren: () => import("./itemsPage/items-page.module").then((m) => m.ItemsModule),
   },
+  { path: "**", redirectTo: "error" },
 ];

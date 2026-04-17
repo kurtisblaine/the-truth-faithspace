@@ -6,10 +6,10 @@
   <div style="flex: 1 1 80%">
     <div class="item-item" *ngFor="let item of pagedItems()">
       <div class="item-title primary-color">
-        <app-link [link]="'https://shining-light-on-the-dark-web.firebaseapp.com/items/item-detail/' + item.id">
+        <lib-link [link]="baseUrl + '/items/item-detail/' + item.url">
           {{ item.title }}
           <fa-icon [icon]="faLink" style="padding-left: 2px"></fa-icon>
-        </app-link>
+        </lib-link>
       </div>
       <div>{{ item.date | date: "short" }}</div>
 
@@ -19,7 +19,7 @@
       } @else {
       <lib-readonly-text-editor
         [html]="item?.json?.toString()"
-        [link]="'https://shining-light-on-the-dark-web.firebaseapp.com/items/item-detail/' + item.id"
+        [link]="baseUrl + '/items/item-detail/' + item.url"
       ></lib-readonly-text-editor>
       }
 
@@ -30,6 +30,7 @@
       [length]="total()"
       [showFirstLastButtons]="true"
       [pageSize]="pageSize()"
+      [pageSizeOptions]="[initialPageSize, total()]"
       [pageIndex]="pageIndex()"
       (page)="onPageChange($event)"
     ></mat-paginator>

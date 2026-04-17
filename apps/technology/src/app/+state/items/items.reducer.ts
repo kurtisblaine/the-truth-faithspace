@@ -10,6 +10,7 @@ export interface ItemEntity {
   json: object | string;
   title: string;
   date: string;
+  url?: string;
 }
 
 export interface State extends EntityState<ItemEntity> {
@@ -19,6 +20,7 @@ export interface State extends EntityState<ItemEntity> {
 }
 
 export const itemAdapter: EntityAdapter<ItemEntity> = createEntityAdapter<ItemEntity>({
+  selectId: (entity: ItemEntity) => entity.url!,
   sortComparer: (a: ItemEntity, b: ItemEntity) => Number.parseInt(b.date) - Number.parseInt(a.date),
 });
 
