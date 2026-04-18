@@ -9,29 +9,12 @@ import { MatFormFieldModule } from "@angular/material/form-field";
 import { MatInputModule } from "@angular/material/input";
 import { MatSnackBarModule } from "@angular/material/snack-bar";
 import { MatTooltipModule } from "@angular/material/tooltip";
-import { RouterModule, Routes } from "@angular/router";
 import { FontAwesomeModule } from "@fortawesome/angular-fontawesome";
-import { AuthGuard, TextEditorComponent } from "../../../../../libs/src";
+import { TextEditorComponent } from "shared";
+import { ItemListComponent } from "../itemsPage/item-list/item-list.component";
 import { ItemsModule } from "../itemsPage/items-page.module";
-import { LoginComponent } from "./loginPage/login-page.component";
-import { ServerPageComponent } from "./server-page.component";
-
-const routes: Routes = [
-  {
-    path: "777c7c75-cdf7-4c51-beab-3ef81d6a5777",
-    component: ServerPageComponent,
-    title: "LIVE DATA! | Beware of Idols",
-    canActivate: [AuthGuard],
-  },
-  {
-    path: "",
-    component: LoginComponent,
-    title: "Server | Beware of Idols",
-  },
-];
 
 @NgModule({
-  declarations: [ServerPageComponent, LoginComponent],
   imports: [
     CommonModule,
     MatExpansionModule,
@@ -46,8 +29,8 @@ const routes: Routes = [
     TextEditorComponent,
     MatSnackBarModule,
     MatFormFieldModule,
+    ItemListComponent,
     MatCardModule,
-    RouterModule.forChild(routes),
   ],
 })
 export class ServerModule {}

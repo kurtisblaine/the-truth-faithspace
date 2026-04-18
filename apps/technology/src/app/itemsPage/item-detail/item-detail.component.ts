@@ -2,10 +2,10 @@ import { DatePipe } from "@angular/common";
 import { ChangeDetectionStrategy, Component, effect, OnInit, Signal } from "@angular/core";
 import { ActivatedRoute } from "@angular/router";
 import { Store } from "@ngrx/store";
+import { SeoBaseComponent } from "shared";
 import { ItemsActions } from "../../+state/items/items.actions";
 import { ItemEntity } from "../../+state/items/items.reducer";
 import { getById } from "../../+state/items/items.selectors";
-import { SeoBaseComponent } from "../../../../../../libs/src";
 
 @Component({
   selector: "app-item-detail",
@@ -15,7 +15,7 @@ import { SeoBaseComponent } from "../../../../../../libs/src";
   standalone: false,
 })
 export class ItemDetailComponent extends SeoBaseComponent implements OnInit {
-  public item!: Signal<ItemEntity | undefined>;
+  public item!: Signal<ItemEntity>;
 
   protected override keywords: string =
     "blog, technology, tech, ai, truth, falsehood, dark web, truth, revealed, uncovered, web, internet";

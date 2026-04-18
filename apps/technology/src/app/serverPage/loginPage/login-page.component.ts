@@ -1,16 +1,38 @@
+import { CommonModule } from "@angular/common";
 import { ChangeDetectionStrategy, Component, OnDestroy, OnInit } from "@angular/core";
-import { FormBuilder, FormControl, FormGroup, ValidatorFn, Validators } from "@angular/forms";
-import { MatSnackBar } from "@angular/material/snack-bar";
+import {
+  FormBuilder,
+  FormControl,
+  FormGroup,
+  FormsModule,
+  ReactiveFormsModule,
+  ValidatorFn,
+  Validators,
+} from "@angular/forms";
+import { MatButtonModule } from "@angular/material/button";
+import { MatCardModule } from "@angular/material/card";
+import { MatFormFieldModule } from "@angular/material/form-field";
+import { MatInputModule } from "@angular/material/input";
+import { MatSnackBar, MatSnackBarModule } from "@angular/material/snack-bar";
 import { Router } from "@angular/router";
 import { Subscription } from "rxjs";
-import { AuthService, SeoBaseComponent } from "../../../../../../libs/src";
+import { AuthService, SeoBaseComponent } from "shared";
 
 @Component({
   selector: "app-login",
+  imports: [
+    CommonModule,
+    MatSnackBarModule,
+    ReactiveFormsModule,
+    FormsModule,
+    MatButtonModule,
+    MatFormFieldModule,
+    MatInputModule,
+    MatCardModule,
+  ],
   templateUrl: "./login-page.component.html",
   styleUrl: "./login-page.component.scss",
   changeDetection: ChangeDetectionStrategy.OnPush,
-  standalone: false,
 })
 export class LoginComponent extends SeoBaseComponent implements OnInit, OnDestroy {
   public formData!: FormGroup;

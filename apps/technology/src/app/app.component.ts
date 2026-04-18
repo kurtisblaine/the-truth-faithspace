@@ -14,7 +14,7 @@ import {
   SeoBaseComponent,
   SettingsWidgetComponent,
   VoiceSettingsComponent,
-} from "../../../../libs/src";
+} from "shared";
 
 @Component({
   selector: "app-root",

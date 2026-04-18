@@ -5,7 +5,7 @@ import { MatCardModule } from "@angular/material/card";
 import { MatDividerModule } from "@angular/material/divider";
 import { MatProgressSpinnerModule } from "@angular/material/progress-spinner";
 import { RouterModule, Routes } from "@angular/router";
-import { ReadonlyTextEditorComponent } from "../../../../../libs/src";
+import { ReadonlyTextEditorComponent } from "shared";
 import { ItemDetailComponent } from "./item-detail/item-detail.component";
 import { ItemListComponent } from "./item-list/item-list.component";
 import { ItemsComponent } from "./items.component";

@@ -2,10 +2,10 @@ import { ChangeDetectionStrategy, Component, OnInit } from "@angular/core";
 import { Router } from "@angular/router";
 import { Store } from "@ngrx/store";
 import { map, Observable } from "rxjs";
+import { SeoBaseComponent } from "shared";
 import { ItemsActions } from "../+state/items/items.actions";
 import { ItemEntity } from "../+state/items/items.reducer";
 import { selectAllItems, selectItemsLoaded } from "../+state/items/items.selectors";
-import { SeoBaseComponent } from "../../../../../libs/src";
 
 @Component({
   selector: "app-items",

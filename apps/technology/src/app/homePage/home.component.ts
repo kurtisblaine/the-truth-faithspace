@@ -1,5 +1,5 @@
 import { ChangeDetectionStrategy, Component } from "@angular/core";
-import { fadeInOut, NarratorStyle } from "../../../../../libs/src";
+import { fadeInOut, NarratorStyle } from "shared";
 @Component({
   selector: "app-home",
   templateUrl: "./home.component.html",

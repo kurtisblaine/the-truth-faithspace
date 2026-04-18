@@ -17,7 +17,7 @@ export const serverRoutes: ServerRoute[] = [
 
       const collectionRef = collection(firebase, "item");
       const collectionData$ = collectionData(collectionRef, { idField: "collectionId" }).pipe(
-        map((data) => data.map((d) => ({ id: toKebabCase(d.title) })))
+        map((data) => data.map((d) => ({ id: toKebabCase(d["title"]) })))
       );
 
       return await firstValueFrom(collectionData$);

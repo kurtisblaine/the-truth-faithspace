@@ -1,14 +1,41 @@
+import { CommonModule } from "@angular/common";
 import { ChangeDetectionStrategy, Component } from "@angular/core";
+import { FormsModule, ReactiveFormsModule } from "@angular/forms";
+import { MatButtonModule } from "@angular/material/button";
+import { MatCardModule } from "@angular/material/card";
+import { MatDividerModule } from "@angular/material/divider";
+import { MatExpansionModule } from "@angular/material/expansion";
+import { MatFormFieldModule } from "@angular/material/form-field";
+import { MatInputModule } from "@angular/material/input";
+import { MatSnackBarModule } from "@angular/material/snack-bar";
 import { Router } from "@angular/router";
+import { FontAwesomeModule } from "@fortawesome/angular-fontawesome";
 import { Store } from "@ngrx/store";
 import { toHTML } from "ngx-editor";
+import { TextEditorComponent } from "shared";
 import { v4 } from "uuid";
 import { ItemsActions } from "../+state/items/items.actions";
 import { ItemEntity } from "../+state/items/items.reducer";
+import { ItemListComponent } from "../itemsPage/item-list/item-list.component";
 @Component({
   selector: "app-server-page",
   changeDetection: ChangeDetectionStrategy.OnPush,
-  standalone: false,
+  standalone: true,
+  imports: [
+    CommonModule,
+    MatExpansionModule,
+    MatButtonModule,
+    MatDividerModule,
+    FormsModule,
+    FontAwesomeModule,
+    ReactiveFormsModule,
+    MatInputModule,
+    TextEditorComponent,
+    MatSnackBarModule,
+    MatFormFieldModule,
+    ItemListComponent,
+    MatCardModule,
+  ],
   template: `<button mat-flat-button (click)="saveItems()">Post Item</button>
 
     <div style="display: flex; flex-direction: column; margin: 10px">

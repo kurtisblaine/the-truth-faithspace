@@ -10,4 +10,5 @@ export const selectItemsError = createSelector(selectItemsState, (state: fromIte
 
 export const selectAllItems = createSelector(selectItemsState, (state: fromItems.State) => selectAll(state));
 
-export const getById = (id: string) => createSelector(selectItemsState, (state: fromItems.State) => state.entities[id]);
+export const getById = (id: string) =>
+  createSelector(selectItemsState, (state: fromItems.State) => state.entities[id]!);
