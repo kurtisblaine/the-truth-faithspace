@@ -42,7 +42,7 @@ import {
           <lib-link [link]="baseUrl + '/items'" [isNewPage]="false">
             <mat-list-item lines="3" (click)="drawer.close()">
               <fa-icon matListItemIcon [icon]="itemIcon"></fa-icon>
-              <span matListItemTitle>Technology</span>
+              <span matListItemTitle>Blog</span>
               <span>Shining light in the darkness of technology. </span>
             </mat-list-item>
           </lib-link>
