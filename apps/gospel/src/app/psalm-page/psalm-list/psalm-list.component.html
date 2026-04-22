@@ -6,9 +6,11 @@
   <div style="flex: 1 1 80%; width: 100%">
     <div class="psalm-item" *ngFor="let psalm of pagedPsalms()">
       <div class="psalm-title primary-color">
-        <lib-link [link]="baseUrl + '/poems/poem-detail/' + psalm.url"
-          >{{ psalm.title }}
-          <lib-fa-icon [icon]="faLink" style="padding-left: 2px"></lib-fa-icon>
+        <lib-link [link]="baseUrl + '/poems/poem-detail/' + psalm.url">
+          <div style="display: flex; align-items: baseline">
+            <h3>{{ psalm.title }}</h3>
+            <lib-fa-icon [icon]="faLink" style="padding-left: 4px; font-size: large"></lib-fa-icon>
+          </div>
         </lib-link>
       </div>
       <div>{{ psalm.date | date: "short" }}</div>
