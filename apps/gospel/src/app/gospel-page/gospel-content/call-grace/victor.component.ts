@@ -137,7 +137,7 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
       slaughtered like sheep.") No, despite all these things,
       <b>overwhelming victory is ours through Christ, who loved us.</b>
     </blog-reference-tooltip>
-    <lib-link [link]="baseUrl + '/edifications/edify-detail/jesus-the-book-of-ester'"
+    <lib-link [link]="baseUrl + '/edifications/edify-detail/jesus-the-book-of-esther'"
       >(See more about Mordecai)</lib-link
     >
   </div>`,
