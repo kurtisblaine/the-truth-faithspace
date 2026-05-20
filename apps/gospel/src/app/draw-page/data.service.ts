@@ -191,7 +191,7 @@ export class DataService {
       and we likewise, who were dead in sin, have become alive to God through faith, a living sacrifice.`,
       footer: "Die to the flesh and its passions...",
       fileName: "alterofGod.webp",
-      originUrl: "q_auto/f_auto/v1711590174/teach/armorofGod_h3blcr.webp",
+      originUrl: "q_auto/f_auto/v1711590174/teach/alterofGod_fgatum.webp",
     });
 
     this.images.push({
