@@ -8,7 +8,7 @@
       <div class="psalm-title primary-color">
         <lib-link [link]="baseUrl + '/poems/poem-detail/' + psalm.url">
           <div style="display: flex; align-items: baseline">
-            <h3>{{ psalm.title }}</h3>
+            <h3 [matTooltip]="`${psalm.title} - ${psalm.id}`">{{ psalm.title }}</h3>
             <lib-fa-icon [icon]="faLink" style="padding-left: 4px; font-size: large"></lib-fa-icon>
           </div>
         </lib-link>

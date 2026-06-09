@@ -8,7 +8,7 @@
       <div class="study-title primary-color">
         <lib-link [link]="baseUrl + '/studies/study-detail/' + study.url">
           <div style="display: flex; align-items: baseline">
-            <h3>{{ study.title }}</h3>
+            <h3 [matTooltip]="`${study.title} - ${study.id}`">{{ study.title }}</h3>
             <lib-fa-icon [icon]="faLink" style="padding-left: 4px; font-size: large"></lib-fa-icon>
           </div>
         </lib-link>

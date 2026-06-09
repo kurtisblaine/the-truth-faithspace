@@ -4,6 +4,7 @@ import { toSignal } from "@angular/core/rxjs-interop";
 import { MatButtonModule } from "@angular/material/button";
 import { MatDividerModule } from "@angular/material/divider";
 import { MatPaginatorModule, PageEvent } from "@angular/material/paginator";
+import { MatTooltipModule } from "@angular/material/tooltip";
 import { faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
 import { Store } from "@ngrx/store";
 import { toHTML } from "ngx-editor";
@@ -33,6 +34,7 @@ import { getAllInsight } from "../../state/insight/insights.selectors";
     LinkComponent,
     MatPaginatorModule,
     FilterComponent,
+    MatTooltipModule,
   ],
 })
 export class InsightListComponent implements OnInit {
