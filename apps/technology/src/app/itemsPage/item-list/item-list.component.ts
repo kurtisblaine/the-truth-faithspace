@@ -93,11 +93,7 @@ export class ItemListComponent {
     });
   }
 
-  ngOnInit(): void {
-    if (this.isServer) {
-      this.onPageChange({ pageIndex: 0, pageSize: this.total(), length: 0 });
-    }
-  }
+  ngOnInit(): void {}
 
   onPageChange(event?: PageEvent): void {
     this.pageIndex.set(event!.pageIndex);
