@@ -34,6 +34,8 @@ export const reducer = createReducer(
       ...state,
       loaded: false,
       error: null,
+      selectedId: null,
+      selectedTranslationId: null,
     })
   ),
   on(BiblesActions.loadBiblesSuccess, (state, { bibles }) => biblesAdapter.setAll(bibles, { ...state, loaded: true })),

@@ -115,30 +115,28 @@ export class ScripturePageComponent implements OnInit, OnDestroy, AfterViewInit 
     this.chapter$ = this.store.select(selectChapterEntity).pipe(map((r) => r.number));
 
     if (this.isAll) {
-      this.subscription = this.store.select(selectChaptersCount).subscribe((total) => {
-        this.chapterCount = total;
+      this.subscription = this.store.select(selectChaptersCount).subscribe(({ total, hasIntro }) => {
+        this.chapterCount = hasIntro ? total : total + 1;
 
-        this.dataSource = new MyDataSource(this.bibleApi, this.bibleId, this.bookId, total);
+        this.dataSource = new MyDataSource(this.bibleApi, this.bibleId, this.bookId, this.chapterCount);
 
         this.dataSubscription = this.requestQueue
           .pipe(
-            filter((r) => r < total),
+            filter((r) => r < this.chapterCount),
             bufferCount(1),
             scan((acc, requests) => ({ count: acc.count + 1, requests }), { count: 0, requests: [] as number[] }),
             mergeMap((data) =>
-              from(data.requests).pipe(
-                mergeMap((startIndex) =>
-                  this.dataSource.fetchData(startIndex, data.count === 1 ? this.initialFetchAmount : 1)
-                )
-              )
+              from(data.requests).pipe(mergeMap((startIndex) => this.dataSource.fetchData(startIndex, 1, hasIntro)))
             )
           )
           .subscribe((data: DynamicScripture[]) => {
-            if (data.some((r) => r.refresh)) {
+            if (data.some((r) => r?.refresh)) {
               const dataToRefresh = data.filter((r) => r.refresh);
               this.items.update((currentItems) => [
                 ...new Set([...currentItems, ...dataToRefresh] as DynamicScripture[]),
               ]);
+
+              this._fetchNextChapterIfLessThanViewportHeight(hasIntro);
             }
           });
       });
@@ -183,6 +181,21 @@ export class ScripturePageComponent implements OnInit, OnDestroy, AfterViewInit 
 
   onScrollIndexChange(index: number) {
     this.requestQueue.next(index);
+  }
+
+  private _fetchNextChapterIfLessThanViewportHeight(hasIntro: boolean) {
+    const scrollHeight =
+      this.cdkVirtualScrollViewport.measureScrollOffset("top") +
+      Math.ceil(this.cdkVirtualScrollViewport.elementRef.nativeElement.getBoundingClientRect().height);
+
+    const totalHeight = this.dynamicSize().reduce((totalHeight, dynamicSize) => {
+      totalHeight += dynamicSize.itemSize;
+      return totalHeight;
+    }, 0);
+
+    if (totalHeight <= scrollHeight) {
+      this.onScrollIndexChange(hasIntro ? this.dynamicSize().length : this.dynamicSize().length + 1); //account for the missing intro
+    }
   }
 
   private _getIndex() {

@@ -1,6 +1,7 @@
 import { EntityAdapter, EntityState, createEntityAdapter } from "@ngrx/entity";
 import { createReducer, on } from "@ngrx/store";
 import { Book } from "../../models/books";
+import * as BiblesActions from "../bibles/bibles.actions";
 import { BooksActions } from "./books.actions";
 
 export const BOOKS_FEATURE_KEY = "books";
@@ -24,6 +25,7 @@ export const reducer = createReducer(
       ...state,
       loaded: false,
       error: null,
+      selectedId: null,
     })
   ),
   on(BooksActions.selectBook, (state, { id }) => ({
@@ -31,6 +33,7 @@ export const reducer = createReducer(
     selectedId: id,
     isDirty: true,
   })),
+  on(BiblesActions.initBible, BiblesActions.loadBibles, (state) => ({ ...state, selectedId: null })),
   on(BooksActions.loadBooksSuccess, (state, { data }) => booksAdapter.setAll(data, { ...state, loaded: true })),
   on(BooksActions.loadBooksFailure, (state, { error }) => ({
     ...state,

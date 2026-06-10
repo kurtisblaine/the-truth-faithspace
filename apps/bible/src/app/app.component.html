@@ -6,31 +6,31 @@
     (selectionChange)="onSelectionChange($event)"
     [orientation]="stepperOrientation$ | async"
   >
-    <mat-step state="tonguesIcon">
+    <mat-step state="tonguesIcon" [completed]="selectedLanguage$ | async">
       <ng-template matStepLabel>
         Select Tongue
         <div>{{ selectedLanguage$ | async }}</div>
       </ng-template>
     </mat-step>
-    <mat-step state="biblesIcon">
+    <mat-step state="biblesIcon" [completed]="selectedTranslation$ | async">
       <ng-template matStepLabel
         >Select Bible
         <div>{{ selectedTranslation$ | async }}</div>
       </ng-template>
     </mat-step>
-    <mat-step state="booksIcon">
+    <mat-step state="booksIcon" [completed]="selectedBook$ | async">
       <ng-template matStepLabel
         >Select Book
         <div>{{ selectedBook$ | async }}</div>
       </ng-template>
     </mat-step>
-    <mat-step state="chaptersIcon">
+    <mat-step state="chaptersIcon" [completed]="selectedChapter$ | async">
       <ng-template matStepLabel
         >Select Chapter
         <div>{{ selectedChapter$ | async }}</div>
       </ng-template>
     </mat-step>
-    <mat-step state="readIcon">
+    <mat-step state="readIcon" [completed]="selectedChapter$ | async">
       <ng-template matStepLabel>Read</ng-template>
     </mat-step>
 

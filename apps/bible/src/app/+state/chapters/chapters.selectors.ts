@@ -14,10 +14,10 @@ export const selectChaptersEntities = createSelector(selectChaptersState, (state
   selectEntities(state)
 );
 
-export const selectChaptersCount = createSelector(
-  selectChaptersState,
-  (state: fromChapters.State) => selectAll(state).length
-);
+export const selectChaptersCount = createSelector(selectChaptersState, (state: fromChapters.State) => ({
+  total: selectAll(state).length,
+  hasIntro: selectAll(state).some((r) => r.id.toLowerCase().includes("intro")),
+}));
 
 export const selectSelectedId = createSelector(selectChaptersState, (state: fromChapters.State) => state.selectedId);
 
@@ -28,6 +28,6 @@ export const selectChapterEntity = createSelector(selectAllChapters, selectSelec
 export const selectChapter = createSelector(selectSelectedId, (selectedId) => {
   if (selectedId === "all") return "All";
 
-  const chapter = selectedId ? selectedId.toString().split(".").pop() : "";
-  return chapter.charAt(0).toUpperCase() + chapter.slice(1);
+  const chapter = selectedId ? selectedId.toString().split(".").pop() : null;
+  return chapter ? chapter.charAt(0).toUpperCase() + chapter.slice(1) : null;
 });

@@ -14,11 +14,11 @@ import { MatStepper, MatStepperModule } from "@angular/material/stepper";
 import { Router, RouterModule } from "@angular/router";
 import { Store } from "@ngrx/store";
 import { map, Observable, tap } from "rxjs";
+import * as BiblesActions from "./+state/bibles/bibles.actions";
 import { selectSelectedLanguage, selectSelectedTranslation } from "./+state/bibles/bibles.selectors";
 import { selectCurrentBook } from "./+state/books/books.selectors";
 import { selectChapter } from "./+state/chapters/chapters.selectors";
 import { StepperStateService } from "./stepperState.service";
-
 @Component({
   imports: [
     RouterModule,
@@ -42,7 +42,7 @@ import { StepperStateService } from "./stepperState.service";
   }`,
 })
 export class AppComponent implements OnInit, AfterViewInit {
-  public stepperOrientation$: Observable<StepperOrientation>;
+  public stepperOrientation$!: Observable<StepperOrientation>;
 
   @ViewChild("stepper") stepper!: MatStepper;
 
@@ -83,7 +83,7 @@ export class AppComponent implements OnInit, AfterViewInit {
     );
     this.selectedChapter$ = this.store.select(selectChapter);
 
-    this.router.navigate([""]); //go to home on refresh.
+    // this.router.navigate([""]); //go to home on refresh.
   }
 
   onSelectionChange(event: StepperSelectionEvent): void {
@@ -93,6 +93,7 @@ export class AppComponent implements OnInit, AfterViewInit {
         break;
       case 1:
         this.router.navigateByUrl(`/tongue/${this._selectedLanguageId}`);
+        this.store.dispatch(BiblesActions.loadBibles()); //although the data is already retrieved on initialization, we want to know when the bibles are navigated to.
         break;
       case 2:
         this.router.navigateByUrl(`/tongue/${this._selectedLanguageId}/bible/${this._selectedTranslationId}`);

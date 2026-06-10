@@ -1,5 +1,5 @@
 import { CollectionViewer, DataSource } from "@angular/cdk/collections";
-import { BehaviorSubject, forkJoin, map, Observable, of, Subscription } from "rxjs";
+import { BehaviorSubject, catchError, forkJoin, map, Observable, of, Subscription } from "rxjs";
 import { BibleApiService } from "../+state/bible-api.service";
 import { Data } from "../models/scripture";
 
@@ -26,12 +26,13 @@ export class MyDataSource extends DataSource<string | undefined> {
 
   fetchData(
     startIndex: number,
-    count: number
+    count: number,
+    hasIntro: boolean
   ): Observable<{ chapter: number; content: any; refresh: boolean; verseCount: number }[]> {
     const sources = this.createRange(startIndex, count)
       .filter((r) => r < this.totalChapters)
       .map((position) => {
-        const index = position === 0 ? "intro" : position.toString();
+        const index = position === 0 && hasIntro ? "intro" : position === 0 && !hasIntro ? "1" : position.toString();
         if (this._cachedData.has(index)) {
           const existing = this._cachedData.get(index);
           return of({ chapter: index, content: existing.content, refresh: false, verseCount: existing.verseCount });
@@ -45,7 +46,8 @@ export class MyDataSource extends DataSource<string | undefined> {
               refresh: true,
               verseCount: r.data.verseCount,
             };
-          })
+          }),
+          catchError((error) => of(null))
         );
       });
 
