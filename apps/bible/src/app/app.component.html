@@ -6,31 +6,31 @@
     (selectionChange)="onSelectionChange($event)"
     [orientation]="stepperOrientation$ | async"
   >
-    <mat-step state="tonguesIcon" [completed]="selectedLanguage$ | async">
+    <mat-step state="tonguesIcon" [completed]="selectedLanguage()">
       <ng-template matStepLabel>
         Select Tongue
-        <div>{{ selectedLanguage$ | async }}</div>
+        <div>{{ selectedLanguage() }}</div>
       </ng-template>
     </mat-step>
-    <mat-step state="biblesIcon" [completed]="selectedTranslation$ | async">
+    <mat-step state="biblesIcon" [completed]="selectedTranslation()?.name">
       <ng-template matStepLabel
         >Select Bible
-        <div>{{ selectedTranslation$ | async }}</div>
+        <div>{{ selectedTranslation()?.name }}</div>
       </ng-template>
     </mat-step>
-    <mat-step state="booksIcon" [completed]="selectedBook$ | async">
+    <mat-step state="booksIcon" [completed]="selectedBook()?.name">
       <ng-template matStepLabel
         >Select Book
-        <div>{{ selectedBook$ | async }}</div>
+        <div>{{ selectedBook()?.name }}</div>
       </ng-template>
     </mat-step>
-    <mat-step state="chaptersIcon" [completed]="selectedChapter$ | async">
+    <mat-step state="chaptersIcon" [completed]="selectedChapter()">
       <ng-template matStepLabel
         >Select Chapter
-        <div>{{ selectedChapter$ | async }}</div>
+        <div>{{ selectedChapter() }}</div>
       </ng-template>
     </mat-step>
-    <mat-step state="readIcon" [completed]="selectedChapter$ | async">
+    <mat-step state="readIcon" [completed]="selectedChapter()">
       <ng-template matStepLabel>Read</ng-template>
     </mat-step>
 
