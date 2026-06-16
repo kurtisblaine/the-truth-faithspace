@@ -3,7 +3,7 @@
     linear
     #stepper
     class="stepper"
-    (selectionChange)="onSelectionChange($event)"
+    (selectionChange)="onSelectionChange($event, true)"
     [orientation]="stepperOrientation$ | async"
   >
     <mat-step state="tonguesIcon" [completed]="selectedLanguage()">
