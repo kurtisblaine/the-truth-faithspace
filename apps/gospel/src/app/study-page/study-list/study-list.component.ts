@@ -22,6 +22,7 @@ import { toHTML } from "ngx-editor";
 import {
   BASE_URL,
   FilterComponent,
+  HighlightPipe,
   LibFaIconComponent,
   LinkComponent,
   ReadonlyTextEditorComponent,
@@ -47,6 +48,7 @@ import { getAllStudy } from "../../state/study/study.selectors";
     MatPaginatorModule,
     FilterComponent,
     MatTooltipModule,
+    HighlightPipe,
   ],
 })
 export class StudyListComponent implements OnInit {

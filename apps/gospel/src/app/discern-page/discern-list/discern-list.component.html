@@ -20,7 +20,7 @@
       <lib-text-editor [document]="discern.json" (editorChanged)="updatedJson = $event"></lib-text-editor>
       } @else {
       <lib-readonly-text-editor
-        [html]="discern?.json?.toString()"
+        [html]="discern?.json?.toString() | highlight: searchTerm()"
         [link]="baseUrl + '/discernments/discernment-detail/' + discern.url"
       ></lib-readonly-text-editor>
       }

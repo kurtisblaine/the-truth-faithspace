@@ -23,6 +23,7 @@ import { toHTML } from "ngx-editor";
 import {
   BASE_URL,
   FilterComponent,
+  HighlightPipe,
   LibFaIconComponent,
   LinkComponent,
   ReadonlyTextEditorComponent,
@@ -46,6 +47,7 @@ import { getAllPsalm } from "../../state/psalm/psalm.selectors";
     MatPaginatorModule,
     FilterComponent,
     MatTooltipModule,
+    HighlightPipe,
   ],
   changeDetection: ChangeDetectionStrategy.OnPush,
 })

@@ -18,7 +18,14 @@ import { FontAwesomeModule } from "@fortawesome/angular-fontawesome";
 import { faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
 import { Store } from "@ngrx/store";
 import { toHTML } from "ngx-editor";
-import { BASE_URL, FilterComponent, LinkComponent, ReadonlyTextEditorComponent, TextEditorComponent } from "shared";
+import {
+  BASE_URL,
+  FilterComponent,
+  HighlightPipe,
+  LinkComponent,
+  ReadonlyTextEditorComponent,
+  TextEditorComponent,
+} from "shared";
 import { ItemsActions } from "../../+state/items/items.actions";
 import { ItemEntity } from "../../+state/items/items.reducer";
 import { selectAllItems } from "../../+state/items/items.selectors";
@@ -38,6 +45,7 @@ import { selectAllItems } from "../../+state/items/items.selectors";
     MatPaginatorModule,
     FilterComponent,
     FontAwesomeModule,
+    HighlightPipe,
   ],
 })
 export class ItemListComponent {

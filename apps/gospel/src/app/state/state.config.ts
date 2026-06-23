@@ -74,9 +74,12 @@ export const transferStateMetaReducer = (reducer) => {
   }
 };
 
-export const toKebabCase = (value: string) => value.trim().toLowerCase().replace(/\s+/g, "-");
-
-export const fromKebabCase = (value: string) => value.replace(/-/g, " ");
+export const toKebabCase = (value: string) =>
+  value
+    .trim()
+    .replace(/[^a-zA-Z0-9\s]/g, "")
+    .toLowerCase()
+    .replace(/\s+/g, "-");
 
 export const metaReducers: MetaReducer<AppState>[] = !environment.production
   ? [transferStateMetaReducer]

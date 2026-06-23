@@ -20,7 +20,7 @@
       <lib-text-editor [document]="psalm.json" (editorChanged)="updatedJson = $event"></lib-text-editor>
       } @else {
       <lib-readonly-text-editor
-        [html]="psalm?.json?.toString()"
+        [html]="psalm?.json?.toString() | highlight: searchTerm()"
         [link]="baseUrl + '/poems/poem-detail/' + psalm.url"
       ></lib-readonly-text-editor>
       }

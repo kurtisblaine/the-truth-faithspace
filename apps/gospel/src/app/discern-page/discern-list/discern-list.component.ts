@@ -11,6 +11,7 @@ import { toHTML } from "ngx-editor";
 import {
   BASE_URL,
   FilterComponent,
+  HighlightPipe,
   LibFaIconComponent,
   LinkComponent,
   ReadonlyTextEditorComponent,
@@ -35,6 +36,7 @@ import { getAllDiscern } from "../../state/discern/discern.selectors";
     FilterComponent,
     LinkComponent,
     MatTooltipModule,
+    HighlightPipe,
   ],
 })
 export class DiscernListComponent implements OnInit {

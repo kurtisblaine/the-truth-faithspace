@@ -11,6 +11,7 @@ import { toHTML } from "ngx-editor";
 import {
   BASE_URL,
   FilterComponent,
+  HighlightPipe,
   LibFaIconComponent,
   LinkComponent,
   ReadonlyTextEditorComponent,
@@ -35,6 +36,7 @@ import { getAllInsight } from "../../state/insight/insights.selectors";
     MatPaginatorModule,
     FilterComponent,
     MatTooltipModule,
+    HighlightPipe,
   ],
 })
 export class InsightListComponent implements OnInit {

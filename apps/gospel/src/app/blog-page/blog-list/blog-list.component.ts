@@ -11,6 +11,7 @@ import { toHTML } from "ngx-editor";
 import {
   BASE_URL,
   FilterComponent,
+  HighlightPipe,
   LibFaIconComponent,
   LinkComponent,
   ReadonlyTextEditorComponent,
@@ -35,6 +36,7 @@ import { getAllBlog } from "../../state/blog/blog.selectors";
     MatPaginatorModule,
     FilterComponent,
     MatTooltipModule,
+    HighlightPipe,
   ],
 })
 export class BlogListComponent implements OnInit {

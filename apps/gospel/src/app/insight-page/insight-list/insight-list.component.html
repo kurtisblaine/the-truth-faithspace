@@ -20,7 +20,7 @@
       <lib-text-editor [document]="insight.json" (editorChanged)="updatedJson = $event"></lib-text-editor>
       } @else {
       <lib-readonly-text-editor
-        [html]="insight?.json?.toString()"
+        [html]="insight?.json?.toString() | highlight: searchTerm()"
         [link]="baseUrl + '/insights/insight-detail/' + insight.url"
       ></lib-readonly-text-editor>
       }
