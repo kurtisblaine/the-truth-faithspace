@@ -1,0 +1,80 @@
+{
+  "name": "fastfood",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "projectType": "application",
+  "prefix": "app",
+  "sourceRoot": "apps/fastfood/src",
+  "tags": [],
+  "targets": {
+    "build": {
+      "executor": "@angular-devkit/build-angular:application",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "apps/fastfood/public",
+        "index": "apps/fastfood/src/index.html",
+        "browser": "apps/fastfood/src/main.ts",
+        "tsConfig": "apps/fastfood/tsconfig.app.json",
+        "inlineStyleLanguage": "scss",
+        "namedChunks": true,
+        "assets": ["apps/fastfood/src/favicon.ico", "apps/fastfood/src/assets", "apps/fastfood/src/robots.txt"],
+        "styles": ["apps/fastfood/src/styles.scss"],
+        "scripts": [],
+        "server": "apps/fastfood/src/main.server.ts",
+        "outputMode": "static"
+      },
+      "configurations": {
+        "production": {
+          "budgets": [
+            {
+              "type": "initial",
+              "maximumWarning": "2mb",
+              "maximumError": "5mb"
+            },
+            {
+              "type": "anyComponentStyle",
+              "maximumWarning": "6kb",
+              "maximumError": "10kb"
+            }
+          ],
+          "outputHashing": "all"
+        },
+        "development": {
+          "optimization": false,
+          "extractLicenses": false,
+          "sourceMap": true
+        }
+      },
+      "defaultConfiguration": "production"
+    },
+    "serve": {
+      "executor": "@angular-devkit/build-angular:dev-server",
+      "configurations": {
+        "production": {
+          "buildTarget": "fastfood:build:production"
+        },
+        "development": {
+          "buildTarget": "fastfood:build:development"
+        }
+      },
+      "defaultConfiguration": "development",
+      "continuous": true
+    },
+    "extract-i18n": {
+      "executor": "@angular-devkit/build-angular:extract-i18n",
+      "options": {
+        "buildTarget": "fastfood:build"
+      }
+    },
+    "lint": {
+      "executor": "@nx/eslint:lint"
+    },
+    "serve-static": {
+      "executor": "@nx/web:file-server",
+      "options": {
+        "buildTarget": "fastfood:build",
+        "staticFilePath": "dist/apps/fastfood/browser",
+        "spa": true
+      }
+    }
+  }
+}

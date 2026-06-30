@@ -1,0 +1,42 @@
+<div class="header">
+  <mat-toolbar>
+    <button mat-icon-button aria-labelledby="Menu button" aria-label="Menu button" [matMenuTriggerFor]="navigationMenu">
+      <fa-icon [icon]="menuIcon"></fa-icon>
+    </button>
+
+    <mat-menu #navigationMenu="matMenu">
+      <button mat-menu-item (click)="goHome()">Home</button>
+      <button mat-menu-item (click)="goContact()">Contact</button>
+    </mat-menu>
+
+    <button mat-button (click)="goHome()"><h1>Beware of Fast Food</h1></button>
+    <span style="flex: 1 1 auto"></span>
+
+    <button
+      mat-icon-button
+      aria-labelledby="Settings button"
+      aria-label="Settings button"
+      [matTooltip]="'App Settings'"
+      [matMenuTriggerFor]="settingsMenu"
+    >
+      <fa-icon [icon]="settingsIcon"></fa-icon>
+    </button>
+    <mat-menu #settingsMenu="matMenu">
+      <lib-settings-widget [storageName]="storageName" (onSave)="save($event)"></lib-settings-widget>
+    </mat-menu>
+  </mat-toolbar>
+</div>
+
+<router-outlet></router-outlet>
+
+<div class="footer">
+  <mat-divider style="width: 100%"></mat-divider>
+
+  <div class="footer-message">This is an example message</div>
+
+  <lib-share
+    [youtubeLink]="'https://www.youtube.com'"
+    [linkedinLink]="'https://www.linkedin.com'"
+    [facebookLink]="'https://facebook.com'"
+  ></lib-share>
+</div>

@@ -1,0 +1,12 @@
+THINGS TO DO
+
+1. Copy paste app
+2. Change name
+3. Change in project.json to new name
+4. Navigate to app and run `firebase login --reauth` & `firebase init`
+5. Select Hosting with Github actions
+6. Authenticate with Github
+7. Type in `kurtisblaine/the-truth-faithspace` for GitHub repository
+8. Update the merge.yml file
+9. Update firebase.json to `public/browser`
+10. Update SEO things in `index.html`
