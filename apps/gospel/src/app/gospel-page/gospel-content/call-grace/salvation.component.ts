@@ -20,7 +20,7 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
     his family, eight in all, and two of every kind of animal with some extra animals for sacrifice; for animals were
     not afraid of man in those days because they were not killed by man for food. And all these point to the present
     time: for whoever enters in through the Door, that is to say, through Christ, will be saved from the flood of God's
-    wrath which is yet to come, which is coming upon the earth, which is a judgment not of water, but of fire; [this is
+    wrath which is yet to come, which is coming upon the earth, which is a judgment not of water, but of fire. [This is
     why it says, “For this you know with certainty, that no immoral or impure person or covetous man, who is an
     idolater, has an inheritance in the kingdom of Christ and God. Let no one deceive you with empty words,
     <b>for because of these things the wrath of God comes upon the sons of disobedience.</b>” (Ephesians 5:5-6) And,
@@ -30,7 +30,7 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
     you also once walked, when you were living in them.” (Colossians 3:5-7)]<br /><br />
 
     But Christ has become unto us who believe a refuge, a shelter, a protection from God's wrath; through God's
-    provision of grace, by His Son, He spares many who believe and trust in Him; and He is more trustworthy than wood,
+    provision of grace, by His Son, He spares many who believe and trust in Him. And He is more trustworthy than wood,
     for He is our Rock; for according to wood on the sea, it says, “There are three things which are too wonderful for
     me, Four which I do not understand: The way of an eagle in the sky, The way of a serpent on a rock,
     <b>The way of a ship in the middle of the sea</b>, And the way of a man with a maid.” (Proverbs 30:18-19) But there
@@ -88,17 +88,17 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
     But take heed! I admonish you: after the flood, those who knew of God's lovingkindness and forbearance by making a
     covenant with every living creature, and those who knew of His wrath in flooding the world with water, but sinned
     blatantly despite knowing these things - as it was with Sodom, as it was with Gomorrah - God judged, not with water,
-    but with fire and brimstone, raining it down from the sky - as it is with water - as a warning in these latter times
+    but with fire and brimstone, raining it down from the sky - as it is with water. As a warning in these latter times
     of the judgment of fire to those who refuse to obey the truth, living ungodly lives thereafter; He will judge them
-    with fire, a lake of fire - as it is with water - and fire, raining it down - as it is with water - and fire to
-    drink - as it is with water. "Oh, but today we have never seen the water as fire, ever since the beginning of the
-    world these things have always been the same! The fire we can see in the heavens, but it never comes down to the
-    earth." But with the revelation of the grace of God comes the revelation of the wrath of God; for Christ was the
-    first to preach openly about Gehenna; He was also the first to reveal the Good News. The world as we know it is
-    passing away and anyone found of it in the end will be found deserving judgment with it; but God calls us out ahead
-    of time, calling us to come to Christ for refuge. He wills that none should perish, but all come to the knowledge of
-    God, to repentance to everlasting life; and He has proved this, so much so in that He has made peace with us ahead
-    of the time through Jesus, our Savior; as the LORD declares,
+    with fire, a lake of fire - as it is with water - and fire, raining it down - as it is with water. And fire to drink
+    - as it is with water. "Oh, but today we have never seen the water as fire, ever since the beginning of the world
+    these things have always been the same! The fire we can see in the heavens, but it never comes down to the earth."
+    But with the revelation of the grace of God comes the revelation of the wrath of God; for Christ was the first to
+    preach openly about Gehenna; He was also the first to reveal the Good News. The world as we know it is passing away
+    and anyone found of it in the end will be found deserving judgment with it; but God calls us out ahead of time,
+    calling us to come to Christ for refuge. He wills that none should perish, but all come to the knowledge of God, to
+    repentance to everlasting life; and He has proved this, so much so in that He has made peace with us ahead of the
+    time through Jesus, our Savior; as the LORD declares,
     <blog-reference-tooltip [reference]="'Jeremiah 32:40'">
       I will make an everlasting covenant with them that I will not turn away from them, to do them good; and I will put
       the fear of Me in their hearts so that they will not turn away from Me.

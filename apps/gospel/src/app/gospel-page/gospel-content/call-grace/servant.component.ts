@@ -34,7 +34,7 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
     about His death many times, foretelling even how He would die. For just as Uriah, the Hittite, was sent by David,
     bearing in-hand the letter of his death, even so, he was innocent of wrong, so Christ was sent into the world with
     the message of His own death; Uriah bore in his hand bad news, but it is impossible for Christ to bear bad news,
-    only good, for the Father is in Him; so this message has become good news to us who believe, although it meant for
+    only good, for the Father is in Him. So this message has become good news to us who believe, although it meant for
     His death, that we may be joined to Another, namely God, our Father, who sent Him unto us to be Redeemer and Savior.
     For our sins have separated us from God, our iniquities caused Him to hide His face from us, but God has reconciled
     us to Himself through the body of Jesus Christ. For David could only marry Bathsheba if she were to be released by
@@ -141,7 +141,7 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
     life; and even yet, the people who ate meat with the blood, which is contrary to the law of Moses (Leviticus
     17:12-14), were not cut off (1 Samuel 14:32-34). And even though Saul sinned by making these foolish oaths and the
     people sinned by eating with the blood, it was Jonathan who was determined by lot, which is determined by God, to
-    have sinned, and the rest were freed; even though Jonathan did no wrong, only he ate a little bit of honey; despite
+    have sinned, and the rest were freed. Even though Jonathan did no wrong, only he ate a little bit of honey; despite
     these things, and despite the fact that Jonathan worked with God to bring about a great deliverance for Israel that
     day, he was still chosen by lot to die; but still yet, he lived thereafter; as it says about him,
     <blog-reference-tooltip [reference]="'1 Samuel 14:45'">
@@ -230,7 +230,7 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
     disarmed them and triumphed over them through the cross. He took the written debt of sin which was stored up against
     us along with the written ordinances, and He nailed them to the cross, paying for our transgressions and rescuing us
     from the elementary spiritual principles of this world, and the rudimentary commands such as "Do not touch" and "Do
-    not handle", to serve God in the new way of the Spirit and life; and for those who will in their mind to do good,
+    not handle", to serve God in the new way of the Spirit and life. And for those who will in their mind to do good,
     but do not have the power in their flesh to do that good: God gives them the power to do good. For Christ Jesus was
     clean, but became dirty to make us clean: for the bathwater is made dirty since it takes upon itself the filth of
     the one it cleanses. The dirty goes into the water and he comes out clean - not without the cost of the water
@@ -307,9 +307,9 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
     Christ's sufferings are many (Isaiah 53, Psalms 22, Psalms 35, Psalms 89); and the Scriptures of His betrayal are
     likewise (Psalms 109, Psalms 69, Psalms 41, Psalms 55); for it was according to God's predetermined plan that Christ
     would suffer for us, and there-after be exalted. And time would fail if I began to tell about Joseph, who was
-    betrayed by his brethren, and exalted to Pharaoh's right hand; or Job, who was righteous and yet smitten by God, but
-    he was restored twofold; or Samson, who was mocked by a great assembly of his enemies, and in his death, killed many
-    of his enemies; or Mordecai, who was predetermined to die on a stake, but he was exalted second highest in all of
+    betrayed by his brethren, and exalted to Pharaoh's right hand. Or Job, who was righteous and yet smitten by God, but
+    he was restored twofold. Or Samson, who was mocked by a great assembly of his enemies, and in his death, killed many
+    of his enemies. Or Mordecai, who was predetermined to die on a stake, but he was exalted second highest in all of
     Persia; or the prophets, who being sent by God, being disregarded, being rejected by their own, beaten and some
     killed, but obtained a better hope and a better resurrection. Among these, there are many other types found in the
     Scriptures which bring about conviction of the faith; as Paul said,

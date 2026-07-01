@@ -138,7 +138,7 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
     even the Passover; for even if we purge out every crumb of leaven in our lives, if we do not have the blood, our
     work is in vain. This is the thing Solomon seen when he prayed after the completion of the permanent temple of God;
     instead of praying, asking for the LORD God to forgive the people according to the ordinances of sacrifice even
-    though they were written according to the law; he says,
+    though they were written according to the law. He says,
     <blog-reference-tooltip [reference]="'2 Chronicles 6:46-49'">
       If they return to You with all their heart and with all their soul in the land of their captivity, where they have
       been taken captive, and pray toward their land which You have given to their fathers and the city which You have

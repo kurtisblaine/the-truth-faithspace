@@ -130,9 +130,9 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
     futility and search for answers. Do not follow the example of the disobedient who love their futility. See how the
     disobedient try to resist God, trying to reverse the curses which God has pronounced on the earth: thinking their
     life is forever, they fall into error; thinking their home is forever, they believe a lie. See how the world tries
-    to reverse things: for God gave woman pain in child-bearing, but they give numbing shots; for God made woman desire
-    for her husband, yet he rules over her, but they start feminist movements; for God cursed the ground so that in toil
-    it will produce its fruit, but they create technology that works at the push of a button; for God makes man to
+    to reverse things: for God gave woman pain in child-bearing, but they give numbing shots. For God made woman desire
+    for her husband, yet he rules over her, but they start feminist movements. For God cursed the ground so that in toil
+    it will produce its fruit, but they create technology that works at the push of a button. For God makes man to
     return to the dust in old age, but they have beauty products and wrinkling agents and plastic surgery; but whatever
     we try to do, we cannot reverse death: all of us will return to Him in the end, slave and free, rich and poor. So
     you see, our lives are set this way by God to lead us to Himself, for by the things of the world He sees to it that

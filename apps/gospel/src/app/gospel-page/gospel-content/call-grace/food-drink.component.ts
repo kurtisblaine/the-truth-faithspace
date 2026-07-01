@@ -52,7 +52,7 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
     </blog-reference-tooltip>
     So it is: when we are empty, or hungry, God's Word is perfected in us, but God opposes the proud, or the full; for
     God gives grace to the humble. When one is proud, he is full of himself, and God's grace is not useful to a proud
-    soul, for he tramples over it, even though it is a honeycomb; however, if the proud empties his soul in humility,
+    soul, for he tramples over it, even though it is a honeycomb. However, if the proud empties his soul in humility,
     God's grace works well in him; a humble man is filled up, not with the air of himself, but with the grace of Christ;
     as the writer of Hebrews says,
     <blog-reference-tooltip [reference]="'Hebrews 13:9-10'">

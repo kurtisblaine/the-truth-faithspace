@@ -8,9 +8,9 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
   imports: [CommonModule, ReferenceTooltipComponent],
   template: `<div>
     Alcohol and food, which are wholesome in themselves, which are given to us by God for our enjoyment, but are often
-    perverted into drunkenness and gluttony, and drugs, which are often used for an escape from reality, which are a
-    false refuge, which are often corrupted for one's own enjoyment rather than medicine, and the excessive love of
-    pleasure, which is dissipation, which is folly and waste, and any other corrupt desire which come from our lust,
+    perverted into drunkenness and gluttony. And drugs, which are often used for an escape from reality, which are a
+    false refuge, which are often corrupted for one's own enjoyment rather than medicine. And the excessive love of
+    pleasure, which is dissipation, which is folly and waste; and any other corrupt desire which come from our lust,
     which wages war against our soul, these will never sustain us - they only mask our deeply rooted issues for a little
     while and make life bearable for a short time. They come quickly and vanish quickly, for the same way they come, the
     same way they go. Is life so terrible that we need these? We all have our share in these during some time in our

@@ -52,9 +52,9 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
     the Answer. Love fulfills the entirety of the law, and the love of God has been poured out within our hearts through
     the Holy Spirit. Faith is the new covenant, the new testament; inaugurated by a new High Priest, Christ Jesus, with
     a better sacrifice, His own Self, confirmed by the apostles and prophets and founded on better promises - eternal,
-    not temporal - which are assured unto us by the promised Holy Spirit, by Whom we are newly born, by Whom we come to
+    not temporal. They are assured unto us by the promised Holy Spirit, by Whom we are newly born, by Whom we come to
     worship in the heavenly Jerusalem where Christ entered to make atonement for us. Jesus will return again, and the
-    blessed will partake in a better resurrection; He will make us to stand before Him in judgment; and all who partake
+    blessed will partake in a better resurrection. He will make us to stand before Him in judgment; and all who partake
     in the first resurrection, the second death holds no power over them - so judgment in the resurrection is for
     reward. So hold fast!
     <blog-reference-tooltip [reference]="'2 Corinthians 5:17'">
@@ -64,7 +64,7 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
     is circumcision anything, nor uncircumcision, but a new creation.” (Galatians 6:15) Christ Jesus takes away the old
     and sets up the new, superseding the law of God and inaugurating a law of faith; for He was saying, "You have heard
     that it was said." (the law of God) Then He was saying, "But I say to you." (the law of Christ) (As written in
-    Matthew 5:17-48); and so the former is the law of God, the latter is the law of faith; the former is the physical
+    Matthew 5:17-48). And so the former is the law of God, the latter is the law of faith; the former is the physical
     requirement, and the latter is the spiritual; for the physical comes first, then the spiritual. The former cleansed
     the flesh, but the latter the conscience (Hebrews 9:13-14). The law was given so that the disobedient would be
     revealed as disobedient, but Christ has revealed God: He was sent to forgive transgressors of their transgressions;
@@ -91,7 +91,7 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
       But we know that the law is good if one uses it lawfully, knowing this: that the law is not made for a righteous
       person, but for the lawless and insubordinate, for the ungodly and for sinners, for the unholy and profane, for
       murderers of fathers and murderers of mothers, for manslayers, for fornicators, for sodomites, for kidnappers, for
-      liars, for perjurers, and if there is any other thing that is contrary to sound doctrine, according to the
+      liars, for perjurers. And if there is any other thing that is contrary to sound doctrine, according to the
       glorious gospel of the blessed God which was committed to my trust.
     </blog-reference-tooltip>
     So if we are born anew of the Spirit, following after the Spirit, we are not subject to the law; if we are of the
@@ -133,7 +133,7 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
     God, pleasing Him and maintaining a good heart before Him; and he was chosen by God as king over His people. Now
     this is faith: knowing that God sees the heart, and striving for purity before Him; God does not see flesh as man
     sees, for everything that is hidden, God sees; and the hidden parts where no man sees, God sees; God sees all
-    things, especially the hidden things; as Christ, preaching faith, said,
+    things, especially the hidden things. As Christ, preaching faith, said,
     <blog-reference-tooltip [reference]="'Matthew 6:3-18'" [isJesusWord]="true">
       But when you give to the poor, do not let your left hand know what your right hand is doing, so that your giving
       will be in secret; and your Father who sees what is done in secret will reward you. (...) But you, when you pray,

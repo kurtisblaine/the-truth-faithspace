@@ -49,7 +49,7 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
     <br /><br />
 
     Pointing to Christ, Abraham offered His son Isaac on the altar to God, which was by God's own command, not that this
-    thought came from God, but the enemy planted it; as God says through Jeremiah, the prophet,
+    thought came from God, but the enemy planted it. As God says through Jeremiah, the prophet,
     <blog-reference-tooltip [reference]="'Jeremiah 19:5'"
       >They have built the high places of Baal to burn their sons in the fire as burnt offerings to Baal, which I did
       not command or decree, nor did it come into My mind.</blog-reference-tooltip
@@ -99,7 +99,7 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
     but to him, Joseph was dead, although he was only in Egypt; for he believed Joseph was dead. So Jacob let Benjamin,
     his only beloved son, go into the hands of his brothers to save his family from the famine, for they were going to
     Egypt to buy food. So Jacob gave up his one and only son, Benjamin, and gained him back from the dead, along with
-    another, Joseph who he received back from the dead; and likewise, the Father God gave up His Son, Jesus, to receive
+    another, Joseph who he received back from the dead. And likewise, the Father God gave up His Son, Jesus, to receive
     Him back again from the dead, and gained many other descendants through Him; as it says,
     <blog-reference-tooltip [reference]="'Isaiah 53:10'">
       If He would render Himself as a guilt offering,
@@ -123,9 +123,9 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
       Him, having forgiven us all our transgressions.
     </blog-reference-tooltip>
     So we are made alive with Christ through faith. Furthermore, Jacob considered Joseph's two sons, Ephraim and
-    Manasseh, his own sons; they were considered like Reuben and Simeon to him (Genesis 48:5); and likewise God sent His
+    Manasseh, his own sons; they were considered like Reuben and Simeon to him (Genesis 48:5). And likewise God sent His
     Son into the world and gained back many more descendants through Him, even descendants among many nations of the
-    world, even to the offspring of His offspring - these are them who are begotten by the Word of Truth; as it says,
+    world, even to the offspring of His offspring - these are them who are begotten by the Word of Truth. As it says,
     "As for Me, this is My covenant with them," says the LORD: "My Spirit which is upon you, and My words which I have
     put in your mouth shall not depart from your mouth, nor from the mouth of your offspring, nor from the mouth of your
     offspring's offspring," says the LORD, "from now and forever". (Isaiah 59:21)
@@ -135,7 +135,7 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
     The Father grafts us, even Gentiles, into God's household, the body of Christ, through faith in Jesus; He makes us
     sons of God by the Spirit of His Son, conforming us into His likeness; as it says, “For those whom He foreknew, He
     also predestined to become conformed to the image of His Son, so that He would be the firstborn among many
-    brethren;” (Romans 8:29) And then it says, “We all, with unveiled face, beholding as in a mirror the glory of the
+    brethren.” (Romans 8:29) And then it says, “We all, with unveiled face, beholding as in a mirror the glory of the
     Lord, are being transformed into the same image from glory to glory, just as from the Lord, the Spirit.” (2
     Corinthians 3:18) Now, the body performs the acts of the mind, and Christ is our Head; a member that goes astray has
     lost connection with the Head; as it says,
@@ -201,7 +201,7 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
     <br /><br />
 
     But do you not know, beloved, God first rescued His firstborn Israel from Egypt by a mighty hand, but later, when
-    they hardened their necks and kicked against Him and rebelled against Him for many years; then God handed them over
+    they hardened their necks and kicked against Him and rebelled against Him for many years. Then God handed them over
     to the Babylonians and the Assyrians, even defiling His own temple on their account? And they were sons of Israel,
     God's chosen people, saved by grace; but they were rejected by God because they rejected Him. For they were
     constantly forgetting God, and they were closing their ears and not believing in Him. The LORD God set up
@@ -216,9 +216,9 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
     He provides the Sacrifice; so therefore,
     <blog-reference-tooltip [reference]="'1 Peter 1:14-19'">
       As obedient children, do not be conformed to the former lusts which were yours in your ignorance, but like the
-      Holy One who called you, be holy yourselves also in all your behavior; because it is written, "YOU SHALL BE HOLY,
+      Holy One who called you, be holy yourselves also in all your behavior. Because it is written, "YOU SHALL BE HOLY,
       FOR I AM HOLY." If you address as Father the One who impartially judges according to each one's work, conduct
-      yourselves in fear during the time of your stay on earth; knowing that you were not redeemed with perishable
+      yourselves in fear during the time of your stay on earth. Knowing that you were not redeemed with perishable
       things like silver or gold from your futile way of life inherited from your forefathers, but with precious blood,
       as of a lamb unblemished and spotless, the blood of Christ. </blog-reference-tooltip
     ><lib-link [link]="baseUrl + '/drawings/draw/slaves-or-sons'">(See more about Sons and Slaves)</lib-link

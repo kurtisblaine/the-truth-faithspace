@@ -169,8 +169,8 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
     which once was a sect, a heresy, a false teaching, which was fought against, has now become world-wide good news.
     For who can fight against God and succeed? If this thing is not of God, it wouldn't have withstood. And yet we shoot
     rockets into the heavens to reach God, just as they tried in times past at the Tower of Babel, by their own might to
-    make a name for themselves, but they failed; for God sees to it that no-one can come near Him by their own self-will
-    or effort, so that no-one will be able to boast in His Presence; but rather, through the word of faith, through the
+    make a name for themselves, but they failed. For God sees to it that no-one can come near Him by their own self-will
+    or effort, so that no-one will be able to boast in His Presence. But rather, through the word of faith, through the
     word of truth, which says,
     <blog-reference-tooltip [reference]="'Romans 10:8-13'"
       >The word is near you, in your mouth and in your heart (that is, the word of faith that we proclaim); because, if
