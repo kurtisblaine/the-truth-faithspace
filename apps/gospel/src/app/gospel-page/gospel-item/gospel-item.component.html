@@ -13,7 +13,12 @@
         </div>
       </mat-card-subtitle>
       <mat-card-subtitle>
-        <lib-narrator [buttonStyle]="narratorStyle.Group" [text]="content?.innerText ?? ''"> </lib-narrator>
+        <lib-narrator
+          [buttonStyle]="narratorStyle.Group"
+          [text]="content?.innerText ?? ''"
+          [downloadLink]="downloadLink()"
+        >
+        </lib-narrator>
       </mat-card-subtitle>
     </mat-card-title-group>
   </mat-card-header>

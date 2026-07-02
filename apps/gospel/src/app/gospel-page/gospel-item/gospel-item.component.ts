@@ -22,6 +22,8 @@ export class GospelItemComponent extends SeoBaseComponent implements OnDestroy {
 
   public description = signal("");
   public section = signal("");
+  public downloadLink = signal("");
+
   public narratorStyle = NarratorStyle;
 
   @ViewChild("textContainer", { read: ViewContainerRef, static: false }) private textContainer!: ViewContainerRef;
@@ -34,6 +36,7 @@ export class GospelItemComponent extends SeoBaseComponent implements OnDestroy {
     const components = this.gospelItemService.init();
     const gospelItemMap = components.get(this.page());
     this.section.set(gospelItemMap.section);
+    this.downloadLink.set(gospelItemMap.audioFile);
 
     const gospelItemComponent = gospelItemMap.component;
     const component = this.textContainer.createComponent(gospelItemComponent);
