@@ -1,24 +1,29 @@
 import { isPlatformBrowser } from "@angular/common";
+import { HttpClient } from "@angular/common/http";
 import { Inject, inject, Injectable, OnDestroy, PLATFORM_ID, signal } from "@angular/core";
 import { MatSnackBar } from "@angular/material/snack-bar";
-import { BehaviorSubject } from "rxjs";
+import { BehaviorSubject, Subscription } from "rxjs";
 import { v4 } from "uuid";
 
 export enum SpeechStatus {
   Stopped = "Stopped",
   Playing = "Playing",
   Paused = "Paused",
+  Download = "Download",
 }
-
 @Injectable({
   providedIn: "root",
 })
 export class SpeechService implements OnDestroy {
   public speechSynthesis: SpeechSynthesis | null | undefined;
   private _snackBar = inject(MatSnackBar);
+  private _httpClient = inject(HttpClient);
+
+  private _cloudinaryBaseUrl = `https://res.cloudinary.com/dffihsa2y/`;
 
   public allStates = new Map<string, BehaviorSubject<SpeechStatus>>();
   public hasBrowserSupport = false;
+  private subscription!: Subscription;
 
   private currentlyPlayingId = new BehaviorSubject<string>("");
   public currentlyPlayingId$ = this.currentlyPlayingId.asObservable();
@@ -58,6 +63,10 @@ export class SpeechService implements OnDestroy {
 
   ngOnDestroy(): void {
     this.stop("all");
+
+    if (this.subscription) {
+      this.subscription.unsubscribe();
+    }
   }
 
   init() {
@@ -164,5 +173,25 @@ export class SpeechService implements OnDestroy {
         return;
       }
     });
+  }
+
+  public downloadAudio(url: string) {
+    if (this.subscription) {
+      this.subscription.unsubscribe();
+    }
+
+    this.subscription = this._httpClient
+      .get(`${this._cloudinaryBaseUrl}video/upload/${url}`, { responseType: "blob" })
+      .subscribe((blob: any) => {
+        const blobUrl = window.URL.createObjectURL(blob);
+
+        const anchor = document.createElement("a");
+        anchor.href = blobUrl;
+        anchor.download = url.split(/[\\/]/).pop()!.toString();
+
+        anchor.click();
+
+        window.URL.revokeObjectURL(blobUrl);
+      });
   }
 }

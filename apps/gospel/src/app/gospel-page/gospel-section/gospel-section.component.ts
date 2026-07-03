@@ -1,8 +1,9 @@
-import { AfterViewInit, ChangeDetectorRef, Component, inject, input, Input } from "@angular/core";
+import { AfterViewInit, ChangeDetectorRef, Component, computed, inject, input, Input, Signal } from "@angular/core";
 import { MatCardModule } from "@angular/material/card";
 import { MatProgressSpinnerModule } from "@angular/material/progress-spinner";
 import { BASE_URL, LinkComponent, NarratorComponent, NarratorStyle } from "shared";
 import { DashToTitlePipe } from "../../shared/pipes/dash-title.pipe";
+import { GospelItemService } from "../gospel-item/gospel-item.service";
 
 @Component({
   selector: "blog-gospel-section",
@@ -17,9 +18,14 @@ export class GospelSectionComponent implements AfterViewInit {
   public page = input<string>();
   public baseUrl = inject(BASE_URL);
 
+  public audioFileLink: Signal<string>;
+
   public narratorStyle = NarratorStyle;
 
-  constructor(private changeDetector: ChangeDetectorRef) {}
+  constructor(private changeDetector: ChangeDetectorRef, private gospelItemService: GospelItemService) {
+    const gospelItems = this.gospelItemService.init();
+    this.audioFileLink = computed(() => gospelItems.get(this.page()).audioFile);
+  }
 
   public ngAfterViewInit(): void {
     this.changeDetector.detectChanges();

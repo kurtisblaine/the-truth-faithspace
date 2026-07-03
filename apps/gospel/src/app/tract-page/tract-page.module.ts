@@ -2,7 +2,7 @@ import { CommonModule, NgOptimizedImage } from "@angular/common";
 import { NgModule } from "@angular/core";
 import { MatListModule } from "@angular/material/list";
 import { RouterModule, Routes } from "@angular/router";
-import { LinkComponent } from "shared";
+import { LibFaIconComponent, LinkComponent } from "shared";
 import { PageHeaderComponent } from "../shared/components/page-header.component";
 import { TractPageComponent } from "./tract-page.component";
 const routes: Routes = [
@@ -21,6 +21,7 @@ const routes: Routes = [
     NgOptimizedImage,
     LinkComponent,
     PageHeaderComponent,
+    LibFaIconComponent,
   ],
 })
 export class TractPageModule {}

@@ -1,4 +1,5 @@
 import { Component } from "@angular/core";
+import { faBook, faBookmark, faCreditCard, faFileAudio } from "@fortawesome/free-solid-svg-icons";
 import { SeoBaseComponent } from "shared";
 
 @Component({
@@ -9,6 +10,11 @@ import { SeoBaseComponent } from "shared";
 })
 export class TractPageComponent extends SeoBaseComponent {
   override keywords: string = "tracts, bookmarks, cards, reminder, print, truth, eternity";
+
+  public zipFileIcon = faFileAudio;
+  public bookIcon = faBook;
+  public bookmarkIcon = faBookmark;
+  public cardIcon = faCreditCard;
 
   constructor() {
     super();

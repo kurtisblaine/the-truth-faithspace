@@ -1,37 +1,48 @@
 <ng-container [ngSwitch]="buttonStyle">
-  <mat-button-toggle-group
-    *ngSwitchCase="narratorStyle.Group"
-    [(ngModel)]="thisLocalState"
-    style="margin-bottom: 5px"
-    [hideSingleSelectionIndicator]="true"
-  >
-    <mat-button-toggle
-      (click)="startReading()"
-      [value]="speechStatus.Playing"
-      [disabled]="isAnotherPlaying"
-      aria-labelledby="Play button"
-      aria-label="Play button"
+  <div *ngSwitchCase="narratorStyle.Group">
+    <mat-button-toggle-group
+      [(ngModel)]="thisLocalState"
+      style="margin-bottom: 5px"
+      [hideSingleSelectionIndicator]="true"
     >
-      <lib-fa-icon [icon]="playIcon"></lib-fa-icon>
-    </mat-button-toggle>
-    <mat-button-toggle
-      (click)="pauseReading()"
-      [value]="speechStatus.Paused"
-      [disabled]="isAnotherPlaying"
-      aria-labelledby="Pause button"
-      aria-label="Pause button"
-    >
-      <lib-fa-icon [icon]="pauseIcon"></lib-fa-icon>
-    </mat-button-toggle>
-    <mat-button-toggle
-      (click)="stopReading()"
-      [value]="speechStatus.Stopped"
-      aria-labelledby="Stop button"
-      aria-label="Stop button"
-    >
-      <lib-fa-icon [icon]="stopIcon"></lib-fa-icon>
-    </mat-button-toggle>
-  </mat-button-toggle-group>
+      <mat-button-toggle
+        (click)="startReading()"
+        [value]="speechStatus.Playing"
+        [disabled]="isAnotherPlaying"
+        aria-labelledby="Play button"
+        aria-label="Play button"
+      >
+        <lib-fa-icon [icon]="playIcon"></lib-fa-icon>
+      </mat-button-toggle>
+      <mat-button-toggle
+        (click)="pauseReading()"
+        [value]="speechStatus.Paused"
+        [disabled]="isAnotherPlaying"
+        aria-labelledby="Pause button"
+        aria-label="Pause button"
+      >
+        <lib-fa-icon [icon]="pauseIcon"></lib-fa-icon>
+      </mat-button-toggle>
+      <mat-button-toggle
+        (click)="stopReading()"
+        [value]="speechStatus.Stopped"
+        aria-labelledby="Stop button"
+        aria-label="Stop button"
+      >
+        <lib-fa-icon [icon]="stopIcon"></lib-fa-icon>
+      </mat-button-toggle>
+      @if(downloadLink) {
+      <mat-button-toggle
+        (click)="downloadAudio(downloadLink)"
+        [value]="speechStatus.Download"
+        aria-labelledby="Download button"
+        aria-label="Download button"
+      >
+        <lib-fa-icon [icon]="downloadIcon"></lib-fa-icon>
+      </mat-button-toggle>
+      }
+    </mat-button-toggle-group>
+  </div>
 
   <div *ngSwitchCase="narratorStyle.Flex" style="display: flex; justify-content: center; margin-bottom: 5px">
     <button mat-icon-button (click)="startReading()">
@@ -45,7 +56,7 @@
     </button>
   </div>
 
-  <div *ngSwitchCase="narratorStyle.Fab" style="display: flex; justify-content: center; margin-bottom: px">
+  <div *ngSwitchCase="narratorStyle.Fab" style="display: flex; justify-content: center; margin-bottom: 5px">
     <button
       mat-mini-fab
       (click)="startReading()"
@@ -75,6 +86,18 @@
     >
       <lib-fa-icon [icon]="stopIcon"></lib-fa-icon>
     </button>
+
+    @if(downloadLink) {
+    <button
+      mat-mini-fab
+      (click)="downloadAudio(downloadLink)"
+      aria-labelledby="Download button"
+      aria-label="Download button"
+      style="margin-left: 5px"
+    >
+      <lib-fa-icon [icon]="downloadIcon"></lib-fa-icon>
+    </button>
+    }
   </div>
 </ng-container>
 

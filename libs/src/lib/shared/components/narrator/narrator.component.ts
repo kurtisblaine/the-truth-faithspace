@@ -3,7 +3,7 @@ import { ChangeDetectorRef, Component, Input, OnDestroy, OnInit, ViewChild, View
 import { FormsModule } from "@angular/forms";
 import { MatButtonModule } from "@angular/material/button";
 import { MatButtonToggleModule } from "@angular/material/button-toggle";
-import { faPause, faPlay, faStop } from "@fortawesome/free-solid-svg-icons";
+import { faDownload, faPause, faPlay, faStop } from "@fortawesome/free-solid-svg-icons";
 import { Subscription } from "rxjs";
 import { LibFaIconComponent } from "../icon/fa-icon.component";
 import { SpeechService, SpeechStatus } from "./speech.service";
@@ -22,12 +22,14 @@ export enum NarratorStyle {
 export class NarratorComponent implements OnDestroy, OnInit {
   @Input() public buttonStyle = NarratorStyle.Fab;
   @Input() public text = "";
+  @Input() public downloadLink = "";
 
   public narratorStyle = NarratorStyle;
   public speechStatus = SpeechStatus;
   public playIcon = faPlay;
   public pauseIcon = faPause;
   public stopIcon = faStop;
+  public downloadIcon = faDownload;
 
   private subscription!: Subscription;
   private playingSubscription!: Subscription;
@@ -94,5 +96,9 @@ export class NarratorComponent implements OnDestroy, OnInit {
 
   stopReading() {
     this.speechService.stop(this.componentId);
+  }
+
+  downloadAudio(url: string) {
+    this.speechService.downloadAudio(url);
   }
 }

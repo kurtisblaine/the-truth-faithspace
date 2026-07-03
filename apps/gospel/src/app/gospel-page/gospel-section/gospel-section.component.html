@@ -7,7 +7,12 @@
         </lib-link>
       </mat-card-title>
       <mat-card-subtitle>
-        <lib-narrator [text]="paragraphContent?.innerText" [buttonStyle]="narratorStyle.Fab"> </lib-narrator>
+        <lib-narrator
+          [text]="paragraphContent?.innerText"
+          [buttonStyle]="narratorStyle.Fab"
+          [downloadLink]="audioFileLink()"
+        >
+        </lib-narrator>
       </mat-card-subtitle>
     </mat-card-title-group>
   </mat-card-header>
