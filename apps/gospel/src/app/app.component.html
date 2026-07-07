@@ -65,7 +65,7 @@
       </lib-link>
       <lib-link [link]="`${baseUrl}/tracts`" [isNewPage]="false">
         <mat-list-item lines="3" (click)="drawer.close()">
-          <lib-fa-icon matListItemIcon [icon]="tractIcon"></lib-fa-icon>
+          <lib-fa-icon matListItemIcon [icon]="giftsIcon"></lib-fa-icon>
           <span matListItemTitle>Tracts</span>
           <span>Tracts to communicate truth in a quick & effective way.</span>
         </mat-list-item>
@@ -131,6 +131,13 @@
         <lib-link [link]="`${baseUrl}/truth`" [isNewPage]="false">
           <button mat-button (click)="drawer.close()"><div style="font-size: 20px">The Good News</div></button>
         </lib-link>
+
+        <lib-link [link]="`${baseUrl}/tracts`" [isNewPage]="false">
+          <button mat-icon-button (click)="drawer.close()" [matTooltip]="'Gifts'">
+            <lib-fa-icon matListItemIcon [icon]="giftsIcon"></lib-fa-icon>
+          </button>
+        </lib-link>
+
         <span style="flex: 1 1 auto"></span>
 
         <lib-link [link]="`${baseUrl}/truth`" [isNewPage]="false">

@@ -9,9 +9,9 @@ import {
   faBrain,
   faDumbbell,
   faEnvelope,
-  faFile,
   faGavel,
   faGears,
+  faGifts,
   faInfoCircle,
   faLink,
   faMusic,
@@ -69,7 +69,7 @@ export class AppComponent extends SeoBaseComponent implements OnInit {
   public mailIcon = faEnvelope;
   public discernIcon = faGavel;
   public drawingIcon = faPenToSquare;
-  public tractIcon = faFile;
+  public giftsIcon = faGifts;
   public resourceIcon = faLink;
   public gospelIcon = faNewspaper;
   public bookIcon = faBible;
