@@ -1,0 +1,67 @@
+.header {
+  position: fixed !important; //override the toolbar in app.component
+}
+
+.header-title {
+  letter-spacing: 5px;
+}
+
+.header-pane {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+}
+
+.header-pane,
+.home-image {
+  height: 85vh;
+}
+
+.header-caption {
+  letter-spacing: 4px;
+  margin-bottom: 10px;
+  color: black;
+}
+
+.header-title,
+.header-pane,
+.header-caption {
+  z-index: 1;
+}
+
+.home-image {
+  position: relative;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
+  align-content: end;
+
+  box-shadow: inset 0 0 0 100vmax rgba(0, 0, 0, 0.1);
+}
+
+.w3-container {
+  padding: 0.01em 16px;
+}
+
+.w3-container:after,
+.w3-container:before {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.w3-padding-64 {
+  padding-top: 64px !important;
+  padding-bottom: 64px !important;
+}
+
+.w3-center {
+  display: inline-block;
+  width: 100%;
+  text-align: center !important;
+}

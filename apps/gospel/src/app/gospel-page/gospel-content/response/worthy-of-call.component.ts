@@ -131,7 +131,7 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
       Who may ascend into the hill of the LORD? And who may stand in His holy place? He who has clean hands and a pure
       heart, Who has not lifted up his soul to falsehood And has not sworn deceitfully. He shall receive a blessing from
       the LORD And righteousness from the God of his salvation. This is the generation of those who seek Him, Who seek
-      Your face—even Jacob. Selah.
+      Your face—even Jacob.
     </blog-reference-tooltip>
     <blog-reference-tooltip [reference]="'Psalms 15:1-5'">
       O LORD, who may abide in Your tent? Who may dwell on Your holy hill? He who walks with integrity, and works

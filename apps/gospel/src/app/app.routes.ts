@@ -1,7 +1,7 @@
 import { Routes } from "@angular/router";
 
 export const routes: Routes = [
-  { path: "", pathMatch: "full", redirectTo: "truth" },
+  { path: "", loadChildren: () => import("./welcome-page/welcome-page.module").then((m) => m.WelcomePageModule) },
   {
     path: "home",
     loadChildren: () => import("./home-page/home-page.module").then((m) => m.HomePageModule),
@@ -31,7 +31,7 @@ export const routes: Routes = [
     loadChildren: () => import("./discern-page/discern-page.module").then((m) => m.DiscernPageModule),
   },
   {
-    path: "tracts",
+    path: "gifts",
     loadChildren: () => import("./tract-page/tract-page.module").then((m) => m.TractPageModule),
   },
   {

@@ -23,6 +23,7 @@ import {
       <a
         mat-mini-fab
         [href]="facebookLink()"
+        [target]="'_blank'"
         [matTooltip]="'Facebook'"
         aria-labelledby="Facebook Link"
         aria-label="Facebook Link"
@@ -33,6 +34,7 @@ import {
       <a
         mat-mini-fab
         [href]="youtubeLink()"
+        [target]="'_blank'"
         [matTooltip]="'Youtube'"
         aria-labelledby="Youtube Link"
         aria-label="Youtube Link"
@@ -43,6 +45,7 @@ import {
       <a
         mat-mini-fab
         [href]="amazonLink()"
+        [target]="'_blank'"
         [matTooltip]="'Amazon'"
         aria-labelledby="Amazon Link"
         aria-label="Amazon Link"
@@ -53,6 +56,7 @@ import {
       <a
         mat-mini-fab
         [href]="githubLink()"
+        [target]="'_blank'"
         [matTooltip]="'Github'"
         aria-labelledby="Github Link"
         aria-label="Github Link"
@@ -63,6 +67,7 @@ import {
       <a
         mat-mini-fab
         [href]="linkedinLink()"
+        [target]="'_blank'"
         [matTooltip]="'LinkedIn'"
         aria-labelledby="LinkedIn Link"
         aria-label="LinkedIn Link"
@@ -73,6 +78,7 @@ import {
       <a
         mat-mini-fab
         [href]="soundCloudLink()"
+        [target]="'_blank'"
         [matTooltip]="'Sound Cloud'"
         aria-labelledby="Sound Cloud Link"
         aria-label="Sound Cloud Link"
@@ -83,6 +89,7 @@ import {
       <a
         mat-mini-fab
         [href]="redditLink()"
+        [target]="'_blank'"
         [matTooltip]="'Reddit'"
         aria-labelledby="Reddit Link"
         aria-label="Reddit Link"
@@ -93,6 +100,7 @@ import {
       <a
         mat-mini-fab
         [href]="discordLink()"
+        [target]="'_blank'"
         [matTooltip]="'Discord'"
         aria-labelledby="Discord Link"
         aria-label="Discord Link"
@@ -100,7 +108,14 @@ import {
         <fa-icon [size]="'xl'" [icon]="discordIcon"></fa-icon>
       </a>
       }@if(slackLink()){
-      <a mat-mini-fab [href]="slackLink()" [matTooltip]="'Slack'" aria-labelledby="Slack Link" aria-label="Slack Link">
+      <a
+        mat-mini-fab
+        [href]="slackLink()"
+        [target]="'_blank'"
+        [matTooltip]="'Slack'"
+        aria-labelledby="Slack Link"
+        aria-label="Slack Link"
+      >
         <fa-icon [size]="'xl'" [icon]="slackIcon"></fa-icon>
       </a>
       }
