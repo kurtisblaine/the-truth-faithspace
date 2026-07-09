@@ -173,7 +173,7 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
     love one another, God abides in us, and His love is perfected in us.” (1 John 4:12) If we do as He commands, then we
     will pray to the Father and He will answer us (1 John 3:21-22); and we will have great confidence in the day of
     salvation (1 John 2:28, 1 John 4:17). Therefore, abide! As the LORD God says, “It is I who answer and look after
-    you. I am like a luxuriant cypress; From Me comes your fruit.” (Hosea 14:8)
+    you. I am like a luxuriant cypress; From Me comes your fruit.” (Hosea 14:8) Amen.
   </div>`,
   styles: ``,
   changeDetection: ChangeDetectionStrategy.OnPush,

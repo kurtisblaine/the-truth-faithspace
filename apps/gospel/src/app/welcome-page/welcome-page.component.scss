@@ -2,8 +2,14 @@
   position: fixed !important; //override the toolbar in app.component
 }
 
+:host {
+  display: block;
+  padding: 14px;
+}
+
 .header-title {
   letter-spacing: 5px;
+  padding-bottom: 20px;
 }
 
 .header-pane {
@@ -18,6 +24,11 @@
 .header-pane,
 .home-image {
   height: 85vh;
+  height: 85dvh;
+}
+
+button {
+  margin: 3px;
 }
 
 .header-caption {
@@ -42,6 +53,11 @@
   align-content: end;
 
   box-shadow: inset 0 0 0 100vmax rgba(0, 0, 0, 0.1);
+}
+
+.question-box,
+p {
+  padding-bottom: 7px;
 }
 
 .w3-container {

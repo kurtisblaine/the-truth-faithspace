@@ -67,7 +67,7 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
       from all the toil and striving of heart with which he toils beneath the sun? For all his days are full of sorrow,
       and his work is a vexation. Even in the night his heart does not rest. This also is vanity.
     </blog-reference-tooltip>
-    But what is vanity? Futility is worthlessness, emptiness, aimlessness, not having a point or direction, wandering
+    But what is vanity? Vanity is worthlessness, emptiness, aimlessness, not having a point or direction, wandering
     about in blackest darkness. It does not see; it is always doing much, but it is accomplishing little; it is speaking
     much, but getting nothing done; it is dreaming, but living as a passing shadow. What then, do we despair? But isn't
     that vain as well, a work of the wind? Why should we despair when there is hope.
@@ -131,12 +131,12 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
     disobedient try to resist God, trying to reverse the curses which God has pronounced on the earth: thinking their
     life is forever, they fall into error; thinking their home is forever, they believe a lie. See how the world tries
     to reverse things: for God gave woman pain in child-bearing, but they give numbing shots. For God made woman desire
-    for her husband, yet he rules over her, but they start feminist movements. For God cursed the ground so that in toil
-    it will produce its fruit, but they create technology that works at the push of a button. For God makes man to
-    return to the dust in old age, but they have beauty products and wrinkling agents and plastic surgery; but whatever
-    we try to do, we cannot reverse death: all of us will return to Him in the end, slave and free, rich and poor. So
-    you see, our lives are set this way by God to lead us to Himself, for by the things of the world He sees to it that
-    no man shall see the light of life.
+    for her husband, he rules over her, but they start feminist movements. For God cursed the ground so that in toil it
+    will produce its fruit, but they create technology that works at the push of a button. For God makes man to return
+    to the dust in old age, but they have beauty products and wrinkling agents and plastic surgery; but whatever we try
+    to do, we cannot reverse death: all of us will return to Him in the end, slave and free, rich and poor. So you see,
+    our lives are set this way by God to lead us to Himself, for by the things of the world He sees to it that no man
+    shall see the light of life.
   </div>`,
   styles: ``,
   changeDetection: ChangeDetectionStrategy.OnPush,

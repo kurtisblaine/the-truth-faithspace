@@ -2,212 +2,259 @@
   <img fill style="object-position: top" [ngSrc]="'../../assets/toastmasterz.webp'" alt="" priority />
 
   <div class="header-pane">
-    <h1 class="header-title fixed-primary-color" [@slideInFromRight]>THE LIGHT OF LIFE</h1>
-    <h2 class="header-caption" [@slideInFromLeft]>Text from the Left</h2>
-    <h3 class="header-caption" [@slideInFromLeft]>Text from the Left</h3>
+    <h1 class="header-title fixed-primary-text-color" [@slideInFromRight]>THE LIGHT OF LIFE</h1>
+    <h2 class="header-caption" [@slideInFromLeft]>
+      Those in the dark must feel their way around, for they do not have the light to see by;
+    </h2>
+    <h2 class="header-caption" [@slideInFromLeft]>
+      <b>But Jesus Christ</b> came into the world as the light of the world, so that men might walk by Him and have
+      <span class="fixed-primary-text-color">THE LIGHT OF LIFE</span>
+    </h2>
+
+    <!-- <div style="padding: 20px">
+      <div [@slideInFromRight] class="question-box">
+        <h3 class="header-caption">Who can walk the path without the light?</h3>
+        <h4 class="header-caption">
+          "If anyone walks in the night, he stumbles, because the light is not in him." (Jhn 11:10)
+        </h4>
+      </div>
+
+      <div [@slideInFromLeft] class="question-box">
+        <h3 class="header-caption">Where is the light found except from above?</h3>
+        <h4 class="header-caption">
+          “Every good thing given and every perfect gift is from above, coming down from the Father of lights, with whom
+          there is no variation or shifting shadow.” (Jas 1:17)
+        </h4>
+      </div>
+
+      <div [@slideInFromRight] class="question-box">
+        <h3 class="header-caption">What do you know that lives away from the light?</h3>
+        <h4 class="header-caption">
+          “There was the true Light which, coming into the world, enlightens every man.” (Jhn 1:9)
+        </h4>
+      </div>
+    </div> -->
   </div>
-</div>
 
-<mat-divider></mat-divider>
+  <mat-divider></mat-divider>
 
-<div class="w3-container w3-padding-64 w3-center">
-  <div #gospelHeader>
-    @defer (on viewport(gospelHeader)) {
-    <h2 [@slideInFromRight]>THE GOOD NEWS</h2>
-    }
-  </div>
-
-  <div #gospelSubHeader>
-    @defer (on viewport(gospelSubHeader)) {
-    <p [@slideInFromLeft]>Understand the problem with the present world and hear the Good News of the Kingdom of God</p>
-    <div class="button-section-group">
-      <lib-link [link]="'truth#the-danger'" [isNewPage]="false">
-        <button
-          [@slideInFromLeft]
-          matButton="elevated"
-          aria-labelledby="The Danger button"
-          aria-label="The Danger button"
-          class="red-theme-dark-mode"
-        >
-          THE DANGER
-        </button>
-      </lib-link>
-      <lib-link [link]="'truth#the-futility'" [isNewPage]="false">
-        <button
-          [@slideInFromLeft]
-          matButton="elevated"
-          aria-labelledby="The Futility button"
-          aria-label="The Futility button"
-          class="red-theme-dark-mode"
-        >
-          THE FUTILITY
-        </button>
-      </lib-link>
-      <lib-link [link]="'truth#the-safety'" [isNewPage]="false">
-        <button
-          [@slideInFromLeft]
-          matButton="elevated"
-          aria-labelledby="The Saftey button"
-          aria-label="The Saftey button"
-          class="light-mode"
-        >
-          THE SAFETY
-        </button>
-      </lib-link>
-      <lib-link [link]="'truth#the-call'" [isNewPage]="false">
-        <button
-          [@slideInFromLeft]
-          matButton="elevated"
-          aria-labelledby="The Call button"
-          aria-label="The Call button"
-          class="light-mode"
-        >
-          THE CALL
-        </button>
-      </lib-link>
-      <lib-link [link]="'truth#our-response'" [isNewPage]="false">
-        <button
-          [@slideInFromLeft]
-          matButton="elevated"
-          aria-labelledby="Our Response button"
-          aria-label="Our Response button"
-          class="red-theme-light-mode"
-        >
-          OUR RESPONSE
-        </button>
-      </lib-link>
-      <lib-link [link]="'truth#the-day-of-the-lord'" [isNewPage]="false">
-        <button
-          [@slideInFromLeft]
-          matButton="elevated"
-          aria-labelledby="The Day of the Lord button"
-          aria-label="The Day of the Lord button"
-          class="red-theme-light-mode"
-        >
-          THE DAY OF THE LORD
-        </button>
-      </lib-link>
+  <div class="w3-container w3-padding-64 w3-center">
+    <div #gospelHeader>
+      @defer (on viewport(gospelHeader)) {
+      <h2 [@slideInFromRight]>THE GOOD NEWS</h2>
+      }
     </div>
-    }
-  </div>
-</div>
 
-<mat-divider></mat-divider>
-
-<div class="w3-container w3-padding-64 w3-center">
-  <div #bibleHeader>
-    @defer (on viewport(bibleHeader)) {
-    <h2 [@slideInFromRight]>THE SCRIPTURES</h2>
-    }
-  </div>
-
-  <div #bibleSubHeader>
-    @defer (on viewport(bibleSubHeader)) {
-    <p [@slideInFromLeft]>Read the Holy Scriptures in your native tongue</p>
-    <lib-link [link]="'https://thewordof.life'">
-      <button
-        [@slideInFromLeft]
-        mat-flat-button
-        (click)="navigateToBibleApp()"
-        aria-labelledby="Open Bible button"
-        aria-label="Open Bible button"
-      >
-        OPEN THE BIBLE
-      </button>
-    </lib-link>
-    }
-  </div>
-</div>
-
-<mat-divider></mat-divider>
-
-<div class="w3-container w3-padding-64 w3-center">
-  <div #giftHeader>
-    @defer (on viewport(giftHeader)) {
-    <h2 [@slideInFromRight]>GIFTS</h2>
-    }
-  </div>
-
-  <div #giftSubHeader>
-    @defer (on viewport(giftSubHeader)) {
-    <p [@slideInFromLeft]>We don't ask anything from you, but to give yourself to the Lord.</p>
-    <p [@slideInFromLeft]>Here are some gifts from us to encourage you in that</p>
-    <lib-link [link]="'gifts'" [isNewPage]="false">
-      <button [@slideInFromLeft] mat-flat-button aria-labelledby="Gifts button" aria-label="Gifts button">GIFTS</button>
-    </lib-link>
-    }
-  </div>
-</div>
-
-<mat-divider></mat-divider>
-
-<div class="w3-container w3-padding-64 w3-center">
-  <div #blogsHeader>
-    @defer (on viewport(blogsHeader)) {
-    <h2 [@slideInFromRight]>BLOGS</h2>
-    }
-  </div>
-
-  <div #blogsSubHeader>
-    @defer (on viewport(blogsSubHeader)) {
-    <p [@slideInFromLeft]>I post detailed scripture studies about various topics</p>
-    <lib-link [link]="'edifications'" [isNewPage]="false">
-      <button [@slideInFromLeft] mat-flat-button aria-labelledby="Edifications button" aria-label="Edifications button">
-        EDIFICATIONS
-      </button>
-    </lib-link>
-    <lib-link [link]="'discernments'" [isNewPage]="false">
-      <button [@slideInFromLeft] mat-flat-button aria-labelledby="Discernments button" aria-label="Discernments button">
-        DISCERNMENTS
-      </button>
-    </lib-link>
-    <lib-link [link]="'insights'" [isNewPage]="false">
-      <button [@slideInFromLeft] mat-flat-button aria-labelledby="Insights button" aria-label="Insights button">
-        INSIGHTS
-      </button>
-    </lib-link>
-    <lib-link [link]="'poems'" [isNewPage]="false">
-      <button [@slideInFromLeft] mat-flat-button aria-labelledby="Poems button" aria-label="Poems button">POEMS</button>
-    </lib-link>
-    <lib-link [link]="'studies'" [isNewPage]="false">
-      <button [@slideInFromLeft] mat-flat-button aria-labelledby="Studies button" aria-label="Studies button">
-        STUDIES
-      </button>
-    </lib-link>
-    <lib-link [link]="'drawings'" [isNewPage]="false">
-      <button [@slideInFromLeft] mat-flat-button aria-labelledby="Drawings button" aria-label="Drawings button">
-        DRAWINGS
-      </button>
-    </lib-link>
-    }
-  </div>
-</div>
-
-<mat-divider></mat-divider>
-
-<div class="w3-container w3-padding-64 w3-center">
-  <div #aboutHeader>
-    @defer (on viewport(aboutHeader)) {
-    <h2 [@slideInFromRight]>INFORMATION</h2>
-    }
+    <div #gospelSubHeader>
+      @defer (on viewport(gospelSubHeader)) {
+      <p [@slideInFromLeft]>
+        Understand the problem with the present world and believe the Good News about the Kingdom of God
+      </p>
+      <div class="button-section-group">
+        <lib-link [link]="'truth#the-danger'">
+          <button
+            [@slideInFromLeft]
+            matButton="elevated"
+            aria-labelledby="The Danger button"
+            aria-label="The Danger button"
+            class="red-theme-dark-mode"
+          >
+            THE DANGER
+          </button>
+        </lib-link>
+        <lib-link [link]="'truth#the-futility'">
+          <button
+            [@slideInFromLeft]
+            matButton="elevated"
+            aria-labelledby="The Futility button"
+            aria-label="The Futility button"
+            class="red-theme-dark-mode"
+          >
+            THE FUTILITY
+          </button>
+        </lib-link>
+        <lib-link [link]="'truth#the-safety'">
+          <button
+            [@slideInFromLeft]
+            matButton="elevated"
+            aria-labelledby="The Saftey button"
+            aria-label="The Saftey button"
+            class="light-mode"
+          >
+            THE SAFETY
+          </button>
+        </lib-link>
+        <lib-link [link]="'truth#the-call'">
+          <button
+            [@slideInFromLeft]
+            matButton="elevated"
+            aria-labelledby="The Call button"
+            aria-label="The Call button"
+            class="light-mode"
+          >
+            THE CALL
+          </button>
+        </lib-link>
+        <lib-link [link]="'truth#our-response'">
+          <button
+            [@slideInFromLeft]
+            matButton="elevated"
+            aria-labelledby="Our Response button"
+            aria-label="Our Response button"
+            class="red-theme-light-mode"
+          >
+            OUR RESPONSE
+          </button>
+        </lib-link>
+        <lib-link [link]="'truth#the-day-of-the-lord'">
+          <button
+            [@slideInFromLeft]
+            matButton="elevated"
+            aria-labelledby="The Day of the Lord button"
+            aria-label="The Day of the Lord button"
+            class="red-theme-light-mode"
+          >
+            THE DAY OF THE LORD
+          </button>
+        </lib-link>
+      </div>
+      }
+    </div>
   </div>
 
-  <div #aboutSubHeader>
-    @defer (on viewport(aboutSubHeader)) {
-    <p [@slideInFromLeft]>Learn about the author and send him a message</p>
-    <lib-link [link]="'home'">
-      <button
-        [@slideInFromLeft]
-        mat-flat-button
-        aria-labelledby="Open About Page button"
-        aria-label="Open About Page button"
-      >
-        ABOUT
-      </button>
-      <button [@slideInFromLeft] mat-flat-button aria-labelledby="Contact button" aria-label="Contact button">
-        CONTACT
-      </button>
-    </lib-link>
-    }
+  <mat-divider></mat-divider>
+
+  <div class="w3-container w3-padding-64 w3-center">
+    <div #bibleHeader>
+      @defer (on viewport(bibleHeader)) {
+      <h2 [@slideInFromRight]>THE SCRIPTURES</h2>
+      }
+    </div>
+
+    <div #bibleSubHeader>
+      @defer (on viewport(bibleSubHeader)) {
+      <p [@slideInFromLeft]>Read the Holy Scriptures in your native tongue</p>
+      <lib-link [link]="'https://thewordof.life'">
+        <button
+          [@slideInFromLeft]
+          mat-flat-button
+          (click)="navigateToBibleApp()"
+          aria-labelledby="Open Bible button"
+          aria-label="Open Bible button"
+        >
+          OPEN THE BIBLE
+        </button>
+      </lib-link>
+      }
+    </div>
+  </div>
+
+  <mat-divider></mat-divider>
+
+  <div class="w3-container w3-padding-64 w3-center">
+    <div #giftHeader>
+      @defer (on viewport(giftHeader)) {
+      <h2 [@slideInFromRight]>GIFTS</h2>
+      }
+    </div>
+
+    <div #giftSubHeader>
+      @defer (on viewport(giftSubHeader)) {
+      <p [@slideInFromLeft]>We don't ask anything from you, but to give yourself to the Lord</p>
+      <p [@slideInFromLeft]>Here are some gifts from us to encourage you in that</p>
+      <lib-link [link]="'gifts'">
+        <button [@slideInFromLeft] mat-flat-button aria-labelledby="Gifts button" aria-label="Gifts button">
+          GIFTS
+        </button>
+      </lib-link>
+      }
+    </div>
+  </div>
+
+  <mat-divider></mat-divider>
+
+  <div class="w3-container w3-padding-64 w3-center">
+    <div #blogsHeader>
+      @defer (on viewport(blogsHeader)) {
+      <h2 [@slideInFromRight]>BLOGS</h2>
+      }
+    </div>
+
+    <div #blogsSubHeader>
+      @defer (on viewport(blogsSubHeader)) {
+      <p [@slideInFromLeft]>Learn more about relevant topics for Christian living</p>
+      <lib-link [link]="'edifications'">
+        <button
+          [@slideInFromLeft]
+          mat-flat-button
+          aria-labelledby="Edifications button"
+          aria-label="Edifications button"
+        >
+          EDIFICATIONS
+        </button>
+      </lib-link>
+      <lib-link [link]="'discernments'">
+        <button
+          [@slideInFromLeft]
+          mat-flat-button
+          aria-labelledby="Discernments button"
+          aria-label="Discernments button"
+        >
+          DISCERNMENTS
+        </button>
+      </lib-link>
+      <lib-link [link]="'insights'">
+        <button [@slideInFromLeft] mat-flat-button aria-labelledby="Insights button" aria-label="Insights button">
+          INSIGHTS
+        </button>
+      </lib-link>
+      <lib-link [link]="'poems'">
+        <button [@slideInFromLeft] mat-flat-button aria-labelledby="Poems button" aria-label="Poems button">
+          POEMS
+        </button>
+      </lib-link>
+      <lib-link [link]="'studies'">
+        <button [@slideInFromLeft] mat-flat-button aria-labelledby="Studies button" aria-label="Studies button">
+          STUDIES
+        </button>
+      </lib-link>
+      <lib-link [link]="'drawings'">
+        <button [@slideInFromLeft] mat-flat-button aria-labelledby="Drawings button" aria-label="Drawings button">
+          DRAWINGS
+        </button>
+      </lib-link>
+      }
+    </div>
+  </div>
+
+  <mat-divider></mat-divider>
+
+  <div class="w3-container w3-padding-64 w3-center">
+    <div #aboutHeader>
+      @defer (on viewport(aboutHeader)) {
+      <h2 [@slideInFromRight]>INFORMATION</h2>
+      }
+    </div>
+
+    <div #aboutSubHeader>
+      @defer (on viewport(aboutSubHeader)) {
+      <p [@slideInFromLeft]>Learn more about the author's testimony and send him a message</p>
+      <lib-link [link]="'home'">
+        <button
+          [@slideInFromLeft]
+          mat-flat-button
+          aria-labelledby="Open About Page button"
+          aria-label="Open About Page button"
+        >
+          ABOUT
+        </button>
+      </lib-link>
+      <lib-link [link]="'contact'">
+        <button [@slideInFromLeft] mat-flat-button aria-labelledby="Contact button" aria-label="Contact button">
+          CONTACT
+        </button>
+      </lib-link>
+      }
+    </div>
   </div>
 </div>

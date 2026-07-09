@@ -75,7 +75,7 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
       Jesus also, that He might <b>sanctify</b> the people through His own blood, suffered outside the gate.
     </blog-reference-tooltip>
     For “By His doing you are in Christ Jesus, who became to us wisdom from God,
-    <b>and righteousness and sanctification,</b> and redemption, so that, just as it is written, "LET HIM WHO BOASTS,
+    <b>and righteousness and sanctification,</b> and redemption, so that, just as it is written, "LET HIM who BOASTS,
     BOAST IN THE LORD.” (1 Corinthians 1:30-31) For it is the Lord's work to sanctify us; and it is our work to
     believe.<br /><br />
 

@@ -148,7 +148,7 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
     my people under me.” (Psalms 144:1-2) He is a precious corner stone to the believing, but a stumbling block to the
     disobedient;
     <blog-reference-tooltip [reference]="'1 Peter 2:6-8'">
-      For this is contained in Scripture: "BEHOLD, I LAY IN ZION A CHOICE STONE, A PRECIOUS CORNER stone, AND HE WHO
+      For this is contained in Scripture: "BEHOLD, I LAY IN ZION A CHOICE STONE, A PRECIOUS CORNER stone, AND HE who
       BELIEVES IN HIM WILL NOT BE DISAPPOINTED." This precious value, then, is for you who believe; but for those who
       disbelieve, "THE STONE WHICH THE BUILDERS REJECTED, THIS BECAME THE VERY CORNER stone," and, "A STONE OF STUMBLING
       AND A ROCK OF OFFENSE"; for they stumble because they are disobedient to the word, and to this doom they were also

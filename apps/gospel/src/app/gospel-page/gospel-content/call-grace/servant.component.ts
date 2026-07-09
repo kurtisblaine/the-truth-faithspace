@@ -56,7 +56,7 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
     even uses Abraham sin to speak allegorically of the two covenants: one of slavery and the other of freedom in Christ
     (Galatians 4:21-31). And without question Abraham errored by trying to fulfill the promise of God by human effort.
     So even Paul is seen using a man's fault as a testimony to Christ.] For without question, David sinned by sending
-    Uriah to die. And the cross of Christ is a device of death, but through it, salvation is preached. So God uses human
+    Uriah to die. And the cross of Christ is a device of death, but through it, salvation is preached. So God used human
     error and sin, even things which bring weakness and death, to make His righteousness and glory shine ever-so
     brighter. For now we see Jesus who appeared in the flesh and never sinned, yet He bore the transgression of us all
     upon Himself on a cross. He is righteous; and He is so righteous that He was not stifled from doing right even in
@@ -132,8 +132,8 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
     Lord.” (Romans 8:39)
     <br /><br />
 
-    Beforetime I said, "Sin might lose its power in us who believe," and this is what I mean. I will use an allegory to
-    explain this: Jonathan, the son of Saul, became accursed by his father when he ate some honey which was against his
+    (Beforetime I said, "Sin might lose its power in us who believe," and this is what I mean. I will use an allegory to
+    explain this) Jonathan, the son of Saul, became accursed by his father when he ate some honey which was against his
     father's oath (1 Samuel 14:24-45); for his father Saul made a foolish oath that no-one should eat until he had
     vengeance on his enemies. So Saul, in his zeal for his oath, sought to put even his own son to death for the sake of
     the oath of his curse (1 Samuel 14:39, 1 Samuel 14:44), for Jonathan tasted a little bit of honey unaware of his
@@ -249,7 +249,7 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
     you may know that I am the LORD who sanctifies you." And so it is today for us who enter into God's rest through
     Christ Jesus, for us who do no work, but trust in God to justify the ungodly. And this is the great stumbling stone,
     an offensive thing to the unbelieving; as it says, "BEHOLD, I LAY IN ZION A STONE OF STUMBLING AND A ROCK OF
-    OFFENSE, AND HE WHO BELIEVES IN HIM WILL NOT BE DISAPPOINTED." (Romans 9:33)
+    OFFENSE, AND HE who BELIEVES IN HIM WILL NOT BE DISAPPOINTED." (Romans 9:33)
     <br /><br />
 
     So now, through faith we can fulfill the law of God - for neither circumcision nor uncircumcision matters, but faith

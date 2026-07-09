@@ -167,12 +167,12 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
     Judah was chosen by God to be first, and he was chosen as the place where His temple would dwell; as it says, “He
     also rejected the tent of Joseph, And did not choose the tribe of Ephraim, But chose the tribe of Judah, Mount Zion
     which He loved.” (Psalms 78:67-68) As a result, the branch of Judah remained during Israel's rebellion, for they
-    were kept by God's grace, by God's promise to David; although the kings of Judah were unfaithful to the LORD (2
-    Kings 8:19, 2 Chronicles 21:7). So God by His gracious choice preserved Judah throughout the rebellion of Israel for
-    David's sake whom He also picked from Judah. “In the same way then, there has also come to be at the present time a
-    remnant according to God's gracious choice.” (Romans 11:5) For those from Judah represent those who trust in God's
-    mercy and keep faith with God. For God chooses to show favor to the lowly and the weak and the humble of the earth;
-    as it says of God's choice of Israel,
+    were kept by God's grace, by God's promise to David. [Eventually the kings of Judah became unfaithful to the LORD (2
+    Kings 8:19, 2 Chronicles 21:7) and He delivered them over to the Babylonians]. So God by His gracious choice
+    preserved Judah throughout the rebellion of Israel for David's sake whom He also picked from Judah. “In the same way
+    then, there has also come to be at the present time a remnant according to God's gracious choice.” (Romans 11:5) For
+    those from Judah represent those who trust in God's mercy and keep faith with God. For God chooses to show favor to
+    the lowly and the weak and the humble of the earth; as it says of God's choice of Israel,
     <blog-reference-tooltip [reference]="'Deuteronomy 7:7'">
       The LORD did not set His love on you nor choose you because you were more in number than any of the peoples, for
       you were the fewest of all peoples.

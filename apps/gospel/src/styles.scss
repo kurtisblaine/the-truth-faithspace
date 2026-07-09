@@ -104,7 +104,7 @@ html {
 
 .mat-typography h4 {
   font-size: 18px;
-  font-weight: 200;
+  font-weight: 300;
 }
 
 .mat-mdc-paginator-container {
@@ -125,6 +125,10 @@ html {
   color: white !important;
 }
 
+.fixed-primary-text-color {
+  color: var(--mat-sys-on-primary-fixed-variant) !important;
+}
+
 .mat-caption {
   font-size: 15px;
   padding-bottom: 5px;
@@ -134,6 +138,7 @@ body {
   margin: 0;
   font-family: Roboto, "Helvetica Neue", sans-serif;
   height: 100vh;
+  height: 100dvh; //ensures correct measurement on mobile
 }
 
 .mat-typography p {

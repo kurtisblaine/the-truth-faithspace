@@ -1,14 +1,14 @@
 <mat-drawer-container style="width: 100%; height: 100%" [hasBackdrop]="false">
   <mat-drawer style="width: 280px; position: fixed" #drawer [mode]="'side'" [autoFocus]="true">
     <mat-list>
-      <lib-link [link]="`${baseUrl}/truth`" [isNewPage]="false">
+      <!-- <lib-link [link]="`${baseUrl}/truth`" [isNewPage]="false">
         <mat-list-item lines="3">
           <lib-fa-icon matListItemIcon [icon]="gospelIcon"></lib-fa-icon>
           <span matListItemTitle>The Good News</span>
           <span>The everlasting covenant that does not change</span>
         </mat-list-item>
       </lib-link>
-      <lib-link [link]="'https://thewordof.life'">
+      <lib-link [link]="'https://thewordof.life'" [textDecorationOverride]="true">
         <mat-list-item lines="3" (click)="drawer.close()">
           <lib-fa-icon matListItemIcon [icon]="bookIcon"></lib-fa-icon>
           <span matListItemTitle>The Scriptures</span>
@@ -21,7 +21,7 @@
           <span matListItemTitle>Gifts</span>
           <span>Freely you received, freely give</span>
         </mat-list-item>
-      </lib-link>
+      </lib-link> -->
 
       <div mat-subheader>BLOGS</div>
       <lib-link [link]="`${baseUrl}/edifications`" [isNewPage]="false">
@@ -113,7 +113,7 @@
           <lib-link [link]="`${baseUrl}/truth`" [isNewPage]="false">
             <button mat-menu-item>The Good News</button>
           </lib-link>
-          <lib-link [link]="'https://thewordof.life'">
+          <lib-link [link]="'https://thewordof.life'" [textDecorationOverride]="true">
             <button mat-menu-item>The Bible</button>
           </lib-link>
           <lib-link [link]="`${baseUrl}/gifts`" [isNewPage]="false">
@@ -148,40 +148,45 @@
         </mat-menu>
 
         <lib-link [link]="`${baseUrl}`" [isNewPage]="false">
-          <button mat-button (click)="drawer.close()"><div style="font-size: 20px">The Light of Life</div></button>
+          <button mat-button><div style="font-size: 20px">The Light of Life</div></button>
         </lib-link>
 
-        <span style="flex: 1 1 auto"></span>
-
+        @if(!isMobile()){
         <lib-link [link]="`${baseUrl}/truth`" [isNewPage]="false">
           <button
-            mat-icon-button
+            mat-button
             [matTooltip]="'The Good News'"
             aria-labelledby="Gospel button"
             aria-label="Gospel button"
-            style="margin: 2px"
+            class="header-button"
           >
             <lib-fa-icon [icon]="gospelIcon"></lib-fa-icon>
+            The Good News
           </button>
         </lib-link>
 
         <lib-link [link]="'https://thewordof.life'">
           <button
-            mat-icon-button
-            [matTooltip]="'The Bible'"
-            aria-labelledby="Bible button"
-            aria-label="Bible button"
-            style="margin: 2px"
+            mat-button
+            [matTooltip]="'The Scriptures'"
+            aria-labelledby="Scriptures button"
+            aria-label="Scriptures button"
+            class="header-button"
           >
             <lib-fa-icon [icon]="bookIcon"></lib-fa-icon>
+            The Scriptures
           </button>
         </lib-link>
 
         <lib-link [link]="`${baseUrl}/gifts`" [isNewPage]="false">
-          <button mat-icon-button (click)="drawer.close()" [matTooltip]="'Gifts'" style="margin: 2px">
-            <lib-fa-icon matListItemIcon [icon]="giftsIcon"></lib-fa-icon>
+          <button mat-button (click)="drawer.close()" [matTooltip]="'Gifts'" class="header-button">
+            <lib-fa-icon [icon]="giftsIcon"></lib-fa-icon>
+            Gifts
           </button>
         </lib-link>
+        }
+
+        <span style="flex: 1 1 auto"></span>
 
         <button
           mat-icon-button

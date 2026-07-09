@@ -8,7 +8,7 @@ import { ChangeDetectionStrategy, Component, Input } from "@angular/core";
       href="{{ link }}"
       [target]="getTarget()"
       rel="noopener"
-      [ngStyle]="{ 'text-decoration': isNewPage ? 'underline' : 'none' }"
+      [ngStyle]="{ 'text-decoration': isNewPage && !textDecorationOverride ? 'underline' : 'none' }"
     >
       <ng-content></ng-content>
     </a>
@@ -20,6 +20,7 @@ import { ChangeDetectionStrategy, Component, Input } from "@angular/core";
 export class LinkComponent {
   @Input() public link!: string;
   @Input() public isNewPage = true;
+  @Input() public textDecorationOverride = false;
 
   getTarget(): string {
     return this.isNewPage ? "_blank" : "_self";
