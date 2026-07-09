@@ -3,7 +3,7 @@ import { NgModule } from "@angular/core";
 import { MatButtonModule } from "@angular/material/button";
 import { MatDividerModule } from "@angular/material/divider";
 import { RouterModule, Routes } from "@angular/router";
-import { LinkComponent } from "shared";
+import { LibFaIconComponent, LinkComponent } from "shared";
 import { WelcomePageComponent } from "./welcome-page.component";
 
 const routes: Routes = [
@@ -22,6 +22,7 @@ const routes: Routes = [
     MatDividerModule,
     MatButtonModule,
     LinkComponent,
+    LibFaIconComponent,
   ],
 })
 export class WelcomePageModule {}

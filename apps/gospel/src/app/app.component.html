@@ -148,18 +148,14 @@
         </mat-menu>
 
         <lib-link [link]="`${baseUrl}`" [isNewPage]="false">
-          <button mat-button><div style="font-size: 20px">The Light of Life</div></button>
+          <button mat-button>
+            <div style="font-size: 20px" [matTooltip]="'The Light of Life'">The Light of Life</div>
+          </button>
         </lib-link>
 
         @if(!isMobile()){
         <lib-link [link]="`${baseUrl}/truth`" [isNewPage]="false">
-          <button
-            mat-button
-            [matTooltip]="'The Good News'"
-            aria-labelledby="Gospel button"
-            aria-label="Gospel button"
-            class="header-button"
-          >
+          <button mat-button aria-labelledby="Gospel button" aria-label="Gospel button" class="toolbar-header-button">
             <lib-fa-icon [icon]="gospelIcon"></lib-fa-icon>
             The Good News
           </button>
@@ -168,10 +164,9 @@
         <lib-link [link]="'https://thewordof.life'">
           <button
             mat-button
-            [matTooltip]="'The Scriptures'"
             aria-labelledby="Scriptures button"
             aria-label="Scriptures button"
-            class="header-button"
+            class="toolbar-header-button"
           >
             <lib-fa-icon [icon]="bookIcon"></lib-fa-icon>
             The Scriptures
@@ -179,9 +174,9 @@
         </lib-link>
 
         <lib-link [link]="`${baseUrl}/gifts`" [isNewPage]="false">
-          <button mat-button (click)="drawer.close()" [matTooltip]="'Gifts'" class="header-button">
+          <button mat-button (click)="drawer.close()" class="toolbar-header-button">
             <lib-fa-icon [icon]="giftsIcon"></lib-fa-icon>
-            Gifts
+            Giving
           </button>
         </lib-link>
         }

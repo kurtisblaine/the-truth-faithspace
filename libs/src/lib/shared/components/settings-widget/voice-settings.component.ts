@@ -67,10 +67,10 @@ type VoiceAppSettings = {
       />
     </mat-form-field>
     <span style="padding: 5px 0px; display: block; width: 100%"
-      >The text-to-speech service uses an artificial voice.</span
+      >The text to speech service uses an artificial voice.</span
     >
     } @else {
-    <span class="error"> The text-to-speech service is not available on your device.</span>
+    <span class="error"> The text to speech service is not available on your device.</span>
     }
   `,
   styles: `

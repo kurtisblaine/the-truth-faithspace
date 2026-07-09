@@ -1,4 +1,4 @@
-import { afterNextRender, Component, ElementRef, OnInit, signal, ViewChild } from "@angular/core";
+import { afterNextRender, Component, ElementRef, inject, OnInit, signal, ViewChild } from "@angular/core";
 import { MatMenuModule, MatMenuTrigger } from "@angular/material/menu";
 import { Router, RouterModule } from "@angular/router";
 import {
@@ -62,11 +62,11 @@ export class AppComponent extends SeoBaseComponent implements OnInit {
   @ViewChild(MatMenuTrigger) trigger: MatMenuTrigger;
 
   public icon = faBars;
-  public homeIcon = faInfoCircle;
   public blogIcon = faDumbbell;
   public psalmIcon = faMusic;
   public insightIcon = faBrain;
   public mailIcon = faEnvelope;
+  public homeIcon = faInfoCircle;
   public discernIcon = faGavel;
   public drawingIcon = faPenToSquare;
   public giftsIcon = faGifts;
@@ -79,11 +79,13 @@ export class AppComponent extends SeoBaseComponent implements OnInit {
 
   public progressValue = new BehaviorSubject(0);
   public progressValue$!: Observable<number>;
+
+  deviceDetector = inject(DeviceDetectorService);
   public isMobile = signal(true);
 
   public scrollTimeout!: any;
 
-  constructor(private router: Router, private deviceDetector: DeviceDetectorService) {
+  constructor(private router: Router) {
     super();
 
     afterNextRender(() => {
