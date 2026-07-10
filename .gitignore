@@ -2,7 +2,6 @@
 /.nx
 **/public
 **/static
-/apps/gospel/src/assets/audios
 
 *.log
 
