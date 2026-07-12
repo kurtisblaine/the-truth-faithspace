@@ -12,6 +12,8 @@
     "add": "npx nx add",
     "config": "npx nx config",
     "depcheck": "npx depcheck",
+    "lfs:files": "git lfs ls-files",
+    "lfs:merge": "git lfs migrate export --everything --include='*' --exclude='*.zip'",
     "migrate": "npx nx migrate latest",
     "migrate:angular": "npx nx migrate @angular/core@latest && npx nx migrate @angular/cli@latest && npx nx migrate @angular/material@latest && npx nx migrate @angular-devkit/build-angular@latest",
     "npm:update": "npm update",
