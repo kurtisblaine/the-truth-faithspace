@@ -25,9 +25,7 @@ export class TractPageComponent extends SeoBaseComponent implements OnDestroy {
   }
 
   ngOnDestroy(): void {
-    if (this.subscription) {
-      this.subscription.unsubscribe();
-    }
+    if (this.subscription) this.subscription.unsubscribe();
   }
 
   downloadZip(filePath: string) {

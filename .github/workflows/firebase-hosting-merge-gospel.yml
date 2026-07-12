@@ -12,7 +12,7 @@ jobs:
   build_and_deploy-gospel:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
       - with:
         lfs: true
       - run: npm install --force && npx nx build gospel --prod --output-path apps/gospel/public
