@@ -12,11 +12,19 @@ jobs:
   build_and_deploy-gospel:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - with:
-        lfs: true
-      - run: npm install --force && npx nx build gospel --prod --output-path apps/gospel/public
-      - uses: FirebaseExtended/action-hosting-deploy@v0
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          lfs: true
+
+      - name: Get LFS files
+        run: git lfs pull
+
+      - name: Run Build
+        run: npm install --force && npx nx build gospel --prod --output-path apps/gospel/public
+
+      - name: Deploy to Firebase
+        uses: FirebaseExtended/action-hosting-deploy@v0
         with:
           repoToken: "${{ secrets.GITHUB_TOKEN }}"
           firebaseServiceAccount: "${{ secrets.FIREBASE_SERVICE_ACCOUNT_BLOG_46974 }}"
