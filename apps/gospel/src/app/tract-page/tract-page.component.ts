@@ -31,7 +31,9 @@ export class TractPageComponent extends SeoBaseComponent implements OnDestroy {
   }
 
   downloadZip(filePath: string) {
-    if (this.subscription) this.subscription.unsubscribe();
+    if (this.subscription) {
+      this.subscription.unsubscribe();
+    }
 
     this.subscription = this.httpClient.get(filePath, { responseType: "blob" }).subscribe((blob) => {
       const url = window.URL.createObjectURL(blob);
