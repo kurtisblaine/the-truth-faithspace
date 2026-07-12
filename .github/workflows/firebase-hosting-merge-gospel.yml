@@ -13,6 +13,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
+      - with:
+        lfs: true
       - run: npm install --force && npx nx build gospel --prod --output-path apps/gospel/public
       - uses: FirebaseExtended/action-hosting-deploy@v0
         with:
