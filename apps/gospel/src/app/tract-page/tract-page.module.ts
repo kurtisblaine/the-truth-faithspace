@@ -1,6 +1,7 @@
 import { CommonModule, NgOptimizedImage } from "@angular/common";
 import { NgModule } from "@angular/core";
 import { MatListModule } from "@angular/material/list";
+import { MatProgressBarModule } from "@angular/material/progress-bar";
 import { RouterModule, Routes } from "@angular/router";
 import { LibFaIconComponent, LinkComponent } from "shared";
 import { PageHeaderComponent } from "../shared/components/page-header.component";
@@ -20,6 +21,7 @@ const routes: Routes = [
     MatListModule,
     NgOptimizedImage,
     LinkComponent,
+    MatProgressBarModule,
     PageHeaderComponent,
     LibFaIconComponent,
   ],

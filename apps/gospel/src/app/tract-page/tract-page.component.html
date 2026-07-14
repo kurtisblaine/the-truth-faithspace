@@ -39,12 +39,16 @@
       lines="2"
       role="listitem"
       style="text-decoration: underline"
+      [disabled]="isDownloading()"
       (click)="downloadZip(`${baseUrl}/assets/audios/the-good-news-of-the-kingdom-of-god.zip`)"
     >
       <lib-fa-icon matListItemIcon [icon]="zipFileIcon"></lib-fa-icon>
       <span matListItemTitle>The Good News of the Kingdom of God</span>
-      <span matListItemLine>Audio Book</span></mat-list-option
-    >
+      <span matListItemLine>Audio Book</span>
+      @if(isDownloading()){
+      <mat-progress-bar mode="determinate" [value]="progress()"></mat-progress-bar>
+      }
+    </mat-list-option>
     <lib-link [link]="`${baseUrl}/assets/tracts/soft-gospel-card.pdf`">
       <mat-list-option lines="2" role="listitem">
         <lib-fa-icon matListItemIcon [icon]="cardIcon"></lib-fa-icon> <span matListItemTitle>The Good News </span>
