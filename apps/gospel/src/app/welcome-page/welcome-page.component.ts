@@ -3,11 +3,11 @@ import { Router } from "@angular/router";
 import {
   faBible,
   faBook,
+  faBookmark,
   faBrain,
   faDumbbell,
   faEnvelope,
   faGavel,
-  faGifts,
   faInfoCircle,
   faLink,
   faMusic,
@@ -35,7 +35,7 @@ export class WelcomePageComponent extends SeoBaseComponent {
   public mailIcon = faEnvelope;
   public homeIcon = faInfoCircle;
 
-  public giftsIcon = faGifts;
+  public tractsIcon = faBookmark;
   public resourceIcon = faLink;
   public gospelIcon = faNewspaper;
   public bookIcon = faBible;

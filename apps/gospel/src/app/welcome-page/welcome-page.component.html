@@ -136,20 +136,20 @@
 <mat-divider></mat-divider>
 
 <div class="w3-container w3-padding-64 w3-center">
-  <div #giftHeader>
-    @defer (on viewport(giftHeader)) {
-    <h2 [@slideInFromRight]>GIFTS</h2>
+  <div #tractsHeader>
+    @defer (on viewport(tractsHeader)) {
+    <h2 [@slideInFromRight]>TRACTS</h2>
     }
   </div>
 
-  <div #giftSubHeader>
-    @defer (on viewport(giftSubHeader)) {
+  <div #tractsSubHeader>
+    @defer (on viewport(tractsSubHeader)) {
     <p [@slideInFromLeft]>We don't ask anything from you, but to give yourself to the Lord</p>
-    <p [@slideInFromLeft]>Here are some gifts from us to encourage you</p>
-    <lib-link [link]="'gifts'" [isNewPage]="false">
-      <button [@slideInFromLeft] mat-flat-button aria-labelledby="Gifts button" aria-label="Gifts button">
-        <lib-fa-icon [icon]="giftsIcon"></lib-fa-icon>
-        GIFTS
+    <p [@slideInFromLeft]>Here are bibles and tracts to encourage you in that</p>
+    <lib-link [link]="'tracts'" [isNewPage]="false">
+      <button [@slideInFromLeft] mat-flat-button aria-labelledby="Tracts button" aria-label="Tracts button">
+        <lib-fa-icon [icon]="tractsIcon"></lib-fa-icon>
+        TRACTS
       </button>
     </lib-link>
     }

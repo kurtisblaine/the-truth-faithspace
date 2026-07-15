@@ -31,7 +31,7 @@ export const routes: Routes = [
     loadChildren: () => import("./discern-page/discern-page.module").then((m) => m.DiscernPageModule),
   },
   {
-    path: "gifts",
+    path: "tracts",
     loadChildren: () => import("./tract-page/tract-page.module").then((m) => m.TractPageModule),
   },
   {

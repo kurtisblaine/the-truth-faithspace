@@ -6,12 +6,12 @@ import {
   faBars,
   faBible,
   faBook,
+  faBookmark,
   faBrain,
   faDumbbell,
   faEnvelope,
   faGavel,
   faGears,
-  faGifts,
   faInfoCircle,
   faLink,
   faMusic,
@@ -69,7 +69,7 @@ export class AppComponent extends SeoBaseComponent implements OnInit {
   public homeIcon = faInfoCircle;
   public discernIcon = faGavel;
   public drawingIcon = faPenToSquare;
-  public giftsIcon = faGifts;
+  public tractsIcon = faBookmark;
   public resourceIcon = faLink;
   public gospelIcon = faNewspaper;
   public bookIcon = faBible;

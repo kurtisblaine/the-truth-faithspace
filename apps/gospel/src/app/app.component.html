@@ -1,28 +1,6 @@
 <mat-drawer-container style="width: 100%; height: 100%" [hasBackdrop]="false">
   <mat-drawer style="width: 280px; position: fixed" #drawer [mode]="'side'" [autoFocus]="true">
     <mat-list>
-      <!-- <lib-link [link]="`${baseUrl}/truth`" [isNewPage]="false">
-        <mat-list-item lines="3">
-          <lib-fa-icon matListItemIcon [icon]="gospelIcon"></lib-fa-icon>
-          <span matListItemTitle>The Good News</span>
-          <span>The everlasting covenant that does not change</span>
-        </mat-list-item>
-      </lib-link>
-      <lib-link [link]="'https://thewordof.life'" [textDecorationOverride]="true">
-        <mat-list-item lines="3" (click)="drawer.close()">
-          <lib-fa-icon matListItemIcon [icon]="bookIcon"></lib-fa-icon>
-          <span matListItemTitle>The Scriptures</span>
-          <span>Let God be true and every man a liar</span>
-        </mat-list-item>
-      </lib-link>
-      <lib-link [link]="`${baseUrl}/gifts`" [isNewPage]="false">
-        <mat-list-item lines="2" (click)="drawer.close()">
-          <lib-fa-icon matListItemIcon [icon]="giftsIcon"></lib-fa-icon>
-          <span matListItemTitle>Gifts</span>
-          <span>Freely you received, freely give</span>
-        </mat-list-item>
-      </lib-link> -->
-
       <div mat-subheader>BLOGS</div>
       <lib-link [link]="`${baseUrl}/edifications`" [isNewPage]="false">
         <mat-list-item lines="3" (click)="drawer.close()">
@@ -116,8 +94,8 @@
           <lib-link [link]="'https://thewordof.life'" [textDecorationOverride]="true">
             <button mat-menu-item>The Bible</button>
           </lib-link>
-          <lib-link [link]="`${baseUrl}/gifts`" [isNewPage]="false">
-            <button mat-menu-item>Gifts</button>
+          <lib-link [link]="`${baseUrl}/tracts`" [isNewPage]="false">
+            <button mat-menu-item>Tracts</button>
           </lib-link>
           <mat-divider></mat-divider>
           <lib-link [link]="`${baseUrl}/edifications`" [isNewPage]="false">
@@ -173,10 +151,10 @@
           </button>
         </lib-link>
 
-        <lib-link [link]="`${baseUrl}/gifts`" [isNewPage]="false">
+        <lib-link [link]="`${baseUrl}/tracts`" [isNewPage]="false">
           <button mat-button (click)="drawer.close()" class="toolbar-header-button">
-            <lib-fa-icon [icon]="giftsIcon"></lib-fa-icon>
-            Giving
+            <lib-fa-icon [icon]="tractsIcon"></lib-fa-icon>
+            Tracts
           </button>
         </lib-link>
         }
