@@ -17,19 +17,17 @@
   </div>
 
   <mat-selection-list role="list" [multiple]="false" hideSingleSelectionIndicator>
-    <lib-link [link]="`${baseUrl}/contact`" [isNewPage]="false">
-      <mat-list-option lines="3" class="link-box">
-        <img
-          matListItemAvatar
-          class="product-image"
-          [ngSrc]="'q_auto/f_auto/v1711590013/img/audioplayer-min_litzdj.webp'"
-          [alt]="'The New Testament Audio Player'"
-          fill
-        />
-        <span matListItemTitle>The New Testament Audio Player</span>
-        <span matListItemLine>Audio Book (KJV or ESV)</span>
-      </mat-list-option>
-    </lib-link>
+    <mat-list-option lines="3" class="link-box">
+      <img
+        matListItemAvatar
+        class="product-image"
+        [ngSrc]="'q_auto/f_auto/v1711590013/img/audioplayer-min_litzdj.webp'"
+        [alt]="'The New Testament Audio Player'"
+        fill
+      />
+      <span matListItemTitle>The New Testament Audio Player</span>
+      <span matListItemLine>Audio Book (KJV or ESV)</span>
+    </mat-list-option>
     <lib-link [link]="'https://www.amazon.com/dp/B0GGVJ72YH'">
       <mat-list-option lines="3">
         <img
