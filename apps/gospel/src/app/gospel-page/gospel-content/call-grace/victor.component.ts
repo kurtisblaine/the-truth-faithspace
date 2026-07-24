@@ -54,19 +54,18 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
       When He had disarmed the rulers and authorities, <b>He made a public display of them</b>, having triumphed over
       them through the cross.
     </blog-reference-tooltip>
-    For in His death, they were put to death; as it says, “His grave was assigned with wicked men." (Isaiah 53:9) For He
-    died for them. Jesus satisfied the just requirement of the law by dying for our sins, rendering the law ineffective;
-    and He established a law of faith "so that He would be just and the justifier of the one who has faith in Jesus.”
-    (Romans 3:26) So that He may turn us from the power of satan unto Himself through the gospel of God. For the accuser
-    has lost his strength, for in Him we have the forgiveness of our sins; and where there is forgiveness, there is no
-    longer any remembrance; as it says, "I will forgive their iniquity, and their sin I will remember no more."
-    (Jeremiah 31:34) “For by one offering He has perfected for all time those who are sanctified.” (Hebrews 10:14) It is
-    Christ Jesus who fought the battle for us - we enter into His victory; for our God is for us, doing on our behalf,
-    fighting for us. Just as the Israelites entered into the Promised Land by the mighty hand of God, so it is with us:
-    we enter in by His powerful arm, following Him and obeying Him. Other gods require that you do something for them:
-    stand them up, feed them, dust them off, but they are no gods at all; but the one and only God does on our behalf,
-    waging war for us and defeating our foes. He defeated them through the cross, and we enter into His victory through
-    faith.
+    For in His death, they were put to death, for He died for them; as it says, “His grave was assigned with wicked
+    men." (Isaiah 53:9) Jesus satisfied the just penalty of the law by dying for our sins; and He established a law of
+    faith "so that He would be just and the justifier of the one who has faith in Jesus.” (Romans 3:26) So that He may
+    turn us from the power of satan unto Himself through the gospel of God. For the accuser has lost his strength, for
+    in Him we have the forgiveness of our sins; and where there is forgiveness, there is no longer any remembrance; as
+    it says, "I will forgive their iniquity, and their sin I will remember no more." (Jeremiah 31:34) “For by one
+    offering He has perfected for all time those who are sanctified.” (Hebrews 10:14) It is Christ Jesus who fought the
+    battle for us - we enter into His victory; for our God is for us, doing on our behalf, fighting for us. Just as the
+    Israelites entered into the Promised Land by the mighty hand of God, so it is with us: we enter in by His powerful
+    arm, following Him and obeying Him. Other gods require that you do something for them: stand them up, feed them,
+    dust them off, but they are no gods at all; but the one and only God does on our behalf, waging war for us and
+    defeating our foes. He defeated them through the cross, and we enter into His victory through faith.
     <lib-link [link]="baseUrl + '/edifications/edify-detail/the-righteous-war'"
       >(See more about Righteous Warfare)</lib-link
     >

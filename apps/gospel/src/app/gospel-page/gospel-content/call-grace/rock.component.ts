@@ -14,7 +14,6 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
       They said, “Why did you bring us up out of Egypt to make us and our children and livestock die of thirst?” Then
       Moses cried out to the Lord, “What am I to do with these people? They are almost ready to stone me.”
     </blog-reference-tooltip>
-    So in the people's stony hearts is revealed the content of their stony hearts by wanting to physically stone Moses.
     Their anger, unbelief, and hardness of heart was toward Moses, for they wanted to stone him with stones; as the
     proverb says, "Out of the wicked comes forth wickedness." (1 Samuel 24:13) Moses was God's representative, he spoke
     on behalf of God, so the people's anger was actually directed toward God - they were actually angry with Him; as
@@ -70,35 +69,36 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
     <br /><br />
 
     At another time, Moses struck the rock again when God told him to speak to the Rock to bring forth water (Numbers
-    20:1-13). Moses disobeyed; being angry with the people, he struck the rock twice instead; as a result he was
-    banished from entering into the land promised because he did not honor God in front of the people and sanctify the
-    miracle before them. And this is a warning for us today: Christ was sacrificed once. If we struggle against sin, let
-    us pray to the Rock and get deliverance through the cross, instead of striking again by continuing in willful sin.
-    Let us not be comfortable in sin, especially now that Jesus saves us from sin; He has set us free to be free, and
-    sin is not anything to coddle; for it is deadly and repugnant - and it is the danger. Sin has lost its power, and it
-    has been rendered powerless by the grace of God in Christ Jesus; so therefore if we continue in sin after receiving
-    the knowledge of the truth, it's because,
+    20:1-13). Moses disobeyed; being angry with the people, he struck the rock twice instead of speaking to it; as a
+    result he was banished from entering into the promised land because he did not honor God in front of the people and
+    sanctify the miracle before them. So the very man who delivered the people out of Egypt, he, even he, could not
+    enter the promised land. As Moses says, “The LORD was angry with me on your account, and would not listen to me;”
+    (Deu 3:26) And, "The LORD was angry with me also on your account, saying, Not even you shall enter there.” (Deu
+    1:37) And Moses was the mediator between God and the people: as the people cried out when they heard the voice of
+    God from the mountain, “Speak to us yourself and we will listen; but let not God speak to us, or we will die." (Exo
+    20:19) So Moses became a mediator between God and the people, appointed to speak the words of God. And concerning
+    this, the LORD said, “I will raise up a prophet from among their countrymen like you, and I will put My words in his
+    mouth, and he shall speak to them all that I command him.” (Deu 18:18) And at this time we see Jesus, a Prophet like
+    Moses and a faithful mediator, who was cut off on account of our transgressions. God was angry with Him for our
+    sakes so that we might enter into a land flowing with milk and honey - provided we do not transgress like they did
+    in the wilderness and perished. For when the people sinned in making a golden calf for themselves, Moses prayed, “If
+    You will, forgive their sin — and if not, please blot me out from Your book which You have written!" (Exo 32:32) And
+    so Jesus did not wish only to take upon Himself the penalty for the people's transgressions, but He made atonement
+    through His own flesh to blot out our transgressions that our name may be written in the book of life. And so,
+    Christ Jesus was sacrificed once for our sins; if we struggle with sin, let us pray to the Rock and get deliverance
+    through the cross, instead of striking Him again by continuing in willful sin. Let us not be comfortable in sin,
+    especially now that Jesus saves us from sin; He has set us free to be free, and sin is not anything to coddle; it is
+    deadly and repugnant - and it is the danger. Sin has lost its power, and it has been rendered powerless by the grace
+    of God in Christ Jesus; so therefore, confess your sin! Call what is evil, evil; and call what is good, good. For if
+    we continue on sinning after receiving the knowledge of the truth, there remains no more sacrifice for sin, just a
+    fearful looking for of judgement (Hebrews 10:26-30). If we continue in sin, it's because,
     <blog-reference-tooltip [reference]="'John 3:19'">
-      The light is come into the world, and men loved darkness rather than the light: for their works were evil.
+      Men loved darkness rather than the light: for their works were evil.
     </blog-reference-tooltip>
-    There is no sacrifice for willful sins, but a fearful looking for of judgment and fiery indignation which will
-    consume the adversaries of God (Hebrews 10:26-30). So take heed! That which is powerless shall not master over you,
-    for you are no longer under law, but under grace. Sin can only be our master if we willingly submit to it; but
-    rather, obey righteousness, obey Christ. Test yourselves. Do you love the light of life? For Christ gives us the
-    grace to do the good we want to do: that is, saying, "No" to sin, and "Yes" to God. The following warning ought to
-    keep us from sin in the fear of the Lord, as the writer of Hebrews states,
-    <blog-reference-tooltip [reference]="'Hebrews 6:4-9'">
-      For in the case of those who have once been enlightened and have tasted of the heavenly gift and have been made
-      partakers of the Holy Spirit, and have tasted the good word of God and the powers of the age to come, and [then]
-      have fallen away, it is impossible to renew them again to repentance, since they again crucify to themselves the
-      Son of God and put Him to open shame. For ground that drinks the rain which often falls on it and brings forth
-      vegetation useful to those for whose sake it is also tilled, receives a blessing from God; but if it yields thorns
-      and thistles, it is worthless and close to being cursed, and it ends up being burned.
-      <b
-        >But, beloved, we are convinced of better things concerning you, and things that accompany salvation, though we
-        are speaking in this way.</b
-      >
-    </blog-reference-tooltip>
+    So take heed! That which is powerless shall not master over you, for you are no longer under law, but under grace.
+    Sin is no longer your master. Test yourselves. Do you love the light of life? For Christ Jesus gives us the grace to
+    do the good we want to do: that is, saying, "No" to sin, and "Yes" to God.
+    <br /><br />
 
     For Jesus is the Rock of our refuge, a city of refuge, in which one flees for protection from the onslaught of the
     enemy. Just as a man in the time of war after being defeated flees back to his stronghold, so Christ is our safety

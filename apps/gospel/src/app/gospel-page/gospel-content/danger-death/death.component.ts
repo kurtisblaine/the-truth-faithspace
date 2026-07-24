@@ -151,42 +151,6 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
     that is nothing? Of course not! Rather how much more shall we go all in for what is everlasting! But where is the
     everlasting path? Where is the ancient road? Will someone show us the way of life? If there was a way, surely God
     would reveal it, wouldn't He?
-    <br /><br />
-
-    The world thinks the truth is hidden: in the depths of the ocean, in outer space, in the center of the earth. They
-    spend countless billions of dollars to explore where no man has gone before, searching for the truth. Yet, God is
-    widely known and everyone knows His name; for no-one needs to ask, “Who has ascended into heaven and descended? Who
-    has gathered the wind in His fists? Who has wrapped the waters in His garment? Who has established all the ends of
-    the earth? What is His name or His son's name? Surely you know!” (Proverbs 30:4) For He has made Himself renown to
-    all His creation. We can discern the signs of the sky, but we cannot discern the truth? Whose name is constantly
-    blasphemed? Yes, we all know Him, but we choose not to honor Him as God. And whose symbol is the cross, which is put
-    on buildings, hung around necks, pierced on the skin, and marked on grave stones? Did we forget that it was once a
-    device of death? (For Jesus was put on that cross, turning what the enemy meant for evil into good.) Whose coming
-    split our calendar in half? Or who makes a week seven days? Who is it that hallows the seventh day? The same
-    writings that declare a seven day week and a restful day on the seventh, tells of Him; the same writings that quote
-    wisdom, that we have all come to agree upon, even quoting it without knowing its original source, also speak of the
-    truth. Who is it that lived a great while ago, but yet died, and is proclaimed as resurrected from the dead? That
-    which once was a sect, a heresy, a false teaching, which was fought against, has now become world-wide good news.
-    For who can fight against God and succeed? If this thing is not of God, it wouldn't have withstood. And yet we shoot
-    rockets into the heavens to reach God, just as they tried in times past at the Tower of Babel, by their own might to
-    make a name for themselves, but they failed. For God sees to it that no-one can come near Him by their own self-will
-    or effort, so that no-one will be able to boast in His Presence. But rather, through the word of faith, through the
-    word of truth, which says,
-    <blog-reference-tooltip [reference]="'Romans 10:8-13'"
-      >The word is near you, in your mouth and in your heart (that is, the word of faith that we proclaim); because, if
-      you confess with your mouth that Jesus is Lord and believe in your heart that God raised him from the dead, you
-      will be saved. For with the heart one believes and is justified, and with the mouth one confesses and is saved. It
-      is just as the Scripture says: “Anyone who believes in Him will never be put to shame.” For there is no
-      distinction between Jew and Greek; for the same Lord is Lord of all, bestowing his riches on all who call on him.
-      For everyone who calls on the name of the Lord will be saved.
-    </blog-reference-tooltip>
-    For the way of life is through the knowledge of God in the face of the Lord Jesus Christ; and He is the living
-    Grace, the living Truth; He has descended to us and He has ascended; and He sends forth the Spirit of Truth; and He
-    will come again with the clouds in the heavens, for He is always and forever! Every question is answered in a single
-    saying:
-    <blog-reference-tooltip [reference]="'Romans 7:25'"
-      >THANK GOD! THE ANSWER IS IN JESUS CHRIST OUR LORD.</blog-reference-tooltip
-    >
   </div>`,
   styles: ``,
   changeDetection: ChangeDetectionStrategy.OnPush,

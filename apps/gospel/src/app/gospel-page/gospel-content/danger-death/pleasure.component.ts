@@ -155,11 +155,11 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
     </blog-reference-tooltip>
     So if we live for pleasure, our life is a waste, which is dissipation. What good comes from waste? When you burn
     garbage it is not even useful for the fire, for it pollutes the air and burns too quickly. Instead, fear God! Enjoy
-    what God has given you without grumbling or complaining; as it says,
+    what God has given you without grumbling or complaining. Accept your lot in life with contentment and joy; as it
+    says,
     <blog-reference-tooltip [reference]="'Ecclesiastes 8:15'">
-      So I commended pleasure, for there is nothing good for a man under the sun except to eat and to drink and to be
-      merry, and this will stand by him in his toils throughout the days of his life which God has given him under the
-      sun.
+      So I commended joy, for there is nothing good for a man under the sun except to eat and to drink and to be merry,
+      and this will stand by him in his toils throughout the days of his life which God has given him under the sun.
     </blog-reference-tooltip>
     And then it says,
     <blog-reference-tooltip [reference]="'Ecclesiastes 3:12-13'">

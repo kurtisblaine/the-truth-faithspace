@@ -10,16 +10,15 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
     Under the Old Covenant, the Israelites obtained atonement from God for their unintentional sins by sacrificing an
     animal; when they sinned, blood needed to be shed and applied to the horns of the altar for atonement; the animal
     had to be perfect (no defects, blemishes, etc), a clean animal, and it had to be innocent of all wrong (like goring,
-    etc). For with sin comes death, sin and death are on friendly terms; man trails behind sin in its path, and the end
-    of its way is death; so death is needed for freedom, blood needs to be shed for forgiveness. When the substitute
-    sacrifice of an animal occurred, the one offering was covered of his fault; afterwards, it was like the fault never
-    occurred, for it was forgiven and the wrong was offset. The blood does nothing if it's still within the animal; the
-    animal needed to be slain and dealt with according to the law. God established these laws for Israel so they may be
-    forgiven. The Israelites could only give a sacrifice for unintentional sins: that is, sins that were done in
-    ignorance. There was no sacrifice under the law for intentional sins; these sins were expiated in another way:
-    either excommunication (being cut off from Israel), or punishment, or even death. Rebellion was also not forgiven,
-    for this is the nature of rebellion: you know what is right, but you don't do it, or you know what is wrong, but you
-    do it anyway; as it says in the Old Covenant,
+    etc). For with sin comes death, the result of sin is death; so death is needed for freedom from sin, blood needs to
+    be shed for forgiveness. When the substitute sacrifice of an animal occurred, the one offering was covered of his
+    fault; afterwards, it was like the fault never occurred, for it was forgiven and the wrong was offset. The blood
+    does nothing if it's still within the animal; the animal needed to be slain and dealt with according to the law. God
+    established these laws for Israel so they may be forgiven. The Israelites could only give a sacrifice for
+    unintentional sins: that is, sins that were done in ignorance. There was no sacrifice under the law for intentional
+    sins; these sins were expiated in another way: either excommunication (being cut off from Israel), or punishment, or
+    even death. Rebellion was also not forgiven, for this is the nature of rebellion: you know what is right, but you
+    don't do it, or you know what is wrong, but you do it anyway; as it says in the Old Covenant,
     <blog-reference-tooltip [reference]="'Exodus 23:20-21'">
       Behold, I am going to send an angel before you to guard you along the way and to bring you into the place which I
       have prepared. Be on your guard before Him and obey His voice; do not be rebellious toward Him, for He will not
@@ -131,14 +130,15 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
     So if anyone who has the love of this world in them, the love of the Father is not in them; for how can we love what
     God hates? As the prophet asks, "Should you help the wicked and love those who hate the LORD and so bring wrath on
     yourself from the LORD?” (2 Chronicles 19:2) So everything that is of the world is contrary to God, and everything
-    men value is detestable in the sight of God (Luke 16:15). But we who love the Father have been rescued from this
-    world. This is the sacrifice that God desires: not of bulls, or goats, or lambs, but of setting apart our sins for
-    destruction, crucifying the misdeeds of the body by devoting them to death, so that we may not be destroyed with
-    them; this is the sacrifice of death that we may live, which is initiated by God's Sacrifice of Atonement for us,
-    even the Passover; for even if we purge out every crumb of leaven in our lives, if we do not have the blood, our
-    work is in vain. This is the thing Solomon seen when he prayed after the completion of the permanent temple of God;
-    instead of praying, asking for the LORD God to forgive the people according to the ordinances of sacrifice even
-    though they were written according to the law. He says,
+    men value is detestable in the sight of God (Luke 16:15). But the Father has given us a sincere and unleavened love
+    for Him through Jesus Christ by which He has rescued us from this world. And this is the sacrifice that God desires:
+    not of bulls, or goats, or lambs, but of setting apart our sins for destruction, crucifying the misdeeds of the body
+    by devoting them to death, so that we may not be destroyed with them; this is the sacrifice of death that we may
+    live, which is initiated by God's Sacrifice of Atonement for us, even the Passover. And now we purge out every crumb
+    of the old leaven of hypocrisy and insincerity because of the blood, and serve God in the newness of the Spirit and
+    truth. This is the thing Solomon seen when he prayed after the completion of the permanent temple of God; instead of
+    praying, asking for the LORD God to forgive the people according to the obligation of sacrifice even though they
+    were written according to the law. He says,
     <blog-reference-tooltip [reference]="'2 Chronicles 6:46-49'">
       If they return to You with all their heart and with all their soul in the land of their captivity, where they have
       been taken captive, and pray toward their land which You have given to their fathers and the city which You have

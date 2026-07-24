@@ -74,8 +74,8 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
     the weaker of the two hands, so strive for what is right; as light is better than darkness, so wisdom is better than
     folly. The one who is wise has eyes in his head; he sees and walks in the day-time; a man who walks in darkness,
     does not know where he is going; such a one does not know his way back to the city, for the eye of his understanding
-    is darkened. Therefore, fear not the devil, nor demons, nor principalities, nor powers - instead fear God. For all
-    things come from the Lord - the good and the bad; as it says,
+    is darkened. Therefore, fear not the devil, nor demons, nor principalities, nor powers - instead fear God, who hands
+    men over to demons. For all things come from the Lord - the good and the bad; as it says,
     <blog-reference-tooltip [reference]="'Job 2:10'">
       Shall we indeed accept good from God and not accept adversity?
     </blog-reference-tooltip>

@@ -69,21 +69,23 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
     otherwise, if we cannot control ourselves, we will be controlled by others. That is why prisons exist. For what is a
     prison besides control from an institution? But you may say, "For sinners like them prisons exist, but not for me."
     However, the only difference between a prisoner and you, is that, you weren't caught - for you know you've done
-    things worthy of imprisonment. As it says, “Like a city that is broken into and without walls Is a man who has no
-    control over his spirit.” (Proverbs 25:28) For this is our nature: evil. It's effortless for us to do bad and takes
-    all our energy to do good. We love wickedness and eat it up like bread; it's a delicacy to us, but yet it turns into
-    venom within us; nevertheless, we eat it up, and sleep in it, and drink from its cup. We do not have
-    self-discipline; we do not know the way to its door, so that we may knock and ask for it. We build up our own laws
-    and our own rules as a safeguard around us, but we look at them and despise them. What is wrong with us? Only what
-    I've been testifying to from the beginning: we are all subjected to the power of sin. But is it only I who testify
-    to this? Don't you as well? When we grow old, reaching a certain age, and we are not taught good, our parents are
-    blamed. But why? People say, "I blame the parents for their child's behavior." Or they say, "Why didn't his parents
-    teach him what is right?" But if we were born good, why would we need to be taught? So, we testify to ourselves
-    about the nature we belong to: an evil one. For why would our parents be blamed if we were born righteous? In that
-    case, our actions would be on our own heads! Even more we say, "I am only human." So we testify to ourselves and to
-    others that we belong to a nature that is fallen and broken. This is our nature; just as it's an eagle's nature to
-    fly or a penguin's nature not to fly; so it is our nature to be sinful; and we are incapable of changing ourselves
-    or reforming ourselves by our own human effort. <br /><br />
+    things worthy of imprisonment. A prison is control from an institution for those who do not have self control. As it
+    says, “Like a city that is broken into and without walls Is a man who has no control over his spirit.” (Proverbs
+    25:28) So he is put behind a city with walls and gates and bars when he is caught. Such a one is incontinent,
+    without control of his bowels, without the ability to hold back his uncleanness. For this is our nature: evil. We
+    need to be taught to deny evil and do good. For it's effortless for us to do bad and takes all our energy to do
+    good. For we love wickedness and eat it up like bread; it's a delicacy to us, but yet it turns into venom within us;
+    nevertheless, we eat it up, and sleep in it, and drink from its cup. We do not have self-discipline; we do not know
+    the way to its door, so that we may knock and ask for it. What is wrong with us? Only what I've been testifying to
+    from the beginning: we are all subjected to the power of sin. But is it only I who testify to this? Don't you as
+    well? When we grow old, reaching a certain age, and we are not taught good, our parents are blamed. But why? People
+    say, "I blame the parents for their child's behavior." Or they say, "Why didn't his parents teach him what is
+    right?" But if we were born good, why would we need to be taught? So, we testify to ourselves about the nature we
+    belong to: an evil one. For why would our parents be blamed if we were born righteous? In that case, our actions
+    would be on our own heads! Even more we say, "I am only human." So we testify to ourselves and to others that we
+    belong to a nature that is fallen and broken. This is our nature; just as it's an eagle's nature to fly or a
+    penguin's nature not to fly; so it is our nature to be sinful; and we are incapable of changing ourselves or
+    reforming ourselves by our own human effort. <br /><br />
 
     If anyone claims they are not sinful, they show how utterly sinful sin really is, for they lie in regard to an
     obvious fact; as David said in the Psalm,
