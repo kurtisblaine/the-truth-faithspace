@@ -5,14 +5,11 @@
       In the dark, one must feel their way around, for there is no light for them to see by;
     </h2>
     <h2 class="header-caption" [@slideInFromRight]>
-      But <span style="font-weight: 550"> Jesus Christ</span> came into the world as the Light of the world, so that men
+      but <span style="font-weight: 550"> Jesus Christ</span> came into the world as the Light of the world, so that men
       might walk by Him and have
       <span class="primary" style="font-weight: 550">THE LIGHT OF LIFE</span>
     </h2>
   </div>
-  <!-- <div class="tomb-image">
-    <img fill [ngSrc]="'q_auto/f_auto/v1711590014/img/empty-tomb.jpg'" alt="Empty Tomb" />
-  </div> -->
 </div>
 
 <mat-divider></mat-divider>
@@ -29,6 +26,47 @@
     <p [@slideInFromLeft]>
       Understand the problem with the present world and believe the Good News about the Kingdom of God
     </p>
+    <div class="download-buttons">
+      <button
+        [@slideInFromLeft]
+        matIconButton
+        [matTooltip]="'Audio Book'"
+        [disabled]="isDownloading()"
+        (click)="downloadZip(`${baseUrl}/assets/audios/the-good-news-of-the-kingdom-of-god.zip`)"
+        aria-labelledby="Download button"
+        aria-label="Download button"
+      >
+        <lib-fa-icon [icon]="zipFileIcon"></lib-fa-icon>
+      </button>
+
+      <lib-link [link]="`${baseUrl}/assets/tracts/the-good-news-of-the-kingdom-of-god.pdf`">
+        <button
+          [@slideInFromLeft]
+          matIconButton
+          [matTooltip]="'E-Book'"
+          aria-labelledby="Download EBook button"
+          aria-label="Download EBook button"
+        >
+          <lib-fa-icon [icon]="pdfIcon"></lib-fa-icon>
+        </button>
+      </lib-link>
+
+      <lib-link [link]="'https://www.amazon.com/dp/B0GGZTZ2MV'">
+        <button
+          [@slideInFromLeft]
+          [matTooltip]="'Print Book'"
+          matIconButton
+          aria-labelledby="Print Book button"
+          aria-label="Print Book button"
+        >
+          <lib-fa-icon [icon]="amazonIcon"></lib-fa-icon>
+        </button>
+      </lib-link>
+
+      @if(isDownloading()){
+      <mat-progress-bar mode="determinate" [value]="progress()"></mat-progress-bar>
+      }
+    </div>
     <div class="button-section-group">
       <lib-link [link]="'truth#the-danger'" [isNewPage]="false">
         <button
@@ -38,6 +76,7 @@
           aria-label="The Danger button"
           class="red-theme-dark-mode"
         >
+          <lib-fa-icon [icon]="deathIcon"></lib-fa-icon>
           THE DANGER
         </button>
       </lib-link>
@@ -49,6 +88,7 @@
           aria-label="The Futility button"
           class="red-theme-dark-mode"
         >
+          <lib-fa-icon [icon]="deathIcon"></lib-fa-icon>
           THE FUTILITY
         </button>
       </lib-link>
@@ -61,7 +101,6 @@
           class="light-mode"
         >
           <lib-fa-icon [icon]="gospelIcon"></lib-fa-icon>
-
           THE SAFETY
         </button>
       </lib-link>
@@ -85,6 +124,7 @@
           aria-label="Our Response button"
           class="red-theme-light-mode"
         >
+          <lib-fa-icon [icon]="responseIcon"></lib-fa-icon>
           OUR RESPONSE
         </button>
       </lib-link>
@@ -96,6 +136,7 @@
           aria-label="The Day of the Lord button"
           class="red-theme-light-mode"
         >
+          <lib-fa-icon [icon]="responseIcon"></lib-fa-icon>
           THE DAY OF THE LORD
         </button>
       </lib-link>
@@ -124,7 +165,7 @@
         aria-labelledby="Open Bible button"
         aria-label="Open Bible button"
       >
-        <lib-fa-icon [icon]="bookIcon"></lib-fa-icon>
+        <lib-fa-icon [icon]="bibleIcon"></lib-fa-icon>
 
         OPEN THE BIBLE
       </button>

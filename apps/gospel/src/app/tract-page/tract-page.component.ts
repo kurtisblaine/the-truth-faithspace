@@ -1,6 +1,6 @@
 import { HttpEvent, HttpEventType } from "@angular/common/http";
 import { Component, OnDestroy, signal } from "@angular/core";
-import { faBook, faBookmark, faCreditCard, faFileAudio } from "@fortawesome/free-solid-svg-icons";
+import { faBook, faBookmark, faCreditCard, faFileAudio, faFilePdf } from "@fortawesome/free-solid-svg-icons";
 import { Subscription } from "rxjs";
 import { SeoBaseComponent } from "shared";
 import { DownloadService } from "../shared/service/download.service";
@@ -16,6 +16,7 @@ export class TractPageComponent extends SeoBaseComponent implements OnDestroy {
 
   public zipFileIcon = faFileAudio;
   public bookIcon = faBook;
+  public pdfIcon = faFilePdf;
   public bookmarkIcon = faBookmark;
   public cardIcon = faCreditCard;
 
