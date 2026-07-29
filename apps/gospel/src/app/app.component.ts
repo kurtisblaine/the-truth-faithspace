@@ -30,6 +30,7 @@ import { DeviceDetectorService } from "ngx-device-detector";
 import { BehaviorSubject, fromEvent, map, Observable } from "rxjs";
 import {
   AuthSettingsComponent,
+  fadeInOut,
   LibFaIconComponent,
   LinkComponent,
   SeoBaseComponent,
@@ -40,6 +41,7 @@ import {
   selector: "blog-root",
   templateUrl: "./app.component.html",
   styleUrls: ["./app.component.scss"],
+  animations: [fadeInOut],
   imports: [
     MatSidenavModule,
     MatProgressBarModule,

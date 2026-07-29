@@ -132,14 +132,14 @@
         </lib-link>
 
         @if(!isMobile()){
-        <lib-link [link]="`${baseUrl}/truth`" [isNewPage]="false">
+        <lib-link [link]="`${baseUrl}/truth`" [isNewPage]="false" @fadeInOut>
           <button mat-button aria-labelledby="Gospel button" aria-label="Gospel button" class="toolbar-header-button">
             <lib-fa-icon [icon]="gospelIcon"></lib-fa-icon>
             The Good News
           </button>
         </lib-link>
 
-        <lib-link [link]="'https://thewordof.life'">
+        <lib-link [link]="'https://thewordof.life'" @fadeInOut>
           <button
             mat-button
             aria-labelledby="Scriptures button"
@@ -151,7 +151,7 @@
           </button>
         </lib-link>
 
-        <lib-link [link]="`${baseUrl}/tracts`" [isNewPage]="false">
+        <lib-link [link]="`${baseUrl}/tracts`" [isNewPage]="false" @fadeInOut>
           <button mat-button (click)="drawer.close()" class="toolbar-header-button">
             <lib-fa-icon [icon]="tractsIcon"></lib-fa-icon>
             Tracts

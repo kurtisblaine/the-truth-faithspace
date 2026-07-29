@@ -68,7 +68,7 @@
       }
     </div>
     <div class="button-section-group">
-      <lib-link [link]="'truth#the-danger'" [isNewPage]="false">
+      <lib-link [link]="`${baseUrl}/truth#the-danger`" [isNewPage]="false">
         <button
           [@slideInFromRight]
           matButton="elevated"
@@ -80,7 +80,7 @@
           THE DANGER
         </button>
       </lib-link>
-      <lib-link [link]="'truth#the-futility'" [isNewPage]="false">
+      <lib-link [link]="`${baseUrl}/truth#the-futility`" [isNewPage]="false">
         <button
           [@slideInFromRight]
           matButton="elevated"
@@ -92,7 +92,7 @@
           THE FUTILITY
         </button>
       </lib-link>
-      <lib-link [link]="'truth#the-safety'" [isNewPage]="false">
+      <lib-link [link]="`${baseUrl}/truth#the-safety`" [isNewPage]="false">
         <button
           [@slideInFromRight]
           matButton="elevated"
@@ -104,7 +104,7 @@
           THE SAFETY
         </button>
       </lib-link>
-      <lib-link [link]="'truth#the-call'" [isNewPage]="false">
+      <lib-link [link]="`${baseUrl}/truth#the-call`" [isNewPage]="false">
         <button
           [@slideInFromRight]
           matButton="elevated"
@@ -116,7 +116,7 @@
           THE CALL
         </button>
       </lib-link>
-      <lib-link [link]="'truth#our-response'" [isNewPage]="false">
+      <lib-link [link]="`${baseUrl}/truth#our-response`" [isNewPage]="false">
         <button
           [@slideInFromRight]
           matButton="elevated"
@@ -128,7 +128,7 @@
           OUR RESPONSE
         </button>
       </lib-link>
-      <lib-link [link]="'truth#the-day-of-the-lord'" [isNewPage]="false">
+      <lib-link [link]="`${baseUrl}/truth#the-day-of-the-lord`" [isNewPage]="false">
         <button
           [@slideInFromRight]
           matButton="elevated"
@@ -187,7 +187,7 @@
     @defer (on viewport(tractsSubHeader)) {
     <p [@slideInFromLeft]>We don't ask anything from you, but to give yourself to the Lord</p>
     <p [@slideInFromLeft]>Here are bibles and tracts to encourage you in that</p>
-    <lib-link [link]="'tracts'" [isNewPage]="false">
+    <lib-link [link]="`${baseUrl}/tracts`" [isNewPage]="false">
       <button [@slideInFromLeft] mat-flat-button aria-labelledby="Tracts button" aria-label="Tracts button">
         <lib-fa-icon [icon]="tractsIcon"></lib-fa-icon>
         TRACTS
@@ -209,37 +209,37 @@
   <div #blogsSubHeader>
     @defer (on viewport(blogsSubHeader)) {
     <p [@slideInFromLeft]>Learn more about relevant topics for Christian living</p>
-    <lib-link [link]="'edifications'" [isNewPage]="false">
+    <lib-link [link]="`${baseUrl}/edifications`" [isNewPage]="false">
       <button [@slideInFromLeft] mat-flat-button aria-labelledby="Edifications button" aria-label="Edifications button">
         <lib-fa-icon [icon]="blogIcon"></lib-fa-icon>
         EDIFICATIONS
       </button>
     </lib-link>
-    <lib-link [link]="'discernments'" [isNewPage]="false">
+    <lib-link [link]="`${baseUrl}/discernments`" [isNewPage]="false">
       <button [@slideInFromLeft] mat-flat-button aria-labelledby="Discernments button" aria-label="Discernments button">
         <lib-fa-icon [icon]="discernIcon"></lib-fa-icon>
         DISCERNMENTS
       </button>
     </lib-link>
-    <lib-link [link]="'insights'" [isNewPage]="false">
+    <lib-link [link]="`${baseUrl}/insights`" [isNewPage]="false">
       <button [@slideInFromLeft] mat-flat-button aria-labelledby="Insights button" aria-label="Insights button">
         <lib-fa-icon [icon]="insightIcon"></lib-fa-icon>
         INSIGHTS
       </button>
     </lib-link>
-    <lib-link [link]="'poems'" [isNewPage]="false">
+    <lib-link [link]="`${baseUrl}/poems`" [isNewPage]="false">
       <button [@slideInFromLeft] mat-flat-button aria-labelledby="Poems button" aria-label="Poems button">
         <lib-fa-icon [icon]="psalmIcon"></lib-fa-icon>
         POEMS
       </button>
     </lib-link>
-    <lib-link [link]="'studies'" [isNewPage]="false">
+    <lib-link [link]="`${baseUrl}/studies`" [isNewPage]="false">
       <button [@slideInFromLeft] mat-flat-button aria-labelledby="Studies button" aria-label="Studies button">
         <lib-fa-icon [icon]="studyIcon"></lib-fa-icon>
         STUDIES
       </button>
     </lib-link>
-    <lib-link [link]="'drawings'" [isNewPage]="false">
+    <lib-link [link]="`${baseUrl}/drawings`" [isNewPage]="false">
       <button [@slideInFromLeft] mat-flat-button aria-labelledby="Drawings button" aria-label="Drawings button">
         <lib-fa-icon [icon]="drawingIcon"></lib-fa-icon>
         DRAWINGS
@@ -261,7 +261,7 @@
   <div #aboutSubHeader>
     @defer (on viewport(aboutSubHeader)) {
     <p [@slideInFromLeft]>Learn more about the author's testimony and send him a message</p>
-    <lib-link [link]="'home'" [isNewPage]="false">
+    <lib-link [link]="`${baseUrl}/home`" [isNewPage]="false">
       <button
         [@slideInFromLeft]
         mat-flat-button
@@ -273,7 +273,7 @@
         ABOUT
       </button>
     </lib-link>
-    <lib-link [link]="'contact'" [isNewPage]="false">
+    <lib-link [link]="`${baseUrl}/contact`" [isNewPage]="false">
       <button [@slideInFromLeft] mat-flat-button aria-labelledby="Contact button" aria-label="Contact button">
         <lib-fa-icon [icon]="mailIcon"></lib-fa-icon>
 
