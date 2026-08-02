@@ -24,6 +24,8 @@ export class NarratorComponent implements OnDestroy, OnInit {
   @Input() public text = "";
   @Input() public downloadLink = "";
 
+  private _cloudinaryBaseUrl = `https://res.cloudinary.com/dffihsa2y/`;
+
   public narratorStyle = NarratorStyle;
   public speechStatus = SpeechStatus;
   public playIcon = faPlay;
@@ -42,7 +44,9 @@ export class NarratorComponent implements OnDestroy, OnInit {
   constructor(public speechService: SpeechService, private changeDetectionRef: ChangeDetectorRef) {}
 
   ngOnInit(): void {
-    const { id, state } = this.speechService.init();
+    const { id, state } = this.speechService.init(
+      this.downloadLink ? `${this._cloudinaryBaseUrl}video/upload/${this.downloadLink}` : ""
+    );
     this.componentId = id;
 
     this.subscription = state.subscribe((s) => {
@@ -56,7 +60,6 @@ export class NarratorComponent implements OnDestroy, OnInit {
   }
 
   ngOnDestroy(): void {
-    // this.stopReading();
     this.subscription?.unsubscribe();
     this.playingSubscription?.unsubscribe();
   }
@@ -99,6 +102,6 @@ export class NarratorComponent implements OnDestroy, OnInit {
   }
 
   downloadAudio(url: string) {
-    this.speechService.downloadAudio(url);
+    this.speechService.downloadAudio(`${this._cloudinaryBaseUrl}video/upload/${url}`);
   }
 }

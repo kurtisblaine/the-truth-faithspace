@@ -35,7 +35,7 @@ import {
         mat-mini-fab
         [href]="youtubeLink()"
         [target]="'_blank'"
-        [matTooltip]="'Youtube'"
+        [matTooltip]="'YouTube'"
         aria-labelledby="Youtube Link"
         aria-label="Youtube Link"
       >

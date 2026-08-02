@@ -16,17 +16,21 @@ export enum SpeechStatus {
 })
 export class SpeechService implements OnDestroy {
   public speechSynthesis: SpeechSynthesis | null | undefined;
+  public audioPlayer!: HTMLAudioElement | null;
+
   private _snackBar = inject(MatSnackBar);
   private _httpClient = inject(HttpClient);
 
-  private _cloudinaryBaseUrl = `https://res.cloudinary.com/dffihsa2y/`;
-
   public allStates = new Map<string, BehaviorSubject<SpeechStatus>>();
+  public staticAudioUrls = new Map<string, string>();
+
   public hasBrowserSupport = false;
   private subscription!: Subscription;
 
   private currentlyPlayingId = new BehaviorSubject<string>("");
   public currentlyPlayingId$ = this.currentlyPlayingId.asObservable();
+
+  private currentlyPlayingText!: string;
 
   public selectedVoice!: SpeechSynthesisVoice;
   public selectedRate!: number;
@@ -69,9 +73,14 @@ export class SpeechService implements OnDestroy {
     }
   }
 
-  init() {
+  init(staticMediaUrl?: string) {
     const id = v4().toString();
     const state = new BehaviorSubject<SpeechStatus>(SpeechStatus.Stopped);
+
+    if (staticMediaUrl) {
+      this.staticAudioUrls.set(id, staticMediaUrl);
+    }
+
     this.allStates.set(id, state);
     return { id, state: state.asObservable() };
   }
@@ -84,6 +93,7 @@ export class SpeechService implements OnDestroy {
   _getVoice = (name: string) => this.voices().filter((voice) => voice.name === name)[0];
 
   start(text: string, componentId: string) {
+    this.currentlyPlayingText = text;
     const thisState = this.allStates.get(componentId)?.value;
 
     if (thisState === SpeechStatus.Paused) {
@@ -98,15 +108,24 @@ export class SpeechService implements OnDestroy {
     }
 
     if (thisState === SpeechStatus.Stopped) {
-      this.speak(text, componentId);
+      this.speak(componentId);
       return;
     }
   }
 
-  speak(text: string, componentId: string) {
-    const utterance = new SpeechSynthesisUtterance(text);
-    this.currentlyPlayingId.next(componentId);
+  speak(componentId: string) {
+    if (this.staticAudioUrls.has(componentId)) {
+      this._startPlayer(componentId);
+    } else {
+      this._startSynthesis();
+    }
 
+    this.currentlyPlayingId.next(componentId);
+    this.setState(componentId, SpeechStatus.Playing);
+  }
+
+  _startSynthesis() {
+    const utterance = new SpeechSynthesisUtterance(this.currentlyPlayingText);
     utterance.voice = this.selectedVoice;
     utterance.lang = this.selectedVoice.lang;
     utterance.rate = this.selectedRate;
@@ -116,32 +135,85 @@ export class SpeechService implements OnDestroy {
     utterance.onend = () => {
       this.stop(this.currentlyPlayingId.value);
     };
+  }
 
-    this.setState(componentId, SpeechStatus.Playing);
+  _startPlayer(componentId: string) {
+    const audioPlayerUrl = this.staticAudioUrls.get(componentId);
+    this.audioPlayer = new Audio(audioPlayerUrl);
+    this.audioPlayer?.play()?.catch((_) => this._startSynthesis());
+    this.audioPlayer.onended = () => {
+      this.stop(this.currentlyPlayingId.value);
+    };
   }
 
   pause(componentId: string) {
-    this.speechSynthesis?.pause();
-    this.currentlyPlayingId.next(componentId);
+    if (this.staticAudioUrls.has(componentId)) {
+      this._pausePlayer();
+    } else {
+      this._pauseSynthesis();
+    }
 
+    this.currentlyPlayingId.next(componentId);
     this.setState(componentId, SpeechStatus.Paused);
   }
 
-  resume(componentId: string) {
-    this.speechSynthesis?.resume();
-    this.currentlyPlayingId.next(componentId);
+  _pausePlayer() {
+    try {
+      this.audioPlayer?.pause();
+    } catch (error) {
+      this._pauseSynthesis();
+    }
+  }
 
+  _pauseSynthesis() {
+    this.speechSynthesis?.pause();
+  }
+
+  resume(componentId: string) {
+    if (this.staticAudioUrls.has(componentId)) {
+      this._playPlayer();
+    } else {
+      this._resumeSynthesis();
+    }
+
+    this.currentlyPlayingId.next(componentId);
     this.setState(componentId, SpeechStatus.Playing);
   }
 
+  _playPlayer() {
+    this.audioPlayer?.play()?.catch((_) => this._startSynthesis());
+  }
+
+  _resumeSynthesis() {
+    this.speechSynthesis?.resume();
+  }
+
   stop(componentId: string) {
-    this.speechSynthesis?.cancel();
+    if (this.staticAudioUrls.has(componentId)) {
+      this._stopPlayer();
+    } else {
+      this._stopSynthesis();
+    }
+
     this.currentlyPlayingId.next("");
 
     if (componentId === "all") {
       this.allStates.clear();
     } else {
       this.resetStates();
+    }
+  }
+
+  _stopSynthesis() {
+    this.speechSynthesis?.cancel();
+  }
+
+  _stopPlayer() {
+    try {
+      this.audioPlayer?.pause();
+      this.audioPlayer!.currentTime = 0;
+    } catch (error) {
+      this._stopSynthesis();
     }
   }
 
@@ -159,6 +231,9 @@ export class SpeechService implements OnDestroy {
   }
 
   private resetStates() {
+    this._stopPlayer();
+    this.audioPlayer = null;
+
     this.allStates.forEach((value, key) => {
       const state = this.allStates.get(key);
       state?.next(SpeechStatus.Stopped);
@@ -180,18 +255,16 @@ export class SpeechService implements OnDestroy {
       this.subscription.unsubscribe();
     }
 
-    this.subscription = this._httpClient
-      .get(`${this._cloudinaryBaseUrl}video/upload/${url}`, { responseType: "blob" })
-      .subscribe((blob: any) => {
-        const blobUrl = window.URL.createObjectURL(blob);
+    this.subscription = this._httpClient.get(url, { responseType: "blob" }).subscribe((blob: any) => {
+      const blobUrl = window.URL.createObjectURL(blob);
 
-        const anchor = document.createElement("a");
-        anchor.href = blobUrl;
-        anchor.download = url.split(/[\\/]/).pop()!.toString();
+      const anchor = document.createElement("a");
+      anchor.href = blobUrl;
+      anchor.download = url.split(/[\\/]/).pop()!.toString();
 
-        anchor.click();
+      anchor.click();
 
-        window.URL.revokeObjectURL(blobUrl);
-      });
+      window.URL.revokeObjectURL(blobUrl);
+    });
   }
 }

@@ -17,9 +17,10 @@ import {
   faMusic,
   faNewspaper,
   faPenToSquare,
+  faPhone,
 } from "@fortawesome/free-solid-svg-icons";
 
-import { CommonModule } from "@angular/common";
+import { CommonModule, NgOptimizedImage } from "@angular/common";
 import { MatButtonModule } from "@angular/material/button";
 import { MatListModule } from "@angular/material/list";
 import { MatProgressBarModule } from "@angular/material/progress-bar";
@@ -35,13 +36,15 @@ import {
   LinkComponent,
   SeoBaseComponent,
   SettingsWidgetComponent,
+  ShareComponent,
+  slideInFromTop,
   VoiceSettingsComponent,
 } from "shared";
 @Component({
   selector: "blog-root",
   templateUrl: "./app.component.html",
   styleUrls: ["./app.component.scss"],
-  animations: [fadeInOut],
+  animations: [fadeInOut, slideInFromTop],
   imports: [
     MatSidenavModule,
     MatProgressBarModule,
@@ -57,6 +60,8 @@ import {
     AuthSettingsComponent,
     CommonModule,
     LinkComponent,
+    ShareComponent,
+    NgOptimizedImage,
   ],
 })
 export class AppComponent extends SeoBaseComponent implements OnInit {
@@ -78,6 +83,8 @@ export class AppComponent extends SeoBaseComponent implements OnInit {
   public studyIcon = faBook;
   public settingsIcon = faGears;
   public arrowIcon = faArrowUp;
+  public phoneIcon = faPhone;
+  public emailIcon = faEnvelope;
 
   public progressValue = new BehaviorSubject(0);
   public progressValue$!: Observable<number>;

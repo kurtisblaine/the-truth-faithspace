@@ -126,14 +126,20 @@
         </mat-menu>
 
         <lib-link [link]="`${baseUrl}`" [isNewPage]="false">
-          <button mat-button>
+          <button mat-button (click)="drawer.close()">
             <div style="font-size: 20px">The Light of Life</div>
           </button>
         </lib-link>
 
         @if(!isMobile()){
         <lib-link [link]="`${baseUrl}/truth`" [isNewPage]="false" @fadeInOut>
-          <button mat-button aria-labelledby="Gospel button" aria-label="Gospel button" class="toolbar-header-button">
+          <button
+            mat-button
+            (click)="drawer.close()"
+            aria-labelledby="Gospel button"
+            aria-label="Gospel button"
+            class="toolbar-header-button"
+          >
             <lib-fa-icon [icon]="gospelIcon"></lib-fa-icon>
             The Good News
           </button>
@@ -208,3 +214,44 @@
     ></mat-progress-bar>
   </mat-drawer-content>
 </mat-drawer-container>
+
+<mat-divider></mat-divider>
+
+<div class="footer" [@slideInFromTop]>
+  <div class="footer-image" style="background-position: top">
+    <img
+      fill
+      style="object-position: top; object-fit: contain"
+      [loaderParams]="{ bypassLoader: true }"
+      [ngSrc]="'/favicon.ico'"
+      alt=""
+      priority
+    />
+  </div>
+
+  <div class="footer-message">
+    <div>
+      None of the writings were written by AI; the Text to Speech service uses an artificial voice<br />
+      The images on the gospel page are from
+      <lib-link [link]="'https://revelationillustrated.com'">Revelation Illustrated</lib-link>
+    </div>
+    <div class="contact-info-container">
+      <lib-link [link]="'tel:+16052142910'" style="padding: 3px">
+        <lib-fa-icon [icon]="phoneIcon"></lib-fa-icon>
+        (605) 214-2910
+      </lib-link>
+
+      <lib-link [link]="'mailto:kurtisblainewaldner@gmail.com'" style="padding: 3px">
+        <lib-fa-icon [icon]="emailIcon"></lib-fa-icon>
+        kurtisblainewaldner&#64;gmail.com
+      </lib-link>
+    </div>
+  </div>
+
+  <lib-share
+    [githubLink]="'https://github.com/kurtisblaine'"
+    [youtubeLink]="'https://www.youtube.com/@too.Wonderful.to.Understand'"
+    [amazonLink]="'https://www.amazon.com/dp/B0GGZTZ2MV'"
+    [linkedinLink]="'https://www.linkedin.com/in/kurt-waldner/'"
+  ></lib-share>
+</div>
