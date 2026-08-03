@@ -72,11 +72,8 @@ export class NarratorComponent implements OnDestroy, OnInit {
       text = this.text;
     }
 
-    if (!text) return;
-
     let cleanedText = this.removeParentheses(text!);
     cleanedText = this.removeBrackets(cleanedText!);
-    if (!cleanedText) return;
 
     this.speechService.start(cleanedText, this.componentId);
   }

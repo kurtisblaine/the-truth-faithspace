@@ -3,7 +3,7 @@
 }
 
 <div [ngClass]="{ limitTextHeight: showReadMore() && hasHtml && !isReadMore }">
-  <div #readonlyHtml class="readonly-editor" [innerHTML]="html() | safeHtml"></div>
+  <div #readonlyHtml class="readonly-editor" [innerHTML]="removeColor(html()) | safeHtml"></div>
 </div>
 
 <button

@@ -93,7 +93,7 @@ export class VoiceSettingsComponent implements OnInit {
 
   private _defaultSettings: VoiceAppSettings = {
     voice: { name: "Loading...", default: true, lang: "", voiceURI: "", localService: false },
-    rate: 1,
+    rate: 1.2,
   };
   public settings = signal<VoiceAppSettings>(this._defaultSettings);
   private _settings: VoiceAppSettings = this._defaultSettings;

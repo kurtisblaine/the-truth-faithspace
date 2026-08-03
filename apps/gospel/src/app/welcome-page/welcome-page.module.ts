@@ -5,7 +5,7 @@ import { MatDividerModule } from "@angular/material/divider";
 import { MatProgressBarModule } from "@angular/material/progress-bar";
 import { MatTooltipModule } from "@angular/material/tooltip";
 import { RouterModule, Routes } from "@angular/router";
-import { LibFaIconComponent, LinkComponent } from "shared";
+import { LibFaIconComponent, LinkComponent, NarratorComponent } from "shared";
 import { WelcomePageComponent } from "./welcome-page.component";
 
 const routes: Routes = [
@@ -27,6 +27,7 @@ const routes: Routes = [
     LibFaIconComponent,
     MatProgressBarModule,
     MatTooltipModule,
+    NarratorComponent,
   ],
 })
 export class WelcomePageModule {}

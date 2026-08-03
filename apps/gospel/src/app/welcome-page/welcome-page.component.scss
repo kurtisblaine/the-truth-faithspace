@@ -17,6 +17,14 @@
   padding: 20px;
 }
 
+.opening-messages {
+  display: flex;
+}
+
+.opening-messages > * {
+  padding: 12px;
+}
+
 button {
   margin: 3px;
 }

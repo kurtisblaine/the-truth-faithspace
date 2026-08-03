@@ -44,4 +44,9 @@ export class ReadonlyTextEditorComponent {
     this.isReadMore = !this.isReadMore;
     // window.open(this.link(), "_blank");
   }
+
+  //this is required for dark mode to look correctly
+  removeColor(html: string) {
+    return html?.replace(/color:/g, "");
+  }
 }
