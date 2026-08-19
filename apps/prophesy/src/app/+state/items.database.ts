@@ -9,7 +9,10 @@ export enum Tag {
   Faith = "Faith",
   Grace = "Grace",
   GodElection = "God's Election",
+  Unfulfilled = "Unfulfilled",
 }
+
+export type TagKey = keyof typeof Tag;
 
 export const itemsRows: ItemEntity[] = [
   { title: "Mark 1:2", description: "testing", prophesy: "", fulfillments: [], tags: [Tag.ChristResurrection] },

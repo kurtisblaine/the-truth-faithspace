@@ -9,7 +9,21 @@
       <button mat-menu-item (click)="goContact()">Contact</button>
     </mat-menu>
 
-    <button mat-button (click)="goHome()"><h1>Biblical Prophesy</h1></button>
+    <lib-link [link]="`${baseUrl}`" [isNewPage]="false">
+      <button mat-button (click)="goHome()"><h1>Biblical Prophesy</h1></button>
+    </lib-link>
+
+    <lib-link [link]="`${baseUrl}/prophesies`" [isNewPage]="false" @fadeInOut>
+      <button
+        mat-button
+        aria-labelledby="Prophesies button"
+        aria-label="Prophesies button"
+        class="toolbar-header-button"
+      >
+        The Prophesies
+      </button>
+    </lib-link>
+
     <span style="flex: 1 1 auto"></span>
 
     <button

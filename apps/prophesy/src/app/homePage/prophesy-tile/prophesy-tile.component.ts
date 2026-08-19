@@ -1,12 +1,13 @@
 import { ChangeDetectionStrategy, Component, inject, input } from "@angular/core";
 import { MatCardModule } from "@angular/material/card";
 import { MatChipsModule } from "@angular/material/chips";
+import { MatRippleModule } from "@angular/material/core";
 import { BASE_URL, LinkComponent, TooltipDirective } from "shared";
 import { ItemEntity } from "../../+state/items/items.reducer";
 
 @Component({
   selector: "app-prophesy-tile",
-  imports: [MatCardModule, TooltipDirective, LinkComponent, MatChipsModule],
+  imports: [MatCardModule, TooltipDirective, LinkComponent, MatChipsModule, MatRippleModule],
   templateUrl: "./prophesy-tile.component.html",
   styleUrl: "./prophesy-tile.component.scss",
   changeDetection: ChangeDetectionStrategy.OnPush,

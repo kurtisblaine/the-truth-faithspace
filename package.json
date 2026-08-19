@@ -53,6 +53,7 @@
     "@ngrx/entity": "20.0.0",
     "@ngrx/router-store": "20.0.0",
     "@ngrx/store": "20.0.0",
+    "@omnedia/ngx-number-ticker": "^3.0.0",
     "@rdlabo/ngx-cdk-scroll-strategies": "^20.0.3",
     "fullpage.js": "4.0.35",
     "leaflet": "^1.9.4",

@@ -1,26 +1,29 @@
 import { CommonModule } from "@angular/common";
-import { Component, computed, Signal, signal } from "@angular/core";
+import { Component, computed, OnDestroy, Signal, signal } from "@angular/core";
 import { MatButtonModule } from "@angular/material/button";
 import { MatChipsModule } from "@angular/material/chips";
+import { MatToolbarModule } from "@angular/material/toolbar";
+import { ActivatedRoute } from "@angular/router";
 import { Store } from "@ngrx/store";
 import { flatMap } from "lodash-es";
+import { Subscription } from "rxjs";
 import { SeoBaseComponent, tileSlideIn } from "shared";
-import { Tag } from "../+state/items.database";
-import { ItemsActions } from "../+state/items/items.actions";
+import { Tag, TagKey } from "../+state/items.database";
 import { ItemEntity } from "../+state/items/items.reducer";
 import { selectAllItems, selectAllTags } from "../+state/items/items.selectors";
-import { environment } from "../../environments/environment";
 import { ProphesyTileComponent } from "./prophesy-tile/prophesy-tile.component";
 
 @Component({
   selector: "app-home-page",
-  imports: [CommonModule, ProphesyTileComponent, MatChipsModule, MatButtonModule],
+  imports: [CommonModule, ProphesyTileComponent, MatChipsModule, MatButtonModule, MatToolbarModule],
   templateUrl: "./home-page.component.html",
   styleUrl: "./home-page.component.scss",
   animations: [tileSlideIn],
 })
-export class HomePageComponent extends SeoBaseComponent {
+export class HomePageComponent extends SeoBaseComponent implements OnDestroy {
   public allTags!: Signal<Tag[]>;
+
+  private subscription!: Subscription;
 
   readonly filteredTags = computed(() => {
     const allTags = flatMap(this.filteredItems(), (a) => a.tags);
@@ -38,13 +41,22 @@ export class HomePageComponent extends SeoBaseComponent {
     return this.items().filter((item) => activeTags.every((tag) => item.tags.includes(tag)));
   });
 
-  constructor(private store: Store) {
-    super({ canonicalUrl: environment.baseUrl, description: "TODO" });
-
-    this.store.dispatch(ItemsActions.loadItems());
+  constructor(private store: Store, private route: ActivatedRoute) {
+    super();
 
     this.items = this.store.selectSignal(selectAllItems);
     this.allTags = this.store.selectSignal(selectAllTags);
+
+    this.subscription = this.route.queryParams.subscribe((queryParams) => {
+      const queryParamTags = queryParams["tags"] as string;
+      const tagList = (queryParamTags.split("&") as TagKey[]).map((key) => Tag[key]);
+
+      this.selectedTags.update((tags) => [...tags, ...tagList]);
+    });
+  }
+
+  ngOnDestroy(): void {
+    this.subscription?.unsubscribe();
   }
 
   isSelected(tag: string) {

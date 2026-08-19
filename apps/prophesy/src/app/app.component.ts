@@ -8,7 +8,14 @@ import { MatTooltipModule } from "@angular/material/tooltip";
 import { Router, RouterModule, RouterOutlet } from "@angular/router";
 import { FontAwesomeModule } from "@fortawesome/angular-fontawesome";
 import { faBars, faGears } from "@fortawesome/free-solid-svg-icons";
-import { SettingsWidgetComponent, ShareComponent, ThemeSettings } from "shared";
+import {
+  fadeInOut,
+  LinkComponent,
+  SeoBaseComponent,
+  SettingsWidgetComponent,
+  ShareComponent,
+  ThemeSettings,
+} from "shared";
 
 @Component({
   imports: [
@@ -23,19 +30,23 @@ import { SettingsWidgetComponent, ShareComponent, ThemeSettings } from "shared";
     MatMenuModule,
     ShareComponent,
     MatDividerModule,
+    LinkComponent,
   ],
   selector: "app-root",
   templateUrl: "./app.component.html",
   styleUrl: "./app.component.scss",
+  animations: [fadeInOut],
 })
-export class AppComponent {
+export class AppComponent extends SeoBaseComponent {
   public title = "Biblical Prophesy";
   public storageName = "ProphesyAppSettings";
 
   public menuIcon = faBars;
   public settingsIcon = faGears;
 
-  constructor(private router: Router) {}
+  constructor(private router: Router) {
+    super();
+  }
 
   public goHome() {
     this.router.navigateByUrl("").then(() => {});

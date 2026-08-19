@@ -1,5 +1,8 @@
+<h1 class="primary-color" #seoTitle>The Prophesies</h1>
+<h2 #seoCaption></h2>
+
 <mat-chip-listbox multiple aria-label="Prophesy Type">
-  @for (tag of filteredTags(); track tag) {
+  @for (tag of allTags(); track tag) {
   <mat-chip-option [value]="tag" [selected]="isSelected(tag)" (selectionChange)="toggleTag(tag, $event.selected)">
     {{ tag }}
   </mat-chip-option>
@@ -14,6 +17,6 @@
   @for (item of filteredItems(); track $index) {
   <app-prophesy-tile [item]="item" @tileSlideIn></app-prophesy-tile>
   } @empty {
-  <div>No items match the selected filters.</div>
+  <mat-toolbar>No items match the selected filters.</mat-toolbar>
   }
 </div>

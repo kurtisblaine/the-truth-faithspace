@@ -1,0 +1,23 @@
+<div class="grid">
+  <lib-number-ticker
+    tileSlideIn
+    matRipple
+    (click)="goToProphesies(['ChristExaltation'])"
+    [title]="'Prophesies about Jesus'"
+    [count]="counts().prophesiesAboutJesus"
+  ></lib-number-ticker>
+  <lib-number-ticker
+    tileSlideIn
+    matRipple
+    (click)="goToProphesies(['Grace', 'Faith'])"
+    [title]="'Prophesies Fulfilled'"
+    [count]="counts().prophesiesFulfilled"
+  ></lib-number-ticker>
+  <lib-number-ticker
+    tileSlideIn
+    matRipple
+    (click)="goToProphesies(['Unfulfilled'])"
+    [title]="'Prophesies Unfulfilled'"
+    [count]="counts().prophesiesUnfulfilled"
+  ></lib-number-ticker>
+</div>

@@ -11,6 +11,29 @@ export const selectItemsError = createSelector(selectItemsState, (state: fromIte
 
 export const selectAllItems = createSelector(selectItemsState, (state: fromItems.State) => selectAll(state));
 
+export const selectAllCounts = createSelector(selectAllItems, (items: fromItems.ItemEntity[]) =>
+  items.reduce(
+    (counts, item) => {
+      item.tags.forEach((tag) => {
+        if (tag === Tag.ChristExaltation || tag === Tag.ChristResurrection || tag === Tag.ChristSufferings)
+          counts.prophesiesAboutJesus += 1;
+
+        if (tag === Tag.Unfulfilled) counts.prophesiesUnfulfilled += 1;
+
+        if (tag !== Tag.Unfulfilled) counts.prophesiesFulfilled += 1;
+      });
+      return counts;
+    },
+    { prophesiesFulfilled: 0, prophesiesUnfulfilled: 0, prophesiesAboutJesus: 0 } as ProphesyCounts
+  )
+);
+
+export type ProphesyCounts = {
+  prophesiesFulfilled: number;
+  prophesiesUnfulfilled: number;
+  prophesiesAboutJesus: number;
+};
+
 export const selectAllTags = createSelector(selectAllItems, (items: fromItems.ItemEntity[]) =>
   items.reduce((tags, item) => {
     item.tags.forEach((t) => {

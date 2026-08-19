@@ -29,34 +29,6 @@ body {
   color: var(--mat-sys-on-surface);
 }
 
-.mat-typography h1,
-.mat-typography h2,
-.mat-typography h3,
-.mat-typography h4 {
-  margin-top: 4px;
-  margin-bottom: 8px;
-}
-
-.mat-typography h1 {
-  font-size: 28px;
-  font-weight: 500;
-}
-
-.mat-typography h2 {
-  font-size: 24px;
-  font-weight: 400;
-}
-
-.mat-typography h3 {
-  font-size: 20px;
-  font-weight: 350;
-}
-
-.mat-typography h4 {
-  font-size: 18px;
-  font-weight: 300;
-}
-
 a {
   text-decoration: underline;
   color: var(--mat-sys-primary);

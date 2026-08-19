@@ -9,3 +9,7 @@
 mat-card-footer mat-chip {
   cursor: pointer;
 }
+
+mat-card[matRipple] {
+  cursor: pointer;
+}
