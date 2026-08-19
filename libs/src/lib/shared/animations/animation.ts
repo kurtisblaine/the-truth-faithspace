@@ -1,4 +1,4 @@
-import { animate, style, transition, trigger } from "@angular/animations";
+import { animate, animation, style, transition, trigger, useAnimation } from "@angular/animations";
 
 export const fadeInOut = [
   trigger("fadeInOut", [
@@ -58,4 +58,18 @@ export const slideInFromBottom = trigger("slideInFromBottom", [
     animate("500ms ease-out", style({ transform: "translateY(0)" })),
   ]),
   transition(":leave", [animate("500ms ease-in", style({ transform: "translateY(-100%)" }))]),
+]);
+
+const scaleIn = animation([
+  style({ opacity: 0, transform: "scale(0.5)" }),
+  animate("{{time}} cubic-bezier(0.785, 0.135, 0.15, 0.86)", style({ opacity: 1, transform: "scale(1)" })),
+]);
+
+const scaleOut = animation([
+  animate("{{time}} cubic-bezier(0.785, 0.135, 0.15, 0.86)", style({ opacity: 0, transform: "scale(0.5)" })),
+]);
+
+export const tileSlideIn = trigger("tileSlideIn", [
+  transition("void => *", [useAnimation(scaleIn, { params: { time: "500ms" } })]),
+  transition("* => void", [useAnimation(scaleOut, { params: { time: "500ms" } })]),
 ]);

@@ -1,0 +1,19 @@
+<mat-chip-listbox multiple aria-label="Prophesy Type">
+  @for (tag of filteredTags(); track tag) {
+  <mat-chip-option [value]="tag" [selected]="isSelected(tag)" (selectionChange)="toggleTag(tag, $event.selected)">
+    {{ tag }}
+  </mat-chip-option>
+  }
+</mat-chip-listbox>
+
+@if(selectedTags().length) {
+<button matButton="filled" class="error-color" (click)="resetTags()">Reset</button>
+}
+
+<div class="grid">
+  @for (item of filteredItems(); track $index) {
+  <app-prophesy-tile [item]="item" @tileSlideIn></app-prophesy-tile>
+  } @empty {
+  <div>No items match the selected filters.</div>
+  }
+</div>

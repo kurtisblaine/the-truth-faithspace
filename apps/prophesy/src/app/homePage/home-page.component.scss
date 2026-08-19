@@ -1,0 +1,13 @@
+:host {
+  display: block;
+  padding: 14px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+}
+
+app-prophesy-tile {
+  padding: 10px;
+}

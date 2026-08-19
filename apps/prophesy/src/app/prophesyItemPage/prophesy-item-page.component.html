@@ -1,0 +1,39 @@
+<h1 class="primary-color" #seoTitle>{{ item()?.title }}</h1>
+<h2 #seoCaption>{{ item()?.description }}</h2>
+
+<mat-chip-set aria-label="Scripture Types">
+  @for(tag of showTagsSorted(); track $index) {
+  <mat-chip class="chip">{{ tag }}</mat-chip>
+  }
+</mat-chip-set>
+
+@if(item()?.bookDateRange) {
+<h3>
+  Most scholars place the writings of the scroll (that we call today,) {{ item()?.bookDateRange?.book }} around
+  {{ item()?.bookDateRange?.range }}
+</h3>
+}
+
+<div class="tiles">
+  <mat-card appearance="outlined">
+    <mat-card-header>
+      <mat-card-title> Prophesy</mat-card-title>
+      <mat-card-subtitle></mat-card-subtitle>
+    </mat-card-header>
+    <mat-card-content>
+      {{ item()?.prophesy }}
+    </mat-card-content>
+  </mat-card>
+
+  <mat-card appearance="outlined">
+    <mat-card-header>
+      <mat-card-title>Fulfillment(s)</mat-card-title>
+      <mat-card-subtitle></mat-card-subtitle>
+    </mat-card-header>
+    <mat-card-content>
+      @for(fulfillment of item()?.fulfillments; track $index) {
+      {{ fulfillment }}
+      }
+    </mat-card-content>
+  </mat-card>
+</div>

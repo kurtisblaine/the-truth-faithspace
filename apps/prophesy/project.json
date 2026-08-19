@@ -1,25 +1,25 @@
 {
-  "name": "todo",
+  "name": "prophesy",
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
   "projectType": "application",
   "prefix": "app",
-  "sourceRoot": "apps/todo/src",
+  "sourceRoot": "apps/prophesy/src",
   "tags": [],
   "targets": {
     "build": {
       "executor": "@angular-devkit/build-angular:application",
       "outputs": ["{options.outputPath}"],
       "options": {
-        "outputPath": "apps/todo/public",
-        "index": "apps/todo/src/index.html",
-        "browser": "apps/todo/src/main.ts",
-        "tsConfig": "apps/todo/tsconfig.app.json",
+        "outputPath": "apps/prophesy/public",
+        "index": "apps/prophesy/src/index.html",
+        "browser": "apps/prophesy/src/main.ts",
+        "tsConfig": "apps/prophesy/tsconfig.app.json",
         "inlineStyleLanguage": "scss",
         "namedChunks": true,
-        "assets": ["apps/todo/src/favicon.ico", "apps/todo/src/assets", "apps/todo/src/robots.txt"],
-        "styles": ["apps/todo/src/styles.scss"],
+        "assets": ["apps/prophesy/src/favicon.ico", "apps/prophesy/src/assets", "apps/prophesy/src/robots.txt"],
+        "styles": ["apps/prophesy/src/styles.scss"],
         "scripts": [],
-        "server": "apps/todo/src/main.server.ts",
+        "server": "apps/prophesy/src/main.server.ts",
         "outputMode": "static"
       },
       "configurations": {
@@ -37,7 +37,7 @@
             }
           ],
           "outputHashing": "all",
-          "fileReplacements": [
+                    "fileReplacements": [
             {
               "replace": "apps/technology/src/environments/environment.ts",
               "with": "apps/technology/src/environments/environment.prod.ts"
@@ -56,10 +56,10 @@
       "executor": "@angular-devkit/build-angular:dev-server",
       "configurations": {
         "production": {
-          "buildTarget": "todo:build:production"
+          "buildTarget": "prophesy:build:production"
         },
         "development": {
-          "buildTarget": "todo:build:development"
+          "buildTarget": "prophesy:build:development"
         }
       },
       "defaultConfiguration": "development",
@@ -68,7 +68,7 @@
     "extract-i18n": {
       "executor": "@angular-devkit/build-angular:extract-i18n",
       "options": {
-        "buildTarget": "todo:build"
+        "buildTarget": "prophesy:build"
       }
     },
     "lint": {
@@ -77,8 +77,8 @@
     "serve-static": {
       "executor": "@nx/web:file-server",
       "options": {
-        "buildTarget": "todo:build",
-        "staticFilePath": "dist/apps/todo/browser",
+        "buildTarget": "prophesy:build",
+        "staticFilePath": "dist/apps/prophesy/browser",
         "spa": true
       }
     }
