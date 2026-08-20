@@ -34,7 +34,7 @@ export type ProphesyCounts = {
   prophesiesAboutJesus: number;
 };
 
-export const selectAllTags = createSelector(selectAllItems, (items: fromItems.ItemEntity[]) =>
+export const selectAllAvailableTags = createSelector(selectAllItems, (items: fromItems.ItemEntity[]) =>
   items.reduce((tags, item) => {
     item.tags.forEach((t) => {
       tags.some((st) => st === t) ? t : tags.push(t);
@@ -42,6 +42,10 @@ export const selectAllTags = createSelector(selectAllItems, (items: fromItems.It
 
     return Object.values(tags).sort((a, b) => a.localeCompare(b));
   }, [] as Tag[])
+);
+
+export const selectAllTags = createSelector(selectAllItems, (items: fromItems.ItemEntity[]) =>
+  Object.entries(Tag).map(([_, tag]) => tag)
 );
 
 export const getById = (id: string) =>

@@ -21,7 +21,8 @@ export class ProphesyItemPageComponent extends SeoBaseComponent implements OnIni
     super({ description: "TODO" });
   }
 
-  showTagsSorted = () => Object.values(this.item()?.tags)?.sort((a, b) => a.localeCompare(b));
+  showTagsSorted = () =>
+    this.item()?.tags?.length ? Object.values(this.item()?.tags)?.sort((a, b) => a.localeCompare(b)) : [];
 
   ngOnInit() {
     // this.store.dispatch(ItemsActions.loadItems());

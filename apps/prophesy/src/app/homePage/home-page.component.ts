@@ -1,8 +1,9 @@
 import { CommonModule } from "@angular/common";
 import { Component, computed, OnDestroy, Signal, signal } from "@angular/core";
+import { FormsModule } from "@angular/forms";
 import { MatButtonModule } from "@angular/material/button";
+import { MatButtonToggleModule } from "@angular/material/button-toggle";
 import { MatChipsModule } from "@angular/material/chips";
-import { MatToolbarModule } from "@angular/material/toolbar";
 import { ActivatedRoute } from "@angular/router";
 import { Store } from "@ngrx/store";
 import { flatMap } from "lodash-es";
@@ -15,13 +16,15 @@ import { ProphesyTileComponent } from "./prophesy-tile/prophesy-tile.component";
 
 @Component({
   selector: "app-home-page",
-  imports: [CommonModule, ProphesyTileComponent, MatChipsModule, MatButtonModule, MatToolbarModule],
+  imports: [CommonModule, ProphesyTileComponent, MatChipsModule, MatButtonModule, MatButtonToggleModule, FormsModule],
   templateUrl: "./home-page.component.html",
   styleUrl: "./home-page.component.scss",
   animations: [tileSlideIn],
 })
 export class HomePageComponent extends SeoBaseComponent implements OnDestroy {
   public allTags!: Signal<Tag[]>;
+  public updateFilteredItems = signal<string>(null);
+  public filteringOption: "include" | "exclude" = "include";
 
   private subscription!: Subscription;
 
@@ -35,10 +38,15 @@ export class HomePageComponent extends SeoBaseComponent implements OnDestroy {
   public items!: Signal<ItemEntity[]>;
   readonly filteredItems = computed(() => {
     const activeTags = this.selectedTags();
+    const _ = this.updateFilteredItems(); //this is to merely manually update the filtered items.
 
     if (!activeTags.length) return this.items();
 
-    return this.items().filter((item) => activeTags.every((tag) => item.tags.includes(tag)));
+    return this.items().filter((item) =>
+      this.filteringOption === "include"
+        ? activeTags.some((tag) => item.tags.includes(tag))
+        : activeTags.every((tag) => item.tags.includes(tag))
+    );
   });
 
   constructor(private store: Store, private route: ActivatedRoute) {
@@ -49,7 +57,9 @@ export class HomePageComponent extends SeoBaseComponent implements OnDestroy {
 
     this.subscription = this.route.queryParams.subscribe((queryParams) => {
       const queryParamTags = queryParams["tags"] as string;
-      const tagList = (queryParamTags.split("&") as TagKey[]).map((key) => Tag[key]);
+      if (!queryParamTags) return;
+
+      const tagList = (queryParamTags.split(",") as TagKey[]).map((key) => Tag[key]);
 
       this.selectedTags.update((tags) => [...tags, ...tagList]);
     });
@@ -57,6 +67,10 @@ export class HomePageComponent extends SeoBaseComponent implements OnDestroy {
 
   ngOnDestroy(): void {
     this.subscription?.unsubscribe();
+  }
+
+  updateFilter() {
+    this.updateFilteredItems.update((value) => (value += "."));
   }
 
   isSelected(tag: string) {
