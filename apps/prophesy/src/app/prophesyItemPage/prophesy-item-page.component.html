@@ -1,5 +1,5 @@
 <h1 class="primary-color" #seoTitle>{{ item()?.title }}</h1>
-<h2 #seoCaption>{{ item()?.description }}</h2>
+<h2 class="mat-caption" #seoCaption>{{ item()?.description }}</h2>
 
 <mat-chip-set aria-label="Scripture Types">
   @for(tag of showTagsSorted(); track $index) {
@@ -7,33 +7,38 @@
   }
 </mat-chip-set>
 
-@if(item()?.bookDateRange) {
-<h3>
-  Most scholars place the writings of the scroll (that we call today,) {{ item()?.bookDateRange?.book }} around
-  {{ item()?.bookDateRange?.range }}
-</h3>
-}
-
 <div class="tiles">
-  <mat-card appearance="outlined">
+  <mat-card appearance="raised">
     <mat-card-header>
-      <mat-card-title> Prophesy</mat-card-title>
-      <mat-card-subtitle></mat-card-subtitle>
+      <mat-card-title> <h3 class="primary-color">Prophesy</h3></mat-card-title>
+      <mat-card-subtitle>
+        @if(item()?.bookDateRange) {
+        <h4>The book {{ item()?.bookDateRange?.book }} was written {{ item()?.bookDateRange?.range }}</h4>
+        }
+      </mat-card-subtitle>
     </mat-card-header>
     <mat-card-content>
       {{ item()?.prophesy }}
     </mat-card-content>
+    <mat-card-footer></mat-card-footer>
   </mat-card>
 
-  <mat-card appearance="outlined">
+  <mat-card appearance="raised">
     <mat-card-header>
-      <mat-card-title>Fulfillment(s)</mat-card-title>
-      <mat-card-subtitle></mat-card-subtitle>
+      <mat-card-title><h3 class="primary-color">Fulfillment(s)</h3></mat-card-title>
+      <mat-card-subtitle
+        ><h4>
+          The New Testament was written in the first century A.D., roughly between 50 A.D. and 100 A.D.
+        </h4></mat-card-subtitle
+      >
     </mat-card-header>
     <mat-card-content>
       @for(fulfillment of item()?.fulfillments; track $index) {
-      {{ fulfillment }}
+      <div style="padding: 7px">
+        {{ fulfillment }}
+      </div>
       }
     </mat-card-content>
+    <mat-card-footer> </mat-card-footer>
   </mat-card>
 </div>

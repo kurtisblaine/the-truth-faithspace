@@ -18,8 +18,8 @@
 
 <mat-button-toggle-group
   aria-label="Filtering Option"
-  [(ngModel)]="filteringOption"
-  (ngModelChange)="updateFilter()"
+  [value]="filteringOption()"
+  (change)="onFilterOptionChange($event)"
   style="margin-bottom: 5px"
 >
   <mat-button-toggle value="include">Include</mat-button-toggle>

@@ -9,6 +9,13 @@
   <lib-number-ticker
     tileSlideIn
     matRipple
+    (click)="goToProphesies([])"
+    [title]="'Prophesies Fulfilled'"
+    [count]="counts().prophesiesFulfilled"
+  ></lib-number-ticker>
+  <lib-number-ticker
+    tileSlideIn
+    matRipple
     (click)="goToProphesies(['Unfulfilled'])"
     [title]="'Prophesies Unfulfilled'"
     [count]="counts().prophesiesUnfulfilled"

@@ -10,7 +10,7 @@ export const toKebabCase = (value: string) =>
     .trim()
     .replace(/[^a-zA-Z0-9\s]/g, "")
     .toLowerCase()
-    .replace(/\s+/g, "-");
+    .replace(/[\s:-]+/g, "-");
 
 @Injectable()
 export class ItemsEffects {
@@ -18,7 +18,7 @@ export class ItemsEffects {
     this.actions$.pipe(
       ofType(ItemsActions.loadItems),
       map(() =>
-        itemsRows.map((row) => ({ ...row, bookDateRange: bookDateRanges.find((b) => b.book.includes(row.title)) }))
+        itemsRows.map((row) => ({ ...row, bookDateRange: bookDateRanges.find((b) => row.title.includes(b.book)) }))
       ),
       map((data) =>
         ItemsActions.loadItemsSuccess({

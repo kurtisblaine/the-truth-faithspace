@@ -51,7 +51,7 @@ export const appConfig: ApplicationConfig = {
     provideAnimations(),
     provideZonelessChangeDetection(),
     provideClientHydration(withIncrementalHydration(), withEventReplay()),
-    { provide: APP_POSTFIX, useValue: " | Beware of Idols" },
+    { provide: APP_POSTFIX, useValue: " | Biblical Prophesy" },
     { provide: BASE_URL, useValue: environment.baseUrl },
   ],
 };
