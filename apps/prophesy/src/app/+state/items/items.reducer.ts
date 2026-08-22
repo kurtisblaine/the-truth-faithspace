@@ -12,6 +12,7 @@ export interface ItemEntity {
   prophesy: string;
   fulfillments: string[];
   url?: string;
+  book?: string;
   bookDateRange?: BookDateRange;
 }
 

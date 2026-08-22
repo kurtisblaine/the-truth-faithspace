@@ -15,7 +15,7 @@ export const selectAllCounts = createSelector(selectAllItems, (items: fromItems.
   items.reduce(
     (counts, item) => {
       item.tags.forEach((tag) => {
-        if (tag === Tag.ChristExaltation || tag === Tag.ChristResurrection || tag === Tag.ChristSufferings)
+        if (tag === Tag.JesusExaltation || tag === Tag.JesusResurrection || tag === Tag.JesusSuffering)
           counts.prophesiesAboutJesus += 1;
 
         if (tag === Tag.Unfulfilled) counts.prophesiesUnfulfilled += 1;

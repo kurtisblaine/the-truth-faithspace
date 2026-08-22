@@ -2,46 +2,46 @@ import { ItemEntity } from "./items/items.reducer";
 
 export enum Tag {
   Baptism = "Baptism",
-  ChristSufferings = "Christ's Suffering",
-  ChristExaltation = "Christ's Exaltation",
-  ChristResurrection = "Christ's Resurrection",
+  JesusSuffering = "Jesus Suffering",
+  JesusExaltation = "Jesus Exaltation",
+  JesusResurrection = "Jesus Resurrection",
   EternalFire = "Eternal Fire",
   Faith = "Faith",
   Grace = "Grace",
   GodElection = "God's Election",
   Unfulfilled = "Unfulfilled",
-  ImplicitType = "ImplicitType",
+  ImplicitType = "Implicit Type",
 }
 
 export type TagKey = keyof typeof Tag;
 
 export const itemsRows: ItemEntity[] = [
   {
-    title: "2 Kings 13:20 to 21",
+    title: "Elisha's Grave",
     description:
-      "Baptism is symbolic of burial. Just as the man who was cast into Elisha's grave, so everyone who is baptised into Christ is also raised up with Him through faith.",
-    prophesy: `"Elisha died, and they buried him. Now the bands of the Moabites would invade the land in the spring of the year. As they were burying a man, behold, they saw a marauding band; and they cast the man into the grave of Elisha. And when the man touched the bones of Elisha he revived and stood up on his feet." (2 Kings 13:20 to 21)`,
+      "Baptism is symbolic of burial. Just as the deceased man who was cast into Elisha's grave rose from the dead, so everyone who is baptised into Christ is also raised up with Him through faith.",
+    prophesy: `"Elisha died, and they buried him. Now the bands of the Moabites would invade the land in the spring of the year. As they were burying a man, behold, they saw a marauding band; and they cast the man into the grave of Elisha. And when the man touched the bones of Elisha he revived and stood up on his feet." (2 Kings 13:20-21)`,
     fulfillments: [
       `"Therefore we have been buried with Him through baptism into death, so that as Christ was raised from the dead through the glory of the Father, so we too might walk in newness of life." (Romans 6:4)`,
       `"(...) having been buried with Him in baptism, in which you were also raised up with Him through faith in the working of God, who raised Him from the dead." (Colossians 2:12)`,
     ],
-    tags: [Tag.ChristResurrection, Tag.ImplicitType],
+    tags: [Tag.JesusResurrection, Tag.ImplicitType, Tag.Baptism],
   },
   {
     title: "bark 1:2",
     description: "testing",
     prophesy: "",
     fulfillments: [],
-    tags: [Tag.Baptism, Tag.ChristExaltation],
+    tags: [Tag.Baptism, Tag.JesusExaltation],
   },
   {
     title: "tark 1:2",
     description: "testing",
     prophesy: "",
     fulfillments: [],
-    tags: [Tag.ChristResurrection, Tag.Faith],
+    tags: [Tag.JesusResurrection, Tag.Faith],
   },
-  { title: "Mark 1:2", description: "testing", prophesy: "", fulfillments: [], tags: [Tag.ChristResurrection] },
+  { title: "Mark 1:2", description: "testing", prophesy: "", fulfillments: [], tags: [Tag.JesusResurrection] },
 ];
 
 export type BookDateRange = {

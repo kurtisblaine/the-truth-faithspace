@@ -2,7 +2,9 @@
   <mat-card matRipple>
     <mat-card-header class="header-container">
       <mat-card-title libTooltip="{{ item()?.title }}">{{ item()?.title }}</mat-card-title>
-      <!-- <mat-card-subtitle libTooltip="{{ showTagFriendlyView() }}"> {{ showTagFriendlyView() }} </mat-card-subtitle> -->
+      <mat-card-subtitle [matTooltip]="item()?.prophesy">
+        {{ item()?.book }}
+      </mat-card-subtitle>
     </mat-card-header>
     <mat-card-content>
       <div libTooltip="{{ item()?.description }}">

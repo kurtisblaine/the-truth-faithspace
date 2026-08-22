@@ -22,6 +22,7 @@ export class TooltipDirective implements OnInit, OnDestroy {
   private htmlElement!: HTMLElement;
 
   @Input("libTooltip") public message!: string;
+  @Input() public alwaysShowOnHover: boolean = false;
 
   private _verticalOverflow!: number;
   @Input() public set verticalOverflow(value) {
@@ -44,7 +45,7 @@ export class TooltipDirective implements OnInit, OnDestroy {
   }
 
   @HostListener("pointerover") public onPointerOver() {
-    if (this.isTextOverflowing(this.htmlElement)) {
+    if (this.isTextOverflowing(this.htmlElement) || this.alwaysShowOnHover) {
       if (!this.overlayRef.hasAttached()) this.createTooltipReference();
 
       this.tooltipRef.instance.show(this.defaultDelay);

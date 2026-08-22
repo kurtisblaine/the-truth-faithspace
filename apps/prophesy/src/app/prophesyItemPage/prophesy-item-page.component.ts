@@ -18,14 +18,13 @@ export class ProphesyItemPageComponent extends SeoBaseComponent implements OnIni
   public item!: Signal<ItemEntity>;
 
   constructor(private store: Store) {
-    super({ description: "TODO" });
+    super();
   }
 
   showTagsSorted = () =>
     this.item()?.tags?.length ? Object.values(this.item()?.tags)?.sort((a, b) => a.localeCompare(b)) : [];
 
   ngOnInit() {
-    // this.store.dispatch(ItemsActions.loadItems());
     this.item = this.store.selectSignal(getByUrl(this.title()));
   }
 }

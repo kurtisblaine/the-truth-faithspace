@@ -13,7 +13,7 @@
       <mat-card-title> <h3 class="primary-color">Prophesy</h3></mat-card-title>
       <mat-card-subtitle>
         @if(item()?.bookDateRange) {
-        <h4>The book {{ item()?.bookDateRange?.book }} was written {{ item()?.bookDateRange?.range }}</h4>
+        <h4>The book named {{ item()?.bookDateRange?.book }} was written around {{ item()?.bookDateRange?.range }}</h4>
         }
       </mat-card-subtitle>
     </mat-card-header>
@@ -28,7 +28,7 @@
       <mat-card-title><h3 class="primary-color">Fulfillment(s)</h3></mat-card-title>
       <mat-card-subtitle
         ><h4>
-          The New Testament was written in the first century A.D., roughly between 50 A.D. and 100 A.D.
+          The New Testament was written in the first century A.D. (between 50 A.D. and 100 A.D.)
         </h4></mat-card-subtitle
       >
     </mat-card-header>
