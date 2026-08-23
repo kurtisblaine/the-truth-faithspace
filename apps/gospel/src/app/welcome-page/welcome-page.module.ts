@@ -5,6 +5,7 @@ import { MatDividerModule } from "@angular/material/divider";
 import { MatProgressBarModule } from "@angular/material/progress-bar";
 import { MatTooltipModule } from "@angular/material/tooltip";
 import { RouterModule, Routes } from "@angular/router";
+import { NgxHighlighterComponent } from "@omnedia/ngx-highlighter";
 import { LibFaIconComponent, LinkComponent, NarratorComponent } from "shared";
 import { WelcomePageComponent } from "./welcome-page.component";
 
@@ -28,6 +29,7 @@ const routes: Routes = [
     MatProgressBarModule,
     MatTooltipModule,
     NarratorComponent,
+    NgxHighlighterComponent,
   ],
 })
 export class WelcomePageModule {}

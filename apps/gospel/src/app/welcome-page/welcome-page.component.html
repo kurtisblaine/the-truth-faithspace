@@ -1,13 +1,34 @@
 <div class="home-container">
-  <div class="header-pane">
+  <div class="header-pane" style="line-height: 35px">
     <h1 class="header-title primary" [@slideInFromRight]>THE LIGHT OF LIFE</h1>
-    <h2 class="header-caption" [@slideInFromLeft]>
-      In the dark, one must feel their way around, for there is no light for them to see by;
+    <h2 class="header-caption">
+      In the dark, one must
+      <om-highlighter action="underline" [color]="'var(--mat-sys-primary)'" [animationDuration]="2000">
+        feel
+      </om-highlighter>
+      their way around, for there is
+      <om-highlighter action="box" [color]="'var(--mat-sys-primary)'" [animationDuration]="2000"
+        >no light</om-highlighter
+      >
+      for them to see by;
     </h2>
-    <h2 class="header-caption" [@slideInFromRight]>
-      but <span style="font-weight: 550"> Jesus Christ</span> came into the world as the Light of the world, so that men
-      might walk by Him and have
-      <span class="primary" style="font-weight: 550">THE LIGHT OF LIFE</span>
+    <h2 class="header-caption">
+      but
+      <om-highlighter
+        action="highlight"
+        [color]="'var(--mat-sys-primary)'"
+        style="color: var(--mat-sys-on-primary)"
+        [animationDuration]="2000"
+      >
+        Jesus Christ</om-highlighter
+      >
+      came into the world as
+      <om-highlighter action="box" [color]="'var(--mat-sys-primary)'" [animationDuration]="2000"
+        >the Light of the world</om-highlighter
+      >, so that men might walk by Him and have
+      <om-highlighter action="circle" [color]="'var(--mat-sys-primary)'" [animationDuration]="2000"
+        >THE LIGHT OF LIFE</om-highlighter
+      >
     </h2>
 
     <div class="opening-messages">
@@ -75,7 +96,7 @@
         </button>
       </lib-link>
 
-      @if(isDownloading()){
+      @if (isDownloading()) {
       <mat-progress-bar mode="determinate" [value]="progress()"></mat-progress-bar>
       }
     </div>
