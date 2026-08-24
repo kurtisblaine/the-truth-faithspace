@@ -28,9 +28,13 @@ export class HomePageComponent extends SeoBaseComponent implements OnDestroy {
 
   private subscription!: Subscription;
 
-  readonly filteredTags = computed(() => {
-    const allTags = flatMap(this.filteredItems(), (a) => a.tags);
-    return Array.from(new Set(allTags)) as Tag[];
+  readonly filteredTags: Signal<Tag[]> = computed(() => {
+    if (this.filteringOption() === "include") {
+      return this.allTags();
+    } else {
+      const allTags = flatMap(this.filteredItems(), (a) => a.tags);
+      return Array.from(new Set(allTags)) as Tag[];
+    }
   });
 
   readonly selectedTags = signal<Tag[]>([]);

@@ -7,7 +7,7 @@
 </h2>
 
 <mat-chip-listbox multiple aria-label="Prophesy Type">
-  @for (tag of allTags(); track tag) {
+  @for (tag of filteredTags(); track tag) {
   <mat-chip-option [value]="tag" [selected]="isSelected(tag)" (selectionChange)="toggleTag(tag, $event.selected)">
     {{ tag }}
   </mat-chip-option>
