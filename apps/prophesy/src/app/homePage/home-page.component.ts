@@ -3,7 +3,7 @@ import { Component, computed, effect, OnDestroy, Signal, signal } from "@angular
 import { FormsModule } from "@angular/forms";
 import { MatButtonModule } from "@angular/material/button";
 import { MatButtonToggleChange, MatButtonToggleModule } from "@angular/material/button-toggle";
-import { MatChipsModule } from "@angular/material/chips";
+import { MatChipSelectionChange, MatChipsModule } from "@angular/material/chips";
 import { ActivatedRoute, Router } from "@angular/router";
 import { Store } from "@ngrx/store";
 import { flatMap } from "lodash-es";
@@ -60,19 +60,24 @@ export class HomePageComponent extends SeoBaseComponent implements OnDestroy {
 
     this.subscription = this.route.queryParams.pipe(take(1)).subscribe((queryParams) => {
       const queryParamTags = queryParams["tags"] as string;
-      if (!queryParamTags) return;
+      if (queryParamTags) {
+        const tagList = (queryParamTags.split(",") as TagKey[]).map((key) => Tag[key]);
+        this.selectedTags.update((tags) => [...tags, ...tagList]);
+      }
 
-      const tagList = (queryParamTags.split(",") as TagKey[]).map((key) => Tag[key]);
-
-      this.selectedTags.update((tags) => [...tags, ...tagList]);
+      const queryParamFilter = queryParams["filter"] as "include" | "exclude";
+      if (queryParamFilter) {
+        this.filteringOption.update(() => queryParamFilter);
+      }
     });
 
     effect(() => {
       const selectedTagKeys = this.selectedTags().map((tag) => Object.keys(Tag)[Object.values(Tag).indexOf(tag)]);
-      const allTags = this._removeDuplicates(selectedTagKeys).reduce(
-        (query, tag, index) => (query += index === 0 ? tag : `,${tag}`),
-        ""
-      );
+      const allTags = this._removeDuplicates(selectedTagKeys).reduce((query, tag, index) => {
+        if (index === 0) query += tag;
+        else query += `,${tag}`;
+        return query;
+      }, "");
 
       this.router.navigate([], {
         relativeTo: this.route,
@@ -98,11 +103,13 @@ export class HomePageComponent extends SeoBaseComponent implements OnDestroy {
   }
 
   resetTags() {
-    this.selectedTags.set([]);
+    this.selectedTags.update(() => []);
   }
 
-  toggleTag(tag: Tag, isSelected: boolean) {
-    if (isSelected) {
+  toggleTag(tag: Tag, event: MatChipSelectionChange) {
+    if (!event.isUserInput) return;
+
+    if (event.selected) {
       this.selectedTags.update((tags) => [...tags, tag]);
     } else {
       this.selectedTags.update((tags) => tags.filter((t) => t !== tag));
