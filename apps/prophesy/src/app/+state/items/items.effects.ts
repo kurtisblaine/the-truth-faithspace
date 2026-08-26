@@ -13,24 +13,27 @@ export const toKebabCase = (value: string) =>
     .replace(/[-]+/g, "-to-")
     .replace(/[\s:]+/g, "-");
 
+export const fillInData = (item: ItemEntity) => {
+  const prophesyBook = item.prophesy.match(/\(([^)]+)\)/)?.[1] ?? "";
+
+  return {
+    ...item,
+    book: prophesyBook,
+    tags: [...item.tags, prophesyBook],
+    url: toKebabCase(item.title),
+    bookDateRange: bookDateRanges.find((b) => prophesyBook.includes(b.book)),
+  } as ItemEntity;
+};
+
 @Injectable()
 export class ItemsEffects {
   public getItem$ = createEffect(() =>
     this.actions$.pipe(
       ofType(ItemsActions.loadItems),
-      map(() =>
-        itemsRows.map((row) => {
-          const prophesyBook = row.prophesy.match(/\(([^)]+)\)/) ?? ["", ""];
-          return {
-            ...row,
-            book: prophesyBook[1],
-            bookDateRange: bookDateRanges.find((b) => prophesyBook[1].includes(b.book)),
-          };
-        })
-      ),
+      map(() => itemsRows.map((row) => fillInData(row))),
       map((data) =>
         ItemsActions.loadItemsSuccess({
-          item: (data as ItemEntity[]).map((d) => ({ ...d, url: toKebabCase(d.title) })),
+          item: data as ItemEntity[],
         })
       )
     )

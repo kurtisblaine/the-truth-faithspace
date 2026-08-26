@@ -2,6 +2,7 @@ import { isPlatformServer } from "@angular/common";
 import { inject, PLATFORM_ID } from "@angular/core";
 import { ActionReducer, ActionReducerMap, INIT, MetaReducer } from "@ngrx/store";
 import { itemsRows } from "./items.database";
+import { fillInData } from "./items/items.effects";
 import * as fromItems from "./items/items.reducer";
 
 export interface AppState {
@@ -19,10 +20,12 @@ export function storageMetaReducer(reducer: ActionReducer<AppState>): ActionRedu
       return reducer(
         {
           items: {
-            entities: itemsRows.reduce<Record<string, fromItems.ItemEntity>>((acc, item) => {
-              acc[item.title] = item;
-              return acc;
-            }, {}),
+            entities: itemsRows
+              .map((item) => fillInData(item))
+              .reduce<Record<string, fromItems.ItemEntity>>((acc, item) => {
+                acc[item.title] = item;
+                return acc;
+              }, {}),
             ids: itemsRows.map((row) => row.title),
             error: "",
             loaded: true,
