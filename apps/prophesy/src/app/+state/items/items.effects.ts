@@ -14,7 +14,11 @@ export const toKebabCase = (value: string) =>
     .replace(/[\s:]+/g, "-");
 
 export const fillInData = (item: ItemEntity) => {
-  const prophesyBook = item.prophesy.match(/\((?!\.{3})([^)]+)\)/g)?.[0] ?? "";
+  const prophesyBook =
+    item.prophesy
+      .match(/\((?!\.{3})([^)]+)\)/g)?.[0]
+      ?.replace("(", "")
+      ?.replace(")", "") ?? "";
 
   return {
     ...item,
