@@ -9,7 +9,7 @@ import { Store } from "@ngrx/store";
 import { flatMap } from "lodash-es";
 import { Subscription, take } from "rxjs";
 import { SeoBaseComponent, tileSlideIn } from "shared";
-import { Tag, TagKey } from "../+state/items.database";
+import { Tag, TagKey } from "../+state/items/items.models";
 import { ItemEntity } from "../+state/items/items.reducer";
 import { selectAllItems, selectAllTags } from "../+state/items/items.selectors";
 import { ProphesyTileComponent } from "./prophesy-tile/prophesy-tile.component";
@@ -107,7 +107,7 @@ export class HomePageComponent extends SeoBaseComponent implements OnDestroy {
   }
 
   toggleTag(tag: Tag, event: MatChipSelectionChange) {
-    if (!event.isUserInput) return;
+    // if (!event.isUserInput) return;
 
     if (event.selected) {
       this.selectedTags.update((tags) => [...tags, tag]);

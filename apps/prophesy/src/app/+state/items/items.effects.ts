@@ -14,12 +14,12 @@ export const toKebabCase = (value: string) =>
     .replace(/[\s:]+/g, "-");
 
 export const fillInData = (item: ItemEntity) => {
-  const prophesyBook = item.prophesy.match(/\(([^)]+)\)/)?.[1] ?? "";
+  const prophesyBook = item.prophesy.match(/\((?!\.{3})([^)]+)\)/g)?.[0] ?? "";
 
   return {
     ...item,
     book: prophesyBook,
-    tags: [...item.tags, prophesyBook],
+    tags: item.tags,
     url: toKebabCase(item.title),
     bookDateRange: bookDateRanges.find((b) => prophesyBook.includes(b.book)),
   } as ItemEntity;

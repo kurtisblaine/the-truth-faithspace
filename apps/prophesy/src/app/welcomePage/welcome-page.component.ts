@@ -3,8 +3,8 @@ import { MatRippleModule } from "@angular/material/core";
 import { Router } from "@angular/router";
 import { Store } from "@ngrx/store";
 import { NumberTickerComponent, SeoBaseComponent, tileSlideIn } from "shared";
-import { Tag, TagKey } from "../+state/items.database";
 import { ItemsActions } from "../+state/items/items.actions";
+import { Tag, TagKey } from "../+state/items/items.models";
 import { ProphesyCounts, selectAllCounts } from "../+state/items/items.selectors";
 
 @Component({

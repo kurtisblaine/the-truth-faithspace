@@ -1,19 +1,5 @@
+import { BookDateRange, Tag } from "./items/items.models";
 import { ItemEntity } from "./items/items.reducer";
-
-export enum Tag {
-  Baptism = "Baptism",
-  JesusSuffering = "Jesus Suffering",
-  JesusExaltation = "Jesus Exaltation",
-  JesusResurrection = "Jesus Resurrection",
-  EternalFire = "Eternal Fire",
-  Faith = "Faith",
-  Grace = "Grace",
-  GodElection = "God's Election",
-  Unfulfilled = "Unfulfilled",
-  ImplicitType = "Implicit Type",
-}
-
-export type TagKey = keyof typeof Tag;
 
 export const itemsRows: ItemEntity[] = [
   {
@@ -28,26 +14,37 @@ export const itemsRows: ItemEntity[] = [
     tags: [Tag.JesusResurrection, Tag.ImplicitType, Tag.Baptism],
   },
   {
-    title: "bark 1:2",
-    description: "testing",
-    prophesy: "",
-    fulfillments: [],
-    tags: [Tag.Baptism, Tag.JesusExaltation],
+    title: "The World's Creation",
+    description:
+      "Jesus Christ is the Word in the beginning by which God created the whole world, visiable and invisible. And He creates us anew by the very same word and our faith.",
+    prophesy:
+      "`“In the beginning God created the heavens and the earth. (...) Then God said, (...) and there was light. (...) Then God said, (...) and it was so. (...) Then God said, (...) and it was so. (...) Then God said, (...) and it was so. (...) Then God said, (...) and it was so. Then God said, (...) and it was so. God saw all that He had made, and behold, it was very good. And there was evening and there was morning, the sixth day.” (Genesis 1:1-17)`",
+    fulfillments: [
+      `“In the beginning was the Word, and the Word was with God, and the Word was God. He was in the beginning with God. All things came into being through Him, and apart from Him nothing came into being that has come into being.” (John 1:1-3)`,
+      `“He was in the world, and the world was made through Him, and the world did not know Him.” (John 1:10)`,
+      `“And the Word became flesh, and dwelt among us, and we saw His glory, glory as of the only begotten from the Father, full of grace and truth.” (John 1:14)`,
+      `“He is the image of the invisible God, the firstborn of all creation. For by Him all things were created, both in the heavens and on earth, visible and invisible, whether thrones or dominions or rulers or authorities—all things have been created through Him and for Him. He is before all things, and in Him all things hold together.” (Colossians 1:15-17)`,
+    ],
+    tags: [Tag.JesusDeity, Tag.TheNewBirth],
   },
   {
-    title: "tark 1:2",
-    description: "testing",
-    prophesy: "",
-    fulfillments: [],
-    tags: [Tag.JesusResurrection, Tag.Faith],
+    title: "Jesus Christ is the Sabbath",
+    description:
+      "Just as God created the world in six days and rested on the Seventh, and hallowed it, so Jesus Christ finished the work of salvation on the cross, and God raised Him from the dead and seated Him at His right hand. And in Him is found rest from our works, sanctification, and eternal life.",
+    prophesy:
+      "`“By the seventh day God completed His work which He had done, and He rested on the seventh day from all His work which He had done. Then God blessed the seventh day and sanctified it, because in it He rested from all His work which God had created and made.” (Genesis 2:2-3)`",
+    fulfillments: [
+      `“Therefore when Jesus had received the sour wine, He said, "It is finished!" And He bowed His head and gave up His spirit.” (John 19:30)`,
+      `"But from now on THE SON OF MAN WILL BE SEATED AT THE RIGHT HAND of the power OF GOD." (Luke 22:69)`,
+      `“There remains a Sabbath rest for the people of God. For the one who has entered His rest has himself also rested from his works, as God did from His.” (Hebrews 4:9-10)`,
+      `“We who have believed enter that rest, just as He has said, "AS I SWORE IN MY WRATH, THEY SHALL NOT ENTER MY REST," although His works were finished from the foundation of the world.” (Hebrews 4:3)`,
+      `“For in Him all the fullness of Deity dwells in bodily form, and in Him you have been made complete, and He is the head over all rule and authority;” (Colossians 2:9-10)`,
+      `“To the church of God which is at Corinth, to those who have been sanctified in Christ Jesus (...)” (1 Corinthians 1:2)`,
+    ],
+    tags: [Tag.Faith, Tag.JesusType],
   },
   { title: "Mark 1:2", description: "testing", prophesy: "", fulfillments: [], tags: [Tag.JesusResurrection] },
 ];
-
-export type BookDateRange = {
-  book: string;
-  range: string;
-};
 
 export const bookDateRanges: BookDateRange[] = [
   //Pentateuch (Torah)

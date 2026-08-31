@@ -1,5 +1,5 @@
 import { createFeatureSelector, createSelector } from "@ngrx/store";
-import { Tag } from "../items.database";
+import { Tag } from "./items.models";
 import * as fromItems from "./items.reducer";
 
 export const selectItemsState = createFeatureSelector<fromItems.State>(fromItems.itemsFeatureKey);

@@ -1,7 +1,7 @@
 import { createEntityAdapter, EntityAdapter, EntityState } from "@ngrx/entity";
 import { createFeature, createReducer, on } from "@ngrx/store";
-import { BookDateRange, Tag } from "../items.database";
 import { ItemsActions } from "./items.actions";
+import { BookDateRange, Tag } from "./items.models";
 
 export const itemsFeatureKey = "items";
 
