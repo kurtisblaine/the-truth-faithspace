@@ -22,7 +22,11 @@
       @defer(on viewport(paragraphContent); hydrate on viewport()){
       <ng-content select=".paragraphs"></ng-content>
       } @placeholder {
-      <mat-spinner aria-labelledby="Loading bar" aria-label="Loading bar" style="justify-self: center"></mat-spinner>
+      <mat-spinner
+        aria-labelledby="Loading bar"
+        aria-label="Loading bar"
+        style="justify-self: center; margin: 0px auto"
+      ></mat-spinner>
       }
     </div>
   </mat-card-content>

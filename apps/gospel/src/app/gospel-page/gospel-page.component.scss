@@ -26,6 +26,10 @@
   height: 100vh;
 }
 
+mat-expansion-panel-header {
+  margin: 0px auto;
+}
+
 .mat-filled-button,
 .mat-elevated-button {
   margin-bottom: 20px;
@@ -99,6 +103,7 @@ mat-panel-title > button[matButton="elevated"],
   text-transform: none;
   justify-items: center;
   text-align: center;
+  align-items: center;
 }
 
 .section img {
