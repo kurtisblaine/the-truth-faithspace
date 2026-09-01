@@ -4,16 +4,51 @@
 @include mat.core();
 
 html {
-  color-scheme: light dark;
+  //start with light theme
+  color-scheme: light;
   @include mat.theme(
     (
-      color: mat.$azure-palette,
+      color: (
+        primary: mat.$azure-palette,
+        theme-type: light,
+        use-system-variables: true,
+      ),
       typography: (
         plain-family: sans-serif,
         brand-family: sans-serif,
+        use-system-variables: true,
       ),
+      density: 0,
     )
   );
+}
+
+html {
+  .light-mode {
+    color-scheme: light;
+    @include mat.theme(
+      (
+        color: (
+          primary: mat.$azure-palette,
+          theme-type: light,
+          use-system-variables: true,
+        ),
+      )
+    );
+  }
+
+  .dark-mode {
+    color-scheme: dark;
+    @include mat.theme(
+      (
+        color: (
+          primary: mat.$azure-palette,
+          theme-type: dark,
+          use-system-variables: true,
+        ),
+      )
+    );
+  }
 }
 
 html {

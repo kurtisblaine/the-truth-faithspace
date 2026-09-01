@@ -10,12 +10,21 @@ import { Router } from "@angular/router";
       [target]="getTarget()"
       (click)="navigateToAbsolute($event)"
       rel="noopener"
-      [ngStyle]="{ 'text-decoration': isNewPage && !textDecorationOverride ? 'underline' : 'none' }"
+      [ngClass]="{
+        underline: isNewPage && !textDecorationOverride,
+        'no-underline': !isNewPage || textDecorationOverride
+      }"
     >
       <ng-content></ng-content>
     </a>
   `,
-  styles: ``,
+  styles: `.underline {
+    text-decoration: underline !important;
+  }
+  .no-underline {
+    text-decoration: none !important;
+  }
+  `,
   imports: [CommonModule],
   changeDetection: ChangeDetectionStrategy.OnPush,
 })

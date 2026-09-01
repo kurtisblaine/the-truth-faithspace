@@ -3,12 +3,10 @@ import {
   afterNextRender,
   ChangeDetectionStrategy,
   Component,
-  Inject,
   inject,
   input,
   OnInit,
   output,
-  PLATFORM_ID,
   signal,
 } from "@angular/core";
 import { FormsModule } from "@angular/forms";
@@ -66,14 +64,15 @@ export class SettingsWidgetComponent implements OnInit {
     theme: "light",
   });
 
-  constructor(@Inject(PLATFORM_ID) private platformId: object) {
+  constructor() {
     afterNextRender(() => {
       const storedSettings = localStorage.getItem(this.storageName());
-      const prefersDark = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
-      if (prefersDark) {
-        this.settings.set({ theme: "dark" } as ThemeSettings);
-        this.themeService.setTheme(this.settings().theme);
-      } else if (storedSettings) {
+      // const prefersDark = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+      // if (prefersDark) {
+      //   this.settings.set({ theme: "dark" } as ThemeSettings);
+      //   this.themeService.setTheme(this.settings().theme);
+      // } else
+      if (storedSettings) {
         this.settings.set(JSON.parse(storedSettings) as ThemeSettings);
         this.themeService.setTheme(this.settings().theme);
       }

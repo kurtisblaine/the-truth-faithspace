@@ -13,5 +13,12 @@ export class ThemeService {
   public setTheme(theme: "light" | "dark") {
     this.renderer.setStyle(document.body, "color-scheme", theme);
     this.renderer.setAttribute(document.body, "color-scheme", theme);
+    if (theme === "light") {
+      this.renderer.addClass(document.body, "light-mode");
+      this.renderer.removeClass(document.body, "dark-mode");
+    } else {
+      this.renderer.addClass(document.body, "dark-mode");
+      this.renderer.removeClass(document.body, "light-mode");
+    }
   }
 }
