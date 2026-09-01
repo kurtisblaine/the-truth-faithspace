@@ -1,6 +1,6 @@
 <div class="home-container">
   <div class="header-pane" style="line-height: 35px">
-    <h1 class="header-title primary" [@slideInFromRight]>THE LIGHT OF LIFE</h1>
+    <h1 class="header-title primary" [libAnimationWatcher]="slideInFromRight">THE LIGHT OF LIFE</h1>
     <h2 class="header-caption">
       In the dark, one must
       <om-highlighter action="circle" [color]="'var(--mat-sys-primary)'" [animationDuration]="2000">
@@ -32,12 +32,12 @@
     </h2>
 
     <div class="opening-messages">
-      <div [@slideInFromLeft]>
+      <div [libAnimationWatcher]="slideInFromLeft">
         <h3>My Testimony</h3>
         <lib-narrator [downloadLink]="'v1785707836/audio/my-testimony.mp3'"> </lib-narrator>
       </div>
 
-      <div [@slideInFromRight]>
+      <div [libAnimationWatcher]="slideInFromLeft">
         <h3>One Thing: Believe in Jesus</h3>
         <lib-narrator [downloadLink]="'v1785721783/audio/one-thing-believe.mp3'"> </lib-narrator>
       </div>
@@ -49,19 +49,16 @@
 
 <div class="w3-container w3-padding-64 w3-center">
   <div #gospelHeader>
-    @defer (on viewport(gospelHeader)) {
-    <h2 [@slideInFromRight]>THE GOOD NEWS</h2>
-    }
+    <h2 [libAnimationWatcher]="slideInFromRight">THE GOOD NEWS</h2>
   </div>
 
   <div #gospelSubHeader>
-    @defer (on viewport(gospelSubHeader)) {
-    <p [@slideInFromLeft]>
+    <p [libAnimationWatcher]="slideInFromLeft">
       Understand the problem with the present world and believe the Good News about the Kingdom of God
     </p>
     <div class="download-buttons">
       <button
-        [@slideInFromLeft]
+        [libAnimationWatcher]="slideInFromLeft"
         matIconButton
         [matTooltip]="'Audio Book'"
         [disabled]="isDownloading()"
@@ -74,7 +71,7 @@
 
       <lib-link [link]="`${baseUrl}/assets/tracts/the-good-news-of-the-kingdom-of-god.pdf`">
         <button
-          [@slideInFromLeft]
+          [libAnimationWatcher]="slideInFromLeft"
           matIconButton
           [matTooltip]="'E-Book'"
           aria-labelledby="Download EBook button"
@@ -86,7 +83,7 @@
 
       <lib-link [link]="'https://www.amazon.com/dp/B0GGZTZ2MV'">
         <button
-          [@slideInFromLeft]
+          [libAnimationWatcher]="slideInFromLeft"
           [matTooltip]="'Print Book'"
           matIconButton
           aria-labelledby="Print Book button"
@@ -103,7 +100,7 @@
     <div class="button-section-group">
       <lib-link [link]="`${baseUrl}/truth#the-danger`" [isNewPage]="false">
         <button
-          [@slideInFromRight]
+          [libAnimationWatcher]="slideInFromLeft"
           matButton="elevated"
           aria-labelledby="The Danger button"
           aria-label="The Danger button"
@@ -115,7 +112,7 @@
       </lib-link>
       <lib-link [link]="`${baseUrl}/truth#the-futility`" [isNewPage]="false">
         <button
-          [@slideInFromRight]
+          [libAnimationWatcher]="slideInFromLeft"
           matButton="elevated"
           aria-labelledby="The Futility button"
           aria-label="The Futility button"
@@ -127,7 +124,7 @@
       </lib-link>
       <lib-link [link]="`${baseUrl}/truth#the-safety`" [isNewPage]="false">
         <button
-          [@slideInFromRight]
+          [libAnimationWatcher]="slideInFromLeft"
           matButton="elevated"
           aria-labelledby="The Saftey button"
           aria-label="The Saftey button"
@@ -139,7 +136,7 @@
       </lib-link>
       <lib-link [link]="`${baseUrl}/truth#the-call`" [isNewPage]="false">
         <button
-          [@slideInFromRight]
+          [libAnimationWatcher]="slideInFromLeft"
           matButton="elevated"
           aria-labelledby="The Call button"
           aria-label="The Call button"
@@ -151,7 +148,7 @@
       </lib-link>
       <lib-link [link]="`${baseUrl}/truth#our-response`" [isNewPage]="false">
         <button
-          [@slideInFromRight]
+          [libAnimationWatcher]="slideInFromLeft"
           matButton="elevated"
           aria-labelledby="Our Response button"
           aria-label="Our Response button"
@@ -163,7 +160,7 @@
       </lib-link>
       <lib-link [link]="`${baseUrl}/truth#the-day-of-the-lord`" [isNewPage]="false">
         <button
-          [@slideInFromRight]
+          [libAnimationWatcher]="slideInFromLeft"
           matButton="elevated"
           aria-labelledby="The Day of the Lord button"
           aria-label="The Day of the Lord button"
@@ -174,7 +171,6 @@
         </button>
       </lib-link>
     </div>
-    }
   </div>
 </div>
 
@@ -182,17 +178,14 @@
 
 <div class="w3-container w3-padding-64 w3-center">
   <div #bibleHeader>
-    @defer (on viewport(bibleHeader)) {
-    <h2 [@slideInFromRight]>THE SCRIPTURES</h2>
-    }
+    <h2 [libAnimationWatcher]="slideInFromRight">THE SCRIPTURES</h2>
   </div>
 
   <div #bibleSubHeader>
-    @defer (on viewport(bibleSubHeader)) {
-    <p [@slideInFromLeft]>Read the Holy Scriptures in your native tongue</p>
+    <p [libAnimationWatcher]="slideInFromLeft">Read the Holy Scriptures in your native tongue</p>
     <lib-link [link]="'https://thewordof.life'">
       <button
-        [@slideInFromRight]
+        [libAnimationWatcher]="slideInFromLeft"
         mat-flat-button
         (click)="navigateToBibleApp()"
         aria-labelledby="Open Bible button"
@@ -203,7 +196,6 @@
         OPEN THE BIBLE
       </button>
     </lib-link>
-    }
   </div>
 </div>
 
@@ -211,22 +203,23 @@
 
 <div class="w3-container w3-padding-64 w3-center">
   <div #tractsHeader>
-    @defer (on viewport(tractsHeader)) {
-    <h2 [@slideInFromRight]>TRACTS</h2>
-    }
+    <h2 [libAnimationWatcher]="slideInFromRight">TRACTS</h2>
   </div>
 
   <div #tractsSubHeader>
-    @defer (on viewport(tractsSubHeader)) {
-    <p [@slideInFromLeft]>We don't ask anything from you, but to give yourself to the Lord</p>
-    <p [@slideInFromLeft]>Here are bibles and tracts to encourage you in that</p>
+    <p [libAnimationWatcher]="slideInFromLeft">We don't ask anything from you, but to give yourself to the Lord</p>
+    <p [libAnimationWatcher]="slideInFromLeft">Here are bibles and tracts to encourage you in that</p>
     <lib-link [link]="`${baseUrl}/tracts`" [isNewPage]="false">
-      <button [@slideInFromLeft] mat-flat-button aria-labelledby="Tracts button" aria-label="Tracts button">
+      <button
+        [libAnimationWatcher]="slideInFromLeft"
+        mat-flat-button
+        aria-labelledby="Tracts button"
+        aria-label="Tracts button"
+      >
         <lib-fa-icon [icon]="tractsIcon"></lib-fa-icon>
         TRACTS
       </button>
     </lib-link>
-    }
   </div>
 </div>
 
@@ -234,51 +227,77 @@
 
 <div class="w3-container w3-padding-64 w3-center">
   <div #blogsHeader>
-    @defer (on viewport(blogsHeader)) {
-    <h2 [@slideInFromRight]>BLOGS</h2>
-    }
+    <h2 [libAnimationWatcher]="slideInFromRight">BLOGS</h2>
   </div>
 
   <div #blogsSubHeader>
-    @defer (on viewport(blogsSubHeader)) {
-    <p [@slideInFromLeft]>Learn more about relevant topics for Christian living</p>
+    <p [libAnimationWatcher]="slideInFromLeft">Learn more about relevant topics for Christian living</p>
     <lib-link [link]="`${baseUrl}/edifications`" [isNewPage]="false">
-      <button [@slideInFromLeft] mat-flat-button aria-labelledby="Edifications button" aria-label="Edifications button">
+      <button
+        [libAnimationWatcher]="slideInFromLeft"
+        mat-flat-button
+        aria-labelledby="Edifications button"
+        aria-label="Edifications button"
+      >
         <lib-fa-icon [icon]="blogIcon"></lib-fa-icon>
         EDIFICATIONS
       </button>
     </lib-link>
     <lib-link [link]="`${baseUrl}/discernments`" [isNewPage]="false">
-      <button [@slideInFromLeft] mat-flat-button aria-labelledby="Discernments button" aria-label="Discernments button">
+      <button
+        [libAnimationWatcher]="slideInFromLeft"
+        mat-flat-button
+        aria-labelledby="Discernments button"
+        aria-label="Discernments button"
+      >
         <lib-fa-icon [icon]="discernIcon"></lib-fa-icon>
         DISCERNMENTS
       </button>
     </lib-link>
     <lib-link [link]="`${baseUrl}/insights`" [isNewPage]="false">
-      <button [@slideInFromLeft] mat-flat-button aria-labelledby="Insights button" aria-label="Insights button">
+      <button
+        [libAnimationWatcher]="slideInFromLeft"
+        mat-flat-button
+        aria-labelledby="Insights button"
+        aria-label="Insights button"
+      >
         <lib-fa-icon [icon]="insightIcon"></lib-fa-icon>
         INSIGHTS
       </button>
     </lib-link>
     <lib-link [link]="`${baseUrl}/poems`" [isNewPage]="false">
-      <button [@slideInFromLeft] mat-flat-button aria-labelledby="Poems button" aria-label="Poems button">
+      <button
+        [libAnimationWatcher]="slideInFromLeft"
+        mat-flat-button
+        aria-labelledby="Poems button"
+        aria-label="Poems button"
+      >
         <lib-fa-icon [icon]="psalmIcon"></lib-fa-icon>
         POEMS
       </button>
     </lib-link>
     <lib-link [link]="`${baseUrl}/studies`" [isNewPage]="false">
-      <button [@slideInFromLeft] mat-flat-button aria-labelledby="Studies button" aria-label="Studies button">
+      <button
+        [libAnimationWatcher]="slideInFromLeft"
+        mat-flat-button
+        aria-labelledby="Studies button"
+        aria-label="Studies button"
+      >
         <lib-fa-icon [icon]="studyIcon"></lib-fa-icon>
         STUDIES
       </button>
     </lib-link>
     <lib-link [link]="`${baseUrl}/drawings`" [isNewPage]="false">
-      <button [@slideInFromLeft] mat-flat-button aria-labelledby="Drawings button" aria-label="Drawings button">
+      <button
+        [libAnimationWatcher]="slideInFromLeft"
+        mat-flat-button
+        aria-labelledby="Drawings button"
+        aria-label="Drawings button"
+      >
         <lib-fa-icon [icon]="drawingIcon"></lib-fa-icon>
         DRAWINGS
       </button>
     </lib-link>
-    }
   </div>
 </div>
 
@@ -286,17 +305,14 @@
 
 <div class="w3-container w3-padding-64 w3-center">
   <div #aboutHeader>
-    @defer (on viewport(aboutHeader)) {
-    <h2 [@slideInFromRight]>INFORMATION</h2>
-    }
+    <h2 [libAnimationWatcher]="slideInFromRight">INFORMATION</h2>
   </div>
 
   <div #aboutSubHeader>
-    @defer (on viewport(aboutSubHeader)) {
-    <p [@slideInFromLeft]>Learn more about the author's testimony and send him a message</p>
+    <p [libAnimationWatcher]="slideInFromLeft">Learn more about the author's testimony and send him a message</p>
     <lib-link [link]="`${baseUrl}/home`" [isNewPage]="false">
       <button
-        [@slideInFromLeft]
+        [libAnimationWatcher]="slideInFromLeft"
         mat-flat-button
         aria-labelledby="Open About Page button"
         aria-label="Open About Page button"
@@ -307,13 +323,17 @@
       </button>
     </lib-link>
     <lib-link [link]="`${baseUrl}/contact`" [isNewPage]="false">
-      <button [@slideInFromLeft] mat-flat-button aria-labelledby="Contact button" aria-label="Contact button">
+      <button
+        [libAnimationWatcher]="slideInFromLeft"
+        mat-flat-button
+        aria-labelledby="Contact button"
+        aria-label="Contact button"
+      >
         <lib-fa-icon [icon]="mailIcon"></lib-fa-icon>
 
         CONTACT
       </button>
     </lib-link>
-    }
   </div>
 </div>
 
@@ -321,17 +341,15 @@
 
 <div class="w3-container w3-padding-64 w3-center">
   <div #settingsHeader>
-    @defer (on viewport(settingsHeader)) {
-    <h2 [@slideInFromRight]>SETTINGS</h2>
-    }
+    <h2 [libAnimationWatcher]="slideInFromRight">SETTINGS</h2>
   </div>
 
   <div #settingsSubHeader>
-    @defer (on viewport(settingsSubHeader)) {
-    <p [@slideInFromLeft]>
+    <p [libAnimationWatcher]="slideInFromLeft">
       The text to speech service uses an artificial voice, but the text was written by the author
     </p>
-    <p [@slideInFromLeft]>Use the settings widget in the top right corner to change the settings</p>
-    }
+    <p [libAnimationWatcher]="slideInFromLeft">
+      Use the settings widget in the top right corner to change the settings
+    </p>
   </div>
 </div>

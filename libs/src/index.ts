@@ -1,5 +1,6 @@
 export * from "./lib/shared/animations/animation";
 
+export * from "./lib/shared/directives/animation-watch.directive";
 export * from "./lib/shared/directives/tooltip.directive";
 
 export * from "./lib/shared/guards/auth.guard";

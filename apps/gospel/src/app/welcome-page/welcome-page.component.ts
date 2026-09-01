@@ -21,7 +21,14 @@ import {
   faSkullCrossbones,
 } from "@fortawesome/free-solid-svg-icons";
 import { Subscription } from "rxjs";
-import { fadeInOut, SeoBaseComponent, slideInFromLeft, slideInFromRight } from "shared";
+import {
+  fadeInOut,
+  SeoBaseComponent,
+  slideInFromLeft,
+  slideInFromLeftReference,
+  slideInFromRight,
+  slideInFromRightReference,
+} from "shared";
 import { DownloadService } from "../shared/service/download.service";
 
 @Component({
@@ -33,6 +40,9 @@ import { DownloadService } from "../shared/service/download.service";
   animations: [slideInFromRight, slideInFromLeft, fadeInOut],
 })
 export class WelcomePageComponent extends SeoBaseComponent implements OnDestroy {
+  public slideInFromRight = slideInFromRightReference;
+  public slideInFromLeft = slideInFromLeftReference;
+
   public blogIcon = faDumbbell;
   public psalmIcon = faMusic;
   public discernIcon = faGavel;
@@ -53,7 +63,7 @@ export class WelcomePageComponent extends SeoBaseComponent implements OnDestroy 
   public resourceIcon = faLink;
   public gospelIcon = faNewspaper;
   public bibleIcon = faBible;
-
+  public isVisible = false;
   public downloadService = inject(DownloadService);
   public progress = signal(0);
   public isDownloading = signal(false);

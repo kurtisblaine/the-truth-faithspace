@@ -28,18 +28,34 @@ export const fadeInOut = [
   ]),
 ];
 
+export const slideInFromLeftReference = animation(
+  [style({ transform: "translateX(-100%)" }), animate("500ms ease-out", style({ transform: "translateX(0)" }))],
+  {
+    params: { time: "500ms" },
+  }
+);
+
 export const slideInFromLeft = trigger("slideInFromLeft", [
   transition(":enter", [
-    style({ transform: "translateX(-100%)" }),
-    animate("500ms ease-out", style({ transform: "translateX(0)" })),
+    useAnimation(slideInFromLeftReference, {
+      params: { time: "500ms" }, // Optional: override default params
+    }),
   ]),
   transition(":leave", [animate("500ms ease-in", style({ transform: "translateX(-100%)" }))]),
 ]);
 
+export const slideInFromRightReference = animation(
+  [style({ transform: "translateX(100%)" }), animate("500ms ease-out", style({ transform: "translateX(0)" }))],
+  {
+    params: { time: "500ms" },
+  }
+);
+
 export const slideInFromRight = trigger("slideInFromRight", [
   transition(":enter", [
-    style({ transform: "translateX(100%)" }),
-    animate("500ms ease-out", style({ transform: "translateX(0)" })),
+    useAnimation(slideInFromRightReference, {
+      params: { time: "500ms" }, // Optional: override default params
+    }),
   ]),
   transition(":leave", [animate("500ms ease-out", style({ transform: "translateX(-100%)" }))]),
 ]);

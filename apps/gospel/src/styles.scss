@@ -124,7 +124,7 @@ html {
 .w3-center {
   //for centering on safari
   justify-content: center;
-  display: flex;
+  display: flex !important;
   flex-direction: column;
 }
 
