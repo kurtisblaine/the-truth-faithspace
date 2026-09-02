@@ -39,10 +39,10 @@
           "outputHashing": "all",
           "fileReplacements": [
             {
-              "replace": "apps/technology/src/environments/environment.ts",
-              "with": "apps/technology/src/environments/environment.prod.ts"
+              "replace": "apps/todo/src/environments/environment.ts",
+              "with": "apps/todo/src/environments/environment.prod.ts"
             }
-          ],
+          ]
         },
         "development": {
           "optimization": false,

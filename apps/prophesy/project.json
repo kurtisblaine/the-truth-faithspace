@@ -37,12 +37,12 @@
             }
           ],
           "outputHashing": "all",
-                    "fileReplacements": [
+          "fileReplacements": [
             {
-              "replace": "apps/technology/src/environments/environment.ts",
-              "with": "apps/technology/src/environments/environment.prod.ts"
+              "replace": "apps/prophesy/src/environments/environment.ts",
+              "with": "apps/prophesy/src/environments/environment.prod.ts"
             }
-          ],
+          ]
         },
         "development": {
           "optimization": false,
