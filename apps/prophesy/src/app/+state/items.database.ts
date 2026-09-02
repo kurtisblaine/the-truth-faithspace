@@ -43,7 +43,7 @@ export const itemsRows: ItemEntity[] = [
     ],
     tags: [Tag.Faith, Tag.JesusType],
   },
-  { title: "Mark 1:2", description: "testing", prophesy: "", fulfillments: [], tags: [Tag.JesusResurrection] },
+  // { title: "Mark 1:2", description: "testing", prophesy: "", fulfillments: [], tags: [Tag.JesusResurrection] },
 ];
 
 export const bookDateRanges: BookDateRange[] = [
