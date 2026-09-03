@@ -1,4 +1,4 @@
-:host {
+app-home-page {
   display: block;
   padding: 14px;
 }
@@ -6,8 +6,46 @@
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  flex: 1 1 80%;
 }
 
-app-prophesy-tile {
+app-prophesy-tile,
+.filter {
   padding: 10px;
+}
+
+.mat-mdc-card-header-text {
+  width: 100% !important;
+}
+
+.mat-card-filter-header {
+  display: flex !important;
+  align-items: baseline;
+  justify-content: space-between;
+  height: 28px;
+}
+
+.home-body {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.reset-button {
+  color: var(--mat-sys-error) !important;
+  height: 28px;
+}
+
+.filter {
+  margin: 0px 15px;
+}
+
+@media (max-width: 1000px) {
+  .home-body {
+    flex-direction: column;
+  }
+
+  .filter {
+    margin: 15px 0px;
+    margin: unset;
+  }
 }

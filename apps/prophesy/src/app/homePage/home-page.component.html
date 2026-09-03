@@ -1,35 +1,65 @@
 <h1 class="primary-color" #seoTitle>The Prophesies</h1>
 <h2 #seoCaption class="mat-caption">
-  “We have the prophetic word made more sure, to which you do well to pay attention as to a lamp shining in a dark
+  <!-- “We have the prophetic word made more sure, to which you do well to pay attention as to a lamp shining in a dark
   place, until the day dawns and the morning star arises in your hearts. But know this first of all, that no prophecy of
   Scripture is a matter of one's own interpretation, for no prophecy was ever made by an act of human will, but men
-  moved by the Holy Spirit spoke from God.” (2 Peter 1:19-21)
+  moved by the Holy Spirit spoke from God.” (2 Peter 1:19-21) -->
 </h2>
 
-<mat-chip-listbox multiple aria-label="Prophesy Type">
-  @for (tag of filteredTags(); track $index) {
-  <mat-chip-option [value]="tag" [selected]="isSelected(tag)" (selectionChange)="toggleTag(tag, $event)">
-    {{ tag }}
-  </mat-chip-option>
-  }
-</mat-chip-listbox>
+<div class="tags">
+  <mat-chip-listbox multiple aria-label="Prophesy Type">
+    @for (tag of filteredTags(); track $index) {
+    <mat-chip-option [value]="tag" [selected]="isSelected(tag)" (selectionChange)="toggleTag(tag, $event)">
+      {{ tag }}
+    </mat-chip-option>
+    }
+  </mat-chip-listbox>
+</div>
 
-<button matButton="filled" class="error-color" [disabled]="!selectedTags().length" (click)="resetTags()">Reset</button>
+<div class="home-body">
+  <mat-card class="filter">
+    <mat-card-header style="margin-bottom: 15px">
+      <mat-card-title class="mat-card-filter-header">
+        <span class="primary primary-color"> Filter</span>
+        @if(isFilteringActive()) {
+        <button class="reset-button" mat-button (click)="reset()">RESET</button>
+        }
+      </mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+      <mat-form-field appearance="outline" subscriptSizing="dynamic" style="width: 100%">
+        <mat-label>Book</mat-label>
+        <mat-select
+          aria-labelledby="Book Select"
+          aria-label="Book Select"
+          [(ngModel)]="selectedBook"
+          (click)="$event.stopPropagation()"
+          required
+        >
+          @for (book of allBooks; track $index) {
+          <mat-option [value]="book">{{ book }}</mat-option>
+          }
+        </mat-select>
+      </mat-form-field>
+    </mat-card-content>
+    <mat-card-footer style="padding: 16px">
+      <mat-button-toggle-group
+        aria-label="Filtering Option"
+        [value]="filteringOption()"
+        (change)="onFilterOptionChange($event)"
+        style="margin-bottom: 5px"
+      >
+        <mat-button-toggle value="include">Include</mat-button-toggle>
+        <mat-button-toggle value="exclude">Exclude</mat-button-toggle>
+      </mat-button-toggle-group>
+    </mat-card-footer>
+  </mat-card>
 
-<mat-button-toggle-group
-  aria-label="Filtering Option"
-  [value]="filteringOption()"
-  (change)="onFilterOptionChange($event)"
-  style="margin-bottom: 5px"
->
-  <mat-button-toggle value="include">Include</mat-button-toggle>
-  <mat-button-toggle value="exclude">Exclude</mat-button-toggle>
-</mat-button-toggle-group>
-
-<div class="grid">
-  @for (item of filteredItems(); track $index) {
-  <app-prophesy-tile [item]="item" @tileSlideIn></app-prophesy-tile>
-  } @empty {
-  <h3>No items match the selected filters.</h3>
-  }
+  <div class="grid">
+    @for (item of filteredItems(); track $index) {
+    <app-prophesy-tile [item]="item" @tileSlideIn></app-prophesy-tile>
+    } @empty {
+    <h3>No items match the selected filters.</h3>
+    }
+  </div>
 </div>

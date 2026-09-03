@@ -1,14 +1,18 @@
 import { CommonModule } from "@angular/common";
-import { Component, computed, effect, OnDestroy, Signal, signal } from "@angular/core";
+import { Component, computed, effect, OnDestroy, Signal, signal, ViewEncapsulation } from "@angular/core";
 import { FormsModule } from "@angular/forms";
 import { MatButtonModule } from "@angular/material/button";
 import { MatButtonToggleChange, MatButtonToggleModule } from "@angular/material/button-toggle";
+import { MatCardModule } from "@angular/material/card";
 import { MatChipSelectionChange, MatChipsModule } from "@angular/material/chips";
+import { MatFormFieldModule } from "@angular/material/form-field";
+import { MatSelectModule } from "@angular/material/select";
 import { ActivatedRoute, Router } from "@angular/router";
 import { Store } from "@ngrx/store";
 import { flatMap } from "lodash-es";
 import { Subscription, take } from "rxjs";
 import { SeoBaseComponent, tileSlideIn } from "shared";
+import { bookDateRanges } from "../+state/items.database";
 import { Tag, TagKey } from "../+state/items/items.models";
 import { ItemEntity } from "../+state/items/items.reducer";
 import { selectAllItems, selectAllTags } from "../+state/items/items.selectors";
@@ -16,15 +20,29 @@ import { ProphesyTileComponent } from "./prophesy-tile/prophesy-tile.component";
 
 @Component({
   selector: "app-home-page",
-  imports: [CommonModule, ProphesyTileComponent, MatChipsModule, MatButtonModule, MatButtonToggleModule, FormsModule],
+  imports: [
+    CommonModule,
+    ProphesyTileComponent,
+    MatChipsModule,
+    MatButtonModule,
+    MatButtonToggleModule,
+    FormsModule,
+    MatFormFieldModule,
+    MatSelectModule,
+    MatCardModule,
+  ],
   templateUrl: "./home-page.component.html",
   styleUrl: "./home-page.component.scss",
   animations: [tileSlideIn],
+  encapsulation: ViewEncapsulation.None,
 })
 export class HomePageComponent extends SeoBaseComponent implements OnDestroy {
   public allTags!: Signal<Tag[]>;
-  public updateFilteredItems = signal<string>(null);
   public filteringOption = signal<"include" | "exclude">("include");
+
+  private readonly ALL_BOOKS = "All";
+  public selectedBook = signal<string>(this.ALL_BOOKS);
+  public allBooks: string[] = [this.ALL_BOOKS, ...bookDateRanges.map((b) => b.book)];
 
   private subscription!: Subscription;
 
@@ -42,14 +60,20 @@ export class HomePageComponent extends SeoBaseComponent implements OnDestroy {
   public items!: Signal<ItemEntity[]>;
   readonly filteredItems = computed(() => {
     const activeTags = this.selectedTags();
+    const selectedBook = this.selectedBook();
 
-    if (!activeTags.length) return this.items();
+    if (!activeTags.length && selectedBook === this.ALL_BOOKS) return this.items();
 
-    return this.items().filter((item) =>
-      this.filteringOption() === "include"
-        ? activeTags.some((tag) => item.tags.includes(tag))
-        : activeTags.every((tag) => item.tags.includes(tag))
-    );
+    return this.items().filter((item) => {
+      const shouldFilterByBook = item?.bookDateRange?.book === selectedBook;
+
+      const shouldFilterByTag =
+        this.filteringOption() === "include"
+          ? activeTags.some((tag) => item.tags.includes(tag))
+          : activeTags.every((tag) => item.tags.includes(tag));
+
+      return shouldFilterByBook || shouldFilterByTag;
+    });
   });
 
   constructor(private store: Store, private router: Router, private route: ActivatedRoute) {
@@ -63,6 +87,12 @@ export class HomePageComponent extends SeoBaseComponent implements OnDestroy {
       if (queryParamTags) {
         const tagList = (queryParamTags.split(",") as TagKey[]).map((key) => Tag[key]);
         this.selectedTags.update((tags) => [...tags, ...tagList]);
+      }
+
+      const queryParamBook = queryParams["book"] as string;
+      if (queryParamBook) {
+        const result = queryParamBook.replace(/^(\d)/, "$1 ");
+        this.selectedBook.update(() => this.allBooks.find((book) => book === result));
       }
 
       const queryParamFilter = queryParams["filter"] as "include" | "exclude";
@@ -83,6 +113,7 @@ export class HomePageComponent extends SeoBaseComponent implements OnDestroy {
         relativeTo: this.route,
         queryParams: {
           tags: allTags ? allTags : null,
+          book: this.selectedBook()?.replace(" ", ""),
           filter: this.filteringOption(),
         },
         queryParamsHandling: "replace",
@@ -98,12 +129,17 @@ export class HomePageComponent extends SeoBaseComponent implements OnDestroy {
     return this.selectedTags().some((t) => t === tag);
   }
 
+  isFilteringActive() {
+    return (this.selectedBook() && this.selectedBook() !== this.ALL_BOOKS) || this.selectedTags().length;
+  }
+
   onFilterOptionChange(event: MatButtonToggleChange): void {
     this.filteringOption.set(event.value);
   }
 
-  resetTags() {
+  reset() {
     this.selectedTags.update(() => []);
+    this.selectedBook.update(() => this.ALL_BOOKS);
   }
 
   toggleTag(tag: Tag, event: MatChipSelectionChange) {
