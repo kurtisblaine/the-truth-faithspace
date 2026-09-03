@@ -66,13 +66,15 @@ export class HomePageComponent extends SeoBaseComponent implements OnDestroy {
 
     return this.items().filter((item) => {
       const shouldFilterByBook = item?.bookDateRange?.book === selectedBook;
+      const shouldIncludeAllBooks = selectedBook === this.ALL_BOOKS;
 
       const shouldFilterByTag =
         this.filteringOption() === "include"
           ? activeTags.some((tag) => item.tags.includes(tag))
           : activeTags.every((tag) => item.tags.includes(tag));
+      const shouldIncludeAllTags = !activeTags.length;
 
-      return shouldFilterByBook || shouldFilterByTag;
+      return (shouldFilterByBook || shouldIncludeAllBooks) && (shouldFilterByTag || shouldIncludeAllTags);
     });
   });
 

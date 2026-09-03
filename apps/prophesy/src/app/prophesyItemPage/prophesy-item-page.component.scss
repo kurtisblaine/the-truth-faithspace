@@ -1,4 +1,4 @@
-:host {
+app-prophesy-item-page {
   display: block;
   padding: 14px;
 }
@@ -15,4 +15,8 @@
 
 mat-card {
   min-height: 40vh;
+}
+
+.mdc-evolution-chip__action--presentational {
+  cursor: pointer !important;
 }

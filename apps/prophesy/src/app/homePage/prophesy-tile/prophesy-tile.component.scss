@@ -1,15 +1,20 @@
 .footer {
-  padding: 16px;
+  padding: 8px 16px;
 }
 
 .chip {
   text-decoration: none !important;
 }
 
-mat-card-footer mat-chip {
+mat-card[matRipple] {
   cursor: pointer;
 }
 
-mat-card[matRipple] {
-  cursor: pointer;
+.content {
+  color: var(--mat-sys-on-surface);
+  margin: 10px 0px;
+}
+
+.mdc-evolution-chip__action--presentational {
+  cursor: pointer !important;
 }

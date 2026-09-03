@@ -1,4 +1,4 @@
-import { Component, input, OnInit, Signal } from "@angular/core";
+import { Component, input, OnInit, Signal, ViewEncapsulation } from "@angular/core";
 import { MatCardModule } from "@angular/material/card";
 import { MatChipsModule } from "@angular/material/chips";
 import { Store } from "@ngrx/store";
@@ -11,6 +11,7 @@ import { getByUrl } from "../+state/items/items.selectors";
   imports: [MatCardModule, MatChipsModule],
   templateUrl: "./prophesy-item-page.component.html",
   styleUrl: "./prophesy-item-page.component.scss",
+  encapsulation: ViewEncapsulation.None,
 })
 export class ProphesyItemPageComponent extends SeoBaseComponent implements OnInit {
   public title = input.required<string>(); //from input

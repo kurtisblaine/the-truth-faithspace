@@ -3,34 +3,30 @@
 
 <mat-chip-set aria-label="Scripture Types">
   @for(tag of showTagsSorted(); track $index) {
-  <mat-chip class="chip" [disabled]="true">{{ tag }}</mat-chip>
+  <mat-chip class="chip">{{ tag }}</mat-chip>
   }
 </mat-chip-set>
 
 <div class="tiles">
   <mat-card appearance="raised">
     <mat-card-header>
-      <mat-card-title> <h3 class="primary-color">Prophesy</h3></mat-card-title>
+      <mat-card-title> <h3 class="primary-color">The Prophesy</h3></mat-card-title>
       <mat-card-subtitle>
         @if(item()?.bookDateRange) {
-        <h4>The book named {{ item()?.bookDateRange?.book }} was written around {{ item()?.bookDateRange?.range }}</h4>
+        <h4>The book {{ item()?.bookDateRange?.book }} was written around {{ item()?.bookDateRange?.range }}</h4>
         }
       </mat-card-subtitle>
     </mat-card-header>
     <mat-card-content>
       {{ item()?.prophesy }}
     </mat-card-content>
-    <mat-card-footer></mat-card-footer>
+    <mat-card-footer style="padding: 20px"></mat-card-footer>
   </mat-card>
 
   <mat-card appearance="raised">
     <mat-card-header>
       <mat-card-title><h3 class="primary-color">Fulfillment(s)</h3></mat-card-title>
-      <mat-card-subtitle
-        ><h4>
-          The New Testament was written in the first century A.D. (between 50 A.D. and 100 A.D.)
-        </h4></mat-card-subtitle
-      >
+      <mat-card-subtitle><h4>The New Testament was written in the first century A.D.</h4></mat-card-subtitle>
     </mat-card-header>
     <mat-card-content>
       @for(fulfillment of item()?.fulfillments; track $index) {
@@ -39,6 +35,6 @@
       </div>
       }
     </mat-card-content>
-    <mat-card-footer> </mat-card-footer>
+    <mat-card-footer style="padding: 20px"> </mat-card-footer>
   </mat-card>
 </div>

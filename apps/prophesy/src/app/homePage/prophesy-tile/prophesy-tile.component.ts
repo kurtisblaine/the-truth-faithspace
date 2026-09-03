@@ -15,7 +15,6 @@ import { ItemEntity } from "../../+state/items/items.reducer";
 })
 export class ProphesyTileComponent {
   public item = input<ItemEntity>();
-
   public baseUrl = inject(BASE_URL);
 
   showTagsSorted = () => Object.values(this.item()?.tags)?.sort((a, b) => a.localeCompare(b));
