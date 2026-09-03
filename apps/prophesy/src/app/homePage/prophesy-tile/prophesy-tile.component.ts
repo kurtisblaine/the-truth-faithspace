@@ -1,4 +1,4 @@
-import { ChangeDetectionStrategy, Component, inject, input } from "@angular/core";
+import { ChangeDetectionStrategy, Component, inject, input, ViewEncapsulation } from "@angular/core";
 import { MatCardModule } from "@angular/material/card";
 import { MatChipsModule } from "@angular/material/chips";
 import { MatRippleModule } from "@angular/material/core";
@@ -12,6 +12,7 @@ import { ItemEntity } from "../../+state/items/items.reducer";
   templateUrl: "./prophesy-tile.component.html",
   styleUrl: "./prophesy-tile.component.scss",
   changeDetection: ChangeDetectionStrategy.OnPush,
+  encapsulation: ViewEncapsulation.None,
 })
 export class ProphesyTileComponent {
   public item = input<ItemEntity>();

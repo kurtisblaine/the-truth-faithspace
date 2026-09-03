@@ -25,7 +25,7 @@ export class WelcomePageComponent extends SeoBaseComponent {
     this.counts = this.store.selectSignal(selectAllCounts);
   }
 
-  goToProphesies(types: TagKey[]) {
+  goToProphesies(types: TagKey[], book = "All", filter: "include" | "exclude" = "include") {
     const typesBasedOnKeys = Object.entries(Tag)
       .filter(([key, _]) => types.some((type) => key === type))
       .map(([key]) => key);
@@ -33,7 +33,8 @@ export class WelcomePageComponent extends SeoBaseComponent {
     this.router.navigate([`prophesies`], {
       queryParams: {
         tags: typesBasedOnKeys.reduce((query, tag, index) => (query += index === 0 ? tag : `,${tag}`), ""),
-        filter: "include",
+        book,
+        filter,
       },
       queryParamsHandling: "merge",
     });

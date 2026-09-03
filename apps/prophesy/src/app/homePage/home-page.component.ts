@@ -1,6 +1,6 @@
 import { CommonModule } from "@angular/common";
 import { Component, computed, effect, OnDestroy, Signal, signal, ViewEncapsulation } from "@angular/core";
-import { FormsModule } from "@angular/forms";
+import { FormControl, FormsModule, ReactiveFormsModule } from "@angular/forms";
 import { MatButtonModule } from "@angular/material/button";
 import { MatButtonToggleChange, MatButtonToggleModule } from "@angular/material/button-toggle";
 import { MatCardModule } from "@angular/material/card";
@@ -30,6 +30,7 @@ import { ProphesyTileComponent } from "./prophesy-tile/prophesy-tile.component";
     MatFormFieldModule,
     MatSelectModule,
     MatCardModule,
+    ReactiveFormsModule,
   ],
   templateUrl: "./home-page.component.html",
   styleUrl: "./home-page.component.scss",
@@ -39,6 +40,7 @@ import { ProphesyTileComponent } from "./prophesy-tile/prophesy-tile.component";
 export class HomePageComponent extends SeoBaseComponent implements OnDestroy {
   public allTags!: Signal<Tag[]>;
   public filteringOption = signal<"include" | "exclude">("include");
+  public selectedTagsControl = new FormControl<Tag[]>([]);
 
   private readonly ALL_BOOKS = "All";
   public selectedBook = signal<string>(this.ALL_BOOKS);
@@ -51,13 +53,13 @@ export class HomePageComponent extends SeoBaseComponent implements OnDestroy {
       return this.allTags();
     } else {
       const allTags = flatMap(this.filteredItems(), (a) => a.tags);
-      return Array.from(new Set(allTags)) as Tag[];
+      return this._removeDuplicates(allTags);
     }
   });
 
-  readonly selectedTags = signal<Tag[]>([]);
-
   public items!: Signal<ItemEntity[]>;
+
+  readonly selectedTags = signal<Tag[]>([]);
   readonly filteredItems = computed(() => {
     const activeTags = this.selectedTags();
     const selectedBook = this.selectedBook();
@@ -89,6 +91,7 @@ export class HomePageComponent extends SeoBaseComponent implements OnDestroy {
       if (queryParamTags) {
         const tagList = (queryParamTags.split(",") as TagKey[]).map((key) => Tag[key]);
         this.selectedTags.update((tags) => [...tags, ...tagList]);
+        this.selectedTagsControl.setValue(this.selectedTags());
       }
 
       const queryParamBook = queryParams["book"] as string;
@@ -127,26 +130,21 @@ export class HomePageComponent extends SeoBaseComponent implements OnDestroy {
     this.subscription?.unsubscribe();
   }
 
-  isSelected(tag: string) {
-    return this.selectedTags().some((t) => t === tag);
-  }
-
   isFilteringActive() {
     return (this.selectedBook() && this.selectedBook() !== this.ALL_BOOKS) || this.selectedTags().length;
   }
 
   onFilterOptionChange(event: MatButtonToggleChange): void {
+    this.selectedTagsControl.reset([]);
     this.filteringOption.set(event.value);
   }
 
   reset() {
-    this.selectedTags.update(() => []);
+    this.selectedTagsControl.reset([]);
     this.selectedBook.update(() => this.ALL_BOOKS);
   }
 
   toggleTag(tag: Tag, event: MatChipSelectionChange) {
-    // if (!event.isUserInput) return;
-
     if (event.selected) {
       this.selectedTags.update((tags) => [...tags, tag]);
     } else {
