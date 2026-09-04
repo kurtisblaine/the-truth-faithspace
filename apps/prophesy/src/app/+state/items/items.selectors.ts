@@ -11,27 +11,64 @@ export const selectItemsError = createSelector(selectItemsState, (state: fromIte
 
 export const selectAllItems = createSelector(selectItemsState, (state: fromItems.State) => selectAll(state));
 
-export const selectAllCounts = createSelector(selectAllItems, (items: fromItems.ItemEntity[]) =>
-  items.reduce(
+export const selectAllCounts = createSelector(selectAllItems, (items: fromItems.ItemEntity[]) => {
+  let prophesiesFromTheVeryBeginning = 0;
+
+  const allCounts = items.reduce(
     (counts, item) => {
+      if (item.bookDateRange?.book === "Genesis") {
+        prophesiesFromTheVeryBeginning += 1;
+      }
+
       item.tags.forEach((tag) => {
-        if (tag === Tag.JesusExaltation || tag === Tag.JesusResurrection || tag === Tag.JesusSuffering)
+        if (
+          tag === Tag.JesusExaltation ||
+          tag === Tag.JesusResurrection ||
+          tag === Tag.JesusSuffering ||
+          tag === Tag.JesusDeity ||
+          tag === Tag.JesusType
+        )
           counts.prophesiesAboutJesus += 1;
 
         if (tag === Tag.Unfulfilled) counts.prophesiesUnfulfilled += 1;
 
+        if (tag === Tag.ImplicitType) counts.prophesiesImplied += 1;
+
         if (tag !== Tag.Unfulfilled) counts.prophesiesFulfilled += 1;
+
+        if (tag === Tag.TheNewBirth) counts.prophesiesAboutNewBirth += 1;
+
+        if (tag === Tag.Grace || tag === Tag.Faith || tag === Tag.Election) counts.prophesiesAboutGrace += 1;
+
+        if (tag === Tag.EternalFire) counts.prophesiesAboutEternalHell += 1;
       });
       return counts;
     },
-    { prophesiesFulfilled: 0, prophesiesUnfulfilled: 0, prophesiesAboutJesus: 0 } as ProphesyCounts
-  )
-);
+    {
+      prophesiesFulfilled: 0,
+      prophesiesUnfulfilled: 0,
+      prophesiesAboutJesus: 0,
+      prophesiesAboutNewBirth: 0,
+      prophesiesImplied: 0,
+      prophesiesAboutEternalHell: 0,
+      prophesiesAboutGrace: 0,
+      prophesiesFromTheVeryBeginning: 0,
+    } as ProphesyCounts
+  );
+
+  allCounts.prophesiesFromTheVeryBeginning = prophesiesFromTheVeryBeginning;
+  return allCounts;
+});
 
 export type ProphesyCounts = {
   prophesiesFulfilled: number;
   prophesiesUnfulfilled: number;
   prophesiesAboutJesus: number;
+  prophesiesAboutNewBirth: number;
+  prophesiesImplied: number;
+  prophesiesAboutGrace: number;
+  prophesiesAboutEternalHell: number;
+  prophesiesFromTheVeryBeginning: number;
 };
 
 export const selectAllAvailableTags = createSelector(selectAllItems, (items: fromItems.ItemEntity[]) =>

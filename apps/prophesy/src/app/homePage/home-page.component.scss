@@ -1,6 +1,7 @@
 app-home-page {
   display: block;
   padding: 14px;
+  width: 100vw;
 }
 
 .grid {
@@ -36,17 +37,12 @@ app-prophesy-tile,
 }
 
 .filter {
-  margin: 0px 15px;
+  margin: 15px;
   height: 100%;
 }
 
 @media (max-width: 1000px) {
   .home-body {
     flex-direction: column;
-  }
-
-  .filter {
-    margin: 15px 0px;
-    margin: unset;
   }
 }

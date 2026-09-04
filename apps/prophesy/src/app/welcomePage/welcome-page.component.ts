@@ -32,7 +32,9 @@ export class WelcomePageComponent extends SeoBaseComponent {
 
     this.router.navigate([`prophesies`], {
       queryParams: {
-        tags: typesBasedOnKeys.reduce((query, tag, index) => (query += index === 0 ? tag : `,${tag}`), ""),
+        tags: typesBasedOnKeys.length
+          ? typesBasedOnKeys.reduce((query, tag, index) => (query += index === 0 ? tag : `,${tag}`), "")
+          : null,
         book,
         filter,
       },

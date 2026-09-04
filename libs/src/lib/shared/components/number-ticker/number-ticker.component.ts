@@ -7,11 +7,14 @@ import { NgxNumberTickerComponent } from "@omnedia/ngx-number-ticker";
   selector: "lib-number-ticker",
   imports: [NgxNumberTickerComponent, MatCardModule],
   template: `
-    <mat-card appearance="outlined">
+    <mat-card appearance="outlined" style="height: 100%">
       <mat-card-header>
-        <mat-card-title
-          ><h1 class="primary-color">{{ title() }}</h1></mat-card-title
+        <mat-card-title style="line-height: unset;"
+          ><h2 class="primary-color">{{ title() }}</h2></mat-card-title
         >
+        <mat-card-subtitle>
+          <h3>{{ subtitle() }}</h3>
+        </mat-card-subtitle>
       </mat-card-header>
       <mat-card-content style="margin: 4px auto; font-size: 100px">
         @if(isPlatformBrowser()) {
@@ -30,6 +33,8 @@ import { NgxNumberTickerComponent } from "@omnedia/ngx-number-ticker";
 })
 export class NumberTickerComponent {
   public title = input.required<string>();
+  public subtitle = input<string>();
+
   public count = input.required<number>();
 
   public platformId = inject(PLATFORM_ID);
