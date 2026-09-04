@@ -6,6 +6,8 @@ export enum Tag {
   JesusType = "Jesus Type",
   ImplicitType = "Implicit Type",
   Baptism = "Baptism",
+  Nature = "Nature",
+  TheSonOfMan = "The Son of Man",
   TheNewBirth = "The New Birth",
   EternalFire = "Eternal Fire",
   Faith = "Faith",
