@@ -6,6 +6,7 @@ import { MatButtonToggleChange, MatButtonToggleModule } from "@angular/material/
 import { MatCardModule } from "@angular/material/card";
 import { MatChipSelectionChange, MatChipsModule } from "@angular/material/chips";
 import { MatFormFieldModule } from "@angular/material/form-field";
+import { MatPaginatorModule, PageEvent } from "@angular/material/paginator";
 import { MatSelectModule } from "@angular/material/select";
 import { ActivatedRoute, Router } from "@angular/router";
 import { Store } from "@ngrx/store";
@@ -31,6 +32,7 @@ import { ProphesyTileComponent } from "./prophesy-tile/prophesy-tile.component";
     MatSelectModule,
     MatCardModule,
     ReactiveFormsModule,
+    MatPaginatorModule,
   ],
   templateUrl: "./home-page.component.html",
   styleUrl: "./home-page.component.scss",
@@ -46,13 +48,17 @@ export class HomePageComponent extends SeoBaseComponent implements OnDestroy {
   public selectedBook = signal<string>(this.ALL_BOOKS);
   public allBooks: string[] = [this.ALL_BOOKS, ...bookDateRanges.map((b) => b.book)];
 
+  public initialPageSize = 15;
+  public pageSize = signal(this.initialPageSize);
+  public pageIndex = signal(0);
+
   private subscription!: Subscription;
 
   readonly filteredTags: Signal<Tag[]> = computed(() => {
     if (this.filteringOption() === "include") {
       return this.allTags();
     } else {
-      const filteredTags = this._removeDuplicates(flatMap(this.filteredItems(), (a) => a.tags));
+      const filteredTags = this._removeDuplicates(flatMap(this.pagedItems(), (a) => a.tags));
       return this.allTags().filter((tag) => filteredTags.some((t) => t === tag));
     }
   });
@@ -66,7 +72,7 @@ export class HomePageComponent extends SeoBaseComponent implements OnDestroy {
 
     if (!activeTags.length && selectedBook === this.ALL_BOOKS) return this.items();
 
-    return this.items().filter((item) => {
+    const filteredItems = this.items().filter((item) => {
       const shouldFilterByBook = item?.bookDateRange?.book === selectedBook;
       const shouldIncludeAllBooks = selectedBook === this.ALL_BOOKS;
 
@@ -78,7 +84,18 @@ export class HomePageComponent extends SeoBaseComponent implements OnDestroy {
 
       return (shouldFilterByBook || shouldIncludeAllBooks) && (shouldFilterByTag || shouldIncludeAllTags);
     });
+
+    return filteredItems;
   });
+
+  readonly pagedItems = computed(() => {
+    const startIndex = this.pageIndex() * this.pageSize();
+    const endIndex = startIndex + this.pageSize();
+    const pagedItems = this.filteredItems().slice(startIndex, endIndex);
+    return pagedItems;
+  });
+
+  readonly total = computed(() => this.filteredItems().length);
 
   constructor(private store: Store, private router: Router, private route: ActivatedRoute) {
     super();
@@ -140,6 +157,11 @@ export class HomePageComponent extends SeoBaseComponent implements OnDestroy {
   }
 
   getTagColorClass = (tag: Tag) => getTagColorClass(tag);
+
+  onPageChange(event?: PageEvent): void {
+    this.pageIndex.update(() => event.pageIndex);
+    this.pageSize.update(() => event.pageSize);
+  }
 
   reset() {
     this.selectedTagsControl.reset([]);
