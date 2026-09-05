@@ -3,7 +3,9 @@
 
 <mat-chip-set aria-label="Scripture Types">
   @for(tag of showTagsSorted(); track $index) {
-  <mat-chip class="chip">{{ tag }}</mat-chip>
+  <mat-chip class="chip"
+    ><span [class]="getTagColorClass(tag)">{{ tag }}</span></mat-chip
+  >
   }
 </mat-chip-set>
 

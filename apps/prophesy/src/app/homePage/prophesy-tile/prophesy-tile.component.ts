@@ -4,6 +4,7 @@ import { MatChipsModule } from "@angular/material/chips";
 import { MatRippleModule } from "@angular/material/core";
 import { MatTooltipModule } from "@angular/material/tooltip";
 import { BASE_URL, LinkComponent, TooltipDirective } from "shared";
+import { getTagColorClass, Tag } from "../../+state/items/items.models";
 import { ItemEntity } from "../../+state/items/items.reducer";
 
 @Component({
@@ -19,4 +20,6 @@ export class ProphesyTileComponent {
   public baseUrl = inject(BASE_URL);
 
   showTagsSorted = () => Object.values(this.item()?.tags)?.sort((a, b) => a.localeCompare(b));
+
+  getTagColorClass = (tag: Tag) => getTagColorClass(tag);
 }

@@ -3,6 +3,7 @@ import { MatCardModule } from "@angular/material/card";
 import { MatChipsModule } from "@angular/material/chips";
 import { Store } from "@ngrx/store";
 import { SeoBaseComponent } from "shared";
+import { getTagColorClass, Tag } from "../+state/items/items.models";
 import { ItemEntity } from "../+state/items/items.reducer";
 import { getByUrl } from "../+state/items/items.selectors";
 
@@ -24,6 +25,8 @@ export class ProphesyItemPageComponent extends SeoBaseComponent implements OnIni
 
   showTagsSorted = () =>
     this.item()?.tags?.length ? Object.values(this.item()?.tags)?.sort((a, b) => a.localeCompare(b)) : [];
+
+  getTagColorClass = (tag: Tag) => getTagColorClass(tag);
 
   ngOnInit() {
     this.item = this.store.selectSignal(getByUrl(this.title()));

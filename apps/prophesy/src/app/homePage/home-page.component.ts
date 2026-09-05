@@ -13,7 +13,7 @@ import { flatMap } from "lodash-es";
 import { Subscription, take } from "rxjs";
 import { SeoBaseComponent, tileSlideIn } from "shared";
 import { bookDateRanges } from "../+state/items.database";
-import { Tag, TagKey } from "../+state/items/items.models";
+import { getTagColorClass, Tag, TagKey } from "../+state/items/items.models";
 import { ItemEntity } from "../+state/items/items.reducer";
 import { selectAllItems, selectAllTags } from "../+state/items/items.selectors";
 import { ProphesyTileComponent } from "./prophesy-tile/prophesy-tile.component";
@@ -52,8 +52,8 @@ export class HomePageComponent extends SeoBaseComponent implements OnDestroy {
     if (this.filteringOption() === "include") {
       return this.allTags();
     } else {
-      const allTags = flatMap(this.filteredItems(), (a) => a.tags);
-      return this._removeDuplicates(allTags);
+      const filteredTags = this._removeDuplicates(flatMap(this.filteredItems(), (a) => a.tags));
+      return this.allTags().filter((tag) => filteredTags.some((t) => t === tag));
     }
   });
 
@@ -138,6 +138,8 @@ export class HomePageComponent extends SeoBaseComponent implements OnDestroy {
     this.selectedTagsControl.reset([]);
     this.filteringOption.set(event.value);
   }
+
+  getTagColorClass = (tag: Tag) => getTagColorClass(tag);
 
   reset() {
     this.selectedTagsControl.reset([]);

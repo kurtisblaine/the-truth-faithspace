@@ -1,5 +1,5 @@
 <lib-link [link]="`${baseUrl}/prophesy-item/${item()?.url}`" [textDecorationOverride]="true">
-  <mat-card matRipple style="height: 100%">
+  <mat-card matRipple>
     <mat-card-header class="header-container">
       <mat-card-title libTooltip="{{ item()?.title }}">{{ item()?.title }}</mat-card-title>
       <mat-card-subtitle>
@@ -12,7 +12,9 @@
     <mat-card-footer class="footer">
       <mat-chip-set aria-label="Scripture Types">
         @for(tag of showTagsSorted(); track $index) {
-        <mat-chip class="chip">{{ tag }}</mat-chip>
+        <mat-chip class="chip">
+          <span [class]="getTagColorClass(tag)">{{ tag }}</span></mat-chip
+        >
         }
       </mat-chip-set>
     </mat-card-footer>

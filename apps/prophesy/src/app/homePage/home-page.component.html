@@ -10,7 +10,9 @@
   <mat-chip-listbox multiple aria-label="Prophesy Type" [formControl]="selectedTagsControl">
     @for (tag of filteredTags(); track $index) {
     <mat-chip-option [value]="tag" (selectionChange)="toggleTag(tag, $event)">
-      {{ tag }}
+      <span [class]="getTagColorClass(tag)">
+        {{ tag }}
+      </span>
     </mat-chip-option>
     }
   </mat-chip-listbox>

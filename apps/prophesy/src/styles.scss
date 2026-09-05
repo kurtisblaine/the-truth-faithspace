@@ -51,6 +51,39 @@ html {
   }
 }
 
+:root {
+  --rainbow-red: light-dark(#d32f2f, #ff8a80);
+  --rainbow-orange: light-dark(#da6b00, #ffb74d);
+  --rainbow-yellow: light-dark(#a29d1e, #fff176);
+  --rainbow-green: light-dark(#388e3c, #81c784);
+  --rainbow-blue: light-dark(#1976d2, #64b5f6);
+  --rainbow-purple: light-dark(#7b1fa2, #e1bee7);
+}
+
+.red-color {
+  color: var(--mat-sys-error);
+}
+
+.orange-color {
+  color: var(--rainbow-orange);
+}
+
+.yellow-color {
+  color: var(--rainbow-yellow);
+}
+
+.green-color {
+  color: var(--rainbow-green);
+}
+
+.blue-color {
+  color: var(--mat-sys-primary);
+}
+
+.purple-color {
+  color: var(--rainbow-purple);
+}
+
 html {
   height: 100vh;
 }
