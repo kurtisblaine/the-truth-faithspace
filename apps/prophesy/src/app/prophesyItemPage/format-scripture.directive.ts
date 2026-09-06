@@ -16,30 +16,26 @@ export class FormatScriptureDirective {
 
     const bookMatch =
       this.verseText
-        .match(/\((?!\.{3})([^)]+)\)/g)?.[0]
+        .match(/\(([^)]+)\)[^()]*$/)?.[0]
         ?.replace("(", "")
         ?.replace(")", "") ?? "";
 
     // Regex to parse: Optional Book Number, Book Name, Chapter, and Verse
     // Matches: "1 John 3 16", "John 3:16", "1John 3 16", "Romans 12"
-    const regex = /^([1-3]?)\s*([a-zA-Z]+)\s*(\d+)(?:\s*[:.\s]\s*(\d+-?(\d+)?))?$/;
+    const regex = /^([1-3]?\s*[A-Za-z]+)\s+(\d+):(\d+)(?:-(\d+))?/;
     const match = bookMatch.match(regex);
 
     if (!match) {
       return this.renderer.setProperty(this.el.nativeElement, "innerText", this.verseText);
     }
 
-    const bookNumber = match[1];
-    const bookName = match[2];
-    const fullBookName = bookNumber ? `${bookNumber} ${bookName}` : bookName;
-
-    const chapter = match[3];
-    const verse = match[4];
-
+    const [_, bookName, chapter, startVerse, endVerse] = match;
+    // const fullBookName = bookNumber ? `${bookNumber} ${bookName}` : bookName;
+    const fullVerse = endVerse ? `${startVerse}-${endVerse}` : startVerse;
     // Reconstruct into standard format: "1 John 3:16"
-    const bookReference = `${fullBookName} ${chapter}:${verse}`;
+    const bookReference = `${bookName} ${chapter}:${fullVerse}`;
 
-    const linkToBLB = `https://www.blueletterbible.org/nasb95/${fullBookName}/${chapter}/${verse}`;
+    const linkToBLB = `https://www.blueletterbible.org/nasb95/${bookName}/${chapter}/${fullVerse}`;
 
     const formattedHtml = `
       <span>${verseMatch}</span>
