@@ -26,7 +26,8 @@ export const selectAllCounts = createSelector(selectAllItems, (items: fromItems.
           tag === Tag.JesusResurrection ||
           tag === Tag.JesusSuffering ||
           tag === Tag.JesusDeity ||
-          tag === Tag.JesusType
+          tag === Tag.JesusType ||
+          tag === Tag.TheSonOfMan
         )
           counts.prophesiesAboutJesus += 1;
 

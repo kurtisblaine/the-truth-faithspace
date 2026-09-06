@@ -6,13 +6,15 @@
 
     <mat-menu #navigationMenu="matMenu">
       <button mat-menu-item (click)="goHome()">Home</button>
+      <button mat-menu-item (click)="goProphesies()">Prophesies</button>
       <button mat-menu-item (click)="goContact()">Contact</button>
     </mat-menu>
 
     <lib-link [link]="`${baseUrl}`" [isNewPage]="false">
-      <button mat-button (click)="goHome()"><h1>Biblical Prophesy</h1></button>
+      <button mat-button><span class="app-title">Biblical Prophesy</span></button>
     </lib-link>
 
+    @if(!isMobile()){
     <lib-link [link]="`${baseUrl}/prophesies`" [isNewPage]="false" @fadeInOut>
       <button
         mat-button
@@ -23,6 +25,7 @@
         The Prophesies
       </button>
     </lib-link>
+    }
 
     <span style="flex: 1 1 auto"></span>
 

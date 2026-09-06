@@ -1,4 +1,4 @@
-import { afterNextRender, Component, ElementRef, inject, OnInit, signal, ViewChild } from "@angular/core";
+import { afterNextRender, Component, ElementRef, OnInit, ViewChild } from "@angular/core";
 import { MatMenuModule, MatMenuTrigger } from "@angular/material/menu";
 import { Router, RouterModule } from "@angular/router";
 import {
@@ -27,7 +27,6 @@ import { MatProgressBarModule } from "@angular/material/progress-bar";
 import { MatSidenavModule } from "@angular/material/sidenav";
 import { MatToolbarModule } from "@angular/material/toolbar";
 import { MatTooltipModule } from "@angular/material/tooltip";
-import { DeviceDetectorService } from "ngx-device-detector";
 import { BehaviorSubject, fromEvent, map, Observable } from "rxjs";
 import {
   AuthSettingsComponent,
@@ -89,17 +88,12 @@ export class AppComponent extends SeoBaseComponent implements OnInit {
   public progressValue = new BehaviorSubject(0);
   public progressValue$!: Observable<number>;
 
-  deviceDetector = inject(DeviceDetectorService);
-  public isMobile = signal(true);
-
   public scrollTimeout!: any;
 
   constructor(private router: Router) {
     super();
 
     afterNextRender(() => {
-      this.isMobile.set(this.deviceDetector.isMobile());
-
       this.progressValue$ = fromEvent(window, "scroll", { passive: true }).pipe(
         map(() => {
           clearTimeout(this.scrollTimeout);

@@ -2,9 +2,18 @@
   <lib-number-ticker
     tileSlideIn
     matRipple
-    (click)="goToProphesies(['JesusExaltation', 'JesusResurrection', 'JesusSuffering', 'JesusDeity', 'JesusType'])"
+    (click)="
+      goToProphesies([
+        'JesusExaltation',
+        'JesusResurrection',
+        'JesusSuffering',
+        'JesusDeity',
+        'JesusType',
+        'TheSonOfMan'
+      ])
+    "
     [title]="'Prophesies about Jesus'"
-    [subtitle]="'God foretelling what Jesus Christ would come into the world and do and what would happen soon after'"
+    [subtitle]="'God foretelling what Jesus Christ would come into the world and do and what would happen soon after.'"
     [count]="counts().prophesiesAboutJesus"
   ></lib-number-ticker>
   <lib-number-ticker
@@ -12,7 +21,7 @@
     matRipple
     (click)="goToProphesies([], 'Genesis')"
     [title]="'Prophesies from the Very Beginning'"
-    [subtitle]="'Even from the very beginning, the creation of the world, God was foretelling what Christ would do'"
+    [subtitle]="'Even from the very beginning, the creation of the world, God was foretelling what Christ would do.'"
     [count]="counts().prophesiesFromTheVeryBeginning"
   ></lib-number-ticker>
   <lib-number-ticker
@@ -21,7 +30,7 @@
     (click)="goToProphesies(['ImplicitType'], '', 'exclude')"
     [title]="`Prophesies You Likely Haven't Seen`"
     [subtitle]="
-      'Prophesies which are implied that do not have a direct reference to its fulfillment in the New Testament'
+      'Prophesies which are implied, which do not have a direct reference to its fulfillment in the New Testament.'
     "
     [count]="counts().prophesiesImplied"
   ></lib-number-ticker>
@@ -31,7 +40,7 @@
     (click)="goToProphesies(['TheNewBirth'], '', 'exclude')"
     [title]="'Prophesies about the New Birth'"
     [subtitle]="
-      'Even from the beginning, God had not been satisfied with His creation, but seeks to make all things new'
+      'Even from the beginning, God had not been satisfied with His creation, but seeks to make all things new.'
     "
     [count]="counts().prophesiesAboutNewBirth"
   ></lib-number-ticker>
@@ -40,7 +49,7 @@
     matRipple
     (click)="goToProphesies(['Grace', 'Faith', 'Election'])"
     [title]="'Prophesies about Grace'"
-    [subtitle]="'In the law, God testifying to the grace to be revealed in the Lord Jesus Christ'"
+    [subtitle]="'In the law, God testifying to the grace to be revealed in the Lord Jesus Christ.'"
     [count]="counts().prophesiesAboutGrace"
   ></lib-number-ticker>
 </div>

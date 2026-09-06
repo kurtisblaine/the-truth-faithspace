@@ -7,7 +7,7 @@ export const serverRoutes: ServerRoute[] = [
     renderMode: RenderMode.Prerender,
   },
   {
-    path: "prophesy-item/:title",
+    path: "prophesies/prophesy-item/:title",
     renderMode: RenderMode.Prerender,
     async getPrerenderParams() {
       return itemsRows.map((item) => ({ title: item.title.toString() }));

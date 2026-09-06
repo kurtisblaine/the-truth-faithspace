@@ -1,5 +1,6 @@
 import { CommonModule } from "@angular/common";
 import {
+  afterNextRender,
   AfterViewInit,
   ChangeDetectionStrategy,
   Component,
@@ -7,10 +8,12 @@ import {
   ElementRef,
   inject,
   InjectionToken,
+  signal,
   ViewChild,
 } from "@angular/core";
 import { Meta, Title } from "@angular/platform-browser";
 import { Router } from "@angular/router";
+import { DeviceDetectorService } from "ngx-device-detector";
 import { CanonicalService } from "shared";
 
 @Directive({ selector: "[seoCaption]" })
@@ -59,6 +62,9 @@ export class SeoBaseComponent implements AfterViewInit {
   private _appPostfix = inject(APP_POSTFIX);
   public baseUrl = inject(BASE_URL);
 
+  public deviceDetector = inject(DeviceDetectorService);
+  public isMobile = signal(true);
+
   @ViewChild("seoCaption", { read: ElementRef, static: false }) private seoCaption!: ElementRef; //120-158 characters
   @ViewChild("seoTitle", { read: ElementRef, static: false }) private seoTitle!: ElementRef; //50-60 characters
 
@@ -66,6 +72,10 @@ export class SeoBaseComponent implements AfterViewInit {
 
   constructor(options: SeoOptions = {}) {
     this._setOptions(options);
+
+    afterNextRender(() => {
+      this.isMobile.set(this.deviceDetector.isMobile());
+    });
   }
 
   ngAfterViewInit(): void {

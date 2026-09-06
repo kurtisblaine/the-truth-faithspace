@@ -15,12 +15,12 @@
       <mat-card-title> <h3 class="primary-color">The Prophesy</h3></mat-card-title>
       <mat-card-subtitle>
         @if(item()?.bookDateRange) {
-        <h4>The book {{ item()?.bookDateRange?.book }} was written around {{ item()?.bookDateRange?.range }}</h4>
+        <h4>The book of {{ item()?.bookDateRange?.book }} was written around {{ item()?.bookDateRange?.range }}</h4>
         }
       </mat-card-subtitle>
     </mat-card-header>
     <mat-card-content>
-      {{ item()?.prophesy }}
+      <span [appFormatScripture]="item()?.prophesy"> </span>
     </mat-card-content>
     <mat-card-footer style="padding: 20px"></mat-card-footer>
   </mat-card>
@@ -32,11 +32,9 @@
     </mat-card-header>
     <mat-card-content>
       @for(fulfillment of item()?.fulfillments; track $index) {
-      <div style="padding: 7px">
-        {{ fulfillment }}
-      </div>
+      <div style="padding: 7px 0px" [appFormatScripture]="fulfillment"></div>
       }
     </mat-card-content>
-    <mat-card-footer style="padding: 20px"> </mat-card-footer>
+    <mat-card-footer style="padding: 30px"> </mat-card-footer>
   </mat-card>
 </div>

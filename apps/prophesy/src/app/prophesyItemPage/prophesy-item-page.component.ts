@@ -6,10 +6,11 @@ import { SeoBaseComponent } from "shared";
 import { getTagColorClass, Tag } from "../+state/items/items.models";
 import { ItemEntity } from "../+state/items/items.reducer";
 import { getByUrl } from "../+state/items/items.selectors";
+import { FormatScriptureDirective } from "./format-scripture.directive";
 
 @Component({
   selector: "app-prophesy-item-page",
-  imports: [MatCardModule, MatChipsModule],
+  imports: [MatCardModule, MatChipsModule, FormatScriptureDirective],
   templateUrl: "./prophesy-item-page.component.html",
   styleUrl: "./prophesy-item-page.component.scss",
   encapsulation: ViewEncapsulation.None,

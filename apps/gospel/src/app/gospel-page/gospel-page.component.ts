@@ -1,18 +1,7 @@
 import { isPlatformBrowser, Location } from "@angular/common";
-import {
-  afterNextRender,
-  AfterViewInit,
-  Component,
-  Inject,
-  OnDestroy,
-  OnInit,
-  PLATFORM_ID,
-  signal,
-  ViewEncapsulation,
-} from "@angular/core";
+import { AfterViewInit, Component, Inject, OnDestroy, OnInit, PLATFORM_ID, ViewEncapsulation } from "@angular/core";
 import { ActivatedRoute } from "@angular/router";
 import { fullpageApi, fullpageOptions, Item, Trigger } from "fullpage.js/dist/fullpage.extensions.min";
-import { DeviceDetectorService } from "ngx-device-detector";
 import { distinctUntilChanged, filter, Subscription } from "rxjs";
 import { SeoBaseComponent } from "shared";
 
@@ -53,15 +42,12 @@ export class GospelPageComponent extends SeoBaseComponent implements OnInit, Aft
     return isPlatformBrowser(this.platformId);
   }
 
-  public isMobile = signal(true);
-
   public fullpageApi: fullpageApi;
   private routeSubscription: Subscription;
 
   constructor(
     private route: ActivatedRoute,
     private location: Location,
-    private deviceDetector: DeviceDetectorService,
     @Inject(PLATFORM_ID) private platformId: object
   ) {
     super({
@@ -71,8 +57,6 @@ export class GospelPageComponent extends SeoBaseComponent implements OnInit, Aft
         "The Good News of the eternal God, creator of heaven & earth with every living thing, He revealed His glory in His Son, Jesus Christ, full of grace & truth.",
       shouldPostfix: false,
     });
-
-    afterNextRender(() => this.isMobile.set(this.deviceDetector.isMobile()));
   }
 
   ngOnInit() {}

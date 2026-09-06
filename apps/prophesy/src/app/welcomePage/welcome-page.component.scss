@@ -1,14 +1,13 @@
 :host {
   display: block;
   padding: 14px;
-  width: 100vw;
 }
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(155px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
   gap: 10px;
-  grid-auto-rows: minmax(100px, auto);
+  // grid-auto-rows: minmax(100px, auto);
 }
 
 lib-number-ticker[matRipple] {

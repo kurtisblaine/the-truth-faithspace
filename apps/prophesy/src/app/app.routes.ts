@@ -15,7 +15,7 @@ export const appRoutes: Route[] = [
     loadComponent: () => HomePageComponent,
   },
   {
-    path: "prophesy-item/:title",
+    path: "prophesies/prophesy-item/:title",
     loadComponent: () => ProphesyItemPageComponent,
   },
   {

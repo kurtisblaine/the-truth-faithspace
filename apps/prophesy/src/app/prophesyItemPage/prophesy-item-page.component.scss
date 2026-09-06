@@ -1,7 +1,6 @@
 app-prophesy-item-page {
   display: block;
   padding: 14px;
-  width: 100vw;
 }
 
 .tiles {
@@ -10,7 +9,7 @@ app-prophesy-item-page {
 }
 
 .tiles > * {
-  margin: 20px;
+  margin: 20px 10px;
   flex: 1 1 100%;
 }
 
@@ -20,4 +19,10 @@ mat-card {
 
 .mdc-evolution-chip__action--presentational {
   cursor: pointer !important;
+}
+
+@media (max-width: 1000px) {
+  .tiles {
+    flex-direction: column;
+  }
 }

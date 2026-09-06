@@ -52,6 +52,10 @@ export class AppComponent extends SeoBaseComponent {
     this.router.navigateByUrl("").then(() => {});
   }
 
+  public goProphesies() {
+    this.router.navigateByUrl("prophesies").then(() => {});
+  }
+
   public goContact() {
     this.router.navigateByUrl("contact").then(() => {});
   }

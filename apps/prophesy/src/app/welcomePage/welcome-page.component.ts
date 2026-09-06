@@ -19,7 +19,10 @@ export class WelcomePageComponent extends SeoBaseComponent {
   public counts: Signal<ProphesyCounts>;
 
   constructor(private store: Store, private router: Router) {
-    super();
+    super({
+      description:
+        "A website of prophesies which God foretold beforehand long ago in the Holy Scriptures, foretelling of what manner of death His Son, Jesus Christ, would die and His resurrection which would follow three days after. And that in His name salvation would be preached through repentance of sins and faith in His name.",
+    });
 
     this.store.dispatch(ItemsActions.loadItems());
     this.counts = this.store.selectSignal(selectAllCounts);
