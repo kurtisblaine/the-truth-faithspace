@@ -22,7 +22,7 @@ export class FormatScriptureDirective {
 
     // Regex to parse: Optional Book Number, Book Name, Chapter, and Verse
     // Matches: "1 John 3 16", "John 3:16", "1John 3 16", "Romans 12"
-    const regex = /^([1-3]?)\s*([a-zA-Z]+)\s*(\d+)(?:\s*[:.\s]\s*(\d+?-?\d+))?$/;
+    const regex = /^([1-3]?)\s*([a-zA-Z]+)\s*(\d+)(?:\s*[:.\s]\s*(\d+-?(\d+)?))?$/;
     const match = bookMatch.match(regex);
 
     if (!match) {
