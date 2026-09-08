@@ -17,7 +17,106 @@ export const itemsRows: ItemEntity[] = [
   //   tags: [],
   // },
   {
-    title: "Adam's Disobedience, Christ's Obedience",
+    title: "Lot Believed God and Was Saved",
+    description:
+      "Lot believed the report of the coming destruction upon Sodom (before ever seeing a single flicker of fire from heaven) and preached the Gospel to his sons-in-law, namely that God has warned them ahead of time for salvation from destruction. ",
+    prophesy: `“Lot went out and spoke to his sons-in-law, who were to marry his daughters, and said, "Up, get out of this place, for the LORD will destroy the city." But he appeared to his sons-in-law to be jesting.” (Genesis 19:14)`,
+    fulfillments: [
+      `“And if He rescued righteous Lot, oppressed by the sensual conduct of unprincipled men (for by what he saw and heard that righteous man, while living among them, felt his righteous soul tormented day after day by their lawless deeds), then the Lord knows how to rescue the godly from temptation, and to keep the unrighteous under punishment for the day of judgment, and especially those who indulge the flesh in its corrupt desires and despise authority. Daring, self-willed, they do not tremble when they revile angelic majesties, whereas angels who are greater in might and power do not bring a reviling judgment against them before the Lord.” (2 Peter 2:7-11)`,
+    ],
+    tags: [Tag.ImplicitType, Tag.Faith],
+  },
+  {
+    title: "Sodom, An Example of Eternal Fire",
+    description:
+      "As Sodom and Gomorrah were burned with fire from heaven, despite knowing of God's grace shown to all after the flood, they serve as an example of the perdition of those who, despite God's grace, follow after the defiling passions of the flesh and serve diverse pleasures.",
+    prophesy: `“Then the LORD rained on Sodom and Gomorrah brimstone and fire from the LORD out of heaven, and He overthrew those cities, and all the valley, and all the inhabitants of the cities, and what grew on the ground.” (Genesis 19:24-25)`,
+    fulfillments: [
+      `“And angels who did not keep their own domain, but abandoned their proper abode, He has kept in eternal bonds under darkness for the judgment of the great day, just as Sodom and Gomorrah and the cities around them, since they in the same way as these indulged in gross immorality and went after strange flesh, are exhibited as an example in undergoing the punishment of eternal fire.” (Jude 1:6-7)`,
+      `“And if He condemned the cities of Sodom and Gomorrah to destruction by reducing them to ashes, having made them an example to those who would live ungodly lives thereafter.” (2 Peter 2:6)`,
+      `God showed grace to the world when He made a covenant with Noah after the flood, and thereafter, He gave rain to both the righteous and the wicked, showing grace. Nevertheless, Sodom and Gomorrah, unbelieving and evil, followed after the flesh, denying the truth, and suffered the penalty of eternal fire.`,
+    ],
+    tags: [Tag.EternalFire],
+  },
+  {
+    title: "Abraham Slept and God Promised",
+    description:
+      "God put Abraham into deep sleep and made certain to Him the hope of the promise. Abraham slept, which implies he had no part in it, and God made certain the immutability of His promise and made a covenant with Abraham.",
+    prophesy: `“Now when the sun was going down, a deep sleep fell upon Abram; and behold, terror and great darkness fell upon him.” (Genesis 15:12)`,
+    fulfillments: [
+      `“For we maintain that a man is justified by faith apart from works of the Law.” (Romans 3:28)`,
+      `“But to the one who does not work, but believes in Him who justifies the ungodly, his faith is credited as righteousness, just as David also speaks of the blessing on the man to whom God credits righteousness apart from works: "BLESSED ARE THOSE WHOSE LAWLESS DEEDS HAVE BEEN FORGIVEN, AND WHOSE SINS HAVE BEEN COVERED. "BLESSED IS THE MAN WHOSE SIN THE LORD WILL NOT TAKE INTO ACCOUNT."” (Romans 4:5-8)`,
+      `“But God, being rich in mercy, because of His great love with which He loved us, even when we were dead in our transgressions, made us alive together with Christ (by grace you have been saved), and raised us up with Him, and seated us with Him in the heavenly places in Christ Jesus, so that in the ages to come He might show the surpassing riches of His grace in kindness toward us in Christ Jesus.” (Ephesians 2:4-7)`,
+      `“When you were dead in your transgressions and the uncircumcision of your flesh, He made you alive together with Him, having forgiven us all our transgressions, having canceled out the certificate of debt consisting of decrees against us, which was hostile to us; and He has taken it out of the way, having nailed it to the cross.” (Colossians 2:13-14)`,
+    ],
+    tags: [Tag.Promise, Tag.ImplicitType],
+  },
+  {
+    title: "Four Hundred and Thirty Years in Egypt",
+    description:
+      "God foretold Israel's bondage in Egypt and the length of time, to the very day, that they would be enslaved. The LORD God of Hosts judged them and rescued them out of that land with a strong right hand.",
+    prophesy: `“God said to Abram, "Know for certain that your descendants will be strangers in a land that is not theirs, where they will be enslaved and oppressed four hundred years. But I will also judge the nation whom they will serve, and afterward they will come out with many possessions. As for you, you shall go to your fathers in peace; you will be buried at a good old age. Then in the fourth generation they will return here, for the iniquity of the Amorite is not yet complete." (Genesis 15:13-16)`,
+    fulfillments: [
+      `“Now the time that the sons of Israel lived in Egypt was four hundred and thirty years. And at the end of four hundred and thirty years, to the very day, all the hosts of the LORD went out from the land of Egypt.” (Exodus 12:40-41)`,
+      `"But God spoke to this effect, that his DESCENDANTS WOULD BE ALIENS IN A FOREIGN LAND, AND THAT THEY WOULD BE ENSLAVED AND MISTREATED FOR FOUR HUNDRED YEARS. AND WHATEVER NATION TO WHICH THEY WILL BE IN BONDAGE I MYSELF WILL JUDGE,' said God, 'AND AFTER THAT THEY WILL COME OUT AND SERVE ME IN THIS PLACE.'” (Acts 7:6-7)`,
+    ],
+    tags: [Tag.DirectProphesy],
+  },
+  {
+    title: "We who Believe are Counted as Righteous",
+    description:
+      "We are counted as righteous by faith in Jesus Christ, for 'without faith it is impossible to please Him'; so then, we who believe alongside believing Abraham are reckoned righteous, apart from our works, by the grace of God.",
+    prophesy: `“Then he believed in the LORD; and He reckoned it to him as righteousness.” (Genesis 15:6)`,
+    fulfillments: [
+      `“For what does the Scripture say? "ABRAHAM BELIEVED GOD, AND IT WAS CREDITED TO HIM AS RIGHTEOUSNESS." Now to the one who works, his wage is not credited as a favor, but as what is due. But to the one who does not work, but believes in Him who justifies the ungodly, his faith is credited as righteousness, just as David also speaks of the blessing on the man to whom God credits righteousness apart from works: "BLESSED ARE THOSE WHOSE LAWLESS DEEDS HAVE BEEN FORGIVEN, AND WHOSE SINS HAVE BEEN COVERED. "BLESSED IS THE MAN WHOSE SIN THE LORD WILL NOT TAKE INTO ACCOUNT." Is this blessing then on the circumcised, or on the uncircumcised also? For we say, "FAITH WAS CREDITED TO ABRAHAM AS RIGHTEOUSNESS."” (Romans 4:3-9)`,
+      `“Without becoming weak in faith he contemplated his own body, now as good as dead since he was about a hundred years old, and the deadness of Sarah's womb; yet, with respect to the promise of God, he did not waver in unbelief but grew strong in faith, giving glory to God, and being fully assured that what God had promised, He was able also to perform. Therefore IT WAS ALSO CREDITED TO HIM AS RIGHTEOUSNESS.” (Romans 4:19-22)`,
+      `“So then, does He who provides you with the Spirit and works miracles among you, do it by the works of the Law, or by hearing with faith? Even so Abraham BELIEVED GOD, AND IT WAS RECKONED TO HIM AS RIGHTEOUSNESS. Therefore, be sure that it is those who are of faith who are sons of Abraham.” (Galatians 3:5-7)`,
+      `“You see that faith was working with his works, and as a result of the works, faith was perfected; and the Scripture was fulfilled which says, "AND ABRAHAM BELIEVED GOD, AND IT WAS RECKONED TO HIM AS RIGHTEOUSNESS," and he was called the friend of God.” (James 2:22-23)`,
+    ],
+    tags: [Tag.Faith],
+  },
+  {
+    title: "Melchizedek as a Type of Jesus Christ",
+    description:
+      "Jesus Christ is our faithful High Priest according to the order of Melchizedek, not according to the flesh, but according to the power of an indestructable life through the resurrection from the dead; God seated Him at the right hand of God where He always lives to make intercession for us.",
+    prophesy: `“And Melchizedek king of Salem brought out bread and wine; now he was a priest of God Most High.” (Genesis 14:18)`,
+    fulfillments: [
+      `“Without father, without mother, without genealogy, having neither beginning of days nor end of life, but made like the Son of God, he remains a priest perpetually.” (Hebrews 7:3)`,
+      `“Now if perfection was through the Levitical priesthood (for on the basis of it the people received the Law), what further need was there for another priest to arise according to the order of Melchizedek, and not be designated according to the order of Aaron?” (Hebrews 7:11)`,
+      `“And this is clearer still, if another priest arises according to the likeness of Melchizedek, who has become such not on the basis of a law of physical requirement, but according to the power of an indestructible life. For it is attested of Him, "YOU ARE A PRIEST FOREVER ACCORDING TO THE ORDER OF MELCHIZEDEK."” (Hebrews 7:15-17)`,
+      `“The former priests, on the one hand, existed in greater numbers because they were prevented by death from continuing, but Jesus, on the other hand, because He continues forever, holds His priesthood permanently. Therefore He is able also to save forever those who draw near to God through Him, since He always lives to make intercession for them.” (Hebrews 7:23-25)`,
+      `“Although He was a Son, He learned obedience from the things which He suffered. And having been made perfect, He became to all those who obey Him the source of eternal salvation, being designated by God as a high priest according to the order of Melchizedek.” (Hebrews 5:8-10)`,
+    ],
+    tags: [Tag.JesusType, Tag.JesusDeity, Tag.JesusResurrection],
+  },
+  {
+    title: "The Promised Land is a Heavenly Dwelling",
+    description:
+      "Abraham, Isaac, and Jacob were fellow heirs of the same promise, which they died having not recieved, for now, they await us, the full number of believers, and the glorious appearing of Jesus Christ from heaven for the fulfillment of the promise, salvation from our mortal bodies and an everlasting home.",
+    prophesy: `“The LORD appeared to Abram and said, "To your descendant I will give this land." So he built an altar there to the LORD who had appeared to him.” (Genesis 12:7)`,
+    fulfillments: [
+      `“Now the promises were spoken to Abraham and to his seed. He does not say, "And to seeds," as referring to many, but rather to one, "And to your seed," that is, Christ. What I am saying is this: the Law, which came four hundred and thirty years later, does not invalidate a covenant previously ratified by God, so as to nullify the promise. For if the inheritance is based on law, it is no longer based on a promise; but God has granted it to Abraham by means of a promise. Why the Law then? It was added because of transgressions, having been ordained through angels by the agency of a mediator, until the seed would come to whom the promise had been made.” (Galatians 3:16-19)`,
+      `“And if you belong to Christ, then you are Abraham's descendants, heirs according to promise.” (Galatians 3:29)`,
+      `“All these died in faith, without receiving the promises, but having seen them and having welcomed them from a distance, and having confessed that they were strangers and exiles on the earth. For those who say such things make it clear that they are seeking a country of their own. And indeed if they had been thinking of that country from which they went out, they would have had opportunity to return. But as it is, they desire a better country, that is, a heavenly one. Therefore God is not ashamed to be called their God; for He has prepared a city for them.” (Hebrews 11:13-16)`,
+      `"Then he left the land of the Chaldeans and settled in Haran. From there, after his father died, God had him move to this country in which you are now living. But He gave him no inheritance in it, not even a foot of ground, and yet, even when he had no child, He promised that HE WOULD GIVE IT TO HIM AS A POSSESSION, AND TO HIS DESCENDANT AFTER HIM.” (Acts 7:4-5)`,
+    ],
+    tags: [Tag.TheSonOfMan, Tag.Promise, Tag.Gentiles],
+  },
+  {
+    title: "The Gentiles are Fellow Heirs with the Jews",
+    description:
+      "Even the Gentiles are included as offspring of Abraham and heirs of the promise which God gave to Abraham, considering they have faith along with Abraham, the father of faith.",
+    prophesy: `“And I will bless those who bless you, And the one who curses you I will curse. And in you all the families of the earth will be blessed." (Genesis 12:3)`,
+    fulfillments: [
+      `“The Scripture, foreseeing that God would justify the Gentiles by faith, preached the gospel beforehand to Abraham, saying, "ALL THE NATIONS WILL BE BLESSED IN YOU." So then those who are of faith are blessed with Abraham, the believer.” (Galatians 3:8-9)`,
+      `“And if you belong to Christ, then you are Abraham's descendants, heirs according to promise.” (Galatians 3:29)`,
+      `“By referring to this, when you read you can understand my insight into the mystery of Christ, which in other generations was not made known to the sons of men, as it has now been revealed to His holy apostles and prophets in the Spirit; to be specific, that the Gentiles are fellow heirs and fellow members of the body, and fellow partakers of the promise in Christ Jesus through the gospel, of which I was made a minister, according to the gift of God's grace which was given to me according to the working of His power.” (Ephesians 3:4-7)`,
+      `"And likewise, all the prophets who have spoken, from Samuel and his successors onward, also announced these days. It is you who are the sons of the prophets and of the covenant which God made with your fathers, saying to Abraham, 'AND IN YOUR SEED ALL THE FAMILIES OF THE EARTH SHALL BE BLESSED.' For you first, God raised up His Servant and sent Him to bless you by turning every one of you from your wicked ways." (Acts 3:24-26)`,
+    ],
+    tags: [Tag.Gentiles, Tag.Faith, Tag.Promise],
+  },
+  {
+    title: "Adam's Disobedience and Christ's Obedience",
     description:
       "By the one man's disobedience all were made sinners, but by the One's obedience many are made righteous, even those who have faith in Jesus Christ.",
     prophesy: `“The man said, "The woman whom You gave to be with me, she gave me from the tree, and I ate."” (Genesis 3:12)`,
@@ -93,7 +192,7 @@ export const itemsRows: ItemEntity[] = [
     tags: [Tag.Nature, Tag.ImplicitType],
   },
   {
-    title: "The Law is Vengeance, Jesus is Forgiveness",
+    title: "The Law is Vengeance and Jesus is Forgiveness",
     description:
       "Where there is vengeance in the law, there is forgiveness in Christ Jesus. For where wrath abounded through the law, so grace abounds through faith in Jesus Christ.",
     prophesy: `“If Cain is avenged sevenfold, Then Lamech seventy-sevenfold." (Genesis 4:24)`,
