@@ -129,6 +129,8 @@ export class HomePageComponent extends SeoBaseComponent implements OnDestroy {
     });
 
     effect(() => {
+      this.pageIndex.set(0);
+
       const selectedTagKeys = this.selectedTags().map((tag) => Object.keys(Tag)[Object.values(Tag).indexOf(tag)]);
       const allTags = this._removeDuplicates(selectedTagKeys).reduce((query, tag, index) => {
         if (index === 0) query += tag;
@@ -157,8 +159,8 @@ export class HomePageComponent extends SeoBaseComponent implements OnDestroy {
   }
 
   onFilterOptionChange(event: MatButtonToggleChange): void {
-    this.selectedTagsControl.reset([]);
     this.filteringOption.set(event.value);
+    this.reset();
   }
 
   getTagColorClass = (tag: Tag) => getTagColorClass(tag);
@@ -168,7 +170,8 @@ export class HomePageComponent extends SeoBaseComponent implements OnDestroy {
     this.pageSize.update(() => event.pageSize);
   }
 
-  reset() {
+  reset(all = true) {
+    this.pageIndex.set(0);
     this.selectedTagsControl.reset([]);
     this.selectedBook.update(() => this.ALL_BOOKS);
   }

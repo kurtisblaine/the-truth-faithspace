@@ -2,7 +2,7 @@
 
 <div class="tags">
   <mat-chip-listbox multiple aria-label="Prophesy Type" [formControl]="selectedTagsControl">
-    @for (tag of filteredTags(); track tag) {
+    @for (tag of filteredTags(); track `${tag}-${$index}`) {
     <mat-chip-option [value]="tag" (selectionChange)="toggleTag(tag, $event)">
       <span [class]="getTagColorClass(tag)">
         {{ tag }}
@@ -32,7 +32,7 @@
           (click)="$event.stopPropagation()"
           required
         >
-          @for (book of allBooks; track book) {
+          @for (book of allBooks; track $index) {
           <mat-option [value]="book">{{ book }}</mat-option>
           }
         </mat-select>
@@ -52,7 +52,7 @@
   </mat-card>
 
   <div class="grid">
-    @for (item of pagedItems(); track item.title) {
+    @for (item of pagedItems(); track `${item.url}-${$index}`) {
     <app-prophesy-tile [item]="item" @tileSlideIn></app-prophesy-tile>
     } @empty {
     <h3>No items match the selected filters.</h3>

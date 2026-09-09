@@ -31,6 +31,7 @@ export enum Tag {
 }
 
 export const TagColorMap = new Map<string, Tag[]>([
+  ["black-color", [Tag.DirectProphesy, Tag.ImplicitType, Tag.Unfulfilled]],
   [
     "orange-color",
     [Tag.JesusSuffering, Tag.JesusDeity, Tag.JesusExaltation, Tag.JesusResurrection, Tag.JesusType, Tag.TheSonOfMan],
