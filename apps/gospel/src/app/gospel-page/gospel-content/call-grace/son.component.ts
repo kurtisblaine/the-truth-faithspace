@@ -134,7 +134,7 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
     ><br /><br />
 
     For the Father grafts us, even Gentiles, into God's household through faith in Jesus; as He says also in Hosea, "I
-    WILL CALL THOSE WHO WERE NOT MY PEOPLE, 'MY PEOPLE,' AND HER WHO WAS NOT BELOVED, 'BELOVED.' AND IT SHALL BE THAT IN
+    WILL CALL THOSE who WERE NOT MY PEOPLE, 'MY PEOPLE,' AND HER who WAS NOT BELOVED, 'BELOVED.' AND IT SHALL BE THAT IN
     THE PLACE WHERE IT WAS SAID TO THEM, 'YOU ARE NOT MY PEOPLE,' THERE THEY SHALL BE CALLED SONS OF THE LIVING GOD."
     (Rom 9:25-26) For Christ Jesus makes us sons of God by the Spirit of His Son, conforming us into His likeness as we
     behold Him; as it says, “For those whom He foreknew, He also predestined to become conformed to the image of His
@@ -145,15 +145,18 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
     2:18-19). For we have a choice: either knowledge or life, as it was in the beginning. Christ Jesus is our life, and
     the knowledge of good and evil is the law. But our victory is won for us by Christ Jesus; and we enter into this
     victory by setting our minds on Him. For if we set our minds on spiritual things, the members of our bodies will
-    likewise conform to the message of our head. And we set our minds on our Head, Christ. For our hand does what the
-    mind says, and our foot does what the mind says, even to every finger and every toe. So if we set our mind on
-    spiritual things, namely Christ Jesus, He will grant us the strength to present our members as servants to
-    righteousness (Romans 8:5-8, Philippians 4:8, Colossians 3:2). This is the way of faith: setting our minds on Jesus
-    Christ. As it says about the mind of the flesh: "The day when you post your watchmen, Your punishment will come.
-    Then their confusion will occur.” (Micah 7:4) But then, it says about the mind of the Spirit: “As for me, I will
-    watch expectantly for the LORD; I will wait for the God of my salvation. My God will hear me.” (Micah 7:7) For the
-    mind set on the flesh is set on punishment and wrath, but the mind set on the Spirit is set on the LORD, the God of
-    salvation.
+    likewise conform to the message of our head. And we set our minds on our Head, Christ. The former kings of Israel
+    made all the people of Israel to sin by their wickedness (2 Kings 3:3, 17:21, 23:15); but how much more do you
+    suppose Jesus Christ, the Head of the body, the Righteous Lord and King, will make us who believe in Him do
+    righteously? For if the head be sick, then the whole body; but if the head is well, the body is likewise. For our
+    hand does what the mind says, and our foot does what the mind says, even to every finger and every toe. So if we set
+    our mind on spiritual things, namely Christ Jesus, He will grant us the strength to present our members as servants
+    to righteousness (Romans 8:5-8, Philippians 4:8, Colossians 3:2). This is the way of faith: setting our minds on
+    Jesus Christ. As it says about the mind of the flesh: "The day when you post your watchmen, Your punishment will
+    come. Then their confusion will occur.” (Micah 7:4) But then, it says about the mind of the Spirit: “As for me, I
+    will watch expectantly for the LORD; I will wait for the God of my salvation. My God will hear me.” (Micah 7:7) For
+    the mind set on the flesh is set on punishment and wrath, but the mind set on the Spirit is set on the LORD, the God
+    of salvation.
     <lib-link [link]="baseUrl + '/drawings/draw/father-son-church'"
       >(See more about the Father and the Son, the Son and the Church)</lib-link
     ><br /><br />

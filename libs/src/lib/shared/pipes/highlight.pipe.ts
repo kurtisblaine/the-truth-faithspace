@@ -17,6 +17,6 @@ export class HighlightPipe implements PipeTransform {
     const regex = new RegExp(escapedSearch, "gi");
 
     // Wrap matching text inside standard HTML <mark> tags
-    return value.replace(regex, (match) => `<mark>${match}</mark>`);
+    return value.replace(regex, (match) => `<mark class="yellow-color">${match}</mark>`);
   }
 }

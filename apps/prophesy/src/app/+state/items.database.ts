@@ -2,20 +2,50 @@ import { BookDateRange, Tag } from "./items/items.models";
 import { ItemEntity } from "./items/items.reducer";
 
 export const itemsRows: ItemEntity[] = [
-  // {
-  //   title: "",
-  //   description: "",
-  //   prophesy: ``,
-  //   fulfillments: [``],
-  //   tags: [],
-  // },
-  // {
-  //   title: "",
-  //   description: "",
-  //   prophesy: ``,
-  //   fulfillments: [``],
-  //   tags: [],
-  // },
+  {
+    title: "Jesus Beared the Cross",
+    description: "Isaac ",
+    prophesy: `“Abraham took the wood of the burnt offering and laid it on Isaac his son, and he took in his hand the fire and the knife. So the two of them walked on together.” (Genesis 22:6)`,
+    fulfillments: [``],
+    tags: [Tag.JesusSuffering, Tag.ImplicitType],
+  },
+  {
+    title: "One Man's Obedience is Blessing for All Nations",
+    description:
+      "Just as Abraham obeyed God and was about to offer his son Isaac as a sacrifice, and received a future blessing for the whole world, so God fulfilled in Jesus Christ when He obeyed God and offered the sacrifice of Himself, blessing the whole world on account of His one act through dying on the cross.",
+    prophesy: `"In your seed all the nations of the earth shall be blessed, because you have obeyed My voice." (Genesis 22:18)`,
+    fulfillments: [
+      `"And likewise, all the prophets who have spoken, from Samuel and his successors onward, also announced these days. It is you who are the sons of the prophets and of the covenant which God made with your fathers, saying to Abraham, 'AND IN YOUR SEED ALL THE FAMILIES OF THE EARTH SHALL BE BLESSED.' For you first, God raised up His Servant and sent Him to bless you by turning every one of you from your wicked ways." (Acts 3:24-26)`,
+      `“For as through the one man's disobedience the many were made sinners, even so through the obedience of the One the many will be made righteous.” (Romans 5:19)`,
+      `“But one of them, Caiaphas, who was high priest that year, said to them, "You know nothing at all, nor do you take into account that it is expedient for you that one man die for the people, and that the whole nation not perish." Now he did not say this on his own initiative, but being high priest that year, he prophesied that Jesus was going to die for the nation, and not for the nation only, but in order that He might also gather together into one the children of God who are scattered abroad.” (John 11:49-52)`,
+    ],
+    tags: [Tag.Gentiles, Tag.TheSonOfMan],
+  },
+  {
+    title: "God Offered His One and Only Son",
+    description:
+      "As Abraham was about to offer his one and only son, Isaac, God fulfilled, in that, He gave His one and only son, Jesus, for the sins of the world and rose Him up from the gave three days later for the remission of sins through faith in His name.",
+    prophesy: `"Take now your son, your only son, whom you love, Isaac, and go to the land of Moriah, and offer him there as a burnt offering on one of the mountains of which I will tell you.” (Genesis 22:2)`,
+    fulfillments: [
+      `Abraham foreseeing what God would do later said things like, “God will provide for Himself the lamb for the burnt offering, my son.” And then later, “Abraham called the name of that place The LORD Will Provide, as it is said to this day, "In the mount of the LORD it will be provided."” For he was looking to Jesus Christ who was to come (Genesis 22).`,
+      `“By faith Abraham, when he was tested, offered up Isaac, and he who had received the promises was offering up his only begotten son; it was he to whom it was said, "IN ISAAC YOUR DESCENDANTS SHALL BE CALLED." He considered that God is able to raise people even from the dead, from which he also received him back as a type.” (Hebrews 11:17-19)`,
+      `"For God so loved the world, that He gave His only begotten Son, that whoever believes in Him shall not perish, but have eternal life.” (John 3:16)`,
+    ],
+    tags: [Tag.JesusType, Tag.JesusResurrection],
+  },
+  {
+    title: "We are Children of the Promise",
+    description:
+      "As Isaac was born according to the promise, not after the flesh, so likewise, we are children of God who believe in Jesus Christ and put no confidence in the flesh.",
+    prophesy: `“Then the LORD took note of Sarah as He had said, and the LORD did for Sarah as He had promised. So Sarah conceived and bore a son to Abraham in his old age, at the appointed time of which God had spoken to him.” (Genesis 21:1-2)`,
+    fulfillments: [
+      `“That is, it is not the children of the flesh who are children of God, but the children of the promise are regarded as descendants. For this is the word of promise: "AT THIS TIME I WILL COME, AND SARAH SHALL HAVE A SON."” (Romans 9:8-9)`,
+      `“For it is written that Abraham had two sons, one by the bondwoman and one by the free woman. But the son by the bondwoman was born according to the flesh, and the son by the free woman through the promise. This is allegorically speaking, for these women are two covenants: one proceeding from Mount Sinai bearing children who are to be slaves; she is Hagar. Now this Hagar is Mount Sinai in Arabia and corresponds to the present Jerusalem, for she is in slavery with her children. But the Jerusalem above is free; she is our mother. For it is written, "REJOICE, BARREN WOMAN WHO DOES NOT BEAR; BREAK FORTH AND SHOUT, YOU WHO ARE NOT IN LABOR; FOR MORE NUMEROUS ARE THE CHILDREN OF THE DESOLATE THAN OF THE ONE WHO HAS A HUSBAND." And you brethren, like Isaac, are children of promise.” (Galatians 4:22-28)`,
+      `“But when the fullness of the time came, God sent forth His Son, born of a woman, born under the Law, so that He might redeem those who were under the Law, that we might receive the adoption as sons.” (Galatians 4:4-5)`,
+      `“By faith even Sarah herself received ability to conceive, even beyond the proper time of life, since she considered Him faithful who had promised. Therefore there was born even of one man, and him as good as dead at that, as many descendants AS THE STARS OF HEAVEN IN NUMBER, AND INNUMERABLE AS THE SAND WHICH IS BY THE SEASHORE.” (Hebrews 11:11-12)`,
+    ],
+    tags: [Tag.Promise, Tag.TheNewBirth],
+  },
   {
     title: "Lot Believed God and Was Saved",
     description:
