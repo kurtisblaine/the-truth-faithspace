@@ -3,11 +3,256 @@ import { ItemEntity } from "./items/items.reducer";
 
 export const itemsRows: ItemEntity[] = [
   {
-    title: "Jesus Beared the Cross",
-    description: "Isaac ",
-    prophesy: `“Abraham took the wood of the burnt offering and laid it on Isaac his son, and he took in his hand the fire and the knife. So the two of them walked on together.” (Genesis 22:6)`,
+    title: "",
+    description: "",
+    prophesy: ``,
     fulfillments: [``],
+    tags: [],
+  },
+  //GENESIS
+  {
+    title: "",
+    description: "",
+    prophesy: `“His brothers saw that their father loved him more than all his brothers; and so they hated him and could not speak to him on friendly terms.” (Genesis 37:4)`,
+    fulfillments: [``],
+    tags: [],
+  },
+  {
+    title: "",
+    description: "",
+    prophesy: `“Now he had still another dream, and related it to his brothers, and said, "Lo, I have had still another dream; and behold, the sun and the moon and eleven stars were bowing down to me."” (Genesis 37:9)`,
+    fulfillments: [
+      `“Philip *found Nathanael and *said to him, "We have found Him of whom Moses in the Law and also the Prophets wrote—Jesus of Nazareth, the son of Joseph."” (John 1:45)`,
+      `“But now apart from the Law the righteousness of God has been manifested, being witnessed by the Law and the Prophets, even the righteousness of God through faith in Jesus Christ for all those who believe; for there is no distinction;” (Romans 3:21-22)`,
+      `“But this I admit to you, that according to the Way which they call a sect I do serve the God of our fathers, believing everything that is in accordance with the Law and that is written in the Prophets; having a hope in God, which these men cherish themselves, that there shall certainly be a resurrection of both the righteous and the wicked.” (Acts 24:14-15)`,
+    ],
+    tags: [],
+  },
+  {
+    title: "",
+    description: "",
+    prophesy: `“When they saw him from a distance and before he came close to them, they plotted against him to put him to death.” (Genesis 37:18)`,
+    fulfillments: [
+      `“Then the chief priests and the elders of the people were gathered together in the court of the high priest, named Caiaphas; and they plotted together to seize Jesus by stealth and kill Him. But they were saying, "Not during the festival, otherwise a riot might occur among the people."” (Matthew 26:3-5)`,
+    ],
+    tags: [Tag.ImplicitType],
+  },
+  {
+    title: "",
+    description: "",
+    prophesy: `“So it came about, when Joseph reached his brothers, that they stripped Joseph of his tunic, the varicolored tunic that was on him; and they took him and threw him into the pit. Now the pit was empty, without any water in it.” (Genesis 37:23-24)`,
+    fulfillments: [
+      `“Then the soldiers, when they had crucified Jesus, took His outer garments and made four parts, a part to every soldier and also the tunic; now the tunic was seamless, woven in one piece.” (John 19:23)`,
+      `“Now this expression, "He ascended," what does it mean except that He also had descended into the lower parts of the earth? He who descended is Himself also He who ascended far above all the heavens, so that He might fill all things." (Ephesians 4:9-10)`,
+    ],
     tags: [Tag.JesusSuffering, Tag.ImplicitType],
+  },
+  {
+    title: "",
+    description: "",
+    prophesy: `“He said, "What pledge shall I give you?" And she said, "Your seal and your cord, and your staff that is in your hand." So he gave them to her and went in to her, and she conceived by him.” (Genesis 38:18)`,
+    fulfillments: [
+      `“Therefore, since the children share in flesh and blood, He Himself likewise also partook of the same, that through death He might render powerless him who had the power of death, that is, the devil, and might free those who through fear of death were subject to slavery all their lives.” (Hebrews 2:14-15)`,
+      `“But we do see Him who was made for a little while lower than the angels, namely, Jesus, because of the suffering of death crowned with glory and honor, so that by the grace of God He might taste death for everyone.” (Hebrews 2:9)`,
+    ],
+    tags: [Tag.ImplicitType, Tag.JesusResurrection],
+  },
+  {
+    title: "",
+    description: "",
+    prophesy: `“Judah said to his brothers, "What profit is it for us to kill our brother and cover up his blood?” (Genesis 37:26)`,
+    fulfillments: [
+      `“Then one of the twelve, named Judas Iscariot, went to the chief priests and said, "What are you willing to give me to betray Him to you?" And they weighed out thirty pieces of silver to him.” (Matthew 26:14-15)`,
+      `“But some were indignantly remarking to one another, "Why has this perfume been wasted?” (Mark 14:4)`,
+    ],
+    tags: [],
+  },
+  {
+    title: "",
+    description: "",
+    prophesy: ``,
+    fulfillments: [
+      `“Moreover, Pharaoh said to Joseph, "Though I am Pharaoh, yet without your permission no one shall raise his hand or foot in all the land of Egypt."” (Genesis 41:44)`,
+    ],
+    tags: [],
+  },
+  {
+    title: "",
+    description: "",
+    prophesy: ``,
+    fulfillments: [
+      `“When Joseph saw his brothers he recognized them, but he disguised himself to them and spoke to them harshly.” (Genesis 42:7)`,
+    ],
+    tags: [],
+  },
+  {
+    title: "",
+    description: "",
+    prophesy: `"Now, therefore, please let your servant remain instead of the lad a slave to my lord, and let the lad go up with his brothers.” (Genesis 44:33)`,
+    fulfillments: [``],
+    tags: [],
+  },
+  {
+    title: "",
+    description: "",
+    prophesy: `“And may God Almighty grant you compassion in the sight of the man, so that he will release to you your other brother and Benjamin. And as for me, if I am bereaved of my children, I am bereaved."” (Genesis 43:14)`,
+    fulfillments: [``],
+    tags: [],
+  },
+  {
+    title: "",
+    description:
+      "Joseph spoke harshly to his brothers as a harsh king; but secretely, he wept for his brethren until he revealed himself. So likewise, God hid, for a time, His kindness and spoke harshly through Moses and the law, but now, grace and truth is realized through Jesus Christ. ",
+    prophesy: `“Joseph hurried out for he was deeply stirred over his brother, and he sought a place to weep; and he entered his chamber and wept there.” (Genesis 43:30)`,
+    fulfillments: [
+      `“For the Law was given through Moses; grace and truth were realized through Jesus Christ.” (John 1:17)`,
+    ],
+    tags: [],
+  },
+  {
+    title: "",
+    description: "",
+    prophesy: `“"Now, therefore, when I come to your servant my father, and the lad is not with us, since his life is bound up in the lad's life, when he sees that the lad is not with us, he will die. Thus your servants will bring the gray hair of your servant our father down to Sheol in sorrow.” (Genesis 44:30-31)`,
+    fulfillments: [``],
+    tags: [],
+  },
+  {
+    title: "",
+    description: "",
+    prophesy: `“Then Judah approached him, and said, "Oh my lord, may your servant please speak a word in my lord's ears, and do not be angry with your servant; for you are equal to Pharaoh.” (Genesis 44:18)`,
+    fulfillments: [``],
+    tags: [],
+  },
+  {
+    title: "",
+    description: "",
+    prophesy: `“"Now do not be grieved or angry with yourselves, because you sold me here, for God sent me before you to preserve life. "For the famine has been in the land these two years, and there are still five years in which there will be neither plowing nor harvesting. "God sent me before you to preserve for you a remnant in the earth, and to keep you alive by a great deliverance. "Now, therefore, it was not you who sent me here, but God; and He has made me a father to Pharaoh and lord of all his household and ruler over all the land of Egypt.” (Genesis 45:5-8)`,
+    fulfillments: [``],
+    tags: [],
+  },
+  {
+    title: "",
+    description: "",
+    prophesy: `“"Behold, your eyes see, and the eyes of my brother Benjamin see, that it is my mouth which is speaking to you.” (Genesis 45:12)`,
+    fulfillments: [
+      `“Then He *said to Thomas, "Reach here with your finger, and see My hands; and reach here your hand and put it into My side; and do not be unbelieving, but believing."” (John 20:27)`,
+      `“And He said to them, "Why are you troubled, and why do doubts arise in your hearts? See My hands and My feet, that it is I Myself; touch Me and see, for a spirit does not have flesh and bones as you see that I have."" (Luke 24:38-39)`,
+    ],
+    tags: [],
+  },
+  {
+    title: "",
+    description: "",
+    prophesy: `“When they told him all the words of Joseph that he had spoken to them, and when he saw the wagons that Joseph had sent to carry him, the spirit of their father Jacob revived.” (Genesis 45:27)`,
+    fulfillments: [``],
+    tags: [],
+  },
+  {
+    title: "",
+    description: "",
+    prophesy: `“So Jacob said to Pharaoh, "The years of my sojourning are one hundred and thirty; few and unpleasant have been the years of my life, nor have they attained the years that my fathers lived during the days of their sojourning."” (Genesis 47:9)`,
+    fulfillments: [``],
+    tags: [],
+  },
+  {
+    title: "",
+    description: "",
+    prophesy: `“"As for you, you meant evil against me, but God meant it for good in order to bring about this present result, to preserve many people alive.” (Genesis 50:20)`,
+    fulfillments: [``],
+    tags: [],
+  },
+  {
+    title: "",
+    description: "",
+    prophesy: `“"The scepter shall not depart from Judah, Nor the ruler's staff from between his feet, Until Shiloh comes, And to him shall be the obedience of the peoples.” (Genesis 49:10)`,
+    fulfillments: [
+      `“Then a shoot will spring from the stem of Jesse, And a branch from his roots will bear fruit.” (Isaiah 11:1)`,
+    ],
+    tags: [Tag.TheSonOfMan, Tag.JesusExaltation, Tag.Gentiles],
+  },
+  {
+    title: "",
+    description: "",
+    prophesy: `“His brothers saw that their father loved him more than all his brothers; and so they hated him and could not speak to him on friendly terms.” (Genesis 37:4)`,
+    fulfillments: [``],
+    tags: [],
+  },
+  {
+    title: "",
+    description: "",
+    prophesy: `“Isaac breathed his last and died and was gathered to his people, an old man of ripe age; and his sons Esau and Jacob buried him.” (Genesis 35:29)`,
+    fulfillments: [``],
+    tags: [Tag.EternalLife, Tag.JesusResurrection],
+  },
+  {
+    title: "",
+    description:
+      "The Gentiles, made up of many nations, are included in the blessing of Abraham, Isaac, and Jacob. God in His grace gave by promise the inheritance, manifest now and granted through faith in Jesus Christ.",
+    prophesy: `“God also said to him, "I am God Almighty; Be fruitful and multiply; A nation and a company of nations shall come from you, And kings shall come forth from you. "The land which I gave to Abraham and Isaac, I will give it to you, And I will give the land to your descendants after you."” (Genesis 35:11-12)`,
+    fulfillments: [
+      `“For if the inheritance is based on law, it is no longer based on a promise; but God has granted it to Abraham by means of a promise.” (Galatians 3:18)`,
+      `“But the Scripture has shut up everyone under sin, so that the promise by faith in Jesus Christ might be given to those who believe.” (Galatians 3:22)`,
+      `“For this reason He is the mediator of a new covenant, so that, since a death has taken place for the redemption of the transgressions that were committed under the first covenant, those who have been called may receive the promise of the eternal inheritance.” (Hebrews 9:15)`,
+    ],
+    tags: [Tag.Gentiles, Tag.Promise, Tag.Grace],
+  },
+  {
+    title: "See Jesus Christ and Live",
+    description:
+      "Those who see God's face have died, but those who see Jesus Christ through faith shall live; for those who have seen Jesus Christ have seen the Father God. This is the true way to see God: through the Son.",
+    prophesy: `“So Jacob named the place Peniel, for he said, "I have seen God face to face, yet my life has been preserved."” (Genesis 32:30)`,
+    fulfillments: [
+      `“But He said, "You cannot see My face, for no man can see Me and live!"” (Exodus 33:20)`,
+      `“No one has seen God at any time; the only begotten God who is in the bosom of the Father, He has explained Him.” (John 1:18)`,
+      `“He [Jesus] is the image of the invisible God, the firstborn of all creation.” (Colossians 1:15)`,
+      `“Jesus *said to him, "Have I been so long with you, and yet you have not come to know Me, Philip? He who has seen Me has seen the Father; how can you say, 'Show us the Father'?” (John 14:9)`,
+      `“For God, who said, "Light shall shine out of darkness," is the One who has shone in our hearts to give the Light of the knowledge of the glory of God in the face of Christ.” (2 Corinthians 4:6)`,
+      `“What was from the beginning, what we have heard, what we have seen with our eyes, what we have looked at and touched with our hands, concerning the Word of Life— and the life was manifested, and we have seen and testify and proclaim to you the eternal life, which was with the Father and was manifested to us— what we have seen and heard we proclaim to you also, so that you too may have fellowship with us; and indeed our fellowship is with the Father, and with His Son Jesus Christ.” (1 John 1:1-3)`,
+    ],
+    tags: [Tag.Faith, Tag.JesusDeity],
+  },
+  {
+    title: "",
+    description: "",
+    prophesy: `“He had a dream, and behold, a ladder was set on the earth with its top reaching to heaven; and behold, the angels of God were ascending and descending on it.” (Genesis 28:12)`,
+    fulfillments: [
+      `“And He said to him, "Truly, truly, I say to you, you will see the heavens opened and the angels of God ascending and descending on the Son of Man."” (John 1:51)`,
+    ],
+    tags: [Tag.TheSonOfMan, Tag.JesusDeity],
+  },
+  {
+    title: "Jesus Rescued us from the Curse",
+    description:
+      "The curse of the law was upon us, for we did not keep it; but Jesus died for us to rescue us from the curse of the law that the blessing of Abraham might come unto us that believe; for he who has died is freed from the law.",
+    prophesy: `“But his mother said to him, "Your curse be on me, my son; only obey my voice, and go, get them for me."" (Genesis 27:13)`,
+    fulfillments: [
+      `“Christ redeemed us from the curse of the Law, having become a curse for us—for it is written, "CURSED IS EVERYONE WHO HANGS ON A TREE"— in order that in Christ Jesus the blessing of Abraham might come to the Gentiles, so that we would receive the promise of the Spirit through faith.” (Galatians 3:13-14)`,
+    ],
+    tags: [Tag.ImplicitType, Tag.JesusSuffering],
+  },
+  {
+    title: "Believers are Abraham's Descendants",
+    description:
+      "Because of Christ's one act of obedience, the promise of the blessing is poured out upon all the nations, that they may receive glory like the glory of the stars in heaven, in number and in glory.",
+    prophesy: `"I will multiply your descendants as the stars of heaven, and will give your descendants all these lands; and by your descendants all the nations of the earth shall be blessed; because Abraham obeyed Me and kept My charge, My commandments, My statutes and My laws." (Genesis 26:4-5)`,
+    fulfillments: [
+      `"And likewise, all the prophets who have spoken, from Samuel and his successors onward, also announced these days. It is you who are the sons of the prophets and of the covenant which God made with your fathers, saying to Abraham, 'AND IN YOUR SEED ALL THE FAMILIES OF THE EARTH SHALL BE BLESSED.' For you first, God raised up His Servant and sent Him to bless you by turning every one of you from your wicked ways." (Acts 3:24-26)`,
+      `“For as through the one man's disobedience the many were made sinners, even so through the obedience of the One the many will be made righteous.” (Romans 5:19)`,
+      `“But one of them, Caiaphas, who was high priest that year, said to them, "You know nothing at all, nor do you take into account that it is expedient for you that one man die for the people, and that the whole nation not perish." Now he did not say this on his own initiative, but being high priest that year, he prophesied that Jesus was going to die for the nation, and not for the nation only, but in order that He might also gather together into one the children of God who are scattered abroad.” (John 11:49-52)`,
+      `"Many of those who sleep in the dust of the ground will awake, these to everlasting life, but the others to disgrace and everlasting contempt. Those who have insight will shine brightly like the brightness of the expanse of heaven, and those who lead the many to righteousness, like the stars forever and ever.” (Daniel 12:2-3)`,
+    ],
+    tags: [Tag.JesusType, Tag.Gentiles, Tag.Grace],
+  },
+  {
+    title: "We who Believe were Separated from the Womb",
+    description:
+      "Just as God separated Jacob from the womb, so He has predestined us for to recieve His mercy in Jesus Christ our Lord.",
+    prophesy: `"Two nations are in your womb; And two peoples will be separated from your body; And one people shall be stronger than the other; And the older shall serve the younger." (Genesis 25:23)`,
+    fulfillments: [
+      `“And not only this, but there was Rebekah also, when she had conceived twins by one man, our father Isaac; for though the twins were not yet born and had not done anything good or bad, so that God's purpose according to His choice would stand, not because of works but because of Him who calls, it was said to her, "THE OLDER WILL SERVE THE YOUNGER." Just as it is written, "JACOB I LOVED, BUT ESAU I HATED."” (Romans 9:10-13)`,
+      `“So then He has mercy on whom He desires, and He hardens whom He desires.” (Romans 9:18)`,
+    ],
+    tags: [Tag.Election, Tag.Promise],
   },
   {
     title: "One Man's Obedience is Blessing for All Nations",

@@ -24,6 +24,7 @@ export enum Tag {
   Election = "Election",
   //pink
   CallForSalvation = "Call for Salvation",
+  EternalLife = "Eternal Life",
   //black
   DirectProphesy = "Direct Prophesy",
   ImplicitType = "Implicit Type",
@@ -37,7 +38,7 @@ export const TagColorMap = new Map<string, Tag[]>([
     [Tag.JesusSuffering, Tag.JesusDeity, Tag.JesusExaltation, Tag.JesusResurrection, Tag.JesusType, Tag.TheSonOfMan],
   ],
   ["green-color", [Tag.Nature]],
-  ["pink-color", [Tag.CallForSalvation]],
+  ["pink-color", [Tag.CallForSalvation, Tag.EternalLife]],
   ["purple-color", [Tag.TheNewBirth]],
   ["red-color", [Tag.EternalFire]],
   ["yellow-color", [Tag.Faith]],
