@@ -335,7 +335,7 @@ export const itemsRows: ItemEntity[] = [
       `“Now the time that the sons of Israel lived in Egypt was four hundred and thirty years. And at the end of four hundred and thirty years, to the very day, all the hosts of the LORD went out from the land of Egypt.” (Exodus 12:40-41)`,
       `"But God spoke to this effect, that his DESCENDANTS WOULD BE ALIENS IN A FOREIGN LAND, AND THAT THEY WOULD BE ENSLAVED AND MISTREATED FOR FOUR HUNDRED YEARS. AND WHATEVER NATION TO WHICH THEY WILL BE IN BONDAGE I MYSELF WILL JUDGE,' said God, 'AND AFTER THAT THEY WILL COME OUT AND SERVE ME IN THIS PLACE.'” (Acts 7:6-7)`,
     ],
-    tags: [Tag.DirectProphesy],
+    tags: [Tag.DirectProphecy],
   },
   {
     title: "We who Believe are Counted as Righteous",

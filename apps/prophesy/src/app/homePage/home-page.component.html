@@ -1,14 +1,16 @@
-<h1 class="primary-color" #seoTitle>The Prophesies</h1>
+<h1 class="primary-color" #seoTitle>The Prophecies</h1>
 
 <div class="tags">
-  <mat-chip-listbox multiple aria-label="Prophesy Type" [formControl]="selectedTagsControl">
-    @for (tag of filteredTags(); track `${tag}-${$index}`) {
-    <mat-chip-option [value]="tag" (selectionChange)="toggleTag(tag, $event)">
-      <span [class]="getTagColorClass(tag)">
-        {{ tag }}
+  <mat-chip-listbox multiple aria-label="Prophecy Type" [formControl]="selectedTagsControl">
+    @for (map of filteredTags() | keyvalue; track `${map.key}-${$index}`) { @if(map.value.length > 1) {
+    <app-grouped-tags [group]="map" (onToggleTags)="toggleTags($event)" style="margin-left: 8px"></app-grouped-tags>
+    } @else {
+    <mat-chip-option [value]="map.value[0]" (selectionChange)="toggleTag(map.value[0], $event)">
+      <span [class]="map.key">
+        {{ map.value[0] }}
       </span>
     </mat-chip-option>
-    }
+    } }
   </mat-chip-listbox>
 </div>
 

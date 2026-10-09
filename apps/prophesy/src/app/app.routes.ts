@@ -8,20 +8,20 @@ export const appRoutes: Route[] = [
   {
     path: "",
     loadComponent: () => WelcomePageComponent,
-    title: "Biblical Prophesy",
+    title: "Biblical Prophecy",
   },
   {
-    path: "prophesies",
+    path: "prophecies",
     loadComponent: () => HomePageComponent,
   },
   {
-    path: "prophesies/prophesy-item/:title",
+    path: "prophecies/prophecy-item/:title",
     loadComponent: () => ProphesyItemPageComponent,
   },
   {
     path: "contact",
     loadComponent: () => ContactPageComponent,
-    title: "Contact | Biblical Prophesy",
+    title: "Contact | Biblical Prophecy",
   },
   { path: "**", redirectTo: "", pathMatch: "full" },
 ];

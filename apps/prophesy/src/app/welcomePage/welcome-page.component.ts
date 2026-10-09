@@ -21,7 +21,7 @@ export class WelcomePageComponent extends SeoBaseComponent {
   constructor(private store: Store, private router: Router) {
     super({
       description:
-        "A website of prophesies which God foretold beforehand long ago in the Holy Scriptures, foretelling of what manner of death His Son, Jesus Christ, would die and His resurrection which would follow three days after. And that in His name salvation would be preached through repentance of sins and faith in His name.",
+        "A website of prophecies which God foretold beforehand long ago in the Holy Scriptures, foretelling of what manner of death His Son, Jesus Christ, would die and His resurrection which would follow three days after. And that in His name salvation would be preached through repentance of sins and faith in His name.",
     });
 
     this.store.dispatch(ItemsActions.loadItems());
@@ -33,7 +33,7 @@ export class WelcomePageComponent extends SeoBaseComponent {
       .filter(([key, _]) => types.some((type) => key === type))
       .map(([key]) => key);
 
-    this.router.navigate([`prophesies`], {
+    this.router.navigate([`prophecies`], {
       queryParams: {
         tags: typesBasedOnKeys.length
           ? typesBasedOnKeys.reduce((query, tag, index) => (query += index === 0 ? tag : `,${tag}`), "")

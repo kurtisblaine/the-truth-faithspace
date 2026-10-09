@@ -1,4 +1,4 @@
-import { CommonModule } from "@angular/common";
+import { CommonModule, KeyValuePipe } from "@angular/common";
 import { Component, computed, effect, OnDestroy, Signal, signal, ViewEncapsulation } from "@angular/core";
 import { FormControl, FormsModule, ReactiveFormsModule } from "@angular/forms";
 import { MatButtonModule } from "@angular/material/button";
@@ -6,6 +6,7 @@ import { MatButtonToggleChange, MatButtonToggleModule } from "@angular/material/
 import { MatCardModule } from "@angular/material/card";
 import { MatChipSelectionChange, MatChipsModule } from "@angular/material/chips";
 import { MatFormFieldModule } from "@angular/material/form-field";
+import { MatIconModule } from "@angular/material/icon";
 import { MatPaginatorModule, PageEvent } from "@angular/material/paginator";
 import { MatSelectModule } from "@angular/material/select";
 import { ActivatedRoute, Router } from "@angular/router";
@@ -14,10 +15,12 @@ import { flatMap } from "lodash-es";
 import { Subscription, take } from "rxjs";
 import { SeoBaseComponent, tileSlideIn } from "shared";
 import { bookDateRanges } from "../+state/items.database";
-import { getTagColorClass, Tag, TagKey } from "../+state/items/items.models";
+import { Tag, TagColorMap, TagKey } from "../+state/items/items.models";
 import { ItemEntity } from "../+state/items/items.reducer";
 import { selectAllItems, selectAllTags } from "../+state/items/items.selectors";
+import { GroupedTagsComponent } from "./grouped-tags/grouped-tags.component";
 import { ProphesyTileComponent } from "./prophesy-tile/prophesy-tile.component";
+import { TagService } from "./tag.service";
 
 @Component({
   selector: "app-home-page",
@@ -33,6 +36,10 @@ import { ProphesyTileComponent } from "./prophesy-tile/prophesy-tile.component";
     MatCardModule,
     ReactiveFormsModule,
     MatPaginatorModule,
+    MatSelectModule,
+    MatIconModule,
+    GroupedTagsComponent,
+    KeyValuePipe,
   ],
   templateUrl: "./home-page.component.html",
   styleUrl: "./home-page.component.scss",
@@ -41,6 +48,7 @@ import { ProphesyTileComponent } from "./prophesy-tile/prophesy-tile.component";
 })
 export class HomePageComponent extends SeoBaseComponent implements OnDestroy {
   public allTags!: Signal<Tag[]>;
+  public allColorTags = signal<Map<string, Tag[]>>(TagColorMap);
   public filteringOption = signal<"include" | "exclude">("include");
   public selectedTagsControl = new FormControl<Tag[]>([]);
 
@@ -54,12 +62,16 @@ export class HomePageComponent extends SeoBaseComponent implements OnDestroy {
 
   private subscription!: Subscription;
 
-  readonly filteredTags: Signal<Tag[]> = computed(() => {
+  readonly filteredTags: Signal<Map<string, Tag[]>> = computed(() => {
     if (this.filteringOption() === "include") {
-      return this.allTags();
+      return this.allColorTags();
     } else {
-      const filteredTags = this._removeDuplicates(flatMap(this.pagedItems(), (a) => a.tags));
-      return this.allTags().filter((tag) => filteredTags.some((t) => t === tag));
+      const filteredTags = this._removeDuplicates(flatMap(this.filteredItems(), (a) => a.tags));
+      const availableTags = [...this.allColorTags().entries()].filter(([_, tags]) =>
+        tags.some((tag) => filteredTags.some((t) => t === tag))
+      );
+
+      return new Map(availableTags);
     }
   });
 
@@ -97,7 +109,12 @@ export class HomePageComponent extends SeoBaseComponent implements OnDestroy {
 
   readonly total = computed(() => this.filteredItems().length);
 
-  constructor(private store: Store, private router: Router, private route: ActivatedRoute) {
+  constructor(
+    private store: Store,
+    private router: Router,
+    private route: ActivatedRoute,
+    private tagService: TagService
+  ) {
     super({
       description: `“We have the prophetic word made more sure, to which you do well to pay attention as to a lamp shining in a dark
   place, until the day dawns and the morning star arises in your hearts. But know this first of all, that no prophecy of
@@ -148,6 +165,28 @@ export class HomePageComponent extends SeoBaseComponent implements OnDestroy {
         queryParamsHandling: "replace",
       });
     });
+
+    effect(() => {
+      const availableTags = [...this.filteredTags().entries()];
+      const availableGroupTags = availableTags.filter(([_, value]) => value.length > 1);
+      if (this.filteringOption() === "include") {
+        availableGroupTags.forEach(([key, groupTags]) => {
+          if (groupTags.length && this.tagService.tagGroupSignalMap.has(key)) {
+            const filterSignaler = this.tagService.tagGroupSignalMap.get(key);
+            filterSignaler.next([]);
+          }
+        });
+      } else {
+        availableGroupTags.forEach(([key, groupTags]) => {
+          if (groupTags.length && this.tagService.tagGroupSignalMap.has(key)) {
+            const filterSignaler = this.tagService.tagGroupSignalMap.get(key);
+            const filteredTags = this._removeDuplicates(flatMap(this.filteredItems(), (a) => a.tags));
+            const filteredGroupTags = groupTags.filter((tag) => filteredTags.some((t) => t === tag));
+            filterSignaler.next(filteredGroupTags);
+          }
+        });
+      }
+    });
   }
 
   ngOnDestroy(): void {
@@ -163,17 +202,20 @@ export class HomePageComponent extends SeoBaseComponent implements OnDestroy {
     this.reset();
   }
 
-  getTagColorClass = (tag: Tag) => getTagColorClass(tag);
-
   onPageChange(event?: PageEvent): void {
     this.pageIndex.update(() => event.pageIndex);
     this.pageSize.update(() => event.pageSize);
   }
 
-  reset(all = true) {
+  reset() {
     this.pageIndex.set(0);
     this.selectedTagsControl.reset([]);
+    this.tagService.reset.next(true);
     this.selectedBook.update(() => this.ALL_BOOKS);
+  }
+
+  toggleTags($event: { tags: Tag[]; event: MatChipSelectionChange }) {
+    $event.tags.forEach((tag) => this.toggleTag(tag, $event.event));
   }
 
   toggleTag(tag: Tag, event: MatChipSelectionChange) {

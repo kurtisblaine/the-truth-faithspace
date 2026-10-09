@@ -26,13 +26,13 @@ export enum Tag {
   CallForSalvation = "Call for Salvation",
   EternalLife = "Eternal Life",
   //black
-  DirectProphesy = "Direct Prophesy",
+  DirectProphecy = "Direct Prophecy",
   ImplicitType = "Implicit Type",
   Unfulfilled = "Unfulfilled",
 }
 
 export const TagColorMap = new Map<string, Tag[]>([
-  ["black-color", [Tag.DirectProphesy, Tag.ImplicitType, Tag.Unfulfilled]],
+  ["black-color", [Tag.DirectProphecy, Tag.ImplicitType, Tag.Unfulfilled]],
   [
     "orange-color",
     [Tag.JesusSuffering, Tag.JesusDeity, Tag.JesusExaltation, Tag.JesusResurrection, Tag.JesusType, Tag.TheSonOfMan],
@@ -45,6 +45,19 @@ export const TagColorMap = new Map<string, Tag[]>([
   ["light-green-color", [Tag.Gentiles]],
   ["cyan-color", [Tag.Baptism]],
   ["blue-color", [Tag.Grace, Tag.Election, Tag.Promise]],
+]);
+
+export const TagColorNameMap = new Map<string, string>([
+  ["black-color", "Prophecy Types"],
+  ["orange-color", "Jesus Types"],
+  ["green-color", "None"],
+  ["pink-color", "Salvation Types"],
+  ["purple-color", "None"],
+  ["red-color", "None"],
+  ["yellow-color", "None"],
+  ["light-green-color", "None"],
+  ["cyan-color", "None"],
+  ["blue-color", "Grace Types"],
 ]);
 
 export const getTagColorClass = (tag: Tag) => {

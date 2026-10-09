@@ -38,7 +38,7 @@ import {
   animations: [fadeInOut],
 })
 export class AppComponent extends SeoBaseComponent {
-  public title = "Biblical Prophesy";
+  public title = "Biblical Prophecy";
   public storageName = "ProphesyAppSettings";
 
   public menuIcon = faBars;
@@ -53,7 +53,7 @@ export class AppComponent extends SeoBaseComponent {
   }
 
   public goProphesies() {
-    this.router.navigateByUrl("prophesies").then(() => {});
+    this.router.navigateByUrl("prophecies").then(() => {});
   }
 
   public goContact() {
