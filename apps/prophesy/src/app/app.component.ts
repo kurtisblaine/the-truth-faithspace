@@ -16,6 +16,7 @@ import {
   ShareComponent,
   ThemeSettings,
 } from "shared";
+import { TagService } from "./homePage/tag.service";
 
 @Component({
   imports: [
@@ -44,7 +45,7 @@ export class AppComponent extends SeoBaseComponent {
   public menuIcon = faBars;
   public settingsIcon = faGears;
 
-  constructor(private router: Router) {
+  constructor(private router: Router, private tagService: TagService) {
     super();
   }
 
@@ -52,8 +53,14 @@ export class AppComponent extends SeoBaseComponent {
     this.router.navigateByUrl("").then(() => {});
   }
 
+  public reset() {
+    this.tagService.reset.next(true);
+  }
+
   public goProphesies() {
-    this.router.navigateByUrl("prophecies").then(() => {});
+    this.router.navigateByUrl("prophecies").then(() => {
+      this.reset();
+    });
   }
 
   public goContact() {

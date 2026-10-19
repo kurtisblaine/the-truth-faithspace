@@ -2,11 +2,17 @@
 
 <div class="tags">
   <mat-chip-listbox multiple aria-label="Prophecy Type" [formControl]="selectedTagsControl">
-    @for (map of filteredTags() | keyvalue; track `${map.key}-${$index}`) { @if(map.value.length > 1) {
-    <app-grouped-tags [group]="map" (onToggleTags)="toggleTags($event)" style="margin-left: 8px"></app-grouped-tags>
+    @for (map of filteredTags() | keyvalue; track `${map.key}-${$index}`) { @if(map.value.length > 1 &&
+    filteringOption() === "include") {
+    <app-grouped-tags
+      fadeInOut
+      [group]="map"
+      (onToggleTags)="toggleTags($event)"
+      style="margin-left: 8px"
+    ></app-grouped-tags>
     } @else {
-    <mat-chip-option [value]="map.value[0]" (selectionChange)="toggleTag(map.value[0], $event)">
-      <span [class]="map.key">
+    <mat-chip-option [value]="map.value[0]" (selectionChange)="toggleTag(map.value[0], $event)" fadeInOut>
+      <span [class]="getOnlyColorClassName(map.key)">
         {{ map.value[0] }}
       </span>
     </mat-chip-option>

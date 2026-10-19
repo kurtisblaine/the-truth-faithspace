@@ -13,7 +13,7 @@ import { ActivatedRoute, Router } from "@angular/router";
 import { Store } from "@ngrx/store";
 import { flatMap } from "lodash-es";
 import { Subscription, take } from "rxjs";
-import { SeoBaseComponent, tileSlideIn } from "shared";
+import { fadeInOut, SeoBaseComponent, tileSlideIn } from "shared";
 import { bookDateRanges } from "../+state/items.database";
 import { Tag, TagColorMap, TagKey } from "../+state/items/items.models";
 import { ItemEntity } from "../+state/items/items.reducer";
@@ -43,7 +43,7 @@ import { TagService } from "./tag.service";
   ],
   templateUrl: "./home-page.component.html",
   styleUrl: "./home-page.component.scss",
-  animations: [tileSlideIn],
+  animations: [tileSlideIn, fadeInOut],
   encapsulation: ViewEncapsulation.None,
 })
 export class HomePageComponent extends SeoBaseComponent implements OnDestroy {
@@ -66,12 +66,16 @@ export class HomePageComponent extends SeoBaseComponent implements OnDestroy {
     if (this.filteringOption() === "include") {
       return this.allColorTags();
     } else {
-      const filteredTags = this._removeDuplicates(flatMap(this.filteredItems(), (a) => a.tags));
-      const availableTags = [...this.allColorTags().entries()].filter(([_, tags]) =>
-        tags.some((tag) => filteredTags.some((t) => t === tag))
-      );
+      const availableTags = this._removeDuplicates(flatMap(this.filteredItems(), (a) => a.tags));
+      const tagGroups = [...this.allColorTags().entries()];
 
-      return new Map(availableTags);
+      return availableTags.reduce((map, tag, index) => {
+        let [key, _] = tagGroups.find(([_, tags]) => tags.some((t) => t === tag));
+        if (map.has(key)) {
+          key = `${key}(${index})`;
+        }
+        return map.set(key, [tag]);
+      }, new Map<string, Tag[]>());
     }
   });
 
@@ -165,33 +169,14 @@ export class HomePageComponent extends SeoBaseComponent implements OnDestroy {
         queryParamsHandling: "replace",
       });
     });
-
-    effect(() => {
-      const availableTags = [...this.filteredTags().entries()];
-      const availableGroupTags = availableTags.filter(([_, value]) => value.length > 1);
-      if (this.filteringOption() === "include") {
-        availableGroupTags.forEach(([key, groupTags]) => {
-          if (groupTags.length && this.tagService.tagGroupSignalMap.has(key)) {
-            const filterSignaler = this.tagService.tagGroupSignalMap.get(key);
-            filterSignaler.next([]);
-          }
-        });
-      } else {
-        availableGroupTags.forEach(([key, groupTags]) => {
-          if (groupTags.length && this.tagService.tagGroupSignalMap.has(key)) {
-            const filterSignaler = this.tagService.tagGroupSignalMap.get(key);
-            const filteredTags = this._removeDuplicates(flatMap(this.filteredItems(), (a) => a.tags));
-            const filteredGroupTags = groupTags.filter((tag) => filteredTags.some((t) => t === tag));
-            filterSignaler.next(filteredGroupTags);
-          }
-        });
-      }
-    });
   }
 
   ngOnDestroy(): void {
     this.subscription?.unsubscribe();
   }
+
+  //This is needed because map can only have one entry for each class name; but for the "exclude" filtering, we need multiple.
+  getOnlyColorClassName = (text: string) => text.replace(/\([^)]*\)/g, "").trim();
 
   isFilteringActive() {
     return (this.selectedBook() && this.selectedBook() !== this.ALL_BOOKS) || this.selectedTags().length;

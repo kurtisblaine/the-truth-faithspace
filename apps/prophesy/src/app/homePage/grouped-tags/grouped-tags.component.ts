@@ -3,7 +3,8 @@ import { ChangeDetectionStrategy, Component, computed, input, OnDestroy, OnInit,
 import { FormControl, ReactiveFormsModule } from "@angular/forms";
 import { MatChipSelectionChange, MatChipsModule } from "@angular/material/chips";
 import { ActivatedRoute } from "@angular/router";
-import { BehaviorSubject, Subscription, take } from "rxjs";
+import { Subscription, take } from "rxjs";
+import { fadeInOut } from "shared";
 import { Tag, TagColorNameMap, TagKey } from "../../+state/items/items.models";
 import { TagService } from "../tag.service";
 
@@ -13,6 +14,7 @@ import { TagService } from "../tag.service";
   templateUrl: "./grouped-tags.component.html",
   styleUrl: "./grouped-tags.component.scss",
   changeDetection: ChangeDetectionStrategy.OnPush,
+  animations: [fadeInOut],
 })
 export class GroupedTagsComponent implements OnDestroy, OnInit {
   public group = input.required<KeyValue<string, Tag[]>>();
@@ -21,7 +23,6 @@ export class GroupedTagsComponent implements OnDestroy, OnInit {
   public filteredTags = signal<Tag[]>([]);
 
   public isShown = signal<boolean>(false);
-  public filterOption = signal<"include" | "exclude">(null);
   public collapsedTagType = computed(() => TagColorNameMap.get(this.group().key));
 
   public selectedTagsControl = new FormControl<Tag[]>([]);
@@ -35,21 +36,6 @@ export class GroupedTagsComponent implements OnDestroy, OnInit {
 
   ngOnInit() {
     this.filteredTags.set(this.group().value);
-
-    const filterSignaler$ = this.tagService.init(this.group().key, new BehaviorSubject<Tag[]>([]));
-    this.filterSubscription = filterSignaler$.subscribe((tags) => {
-      const include = !tags.length;
-      if (include) {
-        this.isShown.set(false);
-        this.filterOption.set("include");
-      } else {
-        this.isShown.set(true);
-        this.filterOption.set("exclude");
-
-        const filteredTags = this.group().value.filter((tag) => tags.some((s) => s === tag));
-        this.filteredTags.set(filteredTags);
-      }
-    });
 
     this.resetSubscription = this.tagService.reset$.subscribe((shouldReset) => {
       if (shouldReset) this.reset();
@@ -71,6 +57,11 @@ export class GroupedTagsComponent implements OnDestroy, OnInit {
           this.expandTags(tagList);
         }
       }
+
+      const queryParamFilter = queryParams["filter"] as "include" | "exclude";
+      if (queryParamFilter === "exclude") {
+        this.isShown.set(true);
+      }
     });
   }
 
@@ -83,7 +74,7 @@ export class GroupedTagsComponent implements OnDestroy, OnInit {
 
   reset() {
     this.selectedTagsControl.setValue([]);
-    this.toggleTags(this.selectedTagsControl.value, { selected: false, isUserInput: true } as MatChipSelectionChange);
+    this.toggleTags([], { selected: false, isUserInput: true } as MatChipSelectionChange);
   }
 
   expandTags(tags: Tag[] = this.group().value) {
@@ -95,7 +86,6 @@ export class GroupedTagsComponent implements OnDestroy, OnInit {
   toggleTags(tags: Tag[], event: MatChipSelectionChange) {
     // if (event && !event?.isUserInput) return;
 
-    // this.selectedTagsControl.setValue(tags);
     this.onToggleTags.emit({ tags, event });
   }
 }

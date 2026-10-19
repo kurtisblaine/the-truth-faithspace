@@ -217,7 +217,9 @@ import { GospelContentBaseComponent } from "../gospel-content.base.component";
     Corinthians 5:15), for He has purchased you (1 Corinthians 6:20). Draw near unto Him (James 4:8), for He has drawn
     near to you (1 Timothy 1:15). And humble yourself (James 4:10), for He has come down from heaven (Philippians
     2:5-8). And offer yourself as a living sacrifice to God (Romans 12:1), for Jesus Christ was Sacrificed for you (1
-    Corinthians 5:7). And walk as His obedient children (1 Peter 1:14), for you are born of Him (1 John 5:1).
+    Corinthians 5:7). Repent and return, so that your sins may be wiped away (Acts 3:19), for He has wiped away the
+    handwriting of ordinances that was against us (Colossians 2:14). And walk as His obedient children (1 Peter 1:14),
+    for you are born of Him (1 John 5:1).
   </div>`,
   styles: ``,
   changeDetection: ChangeDetectionStrategy.OnPush,

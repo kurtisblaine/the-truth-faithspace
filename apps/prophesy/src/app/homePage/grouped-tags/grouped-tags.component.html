@@ -1,10 +1,10 @@
 <mat-chip-listbox multiple aria-label="Prophecy Types" [formControl]="selectedTagsControl">
-  @if(!isShown() && filterOption() === "include") {
-  <mat-chip-option (click)="expandTags()">
+  @if(!isShown()) {
+  <mat-chip-option (click)="expandTags()" fadeInOut>
     <span [class]="group().key"> *{{ collapsedTagType() }} </span>
   </mat-chip-option>
   } @else { @for (tag of filteredTags(); track `${tag}-${$index}`) {
-  <mat-chip-option [value]="tag" (selectionChange)="toggleTags([tag], $event)">
+  <mat-chip-option [value]="tag" (selectionChange)="toggleTags([tag], $event)" fadeInOut>
     <span [class]="group().key">
       {{ tag }}
     </span>

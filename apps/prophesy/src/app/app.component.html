@@ -15,7 +15,7 @@
     </lib-link>
 
     @if(!isMobile()){
-    <lib-link [link]="`${baseUrl}/prophecies`" [isNewPage]="false" @fadeInOut>
+    <lib-link [link]="`${baseUrl}/prophecies`" [isNewPage]="false" @fadeInOut (click)="reset()">
       <button
         mat-button
         aria-labelledby="Prophecies button"
