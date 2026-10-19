@@ -56,7 +56,7 @@ export class HomePageComponent extends SeoBaseComponent implements OnDestroy {
   public selectedBook = signal<string>(this.ALL_BOOKS);
   public allBooks: string[] = [this.ALL_BOOKS, ...bookDateRanges.map((b) => b.book)];
 
-  public initialPageSize = 15;
+  public initialPageSize = 50;
   public pageSize = signal(this.initialPageSize);
   public pageIndex = signal(0);
 
@@ -169,6 +169,11 @@ export class HomePageComponent extends SeoBaseComponent implements OnDestroy {
         queryParamsHandling: "replace",
       });
     });
+
+    effect(() => {
+      const _ = this.filteringOption();
+      this.reset();
+    });
   }
 
   ngOnDestroy(): void {
@@ -184,7 +189,6 @@ export class HomePageComponent extends SeoBaseComponent implements OnDestroy {
 
   onFilterOptionChange(event: MatButtonToggleChange): void {
     this.filteringOption.set(event.value);
-    this.reset();
   }
 
   onPageChange(event?: PageEvent): void {
@@ -194,8 +198,10 @@ export class HomePageComponent extends SeoBaseComponent implements OnDestroy {
 
   reset() {
     this.pageIndex.set(0);
-    this.selectedTagsControl.reset([]);
     this.tagService.reset.next(true);
+
+    this.selectedTagsControl.setValue([]);
+    this.selectedTags.update(() => []);
     this.selectedBook.update(() => this.ALL_BOOKS);
   }
 

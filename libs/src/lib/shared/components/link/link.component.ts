@@ -1,7 +1,6 @@
 import { CommonModule } from "@angular/common";
 import { ChangeDetectionStrategy, Component, inject, Input } from "@angular/core";
 import { Router } from "@angular/router";
-
 @Component({
   selector: "lib-link",
   template: `
@@ -49,7 +48,7 @@ export class LinkComponent {
     //same origin and new page
     if (urlObj.origin === window.location.origin && this.isNewPage) {
       const urlTree = this.router.createUrlTree([urlObj.pathname], {
-        queryParams: urlObj.searchParams as any,
+        queryParams: urlObj.search ? this.getObjectFromParams(urlObj.searchParams) : null,
         fragment: urlObj.hash ? (urlObj.hash.replace("#", "") as any) : null,
       });
       const url = this.router.serializeUrl(urlTree);
@@ -58,7 +57,7 @@ export class LinkComponent {
     //same origin and no new page
     else if (urlObj.origin === window.location.origin && !this.isNewPage) {
       this.router.navigate([urlObj.pathname], {
-        queryParams: urlObj.searchParams as any,
+        queryParams: urlObj.search ? this.getObjectFromParams(urlObj.searchParams) : null,
         fragment: urlObj.hash ? (urlObj.hash.replace("#", "") as any) : null,
       });
     }
@@ -68,5 +67,15 @@ export class LinkComponent {
     } else {
       window.location.href = this.link;
     }
+  }
+
+  public getObjectFromParams(params: URLSearchParams) {
+    if (!params.size) return;
+
+    const paramsObject: any = {};
+    params.forEach((value, key) => {
+      paramsObject[key] = value;
+    });
+    return paramsObject;
   }
 }

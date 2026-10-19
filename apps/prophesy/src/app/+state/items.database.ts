@@ -3,7 +3,7 @@ import { ItemEntity } from "./items/items.reducer";
 
 export const itemsRows: ItemEntity[] = [
   {
-    title: "",
+    title: "todo",
     description: "",
     prophesy: ``,
     fulfillments: [``],
@@ -44,7 +44,7 @@ export const itemsRows: ItemEntity[] = [
     tags: [Tag.JesusSuffering, Tag.ImplicitType],
   },
   {
-    title: "",
+    title: "asdf",
     description: "",
     prophesy: `“He said, "What pledge shall I give you?" And she said, "Your seal and your cord, and your staff that is in your hand." So he gave them to her and went in to her, and she conceived by him.” (Genesis 38:18)`,
     fulfillments: [
@@ -54,7 +54,7 @@ export const itemsRows: ItemEntity[] = [
     tags: [Tag.ImplicitType, Tag.JesusResurrection],
   },
   {
-    title: "",
+    title: "fdsa",
     description: "",
     prophesy: `“Judah said to his brothers, "What profit is it for us to kill our brother and cover up his blood?” (Genesis 37:26)`,
     fulfillments: [
@@ -64,7 +64,7 @@ export const itemsRows: ItemEntity[] = [
     tags: [Tag.JesusSuffering, Tag.ImplicitType],
   },
   {
-    title: "",
+    title: "rewq",
     description: "",
     prophesy: ``,
     fulfillments: [
@@ -73,7 +73,7 @@ export const itemsRows: ItemEntity[] = [
     tags: [Tag.JesusExaltation, Tag.ImplicitType],
   },
   {
-    title: "",
+    title: "ytre",
     description: "",
     prophesy: ``,
     fulfillments: [
@@ -82,14 +82,14 @@ export const itemsRows: ItemEntity[] = [
     tags: [],
   },
   {
-    title: "",
+    title: "jhgf",
     description: "",
     prophesy: `"Now, therefore, please let your servant remain instead of the lad a slave to my lord, and let the lad go up with his brothers.” (Genesis 44:33)`,
     fulfillments: [``],
     tags: [],
   },
   {
-    title: "",
+    title: "bvcx",
     description: "",
     prophesy: `“And may God Almighty grant you compassion in the sight of the man, so that he will release to you your other brother and Benjamin. And as for me, if I am bereaved of my children, I am bereaved." (Genesis 43:14)`,
     fulfillments: [``],

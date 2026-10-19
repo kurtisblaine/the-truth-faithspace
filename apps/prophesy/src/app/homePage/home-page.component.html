@@ -40,7 +40,7 @@
           (click)="$event.stopPropagation()"
           required
         >
-          @for (book of allBooks; track $index) {
+          @for (book of allBooks; track `${book}-${$index}`) {
           <mat-option [value]="book">{{ book }}</mat-option>
           }
         </mat-select>

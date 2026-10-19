@@ -41,7 +41,7 @@ export class WelcomePageComponent extends SeoBaseComponent {
         book,
         filter,
       },
-      queryParamsHandling: "merge",
+      queryParamsHandling: "replace",
     });
   }
 }

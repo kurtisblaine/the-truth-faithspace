@@ -1,9 +1,11 @@
 import { provideHttpClient } from "@angular/common/http";
-import { ApplicationConfig, isDevMode, provideZonelessChangeDetection } from "@angular/core";
+import { ApplicationConfig, Injectable, isDevMode, provideZonelessChangeDetection } from "@angular/core";
 import { initializeApp, provideFirebaseApp } from "@angular/fire/app";
 import { provideClientHydration, withEventReplay, withIncrementalHydration } from "@angular/platform-browser";
 import { provideAnimations } from "@angular/platform-browser/animations";
 import {
+  ActivatedRouteSnapshot,
+  BaseRouteReuseStrategy,
   NoPreloading,
   provideRouter,
   withComponentInputBinding,
@@ -31,6 +33,14 @@ const firebaseConfig = {
   measurementId: "",
 };
 
+@Injectable({ providedIn: "root" })
+export class CustomRouteReuseStrategy extends BaseRouteReuseStrategy {
+  // Return false to tell Angular NOT to reuse the route if navigating to the same path
+  override shouldReuseRoute(future: ActivatedRouteSnapshot, curr: ActivatedRouteSnapshot): boolean {
+    return false;
+  }
+}
+
 export const appConfig: ApplicationConfig = {
   providers: [
     provideFirebaseApp(() => initializeApp(firebaseConfig)),
@@ -47,6 +57,7 @@ export const appConfig: ApplicationConfig = {
       withInMemoryScrolling({ anchorScrolling: "enabled", scrollPositionRestoration: "enabled" }),
       withPreloading(NoPreloading)
     ),
+    // { provide: RouteReuseStrategy, useClass: CustomRouteReuseStrategy },
     provideHttpClient(),
     provideAnimations(),
     provideZonelessChangeDetection(),

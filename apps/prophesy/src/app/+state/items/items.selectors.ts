@@ -43,6 +43,7 @@ export const selectAllCounts = createSelector(selectAllItems, (items: fromItems.
 
         if (tag === Tag.EternalFire) counts.prophesiesAboutEternalHell += 1;
       });
+
       return counts;
     },
     {
@@ -54,10 +55,13 @@ export const selectAllCounts = createSelector(selectAllItems, (items: fromItems.
       prophesiesAboutEternalHell: 0,
       prophesiesAboutGrace: 0,
       prophesiesFromTheVeryBeginning: 0,
+      prophesiesTotal: 0,
     } as ProphesyCounts
   );
 
   allCounts.prophesiesFromTheVeryBeginning = prophesiesFromTheVeryBeginning;
+  allCounts.prophesiesTotal = items.length;
+
   return allCounts;
 });
 
@@ -70,6 +74,7 @@ export type ProphesyCounts = {
   prophesiesAboutGrace: number;
   prophesiesAboutEternalHell: number;
   prophesiesFromTheVeryBeginning: number;
+  prophesiesTotal: number;
 };
 
 export const selectAllAvailableTags = createSelector(selectAllItems, (items: fromItems.ItemEntity[]) =>

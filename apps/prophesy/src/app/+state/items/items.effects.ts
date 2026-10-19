@@ -35,6 +35,7 @@ export class ItemsEffects {
     this.actions$.pipe(
       ofType(ItemsActions.loadItems),
       map(() => itemsRows.map((row) => fillInData(row))),
+      // tap((data) => console.log(data)),
       map((data) =>
         ItemsActions.loadItemsSuccess({
           item: data as ItemEntity[],
