@@ -15,7 +15,12 @@
     </lib-link>
 
     @if(!isMobile()){
-    <lib-link [link]="`${baseUrl}/prophecies?book=All&filter=include`" [isNewPage]="false" @fadeInOut>
+    <lib-link
+      [link]="`${baseUrl}/prophecies?book=All&filter=include`"
+      [isNewPage]="false"
+      @fadeInOut
+      (click)="notifyReset()"
+    >
       <button
         mat-button
         aria-labelledby="Prophecies button"

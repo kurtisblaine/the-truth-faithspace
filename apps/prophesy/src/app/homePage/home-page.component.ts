@@ -140,6 +140,10 @@ export class HomePageComponent extends SeoBaseComponent implements OnDestroy {
     this.items = this.store.selectSignal(selectAllItems);
     this.allTags = this.store.selectSignal(selectAllTags);
 
+    this.tagService.reset$.subscribe((shouldReset) => {
+      if (shouldReset) this.reset(false);
+    });
+
     this.valueChangesSubscription = this.selectedTagsControl.valueChanges.subscribe((newValue) =>
       this.selectedTags.set(newValue)
     );
@@ -207,9 +211,12 @@ export class HomePageComponent extends SeoBaseComponent implements OnDestroy {
     this.pageSize.update(() => event.pageSize);
   }
 
-  reset() {
+  reset(notifyComponents = true) {
     this.pageIndex.set(0);
-    this.tagService.reset.next(true);
+
+    if (notifyComponents) {
+      this.tagService.reset.next(true);
+    }
 
     this.selectedTagsControl.setValue([]);
     this.selectedBook.update(() => this.ALL_BOOKS);
