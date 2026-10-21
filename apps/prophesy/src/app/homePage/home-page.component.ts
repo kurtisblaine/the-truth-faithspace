@@ -219,6 +219,7 @@ export class HomePageComponent extends SeoBaseComponent implements OnDestroy {
     }
 
     this.selectedTagsControl.setValue([]);
+    this.filteringOption.update(() => "include");
     this.selectedBook.update(() => this.ALL_BOOKS);
 
     this.changeDetector.detectChanges();

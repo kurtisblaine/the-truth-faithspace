@@ -75,7 +75,6 @@ export class GroupedTagsComponent implements OnDestroy, OnInit {
 
   reset() {
     this.selectedTagsControl.setValue([]);
-    // this.toggleTags([], { selected: false, isUserInput: true } as MatChipSelectionChange);
   }
 
   expandTags(tags: Tag[] = this.group().value) {
