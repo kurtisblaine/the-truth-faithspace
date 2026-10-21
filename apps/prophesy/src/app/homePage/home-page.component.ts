@@ -71,6 +71,7 @@ export class HomePageComponent extends SeoBaseComponent implements OnDestroy {
 
   private subscription!: Subscription;
   private valueChangesSubscription!: Subscription;
+  private tagServiceSubscription!: Subscription;
 
   readonly filteredTags: Signal<Map<string, Tag[]>> = computed(() => {
     if (this.filteringOption() === "include") {
@@ -140,7 +141,7 @@ export class HomePageComponent extends SeoBaseComponent implements OnDestroy {
     this.items = this.store.selectSignal(selectAllItems);
     this.allTags = this.store.selectSignal(selectAllTags);
 
-    this.tagService.reset$.subscribe((shouldReset) => {
+    this.tagServiceSubscription = this.tagService.reset$.subscribe((shouldReset) => {
       if (shouldReset) this.reset(false);
     });
 
@@ -192,6 +193,7 @@ export class HomePageComponent extends SeoBaseComponent implements OnDestroy {
   ngOnDestroy(): void {
     this.subscription?.unsubscribe();
     this.valueChangesSubscription?.unsubscribe();
+    this.tagServiceSubscription?.unsubscribe();
   }
 
   //This is needed because map can only have one entry for each class name; but for the "exclude" filtering, we need multiple.
