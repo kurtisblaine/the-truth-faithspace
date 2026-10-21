@@ -20,6 +20,15 @@
   </mat-chip-listbox>
 </div>
 
+<mat-paginator
+  [length]="total()"
+  [showFirstLastButtons]="true"
+  [pageSize]="pageSize()"
+  [pageIndex]="pageIndex()"
+  [pageSizeOptions]="[initialPageSize, 50, 100, total()]"
+  (page)="onPageChange($event)"
+></mat-paginator>
+
 <div class="home-body">
   <mat-card class="filter">
     <mat-card-header style="margin-bottom: 15px">
@@ -60,19 +69,10 @@
   </mat-card>
 
   <div class="grid">
-    @for (item of pagedItems(); track `${item.url}-${$index}`) {
-    <app-prophesy-tile [item]="item" @tileSlideIn></app-prophesy-tile>
+    @for (item of pagedItems(); track item.uuid) {
+    <app-prophesy-tile [item]="item" @tileSlideIn [id]="item.uuid"></app-prophesy-tile>
     } @empty {
     <h3>No items match the selected filters.</h3>
     }
   </div>
 </div>
-
-<mat-paginator
-  [length]="total()"
-  [showFirstLastButtons]="true"
-  [pageSize]="pageSize()"
-  [pageIndex]="pageIndex()"
-  [pageSizeOptions]="[initialPageSize, 50, 100, total()]"
-  (page)="onPageChange($event)"
-></mat-paginator>

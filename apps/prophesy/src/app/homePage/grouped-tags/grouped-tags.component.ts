@@ -21,6 +21,7 @@ export class GroupedTagsComponent implements OnDestroy, OnInit {
   public onToggleTags = output<{ tags: Tag[]; event: MatChipSelectionChange }>();
 
   public filteredTags = signal<Tag[]>([]);
+  public filterType: "include" | "exclude";
 
   public isShown = signal<boolean>(false);
   public collapsedTagType = computed(() => TagColorNameMap.get(this.group().key));
@@ -74,7 +75,7 @@ export class GroupedTagsComponent implements OnDestroy, OnInit {
 
   reset() {
     this.selectedTagsControl.setValue([]);
-    this.toggleTags([], { selected: false, isUserInput: true } as MatChipSelectionChange);
+    // this.toggleTags([], { selected: false, isUserInput: true } as MatChipSelectionChange);
   }
 
   expandTags(tags: Tag[] = this.group().value) {
@@ -84,7 +85,7 @@ export class GroupedTagsComponent implements OnDestroy, OnInit {
   }
 
   toggleTags(tags: Tag[], event: MatChipSelectionChange) {
-    // if (event && !event?.isUserInput) return;
+    if (!event?.isUserInput) return;
 
     this.onToggleTags.emit({ tags, event });
   }

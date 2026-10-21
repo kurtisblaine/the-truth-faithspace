@@ -29,7 +29,7 @@
   <lib-number-ticker
     tileSlideIn
     matRipple
-    (click)="goToProphesies([], 'Genesis')"
+    (click)="goToProphesies([], 'include', 'Genesis')"
     [title]="'Prophecies From The Beginning'"
     [subtitle]="'From the beginning, God was foretelling what Christ would do'"
     [count]="counts().prophesiesFromTheVeryBeginning"
@@ -37,7 +37,7 @@
   <lib-number-ticker
     tileSlideIn
     matRipple
-    (click)="goToProphesies(['ImplicitType'], '', 'exclude')"
+    (click)="goToProphesies(['ImplicitType'], 'exclude', 'All')"
     [title]="`Prophecies You Likely Haven't Seen`"
     [subtitle]="'Implied prophecies which do not have a direct reference'"
     [count]="counts().prophesiesImplied"
@@ -45,7 +45,7 @@
   <lib-number-ticker
     tileSlideIn
     matRipple
-    (click)="goToProphesies(['TheNewBirth'], '', 'exclude')"
+    (click)="goToProphesies(['TheNewBirth'], 'exclude', 'All')"
     [title]="'Prophecies About The New Birth'"
     [subtitle]="'God has not been satisfied with His creation, but seeks to make it new'"
     [count]="counts().prophesiesAboutNewBirth"

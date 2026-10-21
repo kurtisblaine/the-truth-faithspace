@@ -1,5 +1,14 @@
 import { CommonModule, KeyValuePipe } from "@angular/common";
-import { Component, computed, effect, OnDestroy, Signal, signal, ViewEncapsulation } from "@angular/core";
+import {
+  ChangeDetectorRef,
+  Component,
+  computed,
+  effect,
+  OnDestroy,
+  Signal,
+  signal,
+  ViewEncapsulation,
+} from "@angular/core";
 import { FormControl, FormsModule, ReactiveFormsModule } from "@angular/forms";
 import { MatButtonModule } from "@angular/material/button";
 import { MatButtonToggleChange, MatButtonToggleModule } from "@angular/material/button-toggle";
@@ -11,7 +20,7 @@ import { MatPaginatorModule, PageEvent } from "@angular/material/paginator";
 import { MatSelectModule } from "@angular/material/select";
 import { ActivatedRoute, Router } from "@angular/router";
 import { Store } from "@ngrx/store";
-import { flatMap } from "lodash-es";
+import { cloneDeep, flatMap } from "lodash-es";
 import { Subscription, take } from "rxjs";
 import { fadeInOut, SeoBaseComponent, tileSlideIn } from "shared";
 import { bookDateRanges } from "../+state/items.database";
@@ -48,7 +57,7 @@ import { TagService } from "./tag.service";
 })
 export class HomePageComponent extends SeoBaseComponent implements OnDestroy {
   public allTags!: Signal<Tag[]>;
-  public allColorTags = signal<Map<string, Tag[]>>(TagColorMap);
+  public allColorTags = TagColorMap;
   public filteringOption = signal<"include" | "exclude">("include");
   public selectedTagsControl = new FormControl<Tag[]>([]);
 
@@ -61,13 +70,14 @@ export class HomePageComponent extends SeoBaseComponent implements OnDestroy {
   public pageIndex = signal(0);
 
   private subscription!: Subscription;
+  private valueChangesSubscription!: Subscription;
 
   readonly filteredTags: Signal<Map<string, Tag[]>> = computed(() => {
     if (this.filteringOption() === "include") {
-      return this.allColorTags();
+      return cloneDeep(this.allColorTags);
     } else {
       const availableTags = this._removeDuplicates(flatMap(this.filteredItems(), (a) => a.tags));
-      const tagGroups = [...this.allColorTags().entries()];
+      const tagGroups = [...this.allColorTags.entries()];
 
       return availableTags.reduce((map, tag, index) => {
         let [key, _] = tagGroups.find(([_, tags]) => tags.some((t) => t === tag));
@@ -117,7 +127,8 @@ export class HomePageComponent extends SeoBaseComponent implements OnDestroy {
     private store: Store,
     private router: Router,
     private route: ActivatedRoute,
-    private tagService: TagService
+    private tagService: TagService,
+    private changeDetector: ChangeDetectorRef
   ) {
     super({
       description: `“We have the prophetic word made more sure, to which you do well to pay attention as to a lamp shining in a dark
@@ -129,12 +140,15 @@ export class HomePageComponent extends SeoBaseComponent implements OnDestroy {
     this.items = this.store.selectSignal(selectAllItems);
     this.allTags = this.store.selectSignal(selectAllTags);
 
+    this.valueChangesSubscription = this.selectedTagsControl.valueChanges.subscribe((newValue) =>
+      this.selectedTags.set(newValue)
+    );
+
     this.subscription = this.route.queryParams.pipe(take(1)).subscribe((queryParams) => {
       const queryParamTags = queryParams["tags"] as string;
       if (queryParamTags) {
         const tagList = (queryParamTags.split(",") as TagKey[]).map((key) => Tag[key]);
-        this.selectedTags.update((tags) => [...tags, ...tagList]);
-        this.selectedTagsControl.setValue(this.selectedTags());
+        this.selectedTagsControl.setValue(tagList);
       }
 
       const queryParamBook = queryParams["book"] as string;
@@ -144,7 +158,7 @@ export class HomePageComponent extends SeoBaseComponent implements OnDestroy {
       }
 
       const queryParamFilter = queryParams["filter"] as "include" | "exclude";
-      if (queryParamFilter) {
+      if (queryParamFilter !== this.filteringOption()) {
         this.filteringOption.update(() => queryParamFilter);
       }
     });
@@ -169,15 +183,11 @@ export class HomePageComponent extends SeoBaseComponent implements OnDestroy {
         queryParamsHandling: "replace",
       });
     });
-
-    effect(() => {
-      const _ = this.filteringOption();
-      this.reset();
-    });
   }
 
   ngOnDestroy(): void {
     this.subscription?.unsubscribe();
+    this.valueChangesSubscription?.unsubscribe();
   }
 
   //This is needed because map can only have one entry for each class name; but for the "exclude" filtering, we need multiple.
@@ -188,6 +198,7 @@ export class HomePageComponent extends SeoBaseComponent implements OnDestroy {
   }
 
   onFilterOptionChange(event: MatButtonToggleChange): void {
+    this.reset();
     this.filteringOption.set(event.value);
   }
 
@@ -201,8 +212,10 @@ export class HomePageComponent extends SeoBaseComponent implements OnDestroy {
     this.tagService.reset.next(true);
 
     this.selectedTagsControl.setValue([]);
-    this.selectedTags.update(() => []);
     this.selectedBook.update(() => this.ALL_BOOKS);
+
+    this.changeDetector.detectChanges();
+    this.changeDetector.markForCheck();
   }
 
   toggleTags($event: { tags: Tag[]; event: MatChipSelectionChange }) {
@@ -210,10 +223,13 @@ export class HomePageComponent extends SeoBaseComponent implements OnDestroy {
   }
 
   toggleTag(tag: Tag, event: MatChipSelectionChange) {
+    if (!event?.isUserInput) return;
+
+    const previousValue = this.selectedTagsControl.value;
     if (event.selected) {
-      this.selectedTags.update((tags) => [...tags, tag]);
+      this.selectedTagsControl.setValue([...previousValue, tag]);
     } else {
-      this.selectedTags.update((tags) => tags.filter((t) => t !== tag));
+      this.selectedTagsControl.setValue(previousValue.filter((t) => t !== tag));
     }
   }
 

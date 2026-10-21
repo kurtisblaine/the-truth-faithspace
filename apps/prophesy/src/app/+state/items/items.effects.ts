@@ -2,6 +2,7 @@ import { Injectable, Injector } from "@angular/core";
 import { Actions, createEffect, ofType } from "@ngrx/effects";
 import { map } from "rxjs";
 
+import { v4 } from "uuid";
 import { bookDateRanges, itemsRows } from "../items.database";
 import { ItemsActions } from "./items.actions";
 import { ItemEntity } from "./items.reducer";
@@ -22,6 +23,7 @@ export const fillInData = (item: ItemEntity) => {
 
   return {
     ...item,
+    uuid: v4().toString(),
     book: prophesyBook,
     tags: item.tags,
     url: toKebabCase(item.title),

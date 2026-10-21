@@ -6,6 +6,7 @@ import { BookDateRange, Tag } from "./items.models";
 export const itemsFeatureKey = "items";
 
 export interface ItemEntity {
+  uuid?: string;
   title: string;
   tags: Tag[];
   description: string;
@@ -22,7 +23,7 @@ export interface State extends EntityState<ItemEntity> {
 }
 
 export const itemAdapter: EntityAdapter<ItemEntity> = createEntityAdapter<ItemEntity>({
-  selectId: (entity: ItemEntity) => entity.title,
+  selectId: (entity: ItemEntity) => entity.uuid,
   sortComparer: (a: ItemEntity, b: ItemEntity) => a.title.localeCompare(b.title),
 });
 

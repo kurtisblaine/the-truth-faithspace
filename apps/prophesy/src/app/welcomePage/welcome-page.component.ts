@@ -28,7 +28,7 @@ export class WelcomePageComponent extends SeoBaseComponent {
     this.counts = this.store.selectSignal(selectAllCounts);
   }
 
-  goToProphesies(types: TagKey[], book = "All", filter: "include" | "exclude" = "include") {
+  goToProphesies(types: TagKey[], filter: "include" | "exclude" = "include", book = "All") {
     const typesBasedOnKeys = Object.entries(Tag)
       .filter(([key, _]) => types.some((type) => key === type))
       .map(([key]) => key);
