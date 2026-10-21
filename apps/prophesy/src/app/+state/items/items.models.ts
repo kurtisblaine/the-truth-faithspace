@@ -48,17 +48,63 @@ export const TagColorMap = new Map<string, Tag[]>([
 ]);
 
 export const TagColorNameMap = new Map<string, string>([
-  ["black-color", "Prophecy Types"],
-  ["orange-color", "Jesus Types"],
-  ["green-color", "None"],
-  ["pink-color", "Salvation Types"],
-  ["purple-color", "None"],
-  ["red-color", "None"],
-  ["yellow-color", "None"],
-  ["light-green-color", "None"],
-  ["cyan-color", "None"],
-  ["blue-color", "Grace Types"],
+  ["black-color", "*Prophecy Types"],
+  ["orange-color", "*Jesus Types"],
+  ["green-color", "Nature"],
+  ["pink-color", "*Salvation Types"],
+  ["purple-color", "The New Birth"],
+  ["red-color", "Eternal Fire"],
+  ["yellow-color", "Faith"],
+  ["light-green-color", "Gentiles"],
+  ["cyan-color", "Baptism"],
+  ["blue-color", "*Grace Types"],
 ]);
+
+export const bookDateRanges: BookDateRange[] = [
+  //Pentateuch (Torah)
+  { book: "Genesis", range: "1446-1406 B.C." },
+  { book: "Exodus", range: "1446-1406 B.C." },
+  { book: "Leviticus", range: "1446-1406 B.C." },
+  { book: "Numbers", range: "1446-1406 B.C." },
+  { book: "Deuteronomy", range: "1446-1406 B.C." },
+  //Historical Books
+  { book: "Joshua", range: "1405-1385 B.C." },
+  { book: "Judges", range: "1100-1043 B.C." },
+  { book: "Ruth", range: "1100-1010 B.C." },
+  { book: "1 Samuel", range: "1040-930 B.C." },
+  { book: "2 Samuel", range: "1040-930 B.C." },
+  { book: "1 Kings", range: "580-538 B.C." },
+  { book: "2 Kings", range: "580-538 B.C." },
+  { book: "1 Chronicles", range: "450-425 B.C." },
+  { book: "2 Chronicles", range: "450-425 B.C." },
+  { book: "Ezra", range: "460-444 B.C." },
+  { book: "Nehemiah", range: "445-432 B.C." },
+  { book: "Esther", range: "483-450 B.C." },
+  //Wisdom
+  { book: "Job", range: "2000-1800 B.C." },
+  { book: "Psalms", range: "1440-450 B.C." },
+  { book: "Proverbs", range: "950-700 B.C." },
+  { book: "Ecclesiastes", range: "936-925 B.C." },
+  { book: "Song of Solomon", range: "971-950 B.C." },
+  //Prophets
+  { book: "Isaiah", range: "740-680 B.C." },
+  { book: "Jeremiah", range: "627-570 B.C." },
+  { book: "Lamentations", range: "586 B.C." },
+  { book: "Ezekiel", range: "593-570 B.C." },
+  { book: "Daniel", range: "538-530 B.C." },
+  { book: "Hosea", range: "750-710 B.C." },
+  { book: "Joel", range: "835-796 B.C." },
+  { book: "Amos", range: "760-750 B.C." },
+  { book: "Obadiah", range: "1040-930 B.C." },
+  { book: "Jonah", range: "785-760 B.C." },
+  { book: "Micah", range: "742-687 B.C." },
+  { book: "Nahum", range: "663-612 B.C." },
+  { book: "Habakkuk", range: "615-588 B.C." },
+  { book: "Zephaniah", range: "640-621 B.C." },
+  { book: "Haggai", range: "520 B.C." },
+  { book: "Zechariah", range: "520-470 B.C." },
+  { book: "Malachi", range: "450-424 B.C." },
+];
 
 export const getTagColorClass = (tag: Tag) => {
   let colorClass = "";

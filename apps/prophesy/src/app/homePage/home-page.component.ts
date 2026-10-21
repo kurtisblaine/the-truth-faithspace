@@ -23,8 +23,7 @@ import { Store } from "@ngrx/store";
 import { cloneDeep, flatMap } from "lodash-es";
 import { Subscription, take } from "rxjs";
 import { fadeInOut, SeoBaseComponent, tileSlideIn } from "shared";
-import { bookDateRanges } from "../+state/items.database";
-import { Tag, TagColorMap, TagKey } from "../+state/items/items.models";
+import { bookDateRanges, Tag, TagColorMap, TagKey } from "../+state/items/items.models";
 import { ItemEntity } from "../+state/items/items.reducer";
 import { selectAllItems, selectAllTags } from "../+state/items/items.selectors";
 import { GroupedTagsComponent } from "./grouped-tags/grouped-tags.component";
@@ -145,8 +144,8 @@ export class HomePageComponent extends SeoBaseComponent implements OnDestroy {
       if (shouldReset) this.reset(false);
     });
 
-    this.valueChangesSubscription = this.selectedTagsControl.valueChanges.subscribe((newValue) =>
-      this.selectedTags.set(newValue)
+    this.valueChangesSubscription = this.selectedTagsControl.valueChanges.subscribe(() =>
+      this.selectedTags.set(this.selectedTagsControl.value)
     );
 
     this.subscription = this.route.queryParams.pipe(take(1)).subscribe((queryParams) => {
@@ -221,11 +220,10 @@ export class HomePageComponent extends SeoBaseComponent implements OnDestroy {
     }
 
     this.selectedTagsControl.setValue([]);
-    this.filteringOption.update(() => "include");
+    // this.filteringOption.update(() => "include");
     this.selectedBook.update(() => this.ALL_BOOKS);
 
     this.changeDetector.detectChanges();
-    this.changeDetector.markForCheck();
   }
 
   toggleTags($event: { tags: Tag[]; event: MatChipSelectionChange }) {

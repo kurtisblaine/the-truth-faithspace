@@ -3,8 +3,9 @@ import { Actions, createEffect, ofType } from "@ngrx/effects";
 import { map } from "rxjs";
 
 import { v4 } from "uuid";
-import { bookDateRanges, itemsRows } from "../items.database";
+import { itemsRows } from "../items.database";
 import { ItemsActions } from "./items.actions";
+import { bookDateRanges } from "./items.models";
 import { ItemEntity } from "./items.reducer";
 export const toKebabCase = (value: string) =>
   value
