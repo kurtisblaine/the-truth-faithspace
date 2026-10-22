@@ -57,7 +57,6 @@ import { TagService } from "./tag.service";
 export class HomePageComponent extends SeoBaseComponent implements OnDestroy {
   public allTags!: Signal<Tag[]>;
   public allColorTags = TagColorMap;
-  public filteringOption = signal<"include" | "exclude">("include");
   public selectedTagsControl = new FormControl<Tag[]>([]);
 
   private readonly ALL_BOOKS = "All";
@@ -73,7 +72,7 @@ export class HomePageComponent extends SeoBaseComponent implements OnDestroy {
   private tagServiceSubscription!: Subscription;
 
   readonly filteredTags: Signal<Map<string, Tag[]>> = computed(() => {
-    if (this.filteringOption() === "include") {
+    if (this.tagService.filteringOption() === "include") {
       return cloneDeep(this.allColorTags);
     } else {
       const availableTags = this._removeDuplicates(flatMap(this.filteredItems(), (a) => a.tags));
@@ -103,7 +102,7 @@ export class HomePageComponent extends SeoBaseComponent implements OnDestroy {
       const shouldIncludeAllBooks = selectedBook === this.ALL_BOOKS;
 
       const shouldFilterByTag =
-        this.filteringOption() === "include"
+        this.tagService.filteringOption() === "include"
           ? activeTags.some((tag) => item.tags.includes(tag))
           : activeTags.every((tag) => item.tags.includes(tag));
       const shouldIncludeAllTags = !activeTags.length;
@@ -127,7 +126,7 @@ export class HomePageComponent extends SeoBaseComponent implements OnDestroy {
     private store: Store,
     private router: Router,
     private route: ActivatedRoute,
-    private tagService: TagService,
+    public tagService: TagService,
     private changeDetector: ChangeDetectorRef
   ) {
     super({
@@ -162,8 +161,8 @@ export class HomePageComponent extends SeoBaseComponent implements OnDestroy {
       }
 
       const queryParamFilter = queryParams["filter"] as "include" | "exclude";
-      if (queryParamFilter !== this.filteringOption()) {
-        this.filteringOption.update(() => queryParamFilter);
+      if (queryParamFilter !== this.tagService.filteringOption()) {
+        this.tagService.filteringOption.update(() => queryParamFilter);
       }
     });
 
@@ -182,7 +181,7 @@ export class HomePageComponent extends SeoBaseComponent implements OnDestroy {
         queryParams: {
           tags: allTags ? allTags : null,
           book: this.selectedBook()?.replace(" ", ""),
-          filter: this.filteringOption(),
+          filter: this.tagService.filteringOption(),
         },
         queryParamsHandling: "replace",
       });
@@ -204,7 +203,7 @@ export class HomePageComponent extends SeoBaseComponent implements OnDestroy {
 
   onFilterOptionChange(event: MatButtonToggleChange): void {
     this.reset();
-    this.filteringOption.set(event.value);
+    this.tagService.filteringOption.set(event.value);
   }
 
   onPageChange(event?: PageEvent): void {

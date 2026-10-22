@@ -2,7 +2,8 @@
 
 <div class="tags">
   <mat-chip-listbox multiple aria-label="Prophecy Type" [formControl]="selectedTagsControl">
-    @for (map of filteredTags() | keyvalue; track `${map.key}-${$index}`) { @if( filteringOption() === "include") {
+    @for (map of filteredTags() | keyvalue; track `${map.key}-${$index}`) { @if( tagService.filteringOption() ===
+    "include") {
     <app-grouped-tags
       fadeInOut
       [group]="map"
@@ -57,7 +58,7 @@
     <mat-card-footer style="padding: 16px">
       <mat-button-toggle-group
         aria-label="Filtering Option"
-        [value]="filteringOption()"
+        [value]="tagService.filteringOption()"
         (change)="onFilterOptionChange($event)"
         style="margin-bottom: 5px"
       >

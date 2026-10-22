@@ -2,13 +2,13 @@ import { Tag } from "./items/items.models";
 import { ItemEntity } from "./items/items.reducer";
 
 export const itemsRows: ItemEntity[] = [
-  {
-    title: "todo",
-    description: "",
-    prophesy: ``,
-    fulfillments: [``],
-    tags: [],
-  },
+  // {
+  //   title: "todo",
+  //   description: "",
+  //   prophesy: ``,
+  //   fulfillments: [``],
+  //   tags: [],
+  // },
   //GENESIS
   {
     title: "Prophecies that Point to Jesus",
@@ -43,58 +43,58 @@ export const itemsRows: ItemEntity[] = [
     ],
     tags: [Tag.JesusSuffering, Tag.ImplicitType],
   },
-  {
-    title: "asdf",
-    description: "",
-    prophesy: `“He said, "What pledge shall I give you?" And she said, "Your seal and your cord, and your staff that is in your hand." So he gave them to her and went in to her, and she conceived by him.” (Genesis 38:18)`,
-    fulfillments: [
-      `“Therefore, since the children share in flesh and blood, He Himself likewise also partook of the same, that through death He might render powerless him who had the power of death, that is, the devil, and might free those who through fear of death were subject to slavery all their lives.” (Hebrews 2:14-15)`,
-      `“But we do see Him who was made for a little while lower than the angels, namely, Jesus, because of the suffering of death crowned with glory and honor, so that by the grace of God He might taste death for everyone.” (Hebrews 2:9)`,
-    ],
-    tags: [Tag.ImplicitType, Tag.JesusResurrection],
-  },
-  {
-    title: "fdsa",
-    description: "",
-    prophesy: `“Judah said to his brothers, "What profit is it for us to kill our brother and cover up his blood?” (Genesis 37:26)`,
-    fulfillments: [
-      `“Then one of the twelve, named Judas Iscariot, went to the chief priests and said, "What are you willing to give me to betray Him to you?" And they weighed out thirty pieces of silver to him.” (Matthew 26:14-15)`,
-      `“But some were indignantly remarking to one another, "Why has this perfume been wasted?” (Mark 14:4)`,
-    ],
-    tags: [Tag.JesusSuffering, Tag.ImplicitType],
-  },
-  {
-    title: "rewq",
-    description: "",
-    prophesy: ``,
-    fulfillments: [
-      `“Moreover, Pharaoh said to Joseph, "Though I am Pharaoh, yet without your permission no one shall raise his hand or foot in all the land of Egypt."” (Genesis 41:44)`,
-    ],
-    tags: [Tag.JesusExaltation, Tag.ImplicitType],
-  },
-  {
-    title: "ytre",
-    description: "",
-    prophesy: ``,
-    fulfillments: [
-      `“When Joseph saw his brothers he recognized them, but he disguised himself to them and spoke to them harshly.” (Genesis 42:7)`,
-    ],
-    tags: [],
-  },
-  {
-    title: "jhgf",
-    description: "",
-    prophesy: `"Now, therefore, please let your servant remain instead of the lad a slave to my lord, and let the lad go up with his brothers.” (Genesis 44:33)`,
-    fulfillments: [``],
-    tags: [],
-  },
-  {
-    title: "bvcx",
-    description: "",
-    prophesy: `“And may God Almighty grant you compassion in the sight of the man, so that he will release to you your other brother and Benjamin. And as for me, if I am bereaved of my children, I am bereaved." (Genesis 43:14)`,
-    fulfillments: [``],
-    tags: [Tag.ImplicitType, Tag.JesusType],
-  },
+  // {
+  //   title: "asdf",
+  //   description: "",
+  //   prophesy: `“He said, "What pledge shall I give you?" And she said, "Your seal and your cord, and your staff that is in your hand." So he gave them to her and went in to her, and she conceived by him.” (Genesis 38:18)`,
+  //   fulfillments: [
+  //     `“Therefore, since the children share in flesh and blood, He Himself likewise also partook of the same, that through death He might render powerless him who had the power of death, that is, the devil, and might free those who through fear of death were subject to slavery all their lives.” (Hebrews 2:14-15)`,
+  //     `“But we do see Him who was made for a little while lower than the angels, namely, Jesus, because of the suffering of death crowned with glory and honor, so that by the grace of God He might taste death for everyone.” (Hebrews 2:9)`,
+  //   ],
+  //   tags: [Tag.ImplicitType, Tag.JesusResurrection],
+  // },
+  // {
+  //   title: "fdsa",
+  //   description: "",
+  //   prophesy: `“Judah said to his brothers, "What profit is it for us to kill our brother and cover up his blood?” (Genesis 37:26)`,
+  //   fulfillments: [
+  //     `“Then one of the twelve, named Judas Iscariot, went to the chief priests and said, "What are you willing to give me to betray Him to you?" And they weighed out thirty pieces of silver to him.” (Matthew 26:14-15)`,
+  //     `“But some were indignantly remarking to one another, "Why has this perfume been wasted?” (Mark 14:4)`,
+  //   ],
+  //   tags: [Tag.JesusSuffering, Tag.ImplicitType],
+  // },
+  // {
+  //   title: "rewq",
+  //   description: "",
+  //   prophesy: ``,
+  //   fulfillments: [
+  //     `“Moreover, Pharaoh said to Joseph, "Though I am Pharaoh, yet without your permission no one shall raise his hand or foot in all the land of Egypt."” (Genesis 41:44)`,
+  //   ],
+  //   tags: [Tag.JesusExaltation, Tag.ImplicitType],
+  // },
+  // {
+  //   title: "ytre",
+  //   description: "",
+  //   prophesy: ``,
+  //   fulfillments: [
+  //     `“When Joseph saw his brothers he recognized them, but he disguised himself to them and spoke to them harshly.” (Genesis 42:7)`,
+  //   ],
+  //   tags: [],
+  // },
+  // {
+  //   title: "jhgf",
+  //   description: "",
+  //   prophesy: `"Now, therefore, please let your servant remain instead of the lad a slave to my lord, and let the lad go up with his brothers.” (Genesis 44:33)`,
+  //   fulfillments: [``],
+  //   tags: [],
+  // },
+  // {
+  //   title: "bvcx",
+  //   description: "",
+  //   prophesy: `“And may God Almighty grant you compassion in the sight of the man, so that he will release to you your other brother and Benjamin. And as for me, if I am bereaved of my children, I am bereaved." (Genesis 43:14)`,
+  //   fulfillments: [``],
+  //   tags: [Tag.ImplicitType, Tag.JesusType],
+  // },
   {
     title: "Jesus, the Exact Nature of God",
     description:

@@ -32,8 +32,6 @@ export class GroupedTagsComponent implements OnInit, OnDestroy {
   public onToggleTags = output<{ tags: Tag[]; event: MatChipSelectionChange }>();
 
   public filteredTags = signal<Tag[]>([]);
-  private previousFilterType: "include" | "exclude";
-  public filterType: "include" | "exclude";
 
   private subscription!: Subscription;
 
@@ -53,20 +51,22 @@ export class GroupedTagsComponent implements OnInit, OnDestroy {
 
     this.subscription = this.route.queryParams.pipe(take(1)).subscribe((queryParams) => {
       const queryParamFilter = queryParams["filter"] as "include" | "exclude";
-      if (this.previousFilterType === "exclude" && queryParamFilter === "include") return;
-
       const queryParamTags = queryParams["tags"] as string;
+
+      if (this.tagService.previousFilteringOption() === "include" && queryParamFilter === "exclude") {
+        return;
+      }
+
       if (queryParamTags) {
         const tagList = (queryParamTags.split(",") as TagKey[]).map((key) => Tag[key]);
         if (this.group().value.some((tag) => tagList.some((t) => t === tag))) {
           this.expandTags(tagList, { isUserInput: true, selected: true } as MatChipSelectionChange);
         }
       }
+
       if (queryParamFilter === "exclude") {
         this.isShown.set(true);
       }
-
-      this.previousFilterType = queryParamFilter;
     });
   }
 
