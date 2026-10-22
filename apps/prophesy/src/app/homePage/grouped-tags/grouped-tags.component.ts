@@ -5,6 +5,7 @@ import {
   Component,
   computed,
   input,
+  OnDestroy,
   OnInit,
   output,
   signal,
@@ -13,7 +14,7 @@ import { takeUntilDestroyed } from "@angular/core/rxjs-interop";
 import { FormControl, ReactiveFormsModule } from "@angular/forms";
 import { MatChipSelectionChange, MatChipsModule } from "@angular/material/chips";
 import { ActivatedRoute } from "@angular/router";
-import { take } from "rxjs";
+import { Subscription, take } from "rxjs";
 import { fadeInOut } from "shared";
 import { Tag, TagColorNameMap, TagKey } from "../../+state/items/items.models";
 import { TagService } from "../tag.service";
@@ -26,12 +27,15 @@ import { TagService } from "../tag.service";
   changeDetection: ChangeDetectionStrategy.OnPush,
   animations: [fadeInOut],
 })
-export class GroupedTagsComponent implements OnInit {
+export class GroupedTagsComponent implements OnInit, OnDestroy {
   public group = input.required<KeyValue<string, Tag[]>>();
   public onToggleTags = output<{ tags: Tag[]; event: MatChipSelectionChange }>();
 
   public filteredTags = signal<Tag[]>([]);
+  private previousFilterType: "include" | "exclude";
   public filterType: "include" | "exclude";
+
+  private subscription!: Subscription;
 
   public isShown = signal<boolean>(false);
   public collapsedTagType = computed(() => TagColorNameMap.get(this.group().key));
@@ -42,9 +46,15 @@ export class GroupedTagsComponent implements OnInit {
     this.tagService.reset$.pipe(takeUntilDestroyed()).subscribe((shouldReset) => {
       if (shouldReset) this.reset();
     });
+  }
 
-    this.route.queryParams.pipe(take(1), takeUntilDestroyed()).subscribe((queryParams) => {
-      //TODO this works but it gets recreated when switching from exclude to include so this runs again and causes problems.
+  ngOnInit() {
+    this.filteredTags.set(this.group().value);
+
+    this.subscription = this.route.queryParams.pipe(take(1)).subscribe((queryParams) => {
+      const queryParamFilter = queryParams["filter"] as "include" | "exclude";
+      if (this.previousFilterType === "exclude" && queryParamFilter === "include") return;
+
       const queryParamTags = queryParams["tags"] as string;
       if (queryParamTags) {
         const tagList = (queryParamTags.split(",") as TagKey[]).map((key) => Tag[key]);
@@ -52,15 +62,16 @@ export class GroupedTagsComponent implements OnInit {
           this.expandTags(tagList, { isUserInput: true, selected: true } as MatChipSelectionChange);
         }
       }
-      const queryParamFilter = queryParams["filter"] as "include" | "exclude";
       if (queryParamFilter === "exclude") {
         this.isShown.set(true);
       }
+
+      this.previousFilterType = queryParamFilter;
     });
   }
 
-  ngOnInit() {
-    this.filteredTags.set(this.group().value);
+  ngOnDestroy(): void {
+    this.subscription?.unsubscribe();
   }
 
   reset() {
