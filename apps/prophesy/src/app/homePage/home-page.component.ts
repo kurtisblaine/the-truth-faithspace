@@ -223,7 +223,7 @@ export class HomePageComponent extends SeoBaseComponent implements OnDestroy {
     // this.filteringOption.update(() => "include");
     this.selectedBook.update(() => this.ALL_BOOKS);
 
-    this.changeDetector.detectChanges();
+    this.changeDetector.markForCheck();
   }
 
   toggleTags($event: { tags: Tag[]; event: MatChipSelectionChange }) {

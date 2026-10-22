@@ -15,7 +15,7 @@ import { MatChipSelectionChange, MatChipsModule } from "@angular/material/chips"
 import { ActivatedRoute } from "@angular/router";
 import { take } from "rxjs";
 import { fadeInOut } from "shared";
-import { Tag, TagColorNameMap } from "../../+state/items/items.models";
+import { Tag, TagColorNameMap, TagKey } from "../../+state/items/items.models";
 import { TagService } from "../tag.service";
 
 @Component({
@@ -45,17 +45,17 @@ export class GroupedTagsComponent implements OnInit {
 
     this.route.queryParams.pipe(take(1), takeUntilDestroyed()).subscribe((queryParams) => {
       //TODO this works but it gets recreated when switching from exclude to include so this runs again and causes problems.
-      // const queryParamTags = queryParams["tags"] as string;
-      // if (queryParamTags) {
-      //   const tagList = (queryParamTags.split(",") as TagKey[]).map((key) => Tag[key]);
-      //   if (this.group().value.some((tag) => tagList.some((t) => t === tag))) {
-      //     this.expandTags(tagList, { isUserInput: true, selected: true } as MatChipSelectionChange);
-      //   }
-      // }
-      // const queryParamFilter = queryParams["filter"] as "include" | "exclude";
-      // if (queryParamFilter === "exclude") {
-      //   this.isShown.set(true);
-      // }
+      const queryParamTags = queryParams["tags"] as string;
+      if (queryParamTags) {
+        const tagList = (queryParamTags.split(",") as TagKey[]).map((key) => Tag[key]);
+        if (this.group().value.some((tag) => tagList.some((t) => t === tag))) {
+          this.expandTags(tagList, { isUserInput: true, selected: true } as MatChipSelectionChange);
+        }
+      }
+      const queryParamFilter = queryParams["filter"] as "include" | "exclude";
+      if (queryParamFilter === "exclude") {
+        this.isShown.set(true);
+      }
     });
   }
 
