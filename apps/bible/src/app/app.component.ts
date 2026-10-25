@@ -14,16 +14,18 @@ import {
   Injector,
   OnDestroy,
   OnInit,
+  signal,
   Signal,
   ViewChild,
 } from "@angular/core";
+import { toSignal } from "@angular/core/rxjs-interop";
 import { FormsModule, ReactiveFormsModule } from "@angular/forms";
 import { MatButtonModule } from "@angular/material/button";
 import { MatIconModule } from "@angular/material/icon";
 import { MatStepper, MatStepperModule } from "@angular/material/stepper";
 import { Router, RouterModule } from "@angular/router";
 import { Store } from "@ngrx/store";
-import { map, Observable } from "rxjs";
+import { map } from "rxjs";
 import * as BiblesActions from "./+state/bibles/bibles.actions";
 import { selectSelectedLanguage, selectSelectedTranslation } from "./+state/bibles/bibles.selectors";
 import { selectCurrentBook } from "./+state/books/books.selectors";
@@ -54,7 +56,7 @@ import { StepperStateService } from "./stepperState.service";
   }`,
 })
 export class AppComponent implements OnInit, AfterViewInit, OnDestroy {
-  public stepperOrientation$!: Observable<StepperOrientation>;
+  public stepperOrientation: Signal<StepperOrientation> = signal("horizontal");
 
   private injector = inject(Injector);
   @ViewChild("stepper") stepper!: MatStepper;
@@ -66,16 +68,18 @@ export class AppComponent implements OnInit, AfterViewInit, OnDestroy {
 
   constructor(
     private router: Router,
-    private stepperService: StepperStateService,
+    public stepperService: StepperStateService,
     private store: Store,
     private breakpointObserver: BreakpointObserver
-  ) {}
+  ) {
+    this.stepperOrientation = toSignal(
+      this.breakpointObserver
+        .observe("(min-width: 800px)")
+        .pipe(map(({ matches }) => (matches ? "horizontal" : "vertical")))
+    );
+  }
 
   ngOnInit() {
-    this.stepperOrientation$ = this.breakpointObserver
-      .observe("(min-width: 800px)")
-      .pipe(map(({ matches }) => (matches ? "horizontal" : "vertical")));
-
     this.selectedLanguage = this.store.selectSignal(selectSelectedLanguage);
     this.selectedTranslation = this.store.selectSignal(selectSelectedTranslation);
     this.selectedBook = this.store.selectSignal(selectCurrentBook);
@@ -87,22 +91,22 @@ export class AppComponent implements OnInit, AfterViewInit, OnDestroy {
 
     effect(
       () => {
-        if (this.selectedLanguage() && this.selectedTranslation() && this.selectedBook() && this.selectedChapter()) {
-          this.stepper.selectedIndex = 4;
-          this._setStepsActive(4);
-        } else if (this.selectedLanguage() && this.selectedTranslation() && this.selectedBook()) {
-          this.stepper.selectedIndex = 3;
-          this._setStepsActive(3);
-        } else if (this.selectedLanguage() && this.selectedTranslation()) {
-          this.stepper.selectedIndex = 2;
-          this._setStepsActive(2);
-        } else if (this.selectedLanguage()) {
-          this.stepper.selectedIndex = 1;
-          this._setStepsActive(1);
-        } else {
-          this.stepper.selectedIndex = 0;
-          this._setStepsActive(0);
-        }
+        // if (this.selectedLanguage() && this.selectedTranslation() && this.selectedBook() && this.selectedChapter()) {
+        //   this.stepper.selectedIndex = 4;
+        //   this._setStepsActive(4);
+        // } else if (this.selectedLanguage() && this.selectedTranslation() && this.selectedBook()) {
+        //   this.stepper.selectedIndex = 3;
+        //   this._setStepsActive(3);
+        // } else if (this.selectedLanguage() && this.selectedTranslation()) {
+        //   this.stepper.selectedIndex = 2;
+        //   this._setStepsActive(2);
+        // } else if (this.selectedLanguage()) {
+        //   this.stepper.selectedIndex = 1;
+        //   this._setStepsActive(1);
+        // } else {
+        //   this.stepper.selectedIndex = 0;
+        //   this._setStepsActive(0);
+        // }
       },
       { injector: this.injector }
     );
@@ -130,18 +134,5 @@ export class AppComponent implements OnInit, AfterViewInit, OnDestroy {
         );
         break;
     }
-  }
-
-  _setStepsActive(index: number) {
-    const steps = Array.from(this.stepper.steps);
-    Array.from({ length: 4 }, (_, i) => {
-      if (i <= index) {
-        steps[i].completed = true;
-        steps[i].editable = true;
-      } else {
-        steps[i].completed = false;
-        steps[i].editable = false;
-      }
-    });
   }
 }

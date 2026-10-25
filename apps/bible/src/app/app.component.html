@@ -3,8 +3,9 @@
     linear
     #stepper
     class="stepper"
+    [(selectedIndex)]="stepperService.selectedIndex"
     (selectionChange)="onSelectionChange($event, true)"
-    [orientation]="stepperOrientation$ | async"
+    [orientation]="stepperOrientation()"
   >
     <mat-step state="tonguesIcon" [completed]="selectedLanguage()">
       <ng-template matStepLabel>
