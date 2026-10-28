@@ -53,48 +53,67 @@ export const itemsRows: ItemEntity[] = [
   //   ],
   //   tags: [Tag.ImplicitType, Tag.JesusResurrection],
   // },
-  // {
-  //   title: "fdsa",
-  //   description: "",
-  //   prophesy: `“Judah said to his brothers, "What profit is it for us to kill our brother and cover up his blood?” (Genesis 37:26)`,
-  //   fulfillments: [
-  //     `“Then one of the twelve, named Judas Iscariot, went to the chief priests and said, "What are you willing to give me to betray Him to you?" And they weighed out thirty pieces of silver to him.” (Matthew 26:14-15)`,
-  //     `“But some were indignantly remarking to one another, "Why has this perfume been wasted?” (Mark 14:4)`,
-  //   ],
-  //   tags: [Tag.JesusSuffering, Tag.ImplicitType],
-  // },
-  // {
-  //   title: "rewq",
-  //   description: "",
-  //   prophesy: ``,
-  //   fulfillments: [
-  //     `“Moreover, Pharaoh said to Joseph, "Though I am Pharaoh, yet without your permission no one shall raise his hand or foot in all the land of Egypt."” (Genesis 41:44)`,
-  //   ],
-  //   tags: [Tag.JesusExaltation, Tag.ImplicitType],
-  // },
-  // {
-  //   title: "ytre",
-  //   description: "",
-  //   prophesy: ``,
-  //   fulfillments: [
-  //     `“When Joseph saw his brothers he recognized them, but he disguised himself to them and spoke to them harshly.” (Genesis 42:7)`,
-  //   ],
-  //   tags: [],
-  // },
-  // {
-  //   title: "jhgf",
-  //   description: "",
-  //   prophesy: `"Now, therefore, please let your servant remain instead of the lad a slave to my lord, and let the lad go up with his brothers.” (Genesis 44:33)`,
-  //   fulfillments: [``],
-  //   tags: [],
-  // },
-  // {
-  //   title: "bvcx",
-  //   description: "",
-  //   prophesy: `“And may God Almighty grant you compassion in the sight of the man, so that he will release to you your other brother and Benjamin. And as for me, if I am bereaved of my children, I am bereaved." (Genesis 43:14)`,
-  //   fulfillments: [``],
-  //   tags: [Tag.ImplicitType, Tag.JesusType],
-  // },
+  {
+    title: "What Does Blood Profit Anyone?",
+    description:
+      "Instead of killing Joseph, his brothers sold him for profit to the Ishmaelites; and so likewise, Jesus was betrayed by His close friend, Judas, for 30 pieces of silver. They desired profit, for they did not consider how one's death can be profit to another. And now, Jesus' death is life to everyone who believes.",
+    prophesy: `“Judah said to his brothers, "What profit is it for us to kill our brother and cover up his blood?” (Genesis 37:26)`,
+    fulfillments: [
+      `“Then one of the twelve, named Judas Iscariot, went to the chief priests and said, "What are you willing to give me to betray Him to you?" And they weighed out thirty pieces of silver to him.” (Matthew 26:14-15)`,
+      `“But some were indignantly remarking to one another, "Why has this perfume been wasted?” (Mark 14:4)`,
+    ],
+    tags: [Tag.JesusSuffering, Tag.ImplicitType],
+  },
+  {
+    title: "Jesus Exalted Higher Than The Heavens",
+    description:
+      "Just as Joseph was exalted from prison, so Jesus Christ was raised from the dead. And just as Joseph received authority and was as high as Pharaoh, so Jesus received glory and a name as high as God, seated at His right hand of power as the Son of God.",
+    prophesy: `“Moreover, Pharaoh said to Joseph, "Though I am Pharaoh, yet without your permission no one shall raise his hand or foot in all the land of Egypt."” (Genesis 41:44)`,
+    fulfillments: [
+      `“I pray that the eyes of your heart may be enlightened, so that you will know what is the hope of His calling, what are the riches of the glory of His inheritance in the saints, and what is the surpassing greatness of His power toward us who believe. These are in accordance with the working of the strength of His might which He brought about in Christ, when He raised Him from the dead and seated Him at His right hand in the heavenly places, far above all rule and authority and power and dominion, and every name that is named, not only in this age but also in the one to come. And He put all things in subjection under His feet, and gave Him as head over all things to the church, which is His body, the fullness of Him who fills all in all.” (Ephesians 1:18-23)`,
+      `“For HE HAS PUT ALL THINGS IN SUBJECTION UNDER HIS FEET. But when He says, "All things are put in subjection," it is evident that He is excepted who put all things in subjection to Him. When all things are subjected to Him, then the Son Himself also will be subjected to the One who subjected all things to Him, so that God may be all in all.” (1 Corinthians 15:27-28)`,
+      `“For this reason also, God highly exalted Him, and bestowed on Him the name which is above every name, so that at the name of Jesus EVERY KNEE WILL BOW, of those who are in heaven and on earth and under the earth, and that every tongue will confess that Jesus Christ is Lord, to the glory of God the Father.” (Philippians 2:9-11)`,
+    ],
+    tags: [Tag.JesusExaltation, Tag.ImplicitType],
+  },
+  {
+    title: "God Spoke Harshly For A Time Through The Law",
+    description:
+      "God spoke with a voice from the mount that those who heard desired to hear it no more; yet God now speaks favorably to us through the gentle voice of the Holy Spirit, proclaiming unto us the Gospel.",
+    prophesy: `“When Joseph saw his brothers he recognized them, but he disguised himself to them and spoke to them harshly.” (Genesis 42:7)`,
+    fulfillments: [
+      `"HE WILL NOT QUARREL, NOR CRY OUT; NOR WILL ANYONE HEAR HIS VOICE IN THE STREETS.” (Matthew 12:19)`,
+      `“After the earthquake a fire, but the LORD was not in the fire; and after the fire a sound of a gentle blowing.” (1 Kings 19:12)`,
+      `“For you have not come to a mountain that can be touched and to a blazing fire, and to darkness and gloom and whirlwind, and to the blast of a trumpet and the sound of words which sound was such that those who heard begged that no further word be spoken to them.” (Hebrews 12:18-19)`,
+      `“But you have come to Mount Zion and to the city of the living God, the heavenly Jerusalem, and to myriads of angels, to the general assembly and church of the firstborn who are enrolled in heaven, and to God, the Judge of all, and to the spirits of the righteous made perfect, and to Jesus, the mediator of a new covenant, and to the sprinkled blood, which speaks better than the blood of Abel.” (Hebrews 12:22-24)`,
+    ],
+    tags: [Tag.ImplicitType, Tag.Grace],
+  },
+  {
+    title: "The Substitutionary Atonement",
+    description:
+      "Just as Judah willed to give up his life in place of his brother, so Jesus Christ - not only willed - accomplished the substitutionary atonement for mankind and the elect of God.",
+    prophesy: `"Now, therefore, please let your servant remain instead of the lad a slave to my lord, and let the lad go up with his brothers.” (Genesis 44:33)`,
+    fulfillments: [
+      `“But God demonstrates His own love toward us, in that while we were yet sinners, Christ died for us.” (Romans 5:8)`,
+      `“For the love of Christ controls us, having concluded this, that one died for all, therefore all died; and He died for all, so that they who live might no longer live for themselves, but for Him who died and rose again on their behalf.” (2 Corinthians 5:14-15)`,
+      `“For Christ also died for sins once for all, the just for the unjust, so that He might bring us to God, having been put to death in the flesh, but made alive in the spirit; in which also He went and made proclamation to the spirits now in prison, who once were disobedient, when the patience of God kept waiting in the days of Noah, during the construction of the ark, in which a few, that is, eight persons, were brought safely through the water.” (1 Peter 3:18-20)`,
+      `“For God has not destined us for wrath, but for obtaining salvation through our Lord Jesus Christ, who died for us, so that whether we are awake or asleep, we will live together with Him.” (1 Thessalonians 5:9-10)`,
+    ],
+    tags: [Tag.ImplicitType, Tag.JesusType, Tag.JesusSuffering],
+  },
+  {
+    title: "He Gave Up His One and Only Son",
+    description:
+      "Jacob gave up his one and only beloved son, Benjamin, from his beloved wife Rachael; yet he gave him up to save many, resembling the Father God who gave up His one and only Son, Jesus Christ, to save many.",
+    prophesy: `“And may God Almighty grant you compassion in the sight of the man, so that he will release to you your other brother and Benjamin. And as for me, if I am bereaved of my children, I am bereaved." (Genesis 43:14)`,
+    fulfillments: [
+      `“And the Word became flesh, and dwelt among us, and we saw His glory, glory as of the only begotten from the Father, full of grace and truth. John *testified about Him and cried out, saying, "This was He of whom I said, 'He who comes after me has a higher rank than I, for He existed before me.'" For of His fullness we have all received, and grace upon grace. For the Law was given through Moses; grace and truth were realized through Jesus Christ. No one has seen God at any time; the only begotten God who is in the bosom of the Father, He has explained Him.” (John 1:14-18)`,
+      `“For God so loved the world, that He gave His only begotten Son, that whoever believes in Him shall not perish, but have eternal life. For God did not send the Son into the world to judge the world, but that the world might be saved through Him. "He who believes in Him is not judged; he who does not believe has been judged already, because he has not believed in the name of the only begotten Son of God.” (John 3:16-18)`,
+      `“By this the love of God was manifested in us, that God has sent His only begotten Son into the world so that we might live through Him.” (1 John 4:9)`,
+    ],
+    tags: [Tag.ImplicitType, Tag.JesusType],
+  },
   {
     title: "Jesus, the Exact Nature of God",
     description:
